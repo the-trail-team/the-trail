@@ -278,5 +278,6 @@ var $plugins =
 {"name":"ChangeSystemSounds","status":false,"description":"v1.0 Change System Sounds","parameters":{}},
 {"name":"MSX_AlphabeticalSort","status":true,"description":"v1.0 Sort alphabetically Items and Skills list.","parameters":{"Items List":"true","Skills List":"true"}},
 {"name":"FixPixel","status":true,"description":"","parameters":{}},
+{"name":"proSnapCore","status":true,"description":"The core for all pro Snap plugins. Leave on top","parameters":{"quality":"false","HDText":"true","Window":"false","filterscript":"[\"\"]"}},
 {"name":"Cyclone-Map-Editor-MV","status":false,"description":"Live Map Editor\n\n<pluginName:CycloneMapEditor>","parameters":{"regionIcons":"[]","Status Bar":"","showMapId":"true","showTilesetId":"true","showPosition":"true","showCellTiles":"true","showRegionId":"true","showTag":"true","showCollision":"true","showLadder":"true","showBush":"true","showCounter":"true","showDamageFloor":"true","collisionStepCount":"1"}}
 ];
