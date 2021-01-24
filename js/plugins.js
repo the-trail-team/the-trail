@@ -9,6 +9,7 @@ var $plugins =
 {"name":"OverpassTile","status":false,"description":"Settings for bridges which characters can pass through.","parameters":{"Overpass Region ID":"220","Gateway Region ID":"221"}},
 {"name":"WeaponSkill","status":true,"description":"Change skill id of attack for each weapon.","parameters":{}},
 {"name":"GraphicsRenderFix","status":true,"description":"","parameters":{}},
+{"name":"CP_Large_Sprite_Fix","status":true,"description":"Fixes an issue with large sprites appearing under ☆ passability tiles.","parameters":{"Terrain ID":"7","Large Followers":"Yes","Large Vehicles":"Yes"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"maldualwield","status":true,"description":"ver2.3c - Allows you to set weapons as twohanded, disallowing you from equipping weapons to the Off-hand.","parameters":{"ShieldsArmor":"0","MustUseMain":"1","OffhandAdjust":"100","OffhandSlotName":"Offhand","ShowTraitsInConsole":"0","PowerAdjustement0":"100","PowerAdjustement1":"100","PowerAdjustement2":"100","PowerAdjustement3":"100","PowerAdjustement4":"100","PowerAdjustement5":"100","PowerAdjustement6":"100","PowerAdjustement7":"100","PotentialPointsInShop":"1"}},
@@ -278,6 +279,5 @@ var $plugins =
 {"name":"ChangeSystemSounds","status":false,"description":"v1.0 Change System Sounds","parameters":{}},
 {"name":"MSX_AlphabeticalSort","status":true,"description":"v1.0 Sort alphabetically Items and Skills list.","parameters":{"Items List":"true","Skills List":"true"}},
 {"name":"FixPixel","status":true,"description":"","parameters":{}},
-{"name":"proSnapCore","status":true,"description":"The core for all pro Snap plugins. Leave on top","parameters":{"quality":"false","HDText":"true","Window":"false","filterscript":"[\"\"]"}},
 {"name":"Cyclone-Map-Editor-MV","status":false,"description":"Live Map Editor\n\n<pluginName:CycloneMapEditor>","parameters":{"regionIcons":"[]","Status Bar":"","showMapId":"true","showTilesetId":"true","showPosition":"true","showCellTiles":"true","showRegionId":"true","showTag":"true","showCollision":"true","showLadder":"true","showBush":"true","showCounter":"true","showDamageFloor":"true","collisionStepCount":"1"}}
 ];
