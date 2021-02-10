@@ -428,7 +428,7 @@ Sprite_GalvBust.prototype.baseY = function() {
 	if (Galv.Mstyle.target) {
 		return Galv.MB.msgWindow.y + Galv.MB.msgWindow.height - this.bitmap.height;
 	} else {
-		return Graphics.boxHeight - this.bitmap.height;
+		return Graphics.boxHeight - this.bitmap.height + 2;
 	};
 };
 
