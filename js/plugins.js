@@ -297,6 +297,7 @@ var $plugins =
 {"name":"SkipPartyCommand","status":true,"description":"This plugin skip party command in battle.","parameters":{"SwitchNumberForSkipping":"0","SwitchNumberForEscapeCommand":"0"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
+{"name":"MOG_ActionName","status":true,"description":"(v1.3) Apresenta uma janela com nome da ação.","parameters":{"Layout X-Axis":"420","Layout Y-Axis":"108","Name X-Axis":"0","Name Y-Axis":"24","Icon X-Axis":"0","Icon Y-Axis":"-4","Font Size":"22"}},
 {"name":"MOG_DmgPopupEffects","status":true,"description":"(v1.0) Adiciona alguns efeitos nos sprites do dano.","parameters":{"Duration":"120","PopUp Type":"0","Zoom Effect":"true","Center Y-Axis":"true"}},
 {"name":"MOG_TrPopUpBattle","status":true,"description":"(v1.0) Apresenta os ícones dos tesouros após o inimigo morrer.","parameters":{"Drop Item Real Time":"true","Animation Type":"0","Fade Duration":"20","Scale":"0.8"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
