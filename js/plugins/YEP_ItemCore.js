@@ -1397,7 +1397,8 @@ Yanfly.Item.Window_ItemList_drawItemNumber =
     Window_ItemList.prototype.drawItemNumber;
 Window_ItemList.prototype.drawItemNumber = function(item, dx, dy, dw) {
     if (DataManager.isIndependent(item)) {
-      this.drawItemCarryNumber(item, dx, dy, dw);
+      // this.drawItemCarryNumber(item, dx, dy, dw);
+      this.drawItemCarryNumber();
       return;
     }
     Yanfly.Item.Window_ItemList_drawItemNumber.call(this, item, dx, dy, dw);
