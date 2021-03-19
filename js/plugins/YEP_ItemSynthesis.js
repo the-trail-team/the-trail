@@ -928,7 +928,7 @@ Window_SynthesisStatus.prototype.initialize = function(wx, wy, ww, wh) {
 Window_SynthesisStatus.prototype.refresh = function() {
     this.contents.clear();
     var dy = 0;
-    dy = this.drawCollectedRecipes(dy);
+    // dy = this.drawCollectedRecipes(dy);
     dy = this.drawCraftedItems(dy);
     dy = this.drawCraftedWeapons(dy);
     dy = this.drawCraftedArmors(dy);
