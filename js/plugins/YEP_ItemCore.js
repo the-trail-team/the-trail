@@ -1310,6 +1310,56 @@ Game_Party.prototype.clearAllMatchingBaseItems = function(baseItem, equipped) {
 };
 
 //=============================================================================
+// Unofficial fix for Item_Synthesis (Ozirisz)
+//=============================================================================
+
+// number of not upgraded independent items
+
+Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
+  var value = this.numItems(baseItem);
+if (DataManager.isIndependent(baseItem)) {
+  var id = baseItem.id;
+  if (DataManager.isItem(baseItem)) var group = this.items();
+  if (DataManager.isWeapon(baseItem)) var group = this.weapons();
+  if (DataManager.isArmor(baseItem)) var group = this.armors();
+  for (var i = 0; i < group.length; ++i) {
+    var item = group[i];
+    if (!item) continue;
+    if (item.boostCount && item.boostCount !== 0) continue;
+    if (item.namePrefix && item.namePrefix !== "") continue;
+    if (item.nameSuffix && item.nameSuffix !== "") continue;
+    if (item.baseItemName && item.baseItemName !== item.name) continue;
+    if (item.textColor && item.textColor !== baseItem.textColor) continue;
+    if (item.baseItemId && item.baseItemId === id) value += 1;
+  }
+}
+  return value;
+};
+
+// getting one of not upgraded independent item
+
+Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
+  var value = {};
+  var id = baseItem.id;
+  if (DataManager.isItem(baseItem)) var group = this.items();
+  if (DataManager.isWeapon(baseItem)) var group = this.weapons();
+  if (DataManager.isArmor(baseItem)) var group = this.armors();
+  for (var i = 0; i < group.length; ++i) {
+    var item = group[i];
+    if (!item) continue;
+  if (item.boostCount && item.boostCount !== 0) continue;
+  if (item.namePrefix && item.namePrefix !== "") continue;
+  if (item.nameSuffix && item.nameSuffix !== "") continue;
+  if (item.baseItemName && item.baseItemName !== item.name) continue;
+  if (item.textColor && item.textColor !== baseItem.textColor) continue;
+    if (item.baseItemId && item.baseItemId === id) value = item;
+  }
+  return value;
+};
+
+
+
+//=============================================================================
 // Game_Interpreter
 //=============================================================================
 
@@ -1513,6 +1563,7 @@ Scene_Equip.prototype.refreshActor = function() {
 
 Yanfly.Item.Scene_Shop_doBuy = Scene_Shop.prototype.doBuy;
 Scene_Shop.prototype.doBuy = function(number) {
+    console.log("doBuy called by Yanfly.ItemCore");
     $gameTemp.enableVarianceStock();
     Yanfly.Item.Scene_Shop_doBuy.call(this, number);
     $gameTemp.disableVarianceStock();

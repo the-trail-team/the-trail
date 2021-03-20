@@ -340,6 +340,44 @@ Yanfly.IS.version = 1.11;
  * the Item 15, Weapon 20, or Armor 30 without needing it and not showing the
  * recipes of any recipe items within the player's inventory.
  *
+ * ============================================================================ 
+ * Unofficial fix to use Independent Items as Ingredients (Ozirisz)
+ * ============================================================================
+ *
+ * If you want to use Armors/Weapons as Ingredients, default its impossible.
+ * I provided this workaround with editing this plugin and extend Item_Core
+ * for the functionality. So you also need the modified Item_Core.
+ * The plugin only see the "original", unupgraded version of the Armor/Weapon.
+ * So, if it's upgraded or it has some augment it's not count as Ingredient.
+ *
+ * For expample, you have this recipe:
+ *  <Synthesis Ingredients>
+ *    Iron Bar: 4
+ *    Short Sword: 1
+ *  </Synthesis Ingredients>
+ *
+ * And you have in inventory:
+ *   Short Sword
+ *   Short Sword (+1)
+ *   Short Sword of Might
+ *   Fiery Short Sword
+ *   ...
+ *
+ * Only the "Short Sword" could be used in synthesis, the others are not.
+ * Important note: the code only checks the Independent Item's few 
+ * property to decide, it's modifided or "original" item.
+ *
+ *   boostCount = 0
+ *   namePrefix = ""
+ *   nameSuffix = ""
+ *   name = baseItemName
+ *   textColor = baseItem.textColor
+ *
+ * If these conditions not meet, the item will be treat as "Upgraded" item and
+ * not used for synthesis. If all conditions meet, the item can be used as 
+ * ingredients.
+ *
+ *
  * ============================================================================
  * Changelog
  * ============================================================================
@@ -636,7 +674,7 @@ DataManager.isSynthesisIngredientOk = function(ingId, ingType) {
     if (ingType === 1) item = $dataWeapons[ingId];
     if (ingType === 2) item = $dataArmors[ingId];
     if (!item) return false;
-    if (Imported.YEP_ItemCore && this.isIndependent(item)) return false;
+    // if (Imported.YEP_ItemCore && this.isIndependent(item)) return false;
     return true;
 };
 
@@ -787,20 +825,23 @@ Game_System.prototype.canSynthesize = function(item, times) {
     for (var i = 0; i < item.synthIngredients.length; ++i) {
       var ingredient = DataManager.getSynthesisIngredient(item, i);
       var quantity = DataManager.getSynthesisQuantity(item, i);
-      if (quantity * times > $gameParty.numItems(ingredient)) return false;
+      // if (quantity * times > $gameParty.numItems(ingredient)) return false;
+      if (quantity * times > $gameParty.numNotUpgradedIndependentItems(ingredient)) return false;
     }
     return true;
 };
 
 Game_System.prototype.maxSynthesize = function(item) {
-    var maximum = $gameParty.maxItems(item) - $gameParty.numItems(item);
+//    var maximum = $gameParty.maxItems(item) - $gameParty.numItems(item);
+    var maximum = $gameParty.maxItems(item) - $gameParty.numNotUpgradedIndependentItems(item);
     if (item.synthCost > 0) {
       maximum = Math.min(maximum, $gameParty.gold() / item.synthCost);
     }
     for (var i = 0; i < item.synthIngredients.length; ++i) {
       var ingredient = DataManager.getSynthesisIngredient(item, i);
       var quantity = DataManager.getSynthesisQuantity(item, i);
-      maximum = Math.min(maximum, $gameParty.numItems(ingredient) / quantity);
+      // maximum = Math.min(maximum, $gameParty.numItems(ingredient) / quantity);
+      maximum = Math.min(maximum, $gameParty.numNotUpgradedIndependentItems(ingredient) / quantity);
     }
     return parseInt(Math.max(maximum, 0));
 };
@@ -1108,7 +1149,9 @@ Window_SynthesisList.prototype.drawItem = function(index) {
 
 Window_SynthesisList.prototype.drawItemName = function(item, x, y, width) {
     if (!item) return;
-    if ($gameSystem.hasSynthed(item)) {
+	// if no object is masked, the <Text Color: x> notation will not prevail until the object is created
+  if ((!eval(Yanfly.Param.ISMaskUnknown)) || ($gameSystem.hasSynthed(item))) {
+    // if ($gameSystem.hasSynthed(item)) {
       Window_Base.prototype.drawItemName.call(this, item, x, y, width);
       return;
     }
@@ -1202,10 +1245,12 @@ Window_SynthesisIngredients.prototype.drawItemQuantity = function(index, wy) {
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     this.changeTextColor(this.normalColor());
-    var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    // var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(ingredient));
     this.drawText(num, 0, wy, ww, 'right');
     ww -= this.textWidth(num);
-    if ($gameParty.numItems(ingredient) >= quantity) {
+    // if ($gameParty.numItems(ingredient) >= quantity) {
+    if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
       this.changeTextColor(this.powerUpColor());
     } else {
       this.changeTextColor(this.powerDownColor());
@@ -1217,14 +1262,17 @@ Window_SynthesisIngredients.prototype.drawItemQuantity = function(index, wy) {
 Window_SynthesisIngredients.prototype.drawItemQuantity2 = function(index, wy) {
     var ingredient = DataManager.getSynthesisIngredient(this._item, index);
     var quantity = DataManager.getSynthesisQuantity(this._item, index);
-    var owned = $gameParty.numItems(ingredient);
+    // var owned = $gameParty.numItems(ingredient);
+    var owned = $gameParty.numNotUpgradedIndependentItems(ingredient);
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     this.changeTextColor(this.normalColor());
     var num = '/' + Yanfly.Util.toGroup(quantity);
+//    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(quantity));
     this.drawText(num, 0, wy, ww, 'right');
     ww -= this.textWidth(num);
-    if ($gameParty.numItems(ingredient) >= quantity) {
+    // if ($gameParty.numItems(ingredient) >= quantity) {
+    if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
       this.changeTextColor(this.powerUpColor());
     } else {
       this.changeTextColor(this.powerDownColor());
@@ -1401,10 +1449,12 @@ Window_SynthesisNumber.prototype.drawItemQuantity = function(index, wy) {
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     this.changeTextColor(this.normalColor());
-    var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    // var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(ingredient));
     this.drawText(num, 0, wy, ww, 'right');
     ww -= this.textWidth(num);
-    if ($gameParty.numItems(ingredient) >= quantity) {
+    // if ($gameParty.numItems(ingredient) >= quantity) {
+      if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
       this.changeTextColor(this.powerUpColor());
     } else {
       this.changeTextColor(this.powerDownColor());
@@ -1761,7 +1811,16 @@ Scene_Synthesis.prototype.doBuy = function(number) {
       var quantity = DataManager.getSynthesisQuantity(this._item, i);
       quantity *= number;
       if (!ingredient) continue;
+      // $gameParty.loseItem(ingredient, quantity, false);
+      // $gameParty.gainIndependentItem(ingredient, -quantity, false);
+	  if (DataManager.isIndependent(ingredient)) {
+	    for (var j = 0; j < quantity; ++j) {
+	      var nuItem = $gameParty.getNotUpgradedIndependentItem(ingredient);
+		  $gameParty.gainIndependentItem(nuItem, -1, false);
+	    }
+	  } else {
       $gameParty.loseItem(ingredient, quantity, false);
+    }
     }
     $gameParty.gainItem(this._item, number);
     $gameSystem.addSynth(this._item);
