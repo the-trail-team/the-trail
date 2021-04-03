@@ -604,7 +604,7 @@ Imported["SumRndmDde Gold Window Customizer"] = 1.00;
 				this.drawText(eval(RegExp.$1), x, y + (i * lh), width, 'left');
 			} else if(_.info[i].match(/game-time/i)) {
 				this.contents.fontSize = _.size;
-				this.drawCurrencyValue($gameSystem.playtimeText(), " " + "(Time)", x, y + (i * lh), width, 'override');
+				this.drawCurrencyValue($gameSystem.playtimeText(), " " + "(Playtime)", x, y + (i * lh), width, 'override');
 				//this.drawText($gameSystem.playtimeText(), x, y + (i * lh), width, 'left');
 				this._systemTimeisRefreshing = true;
 			}
