@@ -611,7 +611,7 @@ _.windowSettings = {
 	'position': 'center',
 	'show': _.isNewNWjs ? true : false,
 	'toolbar': false,
-	"icon": "icon/icon.png"
+	"icon": "img/system/icon.png"
 };
 
 _.windowSettings['width']         = _.params['Screen Resolution'].Width || _.params['Game Resolution'].Width;
