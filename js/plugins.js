@@ -307,5 +307,6 @@ var $plugins =
 {"name":"MOG_PickupThrow","status":true,"description":"(v1.3) Sistema de arremessar os eventos.","parameters":{"Character Height":"22","Character Pose":"true","Hold Direction":"true","Hold Direction Button":"pagedown","Sound File":"Jump1"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MOG_DestinationPointer","status":true,"description":"(v1.0) Permite customizar a imagem do cursor do destino.","parameters":{"X-Axis Offset":"0","Y-Axis Offset":"0","Smooth Movement":"true","Zoom Animation":"false","Blink Animation":"false","Float Animation":"true","Blend Mode":"0","Rotation Speed":"0","Number of Frames":"1","Animation Speed":"4"}},
+{"name":"MOG_DizzyEffect","status":true,"description":"(v1.0) Adiciona o efeito Dizzy.","parameters":{}},
 {"name":"MOG_TreasurePopup","status":true,"description":"(v1.1) Apresenta o ícone e o nome do tesouro ganho.","parameters":{"Duration":"60","Fade Speed":"10","X - Axis":"0","Y - Axis":"-32","Random Movement":"false","X Speed":"0","Y Speed":"1","Font Size":"16","Icon Scale":"0.60","Treasure Space Y-Axis":"20","Zoom Effect":"false","Gold Popup":"true","Gold Icon Index":"262"}}
 ];
