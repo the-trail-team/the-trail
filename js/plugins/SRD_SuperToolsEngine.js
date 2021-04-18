@@ -519,7 +519,7 @@ MakerManager.createWindow = function() {
 			width: 600,
 			height: 680,
 			resizable: false,
-			icon: "www/icon/icon.png"
+			icon: "www/img/system/icon.png"
 		}, function(newWindow) {
 			this._window = newWindow;
 			this._window.setShowInTaskbar(false);
@@ -534,7 +534,7 @@ MakerManager.createWindow = function() {
 			height: 680,
 			resizable: false,
 			toolbar: false,
-			icon: "www/icon/icon.png"
+			icon: "www/img/system/icon.png"
 		});
 		this._window.setShowInTaskbar(false);
 	}
