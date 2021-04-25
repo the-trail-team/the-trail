@@ -297,6 +297,7 @@ var $plugins =
 {"name":"OrangeMapChangeEvent","status":true,"description":"Will let you call a common event everytime the player is transfered to a new map","parameters":{"commonEventId":"37"}},
 {"name":"No Autoshadow","status":true,"description":"Removes automatic shadows from displaying in game.","parameters":{}},
 {"name":"OrangeScreenshotSaver","status":true,"description":"This plugin will automatically save screenshots in a \"Screenshots\" folder inside the game","parameters":{}},
+{"name":"RiP_UnlockedCamera","status":true,"description":"Unlock the camera from map edges keeping it centered on the player.","parameters":{"Default Camera":"false"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MOG_ActionName","status":false,"description":"(v1.3) Apresenta uma janela com nome da ação.","parameters":{"Layout X-Axis":"1160","Layout Y-Axis":"410","Name X-Axis":"0","Name Y-Axis":"24","Icon X-Axis":"0","Icon Y-Axis":"-4","Font Size":"22"}},
