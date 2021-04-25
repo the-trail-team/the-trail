@@ -136,6 +136,13 @@ Yanfly.Param.ItemDiscardMessage = String(Yanfly.Parameters['Confirm Message']);
 Yanfly.Param.ItemDiscardYes = String(Yanfly.Parameters['Confirm Yes']);
 Yanfly.Param.ItemDiscardNo = String(Yanfly.Parameters['Confirm No']);
 
+Yanfly.Param.DiscardSound = {
+  name:   "Damage2",
+  volume: 100,
+  pitch:  150,
+  pan:    0
+};
+
 //=============================================================================
 // DataManager
 // ----------------------------------------------------------------------------
@@ -372,6 +379,7 @@ Scene_Item.prototype.onDiscardConfirmCancel = function() {
 };
 
 Scene_Item.prototype.performDiscardItem = function(item, quantity) {
+  AudioManager.playSe(Yanfly.Param.DiscardSound);
   $gameParty.loseItem(item, quantity);
   if ($gameParty.numItems(item) > 0) {
     this._itemActionWindow._discardAmount = 1;
