@@ -2119,8 +2119,8 @@ Game_BattlerBase.FLAG_ID_AUTO_BATTLE  = 0;
 Game_BattlerBase.FLAG_ID_GUARD        = 1;
 Game_BattlerBase.FLAG_ID_SUBSTITUTE   = 2;
 Game_BattlerBase.FLAG_ID_PRESERVE_TP  = 3;
-Game_BattlerBase.ICON_BUFF_START      = 32;
-Game_BattlerBase.ICON_DEBUFF_START    = 48;
+Game_BattlerBase.ICON_BUFF_START      = 64;
+Game_BattlerBase.ICON_DEBUFF_START    = 80;
 
 Object.defineProperties(Game_BattlerBase.prototype, {
     // Hit Points
