@@ -1266,7 +1266,7 @@ Game_BattlerBase.prototype.isMaxDebuffAffected = function(paramId) {
 };
 
 Game_BattlerBase.prototype.maxDebuffLimit = function(paramId) {
-    var value = -1 * Yanfly.Param.BSCDefaultLimit;
+    var value = -1 * 4;
     var states = this.states();
     var length = states.length;
     for (var i = 0; i < length; ++i) {
