@@ -947,7 +947,7 @@ Window_SynthesisCommand.prototype.addCustomCommand = function() {
 };
 
 Window_SynthesisCommand.prototype.addFinishCommand = function() {
-    this.addCommand(Yanfly.Param.ISFinishCmd, 'cancel', true);
+    // this.addCommand(Yanfly.Param.ISFinishCmd, 'cancel', true);
 };
 
 //=============================================================================

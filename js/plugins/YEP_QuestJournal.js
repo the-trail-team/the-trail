@@ -4420,7 +4420,7 @@ Window_QuestCategories.prototype.makeCommandList = function() {
       break;
     case 'cancel':
       var text = this.settings('Cancel Text');
-      this.addCommand(text, 'cancel');
+      // this.addCommand(text, 'cancel');
       continue;
       break;
     }
