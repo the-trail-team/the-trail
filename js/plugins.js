@@ -201,6 +201,7 @@ var $plugins =
 {"name":"No Autoshadow","status":true,"description":"Removes automatic shadows from displaying in game.","parameters":{}},
 {"name":"OrangeScreenshotSaver","status":true,"description":"This plugin will automatically save screenshots in a \"Screenshots\" folder inside the game","parameters":{}},
 {"name":"RiP_UnlockedCamera","status":true,"description":"Unlock the camera from map edges keeping it centered on the player.","parameters":{"Default Camera":"false"}},
+{"name":"HIME_GuestFollowers","status":true,"description":"v1.2 - Allow non-battle actors to follow your party as guests.","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MOG_TrPopUpBattle","status":true,"description":"(v1.0) Apresenta os ícones dos tesouros após o inimigo morrer.","parameters":{"Drop Item Real Time":"true","Animation Type":"0","Fade Duration":"20","Scale":"0.8"}},
