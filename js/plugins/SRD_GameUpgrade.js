@@ -634,11 +634,11 @@ if(Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= '1.3.0') {
 
 if(PIXI.VERSION > '4.4.0') {
 
-if(_.params['Garbage Collection Mode'] === 'Manual') {
+/*if(_.params['Garbage Collection Mode'] === 'Manual') {
 	PIXI.settings.GC_MODE = PIXI.GC_MODES.AUTO;
 } else {
 	PIXI.settings.GC_MODE = PIXI.GC_MODES.MANUAL;
-}
+}*/
 
 if(_.params['Scale Mode'] === 'Linear') {
 	PIXI.settings.SCALE_MODE = PIXI.SCALE_MODES.LINEAR;
@@ -658,11 +658,11 @@ if(_.params['Wrap Mode'] === 'Repeat') {
 
 } else {
 
-if(_.params['Garbage Collection Mode'] === 'Manual') {
+/*if(_.params['Garbage Collection Mode'] === 'Manual') {
 	PIXI.GC_MODES.DEFAULT = PIXI.GC_MODES.AUTO;
 } else {
 	PIXI.GC_MODES.DEFAULT = PIXI.GC_MODES.MANUAL;
-}
+}*/
 
 if(_.params['Scale Mode'] === 'Linear') {
 	PIXI.SCALE_MODES.DEFAULT = PIXI.SCALE_MODES.LINEAR;
@@ -719,14 +719,14 @@ Graphics._applyGameUpgradeParameters = function() {
 	if(this._renderer && _.params['Round Pixels']) {
 		this._renderer.roundPixels = true;
 	}
-	if(!this.isWebGL() && _.params['Garbage Collection Mode'] === 'On Scene Change') {
+	/*if(!this.isWebGL() && _.params['Garbage Collection Mode'] === 'On Scene Change') {
 		_.params['Garbage Collection Mode'] = 'Automatic';
 		if(PIXI.VERSION > '4.4.0') {
 			PIXI.settings.GC_MODE = PIXI.GC_MODES.AUTO;
 		} else {
 			PIXI.GC_MODES.DEFAULT = PIXI.GC_MODES.AUTO;
 		}
-	}
+	}*/
 };
 
 //-----------------------------------------------------------------------------
@@ -1053,13 +1053,13 @@ Scene_Base.prototype.callFadeCallback = function() {
 	}
 };
 
-_.Scene_Base_create = Scene_Base.prototype.create;
+/*_.Scene_Base_create = Scene_Base.prototype.create;
 Scene_Base.prototype.create = function() {
 	if(_.params['Garbage Collection Mode'] === 'On Scene Change') {
 		Graphics.callGC();
 	}
 	_.Scene_Base_create.apply(this, arguments);
-};
+};*/
 
 //-----------------------------------------------------------------------------
 // Scene_Boot
