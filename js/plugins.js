@@ -138,7 +138,7 @@ var $plugins =
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"CGMV_Core","status":true,"description":"Core CGMV Script.","parameters":{}},
 {"name":"CGMV_ExtraStats","status":true,"description":"CGMV Tracking for extra statistics.","parameters":{"ItemsBought":"21","ItemsSold":"22","GoldProfit":"26","GoldSpent":"25","ItemsUsed":"23","GoldLooted":"24","DamageTaken":"28","DamageDealt":"27"}},
-{"name":"CGMV_GameInfo","status":true,"description":"CGMV Game Info","parameters":{"Left Text":"vA.14.0-UNST1 (Alpha 14, Unstable Release 1)","Center Text":"2018-2021","Right Text":"NOTE: Alpha, bugs are expected.","Font Size":"16"}},
+{"name":"CGMV_GameInfo","status":true,"description":"CGMV Game Info","parameters":{"Left Text":"vA.14.0-UNST2 (Alpha 14, Unstable Release 2)","Center Text":"2018-2021","Right Text":"NOTE: Alpha, bugs are expected.","Font Size":"16"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MrTS_MinimumDamage","status":true,"description":"Changes minimum damage from 0.","parameters":{"Minimum Damage":"1"}},
