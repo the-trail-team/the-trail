@@ -942,7 +942,10 @@ Window_MusicMenuList.prototype.drawItem = function(index) {
   var align = this.itemTextAlign();
   this.resetTextColor();
   this.changePaintOpacity(this.isCommandEnabled(index));
-  this.drawIcon(Yanfly.Param.MusicMenuIcon, rect.x + 2, rect.y + 2);
+  const min = 248;
+  const max = 255;
+  var randomIcon = Math.floor(Math.random() * (max - min + 1)) + min;
+  this.drawIcon(randomIcon, rect.x + 2, rect.y + 2);
   var ibw = Window_Base._iconWidth + 4;
   var name = this.commandName(index);
   this.drawText(name, rect.x + ibw, rect.y, rect.width - ibw, align);
