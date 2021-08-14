@@ -211,7 +211,7 @@ var $plugins =
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MOG_TrPopUpBattle","status":true,"description":"(v1.0) Apresenta os ícones dos tesouros após o inimigo morrer.","parameters":{"Drop Item Real Time":"true","Animation Type":"0","Fade Duration":"20","Scale":"0.8"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
-{"name":"MOG_TitleHimawari","status":true,"description":"(v1.0) Cena de titulo animado com personagens.","parameters":{"Char Number":"4","Char X-Axis":"0","Char Y-Axis":"0","Flower X-Axis":"0","Flower Y-Axis":"0","Rotation":"false","Rotation Time":"300"}},
+{"name":"MOG_TitleHimawari","status":true,"description":"(v1.0) Cena de titulo animado com personagens.","parameters":{"Char Number":"13","Char X-Axis":"0","Char Y-Axis":"-50","Flower X-Axis":"0","Flower Y-Axis":"0","Rotation":"false","Rotation Time":"300"}},
 {"name":"MOG_MenuParticles","status":true,"description":"(v1.1) Adiciona partículas nas cenas menu.","parameters":{"Number of Particles":"15","Disable Scenes":"Scene_Test1,Scene_Test2,Scene_Test3","Unique Particles":"false","X-Axis Speed":"0","Y-Axis Speed":"-1","Rotation Speed":"1","Blend Mode":"1"}},
 {"name":"MOG_Scrollbar","status":true,"description":"(v2.2) Adiciona uma barra de rolamento nas janelas.","parameters":{"Always Visible":"true","X-Axis":"0","Y-Axis":"0","Button X-Axis":"1","Button Y-Axis":"1"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
