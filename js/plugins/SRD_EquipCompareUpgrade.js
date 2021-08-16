@@ -1941,10 +1941,16 @@ Window_EquipStatus.prototype.standardFontSize = function() {
 if(Imported.YEP_EquipCore) {
 
 Window_StatCompare.prototype.refresh = function() {
-	this.contents.clear();
 	if(this._actor && this._tempActor) {
+		this.contents.clear();
 		let place = 0;
-		for(var i = 1; i < _.names.length; i++) {
+		for(var i = 1; i < 8; i++) { // 7 core stats will always be displayed
+			if(_.names[i]) {
+				this.drawItem(0, place * this.lineHeight(), i);
+				place++;
+			}
+		}
+		for(var i = 8; i < _.names.length; i++) { // stats past the core 7 will be showed if they are modified
 			if(_.names[i]) {
 				let actor = this._tempActor;
 				const newValue = eval(_.evals[i]);
@@ -1962,7 +1968,7 @@ Window_StatCompare.prototype.refresh = function() {
 Window_StatCompare.prototype.drawParamName = function(y, paramId) {
 	const x = this.textPadding();
 	this.changeTextColor(this.systemColor());
-	this.drawText(_.names[paramId], x, y, this._paramNameWidth);
+	this.drawText(_.names[paramId], x, y, this._paramNameWidth * 2.5); // slightly more room for param name
 };
 
 Window_StatCompare.prototype.drawCurrentParam = function(y, paramId) {
