@@ -4,6 +4,7 @@ var $plugins =
 [
 {"name":"Community_Basic","status":true,"description":"Plugin used to set basic parameters.","parameters":{"cacheLimit":"60","screenWidth":"1280","screenHeight":"720","changeWindowWidthTo":"","changeWindowHeightTo":"","renderingMode":"webgl","alwaysDash":"off"}},
 {"name":"Fullscreen","status":true,"description":"Starts the game in fullscreen","parameters":{}},
+{"name":"F11","status":true,"description":"Binds fullscreen toggling to F11 in addition to the default F4","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"GraphicsRenderFix","status":true,"description":"","parameters":{}},
