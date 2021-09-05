@@ -601,6 +601,10 @@ DataManager.processEEDNotetags1 = function(group) {
         conditionalLines.push(line);
       }
     }
+    // origin crystal (1/100,000 drop)
+    var id = 34;
+    var rate = 0.00001;
+    this.createEnemyDrop(obj, id, rate, 2);
   }
 };
 
