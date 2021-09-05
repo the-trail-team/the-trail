@@ -547,7 +547,7 @@ DataManager.processCoreAINotetags1 = function(group) {
 
     obj.aiPattern = [];
     var aiPatternFlag = false;
-    obj.aiConsiderTaunt = false;
+    obj.aiConsiderTaunt = true;
     obj.aiLevel = Yanfly.Param.CoreAIDefaultLevel * 0.01;
 
 		for (var i = 0; i < notedata.length; i++) {
