@@ -1951,14 +1951,14 @@ Window_StatCompare.prototype.refresh = function() {
 				actor = this._actor;
 				const diffvalue = newValue - eval(_.evals[i]);
 				if(diffvalue !== 0) {
-					this.drawItem(0, place * this.lineHeight() - ((place - 1) * 2), i);
+					this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
 					place++;
 				}
 			}
 		}
 		for(var i = 3; i < 8; i++) { // stats 3-7 (atk, def, mat, mdf, agi) core stats will always be displayed
 			if(_.names[i]) {
-				this.drawItem(0, place * this.lineHeight() - ((place - 1) * 2), i);
+				this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
 				place++;
 			}
 		}
@@ -1969,7 +1969,7 @@ Window_StatCompare.prototype.refresh = function() {
 				actor = this._actor;
 				const diffvalue = newValue - eval(_.evals[i]);
 				if(diffvalue !== 0) {
-					this.drawItem(0, place * this.lineHeight() - ((place - 1) * 2), i);
+					this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
 					place++;
 				}
 			}
