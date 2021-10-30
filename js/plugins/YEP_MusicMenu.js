@@ -769,6 +769,7 @@ Yanfly.Param.MusicMenuHiddenHelp = String(Yanfly.Parameters['Hidden Help']);
 
 Yanfly.SetupMusicMenuParameters = function() {
   Yanfly.Param.MusicMenuSongFilenameList = [''];
+  Yanfly.Param.MusicMenuSongIconList = [''];
   Yanfly.Param.MusicMenuSongList = [['']];
   for (var i = 1; i < 101; i++) {
     var paramName = 'Song ' + i + ' Data';
@@ -776,6 +777,7 @@ Yanfly.SetupMusicMenuParameters = function() {
     var paramData = paramStr.split(';')
     Yanfly.Param.MusicMenuSongList.push(paramData);
     Yanfly.Param.MusicMenuSongFilenameList.push(paramData[0]);
+    Yanfly.Param.MusicMenuSongIconList.push(paramData[6]);
   }
 }
 
@@ -942,10 +944,8 @@ Window_MusicMenuList.prototype.drawItem = function(index) {
   var align = this.itemTextAlign();
   this.resetTextColor();
   this.changePaintOpacity(this.isCommandEnabled(index));
-  const min = 248;
-  const max = 255;
-  var randomIcon = Math.floor(Math.random() * (max - min + 1)) + min;
-  this.drawIcon(randomIcon, rect.x + 2, rect.y + 2);
+  var icon = Yanfly.Param.MusicMenuSongIconList[index + 1];
+  this.drawIcon(icon, rect.x + 2, rect.y + 2);
   var ibw = Window_Base._iconWidth + 4;
   var name = this.commandName(index);
   this.drawText(name, rect.x + ibw, rect.y, rect.width - ibw, align);
