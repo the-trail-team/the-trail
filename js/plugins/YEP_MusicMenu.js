@@ -978,6 +978,7 @@ Scene_MusicMenu.prototype.create = function() {
   Scene_MenuBase.prototype.create.call(this);
   this.saveBgmAndBgs();
   AudioManager.fadeOutBgm(1)
+  AudioManager.fadeOutBgs(1)
   this.createHelpWindow();
   this.createMusicListWindow();
 };
