@@ -207,7 +207,7 @@
       "y": 0,
       "opacity": "255",
       "width": "360",
-      "rows": "11",
+      "rows": "Math.min(15, Math.ceil(this.maxItems() / this.maxCols()))",
       "cols": "1",
       "lineHeight": "36",
       "align": "left"
