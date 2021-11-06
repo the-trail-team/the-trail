@@ -9182,7 +9182,7 @@
     0,
     0,
     0,
-    0,
+    11,
     0,
     0,
     0,
@@ -21840,7 +21840,90 @@
       "x": 46,
       "y": 25
     },
-    null,
+    {
+      "id": 50,
+      "name": "EV050",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move1",
+                  "pan": 0,
+                  "pitch": 100,
+                  "volume": 90
+                }
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                132,
+                11,
+                19,
+                4,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 12,
+      "y": 19
+    },
     null,
     {
       "id": 52,
@@ -21879,7 +21962,7 @@
                 1,
                 44,
                 0,
-                3,
+                2,
                 1
               ]
             },
@@ -21962,86 +22045,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\-Maybe a test of the mind won't"
+                "\\-Perhaps one of the particularly powerful"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "be enough to slow you down..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Unknown",
-                0,
-                0,
-                2
+                "souls that I've gathered in this past"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\-..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Unknown",
-                0,
-                0,
-                2
+                "millenium will be able to stop you"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\-Screw these puzzles. If you managed"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "to find that hourglass, there's no"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "way they will halt your progress."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Unknown",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\-Perhaps some of the souls I've gathered"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "will be able to stop you in your tracks."
+                "dead in your tracks."
               ]
             },
             {
@@ -22060,7 +22085,7 @@
               "indent": 1,
               "parameters": [
                 {
-                  "name": "dungeon_bladesville_3",
+                  "name": "dungeon_bladesville_2",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -22072,7 +22097,7 @@
               "indent": 1,
               "parameters": [
                 {
-                  "name": "dungeon_bladesville_3",
+                  "name": "dungeon_bladesville_2",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
