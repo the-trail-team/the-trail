@@ -2,11 +2,12 @@
 README in progress
 
 # pre-commit Hook
-Contributors should use this hook in order to keep files in /data/ pretty.
+Contributors editing with RPG Maker MV should use this hook to keep .json files properly formatted.
 ```
 #!/usr/bin/env node
 
 const data_directory = "data"
+const file = ['package.json']
 let command = '';
 const fs = require('fs')
 const { exec } = require('child_process')
@@ -24,6 +25,9 @@ try {
             fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
             command += ` ${data_directory}/${file}`
         })
+
+        const json = fs.readFileSync(`./${file}`)
+        fs.writeFileSync(`./${file}`, JSON.stringify(JSON.parse(json), null, 2))
     })
     
 
