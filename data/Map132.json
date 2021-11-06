@@ -21367,12 +21367,12 @@
           "conditions": {
             "actorId": 1,
             "actorValid": false,
-            "itemId": 1,
+            "itemId": 153,
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 59,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -21381,11 +21381,62 @@
           },
           "directionFix": true,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Chest",
+            "tileId": 0,
+            "characterName": "!$SoulChest",
             "direction": 2,
             "pattern": 1,
-            "tileId": 0
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 153,
+            "itemValid": true,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 59,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$SoulChest",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
           },
           "list": [
             {
@@ -21561,8 +21612,8 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 59,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -21571,11 +21622,11 @@
           },
           "directionFix": true,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Chest",
+            "tileId": 0,
+            "characterName": "!$SoulChest",
             "direction": 8,
             "pattern": 1,
-            "tileId": 0
+            "characterIndex": 0
           },
           "list": [
             {
@@ -21728,12 +21779,12 @@
           "conditions": {
             "actorId": 1,
             "actorValid": false,
-            "itemId": 1,
+            "itemId": 153,
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 59,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -21742,11 +21793,62 @@
           },
           "directionFix": true,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Chest",
+            "tileId": 0,
+            "characterName": "!$SoulChest",
             "direction": 2,
             "pattern": 1,
-            "tileId": 0
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 153,
+            "itemValid": true,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 59,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!$SoulChest",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
           },
           "list": [
             {
@@ -21922,8 +22024,8 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 59,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -21932,11 +22034,11 @@
           },
           "directionFix": true,
           "image": {
-            "characterIndex": 4,
-            "characterName": "!Chest",
+            "tileId": 0,
+            "characterName": "!$SoulChest",
             "direction": 8,
             "pattern": 1,
-            "tileId": 0
+            "characterIndex": 0
           },
           "list": [
             {
@@ -26603,7 +26705,7 @@
             "actorId": 1,
             "actorValid": false,
             "itemId": 153,
-            "itemValid": true,
+            "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": true,
             "switch1Id": 59,
