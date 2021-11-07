@@ -2635,21 +2635,14 @@
       "variance": 5
     },
     "description": "\\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
-    "effects": [
-      {
-        "code": 21,
-        "dataId": 7,
-        "value1": 0.5,
-        "value2": 0
-      }
-    ],
+    "effects": [],
     "hitType": 0,
     "iconIndex": 96,
     "message1": " casts %1!",
     "message2": "",
     "mpCost": 15,
     "name": "Steam Therapy",
-    "note": "<Boost Damage>\n\n<Multiple Elements: 2>\n<Remove State Category: weak debuff>\n<Remove State Category: Ice>\n<Remove State Category: Water>\n\n<setup action>\ndisplay action\nperform start\n</setup action>\n\n<whole action>\nanimation 67: user\nwait for animation\nanimation 129: user\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\neval: user.addBuff(4, 3);\neval: user.startAnimation(51);\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Boost Damage>\n\n<Multiple Elements: 2>\n<Remove State Category: weak debuff>\n<Remove State Category: Ice>\n<Remove State Category: Water>\n\n<setup action>\ndisplay action\nperform start\n</setup action>\n\n<whole action>\nanimation 67: user\nwait for animation\nanimation 129: user\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nadd state 7: target\neval: user.addBuff(4, 3);\neval: user.startAnimation(51);\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
