@@ -1982,7 +1982,13 @@
     "id": 59,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 43,
+        "value": 1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -1992,7 +1998,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Rose Headpiece Wearer",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<Ally Aura: 43>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar healBoost = 0.05;\nvar elementId = 11;\n\nvar elements = this.getItemElements();\nif (elements.contains(elementId)) {\nvalue = Math.ceil(value * rate2);}\n</Custom Confirm Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
