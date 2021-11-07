@@ -4079,9 +4079,9 @@ Game_Actor.prototype.performVictory = function() {
 };
 
 Game_Actor.prototype.performEscape = function() {
-    if (this.canMove()) {
+    // if (this.canMove()) {
         this.requestMotion('escape');
-    }
+    // }
 };
 
 Game_Actor.prototype.makeActionList = function() {
