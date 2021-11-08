@@ -4406,7 +4406,7 @@ Game_Actor.prototype.attackMotion = function() {
 Game_Actor.prototype.performEscapeSuccess = function() {
     if (this.battler()) {
       this.performEscape();
-      this.battler().startMove(600, 0, 60);
+      this.battler().startMove(600, 0, 120);
     }
 };
 
