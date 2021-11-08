@@ -19,7 +19,7 @@
   }
  
   extend(Scene_Boot, 'start', function() {
-		$gameTemp.isPlaytest() ? false : Graphics._switchFullScreen();
+		$gameSwitches.value(77) ? Graphics._switchFullScreen() : false;
   })
   
   
