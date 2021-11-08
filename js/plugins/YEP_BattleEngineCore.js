@@ -1819,10 +1819,10 @@ BattleManager.processEscape = function() {
     }
     if ($gamePlayer.isDebugThrough()) success = true;
     if (success) {
+        this.processAbort();
         $gameParty.performEscapeSuccess();
         this.displayEscapeSuccessMessage();
         this._escaped = true;
-        this.processAbort();
     } else {
         this._escapeRatio += this._escapeFailBoost; // escape ratio increases by 0.1 on failed escape  
         this.displayEscapeFailureMessage();
