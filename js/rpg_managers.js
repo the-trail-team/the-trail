@@ -2706,9 +2706,14 @@ BattleManager.updateBattleEnd = function() {
     this._phase = null;
 };
 
+function randomizeReward(variation) {
+    variation = Math.random() < 0.5 ? variation : -variation;
+    return 1 + ((Math.random() * variation) * 0.01);
+}
+
 BattleManager.makeRewards = function() {
     this._rewards = {};
-    this._rewards.gold = $gameTroop.goldTotal();
+    this._rewards.gold = Math.round($gameTroop.goldTotal() * randomizeReward(5));
     this._rewards.exp = $gameTroop.expTotal();
     this._rewards.items = $gameTroop.makeDropItems();
 };
@@ -2773,7 +2778,7 @@ BattleManager.gainRewards = function() {
 BattleManager.gainExp = function() {
     var exp = this._rewards.exp;
     $gameParty.allMembers().forEach(function(actor) {
-        actor.gainExp(exp);
+        actor.gainExp(Math.round(exp * randomizeReward(5)));
     });
 };
 
