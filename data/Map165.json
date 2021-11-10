@@ -11615,39 +11615,47 @@
           },
           "list": [
             {
-              "code": 205,
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "..."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Yes",
+                  "No"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
               "indent": 0,
               "parameters": [
                 0,
-                {
-                  "list": [
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
+                "Yes"
               ]
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   -34,
@@ -11661,7 +11669,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "a_Chtt",
@@ -11673,14 +11681,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   -68,
@@ -11694,7 +11702,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "a_Chtt",
@@ -11706,14 +11714,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   -102,
@@ -11727,7 +11735,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "a_Chtt",
@@ -11739,14 +11747,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 132,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "battle_miniboss",
@@ -11758,14 +11766,14 @@
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "ShowPartyLimitGauge"
               ]
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 1,
@@ -11775,7 +11783,7 @@
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 2,
@@ -11785,7 +11793,7 @@
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 3,
@@ -11795,7 +11803,7 @@
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 4,
@@ -11805,14 +11813,14 @@
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "SetBattleSE Battle3 0 100 90"
               ]
             },
             {
               "code": 133,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Victory2",
@@ -11824,7 +11832,7 @@
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   0,
@@ -11838,7 +11846,7 @@
             },
             {
               "code": 301,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 53,
@@ -11848,42 +11856,42 @@
             },
             {
               "code": 601,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 602,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 603,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
               "indent": 1,
               "parameters": []
             },
             {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
               "code": 604,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 0
@@ -11891,7 +11899,7 @@
             },
             {
               "code": 132,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "battle_normal",
@@ -11903,7 +11911,7 @@
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 1,
@@ -11913,7 +11921,7 @@
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 2,
@@ -11923,7 +11931,7 @@
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 3,
@@ -11933,7 +11941,7 @@
             },
             {
               "code": 318,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 4,
@@ -11943,14 +11951,14 @@
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "SetBattleSE Battle1 0 100 90"
               ]
             },
             {
               "code": 133,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Victory1",
@@ -11962,12 +11970,35 @@
             },
             {
               "code": 121,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 75,
                 75,
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "No"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
