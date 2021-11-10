@@ -840,7 +840,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "With a bit of magic channeled within, conjure up this nifty gadget that\ndamages and debuffs enemies in its radius. Additionally debuffs \\c[27]\\bp0[0]\\bp=1[1]\\bp=2[2]\\bp=3[3]\\bp=4[4]\\bp=5[5] extra stat\\bp0[s]\\bp=2[s]\\bp=3[s]\\bp=4[s]\\bp=5[s]\\c[0].",
+    "description": "With a bit of magic channeled within (still uses ATK), conjure up this nifty gadget\nthat damages and debuffs enemies in its radius. Additionally debuffs \\c[27]\\bp0[0]\\bp=1[1]\\bp=2[2]\\bp=3[3]\\bp=4[4]\\bp=5[5] extra stat\\bp0[s]\\bp=2[s]\\bp=3[s]\\bp=4[s]\\bp=5[s]\\c[0].",
     "effects": [
       {
         "code": 32,
@@ -886,7 +886,7 @@
     "requiredWtypeId2": 0,
     "scope": 2,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
