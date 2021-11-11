@@ -800,6 +800,7 @@ Scene_Preload.prototype.create = function() {
 	Scene_Base.prototype.create.call(this);
 	this.createBackground();
 	this.createSubtitle();
+	this.createTip();
 	ImageManager.clear();
 };
 
@@ -824,6 +825,42 @@ Scene_Preload.prototype.createSubtitle = function() {
 	this._subtitle.bitmap.fontSize = _.fontSize;
 	this.addChild(this._subtitle);
 };
+
+Scene_Preload.prototype.createTip = function() {
+	this._tipHeight = Graphics.boxHeight;
+	this._tip = new Sprite(new Bitmap(Graphics.boxWidth, this._tipHeight));
+	this._tip.bitmap.fontSize = 20;
+	this.addChild(this._tip);
+
+	const tips = [
+		"You can press SHIFT when the text window is open to view a message backlog.",
+		"Pay attention to your surroundings. You can find hidden chests in the most bizarre of places.",
+		"The options menu has a wide variety of... well, options. Give it a look and personalize your experience.",
+		"You can retry battles, but at a tax of 10% of your Bit balance. Don't take losing too lightly.",
+		"Party members wake up after resting with varying moods. The Status menu can enlighten you in regards to how they're feeling.",
+		"Certain inns are \"premium\" inns. These will cost an extra 50% Bits to rest at, but will give the very useful \"Well Rested\" buff.",
+		"Dark enemies grow stronger after the sun sets. They become much stronger but have a better chance of dropping powerful equipment.",
+		"Legends speak of eons-old crystals formed when the universe was created. They still exist... somewhere.",
+		"Boosting an item won't do anything. Make sure you haven't consumed any boosts before using an item!",
+		"The heat of battle is enough to get anyone nervous. Don't let pressure cloud your judgement.",
+		"Buffs and debuffs can increase or decrease a stat by 50% max. Don't underestimate them!",
+		"Don't forget item upgraders exist. If you find yourself stuck on a difficult fight, consider min-maxing your equipment.",
+		"AP is gained exponentially. Growth starts slow, but a level 100 party member would have 2500 AP!",
+		"Every level up gives you more AP and JP. Don't forget to see what new allocations you can make after every new level.",
+		"Skills are separated into Special, Magic, and Passive skills.",
+		"Shops contain many, many useful items to aid your adventure. Be sure to check them out!",
+		"With the link between the Above and the Overworld severed, the Immortals can no longer reach us.",
+		"Adon is just the one continent in the Overworld, and its culture is largely separeted from Telluria's.",
+		"The continent of Telluria is split into many regions. Telluria Castle is located in Telluria Field, the heart of the continent.",
+		"The Gulf of Telluria borders many unique regions. Taking a ship into it is a quick way to reach many new places.",
+		"These Tutorial Tips used to show up in-game and interrupt you. Doesn't that sound annoying?",
+		"These Tutorial Tips were added in Alpha 14!"
+	]
+	var chosenTip = Math.floor(Math.random() * tips.length);
+
+	this._tip.bitmap.drawText("TUTORIAL TIP", 0, -230, Graphics.boxWidth, this._tipHeight, 'center');
+	this._tip.bitmap.drawText(tips[chosenTip], 0, -200, Graphics.boxWidth, this._tipHeight, 'center');
+}
 
 Scene_Preload.prototype.refreshSubtitle = function() {
 	this._mainIndex++;
