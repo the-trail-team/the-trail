@@ -480,7 +480,7 @@ const tips = [
 	"The options menu has a wide variety of... well, options. Give it a look and personalize your experience.",
 	"You can retry battles, but at a tax of 10% of your Bit balance. Don't take losing too lightly.",
 	"Party members wake up after resting with varying moods. The Status menu can enlighten you in regards to how they're feeling.",
-	"Certain inns are \"premium\" inns. These will cost an extra 50% Bits to rest at, but will give the very useful \"Well Rested\" buff.",
+	"Certain inns are \"premium\" inns. These will cost an extra 50% Bits to rest at, but will give the very useful Well Rested buff.",
 	"Dark enemies grow stronger after the sun sets. They become much stronger but have a better chance of dropping powerful equipment.",
 	"Legends speak of eons-old crystals formed when the universe was created. They still exist... somewhere.",
 	"Boosting an item won't do anything. Make sure you haven't consumed any boosts before using an item!",
@@ -492,11 +492,17 @@ const tips = [
 	"Skills are separated into Special, Magic, and Passive skills.",
 	"Shops contain many, many useful items to aid your adventure. Be sure to check them out!",
 	"With the link between the Above and the Overworld severed, the Immortals can no longer reach us.",
-	"Adon is just the one continent in the Overworld, and its culture is largely separeted from Telluria's.",
+	"Adon is just the one continent in the Overworld, and its culture is largely separated from Telluria's.",
 	"The continent of Telluria is split into many regions. Telluria Castle is located in Telluria Field, the heart of the continent.",
 	"The Gulf of Telluria borders many unique regions. Taking a ship into it is a quick way to reach many new places.",
 	"These Tutorial Tips used to show up in-game and interrupt you. Doesn't that sound annoying?",
-	"These Tutorial Tips were added in Alpha 14!"
+	"These Tutorial Tips were added in Alpha 14!",
+	"Sleeping in your own bed will always be free.",
+	"The sun falls at 21:00 and rises at 5:00. Plan out your days efficiently!",
+	"There are rumors of a mysterious merchant that sets up shop in the Blazing Sands at night.",
+	"Every copy of The Trail is personalized.",
+	"Sleeping at a premium inn will neutralize the entire team's moods.",
+	"Areas of the Overworld with a blue arrow over them need to be interacted with to be entered. They're not inaccessible!"
 ]
 
 //-----------------------------------------------------------------------------
@@ -878,7 +884,7 @@ Scene_Preload.prototype.newTip = function() {
 Scene_Preload.prototype.refreshTip = function() {
 	this._tip.bitmap.clear();
 	this._tip.bitmap.drawText("TUTORIAL TIP", 0, -30, Graphics.boxWidth, this._tipHeight, 'center');
-	this._tip.bitmap.drawText(tips[this._tip.chosenTip], 0, 0, Graphics.boxWidth, this._tipHeight, 'center');
+	this._tip.bitmap.drawText("#" + (this._tip.chosenTip + 1) + ": " + tips[this._tip.chosenTip], 0, 0, Graphics.boxWidth, this._tipHeight, 'center');
 }
 
 Scene_Preload.prototype.drawTipIn = function() {
