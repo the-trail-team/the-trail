@@ -502,8 +502,11 @@ const tips = [
 	"There are rumors of a mysterious merchant that sets up shop in the Blazing Sands at night.",
 	"Every copy of The Trail is personalized.",
 	"Sleeping at a premium inn will neutralize the entire team's moods.",
-	"Areas of the Overworld with a blue arrow over them need to be interacted with to be entered. They're not inaccessible!"
+	"Areas of the Overworld with a blue arrow over them need to be interacted with to be entered. They're not inaccessible!",
+	""
 ]
+
+tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
 
 //-----------------------------------------------------------------------------
 // Take Care of Audio Preloading
