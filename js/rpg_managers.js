@@ -1931,7 +1931,7 @@ SceneManager.onKeyDown = function(event) {
         switch (event.keyCode) {
         case 116:   // F5
             if (Utils.isNwjs()) {
-                if (window.confirm("Do you want to reload the game and return to the title screen? All progress since the last save will be lost.")) {
+                if (window.confirm("Do you want to reload the game and return to the title screen?\nAll progress since the last save will be lost.\n\nRELOADING IN THIS WAY IS UNSUPPORTED AND CAN CAUSE VARIOUS BUGS/CRASHES!\nFULLY CLOSING THE GAME AND RELAUNCHING IT IS RECOMMENDED!")) {
                     location.reload();
                 }
             }
