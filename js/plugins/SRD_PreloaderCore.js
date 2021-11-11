@@ -358,6 +358,7 @@
  *
  */
 
+if (Utils.isOptionValid('test') !== 1) {
 var SRD = SRD || {};
 SRD.PreloaderCore = SRD.PreloaderCore || {};
 
@@ -1088,4 +1089,4 @@ AudioManager.createBuffer = function(folder, name) {
 
 }
 
-})(SRD.PreloaderCore);
+})(SRD.PreloaderCore);}
