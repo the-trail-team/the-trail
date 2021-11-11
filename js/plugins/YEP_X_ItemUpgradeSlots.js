@@ -1121,7 +1121,7 @@ Window_UpgradeItemList.prototype.containsType = function(item) {
     }
     if (DataManager.isArmor(this._item)) {
       if (item.upgradeArmorType.contains(0)) return true;
-      if (item.upgradeArmorType.contains(this._item.atypeId)) return true;
+      if (item.upgradeArmorType.contains(this._item.etypeId)) return true;
     }
     return false;
 };
