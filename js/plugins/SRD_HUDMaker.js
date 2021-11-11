@@ -219,7 +219,7 @@ _.getFileList = function(folder) {
 
 _.getFirstFile = function(folder) {
 	if(!_.isPlaytest) return '';
-	return FileManager.getFirstFile('hud', folder);
+	// return FileManager.getFirstFile('hud', folder);
 };
 
 _.checkDataExists();
