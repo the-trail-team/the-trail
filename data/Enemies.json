@@ -3849,7 +3849,7 @@
       {
         "code": 32,
         "dataId": 7,
-        "value": 0.2
+        "value": 1
       },
       {
         "code": 11,
@@ -3939,7 +3939,7 @@
     ],
     "gold": 2500,
     "name": "Laeryidyean EX",
-    "note": "<AI Level: 100>\n\n<Sideview Battler: Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState === State 5 +++ User HP% param >= 50%: Bubble\n</AI Priority>\n\n<Sideview Battler: Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       20000,
       9999,
