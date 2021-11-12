@@ -356,7 +356,28 @@ Sprite_Character.prototype.updateIconOnEvent = function() {
     var bufferX = this._character.iconOnEventBufferX();
     var bufferY = this._character.iconOnEventBufferY();
     this._iconOnEventSprite.x = bufferX;
-    this._iconOnEventSprite.y = -1 * this.height + bufferY;
+    var intendedY = -1 * this.height + bufferY
+    if (this._iconOnEventId == 576 || this._iconOnEventId == 609) {
+      this._questBounceBuffer = 3; // buffer for bouncing quest icon
+      if (direction == 0) {
+        this._iconOnEventSprite.y += 0.1;
+        if (this._iconOnEventSprite.y >= intendedY + this._questBounceBuffer) {
+          direction = 1;
+        }
+      } else if (direction == 1) {
+        this._iconOnEventSprite.y -= 0.1;
+        if (this._iconOnEventSprite.y <= intendedY - this._questBounceBuffer) {
+          direction = 0;
+        }
+      } else {
+        this._iconOnEventSprite.y = intendedY;
+        if (this._iconOnEventSprite.y = intendedY) {
+          direction = 1;
+        }
+      }
+    } else {
+      this._iconOnEventSprite.y = intendedY;
+    }
   }
 };
 
