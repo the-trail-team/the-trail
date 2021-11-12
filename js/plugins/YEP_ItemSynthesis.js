@@ -1677,14 +1677,14 @@ Scene_Synthesis.availableArmors = function() {
 };
 
 Scene_Synthesis.sortList = function(list) {
-    list.sort(function(a, b) {
+    /*list.sort(function(a, b) {
         var p1 = a.id;
         var p2 = b.id;
         if (p1 !== p2) {
             return p1 - p2;
         }
         return b - a;
-    });
+    });*/
     return list;
 };
 
