@@ -620,8 +620,10 @@ BattleManager.actionAttackAnimation = function(actionArgs) {
 BattleManager.actionBattleHud = function(actionName) {
   if (actionName === 'HIDE BATTLE HUD') {
     this._windowLayer.x = Graphics.boxWidth * 495;
+    $gameSwitches.setValue(78, true);
   } else if (actionName === 'SHOW BATTLE HUD') {
     this._windowLayer.x = 0;
+    $gameSwitches.setValue(78, false);
   }
   return false;
 }

@@ -1633,6 +1633,7 @@ BattleManager.initMembers = function() {
     this._allSelection = false;
     this._victoryPhase = false;
     this._forceActionQueue = [];
+    $gameSwitches.setValue(78, false);
 };
 
 BattleManager.isBattleSystem = function(value) {
@@ -1819,6 +1820,7 @@ BattleManager.processEscape = function() {
     }
     if ($gamePlayer.isDebugThrough()) success = true;
     if (success) {
+        $gameSwitches.setValue(78, true);
         this.processAbort();
         $gameParty.performEscapeSuccess();
         this.displayEscapeSuccessMessage();
