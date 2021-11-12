@@ -1150,6 +1150,7 @@ Window_Base.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
 Window_Base.prototype.drawSkillMasteryLevel = function(skill, x, y, width) {
   var level = this._actor.skillMasteryLevel(skill);
   if (level <= 0 && !Yanfly.Param.SMLShowLevel0) return;
+  if (skill.masteryMaxLevel == 0) return;
   var fmt = Yanfly.Param.SMLTextFmt;
   var text = fmt.format(Yanfly.Util.toGroup(level));
   this.resetFontSettings();
