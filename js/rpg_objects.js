@@ -3997,7 +3997,9 @@ Game_Actor.prototype.isSpriteVisible = function() {
 };
 
 Game_Actor.prototype.startAnimation = function(animationId, mirror, delay) {
-    mirror = !mirror;
+    if (animationId !== 63) {
+        mirror = !mirror;
+    }
     Game_Battler.prototype.startAnimation.call(this, animationId, mirror, delay);
 };
 
