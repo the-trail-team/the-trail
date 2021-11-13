@@ -358,7 +358,6 @@
  *
  */
 
-if (Utils.isOptionValid('test') !== 1) {
 var SRD = SRD || {};
 SRD.PreloaderCore = SRD.PreloaderCore || {};
 
@@ -573,10 +572,14 @@ _.preloadAudioFolder = function(folder, variable) {
 
 _.setupAudioPreloads = function() {
 	this.audioPreloadCount = 0;
-	this.preloadAudioFolder('bgm', this.preloadBGM);
-	this.preloadAudioFolder('bgs', this.preloadBGS);
-	this.preloadAudioFolder('me', this.preloadME);
-	this.preloadAudioFolder('se', this.preloadSE);
+	if (Utils.isOptionValid('test') == 1) {
+		this.preloadAudioFolder('bgm', "important");
+	} else {
+		this.preloadAudioFolder('bgm', this.preloadBGM);
+		this.preloadAudioFolder('bgs', this.preloadBGS);
+		this.preloadAudioFolder('me', this.preloadME);
+		this.preloadAudioFolder('se', this.preloadSE);
+	}
 	this.audioReady = true;
 };
 
@@ -1098,4 +1101,4 @@ AudioManager.createBuffer = function(folder, name) {
 
 }
 
-})(SRD.PreloaderCore);}
+})(SRD.PreloaderCore);
