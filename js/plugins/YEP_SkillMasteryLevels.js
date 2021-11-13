@@ -976,7 +976,7 @@ Game_BattlerBase.prototype.skillMpCost = function(skill) {
   if (cost > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      cost = Math.floor(skill.masteryMpCost.call(this, cost, level, skill));
+      cost = Math.round(skill.masteryMpCost.call(this, cost, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery MP Cost Formula for ' +
@@ -994,7 +994,7 @@ Game_BattlerBase.prototype.skillTpCost = function(skill) {
   if (cost > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      cost = Math.floor(skill.masteryTpCost.call(this, cost, level, skill));
+      cost = Math.round(skill.masteryTpCost.call(this, cost, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery TP Cost Formula for ' +
@@ -1014,7 +1014,7 @@ Game_BattlerBase.prototype.skillHpCost = function(skill) {
   if (cost > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      cost = Math.floor(skill.masteryHpCost.call(this, cost, level, skill));
+      cost = Math.round(skill.masteryHpCost.call(this, cost, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery HP Cost Formula for ' +
@@ -1035,7 +1035,7 @@ Game_BattlerBase.prototype.applyCooldownMods = function(skill) {
   if (turns > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      turns = Math.floor(skill.masteryCooldown.call(this, turns, level, skill));
+      turns = Math.round(skill.masteryCooldown.call(this, turns, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery Cooldown Formula for ' +
