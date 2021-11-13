@@ -75,24 +75,3 @@ if(MSX.AlphabeticalSort.sortSkillList){
         }
     };
 }
-
-/*if(true){
-    Window_SynthesisList.prototype.makeItemList = function() {
-        String synthesisItems = Scene_Synthesis.availableItems();
-        synthesisItems.sort(function(a,b){
-            if(a.name.toLowerCase() < b.name.toLowerCase()) return -1;
-            if(a.name.toLowerCase() > b.name.toLowerCase()) return 1;
-            return 0;
-        });
-        this._data = synthesisItems.filter(function(item) {
-            return this.includes(item);
-        }, this);
-        if (this.includes(null)) {
-            this._data.push(null);
-        }
-
-        if(Imported.YEP_ItemCore){
-            if (SceneManager._scene instanceof Scene_Item) this.listEquippedItems();
-        }
-    };
-}*/
