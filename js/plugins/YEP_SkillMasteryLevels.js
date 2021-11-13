@@ -1129,7 +1129,7 @@ Window_Base.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
   width -= Window_Base._iconWidth + 4;
   var color1 = this.textColor(Yanfly.Param.SMLGauge1);
   var color2 = this.textColor(Yanfly.Param.SMLGauge2);
-  var gaugeH = Yanfly.Param.SMLGaugeH;
+  gaugeH = this._gaugeH;
   var gaugeY = y + this.lineHeight() - gaugeH - 2;
   if (Yanfly.Param.SMLGaugeOutline) {
     gaugeY -= 2;
