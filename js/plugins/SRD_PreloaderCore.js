@@ -502,7 +502,11 @@ const tips = [
 	"Every copy of The Trail is personalized.",
 	"Sleeping at a premium inn will neutralize the entire team's moods.",
 	"Areas of the Overworld with a blue arrow over them need to be interacted with to be entered. They're not inaccessible!",
-	""
+	"",
+	"The Quick Access Menu is a helpful utility. Check it out using your configured key for it (Q by default).",
+	"Anything that regrows has its own unique timer that ticks down every hour.",
+	"Blueberries regrow after a mere 16 hours, while flowers take an entire week to sprout once more.",
+	"Oreleaf can be found in the mine north of Bladesville. It's a mysterious metallic plant that yields ore and regrows every few days."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
