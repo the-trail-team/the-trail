@@ -211,6 +211,7 @@ var $plugins =
 {"name":"RiP_UnlockedCamera","status":true,"description":"Unlock the camera from map edges keeping it centered on the player.","parameters":{"Default Camera":"false"}},
 {"name":"HIME_GuestFollowers","status":true,"description":"v1.2 - Allow non-battle actors to follow your party as guests.","parameters":{}},
 {"name":"MasteryLevelDisplay","status":true,"description":"Overrides Window_SkillList.prototype.drawItem","parameters":{}},
+{"name":"TutorialTips","status":true,"description":"","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MOG_TrPopUpBattle","status":true,"description":"(v1.0) Apresenta os ícones dos tesouros após o inimigo morrer.","parameters":{"Drop Item Real Time":"true","Animation Type":"0","Fade Duration":"20","Scale":"0.8"}},
