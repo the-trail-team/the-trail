@@ -151,12 +151,6 @@ Window_TipsPage.prototype.updatePlacement = function() {
     this.y = 372;
 }
 
-var Window_Command_itemTextAlign = Window_Command.prototype.itemTextAlign;
-Window_Command.prototype.itemTextAlign = function() {
-    Window_Command_itemTextAlign.call(this);
-    return 'center';
-}
-
 Window_TipsPage.prototype.makeCommandList = function() {
   for (var i = 0; i < tips.length; ++i) {
     var text = "#" + (i + 1);
