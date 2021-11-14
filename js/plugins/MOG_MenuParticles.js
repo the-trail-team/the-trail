@@ -175,6 +175,8 @@ Scene_MenuBase.prototype.create_mparticles = function() {
 	  this._sprite_particles[i].y = Math.randomInt(Graphics.boxHeight);
 	  this._sprite_particles[i].opacity = 0;
 	  this._sprite_particles[i].blendMode = Moghunter.mpart_blendMode;
+	  var tint = "0x" + ((1 << 24) + ($gameSystem.windowTone()[0] << 16) + ($gameSystem.windowTone()[1] << 8) + $gameSystem.windowTone()[2]).toString(16).slice(1);
+	  this._sprite_particles[i].tint = tint;
     };	
 };
 
