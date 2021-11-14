@@ -1,7 +1,7 @@
 //=============================================================================
 /*:
  * @author NoLongerLucky
- * @plugindesc Overrides Scene_Preload, Window_TitleCommand, Scene_Title. Adds Window_TipsPage.
+ * @plugindesc Requires SRD_PreloaderCore, Olivia_MetaControls. Overrides Scene_Preload, Window_TitleCommand, Scene_Title. Adds Window_TipsPage.
  */
 //=============================================================================
 

@@ -1,7 +1,7 @@
 //=============================================================================
 /*:
  * @author NoLongerLucky
- * @plugindesc Overrides Window_SkillList.prototype.drawItem
+ * @plugindesc Overrides Window_SkillList.prototype.drawItem.
  */
 //=============================================================================
 
