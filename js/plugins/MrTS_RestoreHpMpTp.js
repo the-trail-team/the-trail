@@ -100,7 +100,7 @@
 		var totalHp = valueHp + Math.floor(this.mhp * valueHpP);
 		var totalMp = valueMp + Math.floor(this.mmp * valueMpP);
 		var totalTp = valueTp + Math.floor(100 * valueTpP);
-		console.log(valueHp, valueMp, valueTp);
+		// console.log(valueHp, valueMp, valueTp);
 		this.gainHp(totalHp);
 		this.gainMp(totalMp);
 		this.gainTp(totalTp);
