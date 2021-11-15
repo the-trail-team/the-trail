@@ -1790,7 +1790,7 @@
     "message2": "",
     "mpCost": 2,
     "name": "Analyze",
-    "note": "<Require Weapon Types: 4>\n<Switch to Weapon: Staff>\n\n<Analyze Weakness: 1>\n\n<Boost Analyze>\n\n<Before Eval>\nvar text = '<CENTER>' + target.name() + '\\'s HP: ' + Yanfly.Util.toGroup(target.hp) + '/' + Yanfly.Util.toGroup(target.mhp);\nBattleManager.addText(text, 60);\n</Before Eval>\n\n<whole action>\nmotion spell: user\nwait: 10\naction animation: targets\nwait for animation\naction effect\nwait: 60\nImmortal: targets, false\nwait for animation\n</whole action>\n\n<target action>\n</target action>",
+    "note": "<Require Weapon Types: 4>\n<Switch to Weapon: Staff>\n\n<Analyze Weakness: 1>\n\n<Boost Analyze>\n\n<Before Eval>\nif (target.barrierPoints() > 0) {\n  var text = '\\\\c[4]' + target.name() + '\\\\c[0]: ' + Yanfly.Util.toGroup(target.hp) + '\\\\c[13]+(' + target.barrierPoints() + ')\\\\c[0]/' + Yanfly.Util.toGroup(target.mhp);\n} else {\n  var text = '\\\\c[4]' + target.name() + '\\\\c[0]: ' + Yanfly.Util.toGroup(target.hp) + '/' + Yanfly.Util.toGroup(target.mhp);\n}\n$gameMessage.add(text);\nBattleManager.addText(\"Analysis successful!\", 0);\n</Before Eval>\n\n<whole action>\nmotion spell: user\nwait: 10\naction animation: targets\nwait for animation\naction effect\nImmortal: targets, false\nwait for animation\n</whole action>\n\n<target action>\n</target action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
