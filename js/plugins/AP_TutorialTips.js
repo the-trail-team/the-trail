@@ -38,7 +38,9 @@ const tips = [
 	"The Quick Access Menu is a helpful utility. Check it out using your configured key for it (Q by default).",
 	"Anything that regrows has its own unique timer that ticks down every hour.",
 	"Blueberries regrow after a mere 16 hours, while flowers take an entire week to sprout once more.",
-	"Oreleaf can be found in the mine north of Bladesville. It's a mysterious metallic plant that yields ore and regrows every few days."
+	"Oreleaf can be found in the mine north of Bladesville. It's a mysterious metallic plant that yields ore and regrows every few days.",
+	"Ghostly enemies will halve incoming physical damage. Use elemental attacks or magic to do normal damage to them.",
+	"The entirety of the game is still playable with just a mouse. All you need is left and right clicks."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
