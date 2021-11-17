@@ -486,7 +486,7 @@ DataManager.getEquipRequirementStatIndex = function(stat) {
 
 Yanfly.EqReq.Game_BattlerBase_refresh = Game_BattlerBase.prototype.refresh;
 Game_BattlerBase.prototype.refresh = function() {
-    // this._equipReq = undefined;
+    this._equipReq = undefined;
     Yanfly.EqReq.Game_BattlerBase_refresh.call(this);
 };
 
