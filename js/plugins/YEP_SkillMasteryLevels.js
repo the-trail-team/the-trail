@@ -949,7 +949,7 @@ Yanfly.SkillMastery.Game_Battler_onAllActionsEnd =
   Game_Battler.prototype.onAllActionsEnd;
 Game_Battler.prototype.onAllActionsEnd = function() {
   Yanfly.SkillMastery.Game_Battler_onAllActionsEnd.call(this);
-  if (this._actionMastery && $gameParty.inBattle()) {
+  if (this._actionMastery && $gameParty.inBattle() && this.isActor()) {
     var levelup = false;
     while (this._actionMastery.length > 0) {
       var skillId = this._actionMastery.shift();
