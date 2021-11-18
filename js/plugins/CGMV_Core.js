@@ -481,7 +481,7 @@ var CGMV_Core_localFilePath = StorageManager.localFilePath;
 StorageManager.localFilePath = function(savefileId) {
 	var name;
 	if(savefileId === -667) {
-		name = 'cgmv.ttsave1';
+		name = 'cgmv.rpgsave';
 		return this.localFileDirectoryPath() + name;
 	}
 	return CGMV_Core_localFilePath.call(this, savefileId);
