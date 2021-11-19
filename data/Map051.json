@@ -5004,7 +5004,7 @@
                     {
                       "code": 15,
                       "parameters": [
-                        60
+                        120
                       ],
                       "indent": null
                     },
@@ -5105,7 +5105,7 @@
                 {
                   "code": 15,
                   "parameters": [
-                    60
+                    120
                   ],
                   "indent": null
                 }
@@ -5116,7 +5116,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                2,
+                10,
                 0,
                 2
               ]
@@ -5133,7 +5133,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                2,
+                10,
                 0,
                 2
               ]
@@ -6194,7 +6194,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "goddess of adventure and has been"
+                "goddess of adventure, and has been"
               ]
             },
             {
@@ -6218,14 +6218,52 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3She also rewards those exceptionally"
+                "\\p3She watches over all of us, and our"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "skilled with exceptional powers."
+                "points of contact are these statues"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "of her spread across the world."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3Hell, it could be one that's sitting"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "in the middle of the forest. Trailia"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "can reach us at any of these."
               ]
             },
             {
@@ -6263,7 +6301,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "danger..."
+                "danger and all that..."
               ]
             },
             {
@@ -6321,14 +6359,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Well, Trailia wants travelers to"
+                "\\p3Trailia wants travelers to take"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "take up arms against these monsters"
+                "up arms against these monsters"
               ]
             },
             {
@@ -6407,7 +6445,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Yep. We're talking boss monsters."
+                "\\p3Yep. We're talking about taking"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "down the big guys."
               ]
             },
             {
@@ -6486,14 +6531,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Laeryidyean is one such boss monster,"
+                "\\p3Laeryidyean is one of the strongest"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "as it was detailed to us before."
+                "monsters in the Overworld. I'm sure"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "you remember when we were debriefed"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "on his great strength."
               ]
             },
             {
@@ -6510,31 +6569,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Notice how I specified that he's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a boss monster, not just a boss."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Four-Toed Kevin was a boss. Defeating"
+                "\\p3Four-Toed Kevin was strong. Defeating"
               ]
             },
             {
@@ -6634,7 +6669,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "every boss monster that we hear of."
+                "every strong monster that we hear of."
               ]
             },
             {
@@ -6651,100 +6686,76 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3I don't really know the science,"
+                "\\p3I'm certain that Trailia will aid us"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "or magic, I should say, of it, but..."
+                "on our journey to defeat \\c[18]Apocalypse\\c[0]."
               ]
             },
             {
-              "code": 101,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 401,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                "\\p3...you'll get some essency power"
+                {
+                  "code": 19,
+                  "indent": null
+                }
               ]
             },
             {
-              "code": 401,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "thingamajiggy from defeating a"
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 401,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                "boss monster."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Equipping it will give us some"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "much-needed stat boosts."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Trailia can most certainly grant us"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "even more power as we accumulate"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "these boss powers."
+                {
+                  "code": 19,
+                  "indent": null
+                }
               ]
             },
             {
@@ -6776,7 +6787,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                10,
+                2,
                 0,
                 2
               ]
@@ -6793,7 +6804,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                2,
+                10,
                 0,
                 2
               ]
@@ -6802,28 +6813,125 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3What I explained only scratches"
+                "\\p3..."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                10,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the surface of this. We should"
+                "\\p3\\N[1], I..."
               ]
             },
             {
-              "code": 401,
+              "code": 242,
               "indent": 0,
               "parameters": [
-                "probably get an expert's word"
+                2
               ]
             },
             {
-              "code": 401,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "on this after the fight."
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    120
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "theme_cleric",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -6840,28 +6948,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Your Village Headman, he asked you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to find a rare item, correct? He"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "might have been talking about a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "power."
+                "\\p3I have to be honest."
               ]
             },
             {
@@ -6878,14 +6965,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Let's try talking to him first"
+                "\\p3I think there's something"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "once we obtain the power."
+                "wrong with all of this."
               ]
             },
             {
@@ -6902,28 +6989,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3So yeah: defeat a boss monster, get"
+                "\\p3Trailia should be able to reach us"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the power, and hopefully later on"
+                "anywhere. If she's really watching"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Trailia will help us do more"
+                "over us all the time, why can we"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "with them."
+                "only reach her at these statues?"
               ]
             },
             {
@@ -6940,21 +7027,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Hell, it could be one that's sitting"
+                "\\p3If Trailia is the goddess of Adventure,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "in the middle of the forest. Trailia"
+                "why can she only reach us at these"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "can reach us in many places."
+                "stationary statues?"
               ]
             },
             {
@@ -6971,21 +7058,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3That's what that power equipment"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "slot is for. Keep this in mind"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "throughout the journey."
+                "\\p3It just doesn't make sense."
               ]
             },
             {
@@ -6993,7 +7066,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                6,
+                2,
                 0,
                 2
               ]
@@ -7002,14 +7075,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Well, this was an interesting chat."
+                "\\p3The Above... I've heard legends of it."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Thanks for listening, \\N[1]!"
+                "It's the plane of existence where the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "gods that created the Overworld rest."
               ]
             },
             {
@@ -7017,7 +7097,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                6,
+                2,
                 0,
                 2
               ]
@@ -7026,14 +7106,374 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3I knew I could count on you"
+                "\\p3It should be linked perfectly with the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to be a good friend."
+                "Overworld. The gods in the Above should"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "be able to reach us anywhere in the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Overworld."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3But if the only god we've heard from is"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Trailia, and we only can speak with her"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "at these statues... this link must not"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "be damaged. No, beyond damaged."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3The link between the Overworld and the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Above has been severed. Trailia's only"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "channel for reaching the Overworld is"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "these statues, and that's absolutely it."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3Who could have done this? No... what"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "could have done this? To be honest..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I don't know."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3Only Trailia could have the power to do"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "something like this, but why would she do"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "this? Leaving the Overworld on its own has"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "left it in a constant state of war."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3It must have been Trailia... and she"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "must have done it to save the Above..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "from something."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3It's all so confusing, and just another"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "one of my crazy theories... but this one"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "makes the most sense."
+              ]
+            },
+            {
+              "code": 242,
+              "indent": 0,
+              "parameters": [
+                2
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                120
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                5,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        90
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    90
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "town_church",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3Well, this was an interesting chat..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Thanks for listening, \\N[1]."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3I ended up getting a little deep, but I knew"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I could count on you to be a good friend."
               ]
             },
             {
@@ -7096,7 +7536,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                6,
+                2,
                 0,
                 2
               ]
@@ -7119,7 +7559,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "of town! I'll be around, but I'll"
+                "of town. I'll be around, but I'll"
               ]
             },
             {
