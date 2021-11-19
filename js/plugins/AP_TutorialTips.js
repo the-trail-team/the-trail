@@ -43,7 +43,8 @@ const tips = [
 	"The entirety of the game is still playable with just a mouse. All you need is left and right clicks.",
 	"Running away is guaranteed to be successful on the first turn of battle.",
 	"The base escape success chance is 20%. Each failed escape attempt boosts this chance by 10%.",
-	"Matilda sells Small Potions and Elixirs at a 10% discount."
+	"Matilda sells Small Potions and Elixirs at a 10% discount.",
+	"Navigate in the equipment menu using your configured left and right keys to see upgrade slots and equip restrictions."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
