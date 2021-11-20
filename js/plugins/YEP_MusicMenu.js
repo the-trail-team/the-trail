@@ -922,11 +922,11 @@ Window_MusicMenuList.prototype.makeCommandList = function() {
         description: ''
       }
       if ($gameSystem.isUnlockedMusicMenuSong(i)) {
-        var name = data[1].trim();
+        var name = [i] + ". " + data[1].trim();
         ext.description = data[5].trim();
         var enabled = true;
       } else {
-        var name = Yanfly.Param.MusicMenuHiddenName.trim();
+        var name = [i] + ". " + Yanfly.Param.MusicMenuHiddenName.trim();
         ext.description = Yanfly.Param.MusicMenuHiddenHelp.trim();
         var enabled = false;
       }
