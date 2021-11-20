@@ -2356,6 +2356,7 @@ BattleManager.startBattle = function() {
     $gameParty.onBattleStart();
     $gameTroop.onBattleStart();
     this.displayStartMessages();
+    $gameSwitches.setValue(79, false);
 };
 
 BattleManager.displayStartMessages = function() {

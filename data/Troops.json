@@ -8279,13 +8279,87 @@
             ]
           },
           {
-            "code": 339,
+            "code": 355,
             "indent": 1,
             "parameters": [
-              0,
-              0,
-              76,
-              -2
+              "const speeds = [];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "for (i = 0; i < $gameParty.battleMembers().length; i++) { const actor = [];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "  actor.push($gameParty.battleMembers()[i]._speed); actor.push(i);actor.push(true); speeds.push(actor);}"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "for (i = 0; i < $gameTroop._enemies.length; i++ ) { const enemy = [];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "  enemy.push($gameTroop._enemies[i]._speed); enemy.push(i);enemy.push(false); speeds.push(enemy);}"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "var sortedSpeeds = speeds.sort(function(a, b) { return b[0] - a[0]; });"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "var selected = sortedSpeeds[0];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "var id = selected[1];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "if (selected[2]) { var subject = $gameParty.battleMembers()[id]; } else { var subject = $gameTroop.members()[id]; }"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "subject.forceAction(76, -2); BattleManager.forceAction(subject); this.setWaitMode(\"action\");"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "console.log(subject); console.log(sortedSpeeds);"
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 1,
+            "parameters": [
+              "BattleManager.makeActionOrders();"
             ]
           },
           {
@@ -8297,6 +8371,15 @@
             "code": 412,
             "indent": 0,
             "parameters": []
+          },
+          {
+            "code": 121,
+            "indent": 0,
+            "parameters": [
+              79,
+              79,
+              0
+            ]
           },
           {
             "code": 0,

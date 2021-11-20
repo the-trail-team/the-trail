@@ -2702,7 +2702,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "BATTLE INTRO",
-    "note": "<setup action>\ncamera focus: all actors, 20\nzoom: 150%, 20\nwait for camera\nwait for zoom\nmotion guard: character 1\nmotion victory: character 2\nmotion chant: character 3\nmotion skill: character 4\nmotion wait: all actors\nwait: 20\nmotion standby: all actors\n</setup action>\n\n<target action>\ncamera focus: all friends, 20\nwait for camera\nwait: 20\nreset camera\nzoom: 100%, 20\nwait for camera\nwait for zoom\n</target action>\n\n<Max Mastery Level: 0>",
+    "note": "<setup action>\ncamera focus: all actors, 20\nzoom: 150%, 20\nwait for camera\nwait for zoom\nmotion guard: character 1\nmotion victory: character 2\nmotion chant: character 3\nmotion skill: character 4\nmotion wait: all actors\nwait: 20\nmotion standby: all actors\n</setup action>\n\n<target action>\ncamera focus: all enemies, 20\nwait for camera\nwait: 20\nreset camera\nzoom: 100%, 20\nwait for camera\nwait for zoom\n</target action>\n\n<Max Mastery Level: 0>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
