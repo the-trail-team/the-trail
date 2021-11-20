@@ -384,6 +384,8 @@ Sprite_GalvBust.prototype.controlBitmap = function() {
 		var offset = 0;
 	};
 
+	offset -= 10;
+
 	this.opacity = $gameMessage.faceName() ? Galv.MB.msgWindow._openness : this.opacity - Galv.MB.fadeOutSpeed;
 	
 	// Control image position
