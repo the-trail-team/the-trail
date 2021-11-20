@@ -223,7 +223,11 @@ Window_ItemActionCommand.prototype.addDiscardCommand = function() {
 };
 
 Window_ItemActionCommand.prototype.createDiscardCommandName = function() {
-  var fmt = Yanfly.Param.ItemDiscardCmdFmt;
+  if (this._item.id <= 3000) {
+    var fmt = Yanfly.Param.ItemDiscardCmdFmt;
+  } else {
+    var fmt = "Discard %1 %2"
+  }
   var name = '\\i[' + this._item.iconIndex + ']';
   if (this._item.textColor !== undefined) {
     name += '\\c[' + this._item.textColor + ']';
