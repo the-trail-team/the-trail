@@ -3120,6 +3120,7 @@ Window_ShopNumber.prototype.placeButtons = function() {
 
 Window_ShopNumber.prototype.updateButtonsVisiblity = function() {
     if (TouchInput.date > Input.date) {
+        this.hideButtons();
         this.showButtons();
     } else {
         this.hideButtons();
@@ -3127,9 +3128,14 @@ Window_ShopNumber.prototype.updateButtonsVisiblity = function() {
 };
 
 Window_ShopNumber.prototype.showButtons = function() {
-    for (var i = 0; i < this._buttons.length; i++) {
-        this._buttons[i].visible = true;
+    if (this._max !== 1) {
+        for (var i = 0; i < this._buttons.length; i++) {
+            this._buttons[i].visible = true;
+        }
+    } else {
+        this._buttons[4].visible = true;
     }
+
 };
 
 Window_ShopNumber.prototype.hideButtons = function() {

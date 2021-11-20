@@ -2706,7 +2706,12 @@ Window_ShopNumber.prototype.drawNumber = function() {
     var width = this.cursorWidth() - this.textPadding();
     this.resetTextColor();
     var itemNumber = Yanfly.Util.toGroup(this._number);
-    this.drawText(itemNumber, x, y, width, 'right');
+    if (this._max !== 1) {
+      this.drawText(itemNumber, x, y, width, 'right');
+    } else {
+      this._buyOrSell = (!this.isSelling() ? "Confirm purchase?" : "Confirm sell?");
+      this.drawText(this._buyOrSell, x - width, y, width * 2, 'right');
+    }
 };
 
 //=============================================================================

@@ -675,7 +675,7 @@ Window_ShopNumber.prototype.refresh = function() {
     this._index = 0;
     this.resetFontSettings();
     this.drawItemName(this._item, 0, this.lineHeight(), this.contents.width);
-    this.drawMultiplicationSign();
+    if (this._max !== 1) this.drawMultiplicationSign();
     this.drawNumber();
     this.drawTotalPrice();
 };
@@ -742,6 +742,7 @@ Window_ShopNumber.prototype.cursorWidth = function() {
       if (DataManager.isArmor(this._item)) item = $dataArmors[id];
     }
     var value = $gameParty.maxItems(item);
+    if (this._max == 1) value = this._buyOrSell;
     var digitWidth = this.textWidth(Yanfly.Util.toGroup(value));
     return digitWidth + this.textPadding() * 2;
 };
