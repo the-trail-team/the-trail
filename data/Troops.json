@@ -7853,6 +7853,34 @@
         },
         "list": [
           {
+            "code": 355,
+            "indent": 0,
+            "parameters": [
+              "for (i = 0; i < $gameParty.battleMembers().length; i++) {"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  obj = $gameParty.battleMembers()[i];"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "  obj._storedBP = 0;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "}"
+            ]
+          },
+          {
             "code": 111,
             "indent": 0,
             "parameters": [
