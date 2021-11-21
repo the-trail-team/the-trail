@@ -2111,5 +2111,42 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 89,
+    "atypeId": 1,
+    "description": "Increases magic healing recovery by 20%, but increases\ndamage received from physical/magical attacks by 20%.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 11,
+        "value": 1.2
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 1.2
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 127,
+    "name": "Water Elemental's Flow",
+    "note": "<Cannot Discard>\n<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]

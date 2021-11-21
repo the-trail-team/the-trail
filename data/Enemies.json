@@ -1449,21 +1449,21 @@
     "dropItems": [
       {
         "kind": 1,
-        "dataId": 44,
+        "dataId": 155,
+        "denominator": 1
+      },
+      {
+        "kind": 3,
+        "dataId": 89,
         "denominator": 1
       },
       {
         "kind": 3,
         "dataId": 32,
         "denominator": 1
-      },
-      {
-        "kind": 1,
-        "dataId": 8,
-        "denominator": 1
       }
     ],
-    "exp": 0,
+    "exp": 300,
     "traits": [
       {
         "code": 22,
@@ -1549,16 +1549,11 @@
         "code": 11,
         "dataId": 7,
         "value": 0.1
-      },
-      {
-        "code": 63,
-        "dataId": 1,
-        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 200,
     "name": "Water Elemental",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Soaked +++ Random 50% +++ User HP% param <= 90% +++ User HP% param > 25%: Bubble, Highest AGI\nUser HP% param <= 50% +++ User HP% param > 15% +++ Random 50%: Pure Water, User\n</AI Priority>\n\n<Boost Skill 36: At Most 1>\n\n<Sideview Battler: Elemental_1>\n<Attack Animation: 82>\n<Sideview No Collapse>\n<HP Gauge Width: 216>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 100%\nWater Essence: 100%\nWater Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState !== Soaked +++ Random 50% +++ User HP% param <= 90% +++ User HP% param > 25%: Bubble, Highest AGI\nUser HP% param <= 50% +++ User HP% param > 15% +++ Random 50%: Pure Water, User\n</AI Priority>\n\n<Boost Skill 36: At Most 1>\n\n<Sideview Battler: Elemental_1>\n<Attack Animation: 82>\n<Sideview No Collapse>\n<HP Gauge Width: 216>\n<Element Absorb: 5>\n\n<Enemy Drops>\nAqua Gem: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\n</Enemy Drops>",
     "params": [
       2400,
       999,
