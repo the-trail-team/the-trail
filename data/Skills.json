@@ -2814,7 +2814,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Afflicts the target with \\it[67]. Battlers who attack the target\nwill gain MP equal to 5% of damage dealt, capped at 5% of MMP.",
+    "description": "Afflicts the target with \\it[67]. Battlers who attack the target will\ngain MP equal to 5% of damage dealt, capped at 5% of MMP. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
@@ -2829,7 +2829,7 @@
     "message2": "",
     "mpCost": 15,
     "name": "Mana Refund",
-    "note": "<Require = 0 BP>\n<action copy: skill:3>",
+    "note": "<Boost Damage>\n<action copy: skill:3>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
