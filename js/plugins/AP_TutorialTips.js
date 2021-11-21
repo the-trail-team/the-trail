@@ -46,7 +46,8 @@ const tips = [
 	"Matilda sells Small Potions and Elixirs at a 10% discount.",
 	"Navigate in the equipment menu using your configured left and right keys to see upgrade slots and equip restrictions.",
 	"Press F2 to see an FPS counter in the top-left.",
-	"No one really knows how Sam Payne's fast travel doors work. But no matter; they're still very useful for getting around quickly."
+	"No one really knows how Sam Payne's fast travel doors work. But no matter; they're still very useful for getting around quickly.",
+	"INT is a unique stat. It's hard to grow, but can greatly increase your crit multiplier."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
