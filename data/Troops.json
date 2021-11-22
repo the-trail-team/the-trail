@@ -7963,14 +7963,7 @@
             "code": 655,
             "indent": 1,
             "parameters": [
-              "console.log(subject); console.log(sortedSpeeds);"
-            ]
-          },
-          {
-            "code": 355,
-            "indent": 1,
-            "parameters": [
-              "BattleManager.makeActionOrders();"
+              "if (!selected[2]) BattleManager.makeActionOrders();"
             ]
           },
           {
