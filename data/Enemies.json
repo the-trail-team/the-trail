@@ -1080,7 +1080,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Defend! I +++ Random 40%: Defend! I, User\nState !== Marked +++ Random 50%: Mark, Lowest DEF\nAlways: Attack\n</AI Priority>\n\n<Boost Skill 4: At Most 2>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Defend! I +++ Random 40%: Defend! I, User\nTroop Alive Members > 1 +++ State !== Marked: Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       180,
       10,
@@ -1687,7 +1687,7 @@
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ State !== Marked: Mark, Lowest DEF\nAlways: Attack\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ State !== Marked: Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -2343,7 +2343,15 @@
   },
   {
     "id": 26,
-    "actions": [],
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
     "battlerHue": 0,
     "battlerName": "Lost Soul",
     "dropItems": [
@@ -2413,7 +2421,7 @@
     ],
     "gold": 25,
     "name": "Lost Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 40%: Shield of Faith, Lowest HP\nRandom 40%: Cure II, Lowest HP%\nState !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nJade Charm: 2%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 40%: Shield of Faith, Lowest HP\nRandom 40%: Cure II, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nJade Charm: 2%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       500,
       999,
@@ -2658,7 +2666,7 @@
     ],
     "gold": 20,
     "name": "Suffering Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Soul Barrier I: Soul Barrier I, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n<Boost Skill 65: At Most 2>\n\n<Floating>\n<Sideview Battler: SufferingSoul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Soul Barrier I: Soul Barrier I, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n<Boost Skill 65: At Most 2>\n\n<Floating>\n<Sideview Battler: SufferingSoul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       500,
       999,
