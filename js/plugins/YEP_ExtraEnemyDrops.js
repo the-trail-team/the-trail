@@ -605,6 +605,10 @@ DataManager.processEEDNotetags1 = function(group) {
     var id = 34;
     var rate = 0.00001;
     this.createEnemyDrop(obj, id, rate, 2);
+    // present (1/10 drop)
+    var id = 156;
+    var rate = 0.1;
+    this.createEnemyDrop(obj, id, rate, 1);
   }
 };
 

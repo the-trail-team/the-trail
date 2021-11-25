@@ -2148,5 +2148,140 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 90,
+    "atypeId": 2,
+    "description": "A jolly set of heavy armor for a knight.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 437,
+    "name": "Festive Armor",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 91,
+    "atypeId": 3,
+    "description": "A merry set of robes for a mage.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 449,
+    "name": "Festive Robes",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      2,
+      1,
+      5,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 92,
+    "atypeId": 4,
+    "description": "A happy set of vestments for a cleric.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 454,
+    "name": "Festive Vestments",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 93,
+    "atypeId": 5,
+    "description": "A jovial set of leathers for a rogue.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 451,
+    "name": "Festive Leathers",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 94,
+    "atypeId": 6,
+    "description": "Protect yourself, holiday style.\nMakes guarding twice as effect.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 2
+      }
+    ],
+    "iconIndex": 538,
+    "name": "Candy Cane Shield",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]
