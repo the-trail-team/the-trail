@@ -1057,7 +1057,7 @@ Window_ItemActionCommand.prototype.addUpgradeCommand = function() {
     if (!$gameSystem.itemUpgradeShow()) return;
     if (!this._item) return;
     this._item.upgradeSlots = this._item.upgradeSlots || 0;
-    if (this._item.upgradeSlots <= 0) return;
+    if (this._item.upgradeSlots <= -1) return;
     var enabled = DataManager.isIndependent(this._item);
     if (eval(Yanfly.Param.IUSShowOnly) && !enabled) return;
     if (!$gameSystem.itemUpgradeEnabled()) enabled = false;
@@ -1121,7 +1121,7 @@ Window_UpgradeItemList.prototype.containsType = function(item) {
     }
     if (DataManager.isArmor(this._item)) {
       if (item.upgradeArmorType.contains(0)) return true;
-      if (item.upgradeArmorType.contains(this._item.atypeId)) return true;
+      if (item.upgradeArmorType.contains(this._item.etypeId)) return true;
     }
     return false;
 };

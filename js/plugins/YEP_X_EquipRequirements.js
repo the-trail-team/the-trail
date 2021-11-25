@@ -515,8 +515,9 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
       return true;
     }
   }
+  if (item.id <= 3000) return true;
   if (!this.meetEquipParamRequirements(item)) return false;
-   if (!this.meetEquipClassRequirements(item)) return false;
+  if (!this.meetEquipClassRequirements(item)) return false;
   if (!this.meetEquipSkillRequirements(item)) return false;
   if (!this.meetEquipSwitchRequirements(item)) return false;
   if (!this.meetEquipUniqueRequirements(item)) return false;
@@ -545,6 +546,15 @@ Game_BattlerBase.prototype.meetEquipParamRequirements = function(item) {
 Game_BattlerBase.prototype.meetEquipClassRequirements = function(item) {
   var requirements = item.equipRequirements;
   var classes = requirements['classes'];
+  // debug stuff
+  /*console.log("Requirements: " + requirements.classes);
+  console.log("Classes: " + classes);
+  console.log("Current Class ID: " + this.currentClass().id);
+  console.log("Current Class Name: " + this.currentClass().name);
+  console.log("Item: " + item.name);
+  console.log(item);
+  if (classes.contains(this.currentClass().id)) {console.log("true")} else {console.log("false")};
+  console.log("-----------------------------")*/
   if (classes.length <= 0) return true;
   if (classes.contains(this.currentClass().id)) return true;
   return false;

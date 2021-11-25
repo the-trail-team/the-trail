@@ -1633,6 +1633,7 @@ BattleManager.initMembers = function() {
     this._allSelection = false;
     this._victoryPhase = false;
     this._forceActionQueue = [];
+    $gameSwitches.setValue(78, false);
 };
 
 BattleManager.isBattleSystem = function(value) {
@@ -1812,16 +1813,21 @@ BattleManager.processVictory = function() {
 BattleManager.processEscape = function() {
     $gameParty.performEscape();
     SoundManager.playEscape();
-    var success = this._preemptive ? true : (Math.random() < this._escapeRatio);
+    if ($gameTroop.turnCount() == 1) {
+      var success = 1.0; // if it's the first turn of battle, escape is guaranteed
+    } else {
+      var success = this._preemptive ? true : (Math.random() < this._escapeRatio); // if it's not the first turn of battle, escape is based off of surprise and the escape ratio (base 0.2)
+    }
     if ($gamePlayer.isDebugThrough()) success = true;
     if (success) {
+        $gameSwitches.setValue(78, true);
+        this.processAbort();
         $gameParty.performEscapeSuccess();
         this.displayEscapeSuccessMessage();
         this._escaped = true;
-        this.processAbort();
     } else {
+        this._escapeRatio += this._escapeFailBoost; // escape ratio increases by 0.1 on failed escape  
         this.displayEscapeFailureMessage();
-        this._escapeRatio += this._escapeFailBoost;
         $gameParty.clearActions();
         this.startTurn();
     }
@@ -4402,7 +4408,7 @@ Game_Actor.prototype.attackMotion = function() {
 Game_Actor.prototype.performEscapeSuccess = function() {
     if (this.battler()) {
       this.performEscape();
-      this.battler().startMove(300, 0, 60);
+      this.battler().startMove(600, 0, 120);
     }
 };
 

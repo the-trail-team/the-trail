@@ -4420,7 +4420,7 @@ Window_QuestCategories.prototype.makeCommandList = function() {
       break;
     case 'cancel':
       var text = this.settings('Cancel Text');
-      this.addCommand(text, 'cancel');
+      // this.addCommand(text, 'cancel');
       continue;
       break;
     }
@@ -4731,6 +4731,16 @@ Window_QuestList.prototype.addQuestCommands = function(category, type) {
   category = category || this._currentCategory;
   type = type || '';
   var list = $gameSystem.getTypeQuests(category, type);
+  list.sort(function(a, b) {
+    let convertedStringA = $dataQuests[a].name;
+    convertedStringA = convertedStringA.split(']')[1];
+    let convertedStringB = $dataQuests[b].name;
+    convertedStringB = convertedStringB.split(']')[1];
+    
+    if (convertedStringA < convertedStringB) { return -1; }
+    if (convertedStringA > convertedStringB) { return 1; }
+    return 0;
+  })
   var length = list.length;
   for (var i = 0; i < length; ++i) {
     var questId = list[i];

@@ -1,0 +1,45 @@
+[
+  {
+    "type": "Text",
+    "Value": "${$gameTroop.turnCount()}",
+    "Condition": "$gameSwitches.value(78) !== true && $gameTroop.turnCount() > 0 && $gameSwitches.value(79)",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "30",
+    "Align": "center",
+    "Font Size": "20",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 5,
+    "x": 25,
+    "y": 53
+  }
+]

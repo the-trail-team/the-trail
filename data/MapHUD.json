@@ -1,0 +1,45 @@
+[
+  {
+    "type": "Text",
+    "Value": "🕰️ ${$gameVariables.value(36)}",
+    "Condition": "$gameSwitches.value(25)==true&&$gameSwitches.value(72)==true",
+    "Layer": "0",
+    "Font": "GameFont",
+    "Max Width": "150",
+    "Align": "left",
+    "Font Size": "24",
+    "Text Color": "#ffffff",
+    "Text Alpha": "255",
+    "Outline Color": "#000000",
+    "Outline Alpha": "127",
+    "animateInfo": {
+      "x": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "y": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      },
+      "s": {
+        "spd": 0,
+        "loop": false,
+        "min": 1,
+        "max": 1
+      },
+      "r": {
+        "spd": 0,
+        "loop": false,
+        "min": 0,
+        "max": 0
+      }
+    },
+    "id": 2,
+    "x": 85,
+    "y": 28
+  }
+]

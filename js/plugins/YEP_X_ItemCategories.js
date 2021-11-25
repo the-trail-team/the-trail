@@ -403,7 +403,7 @@ Window_ItemList.prototype.includes = function(item) {
     return DataManager.isWeapon(item) && item.wtypeId === this._ext;
     break;
   case 'armor':
-    return DataManager.isArmor(item);
+    return DataManager.isArmor(item) && !item.itemCategory.contains("Vanity");
     break;
   case 'AType':
     return DataManager.isArmor(item) && item.atypeId === this._ext;

@@ -297,7 +297,8 @@ BattleManager.processDefeat = function() {
 
 _.BattleManager_replayBgmAndBgs = BattleManager.replayBgmAndBgs;
 BattleManager.replayBgmAndBgs = function() {
-	if($gameTemp._setUpRetry) {
+	// if($gameTemp._setUpRetry) {
+	if(true) {
 		if(this._superMapBgm) {
 			AudioManager.replayBgm(this._superMapBgm);
 			this._superMapBgm = null;
@@ -308,9 +309,9 @@ BattleManager.replayBgmAndBgs = function() {
 			AudioManager.replayBgs(this._superMapBgs);
 			this._superMapBgs = null;
 		}
-	} else {
+	} /*else {
 		_.BattleManager_replayBgmAndBgs.apply(this, arguments);
-	}
+	}*/
 };
 
 //-----------------------------------------------------------------------------

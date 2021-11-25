@@ -3,7 +3,7 @@
 pitch, field of view, etc.
 @author Blizzard
 
-@help Version: 1.6.4
+@help Version: 1.7.3
 
 - licensed under BSD License 2.0
 
@@ -78,12 +78,32 @@ of a Mode 7 map is defined by the following parameters:
 
 --Changelog--
 
+v1.7.3:
+- fixed loading issues with OcRam_Lights
+
+v1.7.2:
+- fixed issues with Yanfly's Grid-Free Doodads in deployed builds
+- fixed issues with terrain tag lights in OcRam_Lights
+- added safeguards to prevent faulty compatibility code to affect other compatibility code
+- limited NEAR_CLIP_Z to a minimum of 1 due to issues with rendering for values of 0 or less
+- disabled CHARACTERS_USE_FADE_Z by default due to performance issues
+
+v1.7.1:
+- fixed some issues in compatibility code for OcRam_Lights
+
+v1.7.0:
+- added compatibility code for OcRam_Lights
+- improved compatibility code for KhasUltraLighting
+
+v1.6.5:
+- updated some instructions
+
 v1.6.4:
 - fixed a const assignment errors
 
 v1.6.3:
 - refactored positioning in looped maps
-- fixed in Yanfly's Grid-Free Doodads for sprite positioning in looped maps
+- fixed sprite positioning in looped maps for Yanfly's Grid-Free Doodads
 - added CHARACTERS_USE_FADE_Z option
 - removed some left-over debug code
 
@@ -327,11 +347,16 @@ on fixed values.
   UltraMode7_BorderBottom will be ignored.
 - Looped maps ignore all border settings.
 - If using CHARACTERS_USE_FADE_Z, keep in mind that other plugins might
-  override the blend-color value for the sprite or get overriden by
+  override the blend-color value for the sprite or get overridden by
   Ultra Mode 7.
 
 --Technical details, limitations and compatibility--
 
+- If you update from an earlier version, after replacing the actual file,
+  you should open up the plugin settings and confirm/close them again.
+  Sometimes new features and options are added and this ensures that the
+  newer version of the plugin doesn't crash by adding the new options to
+  your project's system settings.
 - Requires WebGL. Does not work with canvas and due to how canvas works, it
   can never support canvas.
 - Due to sprite scaling, how character sprite sheets are organized and how
@@ -355,6 +380,8 @@ on fixed values.
   characters sprites might have only limited support.
 - When using looping maps, don't make them too small. Event positioning on the
   map border could cause issues otherwise.
+- Due to how MV works with blending color and color tints/tones, using
+  CHARACTERS_USE_FADE_Z can cause performance issues when moving vertically.
 - Possibly not compatible with scripts that manipulate tilemap data too much
   or too deeply.
 - Compatible with KhasUltraLighting. Put Ultra Mode 7 BELOW that plugin.
@@ -363,6 +390,7 @@ on fixed values.
 - Compatible with MOG's Character Motion. Put Ultra Mode 7 BELOW that plugin.
 - Compatible with Thomas Edison MV. Put Ultra Mode 7 BELOW that plugin.
 - Compatible with Quasi Simple Shadows. Put Ultra Mode 7 BELOW that plugin.
+- Compatible with OcRam_Lights. Put Ultra Mode 7 BELOW that plugin.
 - Compatible with some newer pixi-tilemap versions.
 - Possibly not compatible with custom character objects that don't derive
   from Game_Event.
@@ -471,7 +499,7 @@ ON = true, OFF = false
 @param CHARACTERS_USE_FADE_Z
 @desc Whether any characters should use the fade-z color.
 ON = true, OFF = false
-@default true
+@default false
 
 @param PLAYER_ADJUST_MOVE_DIRECTION
 @desc Whether player directional input should be adjusted to yaw angle.
@@ -514,7 +542,7 @@ ON = true, OFF = false
 
 var Imported = Imported || {};
 Imported.Blizzard_UltraMode7 = true;
-Imported.Blizzard_UltraMode7.VERSION = 164;
+Imported.Blizzard_UltraMode7.VERSION = 173;
 
 //=============================================================================
 // Vector3
@@ -872,7 +900,7 @@ UltraMode7.MAX_PITCH = 90;
 // configuration parameters
 
 const _parameters = PluginManager.parameters("UltraMode7");
-UltraMode7.NEAR_CLIP_Z = BlizzardUtility.Numeric(_parameters["NEAR_CLIP_Z"], 100);
+UltraMode7.NEAR_CLIP_Z = Math.max(BlizzardUtility.Numeric(_parameters["NEAR_CLIP_Z"], 100), 1);
 UltraMode7.FAR_CLIP_Z = Math.max(BlizzardUtility.Numeric(_parameters["FAR_CLIP_Z"], 1200), UltraMode7.NEAR_CLIP_Z + 1);
 UltraMode7.FADE_Z_COLOR = JSON.parse("[" + _parameters["FADE_Z_COLOR"] + "]");
 UltraMode7.FADE_Z_BEGIN = BlizzardUtility.Numeric(_parameters["FADE_Z_BEGIN"], 500);
@@ -1213,6 +1241,11 @@ UltraMode7.mapZToScreenScale = function(z)
 {
 	// clamping to 10000 for safety infinity
 	return (z !== 0.0 ? UltraMode7.BASE_SCALE_Z / Math.abs(z).clamp(0.0, 10000.0) : 10000.0);
+};
+
+UltraMode7.isVisibleByZ = function(z)
+{
+	return (z > UltraMode7.NEAR_CLIP_Z && z < UltraMode7.FAR_CLIP_Z);
 };
 
 UltraMode7.rotateDirection = function(direction, clockwise)
@@ -2457,6 +2490,7 @@ Game_CharacterBase.prototype.screenBlendColor = function()
 
 Game_CharacterBase.prototype.isUltraMode7Visible = function()
 {
+	//return true;
 	if (!$gameMap.useUltraMode7)
 	{
 		return true;
@@ -2467,8 +2501,7 @@ Game_CharacterBase.prototype.isUltraMode7Visible = function()
 	}
 	const x = UltraMode7_Game_CharacterBase_prototype_screenX.call(this);
 	const y = UltraMode7_Game_CharacterBase_prototype_screenY.call(this) + this.shiftY();
-	const z = UltraMode7.mapToScreen(x, y).z;
-	return (z > UltraMode7.NEAR_CLIP_Z && z < UltraMode7.FAR_CLIP_Z);
+	return UltraMode7.isVisibleByZ(UltraMode7.mapToScreen(x, y).z);
 };
 
 //=============================================================================
@@ -2647,478 +2680,731 @@ Scene_Map.prototype.processMapTouch = function()
 // MOG's Character Motion compatibility
 //=============================================================================
 
-if (Imported && Imported.MOG_CharacterMotion)
+try // if this breaks for some reason, so it doesn't break other compatibility code
 {
-	UltraMode7.log("Detected 'MOG'S Character Motion', enabling compatibility code.");
-	
-	//=============================================================================
-	// Sprite_Character
-	//=============================================================================
-
-	const UltraMode7_Sprite_Character_prototype_updateSprParameters = Sprite_Character.prototype.updateSprParameters;
-	Sprite_Character.prototype.updateSprParameters = function()
+	if (Imported && Imported.MOG_CharacterMotion)
 	{
-		UltraMode7_Sprite_Character_prototype_updateSprParameters.call(this);
-		if (!$gameMap.useUltraMode7)
+		UltraMode7.log("Detected 'MOG'S Character Motion', enabling compatibility code.");
+		
+		//=============================================================================
+		// Sprite_Character
+		//=============================================================================
+
+		const UltraMode7_Sprite_Character_prototype_updateSprParameters = Sprite_Character.prototype.updateSprParameters;
+		Sprite_Character.prototype.updateSprParameters = function()
 		{
-			return;
-		}
-		// some safety guards
-		if (!!this._character)
-		{
-			if (this._character.screenScale)
+			UltraMode7_Sprite_Character_prototype_updateSprParameters.call(this);
+			if (!$gameMap.useUltraMode7)
 			{
-				const scale = this._character.screenScale();
-				this.scale.x *= scale;
-				this.scale.y *= scale;
+				return;
 			}
-			if (this._character.screenBlendColor)
+			// some safety guards
+			if (!!this._character)
 			{
-				const blendColor = this._character.screenBlendColor();
-				if (blendColor !== null)
+				if (this._character.screenScale)
 				{
-					this.setBlendColor(blendColor);
+					const scale = this._character.screenScale();
+					this.scale.x *= scale;
+					this.scale.y *= scale;
+				}
+				if (this._character.screenBlendColor)
+				{
+					const blendColor = this._character.screenBlendColor();
+					if (blendColor !== null)
+					{
+						this.setBlendColor(blendColor);
+					}
 				}
 			}
 		}
 	}
+}
+catch (error)
+{
+	console.log(error);
 }
 
 //=============================================================================
 // Yanfly's Grid-Free Doodads compatibility
 //=============================================================================
 
-if (Imported && Imported.YEP_GridFreeDoodads)
+try // if this breaks for some reason, so it doesn't break other compatibility code
 {
-	UltraMode7.log("Detected 'Yanfly's Grid-Free Doodads', enabling compatibility code.");
-	
-	//=============================================================================
-	// Sprite_Doodad
-	//=============================================================================
+	if (Imported && Imported.YEP_GridFreeDoodads)
+	{
+		UltraMode7.log("Detected 'Yanfly's Grid-Free Doodads', enabling compatibility code.");
+		
+		//=============================================================================
+		// Sprite_Doodad
+		//=============================================================================
 
-	Sprite_Doodad.prototype._makeLoopedScreenPosition = function()
-	{
-		const loopedPosition = $gameMap.adjustUltraMode7LoopedPosition(this._data.x / this._tileWidth, this._data.y / this._tileHeight);
-		return {x: loopedPosition.x * $gameMap.tileWidth(), y: loopedPosition.y * $gameMap.tileHeight()};
-	};
-	
-	const UltraMode7_Sprite_Doodad_updatePosition = Sprite_Doodad.prototype.updatePosition;
-	Sprite_Doodad.prototype.updatePosition = function()
-	{
-		UltraMode7_Sprite_Doodad_updatePosition.call(this);
-		if (!$gameMap.useUltraMode7)
+		Sprite_Doodad.prototype._makeLoopedScreenPosition = function()
 		{
-			return;
-		}
-		const scale = this.screenScale();
-		this.scale.x = scale * this._data.scaleX / 100;
-		this.scale.y = scale * this._data.scaleY / 100;
-		const blendColor = this.screenBlendColor();
-		if (blendColor !== null)
+			const loopedPosition = $gameMap.adjustUltraMode7LoopedPosition(this._data.x / this._tileWidth, this._data.y / this._tileHeight);
+			return {x: loopedPosition.x * $gameMap.tileWidth(), y: loopedPosition.y * $gameMap.tileHeight()};
+		};
+		
+		const UltraMode7_Sprite_Doodad_updatePosition = Sprite_Doodad.prototype.updatePosition;
+		Sprite_Doodad.prototype.updatePosition = function()
 		{
-			this.setBlendColor(blendColor);
-		}
-		if (!this.isUltraMode7Visible())
+			UltraMode7_Sprite_Doodad_updatePosition.call(this);
+			if (!$gameMap.useUltraMode7)
+			{
+				return;
+			}
+			const scale = this.screenScale();
+			this.scale.x = scale * this._data.scaleX / 100;
+			this.scale.y = scale * this._data.scaleY / 100;
+			const blendColor = this.screenBlendColor();
+			if (blendColor !== null)
+			{
+				this.setBlendColor(blendColor);
+			}
+			if (!this.isUltraMode7Visible())
+			{
+				this.visible = false;
+			}
+		};
+		
+		const UltraMode7_Sprite_Doodad_prototype_screenX = Sprite_Doodad.prototype.screenX;
+		Sprite_Doodad.prototype.screenX = function()
 		{
-			this.visible = false;
-		}
-	};
-	
-	const UltraMode7_Sprite_Doodad_prototype_screenX = Sprite_Doodad.prototype.screenX;
-	Sprite_Doodad.prototype.screenX = function()
-	{
-		if (!$gameMap.useUltraMode7)
+			if (!$gameMap.useUltraMode7)
+			{
+				return UltraMode7_Sprite_Doodad_prototype_screenX.call(this);
+			}
+			const position = this._makeLoopedScreenPosition();
+			return UltraMode7.mapToScreen(position.x, position.y).x;
+		};
+		
+		const UltraMode7_Sprite_Doodad_prototype_screenY = Sprite_Doodad.prototype.screenY;
+		Sprite_Doodad.prototype.screenY = function()
 		{
-			return UltraMode7_Sprite_Doodad_prototype_screenX.call(this);
-		}
-		const position = this._makeLoopedScreenPosition();
-		return UltraMode7.mapToScreen(position.x, position.y).x;
-	};
-	
-	const UltraMode7_Sprite_Doodad_prototype_screenY = Sprite_Doodad.prototype.screenY;
-	Sprite_Doodad.prototype.screenY = function()
-	{
-		if (!$gameMap.useUltraMode7)
-		{
-			return UltraMode7_Sprite_Doodad_prototype_screenY.call(this);
-		}
-		const position = this._makeLoopedScreenPosition();
-		return UltraMode7.mapToScreen(position.x, position.y).y;
-	};
+			if (!$gameMap.useUltraMode7)
+			{
+				return UltraMode7_Sprite_Doodad_prototype_screenY.call(this);
+			}
+			const position = this._makeLoopedScreenPosition();
+			return UltraMode7.mapToScreen(position.x, position.y).y;
+		};
 
-	Sprite_Doodad.prototype.screenScale = function()
-	{
-		if (!$gameMap.useUltraMode7)
+		Sprite_Doodad.prototype.screenScale = function()
 		{
-			return 1.0;
-		}
-		const position = this._makeLoopedScreenPosition();
-		return UltraMode7.mapToScreenScale(position.x, position.y);
-	};
+			if (!$gameMap.useUltraMode7)
+			{
+				return 1.0;
+			}
+			const position = this._makeLoopedScreenPosition();
+			return UltraMode7.mapToScreenScale(position.x, position.y);
+		};
 
-	Sprite_Doodad.prototype.screenBlendColor = function()
-	{
-		if (!$gameMap.useUltraMode7 || !UltraMode7.CHARACTERS_USE_FADE_Z)
+		Sprite_Doodad.prototype.screenBlendColor = function()
 		{
-			return null;
-		}
-		const position = this._makeLoopedScreenPosition();
-		const z = UltraMode7.mapToScreen(position.x, position.y).z;
-		const fadeBegin = $gameMap.ultraMode7FadeBegin;
-		const fadeEnd = $gameMap.ultraMode7FadeEnd;
-		const fadeColor = $gameMap.ultraMode7FadeColor;
-		const result = [Math.round(fadeColor[0] * 255), Math.round(fadeColor[1] * 255), Math.round(fadeColor[2] * 255), 0];
-		if (z >= fadeEnd)
-		{
-			result[3] = 255;
-		}
-		else if (z > fadeBegin && z < fadeEnd)
-		{
-			result[3] = Math.round((z - fadeBegin) / (fadeEnd - fadeBegin) * 255);
-		}
-		return result;
-	};
+			if (!$gameMap.useUltraMode7 || !UltraMode7.CHARACTERS_USE_FADE_Z)
+			{
+				return null;
+			}
+			const position = this._makeLoopedScreenPosition();
+			const z = UltraMode7.mapToScreen(position.x, position.y).z;
+			const fadeBegin = $gameMap.ultraMode7FadeBegin;
+			const fadeEnd = $gameMap.ultraMode7FadeEnd;
+			const fadeColor = $gameMap.ultraMode7FadeColor;
+			const result = [Math.round(fadeColor[0] * 255), Math.round(fadeColor[1] * 255), Math.round(fadeColor[2] * 255), 0];
+			if (z >= fadeEnd)
+			{
+				result[3] = 255;
+			}
+			else if (z > fadeBegin && z < fadeEnd)
+			{
+				result[3] = Math.round((z - fadeBegin) / (fadeEnd - fadeBegin) * 255);
+			}
+			return result;
+		};
 
-	Sprite_Doodad.prototype.isUltraMode7Visible = function()
-	{
-		if (!$gameMap.useUltraMode7)
+		Sprite_Doodad.prototype.isUltraMode7Visible = function()
 		{
-			return true;
-		}
-		if ($gameMap.ultraMode7Fov <= 0)
-		{
-			return true;
-		}
-		const position = this._makeLoopedScreenPosition();
-		const z = UltraMode7.mapToScreen(position.x, position.y).z;
-		return (z > UltraMode7.NEAR_CLIP_Z && z < UltraMode7.FAR_CLIP_Z);
-	};
-	
-	//=============================================================================
-	// Sprite_DoodadCursor
-	//=============================================================================
+			if (!$gameMap.useUltraMode7)
+			{
+				return true;
+			}
+			if ($gameMap.ultraMode7Fov <= 0)
+			{
+				return true;
+			}
+			const position = this._makeLoopedScreenPosition();
+			return UltraMode7.isVisibleByZ(UltraMode7.mapToScreen(position.x, position.y).z);
+		};
+		
+		//=============================================================================
+		// Sprite_DoodadCursor
+		//=============================================================================
 
-	const UltraMode7_Sprite_DoodadCursor_prototype_updatePosition = Sprite_DoodadCursor.prototype.updatePosition;
-	Sprite_DoodadCursor.prototype.updatePosition = function()
-	{
-		UltraMode7_Sprite_DoodadCursor_prototype_updatePosition.call(this);
-		if (!$gameMap.useUltraMode7)
+		if (!!Sprite_DoodadCursor) // this class doesn't seem to exist in deployed builds
 		{
-			return;
-		}
-		const scale = this.screenScale();
-		this.scale.x = scale * this._data.scaleX / 100;
-		this.scale.y = scale * this._data.scaleY / 100;
-	};
-	
-	Sprite_DoodadCursor.prototype.screenScale = function()
-	{
-		if (!$gameMap.useUltraMode7)
-		{
-			return 1.0;
-		}
-		const position = UltraMode7.screenToMap(this.x, this.y);
-		const loopedPosition = $gameMap.adjustUltraMode7LoopedPosition(position.x / $gameMap.tileWidth(), position.y / $gameMap.tileHeight());
-		const x = Math.round(loopedPosition.x * $gameMap.tileWidth());
-		const y = Math.round(loopedPosition.y * $gameMap.tileHeight());
-		return UltraMode7.mapToScreenScale(x, y);
-	};
+			const UltraMode7_Sprite_DoodadCursor_prototype_updatePosition = Sprite_DoodadCursor.prototype.updatePosition;
+			Sprite_DoodadCursor.prototype.updatePosition = function()
+			{
+				UltraMode7_Sprite_DoodadCursor_prototype_updatePosition.call(this);
+				if (!$gameMap.useUltraMode7)
+				{
+					return;
+				}
+				const scale = this.screenScale();
+				this.scale.x = scale * this._data.scaleX / 100;
+				this.scale.y = scale * this._data.scaleY / 100;
+			};
+			
+			Sprite_DoodadCursor.prototype.screenScale = function()
+			{
+				if (!$gameMap.useUltraMode7)
+				{
+					return 1.0;
+				}
+				const position = UltraMode7.screenToMap(this.x, this.y);
+				const loopedPosition = $gameMap.adjustUltraMode7LoopedPosition(position.x / $gameMap.tileWidth(), position.y / $gameMap.tileHeight());
+				const x = Math.round(loopedPosition.x * $gameMap.tileWidth());
+				const y = Math.round(loopedPosition.y * $gameMap.tileHeight());
+				return UltraMode7.mapToScreenScale(x, y);
+			};
 
-	Sprite_DoodadCursor.prototype.ultraMode7ScreenScale = function(x, y)
-	{
-		if (!$gameMap.useUltraMode7)
-		{
-			return 1.0;
+			Sprite_DoodadCursor.prototype.ultraMode7ScreenScale = function(x, y)
+			{
+				if (!$gameMap.useUltraMode7)
+				{
+					return 1.0;
+				}
+				return UltraMode7.mapToScreenScale(x, y);
+			};
 		}
-		return UltraMode7.mapToScreenScale(x, y);
-	};
-	
-	DoodadManager.getUltraMode7DoodadScreenX = function(x)
-	{
-		return (x - $gameMap.displayX() * $gameMap.tileWidth());
-	};
-	
-	DoodadManager.getUltraMode7DoodadScreenY = function(y)
-	{
-		return (y - $gameMap.displayY() * $gameMap.tileHeight());
-	};
-	
-	const UltraMode7_DoodadManager_addNew = DoodadManager.addNew;
-	DoodadManager.addNew = function(doodad)
-	{
-		if ($gameMap.useUltraMode7)
-		{
-			const position = UltraMode7.screenToMap(DoodadManager.getUltraMode7DoodadScreenX(doodad.x), DoodadManager.getUltraMode7DoodadScreenY(doodad.y));
-			doodad.x = position.x;
-			doodad.y = position.y;
-		}
-		UltraMode7_DoodadManager_addNew.call(this, doodad);
-	};
+		
+		//=============================================================================
+		// DoodadManager
+		//=============================================================================
 
+		if (!!DoodadManager) // this class doesn't seem to exist in deployed builds
+		{
+			DoodadManager.getUltraMode7DoodadScreenX = function(x)
+			{
+				return (x - $gameMap.displayX() * $gameMap.tileWidth());
+			};
+			
+			DoodadManager.getUltraMode7DoodadScreenY = function(y)
+			{
+				return (y - $gameMap.displayY() * $gameMap.tileHeight());
+			};
+			
+			const UltraMode7_DoodadManager_addNew = DoodadManager.addNew;
+			DoodadManager.addNew = function(doodad)
+			{
+				if ($gameMap.useUltraMode7)
+				{
+					const position = UltraMode7.screenToMap(DoodadManager.getUltraMode7DoodadScreenX(doodad.x), DoodadManager.getUltraMode7DoodadScreenY(doodad.y));
+					doodad.x = position.x;
+					doodad.y = position.y;
+				}
+				UltraMode7_DoodadManager_addNew.call(this, doodad);
+			};
+		}
+		
+	}
+}
+catch (error)
+{
+	console.log(error);
 }
 
 //=============================================================================
 // KhasUltraLighting compatibility
 //=============================================================================
 
-UltraMode7.Khas = Khas || {}; // prevents an undefined reference error right below
-
-if (UltraMode7.Khas && UltraMode7.Khas.Lighting && UltraMode7.Khas.Lighting.version >= 4.2)
+try // if this breaks for some reason, so it doesn't break other compatibility code
 {
-	UltraMode7.log("Detected 'KhasUltraLighting', enabling compatibility code.");
-	
-	//=============================================================================
-	// Game_CharacterBase
-	//=============================================================================
-
-	Game_CharacterBase.prototype.lightScreenUltraMode7X = function()
+	if (Khas && Khas.Lighting && Khas.Lighting.version >= 4.2)
 	{
-		return Math.round((this.scrolledX() + 0.5) * $gameMap.tileWidth() + $gameScreen.shake());
-	};
+		UltraMode7.log("Detected 'KhasUltraLighting', enabling compatibility code.");
+		
+		//=============================================================================
+		// Game_CharacterBase
+		//=============================================================================
 
-	Game_CharacterBase.prototype.lightScreenUltraMode7Y = function()
-	{
-		return Math.round((this.scrolledY() + 0.5) * $gameMap.tileHeight());
-	};
-
-	const UltraMode7_Game_CharacterBase_prototype_lightScreenX = Game_CharacterBase.prototype.lightScreenX;
-	Game_CharacterBase.prototype.lightScreenX = function()
-	{
-		if (!$gameMap.useUltraMode7)
+		Game_CharacterBase.prototype.lightScreenUltraMode7X = function()
 		{
-			return UltraMode7_Game_CharacterBase_prototype_lightScreenX.call(this);
-		}
-		const x = this.lightScreenUltraMode7X();
-		const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
-		return UltraMode7.mapToScreen(x, y).x;
-	};
+			return Math.round((this.scrolledX() + 0.5) * $gameMap.tileWidth() + $gameScreen.shake());
+		};
 
-	const UltraMode7_Game_CharacterBase_prototype_lightScreenY = Game_CharacterBase.prototype.lightScreenY;
-	Game_CharacterBase.prototype.lightScreenY = function()
-	{
-		if (!$gameMap.useUltraMode7)
+		Game_CharacterBase.prototype.lightScreenUltraMode7Y = function()
 		{
-			return UltraMode7_Game_CharacterBase_prototype_lightScreenY.call(this);
-		}
-		const halfTileHeight = $gameMap.tileHeight() / 2;
-		const x = this.lightScreenUltraMode7X();
-		const y = this.lightScreenUltraMode7Y() + halfTileHeight;
-		return UltraMode7.mapToScreen(x, y).y - halfTileHeight * this.screenScale();
-	};
+			return Math.round((this.scrolledY() + 0.5) * $gameMap.tileHeight());
+		};
 
-	//=============================================================================
-	// Game_LightTile
-	//=============================================================================
-
-	Game_LightTile.prototype.scrolledX = function()
-	{
-		if (!$gameMap.useUltraMode7 || !$gameMap.isLoopHorizontal())
+		const UltraMode7_Game_CharacterBase_prototype_lightScreenX = Game_CharacterBase.prototype.lightScreenX;
+		Game_CharacterBase.prototype.lightScreenX = function()
 		{
-			return $gameMap.adjustX(this._realX);
-		}
-		return $gameMap.adjustUltraMode7LoopedPosition(this._realX, this._realY).x;
-	};
-
-	Game_LightTile.prototype.scrolledY = function()
-	{
-		if (!$gameMap.useUltraMode7 || !$gameMap.isLoopVertical())
-		{
-			return $gameMap.adjustY(this._realY);
-		}
-		return $gameMap.adjustUltraMode7LoopedPosition(this._realX, this._realY).y;
-	};
-
-	Game_LightTile.prototype.lightScreenUltraMode7X = function()
-	{
-		return Math.round(this.scrolledX() * $gameMap.tileWidth() + $gameScreen.shake());
-	};
-
-	Game_LightTile.prototype.lightScreenUltraMode7Y = function()
-	{
-		return Math.round(this.scrolledY() * $gameMap.tileHeight());
-	};
-
-	Game_LightTile.prototype.screenScale = function()
-	{
-		if (!$gameMap.useUltraMode7)
-		{
-			return 1.0;
-		}
-		const x = this.lightScreenUltraMode7X() + $gameMap.tileWidth() / 2;
-		const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
-		return UltraMode7.mapToScreenScale(x, y);
-	};
-
-	Game_LightTile.prototype.isUltraMode7Visible = function()
-	{
-		if (!$gameMap.useUltraMode7)
-		{
-			return true;
-		}
-		if ($gameMap.ultraMode7Fov <= 0)
-		{
-			return true;
-		}
-		const x = this.lightScreenUltraMode7X() + $gameMap.tileWidth() / 2;
-		const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
-		const z = UltraMode7.mapToScreen(x, y).z;
-		return (z > UltraMode7.NEAR_CLIP_Z && z < UltraMode7.FAR_CLIP_Z);
-	};
-
-	const UltraMode7_Game_LightTile_prototype_lightScreenX = Game_LightTile.prototype.lightScreenX;
-	Game_LightTile.prototype.lightScreenX = function()
-	{
-		if (!$gameMap.useUltraMode7)
-		{
-			return UltraMode7_Game_LightTile_prototype_lightScreenX.call(this);
-		}
-		const x = this.lightScreenUltraMode7X();
-		const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
-		return UltraMode7.mapToScreen(x, y).x;
-	};
-
-	const UltraMode7_Game_LightTile_prototype_lightScreenY = Game_LightTile.prototype.lightScreenY;
-	Game_LightTile.prototype.lightScreenY = function()
-	{
-		if (!$gameMap.useUltraMode7)
-		{
-			return UltraMode7_Game_LightTile_prototype_lightScreenY.call(this);
-		}
-		const halfTileHeight = $gameMap.tileHeight() / 2;
-		const x = this.lightScreenUltraMode7X();
-		const y = this.lightScreenUltraMode7Y() + halfTileHeight;
-		return UltraMode7.mapToScreen(x, y).y - halfTileHeight * this.screenScale();
-	};
-
-	//=============================================================================
-	// Sprite_Light
-	//=============================================================================
-
-	const UltraMode7_Sprite_Light_prototype_refreshScreenPosition = Sprite_Light.prototype.refreshScreenPosition;
-	Sprite_Light.prototype.refreshScreenPosition = function()
-	{
-		UltraMode7_Sprite_Light_prototype_refreshScreenPosition.call(this);
-		if (!$gameMap.useUltraMode7)
-		{
-			return;
-		}
-		// some safety guards to ensure compatibility with custom objects
-		if (!!this._character)
-		{
-			if (this._character.screenScale)
+			if (!$gameMap.useUltraMode7)
 			{
-				const scale = this._character.screenScale();
-				this.scale.x = scale;
-				this.scale.y = scale;
+				return UltraMode7_Game_CharacterBase_prototype_lightScreenX.call(this);
 			}
-			if (this._character.isUltraMode7Visible)
+			const x = this.lightScreenUltraMode7X();
+			const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
+			return UltraMode7.mapToScreen(x, y).x;
+		};
+
+		const UltraMode7_Game_CharacterBase_prototype_lightScreenY = Game_CharacterBase.prototype.lightScreenY;
+		Game_CharacterBase.prototype.lightScreenY = function()
+		{
+			if (!$gameMap.useUltraMode7)
 			{
-				this.visible = this._character.isUltraMode7Visible();
+				return UltraMode7_Game_CharacterBase_prototype_lightScreenY.call(this);
 			}
-		}
-	};
-	
+			const halfTileHeight = $gameMap.tileHeight() / 2;
+			const x = this.lightScreenUltraMode7X();
+			const y = this.lightScreenUltraMode7Y() + halfTileHeight;
+			return UltraMode7.mapToScreen(x, y).y - halfTileHeight * this.screenScale();
+		};
+
+		//=============================================================================
+		// Game_LightTile
+		//=============================================================================
+
+		Game_LightTile.prototype.scrolledX = function()
+		{
+			if (!$gameMap.useUltraMode7 || !$gameMap.isLoopHorizontal())
+			{
+				return $gameMap.adjustX(this._realX);
+			}
+			return $gameMap.adjustUltraMode7LoopedPosition(this._realX, this._realY).x;
+		};
+
+		Game_LightTile.prototype.scrolledY = function()
+		{
+			if (!$gameMap.useUltraMode7 || !$gameMap.isLoopVertical())
+			{
+				return $gameMap.adjustY(this._realY);
+			}
+			return $gameMap.adjustUltraMode7LoopedPosition(this._realX, this._realY).y;
+		};
+
+		Game_LightTile.prototype.lightScreenUltraMode7X = function()
+		{
+			return Math.round(this.scrolledX() * $gameMap.tileWidth() + $gameScreen.shake());
+		};
+
+		Game_LightTile.prototype.lightScreenUltraMode7Y = function()
+		{
+			return Math.round(this.scrolledY() * $gameMap.tileHeight());
+		};
+
+		Game_LightTile.prototype.screenScale = function()
+		{
+			if (!$gameMap.useUltraMode7)
+			{
+				return 1.0;
+			}
+			const x = this.lightScreenUltraMode7X() + $gameMap.tileWidth() / 2;
+			const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
+			return UltraMode7.mapToScreenScale(x, y);
+		};
+
+		Game_LightTile.prototype.isUltraMode7Visible = function()
+		{
+			if (!$gameMap.useUltraMode7)
+			{
+				return true;
+			}
+			if ($gameMap.ultraMode7Fov <= 0)
+			{
+				return true;
+			}
+			const x = this.lightScreenUltraMode7X() + $gameMap.tileWidth() / 2;
+			const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
+			return UltraMode7.isVisibleByZ(UltraMode7.mapToScreen(x, y).z);
+		};
+
+		const UltraMode7_Game_LightTile_prototype_lightScreenX = Game_LightTile.prototype.lightScreenX;
+		Game_LightTile.prototype.lightScreenX = function()
+		{
+			if (!$gameMap.useUltraMode7)
+			{
+				return UltraMode7_Game_LightTile_prototype_lightScreenX.call(this);
+			}
+			const x = this.lightScreenUltraMode7X();
+			const y = this.lightScreenUltraMode7Y() + $gameMap.tileHeight() / 2;
+			return UltraMode7.mapToScreen(x, y).x;
+		};
+
+		const UltraMode7_Game_LightTile_prototype_lightScreenY = Game_LightTile.prototype.lightScreenY;
+		Game_LightTile.prototype.lightScreenY = function()
+		{
+			if (!$gameMap.useUltraMode7)
+			{
+				return UltraMode7_Game_LightTile_prototype_lightScreenY.call(this);
+			}
+			const halfTileHeight = $gameMap.tileHeight() / 2;
+			const x = this.lightScreenUltraMode7X();
+			const y = this.lightScreenUltraMode7Y() + halfTileHeight;
+			return UltraMode7.mapToScreen(x, y).y - halfTileHeight * this.screenScale();
+		};
+
+		//=============================================================================
+		// Sprite_Light
+		//=============================================================================
+
+		const UltraMode7_Sprite_Light_prototype_refreshScreenPosition = Sprite_Light.prototype.refreshScreenPosition;
+		Sprite_Light.prototype.refreshScreenPosition = function()
+		{
+			UltraMode7_Sprite_Light_prototype_refreshScreenPosition.call(this);
+			if (!$gameMap.useUltraMode7)
+			{
+				return;
+			}
+			// some safety guards to ensure compatibility with custom objects
+			if (!!this._character)
+			{
+				if (this._character.screenScale)
+				{
+					const scale = this._character.screenScale();
+					this.scale.x = scale;
+					this.scale.y = scale;
+				}
+				if (this._character.isUltraMode7Visible)
+				{
+					this.visible = this._character.isUltraMode7Visible();
+				}
+			}
+		};
+	}
+}
+catch (error)
+{
+	// can cause error by simple not existing so no logging is done
 }
 
 //=============================================================================
 // MOG's Character Motion compatibility
 //=============================================================================
 
-if (Imported && Imported.Soul_ThomasEdisonMV)
+try // if this breaks for some reason, so it doesn't break other compatibility code
 {
-	UltraMode7.log("Detected 'Thomas Edison MV', enabling compatibility code.");
-	
-	//=============================================================================
-	// EdisonLightMVCustom
-	//=============================================================================
-	
-	const UltraMode7_EdisonLightMVCustom_prototype_updateLight = EdisonLightMVCustom.prototype.updateLight;
-	EdisonLightMVCustom.prototype.updateLight = function()
+	if (Imported && Imported.Soul_ThomasEdisonMV)
 	{
-		UltraMode7_EdisonLightMVCustom_prototype_updateLight.call(this);
-		if (!$gameMap.useUltraMode7)
+		UltraMode7.log("Detected 'Thomas Edison MV', enabling compatibility code.");
+		
+		//=============================================================================
+		// EdisonLightMVCustom
+		//=============================================================================
+		
+		const UltraMode7_EdisonLightMVCustom_prototype_updateLight = EdisonLightMVCustom.prototype.updateLight;
+		EdisonLightMVCustom.prototype.updateLight = function()
 		{
-			return;
-		}
-		const character = $gameMap._events[this.eventId];
-		// some safety guards
-		if (character && character.screenScale)
+			UltraMode7_EdisonLightMVCustom_prototype_updateLight.call(this);
+			if (!$gameMap.useUltraMode7)
+			{
+				return;
+			}
+			const character = $gameMap._events[this.eventId];
+			// some safety guards
+			if (character && character.screenScale)
+			{
+				const scale = character.screenScale();
+				this.lightImage.x += (scale - 1) * this.ax;
+				this.lightImage.y += (scale - 1) * this.ay;
+				this.lightImage.scale.x *= scale;
+				this.lightImage.scale.y *= scale;
+			}
+		};
+		
+		//=============================================================================
+		// EdisonLightMV
+		//=============================================================================
+		
+		const UltraMode7_EdisonLightMV_prototype_updateLight = EdisonLightMV.prototype.updateLight;
+		EdisonLightMV.prototype.updateLight = function()
 		{
-			const scale = character.screenScale();
-			this.lightImage.x += (scale - 1) * this.ax;
-			this.lightImage.y += (scale - 1) * this.ay;
-			this.lightImage.scale.x *= scale;
-			this.lightImage.scale.y *= scale;
-		}
-	};
-	
-	//=============================================================================
-	// EdisonLightMV
-	//=============================================================================
-	
-	const UltraMode7_EdisonLightMV_prototype_updateLight = EdisonLightMV.prototype.updateLight;
-	EdisonLightMV.prototype.updateLight = function()
-	{
-		UltraMode7_EdisonLightMV_prototype_updateLight.call(this);
-		if (!$gameMap.useUltraMode7)
-		{
-			return;
-		}
-		const character = $gameMap._events[this.eventId];
-		// some safety guards
-		if (character && character.screenScale)
-		{
-			const scale = character.screenScale();
-			const ax = this.lightImage.x - character.screenX();
-			const ay = this.lightImage.y - character.screenY();
-			this.lightImage.x += (scale - 1) * ax;
-			this.lightImage.y += (scale - 1) * ay;
-			this.lightImage.scale.x *= scale;
-			this.lightImage.scale.y *= scale;
-		}
-	};
-	
+			UltraMode7_EdisonLightMV_prototype_updateLight.call(this);
+			if (!$gameMap.useUltraMode7)
+			{
+				return;
+			}
+			const character = $gameMap._events[this.eventId];
+			// some safety guards
+			if (character && character.screenScale)
+			{
+				const scale = character.screenScale();
+				const ax = this.lightImage.x - character.screenX();
+				const ay = this.lightImage.y - character.screenY();
+				this.lightImage.x += (scale - 1) * ax;
+				this.lightImage.y += (scale - 1) * ay;
+				this.lightImage.scale.x *= scale;
+				this.lightImage.scale.y *= scale;
+			}
+		};
+		
+	}
+}
+catch (error)
+{
+	console.log(error);
 }
 
 //=============================================================================
 // Quasi Simple Shadows compatibility
 //=============================================================================
 
-if (Imported && Imported.QuasiSimpleShadows)
+try // if this breaks for some reason, so it doesn't break other compatibility code
 {
-	UltraMode7.log("Detected 'Quasi Simple Shadows', enabling compatibility code.");
-	
-	//=============================================================================
-	// Sprite_CharacterShadow
-	//=============================================================================
-	
-	const UltraMode7_Sprite_CharacterShadow_prototype_updateScaleOpacity = Sprite_CharacterShadow.prototype.updateScaleOpacity;
-	Sprite_CharacterShadow.prototype.updateScaleOpacity = function()
+	if (Imported && Imported.QuasiSimpleShadows)
 	{
-		UltraMode7_Sprite_CharacterShadow_prototype_updateScaleOpacity.call(this);
-		if (!$gameMap.useUltraMode7)
+		UltraMode7.log("Detected 'Quasi Simple Shadows', enabling compatibility code.");
+		
+		//=============================================================================
+		// Sprite_CharacterShadow
+		//=============================================================================
+		
+		const UltraMode7_Sprite_CharacterShadow_prototype_updateScaleOpacity = Sprite_CharacterShadow.prototype.updateScaleOpacity;
+		Sprite_CharacterShadow.prototype.updateScaleOpacity = function()
 		{
-			return;
-		}
-		if (!!this._character)
-		{
-			if (this._character.screenScale)
+			UltraMode7_Sprite_CharacterShadow_prototype_updateScaleOpacity.call(this);
+			if (!$gameMap.useUltraMode7)
 			{
-				const scale = this._character.screenScale();
-				this.scale.x *= scale;
-				this.scale.y *= scale;
+				return;
 			}
-			if (this._character.screenBlendColor)
+			if (!!this._character)
 			{
-				const blendColor = this._character.screenBlendColor();
-				if (blendColor !== null)
+				if (this._character.screenScale)
 				{
-					this.setBlendColor(blendColor);
+					const scale = this._character.screenScale();
+					this.scale.x *= scale;
+					this.scale.y *= scale;
+				}
+				if (this._character.screenBlendColor)
+				{
+					const blendColor = this._character.screenBlendColor();
+					if (blendColor !== null)
+					{
+						this.setBlendColor(blendColor);
+					}
 				}
 			}
-		}
-	};
-	
+		};
+		
+	}
+}
+catch (error)
+{
+	console.log(error);
+}
+
+//=============================================================================
+// OcRam_Lights compatibility
+//=============================================================================
+
+try // if this breaks for some reason, so it doesn't break other compatibility code
+{
+	if (Imported && Imported.OcRam_Core && Imported.OcRam_Lights)
+	{
+		UltraMode7.log("Detected 'OcRam Lights', enabling compatibility code.");
+		
+		// CoRam Lights has a local class called Light_Data which is not exposed so it can't be modified from the outside.
+		// Luckily Game_Follower.setupLightData has a simple implementation of instantiating Light_Data so this is used
+		// to pull out the constructor of Light_Data so it can be modified by Ultra Mode 7 for compatibility.
+		var _dummy = {};
+		Game_Follower.prototype.setupLightData.call(_dummy, 1, 1, [255, 255, 255]);
+		const Light_Data = _dummy._lightData.constructor;
+		_dummy = undefined;
+		
+		// utility functions for terrain positions
+		
+		const _terrainScreenX = function()
+		{
+			const x = this.UltraMode7_screenX_OC();
+			if (!$gameMap.useUltraMode7)
+			{
+				return x;
+			}
+			return UltraMode7.mapToScreen(x, this.UltraMode7_screenY_OC()).x;
+		};
+
+		const _terrainScreenY = function()
+		{
+			const y = this.UltraMode7_screenY_OC();
+			if (!$gameMap.useUltraMode7)
+			{
+				return y;
+			}
+			return UltraMode7.mapToScreen(this.UltraMode7_screenX_OC(), y).y;
+		};
+		
+		//=============================================================================
+		// Game_CharacterBase
+		//=============================================================================
+		
+		const UltraMode7_Game_CharacterBase_prototype_screenX_OC = Game_CharacterBase.prototype.screenX_OC;
+		Game_CharacterBase.prototype.screenX_OC = function()
+		{
+			const x = UltraMode7_Game_CharacterBase_prototype_screenX_OC.call(this);
+			if (!$gameMap.useUltraMode7)
+			{
+				return x;
+			}
+			const y = UltraMode7_Game_CharacterBase_prototype_screenY_OC.call(this) + this.shiftY();
+			return UltraMode7.mapToScreen(x, y + OcRam.twh50[0]).x;
+		};
+
+		const UltraMode7_Game_CharacterBase_prototype_screenY_OC = Game_CharacterBase.prototype.screenY_OC;
+		Game_CharacterBase.prototype.screenY_OC = function()
+		{
+			var y = UltraMode7_Game_CharacterBase_prototype_screenY_OC.call(this);
+			if (!$gameMap.useUltraMode7)
+			{
+				return y;
+			}
+			y += this.shiftY();
+			const x = UltraMode7_Game_CharacterBase_prototype_screenX_OC.call(this);
+			return UltraMode7.mapToScreen(x, y + OcRam.twh50[0]).y;
+		};
+		
+		//=============================================================================
+		// Light_Data
+		//=============================================================================
+		
+		const UltraMode7_Light_Data_prototype_initialize = Light_Data.prototype.initialize;
+		Light_Data.prototype.initialize = function(parent, lightType, lightColor, radius, exParams)
+		{
+			UltraMode7_Light_Data_prototype_initialize.call(this, parent, lightType, lightColor, radius, exParams);
+			if (!!$dataMap && $gameMap.useUltraMode7 && this._parentObject !== null)
+			{
+				// to make sure the initial setup works properly
+				if (this._parentObject instanceof Game_CharacterBase) // map character
+				{
+					this._currentRadius = this._radius * this._parentObject.screenScale();
+				}
+				else if (this._parentObject._tagId !== undefined) // terrain tag
+				{
+					this._parentObject.UltraMode7_screenX_OC = this._parentObject.screenX_OC;
+					this._parentObject.UltraMode7_screenY_OC = this._parentObject.screenY_OC;
+					this._parentObject.screenX_OC = _terrainScreenX;
+					this._parentObject.screenY_OC = _terrainScreenY;
+					const x = this._parentObject.UltraMode7_screenX_OC();
+					const y = this._parentObject.UltraMode7_screenY_OC();
+					this._currentRadius = this._radius * UltraMode7.mapToScreenScale(x, y);
+				}
+			}
+		};
+		
+		const UltraMode7_Light_Data_prototype_update = Light_Data.prototype.update;
+		Light_Data.prototype.update = function(lightLayer, ctx)
+		{
+			if (!$gameMap.useUltraMode7)
+			{
+				UltraMode7_Light_Data_prototype_update.call(this, lightLayer, ctx);
+				return;
+			}
+			if (this._parentObject === null || lightLayer === undefined)
+			{
+				UltraMode7_Light_Data_prototype_update.call(this, lightLayer, ctx);
+				return;
+			}
+			const isCharacter = (this._parentObject instanceof Game_CharacterBase);
+			const isTerrain = (this._parentObject._tagId !== undefined);
+			if (!isCharacter && !isTerrain)
+			{
+				UltraMode7_Light_Data_prototype_update.call(this, lightLayer, ctx);
+				return;
+			}
+			var x = 0;
+			var y = 0;
+			if (isCharacter)
+			{
+				// using this method is safer than the custom code with isVisibleByZ() below
+				if (!this._parentObject.isUltraMode7Visible())
+				{
+					return;
+				}
+				x = UltraMode7_Game_CharacterBase_prototype_screenX_OC.call(this._parentObject);
+				y = UltraMode7_Game_CharacterBase_prototype_screenY_OC.call(this._parentObject) + this._parentObject.shiftY();
+			}
+			else
+			{
+				x = this._parentObject.UltraMode7_screenX_OC();
+				y = this._parentObject.UltraMode7_screenY_OC();
+			}
+			const position = UltraMode7.mapToScreen(x, y);
+			if (isTerrain && !UltraMode7.isVisibleByZ(position.z))
+			{
+				return;
+			}
+			const radius = this._radius;
+			const currentRadius = this._currentRadius;
+			const ox = this._lightExParams.offset[0];
+			const oy = this._lightExParams.offset[1];
+			const angle = this._lightExParams.angle;
+			// using != 0 instead of !== 0 because the original code does that as well
+			const manualAngle = (this._lightExParams.angle || this._lightExParams.rotation != 0 ? true : false);
+			var scale = 1;
+			if (isCharacter)
+			{
+				scale = this._parentObject.screenScale();
+			}
+			else
+			{
+				scale = UltraMode7.mapToScreenScale(x, y);
+			}
+			this._radius *= scale;
+			this._currentRadius = this._radius;
+			this._lightExParams.offset[0] = this._lightExParams.offset[0] * scale;
+			this._lightExParams.offset[1] = this._lightExParams.offset[1] * scale - OcRam.twh50[0] * scale;
+			// custom angle
+			if (!manualAngle && this._parentObject._direction !== undefined)
+			{
+				const direction = this._parentObject._direction;
+				if (direction === 2 || direction === 4 || direction === 6 || direction === 8 ||
+					direction === 1 || direction === 3 || direction === 7 || direction === 9)
+				{
+					var tx = 0;
+					var ty = 0;
+					if (direction === 3 || direction === 6 || direction === 9)
+					{
+						tx = 1;
+					}
+					else if (direction === 1 || direction === 4 || direction === 7)
+					{
+						tx = -1;
+					}
+					if (direction === 1 || direction === 2 || direction === 3)
+					{
+						ty = 1;
+					}
+					else if (direction === 7 || direction === 8 || direction === 9)
+					{
+						ty = -1;
+					}
+					const directionPosition = UltraMode7.mapToScreen(x + tx * 10, y + ty * 10);
+					const directionX = directionPosition.x - position.x;
+					const directionY = directionPosition.y - position.y;
+					this._lightExParams.angle = (Math.atan2(-directionY, directionX) * 360 / (Math.PI * 2) + 360).mod(360);
+					// due to the original code not properly checking for angle === 0
+					if (this._lightExParams.angle < 0.1)
+					{
+						this._lightExParams.angle = 0.1;
+					}
+				}
+			}
+			UltraMode7_Light_Data_prototype_update.call(this, lightLayer, ctx);
+			this._radius = radius;
+			this._currentRadius = currentRadius;
+			this._lightExParams.offset[0] = ox;
+			this._lightExParams.offset[1] = oy;
+			if (!manualAngle)
+			{
+				this._lightExParams.angle = angle;
+			}
+		};
+		
+	}
+}
+catch (error)
+{
+	console.log(error);
 }
 
 //=============================================================================

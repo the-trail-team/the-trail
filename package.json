@@ -1,12 +1,14 @@
 {
-    "name": "The Trail",
-    "main": "index.html",
-    "js-flags": "--expose-gc",
-    "window": {
-        "title": "The Trail",
-        "toolbar": false,
-        "width": 816,
-        "height": 624,
-        "icon": "icon/icon.png"
-    }
+  "name": "thetrail",
+  "main": "index.html",
+  "js-flags": "--exposegc",
+  "window": {
+    "position": "center",
+    "show": true,
+    "toolbar": false,
+    "icon": "icon/icon.png",
+    "width": 1280,
+    "height": 720,
+    "title": "The Trail"
+  }
 }

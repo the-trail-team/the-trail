@@ -1,1 +1,361 @@
-{"Scene_Battle":{"Window_BattleStatus":{"x":192,"y":444,"opacity":"255","width":"624","height":"180","rows":"4","cols":"1"},"Window_ActorCommand":{"x":0,"y":444,"opacity":"255","width":"192","rows":"4","cols":"1","lineHeight":"36","align":"center"},"Window_VictoryTitle":{"x":0,"y":0},"Window_VictoryExp":{"x":0,"y":72},"Window_VictoryDrop":{"x":0,"y":72,"opacity":"255","width":"816","height":"552","cols":"1"},"Window_BattleSkill":{"x":0,"y":108,"opacity":"255","width":"408","height":"336","cols":"1"},"Window_Help":{"x":0,"y":0},"Window_BattleItem":{"x":0,"y":108,"opacity":"255","width":"408","height":"336","cols":"1"}},"Scene_Item":{"Window_Help":{"x":0,"y":0},"Window_MenuActor":{"x":304,"y":0,"opacity":"255","width":"512","height":"624","rows":"4","cols":"1"},"Window_ItemInfo":{"x":408,"y":288},"Window_ItemCategory":{"x":0,"y":108},"Window_ItemStatus":{"x":240,"y":108},"Window_ItemList":{"x":0,"y":288}},"Scene_Party":{"Window_MenuActor":{},"Window_Help":{"x":0,"y":0},"Window_PartyMenuCommand":{"x":0,"y":108},"Window_PartyList":{"x":0,"y":288},"Window_PartyDetail":{"x":300,"y":288}},"Scene_Equip":{"Window_Help":{"x":0,"y":0},"Window_StatCompare":{"x":408,"y":288},"Window_EquipSlot":{"x":0,"y":288,"opacity":"255","width":"408","height":"336","cols":"1"},"Window_SkillStatus":{"x":240,"y":108},"Window_EquipCommand":{"x":0,"y":108}},"Scene_Menu":{"Window_MenuCommand":{"x":0,"y":0,"opacity":"255","width":"240","rows":"10","cols":"1","lineHeight":"36","align":"left"},"Window_Gold_Customized":{"x":0,"y":480,"opacity":"255","width":"240","height":"144"},"Window_MenuStatus":{"x":240,"y":0}},"Scene_Name":{"Window_NameEdit":{"x":168,"y":38}}}
+{
+  "Scene_Battle": {
+    "Window_BattleStatus": {
+      "x": 1419,
+      "y": 720,
+      "opacity": "0",
+      "width": "624",
+      "height": "180",
+      "rows": "0",
+      "cols": "0"
+    },
+    "Window_ActorCommand": {
+      "x": 944,
+      "y": 436,
+      "opacity": "255",
+      "width": "192",
+      "rows": "8",
+      "cols": "1",
+      "lineHeight": "32",
+      "align": "center"
+    },
+    "Window_VictoryTitle": {
+      "x": 0,
+      "y": 0
+    },
+    "Window_VictoryExp": {
+      "x": 0,
+      "y": 72
+    },
+    "Window_VictoryDrop": {
+      "x": 0,
+      "y": 72,
+      "opacity": "255",
+      "width": "816",
+      "height": "552",
+      "cols": "1"
+    },
+    "Window_Help": {
+      "x": 0,
+      "y": 99,
+      "opacity": "0",
+      "width": "1280",
+      "height": "108"
+    },
+    "Window_PartyCommand": {
+      "x": 0,
+      "y": 444,
+      "opacity": "255",
+      "width": "192",
+      "rows": "4",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "center"
+    },
+    "Window_BattleSideStatus": {
+      "x": 1080,
+      "y": 0
+    },
+    "Window_BattleSideStatus 2": {
+      "x": 1080,
+      "y": 99
+    },
+    "Window_BattleSideStatus 3": {
+      "x": 1080,
+      "y": 198
+    },
+    "Window_BattleSideStatus 4": {
+      "x": 1032,
+      "y": 297
+    },
+    "Window_OTBDisplay": {
+      "x": 48,
+      "y": 18
+    }
+  },
+  "Scene_Item": {
+    "Window_Help": {
+      "x": 0,
+      "y": 0
+    },
+    "Window_MenuActor": {
+      "x": 640,
+      "y": 0,
+      "opacity": "255",
+      "width": "640",
+      "height": "720",
+      "rows": "4",
+      "cols": "1"
+    },
+    "Window_ItemInfo": {
+      "x": 640,
+      "y": 288,
+      "opacity": "255",
+      "width": "640",
+      "height": "432"
+    },
+    "Window_ItemCategory": {
+      "x": 0,
+      "y": 108,
+      "opacity": "255",
+      "width": "640",
+      "rows": "4",
+      "cols": "4",
+      "lineHeight": "36",
+      "align": "center"
+    },
+    "Window_ItemStatus": {
+      "x": 640,
+      "y": 108,
+      "opacity": "255",
+      "width": "640",
+      "height": "180"
+    },
+    "Window_ItemList": {
+      "x": 0,
+      "y": 288,
+      "opacity": "255",
+      "width": "640",
+      "height": "432",
+      "cols": "1"
+    },
+    "Window_ItemActionCommand": {
+      "x": 0,
+      "y": 288
+    }
+  },
+  "Scene_Party": {
+    "Window_MenuActor": {},
+    "Window_Help": {
+      "x": 0,
+      "y": 0
+    },
+    "Window_PartyMenuCommand": {
+      "x": 0,
+      "y": 108
+    },
+    "Window_PartyList": {
+      "x": 0,
+      "y": 288
+    },
+    "Window_PartyDetail": {
+      "x": 300,
+      "y": 288
+    }
+  },
+  "Scene_Equip": {
+    "Window_Help": {
+      "x": 0,
+      "y": 0
+    },
+    "Window_StatCompare": {
+      "x": 640,
+      "y": 288,
+      "opacity": "255",
+      "width": "640",
+      "height": "432"
+    },
+    "Window_EquipSlot": {
+      "x": 0,
+      "y": 288,
+      "opacity": "255",
+      "width": "640",
+      "height": "432",
+      "cols": "1"
+    },
+    "Window_SkillStatus": {
+      "x": 240,
+      "y": 108
+    },
+    "Window_EquipCommand": {
+      "x": 0,
+      "y": 108
+    },
+    "Window_BattleStatus": {},
+    "Window_EquipRequirement": {
+      "x": 640,
+      "y": 288
+    },
+    "Window_EquipItem": {
+      "x": 0,
+      "y": 288
+    },
+    "Window_ItemInfo": {
+      "x": 640,
+      "y": 288
+    }
+  },
+  "Scene_Menu": {
+    "Window_MenuCommand": {
+      "x": 0,
+      "y": 0,
+      "opacity": "255",
+      "width": "360",
+      "rows": "Math.min(15, Math.ceil(this.maxItems() / this.maxCols()))",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "left"
+    },
+    "Window_Gold_Customized": {
+      "x": 0,
+      "y": 576,
+      "opacity": "255",
+      "width": "360",
+      "height": "144"
+    },
+    "Window_MenuStatus": {
+      "x": 360,
+      "y": 0,
+      "opacity": "255",
+      "width": "920",
+      "height": "720",
+      "rows": "4",
+      "cols": "1"
+    },
+    "Window_Help": {}
+  },
+  "Scene_Name": {
+    "Window_NameEdit": {
+      "x": 400,
+      "y": 60,
+      "opacity": "255",
+      "width": "480",
+      "height": "180"
+    }
+  },
+  "Scene_Load": {
+    "Window_Help": {
+      "x": 0,
+      "y": 0,
+      "opacity": "255",
+      "width": "1280",
+      "height": "108"
+    }
+  },
+  "Scene_StatAllocation": {
+    "Window_MenuCommand": {},
+    "Window_Help": {
+      "x": 0,
+      "y": 0
+    },
+    "Window_SkillStatus": {
+      "x": 240,
+      "y": 108
+    },
+    "Window_SynthesisNumber": {},
+    "Window_StatAllocationCommand": {
+      "x": 0,
+      "y": 108,
+      "opacity": "255",
+      "width": "240",
+      "rows": "4",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "center"
+    }
+  },
+  "Scene_Synthesis": {
+    "Window_Help": {
+      "x": 0,
+      "y": 0
+    },
+    "Window_SynthesisCommand": {
+      "x": 0,
+      "y": 108,
+      "opacity": "255",
+      "width": "205",
+      "rows": "3",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "center"
+    },
+    "Window_Gold": {
+      "x": 610,
+      "y": 648,
+      "opacity": "255",
+      "width": "670",
+      "height": "72"
+    },
+    "Window_SynthesisList": {
+      "x": 0,
+      "y": 252,
+      "opacity": "255",
+      "width": "610",
+      "height": "468",
+      "cols": "1"
+    },
+    "Window_SynthesisStatus": {
+      "x": 205,
+      "y": 108,
+      "opacity": "255",
+      "width": "405",
+      "height": "144"
+    },
+    "Window_SynthesisIngredients": {
+      "x": 610,
+      "y": 108,
+      "opacity": "255",
+      "width": "670",
+      "height": "540"
+    },
+    "Window_SynthesisNumber": {
+      "x": 610,
+      "y": 108,
+      "opacity": "255",
+      "width": "670",
+      "height": "540",
+      "cols": "1"
+    },
+    "Window_MenuActor": {}
+  },
+  "Scene_GameEnd": {
+    "Window_StatAllocationCommand": {},
+    "Window_GameEnd": {
+      "x": 520,
+      "y": 288,
+      "opacity": "255",
+      "width": "240",
+      "rows": "3",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "left"
+    }
+  },
+  "Scene_Quest": {
+    "Window_QuestData": {
+      "x": 427,
+      "y": 72
+    },
+    "Window_QuestCategories": {
+      "x": 0,
+      "y": 0,
+      "opacity": "255",
+      "width": "427",
+      "rows": "2",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "left"
+    }
+  },
+  "Scene_ItemRename": {
+    "Window_ItemNameEdit": {
+      "x": 100,
+      "y": 86,
+      "opacity": "255",
+      "width": "1080",
+      "height": "180"
+    }
+  },
+  "Scene_Retry": {
+    "Window_RetryCommand": {
+      "x": 430,
+      "y": 234,
+      "opacity": "0",
+      "width": "420",
+      "rows": "6",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "center"
+    }
+  }
+}

@@ -949,7 +949,7 @@ Yanfly.SkillMastery.Game_Battler_onAllActionsEnd =
   Game_Battler.prototype.onAllActionsEnd;
 Game_Battler.prototype.onAllActionsEnd = function() {
   Yanfly.SkillMastery.Game_Battler_onAllActionsEnd.call(this);
-  if (this._actionMastery && $gameParty.inBattle()) {
+  if (this._actionMastery && $gameParty.inBattle() && this.isActor()) {
     var levelup = false;
     while (this._actionMastery.length > 0) {
       var skillId = this._actionMastery.shift();
@@ -976,7 +976,7 @@ Game_BattlerBase.prototype.skillMpCost = function(skill) {
   if (cost > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      cost = Math.floor(skill.masteryMpCost.call(this, cost, level, skill));
+      cost = Math.round(skill.masteryMpCost.call(this, cost, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery MP Cost Formula for ' +
@@ -994,7 +994,7 @@ Game_BattlerBase.prototype.skillTpCost = function(skill) {
   if (cost > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      cost = Math.floor(skill.masteryTpCost.call(this, cost, level, skill));
+      cost = Math.round(skill.masteryTpCost.call(this, cost, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery TP Cost Formula for ' +
@@ -1014,7 +1014,7 @@ Game_BattlerBase.prototype.skillHpCost = function(skill) {
   if (cost > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      cost = Math.floor(skill.masteryHpCost.call(this, cost, level, skill));
+      cost = Math.round(skill.masteryHpCost.call(this, cost, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery HP Cost Formula for ' +
@@ -1035,7 +1035,7 @@ Game_BattlerBase.prototype.applyCooldownMods = function(skill) {
   if (turns > 0) {
     var level = this.skillMasteryLevel(skill);
     try {
-      turns = Math.floor(skill.masteryCooldown.call(this, turns, level, skill));
+      turns = Math.round(skill.masteryCooldown.call(this, turns, level, skill));
     } catch (e) {
       Yanfly.Util.SkillMasteryLevelsError('SKILL MASTERY LEVELS:\n' + 
         'Bad code for Mastery Cooldown Formula for ' +
@@ -1125,11 +1125,16 @@ Window_Base.prototype.drawItemName = function(item, x, y, width) {
 
 Window_Base.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
   if (skill.masteryMaxLevel <= 0) return;
+  if ($gameParty.inBattle()) return;
   x += Window_Base._iconWidth + 4;
   width -= Window_Base._iconWidth + 4;
   var color1 = this.textColor(Yanfly.Param.SMLGauge1);
   var color2 = this.textColor(Yanfly.Param.SMLGauge2);
-  var gaugeH = Yanfly.Param.SMLGaugeH;
+  if (this._gaugeH !== undefined) {
+    gaugeH = this._gaugeH;
+  } else {
+    var gaugeH = Yanfly.Param.SMLGaugeH;
+  }
   var gaugeY = y + this.lineHeight() - gaugeH - 2;
   if (Yanfly.Param.SMLGaugeOutline) {
     gaugeY -= 2;
@@ -1150,6 +1155,7 @@ Window_Base.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
 Window_Base.prototype.drawSkillMasteryLevel = function(skill, x, y, width) {
   var level = this._actor.skillMasteryLevel(skill);
   if (level <= 0 && !Yanfly.Param.SMLShowLevel0) return;
+  if (skill.masteryMaxLevel == 0) return;
   var fmt = Yanfly.Param.SMLTextFmt;
   var text = fmt.format(Yanfly.Util.toGroup(level));
   this.resetFontSettings();

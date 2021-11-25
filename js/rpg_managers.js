@@ -1931,7 +1931,9 @@ SceneManager.onKeyDown = function(event) {
         switch (event.keyCode) {
         case 116:   // F5
             if (Utils.isNwjs()) {
-                location.reload();
+                if (window.confirm("Do you want to reload the game and return to the title screen?\nAll progress since the last save will be lost.\n\nRELOADING IN THIS WAY IS UNSUPPORTED AND CAN CAUSE VARIOUS BUGS/CRASHES!\nFULLY CLOSING THE GAME AND RELAUNCHING IT IS RECOMMENDED!")) {
+                    location.reload();
+                }
             }
             break;
         case 119:   // F8
@@ -2237,7 +2239,8 @@ BattleManager.replayBgmAndBgs = function() {
 };
 
 BattleManager.makeEscapeRatio = function() {
-    this._escapeRatio = 0.5 * $gameParty.agility() / $gameTroop.agility();
+    // this._escapeRatio = 0.5 * $gameParty.agility() / $gameTroop.agility();
+    this._escapeRatio = 0.2;
 };
 
 BattleManager.update = function() {
@@ -2353,6 +2356,7 @@ BattleManager.startBattle = function() {
     $gameParty.onBattleStart();
     $gameTroop.onBattleStart();
     this.displayStartMessages();
+    $gameSwitches.setValue(79, false);
 };
 
 BattleManager.displayStartMessages = function() {
@@ -2705,9 +2709,14 @@ BattleManager.updateBattleEnd = function() {
     this._phase = null;
 };
 
+function randomizeReward(variation) {
+    variation = Math.random() < 0.5 ? variation : -variation;
+    return 1 + ((Math.random() * variation) * 0.01);
+}
+
 BattleManager.makeRewards = function() {
     this._rewards = {};
-    this._rewards.gold = $gameTroop.goldTotal();
+    this._rewards.gold = Math.round($gameTroop.goldTotal() * randomizeReward(5));
     this._rewards.exp = $gameTroop.expTotal();
     this._rewards.items = $gameTroop.makeDropItems();
 };
@@ -2725,8 +2734,11 @@ BattleManager.displayEscapeSuccessMessage = function() {
 };
 
 BattleManager.displayEscapeFailureMessage = function() {
-    $gameMessage.add(TextManager.escapeStart.format($gameParty.name()));
-    $gameMessage.add('\\.' + TextManager.escapeFailure);
+    /*$gameMessage.add(TextManager.escapeStart.format($gameParty.name()));
+    $gameMessage.add('\\.' + TextManager.escapeFailure);*/
+    $gameMessage.add(TextManager.escapeFailure.format($gameParty.name()));
+    var chance = Math.floor(this._escapeRatio * 100);
+    $gameMessage.add("\\c[4]New escape chance: " + chance + "%");
 };
 
 BattleManager.displayRewards = function() {
@@ -2769,7 +2781,7 @@ BattleManager.gainRewards = function() {
 BattleManager.gainExp = function() {
     var exp = this._rewards.exp;
     $gameParty.allMembers().forEach(function(actor) {
-        actor.gainExp(exp);
+        actor.gainExp(Math.round(exp * randomizeReward(5)));
     });
 };
 

@@ -2071,7 +2071,7 @@ Window_Base.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
     if (actor._buffs[i] === 0) continue;
     this.drawBuffTurns(actor, i, wx, wy);
     if (Yanfly.Param.BSCShowBuffRate) {
-      this.drawBuffRate(actor, i, wx, wy);
+      this.drawBuffRate(actor, i, wx, wy - 12);
     }
     wx += iw;
     --shownMax;

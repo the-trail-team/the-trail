@@ -2119,8 +2119,8 @@ Game_BattlerBase.FLAG_ID_AUTO_BATTLE  = 0;
 Game_BattlerBase.FLAG_ID_GUARD        = 1;
 Game_BattlerBase.FLAG_ID_SUBSTITUTE   = 2;
 Game_BattlerBase.FLAG_ID_PRESERVE_TP  = 3;
-Game_BattlerBase.ICON_BUFF_START      = 32;
-Game_BattlerBase.ICON_DEBUFF_START    = 48;
+Game_BattlerBase.ICON_BUFF_START      = 64;
+Game_BattlerBase.ICON_DEBUFF_START    = 80;
 
 Object.defineProperties(Game_BattlerBase.prototype, {
     // Hit Points
@@ -2572,7 +2572,7 @@ Game_BattlerBase.prototype.isAutoBattle = function() {
 };
 
 Game_BattlerBase.prototype.isGuard = function() {
-    return this.specialFlag(Game_BattlerBase.FLAG_ID_GUARD) && this.canMove();
+    return this.specialFlag(Game_BattlerBase.FLAG_ID_GUARD);
 };
 
 Game_BattlerBase.prototype.isSubstitute = function() {
@@ -3997,7 +3997,9 @@ Game_Actor.prototype.isSpriteVisible = function() {
 };
 
 Game_Actor.prototype.startAnimation = function(animationId, mirror, delay) {
-    mirror = !mirror;
+    if (animationId !== 63) {
+        mirror = !mirror;
+    }
     Game_Battler.prototype.startAnimation.call(this, animationId, mirror, delay);
 };
 
@@ -4079,9 +4081,9 @@ Game_Actor.prototype.performVictory = function() {
 };
 
 Game_Actor.prototype.performEscape = function() {
-    if (this.canMove()) {
+    // if (this.canMove()) {
         this.requestMotion('escape');
-    }
+    // }
 };
 
 Game_Actor.prototype.makeActionList = function() {
@@ -4344,7 +4346,11 @@ Game_Enemy.prototype.traitObjects = function() {
 };
 
 Game_Enemy.prototype.paramBase = function(paramId) {
-    return this.enemy().params[paramId];
+    if (paramId == 1) {
+        return Infinity;
+    } else {
+        return this.enemy().params[paramId];
+    }
 };
 
 Game_Enemy.prototype.exp = function() {

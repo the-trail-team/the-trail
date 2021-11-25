@@ -55,15 +55,15 @@ Yanfly.KeyConfig.version = 1.04;
  * @desc This is the help message that will display for keys.
  * @default Reverts your keyboard setting to the default setup.
  *
- * @param WASD Layout
+ * @param Clear Layout
  * @parent ---Help Text---
- * @desc This is the text for switching to the WASD layout.
- * @default WASD Movement Layout
+ * @desc This is the text for clearing the layout.
+ * @default Clear Keyboard Layout
  *
- * @param WASD Help
+ * @param Clear Help
  * @parent ---Help Text---
- * @desc This is the help message that will display for WASD.
- * @default Changes your keyboard to WASD movement.
+ * @desc This is the help message that will display for clearing the layout.
+ * @default Clears the current keyboard layout.
  *
  * @param Finish Config
  * @parent ---Help Text---
@@ -91,10 +91,10 @@ Yanfly.KeyConfig.version = 1.04;
  * @desc This is the text color of an assigned action.
  * @default 4
  *
- * @param Clear Text
+ * @param Clear Key Text
  * @parent ---Help Text---
- * @desc This is the Clear action will appear for the config text.
- * @default Clear
+ * @desc This is the Clear Key action will appear for the config text.
+ * @default Clear Key
  *
  * @param ---Key Names---
  * @default
@@ -381,13 +381,13 @@ Yanfly.SetupParameters();
 Yanfly.Param.KeyConfigKeyHelp = String(Yanfly.Parameters['Key Help']);
 Yanfly.Param.KeyConfigDefaultTx = String(Yanfly.Parameters['Default Layout']);
 Yanfly.Param.KeyConfigDefaultHelp = String(Yanfly.Parameters['Default Help']);
-Yanfly.Param.KeyConfigWasdTx = String(Yanfly.Parameters['WASD Layout']);
-Yanfly.Param.KeyConfigWasdHelp = String(Yanfly.Parameters['WASD Help']);
+Yanfly.Param.KeyConfigClearTx = String(Yanfly.Parameters['Clear Layout']);
+Yanfly.Param.KeyConfigClearHelp = String(Yanfly.Parameters['Clear Help']);
 Yanfly.Param.KeyConfigFinishTx = String(Yanfly.Parameters['Finish Config']);
 Yanfly.Param.KeyConfigFinishHelp = String(Yanfly.Parameters['Finish Help']);
 Yanfly.Param.KeyConfigAssignColor = Number(Yanfly.Parameters['Assigned Color']);
 Yanfly.Param.KeyConfigActionColor = Number(Yanfly.Parameters['Action Color']);
-Yanfly.Param.KeyConfigClearTx = String(Yanfly.Parameters['Clear Text']);
+Yanfly.Param.KeyConfigClearKeyTx = String(Yanfly.Parameters['Clear Key Text']);
 
 Yanfly.Param.KeyConfigOkKey = String(Yanfly.Parameters['OK Key']);
 Yanfly.Param.KeyConfigOkTx = String(Yanfly.Parameters['OK Text']);
@@ -477,111 +477,114 @@ Input._switchButton = function(button) {
 //=============================================================================
 
 ConfigManager.keyMapper = JSON.parse(JSON.stringify(Input.keyMapper));
-ConfigManager.defaultMap = JSON.parse(JSON.stringify(Input.keyMapper));
-ConfigManager.wasdMap = {
+ConfigManager.defaultMap = {
   9: 'tab', 13: 'ok', 16: 'shift', 17: 'control', 18: 'control', 27: 'escape',
   32: 'ok', 33: 'pageup', 34: 'pagedown', 37: 'left', 38: 'up', 39: 'right',
-  40: 'down', 87: 'up', 65: 'left', 83: 'down', 68: 'right', 74: 'ok',
-  75: 'escape', 77: 'menu', 219: 'pageup',  221: 'pagedown', 45: 'escape',
+  40: 'down', 87: 'up', 65: 'left', 83: 'down', 68: 'right',
+  77: 'menu', 219: 'pagedown',  221: 'pageup',
   46: 'ok', 35: 'escape', 36: 'menu', 96: 'escape', 98: 'down', 100: 'left',
-  102: 'right', 104: 'up', 120: 'debug' 
+  102: 'right', 104: 'up', 120: 'debug',
+  90: 'ok', 88: 'escape' 
+};
+ConfigManager.clearMap = {
+	87: 'up', 65: 'left', 83: 'down', 68: 'right', 90: 'ok', 88: 'cancel'
 };
 
 if (Imported.YEP_ButtonCommonEvents) {
-if (Yanfly.Param.BCEList['tilde'] !== 0) ConfigManager.wasdMap[192] = 'tilde';
-if (Yanfly.Param.BCEList['1'] !== 0) ConfigManager.wasdMap[49] = '1';
-if (Yanfly.Param.BCEList['2'] !== 0) ConfigManager.wasdMap[50] = '2';
-if (Yanfly.Param.BCEList['3'] !== 0) ConfigManager.wasdMap[51] = '3';
-if (Yanfly.Param.BCEList['4'] !== 0) ConfigManager.wasdMap[52] = '4';
-if (Yanfly.Param.BCEList['5'] !== 0) ConfigManager.wasdMap[53] = '5';
-if (Yanfly.Param.BCEList['6'] !== 0) ConfigManager.wasdMap[54] = '6';
-if (Yanfly.Param.BCEList['7'] !== 0) ConfigManager.wasdMap[55] = '7';
-if (Yanfly.Param.BCEList['8'] !== 0) ConfigManager.wasdMap[56] = '8';
-if (Yanfly.Param.BCEList['9'] !== 0) ConfigManager.wasdMap[57] = '9';
-if (Yanfly.Param.BCEList['0'] !== 0) ConfigManager.wasdMap[48] = '0';
-if (Yanfly.Param.BCEList['minus'] !== 0) ConfigManager.wasdMap[189] = 'minus';
-if (Yanfly.Param.BCEList['equal'] !== 0) ConfigManager.wasdMap[187] = 'equal';
+if (Yanfly.Param.BCEList['tilde'] !== 0) ConfigManager.defaultMap[192] = 'tilde';
+if (Yanfly.Param.BCEList['1'] !== 0) ConfigManager.defaultMap[49] = '1';
+if (Yanfly.Param.BCEList['2'] !== 0) ConfigManager.defaultMap[50] = '2';
+if (Yanfly.Param.BCEList['3'] !== 0) ConfigManager.defaultMap[51] = '3';
+if (Yanfly.Param.BCEList['4'] !== 0) ConfigManager.defaultMap[52] = '4';
+if (Yanfly.Param.BCEList['5'] !== 0) ConfigManager.defaultMap[53] = '5';
+if (Yanfly.Param.BCEList['6'] !== 0) ConfigManager.defaultMap[54] = '6';
+if (Yanfly.Param.BCEList['7'] !== 0) ConfigManager.defaultMap[55] = '7';
+if (Yanfly.Param.BCEList['8'] !== 0) ConfigManager.defaultMap[56] = '8';
+if (Yanfly.Param.BCEList['9'] !== 0) ConfigManager.defaultMap[57] = '9';
+if (Yanfly.Param.BCEList['0'] !== 0) ConfigManager.defaultMap[48] = '0';
+if (Yanfly.Param.BCEList['minus'] !== 0) ConfigManager.defaultMap[189] = 'minus';
+if (Yanfly.Param.BCEList['equal'] !== 0) ConfigManager.defaultMap[187] = 'equal';
 
-if (Yanfly.Param.BCEList['q'] !== 0) ConfigManager.wasdMap[81] = 'q';
-if (Yanfly.Param.BCEList['w'] !== 0) ConfigManager.wasdMap[87] = 'w';
-if (Yanfly.Param.BCEList['e'] !== 0) ConfigManager.wasdMap[69] = 'e';
-if (Yanfly.Param.BCEList['r'] !== 0) ConfigManager.wasdMap[82] = 'r';
-if (Yanfly.Param.BCEList['t'] !== 0) ConfigManager.wasdMap[84] = 't';
-if (Yanfly.Param.BCEList['y'] !== 0) ConfigManager.wasdMap[89] = 'y';
-if (Yanfly.Param.BCEList['u'] !== 0) ConfigManager.wasdMap[85] = 'u';
-if (Yanfly.Param.BCEList['i'] !== 0) ConfigManager.wasdMap[73] = 'i';
-if (Yanfly.Param.BCEList['o'] !== 0) ConfigManager.wasdMap[79] = 'o';
-if (Yanfly.Param.BCEList['p'] !== 0) ConfigManager.wasdMap[80] = 'p';
-if (Yanfly.Param.BCEList['foreBrack'] !== 0) ConfigManager.wasdMap[219] =
+if (Yanfly.Param.BCEList['q'] !== 0) ConfigManager.defaultMap[81] = 'q';
+if (Yanfly.Param.BCEList['w'] !== 0) ConfigManager.defaultMap[87] = 'w';
+if (Yanfly.Param.BCEList['e'] !== 0) ConfigManager.defaultMap[69] = 'e';
+if (Yanfly.Param.BCEList['r'] !== 0) ConfigManager.defaultMap[82] = 'r';
+if (Yanfly.Param.BCEList['t'] !== 0) ConfigManager.defaultMap[84] = 't';
+if (Yanfly.Param.BCEList['y'] !== 0) ConfigManager.defaultMap[89] = 'y';
+if (Yanfly.Param.BCEList['u'] !== 0) ConfigManager.defaultMap[85] = 'u';
+if (Yanfly.Param.BCEList['i'] !== 0) ConfigManager.defaultMap[73] = 'i';
+if (Yanfly.Param.BCEList['o'] !== 0) ConfigManager.defaultMap[79] = 'o';
+if (Yanfly.Param.BCEList['p'] !== 0) ConfigManager.defaultMap[80] = 'p';
+if (Yanfly.Param.BCEList['foreBrack'] !== 0) ConfigManager.defaultMap[219] =
  'foreBrack';
-if (Yanfly.Param.BCEList['backBrack'] !== 0) ConfigManager.wasdMap[221] =
+if (Yanfly.Param.BCEList['backBrack'] !== 0) ConfigManager.defaultMap[221] =
  'backBrack';
-if (Yanfly.Param.BCEList['backSlash'] !== 0) ConfigManager.wasdMap[220] =
+if (Yanfly.Param.BCEList['backSlash'] !== 0) ConfigManager.defaultMap[220] =
  'backSlash';
 
-if (Yanfly.Param.BCEList['a'] !== 0) ConfigManager.wasdMap[65] = 'a';
-if (Yanfly.Param.BCEList['s'] !== 0) ConfigManager.wasdMap[83] = 's';
-if (Yanfly.Param.BCEList['d'] !== 0) ConfigManager.wasdMap[68] = 'd';
-if (Yanfly.Param.BCEList['f'] !== 0) ConfigManager.wasdMap[70] = 'f';
-if (Yanfly.Param.BCEList['g'] !== 0) ConfigManager.wasdMap[71] = 'g';
-if (Yanfly.Param.BCEList['h'] !== 0) ConfigManager.wasdMap[72] = 'h';
-if (Yanfly.Param.BCEList['j'] !== 0) ConfigManager.wasdMap[74] = 'j';
-if (Yanfly.Param.BCEList['k'] !== 0) ConfigManager.wasdMap[75] = 'k';
-if (Yanfly.Param.BCEList['l'] !== 0) ConfigManager.wasdMap[76] = 'l';
-if (Yanfly.Param.BCEList['semicolon'] !== 0) ConfigManager.wasdMap[186] =
+if (Yanfly.Param.BCEList['a'] !== 0) ConfigManager.defaultMap[65] = 'a';
+if (Yanfly.Param.BCEList['s'] !== 0) ConfigManager.defaultMap[83] = 's';
+if (Yanfly.Param.BCEList['d'] !== 0) ConfigManager.defaultMap[68] = 'd';
+if (Yanfly.Param.BCEList['f'] !== 0) ConfigManager.defaultMap[70] = 'f';
+if (Yanfly.Param.BCEList['g'] !== 0) ConfigManager.defaultMap[71] = 'g';
+if (Yanfly.Param.BCEList['h'] !== 0) ConfigManager.defaultMap[72] = 'h';
+if (Yanfly.Param.BCEList['j'] !== 0) ConfigManager.defaultMap[74] = 'j';
+if (Yanfly.Param.BCEList['k'] !== 0) ConfigManager.defaultMap[75] = 'k';
+if (Yanfly.Param.BCEList['l'] !== 0) ConfigManager.defaultMap[76] = 'l';
+if (Yanfly.Param.BCEList['semicolon'] !== 0) ConfigManager.defaultMap[186] =
  'semicolon';
-if (Yanfly.Param.BCEList['quote'] !== 0) ConfigManager.wasdMap[222] = 'quote';
-if (Yanfly.Param.BCEList['enter'] !== 0) ConfigManager.wasdMap[13] = 'enter';
+if (Yanfly.Param.BCEList['quote'] !== 0) ConfigManager.defaultMap[222] = 'quote';
+if (Yanfly.Param.BCEList['enter'] !== 0) ConfigManager.defaultMap[13] = 'enter';
 
-if (Yanfly.Param.BCEList['keyShift'] !== 0) ConfigManager.wasdMap[16] =
+if (Yanfly.Param.BCEList['keyShift'] !== 0) ConfigManager.defaultMap[16] =
  'keyShift';
-if (Yanfly.Param.BCEList['z'] !== 0) ConfigManager.wasdMap[90] = 'z';
-if (Yanfly.Param.BCEList['x'] !== 0) ConfigManager.wasdMap[88] = 'x';
-if (Yanfly.Param.BCEList['c'] !== 0) ConfigManager.wasdMap[67] = 'c';
-if (Yanfly.Param.BCEList['v'] !== 0) ConfigManager.wasdMap[86] = 'v';
-if (Yanfly.Param.BCEList['b'] !== 0) ConfigManager.wasdMap[66] = 'b';
-if (Yanfly.Param.BCEList['n'] !== 0) ConfigManager.wasdMap[78] = 'n';
-if (Yanfly.Param.BCEList['m'] !== 0) ConfigManager.wasdMap[77] = 'm';
-if (Yanfly.Param.BCEList['comma'] !== 0) ConfigManager.wasdMap[188] = 'comma';
-if (Yanfly.Param.BCEList['period'] !== 0) ConfigManager.wasdMap[190] = 'period';
-if (Yanfly.Param.BCEList['foreSlash'] !== 0) ConfigManager.wasdMap[191] =
+if (Yanfly.Param.BCEList['z'] !== 0) ConfigManager.defaultMap[90] = 'z';
+if (Yanfly.Param.BCEList['x'] !== 0) ConfigManager.defaultMap[88] = 'x';
+if (Yanfly.Param.BCEList['c'] !== 0) ConfigManager.defaultMap[67] = 'c';
+if (Yanfly.Param.BCEList['v'] !== 0) ConfigManager.defaultMap[86] = 'v';
+if (Yanfly.Param.BCEList['b'] !== 0) ConfigManager.defaultMap[66] = 'b';
+if (Yanfly.Param.BCEList['n'] !== 0) ConfigManager.defaultMap[78] = 'n';
+if (Yanfly.Param.BCEList['m'] !== 0) ConfigManager.defaultMap[77] = 'm';
+if (Yanfly.Param.BCEList['comma'] !== 0) ConfigManager.defaultMap[188] = 'comma';
+if (Yanfly.Param.BCEList['period'] !== 0) ConfigManager.defaultMap[190] = 'period';
+if (Yanfly.Param.BCEList['foreSlash'] !== 0) ConfigManager.defaultMap[191] =
  'foreSlash';
 
-if (Yanfly.Param.BCEList['space'] !== 0) ConfigManager.wasdMap[32] = 'space';
-if (Yanfly.Param.BCEList['dirLeft'] !== 0) ConfigManager.wasdMap[37] =
+if (Yanfly.Param.BCEList['space'] !== 0) ConfigManager.defaultMap[32] = 'space';
+if (Yanfly.Param.BCEList['dirLeft'] !== 0) ConfigManager.defaultMap[37] =
  'dirLeft';
-if (Yanfly.Param.BCEList['dirUp'] !== 0) ConfigManager.wasdMap[38] = 'dirUp';
-if (Yanfly.Param.BCEList['dirRight'] !== 0) ConfigManager.wasdMap[39] =
+if (Yanfly.Param.BCEList['dirUp'] !== 0) ConfigManager.defaultMap[38] = 'dirUp';
+if (Yanfly.Param.BCEList['dirRight'] !== 0) ConfigManager.defaultMap[39] =
  'dirRight';
-if (Yanfly.Param.BCEList['dirDown'] !== 0) ConfigManager.wasdMap[40] =
+if (Yanfly.Param.BCEList['dirDown'] !== 0) ConfigManager.defaultMap[40] =
  'dirDown';
-if (Yanfly.Param.BCEList['ins'] !== 0) ConfigManager.wasdMap[45] = 'ins';
-if (Yanfly.Param.BCEList['del'] !== 0) ConfigManager.wasdMap[46] = 'del';
-if (Yanfly.Param.BCEList['home'] !== 0) ConfigManager.wasdMap[36] = 'home';
-if (Yanfly.Param.BCEList['end'] !== 0) ConfigManager.wasdMap[35] = 'end';
-if (Yanfly.Param.BCEList['pageUp'] !== 0) ConfigManager.wasdMap[33] = 'pageUp';
-if (Yanfly.Param.BCEList['pageDown'] !== 0) ConfigManager.wasdMap[34] =
+if (Yanfly.Param.BCEList['ins'] !== 0) ConfigManager.defaultMap[45] = 'ins';
+if (Yanfly.Param.BCEList['del'] !== 0) ConfigManager.defaultMap[46] = 'del';
+if (Yanfly.Param.BCEList['home'] !== 0) ConfigManager.defaultMap[36] = 'home';
+if (Yanfly.Param.BCEList['end'] !== 0) ConfigManager.defaultMap[35] = 'end';
+if (Yanfly.Param.BCEList['pageUp'] !== 0) ConfigManager.defaultMap[33] = 'pageUp';
+if (Yanfly.Param.BCEList['pageDown'] !== 0) ConfigManager.defaultMap[34] =
  'pageDown';
 
-if (Yanfly.Param.BCEList['num0'] !== 0) ConfigManager.wasdMap[96] = 'num0';
-if (Yanfly.Param.BCEList['num1'] !== 0) ConfigManager.wasdMap[97] = 'num1';
-if (Yanfly.Param.BCEList['num2'] !== 0) ConfigManager.wasdMap[98] = 'num2';
-if (Yanfly.Param.BCEList['num3'] !== 0) ConfigManager.wasdMap[99] = 'num3';
-if (Yanfly.Param.BCEList['num4'] !== 0) ConfigManager.wasdMap[100] = 'num4';
-if (Yanfly.Param.BCEList['num5'] !== 0) ConfigManager.wasdMap[101] = 'num5';
-if (Yanfly.Param.BCEList['num6'] !== 0) ConfigManager.wasdMap[102] = 'num6';
-if (Yanfly.Param.BCEList['num7'] !== 0) ConfigManager.wasdMap[103] = 'num7';
-if (Yanfly.Param.BCEList['num8'] !== 0) ConfigManager.wasdMap[104] = 'num8';
-if (Yanfly.Param.BCEList['num9'] !== 0) ConfigManager.wasdMap[105] = 'num9';
-if (Yanfly.Param.BCEList['numPeriod'] !== 0) ConfigManager.wasdMap[110] =
+if (Yanfly.Param.BCEList['num0'] !== 0) ConfigManager.defaultMap[96] = 'num0';
+if (Yanfly.Param.BCEList['num1'] !== 0) ConfigManager.defaultMap[97] = 'num1';
+if (Yanfly.Param.BCEList['num2'] !== 0) ConfigManager.defaultMap[98] = 'num2';
+if (Yanfly.Param.BCEList['num3'] !== 0) ConfigManager.defaultMap[99] = 'num3';
+if (Yanfly.Param.BCEList['num4'] !== 0) ConfigManager.defaultMap[100] = 'num4';
+if (Yanfly.Param.BCEList['num5'] !== 0) ConfigManager.defaultMap[101] = 'num5';
+if (Yanfly.Param.BCEList['num6'] !== 0) ConfigManager.defaultMap[102] = 'num6';
+if (Yanfly.Param.BCEList['num7'] !== 0) ConfigManager.defaultMap[103] = 'num7';
+if (Yanfly.Param.BCEList['num8'] !== 0) ConfigManager.defaultMap[104] = 'num8';
+if (Yanfly.Param.BCEList['num9'] !== 0) ConfigManager.defaultMap[105] = 'num9';
+if (Yanfly.Param.BCEList['numPeriod'] !== 0) ConfigManager.defaultMap[110] =
  'numPeriod';
-if (Yanfly.Param.BCEList['numPlus'] !== 0) ConfigManager.wasdMap[107]  =
+if (Yanfly.Param.BCEList['numPlus'] !== 0) ConfigManager.defaultMap[107]  =
  'numPlus';
-if (Yanfly.Param.BCEList['numMinus'] !== 0) ConfigManager.wasdMap[109] =
+if (Yanfly.Param.BCEList['numMinus'] !== 0) ConfigManager.defaultMap[109] =
  'numMinus';
-if (Yanfly.Param.BCEList['numTimes'] !== 0) ConfigManager.wasdMap[106] =
+if (Yanfly.Param.BCEList['numTimes'] !== 0) ConfigManager.defaultMap[106] =
  'numTimes';
-if (Yanfly.Param.BCEList['numDivide'] !== 0) ConfigManager.wasdMap[111] =
+if (Yanfly.Param.BCEList['numDivide'] !== 0) ConfigManager.defaultMap[111] =
  'numDivide';
 };
 
@@ -736,8 +739,8 @@ Window_KeyConfig.prototype.makeCommandList = function(index) {
 		}
 		this.addCommand(Yanfly.Param.KeyConfigDefaultTx, 'default', true);
 		for (var i = 0; i < 6; ++i) this.addCommand(' ', 'default', true);
-		this.addCommand(Yanfly.Param.KeyConfigWasdTx, 'wasd', true);
-		for (var i = 0; i < 6; ++i) this.addCommand(' ', 'wasd', true);
+		this.addCommand(Yanfly.Param.KeyConfigClearTx, 'clear', true);
+		for (var i = 0; i < 6; ++i) this.addCommand(' ', 'clear', true);
 		this.addCommand(Yanfly.Param.KeyConfigFinishTx, 'cancel', true);
 		for (var i = 0; i < 6; ++i) this.addCommand(' ', 'cancel', true);
 };
@@ -984,8 +987,8 @@ Window_KeyConfig.prototype.updateHelp = function() {
 		case 'default':
 			this._helpWindow.setText(Yanfly.Param.KeyConfigDefaultHelp);
 			break;
-		case 'wasd':
-			this._helpWindow.setText(Yanfly.Param.KeyConfigWasdHelp);
+		case 'clear':
+			this._helpWindow.setText(Yanfly.Param.KeyConfigClearHelp);
 			break;
 		case 'cancel':
 			this._helpWindow.setText(Yanfly.Param.KeyConfigFinishHelp);
@@ -1025,7 +1028,7 @@ Window_KeyAction.prototype.windowHeight = function() {
 };
 
 Window_KeyAction.prototype.makeCommandList = function() {
-	this.addCommand(Yanfly.Param.KeyConfigClearTx, 'ok', true, 'clear');
+	this.addCommand(Yanfly.Param.KeyConfigClearKeyTx, 'ok', true, 'clearkey');
 	this.addCommand(Yanfly.Param.KeyConfigOkTx, 'ok', true, 'ok');
 	this.addCommand(Yanfly.Param.KeyConfigEscTx, 'ok', true, 'escape');
 	this.addCommand(Yanfly.Param.KeyConfigCancelTx, 'ok', true, 'cancel');
@@ -1104,7 +1107,7 @@ Scene_KeyConfig.prototype.refreshWindows = function() {
 Scene_KeyConfig.prototype.createKeyConfigWindow = function() {
 	this._configWindow = new Window_KeyConfig(this._helpWindow);
 	this._configWindow.setHandler('default', this.commandDefault.bind(this));
-	this._configWindow.setHandler('wasd', this.commandWasd.bind(this));
+	this._configWindow.setHandler('clear', this.commandClear.bind(this));
 	this._configWindow.setHandler('cancel', this.commandExit.bind(this));
 	this._configWindow.setHandler('key', this.commandKey.bind(this));
 	this.addWindow(this._configWindow);
@@ -1124,8 +1127,8 @@ Scene_KeyConfig.prototype.commandDefault = function() {
 	this.refreshWindows();
 };
 
-Scene_KeyConfig.prototype.commandWasd = function() {
-	ConfigManager.keyMapper = JSON.parse(JSON.stringify(ConfigManager.wasdMap));
+Scene_KeyConfig.prototype.commandClear = function() {
+	ConfigManager.keyMapper = JSON.parse(JSON.stringify(ConfigManager.clearMap));
 	ConfigManager.applyKeyConfig();
 	this.refreshWindows();
 };
@@ -1146,7 +1149,7 @@ Scene_KeyConfig.prototype.onActionOk = function() {
 	var action = this._actionWindow.currentExt();
 	var name = this._configWindow.commandName(this._configWindow.index());
 	var key = Window_KeyConfig._refId[name];
-	if (action === 'clear') {
+	if (action === 'clearkey') {
 		ConfigManager.keyMapper[key] = undefined;
 	} else {
 		ConfigManager.keyMapper[key] = action;

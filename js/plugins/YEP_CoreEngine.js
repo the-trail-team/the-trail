@@ -2632,6 +2632,7 @@ Window_SkillType.prototype.makeCommandList = function() {
 
 Window_ActorCommand.prototype.addSkillCommands = function() {
     var skillTypes = this._actor.addedSkillTypes();
+    skillTypes.splice(2,1); // splices Passive skill category from Window_ActorCommand
     skillTypes.sort(function(a, b){return a-b});
     skillTypes.forEach(function(stypeId) {
         var name = $dataSystem.skillTypes[stypeId];
@@ -2705,7 +2706,12 @@ Window_ShopNumber.prototype.drawNumber = function() {
     var width = this.cursorWidth() - this.textPadding();
     this.resetTextColor();
     var itemNumber = Yanfly.Util.toGroup(this._number);
-    this.drawText(itemNumber, x, y, width, 'right');
+    if (this._max !== 1) {
+      this.drawText(itemNumber, x, y, width, 'right');
+    } else {
+      this._buyOrSell = (!this.isSelling() ? "Confirm purchase?" : "Confirm sell?");
+      this.drawText(this._buyOrSell, x - width, y, width * 2, 'right');
+    }
 };
 
 //=============================================================================

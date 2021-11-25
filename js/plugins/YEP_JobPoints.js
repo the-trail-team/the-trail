@@ -410,7 +410,7 @@ BattleManager.gainJp = function() {
       var members = $gameParty.members();
     }
 		members.forEach(function(actor) {
-			actor.gainJp(jp);
+			actor.gainJp(Math.round(jp * randomizeReward(5)));
 		});
 };
 
