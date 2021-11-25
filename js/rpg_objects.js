@@ -2572,7 +2572,7 @@ Game_BattlerBase.prototype.isAutoBattle = function() {
 };
 
 Game_BattlerBase.prototype.isGuard = function() {
-    return this.specialFlag(Game_BattlerBase.FLAG_ID_GUARD) && this.canMove();
+    return this.specialFlag(Game_BattlerBase.FLAG_ID_GUARD);
 };
 
 Game_BattlerBase.prototype.isSubstitute = function() {
