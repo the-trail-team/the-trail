@@ -1364,7 +1364,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Defend! II",
-    "note": "<Category: buff>\n\n<Physical Taunt>\n<Magical Taunt>\n<State Motion: Guard>\n\n<Help Description>\nCannot move. All physical/magical attacks will be directed to this unit.\n</Help Description>",
+    "note": "<Category: buff>\n\n<State Motion: Guard>\n\n<Help Description>\nCannot move. Greatly increases chance of enemies targeting this unit. Reduces PDR and MDR by 20%.\n</Help Description>",
     "priority": 20,
     "removeAtBattleEnd": true,
     "removeByDamage": false,
@@ -1377,6 +1377,21 @@
         "code": 62,
         "dataId": 1,
         "value": 1
+      },
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.8
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.8
       }
     ]
   },

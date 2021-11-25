@@ -1554,7 +1554,7 @@
   },
   {
     "id": 45,
-    "animationId": 0,
+    "animationId": 37,
     "damage": {
       "critical": false,
       "elementId": 8,
@@ -1562,7 +1562,7 @@
       "type": 0,
       "variance": 5
     },
-    "description": "It's similar to \\is[4], but you'll defend against magic attacks as well for\n\\c[27]\\bpturn[3]\\c[0] turns. Make sure to buff that MDF! Cannot move while defending.",
+    "description": "Has the same effect as \\is[4], but additionally\nreduces incoming physical/magical damage by 20%.",
     "effects": [
       {
         "code": 21,
@@ -1581,7 +1581,7 @@
     "iconIndex": 13,
     "message1": " is defending the team!",
     "message2": "",
-    "mpCost": 5,
+    "mpCost": 13,
     "name": "Defend! II",
     "note": "<Boost Turns>\n\n<Weapon Motion: guard>",
     "occasion": 1,
