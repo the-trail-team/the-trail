@@ -3017,7 +3017,7 @@
     ],
     "gold": 380,
     "name": "Henry",
-    "note": "<AI Priority>\nUser HP% param <= 30%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Evil1_2>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Evil1_2>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>",
     "params": [
       3000,
       120,
