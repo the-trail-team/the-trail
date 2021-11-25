@@ -432,7 +432,7 @@
     "minTurns": 4,
     "motion": 0,
     "name": "Marked",
-    "note": "<Physical Taunt>\n<Ally Aura: 63>\n<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nThis unit will take 50% more damage from physical attacks. Enemy attacks will be directed to this unit. [WEAK DEBUFF]\n</Help Description>",
+    "note": "<Physical Taunt>\n<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nThis unit will take 50% more damage from physical attacks. Enemy attacks will be directed to this unit. [WEAK DEBUFF]\n</Help Description>\n\n<Custom Apply Effect>\nif (user.isActor()) {\n  for (i = 0; i < $gameParty.battleMembers().length; i++) {\n    obj = $gameParty.battleMembers()[i];\n    if (obj !== user) obj.removeState(12);\n  }\n} else {\n  for (i = 0; i < $gameTroop._enemies.length; i++) {\n    obj = $gameTroop._enemies[i];\n    if (obj !== user) obj.removeState(12);\n  }\n}\n</Custom Apply Effect>",
     "overlay": 0,
     "priority": 50,
     "removeAtBattleEnd": true,
