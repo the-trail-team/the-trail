@@ -1687,7 +1687,7 @@
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ State !== Marked: Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -1958,32 +1958,11 @@
     "id": 22,
     "actions": [
       {
-        "conditionParam1": 1,
-        "conditionParam2": 3,
-        "conditionType": 1,
-        "rating": 5,
-        "skillId": 5
-      },
-      {
-        "conditionParam1": 1,
-        "conditionParam2": 3,
-        "conditionType": 1,
-        "rating": 5,
-        "skillId": 30
-      },
-      {
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
-        "rating": 1,
+        "rating": 5,
         "skillId": 1
-      },
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0.15,
-        "conditionType": 2,
-        "rating": 9,
-        "skillId": 18
       }
     ],
     "battlerHue": 0,
@@ -2030,7 +2009,7 @@
     ],
     "gold": 60,
     "name": "Dandy Toad Captain",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\nTroop Alive Members > 1 +++ State !== Marked: Mark, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
     "params": [
       900,
       60,
