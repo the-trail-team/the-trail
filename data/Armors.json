@@ -810,7 +810,7 @@
     ],
     "iconIndex": 581,
     "name": "Earthen Grassrobes",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1 Rock: 100%\nx1-x4 item 51: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nGray Robes: 1\nRock: 10\nWorn Cloth: 5\nYarn: 2\n</Synthesis Ingredients>\n<Mask Name: Earthen Grassrobes>\n<Synthesis SE: Equip3>",
+    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1 Rock: 100%\nx1-x4 item 51: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nGray Robes: 1\nRock: 3\nWorn Cloth: 5\nYarn: 2\n</Synthesis Ingredients>\n<Mask Name: Earthen Grassrobes>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       3,
@@ -1940,7 +1940,7 @@
     ],
     "iconIndex": 345,
     "name": "Condensed White Gel",
-    "note": "<Upgrade Slots: 5>",
+    "note": "<Upgrade Slots: 5>\n\n<Synthesis Ingredients>\nWhite Gel: 5\nCondensed Blue Gel: 1\n</Synthesis Ingredients>\n<Mask Name: Rare Slime-Type Accessory>",
     "params": [
       13,
       13,
@@ -1955,57 +1955,72 @@
   },
   {
     "id": 82,
-    "atypeId": 0,
-    "description": "",
+    "atypeId": 6,
+    "description": "A giant clump of Albino Rat fur stuck together so firmly that it's practically\ngained the properties of a metal. Provides immunity to four debuffs.",
     "etypeId": 2,
     "traits": [
       {
-        "code": 22,
-        "dataId": 1,
-        "value": 0
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 52,
+        "value": 1
       }
     ],
-    "iconIndex": 0,
-    "name": "",
-    "note": "",
+    "iconIndex": 501,
+    "name": "Metallic Rat Pelt",
+    "note": "<Upgrade Slots: 5>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nAlbino Rat Fur: 5\nTough Pelt: 1\n</Synthesis Ingredients>\n<Mask Name: Rare Rat-Type Shield>",
     "params": [
       0,
       0,
       0,
-      0,
+      5,
       0,
       0,
       0,
       0
     ],
-    "price": 0
+    "price": 1000
   },
   {
     "id": 83,
-    "atypeId": 0,
-    "description": "",
-    "etypeId": 2,
+    "atypeId": 1,
+    "description": "A strange leather charm that radiates\na magic reflecting aura. Boosts MRF by 10%.",
+    "etypeId": 6,
     "traits": [
       {
         "code": 22,
-        "dataId": 1,
-        "value": 0
+        "dataId": 5,
+        "value": 0.1
       }
     ],
-    "iconIndex": 0,
-    "name": "",
-    "note": "",
+    "iconIndex": 618,
+    "name": "Arcane Leather Charm",
+    "note": "<Upgrade Slots: 5>\n\n<Synthesis Ingredients>\nBleached Leather: 5\nLeather Charm: 1\n</Synthesis Ingredients>\n<Mask Name: Rare Goblin-Type Accessory>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
       0,
       0,
       0,
-      0,
+      6,
       0,
       0
     ],
-    "price": 0
+    "price": 1000
   },
   {
     "id": 84,
@@ -2148,5 +2163,297 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 90,
+    "atypeId": 2,
+    "description": "A jolly set of heavy armor for a knight.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 437,
+    "name": "Festive Armor",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 91,
+    "atypeId": 3,
+    "description": "A merry set of robes for a mage.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 449,
+    "name": "Festive Robes",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      2,
+      1,
+      5,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 92,
+    "atypeId": 4,
+    "description": "A happy set of vestments for a cleric.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 454,
+    "name": "Festive Vestments",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 93,
+    "atypeId": 5,
+    "description": "A jovial set of leathers for a rogue.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 451,
+    "name": "Festive Leathers",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "params": [
+      8,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 94,
+    "atypeId": 6,
+    "description": "Protect yourself, holiday style.\nMakes guarding twice as effect.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 2
+      }
+    ],
+    "iconIndex": 538,
+    "name": "Candy Cane Shield",
+    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 95,
+    "atypeId": 1,
+    "description": "A little music box that constantly plays a tune to keep\nyour head in the game. Provides immunity to \\it[23]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      }
+    ],
+    "iconIndex": 255,
+    "name": "Music Box",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 96,
+    "atypeId": 1,
+    "description": "A strange charm that provides immunity to\n\\it[21], \\it[20], \\it[22], and \\it[23].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      }
+    ],
+    "iconIndex": 511,
+    "name": "Vishnu's Charm",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nHorn: 1\nPocket Mirror: 1\nBell: 1\nMusic Box: 1\n</Synthesis Ingredients>\n<Mask Name: Status Effect Preventer>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 97,
+    "atypeId": 6,
+    "description": "A powerful shield with the ability to ward away many ailments. Combines the\neffects of \\ia[96], \\ia[82], and \\ia[62].",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 52,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 1
+      }
+    ],
+    "iconIndex": 507,
+    "name": "Vishnu's Shield",
+    "note": "<Upgrade Slots: 5>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVishnu's Charm: 1\nMetallic Rat Pelt: 1\nCondensed Blue Gel: 1\n</Synthesis Ingredients>\n<Mask Name: Powerful Debuff Blocker>",
+    "params": [
+      5,
+      5,
+      2,
+      7,
+      2,
+      2,
+      2,
+      0
+    ],
+    "price": 1500
+  },
+  {
+    "id": 98,
+    "atypeId": 1,
+    "description": "A mysterious charm that acts similarly to the\n\\ia[17], minus the MAT decrease.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 617,
+    "name": "Leather Charm",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0,
+      0
+    ],
+    "price": 200
   }
 ]

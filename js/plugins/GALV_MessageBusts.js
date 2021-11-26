@@ -349,9 +349,9 @@ Sprite_GalvBust.prototype.update = function() {
 Sprite_GalvBust.prototype.loadBitmap = function() {
 	var name = $gameMessage.faceName() + "_" + ($gameMessage.faceIndex() + 1);
 	if ($gameSystem.bustDisable) {
-		var img = ImageManager.loadPicture('');
+		var img = ImageManager.loadBust('');
 	} else {
-		var img = ImageManager.loadPicture(name + Galv.MB.f);
+		var img = ImageManager.loadBust(name + Galv.MB.f);
 	};
 	if (img.isReady()) {
 		if (this.bitmap) {

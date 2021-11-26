@@ -23558,7 +23558,7 @@
                 ],
                 1,
                 0,
-                2,
+                1,
                 0
               ]
             },
@@ -24045,69 +24045,17 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 59,
-            "characterName": "",
-            "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
             "variableId": 9,
             "variableValid": true,
             "variableValue": 6
           },
           "directionFix": false,
           "image": {
-            "tileId": 59,
+            "tileId": 0,
             "characterName": "",
-            "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 2
           },
           "moveFrequency": 3,
           "moveRoute": {
@@ -24183,8 +24131,19 @@
               ]
             },
             {
-              "code": 126,
+              "code": 111,
               "indent": 1,
+              "parameters": [
+                1,
+                72,
+                0,
+                51,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 2,
               "parameters": [
                 13,
                 0,
@@ -24194,7 +24153,7 @@
             },
             {
               "code": 101,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Actor4",
                 5,
@@ -24204,21 +24163,21 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "\\p2Yes! Let's head to Adam and"
               ]
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "give this to him!"
               ]
             },
             {
               "code": 122,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 9,
                 9,
@@ -24229,17 +24188,86 @@
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Quest 16 Complete Objective 1"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Quest 16 Show Objective 2"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "Nothing was found!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p2Oh, well. That's a shame. Let's"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "check the other room!"
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -24276,11 +24304,63 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 59,
+            "tileId": 0,
             "characterName": "",
-            "characterIndex": 0,
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true,
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 9,
+            "variableValid": false,
+            "variableValue": 7
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
             "direction": 2,
-            "pattern": 0
+            "pattern": 0,
+            "characterIndex": 0
           },
           "moveFrequency": 3,
           "moveRoute": {
@@ -24613,69 +24693,17 @@
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 59,
-            "characterName": "",
-            "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
             "variableId": 9,
             "variableValid": true,
             "variableValue": 6
           },
           "directionFix": false,
           "image": {
-            "tileId": 59,
+            "tileId": 0,
             "characterName": "",
-            "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 2
           },
           "moveFrequency": 3,
           "moveRoute": {
@@ -24751,8 +24779,19 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 1,
+              "parameters": [
+                1,
+                72,
+                0,
+                51,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
               "parameters": [
                 "",
                 0,
@@ -24762,14 +24801,14 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Nothing was found!"
               ]
             },
             {
               "code": 101,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Actor4",
                 5,
@@ -24779,25 +24818,104 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "\\p2Oh, well. That's a shame. Let's"
               ]
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "check the other room!"
               ]
             },
             {
               "code": 123,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "A",
                 0
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                13,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p2Yes! Let's head to Adam and"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "give this to him!"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 2,
+              "parameters": [
+                9,
+                9,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 16 Complete Objective 1"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 16 Show Objective 2"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -24834,11 +24952,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 59,
+            "tileId": 0,
             "characterName": "",
-            "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 2
           },
           "moveFrequency": 3,
           "moveRoute": {
@@ -24886,11 +25004,11 @@
           },
           "directionFix": false,
           "image": {
-            "tileId": 59,
+            "tileId": 0,
             "characterName": "",
-            "characterIndex": 0,
-            "direction": 2,
-            "pattern": 0
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 2
           },
           "moveFrequency": 3,
           "moveRoute": {

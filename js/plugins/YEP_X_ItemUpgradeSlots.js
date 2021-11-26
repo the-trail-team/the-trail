@@ -429,11 +429,14 @@ ItemManager.applyIUSEffects = function(mainItem, effectItem) {
 ItemManager.payIUSEffects = function(mainItem, effectItem) {
     $gameParty.loseItem(effectItem, 1);
     mainItem.upgradeSlots -= effectItem.upgradeSlotCost;
-    this.addIUSLine(mainItem, effectItem);
     for (var i = 1; i < effectItem.upgradeSlotCost; ++i) {
       mainItem.slotsApplied.push('---');
     }
-    this.increaseItemBoostCount(mainItem, effectItem.boostCountValue);
+    let slots = effectItem.note.includes("Slots: 0");
+    if (!slots) {
+      this.increaseItemBoostCount(mainItem, effectItem.boostCountValue);
+      this.addIUSLine(mainItem, effectItem);
+    }
 };
 
 ItemManager.addIUSLine = function(mainItem, effectItem) {

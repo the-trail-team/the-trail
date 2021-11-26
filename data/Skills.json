@@ -2883,5 +2883,48 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 82,
+    "animationId": 137,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Give your weapon a quick lick to restore some HP and grant an HP\nregeneration effect. However, your weapon will be weaker for a few turns.",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.3,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 68,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 10,
+    "message1": " licks their weapon!",
+    "message2": "",
+    "mpCost": 6,
+    "name": "Lick Weapon",
+    "note": "<action copy: skill:11>\n<Max Mastery Level: 0>\n<Require = 0 BP>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

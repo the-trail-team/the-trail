@@ -80,7 +80,7 @@
 	Moghunter.mpart_number = Number(Moghunter.parameters['Number of Particles'] || 15);
 	Moghunter.mpart_blendMode = Number(Moghunter.parameters['Blend Mode'] || 1);
 	SceneManager._mpart             = false;
-	
+
 //=============================================================================
 // ** ImageManager
 //=============================================================================
