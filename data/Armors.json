@@ -1940,7 +1940,7 @@
     ],
     "iconIndex": 345,
     "name": "Condensed White Gel",
-    "note": "<Upgrade Slots: 5>",
+    "note": "<Upgrade Slots: 5>\n\n<Synthesis Ingredients>\nWhite Gel: 5\n</Synthesis Ingredients>\n<Mask Name: Rare Slime-Type Accessory>",
     "params": [
       13,
       13,
@@ -1955,57 +1955,77 @@
   },
   {
     "id": 82,
-    "atypeId": 0,
-    "description": "",
+    "atypeId": 6,
+    "description": "A giant clump of Albino Rat fur stuck together so firmly that it's practically\ngained the properties of a metal. Provides immunity to several debuffs.",
     "etypeId": 2,
     "traits": [
       {
-        "code": 22,
-        "dataId": 1,
-        "value": 0
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 52,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 1
       }
     ],
-    "iconIndex": 0,
-    "name": "",
-    "note": "",
+    "iconIndex": 501,
+    "name": "Metallic Rat Pelt",
+    "note": "<Upgrade Slots: 5>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nAlbino Rat Fur: 5\n</Synthesis Ingredients>\n<Mask Name: Rare Rat-Type Shield>",
     "params": [
       0,
       0,
       0,
-      0,
+      5,
       0,
       0,
       0,
       0
     ],
-    "price": 0
+    "price": 1000
   },
   {
     "id": 83,
-    "atypeId": 0,
-    "description": "",
-    "etypeId": 2,
+    "atypeId": 1,
+    "description": "A strange leather charm that radiates\na magic reflecting aura. Boosts MRF by 10%.",
+    "etypeId": 6,
     "traits": [
       {
         "code": 22,
-        "dataId": 1,
-        "value": 0
+        "dataId": 5,
+        "value": 0.1
       }
     ],
-    "iconIndex": 0,
-    "name": "",
-    "note": "",
+    "iconIndex": 330,
+    "name": "Arcane Leather Charm",
+    "note": "<Upgrade Slots: 5>\n\n<Synthesis Ingredients>\nBleached Leather: 5\n</Synthesis Ingredients>\n<Mask Name: Rare Goblin-Type Accessory>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
       0,
       0,
       0,
-      0,
+      6,
       0,
       0
     ],
-    "price": 0
+    "price": 1000
   },
   {
     "id": 84,
