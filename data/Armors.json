@@ -1956,7 +1956,7 @@
   {
     "id": 82,
     "atypeId": 6,
-    "description": "A giant clump of Albino Rat fur stuck together so firmly that it's practically\ngained the properties of a metal. Provides immunity to several debuffs.",
+    "description": "A giant clump of Albino Rat fur stuck together so firmly that it's practically\ngained the properties of a metal. Provides immunity to four debuffs.",
     "etypeId": 2,
     "traits": [
       {
@@ -1977,11 +1977,6 @@
       {
         "code": 14,
         "dataId": 52,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 56,
         "value": 1
       }
     ],
@@ -2330,5 +2325,114 @@
       0
     ],
     "price": 100
+  },
+  {
+    "id": 96,
+    "atypeId": 1,
+    "description": "A strange charm that provides immunity to\n\\it[21], \\it[20], \\it[22], and \\it[23].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      }
+    ],
+    "iconIndex": 518,
+    "name": "Vishnu's Charm",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nHorn: 1\nPocket Mirror: 1\nBell: 1\nMusic Box: 1\n</Synthesis Ingredients>\n<Mask Name: Status Effect Preventer>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 97,
+    "atypeId": 6,
+    "description": "A powerful shield with the ability to ward away many ailments. Combines the\neffects of \\ia[96], \\ia[82], and \\ia[62].",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 52,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 1
+      }
+    ],
+    "iconIndex": 509,
+    "name": "Vishnu's Shield",
+    "note": "<Upgrade Slots: 5>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVishnu's Charm: 1\nMetallic Rat Pelt: 1\nCondensed Blue Gel: 1\n</Synthesis Ingredients>\n<Mask Name: Powerful Debuff Blocker>",
+    "params": [
+      5,
+      5,
+      2,
+      7,
+      2,
+      2,
+      2,
+      0
+    ],
+    "price": 1500
   }
 ]
