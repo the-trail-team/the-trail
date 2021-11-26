@@ -981,6 +981,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -988,7 +993,7 @@
     ],
     "gold": 16,
     "name": "Skeleton Mage",
-    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nElixir: 8.33%\nMAT Scroll: 10%\nEmerald Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Elixir Drop>\nSwitch 69 ON: +8.33%\n</Conditional Elixir Drop>\n<Conditional MAT Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional MAT Scroll Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nElixir: 8.33%\nMAT Scroll: 10%\nEmerald Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Elixir Drop>\nSwitch 69 ON: +8.33%\n</Conditional Elixir Drop>\n<Conditional MAT Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional MAT Scroll Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       150,
       30,
@@ -1073,6 +1078,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -1080,7 +1090,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Defend! I +++ Random 40%: Defend! I, User\nTroop Alive Members > 1 +++ State !== Marked +++ Turn === 1 +++ Eval user.name() !== 'Skeleton Warrior A': Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Defend! I +++ Random 40%: Defend! I, User\nTroop Alive Members > 1 +++ State !== Marked +++ Turn === 1 +++ Eval user.name() !== 'Skeleton Warrior A': Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       180,
       10,
@@ -1407,7 +1417,7 @@
     ],
     "gold": 400,
     "name": "Laeryidyean",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === Marked +++ User HP% param >= 50%: Purify, User\nState !== Soul Barrier I +++ User HP% param >= 50%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Sideview Battler: Boss1_1>\n<Attack Animation: 6>\n<Weapon Image: 2>\n<HP Gauge Width: 288>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState === Marked +++ User HP% param >= 50%: Purify, User\nState !== Soul Barrier I +++ User HP% param >= 50%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Sideview Battler: Boss1_1>\n<Attack Animation: 6>\n<Weapon Image: 2>\n<HP Gauge Width: 288>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Enemy Drops>\nMusic Box: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -2301,6 +2311,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -2308,7 +2323,7 @@
     ],
     "gold": 36,
     "name": "Skeleton Knight",
-    "note": "<Steal Item 71: 33%>\n<Steal Item 72: 20%>\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nSmall Ether: 8.33%\nEther: 4%\nRuby Ring: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Ether Drop>\nSwitch 69 ON: +8.33%\n</Conditional Small Ether Drop>\n<Conditional Ether Drop>\nSwitch 69 ON: +2%\n</Conditional Ether Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2.5%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Steal Item 71: 33%>\n<Steal Item 72: 20%>\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nSmall Ether: 8.33%\nEther: 4%\nRuby Ring: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Ether Drop>\nSwitch 69 ON: +8.33%\n</Conditional Small Ether Drop>\n<Conditional Ether Drop>\nSwitch 69 ON: +2%\n</Conditional Ether Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2.5%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       1000,
       20,
@@ -3914,7 +3929,7 @@
     ],
     "gold": 2500,
     "name": "Laeryidyean EX",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Sideview Battler: Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Sideview Battler: Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nMusic Box: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       20000,
       9999,
