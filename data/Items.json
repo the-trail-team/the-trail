@@ -782,7 +782,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A smooth cherry-flavored drink that boosts your\nMHP by 15%. Lasts for 10 turns or 500 steps.",
+    "description": "A smooth cherry-flavored drink that boosts\nyour MHP by 15%. Lasts for 10 turns.",
     "effects": [
       {
         "code": 21,
@@ -815,7 +815,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A fizzy blueberry-flavored drink that boosts your\nMMP by 15%. Lasts for 10 turns or 500 steps.",
+    "description": "A fizzy blueberry-flavored drink that boosts\nyour MMP by 15%. Lasts for 10 turns.",
     "effects": [
       {
         "code": 21,
@@ -848,7 +848,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A viscous almond-flavored drink that boosts your\nDEF by 15%. Lasts for 10 turns or 500 steps.",
+    "description": "A viscous almond-flavored drink that boosts\nyour DEF by 15%. Lasts for 10 turns.",
     "effects": [
       {
         "code": 21,
@@ -881,7 +881,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A spicy grape-flavored drink that boosts your\nMAT by 15%. Lasts for 10 turns or 500 steps.",
+    "description": "A spicy grape-flavored drink that boosts\nyour MAT by 15%. Lasts for 10 turns.",
     "effects": [
       {
         "code": 21,
@@ -1715,7 +1715,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A gritty chicken-flavored drink that boosts your\nATK by 15%. Lasts for 10 turns or 500 steps.",
+    "description": "A gritty chicken-flavored drink that boosts\nyour ATK by 15%. Lasts for 10 turns.",
     "effects": [
       {
         "code": 21,
@@ -1748,7 +1748,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A sparkly huckleberry-flavored drink that boosts your\nMDF by 15%. Lasts for 10 turns or 500 steps.",
+    "description": "A sparkly huckleberry-flavored drink that boosts\nyour MDF by 15%. Lasts for 10 turns.",
     "effects": [
       {
         "code": 21,
@@ -1813,7 +1813,7 @@
     "iconIndex": 236,
     "itypeId": 3,
     "name": "*Will's Recipes*",
-    "note": "<Item Recipe: 68, 74, 76, 92, 93, 154>\n<Weapon Recipe: 23, 30, 24, 25, 26, 27, 21, 22>\n<Armor Recipe: 44, 46, 47, 48, 45, 78, 36, 37>",
+    "note": "<Item Recipe: 68, 74, 76, 92, 93, 154>\n<Weapon Recipe: 23, 30, 24, 25, 26, 27, 21, 22>\n<Armor Recipe: 47, 48, 78, 44, 46, 45, 96, 36, 37>",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -4534,6 +4534,195 @@
     "price": 0,
     "repeats": 1,
     "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 156,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Happy holidays! Used to purchase special equipment\nfrom the holiday merchant during the holiday season.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 259,
+    "itypeId": 2,
+    "name": "Present",
+    "note": "<Sell Price: 10>\n<Can Sell>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 157,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Changes the appearance of a sword to look more festive.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 238,
+    "itypeId": 1,
+    "name": "Festive Sword Scroll",
+    "note": "<Upgrade Weapon Type: 2>\n<Upgrade Effect>\nPrefix: Festive\nIcon: 534\nSlots: 0\nReset Suffix\n</Upgrade Effect>\n<Item 156 Buy Price: 2>\n<Item 156 Sell Price: 1>\n<Menu Category: Upgraders>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 158,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Changes the appearance of a wand to look more festive.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 238,
+    "itypeId": 1,
+    "name": "Festive Wand Scroll",
+    "note": "<Upgrade Weapon Type: 3>\n<Upgrade Effect>\nPrefix: Festive\nIcon: 535\nSlots: 0\n</Upgrade Effect>\n<Item 156 Buy Price: 2>\n<Item 156 Sell Price: 1>\n<Menu Category: Upgraders>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 159,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Changes the appearance of a staff to look more festive.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 238,
+    "itypeId": 1,
+    "name": "Festive Staff Scroll",
+    "note": "<Upgrade Weapon Type: 4>\n<Upgrade Effect>\nPrefix: Festive\nIcon: 536\nSlots: 0\n</Upgrade Effect>\n<Item 156 Buy Price: 2>\n<Item 156 Sell Price: 1>\n<Menu Category: Upgraders>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 160,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Changes the appearance of a dagger to look more festive.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 238,
+    "itypeId": 1,
+    "name": "Festive Dagger Scroll",
+    "note": "<Upgrade Weapon Type: 5>\n<Upgrade Effect>\nPrefix: Festive\nIcon: 537\nSlots: 0\n</Upgrade Effect>\n<Item 156 Buy Price: 2>\n<Item 156 Sell Price: 1>\n<Menu Category: Upgraders>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 161,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Resets the icon of a piece of equipment.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 238,
+    "itypeId": 1,
+    "name": "Icon Reset Scroll",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Armor Type: 0>\n<Upgrade Effect>\nReset Icon\nSlots: 0\n</Upgrade Effect>\n<Item 156 Buy Price: 2>\n<Item 156 Sell Price: 1>\n<Menu Category: Upgraders>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 162,
+    "animationId": 51,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "I had just one query...\nBoosts HRG by 5%. Lasts for 10 turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 69,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 578,
+    "itypeId": 1,
+    "name": "Fizzy Cranberry Beverage",
+    "note": "<Item 156 Buy Price: 4>\n<Item 156 Sell Price: 2>\n<Menu Category: Buffs>",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

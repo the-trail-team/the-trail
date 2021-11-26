@@ -128,11 +128,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 10,
     "name": "Big Mouth",
-    "note": "<Sideview Battler: Bandito_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<Sideview Battler: Bandito_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 1%\n</Enemy Drops>",
     "params": [
       150,
       5,
@@ -504,11 +509,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 30,
     "name": "Smart Mouth",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_3>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_3>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 1%\n</Enemy Drops>",
     "params": [
       320,
       10,
@@ -571,11 +581,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 12,
     "name": "Bandito",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger +++ Random 50%: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 1%\nPocket Mirror: 1%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger +++ Random 50%: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 1%\n</Enemy Drops>",
     "params": [
       120,
       10,
@@ -645,11 +660,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 30,
     "name": "Big Mouth",
-    "note": "<Sideview Battler: Bandito_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<Sideview Battler: Bandito_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 1%\n</Enemy Drops>",
     "params": [
       400,
       5,
@@ -719,11 +739,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 30,
     "name": "Smart Mouth",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_3>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_3>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 1%\n</Enemy Drops>",
     "params": [
       400,
       20,
@@ -786,11 +811,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 100,
     "name": "Four-Toed Kevin",
-    "note": "<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Bandito_1>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>",
+    "note": "<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Bandito_1>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 1%\n</Enemy Drops>",
     "params": [
       1200,
       200,
@@ -878,11 +908,16 @@
         "code": 14,
         "dataId": 34,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
       }
     ],
     "gold": 4,
     "name": "Skeleton",
-    "note": "<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       1,
       15,
@@ -981,6 +1016,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -988,7 +1028,7 @@
     ],
     "gold": 16,
     "name": "Skeleton Mage",
-    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nElixir: 8.33%\nMAT Scroll: 10%\nEmerald Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Elixir Drop>\nSwitch 69 ON: +8.33%\n</Conditional Elixir Drop>\n<Conditional MAT Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional MAT Scroll Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nElixir: 8.33%\nMAT Scroll: 10%\nEmerald Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Elixir Drop>\nSwitch 69 ON: +8.33%\n</Conditional Elixir Drop>\n<Conditional MAT Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional MAT Scroll Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       150,
       30,
@@ -1073,6 +1113,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -1080,7 +1125,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Defend! I +++ Random 40%: Defend! I, User\nTroop Alive Members > 1 +++ State !== Marked +++ Turn === 1 +++ Eval user.name() !== 'Skeleton Warrior A': Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Defend! I +++ Random 40%: Defend! I, User\nTroop Alive Members > 1 +++ State !== Marked +++ Turn === 1 +++ Eval user.name() !== 'Skeleton Warrior A': Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       180,
       10,
@@ -1407,7 +1452,7 @@
     ],
     "gold": 400,
     "name": "Laeryidyean",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === Marked +++ User HP% param >= 50%: Purify, User\nState !== Soul Barrier I +++ User HP% param >= 50%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Sideview Battler: Boss1_1>\n<Attack Animation: 6>\n<Weapon Image: 2>\n<HP Gauge Width: 288>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState === Marked +++ User HP% param >= 50%: Purify, User\nState !== Soul Barrier I +++ User HP% param >= 50%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Sideview Battler: Boss1_1>\n<Attack Animation: 6>\n<Weapon Image: 2>\n<HP Gauge Width: 288>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Enemy Drops>\nMusic Box: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -1616,11 +1661,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
       }
     ],
     "gold": 25,
     "name": "Goblin",
-    "note": "<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nGoblin Fang: 5%\nHorn: 1%\n</Enemy Drops>",
+    "note": "<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather Charm: 3%\nGoblin Fang: 5%\nHorn: 1%\n</Enemy Drops>",
     "params": [
       300,
       30,
@@ -1683,11 +1733,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
       }
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 1%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -1790,11 +1845,16 @@
         "code": 63,
         "dataId": 1,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
       }
     ],
     "gold": 300,
     "name": "Giant Goblin",
-    "note": "<Sideview Battler: GiantGoblin>\n<Attack Animation: 1>\n<Weapon Image: 15>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<Sideview Battler: GiantGoblin>\n<Attack Animation: 1>\n<Weapon Image: 15>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 1%\n</Enemy Drops>",
     "params": [
       4000,
       999,
@@ -1857,11 +1917,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 45,
     "name": "Dandy Toad",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 1%\n</Enemy Drops>",
     "params": [
       600,
       40,
@@ -1938,11 +2003,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 45,
     "name": "Dandy Toad (w/ Purse)",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 1%\n</Enemy Drops>",
     "params": [
       600,
       40,
@@ -2005,11 +2075,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 60,
     "name": "Dandy Toad Captain",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 1%\n</Enemy Drops>",
     "params": [
       900,
       60,
@@ -2301,6 +2376,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -2308,7 +2388,7 @@
     ],
     "gold": 36,
     "name": "Skeleton Knight",
-    "note": "<Steal Item 71: 33%>\n<Steal Item 72: 20%>\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nSkeleton Skull: 20%\nSmall Ether: 8.33%\nEther: 4%\nRuby Ring: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Ether Drop>\nSwitch 69 ON: +8.33%\n</Conditional Small Ether Drop>\n<Conditional Ether Drop>\nSwitch 69 ON: +2%\n</Conditional Ether Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2.5%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Steal Item 71: 33%>\n<Steal Item 72: 20%>\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nSmall Ether: 8.33%\nEther: 4%\nRuby Ring: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Ether Drop>\nSwitch 69 ON: +8.33%\n</Conditional Small Ether Drop>\n<Conditional Ether Drop>\nSwitch 69 ON: +2%\n</Conditional Ether Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2.5%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       1000,
       20,
@@ -2393,6 +2473,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -2400,7 +2485,7 @@
     ],
     "gold": 25,
     "name": "Lost Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 40%: Shield of Faith, Lowest HP\nRandom 40%: Cure II, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nJade Charm: 2%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 40%: Shield of Faith, Lowest HP\nRandom 40%: Cure II, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 1%\nJade Charm: 2%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       500,
       999,
@@ -2638,6 +2723,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -2645,7 +2735,7 @@
     ],
     "gold": 20,
     "name": "Suffering Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Soul Barrier I: Soul Barrier I, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n<Boost Skill 65: At Most 2>\n\n<Floating>\n<Sideview Battler: SufferingSoul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Soul Barrier I: Soul Barrier I, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n<Boost Skill 65: At Most 2>\n\n<Floating>\n<Sideview Battler: SufferingSoul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 1%\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       500,
       999,
@@ -2908,11 +2998,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
       }
     ],
     "gold": 40,
     "name": "Crusher Thug",
-    "note": "<Sideview Battler: Evil1_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>",
+    "note": "<Sideview Battler: Evil1_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 1%\n</Enemy Drops>",
     "params": [
       600,
       0,
@@ -3017,7 +3112,7 @@
     ],
     "gold": 380,
     "name": "Henry",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Evil1_2>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Evil1_2>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nBell: 1%\n</Enemy Drops>",
     "params": [
       3000,
       120,
@@ -3054,9 +3149,9 @@
         "denominator": 1
       },
       {
-        "kind": 0,
-        "dataId": 0,
-        "denominator": 45
+        "kind": 3,
+        "dataId": 82,
+        "denominator": 5
       }
     ],
     "exp": 1000,
@@ -3201,9 +3296,9 @@
         "denominator": 1
       },
       {
-        "kind": 0,
-        "dataId": 0,
-        "denominator": 1
+        "kind": 3,
+        "dataId": 83,
+        "denominator": 5
       }
     ],
     "exp": 1750,
@@ -3232,11 +3327,16 @@
         "code": 22,
         "dataId": 5,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
       }
     ],
     "gold": 1000,
     "name": "Strange Goblin",
-    "note": "<Sideview Battler: StrangeGoblin>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nGoblin Fang: 100%\nHorn: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: StrangeGoblin>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather Charm: 100%\nGoblin Fang: 100%\nHorn: 1%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\n</Enemy Drops>",
     "params": [
       4000,
       50,
@@ -3337,9 +3437,9 @@
         "denominator": 1
       },
       {
-        "kind": 0,
-        "dataId": 0,
-        "denominator": 45
+        "kind": 3,
+        "dataId": 81,
+        "denominator": 5
       }
     ],
     "exp": 750,
@@ -3522,6 +3622,11 @@
         "value": 1
       },
       {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
         "code": 23,
         "dataId": 2,
         "value": 2
@@ -3529,7 +3634,7 @@
     ],
     "gold": 200,
     "name": "Will o' Wisp",
-    "note": "<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: Fire Spirit>\n<Sideview No Collapse>\n<Floating>",
+    "note": "<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: Fire Spirit>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 1%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -3914,7 +4019,7 @@
     ],
     "gold": 2500,
     "name": "Laeryidyean EX",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Sideview Battler: Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Sideview Battler: Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nMusic Box: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       20000,
       9999,
