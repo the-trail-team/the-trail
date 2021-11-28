@@ -1743,16 +1743,101 @@
         "code": 111,
         "indent": 0,
         "parameters": [
-          1,
-          42,
           0,
+          82,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "People1",
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\joe...oh, is there anything specific"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "you would like to take a look at?"
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "People1",
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\joeWhat would you like to browse?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 2,
+        "parameters": [
+          [
+            "Weapons",
+            "Armor",
+            "Items",
+            "I'm done browsing."
+          ],
           1,
-          1
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 2,
+        "parameters": [
+          0,
+          "Weapons"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "People1",
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "\\joeSure! Let me grab those real quick..."
         ]
       },
       {
         "code": 302,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           1,
           10,
@@ -1763,7 +1848,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           1,
           8,
@@ -1773,7 +1858,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           1,
           12,
@@ -1783,7 +1868,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           1,
           5,
@@ -1793,7 +1878,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           1,
           7,
@@ -1802,8 +1887,49 @@
         ]
       },
       {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 2,
+        "parameters": [
+          1,
+          "Armor"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "People1",
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "\\joeSure! Let me show you what we have to offer..."
+        ]
+      },
+      {
+        "code": 302,
+        "indent": 3,
+        "parameters": [
+          2,
+          100,
+          0,
+          0,
+          false
+        ]
+      },
+      {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           2,
           12,
@@ -1813,7 +1939,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           2,
           13,
@@ -1823,7 +1949,17 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
+        "parameters": [
+          2,
+          99,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 3,
         "parameters": [
           2,
           27,
@@ -1833,7 +1969,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           2,
           14,
@@ -1842,8 +1978,59 @@
         ]
       },
       {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 2,
+        "parameters": [
+          2,
+          "Items"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "People1",
+          4,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "\\joeSure! Here's our stock of those..."
+        ]
+      },
+      {
+        "code": 302,
+        "indent": 3,
+        "parameters": [
+          0,
+          71,
+          0,
+          0,
+          false
+        ]
+      },
+      {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
+        "parameters": [
+          0,
+          72,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 3,
         "parameters": [
           0,
           32,
@@ -1853,7 +2040,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           0,
           33,
@@ -1863,7 +2050,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           0,
           9,
@@ -1873,7 +2060,7 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           0,
           14,
@@ -1883,7 +2070,17 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
+        "parameters": [
+          0,
+          163,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 3,
         "parameters": [
           0,
           8,
@@ -1893,13 +2090,51 @@
       },
       {
         "code": 605,
-        "indent": 1,
+        "indent": 3,
         "parameters": [
           0,
           43,
           0,
           0
         ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 2,
+        "parameters": [
+          3,
+          "I'm done browsing."
+        ]
+      },
+      {
+        "code": 113,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 1,
+        "parameters": []
       },
       {
         "code": 0,
@@ -1916,7 +2151,7 @@
         "indent": 1,
         "parameters": [
           1,
-          19,
+          42,
           0,
           1,
           1
@@ -2087,9 +2322,11 @@
         "code": 111,
         "indent": 2,
         "parameters": [
+          1,
+          19,
           0,
-          25,
-          0
+          1,
+          1
         ]
       },
       {
@@ -2257,11 +2494,9 @@
         "code": 111,
         "indent": 3,
         "parameters": [
-          1,
-          14,
           0,
-          3,
-          1
+          25,
+          0
         ]
       },
       {
@@ -2360,6 +2595,26 @@
         "indent": 4,
         "parameters": [
           0,
+          32,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 4,
+        "parameters": [
+          0,
+          33,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 4,
+        "parameters": [
+          0,
           9,
           0,
           0
@@ -2381,6 +2636,16 @@
         "parameters": [
           0,
           8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 4,
+        "parameters": [
+          0,
+          43,
           0,
           0
         ]
@@ -2400,9 +2665,9 @@
         "indent": 4,
         "parameters": [
           1,
-          3,
+          14,
           0,
-          2,
+          3,
           1
         ]
       },
@@ -2410,8 +2675,8 @@
         "code": 302,
         "indent": 5,
         "parameters": [
-          0,
-          9,
+          1,
+          10,
           0,
           0,
           false
@@ -2421,8 +2686,8 @@
         "code": 605,
         "indent": 5,
         "parameters": [
-          0,
-          14,
+          1,
+          8,
           0,
           0
         ]
@@ -2431,8 +2696,8 @@
         "code": 605,
         "indent": 5,
         "parameters": [
-          0,
-          8,
+          1,
+          12,
           0,
           0
         ]
@@ -2468,24 +2733,53 @@
         ]
       },
       {
-        "code": 0,
+        "code": 605,
         "indent": 5,
-        "parameters": []
+        "parameters": [
+          2,
+          13,
+          0,
+          0
+        ]
       },
       {
-        "code": 411,
-        "indent": 4,
-        "parameters": []
+        "code": 605,
+        "indent": 5,
+        "parameters": [
+          2,
+          27,
+          0,
+          0
+        ]
       },
       {
-        "code": 302,
+        "code": 605,
+        "indent": 5,
+        "parameters": [
+          2,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
         "indent": 5,
         "parameters": [
           0,
           9,
           0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 5,
+        "parameters": [
           0,
-          false
+          14,
+          0,
+          0
         ]
       },
       {
@@ -2499,14 +2793,137 @@
         ]
       },
       {
-        "code": 605,
+        "code": 0,
         "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 4,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 5,
+        "parameters": [
+          1,
+          3,
+          0,
+          2,
+          1
+        ]
+      },
+      {
+        "code": 302,
+        "indent": 6,
+        "parameters": [
+          0,
+          9,
+          0,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 6,
+        "parameters": [
+          0,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 6,
+        "parameters": [
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 6,
         "parameters": [
           1,
           5,
           0,
           0
         ]
+      },
+      {
+        "code": 605,
+        "indent": 6,
+        "parameters": [
+          1,
+          7,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 6,
+        "parameters": [
+          2,
+          12,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 6,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 5,
+        "parameters": []
+      },
+      {
+        "code": 302,
+        "indent": 6,
+        "parameters": [
+          0,
+          9,
+          0,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 6,
+        "parameters": [
+          0,
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 6,
+        "parameters": [
+          1,
+          5,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 6,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 5,
+        "parameters": []
       },
       {
         "code": 0,
