@@ -155,7 +155,7 @@
     "traits": [],
     "iconIndex": 163,
     "name": "Soldier Helmet",
-    "note": "<Equip Requirement>\nclass: Soldier\nclass: Knight\n</Equip Requirement>",
+    "note": "",
     "params": [
       0,
       0,
@@ -302,7 +302,7 @@
     "traits": [],
     "iconIndex": 165,
     "name": "Floppy Hat",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       3,
@@ -449,7 +449,7 @@
     "traits": [],
     "iconIndex": 164,
     "name": "Classic Helmet",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -470,7 +470,7 @@
     "traits": [],
     "iconIndex": 165,
     "name": "Floppy Hat ★",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       6,
@@ -481,7 +481,7 @@
       0,
       0
     ],
-    "price": 50
+    "price": 35
   },
   {
     "id": 24,
@@ -602,7 +602,7 @@
     ],
     "iconIndex": 466,
     "name": "Red Mask",
-    "note": "<Upgrade Slots: 0>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 0>\n\n<Disassemble Pool: Basic>\nx1 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -741,7 +741,7 @@
     ],
     "iconIndex": 585,
     "name": "Blood-Red Headband",
-    "note": "<Upgrade Slots: 0>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 0>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -1107,13 +1107,13 @@
   {
     "id": 49,
     "atypeId": 1,
-    "description": "Allows the wearer to look a bit into the future, helping\nthem predict the enemy's moves and dodge crits 10% easier.",
+    "description": "Allows the wearer to look a bit into the future, helping\nthem predict the enemy's moves and dodge crits 5% easier.",
     "etypeId": 6,
     "traits": [
       {
         "code": 22,
         "dataId": 3,
-        "value": 0.1
+        "value": 0.05
       }
     ],
     "iconIndex": 180,
@@ -1801,7 +1801,7 @@
     "traits": [],
     "iconIndex": 463,
     "name": "Prayer Headpiece",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 1>",
     "params": [
       0,
       8,
@@ -1822,7 +1822,7 @@
     "traits": [],
     "iconIndex": 519,
     "name": "Rose Headpiece",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Passive State: 59>",
+    "note": "<Upgrade Slots: 1>\n\n<Passive State: 59>",
     "params": [
       5,
       12,

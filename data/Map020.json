@@ -25448,92 +25448,6 @@
               ]
             },
             {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                35,
-                {
-                  "list": [
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hey, wait a second..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I heard him mention a brother back in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Solus Town... and the two of you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "definitely look alike... the hair,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the eyes... oh, I see!"
-              ]
-            },
-            {
               "code": 112,
               "indent": 0,
               "parameters": []
@@ -25627,6 +25541,92 @@
               "code": 413,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                35,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2Hey, wait a second..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2I heard him mention a brother back in"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Solus Town... and the two of you"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "definitely look alike... the hair,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "the eyes... oh, I see!"
+              ]
             },
             {
               "code": 205,
@@ -33224,21 +33224,11 @@
                 "parameters": []
               },
               {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
                 "code": 15,
                 "indent": null,
                 "parameters": [
                   60
                 ]
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
               },
               {
                 "code": 4,
@@ -33566,21 +33556,11 @@
                 "parameters": []
               },
               {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
                 "code": 15,
                 "indent": null,
                 "parameters": [
                   60
                 ]
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
               },
               {
                 "code": 4,
@@ -37743,7 +37723,7 @@
     {
       "id": 67,
       "name": "soldier2",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -37854,7 +37834,7 @@
     {
       "id": 68,
       "name": "soldier2",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -40844,6 +40824,66 @@
       ],
       "x": 13,
       "y": 25
+    },
+    {
+      "id": 92,
+      "name": "santa-copy",
+      "note": "<Copy Event: 158, 55>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 81,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Christmas",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 20,
+      "y": 19
     }
   ]
 }
