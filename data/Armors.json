@@ -2623,5 +2623,144 @@
       0
     ],
     "price": 250
+  },
+  {
+    "id": 107,
+    "atypeId": 1,
+    "description": "This shell turns the wearer into a practical wall, nullifying 90% of\ndamage towards them. However, they'll be completely offensively crippled.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.1
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": -10
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": -10
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": -10
+      },
+      {
+        "code": 22,
+        "dataId": 6,
+        "value": -10
+      },
+      {
+        "code": 42,
+        "dataId": 1,
+        "value": 1
+      },
+      {
+        "code": 42,
+        "dataId": 2,
+        "value": 1
+      }
+    ],
+    "iconIndex": 334,
+    "name": "Giant Tortoise Shell",
+    "note": "<Passive State: 79>\n<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      -50,
+      50,
+      -50,
+      50,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 108,
+    "atypeId": 6,
+    "description": "Best of luck to anyone who dares attack the holder of \\ia[108].\nCombines the effects of \\ia[97] and \\ia[107].",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 52,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 1
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.9
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 510,
+    "name": "Vishnu's Aegis",
+    "note": "<Upgrade Slots: 5>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVishnu's Shield: 1\nGiant Tortoise Shell: 1\n</Synthesis Ingredients>\n<Mask Name: Damage Reducing Super-Shield>",
+    "params": [
+      5,
+      5,
+      2,
+      7,
+      2,
+      2,
+      2,
+      0
+    ],
+    "price": 2000
   }
 ]
