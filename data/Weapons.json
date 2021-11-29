@@ -1236,5 +1236,127 @@
     ],
     "price": 0,
     "wtypeId": 2
+  },
+  {
+    "id": 40,
+    "animationId": 122,
+    "description": "A wand imbued with the power of dragons. An asset for any mage who\nwishes to go above and beyond. Grants the skill \\is[83].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 83,
+        "value": 1
+      }
+    ],
+    "iconIndex": 418,
+    "name": "Draconic Wand",
+    "note": "<Upgrade Slots: 2>\n<Weapon Image: 282>\n<Equip Requirement>\nclass: Wand\n</Equip Requirement>",
+    "params": [
+      0,
+      15,
+      5,
+      0,
+      40,
+      2,
+      5,
+      0
+    ],
+    "price": 800,
+    "wtypeId": 3
+  },
+  {
+    "id": 41,
+    "animationId": 122,
+    "description": "A powerful staff with no remarkable special traits.\nIt looks like a gem could slot into it perfectly...",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "iconIndex": 621,
+    "name": "Void Crystal Staff",
+    "note": "<Upgrade Slots: 2>\n<Weapon Image: 246>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "params": [
+      0,
+      20,
+      8,
+      0,
+      45,
+      10,
+      0,
+      0
+    ],
+    "price": 800,
+    "wtypeId": 4
+  },
+  {
+    "id": 42,
+    "animationId": 122,
+    "description": "A combination of the \\iw[41] and a \\ii[65].\nLeeches enemy HP upon a hit, whether physical or magical.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "iconIndex": 622,
+    "name": "Life Crystal Staff",
+    "note": "<Upgrade Slots: 3>\n<Weapon Image: 120>\n<HP Life Steal Physical: +7.5%>\n<HP Life Steal Magical: +2.5%>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVoid Crystal Staff: 1\nLife Orb: 1\n</Synthesis Ingredients>\n<Mask Name: For HP-Focused Clerics>",
+    "params": [
+      0,
+      20,
+      8,
+      0,
+      45,
+      10,
+      0,
+      0
+    ],
+    "price": 1000,
+    "wtypeId": 4
+  },
+  {
+    "id": 43,
+    "animationId": 122,
+    "description": "A combination of the \\iw[41] and a \\ii[66].\nLeeches MP on physical hits and grants the \\is[80] skill.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 80,
+        "value": 1
+      }
+    ],
+    "iconIndex": 423,
+    "name": "Mana Crystal Staff",
+    "note": "<Upgrade Slots: 3>\n<Weapon Image: 114>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff: 1\nMana Orb: 1\n</Synthesis Ingredients>\n<Mask Name: For MP-Focused Clerics>",
+    "params": [
+      0,
+      20,
+      8,
+      0,
+      45,
+      10,
+      0,
+      0
+    ],
+    "price": 1000,
+    "wtypeId": 4
   }
 ]
