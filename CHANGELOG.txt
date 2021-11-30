@@ -1,4 +1,52 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                             ALPHA 14.2 CHANGELOG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Alpha 14.2 (11/30/2021)
+Current Level Cap: 20
+- - - - - - - - - - - - -
+Another sub-alpha! This one fixes quite a few bugs with the game, and also addresses feedback given by the community.
+
+Additions:
+ - Re-added the equip optimize button, a missed feature from Alpha 13.
+ - Recovery item descriptions will show how much HP/MP they recover, both static and percentage.
+ - Added a merchant in Sector 2 of Adon that sells Small Potions and Small Elixirs. He will disappear after Laeryidyean has been defeated.
+  ~ As a result of this, the soldier outside the Bandito Hideout that's always sold Small Elixirs will now sell them at 16B rather than 20B.
+ 
+Changes:
+ - Replaced Player 1's Defend I/II and Mark skills with three new skills.
+  ~ Hold the Line I: Learned by Player 1 at level 5.
+  ~ Hold the Line II: Learned by Player 1 through the skill menu starting at level 15.
+  ~ Weak Point: Learned by Player 1 at level 7.
+  ~ All enemies that used Defend I/II or Mark in their AI have had their AI modified to use the new skills.
+  ~ Already-existing save files will retroactively learn the new skills and have the old ones removed. Mastery levels will be migrated.
+ - Equip restrictions on all hats except Matt's Fedora have been removed. Have fun mixing and matching!
+ - The status menu and equip comparison menu now have 1 decimal of precision for stats other than the main 8.
+ - Player 1, Player 2, and Player 4 can now all learn Anaylze using the skill learn menu.
+ - Skeleton Warriors and Skeleton Mages can now drop Small Potions and Small Elixirs.
+ - Completely disabled the battle intro. It was just too buggy and the effect wasn't worth it. Besides, most people just turn it off after the first few times.
+ - Reduced the amount of skeletons found in Laeryidyean's Forest - Center.
+ - Trimmed down some dialogue in a few spots.
+
+Balancing:
+ - Nerfed the Skeleton Mage.
+  ~ ATK: 10 → 8
+  ~ DEF: 12 → 9
+  ~ MAT: 24 → 20
+  ~ MDF: 24 → 20
+  ~ Cure I will now be used at or below 30% HP rather than the old 50%.
+  ~ Cure I will only have a 60% chance of being used when meeting the HP condition rather than the old 100%.
+ - Nerfed the Skeleton Warrior.
+  ~ MDF: 20 → 12
+ - Reduced the cost of Floppy Hat ★ from 50B to 35B.
+ - Nerfed Charm of Foresight from +10% CEV to +5% CEV
+
+Bug Fixes:
+ - Fixed an annoying bug where skipping through Player 2's dialogue during the walk-and-talk with him could softlock the game.
+ - The Items menu and the Run Away option can no longer be selected with at least 1 boost active.
+ - Fixed a bug where Player 2 could leave Sector 2 by himself while Player 1 and Mark are talking.
+ - A lot of minor textual errors were fixed.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                              ALPHA 14.1 CHANGELOG
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
