@@ -1978,6 +1978,19 @@ Scene_LearnSkill.prototype.onConfirmCancel = function() {
 };
 
 //=============================================================================
+// Hide skill mastery gauge for Scene_SkillLearn windows that would draw skills
+//=============================================================================
+
+Window_SkillLearn.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
+  return;
+};
+
+Window_SkillLearnData.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
+  return;
+};
+
+
+//=============================================================================
 // Utilities
 //=============================================================================
 
