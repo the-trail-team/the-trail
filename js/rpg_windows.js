@@ -2354,7 +2354,7 @@ Window_EquipCommand.prototype.maxCols = function() {
 
 Window_EquipCommand.prototype.makeCommandList = function() {
     this.addCommand(TextManager.equip2,   'equip');
-    // this.addCommand(TextManager.optimize, 'optimize');
+    this.addCommand(TextManager.optimize, 'optimize');
     this.addCommand(TextManager.clear,    'clear');
 };
 
@@ -5415,7 +5415,11 @@ Window_ActorCommand.prototype.addGuardCommand = function() {
 };
 
 Window_ActorCommand.prototype.addItemCommand = function() {
-    this.addCommand(TextManager.item, 'item');
+    if (BattleManager.actor()._useBP !== 0) {
+        this.addCommand(TextManager.item, 'item', false);
+    } else {
+        this.addCommand(TextManager.item, 'item', true);
+    }
 };
 
 Window_ActorCommand.prototype.setup = function(actor) {

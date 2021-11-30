@@ -7642,6 +7642,25 @@
               ]
             },
             {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
               "code": 126,
               "indent": 0,
               "parameters": [
@@ -10585,21 +10604,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p2There's no way you straightened"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "the scarecrows. I just checked outside,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "and they're the same as ever."
+                "\\p2Are you sure? That was... pretty quick."
               ]
             },
             {
@@ -10616,14 +10621,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\p2You don't have to lie to me! Just"
+                "\\p2Don't forget to straighten the one in"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "go straighten the scarecrows!"
+                "the field south of town. Leave Verdin,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "and you should see the field right away."
               ]
             },
             {
@@ -12497,7 +12509,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Hello, I'd like to check out of the Inn."
+                "\\p2Hello, I'd like to check out of the inn."
               ]
             },
             {
@@ -13341,7 +13353,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2\\$Here, I still have some bits left"
+                "\\p2Here, I still have some Bits left"
               ]
             },
             {
@@ -14448,66 +14460,7 @@
       "x": 20,
       "y": 11
     },
-    {
-      "id": 21,
-      "name": "santa-copy",
-      "note": "<Copy Event: 158, 55>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 81,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Christmas",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 13,
-      "y": 13
-    },
+    null,
     {
       "id": 22,
       "name": "EV022",
