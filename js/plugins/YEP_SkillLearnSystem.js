@@ -919,7 +919,7 @@ Window_SkillLearn.prototype.createSkillLearnData = function() {
       var skill = $dataSkills[skillId];
       if (skill/* && this.includes(skill)*/) this._data.push(skill);
     }
-    this._data = this._data.sort(function(a, b) { return a.id - b.id; });
+    // this._data = this._data.sort(function(a, b) { return a.id - b.id; });
     this._data = this._data.filter(Yanfly.Util.onlyUnique);
 };
 
