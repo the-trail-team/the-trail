@@ -759,6 +759,41 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "var actor = $gameParty.members()[0];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "var level = actor.skillMasteryLevel(5);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "var uses = actor.skillMasteryUses(5);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "actor.setSkillMasteryLevel(86, level);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "actor.setSkillMasteryUses(86, uses);"
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
@@ -799,6 +834,41 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "var actor = $gameParty.members()[0];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "var level = actor.skillMasteryLevel(4);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "var uses = actor.skillMasteryUses(4);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "actor.setSkillMasteryLevel(84, level);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "actor.setSkillMasteryUses(84, uses);"
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
@@ -826,6 +896,41 @@
           1,
           1,
           45
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "var actor = $gameParty.members()[0];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "var level = actor.skillMasteryLevel(45);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "var uses = actor.skillMasteryUses(45);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "actor.setSkillMasteryLevel(85, level);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "actor.setSkillMasteryUses(85, uses);"
         ]
       },
       {
