@@ -2956,5 +2956,116 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 84,
+    "animationId": 53,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Order your team to hold the line, reducing incoming\nphysical and magical damage by 10% for \\c[27]\\bpturn[8]\\c[0] to \\c[27]\\bpturn[10]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 80,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 13,
+    "message1": " holds the line!",
+    "message2": "",
+    "mpCost": 5,
+    "name": "Hold the Line I",
+    "note": "<Boost Turns>\n<Weapon Motion: guard>\n<Hide if Learned Skill: 85>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 8,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 85,
+    "animationId": 53,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Hold the line even tighter, reducing incoming physical\nand magical damage by a whole 20% for \\c[27]\\bpturn[8]\\c[0] to \\c[27]\\bpturn[10]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 81,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 13,
+    "message1": " holds the line!",
+    "message2": "",
+    "mpCost": 15,
+    "name": "Hold the Line II",
+    "note": "<Boost Turns>\n<Weapon Motion: guard>\n<Learn Require Skill: 84>\n<Learn Require Level: 15>\n<Learn Cost: 10000 JP>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 8,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 86,
+    "animationId": 125,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Expose a flaw in the enemy's battle stance, increasing all\nphysical and magical damage done to them by 20% for \\c[27]\\bpturn[4]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 82,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 546,
+    "message1": " exposes a weak point!",
+    "message2": "",
+    "mpCost": 8,
+    "name": "Weak Point",
+    "note": "<Boost Turns>\n\n<target action>\nperform start\nmotion item: user\naction animation\nwait for animation\naction effect\nwait for effect\nperform finish\n</target action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

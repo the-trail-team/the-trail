@@ -917,9 +917,9 @@ Window_SkillLearn.prototype.createSkillLearnData = function() {
     for (var i = 0; i < this.getClass().learnSkills.length; ++i) {
       var skillId = this.getClass().learnSkills[i];
       var skill = $dataSkills[skillId];
-      if (skill && this.includes(skill)) this._data.push(skill);
+      if (skill/* && this.includes(skill)*/) this._data.push(skill);
     }
-    this._data = this._data.sort(function(a, b) { return a.id - b.id; });
+    // this._data = this._data.sort(function(a, b) { return a.id - b.id; });
     this._data = this._data.filter(Yanfly.Util.onlyUnique);
 };
 
@@ -1164,6 +1164,8 @@ Window_SkillLearnData.prototype.drawSkillData = function() {
     wy = this.drawCostText(wy);
     wy = this.drawGoldCosts(wy);
     wy = this.drawJpCosts(wy);
+    wy = this.drawSkillCosts(wy);
+    wy = this.drawLevelCosts(wy);
     wy = this.drawOtherCosts(wy);
     wy = this.drawCustomText(wy);
     return wy;
@@ -1245,6 +1247,49 @@ Window_SkillLearnData.prototype.drawJpCosts = function(wy) {
     this.resetTextColor();
     wy += this.lineHeight();
     return wy;
+};
+
+Window_SkillLearnData.prototype.drawSkillCosts = function(wy) {
+  var cost = this._skill.learnRequireSkill;
+  if (cost == undefined) return;
+  for (i = 0; i < cost.length; i++) {
+    var text = '';
+    text = '\\i[' + 115 + ']' + "Skill";
+    var wx = this.drawTextEx(text, 0, wy);
+    var ww = this.contents.width - wx - 4;
+    var costText = $dataSkills[cost[i]].name;
+    this.contents.fontSize = Yanfly.Param.SLSCostSize;
+    if (this._actor._skills.contains(cost[i])) {
+      this.changeTextColor(this.powerUpColor());
+    } else {
+      this.changeTextColor(this.powerDownColor());
+    }
+    this.drawText(costText, wx, wy, ww, 'right');
+    this.resetFontSettings();
+    this.resetTextColor();
+    wy += this.lineHeight();
+  }
+  return wy;
+};
+
+Window_SkillLearnData.prototype.drawLevelCosts = function(wy) {
+  var cost = this._skill.learnRequireLevel;
+  var text = '';
+  text = '\\i[' + 121 + ']' + "Level";
+  var wx = this.drawTextEx(text, 0, wy);
+  var ww = this.contents.width - wx - 4;
+  var costText = cost;
+  this.contents.fontSize = Yanfly.Param.SLSCostSize;
+  if (this._actor.level >= cost) {
+    this.changeTextColor(this.powerUpColor());
+  } else {
+    this.changeTextColor(this.powerDownColor());
+  }
+  this.drawText(costText, wx, wy, ww, 'right');
+  this.resetFontSettings();
+  this.resetTextColor();
+  wy += this.lineHeight();
+  return wy;
 };
 
 Window_SkillLearnData.prototype.drawOtherCosts = function(wy) {
@@ -1931,6 +1976,19 @@ Scene_LearnSkill.prototype.onConfirmCancel = function() {
     this._confirmWindow.close();
     this._skillLearnWindow.activate();
 };
+
+//=============================================================================
+// Hide skill mastery gauge for Scene_SkillLearn windows that would draw skills
+//=============================================================================
+
+Window_SkillLearn.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
+  return;
+};
+
+Window_SkillLearnData.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
+  return;
+};
+
 
 //=============================================================================
 // Utilities

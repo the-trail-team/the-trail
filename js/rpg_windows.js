@@ -5415,7 +5415,11 @@ Window_ActorCommand.prototype.addGuardCommand = function() {
 };
 
 Window_ActorCommand.prototype.addItemCommand = function() {
-    this.addCommand(TextManager.item, 'item');
+    if (BattleManager.actor()._useBP !== 0) {
+        this.addCommand(TextManager.item, 'item', false);
+    } else {
+        this.addCommand(TextManager.item, 'item', true);
+    }
 };
 
 Window_ActorCommand.prototype.setup = function(actor) {

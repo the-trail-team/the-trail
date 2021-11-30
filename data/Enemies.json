@@ -1028,14 +1028,14 @@
     ],
     "gold": 16,
     "name": "Skeleton Mage",
-    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nElixir: 8.33%\nMAT Scroll: 10%\nEmerald Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Elixir Drop>\nSwitch 69 ON: +8.33%\n</Conditional Elixir Drop>\n<Conditional MAT Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional MAT Scroll Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nSmall Elixir: 20%\nElixir: 8.33%\nMAT Scroll: 10%\nEmerald Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Elixir Drop>\nSwitch 69 ON: +20%\n</Conditional Small Elixir Drop>\n<Conditional Elixir Drop>\nSwitch 69 ON: +8.33%\n</Conditional Elixir Drop>\n<Conditional MAT Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional MAT Scroll Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       150,
       30,
-      10,
-      12,
-      24,
-      24,
+      8,
+      9,
+      20,
+      20,
       30,
       18
     ]
@@ -1125,14 +1125,14 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Marked +++ Turn === 1 +++ Eval user.name() !== 'Skeleton Warrior A': Mark, Lowest DEF\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 1%\nSkeleton Skull: 20%\nSmall Potion: 20%\nPotion: 8.33%\nATK Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Potion Drop>\nSwitch 69 ON: +20%\n</Conditional Small Potion Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       180,
       10,
       12,
       13,
       1,
-      20,
+      12,
       15,
       15
     ]
@@ -1452,7 +1452,7 @@
     ],
     "gold": 400,
     "name": "Laeryidyean",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === Marked +++ User HP% param >= 50%: Purify, User\nState !== Soul Barrier I +++ User HP% param >= 50%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Sideview Battler: Boss1_1>\n<Attack Animation: 6>\n<Weapon Image: 2>\n<HP Gauge Width: 288>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Enemy Drops>\nMusic Box: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState === Exposed Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Soul Barrier I +++ User HP% param >= 50%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Sideview Battler: Boss1_1>\n<Attack Animation: 6>\n<Weapon Image: 2>\n<HP Gauge Width: 288>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Enemy Drops>\nMusic Box: 1%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -1742,7 +1742,7 @@
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 1%\n</Enemy Drops>",
+    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 1%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -2084,7 +2084,7 @@
     ],
     "gold": 60,
     "name": "Dandy Toad Captain",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Marked +++ Random 60% +++ Turn === 1: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 1%\n</Enemy Drops>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 1%\n</Enemy Drops>",
     "params": [
       900,
       60,
@@ -2928,7 +2928,7 @@
     ],
     "gold": 900,
     "name": "Vessel of the Forgotten General",
-    "note": "<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Soul Barrier I +++ User HP% param >= 30%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Marked +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Sideview Battler: Evil1_6>\n<Attack Animation: 126>\n<Weapon Image: 242>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nShadowspec Sword: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Soul Barrier I +++ User HP% param >= 30%: Soul Barrier I, User\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Exposed Weak Point +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Boost Skill 65: Full>\n<Boost Skill 60: Full>\n\n<Sideview Battler: Evil1_6>\n<Attack Animation: 126>\n<Weapon Image: 242>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nShadowspec Sword: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       12000,
       9999,

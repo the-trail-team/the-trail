@@ -1,0 +1,148 @@
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                             ALPHA 14.2 CHANGELOG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Alpha 14.2 (11/30/2021)
+Current Level Cap: 20
+- - - - - - - - - - - - -
+Another sub-alpha! This one fixes quite a few bugs with the game, and also addresses feedback given by the community.
+
+Additions:
+ - Re-added the equip optimize button, a missed feature from Alpha 13.
+ - Recovery item descriptions will show how much HP/MP they recover, both static and percentage.
+ - Added a merchant in Sector 2 of Adon that sells Small Potions and Small Elixirs. He will disappear after Laeryidyean has been defeated.
+  ~ As a result of this, the soldier outside the Bandito Hideout that's always sold Small Elixirs will now sell them at 16B rather than 20B.
+ 
+Changes:
+ - Replaced Player 1's Defend I/II and Mark skills with three new skills.
+  ~ Hold the Line I: Learned by Player 1 at level 5.
+  ~ Hold the Line II: Learned by Player 1 through the skill menu starting at level 15.
+  ~ Weak Point: Learned by Player 1 at level 7.
+  ~ All enemies that used Defend I/II or Mark in their AI have had their AI modified to use the new skills.
+  ~ Already-existing save files will retroactively learn the new skills and have the old ones removed. Mastery levels will be migrated.
+ - Equip restrictions on all hats except Matt's Fedora have been removed. Have fun mixing and matching!
+ - The status menu and equip comparison menu now have 1 decimal of precision for stats other than the main 8.
+ - Player 1, Player 2, and Player 4 can now all learn Analyze using the skill learn menu.
+ - Skeleton Warriors and Skeleton Mages can now drop Small Potions and Small Elixirs.
+ - Completely disabled the battle intro. It was just too buggy and the effect wasn't worth it. Besides, most people just turn it off after the first few times.
+ - Reduced the amount of skeletons found in Laeryidyean's Forest - Center.
+ - Trimmed down some dialogue in a few spots.
+
+Balancing:
+ - Nerfed the Skeleton Mage.
+  ~ ATK: 10 → 8
+  ~ DEF: 12 → 9
+  ~ MAT: 24 → 20
+  ~ MDF: 24 → 20
+  ~ Cure I will now be used at or below 30% HP rather than the old 50%.
+  ~ Cure I will only have a 60% chance of being used when meeting the HP condition rather than the old 100%.
+ - Nerfed the Skeleton Warrior.
+  ~ MDF: 20 → 12
+ - Reduced the cost of Floppy Hat ★ from 50B to 35B.
+ - Nerfed Charm of Foresight from +10% CEV to +5% CEV
+
+Bug Fixes:
+ - Fixed an annoying bug where skipping through Player 2's dialogue during the walk-and-talk with him could softlock the game.
+ - The Items menu and the Run Away option can no longer be selected with at least 1 boost active.
+ - Fixed a bug where Player 2 could leave Sector 2 by himself while Player 1 and Mark are talking.
+ - A lot of minor textual errors were fixed.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                             ALPHA 14.1 CHANGELOG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Alpha 14.1 (11/26/2021)
+Current Level Cap: 20
+- - - - - - - - - - - - -
+Here we are, the first sub-alpha for Alpha 14. It came quickly, too!
+This little update mainly serves to add... holiday content! That's right, for the month of December, you'll get access to some fun new stuff.
+Additionally, some issues found in Alpha 14 have been addressed in order to further improve the gameplay experience.
+
+Additions:
+ - The holidays are here! A few special things will start happening during the month of December:
+  ~ Every enemy in the game has a 10% chance to drop a Present.
+  ~ A new NPC known as the Holiday Merchant can be found in all 6 towns in the game, even during the prologue. He'll sell you all the new holiday items in exchange for Presents.
+  ~ The game's window skin receives a jolly coat of paint. Additionally, the menu particles change to snowflakes!
+ - The affectionately dubbed "Snowlus Town" has returned at long last! I unfortunately don't know how to automate the tiles changing just yet, so the town will be reverted to its old greenness in the first update of 2022.
+ - Added in 7 new holiday themed items:
+  ~ Present
+  ~ Fizzy Cranberry Beverage
+  ~ Festive Sword/Wand/Staff/Dagger Scroll
+  ~ Icon Reset Scroll
+ - Added in 5 new holiday themed weapons:
+  ~ Candy Cane Sword/Wand/Staff/Dagger
+  ~ Leek Sword
+ - Added in 5 new holiday themed armors:
+  ~ Festive Armor/Robes/Vestments/Leathers
+  ~ Candy Cane Shield
+ - Aside from those, another 6 armors have been added to the game that can be found at any time:
+  ~ Leather Charm
+  ~ Music Box
+  ~ Vishnu's Charm
+  ~ Condensed White Gel
+  ~ Metallic Rat Pelt
+  ~ Arcane Leather Charm
+  
+Changes:
+ - Changed around drops of state resistance accessories to be more consistent. Additionally, the accessories will always have a 1% drop from their enemy type, regardless if the specific enemy is normal, rare, or a boss.
+ - The location of the Bandito Loot found in the drawers in the Bandito Hideout has been randomized using the new "Playthrough Seed" set at the start of each run. It's a 50/50 chance to be one drawer or the other.
+ 
+Bug Fixes:
+ - Fixed a few problems with the Linux release of the game.
+ - Fixed the positioning of the gab window as to not overlap with the map name display.
+ - Fixed issues with the Village Headman's turning during the story of the Great Collapse.
+ - Fixed textual errors in a few spots.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                              ALPHA 14 CHANGELOG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+Alpha 14 (11/25/2021)
+The Overhaul Update
+Current Level Cap: 20
+- - - - - - - - - - - - -
+This is it. The update you all have been waiting for. Just like always, the latest update is the biggest one to date.
+Consider this like a second or third fresh start for The Trail. I don't know, I don't remember what number we're on.
+The sheer amount of changes, additions, bug fixes, and balancing is unprecedented in the history of The Trail. In fact, they are so great in number that I won't even bother to create an actual changelog.
+Yeah, maybe I'm lazy. But at the same time, this is such an incredibly large overhaul that it can feel like a different game at times. Maybe it's not right to consider this an updated version of Alpha 13, and instead think of it as a re-imagining of the game.
+There's a lot of things that will jump out at you as soon as you start playing the game. However, there's also an incredible amount of very small, barely noticeable things I've changed across the board that give the game a breath of fresh air.
+Well, here is the lackluster "changelog" (hey, the less spoilers the better, right?):
+
+Additions:
+ - Added a new passive skill: Simp. It's unlocked by Player 2 at level 1 and is always active.
+From awesome additions like a new dungeon for the Water Elemental, all the way to dope new mechanics like a time system, this update has it all.
+Well... all may be a bit of understatement. While Alpha 14 is "The Overhaul Update," taking care of mostly every aspect of the game I've wanted to revisit for 3+ years, it's still not all-encompassing. However, it... still covers a ridiculously large number of bases.
+
+Changes:
+A huge amount of changes were made across the entire game, as expected. Some are obvious, like the 1280x720 resolution and music update, but did you notice stuff like how the status effect "On Fire!" is now does constant damage over time instead of percentage-based?
+Now, imagine a small change like that, and then have like 5000 of them. Yeah, a TON of stuff was changed. Praise be to the person who goes through all my GitHub commits and compiles everything together into a nice changelog!
+(Seriously though, if someone managed to one day document every change made in this update, they would certainly have all my praises bestowed upon them.)
+
+Balancing:
+Look, I finally nerfed the crit formula. That's probably one of the most prominent balancing changes here.
+However, I did make changes across the board to almost every piece of equipment and skill. The game should feel considerably more fair in many aspects now.
+Oh, but how could I neglect to mention this? The battle system has been revamped, placing a lot of emphasis on the new Boost Point mechanic, as well as buffs/debuffs to stats that function on a scale from -5 to 5 (think Pokémon).
+This is a part of the update that we will need a particularly high amount of community feedback to properly adjust and balance. Please leave any and all feedback in the Discord server!
+
+Bug Fixes:
+Fixed an INCREDIBLE amount of bugs, ranging from new to old to ancient.
+
+Bugs we are aware of:
+Yes, there are STILL just a couple bugs I haven't managed to squash from Alpha 13, and a few have popped up during the developement of Alpha 14 that I haven't found a fix for just yet. Apologies for that...
+But hey, there's no more need for this section thanks to the issue tracker on GitHub! It's been nice having this here for a while, but it's finally time to move on. Check out the issue tracker via the link below.
+https://github.com/NoLongerLucky/thetrail/issues
+ 
+Planned features:
+Well, what do you know? Everything on this list has finally been ticked off. Looks like it might be time to retire this section too. It hasn't ever served much of a purpose, either...
+
+Out of all the updates that I have ever developed for The Trail, this has by far been the most daunting yet fun to undertake. It's been amazing to see the game change and transform so much.
+The Trail is finally starting to be like what I imagined it to be like all those years ago. All this time spent on it is paying off; I'm finally shaping the game to be just how I always wanted.
+Now that the overhauling is finally out of the way, we will of course have a few sub-Alpha 14s to address bugs and make adjustments after listening to community feedback. However...
+Alpha 15 approaches next. And while nothing might ever manage to top Alpha 14 in terms of sheer difference from the prior version, this upcoming update will be a jaw-dropper.
+Telluria Castle... it approaches.
+
+But as always...
+
+...the journey continues.
+
+Yours truly,
+Andrew
