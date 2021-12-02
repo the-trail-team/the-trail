@@ -134243,6 +134243,14 @@
               ]
             },
             {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -135715,7 +135723,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
+            "switch1Id": 86,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -135768,6 +135776,15 @@
               "indent": 0,
               "parameters": [
                 1
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                86,
+                86,
+                0
               ]
             },
             {
@@ -137580,12 +137597,12 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 84,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 18,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 7
           },
           "directionFix": false,
@@ -137728,19 +137745,23 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Yep, that is quite a bit of dirt,"
+                "\\p4Yep, that is quite a bit of dirt, guys."
               ]
             },
             {
-              "code": 401,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                "guys."
+                1,
+                18,
+                0,
+                8,
+                1
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -137750,48 +137771,68 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p4The mayor wasn't wrong. We definitely"
+                "\\p4The mayor wasn't lying. We need to head to"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "need to recruit a soldier or two"
+                "Solus Valley and recruit another soldier."
               ]
             },
             {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "from Solus Valley."
-              ]
+              "code": 0,
+              "indent": 1,
+              "parameters": []
             },
             {
-              "code": 122,
+              "code": 411,
               "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
-                18,
-                18,
-                1,
+                "Actor4",
+                3,
                 0,
-                1
+                2
               ]
             },
             {
-              "code": 356,
-              "indent": 0,
+              "code": 401,
+              "indent": 1,
               "parameters": [
-                "Quest 20 Complete Objective 1"
+                "\\p4The chief wasn't lying. We're going to"
               ]
             },
             {
-              "code": 356,
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "have to get help from Greenfield."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
               "indent": 0,
               "parameters": [
-                "Quest 20 Show Objective 2"
+                "A",
+                0
               ]
             },
             {
@@ -137827,13 +137868,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 18,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 9
           },
           "directionFix": false,
@@ -139545,12 +139586,12 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 85,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 22
           },
           "directionFix": false,
@@ -140190,80 +140231,9 @@
               "parameters": [
                 19,
                 19,
-                1,
                 0,
-                1
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Complete Objective 4"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Claim Reward 1"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Set Completed 20"
-              ]
-            },
-            {
-              "code": 249,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Item",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
                 0,
-                1,
-                1
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Into Bladesville"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Quest Complete!"
+                23
               ]
             },
             {
@@ -140394,8 +140364,8 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "",
-                0,
+                "Actor4",
+                3,
                 0,
                 2
               ]
@@ -140404,28 +140374,59 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Barkeep needs some assistance from you."
+                "\\p4Hey, this is a bit random, but... I've"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                ""
+                "been thinking a bit about Kevin. Maybe"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Additionally, a foe-turned-friend of"
+                "we should go back and check on him?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "yours needs some help over in Haven Harbor."
+                "\\p4And on that note, the tavern in Solus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Town... it's been a little while since"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "it re-opened. Maybe we should go there"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "and see how Barkeep is holding up?"
               ]
             },
             {

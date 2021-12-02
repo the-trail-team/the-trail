@@ -3604,14 +3604,10 @@
               ]
             },
             {
-              "code": 122,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                19,
-                19,
-                1,
-                0,
-                1
+                "$gameSelfSwitches.setValue([115, 9, 'A'], true)"
               ]
             },
             {
@@ -3707,14 +3703,10 @@
               ]
             },
             {
-              "code": 122,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                19,
-                19,
-                1,
-                0,
-                1
+                "$gameSelfSwitches.setValue([115, 8, 'A'], true)"
               ]
             },
             {
@@ -3841,14 +3833,10 @@
               ]
             },
             {
-              "code": 122,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                19,
-                19,
-                1,
-                0,
-                1
+                "$gameSelfSwitches.setValue([115, 7, 'A'], true)"
               ]
             },
             {
@@ -4700,8 +4688,19 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                19,
+                0,
+                16,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 6,
@@ -4711,31 +4710,106 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Hey, let's get back to Solus"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Valley now. This is the last"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "of the Chief's chores, so we"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "can expect our reward now."
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p3But now... that town right next to here,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Solus Valley. I'm willing to bet these"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "goblins have been causing them some"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "problems that we've accidentally fixed."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p3Let's go talk to whoever leads the town."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 221,
@@ -4748,9 +4822,30 @@
               "parameters": [
                 19,
                 19,
-                1,
                 0,
-                1
+                0,
+                20
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([115, 9, 'A'], false)"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([115, 8, 'A'], false)"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([115, 7, 'A'], false)"
               ]
             },
             {
@@ -4766,25 +4861,46 @@
               "parameters": []
             },
             {
-              "code": 356,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                19,
+                0,
+                16,
+                1
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
               "parameters": [
                 "Quest 21 Complete Objective 3"
               ]
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest 21 Change Description Entry To 2"
               ]
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest 21 Show Objective 4"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 230,
@@ -4803,6 +4919,15 @@
               "indent": 0,
               "parameters": [
                 "ShowActiveQuestWindow"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                87,
+                87,
+                0
               ]
             },
             {
@@ -5322,64 +5447,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 19
           },
           "directionFix": false,
@@ -5430,7 +5504,7 @@
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 20
           },
           "directionFix": false,
@@ -5484,64 +5558,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 18
           },
           "directionFix": false,
@@ -5592,7 +5615,7 @@
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 20
           },
           "directionFix": false,
@@ -5646,64 +5669,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 17
           },
           "directionFix": false,
@@ -5754,7 +5726,7 @@
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 20
           },
           "directionFix": false,

@@ -1990,6 +1990,13 @@
           "walkAnime": true,
           "list": [
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([87, 3, 'A'], true)"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -2028,8 +2035,19 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                17,
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -2039,14 +2057,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Wait a second."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -2056,14 +2074,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3You're... talking to us?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -2073,21 +2091,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Like... actually saying"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "something intelligent?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -2097,21 +2115,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3And you didn't even lead with"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\"Welcome to Greenfield!\"?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "People1",
                 4,
@@ -2121,14 +2139,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\joeUh..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "People1",
                 4,
@@ -2138,14 +2156,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\joeYeah, you're right, I guess?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 6,
@@ -2155,14 +2173,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3YES!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 6,
@@ -2172,28 +2190,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3I just KNEW there was at least one"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "person in this town that wasn't"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "completely brain-dead!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "People1",
                 4,
@@ -2203,14 +2221,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\joeWow."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "People1",
                 4,
@@ -2220,14 +2238,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\joeWell... thanks, I guess?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "People1",
                 4,
@@ -2237,31 +2255,75 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\joeAnyways, on to business. Apologies for"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "being generic, as it appears that you"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "hate that, but... would you like to"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "browse my wares?"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\joeI suppose we should get to business."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Would you like to browse my wares?"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 102,
