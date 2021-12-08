@@ -1019,7 +1019,7 @@ Window_ShopStatus.prototype.drawEquipInfo = function(x, y) {
 
 Window_ShopStatus.prototype.drawActorEquipInfo = function(x, y, actor) {
     var enabled = actor.canEquip(this._item);
-    enabled = actor.meetAllEquipRequirementsSoft(this._item);
+    enabled = actor.checkEquipRequirements(this._item);
     this.changePaintOpacity(enabled);
     this.resetTextColor();
     this.resetFontSettings();
