@@ -525,6 +525,23 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
   return true;
 };
 
+Game_BattlerBase.prototype.meetAllEquipRequirementsSoft = function(item) {
+  if (!item.equipRequirements) {
+    if (item.baseItemId) {
+      item.equipRequirements = DataManager.getBaseItem(item).equipRequirements;
+    } else {
+      return true;
+    }
+  }
+  if (!this.meetEquipParamRequirements(item)) return false;
+  if (!this.meetEquipClassRequirements(item)) return false;
+  if (!this.meetEquipSkillRequirements(item)) return false;
+  if (!this.meetEquipSwitchRequirements(item)) return false;
+  if (!this.meetEquipUniqueRequirements(item)) return false;
+  if (!this.meetEquipEvalRequirements(item)) return false;
+  return true;
+};
+
 Game_BattlerBase.prototype.meetEquipParamRequirements = function(item) {
   var requirements = item.equipRequirements;
   for (var i = 0; i < 9; ++i) {
