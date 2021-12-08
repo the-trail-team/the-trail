@@ -1023,7 +1023,7 @@ Window_ShopStatus.prototype.drawActorEquipInfo = function(x, y, actor) {
     this.changePaintOpacity(enabled);
     this.resetTextColor();
     this.resetFontSettings();
-    this.drawText(actor.name(), x, y, this.contents.width - x);
+    this.drawTextEx("\\i[" + $dataActorIcons[actor._actorId - 1] + "] " + actor.name(), x, y, this.contents.width - x);
     var item1 = this.currentEquippedItem(actor, this._item.etypeId);
     if (enabled) {
       this.contents.fontSize = Yanfly.Param.ShopStatFontSize;
