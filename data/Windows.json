@@ -146,14 +146,17 @@
   "Scene_Equip": {
     "Window_Help": {
       "x": 0,
-      "y": 0
+      "y": 0,
+      "opacity": "255",
+      "width": "1280",
+      "height": "108"
     },
     "Window_StatCompare": {
       "x": 640,
-      "y": 288,
+      "y": 180,
       "opacity": "255",
       "width": "640",
-      "height": "432"
+      "height": "540"
     },
     "Window_EquipSlot": {
       "x": 0,
@@ -164,25 +167,44 @@
       "cols": "1"
     },
     "Window_SkillStatus": {
-      "x": 240,
-      "y": 108
+      "x": 0,
+      "y": 108,
+      "opacity": "255",
+      "width": "640",
+      "height": "180"
     },
     "Window_EquipCommand": {
-      "x": 0,
-      "y": 108
+      "x": 640,
+      "y": 108,
+      "opacity": "255",
+      "width": "640",
+      "rows": "1",
+      "cols": "4",
+      "lineHeight": "36",
+      "align": "center"
     },
     "Window_BattleStatus": {},
     "Window_EquipRequirement": {
       "x": 640,
-      "y": 288
+      "y": 180,
+      "opacity": "255",
+      "width": "640",
+      "height": "540"
     },
     "Window_EquipItem": {
       "x": 0,
-      "y": 288
+      "y": 288,
+      "opacity": "255",
+      "width": "640",
+      "height": "432",
+      "cols": "1"
     },
     "Window_ItemInfo": {
       "x": 640,
-      "y": 288
+      "y": 180,
+      "opacity": "255",
+      "width": "640",
+      "height": "540"
     }
   },
   "Scene_Menu": {

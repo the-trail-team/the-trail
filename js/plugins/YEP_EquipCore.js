@@ -913,6 +913,7 @@ Scene_Equip.prototype.create = function() {
     this._lowerRightVisibility = true;
     this.updateLowerRightWindows();
     this.refreshActor();
+    SceneManager._scene._compareWindow.setTempActor(this.actor());
 };
 
 Scene_Equip.prototype.createCommandWindow = function() {
@@ -1042,6 +1043,7 @@ Scene_Equip.prototype.onSlotCancel = function() {
     Yanfly.Equip.Scene_Equip_onSlotCancel.call(this);
     if (this._infoWindow) this._infoWindow.setItem(null);
     this._compareWindow.setTempActor(null);
+    while (SceneManager._scene._compareWindow !== this._lowerRightWindows[0]) this.shiftLowerRightWindows();
 };
 
 Yanfly.Equip.Scene_Equip_onItemOk = Scene_Equip.prototype.onItemOk;
@@ -1071,6 +1073,7 @@ Scene_Equip.prototype.update = function() {
 
 Scene_Equip.prototype.updateLowerRightWindowTriggers = function() {
     if (!this._lowerRightVisibility) return;
+    if (SceneManager._scene._commandWindow.active) return;
     if (Input.isRepeated('right')) {
       this.shiftLowerRightWindows();
     } else if (Input.isRepeated('left')) {
