@@ -603,7 +603,7 @@ DataManager.processEEDNotetags1 = function(group) {
     }
     // origin crystal (1/100,000 drop)
     var id = 34;
-    var rate = 0.00001;
+    var rate = 0.00002;
     this.createEnemyDrop(obj, id, rate, 2);
     if (Date().split(" ")[1] == "Dec") { // present (1/10 drop)
       var id = 156;
