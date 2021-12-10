@@ -906,8 +906,8 @@ Window_ShopStatus.prototype.refresh = function() {
     if (!this.isEquipItem()) return;
     this.resetTextColor();
     this.resetFontSettings();
-    if (this.isDefaultMode()) this.drawDefaultData();
-    if (this.isActorMode()) this.drawActorData();
+    if (!$gameSwitches.value(89)) this.drawDefaultData();
+    if ($gameSwitches.value(89)) this.drawActorData();
 };
 
 Window_ShopStatus.prototype.drawDefaultData = function() {
