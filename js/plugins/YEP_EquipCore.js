@@ -913,7 +913,6 @@ Scene_Equip.prototype.create = function() {
     this._lowerRightVisibility = true;
     this.updateLowerRightWindows();
     this.refreshActor();
-    SceneManager._scene._compareWindow.setTempActor(this.actor());
 };
 
 Scene_Equip.prototype.createCommandWindow = function() {
@@ -994,6 +993,7 @@ Yanfly.Equip.Scene_Equip_refreshActor = Scene_Equip.prototype.refreshActor;
 Scene_Equip.prototype.refreshActor = function() {
     Yanfly.Equip.Scene_Equip_refreshActor.call(this);
     this._compareWindow.setActor(this.actor());
+    SceneManager._scene._compareWindow.setTempActor(this.actor());
 };
 
 Yanfly.Equip.Scene_Equip_commandOptimize =
