@@ -1806,13 +1806,13 @@
     "id": 52,
     "animationId": -1,
     "damage": {
-      "critical": false,
+      "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 4.5",
+      "formula": "a.atk * 4.5 - b.def * 1",
       "type": 1,
       "variance": 5
     },
-    "description": "A powerful axe attack that ignore enemy defense.\n\\c[27]\\bpdamage[450]%\\c[0] ATK rate.",
+    "description": "A powerful axe attack that ignores\nhalf of enemy DEF. \\c[27]\\bpdamage[450]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
