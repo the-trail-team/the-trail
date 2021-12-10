@@ -940,9 +940,10 @@ Window_ShopStatus.prototype.getActor = function() {
 };
 
 Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
-    var text = actor.name();
+    var text = "\\i[" + $dataClassIcons[actor._classId] + "]" + actor.name();
+    var tx = (this.contents.width - this.textWidth(text)) / 2;
     this.changeTextColor(this.normalColor());
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'center');
+    this.drawTextEx(text, tx, this.lineHeight(), this.contents.width, 'center');
     this.changeTextColor(this.systemColor());
     var text = '<<';
     this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
@@ -977,6 +978,7 @@ Window_ShopStatus.prototype.drawActorStatInfo = function(actor) {
     this.contents.fontSize = Yanfly.Param.ShopStatFontSize;
     var item1 = this.currentEquippedItem(actor, this._item.etypeId);
     var canEquip = actor.canEquip(this._item);
+    canEquip = actor.checkEquipRequirements(this._item);
     for (var i = 0; i < 8; ++i) {
       this.changePaintOpacity(true);
       var rect = this.getRectPosition(i);
@@ -995,7 +997,7 @@ Window_ShopStatus.prototype.drawActorCantEquip = function(actor, rect) {
     this.changePaintOpacity(false);
     this.resetTextColor();
     this.contents.fontSize = Yanfly.Param.ShopCantSize;
-    var text = '-';
+    var text = "Can't Equip";
     this.drawText(text, rect.x, rect.y, rect.width, 'right');
 };
 
