@@ -1945,7 +1945,7 @@ Window_StatCompare.prototype.refresh = function() {
 		this.contents.clear();
 		let place = 0;
 		this.changeTextColor(this.systemColor());
-		this.drawText("Stat Comparison", 0, place * this.lineHeight(), this.contents.width, 'center');
+		this.drawText("← Stat Comparison →", 0, place * this.lineHeight(), this.contents.width, 'center');
 		place++
 		for(var i = 1; i < 3; i++) { // stats 1-2 (mhp, mmp) will be showed if they are modified
 			if(_.names[i]) {
