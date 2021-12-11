@@ -889,11 +889,13 @@ Window_ShopStatus.prototype.setDisplayMode = function(mode) {
 };
 
 Window_ShopStatus.prototype.isDefaultMode = function() {
-    return this.displayMode() === 'default';
+    // return this.displayMode() === 'default';
+    return !$gameSwitches.value(89);
 };
 
 Window_ShopStatus.prototype.isActorMode = function() {
-    return this.displayMode() === 'actor';
+    // return this.displayMode() === 'actor';
+    return $gameSwitches.value(89);
 };
 
 Window_ShopStatus.prototype.refresh = function() {
@@ -906,8 +908,8 @@ Window_ShopStatus.prototype.refresh = function() {
     if (!this.isEquipItem()) return;
     this.resetTextColor();
     this.resetFontSettings();
-    if (!$gameSwitches.value(89)) this.drawDefaultData();
-    if ($gameSwitches.value(89)) this.drawActorData();
+    if (this.isDefaultMode()) this.drawDefaultData();
+    if (this.isActorMode()) this.drawActorData();
 };
 
 Window_ShopStatus.prototype.drawDefaultData = function() {
