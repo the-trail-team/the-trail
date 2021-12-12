@@ -731,7 +731,7 @@ Window_EquipRequirement.prototype.checkActor = function() {
 
 Window_EquipRequirement.prototype.drawItem = function(index) {
     var rect = this.itemRect(index);
-    this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+    // this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
 };
 
 Window_EquipRequirement.prototype.drawRequirementTitle = function() {

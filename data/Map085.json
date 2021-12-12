@@ -9945,17 +9945,8 @@
           },
           "list": [
             {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                0,
-                33,
-                0
-              ]
-            },
-            {
               "code": 250,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 {
                   "name": "Move1",
@@ -9967,7 +9958,7 @@
             },
             {
               "code": 201,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 0,
                 115,
@@ -9979,214 +9970,10 @@
             },
             {
               "code": 216,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 1
               ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\p3Well, the Giant Goblin should be"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "just ahead. Are you ready, \\N[1]?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 1,
-              "parameters": [
-                [
-                  "Yep.",
-                  "Wait, hold on..."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                0,
-                "Yep."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\p3Alright... let's do this."
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 2,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 2,
-              "parameters": [
-                0,
-                115,
-                14,
-                18,
-                8,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 2,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                1,
-                "Wait, hold on..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\p3Hey, it's fine. It's better to wait"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "and come prepared than rush in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "and be defeated."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 2,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 2,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 217,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -10395,8 +10182,8 @@
               "parameters": [
                 "",
                 0,
-                0,
-                2
+                1,
+                1
               ]
             },
             {
@@ -10905,8 +10692,8 @@
               "parameters": [
                 "",
                 0,
-                0,
-                2
+                1,
+                1
               ]
             },
             {
@@ -11155,8 +10942,8 @@
               "parameters": [
                 "",
                 0,
-                0,
-                2
+                1,
+                1
               ]
             },
             {
@@ -11405,8 +11192,8 @@
               "parameters": [
                 "",
                 0,
-                0,
-                2
+                1,
+                1
               ]
             },
             {
@@ -11686,8 +11473,19 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                19,
+                0,
+                16,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -11697,17 +11495,61 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2I have a hunch that the Giant"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Goblin might be just ahead."
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2I have a hunch that there"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "might be a boss just ahead."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 101,
@@ -12788,6 +12630,124 @@
       ],
       "x": 20,
       "y": 4
+    },
+    {
+      "id": 36,
+      "name": "EV036",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 112>"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 34,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 16,
+      "y": 5
     }
   ]
 }

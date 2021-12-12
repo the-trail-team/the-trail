@@ -1987,6 +1987,9 @@ Window_ItemInfo.prototype.drawItemInfo = function(dy) {
     var dx = this.textPadding();
     var dw = this.contents.width - this.textPadding() * 2;
     this.resetFontSettings();
+    this.changeTextColor(this.systemColor());
+    this.drawText("Item Info", dx, dy, this.contents.width, 'center');
+    dy += this.lineHeight();
     this.drawItemName(this._item, dx, dy, dw);
     return dy + this.lineHeight();
 };

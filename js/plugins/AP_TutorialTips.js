@@ -50,7 +50,8 @@ const tips = [
 	"INT is a unique stat. It's hard to grow, but can greatly increase your crit multiplier.",
 	"Level up your skills by using them! Each level requires 5 more uses than the previous... 275 in total for level 10.",
 	"Each level of skill mastery boosts damage/healing by 2% and reduces MP cost by 2%.",
-	"Don't forget about the skill learn menu! Not every skill you can get will be learned just by leveling up."
+	"Don't forget about the skill learn menu! Not every skill you can get will be learned just by leveling up.",
+	"The shop menu's stat comparison for accessories will compare the accessory you are buying to whatever is equipped in the first accessory slot."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
