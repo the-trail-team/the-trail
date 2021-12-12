@@ -133455,286 +133455,6 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 24,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Region Trigger: 101>"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Well, we've reached Telluria!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3It's starting to get a bit dark..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Let's set up camp on a nearby island."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Or why not in Telluria?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4That'll be our first time"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "setting foot on it!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Yeah, that's actually"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a great idea."
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "Jump To: 97, 105"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "Jump To: 97, 105"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 206,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 241,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                80,
-                13,
-                8,
-                2,
-                2
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                5
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
             "switch1Id": 25,
             "switch1Valid": true,
             "switch2Id": 1,
@@ -134243,6 +133963,14 @@
               ]
             },
             {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -134505,7 +134233,7 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 27,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -135715,7 +135443,7 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
+            "switch1Id": 86,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
@@ -135768,6 +135496,15 @@
               "indent": 0,
               "parameters": [
                 1
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                86,
+                86,
+                0
               ]
             },
             {
@@ -136299,7 +136036,7 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 27,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -136383,7 +136120,7 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 27,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -136570,7 +136307,7 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 27,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -137580,12 +137317,12 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 84,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 18,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 7
           },
           "directionFix": false,
@@ -137728,19 +137465,23 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Yep, that is quite a bit of dirt,"
+                "\\p4Yep, that is quite a bit of dirt, guys."
               ]
             },
             {
-              "code": 401,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                "guys."
+                1,
+                18,
+                0,
+                8,
+                1
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -137750,48 +137491,68 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p4The mayor wasn't wrong. We definitely"
+                "\\p4The mayor wasn't lying. We need to head to"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "need to recruit a soldier or two"
+                "Solus Valley and recruit another soldier."
               ]
             },
             {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "from Solus Valley."
-              ]
+              "code": 0,
+              "indent": 1,
+              "parameters": []
             },
             {
-              "code": 122,
+              "code": 411,
               "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
-                18,
-                18,
-                1,
+                "Actor4",
+                3,
                 0,
-                1
+                2
               ]
             },
             {
-              "code": 356,
-              "indent": 0,
+              "code": 401,
+              "indent": 1,
               "parameters": [
-                "Quest 20 Complete Objective 1"
+                "\\p4The chief wasn't lying. We're going to"
               ]
             },
             {
-              "code": 356,
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "have to get help from Greenfield."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
               "indent": 0,
               "parameters": [
-                "Quest 20 Show Objective 2"
+                "A",
+                0
               ]
             },
             {
@@ -137827,13 +137588,13 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 18,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 9
           },
           "directionFix": false,
@@ -139545,12 +139306,12 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 85,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 19,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 22
           },
           "directionFix": false,
@@ -140190,80 +139951,16 @@
               "parameters": [
                 19,
                 19,
-                1,
                 0,
-                1
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Complete Objective 4"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Claim Reward 1"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest Set Completed 20"
-              ]
-            },
-            {
-              "code": 249,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Item",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
                 0,
-                1,
-                1
+                23
               ]
             },
             {
-              "code": 401,
+              "code": 235,
               "indent": 0,
               "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Into Bladesville"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Quest Complete!"
+                61
               ]
             },
             {
@@ -140384,6 +140081,41 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                69,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 1,
+              "parameters": [
+                61,
+                "NightOverlay",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 230,
               "indent": 0,
               "parameters": [
@@ -140394,8 +140126,8 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "",
-                0,
+                "Actor4",
+                3,
                 0,
                 2
               ]
@@ -140404,28 +140136,59 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Barkeep needs some assistance from you."
+                "\\p4Hey, this is a bit random, but... I've"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                ""
+                "been thinking a bit about Kevin. Maybe"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Additionally, a foe-turned-friend of"
+                "we should go back and check on him?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "yours needs some help over in Haven Harbor."
+                "\\p4And on that note, the tavern in Solus"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Town... it's been a little while since"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "it re-opened. Maybe we should go there"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "and see how Barkeep is holding up?"
               ]
             },
             {
@@ -144606,6 +144369,13 @@
               ]
             },
             {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
+                61
+              ]
+            },
+            {
               "code": 223,
               "indent": 0,
               "parameters": [
@@ -144709,6 +144479,20 @@
               "parameters": []
             },
             {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                1,
+                false
+              ]
+            },
+            {
               "code": 231,
               "indent": 0,
               "parameters": [
@@ -144725,18 +144509,39 @@
               ]
             },
             {
-              "code": 223,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                [
-                  0,
-                  0,
-                  0,
-                  0
-                ],
-                1,
-                false
+                0,
+                69,
+                0
               ]
+            },
+            {
+              "code": 231,
+              "indent": 1,
+              "parameters": [
+                61,
+                "NightOverlay",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 230,

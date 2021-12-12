@@ -154,7 +154,7 @@
     ],
     "iconIndex": 146,
     "name": "Soldier's Spear",
-    "note": "<Equip Requirement>\nclass: Knight\nclass: Soldier\n</Equip Requirement>",
+    "note": "<Equip Requirement>\nclass: Soldier\nclass: Knight\n</Equip Requirement>",
     "params": [
       0,
       0,
@@ -636,11 +636,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       }
     ],
     "iconIndex": 396,
     "name": "Bronze Greatsword",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 92>\n<twohand>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBronze Sword ★: 1\nBronze Alloy: 6\nSteel Alloy: 3\nATK Scroll: 1\nForge Badge: 1\n</Synthesis Ingredients>\n<Mask Name: Strong Two-Handed Sword>",
+    "note": "<Upgrade Slots: 1>\n<Weapon Image: 92>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBronze Sword ★: 1\nBronze Alloy: 6\nSteel Alloy: 3\nATK Scroll: 1\nForge Badge: 1\n</Synthesis Ingredients>\n<Mask Name: Strong Two-Handed Sword>",
     "params": [
       0,
       0,
@@ -816,11 +821,16 @@
         "code": 43,
         "dataId": 42,
         "value": 1
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       }
     ],
     "iconIndex": 149,
     "name": "Hardwood Bow",
-    "note": "<Synthesis Ingredients>\nIron Cluster: 2\nSteel Alloy: 1\nWood: 5\n</Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 1>\n\n<Upgrade Slots: 1>\n<twohand>",
+    "note": "<Synthesis Ingredients>\nIron Cluster: 2\nSteel Alloy: 1\nWood: 5\n</Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 1>\n\n<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -874,11 +884,16 @@
         "code": 43,
         "dataId": 43,
         "value": 1
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
       }
     ],
     "iconIndex": 153,
     "name": "Pistol",
-    "note": "<Synthesis Ingredients>\nIron Cluster: 3\nSteel Alloy: 2\n</Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 2>\n\n<Upgrade Slots: 1>\n<twohand>",
+    "note": "<Synthesis Ingredients>\nIron Cluster: 3\nSteel Alloy: 2\n</Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 2>\n\n<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -1223,7 +1238,7 @@
     ],
     "iconIndex": 540,
     "name": "Leek Sword",
-    "note": "<Item 2 Buy Price: 24>\n<Item 2 Sell Price: 24>\n<Upgrade Slots: 3>",
+    "note": "<Item 2 Buy Price: 12>\n<Item 2 Sell Price: 12>\n<Upgrade Slots: 3>",
     "params": [
       10,
       6,

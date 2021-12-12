@@ -14706,6 +14706,13 @@
               "code": 235,
               "indent": 0,
               "parameters": [
+                61
+              ]
+            },
+            {
+              "code": 235,
+              "indent": 0,
+              "parameters": [
                 69
               ]
             },
@@ -14729,6 +14736,18 @@
               "parameters": [
                 {
                   "name": "Crossbow",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Damage4",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -14859,6 +14878,41 @@
                 1,
                 false
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                69,
+                0
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 1,
+              "parameters": [
+                61,
+                "NightOverlay",
+                0,
+                0,
+                0,
+                0,
+                100,
+                100,
+                255,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 231,
@@ -15767,7 +15821,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-\\N[4]\\c[4], you say?"
+                "\\-\\N[4]\\c[0], you say?"
               ]
             },
             {

@@ -4088,6 +4088,80 @@
               "code": 205,
               "indent": 0,
               "parameters": [
+                9,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "TELEPORT: 9, 15"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "TELEPORT: 9, 15"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                10,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "TELEPORT: 9, 15"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "TELEPORT: 9, 15"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
                 -1,
                 {
                   "list": [
@@ -4226,8 +4300,17 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                88,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4237,14 +4320,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\chiefOh! You four are back!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4254,14 +4337,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\chiefSo..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4271,14 +4354,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\chief...did you defeat the Giant Goblin!"
               ]
             },
             {
               "code": 102,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   "Yep!",
@@ -4292,7 +4375,7 @@
             },
             {
               "code": 402,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 "Yep!"
@@ -4300,12 +4383,12 @@
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 402,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 1,
                 "Well..."
@@ -4313,7 +4396,7 @@
             },
             {
               "code": 101,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4323,21 +4406,21 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "\\chiefYes, well? Did you"
               ]
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "or did you not?"
               ]
             },
             {
               "code": 101,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Actor4",
                 7,
@@ -4347,28 +4430,28 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "\\p4I think what \\N[1] is trying to"
               ]
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "say is that we had a bit of trouble,"
               ]
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "but we did manage to take it down!"
               ]
             },
             {
               "code": 101,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4378,24 +4461,24 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "\\chiefOh."
               ]
             },
             {
               "code": 0,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 404,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4405,14 +4488,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\chiefThat's great!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4422,35 +4505,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\chiefGood to know that this menace"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "is finally out of the way. The"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "goblins will be much less"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "organized now!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4460,35 +4543,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\chiefNow we can freely explore in"
+                "\\chiefNow we can freely fish in"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "that area. Thank you so much for"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "helping us with this and those"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "other two tasks!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Telluria1",
                 1,
@@ -4498,56 +4581,56 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\chiefI believe that's the last"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "of your tasks. Good job,"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "adventurers. I knew you"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "would be able to do it."
               ]
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest 21 Complete Objective 4"
               ]
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest 21 Change Description Entry To 3"
               ]
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest Set Completed 21"
               ]
             },
             {
               "code": 249,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Item",
@@ -4559,7 +4642,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "",
                 0,
@@ -4569,26 +4652,182 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 ""
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "The Chief's Chores"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest Complete!"
               ]
             },
             {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\chiefGreat! You four are here!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\chiefWith that Giant Goblin out of the way,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "fishing around the Goblin Grotto should"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "be considerably easier!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\chiefThanks for everything. I can't"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "thank you enough for all of this."
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 21 Complete Objective 4"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest Set Completed 21"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 21 Claim Reward 2"
+              ]
+            },
+            {
+              "code": 249,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "Item",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "The Chief's Chores"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Quest Complete!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -4602,21 +4841,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\chiefYes, as promised, I will aid you"
+                "\\chiefYes, as promised, I will aid you in"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "in your mission to reach the desert."
+                "your mission to reach the desert. I'll send"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "I'll send a soldier over right away."
+                "a soldier over after this conversation."
               ]
             },
             {
@@ -4633,21 +4872,182 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\chiefFirst, however, the mayor of"
+                "\\chiefAdditionally, I have some assorted"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Greenfield and I have planned a"
+                "rewards for the four of you."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                7,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 125,
+              "indent": 0,
+              "parameters": [
+                0,
+                0,
+                100
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                55,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                32,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                33,
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                45,
+                0,
+                0,
+                3
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                7,
+                {
+                  "list": [
+                    {
+                      "code": 2,
+                      "indent": null
+                    },
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 2,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 18,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "little surprise for you four."
+                "\\p2Wow! Thanks for all that!"
               ]
             },
             {
@@ -4664,7 +5064,285 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\chiefMeet us in the Greenfield plaza."
+                "\\chiefDon't worry about thanking me. It's"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "my pleasure to present those items to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "you four."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefOh, and about that \\ii[55]..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefI found that in town riding the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "wind the other day. I don't really"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "have any use for it, but I'm sure"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "you four can make good use of it."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2You bet we will!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefAnyways... I have to get to business"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "now. I'll send the soldier over to that"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "dirt pile right away, though."
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                84,
+                0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 21 Change Description Entry To 3"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                85,
+                85,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\chiefIf he's already got someone there to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "help him, I'm sure it will be done in"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "no times. I'd really recommend heading"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "there quickly if he does."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 21 Change Description Entry To 4"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                84,
+                84,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\chiefI doubt he'll be able to move all"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "that by himself, though... you might"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "need some help from Greenfield up north."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\chiefWell, off to work. It was good to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "meet you four! I hope that we will get"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to work together again in the future."
               ]
             },
             {
@@ -4685,31 +5363,6 @@
               ]
             },
             {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                19,
-                19,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 20 Show Objective 3"
-              ]
-            },
-            {
               "code": 230,
               "indent": 0,
               "parameters": [
@@ -4717,26 +5370,20 @@
               ]
             },
             {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                19,
+                19,
+                0,
+                0,
+                22
+              ]
+            },
+            {
               "code": 222,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Sweet, even more loot!"
-              ]
             },
             {
               "code": 0,

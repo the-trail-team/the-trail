@@ -516,6 +516,11 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
     }
   }
   if (item.id <= 3000) return true;
+  if (!this.checkEquipRequirements(item)) return false;
+  return true;
+};
+
+Game_BattlerBase.prototype.checkEquipRequirements = function(item) {
   if (!this.meetEquipParamRequirements(item)) return false;
   if (!this.meetEquipClassRequirements(item)) return false;
   if (!this.meetEquipSkillRequirements(item)) return false;
@@ -726,7 +731,7 @@ Window_EquipRequirement.prototype.checkActor = function() {
 
 Window_EquipRequirement.prototype.drawItem = function(index) {
     var rect = this.itemRect(index);
-    this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+    // this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
 };
 
 Window_EquipRequirement.prototype.drawRequirementTitle = function() {
