@@ -476,7 +476,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Creates a protective barrier around one of your allies for 5 turns.\nThe barrier has \\c[27]\\bp0[100]\\bp=1[160]\\bp=2[220]\\bp=3[280]\\bp=4[340]\\bp=5[400] HP\\c[0]. Can't be stacked onto existing shields.",
+    "description": "Creates a protective barrier around one of your allies until it breaks.\nThe barrier has \\c[27]\\bp0[100]\\bp=1[160]\\bp=2[220]\\bp=3[280]\\bp=4[340]\\bp=5[400] HP\\c[0]. Can't be stacked onto existing shields.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 15,
@@ -484,7 +484,7 @@
     "message2": "",
     "mpCost": 18,
     "name": "Shield of Faith",
-    "note": "<Custom Target Barrier 5 Turns>\nvalue = 100 + (user.bp * 60);\n</Custom Target Barrier 5 Turns>\n\n<action copy: skill:11>",
+    "note": "<Custom Target Barrier>\nvalue = 100 + (user.bp * 60);\n</Custom Target Barrier>\n\n<action copy: skill:11>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
