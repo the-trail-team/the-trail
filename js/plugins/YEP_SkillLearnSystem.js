@@ -1274,6 +1274,7 @@ Window_SkillLearnData.prototype.drawSkillCosts = function(wy) {
 
 Window_SkillLearnData.prototype.drawLevelCosts = function(wy) {
   var cost = this._skill.learnRequireLevel;
+  if (cost == 0) return;
   var text = '';
   text = '\\i[' + 121 + ']' + "Level";
   var wx = this.drawTextEx(text, 0, wy);
