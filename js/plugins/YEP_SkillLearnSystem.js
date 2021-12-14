@@ -1235,7 +1235,7 @@ Window_SkillLearnData.prototype.drawJpCosts = function(wy) {
     text += Yanfly.Param.Jp;
     var wx = this.drawTextEx(text, 0, wy);
     var ww = this.contents.width - wx - 4;
-    var costText = Yanfly.Util.toGroup(cost);
+    var costText = Yanfly.Util.toGroup(cost) + "/" + Yanfly.Util.toGroup(this._actor.jp(this._classId));
     this.contents.fontSize = Yanfly.Param.SLSCostSize;
     if (this._actor.sufficientJpLearnSkill(this._skill, this._classId)) {
       this.changeTextColor(this.powerUpColor());
