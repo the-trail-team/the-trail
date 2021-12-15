@@ -120,6 +120,7 @@ Window_ItemList.prototype.initialize = function(x, y, width, height) {
 Galv.NII.Window_ItemList_drawItemName = Window_ItemList.prototype.drawItemName;
 Window_ItemList.prototype.drawItemName = function(item, x, y, width) {
 	Galv.NII.Window_ItemList_drawItemName.call(this,item,x,y,width);
+	if (!(SceneManager._scene instanceof Scene_Item)) return;
     if (item) {
 		if (item.itypeId) var type = 'items';
 		if (item.wtypeId) var type = 'weapons';
