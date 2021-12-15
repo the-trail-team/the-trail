@@ -714,9 +714,11 @@ StorageManager.localFileExists = function(savefileId) {
 StorageManager.removeLocalFile = function(savefileId) {
     var fs = require('fs');
     var filePath = this.localFilePath(savefileId);
-    if (fs.existsSync(filePath)) {
-        fs.unlinkSync(filePath);
+    var newPath = filePath + '.bak';
+    if (fs.existsSync(newPath)) {
+        fs.unlinkSync(newPath);
     }
+    fs.rename(filePath, newPath);
 };
 
 StorageManager.saveToWebStorage = function(savefileId, json) {
