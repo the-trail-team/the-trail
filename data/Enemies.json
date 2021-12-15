@@ -2485,7 +2485,7 @@
     ],
     "gold": 25,
     "name": "Lost Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 40%: Shield of Faith, Lowest HP\nRandom 40%: Cure II, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 2%\nJade Charm: 2%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30%: Cure II, Lowest HP%\nRandom 60% +++ State !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 2%\nJade Charm: 2%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       500,
       999,
