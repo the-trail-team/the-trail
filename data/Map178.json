@@ -10631,8 +10631,47 @@
               ]
             },
             {
-              "code": 205,
+              "code": 101,
               "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Reset this puzzle?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "Yes.",
+                  "No."
+                ],
+                1,
+                1,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "Yes."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
               "parameters": [
                 0,
                 {
@@ -10686,7 +10725,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 36,
@@ -10696,7 +10735,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 44,
@@ -10714,7 +10753,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 17
@@ -10723,7 +10762,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 15,
@@ -10735,7 +10774,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 18
@@ -10744,7 +10783,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 15,
@@ -10756,7 +10795,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 19
@@ -10765,12 +10804,12 @@
             },
             {
               "code": 221,
-              "indent": 1,
+              "indent": 2,
               "parameters": []
             },
             {
               "code": 205,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 0,
                 {
@@ -10802,7 +10841,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 16,
@@ -10812,7 +10851,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 36,
@@ -10822,7 +10861,7 @@
             },
             {
               "code": 505,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "code": 15,
@@ -10835,132 +10874,155 @@
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 1, 'A'], false)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 18, 'A'], false)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 19, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 20, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 21, 'A'], false)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 22, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 23, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 24, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "$gameSelfSwitches.setValue([178, 25, 'A'], false)"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light off 1"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light off 2"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light on 3"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light on 4"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light off 5"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light on 6"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light on 7"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light on 8"
               ]
             },
             {
               "code": 356,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Light off 9"
               ]
             },
             {
               "code": 222,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "No."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
               "indent": 1,
               "parameters": []
             },

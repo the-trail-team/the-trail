@@ -228,7 +228,7 @@
       }
     ],
     "name": "Knight",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 21, 51, 85>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 21, 51, 85>",
     "params": [
       [
         1,
@@ -3327,8 +3327,8 @@
       },
       {
         "level": 12,
-        "note": "Alpha 12",
-        "skillId": 35
+        "note": "Alpha 14",
+        "skillId": 68
       },
       {
         "level": 13,
@@ -3351,18 +3351,13 @@
         "skillId": 67
       },
       {
-        "level": 18,
-        "note": "Alpha 14",
-        "skillId": 68
-      },
-      {
         "level": 20,
         "note": "Alpha 14",
         "skillId": 71
       }
     ],
     "name": "Rogue",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 21, 51>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack\n</AI Priority>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 21, 51>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack\n</AI Priority>",
     "params": [
       [
         0,

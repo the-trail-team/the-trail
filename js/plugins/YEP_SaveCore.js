@@ -812,6 +812,8 @@ Window_SaveAction.prototype.updateHelp = function() {
       text = Yanfly.Param.SaveSaveSelect;
     } else if (this.currentSymbol() === 'delete') {
       text = Yanfly.Param.SaveDeleteSelect;
+    } else if (this.currentSymbol() === 'rename') {
+      text = "Opens up the menu to rename the current save file."
     }
     this._helpWindow.setText(text);
 };
