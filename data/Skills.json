@@ -271,11 +271,11 @@
     "damage": {
       "critical": true,
       "elementId": 3,
-      "formula": "a.mat * 2 - b.mdf * 2",
+      "formula": "a.mat * 2.25 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Damages an enemy with ice. It isn't as powerful as \\is[7],\nbut can freeze an enemy for a turn. \\c[27]\\bpdamage[200]%\\c[0] MAT rate.",
+    "description": "Damages an enemy with ice. It isn't as powerful as \\is[7],\nbut can freeze an enemy for a turn. \\c[27]\\bpdamage[225]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
@@ -320,7 +320,7 @@
     "message2": "",
     "mpCost": 9,
     "name": "Lightning I",
-    "note": "<Boost Damage>\n\n<Remove State Category: Water>\n<Remove State Category: Wind>\n\n<setup action>\ndisplay action\nperform start\nmotion chant: user\nwait: 45\nmotion skill: user\n</setup action>\n\n<target action>\naction animation\nwait: 10\naction effect\nclear battle log\nwait: 5\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>\n\n<Damage Formula>\n// Set the chain multiplier to a value if it doesn't exist.\nthis._chainmultiplier = this._chainmultiplier || 1.0;\n// This is the damage formula.\nvalue = a.mat * 3 - b.mdf * 2;\n// Apply the chain multiplier to the damage formula.\nvalue *= this._chainmultiplier;\n// Reduce the chain multiplier per target.\nthis._chainmultiplier *= 0.5;\n</Damage Formula>\n\n<Custom Target Eval>\n// Adds the selected target to the target list.\ntargets.push(target);\n// Grab the group of alive foes as candidates.\nvar members = foes.aliveMembers();\n// Remove the target from the group of candidates.\nmembers.splice(members.indexOf(target), 1);\n// This is the number of extra targets to select with Chain Lightning.\nvar extraTargets = 1\n// Loop the extra targets.\nwhile (extraTargets--) {\n  // Grab a random foe from the alive foes.\n  var member = members[Math.floor(Math.random() * members.length)];\n  // Check to see if the member exists.\n  if (member) {\n    // Add the member to the group of targets.\n    targets.push(member);\n    // Remove the member as a viable candidate.\n    members.splice(members.indexOf(member), 1);\n  }\n}\n</Custom Target Eval>",
+    "note": "<Boost Damage>\n\n<Remove State Category: Water>\n<Remove State Category: Wind>\n\n<setup action>\ndisplay action\nperform start\nmotion chant: user\nwait: 45\nmotion skill: user\n</setup action>\n\n<target action>\naction animation\nwait: 10\naction effect\nclear battle log\nwait: 5\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>\n\n<Damage Formula>\n// Set the chain multiplier to a value if it doesn't exist.\nthis._chainmultiplier = this._chainmultiplier || 1.0;\n// This is the damage formula.\nvalue = a.mat * 2.75 - b.mdf * 2;\n// Apply the chain multiplier to the damage formula.\nvalue *= this._chainmultiplier;\n// Reduce the chain multiplier per target.\nthis._chainmultiplier *= 0.5;\n</Damage Formula>\n\n<Custom Target Eval>\n// Adds the selected target to the target list.\ntargets.push(target);\n// Grab the group of alive foes as candidates.\nvar members = foes.aliveMembers();\n// Remove the target from the group of candidates.\nmembers.splice(members.indexOf(target), 1);\n// This is the number of extra targets to select with Chain Lightning.\nvar extraTargets = 1\n// Loop the extra targets.\nwhile (extraTargets--) {\n  // Grab a random foe from the alive foes.\n  var member = members[Math.floor(Math.random() * members.length)];\n  // Check to see if the member exists.\n  if (member) {\n    // Add the member to the group of targets.\n    targets.push(member);\n    // Remove the member as a viable candidate.\n    members.splice(members.indexOf(member), 1);\n  }\n}\n</Custom Target Eval>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -476,7 +476,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Creates a protective barrier around one of your allies for 5 turns.\nThe barrier has \\c[27]\\bp0[100]\\bp=1[160]\\bp=2[220]\\bp=3[280]\\bp=4[340]\\bp=5[400] HP\\c[0]. Can't be stacked onto existing shields.",
+    "description": "Creates a protective barrier around one of your allies until it breaks.\nThe barrier has \\c[27]\\bp0[100]\\bp=1[160]\\bp=2[220]\\bp=3[280]\\bp=4[340]\\bp=5[400] HP\\c[0]. Can't be stacked onto existing shields.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 15,
@@ -484,7 +484,7 @@
     "message2": "",
     "mpCost": 18,
     "name": "Shield of Faith",
-    "note": "<Custom Target Barrier 5 Turns>\nvalue = 100 + (user.bp * 60);\n</Custom Target Barrier 5 Turns>\n\n<action copy: skill:11>",
+    "note": "<Custom Target Barrier>\nvalue = 100 + (user.bp * 60);\n</Custom Target Barrier>\n\n<action copy: skill:11>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1730,7 +1730,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Play Dirty",
-    "note": "<Remove State Category: buff>\n<Target BP: -5>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 15\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Remove State Category: buff>\n<Target BP: -5>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 15\nclear battle log\n</target action>\n\n<finish action>\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2250,7 +2250,7 @@
     "message2": "",
     "mpCost": 22,
     "name": "Lightning II",
-    "note": "<Boost Damage>\n\n<Remove State Category: Water>\n<Remove State Category: Wind>\n\n<action copy: skill:9>\n\n<Damage Formula>\n// Set the chain multiplier to a value if it doesn't exist.\nthis._chainmultiplier = this._chainmultiplier || 1.0;\n// This is the damage formula.\nvalue = a.mat * 3 - b.mdf * 2;\n// Apply the chain multiplier to the damage formula.\nvalue *= this._chainmultiplier;\n// Reduce the chain multiplier per target.\nthis._chainmultiplier *= 0.8;\n</Damage Formula>\n\n<Custom Target Eval>\n// Adds the selected target to the target list.\ntargets.push(target);\n// Grab the group of alive foes as candidates.\nvar members = foes.aliveMembers();\n// Remove the target from the group of candidates.\nmembers.splice(members.indexOf(target), 1);\n// This is the number of extra targets to select with Chain Lightning.\nvar extraTargets = 2\n// Loop the extra targets.\nwhile (extraTargets--) {\n  // Grab a random foe from the alive foes.\n  var member = members[Math.floor(Math.random() * members.length)];\n  // Check to see if the member exists.\n  if (member) {\n    // Add the member to the group of targets.\n    targets.push(member);\n    // Remove the member as a viable candidate.\n    members.splice(members.indexOf(member), 1);\n  }\n}\n</Custom Target Eval>",
+    "note": "<Boost Damage>\n\n<Remove State Category: Water>\n<Remove State Category: Wind>\n\n<action copy: skill:9>\n\n<Damage Formula>\n// Set the chain multiplier to a value if it doesn't exist.\nthis._chainmultiplier = this._chainmultiplier || 1.0;\n// This is the damage formula.\nvalue = a.mat * 4.25 - b.mdf * 2;\n// Apply the chain multiplier to the damage formula.\nvalue *= this._chainmultiplier;\n// Reduce the chain multiplier per target.\nthis._chainmultiplier *= 0.5;\n</Damage Formula>\n\n<Custom Target Eval>\n// Adds the selected target to the target list.\ntargets.push(target);\n// Grab the group of alive foes as candidates.\nvar members = foes.aliveMembers();\n// Remove the target from the group of candidates.\nmembers.splice(members.indexOf(target), 1);\n// This is the number of extra targets to select with Chain Lightning.\nvar extraTargets = 2\n// Loop the extra targets.\nwhile (extraTargets--) {\n  // Grab a random foe from the alive foes.\n  var member = members[Math.floor(Math.random() * members.length)];\n  // Check to see if the member exists.\n  if (member) {\n    // Add the member to the group of targets.\n    targets.push(member);\n    // Remove the member as a viable candidate.\n    members.splice(members.indexOf(member), 1);\n  }\n}\n</Custom Target Eval>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,

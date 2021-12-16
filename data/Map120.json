@@ -2577,8 +2577,17 @@
               ]
             },
             {
-              "code": 231,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                69,
+                1
+              ]
+            },
+            {
+              "code": 231,
+              "indent": 1,
               "parameters": [
                 69,
                 "god-rays-png-8",
@@ -2591,6 +2600,16 @@
                 255,
                 3
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -4819,6 +4838,46 @@
               "indent": 2,
               "parameters": [
                 0,
+                35,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                36,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                48,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                49,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
                 54,
                 0,
                 0
@@ -6261,6 +6320,46 @@
               "parameters": [
                 0,
                 79,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                35,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                36,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                48,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                49,
                 0,
                 0
               ]
@@ -8979,6 +9078,56 @@
               ]
             },
             {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                35,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                36,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                48,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                49,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                54,
+                0,
+                0
+              ]
+            },
+            {
               "code": 101,
               "indent": 2,
               "parameters": [
@@ -10114,6 +10263,46 @@
               "indent": 2,
               "parameters": [
                 0,
+                35,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                36,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                48,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                49,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
                 54,
                 0,
                 0
@@ -10964,6 +11153,46 @@
               "parameters": [
                 0,
                 79,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                35,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                36,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                48,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 2,
+              "parameters": [
+                0,
+                49,
                 0,
                 0
               ]
@@ -12034,6 +12263,133 @@
       ],
       "x": 4,
       "y": 7
+    },
+    {
+      "id": 10,
+      "name": "EV010",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "characterIndex": 0
+          },
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 1,
+          "walkAnime": true,
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                6,
+                -1,
+                4
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "GabText Forge Room"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "ForceGab"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                6,
+                -1,
+                6
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "GabText Shop Floor"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "ForceGab"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        }
+      ],
+      "x": 7,
+      "y": 10
     }
   ]
 }
