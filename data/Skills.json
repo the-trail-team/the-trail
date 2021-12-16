@@ -1730,7 +1730,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Play Dirty",
-    "note": "<Remove State Category: buff>\n<Target BP: -5>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 15\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Remove State Category: buff>\n<Target BP: -5>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 15\nclear battle log\n</target action>\n\n<finish action>\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
