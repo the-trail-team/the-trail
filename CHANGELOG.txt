@@ -1,4 +1,55 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                             ALPHA 14.4 CHANGELOG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Alpha 14.4 (12/16/2021)
+Current Level Cap: 20
+- - - - - - - - - - - - -
+Considering that Alpha 14.3 was intended to be the last sub-alpha with notable content, Alpha 14.4 doesn't have anything too crazy. However, there's plenty of bug fixes and changes that make this update worth it!
+
+Additions:
+ - Added 2 new armors:
+  ~ Iron Boots
+  ~ Slime Scarf
+ - Added a new feature that allows save files to be renamed.
+
+Changes:
+ - Player 4 no longer learns Steal Item at level 12, and will instead learn Offensive Stance. Transferred saves with Player 4 already at level 12 or above will automatically have her skills updated.
+ - Deleting a save file will now just apply .bak to the end of the file instead of completely deleting it, allowing accidentally deleting save files to be retrieved.
+ - A Game Over will now be triggered if the entire party is afflicted with either Downed or Terrified.
+  ~ This was mainly done to prevent long battles against Lost Souls when your only living party members were incapacitated by Terrified.
+ - Will now sells ATK, MAT, DEF, and MDF scrolls.
+ - The Knight and Rogue classes now have a Magic Equip equipment slot.
+ - The shop menu's sell window now shows category icons in a 4x4 grid.
+ - Puzzle reset buttons now require confirmation before resetting the puzzle.
+ - Changed the recipe for Vishnu's Charm to use the Slime Scarf.
+ - Slightly increased the encounter rate in the Bandito Hideout.
+ - Some dialogues will be altered slightly depending on actions that have been done during the game (e.g. the party only knows about the Archaic Hourglass when fighting The Warden if Will has given them the quest).
+
+Balancing:
+ - Changed around some item drop rates.
+  ~ Buffed the drop rate of rare enemy accessories from 20% to 33.3%.
+  ~ Buffed the drop rate of status resistance accessories from 1% to 2%.
+  ~ Buffed the drop rate of presents from 10% to 20%.
+ - Adjusted the Floppy Hat ★ and the Prayer Headpiece to function more as counterparts to each other, with the former focusing on MAT and the latter focusing on MDF.
+ - Buffed Ice I's MAT multiplier from 200% to 225%.
+ - Nerfed The Warden's offensive stats slightly to allow for more fair on-level interactions.
+
+Bug Fixes:
+ - Fixed a bug with the Lost Soul AI that caused battles against it to sometimes take a really long time. The bug also sometimes prevented party members from being able to do anything for no apparent reason.
+ - Fixed a bug with the Lightning I/II chain lightning formulas.
+ - Fixed a bug where saves transferred from vA.14.4 would softlock upon entering Player 1's house. This was because the "Player 2's Meal" cutscene would be triggered.
+ - Fixed a bug where boosting and then unboosting could allow escape from normally unescapable battles.
+ - Fixed a bug where Shield of Faith and Strenght Within the Blade's shield would expire after 5 or 2 turns, respectively.
+ - Fixed a bug where Player 3 and Player 4 could escape Sector 4 when ditching the rest of the party.
+ - Fixed a bug where The Warden wouldn't apply Terrified to the party at the beginning of his battle.
+ - Fixed a bug where Henry's Play Dirty skill could fill up the battle log.
+ - Fixed a bug where skills with a learn requirement of level 0 would still show the level requirement.
+ - Fixed several bugs related to interactions between the Blazing Sands's godrays and the nighttime overlay.
+ - Fixed several bugs related to footstep sounds in many locations.
+ - Fixed an oddly specific bug related to the statue of Trailia in Solus Valley and the Shop Menu Stat Compare Style option.
+ - Fixed many other minor bugs.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                              ALPHA 14.3 CHANGELOG
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Alpha 14.3 (12/11/2021)
