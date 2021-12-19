@@ -984,6 +984,97 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Seen items = Synthesized items"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "items = $gameSystem._seenItems.items;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "for (i = 1; i < items.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  if (items[i] == 1 && !$gameSystem.synthedItems().contains(i) && $dataItems[i].synthIngredients.length > 0) $gameSystem.synthedItems().push(i);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "weapons = $gameSystem._seenItems.weapons;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "for (i = 3001; i < weapons.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  if ($dataWeapons[i] !== null && weapons[i] == 1 && !$gameSystem.synthedWeapons().contains($dataWeapons[i].baseItemId) && $dataWeapons[i].synthIngredients.length > 0) $gameSystem.synthedWeapons().push($dataWeapons[i].baseItemId);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "armors = $gameSystem._seenItems.armors;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "for (i = 3001; i < armors.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  if ($dataArmors[i] !== null && armors[i] == 1 && !$gameSystem.synthedArmors().contains($dataArmors[i].baseItemId) && $dataArmors[i].synthIngredients.length > 0) $gameSystem.synthedArmors().push($dataArmors[i].baseItemId);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
