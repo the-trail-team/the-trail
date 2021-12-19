@@ -516,12 +516,19 @@ Scene_Title.prototype.commandNewGame = function() {
 Scene_Title.prototype.commandContinue = function() {
     this._commandWindow.close();
     SceneManager.push(Scene_Load);
+    this.hideBackgroundElements();
 };
 
 Scene_Title.prototype.commandOptions = function() {
     this._commandWindow.close();
     SceneManager.push(Scene_Options);
+    this.hideBackgroundElements();
 };
+
+Scene_Title.prototype.hideBackgroundElements = function() {
+    this._gameTitleSprite.visible = false; // Title and game info
+    //for (i = 0; i < this._chars.length; i++) this._chars[i].visible = false; // Character images
+}
 
 Scene_Title.prototype.playTitleMusic = function() {
     AudioManager.playBgm($dataSystem.titleBgm);
