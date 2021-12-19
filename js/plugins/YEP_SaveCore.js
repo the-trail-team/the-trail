@@ -898,7 +898,9 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   if (!this._info) return dy;
   if (!this._info.title) return dy;
   this.resetFontSettings();
-  var text = this._info.title;
+  var loadedSave = JsonEx.parse(StorageManager.load(this._currentFile));
+  if (loadedSave.version !== undefined) versionName = JsonEx.parse(StorageManager.load(this._currentFile)).version.name; else versionName = "Unknown Version";
+  var text = this._info.title + " (" + versionName + ")";
   this.drawText(text, 0, dy, this.contents.width, 'center');
   return dy + this.lineHeight();
 };
