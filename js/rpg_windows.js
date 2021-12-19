@@ -3533,7 +3533,7 @@ Window_NameEdit.prototype.drawUnderline = function(index) {
 Window_NameEdit.prototype.drawChar = function(index) {
     var rect = this.itemRect(index);
     this.resetTextColor();
-    this.drawText(this._name[index] || '', rect.x, rect.y);
+    this.drawText(this._name[index] || '', rect.x, rect.y, rect.width, 'center');
 };
 
 Window_NameEdit.prototype.refresh = function() {
