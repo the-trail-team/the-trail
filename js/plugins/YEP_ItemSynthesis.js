@@ -1395,7 +1395,7 @@ Window_SynthesisNumber.prototype.refresh = function() {
     this.drawAmountText()
     this.drawMultiplicationSign();
     this.drawNumber();
-    this.drawIngredients();
+    if (!SceneManager._scene._commandWindow.active) this.drawIngredients();
 };
 
 Window_SynthesisNumber.prototype.drawAmountText = function() {
