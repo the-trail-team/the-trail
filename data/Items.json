@@ -5045,5 +5045,57 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 175,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A handful of powdered Tellurium, a relatively rare element.\nCan be mined at low depths within the continent of Telluria.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 349,
+    "itypeId": 1,
+    "name": "Tellurium Dust",
+    "note": "<Menu Category: Materials>\n<Sell Price: 120>",
+    "occasion": 3,
+    "price": 480,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 176,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A powerful alloy that requires several materials to be\nforged. Should be chemically impossible, but here we are.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 343,
+    "itypeId": 1,
+    "name": "Tellurium Alloy",
+    "note": "<Menu Category: Materials>\n<Sell Price: 195>\n\n<Synthesis Ingredients>\nTellurium Dust: 1\nBronze Alloy: 1\nSteel Alloy: 1\nForge Badge: 2\nFire Essence: 1\n</Synthesis Ingredients>\n<Mask Name: Powerful Alloy>",
+    "occasion": 3,
+    "price": 780,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
