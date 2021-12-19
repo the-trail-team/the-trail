@@ -1835,6 +1835,8 @@ Window_AllocationList.prototype.cursorLeft = function(wrap) {
     return;
   }
   if (times <= 0) return;
+  if (param === 'mhp' && this._actor.hpRate() == 1) var fullHp = true;
+  if (param === 'mmp' && this._actor.mpRate() == 1) var fullMp = true;
   times -= 1;
   if (params.contains(param)) {
     this._actor.gainParamAllocateTimes(paramId, -1);
@@ -1858,6 +1860,9 @@ Window_AllocationList.prototype.cursorLeft = function(wrap) {
   if (param === 'mhp' || param === 'mmp') {
     this._actor._hp = Math.min(this._actor._hp, this._actor.mhp);
     this._actor._mp = Math.min(this._actor._mp, this._actor.mmp);
+
+    if (fullHp) this._actor._hp = this._actor.mhp;
+    if (fullMp) this._actor._mp = this._actor.mmp;
   }
   SoundManager.playCancel();
   SceneManager._scene.refreshWindows();
