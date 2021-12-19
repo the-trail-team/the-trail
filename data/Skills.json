@@ -3067,5 +3067,35 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 87,
+    "animationId": 41,
+    "damage": {
+      "critical": true,
+      "elementId": 11,
+      "formula": "a.mat * 1.2",
+      "type": 3,
+      "variance": 5
+    },
+    "description": "A high-utility skill that restores some HP to a party\nmember and additionally cures weak debuffs. \\c[27]\\bpdamage[120]%\\c[0] MAT rate.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 112,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 13,
+    "name": "Curify",
+    "note": "<Boost Damage>\n<Remove State Category: weak debuff>\n\n<target action>\nperform start\nmotion chant: user\nwait: 45\nmotion skill: user\naction animation\nanimation 45: target\nwait for animation\naction effect\nmotion victory: target\nwait for effect\nwait: 30\nperform finish\n</target action>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 7,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]
