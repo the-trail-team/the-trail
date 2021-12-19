@@ -2005,7 +2005,7 @@ Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
 	let actor = this._tempActor;
 	const newValue = eval(_.evals[paramId]);
 	actor = this._actor;
-	const diffvalue = newValue - eval(_.evals[paramId]);
+	const diffvalue = (newValue - eval(_.evals[paramId])).toFixed(1);
 	//End of New Code
 	if (diffvalue === 0) return;
 	var actorparam = Yanfly.Util.toGroup(newValue);
