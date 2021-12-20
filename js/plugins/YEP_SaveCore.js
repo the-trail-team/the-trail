@@ -1308,6 +1308,7 @@ Scene_File.prototype.create = function() {
     this.createActionWindow();
     this.createInfoWindow();
     this.createConfirmWindow();
+    if ($gameTemp._inGame !== true) this.startFadeIn(this.fadeSpeed(), false);
 };
 
 Scene_File.prototype.createHelpWindow = function() {
@@ -1324,13 +1325,18 @@ Scene_File.prototype.createListWindow = function() {
     this._listWindow = new Window_SavefileList(x, y, width, height);
     this.addWindow(this._listWindow);
     this._listWindow.setHandler('ok',     this.onSavefileOk.bind(this));
-    this._listWindow.setHandler('cancel', this.popScene.bind(this));
+    this._listWindow.setHandler('cancel', this.cancel.bind(this));
     this._listWindow.select(this.firstSavefileIndex());
     this._listWindow.setTopRow(this.firstSavefileIndex() - 2);
     this._listWindow.setMode(this.mode());
     this._listWindow.refresh();
     
 };
+
+Scene_File.prototype.cancel = function() {
+    if ($gameTemp._inGame !== true) this.startFadeOut(this.fadeSpeed(), false);
+    this.popScene();
+}
 
 Scene_File.prototype.createActionWindow = function() {
     var x = this._listWindow.width;
