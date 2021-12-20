@@ -1514,10 +1514,13 @@ Scene_Equip.prototype.onSlotCancel = function() {
 Scene_Equip.prototype.onItemOk = function() {
     SoundManager.playEquip();
     this.actor().changeEquip(this._slotWindow.index(), this._itemWindow.item());
-    this._slotWindow.activate();
-    this._slotWindow.refresh();
-    this._itemWindow.deselect();
+    if (!$gameSwitches.value(92)) {
+        this._slotWindow.activate();
+        this._slotWindow.refresh();
+        this._itemWindow.deselect();
+    }
     this._itemWindow.refresh();
+    if ($gameSwitches.value(92)) this._itemWindow.activate();
     this._statusWindow.refresh();
 };
 
