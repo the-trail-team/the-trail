@@ -1125,13 +1125,10 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
 Game_Party.prototype.seenItem = function(item) {
   if (item == null) return;
   if (item.groupType == 0) {
-    $gameSystem._seenItems.items[item.id] = 1;
     if (!$gameSystem.synthedItems().contains(item.id) && $dataItems[item.id].synthIngredients.length > 0) $gameSystem.synthedItems().push(item.id);
   } else if (item.groupType == 1) {
-    $gameSystem._seenItems.weapons[item.id] = 1;
     if (!$gameSystem.synthedWeapons().contains(item.id) && $dataWeapons[item.id].synthIngredients.length > 0) $gameSystem.synthedWeapons().push(item.id);
   } else if (item.groupType == 2) {
-    $gameSystem._seenItems.armors[item.id] = 1;
     if (!$gameSystem.synthedArmors().contains(item.id) && $dataArmors[item.id].synthIngredients.length > 0) $gameSystem.synthedArmors().push(item.id);
   }
 }
