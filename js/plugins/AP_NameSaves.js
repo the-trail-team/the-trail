@@ -63,6 +63,9 @@ Scene_SaveFileRename.prototype.onInputOk = function() {
     var tempNameStorage = $gameVariables.value(74);
     tempNameStorage[this._editWindow.saveFileId()] = this._editWindow.name();
     $gameVariables.setValue(74, tempNameStorage);
+    var globalInfo = DataManager.loadGlobalInfo();
+    globalInfo[$gameTemp._saveFileId].timestamp2 = Date.now();
+    DataManager.saveGlobalInfo(globalInfo);
     this.popScene();
 };
 
@@ -185,7 +188,7 @@ Window_SaveFileRename.prototype.drawUnderline = function(index) {
 Window_SaveFileRename.prototype.drawChar = function(index) {
   var rect = this.itemRect(index);
   this.resetTextColor();
-  this.drawText(this._name[index] || '', rect.x, rect.y);
+  this.drawText(this._name[index] || '', rect.x, rect.y, rect.width, 'center');
 };
 
 Window_SaveFileRename.prototype.refresh = function() {

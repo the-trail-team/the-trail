@@ -656,55 +656,12 @@
         ]
       },
       {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          2,
-          0,
-          11,
-          1
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 1,
-        "parameters": [
-          "Quest Remove 4"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 1,
-        "parameters": [
-          "Quest Add 1000"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 121,
         "indent": 0,
         "parameters": [
           52,
           52,
           1
-        ]
-      },
-      {
-        "code": 123,
-        "indent": 0,
-        "parameters": [
-          "A",
-          0
         ]
       },
       {
@@ -725,12 +682,28 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Skill replacements"
+          "# Old Save Patching"
         ]
       },
       {
         "code": 111,
         "indent": 0,
+        "parameters": [
+          0,
+          91,
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Skill replacements"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
         "parameters": [
           4,
           1,
@@ -740,7 +713,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -750,7 +723,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -760,52 +733,52 @@
       },
       {
         "code": 355,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var actor = $gameParty.members()[0];"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var level = actor.skillMasteryLevel(5);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var uses = actor.skillMasteryUses(5);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryLevel(86, level);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryUses(86, uses);"
         ]
       },
       {
         "code": 0,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 0,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           4,
           1,
@@ -815,7 +788,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -825,7 +798,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -835,52 +808,52 @@
       },
       {
         "code": 355,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var actor = $gameParty.members()[0];"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var level = actor.skillMasteryLevel(4);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var uses = actor.skillMasteryUses(4);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryLevel(84, level);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryUses(84, uses);"
         ]
       },
       {
         "code": 0,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 0,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           4,
           1,
@@ -890,7 +863,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -900,52 +873,52 @@
       },
       {
         "code": 355,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var actor = $gameParty.members()[0];"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var level = actor.skillMasteryLevel(45);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var uses = actor.skillMasteryUses(45);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryLevel(85, level);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryUses(85, uses);"
         ]
       },
       {
         "code": 0,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 0,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           4,
           4,
@@ -955,7 +928,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           4,
@@ -965,12 +938,113 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           4,
           0,
           68
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Seen items = Synthesized items"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "items = $gameSystem._seenItems.items;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "for (i = 1; i < items.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if (items[i] == 1 && !$gameSystem.synthedItems().contains(i) && $dataItems[i].synthIngredients.length > 0) $gameSystem.synthedItems().push(i);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "weapons = $gameSystem._seenItems.weapons;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "for (i = 3001; i < weapons.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if ($dataWeapons[i] !== null && weapons[i] == 1 && !$gameSystem.synthedWeapons().contains($dataWeapons[i].baseItemId) && $dataWeapons[i].synthIngredients.length > 0) $gameSystem.synthedWeapons().push($dataWeapons[i].baseItemId);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "armors = $gameSystem._seenItems.armors;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "for (i = 3001; i < armors.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if ($dataArmors[i] !== null && armors[i] == 1 && !$gameSystem.synthedArmors().contains($dataArmors[i].baseItemId) && $dataArmors[i].synthIngredients.length > 0) $gameSystem.synthedArmors().push($dataArmors[i].baseItemId);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
         ]
       },
       {

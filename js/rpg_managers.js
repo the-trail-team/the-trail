@@ -296,8 +296,8 @@ DataManager.latestSavefileId = function() {
     var timestamp = 0;
     if (globalInfo) {
         for (var i = 1; i < globalInfo.length; i++) {
-            if (this.isThisGameFile(i) && globalInfo[i].timestamp > timestamp) {
-                timestamp = globalInfo[i].timestamp;
+            if (this.isThisGameFile(i) && globalInfo[i].timestamp2 > timestamp) {
+                timestamp = globalInfo[i].timestamp2;
                 savefileId = i;
             }
         }
@@ -387,6 +387,8 @@ DataManager.loadGameWithoutRescue = function(savefileId) {
         this.createGameObjects();
         this.extractSaveContents(JsonEx.parse(json));
         this._lastAccessedId = savefileId;
+        globalInfo[savefileId].timestamp2 = Date.now();
+        this.saveGlobalInfo(globalInfo);
         return true;
     } else {
         return false;
@@ -424,6 +426,7 @@ DataManager.makeSavefileInfo = function() {
     info.faces      = $gameParty.facesForSavefile();
     info.playtime   = $gameSystem.playtimeText();
     info.timestamp  = Date.now();
+    info.timestamp2 = Date.now();
     return info;
 };
 
