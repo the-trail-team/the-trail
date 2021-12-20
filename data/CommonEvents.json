@@ -957,6 +957,81 @@
         "parameters": []
       },
       {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          4,
+          3,
+          3,
+          55
+        ]
+      },
+      {
+        "code": 318,
+        "indent": 2,
+        "parameters": [
+          0,
+          3,
+          1,
+          55
+        ]
+      },
+      {
+        "code": 318,
+        "indent": 2,
+        "parameters": [
+          0,
+          3,
+          0,
+          90
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "var actor = $gameParty.members()[2];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "var level = actor.skillMasteryLevel(55);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "var uses = actor.skillMasteryUses(55);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "actor.setSkillMasteryLevel(90, level);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "actor.setSkillMasteryUses(90, uses);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
         "code": 108,
         "indent": 1,
         "parameters": [
