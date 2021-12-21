@@ -39,8 +39,7 @@ Balancing:
 
 Bug Fixes:
  - Fixed a bug where unallocating HP/MP when full would reduce MHP/MMP, then additionally remove another 5/3 HP/MP, leaving the party member without full HP/MP.
- - Fixed a bug where 2 unobtainable weapons were being added to the total weapons crafted stat's denominator.
- - Fixed a bug where 4 armors craftable in Alpha 15 were being added to the total armors crafted stat's denominator. Enabling old save patching is required for this bug to be fully patched.
+ - Fixed a bug where two completely unobtainable weapons were being added to the total weapons crafted stat's denominator.
  - Fixed a bug where the spacing of letters on name input screens would be uneven.
  - Fixed a bug where the sell price of Bronze/Steel Alloys was abnormally high... 3x higher than intended, in fact.
  - Fixed a bug where Player 4's vanities were still causing her face graphic to smile when in Telluria, even though this was meant to be removed in vA.14.3.
