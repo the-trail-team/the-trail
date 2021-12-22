@@ -1956,7 +1956,7 @@
   {
     "id": 82,
     "atypeId": 6,
-    "description": "A giant clump of Albino Rat fur stuck together so firmly that it's practically\ngained the properties of a metal. Provides immunity to four debuffs.",
+    "description": "A giant clump of Albino Rat fur stuck together so firmly that it's practically\ngained the properties of a metal. Provides immunity to three debuffs.",
     "etypeId": 2,
     "traits": [
       {
@@ -1967,11 +1967,6 @@
       {
         "code": 14,
         "dataId": 36,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 39,
         "value": 1
       },
       {
@@ -2416,11 +2411,6 @@
       },
       {
         "code": 14,
-        "dataId": 39,
-        "value": 1
-      },
-      {
-        "code": 14,
         "dataId": 52,
         "value": 1
       }
@@ -2730,11 +2720,6 @@
       {
         "code": 14,
         "dataId": 36,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 39,
         "value": 1
       },
       {
@@ -3450,5 +3435,32 @@
       0
     ],
     "price": 1800
+  },
+  {
+    "id": 134,
+    "atypeId": 1,
+    "description": "A three-ply mask used to ward away ailments. A bit\ndifficult to breath in. Provides immunity to \\it[39]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "iconIndex": 632,
+    "name": "Cloth Mask",
+    "note": "<Synthesis Ingredients>\nWorn Cloth: 5\nYarn: 3\nAntidote: 1\n</Synthesis Ingredients>\n<Mask Name: Sickness Stopper>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
   }
 ]
