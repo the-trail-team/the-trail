@@ -3260,5 +3260,195 @@
       0
     ],
     "price": 800
+  },
+  {
+    "id": 129,
+    "atypeId": 1,
+    "description": "It's about time to get in tune with nature, ain't it?\nIncreases all outgoing natural elemental damage by 5%.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      }
+    ],
+    "iconIndex": 473,
+    "name": "Flower Boots",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 86>\n\n<Disassemble Pool: Basic>\nx1-x3 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nLeather Boots: 1\nYellow Flower: 10\nRed Flower: 10\nBlue Herb: 10\n</Synthesis Ingredients>\n<Mask Name: Natural Footwear>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 130,
+    "atypeId": 1,
+    "description": "Everyone's feet need some nice padding on the inside!\nNot as fast as the \\ia[40], but boosts HRG.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 480,
+    "name": "Comfort Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-x3 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nLeather Boots: 1\nWorn Cloth: 8\nYarn: 3\n</Synthesis Ingredients>\n<Mask Name: Comfortable Footwear>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 131,
+    "atypeId": 1,
+    "description": "Reduces incoming ice damage by 8%. That's strange, since they\nonly cover your feet... but cold starts from the bottom up, right?",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.92
+      }
+    ],
+    "iconIndex": 479,
+    "name": "Snow Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-x3 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nLeather Boots: 1\nWorn Cloth: 5\nFire Essence: 2\nIce Essence: 2\n</Synthesis Ingredients>\n<Mask Name: Insulated Footwear>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 132,
+    "atypeId": 1,
+    "description": "Combines the \\ia[129], \\ia[130],\nand \\ia[131] into one amazing set of footwear.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.01
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.92
+      }
+    ],
+    "iconIndex": 477,
+    "name": "Trailblazing Boots",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 86>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nFlower Boots: 1\nComfort Boots: 1\nSnow Boots: 1\n</Synthesis Ingredients>\n<Mask Name: General Purpose Footwear>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 360
+  },
+  {
+    "id": 133,
+    "atypeId": 1,
+    "description": "Imagine having a great pair of shoes, then making them even\nbetter than before in every way? That's what these boots are.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.03
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.015
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.02
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.88
+      }
+    ],
+    "iconIndex": 477,
+    "name": "Trailblazing Boots ★",
+    "note": "<Upgrade Slots: 2>\n<Passive State: 87>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\nx2 Feather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nTrailblazing Boots: 1\nElemental Lace: 1\nHRG Scroll: 1\nFire Essence: 5\nIce Essence: 5\nHermes Boots: 1\nTellurium Alloy: 1\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      60,
+      0
+    ],
+    "price": 1800
   }
 ]
