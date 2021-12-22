@@ -932,15 +932,9 @@ Window_SynthesisCommand.prototype.makeCommandList = function() {
 };
 
 Window_SynthesisCommand.prototype.addItemCommands = function() {
-    if (Scene_Synthesis.availableItems().length > 0) {
-      this.addCommand(Yanfly.Param.ISItemCmd, 'item', true);
-    }
-    if (Scene_Synthesis.availableWeapons().length > 0) {
-      this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', true);
-    }
-    if (Scene_Synthesis.availableArmors().length > 0) {
-      this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', true);
-    }
+    this.addCommand(Yanfly.Param.ISItemCmd, 'item', Scene_Synthesis.availableItems().length > 0);
+    this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', Scene_Synthesis.availableWeapons().length > 0);
+    this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors().length > 0);
 };
 
 Window_SynthesisCommand.prototype.addCustomCommand = function() {
