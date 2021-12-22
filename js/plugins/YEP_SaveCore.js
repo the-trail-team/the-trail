@@ -898,10 +898,58 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   if (!this._info) return dy;
   if (!this._info.title) return dy;
   this.resetFontSettings();
-  var text = this._info.title;
+  // Title and Version
+  var loadedSave = JsonEx.parse(StorageManager.load(this._currentFile));
+  if (loadedSave.version !== undefined) versionName = JsonEx.parse(StorageManager.load(this._currentFile)).version.name; else versionName = "Unknown Version";
+  var text = this._info.title + " (" + versionName + ")";
   this.drawText(text, 0, dy, this.contents.width, 'center');
+
+  // Save Date and Time Since Last Save
+  var saveEpoch = DataManager.loadGlobalInfo()[this._currentFile].timestamp;
+  var differenceEpoch = Math.floor((Date.now() - saveEpoch) / 1000);
+  var interval = this.returnInterval(differenceEpoch);
+
+  date = new Date(saveEpoch);
+  this.drawText("Last Saved: " + date.toLocaleString() + " (" + interval + ")", 0, dy + this.lineHeight(), this.contents.width, 'center');
   return dy + this.lineHeight();
 };
+
+Window_SaveInfo.prototype.returnInterval = function(differenceEpoch) {
+  if (differenceEpoch < 0) return "In the future";
+  
+  if (differenceEpoch / 1 >= 1) {
+    interval = differenceEpoch;
+    suffix = interval !== 1 ? " seconds" : " second";
+  }
+
+  if (differenceEpoch / 60 >= 1) {
+    interval = Math.floor(differenceEpoch / 60);
+    suffix = interval !== 1 ? " minutes" : " minute";
+  }
+
+  if (differenceEpoch / 3600 >= 1) {
+    interval = Math.floor(differenceEpoch / 3600);
+    suffix = interval !== 1 ? " hours" : " hour";
+  }
+
+  if (differenceEpoch / 86400 >= 1) {
+    interval = Math.floor(differenceEpoch / 86400);
+    suffix = interval !== 1 ? " days" : " day";
+  }
+
+  if (differenceEpoch / 2592000 >= 1) {
+    interval = Math.floor(differenceEpoch / 2592000);
+    suffix = interval !== 1 ? " months" : " month";
+  }
+
+  if (differenceEpoch / 31536000 >= 1) {
+    interval = Math.floor(differenceEpoch / 31536000);
+    suffix = interval !== 1 ? " years" : " year";
+  }
+
+  suffix += " ago";
+  return Math.floor(differenceEpoch) !== 0 ? interval + suffix : "Just saved"
+}
 
 Window_SaveInfo.prototype.drawInvalidText = function(dy) {
   this.drawDarkRect(0, dy, this.contents.width, this.contents.height - dy);
@@ -1260,6 +1308,7 @@ Scene_File.prototype.create = function() {
     this.createActionWindow();
     this.createInfoWindow();
     this.createConfirmWindow();
+    if ($gameTemp._inGame !== true) this.startFadeIn(this.fadeSpeed(), false);
 };
 
 Scene_File.prototype.createHelpWindow = function() {
@@ -1276,13 +1325,18 @@ Scene_File.prototype.createListWindow = function() {
     this._listWindow = new Window_SavefileList(x, y, width, height);
     this.addWindow(this._listWindow);
     this._listWindow.setHandler('ok',     this.onSavefileOk.bind(this));
-    this._listWindow.setHandler('cancel', this.popScene.bind(this));
+    this._listWindow.setHandler('cancel', this.cancel.bind(this));
     this._listWindow.select(this.firstSavefileIndex());
     this._listWindow.setTopRow(this.firstSavefileIndex() - 2);
     this._listWindow.setMode(this.mode());
     this._listWindow.refresh();
     
 };
+
+Scene_File.prototype.cancel = function() {
+    if ($gameTemp._inGame !== true) this.startFadeOut(this.fadeSpeed(), false);
+    this.popScene();
+}
 
 Scene_File.prototype.createActionWindow = function() {
     var x = this._listWindow.width;

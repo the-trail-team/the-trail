@@ -1311,6 +1311,30 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeName(Yanfly.Param.StatusAttr_exr, dx, dy, dw);
       this.drawAttributeRate(actor.exr, dx, dy, dw);
       break;
+    case 'pls':
+      this.drawAttributeName("Physical Life Steal", dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('hpPhysicalRate'), dx, dy, dw);
+      break;
+    case 'mls':
+      this.drawAttributeName("Magical Life Steal", dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('hpMagicalRate'), dx, dy, dw);
+      break;
+    case 'cls':
+      this.drawAttributeName("Certain Life Steal", dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('hpCertainRate'), dx, dy, dw);
+      break;
+    case 'pms':
+      this.drawAttributeName("Physical MP Steal", dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('mpPhysicalRate'), dx, dy, dw);
+      break;
+    case 'mms':
+      this.drawAttributeName("Magical MP Steal", dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('mpMagicalRate'), dx, dy, dw);
+      break;
+    case 'cms':
+      this.drawAttributeName("Certain MP Steal", dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('mpCertainRate'), dx, dy, dw);
+      break;
     default:
       break;
     }

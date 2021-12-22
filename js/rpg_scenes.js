@@ -515,11 +515,13 @@ Scene_Title.prototype.commandNewGame = function() {
 
 Scene_Title.prototype.commandContinue = function() {
     this._commandWindow.close();
+    this.startFadeOut(this.fadeSpeed(), false);
     SceneManager.push(Scene_Load);
 };
 
 Scene_Title.prototype.commandOptions = function() {
     this._commandWindow.close();
+    this.startFadeOut(this.fadeSpeed(), false);
     SceneManager.push(Scene_Options);
 };
 
@@ -547,6 +549,7 @@ Scene_Map.prototype.initialize = function() {
     this._encounterEffectDuration = 0;
     this._mapLoaded = false;
     this._touchCount = 0;
+    $gameTemp._inGame = true
 };
 
 Scene_Map.prototype.create = function() {
@@ -1511,10 +1514,13 @@ Scene_Equip.prototype.onSlotCancel = function() {
 Scene_Equip.prototype.onItemOk = function() {
     SoundManager.playEquip();
     this.actor().changeEquip(this._slotWindow.index(), this._itemWindow.item());
-    this._slotWindow.activate();
-    this._slotWindow.refresh();
-    this._itemWindow.deselect();
+    if (!$gameSwitches.value(92)) {
+        this._slotWindow.activate();
+        this._slotWindow.refresh();
+        this._itemWindow.deselect();
+    }
     this._itemWindow.refresh();
+    if ($gameSwitches.value(92)) this._itemWindow.activate();
     this._statusWindow.refresh();
 };
 
@@ -1827,6 +1833,7 @@ Scene_GameEnd.prototype.createCommandWindow = function() {
 
 Scene_GameEnd.prototype.commandToTitle = function() {
     this.fadeOutAll();
+    $gameTemp._inGame = false;
     SceneManager.goto(Scene_Title);
 };
 

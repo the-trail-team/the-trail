@@ -419,6 +419,7 @@ _.preloadSE = String(params['Preload SE']).trim();
 
 _.preloadSystem = String(params['Preload System']).trim();
 _.preloadAnimations = String(params['Preload Animations']).trim();
+if (Utils.isOptionValid('test') == 1) _.preloadAnimations = "none";
 _.preloadBattlebacks1 = String(params['Preload Battlebacks1']).trim();
 _.preloadBattlebacks2 = String(params['Preload Battlebacks2']).trim();
 _.preloadCharacters = String(params['Preload Characters']).trim();

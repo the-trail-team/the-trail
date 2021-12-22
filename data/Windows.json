@@ -461,5 +461,31 @@
       "lineHeight": "36",
       "align": "center"
     }
+  },
+  "Scene_EquipCustomize": {
+    "Window_EquipCommand": {
+      "x": 0,
+      "y": 108,
+      "opacity": "0",
+      "width": "240",
+      "rows": "0",
+      "cols": "1",
+      "lineHeight": "36",
+      "align": "center"
+    },
+    "Window_ItemStatus": {
+      "x": 0,
+      "y": 108,
+      "opacity": "255",
+      "width": "640",
+      "height": "180"
+    },
+    "Window_ItemInfo": {
+      "x": 640,
+      "y": 108,
+      "opacity": "255",
+      "width": "640",
+      "height": "612"
+    }
   }
 }

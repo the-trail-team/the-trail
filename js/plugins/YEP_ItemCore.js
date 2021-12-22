@@ -1119,7 +1119,19 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
     } else {
       Yanfly.Item.Game_Party_gainItem.call(this, item, amount, includeEquip);
     }
+    this.seenItem(item);
 };
+
+Game_Party.prototype.seenItem = function(item) {
+  if (item == null) return;
+  if (item.groupType == 0) {
+    if (!$gameSystem.synthedItems().contains(item.id) && $dataItems[item.id].synthIngredients.length > 0) $gameSystem.synthedItems().push(item.id);
+  } else if (item.groupType == 1) {
+    if (!$gameSystem.synthedWeapons().contains(item.id) && $dataWeapons[item.id].synthIngredients.length > 0) $gameSystem.synthedWeapons().push(item.id);
+  } else if (item.groupType == 2) {
+    if (!$gameSystem.synthedArmors().contains(item.id) && $dataArmors[item.id].synthIngredients.length > 0) $gameSystem.synthedArmors().push(item.id);
+  }
+}
 
 Game_Party.prototype.gainIndependentItem = function(item, amount, includeEquip) {
     var arr = [];

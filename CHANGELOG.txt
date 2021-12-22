@@ -1,4 +1,55 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                             ALPHA 14.5 CHANGELOG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Alpha 14.5 (12/21/2021)
+Current Level Cap: 20
+- - - - - - - - - - - - -
+This is a very technical update, mainly serving to continue improving the gameplay experience and make a few small QoL changes.
+
+Additions:
+ - Added actual descriptions to vanity items. They will show the set they are a part of, as well as a short summary of what the outfit looks like.
+ - Re-added the category separators on the options menu. Additionally, 2 new options were added:
+  ~ Disable Old Save Patching: Disables the automatic patching of old saves when updating.
+  ~ Equipping Item Stays on Equip Window: When enabled, equipping an item will not return to the equipment slots window.
+ - Added new information to the save menu.
+  ~ Each save now shows its native version, which is updated every time it is saved in a different version. Pre-vA.14.5 saves or saves missing their version info will display as an unknown version.
+  ~ Saves will also show the time that they were last saved, adjusted for the user's time zone. The time since the last save is also shown.
+ - Although technically a change, a new damage popup system has replaced the old one. It comes with both visual and internal changes.
+  ~ Skills and states that did not show damage popups (e.g. anything involving SP) will now either show a popup or work as intended.
+ - The equip compare menu now shows life steal and attack element changes.
+ - The status menu's "Attributes" page now shows life steal stats.
+
+Changes:
+ - Replaced the Forge Badge and Enchanting Badge with the Disposable Hammer and Enchanting Crystal, respectively. This is only a visual change, and the items still function exactly the same.
+ - Obtaining any craftable item will mark it as crafted, even before hitting the Blazing Sands. This unmasks the name of the item and counts it towards the total crafting progress statistics in the crafting menu.
+ - Loading/renaming a save now marks it as the "last accessed" file, making it automatically selected when the save menu is open.
+ - Opening the options/save menu on the title screen will smoothly fade out the title screen and fade in the new menu. Leaving the menu will fade it out, then fade the title screen back in.
+ - Adjusted the layout of the status menu's "Attributes" page. Additionally, the first two columns of attributes have had their names reformatted.
+ - The equipment comparison menu now rounds the difference of most stats to 1 decimal place.
+ - Reverted the new item indicator's appearance to its vA.14.0-UNST1 state.
+ - The new item indicator now shows on the victory aftermath screen again.
+ - Removed equip restrictions on Terra and Bubble (Tome).
+ - When changing the equipment in a party member's Vanity slot, unequippable vanity items will not be shown.
+ - Adjusted dialogue in Adon finale dream cutscene.
+ - The preloader will now load animation files.
+ - Changed the icons of the Charm of Foresight and several vanity items.
+
+Balancing:
+ - Nerfed the Sacrificial Dagger's CRI boost from +3% to +1.5%.
+
+Bug Fixes:
+ - Fixed a bug where unallocating HP/MP when full would reduce MHP/MMP, then additionally remove another 5/3 HP/MP, leaving the party member without full HP/MP.
+ - Fixed a bug where two completely unobtainable weapons were being added to the total weapons crafted stat's denominator.
+ - Fixed a bug where the spacing of letters on name input screens would be uneven.
+ - Fixed a bug where the sell price of Bronze/Steel Alloys was abnormally high... 3x higher than intended, in fact.
+ - Fixed a bug where Player 4's vanities were still causing her face graphic to smile when in Telluria, even though this was meant to be removed in vA.14.3.
+ - Fixed a bug where the Sea BGS would not fade out during the cutscene where the party clears the dirt pile in the north of the Blazing Sands.
+ - Fixed many textual errors.
+
+Items being automatically marked as crafted will work retroactively with previous saves. As long as an item has been hovered over in the items menu at least once before updating, the updated save will mark the item as crafted.
+Run over all the items in your inventory before updating to be sure they don't have the new item indicator. This will ensure that any craftable items are properly marked as crafted.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                              ALPHA 14.4 CHANGELOG
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Alpha 14.4 (12/16/2021)
@@ -14,7 +65,7 @@ Additions:
 
 Changes:
  - Player 4 no longer learns Steal Item at level 12, and will instead learn Offensive Stance. Transferred saves with Player 4 already at level 12 or above will automatically have her skills updated.
- - Deleting a save file will now just apply .bak to the end of the file instead of completely deleting it, allowing accidentally deleting save files to be retrieved.
+ - Deleting a save file will now just apply .bak to the end of the file instead of completely deleting it, allowing accidentally deleted save files to be retrieved.
  - A Game Over will now be triggered if the entire party is afflicted with either Downed or Terrified.
   ~ This was mainly done to prevent long battles against Lost Souls when your only living party members were incapacitated by Terrified.
  - Will now sells ATK, MAT, DEF, and MDF scrolls.
@@ -39,7 +90,7 @@ Bug Fixes:
  - Fixed a bug with the Lightning I/II chain lightning formulas.
  - Fixed a bug where saves transferred from vA.14.4 would softlock upon entering Player 1's house. This was because the "Player 2's Meal" cutscene would be triggered.
  - Fixed a bug where boosting and then unboosting could allow escape from normally unescapable battles.
- - Fixed a bug where Shield of Faith and Strenght Within the Blade's shield would expire after 5 or 2 turns, respectively.
+ - Fixed a bug where Shield of Faith and Strength Within the Blade's shield would expire after 5 or 2 turns, respectively.
  - Fixed a bug where Player 3 and Player 4 could escape Sector 4 when ditching the rest of the party.
  - Fixed a bug where The Warden wouldn't apply Terrified to the party at the beginning of his battle.
  - Fixed a bug where Henry's Play Dirty skill could fill up the battle log.
@@ -219,7 +270,7 @@ Bug Fixes:
 Fixed an INCREDIBLE amount of bugs, ranging from new to old to ancient.
 
 Bugs we are aware of:
-Yes, there are STILL just a couple bugs I haven't managed to squash from Alpha 13, and a few have popped up during the developement of Alpha 14 that I haven't found a fix for just yet. Apologies for that...
+Yes, there are STILL just a couple bugs I haven't managed to squash from Alpha 13, and a few have popped up during the development of Alpha 14 that I haven't found a fix for just yet. Apologies for that...
 But hey, there's no more need for this section thanks to the issue tracker on GitHub! It's been nice having this here for a while, but it's finally time to move on. Check out the issue tracker via the link below.
 https://github.com/NoLongerLucky/thetrail/issues
  

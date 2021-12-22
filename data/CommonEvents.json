@@ -656,55 +656,12 @@
         ]
       },
       {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          2,
-          0,
-          11,
-          1
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 1,
-        "parameters": [
-          "Quest Remove 4"
-        ]
-      },
-      {
-        "code": 356,
-        "indent": 1,
-        "parameters": [
-          "Quest Add 1000"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 121,
         "indent": 0,
         "parameters": [
           52,
           52,
           1
-        ]
-      },
-      {
-        "code": 123,
-        "indent": 0,
-        "parameters": [
-          "A",
-          0
         ]
       },
       {
@@ -725,12 +682,28 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Skill replacements"
+          "# Old Save Patching"
         ]
       },
       {
         "code": 111,
         "indent": 0,
+        "parameters": [
+          0,
+          91,
+          1
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Skill replacements"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
         "parameters": [
           4,
           1,
@@ -740,7 +713,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -750,7 +723,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -760,52 +733,52 @@
       },
       {
         "code": 355,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var actor = $gameParty.members()[0];"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var level = actor.skillMasteryLevel(5);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var uses = actor.skillMasteryUses(5);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryLevel(86, level);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryUses(86, uses);"
         ]
       },
       {
         "code": 0,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 0,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           4,
           1,
@@ -815,7 +788,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -825,7 +798,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -835,52 +808,52 @@
       },
       {
         "code": 355,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var actor = $gameParty.members()[0];"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var level = actor.skillMasteryLevel(4);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var uses = actor.skillMasteryUses(4);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryLevel(84, level);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryUses(84, uses);"
         ]
       },
       {
         "code": 0,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 0,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           4,
           1,
@@ -890,7 +863,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           1,
@@ -900,52 +873,52 @@
       },
       {
         "code": 355,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var actor = $gameParty.members()[0];"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var level = actor.skillMasteryLevel(45);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "var uses = actor.skillMasteryUses(45);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryLevel(85, level);"
         ]
       },
       {
         "code": 655,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           "actor.setSkillMasteryUses(85, uses);"
         ]
       },
       {
         "code": 0,
-        "indent": 1,
+        "indent": 2,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 0,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 0,
+        "indent": 1,
         "parameters": [
           4,
           4,
@@ -955,7 +928,7 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           4,
@@ -965,12 +938,113 @@
       },
       {
         "code": 318,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           4,
           0,
           68
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Seen items = Synthesized items"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "items = $gameSystem._seenItems.items;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "for (i = 1; i < items.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if (items[i] == 1 && !$gameSystem.synthedItems().contains(i) && $dataItems[i].synthIngredients.length > 0) $gameSystem.synthedItems().push(i);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "weapons = $gameSystem._seenItems.weapons;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "for (i = 3001; i < weapons.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if ($dataWeapons[i] !== null && weapons[i] == 1 && !$gameSystem.synthedWeapons().contains($dataWeapons[i].baseItemId) && $dataWeapons[i].synthIngredients.length > 0) $gameSystem.synthedWeapons().push($dataWeapons[i].baseItemId);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "armors = $gameSystem._seenItems.armors;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "for (i = 3001; i < armors.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if ($dataArmors[i] !== null && armors[i] == 1 && !$gameSystem.synthedArmors().contains($dataArmors[i].baseItemId) && $dataArmors[i].synthIngredients.length > 0) $gameSystem.synthedArmors().push($dataArmors[i].baseItemId);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
         ]
       },
       {
@@ -2112,6 +2186,16 @@
         "indent": 1,
         "parameters": [
           1,
+          11,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          1,
           8,
           0,
           0
@@ -2261,11 +2345,9 @@
         "code": 111,
         "indent": 1,
         "parameters": [
-          1,
-          19,
           0,
-          1,
-          1
+          25,
+          0
         ]
       },
       {
@@ -2277,6 +2359,16 @@
           0,
           0,
           false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 2,
+        "parameters": [
+          1,
+          11,
+          0,
+          0
         ]
       },
       {
@@ -2405,16 +2497,6 @@
         "parameters": [
           0,
           8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 2,
-        "parameters": [
-          0,
-          43,
           0,
           0
         ]
@@ -2433,9 +2515,11 @@
         "code": 111,
         "indent": 2,
         "parameters": [
+          1,
+          13,
           0,
-          25,
-          0
+          4,
+          1
         ]
       },
       {
@@ -2447,6 +2531,16 @@
           0,
           0,
           false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 3,
+        "parameters": [
+          1,
+          11,
+          0,
+          0
         ]
       },
       {
@@ -2534,26 +2628,6 @@
         "indent": 3,
         "parameters": [
           0,
-          32,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          33,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
           9,
           0,
           0
@@ -2575,16 +2649,6 @@
         "parameters": [
           0,
           8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          0,
-          43,
           0,
           0
         ]
@@ -2600,22 +2664,11 @@
         "parameters": []
       },
       {
-        "code": 111,
+        "code": 302,
         "indent": 3,
         "parameters": [
-          1,
-          14,
           0,
-          3,
-          1
-        ]
-      },
-      {
-        "code": 302,
-        "indent": 4,
-        "parameters": [
-          1,
-          10,
+          9,
           0,
           0,
           false
@@ -2623,9 +2676,19 @@
       },
       {
         "code": 605,
-        "indent": 4,
+        "indent": 3,
         "parameters": [
-          1,
+          0,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 3,
+        "parameters": [
+          0,
           8,
           0,
           0
@@ -2633,17 +2696,7 @@
       },
       {
         "code": 605,
-        "indent": 4,
-        "parameters": [
-          1,
-          12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
+        "indent": 3,
         "parameters": [
           1,
           5,
@@ -2653,7 +2706,7 @@
       },
       {
         "code": 605,
-        "indent": 4,
+        "indent": 3,
         "parameters": [
           1,
           7,
@@ -2663,216 +2716,13 @@
       },
       {
         "code": 605,
-        "indent": 4,
+        "indent": 3,
         "parameters": [
           2,
           12,
           0,
           0
         ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          2,
-          13,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          2,
-          27,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          2,
-          14,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          0,
-          9,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          0,
-          14,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 4,
-        "parameters": [
-          0,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 4,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 4,
-        "parameters": [
-          1,
-          3,
-          0,
-          2,
-          1
-        ]
-      },
-      {
-        "code": 302,
-        "indent": 5,
-        "parameters": [
-          0,
-          9,
-          0,
-          0,
-          false
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 5,
-        "parameters": [
-          0,
-          14,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 5,
-        "parameters": [
-          0,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 5,
-        "parameters": [
-          1,
-          5,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 5,
-        "parameters": [
-          1,
-          7,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 5,
-        "parameters": [
-          2,
-          12,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 5,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 4,
-        "parameters": []
-      },
-      {
-        "code": 302,
-        "indent": 5,
-        "parameters": [
-          0,
-          9,
-          0,
-          0,
-          false
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 5,
-        "parameters": [
-          0,
-          8,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 5,
-        "parameters": [
-          1,
-          5,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 5,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 4,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 4,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 3,
-        "parameters": []
       },
       {
         "code": 0,
@@ -11270,7 +11120,7 @@
           50,
           0,
           4,
-          "$gameVariables.value(48) + \"/33\""
+          "$gameVariables.value(48) + \"/32\""
         ]
       },
       {
@@ -11652,39 +11502,8 @@
         ]
       },
       {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          0,
-          25,
-          0
-        ]
-      },
-      {
         "code": 322,
-        "indent": 2,
-        "parameters": [
-          4,
-          "Actor4",
-          3,
-          "Actor4",
-          7,
-          "Actor4_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 411,
         "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 322,
-        "indent": 2,
         "parameters": [
           4,
           "Actor4",
@@ -11693,16 +11512,6 @@
           3,
           "Actor4_4"
         ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
       },
       {
         "code": 0,
@@ -11725,39 +11534,8 @@
         ]
       },
       {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          0,
-          25,
-          0
-        ]
-      },
-      {
         "code": 322,
-        "indent": 2,
-        "parameters": [
-          4,
-          "Actor4Old",
-          3,
-          "Actor4",
-          7,
-          "Actor4_4"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 411,
         "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 322,
-        "indent": 2,
         "parameters": [
           4,
           "Actor4Old",
@@ -11766,16 +11544,6 @@
           3,
           "Actor4_4"
         ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
       },
       {
         "code": 0,
@@ -12008,6 +11776,353 @@
       }
     ],
     "name": "Christmas Store",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 55,
+    "list": [
+      {
+        "code": 112,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\willWhat do you need help with?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 1,
+        "parameters": [
+          [
+            "How do I craft?",
+            "How do I make alloys?",
+            "How do I use equipment in crafting?",
+            "I'm good, thanks."
+          ],
+          3,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          0,
+          "How do I craft?"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\willIf you want to craft, just interact"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "with the table in front of the forge."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "It's as simple as that!"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          1,
+          "How do I make alloys?"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\willIt's quite simple, actually."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\ii[68]\\c[0]s and \\ii[74]\\c[0]s"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "are created just using two of"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "their respective clusters."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\willAlloys you discover later in your"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "adventure will be much more complex,"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "though, and will likely require many"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "types of ores and other items."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          2,
+          "How do I use equipment in crafting?"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\willIf you've made modifications to"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "weapons or equipment, you won't be"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "able to use them in crafting without"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "resetting their properties."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\willAll you have to use is a \\ii[54]."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Don't worry, I sell those here."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\willIt should be the same process"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "as using any sort of upgrade"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "scroll or item on your gear."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          3,
+          "I'm good, thanks."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Telluria1",
+          2,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\willAlright. If you ever need any"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "help, just come talk to me."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Will's Crafting Tips",
     "switchId": 1,
     "trigger": 0
   }

@@ -1055,7 +1055,7 @@ Scene_Equip.prototype.onItemOk = function() {
     var hpAmount = Math.max(max, parseInt(this.actor().mhp * hpRate));
     this.actor().setHp(hpAmount);
     this.actor().setMp(parseInt(this.actor().mmp * mpRate));
-    this._itemWindow.hide();
+    if (!$gameSwitches.value(92)) this._itemWindow.hide();
     this._statusWindow.refresh();
 };
 

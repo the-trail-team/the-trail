@@ -1059,6 +1059,7 @@ Window_ItemActionCommand.prototype.addUpgradeCommand = function() {
     if (Yanfly.Param.IUSUpgradeCmd === '') return;
     if (!$gameSystem.itemUpgradeShow()) return;
     if (!this._item) return;
+    if (this._item.etypeId == 7) return;
     this._item.upgradeSlots = this._item.upgradeSlots || 0;
     if (this._item.upgradeSlots <= -1) return;
     var enabled = DataManager.isIndependent(this._item);

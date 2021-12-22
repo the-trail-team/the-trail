@@ -1971,9 +1971,16 @@ Window_StatCompare.prototype.refresh = function() {
 				const newValue = eval(_.evals[i]);
 				actor = this._actor;
 				const diffvalue = newValue - eval(_.evals[i]);
-				if(diffvalue !== 0) {
-					this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
-					place++;
+				if(!(i >= 45 && i <= 55)) {
+					if(diffvalue !== 0) {
+						this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
+						place++;
+					}
+				} else {
+					if(this._actor.attackElements().contains(i - 44) !== this._tempActor.attackElements().contains(i-44)) {
+						this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
+						place++;
+					}
 				}
 			}
 		}
@@ -2005,9 +2012,11 @@ Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
 	let actor = this._tempActor;
 	const newValue = eval(_.evals[paramId]);
 	actor = this._actor;
-	const diffvalue = newValue - eval(_.evals[paramId]);
+	var diffvalue = newValue - eval(_.evals[paramId]);
 	//End of New Code
 	if (diffvalue === 0) return;
+	if (paramId >= 45 && paramId <= 55) return;
+	if (paramId >= 9) diffvalue = diffvalue.toFixed(1);
 	var actorparam = Yanfly.Util.toGroup(newValue);
 	this.changeTextColor(this.paramchangeTextColor(diffvalue, paramId));
 	var text = Yanfly.Util.toGroup(diffvalue) + _.forms[paramId].replace(/val/, "");
