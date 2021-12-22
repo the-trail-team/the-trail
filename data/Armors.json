@@ -3158,5 +3158,107 @@
       0
     ],
     "price": 300
+  },
+  {
+    "id": 125,
+    "atypeId": 2,
+    "description": "The fully restored form of the heavy armor guarded\nby The Warden. Further reduces incoming dark damage.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.88
+      }
+    ],
+    "iconIndex": 435,
+    "name": "True Shadowplate Armor",
+    "note": "<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nShadowplate Armor: 1\nEmerald Ring: 1\nDark Essence: 3\nDisposable Hammer: 1\nEnchanting Crystal: 1\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Heavy Armor>",
+    "params": [
+      0,
+      8,
+      0,
+      18,
+      0,
+      5,
+      -3,
+      0
+    ],
+    "price": 800
+  },
+  {
+    "id": 126,
+    "atypeId": 3,
+    "description": "The properly mended form of the robes guarded by\nThe Warden. Further reduces incoming light damage.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 0.88
+      }
+    ],
+    "iconIndex": 447,
+    "name": "True Phantasmal Robes",
+    "note": "<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Synthesis Ingredients>\nPhantasmal Robes: 1\nRuby Ring: 1\nLight Essence: 3\nDisposable Hammer: 1\nEnchanting Crystal: 1\n</Synthesis Ingredients>\n<Mask Name: Repaired Light Robes>",
+    "params": [
+      0,
+      9,
+      0,
+      9,
+      8,
+      18,
+      0,
+      0
+    ],
+    "price": 800
+  },
+  {
+    "id": 127,
+    "atypeId": 4,
+    "description": "The truly repaired form of the vestments guarded by\nThe Warden. Strengthens outgoing healing by 5%.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 168,
+    "name": "True Prayer Vestments ★",
+    "note": "<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n<Passive State: 85>\n\n<Synthesis Ingredients>\nPrayer Vestments ★: 1\nJade Charm: 1\nLight Essence: 3\nDisposable Hammer: 1\nEnchanting Crystal: 1\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>",
+    "params": [
+      0,
+      7,
+      0,
+      9,
+      6,
+      21,
+      0,
+      0
+    ],
+    "price": 800
+  },
+  {
+    "id": 128,
+    "atypeId": 5,
+    "description": "The properly powerful form of the leathers guarded\nby The Warden. Further boosts magic evasion.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.09
+      }
+    ],
+    "iconIndex": 456,
+    "name": "True Shadowspec Leathers",
+    "note": "<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Synthesis Ingredients>\nShadowspec Leathers: 1\nLeather Charm\nDark Essence: 3\nDisposable Hammer: 1\nEnchanting Crystal: 1\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Leathers>",
+    "params": [
+      0,
+      5,
+      0,
+      9,
+      0,
+      5,
+      18,
+      0
+    ],
+    "price": 800
   }
 ]
