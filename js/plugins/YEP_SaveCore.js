@@ -919,35 +919,34 @@ Window_SaveInfo.prototype.returnInterval = function(differenceEpoch) {
   
   if (differenceEpoch / 1 >= 1) {
     interval = differenceEpoch;
-    suffix = interval !== 1 ? " seconds" : " second";
+    suffix = interval !== 1 ? " seconds ago" : " second ago";
   }
 
   if (differenceEpoch / 60 >= 1) {
     interval = Math.floor(differenceEpoch / 60);
-    suffix = interval !== 1 ? " minutes" : " minute";
+    suffix = interval !== 1 ? " minutes ago" : " minute ago";
   }
 
   if (differenceEpoch / 3600 >= 1) {
     interval = Math.floor(differenceEpoch / 3600);
-    suffix = interval !== 1 ? " hours" : " hour";
+    suffix = interval !== 1 ? " hours ago" : " hour ago";
   }
 
   if (differenceEpoch / 86400 >= 1) {
     interval = Math.floor(differenceEpoch / 86400);
-    suffix = interval !== 1 ? " days" : " day";
+    suffix = interval !== 1 ? " days ago" : " day ago";
   }
 
   if (differenceEpoch / 2592000 >= 1) {
     interval = Math.floor(differenceEpoch / 2592000);
-    suffix = interval !== 1 ? " months" : " month";
+    suffix = interval !== 1 ? " months ago" : " month ago";
   }
 
   if (differenceEpoch / 31536000 >= 1) {
     interval = Math.floor(differenceEpoch / 31536000);
-    suffix = interval !== 1 ? " years" : " year";
+    suffix = interval !== 1 ? " years ago" : " year ago";
   }
 
-  suffix += " ago";
   return Math.floor(differenceEpoch) !== 0 ? interval + suffix : "Just saved"
 }
 
