@@ -2224,7 +2224,7 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Critical Heal I",
+    "name": "[P] Critical Heal I",
     "note": "<Custom Confirm Effect>\nvar healBoost = 0.1;\nvar elementId = 11;\n\nvar elements = this.getItemElements();\nif (elements.contains(elementId)) {\nvar hpRate = (user.hp / user.mhp);\nvar rate1 = Math.max(0, 1 - hpRate);\nvar rate2 = 1 + (rate1 * healBoost);\nvalue = Math.ceil(value * rate2);}\n</Custom Confirm Effect>",
     "overlay": 0,
     "priority": 0,
