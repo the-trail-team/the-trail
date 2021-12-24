@@ -1637,7 +1637,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "[P] Steadfast",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Battle Effect>\nuser.addBuff(3, 3);\nuser.startAnimation(51);\n</Custom Battle Effect>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Battle Effect>\nuser.addBuff(3, 3);\nuser.addBuff(4, 3);\nuser.startAnimation(51);\n</Custom Battle Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
