@@ -1086,12 +1086,12 @@
   {
     "id": 48,
     "atypeId": 7,
-    "description": "A shield crafted for the royal knights of Telluria Castle.\nIt's remniscient of the shields made for knights long ago.",
+    "description": "A well-made copy of the shields used by Tellurian knights. However,\nit's not as strong, and it doesn't have the beautiful red coloring.",
     "etypeId": 2,
     "traits": [],
     "iconIndex": 530,
-    "name": "Knight's Shield",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nSteel Alloy: 3\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
+    "name": "Replica Knight's Shield",
+    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nSteel Alloy: 3\n</Synthesis Ingredients>\n<Mask Name: Heavy Shield>",
     "params": [
       0,
       0,
@@ -2684,7 +2684,7 @@
   {
     "id": 108,
     "atypeId": 7,
-    "description": "Best of luck to anyone who dares attack the holder of \\ia[108].\nCombines the effects of \\ia[97] and \\ia[117].",
+    "description": "Best of luck to whoever dares attack the holder of \\ia[108].\nCombines the effects of several very powerful shields.",
     "etypeId": 2,
     "traits": [
       {
@@ -2745,12 +2745,12 @@
     ],
     "iconIndex": 510,
     "name": "Vishnu's Aegis",
-    "note": "<Upgrade Slots: 5>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVishnu's Shield: 1\nTurtle Shield: 1\nTellurium Alloy: 1\n</Synthesis Ingredients>\n<Mask Name: Damage Soaking Super-Shield>",
+    "note": "<Upgrade Slots: 5>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Damage Soaking Super-Shield>",
     "params": [
       0,
       0,
       0,
-      10,
+      15,
       0,
       0,
       -5,
@@ -3489,5 +3489,47 @@
       0
     ],
     "price": 200
+  },
+  {
+    "id": 136,
+    "atypeId": 7,
+    "description": "A shield crafted for the royal knights of Telluria Castle.\nIt's remniscient of the shields made for knights long ago.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 496,
+    "name": "Tellurian Knight's Shield",
+    "note": "<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nDEF Scroll ★\nDisposable Hammer: 2\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
+    "params": [
+      0,
+      0,
+      0,
+      12,
+      0,
+      0,
+      -2,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 137,
+    "atypeId": 7,
+    "description": "A full strength shield saved for the most elite of the\nTellurian military due to how difficult it is to forge.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 497,
+    "name": "Tellurian Knight's Bulwark",
+    "note": "<Upgrade Slots: 3>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nDEF Scroll ★\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
+    "params": [
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      -3,
+      0
+    ],
+    "price": 800
   }
 ]
