@@ -81,9 +81,6 @@
 	Moghunter.mpart_blendMode = Number(Moghunter.parameters['Blend Mode'] || 1);
 	SceneManager._mpart             = false;
 
-	var currentMonth = Date().split(" ")[1];
-    if (currentMonth == "Dec") Moghunter.mpart_oy *= -1;
-	
 //=============================================================================
 // ** ImageManager
 //=============================================================================
@@ -153,11 +150,7 @@ Scene_MenuBase.prototype.terminate = function() {
 //==============================
 Scene_MenuBase.prototype.set_particle_img = function() {
 	if (this._self_par && SceneManager._scene) {return SceneManager._scene.constructor.name + "_par"}
-	if ($gameSwitches.value(81)) {
-		return "Snow";
-	} else {
-		return "Particles";
-	}
+	return "Particles";
 };
 
 //==============================
