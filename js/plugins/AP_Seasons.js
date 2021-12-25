@@ -5,6 +5,8 @@
  */
 //=============================================================================
 
+var Seasons_Scene_Title_initialize = Scene_Title.prototype.initialize;
+
 //
 // CHRISTMAS
 //
@@ -13,7 +15,9 @@ if (Date().split(" ")[1] == "Dec") {
 
     // Switch
 
-    Scene_Title.prototype.holidaySeason = function() {
+    var Seasons_Scene_Title_initialize = Scene_Title.prototype.initialize;
+    Scene_Title.prototype.initialize = function() {
+        Seasons_Scene_Title_initialize.call(this);
         $gameSwitches.setValue(81, true);
     }
 
@@ -35,4 +39,9 @@ if (Date().split(" ")[1] == "Dec") {
             return "Particles";
         }
     };
+} else {
+    Scene_Title.prototype.initialize = function() {
+        Seasons_Scene_Title_initialize.call(this);
+        $gameSwitches.setValue(81, false);
+    }
 }
