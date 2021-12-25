@@ -1233,6 +1233,26 @@ Window_SynthesisIngredients.prototype.drawItemDetails = function(index, wy) {
     return wy + this.lineHeight();
 };
 
+Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width) {
+  width = width || 312;
+  if (item) {
+      var iconBoxWidth = Window_Base._iconWidth + 4;
+      this.resetTextColor();
+      this.drawIcon(item.iconIndex, x + 2, y + 2);
+      if (item.groupType == 0) hasSynthed = $gameSystem.synthedItems().contains(item.id);
+      if (item.groupType == 1) hasSynthed = $gameSystem.synthedWeapons().contains(item.id);
+      if (item.groupType == 2) hasSynthed = $gameSystem.synthedArmors().contains(item.id);
+      if (item.maskName == "" || hasSynthed) {
+        text = item.name;
+      } else {
+        this.contents.fontItalic = true;
+        text = item.maskName;
+      }
+      this.drawText(text, x + iconBoxWidth, y, width - iconBoxWidth);
+      this.contents.fontItalic = false;
+  }
+};
+
 Window_SynthesisIngredients.prototype.drawItemQuantity = function(index, wy) {
     var ingredient = DataManager.getSynthesisIngredient(this._item, index);
     var quantity = DataManager.getSynthesisQuantity(this._item, index);
