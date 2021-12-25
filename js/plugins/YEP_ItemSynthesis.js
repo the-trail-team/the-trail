@@ -1223,7 +1223,7 @@ Window_SynthesisIngredients.prototype.drawItemDetails = function(index, wy) {
     var ww = this.contents.width;
     if (!ingredient) return wy;
     this.resetFontSettings();
-    this.drawItemName.call(this, ingredient, 0, wy, ww);
+    this.drawItemName.call(this, ingredient, 0, wy, ww, index);
     if (Yanfly.Param.ISAmountFmt) {
       this.drawItemQuantity(index, wy);
     } else {
@@ -1233,11 +1233,18 @@ Window_SynthesisIngredients.prototype.drawItemDetails = function(index, wy) {
     return wy + this.lineHeight();
 };
 
-Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width) {
+Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width, index) {
   width = width || 312;
   if (item) {
+      var owned = $gameParty.numNotUpgradedIndependentItems(DataManager.getSynthesisIngredient(this._item, index));
+      var quantity = DataManager.getSynthesisQuantity(this._item, index);
+      if (owned >= quantity) {
+        this.changeTextColor(this.powerUpColor());
+      } else {
+        this.changeTextColor(this.powerDownColor());
+      }
+
       var iconBoxWidth = Window_Base._iconWidth + 4;
-      this.resetTextColor();
       this.drawIcon(item.iconIndex, x + 2, y + 2);
       if (item.groupType == 0) hasSynthed = $gameSystem.synthedItems().contains(item.id);
       if (item.groupType == 1) hasSynthed = $gameSystem.synthedWeapons().contains(item.id);
@@ -1250,6 +1257,7 @@ Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width)
       }
       this.drawText(text, x + iconBoxWidth, y, width - iconBoxWidth);
       this.contents.fontItalic = false;
+      this.resetTextColor();
   }
 };
 
