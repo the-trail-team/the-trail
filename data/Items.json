@@ -4693,5 +4693,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 162,
+    "animationId": 51,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "I had just one query...\nBoosts HRG by 5%. Lasts for 10 turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 69,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 578,
+    "itypeId": 1,
+    "name": "Fizzy Cranberry Beverage",
+    "note": "<Item 156 Buy Price: 4>\n<Item 156 Sell Price: 2>\n<Menu Category: Buffs>",
+    "occasion": 2,
+    "price": 0,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]

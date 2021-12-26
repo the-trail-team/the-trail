@@ -2288,5 +2288,35 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 69,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 578,
+    "maxTurns": 10,
+    "message1": " drank a Vital Cola!",
+    "message2": "",
+    "message3": "",
+    "message4": "'s MHP reverted to normal.",
+    "minTurns": 10,
+    "motion": 0,
+    "name": "Fizzy Cranberry Beverage",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts HRG by 5%.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.15;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n\n/*console.log(x1);\nconsole.log(x2);\nconsole.log(y1);\nconsole.log(y2);\nconsole.log(a);\nconsole.log(deltaX);\nconsole.log(x1/y1);\nconsole.log(x2/y2);*/\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.15;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n/*console.log(x1);\nconsole.log(x2);\nconsole.log(y1);\nconsole.log(y2);\nconsole.log(a);\nconsole.log(deltaX);\nconsole.log(x1/y1);\nconsole.log(x2/y2);*/\n\n}\n</Custom Remove Effect>",
+    "overlay": 0,
+    "priority": 5,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
