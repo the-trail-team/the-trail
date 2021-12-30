@@ -19592,7 +19592,7 @@
     {
       "id": 19,
       "name": "EV019",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -19613,10 +19613,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster1",
-            "direction": 2,
+            "characterName": "$GiantRat",
+            "direction": 4,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -19624,7 +19624,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                7,
+                9,
                 false,
                 false
               ]
@@ -19653,14 +19653,14 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
+                  "this._chaseRange = 4"
                 ],
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._chaseSpeed = 4"
                 ],
                 "indent": null
               },
@@ -19673,10 +19673,10 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 2,
+          "moveSpeed": 3,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 2,
           "walkAnime": true
@@ -19739,7 +19739,7 @@
     {
       "id": 20,
       "name": "EV020",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -19760,10 +19760,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster1",
-            "direction": 2,
+            "characterName": "$GiantRat",
+            "direction": 4,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -19771,7 +19771,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                7,
+                9,
                 false,
                 false
               ]
@@ -19800,14 +19800,14 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
+                  "this._chaseRange = 4"
                 ],
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._chaseSpeed = 4"
                 ],
                 "indent": null
               },
@@ -19820,10 +19820,10 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 2,
+          "moveSpeed": 3,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 2,
           "walkAnime": true
@@ -19886,7 +19886,7 @@
     {
       "id": 21,
       "name": "EV021",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -19907,10 +19907,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster1",
-            "direction": 2,
+            "characterName": "$GiantRat",
+            "direction": 4,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -19918,7 +19918,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                7,
+                9,
                 false,
                 false
               ]
@@ -19947,14 +19947,14 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
+                  "this._chaseRange = 4"
                 ],
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._chaseSpeed = 4"
                 ],
                 "indent": null
               },
@@ -19967,10 +19967,10 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 2,
+          "moveSpeed": 3,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 2,
           "walkAnime": true
@@ -20174,8 +20174,8 @@
           "walkAnime": true
         }
       ],
-      "x": 26,
-      "y": 37
+      "x": 25,
+      "y": 38
     },
     {
       "id": 23,
@@ -20291,7 +20291,7 @@
     {
       "id": 24,
       "name": "EV024",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -20312,10 +20312,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster1",
-            "direction": 2,
+            "characterName": "$GiantRat",
+            "direction": 4,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 0
           },
           "list": [
             {
@@ -20323,7 +20323,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                7,
+                9,
                 false,
                 false
               ]
@@ -20352,14 +20352,14 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 3"
+                  "this._chaseRange = 4"
                 ],
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._chaseSpeed = 4"
                 ],
                 "indent": null
               },
@@ -20372,10 +20372,10 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 2,
+          "moveSpeed": 3,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 2,
           "walkAnime": true
@@ -25127,6 +25127,447 @@
       ],
       "x": 0,
       "y": 8
+    },
+    {
+      "id": 58,
+      "name": "EV058",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "$GiantRat",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 301,
+              "indent": 0,
+              "parameters": [
+                0,
+                9,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 8
+    },
+    {
+      "id": 59,
+      "name": "EV059",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "$GiantRat",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 301,
+              "indent": 0,
+              "parameters": [
+                0,
+                9,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 27,
+      "y": 9
+    },
+    {
+      "id": 60,
+      "name": "EV060",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "$GiantRat",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 301,
+              "indent": 0,
+              "parameters": [
+                0,
+                9,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 27,
+      "y": 36
     }
   ]
 }
