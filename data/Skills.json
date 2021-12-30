@@ -3237,5 +3237,35 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 92,
+    "animationId": 104,
+    "damage": {
+      "critical": false,
+      "elementId": 9,
+      "formula": "a.mat * 3 - b.mdf * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "Same thing as \\is[29], but no MDF debuff.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 103,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 15,
+    "name": "Engulfing Darkness",
+    "note": "<Remove State Category: Light>\n\n<setup action>\ndisplay action\nperform start\nmotion chant: user\nwait: 45\nmotion skill: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 30\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]
