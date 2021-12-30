@@ -607,7 +607,11 @@ DataManager.processEEDNotetags1 = function(group) {
     this.createEnemyDrop(obj, id, rate, 2);
     if (Date().split(" ")[1] == "Dec") { // present (1/5 drop)
       var id = 156;
-      var rate = 0.2;
+      if (Date().split(" ")[2] == 25) {
+        var rate = 0.2;
+      } else {
+        var rate = 0.5;
+      }
       this.createEnemyDrop(obj, id, rate, 1);
     }
   }
