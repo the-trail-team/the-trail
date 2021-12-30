@@ -3634,7 +3634,7 @@
     ],
     "gold": 200,
     "name": "Will o' Wisp",
-    "note": "<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: Fire Spirit>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 2%\n</Enemy Drops>",
+    "note": "<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: FireSpirit>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 2%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -4210,6 +4210,602 @@
       52,
       110,
       43
+    ]
+  },
+  {
+    "id": 41,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Sahuagin",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 80,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.01
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.07
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.08
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      }
+    ],
+    "gold": 40,
+    "name": "Sahuagin",
+    "note": "<Sideview Battler: Sahuagin>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
+    "params": [
+      800,
+      0,
+      24,
+      24,
+      10,
+      52,
+      100,
+      55
+    ]
+  },
+  {
+    "id": 42,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Flytrap",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 80,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.97
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.03
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 2
+      }
+    ],
+    "gold": 40,
+    "name": "Flytrap",
+    "note": "<Sideview Battler: Flytrap>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
+    "params": [
+      800,
+      0,
+      24,
+      24,
+      10,
+      52,
+      5,
+      20
+    ]
+  },
+  {
+    "id": 43,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Spider",
+    "dropItems": [
+      {
+        "kind": 1,
+        "dataId": 82,
+        "denominator": 2
+      },
+      {
+        "kind": 1,
+        "dataId": 82,
+        "denominator": 3
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 80,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.99
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.08
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 2
+      }
+    ],
+    "gold": 40,
+    "name": "Spider",
+    "note": "<Sideview Battler: Spider>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
+    "params": [
+      800,
+      0,
+      24,
+      24,
+      10,
+      52,
+      5,
+      20
+    ]
+  },
+  {
+    "id": 44,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 73
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Savage Bat",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 80,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.02
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.15
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.13
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.1
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      }
+    ],
+    "gold": 40,
+    "name": "Savage Bat",
+    "note": "<Sideview Battler: SavageBat>\n<Attack Animation: 16>\n<Element Absorb: 7>\n\n<Enemy Drops>\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\n</Enemy Drops>",
+    "params": [
+      800,
+      0,
+      24,
+      24,
+      10,
+      52,
+      5,
+      20
+    ]
+  },
+  {
+    "id": 45,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Fire Spirit",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "gold": 0,
+    "name": "Fire Spirit",
+    "note": "<Sideview Battler: FireSpirit>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nFire Essence: 20%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 46,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Water Spirit",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "gold": 0,
+    "name": "Water Spirit",
+    "note": "<Sideview Battler: WaterSpirit>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 47,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Earth Spirit",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "gold": 0,
+    "name": "Earth Spirit",
+    "note": "<Sideview Battler: EarthSpirit>\n<Attack Animation: 86>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
+    ]
+  },
+  {
+    "id": 48,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Wind Spirit",
+    "dropItems": [
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "gold": 0,
+    "name": "Wind Spirit",
+    "note": "<Sideview Battler: WindSpirit>\n<Attack Animation: 92>\n<Element Absorb: 7>\n\n<Enemy Drops>\nWind Essence: 20%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
     ]
   }
 ]
