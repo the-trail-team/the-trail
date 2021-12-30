@@ -434,7 +434,7 @@
     ],
     "gold": 10,
     "name": "Giant Rat",
-    "note": "<Sideview Battler: GiantRat>\n<Steal Item 21: 100%>\n<Steal Item 22: 75%>\n<Attack Animation: 16>\n\n<Enemy Drops>\nTough Pelt: 10%\nRat Claw: 5%\nMetal Wristbraces: 2.5%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Giant Rat>\n<Steal Item 21: 100%>\n<Steal Item 22: 75%>\n<Attack Animation: 16>\n\n<Enemy Drops>\nTough Pelt: 10%\nRat Claw: 5%\nMetal Wristbraces: 2.5%\n</Enemy Drops>",
     "params": [
       100,
       12,
@@ -2735,7 +2735,7 @@
     ],
     "gold": 20,
     "name": "Suffering Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Soul Barrier I: Soul Barrier I, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n<Boost Skill 65: At Most 2>\n\n<Floating>\n<Sideview Battler: SufferingSoul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 2%\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Soul Barrier I: Soul Barrier I, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: At Most 2>\n<Boost Skill 65: At Most 2>\n\n<Floating>\n<Sideview Battler: NoMatchingSprite/Suffering Soul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 2%\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       500,
       999,
@@ -3224,7 +3224,7 @@
     ],
     "gold": 500,
     "name": "Albino Rat",
-    "note": "<Sideview Battler: AlbinoRat>\n<Attack Animation: 16>\n\n<Enemy Drops>\nTough Pelt: 100%\nRat Claw: 100%\nMetal Wristbraces: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Albino Rat>\n<Attack Animation: 16>\n\n<Enemy Drops>\nTough Pelt: 100%\nRat Claw: 100%\nMetal Wristbraces: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\nRation (Rat Jerky): 100%\n</Enemy Drops>",
     "params": [
       2500,
       50,
@@ -3336,7 +3336,7 @@
     ],
     "gold": 1000,
     "name": "Strange Goblin",
-    "note": "<Sideview Battler: StrangeGoblin>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather Charm: 100%\nGoblin Fang: 100%\nHorn: 2%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Strange Goblin>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather Charm: 100%\nGoblin Fang: 100%\nHorn: 2%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\n</Enemy Drops>",
     "params": [
       4000,
       50,
@@ -3634,7 +3634,7 @@
     ],
     "gold": 200,
     "name": "Will o' Wisp",
-    "note": "<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: FireSpirit>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 2%\n</Enemy Drops>",
+    "note": "<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: NoMatchingSprite/Fire Spirit>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 2%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -4019,7 +4019,7 @@
     ],
     "gold": 2500,
     "name": "Laeryidyean EX",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Sideview Battler: Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nMusic Box: 2%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<AI Level: 100>\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nMusic Box: 2%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       20000,
       9999,
@@ -4200,7 +4200,7 @@
     ],
     "gold": 40,
     "name": "Darkhound",
-    "note": "<Sideview Battler: Darkhound>\n<Attack Animation: 133>\n<Sideview No Collapse>\n\n<Enemy Drops>\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Sideview Battler: NoMatchingSprite/Darkhound>\n<Attack Animation: 133>\n<Sideview No Collapse>\n\n<Enemy Drops>\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       800,
       0,
@@ -4287,7 +4287,7 @@
     ],
     "gold": 40,
     "name": "Sahuagin",
-    "note": "<Sideview Battler: Sahuagin>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Sahuagin>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -4374,7 +4374,7 @@
     ],
     "gold": 40,
     "name": "Flytrap",
-    "note": "<Sideview Battler: Flytrap>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Flytrap>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -4461,7 +4461,7 @@
     ],
     "gold": 40,
     "name": "Spider",
-    "note": "<Sideview Battler: Spider>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Spider>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -4548,7 +4548,7 @@
     ],
     "gold": 40,
     "name": "Savage Bat",
-    "note": "<Sideview Battler: SavageBat>\n<Attack Animation: 16>\n<Element Absorb: 7>\n\n<Enemy Drops>\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Savage Bat>\n<Attack Animation: 16>\n<Element Absorb: 7>\n\n<Enemy Drops>\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -4610,7 +4610,7 @@
     ],
     "gold": 0,
     "name": "Fire Spirit",
-    "note": "<Sideview Battler: FireSpirit>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Fire Spirit>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       100,
       0,
@@ -4672,7 +4672,7 @@
     ],
     "gold": 0,
     "name": "Water Spirit",
-    "note": "<Sideview Battler: WaterSpirit>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Water Spirit>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
       100,
       0,
@@ -4734,7 +4734,7 @@
     ],
     "gold": 0,
     "name": "Earth Spirit",
-    "note": "<Sideview Battler: EarthSpirit>\n<Attack Animation: 86>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Earth Spirit>\n<Attack Animation: 86>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       100,
       0,
@@ -4796,7 +4796,7 @@
     ],
     "gold": 0,
     "name": "Wind Spirit",
-    "note": "<Sideview Battler: WindSpirit>\n<Attack Animation: 92>\n<Element Absorb: 7>\n\n<Enemy Drops>\nWind Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Wind Spirit>\n<Attack Animation: 92>\n<Element Absorb: 7>\n\n<Enemy Drops>\nWind Essence: 20%\n</Enemy Drops>",
     "params": [
       100,
       0,
