@@ -3820,7 +3820,7 @@ Game_Battler.prototype.performResultEffects = function() {
         this.performMagicEvasion();
       }
     }
-    if (result.hpAffected) {
+    if (result.hpAffected && !result.critical) {
       if (result.hpDamage > 0 && !result.drain) {
         this.performDamage();
       }
@@ -5439,8 +5439,8 @@ Yanfly.BEC.Window_BattleLog_displayActionResults =
 Window_BattleLog.prototype.displayActionResults = function(subject, target) {
     if (Yanfly.Param.BECOptSpeed) {
       if (target.result().used) {
-          this.displayCritical(target);
           this.displayDamage(target);
+          this.displayCritical(target);
           this.displayAffectedStatus(target);
           this.displayFailure(target);
       }
