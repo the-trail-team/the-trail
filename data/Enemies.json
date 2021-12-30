@@ -4030,5 +4030,102 @@
       60,
       70
     ]
+  },
+  {
+    "id": 39,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Phoenix",
+    "dropItems": [
+      {
+        "kind": 1,
+        "dataId": 139,
+        "denominator": 1
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 5000,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.12
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      },
+      {
+        "code": 31,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 7,
+        "value": 1
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.5
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
+      }
+    ],
+    "gold": 2500,
+    "name": "Phoenix",
+    "note": "<Attack Animation: 107>\n<HP Gauge Width: 288>\n\n<Enemy Drops>\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\n</Enemy Drops>",
+    "params": [
+      25000,
+      0,
+      35,
+      40,
+      80,
+      80,
+      150,
+      65
+    ]
   }
 ]
