@@ -27,7 +27,7 @@ Additions:
    > Resurgence: Magic skill learned at level 25.
   ~ Player 4, 0 skills:
    > 
- - Added 28 new items:
+ - Added 30 new items:
   ~ 2 recovery item:
    > Water Jug
    > Tomato
@@ -51,7 +51,9 @@ Additions:
    > MRG Scroll
    > EXR Scroll
    > MCR Scroll
-  ~ 5 miscellaneous:
+  ~ 7 miscellaneous:
+   > Thick-Skinned Herb
+   > Turtle Scute
    > Golden Tablet Piece (Left)
    > Golden Tablet Piece (Right)
    > Golden Tablet
@@ -123,7 +125,7 @@ Additions:
   ~ Spider
   ~ Horrorshroom
   ~ Baby Ent
-  ~ Brawltable
+  ~ Beet Boxer
   ~ Baby Turtle
   ~ Giant Turtle
   ~ Savage Bat
@@ -140,9 +142,7 @@ Changes:
  - Skill families will now be condensed into a single dropdown. Old save patching must be enabled when updating for this to work properly.
  - Uncrafted items now show their mask name if in an ingredient list.
  - A crafting ingredient's color now changes depending on if the player has enough of it.
- - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
- - Enemies no longer display their names under themselves.
- - Replaced The Warden's Darkfire with Engulfing Darkness.
+ - Unknown enemy weaknesses now show a question mark icon.
  - Changed the respawn time of Copper Oreleaf from 36 minutes to 30 minutes.
  - Moved Change of Heart to the Magic skill category.
  - Presents now have a 50% drop chance on December 25th rather than the default 20%.
@@ -150,13 +150,15 @@ Changes:
 Balancing:
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
  - Increased price of Metal Wristbraces ★ from 180B to 300B
+ - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
+ - Replaced The Warden's Darkfire with Engulfing Darkness.
 
 Bug Fixes:
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
- - Just like I usually do, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release.
+ - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release.
 
 OUTRO
 
