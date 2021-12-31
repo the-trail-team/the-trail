@@ -10032,5 +10032,43 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 65,
+    "members": [
+      {
+        "enemyId": 55,
+        "x": 369,
+        "y": 328,
+        "hidden": false
+      }
+    ],
+    "name": "Ice Golem",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

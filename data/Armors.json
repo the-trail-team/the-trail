@@ -3579,5 +3579,74 @@
       0
     ],
     "price": 100
+  },
+  {
+    "id": 140,
+    "atypeId": 1,
+    "description": "A long fuzzy scarf you can wrap around your neck\nto keep warm. Provides immunity to \\it[8]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 8,
+        "value": 1
+      }
+    ],
+    "iconIndex": 448,
+    "name": "Warm Scarf",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 141,
+    "atypeId": 6,
+    "description": "A unique shield that lightly simulates the\nelemental strengths and weaknesses of ice.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 1.1
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.9
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.9
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 509,
+    "name": "Glacial Bulwark",
+    "note": "<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 400
   }
 ]

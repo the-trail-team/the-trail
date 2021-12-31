@@ -2857,5 +2857,120 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 89,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "iconIndex": 105,
+    "maxTurns": 3,
+    "message1": " was frozen!",
+    "message2": " was frozen!",
+    "message3": " is still frozen.",
+    "message4": " thawed out!",
+    "minTurns": 3,
+    "motion": 1,
+    "overlay": 0,
+    "name": "Frozen II",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n<Category: Ice>\n\n<Sprite Cannot Move>\n\n<Help Description>\nCannot do anything. Reduces DEF and MDF by 25%. [MODERATE DEBUFF]\n</Help Description>",
+    "priority": 45,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 4,
+    "stepsToRemove": 100,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.75
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 0.75
+      }
+    ]
+  },
+  {
+    "id": 90,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.25
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 1.25
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 105,
+    "maxTurns": 5,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "'s icy barrier dissipated.",
+    "minTurns": 5,
+    "motion": 0,
+    "name": "Icy Barrier",
+    "note": "<Category: buff>\n<Category: Ice>\n\n<Help Description>\nBoosts DEF and MDF by 25%. Halves incoming \\i[96]fire damage.\n</Help Description>",
+    "overlay": 0,
+    "priority": 50,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

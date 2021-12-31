@@ -5525,6 +5525,13 @@
         "conditionType": 0,
         "rating": 5,
         "skillId": 1
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 109
       }
     ],
     "battlerHue": 0,
@@ -5546,22 +5553,27 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 350,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 0.98
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.03
       },
       {
-        "code": 31,
-        "dataId": 1,
-        "value": 0
+        "code": 22,
+        "dataId": 2,
+        "value": 0.06
+      },
+      {
+        "code": 32,
+        "dataId": 8,
+        "value": 0.5
       },
       {
         "code": 11,
@@ -5577,20 +5589,30 @@
         "code": 11,
         "dataId": 6,
         "value": 0.5
+      },
+      {
+        "code": 14,
+        "dataId": 8,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 89,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 250,
     "name": "Ice Golem",
-    "note": "<Attack Animation: 4>\n<Element Absorb: 3>",
+    "note": "<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 1%\nGlacial Bulwark: 5%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
-      100,
+      7500,
       0,
+      20,
+      35,
       10,
-      10,
-      10,
-      10,
-      10,
-      10
+      70,
+      20,
+      35
     ]
   },
   {
