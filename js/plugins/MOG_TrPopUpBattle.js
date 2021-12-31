@@ -227,7 +227,6 @@ SpriteEnemyTrP.prototype.gainDropItems = function() {
         $gameParty.gainItem(item, 1);
 		$droppeditems.push(item) // Edit: Added to show exact number of drops.
     });
-	console.log("From MOG: " + $droppeditems.length) // Edit: Added to show battle total in console.
 };
 
 //==============================
