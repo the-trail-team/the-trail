@@ -147,6 +147,8 @@ Balancing:
  - Increased price of Metal Wristbraces ★ from 180B to 300B
 
 Bug Fixes:
+ - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
+ - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
  - Just like I usually do, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release.

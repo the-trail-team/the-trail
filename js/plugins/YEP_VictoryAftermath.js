@@ -799,6 +799,7 @@ Window_VictoryDrop.prototype.makeItemList = function() {
 };
 
 Window_VictoryDrop.prototype.extractDrops = function() {
+    BattleManager._rewards.items = $droppeditems // Edit: Added to force match to MOG drops.
     BattleManager._rewards.items.forEach(function(item) {
       if (!item) return;
       if (DataManager.isItem(item)) this._dropItems.push(item.id);
@@ -820,6 +821,7 @@ Window_VictoryDrop.prototype.extractDrops = function() {
       var item = $dataArmors[id];
       if (item && !this._data.contains(item)) this._data.push(item);
     }, this);
+    $droppeditems = [] // Edit: Added to reset after battle rewards shown.
 };
 
 Window_VictoryDrop.prototype.drawItem = function(index) {
