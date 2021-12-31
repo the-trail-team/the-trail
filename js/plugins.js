@@ -205,6 +205,7 @@ var $plugins =
 {"name":"GALV_StationaryTurn","status":true,"description":"(v.1.3) Change movement so the player turns on the spot if direction is tapped.","parameters":{"Delay":"5"}},
 {"name":"GALV_BasicEventShadows","status":true,"description":"(v.1.2) Display shadows under the player or events on the map.","parameters":{"Shadow Image":"Shadow1","Shadow Offset":"5"}},
 {"name":"GALV_MenuFade","status":true,"description":"Adds a fade in and fade out to the main menu only.","parameters":{"Fade Speed":"10","Dont Fade Scenes":"Scene_Title,Scene_Load,Scene_Name"}},
+{"name":"Galv_RandEncounterConditions","status":true,"description":"(v.1.2) Have random encounter troops only appear in certain conditions","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"CP_Large_Sprite_Fix","status":true,"description":"Fixes an issue with large sprites appearing under ☆ passability tiles.","parameters":{"Terrain ID":"7","Large Followers":"Yes","Large Vehicles":"Yes"}},

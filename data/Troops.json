@@ -9566,9 +9566,44 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 108,
+            "indent": 0,
+            "parameters": [
+              "<encScript:$gameSwitches.value(69) &&"
+            ]
+          },
+          {
+            "code": 408,
+            "indent": 0,
+            "parameters": [
+              "$gameSwitches.value(82) &&"
+            ]
+          },
+          {
+            "code": 408,
+            "indent": 0,
+            "parameters": [
+              "$gamePlayer.regionId() !== 161 &&"
+            ]
+          },
+          {
+            "code": 408,
+            "indent": 0,
+            "parameters": [
+              "$gamePlayer.regionId() !== 268 &&"
+            ]
+          },
+          {
+            "code": 408,
+            "indent": 0,
+            "parameters": [
+              "$gamePlayer.regionId() !== 101>"
+            ]
+          },
           {
             "code": 0,
             "indent": 0,
