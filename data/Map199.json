@@ -2635,6 +2635,13 @@
               ]
             },
             {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "My son can sell you some items."
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -3498,6 +3505,304 @@
       ],
       "x": 5,
       "y": 14
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People4",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People4",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilHi thewe! Do you want to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "buy any of ouwe items?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Sure, little guy.",
+                  "Nah, no hard feelings."
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Sure, little guy."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People4",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\vilYay! Hewe they awe..."
+              ]
+            },
+            {
+              "code": 302,
+              "indent": 1,
+              "parameters": [
+                2,
+                49,
+                0,
+                0,
+                false
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                67,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                64,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                69,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                35,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                36,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                48,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                49,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 1,
+              "parameters": [
+                0,
+                54,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People4",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\vilThank yewe for shopping!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Nah, no hard feelings."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People4",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\vilAww..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People4",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilSee you latewe!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 8
     }
   ]
 }
