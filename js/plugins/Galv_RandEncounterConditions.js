@@ -69,7 +69,6 @@ Galv.noteFunctions = Galv.noteFunctions || [];       // Add note function to thi
 (function() {
 
 Galv.RECOND.hasCondition = function(troopId) {
-	console.log($dataTroops[troopId].encCond);
 	return $dataTroops[troopId].encCond;
 };
 
