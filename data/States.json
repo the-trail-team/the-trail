@@ -246,6 +246,16 @@
         "code": 14,
         "dataId": 8,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 89,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 90,
+        "value": 1
       }
     ],
     "iconIndex": 104,
@@ -1758,6 +1768,11 @@
         "code": 14,
         "dataId": 33,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 88,
+        "value": 1
       }
     ],
     "iconIndex": 106,
@@ -2837,6 +2852,11 @@
         "code": 22,
         "dataId": 2,
         "value": -0.06
+      },
+      {
+        "code": 14,
+        "dataId": 7,
+        "value": 1
       }
     ],
     "iconIndex": 109,
@@ -2848,7 +2868,7 @@
     "minTurns": 4,
     "motion": 0,
     "name": "Eye of the Storm",
-    "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<Help Description>\nReduces HIT by 15% and CRI by 6%. ATK + MAT are debuffed by one level at the end of every turn. [MODERATE DEBUFF]\n</Help Description>\n\n<Custom Turn End Effect>\nuser.addDebuff(2, 3);\nuser.addDebuff(4, 3);\nuser.startAnimation(54);\n</Custom Turn End Effect>",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n<Category: Wind>\n\n<Help Description>\nReduces HIT by 15% and CRI by 6%. ATK + MAT are debuffed by one level at the end of every turn. [MODERATE DEBUFF]\n</Help Description>\n\n<Custom Turn End Effect>\nuser.addDebuff(2, 3);\nuser.addDebuff(4, 3);\nuser.startAnimation(54);\n</Custom Turn End Effect>",
     "overlay": 2,
     "priority": 60,
     "removeAtBattleEnd": true,
@@ -2952,6 +2972,11 @@
         "code": 11,
         "dataId": 6,
         "value": 0.5
+      },
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
       }
     ],
     "iconIndex": 105,
