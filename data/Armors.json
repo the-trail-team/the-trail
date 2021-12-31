@@ -3648,5 +3648,74 @@
       0
     ],
     "price": 400
+  },
+  {
+    "id": 142,
+    "atypeId": 1,
+    "description": "A warm jacket you can drape over your\narmor. Reduces incoming ice damage.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 452,
+    "name": "Snow Jacket",
+    "note": "<Upgrade Slots: 1>\n<Synthesis Ingredients>\nBandito Leathers\nWorn Cloth: 20\nFire Essence: 2\nIce Essence: 2\n</Synthesis Ingredients>\n<Mask Name: Over-Armor Ice Protection>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 250
+  },
+  {
+    "id": 143,
+    "atypeId": 1,
+    "description": "A nifty magical accessory that combines the\n\\ia[141] and \\ia[142].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 1.1
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.81
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.9
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 353,
+    "name": "Snow Globe",
+    "note": "<Upgrade Slots: 2>\n<Synthesis Ingredients>\nSnow Jacket\nGlacial Bulwark\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 700
   }
 ]
