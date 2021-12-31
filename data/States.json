@@ -2822,5 +2822,40 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 88,
+    "autoRemovalTiming": 1,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": -0.15
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": -0.06
+      }
+    ],
+    "iconIndex": 109,
+    "maxTurns": 8,
+    "message1": " got caught in the eye of the storm!",
+    "message2": " got caught in the eye of the storm!",
+    "message3": " is stuck in the eye of the storm!",
+    "message4": "'s storm dissipated.",
+    "minTurns": 4,
+    "motion": 0,
+    "name": "Eye of the Storm",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<Help Description>\nReduces HIT by 15% and CRI by 6%. ATK + MAT are debuffed by one level at the end of every turn. [MODERATE DEBUFF]\n</Help Description>\n\n<Custom Turn End Effect>\nuser.addDebuff(2, 3);\nuser.addDebuff(4, 3);\nuser.startAnimation(54);\n</Custom Turn End Effect>",
+    "overlay": 2,
+    "priority": 60,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
