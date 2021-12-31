@@ -134,7 +134,6 @@ Galv.RECOND.notetags = function() {
 				cond = list[j].parameters[0].match(/<encScript:(.*)>/i);
 				if (cond) {
 					$dataTroops[i].encCond = $dataTroops[i].encCond || {};
-					console.log(cond[1]);
 					$dataTroops[i].encCond.script = {evalTxt: cond[1]};
 				};
 			};
