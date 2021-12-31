@@ -17,6 +17,7 @@ Additions:
   ~ Player 1, 1 skill:
    > [P] Steadfast: Passive skill learned at level 24.
   ~ Player 2, 2 skills:
+   > Dispell: Magic skill learnable at level 15 via the skill learn menu.
    > Blood Boost: Magic skill learned at level 22.
    > Magical Breeze: Magic skill learned at level 23.
   ~ Player 3, 4 skills:
@@ -136,6 +137,7 @@ Additions:
 
 Changes:
  - Recapped the max level from level 20 to level 25.
+ - Skill families will now be condensed into a single dropdown. Old save patching must be enabled when updating for this to work properly.
  - Uncrafted items now show their mask name if in an ingredient list.
  - A crafting ingredient's color now changes depending on if the player has enough of it.
  - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.

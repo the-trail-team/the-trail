@@ -732,7 +732,7 @@ Yanfly.Skill.Game_BattlerBase_mSC =
 Game_BattlerBase.prototype.meetsSkillConditions = function(skill) {
     if (!Yanfly.Skill.Game_BattlerBase_mSC.call(this, skill)) return false;
     if (!skill) return false;
-    if (!this.noHiddenSkillConditionsMet(skill)) return false;
+    // if (!this.noHiddenSkillConditionsMet(skill)) return false;
     return this.meetsSkillConditionsEval(skill);
 };
 
