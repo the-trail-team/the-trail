@@ -4600,21 +4600,26 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 500,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.07
       },
       {
         "code": 31,
-        "dataId": 1,
+        "dataId": 2,
         "value": 0
       },
       {
@@ -4653,18 +4658,18 @@
         "value": 0.5
       }
     ],
-    "gold": 0,
+    "gold": 250,
     "name": "Fire Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Fire Spirit>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Fire Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
-      100,
+      6000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      20,
+      25,
+      80,
+      60,
+      75,
+      50
     ]
   },
   {
@@ -4682,9 +4687,9 @@
     "battlerName": "Water Spirit",
     "dropItems": [
       {
-        "dataId": 1,
-        "denominator": 1,
-        "kind": 0
+        "kind": 1,
+        "dataId": 44,
+        "denominator": 1
       },
       {
         "dataId": 1,
@@ -4697,21 +4702,26 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 500,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.07
       },
       {
         "code": 31,
-        "dataId": 1,
+        "dataId": 5,
         "value": 0
       },
       {
@@ -4748,20 +4758,25 @@
         "code": 23,
         "dataId": 6,
         "value": 0.5
+      },
+      {
+        "code": 23,
+        "dataId": 2,
+        "value": 2
       }
     ],
-    "gold": 0,
+    "gold": 250,
     "name": "Water Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Water Spirit>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Water Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
-      100,
+      6000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      15,
+      20,
+      60,
+      50,
+      150,
+      50
     ]
   },
   {
@@ -4794,21 +4809,26 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 500,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.07
       },
       {
         "code": 31,
-        "dataId": 1,
+        "dataId": 6,
         "value": 0
       },
       {
@@ -4852,18 +4872,18 @@
         "value": 0.5
       }
     ],
-    "gold": 0,
+    "gold": 250,
     "name": "Earth Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Earth Spirit>\n<Attack Animation: 86>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Earth Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
-      100,
+      6000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      15,
+      35,
+      60,
+      84,
+      75,
+      50
     ]
   },
   {
@@ -4896,21 +4916,31 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 500,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.15
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.15
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.1
       },
       {
         "code": 31,
-        "dataId": 1,
+        "dataId": 7,
         "value": 0
       },
       {
@@ -4944,18 +4974,18 @@
         "value": 0.5
       }
     ],
-    "gold": 0,
+    "gold": 250,
     "name": "Wind Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Wind Spirit>\n<Attack Animation: 92>\n<Element Absorb: 7>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Wind Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 92>\n<Element Absorb: 7>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
-      100,
+      6000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      15,
+      25,
+      60,
+      60,
+      75,
+      50
     ]
   },
   {
