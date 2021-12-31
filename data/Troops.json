@@ -9722,5 +9722,111 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 59,
+    "members": [
+      {
+        "enemyId": 53,
+        "x": 220,
+        "y": 343,
+        "hidden": false
+      },
+      {
+        "enemyId": 53,
+        "x": 360,
+        "y": 334,
+        "hidden": false
+      },
+      {
+        "enemyId": 53,
+        "x": 323,
+        "y": 214,
+        "hidden": false
+      }
+    ],
+    "name": "Baby Turtle x3",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 60,
+    "members": [
+      {
+        "enemyId": 54,
+        "x": 366,
+        "y": 304,
+        "hidden": false
+      },
+      {
+        "enemyId": 53,
+        "x": 186,
+        "y": 406,
+        "hidden": false
+      },
+      {
+        "enemyId": 53,
+        "x": 513,
+        "y": 160,
+        "hidden": false
+      },
+      {
+        "enemyId": 53,
+        "x": 270,
+        "y": 148,
+        "hidden": false
+      }
+    ],
+    "name": "Giant Turtle, Baby Turtle x3",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

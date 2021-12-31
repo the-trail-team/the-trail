@@ -5236,32 +5236,37 @@
     "battlerName": "Baby Turtle",
     "dropItems": [
       {
-        "dataId": 1,
-        "denominator": 1,
-        "kind": 0
+        "kind": 1,
+        "dataId": 188,
+        "denominator": 1
       },
       {
-        "dataId": 1,
-        "denominator": 1,
-        "kind": 0
+        "kind": 1,
+        "dataId": 188,
+        "denominator": 2
       },
       {
-        "dataId": 1,
-        "denominator": 1,
-        "kind": 0
+        "kind": 1,
+        "dataId": 189,
+        "denominator": 1
       }
     ],
-    "exp": 0,
+    "exp": 120,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 0.99
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.07
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.06
       },
       {
         "code": 31,
@@ -5294,38 +5299,59 @@
         "value": 2
       }
     ],
-    "gold": 0,
+    "gold": 80,
     "name": "Baby Turtle",
     "note": "<Attack Animation: 1>\n<Element Absorb: 6>",
     "params": [
-      100,
+      1500,
       0,
+      25,
+      40,
       10,
+      80,
       10,
-      10,
-      10,
-      10,
-      10
+      46
     ]
   },
   {
     "id": 54,
     "actions": [
       {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
+        "conditionParam1": 0.11,
+        "conditionParam2": 1,
+        "conditionType": 2,
         "rating": 5,
-        "skillId": 1
+        "skillId": 2
+      },
+      {
+        "conditionParam1": 0.51,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 3,
+        "skillId": 41
+      },
+      {
+        "conditionParam1": 0.26,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 41
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.25,
+        "conditionType": 2,
+        "rating": 6,
+        "skillId": 41
       }
     ],
     "battlerHue": 0,
     "battlerName": "Giant Turtle",
     "dropItems": [
       {
-        "dataId": 1,
-        "denominator": 1,
-        "kind": 0
+        "kind": 3,
+        "dataId": 107,
+        "denominator": 5
       },
       {
         "dataId": 1,
@@ -5338,17 +5364,22 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 300,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 0.97
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": -0.2
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
       },
       {
         "code": 31,
@@ -5381,18 +5412,18 @@
         "value": 2
       }
     ],
-    "gold": 0,
+    "gold": 200,
     "name": "Giant Turtle",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>",
+    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\n</Enemy Drops>",
     "params": [
-      100,
+      4000,
       0,
+      20,
+      55,
       10,
-      10,
-      10,
-      10,
-      10,
-      10
+      110,
+      1,
+      50
     ]
   },
   {
