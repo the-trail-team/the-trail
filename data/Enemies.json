@@ -4906,7 +4906,7 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 1
+        "skillId": 93
       }
     ],
     "battlerHue": 0,
@@ -4928,17 +4928,17 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 300,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.1
       },
       {
         "code": 31,
@@ -4946,18 +4946,18 @@
         "value": 0
       }
     ],
-    "gold": 0,
+    "gold": 500,
     "name": "Mimic",
     "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n\n<Enemy Drops>\nCool Dust: 0%\nRecovery Vat: 0%\nPhoenix Feather Replica: 0%\nEXR Scroll: 0%\nMagic Coin: 0%\nBunny Hood: 0%\n</Enemy Drops>\n\n<Conditional Cool Dust Drop>\nEval Date.now() % 6 === 0: +100%\n</Conditional Cool Dust Drop>\n<Conditional Recovery Vat Drop>\nEval Date.now() % 6 === 1: +100%\n</Conditional Recovery Vat Drop>\n<Conditional Phoenix Feather Replica Drop>\nEval Date.now() % 6 === 2: +100%\n</Conditional Phoenix Feather Replica Drop>\n<Conditional EXR Scroll Drop>\nEval Date.now() % 6 === 3: +100%\n</Conditional EXR Scroll Drop>\n<Conditional Magic Coin Drop>\nEval Date.now() % 6 === 4: +100%\n</Conditional Magic Coin Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 6 === 5: +100%\n</Conditional Bunny Hood Drop>",
     "params": [
-      100,
+      2500,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      30,
+      45,
+      80,
+      90,
+      50,
+      50
     ]
   },
   {
