@@ -5573,7 +5573,7 @@
       {
         "code": 32,
         "dataId": 8,
-        "value": 0.5
+        "value": 0.75
       },
       {
         "code": 11,
@@ -5599,18 +5599,33 @@
         "code": 14,
         "dataId": 89,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
       }
     ],
     "gold": 250,
     "name": "Ice Golem",
-    "note": "<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 1%\nGlacial Bulwark: 5%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Attack Animation: 4>\n<Element Absorb: 3>\n\n<AI Priority>\nState !== Icy Barrier +++ Random 50%: Ice Barrier\n</AI Priority>\n\n<Enemy Drops>\nWarm Scarf: 1%\nGlacial Bulwark: 5%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       7500,
       0,
-      20,
-      35,
-      10,
-      70,
+      26,
+      45,
+      60,
+      90,
       20,
       35
     ]

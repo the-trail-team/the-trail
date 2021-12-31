@@ -3775,7 +3775,7 @@
     "damage": {
       "critical": true,
       "elementId": 3,
-      "formula": "a.atk * 4 - b.def * 2",
+      "formula": "a.mat * 4 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
@@ -3784,11 +3784,11 @@
       {
         "code": 21,
         "dataId": 89,
-        "value1": 0.5,
+        "value1": 0.75,
         "value2": 0
       }
     ],
-    "hitType": 1,
+    "hitType": 2,
     "iconIndex": 97,
     "message1": " shoots a beam of ice!",
     "message2": "",
@@ -3801,14 +3801,14 @@
     "requiredWtypeId2": 0,
     "scope": 1,
     "speed": 0,
-    "stypeId": 1,
+    "stypeId": 2,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
   },
   {
     "id": 110,
-    "animationId": 0,
+    "animationId": 71,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -3817,14 +3817,21 @@
       "variance": 20
     },
     "description": "",
-    "effects": [],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 90,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 13,
+    "iconIndex": 97,
     "message1": " puts up an icy barrier!",
     "message2": "",
     "mpCost": 0,
     "name": "Ice Barrier",
-    "note": "",
+    "note": "<Remove State Category: Fire>\n<Remove State Category: Water>\n<Remove State Category: Earth>\n\n<setup action>\ndisplay action\nperform start\nmotion guard: user\nwait: 30\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
