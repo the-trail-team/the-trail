@@ -3731,5 +3731,42 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 108,
+    "animationId": -1,
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 4 - b.def * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 116,
+    "message1": " uses %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Power-Up Punch",
+    "note": "<Boost Damage>\n\n<target action>\nperform start\nmove user: target, front base, 20\nwait for movement\nmotion attack: user\naction animation\nwait for animation\naction effect\nwait for effect\neval: user.addBuff(2, 3);\neval: user.startAnimation(51);\nwait for animation\nperform finish\n</target action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

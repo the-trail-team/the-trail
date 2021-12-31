@@ -9666,5 +9666,61 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 58,
+    "members": [
+      {
+        "enemyId": 52,
+        "x": 185,
+        "y": 304,
+        "hidden": false
+      },
+      {
+        "enemyId": 52,
+        "x": 285,
+        "y": 142,
+        "hidden": false
+      },
+      {
+        "enemyId": 52,
+        "x": 340,
+        "y": 337,
+        "hidden": false
+      },
+      {
+        "enemyId": 52,
+        "x": 413,
+        "y": 190,
+        "hidden": false
+      }
+    ],
+    "name": "Beet Boxer x4",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
