@@ -52,7 +52,8 @@ const tips = [
 	"Each level of skill mastery boosts damage/healing by 2% and reduces MP cost by 2%.",
 	"Don't forget about the skill learn menu! Not every skill you can get will be learned just by leveling up.",
 	"The shop menu's stat comparison for accessories will compare the accessory you are buying to whatever is equipped in the first accessory slot.",
-	"Even a 100% hit rate doesn't guarantee every attack to land. Accuracy is just hit rate minus evasion, after all."
+	"Even a 100% hit rate doesn't guarantee every attack to land. Accuracy is just hit rate minus evasion, after all.",
+	"All the delete button does it append .bak to your save file. If you accidentally delete a save, it should still be in your save folder."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
