@@ -173,6 +173,8 @@ var $plugins =
 {"name":"SRD_ActorSelect","status":true,"description":"Allows you to call a screen to select an Actor","parameters":{"Num of Visible Rows":"4","X Position":"0","Y Position":"0","Window Width":"Graphics.boxWidth","Window Height":"Graphics.boxHeight","Draw Face?":"true","Draw Name?":"true","Draw Icons?":"true","Draw Level?":"true","Draw Class?":"true","Draw HP?":"true","Draw MP?":"true"}},
 {"name":"SRD_ShakingText","status":true,"description":"Allows you to add Shaking Text to your Show Text events!","parameters":{"Reset Shaking per Box":"true","Default Shaking Power":"$.randomNum(0.2, 0.5)","Default Shaking Max":"0.1","Default Wave Power":"0.5","Default Wave Max":"4","Default Slide Power":"0.5","Default Slide Max":"4","Copy Outline":"true"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
+{"name":"SRD_SVOverlaysUpgrade","status":true,"description":"Allows you to add more SV Overlays to your game along\r\nwith other options including position and speed.","parameters":{"Default Frame Wait":"8","Default X Anchor":"0.5","Default Y Anchor":"1"}},
+{"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"KhasCore","status":true,"description":"[2.0] Required by Khas plugins.","parameters":{}},
 {"name":"KhasGraphics","status":true,"description":"[1.1] Required by Khas graphics plugins.","parameters":{}},
