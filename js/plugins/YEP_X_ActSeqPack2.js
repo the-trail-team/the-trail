@@ -856,7 +856,7 @@ BattleManager.actionMotionTarget = function(name, actionArgs) {
       return false;
     }
     movers.forEach(function(mover) {
-      mover.forceMotion(motion);
+      if (mover.spriteCanMove()) mover.forceMotion(motion);
     });
     return false;
 };
