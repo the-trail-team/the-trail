@@ -522,6 +522,7 @@ Scene_Title.prototype.commandContinue = function() {
 Scene_Title.prototype.commandOptions = function() {
     this._commandWindow.close();
     this.startFadeOut(this.fadeSpeed(), false);
+    $gameTemp._keyboardConfig = false;
     SceneManager.push(Scene_Options);
 };
 

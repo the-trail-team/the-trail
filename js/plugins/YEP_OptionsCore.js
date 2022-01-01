@@ -882,7 +882,7 @@ Scene_Options.prototype.create = function() {
   this.createHelpWindow();
   this.createOptionsWindow();
   this.createCategoryWindow();
-  if ($gameTemp._inGame !== true) this.startFadeIn(this.fadeSpeed(), false);
+  if (!$gameTemp._inGame && !$gameTemp._keyboardConfig) this.startFadeIn(this.fadeSpeed(), false);
 };
 
 Yanfly.Options.Scene_Options_createOptionsWindow =
