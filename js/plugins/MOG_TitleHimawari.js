@@ -111,7 +111,7 @@ Scene_Title.prototype.loadImages = function() {
 	this._back_img = [ImageManager.loadTitle1("Background_1"),
 	                   ImageManager.loadTitle1("Background_2"),
 					  ];
-	this._flower_img = ImageManager.loadTitle1("Flower");
+	// this._flower_img = ImageManager.loadTitle1("Flower");
 	this._char_img = [];
 	for (var i = 1; i < this._char_number ; i++) {
 	     this._char_img.push(ImageManager.loadTitle1("Char_" + i));
@@ -134,7 +134,7 @@ Scene_Title.prototype.createBackground = function() {
 //==============================
 Scene_Title.prototype.createHimariSprites = function() {
 	this.createHbackground();
-	this.createFlowers();
+	// this.createFlowers();
 	this.createCharacters();
 };
 
@@ -188,7 +188,7 @@ Scene_Title.prototype.rotationSpeed = function() {
 //==============================
 // * Create Flowers
 //==============================
-Scene_Title.prototype.createFlowers = function() {
+/*Scene_Title.prototype.createFlowers = function() {
 	this._flowers = [];
 	for (var i = 0; i < 6 ; i++) {
 		 this._flowers[i] = new Sprite(this._flower_img);
@@ -197,7 +197,7 @@ Scene_Title.prototype.createFlowers = function() {
 		 this._flowers[i].y = Graphics.boxHeight / 2;
 		 this._duration[0][i] = this.sp_d() * i;
 	};
-};
+};*/
 
 //==============================
 // * Create Characters
@@ -314,8 +314,8 @@ Scene_Title.prototype.setInitialEffect = function(sprite,index,type) {
 	sprite.opacity = 0;
 	sprite.y = Graphics.boxHeight / 2 + sprite.bitmap.height * 18 / 100;
 	if (type === 0) {
-       sprite.x += Moghunter.himawari_flower_x;
-	   sprite.y += Moghunter.himawari_flower_y; 
+       // sprite.x += Moghunter.himawari_flower_x;
+	   // sprite.y += Moghunter.himawari_flower_y; 
 	} else {
        sprite.x += Moghunter.himawari_char_x;
 	   sprite.y += Moghunter.himawari_char_y; 
@@ -355,7 +355,7 @@ Scene_Title.prototype.update_himawari = function() {
 	if (this._firstRefresh && this._char_img[0].isReady()) {this.firstRefresh()};
 	if (this._firstRefresh) {return};
 	for (var i = 0; i < 6 ; i++) {
-		this.updateSprites(this._flowers[i],i,0);
+		// this.updateSprites(this._flowers[i],i,0);
 		this.updateSprites(this._chars[i],i,1); 
 	};
 	this.update_background_effects();
