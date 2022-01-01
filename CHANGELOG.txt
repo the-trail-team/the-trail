@@ -11,6 +11,7 @@ Additions:
  - Added Telluria Castle Town, the newest and greatest town in The Trail. It lies just outside the north exit of the Blazing Sands, right next to the Gulf of Telluria.
  - Added a new floor to the Abandoned North Mine.
  - Added lots of new crafting recipes for items both old and new.
+ - Added many new custom state overlays.
  - Added roaming Giant Rats in the Dark Forest.
  - Added 4 new dungeons!
  - Added 7 new skills:
@@ -143,9 +144,11 @@ Additions:
   ~ [REDACTED DRAGON]
 
 Changes:
+ - Un-snowed Solus Town.
  - Recapped the max level from level 20 to level 25.
  - Skill families will now be condensed into a single dropdown. Old save patching must be enabled when updating for this to work properly.
- - Changed up the preloader / title screen background.
+ - Changed up the preloader / title screen background.\
+ - Reverted most dungeons back to the old dungeon map border style (same as the indoors style).
  - Many shops have had their stock changed. Some enemy drop pools have also been adjusted.
  - Uncrafted items now show their mask name if in an ingredient list.
  - A crafting ingredient's color now changes depending on if the player has enough of it.
@@ -156,6 +159,7 @@ Changes:
 
 Balancing:
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
+ - Nerfed the Steel Axe's stun chance by 5% (was originally 10%).
  - Increased price of Metal Wristbraces ★ from 180B to 300B
  - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
  - Replaced The Warden's Darkfire with Engulfing Darkness.
@@ -165,6 +169,7 @@ Bug Fixes:
  - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
+ - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
  - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release.
 
 OUTRO
