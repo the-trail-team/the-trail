@@ -188,7 +188,7 @@
       }
     ],
     "name": "Knight",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 21, 51, 85>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 21, 51, 85>\n\n<AI Priority>\nState !== Hold the Line I: Hold the Line I\nState !== Inspire: Inspire\nRandom 50%: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>",
     "params": [
       [
         1,
@@ -5191,7 +5191,7 @@
     ],
     "learnings": [],
     "name": "Soldier",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Stat Allocation>\n</Stat Allocation>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Stat Allocation>\n</Stat Allocation>\n\n<AI Priority>\nAlways: Attack, Lowest HP\n</AI Priority>",
     "params": [
       [
         1,

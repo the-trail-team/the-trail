@@ -2084,7 +2084,7 @@
     ],
     "gold": 60,
     "name": "Dandy Toad Captain",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Mark, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 2%\n</Enemy Drops>",
+    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 2%\n</Enemy Drops>",
     "params": [
       900,
       60,
