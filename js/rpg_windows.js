@@ -1726,7 +1726,7 @@ Window_MenuStatus.prototype.itemHeight = function() {
 };
 
 Window_MenuStatus.prototype.numVisibleRows = function() {
-    return 4;
+    return $gameParty.members().length;
 };
 
 Window_MenuStatus.prototype.loadImages = function() {

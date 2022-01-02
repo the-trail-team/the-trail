@@ -561,7 +561,7 @@ Window_VictoryExp.prototype.windowHeight = function() {
 };
 
 Window_VictoryExp.prototype.maxItems = function() {
-    return $gameParty.maxBattleMembers();
+    return Math.max($gameParty.members().length, 4);
 };
 
 Window_VictoryExp.prototype.standardFontSize = function() {

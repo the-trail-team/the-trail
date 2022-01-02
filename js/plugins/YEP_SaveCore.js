@@ -976,7 +976,7 @@ Window_SaveInfo.prototype.drawContents = function(dy) {
 Window_SaveInfo.prototype.drawPartyGraphics = function(dy) {
   if (Yanfly.Param.SaveInfoPartyType === 0) return dy;
   dy = eval(Yanfly.Param.SaveInfoPartyY);
-  var length = this._saveContents.party.maxBattleMembers();
+  var length = this._saveContents.party._actors.length;
   var dw = this.contents.width / length;;
   dw = Math.floor(dw);
   var dx = Math.floor(dw / 2);
@@ -1034,7 +1034,7 @@ Window_SaveInfo.prototype.drawPartyNames = function(dy) {
   if (!Yanfly.Param.SaveInfoActorName) return dy;
   this.resetFontSettings();
   this.contents.fontSize = Yanfly.Param.SaveInfoActorNameSz;
-  var length = this._saveContents.party.maxBattleMembers();
+  var length = this._saveContents.party._actors.length;
   var dw = this.contents.width / length;;
   dw = Math.floor(dw);
   var dx = 0;
@@ -1053,7 +1053,7 @@ Window_SaveInfo.prototype.drawPartyNames = function(dy) {
 Window_SaveInfo.prototype.drawPartyLevels = function(dy) {
   if (!Yanfly.Param.SaveInfoActorLv) return dy;
   this._drawLevel = true;
-  var length = this._saveContents.party.maxBattleMembers();
+  var length = this._saveContents.party._actors.length;
   var dw = this.contents.width / length;;
   dw = Math.floor(dw);
   var dx = 0;
