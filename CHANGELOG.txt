@@ -170,6 +170,8 @@ Bug Fixes:
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
  - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
+ - Fixed a bug where magic skills used the wrong motion when casting.
+ - Fixed a bug where battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
  - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release.
 
 OUTRO
