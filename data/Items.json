@@ -5494,5 +5494,71 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 192,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "The strongest potion you'll find in a normal shop. Heals\nmore than enough HP for the average traveler. \\c[31]+270 HP\\c[0]",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 270
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 636,
+    "itypeId": 1,
+    "name": "Large Potion",
+    "note": "<Menu Category: Recovery>",
+    "occasion": 0,
+    "price": 125,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 193,
+    "animationId": 42,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "The fizziness is almost overwhelming. You can feel each individual\ncarbon dioxide atom enter your body. Embrace the fizz. \\c[16]+108 MP\\c[0]",
+    "effects": [
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 108
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 637,
+    "itypeId": 1,
+    "name": "Large Elixir",
+    "note": "<Menu Category: Recovery>",
+    "occasion": 0,
+    "price": 125,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
