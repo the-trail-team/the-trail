@@ -5460,7 +5460,7 @@
     "iconIndex": 236,
     "itypeId": 3,
     "name": "CASTLE FOOD RECIPES",
-    "note": "<Item Recipe: 71, 72, 70, 98, 111, 136, 117, 131>",
+    "note": "<Item Recipe: 71, 72, 70, 98, 111, 136, 117, 196, 197, 131>",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -5557,6 +5557,142 @@
     "price": 125,
     "repeats": 1,
     "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 194,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A somewhat rare root dropped by some enemies in the\nWorld Tree. Very useful for crafting medicinal items.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 207,
+    "itypeId": 1,
+    "name": "Medicinal Root",
+    "note": "<Menu Category: Materials, Drops>",
+    "occasion": 3,
+    "price": 50,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 195,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A rather common root dropped by some enemies in the\nWorld Tree. Very useful for crafting medicinal items.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 309,
+    "itypeId": 1,
+    "name": "Medicinal Herb",
+    "note": "<Menu Category: Materials, Drops>",
+    "occasion": 3,
+    "price": 20,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 196,
+    "animationId": 217,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A carefully brewed potion made with natural ingredients.\nIt's a bit bitter, but can cure a variety of common debuffs.",
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 20,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 22,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 23,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 22,
+        "dataId": 36,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 194,
+    "itypeId": 1,
+    "name": "Dispel Potion",
+    "note": "<Menu Category: Debuffs>\n\n<Synthesis Ingredients>\nWater Bottle\nMedicinal Herb: 3\nMedicinal Root: 2\nIce Cube: 5\n</Synthesis Ingredients>\n<Mask Name: Debuff Healer>",
+    "occasion": 0,
+    "price": 150,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 197,
+    "animationId": 217,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A medical alternative to phoenix feathers; revives\na fallen party member. It's not magic, it's science!",
+    "effects": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 194,
+    "itypeId": 1,
+    "name": "Stimulant",
+    "note": "<Menu Category: Recovery>\n\n<Synthesis Ingredients>\nWater Bottle\nMedicinal Herb: 10\nMedicinal Root: 5\nIce Cube: 15\n</Synthesis Ingredients>\n<Mask Name: Reviver>",
+    "occasion": 1,
+    "price": 300,
+    "repeats": 1,
+    "scope": 9,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
