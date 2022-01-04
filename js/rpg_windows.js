@@ -1822,6 +1822,10 @@ Window_MenuActor.prototype.initialize = function() {
     this.hide();
 };
 
+Window_MenuActor.prototype.numVisibleRows = function() {
+    return $gameParty.members().length;
+};
+
 Window_MenuActor.prototype.processOk = function() {
     if (!this.cursorAll()) {
         $gameParty.setTargetActor($gameParty.members()[this.index()]);
