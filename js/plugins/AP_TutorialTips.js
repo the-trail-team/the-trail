@@ -53,7 +53,12 @@ const tips = [
 	"Don't forget about the skill learn menu! Not every skill you can get will be learned just by leveling up.",
 	"The shop menu's stat comparison for accessories will compare the accessory you are buying to whatever is equipped in the first accessory slot.",
 	"Even a 100% hit rate doesn't guarantee every attack to land. Accuracy is just hit rate minus evasion, after all.",
-	"All the delete button does it append .bak to your save file. If you accidentally delete a save, it should still be in your save folder."
+	"All the delete button does is append .bak to your save file. If you accidentally delete a save, it should still be in your save folder.",
+	"Don't be quick to sell materials. You never know when you'll need some for a crafting recipe.",
+	"Laeryidyean's defeat brings some rare enemies out of hiding. Maybe you'll get lucky on a random encounter...",
+	"A huge surge of magical energy has been detected at Telluria Castle in the past few decades. What could it be...?,",
+	"JP is used for allocating stats and learning new skills.",
+	"He is always watching you."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
