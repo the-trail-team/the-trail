@@ -13195,5 +13195,154 @@
     "name": "Will's Crafting Tips",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 56,
+    "list": [
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# If indoors, do not tint screen"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.tilesetId() === 3"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.tilesetId() === 4"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap.tilesetId() === 6"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# If outdoors, tint the screen if it's night"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          69,
+          0
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 1,
+        "parameters": [
+          61,
+          "NightOverlay",
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 1,
+        "parameters": [
+          61,
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          255,
+          0,
+          60,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Battle Time System Tint",
+    "switchId": 1,
+    "trigger": 0
   }
 ]
