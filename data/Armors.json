@@ -3885,5 +3885,111 @@
       0
     ],
     "price": 1600
+  },
+  {
+    "id": 148,
+    "atypeId": 2,
+    "description": "An enchanted set of gauntlets that focuses on offensve rather than\ndefense. Attacks can sometimes debuff an enemy's defensive stats.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 656,
+    "name": "Dragonforce Gauntlets",
+    "note": "<Passive State: 91>\n<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 5\nIron Cluster: 3\nEnchanting Crystal\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
+    "params": [
+      0,
+      0,
+      10,
+      8,
+      0,
+      0,
+      -4,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 149,
+    "atypeId": 1,
+    "description": "A set of gloves covered with tough dragon scales.\nProvides the wearer with good offensive boosts.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.02
+      }
+    ],
+    "iconIndex": 657,
+    "name": "Scaly Gloves",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBlack Gloves\nDragon Scale: 4\n</Synthesis Ingredients>\n<Mask Name: Covered Gloves>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    "price": 150
+  },
+  {
+    "id": 150,
+    "atypeId": 4,
+    "description": "\"Confinement to your destiny is still confinement.\"\nIncreases outgoing healing by 10%.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 658,
+    "name": "Sorrowful Headpiece",
+    "note": "<Passive State: 92>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nRose Headpiece\nEnchanted Dragon Scale\nDragon Scale: 5\nRed Flower: 15\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: Cleric's Headwear>",
+    "params": [
+      12,
+      25,
+      0,
+      2,
+      10,
+      10,
+      0,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 151,
+    "atypeId": 2,
+    "description": "Taking head defense to the next level. Reduces\nincoming physical/magical damage by 2.5%",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.975
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.975
+      }
+    ],
+    "iconIndex": 659,
+    "name": "Dragon Scale Helmet",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nClassic Helmet\nEnchanted Dragon Scale\nDragon Scale: 5\nSteel Alloy: 2\nDisposable Hammer\n</Synthesis Ingredients>\n<Mask Name: Knight's Headwear>",
+    "params": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 750
   }
 ]
