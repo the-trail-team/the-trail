@@ -2098,6 +2098,7 @@ Game_BattlerBase.TRAIT_STATE_RESIST   = 14;
 Game_BattlerBase.TRAIT_PARAM          = 21;
 Game_BattlerBase.TRAIT_XPARAM         = 22;
 Game_BattlerBase.TRAIT_SPARAM         = 23;
+Game_BattlerBase.TRAIT_BPARAM         = 24;
 Game_BattlerBase.TRAIT_ATTACK_ELEMENT = 31;
 Game_BattlerBase.TRAIT_ATTACK_STATE   = 32;
 Game_BattlerBase.TRAIT_ATTACK_SPEED   = 33;
@@ -2462,6 +2463,10 @@ Game_BattlerBase.prototype.xparam = function(xparamId) {
 Game_BattlerBase.prototype.sparam = function(sparamId) {
     return this.traitsPi(Game_BattlerBase.TRAIT_SPARAM, sparamId);
 };
+
+Game_BattlerBase.prototype.bparam = function(bparamId) {
+    return this.traitsSum(Game_BattlerBase.TRAIT_BPARAM, bparamId);
+}
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {
     return this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId);
