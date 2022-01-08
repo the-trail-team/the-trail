@@ -2016,7 +2016,7 @@ Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
 	//End of New Code
 	if (diffvalue === 0) return;
 	if (paramId >= 45 && paramId <= 55) return;
-	if (paramId >= 9) diffvalue = diffvalue.toFixed(1);
+	if (paramId >= 9 && paramId !== 56) diffvalue = diffvalue.toFixed(1);
 	var actorparam = Yanfly.Util.toGroup(newValue);
 	this.changeTextColor(this.paramchangeTextColor(diffvalue, paramId));
 	var text = Yanfly.Util.toGroup(diffvalue) + _.forms[paramId].replace(/val/, "");
