@@ -1480,7 +1480,7 @@
     "id": 165,
     "expanded": false,
     "name": "Tester Tower",
-    "order": 210,
+    "order": 211,
     "parentId": 0,
     "scrollX": 1571,
     "scrollY": 1279
@@ -1820,7 +1820,7 @@
   },
   {
     "id": 203,
-    "expanded": false,
+    "expanded": true,
     "name": "Lost Forest",
     "order": 203,
     "parentId": 210,
@@ -1831,8 +1831,8 @@
     "id": 204,
     "expanded": true,
     "name": "World Tree - F1",
-    "order": 204,
-    "parentId": 203,
+    "order": 205,
+    "parentId": 211,
     "scrollX": 1139,
     "scrollY": 641
   },
@@ -1840,7 +1840,7 @@
     "id": 205,
     "expanded": true,
     "name": "World Tree - F2",
-    "order": 205,
+    "order": 206,
     "parentId": 204,
     "scrollX": 1139,
     "scrollY": 641
@@ -1849,7 +1849,7 @@
     "id": 206,
     "expanded": false,
     "name": "World Tree - F3",
-    "order": 206,
+    "order": 207,
     "parentId": 205,
     "scrollX": 1139,
     "scrollY": 641
@@ -1858,7 +1858,7 @@
     "id": 207,
     "expanded": false,
     "name": "Frozen Labyrinth - F1",
-    "order": 207,
+    "order": 208,
     "parentId": 210,
     "scrollX": 1131,
     "scrollY": 633
@@ -1867,7 +1867,7 @@
     "id": 208,
     "expanded": true,
     "name": "Frozen Labyrinth - B1",
-    "order": 208,
+    "order": 209,
     "parentId": 207,
     "scrollX": 1131,
     "scrollY": 633
@@ -1876,7 +1876,7 @@
     "id": 209,
     "expanded": false,
     "name": "Frozen Labyrinth - B2",
-    "order": 209,
+    "order": 210,
     "parentId": 208,
     "scrollX": 1131,
     "scrollY": 641
@@ -1889,5 +1889,14 @@
     "parentId": 8,
     "scrollX": 1139,
     "scrollY": 633
+  },
+  {
+    "id": 211,
+    "expanded": false,
+    "name": "World Tree - Exterior",
+    "order": 204,
+    "parentId": 210,
+    "scrollX": 1131,
+    "scrollY": 783
   }
 ]
