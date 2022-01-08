@@ -439,7 +439,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "Gets your friend back up with \\c[27]\\bp0[a sliver of health]\\bp=1[a slight bit of health]\\bp=2[a bit of health]\\bp=3[a little health]\\bp=4[some health]\\bp=5[a decent amount of health]\\c[0]\nleft during battle. Doesn't always work, though...",
+    "description": "Gets your friend back up with \\c[27]\\bp0[a sliver of health]\\bp=1[a slight bit of health]\\bp=2[a bit of health]\\bp=3[a little health]\\bp=4[some health]\\bp>5[a decent amount of health]\\bp=6[a more decent amount of health]\\c[0]\nleft during battle. Doesn't always work, though...",
     "effects": [
       {
         "code": 22,
@@ -476,7 +476,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Creates a protective barrier around one of your allies until it breaks.\nThe barrier has \\c[27]\\bp0[100]\\bp=1[160]\\bp=2[220]\\bp=3[280]\\bp=4[340]\\bp=5[400] HP\\c[0]. Can't be stacked onto existing shields.",
+    "description": "Creates a protective barrier around one of your allies until it breaks.\nThe barrier has \\c[27]\\bp0[100]\\bp=1[160]\\bp=2[220]\\bp=3[280]\\bp=4[340]\\bp=5[400]\\bp=6[460] HP\\c[0]. Can't be stacked onto existing shields.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 15,
@@ -758,7 +758,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Penta Slash",
-    "note": "<Custom Requirement>\nif (!user.isActor()\n|| user.isWtypeEquipped(2)\n|| user.isWtypeEquipped(5)\n|| user.isWtypeEquipped(7)) {\nvalue = true;} else { value = false;}\n</Custom Requirement>\n\n<Target Action>\neval: $gameVariables.setValue(6, user.bp);\nhide battle hud\nopacity not focus: 0\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion spell: user\nwait: 60\nmove user: target, front head, 5\nwait for movement\nmotion swing: user\naction animation\nmove user: target, back, 5\nmotion swing: user\nwait for movement\nmove user: target, back center, 5\nmotion swing: user\nwait for movement\nmove user: target, front head, 5\nmotion swing: user\nwait for movement\nmove user: target, back head, 5\nmotion swing: user\nwait for movement\nmove user: target, front center, 5\nmotion swing: user\nwait for movement\nmove user: target, front, 5\nmotion swing: user\nwait for movement\nmove user: target, back center, 5\nmotion swing: user\nwait for movement\nmove user: target, front center, 5\nmotion swing: user\nwait for movement\nwait: 20\nmove user: target, back center, 5\nmotion swing: user\nshow battle hud\nIF ($gameVariables.value(6) >= 5)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 4)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 3)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 2)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 1)\nforce critical\nadd state 62: user\nEND\naction effect\nremove state 62: user\nwait for effect\nwait: 30\nmove user: home, 20\nwait for movement\nface user: forward\nreset camera: 30\nreset zoom: 30\nwait for camera\nwait for zoom\nperform finish\nopacity not focus: 255\n</Target Action>\n\n<Party Limit Cost: 4>\n\n<Max Mastery Level: 0>",
+    "note": "<Require <= 5 BP>\n\n<Custom Requirement>\nif (!user.isActor()\n|| user.isWtypeEquipped(2)\n|| user.isWtypeEquipped(5)\n|| user.isWtypeEquipped(7)) {\nvalue = true;} else { value = false;}\n</Custom Requirement>\n\n<Target Action>\neval: $gameVariables.setValue(6, user.bp);\nhide battle hud\nopacity not focus: 0\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion spell: user\nwait: 60\nmove user: target, front head, 5\nwait for movement\nmotion swing: user\naction animation\nmove user: target, back, 5\nmotion swing: user\nwait for movement\nmove user: target, back center, 5\nmotion swing: user\nwait for movement\nmove user: target, front head, 5\nmotion swing: user\nwait for movement\nmove user: target, back head, 5\nmotion swing: user\nwait for movement\nmove user: target, front center, 5\nmotion swing: user\nwait for movement\nmove user: target, front, 5\nmotion swing: user\nwait for movement\nmove user: target, back center, 5\nmotion swing: user\nwait for movement\nmove user: target, front center, 5\nmotion swing: user\nwait for movement\nwait: 20\nmove user: target, back center, 5\nmotion swing: user\nshow battle hud\nIF ($gameVariables.value(6) >= 5)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 4)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 3)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 2)\nforce critical\nadd state 62: user\nEND\naction effect\nwait: 1\nIF ($gameVariables.value(6) >= 1)\nforce critical\nadd state 62: user\nEND\naction effect\nremove state 62: user\nwait for effect\nwait: 30\nmove user: home, 20\nwait for movement\nface user: forward\nreset camera: 30\nreset zoom: 30\nwait for camera\nwait for zoom\nperform finish\nopacity not focus: 255\n</Target Action>\n\n<Party Limit Cost: 4>\n\n<Max Mastery Level: 0>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -818,7 +818,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Panacea",
-    "note": "<setup action>\ndisplay action\nperform start\nmotion chant: user\nwait: 90\nmotion spell: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nmotion victory: target\nwait for effect\nwait: 30\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>\n\n<Party Limit Cost: 3>\n<Remove State Category: debuff>\n\n<Max Mastery Level: 0>",
+    "note": "<Require <= 5 BP>\n\n<setup action>\ndisplay action\nperform start\nmotion chant: user\nwait: 90\nmotion spell: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nmotion victory: target\nwait for effect\nwait: 30\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>\n\n<Party Limit Cost: 3>\n<Remove State Category: debuff>\n\n<Max Mastery Level: 0>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -840,7 +840,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "With a bit of magic channeled within (still uses ATK), conjure up this nifty gadget\nthat damages and debuffs enemies in its radius. Additionally debuffs \\c[27]\\bp0[0]\\bp=1[1]\\bp=2[2]\\bp=3[3]\\bp=4[4]\\bp=5[5] extra stat\\bp0[s]\\bp=2[s]\\bp=3[s]\\bp=4[s]\\bp=5[s]\\c[0].",
+    "description": "With a bit of magic channeled within (still uses ATK), conjure up this nifty gadget\nthat damages and debuffs enemies in its radius. Additionally debuffs \\c[27]\\bp0[0]\\bp=1[1]\\bp=2[2]\\bp=3[3]\\bp=4[4]\\bp=5[5]\\bp=6[6] extra stat\\bp0[s]\\bp>=2[s]\\c[0].",
     "effects": [
       {
         "code": 32,
@@ -879,7 +879,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Flashbang",
-    "note": "<Party Limit Cost: 1>\n\n<setup action>\neval: $gameVariables.setValue(6, user.bp);\nimmortal: targets, true\ndisplay action\nperform start\nmotion spell: user\nwait for motion\nmotion item: user\nwait for motion\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nIF ($gameVariables.value(6) >= 1)\nanimation 54: target\nwait for animation\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 2)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 3)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 4)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 5)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nwait: 15\n</target action>\n\n<follow action>\n</follow action>\n\n<Max Mastery Level: 0>",
+    "note": "<Party Limit Cost: 1>\n\n<setup action>\neval: $gameVariables.setValue(6, user.bp);\nimmortal: targets, true\ndisplay action\nperform start\nmotion spell: user\nwait for motion\nmotion item: user\nwait for motion\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nIF ($gameVariables.value(6) >= 1)\nanimation 54: target\nwait for animation\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 2)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 3)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 4)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 5)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 6)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nwait: 15\n</target action>\n\n<follow action>\n</follow action>\n\n<Max Mastery Level: 0>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2532,7 +2532,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Change of Heart",
-    "note": "<Custom MP Cost>\ncost = Math.ceil(user.mmp * (0.15 - (user.bp * 0.03)));\nif(cost==0){$gameVariables.setValue(6, 'Free');}else{$gameVariables.setValue(6, ' ');};\n</Custom MP Cost>\n<Custom Cost Display>\n\\c[27]\\}\\V[6]\n</Custom Cost Display>\n\n<After Eval>\nvar hpRate = (user.hp / user.mhp);\nvar mpRate = (user.mp / user.mmp);\nuser.setHp(Math.ceil(user.mhp * mpRate));\nuser.setMp(Math.ceil(user.mmp * hpRate));\n</After Eval>\n\n<setup action>\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nbattleback 3 add: battlebacks1, DarkSpace\nbattleback 4 add: battlebacks2, DarkSpace\ntint screen: 0, 0, 0, 255, 30\nanimation 60: user\nwait for animation\nbattleback 3 remove\nbattleback 4 remove\ntint screen: normal, 30\nanimation 12: user\nwait for animation\nshow battle hud\neval: SceneManager._scene._logWindow.addText(\"A change of heart!\")\n</whole action>\n\n<target action>\naction effect\nwait: 45\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Require <= 5 BP>\n\n<Custom MP Cost>\ncost = Math.ceil(user.mmp * (0.15 - (user.bp * 0.03)));\nif(cost==0){$gameVariables.setValue(6, 'Free');}else{$gameVariables.setValue(6, ' ');};\n</Custom MP Cost>\n<Custom Cost Display>\n\\c[27]\\}\\V[6]\n</Custom Cost Display>\n\n<After Eval>\nvar hpRate = (user.hp / user.mhp);\nvar mpRate = (user.mp / user.mmp);\nuser.setHp(Math.ceil(user.mhp * mpRate));\nuser.setMp(Math.ceil(user.mmp * hpRate));\n</After Eval>\n\n<setup action>\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nbattleback 3 add: battlebacks1, DarkSpace\nbattleback 4 add: battlebacks2, DarkSpace\ntint screen: 0, 0, 0, 255, 30\nanimation 60: user\nwait for animation\nbattleback 3 remove\nbattleback 4 remove\ntint screen: normal, 30\nanimation 12: user\nwait for animation\nshow battle hud\neval: SceneManager._scene._logWindow.addText(\"A change of heart!\")\n</whole action>\n\n<target action>\naction effect\nwait: 45\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -3138,7 +3138,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "Revive your friend with \\c[27]\\bp0[a decent bit of health]\\bp=1[a solid bit of health]\\bp=2[half of their health]\\bp=3[a good amount of health]\\bp=4[a great amount of health]\\bp=5[a lot of health]\\c[0].\nHas a much better success rate than \\is[13].",
+    "description": "Revive your friend with \\c[27]\\bp0[a decent bit of health]\\bp=1[a solid bit of health]\\bp=2[half of their health]\\bp=3[a good amount of health]\\bp=4[a great amount of health]\\bp=5[a lot of health]\\bp=6[a lotta lot of health]\\c[0].\nHas a much better success rate than \\is[13].",
     "effects": [
       {
         "code": 22,
