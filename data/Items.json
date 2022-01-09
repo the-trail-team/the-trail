@@ -5572,7 +5572,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A somewhat rare root dropped by some enemies in the\nWorld Tree. Very useful for crafting medicinal items.",
+    "description": "A somewhat rare root dropped by certain enemies.\nVery useful for crafting medicinal items.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 207,
@@ -5598,7 +5598,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A rather common herb dropped by some enemies in the\nWorld Tree. Very useful for crafting medicinal items.",
+    "description": "A rather common herb dropped by certain enemies.\nVery useful for crafting medicinal items.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 313,
@@ -5771,6 +5771,65 @@
     "price": 0,
     "repeats": 1,
     "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 201,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A wing torn off of a Feral Bat during combat.\nMuch stronger than a normal \\ii[82].",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 679,
+    "itypeId": 1,
+    "name": "Feral Bat Wing",
+    "note": "<Menu Category: Drops, Materials>\n\n<Disassemble Pool: Monster>\nx4-x6 item 141: 100%\n</Disassemble Pool: Monster>",
+    "occasion": 3,
+    "price": 16,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 202,
+    "animationId": 51,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "An herb with a punchy flavoring to it.\nCan buff your ATK a bit in battle.",
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 680,
+    "itypeId": 1,
+    "name": "Vicious Herb",
+    "note": "<Menu Category: Drops, Buffs>",
+    "occasion": 1,
+    "price": 20,
+    "repeats": 1,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

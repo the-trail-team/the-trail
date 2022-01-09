@@ -2904,7 +2904,7 @@
       {
         "code": 22,
         "dataId": 3,
-        "value": 0.05
+        "value": 0.08
       },
       {
         "code": 22,
@@ -2914,7 +2914,7 @@
     ],
     "iconIndex": 180,
     "name": "Vigilante's Charm",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nCharm of Foresight: 1\nCondensed White Gel: 1\nJade Charm: 1\n</Synthesis Ingredients>\n<Mask Name: Powerful, Diverse Charm>",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nCharm of Foresight\nCondensed White Gel\nJade Charm\nFlytrap Eye\n</Synthesis Ingredients>\n<Mask Name: Powerful, Diverse Charm>",
     "params": [
       11,
       11,
@@ -3423,7 +3423,7 @@
     ],
     "iconIndex": 477,
     "name": "Trailblazing Boots ★",
-    "note": "<Upgrade Slots: 2>\n<Passive State: 87>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\nx2 Feather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nTrailblazing Boots: 1\nElemental Lace: 1\nHRG Scroll: 1\nFire Essence: 5\nIce Essence: 5\nHermes Boots: 1\nTellurium Alloy: 1\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
+    "note": "<Upgrade Slots: 2>\n<Passive State: 87>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\nx2 Feather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\nTrailblazing Boots\nElemental Lace\nHRG Scroll\nFire Essence: 5\nIce Essence: 5\nHermes Boots\nFeral Bat Wing: 10\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -3894,7 +3894,7 @@
     "traits": [],
     "iconIndex": 656,
     "name": "Dragonforce Gauntlets",
-    "note": "<Passive State: 91>\n<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 5\nIron Cluster: 3\nDisposable Hammer\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
+    "note": "<Passive State: 91>\n<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 5\nFlytrap Fang\nIron Cluster: 3\nDisposable Hammer\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
     "params": [
       0,
       0,
@@ -4018,5 +4018,53 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 153,
+    "atypeId": 1,
+    "description": "A brutal, sharp, and worn fang ripped off of a Flytrap\nin battle. Its sharpness has not been replicated by mankind.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 335,
+    "name": "Flytrap Fang",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 180
+  },
+  {
+    "id": 154,
+    "atypeId": 1,
+    "description": "The dismembered eye of a flytrap. Ew! Equipping it\nmakes it easier to watch for crits and avoid them.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 681,
+    "name": "Flytrap Eye",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 180
   }
 ]
