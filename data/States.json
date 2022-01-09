@@ -3017,7 +3017,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Draconic Gauntlets",
-    "note": "<Custom Establish Effect>\nvar random = Math.random();\nif (random < 0.2 && value > 0) {\n  var turns = 5;\n  target.addBuff(2, turns);\n  target.addBuff(4, turns);\n}\n</Custom Establish Effect>",
+    "note": "<Custom Establish Effect>\nvar random = Math.random();\nif (random < 0.2 && value > 0) {\n  var turns = 5;\n  target.addDebuff(3, turns);\n  target.addDebuff(5, turns);\n  target.startAnimation(54);\n}\n</Custom Establish Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
