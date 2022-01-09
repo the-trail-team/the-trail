@@ -5393,8 +5393,8 @@
   },
   {
     "id": 188,
-    "animationId": 0,
-    "consumable": false,
+    "animationId": 51,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -5402,17 +5402,24 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A magical herb with defensive properties.",
-    "effects": [],
+    "description": "A magical herb with defensive properties. Useful\nfor crafting. Can buff your DEF a bit in battle.",
+    "effects": [
+      {
+        "code": 31,
+        "dataId": 3,
+        "value1": 3,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 309,
     "itypeId": 1,
     "name": "Thick-Skinned Herb",
-    "note": "<Menu Category: Materials, Drops>",
-    "occasion": 3,
+    "note": "<Menu Category: Materials, Drops, Buffs>",
+    "occasion": 1,
     "price": 30,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
