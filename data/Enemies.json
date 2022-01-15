@@ -5085,16 +5085,21 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 120,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 0.97
       },
       {
         "code": 22,
         "dataId": 1,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
         "value": 0.05
       },
       {
@@ -5128,18 +5133,18 @@
         "value": 2
       }
     ],
-    "gold": 0,
+    "gold": 60,
     "name": "Horrorspore",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>",
+    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<AI Priority>\nState !== Poisoned +++ Random 60%: Poison Powder\n</AI Priority>\n\n<Enemy Drops>\nBrown Mushroom: 90%\nBrown Mushroom: 90%\nBrown Mushroom: 90%\nRaw Truffle: 20%\nRaw Truffle: 10%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
-      100,
+      2000,
       0,
+      32,
+      32,
       10,
-      10,
-      10,
-      10,
-      10,
-      10
+      70,
+      40,
+      20
     ]
   },
   {

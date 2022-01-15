@@ -1355,7 +1355,7 @@
     "minTurns": 3,
     "motion": 1,
     "name": "Poisoned",
-    "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<Custom Apply Effect>\nthis._toxicCounter = 1;\n</Custom Apply Effect>\n\n<Custom Regenerate Effect>\nvar n = this._toxicCounter / 16;\nvar value = Math.floor(n * user.mhp * -1);\nuser.gainHp(value);\nthis._toxicCounter += 1;\nthis.startAnimation(59);\n</Custom Regenerate Effect>\n\n<Help Description>\nDeals damage equal to 1/16th of this unit's MHP. Does an extra 1/16th of damage for every turn that passes. [MODERATE DEBUFF]\n</Help Description>",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n<animationRow: 29>\n\n<Custom Apply Effect>\nthis._toxicCounter = 1;\n</Custom Apply Effect>\n\n<Custom Regenerate Effect>\nvar n = this._toxicCounter / 16;\nvar value = Math.floor(n * user.mhp * -1);\nuser.gainHp(value);\nthis._toxicCounter += 1;\nthis.startAnimation(59);\n</Custom Regenerate Effect>\n\n<Help Description>\nDeals damage equal to 1/16th of this unit's MHP. Does an extra 1/16th of damage for every turn that passes. [MODERATE DEBUFF]\n</Help Description>",
     "overlay": 1,
     "priority": 68,
     "removeAtBattleEnd": false,

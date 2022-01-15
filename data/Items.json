@@ -5840,5 +5840,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 203,
+    "animationId": 59,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "An uncooked fungal growth with poison running through its\npores. It's dangerous to eat without preparing it first.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 39,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 290,
+    "itypeId": 1,
+    "name": "Raw Truffle",
+    "note": "<Menu Category: Drops, Materials, Debuffs>",
+    "occasion": 0,
+    "price": 20,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
