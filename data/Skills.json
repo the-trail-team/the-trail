@@ -3928,5 +3928,42 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 113,
+    "animationId": 52,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Call on the power of Trailia and imbue your weapon with pure light. Your\nattacks will pack a light-element modifier for the rest of the battle.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 93,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 684,
+    "message1": " imbues their weapon with light!",
+    "message2": "",
+    "mpCost": 15,
+    "name": "Heavenswield",
+    "note": "<setup action>\ndisplay action\nperform start\nmotion cast: user\nwait: 30\nmotion spell: user\nwait for motion\n</setup action>\n\n<whole action>\nanimation 258: user\nwait for animation\naction animation\nanimation 50: user\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

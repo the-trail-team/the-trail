@@ -3050,5 +3050,35 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 93,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 8,
+        "value": 1
+      }
+    ],
+    "iconIndex": 685,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Heavenswield",
+    "note": "<Category: Bypass Death Removal>\n\n<Help Description>\nThis unit's attacks will have the \\i[102]light element.\n</Help Description>",
+    "overlay": 0,
+    "priority": 20,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
