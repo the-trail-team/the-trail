@@ -208,7 +208,7 @@ Window_ItemNameEdit.prototype.initialize = function(item, maxLength) {
     this._name = this._item.name.slice(0, this._maxLength);
     this._index = this._name.length;
     this._maxLength = maxLength;
-    this._defaultName = this._name;
+    this._defaultName = item.baseItemName;
     this.deactivate();
     this.refresh();
 };
