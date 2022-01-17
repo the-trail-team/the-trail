@@ -5905,5 +5905,64 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 205,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A wad of solidified web fluid dropped\nby a spider after its death.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 321,
+    "itypeId": 1,
+    "name": "Web Ball",
+    "note": "<Menu Category: Materials, Drops>",
+    "occasion": 3,
+    "price": 16,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 206,
+    "animationId": 59,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A vial of a dangerous toxin taken from a\nvenomous enemy. You can drink it... but why?",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 39,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 688,
+    "itypeId": 1,
+    "name": "Vial of Poison",
+    "note": "<Menu Category: Materials, Drops, Debuffs>",
+    "occasion": 0,
+    "price": 20,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
