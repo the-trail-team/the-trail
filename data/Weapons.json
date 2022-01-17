@@ -1299,7 +1299,7 @@
     ],
     "iconIndex": 621,
     "name": "Void Crystal Staff",
-    "note": "<Upgrade Slots: 2>\n<Weapon Image: 246>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 2>\n<Weapon Image: 117>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
     "params": [
       0,
       20,
@@ -1327,18 +1327,18 @@
     ],
     "iconIndex": 622,
     "name": "Life Crystal Staff",
-    "note": "<Upgrade Slots: 3>\n<Weapon Image: 120>\n<HP Life Steal Physical: +12.5%>\n<HP Life Steal Magical: +5%>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nLife Orb\nPassion\nEnchanting Crystal\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: For HP-Focused Clerics>",
+    "note": "<Upgrade Slots: 2>\n<Weapon Image: 110>\n<HP Life Steal Physical: +12.5%>\n<HP Life Steal Magical: +5%>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nLife Orb\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: For HP-Focused Clerics>\n\n<Disassemble Pool: Basic>\nx1 Void Crystal Staff: 100%\nx1 Life Orb: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
-      25,
+      20,
       8,
       0,
-      55,
-      12,
+      45,
+      10,
       0,
       0
     ],
-    "price": 1600,
+    "price": 800,
     "wtypeId": 4
   },
   {
@@ -1360,18 +1360,18 @@
     ],
     "iconIndex": 423,
     "name": "Mana Crystal Staff",
-    "note": "<Upgrade Slots: 3>\n<Weapon Image: 114>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nMana Orb\nMana Staff\nEnchanting Crystal\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: For MP-Focused Clerics>",
+    "note": "<Upgrade Slots: 2>\n<Weapon Image: 109>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nMana Orb\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: For MP-Focused Clerics>\n\n<Disassemble Pool: Basic>\nx1 Void Crystal Staff: 100%\nx1 Mana Orb: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
-      25,
+      20,
       8,
       0,
-      55,
-      12,
+      45,
+      10,
       0,
       0
     ],
-    "price": 1600,
+    "price": 800,
     "wtypeId": 4
   },
   {
@@ -1586,5 +1586,38 @@
     ],
     "price": 1600,
     "wtypeId": 3
+  },
+  {
+    "id": 50,
+    "animationId": 122,
+    "description": "A staff forged to bring peace to The Trail, whatever the cost.\nGrants HP/MP stealing abilities and the \\is[80] skill.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 80,
+        "value": 1
+      }
+    ],
+    "iconIndex": 414,
+    "name": "Harmony",
+    "note": "<Upgrade Slots: 3>\n<Weapon Image: 294>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<HP Life Steal Physical: +12.5%>\n<HP Life Steal Magical: +5%>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nLife Orb\nMana Orb\nEnchanting Crystal\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Harmonious Staff>",
+    "params": [
+      0,
+      25,
+      10,
+      0,
+      55,
+      13,
+      0,
+      0
+    ],
+    "price": 1600,
+    "wtypeId": 4
   }
 ]
