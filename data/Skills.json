@@ -901,7 +901,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Silence an enemy. They will not be able to\nuse magical attacks for \\c[27]\\bpturn[2]\\c[0] turns.",
+    "description": "Silence an enemy. They will not be able to\nuse magical skills for \\c[27]\\bpturn[2]\\c[0] turns.",
     "effects": [
       {
         "code": 21,
@@ -3960,6 +3960,43 @@
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 11,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 114,
+    "animationId": 269,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Give an enemy amnesia. They will not be able to\nuse special skills for \\c[27]\\bpturn[2]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 94,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 686,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 8,
+    "name": "Amnesia",
+    "note": "<Boost Turns>\n\n<action copy: skill:7>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
