@@ -3066,7 +3066,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Some simple uncooked meat from an average-sized animal.\nIt's unsafe to eat raw, but it's great for cooking.",
+    "description": "Some simple uncooked meat from an average-sized animal. It's\nunsafe to eat raw, but it's great for cooking. \\c[31]+20 HP\\c[0]",
     "effects": [
       {
         "code": 11,
@@ -3085,7 +3085,7 @@
     "iconIndex": 291,
     "itypeId": 1,
     "name": "Raw Meat",
-    "note": "<Menu Category: Materials, Debuffs>",
+    "note": "<Menu Category: Materials, Recovery, Debuffs>",
     "occasion": 0,
     "price": 30,
     "repeats": 1,
@@ -5852,12 +5852,18 @@
       "type": 0,
       "variance": 20
     },
-    "description": "An uncooked fungal growth with poison running through its\npores. It's dangerous to eat without preparing it first.",
+    "description": "An uncooked fungal growth with poison running through its pores.\nIt's dangerous to eat without preparing it first. \\c[31]+3% HP\\c[0]",
     "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.03,
+        "value2": 0
+      },
       {
         "code": 21,
         "dataId": 39,
-        "value1": 1,
+        "value1": 0.5,
         "value2": 0
       }
     ],
@@ -5865,7 +5871,7 @@
     "iconIndex": 290,
     "itypeId": 1,
     "name": "Raw Truffle",
-    "note": "<Menu Category: Drops, Materials, Debuffs>",
+    "note": "<Menu Category: Drops, Materials, Recovery, Debuffs>",
     "occasion": 0,
     "price": 20,
     "repeats": 1,
