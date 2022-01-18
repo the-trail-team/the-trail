@@ -3658,7 +3658,7 @@
       {
         "code": 11,
         "dataId": 3,
-        "value": 0.9
+        "value": 0.95
       }
     ],
     "iconIndex": 452,
@@ -3679,7 +3679,7 @@
   {
     "id": 143,
     "atypeId": 1,
-    "description": "A nifty magical accessory that combines the\n\\ia[141] and \\ia[142].",
+    "description": "A nifty magical accessory that combines the\n\\ia[156], \\ia[141], and \\ia[142].",
     "etypeId": 6,
     "traits": [
       {
@@ -3705,7 +3705,7 @@
     ],
     "iconIndex": 353,
     "name": "Snow Globe",
-    "note": "<Upgrade Slots: 2>\n<Synthesis Ingredients>\nSnow Jacket\nGlacial Bulwark\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>",
+    "note": "<Upgrade Slots: 2>\n<Synthesis Ingredients>\nSnow Gloves\nSnow Jacket\nGlacial Bulwark\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -3716,7 +3716,7 @@
       0,
       0
     ],
-    "price": 450
+    "price": 500
   },
   {
     "id": 144,
@@ -4099,5 +4099,32 @@
       0
     ],
     "price": 100
+  },
+  {
+    "id": 156,
+    "atypeId": 1,
+    "description": "A pair of warm gloves bought from the\ngeneral store. Reduces incoming ice damage.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.95
+      }
+    ],
+    "iconIndex": 484,
+    "name": "Snow Gloves",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
   }
 ]
