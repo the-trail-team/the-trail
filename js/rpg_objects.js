@@ -1879,7 +1879,7 @@ Game_Action.prototype.itemEffectAddAttackState = function(target, effect) {
         var chance = effect.value1;
         chance *= target.stateRate(stateId);
         chance *= this.subject().attackStatesRate(stateId);
-        chance *= this.lukEffectRate(target);
+        // chance *= this.lukEffectRate(target);
         if (Math.random() < chance) {
             target.addState(stateId);
             this.makeSuccess(target);
@@ -1891,7 +1891,7 @@ Game_Action.prototype.itemEffectAddNormalState = function(target, effect) {
     var chance = effect.value1;
     if (!this.isCertainHit()) {
         chance *= target.stateRate(effect.dataId);
-        chance *= this.lukEffectRate(target);
+        // chance *= this.lukEffectRate(target);
     }
     if (Math.random() < chance) {
         target.addState(effect.dataId);
