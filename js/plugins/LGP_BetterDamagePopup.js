@@ -945,7 +945,6 @@ Sprite_Damage.prototype.defaultMovementCode = function() {
     if (result.customText.format == 3) {
         if (!this._critDuration > 0){
             var sprite = this.getChild("custom");
-            console.log(sprite);
 
             sprite.scale.x = 1;
             sprite.scale.y = 1;
