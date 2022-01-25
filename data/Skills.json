@@ -3086,7 +3086,7 @@
     "message2": "",
     "mpCost": 13,
     "name": "Curify",
-    "note": "<Boost Damage>\n<Hide if Learned Skill: 102, 103>\n<Remove State Category: weak debuff>\n\n<target action>\nperform start\nmotion chant: user\nwait: 45\nmotion spell: user\naction animation\nanimation 45: target\nwait for animation\naction effect\nmotion victory: target\nwait for effect\nwait: 30\nperform finish\n</target action>",
+    "note": "<Boost Damage>\n<Hide if Learned Skill: 102, 103>\n<Remove State Category: weak debuff>\n\n<target action>\nperform start\nmotion chant: user\nwait: 45\nmotion spell: user\naction animation\nanimation 217: target\nwait for animation\naction effect\nmotion victory: target\nwait for effect\nwait: 30\nperform finish\n</target action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
