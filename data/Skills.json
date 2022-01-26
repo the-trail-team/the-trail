@@ -4039,5 +4039,109 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 116,
+    "animationId": 214,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 95,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 8,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Future Sight",
+    "note": "<action copy: skill:7>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 117,
+    "animationId": 222,
+    "damage": {
+      "critical": true,
+      "elementId": 6,
+      "formula": "a.atk * 6 - b.def * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 94,
+        "value1": 0.75,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 100,
+    "message1": " uses %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Spike Shock",
+    "note": "<action copy: skill:7>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 118,
+    "animationId": 245,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 9,
+    "message1": " uses %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Draconic Healing",
+    "note": "<User Barrier 3 Turns: +2000>\n\n<setup action>\ndisplay action\nperform start\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\nadd state 96: target\n</finish action>",
+    "occasion": 0,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]
