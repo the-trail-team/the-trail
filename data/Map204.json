@@ -18356,10 +18356,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "$Flytrap",
+            "characterName": "Monster3",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 1
           },
           "list": [
             {
@@ -18367,7 +18367,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                68,
+                69,
                 false,
                 false
               ]
@@ -18396,14 +18396,14 @@
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseRange = 8"
+                  "this._chaseRange = 6"
                 ],
                 "indent": null
               },
               {
                 "code": 45,
                 "parameters": [
-                  "this._chaseSpeed = 3"
+                  "this._chaseSpeed = 4"
                 ],
                 "indent": null
               },
@@ -18919,6 +18919,7 @@
       ],
       "x": 41,
       "y": 15
-    }
+    },
+    null
   ]
 }
