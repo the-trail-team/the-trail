@@ -4126,5 +4126,26 @@
       0
     ],
     "price": 50
+  },
+  {
+    "id": 157,
+    "atypeId": 1,
+    "description": "A curious charm found laying at the base of Verdin's statue of the First\nKnight. Gives a variety of buffs that increase as your adventure continues.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 167,
+    "name": "Champion's Talisman",
+    "note": "<Cannot Discard>\n<Custom Parameters>\nmaxhp = $gameVariables.value(54)[0];\nmaxmp = $gameVariables.value(54)[1];\natk   = $gameVariables.value(54)[2];\ndef   = $gameVariables.value(54)[3];\nmat   = $gameVariables.value(54)[4];\nmdf   = $gameVariables.value(54)[5];\nagi   = $gameVariables.value(54)[6];\nluk   = $gameVariables.value(54)[7];\n</Custom Parameters>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]
