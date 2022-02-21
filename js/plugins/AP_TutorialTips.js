@@ -58,7 +58,8 @@ const tips = [
 	"Laeryidyean's defeat brings some rare enemies out of hiding. Maybe you'll get lucky on a random encounter...",
 	"A huge surge of magical energy has been detected at Telluria Castle in the past few decades. What could it be...?,",
 	"JP is used for allocating stats and learning new skills.",
-	"He is always watching you."
+	"He is always watching you.",
+	"True attacks are neither physical nor magical hits. These are usually skills or items that only apply status effects."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially

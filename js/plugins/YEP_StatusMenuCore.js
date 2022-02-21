@@ -1320,7 +1320,7 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeRate(actor.getLifeStealRate('hpMagicalRate'), dx, dy, dw);
       break;
     case 'cls':
-      this.drawAttributeName("Certain Life Steal", dx, dy, dw);
+      this.drawAttributeName("True Life Steal", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpCertainRate'), dx, dy, dw);
       break;
     case 'pms':
@@ -1332,7 +1332,7 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeRate(actor.getLifeStealRate('mpMagicalRate'), dx, dy, dw);
       break;
     case 'cms':
-      this.drawAttributeName("Certain MP Steal", dx, dy, dw);
+      this.drawAttributeName("True MP Steal", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('mpCertainRate'), dx, dy, dw);
       break;
     default:
