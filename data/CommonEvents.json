@@ -2183,9 +2183,8 @@
         "code": 111,
         "indent": 0,
         "parameters": [
-          0,
-          61,
-          0
+          12,
+          "$gameSwitches.value(61) == true || $gameParty.hasItem($dataArmors[50])"
         ]
       },
       {
@@ -2195,45 +2194,13 @@
           0,
           38,
           false,
-          false
-        ]
-      },
-      {
-        "code": 123,
-        "indent": 1,
-        "parameters": [
-          "A",
-          0
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 411,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          10,
-          50,
           true
         ]
       },
       {
-        "code": 301,
-        "indent": 2,
-        "parameters": [
-          0,
-          38,
-          false,
-          false
-        ]
+        "code": 601,
+        "indent": 1,
+        "parameters": []
       },
       {
         "code": 123,
@@ -2244,25 +2211,69 @@
         ]
       },
       {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 2,
         "parameters": []
       },
       {
-        "code": 411,
+        "code": 603,
         "indent": 1,
         "parameters": []
       },
       {
-        "code": 356,
+        "code": 311,
         "indent": 2,
+        "parameters": [
+          0,
+          0,
+          1,
+          0,
+          9999,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 604,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 118,
+        "indent": 0,
+        "parameters": [
+          "fail"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
         "parameters": [
           "HideActiveQuestWindow"
         ]
       },
       {
         "code": 250,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           {
             "name": "Attack3",
@@ -2274,19 +2285,19 @@
       },
       {
         "code": 221,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 230,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           30
         ]
       },
       {
         "code": 250,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           {
             "name": "Blow1",
@@ -2298,14 +2309,14 @@
       },
       {
         "code": 230,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           30
         ]
       },
       {
         "code": 250,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           {
             "name": "Blow2",
@@ -2317,14 +2328,14 @@
       },
       {
         "code": 230,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           30
         ]
       },
       {
         "code": 250,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           {
             "name": "Blow3",
@@ -2336,14 +2347,14 @@
       },
       {
         "code": 230,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           30
         ]
       },
       {
         "code": 250,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           {
             "name": "Darkness1",
@@ -2355,7 +2366,7 @@
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2365,7 +2376,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Damage4",
@@ -2377,17 +2388,17 @@
       },
       {
         "code": 0,
-        "indent": 3,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2397,7 +2408,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Damage4",
@@ -2409,17 +2420,17 @@
       },
       {
         "code": 0,
-        "indent": 3,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2429,7 +2440,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Damage4",
@@ -2441,17 +2452,17 @@
       },
       {
         "code": 0,
-        "indent": 3,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2461,7 +2472,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Damage4",
@@ -2473,17 +2484,17 @@
       },
       {
         "code": 0,
-        "indent": 3,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 201,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           0,
           145,
@@ -2495,7 +2506,7 @@
       },
       {
         "code": 201,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           0,
           125,
@@ -2507,31 +2518,31 @@
       },
       {
         "code": 230,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           60
         ]
       },
       {
         "code": 222,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 230,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           90
         ]
       },
       {
         "code": 221,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2541,7 +2552,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Adon",
@@ -2553,17 +2564,17 @@
       },
       {
         "code": 0,
-        "indent": 3,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2573,7 +2584,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Actor4",
@@ -2585,17 +2596,17 @@
       },
       {
         "code": 0,
-        "indent": 3,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2605,7 +2616,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Actor4",
@@ -2617,17 +2628,17 @@
       },
       {
         "code": 0,
-        "indent": 3,
+        "indent": 1,
         "parameters": []
       },
       {
         "code": 412,
-        "indent": 2,
+        "indent": 0,
         "parameters": []
       },
       {
         "code": 111,
-        "indent": 2,
+        "indent": 0,
         "parameters": [
           4,
           1,
@@ -2637,7 +2648,7 @@
       },
       {
         "code": 322,
-        "indent": 3,
+        "indent": 1,
         "parameters": [
           1,
           "Actor4Old",
@@ -2649,45 +2660,6 @@
       },
       {
         "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 230,
-        "indent": 2,
-        "parameters": [
-          90
-        ]
-      },
-      {
-        "code": 222,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 356,
-        "indent": 2,
-        "parameters": [
-          "ShowActiveQuestWindow"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
         "indent": 1,
         "parameters": []
       },
@@ -2695,6 +2667,25 @@
         "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 230,
+        "indent": 0,
+        "parameters": [
+          90
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "ShowActiveQuestWindow"
+        ]
       },
       {
         "code": 0,
