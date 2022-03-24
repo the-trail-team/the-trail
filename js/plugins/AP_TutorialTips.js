@@ -14,7 +14,7 @@ const tips = [
 	"Certain inns are \"premium\" inns. These will cost an extra 50% Bits to rest at, but will give the very useful Well Rested buff.",
 	"Dark enemies grow stronger after the sun sets. They become much stronger but have a better chance of dropping powerful equipment.",
 	"Legends speak of eons-old crystals formed when the universe was created. They still exist... somewhere.",
-	"Boosting an item won't do anything. Make sure you haven't consumed any boosts before using an item!",
+	"Use your BP wisely. Waiting an extra turn to get one more boost can make the difference between winning or losing.",
 	"The heat of battle is enough to get anyone nervous. Don't let pressure cloud your judgement.",
 	"Buffs and debuffs can increase or decrease a stat by 50% max. Don't underestimate them!",
 	"Don't forget item upgraders exist. If you find yourself stuck on a difficult fight, consider min-maxing your equipment.",
@@ -23,7 +23,7 @@ const tips = [
 	"Skills are separated into Special, Magic, and Passive skills.",
 	"Shops contain many, many useful items to aid your adventure. Be sure to check them out!",
 	"With the link between the Above and the Overworld severed, the Immortals can no longer reach us.",
-	"Adon is just the one continent in the Overworld, and its culture is largely separated from Telluria's.",
+	"Adon is only one continent in the Overworld, with its culture largely separated from Telluria's.",
 	"The continent of Telluria is split into many regions. Telluria Castle is located in Telluria Field, the heart of the continent.",
 	"The Gulf of Telluria borders many unique regions. Taking a ship into it is a quick way to reach many new places.",
 	"These Tutorial Tips used to show up in-game and interrupt you. Doesn't that sound annoying?",
@@ -34,7 +34,7 @@ const tips = [
 	"Every copy of The Trail is personalized.",
 	"Sleeping at a premium inn will neutralize the entire team's moods.",
 	"Areas of the Overworld with a blue arrow over them need to be interacted with to be entered. They're not inaccessible!",
-	"",
+	"This specific text will never show up because it's replaced later down in the code. Congrats on finding an easter egg!",
 	"The Quick Access Menu is a helpful utility. Check it out using your configured key for it (Q by default).",
 	"Anything that regrows has its own unique timer that ticks down every hour.",
 	"Blueberries regrow after a mere 16 hours, while flowers take an entire week to sprout once more.",
@@ -56,10 +56,11 @@ const tips = [
 	"All the delete button does is append .bak to your save file. If you accidentally delete a save, it should still be in your save folder.",
 	"Don't be quick to sell materials. You never know when you'll need some for a crafting recipe.",
 	"Laeryidyean's defeat brings some rare enemies out of hiding. Maybe you'll get lucky on a random encounter...",
-	"A huge surge of magical energy has been detected at Telluria Castle in the past few decades. What could it be...?,",
+	"A huge surge of magical energy has been detected at Telluria Castle in the past few decades. What could it be...?",
 	"JP is used for allocating stats and learning new skills.",
 	"He is always watching you.",
-	"True attacks are neither physical nor magical hits. These are usually skills or items that only apply status effects."
+	"True attacks are neither physical nor magical hits. These are usually skills or items that only apply status effects.",
+	"Upgrading your pickaxe is a daunting task, but it can pay itself back quickly if you're a dedicated miner."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
