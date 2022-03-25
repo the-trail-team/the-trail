@@ -3780,9 +3780,13 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 5,
           "moveRoute": {
             "list": [
+              {
+                "code": 25,
+                "indent": null
+              },
               {
                 "code": 0,
                 "parameters": []
@@ -3793,7 +3797,7 @@
             "wait": false
           },
           "moveSpeed": 3,
-          "moveType": 0,
+          "moveType": 3,
           "priorityType": 1,
           "stepAnime": false,
           "through": false,
