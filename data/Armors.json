@@ -993,7 +993,18 @@
     "atypeId": 2,
     "description": "A set of heavily reinforced greaves meant to\nboost your defense and agility simultaneously.",
     "etypeId": 5,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      }
+    ],
     "iconIndex": 469,
     "name": "Knight's Greaves",
     "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nLeather: 4\nWorn Cloth: 5\nIron Cluster: 4\n</Synthesis Ingredients>\n<Mask Name: Protective Footwear>",
@@ -1001,10 +1012,10 @@
       0,
       0,
       0,
-      3,
+      4,
       0,
       0,
-      14,
+      16,
       0
     ],
     "price": 100
