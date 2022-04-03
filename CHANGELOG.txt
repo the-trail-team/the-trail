@@ -205,17 +205,20 @@ Music Update (Final Wave):
 Balancing:
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
  - Nerfed the Steel Axe's stun chance by 5% (was originally 10%).
- - Increased price of Metal Wristbraces ★ from 180B to 300B
+ - Increased price of Metal Wristbraces ★ from 180B to 300B.
  - Buffed the drop chance of rare enemy accessories from 1/3 to 1/2.
  - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
+ - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54].
  - Replaced The Warden's Darkfire with Engulfing Darkness.
 
 Bug Fixes:
+ - Fixed a softlock that I could have sworn was already fixed where you could push a boulder in Laeryidyean's Forest - Left Connector off the boulder tiles.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
  - Fixed a bug where playtime wouldn't increase correctly on non-60hz displays.
+ - Fixed a bug where the crafted weapons/armor counters could be wrong.
  - Fixed a bug where INT slightly affected state application rates.
  - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
  - Fixed a bug where magic skills used the wrong motion when casting.
