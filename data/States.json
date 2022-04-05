@@ -126,6 +126,16 @@
         "value": 1.08
       },
       {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.04
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 0.04
+      },
+      {
         "code": 14,
         "dataId": 6,
         "value": 1
@@ -166,6 +176,16 @@
         "value": 1.12
       },
       {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.06
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 0.06
+      },
+      {
         "code": 14,
         "dataId": 4,
         "value": 1
@@ -191,7 +211,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Somewhat Well Fed",
-    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.02>\n\n<Help Description>\nBoosts MHP by 5% and AGI by 4%. Restores 2% of MHP per turn.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.05;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.05;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
+    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.04>\n\n<Help Description>\nBoosts MHP by 5% and AGI by 4%. Restores 2% of MHP per turn.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.05;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.05;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
     "priority": 25,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -209,6 +229,16 @@
         "code": 21,
         "dataId": 6,
         "value": 1.04
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.02
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 0.02
       }
     ]
   },
