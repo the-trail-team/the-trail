@@ -55,8 +55,8 @@ Additions:
    > Ice Cube
    > Tellurium Dust
    > Tellurium Alloy
-   > Life Orb
-   > Mana Orb
+   > Life Crystal
+   > Mana Crystal
    > Mysterious Yellow Badge
    > Knight Token
    > Mage Token
@@ -212,7 +212,7 @@ Balancing:
  - Buffed the drop chance of rare enemy accessories from 1/3 to 1/2.
  - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
  - Buffed the Knight's Greaves' DEF by 1 and AGI by 2 and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
- - All levels of Well Fed increase ATK and MAT by +2%, +4%, and +6% at each level (respectively).
+ - All levels of Well Fed increase ATK and MAT by +2%, +4%, and +6% at each respective level (respectively).
  - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54].
  - Replaced The Warden's Darkfire with Engulfing Darkness.
 
@@ -224,6 +224,7 @@ Bug Fixes:
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
  - Fixed a bug where playtime wouldn't increase correctly on non-60hz displays.
  - Fixed a bug where the crafted weapons/armor counters could be wrong.
+ - Fixed a bug where some resistance accessory drop rates were lower than intended (1% instead of 2%).
  - Fixed a bug where INT slightly affected state application rates.
  - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
  - Fixed a bug where magic skills used the wrong motion when casting.
