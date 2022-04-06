@@ -601,11 +601,14 @@ DataManager.processEEDNotetags1 = function(group) {
         conditionalLines.push(line);
       }
     }
-    // origin crystal (1/100,000 drop)
+    // origin crystal (1/50,000 drop)
     var id = 34;
     var rate = 0.00002;
+    if (obj.name.contains("EX")) rate *= 100; // 100x more likely to drop from EX enemies (1/500 drop)
     this.createEnemyDrop(obj, id, rate, 2);
-    if (Date().split(" ")[1] == "Dec") { // present (1/5 drop)
+    console.log(obj.dropItems);
+    // present (1/5 drop)
+    if (Date().split(" ")[1] == "Dec") {
       var id = 156;
       if (Date().split(" ")[2] == 25) {
         var rate = 0.2;
