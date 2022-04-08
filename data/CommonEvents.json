@@ -925,6 +925,78 @@
         "indent": 1,
         "parameters": [
           4,
+          3,
+          3,
+          55
+        ]
+      },
+      {
+        "code": 318,
+        "indent": 2,
+        "parameters": [
+          0,
+          3,
+          1,
+          55
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "var p2 = $gameParty.members()[1];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "var p3 = $gameParty.members()[2];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "var level = p3.skillMasteryLevel(55);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "var uses = p3.skillMasteryUses(55);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "p2.setSkillMasteryLevel(55, level);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 2,
+        "parameters": [
+          "p2.setSkillMasteryUses(55, uses);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          4,
           4,
           3,
           35
