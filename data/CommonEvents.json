@@ -1751,6 +1751,34 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Fishing fix for $gameSystem"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameSystem.fishing) $gameSystem.fishing = {recordFish:{id:0,weight:0,length:0},caught:{},hole:{bg:'back1',surface:'surface1',under:'under1',underOverlay:'under1_1',land:'land1',splash:Galv.FISH.splashImg,speed:[0.3,0.3,1],surfaceY:Galv.FISH.surfaceY+20,music:Galv.FISH.defaultMusic,fish:[]},player:{x:Number(Galv.FISH.fisherInfo.x),y:Number(Galv.FISH.fisherInfo.y),poleX:0,poleY:0,dir:Galv.FISH.fisherInfo.dir.toLowerCase()=='left'?4:6,pole:null,bait:null,}}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gamePlayer._rodEquipped) $gamePlayer._rodEquipped = null;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gamePlayer._baitEquipped) $gamePlayer._baitEquipped = null;"
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
