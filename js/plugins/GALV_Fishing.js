@@ -1604,6 +1604,8 @@ Spriteset_Fishing.prototype.createBackground = function() {
 	this._lanLayer = new Sprite();
 	this._lanLayer.bitmap = ImageManager.loadFishGraphic($gameSystem.fishing.hole.land);
 	this._lanLayer.z = -88;
+	this._lanLayer.x = 464;
+	this._lanLayer.y = 96;
 	this._sprites.addChild(this._lanLayer);
 };
 
