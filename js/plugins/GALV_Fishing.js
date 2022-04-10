@@ -2439,7 +2439,7 @@ Window_FishCaught.prototype.doCatch = function(fishId) {
 	if (data.customText) {
 		var txt = data.customText;
 	} else if (item) {
-		var txt = Galv.FISH.caughtText + " " + item.name;
+		var txt = Galv.FISH.caughtText + " " + item.name + "!";
 	} else {
 		var txt = Galv.FISH.caughtText + data.graphic;
 	}
