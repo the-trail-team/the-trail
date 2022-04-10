@@ -2454,17 +2454,19 @@ Window_FishCaught.prototype.doCatch = function(fishId) {
 	
 	// Calc Length/weight
 	var rate = Math.random();
-	var length = this.randScale(data.length[0],data.length[1],rate);
-	length = +length.toFixed(2);
-	var weight = this.randScale(data.weight[0],data.weight[1],rate);
-	weight = +weight.toFixed(2);
+	// var length = this.randScale(data.length[0],data.length[1],rate);
+	// length = +length.toFixed(2);
+	var length = (rate * (data.length[1] - data.length[0]) + data.length[0]).toFixed(2);
+	// var weight = this.randScale(data.weight[0],data.weight[1],rate);
+	// weight = +weight.toFixed(2);
+	var weight = (rate * (data.weight[1] - data.weight[0]) + data.weight[0]).toFixed(2);
 
 	// Record stuff
 	Galv.FISH.addRecords(fishId,length,weight);
 
 	// Draw length/weight
-	this.drawText(length, 0, this.lineHeight() + 20, this.contents.width / 2, 'right');  // Length
-	this.drawText(weight, 0, this.lineHeight() * 2 + 20, this.contents.width / 2, 'right');  // Weight
+	this.drawText(length + " cm", 30, this.lineHeight() + 20, this.contents.width / 2, 'right');  // Length
+	this.drawText(weight + " g", 30, this.lineHeight() * 2 + 20, this.contents.width / 2, 'right');  // Weight
 	
 	// Draw fish graphic
 	var fx = this.contents.width - this.contents.width / 4;
