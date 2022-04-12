@@ -2294,7 +2294,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Mana Refund",
-    "note": "<animationRow: 22>\n\n<Help Description>\nBattlers who attack this unit will gain MP equal to 5% of damage dealt, capped at 5% of MMP.\n</Help Description>\n\n<Custom Respond Effect>\nif (value > 0) {\n  var mp = Math.ceil(value * 0.05);\n  var cap = Math.ceil(user.mmp * 0.05);\n  if (mp > cap) {\n    mp = cap;\n  }\n  user.gainMp(mp);\n  user.startDamagePopup();\n  user.clearResult();\n}\n</Custom Respond Effect>",
+    "note": "<animationRow: 22>\n\n<Help Description>\nBattlers who attack this unit will gain MP equal to 5% of damage dealt, capped at 5% of MMP.\n</Help Description>\n\n<Custom Respond Effect>\nif (value > 0) {\n  var mp = Math.ceil(value * 0.01);\n  var cap = Math.ceil(user.mmp * 0.05);\n  if (mp > cap) {\n    mp = cap;\n  }\n  user.gainMp(mp);\n  user.startDamagePopup();\n  user.clearResult();\n}\n</Custom Respond Effect>",
     "overlay": 9,
     "priority": 41,
     "removeAtBattleEnd": true,
