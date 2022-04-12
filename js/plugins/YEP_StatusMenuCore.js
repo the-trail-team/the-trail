@@ -1311,6 +1311,14 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeName(Yanfly.Param.StatusAttr_exr, dx, dy, dw);
       this.drawAttributeRate(actor.exr, dx, dy, dw);
       break;
+    case 'ohr':
+      this.drawAttributeName("Outgoing Healing Rate", dx, dy, dw);
+      this.drawAttributeRate(actor.otherparam(0), dx, dy, dw);
+      break;
+    case 'edr':
+      this.drawAttributeName("Elemental Damage Rate", dx, dy, dw);
+      this.drawAttributeRate(actor.otherparam(1), dx, dy, dw);
+      break;
     case 'pls':
       this.drawAttributeName("Physical Life Steal", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpPhysicalRate'), dx, dy, dw);
