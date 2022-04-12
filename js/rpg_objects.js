@@ -2186,7 +2186,11 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     // Floor Damage Rate
     fdr: { get: function() { return this.sparam(8); }, configurable: true },
     // EXperience Rate
-    exr: { get: function() { return this.sparam(9); }, configurable: true }
+    exr: { get: function() { return this.sparam(9); }, configurable: true },
+    // Elemental Damage Rate
+    edr: { get: function() { return this.otherparam(0); }, configurable: true},
+    // Outgoing Healing Rate
+    ohr: { get: function() { return this.otherparam(1); }, configurable: true}
 });
 
 Game_BattlerBase.prototype.initialize = function() {
