@@ -1830,7 +1830,13 @@
     "atypeId": 4,
     "description": "An intricate headpiece created using fine silk and a beautiful rose.\nIt boosts the wearer's outgoing healing by a small but noticeable 5%.",
     "etypeId": 3,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
     "iconIndex": 519,
     "name": "Rose Headpiece",
     "note": "<Upgrade Slots: 1>\n\n<Passive State: 59>",
@@ -2549,9 +2555,15 @@
   {
     "id": 103,
     "atypeId": 1,
-    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness the six natural elements by 15%.",
+    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the eight elements by 15%.",
     "etypeId": 8,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 0.15
+      }
+    ],
     "iconIndex": 182,
     "name": "Elemental Lace",
     "note": "<Passive State: 73>\n<Upgrade Slots: 2>",
@@ -3214,7 +3226,13 @@
     "atypeId": 4,
     "description": "The truly repaired form of the vestments guarded by\nThe Warden. Strengthens outgoing healing by 5%.",
     "etypeId": 4,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
     "iconIndex": 168,
     "name": "True Prayer Vestments ★",
     "note": "<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n<Passive State: 85>\n\n<Synthesis Ingredients>\nPrayer Vestments ★: 1\nDark Essence: 3\nShadowspec Ingot: 3\nDisposable Hammer: 3\nEnchanting Crystal: 3\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>",
@@ -3272,6 +3290,11 @@
         "code": 22,
         "dataId": 2,
         "value": 0.005
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 0.05
       }
     ],
     "iconIndex": 473,
@@ -3388,6 +3411,11 @@
         "code": 11,
         "dataId": 3,
         "value": 0.92
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 0.05
       }
     ],
     "iconIndex": 477,
@@ -3430,6 +3458,11 @@
         "code": 11,
         "dataId": 3,
         "value": 0.88
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 0.1
       }
     ],
     "iconIndex": 477,
@@ -3955,7 +3988,13 @@
     "atypeId": 4,
     "description": "\"Confinement to your destiny is still confinement.\"\nIncreases outgoing healing by 10%.",
     "etypeId": 3,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 0.1
+      }
+    ],
     "iconIndex": 658,
     "name": "Sorrowful Headpiece",
     "note": "<Passive State: 92>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nRose Headpiece\nEnchanted Dragon Scale\nDragon Scale: 5\nRed Flower: 15\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: Cleric's Headgear>",
