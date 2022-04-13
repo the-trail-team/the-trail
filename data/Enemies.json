@@ -5058,7 +5058,7 @@
     ],
     "gold": 500,
     "name": "Mimic",
-    "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n\n<Enemy Drops>\nCool Dust: 0%\nRecovery Vat: 0%\nPhoenix Feather Replica: 0%\nINT Scroll: 0%\nMagic Coin: 0%\nBunny Hood: 0%\nTrail Mix: 0%\n</Enemy Drops>\n\n<Conditional Cool Dust Drop>\nEval Date.now() % 7 === 0: +100%\n</Conditional Cool Dust Drop>\n<Conditional Recovery Vat Drop>\nEval Date.now() % 7 === 1: +100%\n</Conditional Recovery Vat Drop>\n<Conditional Phoenix Feather Replica Drop>\nEval Date.now() % 7 === 2: +100%\n</Conditional Phoenix Feather Replica Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 7 === 3: +100%\n</Conditional INT Scroll Drop>\n<Conditional Magic Coin Drop>\nEval Date.now() % 7 === 4: +100%\n</Conditional Magic Coin Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 7 === 5: +100%\n</Conditional Bunny Hood Drop>\n<Conditional Trail Mix Drop>\nEval Date.now() % 7 === 6: +100%\n</Conditional Trail Mix Drop>",
+    "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n\n<Enemy Drops>\nSeshat's Charm: 0%\nINT Scroll: 0%\nBunny Hood: 0%\n</Enemy Drops>\n\n<Conditional Seshat's Charm Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Seshat's Charm Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
     "params": [
       2500,
       0,
