@@ -1319,6 +1319,10 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeName("Outgoing Healing Rate (OHR)", dx, dy, dw);
       this.drawAttributeRate(actor.ohr, dx, dy, dw);
       break;
+    case 'jpr':
+      this.drawAttributeName("JP Rate (JPR)", dx, dy, dw);
+      this.drawAttributeRate(actor.jpRate(), dx, dy, dw);
+      break;
     case 'pls':
       this.drawAttributeName("Physical Life Steal", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpPhysicalRate'), dx, dy, dw);
