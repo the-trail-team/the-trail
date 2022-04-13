@@ -1944,9 +1944,9 @@ if(Imported.YEP_EquipCore) {
 var mhpId = 1;
 var atkId = 3;
 var intId = 8;
-var elementAtk1 = 45;
-var elementAtk2 = 55;
-var maxBpId = 56;
+var elementAtk1 = 81;
+var elementAtk2 = 91;
+var maxBpId = 100;
 
 Window_StatCompare.prototype.refresh = function() {
 	if(this._actor && this._tempActor) {
