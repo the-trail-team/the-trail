@@ -800,7 +800,7 @@ Window_DisassemblePool.prototype.updateVisibility = function() {
     var win = SceneManager._scene._itemActionWindow;
     if (!win) return;
     var current = this.visible;
-    var visible = win.visible && win.currentSymbol() === 'disassemble';
+    var visible = !win.visible && win.currentSymbol() === 'disassemble';
     win = SceneManager._scene._disassemblerListWindow;
     if (win && win.visible) visible = true;
     this.visible = visible;
