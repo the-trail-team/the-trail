@@ -1619,5 +1619,38 @@
     ],
     "price": 1600,
     "wtypeId": 4
+  },
+  {
+    "id": 51,
+    "animationId": 143,
+    "description": "A large dark hammer that increases offensive prowess\nmore than a staff, at the cost of healing reduction.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 9,
+        "value": 0
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": -0.7
+      }
+    ],
+    "iconIndex": 562,
+    "name": "Shadowspec Warhammer",
+    "note": "<Remove State Category: Light>\n\n<Upgrade Slots: 2>\n<Weapon Image: 58>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 8\n</Synthesis Ingredients>\n<Mask Name: Dark Hammer>",
+    "params": [
+      0,
+      22,
+      11,
+      0,
+      70,
+      5,
+      0,
+      0
+    ],
+    "price": 600,
+    "wtypeId": 8
   }
 ]
