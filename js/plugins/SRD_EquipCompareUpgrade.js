@@ -1940,6 +1940,14 @@ Window_EquipStatus.prototype.standardFontSize = function() {
 
 if(Imported.YEP_EquipCore) {
 
+// this plugin has been customized a bit TOO much, some variables have to be defined here so I don't keep getting lost in my own work
+var mhpId = 1;
+var atkId = 3;
+var intId = 8;
+var elementAtk1 = 45;
+var elementAtk2 = 55;
+var maxBpId = 56;
+
 Window_StatCompare.prototype.refresh = function() {
 	if(this._actor && this._tempActor) {
 		this.contents.clear();
@@ -1947,7 +1955,7 @@ Window_StatCompare.prototype.refresh = function() {
 		this.changeTextColor(this.systemColor());
 		this.drawText("Stat Comparison", 0, place * this.lineHeight(), this.contents.width, 'center');
 		place++
-		for(var i = 1; i < 3; i++) { // stats 1-2 (mhp, mmp) will be showed if they are modified
+		for(var i = mhpId; i < atkId; i++) { // stats 1-2 (mhp, mmp) will be showed if they are modified
 			if(_.names[i]) {
 				let actor = this._tempActor;
 				const newValue = eval(_.evals[i]);
@@ -1959,25 +1967,25 @@ Window_StatCompare.prototype.refresh = function() {
 				}
 			}
 		}
-		for(var i = 3; i < 8; i++) { // stats 3-7 (atk, def, mat, mdf, agi) core stats will always be displayed
+		for(var i = atkId; i < intId; i++) { // stats 3-7 (atk, def, mat, mdf, agi) core stats will always be displayed
 			if(_.names[i]) {
 				this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
 				place++;
 			}
 		}
-		for(var i = 8; i < _.names.length; i++) { // stats 8+ will be showed if they are modified
+		for(var i = intId; i < _.names.length; i++) { // stats 8+ will be showed if they are modified
 			if(_.names[i]) {
 				let actor = this._tempActor;
 				const newValue = eval(_.evals[i]);
 				actor = this._actor;
 				const diffvalue = newValue - eval(_.evals[i]);
-				if(!(i >= 45 && i <= 55)) {
+				if(!(i >= elementAtk1 && i <= elementAtk2)) { // this will run for everything that is not an attack element change
 					if(diffvalue !== 0) {
 						this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
 						place++;
 					}
-				} else {
-					if(this._actor.attackElements().contains(i - 44) !== this._tempActor.attackElements().contains(i-44)) {
+				} else { // this will only run for attack element changes
+					if(this._actor.attackElements().contains(i - elementAtk1 + 1) !== this._tempActor.attackElements().contains(i - elementAtk1 + 1)) {
 						this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
 						place++;
 					}
@@ -2015,8 +2023,8 @@ Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
 	var diffvalue = newValue - eval(_.evals[paramId]);
 	//End of New Code
 	if (diffvalue === 0) return;
-	if (paramId >= 45 && paramId <= 55) return;
-	if (paramId >= 9 && paramId !== 56) diffvalue = diffvalue.toFixed(1);
+	if (paramId >= elementAtk1 && paramId <= elementAtk2) return;
+	if (paramId >= intId + 1 && paramId !== maxBpId) diffvalue = diffvalue.toFixed(1);
 	var actorparam = Yanfly.Util.toGroup(newValue);
 	this.changeTextColor(this.paramchangeTextColor(diffvalue, paramId));
 	var text = Yanfly.Util.toGroup(diffvalue) + _.forms[paramId].replace(/val/, "");
