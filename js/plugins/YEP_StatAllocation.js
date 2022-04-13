@@ -2189,6 +2189,7 @@ Scene_StatAllocation.prototype.processRevertAllParams = function() {
     var param = allParams[i];
     this.processRevertParam(param);
   }
+  this._actor.initAllocationPoints();
 };
 
 Scene_StatAllocation.prototype.processRevertParam = function(param) {
