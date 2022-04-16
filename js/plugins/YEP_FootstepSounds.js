@@ -411,6 +411,7 @@ Game_CharacterBase.prototype.processFootstepSound = function() {
 };
 
 Game_CharacterBase.prototype.playFootstepSound = function(volume, pitch, pan) {
+  if ($gamePlayer.isInAirship()) return;
   if (volume <= 0) return;
   if (pitch <= 0) return;
   if (!$dataMap) return;
