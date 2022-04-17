@@ -963,6 +963,12 @@ Window_DisassemblerList.prototype.makeItemList = function() {
 
 Window_DisassemblerList.prototype.drawItemNumber = function() {}
 
+Window_DisassemblerList.prototype.drawItemName = function(item, x, y, width) {
+    if (item.synthIngredients.length === 0) proto = Window_ItemList.prototype.drawItemName;
+    else proto = Window_SynthesisList.prototype.drawItemName;
+    proto.call(this, item, x, y, width);
+};
+
 Window_DisassemblerList.prototype.updateHelp = function() {
     Window_ItemList.prototype.updateHelp.call(this);
     this.updateHelpIndex();
