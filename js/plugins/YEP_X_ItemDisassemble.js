@@ -952,11 +952,11 @@ Window_DisassemblerList.prototype.containsType = function(item) {
 };
 
 Window_DisassemblerList.prototype.isEnabled = function(item) {
-    return item;
+    return $gameParty.hasItem(item);
 };
 
 Window_DisassemblerList.prototype.makeItemList = function() {
-    this._data = $gameParty.allItems().filter(function(item) {
+    this._data = $dataItems.filter(function(item) {
         return this.includes(item);
     }, this);
 };
