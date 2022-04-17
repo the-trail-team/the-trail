@@ -7187,10 +7187,10 @@
         ]
       },
       {
-        "code": 356,
+        "code": 117,
         "indent": 1,
         "parameters": [
-          "Tint set #53454f"
+          57
         ]
       },
       {
@@ -7269,10 +7269,10 @@
         ]
       },
       {
-        "code": 356,
+        "code": 117,
         "indent": 1,
         "parameters": [
-          "Tint set #ffffff"
+          58
         ]
       },
       {
@@ -7303,10 +7303,10 @@
         ]
       },
       {
-        "code": 356,
+        "code": 117,
         "indent": 2,
         "parameters": [
-          "Tint set #ffffff"
+          58
         ]
       },
       {
@@ -7563,6 +7563,13 @@
           0,
           69,
           0
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 1,
+        "parameters": [
+          "Tint set #53454f"
         ]
       },
       {
@@ -13942,6 +13949,60 @@
       }
     ],
     "name": "TIME - Battle Time System Tint",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 57,
+    "list": [
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #fb9062 20"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #53454f 35"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Tint System Day to Night",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 58,
+    "list": [
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #fb9062 20"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Tint fade #ffffff 35"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "TIME - Tint System Night to Day",
     "switchId": 1,
     "trigger": 0
   }
