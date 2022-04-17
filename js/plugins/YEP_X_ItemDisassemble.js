@@ -961,6 +961,8 @@ Window_DisassemblerList.prototype.makeItemList = function() {
     }, this);
 };
 
+Window_DisassemblerList.prototype.drawItemNumber = function() {}
+
 Window_DisassemblerList.prototype.updateHelp = function() {
     Window_ItemList.prototype.updateHelp.call(this);
     this.updateHelpIndex();
