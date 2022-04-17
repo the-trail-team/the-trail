@@ -350,6 +350,7 @@ Scene_Boot.prototype.create = function() {
     DataManager.loadDatabase();
     ConfigManager.load();
     this.loadSystemWindowImage();
+    if (Utils.isOptionValid('test') == 0) console.log("Welcome to The Trail's console!\nHow'd you even get here?\nWell, if you somehow got this far and still don't know what you're doing, feel free to find out.\nIf you do know what you're doing, I'm probably interested in your help...\nCheck out the GitHub issues page to see how you can contribute!");
 };
 
 Scene_Boot.prototype.loadSystemWindowImage = function() {
