@@ -850,11 +850,8 @@ Window_DisassemblePool.prototype.drawDisassembleItems = function() {
     var dy = this.lineHeight() * 2;
     var dw = this.contentsWidth() - dx * 2;
     this._types = data;
-    var length = this._types.length;
-    for (var i = 0; i < length; ++i) {
-      var type = this._types[i];
-      dy = this.drawDisassembleTypePool(dy, type);
-    }
+    var type = this._types[Math.round(SceneManager._scene._disassemblerListWindow._cursorRect.y / 36)];
+    dy = this.drawDisassembleTypePool(dy, type);
 };
 
 Window_DisassemblePool.prototype.drawDisassembleTypePool = function(dy, type) {
