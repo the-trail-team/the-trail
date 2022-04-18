@@ -7423,6 +7423,36 @@
         "code": 108,
         "indent": 0,
         "parameters": [
+          "# If in dungeon, do nothing"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$dataMap.note.contains(\"<Dungeon>\")"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
           "# If indoors, remove the screen tint"
         ]
       },
