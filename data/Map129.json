@@ -7990,8 +7990,8 @@
     0,
     112,
     113,
-    116,
-    116,
+    0,
+    0,
     113,
     114,
     122,
@@ -8043,8 +8043,8 @@
     0,
     120,
     121,
-    124,
-    124,
+    0,
+    0,
     121,
     122,
     0,
@@ -10851,6 +10851,10 @@
     0,
     0,
     0,
+    116,
+    113,
+    113,
+    116,
     0,
     0,
     0,
@@ -10900,14 +10904,10 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    124,
+    121,
+    121,
+    124,
     0,
     0,
     0,
@@ -21266,7 +21266,7 @@
     {
       "id": 43,
       "name": "EV043",
-      "note": "Fire 200 #e25822",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -21289,7 +21289,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -21326,7 +21326,7 @@
     {
       "id": 44,
       "name": "EV044",
-      "note": "Fire 200 #e25822",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -21349,7 +21349,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -21380,13 +21380,13 @@
           "walkAnime": false
         }
       ],
-      "x": 33,
-      "y": 40
+      "x": 12,
+      "y": 37
     },
     {
       "id": 45,
       "name": "EV045",
-      "note": "Fire 200 #e25822",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -21409,7 +21409,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -21440,13 +21440,13 @@
           "walkAnime": false
         }
       ],
-      "x": 37,
-      "y": 40
+      "x": 7,
+      "y": 34
     },
     {
       "id": 46,
       "name": "EV046",
-      "note": "Fire 200 #e25822",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -21469,7 +21469,67 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 34,
+      "y": 40
+    },
+    {
+      "id": 47,
+      "name": "EV047",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -21504,9 +21564,9 @@
       "y": 40
     },
     {
-      "id": 47,
-      "name": "EV047",
-      "note": "Fire 200 #e25822",
+      "id": 48,
+      "name": "EV048",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -21529,7 +21589,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -21564,69 +21624,9 @@
       "y": 40
     },
     {
-      "id": 48,
-      "name": "EV048",
-      "note": "Fire 200 #e25822",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 42,
-      "y": 28
-    },
-    {
       "id": 49,
       "name": "EV049",
-      "note": "Fire 200 #e25822",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -21649,67 +21649,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 46,
-      "y": 28
-    },
-    {
-      "id": 50,
-      "name": "EV050",
-      "note": "Fire 200 #e25822",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -21741,12 +21681,12 @@
         }
       ],
       "x": 36,
-      "y": 13
+      "y": 40
     },
     {
-      "id": 51,
-      "name": "EV051",
-      "note": "Fire 200 #e25822 D1",
+      "id": 50,
+      "name": "EV050",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -21769,547 +21709,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 34,
-      "y": 3
-    },
-    {
-      "id": 52,
-      "name": "EV052",
-      "note": "Fire 200 #e25822",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 46,
-      "y": 13
-    },
-    {
-      "id": 53,
-      "name": "EV053",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 38,
-      "y": 3
-    },
-    {
-      "id": 54,
-      "name": "EV054",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 48,
-      "y": 3
-    },
-    {
-      "id": 55,
-      "name": "EV055",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 22,
-      "y": 3
-    },
-    {
-      "id": 56,
-      "name": "EV056",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 8,
-      "y": 3
-    },
-    {
-      "id": 57,
-      "name": "EV057",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 4,
-      "y": 3
-    },
-    {
-      "id": 58,
-      "name": "EV058",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 5,
-      "y": 13
-    },
-    {
-      "id": 59,
-      "name": "EV059",
-      "note": "Fire 200 #e25822",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 6,
-      "y": 23
-    },
-    {
-      "id": 60,
-      "name": "EV060",
-      "note": "Fire 200 #e25822",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -22341,12 +21741,72 @@
         }
       ],
       "x": 14,
+      "y": 37
+    },
+    {
+      "id": 51,
+      "name": "EV051",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 7,
       "y": 23
     },
     {
-      "id": 61,
-      "name": "EV061",
-      "note": "Fire 200 #e25822",
+      "id": 52,
+      "name": "EV052",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -22369,7 +21829,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -22400,13 +21860,13 @@
           "walkAnime": false
         }
       ],
-      "x": 15,
-      "y": 37
+      "x": 13,
+      "y": 23
     },
     {
-      "id": 62,
-      "name": "EV062",
-      "note": "Fire 200 #e25822",
+      "id": 53,
+      "name": "EV053",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -22429,67 +21889,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 11,
-      "y": 37
-    },
-    {
-      "id": 63,
-      "name": "EV063",
-      "note": "Fire 200 #e25822",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -22521,12 +21921,612 @@
         }
       ],
       "x": 6,
-      "y": 34
+      "y": 13
+    },
+    {
+      "id": 54,
+      "name": "EV054",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 15,
+      "y": 13
+    },
+    {
+      "id": 55,
+      "name": "EV055",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 20,
+      "y": 23
+    },
+    {
+      "id": 56,
+      "name": "EV056",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 30,
+      "y": 23
+    },
+    {
+      "id": 57,
+      "name": "EV057",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 37,
+      "y": 23
+    },
+    {
+      "id": 58,
+      "name": "EV058",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 45,
+      "y": 28
+    },
+    {
+      "id": 59,
+      "name": "EV059",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 37,
+      "y": 13
+    },
+    {
+      "id": 60,
+      "name": "EV060",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 41,
+      "y": 13
+    },
+    {
+      "id": 61,
+      "name": "EV061",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 45,
+      "y": 13
+    },
+    {
+      "id": 62,
+      "name": "EV062",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 36,
+      "y": 3
+    },
+    {
+      "id": 63,
+      "name": "EV063",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 40,
+      "y": 3
     },
     {
       "id": 64,
       "name": "EV064",
-      "note": "Fire 200 #e25822 D1",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -22549,7 +22549,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -22580,13 +22580,13 @@
           "walkAnime": false
         }
       ],
-      "x": 10,
-      "y": 23
+      "x": 5,
+      "y": 3
     },
     {
       "id": 65,
       "name": "EV065",
-      "note": "Fire 200 #e25822",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -22609,7 +22609,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -22640,13 +22640,13 @@
           "walkAnime": false
         }
       ],
-      "x": 9,
-      "y": 13
+      "x": 23,
+      "y": 3
     },
     {
       "id": 66,
       "name": "EV066",
-      "note": "Fire 200 #e25822 D1",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -22669,7 +22669,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -22700,13 +22700,13 @@
           "walkAnime": false
         }
       ],
-      "x": 12,
+      "x": 11,
       "y": 3
     },
     {
       "id": 67,
       "name": "EV067",
-      "note": "Fire 200 #e25822 D1",
+      "note": "Fire 100 #e6292c d1",
       "pages": [
         {
           "conditions": {
@@ -22729,7 +22729,7 @@
             "tileId": 0,
             "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
+            "pattern": 1,
             "characterIndex": 0
           },
           "list": [
@@ -22760,129 +22760,70 @@
           "walkAnime": false
         }
       ],
-      "x": 42,
-      "y": 3
+      "x": 27,
+      "y": 8
+    },
+    {
+      "id": 68,
+      "name": "EV068",
+      "note": "Fire 100 #e6292c d1",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Flame",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 31,
+      "y": 8
     },
     null,
-    {
-      "id": 69,
-      "name": "EV069",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 29,
-      "y": 23
-    },
-    {
-      "id": 70,
-      "name": "EV070",
-      "note": "Fire 200 #e25822 D1",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Flame",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 38,
-      "y": 23
-    }
+    null
   ]
 }
