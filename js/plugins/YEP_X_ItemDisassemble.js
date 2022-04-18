@@ -1161,6 +1161,7 @@ Scene_Item.prototype.closeDisassembleLootWindow = function() {
       this._disassemblerListWindow.activate();
     }
     this._infoWindow.setItem(this.item());
+    this._statusWindow.setItem(this.item());
 };
 
 Scene_Item.prototype.isCloseDisassembleWindow = function() {
