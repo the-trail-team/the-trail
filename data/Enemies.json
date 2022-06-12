@@ -5058,7 +5058,7 @@
     ],
     "gold": 500,
     "name": "Mimic",
-    "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n\n<Enemy Drops>\nSeshat's Charm: 0%\nINT Scroll: 0%\nBunny Hood: 0%\n</Enemy Drops>\n\n<Conditional Seshat's Charm Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Seshat's Charm Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
+    "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n\n<Enemy Drops>\nSeshat's Charm: 0%\nEXR Scroll: 0%\nBunny Hood: 0%\n</Enemy Drops>\n\n<Conditional Seshat's Charm Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Seshat's Charm Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
     "params": [
       2500,
       0,
@@ -5431,7 +5431,7 @@
     ],
     "gold": 45,
     "name": "Baby Turtle",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nThick-Skinned Herb: 50%\nTurtle Scute: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nThick-Skinned Herb: 50%\nTurtle Scute: 50%\nPDR Scroll: 5%\nMDR Scroll: 5%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
@@ -5544,7 +5544,7 @@
     ],
     "gold": 200,
     "name": "Giant Turtle",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nPDR Scroll: 5%\nMDR Scroll: 5%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       4000,
       0,
@@ -5658,7 +5658,7 @@
     ],
     "gold": 250,
     "name": "Ice Golem",
-    "note": "<Breathing Speed: 20>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<AI Priority>\nState !== Icy Barrier +++ Random 50%: Ice Barrier\n</AI Priority>\n\n<Enemy Drops>\nWarm Scarf: 2%\nGlacial Bulwark: 20%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Breathing Speed: 20>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<AI Priority>\nState !== Icy Barrier +++ Random 50%: Ice Barrier\n</AI Priority>\n\n<Enemy Drops>\nWarm Scarf: 2%\nGlacial Bulwark: 20%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nPDR Scroll: 5%\nMDR Scroll: 5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       7500,
       0,
