@@ -206,6 +206,7 @@ Additions:
 Changes:
  - Recapped the max level from level 20 to level 25.
  - Replaced the Mage class's 2nd magic equip slot with an offhand slot (light shields).
+ - The game's icons have finally been resprited at a non-blurred 32px resolution. Many items have additionally had their icons changed to stand out a bit more.
  - Skill families will now be condensed into a single dropdown. Old save patching must be enabled when updating for this to work properly.
  - Completed the salvaging system. Many items throughout the entire game are now salvageable, making the system much more relevant.
  - Changed up the preloader / title screen background.
@@ -213,9 +214,7 @@ Changes:
  - Many shops have had their stock changed. Some enemy drop pools have also been adjusted.
  - The 4-skeleton enemy troop now spawns frequently anywhere in the "Forest Arena...?" after the penultimate Laeryidyean cutscene.
   ~ Additionally, the Adonian Monsters troop has been altered. No troops with the Skeleton can be encountered anymore, effectively removing the enemy from the game.
- - Uncrafted items now show their mask name if in an ingredient list.
- - A crafting ingredient's color now changes depending on if the player has enough of it.
- - Many items have had their icons changed to stand out a bit more.
+ - Uncrafted items now display their mask name if in an ingredient list. Additionally, the color of an ingredient now changes depending on if the player has enough of the item.
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
  - Unknown enemy weaknesses now show a question mark icon.
  - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and dishes.
@@ -225,17 +224,19 @@ Changes:
  - Presents now have a 50% drop chance on December 25th rather than the default 20%.
  - Red Gel can now be used on party members in battle.
  - Sharpened battleback images.
+ - Countless other small changes have been made throughout the game (not as much as Alpha 14, but still a lot of new quality-of-life stuff).
 
 Music Update (Final Wave):
  - Redid "New Lands".
 
 Balancing:
  - Heavily rebalanced stat allocation.
-  ~ All AP is multiplied by x4 now, making the max AP at level 100 10,000 instead of the old 2,500.
-  ~ JP costs of all allocations have been greatly increased, making JP the main limiting factor for allocation.
+  ~ All AP is multiplied by x4 now, making the max AP at level 100 be 10,000 instead of the old 2,500.
+  ~ JP costs of all allocations have been greatly increased, now making JP the main limiting factor for allocation.
  - Heavily nerfed the recovery of the Potion, Elixir, Ether.
   ~ Potion's HP recovery was reduced from 90 to 60, and Elixir's MP recovery was reduced from 36 to 24.
   ~ Since Ether heals ~20% more HP/MP than its Potion/Elixir counterpart, it has been nerfed accordingly.
+ - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100 and +5 INT at Alpha 15's level cap of 25.
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
  - Nerfed the Steel Axe's stun chance by 5% (was originally 10%).
  - Nerfed Mana Refund's return to 1% of damage dealt (was originally 5%).
@@ -245,7 +246,7 @@ Balancing:
  - Buffed the Knight's Greaves' DEF by 1 and AGI by 2 and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
  - All levels of Well Fed increase ATK and MAT by +2%, +4%, and +6% at each respective level (respectively).
  - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54].
- - Replaced The Warden's Darkfire with Engulfing Darkness.
+ - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill except it does not debuff MDF.
  - Many other small changes have been made to item prices/crafting recipes and enemy stats/drops.
 
 Bug Fixes:
