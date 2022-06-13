@@ -41064,6 +41064,20 @@
               ]
             },
             {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "If AGI changes during battle, the next"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "turn's order will reflect the changes."
+              ]
+            },
+            {
               "code": 119,
               "indent": 2,
               "parameters": [
@@ -41112,6 +41126,37 @@
               "indent": 2,
               "parameters": [
                 "damage. It is difficult to enhance."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\solIf you like math, you'll probably"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "like the critical damage formula:"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "value *= 2.0 * (Math.max(1.0, user.luk / 40));"
               ]
             },
             {
@@ -41182,8 +41227,8 @@
               "parameters": [
                 [
                   "HIT/EVA",
-                  "CRI/CEV",
                   "MEV/MRF",
+                  "CRI/CEV",
                   "CNT",
                   "Next Page",
                   "Goodbye."
@@ -41241,6 +41286,44 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\solAn HIT over 100% is still useful; since"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "the accuracy formula is just HIT minus EVA,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "an HIT of 110% versus an enemy with 20% EVA"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "still only hits 90% of the time."
+              ]
+            },
+            {
               "code": 119,
               "indent": 2,
               "parameters": [
@@ -41257,6 +41340,102 @@
               "indent": 1,
               "parameters": [
                 1,
+                "MEV/MRF"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\solMEV stands for Magic Evasion Rate, while"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "MRF stands for Magic Reflect Rate. They are"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "used to determine the chance of a magical"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "attack being dodged or reflected, respectively."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\solNote that there is no magic counterpart"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "to HIT, meaning that a defender's MEV"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "is the only stat involved in calculating"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "the chance of a magic dodge."
+              ]
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "3"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                2,
                 "CRI/CEV"
               ]
             },
@@ -41299,26 +41478,6 @@
               ]
             },
             {
-              "code": 119,
-              "indent": 2,
-              "parameters": [
-                "3"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 1,
-              "parameters": [
-                2,
-                "MEV/MRF"
-              ]
-            },
-            {
               "code": 101,
               "indent": 2,
               "parameters": [
@@ -41332,28 +41491,28 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\solMEV stands for Magic Evasion Rate, while"
+                "\\solCEV is additive, meaning the critical chance"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "MRF stands for Magic Reflect Rate. They are"
+                "equation is just CRI minus CEV. Small amounts"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "used to determine the chance of a magical"
+                "of CEV might seem useless, but even a 10% CEV"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "attack being dodged or reflected, respectively."
+                "can nullify crits from a lot of enemies!"
               ]
             },
             {
@@ -41633,6 +41792,30 @@
               "indent": 2,
               "parameters": [
                 "reduction granted by guarding."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                7,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\solThe exact damage calculation is:"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "damage / (2 * (target.grd / 100));"
               ]
             },
             {
