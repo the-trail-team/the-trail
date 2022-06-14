@@ -6123,7 +6123,7 @@
         "denominator": 1
       }
     ],
-    "exp": 1000,
+    "exp": 1500,
     "traits": [
       {
         "code": 22,
@@ -6151,7 +6151,7 @@
         "value": 1
       }
     ],
-    "gold": 500,
+    "gold": 750,
     "name": "Big Mouth",
     "note": "<AI Level: 100>\n<AI Priority>\nTurn % 4 === 0: Offensive Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 4 === 1: Attack\nTurn % 4 === 2: Focused Slash\nTurn % 4 === 3: Double Slash\n\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: ThiefDuo_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nScaly Gloves: 10%\nAnti-Magic Charm ★: 10%\nBell: 2%\n</Enemy Drops>",
     "params": [
@@ -6195,7 +6195,7 @@
         "denominator": 1
       }
     ],
-    "exp": 1000,
+    "exp": 1500,
     "traits": [
       {
         "code": 22,
@@ -6223,7 +6223,7 @@
         "value": 1
       }
     ],
-    "gold": 500,
+    "gold": 750,
     "name": "Smart Mouth",
     "note": "<AI Level: 100>\n<AI Priority>\nTurn === 1 +++ Random 50%: Cherry Bomb, User\nTurn === 1: Foresight, User\n\nState !== Cherry Bomb +++ Random 30%: Cherry Bomb, User\nState !== Foresight +++ Random 30%: Foresight, User\n\nState !== Sharpened Dagger +++ Turn >= 3: Sharpen Dagger, User\n\nState === Magical Barrier: Shield Break, Highest HP%\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: ThiefDuo_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n\n<Enemy Drops>\nScaly Gloves: 10%\nAnti-Magic Charm ★: 10%\nBell: 2%\n</Enemy Drops>",
     "params": [

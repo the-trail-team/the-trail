@@ -15275,16 +15275,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                74,
-                false,
-                false
-              ]
-            },
-            {
               "code": 230,
               "indent": 0,
               "parameters": [
@@ -27013,6 +27003,20 @@
               "parameters": []
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 4 Complete Objective 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 4 Show Objective 3"
+              ]
+            },
+            {
               "code": 123,
               "indent": 0,
               "parameters": [
@@ -30254,6 +30258,57 @@
           "through": false,
           "trigger": 3,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 55,
+            "variableValid": true,
+            "variableValue": 6
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 36,
@@ -30484,7 +30539,7 @@
     {
       "id": 101,
       "name": "general2",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -30591,6 +30646,7 @@
       ],
       "x": 18,
       "y": 24
-    }
+    },
+    null
   ]
 }
