@@ -10132,9 +10132,41 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              55,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "code": 122,
+            "indent": 1,
+            "parameters": [
+              55,
+              55,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -10212,9 +10244,41 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              55,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "code": 122,
+            "indent": 1,
+            "parameters": [
+              55,
+              55,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -10491,6 +10555,82 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "members": [
+      {
+        "enemyId": 60,
+        "x": 411,
+        "y": 196,
+        "hidden": false
+      },
+      {
+        "enemyId": 61,
+        "x": 348,
+        "y": 325,
+        "hidden": false
+      }
+    ],
+    "name": "Big Mouth, Smart Mouth",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              55,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "code": 122,
+            "indent": 1,
+            "parameters": [
+              55,
+              55,
+              1,
+              0,
+              1
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
