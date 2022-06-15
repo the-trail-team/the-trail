@@ -13,7 +13,7 @@
     "minTurns": 1,
     "motion": 3,
     "name": "Downed",
-    "note": "<Help Description>\nCannot do anything.\n</Help Description>\n<Category: Group Defeat>\n\n<Custom Apply Effect>\nif (target.isActor()) {\n  var ringId = 118;\n  var brokenId = 119;\n  var baseIds = [];\n  var equips = target.equips();\n  equips.forEach(equip => baseIds.push(equip.baseItemId));\n  if (baseIds.contains(ringId)) {\n    var slot = baseIds.indexOf(ringId);\n    $gameParty.gainIndependentItem($dataArmors[brokenId], 1);\n    var finalItem = $dataArmors[$dataArmors.length - 1];\n    target.forceChangeEquip(slot, finalItem);\n    $gameParty.loseItem(finalItem, 1);\n    target.startAnimation(218);\n    target.startAnimation(56);\n    target.gainHp(1);\n  }\n}\n</Custom Apply Effect>",
+    "note": "<Help Description>\nCannot do anything.\n</Help Description>\n<Category: Group Defeat>",
     "overlay": 0,
     "priority": 100,
     "releaseByDamage": false,
