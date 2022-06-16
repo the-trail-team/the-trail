@@ -606,9 +606,9 @@ DataManager.processEEDNotetags1 = function(group) {
     var rate = 0.00002;
     if (obj.name.contains("EX")) rate *= 100; // 100x more likely to drop from EX enemies (1/500 drop)
     this.createEnemyDrop(obj, id, rate, 2);
-    // seshat's charm (1/100 drop)
+    // seshat's charm (1/50 drop)
     var id = 160;
-    var rate = 0.01;
+    var rate = 0.02;
     this.createEnemyDrop(obj, id, rate, 3);
     // present (1/5 drop)
     if (Date().split(" ")[1] == "Dec") {
