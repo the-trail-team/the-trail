@@ -1162,7 +1162,7 @@ Game_Enemy.prototype.customParamMin = function(paramId) {
 // Game_Action
 //=============================================================================
 
-Game_Action.prototype.lukEffectRate = function(target) {
+/*Game_Action.prototype.lukEffectRate = function(target) {
     var item = this.item();
     var skill = this.item();
     var a = this.subject();
@@ -1172,7 +1172,7 @@ Game_Action.prototype.lukEffectRate = function(target) {
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
     return eval(Yanfly.Param.BPCLukEffectRate);
-};
+};*/
 
 //=============================================================================
 // Utilities
