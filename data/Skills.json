@@ -2414,7 +2414,7 @@
     "iconIndex": 14,
     "message1": " gets into an offensive stance!",
     "message2": "",
-    "mpCost": 11,
+    "mpCost": 8,
     "name": "Offensive Stance",
     "note": "<Require = 0 BP>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\nwait for motion\n</setup action>\n\n<whole action>\n</whole action>\n\n<target action>\nanimation 51: target\nwait for animation\nadd atk buff: user, 5, show\nwait: 15\nadd agi buff: user, 5, show\nwait: 15\nanimation 54: target\nwait for animation\nadd def debuff: user, 5, show\nwait: 15\nadd mdf debuff: user, 5, show\nwait: 15\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
