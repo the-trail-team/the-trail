@@ -3188,5 +3188,65 @@
     "removeByWalking": false,
     "restriction": 4,
     "stepsToRemove": 100
+  },
+  {
+    "id": 97,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "iconIndex": 698,
+    "maxTurns": 6,
+    "message1": "'s appetite is exquisitely sated.",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 5,
+    "motion": 0,
+    "overlay": 0,
+    "name": "Exquisitely Well Fed",
+    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.10>\n<Custom Remove Effect>\nuser.addState(5);\n</Custom Remove Effect>\n\n<Help Description>\nBoosts MHP by 20%, AGI by 16%, and ATK and MAT by 8%. Restores 10% of MHP per turn.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.20;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.20;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
+    "priority": 28,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": true,
+    "restriction": 0,
+    "stepsToRemove": 200,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value": 1.2
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.16
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.08
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 1.08
+      },
+      {
+        "code": 14,
+        "dataId": 5,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 4,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 6,
+        "value": 1
+      }
+    ]
   }
 ]
