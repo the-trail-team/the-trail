@@ -1241,7 +1241,7 @@
       }
     ],
     "name": "Mage",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 51>\n\n<AI Priority>\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 47 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Learn Skill: 51, 121>\n\n<AI Priority>\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 47 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,

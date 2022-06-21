@@ -3420,7 +3420,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "[SF] Ice",
-    "note": "<Extend Skills: 8>\n\n<Custom Show Eval>\nif (user.hasSkill(8)) {\n  visible = true;\n} else {\n  visible = false;\n}\n</Custom Show Eval>\n\n<Custom Cost Display>\n\\}Skill Family\n</Custom Cost Display>\n\n<Max Mastery Level: 0>",
+    "note": "<Extend Skills: 8, 121>\n\n<Custom Show Eval>\nif (user.hasSkill(8)) {\n  visible = true;\n} else {\n  visible = false;\n}\n</Custom Show Eval>\n\n<Custom Cost Display>\n\\}Skill Family\n</Custom Cost Display>\n\n<Max Mastery Level: 0>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -4205,6 +4205,43 @@
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 4,
+    "speed": 0,
+    "stypeId": 2,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 121,
+    "animationId": 71,
+    "damage": {
+      "critical": true,
+      "elementId": 3,
+      "formula": "a.mat * 3.75 - b.mdf * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "The highly anticipated sequel. The damage has gotten a big\nupgrade, and the freezing is stronger than ever. \\c[27]\\bpdamage[375]%\\c[0] MAT rate.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 89,
+        "value1": 0.2,
+        "value2": 0
+      }
+    ],
+    "hitType": 2,
+    "iconIndex": 97,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 12,
+    "name": "Ice II",
+    "note": "<Boost Damage>\n<Hide if Learned Skill: 97>\n<Learn Require Skill: 8>\n<Learn Require Level: 20>\n<Learn Cost: 10000 JP>\n<Learn Cost>\nIce II (Tome): 1\n</Learn Cost>\n\n<Remove State Category: Water>\n<Remove State Category: Earth>\n\n<action copy: skill:7>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
     "speed": 0,
     "stypeId": 2,
     "successRate": 100,
