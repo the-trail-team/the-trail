@@ -5949,7 +5949,7 @@
     ],
     "gold": 360,
     "name": "Baby Dragon",
-    "note": "<Floating>\n<Floating Rate: 0.05>\n<Breathing Speed: 20>\n<Attack Animation: 211>\n<Element Absorb: 6, 7>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nEnchanted Dragon Scale: 0%\nEarth Essence: 20%\nWind Essence: 20%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch ?? ON: +50%\n</Conditional Enchanted Dragon Scale Drop>",
+    "note": "<Floating>\n<Floating Rate: 0.05>\n<Breathing Speed: 20>\n<Attack Animation: 211>\n<Element Absorb: 6, 7>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nEnchanted Dragon Scale: 0%\nEarth Essence: 20%\nWind Essence: 20%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +50%\n</Conditional Enchanted Dragon Scale Drop>",
     "params": [
       6000,
       0,
@@ -5976,8 +5976,8 @@
     "battlerName": "Dilong",
     "dropItems": [
       {
-        "kind": 3,
-        "dataId": 152,
+        "kind": 0,
+        "dataId": 0,
         "denominator": 1
       },
       {
