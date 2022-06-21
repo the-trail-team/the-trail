@@ -557,17 +557,17 @@ DataManager.addLearnSkillCost = function(obj, line) {
     if (line.match(/ITEM[ ](\d+):[ ](\d+)/i)) {
       var item = $dataItems[parseInt(RegExp.$1)];
       if (!item) return;
-      if (Imported.YEP_ItemCore && DataManager.isIndependent(item)) return;
+      // if (Imported.YEP_ItemCore && DataManager.isIndependent(item)) return;
       obj.learnCost.push(line);
     } else if (line.match(/WEAPON[ ](\d+):[ ](\d+)/i)) {
       var item = $dataWeapons[parseInt(RegExp.$1)];
       if (!item) return;
-      if (Imported.YEP_ItemCore && DataManager.isIndependent(item)) return;
+      // if (Imported.YEP_ItemCore && DataManager.isIndependent(item)) return;
       obj.learnCost.push(line);
     } else if (line.match(/ARMOR[ ](\d+):[ ](\d+)/i)) {
       var item = $dataArmors[parseInt(RegExp.$1)];
       if (!item) return;
-      if (Imported.YEP_ItemCore && DataManager.isIndependent(item)) return;
+      // if (Imported.YEP_ItemCore && DataManager.isIndependent(item)) return;
       obj.learnCost.push(line);
     } else if (line.match(/GOLD:[ ](\d+)/i)) {
       obj.learnCostGold = parseInt(RegExp.$1);
@@ -715,7 +715,7 @@ Game_Party.prototype.sufficientItemLearnSkill = function(skill) {
         value = parseInt(RegExp.$2);
       }
       if (!obj) continue;
-      if (value > $gameParty.numItems(obj)) return false;
+      if (value > $gameParty.numIndependentItems(obj)) return false;
     }
     return true;
 };
@@ -1318,13 +1318,13 @@ Window_SkillLearnData.prototype.drawOtherCosts = function(wy) {
       this.contents.fontSize = Yanfly.Param.SLSCostSize;
       var text = '/' + Yanfly.Util.toGroup(value);
       this.drawText(text, 0, wy, ww - 4, 'right');
-      if ($gameParty.numItems(obj) >= value) {
+      if ($gameParty.numIndependentItems(obj) >= value) {
         this.changeTextColor(this.powerUpColor());
       } else {
         this.changeTextColor(this.powerDownColor());
       }
       ww -= this.textWidth(text);
-      var held = Yanfly.Util.toGroup($gameParty.numItems(obj))
+      var held = Yanfly.Util.toGroup($gameParty.numIndependentItems(obj))
       this.drawText(held, 0, wy, ww - 4, 'right');
       this.resetFontSettings();
       this.resetTextColor();
