@@ -6400,5 +6400,164 @@
       15,
       6
     ]
+  },
+  {
+    "id": 63,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Attacker Tellurium Golem",
+    "dropItems": [
+      {
+        "kind": 1,
+        "dataId": 175,
+        "denominator": 25
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 1000,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.15
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "gold": 500,
+    "name": "Attacker Tellurium Golem",
+    "note": "<Breathing Speed: 20>\n<Attack Animation: 4>\n\n<Enemy Drops>\nPDR Scroll: 5%\nMDR Scroll: 5%\n</Enemy Drops>",
+    "params": [
+      12000,
+      0,
+      50,
+      75,
+      100,
+      150,
+      60,
+      45
+    ]
+  },
+  {
+    "id": 64,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Defender Tellurium Golem",
+    "dropItems": [
+      {
+        "kind": 1,
+        "dataId": 175,
+        "denominator": 25
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      },
+      {
+        "dataId": 1,
+        "denominator": 1,
+        "kind": 0
+      }
+    ],
+    "exp": 1000,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "gold": 500,
+    "name": "Defender Tellurium Golem",
+    "note": "<Breathing Speed: 20>\n<Attack Animation: 4>\n\n<Enemy Drops>\nPDR Scroll: 5%\nMDR Scroll: 5%\n</Enemy Drops>",
+    "params": [
+      12000,
+      0,
+      40,
+      90,
+      80,
+      180,
+      40,
+      45
+    ]
   }
 ]
