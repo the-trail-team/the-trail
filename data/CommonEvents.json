@@ -1022,42 +1022,35 @@
         "code": 355,
         "indent": 2,
         "parameters": [
-          "var p2 = $gameParty.members()[1];"
+          "var actor = $gameParty.members()[2];"
         ]
       },
       {
         "code": 655,
         "indent": 2,
         "parameters": [
-          "var p3 = $gameParty.members()[2];"
+          "var level = actor.skillMasteryLevel(55);"
         ]
       },
       {
         "code": 655,
         "indent": 2,
         "parameters": [
-          "var level = p3.skillMasteryLevel(55);"
+          "var uses = actor.skillMasteryUses(55);"
         ]
       },
       {
         "code": 655,
         "indent": 2,
         "parameters": [
-          "var uses = p3.skillMasteryUses(55);"
+          "actor.setSkillMasteryLevel(90, level);"
         ]
       },
       {
         "code": 655,
         "indent": 2,
         "parameters": [
-          "p2.setSkillMasteryLevel(55, level);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 2,
-        "parameters": [
-          "p2.setSkillMasteryUses(55, uses);"
+          "actor.setSkillMasteryUses(90, uses);"
         ]
       },
       {
