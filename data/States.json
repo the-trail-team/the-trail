@@ -3248,5 +3248,35 @@
         "value": 1
       }
     ]
+  },
+  {
+    "id": 98,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.125
+      }
+    ],
+    "iconIndex": 28,
+    "maxTurns": 10,
+    "message1": " is focusing! HIT up!",
+    "message2": "",
+    "message3": "",
+    "message4": "'s HIT went back to normal.",
+    "minTurns": 10,
+    "motion": 0,
+    "name": "Focus Up",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts HIT by 12.5%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 20,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

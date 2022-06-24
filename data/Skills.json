@@ -4247,5 +4247,42 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 122,
+    "animationId": 51,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Keep a close eye on the enemy, making it harder for\nthem to dodge your attacks. Boosts HIT for \\c[27]\\bpturn[10]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 98,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 121,
+    "message1": " uses %1!",
+    "message2": "",
+    "mpCost": 12,
+    "name": "Focus Up",
+    "note": "<Boost Turns>\n<action copy: skill:5>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]
