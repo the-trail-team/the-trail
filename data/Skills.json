@@ -342,7 +342,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Debuffs MAT by 3 stages for 3 turns. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Debuffs MAT by 3 stages for 2 turns. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
@@ -357,7 +357,7 @@
     "message2": "",
     "mpCost": 14,
     "name": "Wand Impulse",
-    "note": "<Boost Damage>\n\n<Remove State Category: Ice>\n<Remove State Category: Water>\n\n<setup action>\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion chant: user\nwait: 90\nmotion spell: user\ncamera focus: target\nzoom: 150%\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nshake screen: 1, 9, 60\naction animation\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\neval: user.addDebuff(4, 3);\neval: user.addDebuff(4, 3);\neval: user.addDebuff(4, 3);\neval: user.startAnimation(54);\n</follow action>\n\n<finish action>\nreset camera\nreset zoom\nwait for camera\nwait for zoom\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Boost Damage>\n\n<Remove State Category: Ice>\n<Remove State Category: Water>\n\n<setup action>\nhide battle hud\nimmortal: targets, true\ndisplay action\nperform start\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion chant: user\nwait: 90\nmotion spell: user\ncamera focus: target\nzoom: 150%\nwait for camera\nwait for zoom\n</setup action>\n\n<whole action>\nshake screen: 1, 9, 60\naction animation\nwait for animation\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\neval: user.addDebuff(4, 2);\neval: user.addDebuff(4, 2);\neval: user.addDebuff(4, 2);\neval: user.startAnimation(54);\n</follow action>\n\n<finish action>\nreset camera\nreset zoom\nwait for camera\nwait for zoom\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -616,7 +616,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Jump behind your enemy and land a devastating attack. This attack is always a\ncritical hit. Debuffs ATK by 3 stages for 3 turns. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
+    "description": "Jump behind your enemy and land a devastating attack. This attack is always a\ncritical hit. Debuffs ATK by 3 stages for 2 turns. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
@@ -631,7 +631,7 @@
     "message2": "",
     "mpCost": 13,
     "name": "Backstab",
-    "note": "<Boost Damage>\n<Critical Rate: 100%>\n\n<setup action>\nimmortal: targets, true\nopacity not focus: 0\nhide battle hud\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion skill: user\nwait for motion\nwait: 30\nmove user: target, back base, 20\nface user: backward\nwait for movement\nwait: 15\n</setup action>\n\n<whole action>\nmotion swing: user\nattack animation: target, mirror\nwait for animation\nflash screen: white, 20\nshake screen: 3, 9, 20\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nimmortal: targets, false\neval: user.addDebuff(2, 3);\neval: user.addDebuff(2, 3);\neval: user.addDebuff(2, 3);\neval: user.startAnimation(54);\nwait for animation\nwait: 30\n</follow action>\n\n<finish action>\nclear battle log\nreset zoom: 30\nreset camera: 30\nwait for camera\nwait for zoom\nperform finish\nopacity not focus: 255\n</finish action>",
+    "note": "<Boost Damage>\n<Critical Rate: 100%>\n\n<setup action>\nimmortal: targets, true\nopacity not focus: 0\nhide battle hud\ncamera focus: user\nzoom: 200%\nwait for camera\nwait for zoom\nmotion skill: user\nwait for motion\nwait: 30\nmove user: target, back base, 20\nface user: backward\nwait for movement\nwait: 15\n</setup action>\n\n<whole action>\nmotion swing: user\nattack animation: target, mirror\nwait for animation\nflash screen: white, 20\nshake screen: 3, 9, 20\nshow battle hud\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nimmortal: targets, false\neval: user.addDebuff(2, 2);\neval: user.addDebuff(2, 2);\neval: user.addDebuff(2, 2);\neval: user.startAnimation(54);\nwait for animation\nwait: 30\n</follow action>\n\n<finish action>\nclear battle log\nreset zoom: 30\nreset camera: 30\nwait for camera\nwait for zoom\nperform finish\nopacity not focus: 255\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
