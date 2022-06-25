@@ -3179,7 +3179,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Draconic Healing",
-    "note": "<Help Description>\nCannot anything. After the state expires, this unit will regain 2500 HP if they have at least 1 SP.\n</Help Description>\n<State Motion: Guard>\n\n<Custom Remove Effect>\nif (user.barrierPoints() > 0) {\n  user.startAnimation(41);\n  user.startAnimation(52);\n  user.gainHp(2500);\n  value = $gameVariables.value(53) - 1;\n  $gameVariables.setValue(53, value);\n}\n</Custom Remove Effect>",
+    "note": "<Help Description>\nCannot anything. After the state expires, this unit will regain 3000 HP if they have at least 1 SP.\n</Help Description>\n<State Motion: Guard>\n\n<Custom Remove Effect>\nif (user.barrierPoints() > 0) {\n  user.startAnimation(41);\n  user.startAnimation(52);\n  user.gainHp(3000);\n  value = $gameVariables.value(53) - 1;\n  $gameVariables.setValue(53, value);\n}\n</Custom Remove Effect>",
     "overlay": 0,
     "priority": 70,
     "removeAtBattleEnd": false,

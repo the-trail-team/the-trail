@@ -6133,12 +6133,12 @@
     "name": "Dilong, Nature Dragon",
     "note": "<Sideview Battler: Dilong>\n<Sideview No Collapse>\n<Scale Sprite: 200%>\n<Floating>\n<Floating Rate: 0.025>\n<Attack Animation: 106>\n<Element Absorb: 6, 7>\n<HP Gauge Width: 360>\n\n<Enemy Drops>\nEnchanted Dragon Scale: 100%\nEnchanted Dragon Scale: 100%\nEnchanted Dragon Scale: 50%\nEnchanted Dragon Scale: 25%\nEnchanted Dragon Scale: 12.5%\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 50%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 25%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragon Scale: 12.5%\nDragon Scale: 12.5%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<AI Priority>\nUser HP% param <= 75% +++ Eval $gameVariables.value(53) === 0: Draconic Healing\nUser HP% param <= 50% +++ Eval $gameVariables.value(53) === 1: Draconic Healing\nUser HP% param <= 25% +++ Eval $gameVariables.value(53) === 2: Draconic Healing\nUser HP% param <= 10% +++ Eval $gameVariables.value(53) === 3: Draconic Healing\n\nUser HP% param > 75% +++ Turn % 4 === 1: Future Sight, Highest HP\nUser HP% param > 75% +++ Turn % 4 === 2: Cyclone\nUser HP% param > 75% +++ Turn % 4 === 3: Spike Shock\nUser HP% param > 75% +++ Turn % 4 === 0: Spike Shock\n\nUser HP% param > 50% +++ Turn % 8 === 1: Future Sight, Highest HP\nUser HP% param > 50% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 50% +++ Turn % 8 === 3: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 5: Future Sight, Highest HP\nUser HP% param > 50% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 50% +++ Turn % 8 === 7: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 0: Spike Shock\n\nUser HP% param > 25% +++ Turn % 8 === 1: Future Sight, Highest HP\nUser HP% param > 25% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 25% +++ Turn % 8 === 3: Giga Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 5: Future Sight, Highest HP\nUser HP% param > 25% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 25% +++ Turn % 8 === 7: Giga Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 0: Spike Shock\n\nUser HP% param > 10% +++ Turn % 8 === 1: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 10% +++ Turn % 8 === 3: Giga Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 5: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 7: Giga Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 0: Spike Shock\n\nTurn % 3 === 1: Wyvern's Fury\nTurn % 3 === 2: Immortal Spears\nTurn % 3 === 0: Spike Shock\n</AI Priority>",
     "params": [
-      25000,
+      30000,
       0,
       36,
-      45,
+      55,
       70,
-      90,
+      110,
       150,
       75
     ]
