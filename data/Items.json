@@ -6302,5 +6302,44 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 219,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A zesty fruit that explodes into flavor upon a single bite.\nIncredible on its own, but a meal with it might be even better...",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.25,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 97,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 1880,
+    "itypeId": 1,
+    "name": "Dragonfruit",
+    "note": "<Menu Category: Drops, Recovery, Buffs>",
+    "occasion": 0,
+    "price": 100,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
