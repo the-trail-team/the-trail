@@ -591,13 +591,13 @@
   {
     "id": 29,
     "atypeId": 5,
-    "description": "Part of the Red Leathers set. Boosts CRI.",
+    "description": "Matches perfectly with the \\ia[28]. Boosts CRI.",
     "etypeId": 3,
     "traits": [
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.02
+        "value": 0.01
       }
     ],
     "iconIndex": 466,
@@ -725,25 +725,14 @@
   {
     "id": 34,
     "atypeId": 5,
-    "description": "Part of the Blood-Red Leathers set.\nBoosts CRI and MHP.",
+    "description": "A yarn-woven headband dyed with a bloody red identical\nto the \\ia[33]. Boosts physical lifesteal.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 2,
-        "value": 0.03
-      },
-      {
-        "code": 21,
-        "dataId": 0,
-        "value": 1.04
-      }
-    ],
+    "traits": [],
     "iconIndex": 585,
     "name": "Blood-Red Headband",
-    "note": "<Upgrade Slots: 0>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 0>\n<HP Life Steal Physical: +0.5%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
-      0,
+      3,
       0,
       0,
       0,
@@ -752,7 +741,7 @@
       2,
       0
     ],
-    "price": 80
+    "price": 120
   },
   {
     "id": 35,
