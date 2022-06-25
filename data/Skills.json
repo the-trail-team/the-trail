@@ -2982,7 +2982,7 @@
     "message2": "",
     "mpCost": 5,
     "name": "Hold the Line I",
-    "note": "<Boost Turns>\n<Hide if Learned Skill: 101>\n\n<setup action>\ndisplay action\nperform start\nmotion guard: user\nwait: 30\n</setup action>\n\n<whole action>\nmotion guard: targets\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Boost Turns>\n<Hide if Learned Skill: 101>\n\n<setup action>\ndisplay action\nperform start\nmotion guard: user\nwait: 30\n</setup action>\n\n<whole action>\nmotion guard: targets\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\n</target action>\n\n<finish action>\nclear battle log\nmotion standby: targets\nmotion standby: user\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
