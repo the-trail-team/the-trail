@@ -435,11 +435,11 @@
     "damage": {
       "critical": false,
       "elementId": 11,
-      "formula": "b.mhp * (0.15 + (a.bp * 0.05))",
+      "formula": "b.mhp * 0.1",
       "type": 3,
       "variance": 5
     },
-    "description": "Gets your friend back up with \\c[27]\\bp0[a sliver of health]\\bp=1[a slight bit of health]\\bp=2[a bit of health]\\bp=3[a little health]\\bp=4[some health]\\bp=5[a decent amount of health]\\bp=6[a more decent amount of health]\\c[0]\nleft during battle. Doesn't always work, though...",
+    "description": "Gets your friend back up with a sliver of HP left during\nbattle. Doesn't always work, though... \\c[27]\\bp0[60]\\bp=1[64]\\bp=2[68]\\bp=3[72]\\bp=4[76]\\bp=5[80]\\bp=6[84]%\\c[0] success chance.",
     "effects": [
       {
         "code": 22,
@@ -3134,11 +3134,11 @@
     "damage": {
       "critical": false,
       "elementId": 11,
-      "formula": "b.mhp * (0.30 + (a.bp * 0.10))",
+      "formula": "b.mhp * 0.3",
       "type": 3,
       "variance": 5
     },
-    "description": "Revive your friend with \\c[27]\\bp0[a decent bit of health]\\bp=1[a solid bit of health]\\bp=2[half of their health]\\bp=3[a good amount of health]\\bp=4[a great amount of health]\\bp=5[a lot of health]\\bp=6[a lotta lot of health]\\c[0].\nHas a much better success rate than \\is[13].",
+    "description": "Revive your friend with a decent bit of health left over. Has a\nmuch better success rate than \\is[13]. \\c[27]\\bp0[80]\\bp=1[84]\\bp=2[88]\\bp=3[92]\\bp=4[96]\\bp=5[100]%\\c[0] success chance.",
     "effects": [
       {
         "code": 22,
@@ -3153,7 +3153,7 @@
     "message2": "",
     "mpCost": 31,
     "name": "Resurgence",
-    "note": "<action copy: skill:13>\n<Hide if Learned Skill: 106>",
+    "note": "<Require <= 5 BP>\n\n<action copy: skill:13>\n<Hide if Learned Skill: 106>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
