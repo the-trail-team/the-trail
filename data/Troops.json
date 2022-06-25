@@ -10300,18 +10300,36 @@
       },
       {
         "enemyId": 42,
-        "x": 195,
-        "y": 193,
+        "x": 381,
+        "y": 226,
         "hidden": false
       },
       {
         "enemyId": 42,
-        "x": 381,
-        "y": 226,
-        "hidden": false
+        "x": 210,
+        "y": 193,
+        "hidden": true
+      },
+      {
+        "enemyId": 50,
+        "x": 204,
+        "y": 211,
+        "hidden": true
+      },
+      {
+        "enemyId": 43,
+        "x": 207,
+        "y": 196,
+        "hidden": true
+      },
+      {
+        "enemyId": 51,
+        "x": 204,
+        "y": 193,
+        "hidden": true
       }
     ],
-    "name": "Flytrap x3",
+    "name": "Flytrap x2 + Random",
     "pages": [
       {
         "conditions": {
@@ -10326,9 +10344,201 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 122,
+            "indent": 0,
+            "parameters": [
+              32,
+              32,
+              0,
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Flytrap joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Horrorspore joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Tarantula joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              4,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              5
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Baby Ent joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -10344,12 +10554,6 @@
     "members": [
       {
         "enemyId": 50,
-        "x": 200,
-        "y": 307,
-        "hidden": false
-      },
-      {
-        "enemyId": 50,
         "x": 315,
         "y": 193,
         "hidden": false
@@ -10359,9 +10563,33 @@
         "x": 349,
         "y": 319,
         "hidden": false
+      },
+      {
+        "enemyId": 42,
+        "x": 192,
+        "y": 292,
+        "hidden": true
+      },
+      {
+        "enemyId": 50,
+        "x": 195,
+        "y": 298,
+        "hidden": true
+      },
+      {
+        "enemyId": 43,
+        "x": 195,
+        "y": 286,
+        "hidden": true
+      },
+      {
+        "enemyId": 51,
+        "x": 192,
+        "y": 289,
+        "hidden": true
       }
     ],
-    "name": "Horrorspore x3",
+    "name": "Horrorspore x2 + Random",
     "pages": [
       {
         "conditions": {
@@ -10376,9 +10604,201 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 122,
+            "indent": 0,
+            "parameters": [
+              32,
+              32,
+              0,
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Flytrap joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Horrorspore joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Tarantula joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              4,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              5
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Baby Ent joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -10394,18 +10814,36 @@
     "members": [
       {
         "enemyId": 43,
-        "x": 243,
-        "y": 319,
-        "hidden": false
-      },
-      {
-        "enemyId": 43,
         "x": 331,
         "y": 190,
         "hidden": false
+      },
+      {
+        "enemyId": 42,
+        "x": 243,
+        "y": 319,
+        "hidden": true
+      },
+      {
+        "enemyId": 50,
+        "x": 237,
+        "y": 334,
+        "hidden": true
+      },
+      {
+        "enemyId": 43,
+        "x": 234,
+        "y": 307,
+        "hidden": true
+      },
+      {
+        "enemyId": 51,
+        "x": 234,
+        "y": 319,
+        "hidden": true
       }
     ],
-    "name": "Tarantula x2",
+    "name": "Tarantula + Random",
     "pages": [
       {
         "conditions": {
@@ -10420,9 +10858,201 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 122,
+            "indent": 0,
+            "parameters": [
+              32,
+              32,
+              0,
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Flytrap joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              2
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Horrorspore joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Tarantula joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              4,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Baby Ent joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
@@ -10455,13 +11085,31 @@
         "hidden": false
       },
       {
+        "enemyId": 42,
+        "x": 156,
+        "y": 322,
+        "hidden": true
+      },
+      {
+        "enemyId": 50,
+        "x": 150,
+        "y": 334,
+        "hidden": true
+      },
+      {
+        "enemyId": 43,
+        "x": 147,
+        "y": 310,
+        "hidden": true
+      },
+      {
         "enemyId": 51,
-        "x": 141,
-        "y": 331,
-        "hidden": false
+        "x": 153,
+        "y": 316,
+        "hidden": true
       }
     ],
-    "name": "Baby Ent x4",
+    "name": "Baby Ent x3 + Random",
     "pages": [
       {
         "conditions": {
@@ -10479,6 +11127,198 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 122,
+            "indent": 0,
+            "parameters": [
+              32,
+              32,
+              0,
+              2,
+              1,
+              5
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              1,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Flytrap joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              2,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Horrorspore joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              3,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              5
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Tarantula joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              1,
+              32,
+              0,
+              4,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Baby Ent joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
