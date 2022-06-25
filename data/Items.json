@@ -6273,7 +6273,7 @@
   {
     "id": 218,
     "animationId": 0,
-    "consumable": false,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -6281,7 +6281,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A deafening horn that can pierce through the loudest of\nnoise. Use it inside a dungeon to respawn all enemies inside.",
+    "description": "A deafening horn that can pierce through the loudest of noise. Use\nit inside a dungeon to respawn all enemies inside. Consumed on use.",
     "effects": [
       {
         "code": 44,
@@ -6294,9 +6294,9 @@
     "iconIndex": 252,
     "itypeId": 2,
     "name": "Battle Cry",
-    "note": "<Cannot Discard>",
+    "note": "",
     "occasion": 2,
-    "price": 0,
+    "price": 500,
     "repeats": 1,
     "scope": 0,
     "speed": 0,
