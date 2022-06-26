@@ -1201,6 +1201,7 @@ Scene_Fishing.prototype.commandCast = function() {
 
 Scene_Fishing.prototype.openWindows = function() {
 	this._commandWindow.open();
+	this._commandWindow.refresh();
 	this._equipWindow.open();
 	this._displayWindow.show();
 	this._castPow.display(false);
@@ -2466,7 +2467,7 @@ Window_FishCaught.prototype.doCatch = function(fishId) {
 
 	// Draw length/weight
 	this.drawText(length + " cm", 30, this.lineHeight() + 20, this.contents.width / 2, 'right');  // Length
-	this.drawText(weight + " g", 30, this.lineHeight() * 2 + 20, this.contents.width / 2, 'right');  // Weight
+	this.drawText(weight + " kg", 30, this.lineHeight() * 2 + 20, this.contents.width / 2, 'right');  // Weight
 	
 	// Draw fish graphic
 	var fx = this.contents.width - this.contents.width / 4;
@@ -2970,7 +2971,8 @@ Window_FishRecordList.prototype.drawItem = function(index) {
     if (name) {
         var rect = this.itemRect(index);
         rect.width -= this.textPadding();
-        this.drawText(name, rect.x + 10, rect.y, rect.width);
+		this.drawIcon($dataItems[Galv.FISH.fish[fishId].item].iconIndex, rect.x + 4, rect.y + 2);
+        this.drawText(name, rect.x + 40, rect.y, rect.width);
     }
 };
 
@@ -3018,8 +3020,8 @@ Window_FishStatus.prototype.setItem = function(item) {
 		
 		this.resetTextColor();
 		this.drawText(item.amount,0,y - line * 2,this.contents.width,'right'); // Amount
-		this.drawText(item.length,0,y - line,this.contents.width,'right');  // Length
-		this.drawText(item.weight,0,y,this.contents.width,'right');  // Weight
+		this.drawText(item.length + " cm",0,y - line,this.contents.width,'right');  // Length
+		this.drawText(item.weight + " kg",0,y,this.contents.width,'right');  // Weight
 		
 		// Fish Sprite
 		if (this._sprite) {
