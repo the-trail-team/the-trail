@@ -2636,7 +2636,7 @@ Window_ActorCommand.prototype.addSkillCommands = function() {
     skillTypes.sort(function(a, b){return a-b});
     skillTypes.forEach(function(stypeId) {
         var name = $dataSystem.skillTypes[stypeId];
-        this.addCommand(name, 'skill', true, stypeId);
+        this.addCommand(name, 'skill', this._actor.hasSkillType(stypeId), stypeId);
     }, this);
 };
 

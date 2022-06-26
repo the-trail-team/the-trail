@@ -2525,6 +2525,14 @@ Game_BattlerBase.prototype.isSkillTypeSealed = function(stypeId) {
     return this.traitsSet(Game_BattlerBase.TRAIT_STYPE_SEAL).contains(stypeId);
 };
 
+Game_BattlerBase.prototype.hasSkillType = function(stypeId) {
+    skills = this.skills();
+    for (i = 0; i < skills.length; i++) {
+        if (skills[i].stypeId == stypeId) return true;
+    }
+    return false;
+};
+
 Game_BattlerBase.prototype.addedSkills = function() {
     return this.traitsSet(Game_BattlerBase.TRAIT_SKILL_ADD);
 };
