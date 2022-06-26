@@ -2057,12 +2057,12 @@
       "type": 1,
       "variance": 5
     },
-    "description": "At long last, a more powerful fire to summon! Has a higher chance\nof setting an enemy \\it[7]. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "At long last, a more powerful fire to summon! Applies\na more lethal burn to an enemy. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
-        "dataId": 7,
-        "value1": 0.25,
+        "dataId": 102,
+        "value1": 0.1,
         "value2": 0
       }
     ],
