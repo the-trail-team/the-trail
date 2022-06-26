@@ -5467,7 +5467,7 @@
     "iconIndex": 236,
     "itypeId": 3,
     "name": "CASTLE FOOD RECIPES",
-    "note": "<Item Recipe: 71, 72, 70, 98, 111, 136, 117, 196, 197, 131>",
+    "note": "<Item Recipe: 71, 72, 70, 98, 111, 223, 221, 136, 117, 196, 197, 131>",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -6364,6 +6364,155 @@
     "price": 40,
     "repeats": 1,
     "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 221,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A tasty group meal consisting of a few common\nfish found in Telluria Field's waters. \\c[31]+40 HP\\c[0]",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 40
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 307,
+    "itypeId": 1,
+    "name": "Seafood Meal",
+    "note": "<Menu Category: Recovery, Buffs>\n\n<Synthesis Ingredients>\nFathead Carp\nWhiskerfish\nNorthern Redbelly Dace\nEmpty Bag\n</Synthesis Ingredients>\n<Mask Name: Shared Seafood>\n<Synthesis SE: Equip3>",
+    "occasion": 0,
+    "price": 100,
+    "repeats": 1,
+    "scope": 8,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 222,
+    "animationId": 0,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Beginning as a genetic mutation, this crustacean grew to become a regular sight on the\nbeaches of Telluria. It only coming out at night serves to help it hide from predators.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 1812,
+    "itypeId": 1,
+    "name": "Blue Crab",
+    "note": "<Menu Category: Fishing>",
+    "occasion": 0,
+    "price": 60,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 223,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Chopped up, fried, and light garnished crab makes for a\nsimple yet elegant dish. It's tasty, too! \\c[31]+10% HP\\c[0] \\c[16]+20% MP\\c[0]",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.1,
+        "value2": 0
+      },
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0.2,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 307,
+    "itypeId": 1,
+    "name": "Mana Fritters",
+    "note": "<Menu Category: Recovery, Buffs>\n\n<Synthesis Ingredients>\nBlue Crab\nStarfruit\nEmpty Bag\n</Synthesis Ingredients>\n<Mask Name: Magical Seafood>\n<Synthesis SE: Equip3>",
+    "occasion": 0,
+    "price": 100,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 224,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "This fruit, while lightly poisonous, isn't dangerous to humans. It's said\nthat it contains magical qualities that can spice up any dish. \\c[31]+5% HP\\c[0] \\c[16]+5% MP\\c[0]",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.05,
+        "value2": 0
+      },
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0.05,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 1904,
+    "itypeId": 1,
+    "name": "Starfruit",
+    "note": "<Menu Category: Recovery, Materials>",
+    "occasion": 0,
+    "price": 40,
+    "repeats": 1,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
