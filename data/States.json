@@ -271,21 +271,6 @@
         "code": 11,
         "dataId": 7,
         "value": 2
-      },
-      {
-        "code": 14,
-        "dataId": 8,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 89,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 90,
-        "value": 1
       }
     ],
     "iconIndex": 104,
@@ -349,11 +334,6 @@
         "code": 11,
         "dataId": 6,
         "value": 0.5
-      },
-      {
-        "code": 14,
-        "dataId": 33,
-        "value": 1
       }
     ]
   },
@@ -1213,16 +1193,6 @@
         "code": 22,
         "dataId": 1,
         "value": -0.2
-      },
-      {
-        "code": 14,
-        "dataId": 7,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 102,
-        "value": 1
       }
     ],
     "iconIndex": 107,
@@ -1798,18 +1768,7 @@
     "id": 52,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 14,
-        "dataId": 33,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 88,
-        "value": 1
-      }
-    ],
+    "traits": [],
     "iconIndex": 106,
     "maxTurns": 3,
     "message1": " is paralyzed!",
@@ -2892,16 +2851,6 @@
         "code": 22,
         "dataId": 2,
         "value": -0.06
-      },
-      {
-        "code": 14,
-        "dataId": 7,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 102,
-        "value": 1
       }
     ],
     "iconIndex": 109,
@@ -2967,11 +2916,6 @@
         "value": 0.5
       },
       {
-        "code": 14,
-        "dataId": 33,
-        "value": 1
-      },
-      {
         "code": 21,
         "dataId": 3,
         "value": 0.75
@@ -3017,11 +2961,6 @@
         "code": 11,
         "dataId": 6,
         "value": 0.5
-      },
-      {
-        "code": 14,
-        "dataId": 33,
-        "value": 1
       }
     ],
     "iconIndex": 105,
@@ -3405,21 +3344,6 @@
       },
       {
         "code": 14,
-        "dataId": 8,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 89,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 90,
-        "value": 1
-      },
-      {
-        "code": 14,
         "dataId": 7,
         "value": 1
       }
@@ -3437,6 +3361,253 @@
     "overlay": 0,
     "priority": 49,
     "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 103,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 8,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 89,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 90,
+        "value": 1
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "FIRE STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [7, 102];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 104,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "ICE STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [8, 89, 90];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 105,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 88,
+        "value": 1
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "ELECTRIC STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [52];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 106,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 7,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 102,
+        "value": 1
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "WATER STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [33];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 107,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "EARTH STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>ll Removal>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 108,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 7,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 102,
+        "value": 1
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "WIND STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [88];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 109,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "LIGHT STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 110,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "DARK STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = false;\nvar states = [];\nfor (i = 0; i < states.length; i++) {\n  if (user._states.contains(states[i])) condition = true;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,
