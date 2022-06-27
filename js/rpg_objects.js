@@ -2528,7 +2528,7 @@ Game_BattlerBase.prototype.isSkillTypeSealed = function(stypeId) {
 Game_BattlerBase.prototype.hasSkillType = function(stypeId) {
     skills = this.skills();
     for (i = 0; i < skills.length; i++) {
-        if (skills[i].stypeId == stypeId) return true;
+        if (skills[i].stypeId == stypeId && !skills[i].name.contains("[SF]")) return true;
     }
     return false;
 };
