@@ -6554,5 +6554,575 @@
       40,
       45
     ]
+  },
+  {
+    "id": 65,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 73
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Ethereal Bat",
+    "dropItems": [
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 1
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 3
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 4
+      }
+    ],
+    "exp": 4000,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.12
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.15
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 12,
+        "value": 1.8
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      },
+      {
+        "code": 63,
+        "dataId": 1,
+        "value": 1
+      }
+    ],
+    "gold": 2000,
+    "name": "Ethereal Bat",
+    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Element Absorb: 7>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nEthereal Bat Wing: 100%\nEthereal Bat's Spirit: 100%\nWind Catalyst: 100%\nStorm Lens: 2%\nBat Sling: 1%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\n</Enemy Drops>\n\n<Conditional Ethereal Bat Wing Drop>\nSwitch 96 ON: -100%\n</Conditional Ethereal Bat Wing Drop>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 ON: -100%\n</Conditional Ethereal Bat's Spirit Drop>",
+    "params": [
+      8000,
+      0,
+      35,
+      40,
+      10,
+      80,
+      101,
+      50
+    ]
+  },
+  {
+    "id": 66,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Vampiric Spirit",
+    "dropItems": [
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 2
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 3
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 1
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.03
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.13
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 12,
+        "value": 1.8
+      },
+      {
+        "code": 14,
+        "dataId": 116,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 117,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 118,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "gold": 0,
+    "name": "Vampiric Spirit",
+    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vampiric Spirit>\n<Element Absorb: 7>\n<Passive State: 111, 115>\n\n<Enemy Drops>\nWind Essence: 20%\n</Enemy Drops>",
+    "params": [
+      2000,
+      0,
+      30,
+      35,
+      10,
+      70,
+      100,
+      50
+    ]
+  },
+  {
+    "id": 67,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Vigorous Spirit",
+    "dropItems": [
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 2
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 3
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 1
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.03
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.13
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 12,
+        "value": 1.8
+      },
+      {
+        "code": 14,
+        "dataId": 115,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 117,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 118,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "gold": 0,
+    "name": "Vigorous Spirit",
+    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vigorous Spirit>\n<Element Absorb: 7>\n<Passive State: 112, 116>\n\n<Enemy Drops>\nWind Essence: 20%\n</Enemy Drops>",
+    "params": [
+      2000,
+      0,
+      30,
+      35,
+      10,
+      70,
+      100,
+      50
+    ]
+  },
+  {
+    "id": 68,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Dexterous Spirit",
+    "dropItems": [
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 2
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 3
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 1
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.03
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.13
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 12,
+        "value": 1.8
+      },
+      {
+        "code": 14,
+        "dataId": 115,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 116,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 118,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "gold": 0,
+    "name": "Dexterous Spirit",
+    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Dexterous Spirit>\n<Element Absorb: 7>\n<Passive State: 113, 117>\n\n<Enemy Drops>\nWind Essence: 20%\n</Enemy Drops>",
+    "params": [
+      2000,
+      0,
+      30,
+      35,
+      10,
+      70,
+      100,
+      50
+    ]
+  },
+  {
+    "id": 69,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Belligerent Spirit",
+    "dropItems": [
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 2
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 3
+      },
+      {
+        "kind": 0,
+        "dataId": 0,
+        "denominator": 1
+      }
+    ],
+    "exp": 0,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.03
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.13
+      },
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 12,
+        "value": 1.8
+      },
+      {
+        "code": 14,
+        "dataId": 115,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 116,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 117,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "gold": 0,
+    "name": "Belligerent Spirit",
+    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Belligerent Spirit>\n<Element Absorb: 7>\n<Passive State: 114, 118>\n\n<Enemy Drops>\nWind Essence: 20%\n</Enemy Drops>",
+    "params": [
+      2000,
+      0,
+      30,
+      35,
+      10,
+      70,
+      100,
+      50
+    ]
   }
 ]

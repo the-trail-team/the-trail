@@ -11689,5 +11689,78 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 77,
+    "members": [
+      {
+        "enemyId": 65,
+        "x": 348,
+        "y": 232,
+        "hidden": false
+      },
+      {
+        "enemyId": 66,
+        "x": 510,
+        "y": 106,
+        "hidden": true
+      },
+      {
+        "enemyId": 67,
+        "x": 150,
+        "y": 349,
+        "hidden": true
+      },
+      {
+        "enemyId": 68,
+        "x": 210,
+        "y": 100,
+        "hidden": true
+      },
+      {
+        "enemyId": 69,
+        "x": 474,
+        "y": 355,
+        "hidden": true
+      }
+    ],
+    "name": "Ethereal Bat",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 1,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 331,
+            "indent": 0,
+            "parameters": [
+              -1,
+              1,
+              0,
+              2000,
+              true
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

@@ -1695,7 +1695,7 @@
     "iconIndex": 236,
     "itypeId": 3,
     "name": "CASTLE FORGE RECIPES",
-    "note": "Was once the Pot with Seed.\n<Item Recipe: 68, 74, 213, 176, 214, 92, 218, 93, 154, 207, 123, 124, 125, 184, 208, 209, 210>\n<Weapon Recipe: 45, 32, 21, 23, 30, 49, 24, 22, 50, 42, 43, 25, 51, 44, 26, 27>\n<Armor Recipe: 97, 82, 141, 47, 108, 137, 136, 117, 48, 151, 150, 78, 125, 36, 126, 37, 127, 128, 168, 46, 133, 132, 129, 130, 131, 44, 113, 115, 81, 83, 107, 149, 148, 45, 143, 142, 96, 159, 134, 161, 162, 32, 57, 164, 124>",
+    "note": "Was once the Pot with Seed.\n<Item Recipe: 68, 74, 213, 176, 214, 92, 218, 228, 93, 154, 207, 123, 124, 125, 184, 208, 209, 210>\n<Weapon Recipe: 45, 32, 21, 23, 30, 49, 24, 22, 50, 42, 43, 25, 51, 44, 26, 27>\n<Armor Recipe: 97, 82, 141, 47, 108, 137, 136, 117, 48, 151, 150, 78, 125, 36, 126, 37, 127, 128, 168, 46, 133, 132, 129, 130, 131, 44, 113, 115, 81, 83, 107, 149, 148, 45, 143, 142, 96, 159, 134, 161, 162, 32, 57, 164, 124>",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -6602,6 +6602,65 @@
     "price": 360,
     "repeats": 1,
     "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 227,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A pale bat wing with magical\nenergy radiating from it.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 603,
+    "itypeId": 1,
+    "name": "Ethereal Bat Wing",
+    "note": "<Menu Category: Trophies, Memorabilia>\n<Cannot Discard>",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 228,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A flute with a peculiar lull that can only be described as slightly\neerie. \\c[2]Using it in a certain location may have unintended consequences.\\c[0]",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 60,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 251,
+    "itypeId": 2,
+    "name": "Ethereal Flute",
+    "note": "<Synthesis Ingredients>\nSteel Alloy: 2\nFeral Bat Wing: 10\nEnchanting Crystal: 2\n</Synthesis Ingredients>\n<Mask Name: Forest Summoner>",
+    "occasion": 2,
+    "price": 500,
+    "repeats": 1,
+    "scope": 0,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

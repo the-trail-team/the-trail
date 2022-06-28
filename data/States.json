@@ -3613,5 +3613,549 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 111,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Vampiric Spirit",
+    "note": "<Alive Ally Aura: 115>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 112,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Vigorous Spirit",
+    "note": "<Alive Ally Aura: 116>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 113,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Dexterous Spirit",
+    "note": "<Alive Ally Aura: 117>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 114,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Belligerent Spirit",
+    "note": "<Alive Ally Aura: 118>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 115,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Vampiric Spirit Aura",
+    "note": "<HP Life Steal Physical: +50%>\n\n<Custom Aura Condition>\nif (user.name() === \"Ethereal Bat\") {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Aura Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 116,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.8
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Vigorous Spirit Aura",
+    "note": "<Custom Aura Condition>\nif (user.name() === \"Ethereal Bat\") {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Aura Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 117,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 5
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Dexterous Spirit Aura",
+    "note": "<Custom Aura Condition>\nif (user.name() === \"Ethereal Bat\") {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Aura Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 118,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.2
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.1
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Belligerent Spirit Aura",
+    "note": "<Custom Aura Condition>\nif (user.name() === \"Ethereal Bat\") {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Aura Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 119,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.97
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.97
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.15
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.03
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.015
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.06
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Ethereal Bat's Spirit - 0 Dead",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: +0.75%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length === 0) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 120,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.01
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.99
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.99
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.05
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.005
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.02
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Ethereal Bat's Spirit - 1 Dead",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: +0.25%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length === 1) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 121,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": -0.01
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 1.01
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 1.01
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": -0.01
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": -0.01
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": -0.005
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.98
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": -0.01
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Ethereal Bat's Spirit - 2 Dead",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: -0.25%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length === 2) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 122,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": -0.03
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 1.03
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 1.03
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 0.85
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": -0.03
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": -0.03
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": -0.015
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.94
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": -0.03
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Ethereal Bat's Spirit - 3 Dead",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: -0.75%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length >= 3) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 123,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Used Ethereal Echolocation",
+    "note": "",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
