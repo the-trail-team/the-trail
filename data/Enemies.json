@@ -6655,7 +6655,7 @@
     ],
     "gold": 1500,
     "name": "Ethereal Bat",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Element Absorb: 7>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nEthereal Bat Wing: 100%\nEthereal Bat's Spirit: 100%\nWind Catalyst: 100%\nStorm Lens: 2%\nBat Sling: 1%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<Conditional Ethereal Bat Wing Drop>\nSwitch 96 ON: -100%\n</Conditional Ethereal Bat Wing Drop>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 ON: -100%\n</Conditional Ethereal Bat's Spirit Drop>",
+    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Element Absorb: 7>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nEthereal Bat Wing: 0%\nEthereal Bat's Spirit: 0%\nWind Catalyst: 100%\nStorm Lens: 2%\nBat Sling: 1%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<Conditional Ethereal Bat Wing Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat Wing Drop>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat's Spirit Drop>",
     "params": [
       8000,
       0,
