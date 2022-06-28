@@ -2275,7 +2275,7 @@ Game_Enemy.prototype.linkBreathing = function() {
 
 Game_Enemy.prototype.isFloating = function() {
     if (this.isDead() && !this.enemy().sideviewFloatDeath) return false;
-    if (this.hpRate() <= 0.25 && this.enemy().sideviewFloatingLowHpGround) return false;
+    if (this.enemy().sideviewFloatingLowHpGround && (this.hpRate() <= 0.25 || !this.spriteCanMove() || [1,2].contains(this.stateMotionIndex()))) return false;
     return this.enemy().sideviewFloating;
 };
 
