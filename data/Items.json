@@ -6794,5 +6794,31 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 234,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Boosts the EVA of a headgear, bodygear, or footgear by 0.75%.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 624,
+    "itypeId": 1,
+    "name": "EVA Scroll",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nEval: item.traits.push({code: 22, dataId: 1, value: 0.0075});\nPrefix: Evasive\n</Upgrade Effect>\n\n<Menu Category: Upgraders>",
+    "occasion": 3,
+    "price": 240,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
