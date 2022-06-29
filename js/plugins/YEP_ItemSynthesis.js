@@ -1441,7 +1441,9 @@ Window_SynthesisNumber.prototype.drawNumber = function() {
     var y = this.itemY();
     var width = this.cursorWidth() - this.textPadding();
     this.resetTextColor();
-    this.drawText(Yanfly.Util.toGroup(this._number), x, y, width, 'right');
+    number = this._number;
+    if (SceneManager._scene._listWindow.item()) if (SceneManager._scene._listWindow.item().id === 229) number *= 3; // fiery powder
+    this.drawText(Yanfly.Util.toGroup(number), x, y, width, 'right');
 };
 
 Window_SynthesisNumber.prototype.drawIngredients = function() {
@@ -1844,6 +1846,7 @@ Scene_Synthesis.prototype.doBuy = function(number) {
       $gameParty.loseItem(ingredient, quantity, false);
     }
     }
+    if (this._listWindow.item()) if (this._listWindow.item().id === 229) number *= 3; // fiery powder
     $gameParty.gainItem(this._item, number);
     $gameSystem.addSynth(this._item);
 };
