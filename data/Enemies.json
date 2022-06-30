@@ -5825,13 +5825,13 @@
     ],
     "gold": 100,
     "name": "Chilling Apparition",
-    "note": "<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 2%\nWarm Scarf: 2%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Core: 10%\nIce Essence: 20%\nDark Essence: 20%\n</Enemy Drops>\n\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 2%\nWarm Scarf: 2%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Core: 10%\nIce Essence: 20%\nDark Essence: 20%\n</Enemy Drops>\n\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       2500,
       0,
       22,
       30,
-      50,
+      60,
       100,
       30,
       15
@@ -5867,7 +5867,7 @@
         "kind": 0
       }
     ],
-    "exp": 250,
+    "exp": 350,
     "traits": [
       {
         "code": 22,
@@ -5920,14 +5920,14 @@
         "value": 1
       }
     ],
-    "gold": 150,
+    "gold": 250,
     "name": "Werewolf",
-    "note": "<Attack Animation: 19>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 2%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Core: 10%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Breathing Speed: 20>\n<Attack Animation: 19>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 2%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Core: 10%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       4000,
       0,
       34,
-      40,
+      35,
       5,
       80,
       90,
@@ -6435,7 +6435,7 @@
       60,
       24,
       40,
-      45,
+      52,
       75,
       15,
       6
@@ -7305,7 +7305,7 @@
     ],
     "gold": 75,
     "name": "Polar Bear",
-    "note": "<Attack Animation: 19>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 2%\nRaw Bear Meat: 80%\nRaw Bear Meat: 80%\nHoney: 75%\nFrozen Core: 10%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Breathing Speed: 20>\n<Attack Animation: 19>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 2%\nRaw Bear Meat: 80%\nRaw Bear Meat: 80%\nHoney: 75%\nFrozen Core: 10%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
