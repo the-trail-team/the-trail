@@ -19492,6 +19492,7479 @@
       ],
       "x": 45,
       "y": 11
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 20,
+      "y": 21
+    },
+    {
+      "id": 14,
+      "name": "EV014",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 27,
+      "y": 10
+    },
+    {
+      "id": 15,
+      "name": "EV015",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 5
+    },
+    {
+      "id": 16,
+      "name": "EV016",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 15
+    },
+    {
+      "id": 17,
+      "name": "EV017",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 7,
+      "y": 41
+    },
+    {
+      "id": 18,
+      "name": "EV018",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 32,
+      "y": 48
+    },
+    {
+      "id": 19,
+      "name": "EV019",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 40,
+      "y": 34
+    },
+    {
+      "id": 20,
+      "name": "EV020",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 45,
+      "y": 25
+    },
+    {
+      "id": 21,
+      "name": "EV021",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 8"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 42,
+      "y": 11
+    },
+    {
+      "id": 22,
+      "name": "EV022",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Bear",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 10 <= 6"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 28,
+      "y": 22
+    },
+    {
+      "id": 23,
+      "name": "EV023",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Bear",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 10 <= 6"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 17,
+      "y": 39
+    },
+    {
+      "id": 24,
+      "name": "EV024",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Bear",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 10 <= 6"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 19
+    },
+    {
+      "id": 25,
+      "name": "EV025",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Bear",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 10 <= 6"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 18,
+      "y": 6
+    },
+    {
+      "id": 26,
+      "name": "EV026",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Bear",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 10 <= 6"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 38,
+      "y": 5
+    },
+    {
+      "id": 27,
+      "name": "EV027",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Bear",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 10 <= 6"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 46,
+      "y": 38
+    },
+    {
+      "id": 28,
+      "name": "EV028",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Bear",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 10 <= 6"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                79,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                78,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 7"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 41,
+      "y": 43
+    },
+    {
+      "id": 29,
+      "name": "EV029",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 16,
+      "y": 22
+    },
+    {
+      "id": 30,
+      "name": "EV030",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 20,
+      "y": 10
+    },
+    {
+      "id": 31,
+      "name": "EV031",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 32,
+      "y": 6
+    },
+    {
+      "id": 32,
+      "name": "EV032",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 39,
+      "y": 11
+    },
+    {
+      "id": 33,
+      "name": "EV033",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 39,
+      "y": 16
+    },
+    {
+      "id": 34,
+      "name": "EV034",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 35,
+      "y": 32
+    },
+    {
+      "id": 35,
+      "name": "EV035",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 34,
+      "y": 42
+    },
+    {
+      "id": 36,
+      "name": "EV036",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 25,
+      "y": 41
+    },
+    {
+      "id": 37,
+      "name": "EV037",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 5,
+      "y": 27
+    },
+    {
+      "id": 38,
+      "name": "EV038",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "FloatingSkull",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 20 <= 7"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                80,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 8 && Date.now() <= 13"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 10 >= 14 && Date.now() <= 17"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                82,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                84,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 10
+    },
+    {
+      "id": 39,
+      "name": "EV039",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                76,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 25
+    },
+    {
+      "id": 40,
+      "name": "EV040",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                76,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 16,
+      "y": 5
+    },
+    {
+      "id": 41,
+      "name": "EV041",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                76,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 36,
+      "y": 6
+    },
+    {
+      "id": 42,
+      "name": "EV042",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                76,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 45,
+      "y": 28
+    },
+    {
+      "id": 43,
+      "name": "EV043",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                76,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 41,
+      "y": 37
+    },
+    {
+      "id": 44,
+      "name": "EV044",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                76,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 19,
+      "y": 41
+    },
+    {
+      "id": 45,
+      "name": "EV045",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                76,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 3"
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 5,
+      "y": 35
     }
   ]
 }
