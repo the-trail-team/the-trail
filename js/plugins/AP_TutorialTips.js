@@ -39,7 +39,7 @@ const tips = [
 	"Anything that regrows has its own unique timer that ticks down every in-game hour.",
 	"Blueberries regrow after a mere 16 hours, while flowers take an entire week to sprout once more.",
 	"Oreleaf can be found in the mine north of Bladesville. It's a mysterious metallic plant that yields ore and regrows every few days.",
-	"Ghostly enemies will halve incoming physical damage. Use elemental attacks or magic to do normal damage to them.",
+	"Ghostly enemies will halve incoming physical damage. Use magic to do normal damage to them.",
 	"The entirety of the game is still playable with just a mouse. All you need is left and right clicks.",
 	"Running away is guaranteed to be successful on the first turn of battle.",
 	"The base escape success chance is 20%. Each failed escape attempt boosts this chance by 10%.",
