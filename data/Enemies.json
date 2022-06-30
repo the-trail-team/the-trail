@@ -4685,7 +4685,7 @@
     ],
     "gold": 250,
     "name": "Fire Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Fire Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Fire Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nPocket Mirror: 2%\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -4797,7 +4797,7 @@
     ],
     "gold": 250,
     "name": "Water Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Water Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Water Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nPocket Mirror: 2%\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -4909,7 +4909,7 @@
     ],
     "gold": 250,
     "name": "Earth Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Earth Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n<Element Absorb: 6>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Earth Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n<Element Absorb: 6>\n\n<Enemy Drops>\nPocket Mirror: 2%\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -5016,7 +5016,7 @@
     ],
     "gold": 250,
     "name": "Wind Spirit",
-    "note": "<Sideview Battler: NoMatchingSprite/Wind Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 219>\n<Element Absorb: 7>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Sideview Battler: NoMatchingSprite/Wind Spirit>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 219>\n<Element Absorb: 7>\n\n<Enemy Drops>\nPocket Mirror: 2%\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -5651,6 +5651,11 @@
         "value": 0.06
       },
       {
+        "code": 31,
+        "dataId": 3,
+        "value": 1
+      },
+      {
         "code": 32,
         "dataId": 8,
         "value": 0.75
@@ -5740,22 +5745,37 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 150,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.08
       },
       {
         "code": 31,
-        "dataId": 1,
+        "dataId": 3,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 9,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 89,
+        "value": 1
       },
       {
         "code": 11,
@@ -5791,20 +5811,30 @@
         "code": 14,
         "dataId": 34,
         "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 8,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 89,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 100,
     "name": "Chilling Apparition",
-    "note": "<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nFrozen Core: 10%\n</Enemy Drops>",
+    "note": "<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 2%\nWarm Scarf: 2%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Core: 10%\nIce Essence: 20%\nDark Essence: 20%\n</Enemy Drops>\n\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
-      100,
+      2500,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      22,
+      30,
+      50,
+      100,
+      30,
+      15
     ]
   },
   {
@@ -5815,7 +5845,7 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
-        "skillId": 1
+        "skillId": 108
       }
     ],
     "battlerHue": 0,
@@ -5837,22 +5867,32 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 250,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1.02
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.11
       },
       {
         "code": 31,
-        "dataId": 1,
+        "dataId": 3,
         "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 89,
+        "value": 0.5
       },
       {
         "code": 11,
@@ -5871,22 +5911,27 @@
       },
       {
         "code": 14,
-        "dataId": 34,
+        "dataId": 8,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 89,
         "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 150,
     "name": "Werewolf",
-    "note": "<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nFrozen Core: 10%\n</Enemy Drops>",
+    "note": "<Attack Animation: 19>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 2%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Core: 10%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
-      100,
+      4000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      34,
+      40,
+      5,
+      80,
+      90,
+      45
     ]
   },
   {
@@ -6384,7 +6429,7 @@
     ],
     "gold": 50,
     "name": "Ice Slime",
-    "note": "<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nFrozen Core: 5%\nSlime Scarf: 2%\nWarm Scarf: 2%\nCondensed White Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nIce Cube: 50%\nIce Cube: 50%\nFrozen Core: 5%\nSlime Scarf: 2%\nWarm Scarf: 2%\nCondensed White Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       60,
@@ -7205,22 +7250,32 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 150,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 0.99
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.07
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.08
       },
       {
         "code": 31,
-        "dataId": 1,
+        "dataId": 3,
         "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 8,
+        "value": 1
       },
       {
         "code": 11,
@@ -7239,22 +7294,27 @@
       },
       {
         "code": 14,
-        "dataId": 34,
+        "dataId": 8,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 89,
         "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 75,
     "name": "Polar Bear",
-    "note": "<Attack Animation: 19>\n<Element Absorb: 3>\n\n<Enemy Drops>\nRaw Bear Meat: 80%\nRaw Bear Meat: 80%\nHoney: 75%\nFrozen Core: 10%\n</Enemy Drops>",
+    "note": "<Attack Animation: 19>\n<Element Absorb: 3>\n\n<Enemy Drops>\nWarm Scarf: 2%\nRaw Bear Meat: 80%\nRaw Bear Meat: 80%\nHoney: 75%\nFrozen Core: 10%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
-      100,
+      3000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      30,
+      35,
+      1,
+      65,
+      60,
+      50
     ]
   }
 ]
