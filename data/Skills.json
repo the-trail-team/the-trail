@@ -3224,7 +3224,7 @@
     "iconIndex": 101,
     "message1": " blows a magical gust of wind!",
     "message2": "",
-    "mpCost": 11,
+    "mpCost": 25,
     "name": "Magical Breeze",
     "note": "<Critical Rate: 25%>\n\n<Remove State Category: Fire>\n<Remove State Category: Earth>\n\n<setup action>\nimmortal: targets, true\ndisplay action\nperform start\nmotion chant: user\nwait: 45\nmotion spell: user\nse: Wind7, 100, 50\n</setup action>\n\n<whole action>\naction animation\nwait for animation\nshake screen: 1, 9, 10\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
