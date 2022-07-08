@@ -889,6 +889,8 @@ ItemManager.setPriorityName = function(item, value) {
 ItemManager.updateItemName = function(item) {
     if (item.priorityName && item.priorityName.length > 0) {
       item.name = item.priorityName;
+      if (item.namePrefix) item.name = item.namePrefix + item.name;
+      if (item.boostCount > 0) item.name = item.name + " +" + String(item.boostCount);
       return;
     }
     var prefix = item.namePrefix || '';
