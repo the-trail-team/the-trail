@@ -2664,7 +2664,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Afflicts the target with either \\it[21],\n\\it[22], or \\it[23].",
+    "description": "Afflicts the target with either \\it[21],\n\\it[22], \\it[23], or \\it[94].",
     "effects": [],
     "hitType": 0,
     "iconIndex": 612,
@@ -2672,7 +2672,7 @@
     "message2": "",
     "mpCost": 8,
     "name": "Contingence",
-    "note": "<Require = 0 BP>\n\n<setup action>\ndisplay action\nperform start\n</setup action>\n\n<whole action>\nmotion chant: user\nanimation 134: user, mirror\nwait for animation\n</whole action>\n\n<target action>\nmotion spell: user\nEVAL: $gameVariables.setValue(6, Math.floor(Math.random() * 3));\nIF ($gameVariables.value(6) === 0)\nanimation 61: target\nwait for animation\nEVAL: SceneManager._scene._logWindow.addText(\"The target was silenced!\");\nadd state 21: target\nEND\nIF ($gameVariables.value(6) === 1)\nanimation 62: target\nwait for animation\nEVAL: SceneManager._scene._logWindow.addText(\"The target was put to sleep!\");\nadd state 22: target\nEND\nIF ($gameVariables.value(6) === 2)\nanimation 63: target\nwait for animation\nEVAL: SceneManager._scene._logWindow.addText(\"The target was confused!\");\nadd state 23: target\nEND\nwait: 30\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Require = 0 BP>\n\n<setup action>\ndisplay action\nperform start\n</setup action>\n\n<whole action>\nmotion chant: user\nanimation 134: user, mirror\nwait for animation\n</whole action>\n\n<target action>\nmotion spell: user\nEVAL: $gameVariables.setValue(6, Math.floor(Math.random() * 4));\nIF ($gameVariables.value(6) === 0)\nanimation 61: target\nwait for animation\nEVAL: SceneManager._scene._logWindow.addText(\"The target was silenced!\");\nadd state 21: target\nEND\nIF ($gameVariables.value(6) === 1)\nanimation 62: target\nwait for animation\nEVAL: SceneManager._scene._logWindow.addText(\"The target was put to sleep!\");\nadd state 22: target\nEND\nIF ($gameVariables.value(6) === 2)\nanimation 63: target\nwait for animation\nEVAL: SceneManager._scene._logWindow.addText(\"The target was confused!\");\nadd state 23: target\nEND\nIF ($gameVariables.value(6) === 3)\nanimation 269: target\nwait for animation\nEVAL: SceneManager._scene._logWindow.addText(\"The target came down with amnesia!\");\nadd state 94: target\nEND\nwait: 30\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
