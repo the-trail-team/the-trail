@@ -64,7 +64,8 @@ const tips = [
 	"The Stat Master in Haven Harbor can go into great detail about every attribute in the game.",
 	"The Champion's Talisman increases in strength as your journey continues. You can get it from a nun outside the Verdin Village church.",
 	"Fishing might seem boring, but it's a relaxing and useful hobby. You can cook up some powerful food using your catches.",
-	"A certain someone at the Adventurer's Guild will resell you one-time items."
+	"A certain someone at the Adventurer's Guild will resell you one-time items.",
+	"Beware of Darkhounds roaming the land at night. They collapse into a pile of bones upon defeat, and are re-animated every time the moon rises."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
