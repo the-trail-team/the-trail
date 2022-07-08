@@ -277,6 +277,9 @@ Changes:
  - Many shops have had their stock changed. Some enemy drop pools have also been adjusted.
  - The 4-skeleton enemy troop now spawns frequently anywhere in the "Forest Arena...?" after the penultimate Laeryidyean cutscene.
   ~ Additionally, the Adonian Monsters troop has been altered. No troops with the Skeleton can be encountered anymore, effectively removing the enemy from the game.
+ - Contingence also can apply Amnesia.
+ - Item prefixes no longer affect an item's alphabetical sorting.
+ - Renaming an item can no longer modify the prefix or the boost count.
  - Uncrafted items now display their mask name if in an ingredient list. Additionally, the color of an ingredient now changes depending on if the player has enough of the item.
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
  - Raw Meat and Salt-Grilled Meat have been changed to Raw Bear Meat and Salt-Grilled Bear Meat, respectively.
@@ -329,6 +332,7 @@ Bug Fixes:
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where some mid-battle boss monologues would interrupt turns or even action sequences instead of playing between turns.
+ - Fixed a bug where party members would rarely not gain BP between the 1st and 2nd turn of a battle.
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
@@ -342,6 +346,7 @@ Bug Fixes:
  - Fixed a bug where magic skills used the wrong motion when casting.
  - Fixed a bug where battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
  - Fixed a bug where vA.14.7 removed Solus Town's snow but neglected to remove the snow around it in the overworld.
+ - Fixed #9 and #10.
  - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release.
 
 Alpha 10.2 and the updates preceding it served to build the foundation of The Trail, allowing me to start learning how to make a game that was mechanically sound and coherent.
