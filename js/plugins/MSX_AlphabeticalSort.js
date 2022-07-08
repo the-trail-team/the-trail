@@ -41,8 +41,10 @@ if(MSX.AlphabeticalSort.sortItemList){
     Window_ItemList.prototype.makeItemList = function() {
         var allItems = $gameParty.allItems();
         allItems.sort(function(a,b){
-            if(a.name.toLowerCase() < b.name.toLowerCase()) return -1;
-            if(a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+            if (a.baseItemName) A = a.baseItemName; else A = a.name;
+            if (b.baseItemName) B = b.baseItemName; else B = b.name;
+            if (A.toLowerCase() < B.toLowerCase()) return -1;
+            if (A.toLowerCase() > B.toLowerCase()) return 1;
             return 0;
         });
         this._data = allItems.filter(function(item) {
