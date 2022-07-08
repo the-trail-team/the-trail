@@ -2251,16 +2251,17 @@ Scene_Battle.prototype.create = function() {
 
 Scene_Battle.prototype.start = function() {
     Scene_Base.prototype.start.call(this);
-    this.retryBpFix();
+    this.fixBP();
     this.startFadeIn(this.fadeSpeed(), false);
     BattleManager.playBattleBgm();
     BattleManager.startBattle();
 };
 
-Scene_Battle.prototype.retryBpFix = function() {
+Scene_Battle.prototype.fixBP = function() {
     for (i = 0; i < $gameParty.battleMembers().length; i++) {
         obj = $gameParty.battleMembers()[i];
         obj._storedBP = 0;
+        obj._turnUsedBP = 0;
     }
 }
 
