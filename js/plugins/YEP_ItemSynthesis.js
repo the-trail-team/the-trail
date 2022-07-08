@@ -478,6 +478,9 @@ Yanfly.IS.DataManager_isDatabaseLoaded = DataManager.isDatabaseLoaded;
 DataManager.isDatabaseLoaded = function() {
   if (!Yanfly.IS.DataManager_isDatabaseLoaded.call(this)) return false;
   if (!Yanfly._loaded_YEP_ItemSynthesis) {
+    Yanfly.IS.ItemIngredientIDs    = [];
+    Yanfly.IS.WeaponIngredientIDs  = [];
+    Yanfly.IS.ArmorIngredientIDs   = [];
     this.processISNotetagsI($dataItems);
     this.processISNotetagsW($dataWeapons);
     this.processISNotetagsA($dataArmors);
@@ -666,6 +669,9 @@ DataManager.addSynthesisIngredient = function(obj, line) {
     if (!this.isSynthesisIngredientOk(ingId, ingType)) return;
     var length = obj.synthIngredients.length;
     obj.synthIngredients[length] = [ingType, ingId, ingValue];
+    if (ingType === 0 && !Yanfly.IS.ItemIngredientIDs.contains(ingId)) Yanfly.IS.ItemIngredientIDs.push(ingId);
+    if (ingType === 1 && !Yanfly.IS.WeaponIngredientIDs.contains(ingId)) Yanfly.IS.WeaponIngredientIDs.push(ingId);
+    if (ingType === 2 && !Yanfly.IS.ArmorIngredientIDs.contains(ingId)) Yanfly.IS.ArmorIngredientIDs.push(ingId);
 };
 
 DataManager.isSynthesisIngredientOk = function(ingId, ingType) {

@@ -412,7 +412,12 @@ Window_ItemList.prototype.includes = function(item) {
     return item && item.etypeId === this._ext;
     break;
   case 'Category':
-    return item && item.itemCategory.contains(this._ext);
+    if (this._ext === "Materials") {
+      if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return item;
+      if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return item;
+      if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return item;
+    }
+    else return item && item.itemCategory.contains(this._ext);
     break;
   default:
     return false;

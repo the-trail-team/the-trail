@@ -1453,6 +1453,20 @@ Window_ItemList.prototype.listEquippedItems = function() {
       }
     }
     this._data = results.concat(this._data);
+
+    if (this._ext === "Materials") {
+      this._data.sort(function(a,b){
+        if(a.name.toLowerCase() < b.name.toLowerCase()) return -1;
+        if(a.name.toLowerCase() > b.name.toLowerCase()) return 1;
+        return 0;
+      });
+      this._data = this._data.filter(function(item) {
+        return this.includes(item);
+      }, this);
+      if (this.includes(null)) {
+        this._data.push(null);
+      }
+    }
 };
 
 Yanfly.Item.Window_ItemList_drawItemNumber =
