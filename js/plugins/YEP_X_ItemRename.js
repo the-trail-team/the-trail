@@ -357,7 +357,7 @@ Scene_Item.prototype.postItemRename = function() {
   this._categoryWindow.update();
   $gameTemp._itemCategoryIndex = undefined;
   this._itemWindow.update();
-  this._itemWindow.select($gameTemp._itemListIndex);
+  this._itemWindow.select(this._itemWindow._data.findIndex(element => element === $gameTemp._itemRename));
   this._itemWindow.updateHelp();
   $gameTemp._itemListIndex = undefined;
   this._itemActionWindow.setItem($gameTemp._itemRename);
