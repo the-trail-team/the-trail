@@ -626,6 +626,22 @@ _.windowSettings['fullscreen']    = _.params['Initial Fullscreen'];
 _.windowSettings['frame']         = _.params['Show Frame'];
 _.windowSettings['always-on-top'] = _.params['Always on Top'];
 
+const titleBonus = [
+	"I'm not an artist",
+	"Brought to you by AP!",
+	"If it ain't broke, still fix it",
+	"Development hell",
+	"TrailCon when",
+	"Alpha 40 coming soon!",
+	"Also try Terraria!",
+	"Also try Breath of the Wild!",
+	"How did we get here?",
+	"The Wrath of APOCALYPSE",
+	"The Trail: The Trail: The Trail: The Trail: The Trail: The Trail: The Trail: The Trail: The Trail: The Trail: The Trail: The Trail:"
+];
+
+_.windowSettings['title'] = _.windowSettings['title'] + ": " + titleBonus[Math.floor(Math.random() * titleBonus.length)];
+
 //-----------------------------------------------------------------------------
 // PIXI
 //-----------------------------------------------------------------------------
