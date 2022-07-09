@@ -414,6 +414,9 @@ Yanfly.EED.DataManager_isDatabaseLoaded = DataManager.isDatabaseLoaded;
 DataManager.isDatabaseLoaded = function() {
   if (!Yanfly.EED.DataManager_isDatabaseLoaded.call(this)) return false;
   if (!Yanfly._loaded_YEP_ExtraEnemyDrops) {
+    Yanfly.EED.ItemDropIDs    = [];
+    Yanfly.EED.WeaponDropIDs  = [];
+    Yanfly.EED.ArmorDropIDs   = [];
     this.processEEDNotetagsI($dataItems);
     this.processEEDNotetagsW($dataWeapons);
     this.processEEDNotetagsA($dataArmors);
@@ -630,6 +633,9 @@ DataManager.createEnemyDrop = function(obj, dataId, rate, kind) {
       kind: kind
     }
     obj.dropItems.push(dropItem);
+    if (kind === 1 && !Yanfly.EED.ItemDropIDs.contains(dataId)) Yanfly.EED.ItemDropIDs.push(dataId);
+    if (kind === 2 && !Yanfly.EED.WeaponDropIDs.contains(dataId)) Yanfly.EED.WeaponDropIDs.push(dataId);
+    if (kind === 3 && !Yanfly.EED.ArmorDropIDs.contains(dataId)) Yanfly.EED.ArmorDropIDs.push(dataId);
 };
 
 //=============================================================================
