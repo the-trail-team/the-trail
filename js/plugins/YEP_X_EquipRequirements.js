@@ -650,6 +650,7 @@ Window_EquipItem.prototype.isEnabled = function(item) {
       equips = this._actor.equips();
       if (!this._actor.meetAllEquipRequirements(item)) return false;
       if (this._actor.equipSlots()[this._slotId] === 6) for (i = 0; i < equips.length; i++) if (equips[i]) if (equips[i].etypeId === 6 && equips[i].baseItemId === item.baseItemId) return false; // accessories must be mutually exclusive
+      if (this._actor.equipSlots()[this._slotId] === 1) for (i = 0; i < equips.length; i++) if (equips[i]) if (equips[i].etypeId === 1 && equips[i].baseItemId === item.baseItemId) return false; // weapons (for dual-wielders) must be mutually exclusive
     }
     return Yanfly.EqReq.Window_EquipItem_isEnabled.call(this, item);
 };
