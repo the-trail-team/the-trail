@@ -516,6 +516,7 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
     }
   }
   if (item.id <= 3000) return true;
+  if ([6, 8, 9].contains(this.actorId())) return true;
   if (!this.checkEquipRequirements(item)) return false;
   return true;
 };
