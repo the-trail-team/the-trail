@@ -2026,7 +2026,7 @@
     "traits": [],
     "iconIndex": 443,
     "name": "Traveling Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Traveler\nclass: Knight\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(1).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(1).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2047,7 +2047,7 @@
     "traits": [],
     "iconIndex": 438,
     "name": "Knight Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(1).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(1).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2068,7 +2068,7 @@
     "traits": [],
     "iconIndex": 440,
     "name": "Mage Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(2).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(2).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2089,7 +2089,7 @@
     "traits": [],
     "iconIndex": 623,
     "name": "Cleric Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(3).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(3).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2110,7 +2110,7 @@
     "traits": [],
     "iconIndex": 455,
     "name": "Rogue Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(4).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(4).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2763,7 +2763,7 @@
     "traits": [],
     "iconIndex": 629,
     "name": "Retro Knight Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nKnight Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(1).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(1).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>\n\n<Synthesis Ingredients>\nKnight Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -2784,7 +2784,7 @@
     "traits": [],
     "iconIndex": 433,
     "name": "Retro Mage Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Synthesis Ingredients>\nMage Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(2).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(2).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>\n\n<Synthesis Ingredients>\nMage Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -2805,7 +2805,7 @@
     "traits": [],
     "iconIndex": 630,
     "name": "Retro Cleric Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nCleric Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(3).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(3).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>\n\n<Synthesis Ingredients>\nCleric Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -2826,7 +2826,7 @@
     "traits": [],
     "iconIndex": 631,
     "name": "Retro Rogue Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Synthesis Ingredients>\nRogue Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(4).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(4).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>\n\n<Synthesis Ingredients>\nRogue Token: 1\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -3043,7 +3043,7 @@
     "traits": [],
     "iconIndex": 437,
     "name": "Cavalier Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(1).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(1).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3064,7 +3064,7 @@
     "traits": [],
     "iconIndex": 627,
     "name": "Sorcerer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(2).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(2).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3085,7 +3085,7 @@
     "traits": [],
     "iconIndex": 628,
     "name": "Bishop Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(3).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(3).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3106,7 +3106,7 @@
     "traits": [],
     "iconIndex": 446,
     "name": "Scapegrace Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(4).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(4).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3563,7 +3563,7 @@
     "traits": [],
     "iconIndex": 466,
     "name": "Bandito Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Menu Category: Vanity>\n<Cannot Discard>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(4).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(4).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
