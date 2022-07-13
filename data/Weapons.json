@@ -1413,11 +1413,11 @@
     ],
     "iconIndex": 577,
     "name": "Bloodlust ★★",
-    "note": "<Upgrade Slots: 3>\n<Weapon Image: 206>\n<HP Life Steal Physical: +6%>\n<Cannot Discard>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBloodlust ★: 1\nSacrificial Dagger: 1\nATK Scroll ★: 1\nDisposable Hammer: 5\nEnchanting Crystal: 5\nTellurium Alloy: 3\n</Synthesis Ingredients>\n<Mask Name: Even Better Bloody Dagger>",
+    "note": "<Upgrade Slots: 3>\n<Weapon Image: 206>\n<HP Life Steal Physical: +6%>\n<Cannot Discard>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBloodlust ★\nGrass Knuckles\nFrost Edge\nATK Scroll ★: 3\nDisposable Hammer: 5\nEnchanting Crystal: 5\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Even Better Bloody Dagger>",
     "params": [
       10,
       5,
-      21,
+      23,
       0,
       0,
       3,
@@ -1462,7 +1462,7 @@
       0,
       0
     ],
-    "price": 5000,
+    "price": 7500,
     "wtypeId": 2
   },
   {
@@ -1588,7 +1588,7 @@
     ],
     "iconIndex": 421,
     "name": "Tellurium Wand",
-    "note": "<Upgrade Slots: 3>\n<Weapon Image: 258>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBronze Wand: 1\nMAT Scroll ★: 2\nDisposable Hammer: 2\nEnchanting Crystal: 2\nTellurium Alloy: 4\n</Synthesis Ingredients>\n<Mask Name: Alloy-Based Wand>",
+    "note": "<Upgrade Slots: 3>\n<Weapon Image: 258>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBronze Wand: 1\nMAT Scroll ★: 2\nDisposable Hammer: 5\nEnchanting Crystal: 8\nTellurium Alloy: 6\n</Synthesis Ingredients>\n<Mask Name: Alloy-Based Wand>",
     "params": [
       0,
       22,
@@ -1599,7 +1599,7 @@
       0,
       0
     ],
-    "price": 5000,
+    "price": 7500,
     "wtypeId": 3
   },
   {
@@ -1621,7 +1621,7 @@
     ],
     "iconIndex": 414,
     "name": "Harmony",
-    "note": "<Upgrade Slots: 3>\n<Weapon Image: 294>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<HP Life Steal Physical: +12.5%>\n<HP Life Steal Magical: +5%>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nPassion\nMana Staff\nLife Crystal\nMana Crystal\nEnchanting Crystal: 10\nTellurium Alloy: 2\n</Synthesis Ingredients>\n<Mask Name: Harmonious Staff>",
+    "note": "<Upgrade Slots: 3>\n<Weapon Image: 294>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<HP Life Steal Physical: +12.5%>\n<HP Life Steal Magical: +5%>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nPassion\nMana Staff\nLife Crystal\nMana Crystal\nDisposable Hammer: 10\nEnchanting Crystal: 10\nTellurium Alloy: 4\n</Synthesis Ingredients>\n<Mask Name: Harmonious Staff>",
     "params": [
       0,
       25,
@@ -1632,7 +1632,7 @@
       0,
       0
     ],
-    "price": 5000,
+    "price": 7500,
     "wtypeId": 4
   },
   {
@@ -1672,5 +1672,91 @@
     ],
     "price": 1500,
     "wtypeId": 8
+  },
+  {
+    "id": 52,
+    "animationId": 9,
+    "description": "It's... so... cold...\nCan inflict enemies with \\it[8].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 3,
+        "value": 1
+      },
+      {
+        "code": 32,
+        "dataId": 8,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.015
+      }
+    ],
+    "iconIndex": 545,
+    "name": "Frost Edge",
+    "note": "<Upgrade Slots: 2>\n<Weapon Image: 373>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Synthesis Ingredients>\nSacrificial Dagger\nSwift\nFrozen Core: 3\nDisposable Hammer\nIce Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Chilling Blade>",
+    "params": [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      13,
+      0
+    ],
+    "price": 1500,
+    "wtypeId": 5
+  },
+  {
+    "id": 53,
+    "animationId": 144,
+    "description": "Steel knuckles imbued with magical nature energy.\nStronger than the \\iw[48] across the board.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 32,
+        "dataId": 23,
+        "value": 0.16
+      },
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 2
+      }
+    ],
+    "iconIndex": 706,
+    "name": "Grass Knuckles",
+    "note": "<Upgrade Slots: 2>\n<Weapon Image: 202>\n<Equip Requirement>\nclass: Knight\nclass: Rogue\n</Equip Requirement>\n\n<Synthesis Ingredients>\nKnuckle Spikes\nAndy's Dusters\nEnchanted Dragon Scale\nDragon Scale: 6\nBronze Alloy: 2\nDisposable Hammer\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Natural Fist Attachment>",
+    "params": [
+      0,
+      0,
+      20,
+      5,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 3500,
+    "wtypeId": 9
   }
 ]
