@@ -348,7 +348,25 @@ Sprite_GalvBust.prototype.update = function() {
 };
 
 Sprite_GalvBust.prototype.loadBitmap = function() {
-	var name = $gameMessage.faceName() + "_" + ($gameMessage.faceIndex() + 1);
+	index = $gameMessage.faceIndex() + 1;
+	var name = $gameMessage.faceName() + "_" + (index);
+
+	if ($gameMessage.faceName() === "Actor4") {
+		if (index % 4 === 2) { // Player 2
+			id = $gameActors._data[2].equips()[10].baseItemId;
+			if (id === 121) name += "_C";
+		}
+		if (index % 4 === 1) { // Player 3
+			id = $gameActors._data[3].equips()[10].baseItemId;
+			if (id === 122) name += "_C";
+		}
+		if (index % 4 === 0) { // Player 4
+			id = $gameActors._data[4].equips()[10].baseItemId;
+			if (id === 123) name += "_C";
+			if (id === 138) name += "_B";
+		}
+	}
+
 	if ($gameSystem.bustDisable) {
 		var img = ImageManager.loadBust('');
 	} else {
