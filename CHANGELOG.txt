@@ -296,6 +296,7 @@ Changes:
  - Raw Meat and Salt-Grilled Meat have been changed to Raw Bear Meat and Salt-Grilled Bear Meat, respectively.
  - Many food-related items have been made renewable, thus being removed from Dalia's shop.
  - Unknown enemy weaknesses now show a question mark icon.
+ - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
  - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and dishes.
  - The night overlay now shows in battle.
  - Moved Change of Heart to the Magic skill category.
@@ -320,6 +321,7 @@ Balancing:
  - Revival now increases success rate instead of healing when using BP.
  - Wand Impulse and Backstab now only heavily decrease MAT/ATK (respectively) for 2 turns instead of 3.
  - Channel Divinity I and Cure II's learn levels have been swapped to now be learned at levels 8 and 11, respectively.
+ - Greatly increased earned JP from all sources.
  - Nerfed Giant Goblin's Rage's ATK increase from +20% to +15%.
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
  - Nerfed the Steel Axe's stun chance by 5% (was originally 10%).
@@ -347,6 +349,7 @@ Bug Fixes:
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
+ - Fixed a bug where AP would be shown on all character menus, when it was only meant to show on the main menu and stat allocation menu.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
  - Fixed a bug where playtime wouldn't increase correctly on non-60hz displays.
  - Fixed a bug where the crafted weapons/armor counters could be wrong.
