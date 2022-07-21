@@ -1222,6 +1222,7 @@ Yanfly.StatAlc.Window_Base_drawActorStatus =
 Window_Base.prototype.drawActorSimpleStatus = function(actor, x, y, width) {
   Yanfly.StatAlc.Window_Base_drawActorStatus.call(this, actor, x, y, width);
   if (!Yanfly.Param.StatAlcAPMenu) return;
+  if (!(SceneManager._scene instanceof Scene_Menu || SceneManager._scene instanceof Scene_StatAllocation)) return;
   if (Yanfly.Param.MenuTpGauge) {
     y += this.lineHeight() * 3;
   } else {
