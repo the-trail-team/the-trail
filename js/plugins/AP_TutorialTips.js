@@ -67,7 +67,8 @@ const tips = [
 	"A certain someone at the Adventurer's Guild will resell you one-time items.",
 	"Beware of Darkhounds roaming the land at night. They collapse into a pile of bones upon defeat, and are re-animated every time the moon rises.",
 	"Using accessory slots on JP-boosting equips might seem wasteful, but JP is a valuable resource you'll want a lot of down the line.",
-	"Managing MP might not seem hard at first, but it becomes a daunting task later on in your journey. Strong skills guzzle huge amounts of the stuff!"
+	"Managing MP might not seem hard at first, but it becomes a daunting task later on in your journey. Strong skills guzzle huge amounts of the stuff!",
+	"Choose your three accessories wisely. Additionally, keep in mind that you can't equip an accessory more than once."
 ]
 
 tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the array, so it cannot be used initially
