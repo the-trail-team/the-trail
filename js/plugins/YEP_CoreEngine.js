@@ -2788,9 +2788,8 @@ Yanfly.Util = Yanfly.Util || {};
 if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= '1.5.0') {
 
 Yanfly.Util.toGroup = function(inVal) {
-  if (typeof inVal === 'string') return inVal;
-  if (!Yanfly.Param.DigitGroup) return inVal;
-  return inVal.toLocaleString('en');
+  if (typeof inVal !== 'string') { inVal = String(inVal); }
+  if (!eval(Yanfly.Param.DigitGroup)) return inVal;
   return inVal.replace(/(^|[^\w.])(\d{4,})/g, function($0, $1, $2) {
     return $1 + $2.replace(/\d(?=(?:\d\d\d)+(?!\d))/g, "$&,");
   });
