@@ -408,7 +408,7 @@ Scene_Boot.prototype.start = function() {
 };
 
 Scene_Boot.prototype.updateDocumentTitle = function() {
-    document.title = $dataSystem.gameTitle;
+    document.title = $dataSystem.gameTitle + ": " + $dataSplashes.data[Math.floor(Math.random() * $dataSplashes.data.length)];
 };
 
 Scene_Boot.prototype.checkPlayerLocation = function() {

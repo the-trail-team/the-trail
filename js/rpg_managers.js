@@ -25,6 +25,9 @@ var $dataTilesets     = null;
 var $dataCommonEvents = null;
 var $dataSystem       = null;
 var $dataMapInfos     = null;
+var $dataVersion      = null;
+var $dataClassIcons   = null;
+var $dataSplashes     = null;
 var $dataMap          = null;
 var $gameTemp         = null;
 var $gameSystem       = null;
@@ -59,7 +62,10 @@ DataManager._databaseFiles = [
     { name: '$dataTilesets',     src: 'Tilesets.json'     },
     { name: '$dataCommonEvents', src: 'CommonEvents.json' },
     { name: '$dataSystem',       src: 'System.json'       },
-    { name: '$dataMapInfos',     src: 'MapInfos.json'     }
+    { name: '$dataMapInfos',     src: 'MapInfos.json'     },
+    { name: '$dataVersion',      src: 'Version.json'      },
+    { name: '$dataClassIcons',   src: 'ClassIcons.json'   },
+    { name: '$dataSplashes',     src: 'Splashes.json'     }
 ];
 
 DataManager.loadDatabase = function() {
