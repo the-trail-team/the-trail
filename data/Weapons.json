@@ -526,9 +526,9 @@
         "value": 0.1
       }
     ],
-    "iconIndex": 408,
+    "iconIndex": 708,
     "name": "Andy's Dusters",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 238>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Advanced>\nx1 Iron Cluster: 100%\nx1-2 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n<Weapon Image: 238>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Advanced>\nx1 Copper Cluster: 100%\nx1-2 Copper Cluster: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -1786,5 +1786,38 @@
     ],
     "price": 7500,
     "wtypeId": 10
+  },
+  {
+    "id": 55,
+    "animationId": 122,
+    "description": "Nifty fist attachments that allow you to attack an enemy with blunt\nforce rather than cutting them. Hits can rarely confuse enemies.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 23,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 408,
+    "name": "Steel Knuckles",
+    "note": "<Upgrade Slots: 1>\n<Weapon Image: 238>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Advanced>\nx1 Steel Alloy: 40%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      4,
+      1,
+      0,
+      0,
+      3,
+      0
+    ],
+    "price": 100,
+    "wtypeId": 9
   }
 ]
