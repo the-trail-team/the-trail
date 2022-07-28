@@ -3867,76 +3867,6 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.03
-      },
-      {
-        "code": 23,
-        "dataId": 6,
-        "value": 0.97
-      },
-      {
-        "code": 23,
-        "dataId": 7,
-        "value": 0.97
-      },
-      {
-        "code": 21,
-        "dataId": 6,
-        "value": 1.15
-      },
-      {
-        "code": 22,
-        "dataId": 1,
-        "value": 0.03
-      },
-      {
-        "code": 22,
-        "dataId": 3,
-        "value": 0.015
-      },
-      {
-        "code": 21,
-        "dataId": 2,
-        "value": 1.06
-      },
-      {
-        "code": 22,
-        "dataId": 0,
-        "value": 0.03
-      },
-      {
-        "code": 22,
-        "dataId": 2,
-        "value": 0.03
-      }
-    ],
-    "iconIndex": 0,
-    "maxTurns": 1,
-    "message1": "",
-    "message2": "",
-    "message3": "",
-    "message4": "",
-    "minTurns": 1,
-    "motion": 0,
-    "name": "Ethereal Bat's Spirit - 0 Dead",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: +0.75%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length === 0) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
-    "overlay": 0,
-    "priority": 0,
-    "removeAtBattleEnd": false,
-    "removeByDamage": false,
-    "removeByRestriction": false,
-    "removeByWalking": false,
-    "restriction": 0,
-    "stepsToRemove": 100
-  },
-  {
-    "id": 120,
-    "autoRemovalTiming": 0,
-    "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 7,
         "value": 0.01
       },
       {
@@ -3988,8 +3918,78 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
+    "name": "Ethereal Bat's Spirit - 0 Dead",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: +0.25%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length === 0) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 120,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.005
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.995
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.995
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.025
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.002
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.01
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
     "name": "Ethereal Bat's Spirit - 1 Dead",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: +0.25%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length === 1) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: +0.125%>\n\n<Custom Passive Condition>\nif ($gameParty.deadMembers().length === 1) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
