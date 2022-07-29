@@ -19,7 +19,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 
   $.generateFileName = function(){
     var date = new Date();
-    return '' + date.getFullYear() + '_' + (date.getMonth() + 1) + '_' + date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds() + '_' + date.getMilliseconds() + '_' + Math.floor(Math.random() * 5000) + '.png';
+    return '' + date.getFullYear() + '_' + (date.getMonth() + 1) + '_' + date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds() + '_' + date.getMilliseconds() + '.png';
   };
 
   $.saveScreenshot = function(){
