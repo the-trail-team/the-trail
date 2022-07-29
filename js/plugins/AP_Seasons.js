@@ -6,12 +6,13 @@
 //=============================================================================
 
 var Seasons_Scene_Title_initialize = Scene_Title.prototype.initialize;
+date = new Date();
 
 //
 // CHRISTMAS
 //
 
-if (Date().split(" ")[1] == "Dec") {
+if (date.getMonth() === 11) {
 
     // Switch
 
