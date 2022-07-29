@@ -934,10 +934,16 @@ Scene_Preload.prototype.gotoBoot = function() {
 	SceneManager.goto(Scene_Boot);
 };
 
+Scene_Preload.prototype.updateDocumentTitle = function() {
+	const splashes = require('./data/Strings.json').splashes;
+    document.title = $dataSystem.gameTitle + ": " + splashes[Math.floor(Math.random() * splashes.length)];
+};
+
 if(_.fadeTrans) {
 
 Scene_Preload.prototype.start = function() {
 	Scene_Base.prototype.start.call(this);
+	this.updateDocumentTitle();
 	this.startFadeIn(24, false);
 };
 

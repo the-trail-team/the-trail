@@ -27,7 +27,7 @@ var $dataSystem       = null;
 var $dataMapInfos     = null;
 var $dataVersion      = null;
 var $dataClassIcons   = null;
-var $dataSplashes     = null;
+var $dataStrings      = null;
 var $dataMap          = null;
 var $gameTemp         = null;
 var $gameSystem       = null;
@@ -65,7 +65,7 @@ DataManager._databaseFiles = [
     { name: '$dataMapInfos',     src: 'MapInfos.json'     },
     { name: '$dataVersion',      src: 'Version.json'      },
     { name: '$dataClassIcons',   src: 'ClassIcons.json'   },
-    { name: '$dataSplashes',     src: 'Splashes.json'     }
+    { name: '$dataStrings',      src: 'Strings.json'      }
 ];
 
 DataManager.loadDatabase = function() {

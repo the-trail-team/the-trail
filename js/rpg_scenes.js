@@ -404,11 +404,6 @@ Scene_Boot.prototype.start = function() {
         SceneManager.goto(Scene_Title);
         Window_TitleCommand.initCommandPosition();
     }
-    this.updateDocumentTitle();
-};
-
-Scene_Boot.prototype.updateDocumentTitle = function() {
-    document.title = $dataSystem.gameTitle + ": " + $dataSplashes.data[Math.floor(Math.random() * $dataSplashes.data.length)];
 };
 
 Scene_Boot.prototype.checkPlayerLocation = function() {
