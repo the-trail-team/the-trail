@@ -106,7 +106,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Well Fed",
-    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.06>\n<Custom Remove Effect>\nuser.addState(6);\n</Custom Remove Effect>\n\n<Help Description>\nBoosts MHP by 10%, AGI by 8%, and ATK and MAT by 4%. Restores 6% of MHP per turn.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.10;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.10;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
+    "note": "<Category: buff>\n\n<Custom Remove Effect>\nuser.addState(6);\n</Custom Remove Effect>\n\n<Help Description>\nBoosts MHP by 10%, AGI by 8%, ATK and MAT by 4%, and HRG by 6%.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.10;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.10;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
     "priority": 26,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -136,6 +136,11 @@
         "value": 1.04
       },
       {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.06
+      },
+      {
         "code": 14,
         "dataId": 6,
         "value": 1
@@ -156,7 +161,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Very Well Fed",
-    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.08>\n<Custom Remove Effect>\nuser.addState(4);\n</Custom Remove Effect>\n\n<Help Description>\nBoosts MHP by 15%, AGI by 12%, and ATK and MAT by 6%. Restores 8% of MHP per turn.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.15;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.15;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
+    "note": "<Category: buff>\n\n<Custom Remove Effect>\nuser.addState(4);\n</Custom Remove Effect>\n\n<Help Description>\nBoosts MHP by 15%, AGI by 12%, ATK and MAT by 6%, and HRG by 8%.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.15;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.15;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
     "priority": 27,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -186,6 +191,11 @@
         "value": 1.06
       },
       {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.08
+      },
+      {
         "code": 14,
         "dataId": 4,
         "value": 1
@@ -211,7 +221,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Somewhat Well Fed",
-    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.04>\n\n<Help Description>\nBoosts MHP by 5%, AGI by 4%, and ATK and MAT by 2%. Restores 4% of MHP per turn.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.05;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.05;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
+    "note": "<Category: buff>\n\n<Help Description>\nBoosts MHP by 5%, AGI by 4%, ATK and MAT by 2%, and HRG by 4%\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.05;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.05;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
     "priority": 25,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -239,6 +249,11 @@
         "code": 21,
         "dataId": 4,
         "value": 1.02
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.04
       }
     ]
   },
@@ -875,7 +890,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Weak",
-    "note": "<State Motion: Dying>\n\n<Help Description>\nOn the verge of death.\n</Help Description>",
+    "note": "<State Motion: Dying>\n\n<HRG Rate: 0%>\n\n<Help Description>\nOn the verge of death.\n</Help Description>",
     "overlay": 0,
     "priority": 1,
     "removeAtBattleEnd": false,
@@ -979,6 +994,11 @@
         "code": 21,
         "dataId": 6,
         "value": 1.1
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.1
       }
     ],
     "iconIndex": 642,
@@ -990,7 +1010,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Well Rested",
-    "note": "<Category: buff>\n<Category: Bypass Recover All Removal>\n\n<Regen Formula: b.mhp * 0.1>\n\n<Help Description>\nBoosts MHP, MMP, ATK, DEF, MAT, MDF, and AGI by 10%. Restores 10% of MHP per turn.\n</Help Description>",
+    "note": "<Category: buff>\n<Category: Bypass Recover All Removal>\n\n<Help Description>\nBoosts MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 10%.\n</Help Description>",
     "overlay": 0,
     "priority": 15,
     "removeAtBattleEnd": false,
@@ -1014,7 +1034,7 @@
     "minTurns": 4,
     "motion": 0,
     "name": "Rejuvenation",
-    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.05>\n<DoT Element: 11>\n<DoT Animation: 41>\n\n<Help Description>\nRestores 5% of MHP per turn.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.05>\n<DoT Element: 11>\n<DoT Animation: 41>\n\n<Help Description>\nRestores 5% of MHP via \\i[122]healing per turn.\n</Help Description>",
     "overlay": 6,
     "priority": 30,
     "removeAtBattleEnd": true,
@@ -1092,12 +1112,12 @@
       {
         "code": 21,
         "dataId": 2,
-        "value": 1.12
+        "value": 0.125
       },
       {
         "code": 21,
         "dataId": 4,
-        "value": 1.12
+        "value": 0.125
       }
     ],
     "iconIndex": 30,
@@ -1109,7 +1129,7 @@
     "minTurns": 8,
     "motion": 0,
     "name": "Inspired",
-    "note": "<Category: buff>\n\n<Help Description>\nBoosts ATK and MAT by 12%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nBoosts ATK and MAT by 12.5%.\n</Help Description>",
     "overlay": 0,
     "priority": 20,
     "removeAtBattleEnd": true,
@@ -1228,7 +1248,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Bleeding",
-    "note": "<Category: debuff>\n<Category: weak debuff>\n<animationRow: 23>\n<yAnchor: 0.75>\n\n<DoT Formula: 1 + b.hp * 0.2>\n\n<Help Description>\nDeals damage equal to 20% of current HP. [WEAK DEBUFF]\n</Help Description>",
+    "note": "<Category: debuff>\n<Category: weak debuff>\n<animationRow: 23>\n<yAnchor: 0.75>\n\n<Custom DoT Formula>\nvalue = Math.ceil(a.hp * 0.2);\n</Custom DoT Formula>\n\n<Help Description>\n20% of current HP is lost at the end of every turn. [WEAK DEBUFF]\n</Help Description>",
     "overlay": 0,
     "priority": 48,
     "removeAtBattleEnd": true,
@@ -1252,7 +1272,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Magical Barrier",
-    "note": "<Category: buff>\n\n<Help Description>\nA magical barrier will absorb damage dealt to this unit.\n</Help Description>\n\n<Cannot Select: Skill 14>",
+    "note": "<Category: buff>\n\n<Help Description>\nThis unit currently has Shield Points (SP). The shield will absorb received damage.\n</Help Description>\n\n<Cannot Select: Skill 14>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": true,
@@ -1360,7 +1380,7 @@
     "minTurns": 3,
     "motion": 1,
     "name": "Poisoned",
-    "note": "<Category: debuff>\n<Category: moderate debuff>\n<animationRow: 29>\n\n<Custom Apply Effect>\nthis._toxicCounter = 1;\n</Custom Apply Effect>\n\n<Custom Regenerate Effect>\nvar n = this._toxicCounter / 16;\nvar value = Math.floor(n * user.mhp * -1);\nuser.gainHp(value);\nthis._toxicCounter += 1;\nthis.startAnimation(59);\n</Custom Regenerate Effect>\n\n<Help Description>\nDeals damage equal to 1/16th of this unit's MHP. Does an extra 1/16th of damage for every turn that passes. [MODERATE DEBUFF]\n</Help Description>",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n<animationRow: 29>\n\n<HRG Rate: 0%>\n\n<Custom Apply Effect>\nthis._toxicCounter = 1;\n</Custom Apply Effect>\n\n<Custom Regenerate Effect>\nvar n = this._toxicCounter / 16;\nvar value = Math.floor(n * user.mhp * -1);\nuser.gainHp(value);\nthis._toxicCounter += 1;\nthis.startAnimation(59);\n</Custom Regenerate Effect>\n\n<Help Description>\n11/16th of current HP is lost at the end of every turn. For every turn this state has been applied, another 1/16th is lost. Removes all HRG. [MODERATE DEBUFF]\n</Help Description>",
     "overlay": 1,
     "priority": 68,
     "removeAtBattleEnd": false,
@@ -1529,13 +1549,7 @@
     "id": 43,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 11,
-        "dataId": 11,
-        "value": 1.05
-      }
-    ],
+    "traits": [],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -1544,10 +1558,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Rose Headpiece Aura",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 0,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -1877,7 +1891,7 @@
     "minTurns": 5,
     "motion": 0,
     "name": "Cherry Bomb",
-    "note": "<Category: buff>\n<animationRow: 17>\n<yAnchor: 0.75>\n\n<Help Description>\nBuffs EVA and MEV by 20%. Cannot be afflicted with \\it[54].\n</Help Description>",
+    "note": "<Category: buff>\n<animationRow: 17>\n<yAnchor: 0.75>\n\n<Help Description>\nBoosts EVA and MEV by 20%. Cannot be afflicted with \\it[54].\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": true,
@@ -1961,6 +1975,11 @@
         "code": 21,
         "dataId": 6,
         "value": 1.1
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.1
       }
     ],
     "iconIndex": 25,
@@ -1972,7 +1991,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Night Boost",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<animationRow: 26>\n\n<Regen Formula: b.mhp * 0.1>\n\n<Help Description>\nBoosts MHP, MMP, ATK, DEF, MAT, MDF, and AGI by 10%. Restores 10% of MHP per turn.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<animationRow: 26>\n\n<Help Description>\nBoosts MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 10%.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
@@ -2016,13 +2035,7 @@
     "id": 59,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 14,
-        "dataId": 43,
-        "value": 1
-      }
-    ],
+    "traits": [],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -2031,10 +2044,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Rose Headpiece Wearer",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar healBoost = 0.05;\nvar elementId = 11;\nhealBoost++;\n\nvar elements = this.getItemElements();\nif (elements.contains(elementId)) {\nvalue = Math.ceil(value * healBoost);}\n</Custom Confirm Effect>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 0,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -2164,13 +2177,7 @@
     "id": 64,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 7,
-        "value": -0.05
-      }
-    ],
+    "traits": [],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -2180,7 +2187,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Poison Map Damage",
-    "note": "<Custom Passive Condition>\nif ($gameParty.inBattle() == false && user.isStateAffected(39)) {\ncondition = true;\n} else {\ncondition = false;\n}\n</Custom Passive Condition>",
+    "note": "<HRG Flat: -5%>\n\n<Custom Passive Condition>\nif (!$gameParty.inBattle() && user.isStateAffected(39)) {\ncondition = true;\n} else {\ncondition = false;\n}\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -2424,10 +2431,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Elemental Lace",
-    "note": "<Custom Confirm Effect>\nvar damageBoost = 0.15;\ndamageBoost++;\n\nvar elements = this.getItemElements();\nif (elements.contains(2) || elements.contains(3) || elements.contains(4) || elements.contains(5) || elements.contains(6) || elements.contains(7)) {\nvalue = Math.ceil(value * damageBoost);}\n</Custom Confirm Effect>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 0,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -2778,10 +2785,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "True Prayer Vestments ★",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar healBoost = 0.05;\nvar elementId = 11;\nhealBoost++;\n\nvar elements = this.getItemElements();\nif (elements.contains(elementId)) {\nvalue = Math.ceil(value * healBoost);}\n</Custom Confirm Effect>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 0,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -2802,10 +2809,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Flower Boots",
-    "note": "<Custom Confirm Effect>\nvar damageBoost = 0.05;\ndamageBoost++;\n\nvar elements = this.getItemElements();\nif (elements.contains(2) || elements.contains(3) || elements.contains(4) || elements.contains(5) || elements.contains(6) || elements.contains(7)) {\nvalue = Math.ceil(value * damageBoost);}\n</Custom Confirm Effect>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 0,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -2826,10 +2833,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Trailblazing Boots ★",
-    "note": "<Custom Confirm Effect>\nvar damageBoost = 0.1;\ndamageBoost++;\n\nvar elements = this.getItemElements();\nif (elements.contains(2) || elements.contains(3) || elements.contains(4) || elements.contains(5) || elements.contains(6) || elements.contains(7)) {\nvalue = Math.ceil(value * damageBoost);}\n</Custom Confirm Effect>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 0,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -2862,7 +2869,7 @@
     "minTurns": 2,
     "motion": 0,
     "name": "Eye of the Storm",
-    "note": "<Category: debuff>\n<Category: moderate debuff>\n<Category: Wind>\n<animationRow: 11>\n\n<Help Description>\nReduces HIT by 15% and CRI by 6%. ATK + MAT are debuffed by one level at the end of every turn. [MODERATE DEBUFF]\n</Help Description>\n\n<Custom Turn End Effect>\nuser.addDebuff(2, 3);\nuser.addDebuff(4, 3);\nuser.startAnimation(54);\n</Custom Turn End Effect>",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n<Category: Wind>\n<animationRow: 11>\n\n<Help Description>\nReduces HIT by 15% and CRI by 6%. ATK and MAT are debuffed by one level at the end of every turn. [MODERATE DEBUFF]\n</Help Description>\n\n<Custom Turn End Effect>\nuser.addDebuff(2, 3);\nuser.addDebuff(4, 3);\nuser.startAnimation(54);\n</Custom Turn End Effect>",
     "overlay": 0,
     "priority": 69,
     "removeAtBattleEnd": true,
@@ -3024,10 +3031,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Sorrowful Headpiece",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar healBoost = 0.10;\nvar elementId = 11;\nhealBoost++;\n\nvar elements = this.getItemElements();\nif (elements.contains(elementId)) {\nvalue = Math.ceil(value * healBoost);}\n</Custom Confirm Effect>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 0,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -3157,7 +3164,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Exquisitely Well Fed",
-    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.10>\n<Custom Remove Effect>\nuser.addState(5);\n</Custom Remove Effect>\n\n<Help Description>\nBoosts MHP by 20%, AGI by 16%, and ATK and MAT by 8%. Restores 10% of MHP per turn.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.20;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.20;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
+    "note": "<Category: buff>\n\n<Custom Remove Effect>\nuser.addState(5);\n</Custom Remove Effect>\n\n<Help Description>\nBoosts MHP by 20%, AGI by 16%, ATK and MAT by 8%, and HRG by 10%.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.20;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.20;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n}\n</Custom Remove Effect>",
     "priority": 28,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -3185,6 +3192,11 @@
         "code": 21,
         "dataId": 4,
         "value": 1.08
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.1
       },
       {
         "code": 14,
