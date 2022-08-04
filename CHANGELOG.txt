@@ -314,6 +314,7 @@ Music Update (Final Wave):
 
 Balancing:
  - You can no longer equip more than one of the same accessory on a single party member.
+ - State resistance accessories no longer remove already applied states when equipped.
  - Heavily rebalanced stat allocation.
   ~ All AP is multiplied by x4 now, making the max AP at level 100 be 10,000 instead of the old 2,500.
   ~ JP costs of all allocations have been greatly increased, now making JP the main limiting factor for allocation.
@@ -346,6 +347,7 @@ Balancing:
 
 Bug Fixes:
  - Fixed a game-breaking bug that I could have sworn was already fixed where you could push a boulder in Laeryidyean's Forest - Left Connector off the boulder tiles.
+ - Fixed several bugs with many states such as inconsistencies between regeneration effects, poison map damage not functioning as intended, and unused states doubling the effects of some traits.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where some mid-battle boss monologues would interrupt turns or even action sequences instead of playing between turns.
