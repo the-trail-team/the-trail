@@ -2631,7 +2631,7 @@ Game_BattlerBase.prototype.maxTp = function() {
 
 Game_BattlerBase.prototype.refresh = function() {
     this.stateResistSet().forEach(function(stateId) {
-        this.eraseState(stateId);
+        // this.eraseState(stateId);
     }, this);
     this._hp = this._hp.clamp(0, this.mhp);
     this._mp = this._mp.clamp(0, this.mmp);
