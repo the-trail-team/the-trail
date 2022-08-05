@@ -1405,6 +1405,7 @@ Scene_File.prototype.onLoadSuccess = function() {
     this.reloadMapIfUpdated();
     SceneManager.goto(Scene_Map);
     this._loadSuccess = true;
+    $gameTemp._isGameLoaded = true;
 };
 
 Scene_Load.prototype.onLoadSuccess = function() {

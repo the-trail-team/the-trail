@@ -430,6 +430,7 @@ Scene_Title.prototype.initialize = function() {
 
 Scene_Title.prototype.create = function() {
     Scene_Base.prototype.create.call(this);
+    $gameTemp._isGameLoaded = false;
     this.createBackground();
     this.createForeground();
     this.createWindowLayer();
