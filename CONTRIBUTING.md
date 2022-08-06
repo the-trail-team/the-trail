@@ -62,6 +62,6 @@ try {
 }
 ```
 
-# Contributors using RPG Maker MV
+# Contributors NOT using RPG Maker MV
 
 ### Running the game
