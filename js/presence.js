@@ -6,7 +6,7 @@ const RPC = new DiscordRPC.Client({
 
 const startTimestamp = Date.now();
 var refreshes = 1;
-const totalSmallImages = 2;
+const smallImageKeys = [`power`, `quests`];
 
 DiscordRPC.register(clientId);
 
@@ -17,7 +17,7 @@ async function setActivity() {
 
     var details = "Launching game...";
     var state = "Playing ";
-    var smallImageKey = `power`;
+    var smallImageKey = smallImageKeys[refreshes % smallImageKeys.length];
     var smallImageText = "No save loaded";
 
     if ($gameMap) {
@@ -26,8 +26,7 @@ async function setActivity() {
         } else {
             details = "Location: " + $gameMap.displayName();
 
-            if (refreshes % totalSmallImages === 0 && $gameParty && $gameTemp._isGameLoaded) {
-                var smallImageKey = `power`;
+            if (refreshes % smallImageKeys.length === 0 && $gameParty && $gameTemp._isGameLoaded) {
                 var smallImageText = "Party Levels: "
                 for (i = 0; i < $gameParty.members().length; i++) {
                     smallImageText += ($gameParty.members()[i]._level + ", ");
@@ -35,8 +34,7 @@ async function setActivity() {
                 smallImageText = smallImageText.slice(0, -2);
             }
 
-            if (refreshes % totalSmallImages === 1 && $gameSystem) {
-                var smallImageKey = `quests`;
+            if (refreshes % smallImageKeys.length === 1 && $gameSystem) {
                 var smallImageText = "Quests Complete: ";
                 smallImageText += String(Math.round(($gameSystem.totalQuestsCompleted() / $gameSystem.totalQuestsInGame()) * 100)) + "%";
             }
