@@ -74,7 +74,7 @@ Scene_Title.prototype.drawCGMVInfo = function() {
     this._gameTitleSprite.bitmap.outlineColor = 'black';
     this._gameTitleSprite.bitmap.outlineWidth = 2;
     this._gameTitleSprite.bitmap.fontSize = CGMV.GameInfo.FontSize;
-	this._gameTitleSprite.bitmap.drawText($dataVersion.id + " (" + $dataVersion.name + ")", x, y, maxWidth, 48, 'left');
+	this._gameTitleSprite.bitmap.drawText($dataVersion.id + "." + $dataVersion.commit + " (" + $dataVersion.name + ")", x, y, maxWidth, 48, 'left');
     this._gameTitleSprite.bitmap.drawText(CGMV.GameInfo.CenterText, x, y, maxWidth, 48, 'center');
 	this._gameTitleSprite.bitmap.drawText(CGMV.GameInfo.RightText, x, y, maxWidth, 48, 'right');
 };
