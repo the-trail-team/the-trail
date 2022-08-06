@@ -366,6 +366,7 @@ Bug Fixes:
  - Fixed a bug where some resistance accessory drop rates were lower than intended (1% instead of 2%).
  - Fixed a bug where elemental weapons did not count as physical-elemental hits.
  - Fixed a bug where INT slightly affected state application rates.
+ - Fixed a bug where Flashbang could leave an enemy at 0 HP but it wouldn't die until another action was made.
  - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
  - Fixed a bug where magic skills used the wrong motion when casting.
  - Fixed a bug where battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
