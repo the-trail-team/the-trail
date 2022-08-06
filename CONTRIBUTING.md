@@ -7,8 +7,7 @@ const data_directory = "data"
 const file = ['package.json']
 let command = '';
 const fs = require('fs')
-const { exec } = require('child_process');
-const { getSystemErrorMap } = require('util');
+const { exec } = require('child_process')
 try {
     fs.readdir("data", function (err, files) {
         // Error handling
@@ -17,26 +16,10 @@ try {
             process.exit(1)
         }
 
-        require('child_process').exec('git log -1 --pretty=format:"%H"', function(err, stdout) {
-            let system = JSON.parse(fs.readFileSync(`${data_directory}/System.json`));
-            system.versionId = stdout;
-            system.editMapId = 164;
-            fs.writeFileSync(`${data_directory}/System.json`, JSON.stringify(system, null, 2));
-        });
-
-        require('child_process').exec('git rev-list HEAD --count', function(err, stdout) {
-            stdout++;
-            let version = JSON.parse(fs.readFileSync(`${data_directory}/Version.json`));
-            version.commit = Number(stdout);
-            fs.writeFileSync(`${data_directory}/Version.json`, JSON.stringify(version, null, 2));
-        });
-
         files.forEach(file => {
             // Load file, pretty the JSON, and write it back
             const json = fs.readFileSync(`${data_directory}/${file}`)
-
-            if (`${file}` !== ("Animations.json" || "System.json" || "Version.json")) fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
-            
+            if (`${file}` !== "Animations.json") fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
             command += ` ${data_directory}/${file}`
         })
 
