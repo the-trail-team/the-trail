@@ -6,7 +6,7 @@ const RPC = new DiscordRPC.Client({
 
 const startTimestamp = Date.now();
 var refreshes = 1;
-const smallImageKeys = [`power`, `quests`];
+const smallImageKeys = [`power`, `quests`, `bits`];
 
 DiscordRPC.register(clientId);
 
@@ -22,12 +22,12 @@ async function setActivity() {
 
     if ($gameMap) {
         if ($gameMap._mapId === 0 || !$gameTemp._isGameLoaded) {
-            details = "In the main menu"
+            details = "In the main menu";
         } else {
             details = "Location: " + $gameMap.displayName();
 
             if (refreshes % smallImageKeys.length === 0 && $gameParty && $gameTemp._isGameLoaded) {
-                var smallImageText = "Party Levels: "
+                smallImageText = "Party Levels: ";
                 for (i = 0; i < $gameParty.members().length; i++) {
                     smallImageText += ($gameParty.members()[i]._level + ", ");
                 }
@@ -35,8 +35,11 @@ async function setActivity() {
             }
 
             if (refreshes % smallImageKeys.length === 1 && $gameSystem) {
-                var smallImageText = "Quests Complete: ";
-                smallImageText += String(Math.round(($gameSystem.totalQuestsCompleted() / $gameSystem.totalQuestsInGame()) * 100)) + "%";
+                smallImageText = "Quests Complete: " + String(Math.round(($gameSystem.totalQuestsCompleted() / $gameSystem.totalQuestsInGame()) * 100)) + "%";
+            }
+            
+            if (refreshes % smallImageKeys.length === 2 && $gameParty) {
+                smallImageText = "Bits: " + $gameParty.gold();
             }
         }
     }
