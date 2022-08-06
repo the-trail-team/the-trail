@@ -5,7 +5,7 @@ const RPC = new DiscordRPC.Client({
 });
 
 const startTimestamp = Date.now();
-var refreshes = 1;
+var refreshes = -1;
 const smallImageKeys = [`power`, `quests`, `bits`];
 
 DiscordRPC.register(clientId);
