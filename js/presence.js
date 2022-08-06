@@ -3,16 +3,22 @@ const DiscordRPC = require('discord-rpc');
 const RPC = new DiscordRPC.Client({
     transport: 'ipc'
 });
+
 const startTimestamp = Date.now();
+var refreshes = 1;
+const totalSmallImages = 2;
 
 DiscordRPC.register(clientId);
 
 async function setActivity() {
     if (!RPC) return;
 
+    refreshes++;
+
     var details = "Launching game...";
-    var smallImageText = "No save loaded";
     var state = "Playing ";
+    var smallImageKey = `power`;
+    var smallImageText = "No save loaded";
 
     if ($gameMap) {
         if ($gameMap._mapId === 0 || !$gameTemp._isGameLoaded) {
@@ -20,12 +26,19 @@ async function setActivity() {
         } else {
             details = "Location: " + $gameMap.displayName();
 
-            if ($gameParty && $gameTemp._isGameLoaded) {
+            if (refreshes % totalSmallImages === 0 && $gameParty && $gameTemp._isGameLoaded) {
+                var smallImageKey = `power`;
                 var smallImageText = "Party Levels: "
                 for (i = 0; i < $gameParty.members().length; i++) {
                     smallImageText += ($gameParty.members()[i]._level + ", ");
                 }
                 smallImageText = smallImageText.slice(0, -2);
+            }
+
+            if (refreshes % totalSmallImages === 1 && $gameSystem) {
+                var smallImageKey = `quests`;
+                var smallImageText = "Quests Complete: ";
+                smallImageText += String(Math.round(($gameSystem.totalQuestsCompleted() / $gameSystem.totalQuestsInGame()) * 100)) + "%";
             }
         }
     }
@@ -42,7 +55,7 @@ async function setActivity() {
         startTimestamp: startTimestamp,
         largeImageKey: `large_image`,
         largeImageText: `Saving the world!`,
-        smallImageKey: `power`,
+        smallImageKey: smallImageKey,
         smallImageText: smallImageText,
         instance: false,
     });
