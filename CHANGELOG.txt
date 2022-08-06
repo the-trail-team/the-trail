@@ -352,6 +352,7 @@ Bug Fixes:
  - Fixed a game-breaking bug that I could have sworn was already fixed where you could push a boulder in Laeryidyean's Forest - Left Connector off the boulder tiles.
  - Fixed several bugs with many states such as inconsistencies between regeneration effects, poison map damage not functioning as intended, and unused states doubling the effects of some traits.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
+ - Fixed a bug where the critical hit formula wasn't done correctly, resulting in critical evasion being basically a useless stat.
  - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where some mid-battle boss monologues would interrupt turns or even action sequences instead of playing between turns.
  - Fixed a bug where party members would rarely not gain BP between the 1st and 2nd turn of a battle.
