@@ -21,10 +21,19 @@ try {
         system.editMapId = 164
         fs.writeFileSync(`${data_directory}/System.json`, JSON.stringify(system, null, 2))
 
+        let maps = JSON.parse(fs.readFileSync(`${data_directory}/MapInfos.json`))
+        for (i = 1; i < maps.length; i++) {
+            if (maps[i] !== null) {
+                maps[i].scrollX = 0
+                maps[i].scrollY = 0
+            }
+        }
+        fs.writeFileSync(`${data_directory}/MapInfos.json`, JSON.stringify(maps, null, 2))
+
         files.forEach(file => {
             // Load file, pretty the JSON, and write it back
             const json = fs.readFileSync(`${data_directory}/${file}`)
-            if (`${file}` !== ("Animations.json" || "System.json")) fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
+            if (`${file}` !== ("Animations.json" || "System.json" || "MapInfos.json")) fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
             command += ` ${data_directory}/${file}`
         })
 
