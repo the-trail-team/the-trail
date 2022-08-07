@@ -3919,6 +3919,9 @@ Game_Actor.prototype.levelUp = function() {
             this.learnSkill(learning.skillId);
         }
     }, this);
+    this.gainHp(Number.MAX_SAFE_INTEGER);
+    this.gainMp(Number.MAX_SAFE_INTEGER);
+    this.removeStateCategoryAll('debuff');
 };
 
 Game_Actor.prototype.levelDown = function() {

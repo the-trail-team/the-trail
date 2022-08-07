@@ -148,7 +148,6 @@ var $plugins =
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"MrTS_MinimumDamage","status":true,"description":"Changes minimum damage from 0.","parameters":{"Minimum Damage":"1"}},
-{"name":"MrTS_RestoreHpMpTp","status":true,"description":"Allows to have equipment/states that restore HP/MP/TP after battles or level ups.","parameters":{}},
 {"name":"MrTS_ColorShiftingEnemies","status":true,"description":"Makes enemies go disco disco in battles.","parameters":{"Change Time":"60","Tone Sequence":"[50, 50, 0, 0] [100, 0, 25, 0] [0, 0, 75, 0] [-50, 99, -10, 0] [90, 0, 0, 0]"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
