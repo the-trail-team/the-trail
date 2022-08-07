@@ -477,6 +477,7 @@ Game_Battler.prototype.lifeSteal = function(damage, type, target, rate, flat) {
     if (Yanfly.Param.LSHPOver) lifeSteal = Math.min(lifeSteal, damage);
     if (lifeSteal <= 0) return;
     this.gainHp(lifeSteal);
+    this.increaseTotalHealingDealt(lifeSteal);
 };
 
 Game_Battler.prototype.magicSteal = function(damage, type, target, rate, flat) {
