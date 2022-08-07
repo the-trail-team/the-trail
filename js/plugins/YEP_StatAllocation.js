@@ -1331,7 +1331,7 @@ Window_AllocationList.prototype.initialize = function(x, y) {
 Window_AllocationList.prototype.calculateConstants = function() {
   var max = 0;
   for (var i = 0; i < 8; ++i) {
-    max = Math.max(max, $gameActors.actor(1).paramMax(i));
+    max = Math.max(max, /*$gameActors.actor(1).paramMax(i)*/99999);
   }
   max = Yanfly.Util.toGroup(max);
   this._bonusWidth = this.textWidth('(+' + max + ') ');

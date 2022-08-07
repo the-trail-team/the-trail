@@ -799,7 +799,7 @@ Window_StatCompare.prototype.createWidths = function() {
     var buffer = this.textWidth(' ');
     for (var i = 0; i < 8; ++i) {
       var value1 = this.textWidth(TextManager.param(i));
-      var value2 = this.textWidth(Yanfly.Util.toGroup(this._actor.paramMax(i)));
+      var value2 = this.textWidth(99999/*Yanfly.Util.toGroup(this._actor.paramMax(i))*/);
       this._paramNameWidth = Math.max(value1, this._paramNameWidth);
       this._paramValueWidth = Math.max(value2, this._paramValueWidth);
     }
