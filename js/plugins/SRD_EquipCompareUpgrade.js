@@ -1945,7 +1945,7 @@ var mhpId = 1;
 var atkId = 3;
 var intId = 8;
 var elementAtk1 = 81;
-var elementAtk2 = 91;
+var elementAtk2 = 92;
 var maxBpId = 100;
 
 Window_StatCompare.prototype.refresh = function() {
