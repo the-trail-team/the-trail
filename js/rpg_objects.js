@@ -4302,6 +4302,14 @@ Game_Actor.prototype.meetsUsableItemConditions = function(item) {
     return Game_BattlerBase.prototype.meetsUsableItemConditions.call(this, item);
 };
 
+Game_Actor.prototype.bloodlustEquipped = function() {
+    weapons = this.weapons();
+    for (i = 0; i < weapons.length; i++) {
+        if (weapons[i].baseItemName.contains("Bloodlust")) return true;
+    }
+    return false;
+};
+
 //-----------------------------------------------------------------------------
 // Game_Enemy
 //
@@ -5217,6 +5225,18 @@ Game_Party.prototype.requestMotionRefresh = function() {
     this.members().forEach(function(actor) {
         actor.requestMotionRefresh();
     });
+};
+
+Game_Party.prototype.bloodlustOwned = function() {
+    members = this.members();
+    for (i = 0; i < members.length; i++) {
+        if (members[i].bloodlustEquipped) return true;
+    }
+    weapons = this.weapons();
+    for (i = 0; i < weapons.length; i++) {
+        if (weapons[i].baseItemName.contains("Bloodlust")) return true;
+    }
+    return false;
 };
 
 //-----------------------------------------------------------------------------
