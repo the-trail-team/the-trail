@@ -4379,11 +4379,7 @@ Game_Enemy.prototype.traitObjects = function() {
 };
 
 Game_Enemy.prototype.paramBase = function(paramId) {
-    if (paramId == 1) {
-        return Infinity;
-    } else {
-        return this.enemy().params[paramId];
-    }
+    return this.enemy().params[paramId];
 };
 
 Game_Enemy.prototype.exp = function() {

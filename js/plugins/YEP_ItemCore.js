@@ -518,8 +518,8 @@ Yanfly.Parameters = PluginManager.parameters('YEP_ItemCore');
 Yanfly.Param = Yanfly.Param || {};
 
 Yanfly.Param.ItemMaxItems = Number(Yanfly.Parameters['Max Items']);
-Yanfly.Param.ItemMaxWeapons = Number(Yanfly.Parameters['Max Weapons']);
-Yanfly.Param.ItemMaxArmors = Number(Yanfly.Parameters['Max Armors']);
+Yanfly.Param.ItemMaxWeapons = eval(Yanfly.Parameters['Max Weapons']);
+Yanfly.Param.ItemMaxArmors = eval(Yanfly.Parameters['Max Armors']);
 Yanfly.Param.ItemStartingId = Number(Yanfly.Parameters['Starting ID']);
 Yanfly.Param.ItemRandomVariance = Number(Yanfly.Parameters['Random Variance']);
 Yanfly.Param.ItemNegVar = eval(String(Yanfly.Parameters['Negative Variance']));
