@@ -4132,7 +4132,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Draconic Healing",
-    "note": "<User Barrier 3 Turns: +3000>\n\n<After Eval>\ntarget.customPopup(\"+3000\", 3);\n</After Eval>\n\n<setup action>\ndisplay action\nperform start\n</setup action>\n\n<whole action>\naction animation\nanimation 40: user\nanimation 215: user\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\nadd state 96: target\n</finish action>\n\n<Custom Execution>\nvalue = $gameVariables.value(53) + 1;\n$gameVariables.setValue(53, value);\n</Custom Execution>",
+    "note": "<Custom User Barrier 3 Turns>\nvalue = 2000 * $gameVariables.value(53);\n</Custom User Barrier 3 Turns>\n\n<After Eval>\ntarget.customPopup(\"+\" + String(2000 * $gameVariables.value(53)), 3);\n</After Eval>\n\n<setup action>\ndisplay action\nperform start\n</setup action>\n\n<whole action>\naction animation\nanimation 40: user\nanimation 215: user\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\nadd state 96: target\n</finish action>\n\n<Custom Execution>\nvalue = $gameVariables.value(53) + 1;\n$gameVariables.setValue(53, value);\n</Custom Execution>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
