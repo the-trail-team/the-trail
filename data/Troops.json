@@ -12080,6 +12080,12 @@
         "x": 471,
         "y": 175,
         "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 288,
+        "y": 253,
+        "hidden": true
       }
     ],
     "name": "Ice Labyrinth Enemies",
@@ -12097,9 +12103,85 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              0,
+              23,
+              0
+            ]
+          },
+          {
+            "code": 122,
+            "indent": 1,
+            "parameters": [
+              32,
+              32,
+              0,
+              2,
+              1,
+              100
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              1,
+              32,
+              0,
+              69,
+              0
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 2,
+            "parameters": [
+              4
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 2,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 2,
+            "parameters": [
+              "A Rainbow Slime joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
           {
             "code": 0,
             "indent": 0,
