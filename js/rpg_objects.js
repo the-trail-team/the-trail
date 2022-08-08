@@ -5238,6 +5238,35 @@ Game_Party.prototype.bloodlustOwned = function() {
     return false;
 };
 
+Game_Party.prototype.gildedPickaxe = function() {
+    if (this.hasItem($dataItems[210])) return true;
+    return false;
+};
+
+Game_Party.prototype.fortunatePickaxe = function() {
+    if (this.hasItem($dataItems[209])) return true;
+    if (this.gildedPickaxe()) return true;
+    return false;
+};
+
+Game_Party.prototype.fertilizingPickaxe = function() {
+    if (this.hasItem($dataItems[208])) return true;
+    if (this.fortunatePickaxe()) return true;
+    return false;
+};
+
+Game_Party.prototype.hasTelluriumPickaxe = function() {
+    if (this.hasItem($dataItems[184])) return true;
+    if (this.fertilizingPickaxe()) return true;
+    return false;
+};
+
+Game_Party.prototype.hasPickaxe = function() {
+    if (this.hasItem($dataItems[101])) return true;
+    if (this.hasTelluriumPickaxe()) return true;
+    return false;
+};
+
 //-----------------------------------------------------------------------------
 // Game_Troop
 //
