@@ -2070,7 +2070,7 @@
     "iconIndex": 96,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 20,
+    "mpCost": 16,
     "name": "Fire II",
     "note": "<Boost Damage>\n<Hide if Learned Skill: 96>\n\n<Remove State Category: Ice>\n<Remove State Category: Water>\n\n<setup action>\ndisplay action\nperform start\nmotion chant: user\nwait: 45\nmotion spell: user\n</setup action>\n\n<whole action>\naction animation\nshake screen: 2, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 30\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
