@@ -2493,6 +2493,17 @@ Game_BattlerBase.prototype.stateResistSet = function() {
     return this.traitsSet(Game_BattlerBase.TRAIT_STATE_RESIST);
 };
 
+Game_BattlerBase.prototype.nonEquipStateResistSet = function() {
+    var traits = this.traits(Game_BattlerBase.TRAIT_STATE_RESIST);
+    var set = [];
+    for (i = 0; i < traits.length; i++) {
+        if (traits[i].value !== 2) set.push(traits[i]);
+    }
+    return set.reduce(function(r, trait) {
+        return r.concat(trait.dataId);
+    }, []);
+};
+
 Game_BattlerBase.prototype.isStateResist = function(stateId) {
     return this.stateResistSet().contains(stateId);
 };
@@ -2630,8 +2641,8 @@ Game_BattlerBase.prototype.maxTp = function() {
 };
 
 Game_BattlerBase.prototype.refresh = function() {
-    this.stateResistSet().forEach(function(stateId) {
-        // this.eraseState(stateId);
+    this.nonEquipStateResistSet().forEach(function(stateId) {
+        this.eraseState(stateId);
     }, this);
     this._hp = this._hp.clamp(0, this.mhp);
     this._mp = this._mp.clamp(0, this.mmp);

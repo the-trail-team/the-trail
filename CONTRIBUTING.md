@@ -30,11 +30,13 @@ try {
             process.exit(1)
         }
 
+        // System.json: versionId and editMapId constants
         let system = JSON.parse(fs.readFileSync(`${data_directory}/System.json`))
         system.versionId = 0
         system.editMapId = 164
         fs.writeFileSync(`${data_directory}/System.json`, JSON.stringify(system, null, 2))
 
+        // MapInfos.json: all scrollX and scrollY values set to 0
         let maps = JSON.parse(fs.readFileSync(`${data_directory}/MapInfos.json`))
         for (i = 1; i < maps.length; i++) {
             if (maps[i] !== null) {
@@ -44,10 +46,21 @@ try {
         }
         fs.writeFileSync(`${data_directory}/MapInfos.json`, JSON.stringify(maps, null, 2))
 
+        // Armors.json: setting all state resistances to "value": 2 in order to work correctly
+        let armors = JSON.parse(fs.readFileSync(`${data_directory}/Armors.json`))
+        for (i = 1; i < armors.length; i++) {
+            if (armors[i].traits.length > 0) {
+                for (j = 0; j < armors[i].traits.length; j++) {
+                    if (armors[i].traits[j].code === 14) armors[i].traits[j].value = 2;
+                }
+            }
+        }
+        fs.writeFileSync(`${data_directory}/Armors.json`, JSON.stringify(armors, null, 2))
+
         files.forEach(file => {
             // Load file, pretty the JSON, and write it back
             const json = fs.readFileSync(`${data_directory}/${file}`)
-            if (`${file}` !== ("Animations.json" || "System.json" || "MapInfos.json")) fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
+            if (`${file}` !== ("Animations.json" || "System.json" || "MapInfos.json" || "Armors.json")) fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
             command += ` ${data_directory}/${file}`
         })
 
