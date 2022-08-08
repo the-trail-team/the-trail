@@ -2208,7 +2208,7 @@
         "value": 0.03
       }
     ],
-    "iconIndex": 23,
+    "iconIndex": 643,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2776,7 +2776,13 @@
     "id": 85,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 1,
+        "value": 1.1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -2785,10 +2791,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "[P] Innate Magic",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -2800,8 +2806,14 @@
     "id": 86,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 0.2
+      }
+    ],
+    "iconIndex": 717,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -2809,10 +2821,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "[P] Topped Off",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Help Description>\nIncreases EDR by 20% when at full MP.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 10,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
