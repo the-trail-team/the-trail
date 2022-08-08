@@ -3917,7 +3917,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Poison Powder",
-    "note": "<action copy: skill:111>",
+    "note": "<action copy: skill:111>\n\n<setup action>\nimmortal: targets, true\ndisplay action\nperform start\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
