@@ -4417,5 +4417,42 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 127,
+    "animationId": 37,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Angers the enemy troop, increasing your AGR and making\nenemies more like to target you. Lasts for \\c[27]\\bpturn[4]\\c[0] to \\c[27]\\bpturn[5]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 59,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 121,
+    "message1": " taunts the enemy!",
+    "message2": "",
+    "mpCost": 20,
+    "name": "Taunt",
+    "note": "<target action>\nperform start\nmotion skill: user\nwait: 30\naction animation\nwait for animation\naction effect\nwait for effect\nperform finish\n</target action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]
