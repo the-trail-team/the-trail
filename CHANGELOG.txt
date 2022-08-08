@@ -373,6 +373,7 @@ Bug Fixes:
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
+ - Fixed a bug where states with no overlay would override states with an overlay if they had a higher priority value.
  - Fixed a bug where AP would be shown on all character menus, when it was only meant to show on the main menu and stat allocation menu.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
  - Fixed a bug where playtime wouldn't increase correctly on non-60hz displays.

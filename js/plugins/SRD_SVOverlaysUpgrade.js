@@ -118,14 +118,32 @@ Sprite_StateOverlay.prototype.initMembers = function() {
     this.anchor.y = yAnchor; //1;
 };
 
+Sprite_StateOverlay.prototype.priorityOverlay = function() {
+    states1 = this._battler.states();
+    var states2 = [];
+    for (i = 0; i < states1.length; i++) {
+        if (states1[i].meta.animationRow) states2.push(states1[i]);
+    }
+    if (states2.length > 0) {
+        states2.sort(function (a, b) {
+            a = a.meta.animationRow;
+            b = b.meta.animationRow;
+            return b - a;
+        });
+        return states2;
+    }
+    return this._battler.states();
+};
+
 Sprite_StateOverlay.prototype.animationWait = function() {
     if(this._battler)
     {
         if(this._battler.states().length > 0)
         {
-            if(this._battler.states()[0].meta.animationFrameWait)
+            states = this.priorityOverlay();
+            if(states[0].meta.animationFrameWait)
             {
-                return this._battler.states()[0].meta.animationFrameWait;
+                return states[0].meta.animationFrameWait;
             }
         } 
     }
@@ -137,24 +155,25 @@ Sprite_StateOverlay.prototype.updatePattern = function() {
     this._pattern %= 8;
     if (this._battler) {
         if(this._battler.states().length > 0) {
-            if(this._battler.states()[0].meta.animationRow)
+            states = this.priorityOverlay();
+            if(states[0].meta.animationRow)
             {
-                this._overlayIndex = this._battler.states()[0].meta.animationRow;
+                this._overlayIndex = states[0].meta.animationRow;
             }
             else
             {
                 this._overlayIndex = this._battler.stateOverlayIndex();  
             }
 
-            if(this._battler.states()[0].meta.xAnchor) {
-                this.anchor.x = this._battler.states()[0].meta.xAnchor;
+            if(states[0].meta.xAnchor) {
+                this.anchor.x = states[0].meta.xAnchor;
             }
             else {
                 this.anchor.x = xAnchor;
             }
 
-            if(this._battler.states()[0].meta.yAnchor) {
-                this.anchor.y = this._battler.states()[0].meta.yAnchor;
+            if(states[0].meta.yAnchor) {
+                this.anchor.y = states[0].meta.yAnchor;
             }
             else {
                 this.anchor.y = yAnchor;
