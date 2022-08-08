@@ -369,6 +369,7 @@ Bug Fixes:
  - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where some mid-battle boss monologues would interrupt turns or even action sequences instead of playing between turns.
  - Fixed a bug where party members would rarely not gain BP between the 1st and 2nd turn of a battle.
+ - Fixed a bug where retrying a battle would cause items from previous attempts to show up on the dropped item window at the end of battle. This was only a visual bug.
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
