@@ -606,6 +606,7 @@ DataManager.processISNotetags1 = function(group, type) {
     }
     this.processRecipeCounts(obj);
   }
+  Yanfly.IS.SynthesisRecipeCount = Yanfly.IS.SynthesisItemTotal + Yanfly.IS.SynthesisWeaponTotal + Yanfly.IS.SynthesisArmorTotal;
 };
 
 DataManager.addSynthesisIngredient = function(obj, line) {
@@ -701,12 +702,12 @@ DataManager.getSynthesisQuantity = function(item, index) {
 };
 
 DataManager.processRecipeCounts = function(obj) {
-    if (obj.recipeItem.length > 0 || obj.recipeWeapon.length > 0 ||
+    /*if (obj.recipeItem.length > 0 || obj.recipeWeapon.length > 0 ||
     obj.recipeArmor.length > 0) {
       Yanfly.IS.SynthesisRecipeCount += obj.recipeItem.length;
       Yanfly.IS.SynthesisRecipeCount += obj.recipeWeapon.length;
       Yanfly.IS.SynthesisRecipeCount += obj.recipeArmor.length;
-    }
+    }*/
     if (obj.name === '') return;
     if (obj.synthCost > 0 || obj.synthIngredients.length > 0) {
       if (obj.groupType === 0) Yanfly.IS.SynthesisItemTotal += 1;
