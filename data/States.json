@@ -2035,9 +2035,15 @@
     "id": 59,
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 0,
+        "value": 2
+      }
+    ],
     "iconIndex": 30,
-    "maxTurns": 4,
+    "maxTurns": 5,
     "message1": "",
     "message2": "",
     "message3": "",
@@ -2045,7 +2051,7 @@
     "minTurns": 4,
     "motion": 0,
     "name": "Taunt",
-    "note": "",
+    "note": "<Category: buff>\n<Help Description>\nBoosts AGR by 100%.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": true,
