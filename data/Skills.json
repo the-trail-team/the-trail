@@ -197,11 +197,11 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 4 - b.def * 2",
+      "formula": "a.atk * 5 - b.def * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Slice up an enemy in a V-shape. Deal damage fast - now that's\nthe true meaning of efficiency! \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
+    "description": "Slice up an enemy in a V-shape. Deal damage fast - now that's\nthe true meaning of efficiency! \\c[27]\\bpdamage[500]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
