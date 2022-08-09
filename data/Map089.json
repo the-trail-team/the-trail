@@ -21670,7 +21670,7 @@
             "characterName": "Actor2",
             "direction": 4,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 1
           },
           "list": [
             {
@@ -22511,6 +22511,25 @@
               "indent": 0,
               "parameters": [
                 "and ready to be eaten right away!"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {
