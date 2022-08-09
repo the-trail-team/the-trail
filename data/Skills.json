@@ -4680,7 +4680,7 @@
     "message2": "",
     "mpCost": 8,
     "name": "Nasty Glare",
-    "note": "<Boost Turns>\n\n<action copy: skill:86>",
+    "note": "<Boost Turns>\n\n<setup action>\nimmortal: targets, true\ndisplay action\nperform start\nmotion skill: user\nwait: 60\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
