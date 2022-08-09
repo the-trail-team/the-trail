@@ -11241,6 +11241,37 @@
               ]
             },
             {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                17,
+                {
+                  "list": [
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -11807,7 +11838,7 @@
     {
       "id": 17,
       "name": "general",
-      "note": "<shadow>",
+      "note": "<shadow> <Save Event Location>",
       "pages": [
         {
           "conditions": {
@@ -12137,6 +12168,90 @@
               "parameters": [
                 "the throne room. You're the last ones here."
               ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
+              "parameters": [
+                6,
+                6,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                1,
+                6,
+                0,
+                19,
+                0
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 217,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 205,

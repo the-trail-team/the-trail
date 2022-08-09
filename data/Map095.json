@@ -9450,7 +9450,7 @@
             "switch2Valid": false,
             "variableId": 55,
             "variableValid": true,
-            "variableValue": 32
+            "variableValue": 31
           },
           "directionFix": false,
           "image": {
@@ -9475,7 +9475,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genWow, you four made it right on time."
+                "\\gnrWow, you four made it right on time."
               ]
             },
             {
@@ -9499,7 +9499,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genLook..."
+                "\\gnrLook..."
               ]
             },
             {
@@ -9516,7 +9516,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\gen..."
+                "\\gnr..."
               ]
             },
             {
@@ -9533,7 +9533,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genThe king told me to just make sure everyone"
+                "\\gnrThe king told me to just make sure everyone"
               ]
             },
             {
@@ -9564,7 +9564,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genPlease make sure you're ready. As in,"
+                "\\gnrPlease make sure you're ready. As in,"
               ]
             },
             {
@@ -9602,7 +9602,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genTrue Telluria Castle is extremely dangerous,"
+                "\\gnrTrue Telluria Castle is extremely dangerous,"
               ]
             },
             {
@@ -9633,7 +9633,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genI know we have the other four teams, as well as many"
+                "\\gnrI know we have the other four teams, as well as many"
               ]
             },
             {
@@ -9671,7 +9671,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genBut anyways... please, please, PLEASE"
+                "\\gnrBut anyways... please, please, PLEASE"
               ]
             },
             {
@@ -9702,7 +9702,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genYou... might be down here for a long while."
+                "\\gnrYou... might be down here for a long while."
               ]
             },
             {
@@ -9719,7 +9719,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genWell, I think I've said enough already. Let me"
+                "\\gnrWell, I think I've said enough already. Let me"
               ]
             },
             {
@@ -9816,7 +9816,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genPlease, please, PLEASE make sure you"
+                "\\gnrPlease, please, PLEASE make sure you"
               ]
             },
             {
@@ -9854,7 +9854,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genAre you ready to head in?"
+                "\\gnrAre you ready to head in?"
               ]
             },
             {
@@ -9893,7 +9893,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\genYou're 100%, perfectly, positively, most definitely sure?"
+                "\\gnrYou're 100%, perfectly, positively, most definitely sure?"
               ]
             },
             {
@@ -9932,7 +9932,7 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\genWell... let's head in."
+                "\\gnrWell... let's head in."
               ]
             },
             {
@@ -10270,13 +10270,6 @@
                       "indent": null
                     },
                     {
-                      "code": 15,
-                      "parameters": [
-                        120
-                      ],
-                      "indent": null
-                    },
-                    {
                       "code": 0
                     }
                   ],
@@ -10354,16 +10347,17 @@
               ]
             },
             {
-              "code": 505,
+              "code": 246,
               "indent": 2,
               "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    120
-                  ],
-                  "indent": null
-                }
+                2
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                120
               ]
             },
             {
@@ -10382,7 +10376,14 @@
               "code": 211,
               "indent": 2,
               "parameters": [
-                0
+                1
+              ]
+            },
+            {
+              "code": 216,
+              "indent": 2,
+              "parameters": [
+                1
               ]
             },
             {
@@ -10467,7 +10468,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\genThat's alright. Being ready is worth being late."
+                "\\gnrThat's alright. Being ready is worth being late."
               ]
             },
             {
@@ -11049,6 +11050,18 @@
               "parameters": [
                 "A",
                 1
+              ]
+            },
+            {
+              "code": 132,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "battle_castle",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {

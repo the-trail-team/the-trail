@@ -12198,5 +12198,55 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 85,
+    "members": [
+      {
+        "enemyId": 71,
+        "x": 371,
+        "y": 346,
+        "hidden": false
+      },
+      {
+        "enemyId": 71,
+        "x": 414,
+        "y": 172,
+        "hidden": false
+      },
+      {
+        "enemyId": 72,
+        "x": 244,
+        "y": 205,
+        "hidden": false
+      }
+    ],
+    "name": "Gazer x2, Parasite",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
