@@ -3902,7 +3902,7 @@
     "traits": [],
     "iconIndex": 656,
     "name": "Dragonforce Gauntlets",
-    "note": "<Passive State: 91>\n<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nFlytrap Fang\nIron Cluster: 3\nDisposable Hammer\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
+    "note": "<Passive State: 91>\n<Upgrade Slots: 2>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nRazor-Sharp Fang\nIron Cluster: 3\nDisposable Hammer\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
     "params": [
       0,
       0,
@@ -4036,7 +4036,7 @@
   {
     "id": 153,
     "atypeId": 1,
-    "description": "A brutal, sharp, and worn fang ripped off of a flytrap\nin battle. Its sharpness has not been replicated by mankind.",
+    "description": "A brutal, sharp, and worn fang ripped off of a monster in\nbattle. Its sharpness has not been replicated by mankind.",
     "etypeId": 6,
     "traits": [
       {
@@ -4046,7 +4046,7 @@
       }
     ],
     "iconIndex": 335,
-    "name": "Flytrap Fang",
+    "name": "Razor-Sharp Fang",
     "note": "<Upgrade Slots: 2>",
     "params": [
       0,
@@ -4594,5 +4594,80 @@
       0
     ],
     "price": 4000
+  },
+  {
+    "id": 173,
+    "atypeId": 1,
+    "description": "A curious accessory that helps your eyesight,\nallowing you to hit your targets more often.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.08
+      }
+    ],
+    "iconIndex": 719,
+    "name": "Sightful Charm",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 174,
+    "atypeId": 1,
+    "description": "Although the gold is clearly fake, or at least low carat, it\nstill carries a beautiful sheen. Provides a large amount of MMP.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 464,
+    "name": "Faux-Gold Headbang",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      75,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 175,
+    "atypeId": 1,
+    "description": "Look right here, I'm not the one you want!\nProvides immunity to \\it[82]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 82,
+        "value": 2
+      }
+    ],
+    "iconIndex": 233,
+    "name": "Wanted Poster",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
   }
 ]

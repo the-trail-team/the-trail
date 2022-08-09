@@ -4399,7 +4399,7 @@
     ],
     "gold": 72,
     "name": "Flytrap",
-    "note": "<Sideview Battler: Flytrap>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nFlytrap Fang: 5%\nFlytrap Eye: 5%\nYellow Flower: 90%\nYellow Flower: 90%\nRock: 10%\nMedicinal Herb: 30%\nMedicinal Herb: 30%\nMedicinal Root: 20%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Sideview Battler: Flytrap>\n<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nRazor-Sharp Fang: 5%\nFlytrap Eye: 5%\nYellow Flower: 90%\nYellow Flower: 90%\nRock: 10%\nMedicinal Herb: 30%\nMedicinal Herb: 30%\nMedicinal Root: 20%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
@@ -7312,6 +7312,27 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 59
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 121
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 64
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
@@ -7334,36 +7355,46 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 300,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.06
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.06
       },
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 82,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 100,
     "name": "Gazer",
-    "note": "<Sideview Battler: Gazer_1>\n<Attack Animation: 1>",
+    "note": "<Sideview Battler: Gazer_1>\n<Attack Animation: 1>\n\n<AI Priority>\nState !== Exposed Weak Point +++ Random 50%: Nasty Glare\n</AI Priority>\n\n<Enemy Drops>\nWanted Poster: 3.33%\nSightful Charm: 2.5%\nGazer Goop: 75%\nGazer Goop: 75%\n</Enemy Drops>",
     "params": [
-      100,
+      3000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      30,
+      40,
+      60,
+      100,
+      50,
+      30
     ]
   },
   {
@@ -7374,6 +7405,20 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 115
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 133
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
@@ -7396,36 +7441,46 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 300,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1.01
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.08
       },
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 100,
     "name": "Parasite",
-    "note": "<Sideview Battler: NoMatchingSprite/Parasite>\n<Attack Animation: 11>",
+    "note": "<Sideview Battler: NoMatchingSprite/Parasite>\n<Attack Animation: 11>\n\n<Enemy Drops>\nSightful Charm: 2.5%\nRazor-Sharp Fang: 5%\nStinger: 50%\nVial of Poison: 16.66%\n</Enemy Drops>",
     "params": [
-      100,
+      3000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      35,
+      45,
+      40,
+      80,
+      80,
+      30
     ]
   },
   {
@@ -7436,6 +7491,20 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 132
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 47
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
@@ -7458,36 +7527,76 @@
         "kind": 0
       }
     ],
-    "exp": 0,
+    "exp": 300,
     "traits": [
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1.05
       },
       {
         "code": 22,
         "dataId": 1,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.05
+      },
+      {
+        "code": 22,
+        "dataId": 4,
         "value": 0.05
       },
       {
         "code": 31,
-        "dataId": 1,
-        "value": 0
+        "dataId": 9,
+        "value": 1
+      },
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.5
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 100,
     "name": "Poltergeist",
-    "note": "<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Attack Animation: 1>\n<Sideview No Collapse>",
+    "note": "<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Attack Animation: 1>\n<Sideview No Collapse>\n\n<Boost Skill 132: Full>\n\n<Enemy Drops>\nFaux-Gold Headband: 2.5%\nEctoblood: 75%\nEctoblood: 75%\nEctoplasm: 10%\n</Enemy Drops>",
     "params": [
-      100,
+      2500,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      15,
+      30,
+      70,
+      150,
+      150,
+      70
     ]
   }
 ]

@@ -4574,5 +4574,122 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 132,
+    "animationId": 61,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 21,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 94,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 612,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Disable",
+    "note": "<Boost Turns>\n\n<target action>\nperform start\nmotion chant: user\nwait: 45\nmotion spell: user\naction animation\nanimation 269: target\nwait for animation\naction effect\nwait for effect\nwait: 30\nperform finish\n</target action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 133,
+    "animationId": 11,
+    "damage": {
+      "critical": true,
+      "elementId": 1,
+      "formula": "a.atk * 3 - b.def * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 39,
+        "value1": 0.5,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 326,
+    "message1": " casts %1!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Stingers",
+    "note": "<setup action>\ndisplay action\nperform start\nmotion skill: user\nwait: 30\n</setup action>\n\n<whole action>\naction animation\nshake screen: 2, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 30\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 4,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 134,
+    "animationId": 216,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 82,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 430,
+    "message1": " exposes everyone's weak points!",
+    "message2": "",
+    "mpCost": 8,
+    "name": "Nasty Glare",
+    "note": "<Boost Turns>\n\n<action copy: skill:86>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 1,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]
