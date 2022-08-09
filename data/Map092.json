@@ -1,7 +1,7 @@
 {
   "autoplayBgm": true,
   "autoplayBgs": true,
-  "battleback1Name": "Castle1",
+  "battleback1Name": "Castle2",
   "battleback2Name": "Castle2",
   "bgm": {
     "name": "dungeon_truecastle",
@@ -16,11 +16,11 @@
     "volume": 80
   },
   "disableDashing": false,
-  "displayName": "True Telluria Castle - B2",
+  "displayName": "True Telluria Castle - F1",
   "encounterList": [],
   "encounterStep": 30,
   "height": 45,
-  "note": "",
+  "note": "<Unlocked>",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -7197,7 +7197,7 @@
     0,
     0,
     0,
-    0,
+    9,
     0,
     0,
     0,
@@ -11271,6 +11271,104 @@
         }
       ],
       "x": 3,
+      "y": 39
+    },
+    {
+      "id": 3,
+      "name": "EV003",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Move1",
+                  "pan": 0,
+                  "pitch": 100,
+                  "volume": 90
+                }
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                88,
+                24,
+                5,
+                4,
+                0
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
+                  -34,
+                  -34,
+                  -34,
+                  0
+                ],
+                1,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 31,
       "y": 39
     }
   ]

@@ -783,7 +783,15 @@
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
+  {
+    "id": 88,
+    "expanded": true,
+    "name": "True Telluria Castle - B1",
+    "order": 210,
+    "parentId": 92,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   {
     "id": 89,
     "expanded": true,
@@ -814,7 +822,7 @@
   {
     "id": 92,
     "expanded": true,
-    "name": "True Telluria Castle - B2",
+    "name": "True Telluria Castle - F1",
     "order": 209,
     "parentId": 93,
     "scrollX": 0,
@@ -823,13 +831,21 @@
   {
     "id": 93,
     "expanded": false,
-    "name": "True Telluria Castle - B1",
+    "name": "True Telluria Castle - F2",
     "order": 208,
     "parentId": 210,
     "scrollX": 0,
     "scrollY": 0
   },
-  null,
+  {
+    "id": 94,
+    "expanded": true,
+    "name": "True Telluria Castle - B2",
+    "order": 211,
+    "parentId": 88,
+    "scrollX": 0,
+    "scrollY": 0
+  },
   {
     "id": 95,
     "expanded": true,
@@ -1464,7 +1480,7 @@
     "id": 165,
     "expanded": false,
     "name": "Tester Tower",
-    "order": 210,
+    "order": 214,
     "parentId": 0,
     "scrollX": 0,
     "scrollY": 0
@@ -1889,6 +1905,24 @@
     "name": "Temple",
     "order": 192,
     "parentId": 196,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 213,
+    "expanded": true,
+    "name": "True Telluria Castle - B3",
+    "order": 212,
+    "parentId": 94,
+    "scrollX": 0,
+    "scrollY": 0
+  },
+  {
+    "id": 214,
+    "expanded": false,
+    "name": "True Telluria Castle - B4",
+    "order": 213,
+    "parentId": 213,
     "scrollX": 0,
     "scrollY": 0
   }
