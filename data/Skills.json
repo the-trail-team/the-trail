@@ -3952,7 +3952,7 @@
     "iconIndex": 684,
     "message1": " imbues their weapon with light!",
     "message2": "",
-    "mpCost": 15,
+    "mpCost": 30,
     "name": "Heavenswield",
     "note": "<setup action>\ndisplay action\nperform start\nmotion cast: user\nwait: 30\nmotion spell: user\nwait for motion\n</setup action>\n\n<whole action>\nanimation 258: user\nwait for animation\naction animation\nanimation 50: user\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
