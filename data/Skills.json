@@ -2248,7 +2248,7 @@
     "iconIndex": 98,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 22,
+    "mpCost": 30,
     "name": "Lightning II",
     "note": "<Boost Damage>\n<Hide if Learned Skill: 98>\n\n<Remove State Category: Water>\n<Remove State Category: Wind>\n\n<action copy: skill:9>\n\n<Damage Formula>\n// Set the chain multiplier to a value if it doesn't exist.\nthis._chainmultiplier = this._chainmultiplier || 1.0;\n// This is the damage formula.\nvalue = a.mat * 4.25 - b.mdf * 2;\n// Apply the chain multiplier to the damage formula.\nvalue *= this._chainmultiplier;\n// Reduce the chain multiplier per target.\nthis._chainmultiplier *= 0.5;\n</Damage Formula>\n\n<Custom Target Eval>\n// Fix for #9\nif (user.isEnemy()) {\n  id = Math.floor(Math.random() * foes.aliveMembers().length);\n  target = foes.aliveMembers()[id];\n}\n// Adds the selected target to the target list.\ntargets.push(target);\n// Grab the group of alive foes as candidates.\nvar members = foes.aliveMembers();\n// Remove the target from the group of candidates.\nmembers.splice(members.indexOf(target), 1);\n// This is the number of extra targets to select with Chain Lightning.\nvar extraTargets = 2\n// Loop the extra targets.\nwhile (extraTargets--) {\n  // Grab a random foe from the alive foes.\n  var member = members[Math.floor(Math.random() * members.length)];\n  // Check to see if the member exists.\n  if (member) {\n    // Add the member to the group of targets.\n    targets.push(member);\n    // Remove the member as a viable candidate.\n    members.splice(members.indexOf(member), 1);\n  }\n}\n</Custom Target Eval>",
     "occasion": 1,
