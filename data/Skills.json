@@ -80,11 +80,11 @@
     "damage": {
       "critical": true,
       "elementId": -1,
-      "formula": "a.atk * 6 - b.def * 2",
+      "formula": "a.atk * 5 - b.def * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Take a second or two to think before you attack. As a result, your\ndamage and CRI will be boosted. The hit always lands. \\c[27]\\bpdamage[600]%\\c[0] ATK rate.",
+    "description": "Take a second or two to think before you attack. As a result, your\ndamage and CRI will be boosted. The hit always lands. \\c[27]\\bpdamage[500]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
