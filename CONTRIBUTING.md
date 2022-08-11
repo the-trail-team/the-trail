@@ -7,9 +7,9 @@ In the root of the cloned repository, navigate to `.git/hooks`. If it doesn't al
 ### Using the hook
 Before beginning to stage files for a commit, run `git commit` inside the terminal to activate the hook. This hook:
 
-* Sets System.json's versionId and editMapId to constant values
-* Sets all scrollX and scrollY values in MapInfos.json to 0
-* "Prettifies" all .json files (except for Animation.json due to its sheer size)
+* Sets `System.json`'s versionId and editMapId to constant values
+* Sets all scrollX and scrollY values in `MapInfos.json` to 0
+* "Prettifies" all .json files (except for `Animation.json` due to its sheer size)
 
 After the hook runs, go ahead and stage your files, enter your title and description if needed, then commit.
 
