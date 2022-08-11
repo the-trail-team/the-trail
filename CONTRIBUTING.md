@@ -2,7 +2,7 @@
 ## pre-commit Hook
 
 ### Setting up the hook
-In the root of the cloned repository, navigate to `.git/hooks/`. If it doesn't already exist, create a file titled `pre-commit` (note that there is no file extension). After creating the file, open it via a text editor and paste in the hook below.
+In the root of the cloned repository, navigate to `.git/hooks`. If it doesn't already exist, create a file titled `pre-commit` (note that there is no file extension). After creating the file, open it via a text editor and paste in the hook below.
 
 ### Using the hook
 Before beginning to stage files for a commit, run `git commit` inside the terminal to activate the hook. This hook:
@@ -79,11 +79,16 @@ try {
 ## Running the game
 
 ### Windows
-Download [nw.js v0.30.0](https://dl.nwjs.io/v0.30.0/nwjs-v0.30.0-win-x64.zip) and unzip it in the root of the cloned repository. Please ensure that the file structure of `thetrail/nwjs-v0.30-win-x64/` looks like this: 
+Download [NW.js v0.30.0 for Windows](https://dl.nwjs.io/v0.30.0/nwjs-v0.30.0-win-x64.zip) and unzip it in the root of the cloned repository. Please ensure that the file structure of `thetrail/nwjs-v0.30-win-x64` looks like this: 
 
 ![nw.js file structure](https://user-images.githubusercontent.com/44245434/184078180-8ff4d6e4-1332-4a39-b05e-6b08d768ef0c.png)
 
 Every time you would like to play your modified game, run `PLAYTEST.bat`, located in the repository's root.
 
 ### Linux
-There is currently no official contribution advice for Linux at this time. To self-compile the game, please use the instructions listed in `README.md`.
+1. Download and extract [NW.js v0.30.0 for Linux](https://dl.nwjs.io/v0.30.0/nwjs-v0.30.0-linux-x64.tar.gz).
+2. Move `package.json`, `package-lock.json`, and `node_modules` from the repository to the root of `nwjs-v0.30.0-linux-x64`.
+3. Open `package.json` with your text editor of choice. Change the value of `"main"` to `"www/index.html"`, and the value of `"icon"` to `"www/icon/icon.png"`. Do NOT delete the commas.
+4. Create a folder titled `www` inside `nwjs-v0.30.0-linux-x64`.
+5. Copy/move every folder and `index.html` from the download of The Trail to `www`.
+6. Run `nw` to launch the game.
