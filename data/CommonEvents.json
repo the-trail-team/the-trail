@@ -15728,5 +15728,119 @@
     "name": "Food Shop",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 62,
+    "list": [
+      {
+        "code": 311,
+        "indent": 0,
+        "parameters": [
+          0,
+          0,
+          0,
+          0,
+          9007199254740991,
+          false
+        ]
+      },
+      {
+        "code": 312,
+        "indent": 0,
+        "parameters": [
+          0,
+          0,
+          0,
+          0,
+          9007199254740991
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "for (i = 0; i < $gameParty.members().length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameParty.members()[i].removeStateCategoryAll('debuff');"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "for (i = 0; i < $gameParty.members().length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameParty.members()[i].removeStateCategoryAll('debuff');"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Recovery",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "Your party was healed!"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Party Heal",
+    "switchId": 1,
+    "trigger": 0
   }
 ]
