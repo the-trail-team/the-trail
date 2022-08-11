@@ -7118,5 +7118,38 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 246,
+    "animationId": 209,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Grants resistance to \\it[125] for 500 steps.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 126,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 721,
+    "itypeId": 1,
+    "name": "Fire Resistance Potion",
+    "note": "<Menu Category: Debuffs>",
+    "occasion": 0,
+    "price": 30,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
