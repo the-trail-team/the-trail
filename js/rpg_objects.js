@@ -4191,6 +4191,7 @@ Game_Actor.prototype.updateStateSteps = function(state) {
                 this.removeState(state.id);
             }
         }
+        if (!this._stateSteps[state.id]) this.removeState(state.id);
     }
 };
 
