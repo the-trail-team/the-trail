@@ -938,6 +938,9 @@ Window_EquipRequirement.prototype.drawSkillRequirements = function(dy) {
 };
 
 Window_EquipRequirement.prototype.drawSwitchRequirements = function(dy) {
+    var switchTx = "Progression: ";
+    this.changeTextColor(this.systemColor());
+    this.drawText(switchTx, this.textPadding(), dy, this.contents.width - this.textPadding());
     this.resetFontSettings();
     this.changePaintOpacity(true);
     var switches = this._item.equipRequirements['switches'];
@@ -947,7 +950,7 @@ Window_EquipRequirement.prototype.drawSwitchRequirements = function(dy) {
       var name = $dataSystem.switches[sw];
       name = name.replace(/<<(.*?)>>/i, '');
       this.changePaintOpacity($gameSwitches.value(sw));
-      this.drawTextEx(name, this.textPadding(), dy);
+      this.drawTextEx(name, this.textWidth(switchTx) + this.textPadding(), dy);
       dy += this.lineHeight();
     }
     this.changePaintOpacity(true)
