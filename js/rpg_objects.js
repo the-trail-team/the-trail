@@ -4637,6 +4637,13 @@ Game_Actors.prototype.actor = function(actorId) {
     return null;
 };
 
+Game_Actors.prototype.resetNames = function() {
+    $gameActors._data[1]._name = "Player 1";
+    $gameActors._data[2]._name = "Player 2";
+    $gameActors._data[3]._name = "Player 3";
+    $gameActors._data[4]._name = "Player 4";
+}
+
 //-----------------------------------------------------------------------------
 // Game_Unit
 //
