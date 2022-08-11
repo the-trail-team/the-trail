@@ -1,3 +1,6 @@
+# Requirements for all contributors
+All contributors need to install [node.js](https://nodejs.org/en/download/), whether you are or aren't using RMMV. This is required for running certain scripts that are found in both methods.
+
 # Contributors using RPG Maker MV
 ## pre-commit Hook
 
