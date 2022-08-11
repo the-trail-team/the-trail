@@ -4696,5 +4696,53 @@
       0
     ],
     "price": 10
+  },
+  {
+    "id": 177,
+    "atypeId": 1,
+    "description": "No matter how many times you drink from it, it just keeps\nrefilling itself. Provides immunity to \\it[125].",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 721,
+    "name": "Bottomless Fire Resistance Potion",
+    "note": "<Passive State: 126>\n<Synthesis Ingredients>\nFire Resistance Potion: 5\n</Synthesis Ingredients>\n<Mask Name: Heat Exhaustion Permanent Prevention>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 178,
+    "atypeId": 1,
+    "description": "It's burning hot, yet feels only lukewarm to the touch.\nProvides immunity to \\it[82] and \\ia[125].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 82,
+        "value": 2
+      }
+    ],
+    "iconIndex": 722,
+    "name": "Fiery Tablet",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nWanted Poster\nBottomless Fire Resistance Potion\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 200
   }
 ]
