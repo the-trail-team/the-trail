@@ -1,10 +1,10 @@
 # Contributors using RPG Maker MV
-### pre-commit Hook
+## pre-commit Hook
 
-###### Setting up the hook
-In the root of the cloned repository, navigate to `./git/hooks/`. If it doesn't already exist, create a file titled `pre-commit` (note that there is no file extension). After creating the file, open it via a text editor and paste in the hook below.
+### Setting up the hook
+In the root of the cloned repository, navigate to `.git/hooks/`. If it doesn't already exist, create a file titled `pre-commit` (note that there is no file extension). After creating the file, open it via a text editor and paste in the hook below.
 
-###### Using the hook
+### Using the hook
 Before beginning to stage files for a commit, run `git commit` inside the terminal to activate the hook. This hook:
 
 * Sets System.json's versionId and editMapId to constant values
@@ -13,7 +13,7 @@ Before beginning to stage files for a commit, run `git commit` inside the termin
 
 After the hook runs, go ahead and stage your files, enter your title and description if needed, then commit.
 
-###### The hook
+### The hook
 ```
 #!/usr/bin/env node
 
@@ -76,5 +76,14 @@ try {
 ```
 
 # Contributors NOT using RPG Maker MV
+## Running the game
 
-### Running the game
+### Windows
+Download [nw.js v0.30.0](https://dl.nwjs.io/v0.30.0/nwjs-v0.30.0-win-x64.zip) and unzip it in the root of the cloned repository. Please ensure that the file structure of `thetrail/nwjs-v0.30-win-x64/` looks like this: 
+
+![nw.js file structure](https://user-images.githubusercontent.com/44245434/184078180-8ff4d6e4-1332-4a39-b05e-6b08d768ef0c.png)
+
+Every time you would like to play your modified game, run `PLAYTEST.bat`, located in the repository's root.
+
+### Linux
+There is currently no official contribution advice for Linux at this time. To self-compile the game, please use the instructions listed in `README.md`.
