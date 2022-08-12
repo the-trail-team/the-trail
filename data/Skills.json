@@ -2549,12 +2549,12 @@
     "animationId": 130,
     "damage": {
       "critical": true,
-      "elementId": 0,
+      "elementId": -1,
       "formula": "a.atk * 5 - b.def * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "Hurl a slimeball at a foe.",
+    "description": "Hurl a slimeball at a foe. Carries elemental traits.",
     "effects": [
       {
         "code": 21,
