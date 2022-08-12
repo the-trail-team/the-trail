@@ -2650,7 +2650,9 @@ Game_BattlerBase.prototype.refresh = function() {
 };
 
 Game_BattlerBase.prototype.recoverAll = function() {
-    this.clearStates();
+    for (i = 0; i < this._states.length; i++) {
+        if (!$dataStates[this._states[i]].category.contains("BYPASS RECOVER ALL REMOVAL")) this.removeState(this._states[i]);
+    }
     this._hp = this.mhp;
     this._mp = this.mmp;
 };
