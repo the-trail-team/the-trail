@@ -2842,7 +2842,13 @@
     "id": 87,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 42,
+        "value": 1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -2851,10 +2857,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Terrified Immunity",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = $gameSwitches.value(61);\n</Custom Passive Condition>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -4276,35 +4282,5 @@
     "removeByWalking": true,
     "restriction": 0,
     "stepsToRemove": 500
-  },
-  {
-    "id": 127,
-    "autoRemovalTiming": 0,
-    "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 14,
-        "dataId": 42,
-        "value": 1
-      }
-    ],
-    "iconIndex": 0,
-    "maxTurns": 1,
-    "message1": "",
-    "message2": "",
-    "message3": "",
-    "message4": "",
-    "minTurns": 1,
-    "motion": 0,
-    "name": "Terrified Immunity",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = $gameSwitches.value(61);\n</Custom Passive Condition>",
-    "overlay": 0,
-    "priority": 0,
-    "removeAtBattleEnd": false,
-    "removeByDamage": false,
-    "removeByRestriction": false,
-    "removeByWalking": false,
-    "restriction": 0,
-    "stepsToRemove": 100
   }
 ]
