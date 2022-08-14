@@ -60,6 +60,11 @@ Game_Temp.prototype.destinationY = function() {
     return this._destinationY;
 };
 
+Game_Temp.prototype.rareEnemy = function() {
+    var rate = 50;
+    return Math.floor(Math.random() * rate) < 1;
+}
+
 //-----------------------------------------------------------------------------
 // Game_System
 //
