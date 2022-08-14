@@ -941,7 +941,13 @@ Window_SynthesisCommand.prototype.makeCommandList = function() {
 Window_SynthesisCommand.prototype.addItemCommands = function() {
     this.addCommand(Yanfly.Param.ISItemCmd, 'item', Scene_Synthesis.availableItems().length > 0);
     this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', Scene_Synthesis.availableWeapons().length > 0);
-    this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors().length > 0);
+    this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors(0).length > 0);
+    this.addCommand("Craft Headgear", 'headgear', Scene_Synthesis.availableArmors(3).length > 0);
+    this.addCommand("Craft Bodygear", 'bodygear', Scene_Synthesis.availableArmors(4).length > 0);
+    this.addCommand("Craft Footgear", 'footgear', Scene_Synthesis.availableArmors(5).length > 0);
+    this.addCommand("Craft Offhand", 'offhand', Scene_Synthesis.availableArmors(2).length > 0);
+    this.addCommand("Craft Accessory", 'accessory', Scene_Synthesis.availableArmors(6).length > 0);
+    this.addCommand("Craft Magic Equip", 'magicequip', Scene_Synthesis.availableArmors(8).length > 0);
 };
 
 Window_SynthesisCommand.prototype.addCustomCommand = function() {
@@ -1132,7 +1138,25 @@ Window_SynthesisList.prototype.makeItemList = function() {
         data = Scene_Synthesis.availableWeapons();
         break;
       case 'armor':
-        data = Scene_Synthesis.availableArmors();
+        data = Scene_Synthesis.availableArmors(0);
+        break;
+      case 'headgear':
+        data = Scene_Synthesis.availableArmors(3);
+        break;
+      case 'bodygear':
+        data = Scene_Synthesis.availableArmors(4);
+        break;
+      case 'footgear':
+        data = Scene_Synthesis.availableArmors(5);
+        break;
+      case 'offhand':
+        data = Scene_Synthesis.availableArmors(2);
+        break;
+      case 'accessory':
+        data = Scene_Synthesis.availableArmors(6);
+        break;
+      case 'magicequip':
+        data = Scene_Synthesis.availableArmors(8);
         break;
       default:
         data = [];
@@ -1700,29 +1724,22 @@ Scene_Synthesis.availableLibrary = function() {
 };
 
 Scene_Synthesis.availableItems = function() {
-    var list = this.getAvailableItems(0);
-    return this.sortList(list);
+    return this.getAvailableItems(0);
 };
 
 Scene_Synthesis.availableWeapons = function() {
-    var list = this.getAvailableItems(1);
-    return this.sortList(list);
+    return this.getAvailableItems(1);
 };
 
-Scene_Synthesis.availableArmors = function() {
+Scene_Synthesis.availableArmors = function(type) {
     var list = this.getAvailableItems(2);
-    return this.sortList(list);
-};
-
-Scene_Synthesis.sortList = function(list) {
-    /*list.sort(function(a, b) {
-        var p1 = a.id;
-        var p2 = b.id;
-        if (p1 !== p2) {
-            return p1 - p2;
-        }
-        return b - a;
-    });*/
+    if (type !== 0) {
+      var newList = [];
+      for (i = 0; i < list.length; i++) {
+        if (list[i].etypeId === type) newList.push(list[i]);
+      }
+      return newList;
+    }
     return list;
 };
 
