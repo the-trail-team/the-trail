@@ -529,7 +529,7 @@ if (Yanfly.Param.MQWAddQuest) {
 Yanfly.AMQW.Game_System_questAdd = Game_System.prototype.questAdd;
 Game_System.prototype.questAdd = function(questId) {
   Yanfly.AMQW.Game_System_questAdd.call(this, questId);
-  if (questId !== 1000) this.setActiveQuestId(questId);
+  if (questId !== 4) this.setActiveQuestId(questId);
 };
 
 }; // Yanfly.Param.MQWAddQuest
