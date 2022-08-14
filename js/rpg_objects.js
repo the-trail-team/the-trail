@@ -61,7 +61,7 @@ Game_Temp.prototype.destinationY = function() {
 };
 
 Game_Temp.prototype.rareEnemy = function() {
-    var rate = 50;
+    var rate = 25;
     return Math.floor(Math.random() * rate) < 1;
 }
 
