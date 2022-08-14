@@ -1124,14 +1124,21 @@ Window_SynthesisList.prototype.refresh = function() {
 };
 
 Window_SynthesisList.prototype.makeItemList = function() {
-    this._data = [];
-    if (this._commandWindow.currentSymbol() === 'item') {
-      this._data = Scene_Synthesis.availableItems();
-    } else if (this._commandWindow.currentSymbol() === 'weapon') {
-      this._data = Scene_Synthesis.availableWeapons();
-    } else if (this._commandWindow.currentSymbol() === 'armor') {
-      this._data = Scene_Synthesis.availableArmors();
+    switch (this._commandWindow.currentSymbol()) {
+      case 'item':
+        data = Scene_Synthesis.availableItems();
+        break;
+      case 'weapon':
+        data = Scene_Synthesis.availableWeapons();
+        break;
+      case 'armor':
+        data = Scene_Synthesis.availableArmors();
+        break;
+      default:
+        data = [];
+        break;
     }
+    this._data = data;
 };
 
 Window_SynthesisList.prototype.maxItems = function() {
