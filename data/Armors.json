@@ -1634,7 +1634,7 @@
     "description": "A curious ring with a fine emerald as its centerpiece.\nIt mysteriously boosts the vigor of its holder.",
     "etypeId": 6,
     "traits": [],
-    "iconIndex": 176,
+    "iconIndex": 726,
     "name": "Emerald Ring",
     "note": "<Upgrade Slots: 1>",
     "params": [
@@ -4776,5 +4776,32 @@
       0
     ],
     "price": 750
+  },
+  {
+    "id": 181,
+    "atypeId": 1,
+    "description": "Combining the gems in both rings and affixing them to the\n\\ia[173] allows for creation of this powerful accessory.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.08
+      }
+    ],
+    "iconIndex": 727,
+    "name": "Fighter's Charm",
+    "note": "<Upgrade Slots: 2>\n<Synthesis Ingredients>\nSightful Charm\nRuby Ring\nEmerald Ring\n</Synthesis Ingredients>\n<Mask Name: Combination Charm>",
+    "params": [
+      8,
+      8,
+      3,
+      3,
+      5,
+      5,
+      0,
+      0
+    ],
+    "price": 1250
   }
 ]
