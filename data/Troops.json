@@ -12033,5 +12033,122 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 87,
+    "members": [
+      {
+        "enemyId": 74,
+        "x": 350,
+        "y": 385,
+        "hidden": false
+      },
+      {
+        "enemyId": 74,
+        "x": 387,
+        "y": 283,
+        "hidden": false
+      },
+      {
+        "enemyId": 74,
+        "x": 343,
+        "y": 166,
+        "hidden": false
+      },
+      {
+        "enemyId": 32,
+        "x": 224,
+        "y": 295,
+        "hidden": true
+      }
+    ],
+    "name": "Feral Rat x3",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              0,
+              23,
+              0
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 1,
+            "parameters": [
+              12,
+              "$gameTemp.rareEnemy()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 2,
+            "parameters": [
+              3
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 2,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 2,
+            "parameters": [
+              "An Albino Rat joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 2,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
