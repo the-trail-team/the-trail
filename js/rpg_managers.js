@@ -2687,6 +2687,7 @@ BattleManager.processAbort = function() {
 };
 
 BattleManager.processDefeat = function() {
+    $gameTroop.performVictory();
     this.displayDefeatMessage();
     this.playDefeatMe();
     if (this._canLose) {

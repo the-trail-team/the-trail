@@ -3424,6 +3424,12 @@ Game_Battler.prototype.performSubstitute = function(target) {
 Game_Battler.prototype.performCollapse = function() {
 };
 
+Game_Battler.prototype.performVictory = function() {
+    if (this.canMove()) {
+        this.requestMotion('victory');
+    }
+};
+
 //-----------------------------------------------------------------------------
 // Game_Actor
 //
@@ -4114,12 +4120,6 @@ Game_Actor.prototype.performCollapse = function() {
     Game_Battler.prototype.performCollapse.call(this);
     if ($gameParty.inBattle()) {
         SoundManager.playActorCollapse();
-    }
-};
-
-Game_Actor.prototype.performVictory = function() {
-    if (this.canMove()) {
-        this.requestMotion('victory');
     }
 };
 
@@ -5494,6 +5494,12 @@ Game_Troop.prototype.makeDropItems = function() {
     return this.deadMembers().reduce(function(r, enemy) {
         return r.concat(enemy.makeDropItems());
     }, []);
+};
+
+Game_Troop.prototype.performVictory = function() {
+    this.members().forEach(function(enemy) {
+        enemy.performVictory();
+    });
 };
 
 //-----------------------------------------------------------------------------
