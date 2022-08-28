@@ -938,6 +938,7 @@ Window_EquipRequirement.prototype.drawSkillRequirements = function(dy) {
 };
 
 Window_EquipRequirement.prototype.drawSwitchRequirements = function(dy) {
+    if (this._item.equipRequirements['switches'].length <= 0) return dy;
     var switchTx = "Progression: ";
     this.changeTextColor(this.systemColor());
     this.drawText(switchTx, this.textPadding(), dy, this.contents.width - this.textPadding());
