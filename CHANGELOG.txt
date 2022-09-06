@@ -301,18 +301,18 @@ Additions:
   ~ [REDACTED BIRD]
 
 Changes:
- - Recapped the max level from level 20 to level 25.
+ - Recapped the max level from level 20 to level 30.
  - Replaced the Mage class's 2nd magic equip slot with an offhand slot (light shields).
  - The game's icons have finally been resprited at a non-blurred 32px resolution. Many items have additionally had their icons changed to stand out a bit more.
  - Skill families will now be condensed into a single dropdown. Old save patching must be enabled when updating for this to work properly.
  - Completed the salvaging system. Many items throughout the entire game are now salvageable, making the system much more relevant.
- - Greatly reduced respawn timers of most time-based respawnables.
+ - Greatly reduced respawn timers of most time-based respawnables (e.g. oreleaf, flowers).
  - Leveling up will also remove all debuffs.
  - Victory aftermath now shows if a learnable skill has become available by leveling up.
- - Changed up the preloader / title screen background.
+ - Changed the preloader / title screen background.
  - Reverted most dungeons back to the old dungeon map border style (same as the indoors style).
  - Many shops have had their stock changed. Some enemy drop pools have also been adjusted.
- - Increased all ore mining drop ranges by 1 on both bounds.
+ - Increased all ore mining drop ranges by 1 on both bounds (e.g. copper ore now drops 3-5 copper clusters instead of the old 2-4).
  - The 4-skeleton enemy troop now spawns frequently anywhere in the "Forest Arena...?" after the penultimate Laeryidyean cutscene.
   ~ Additionally, the Adonian Monsters troop has been altered. No troops with the Skeleton can be encountered anymore, effectively removing the enemy from the game.
  - Contingence also can apply Amnesia.
@@ -322,14 +322,14 @@ Changes:
  - The crafting menu now has sections for all equipment types.
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
  - Raw Meat and Salt-Grilled Meat have been changed to Raw Bear Meat and Salt-Grilled Bear Meat, respectively.
- - Many food-related items have been made renewable, thus being removed from Dalia's shop.
+ - Many food-related items have been made renewable, and as a result are no longer sold by Dalia.
  - Unknown enemy weaknesses now show a question mark icon.
  - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
  - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and dishes.
  - The night overlay now shows in battle.
  - Moved Change of Heart to the Magic skill category.
  - Presents now have a 50% drop chance on December 25th rather than the default 20%.
- - The new Speedster Boots have replaced the spot in boot progression once held by the Hermes Boots. The Hermes Boots have been moved up to be tellurium-tier equipment.
+ - The new Speedster Boots have replaced the spot in boot progression once held by the Hermes Boots. The Hermes Boots have been moved up to be crafted near the end of Telluria Field's progression.
  - Red Gel can now be used on party members in battle.
  - Sharpened battleback images.
  - Countless other small changes have been made throughout the game (not as much as Alpha 14, but still a lot of new quality-of-life stuff).
@@ -338,53 +338,59 @@ Music Update (Final Wave):
  - Redid "New Lands", "Winding Labyrinth".
  - Updated "Inevitable Confrontation".
 
-Balancing:
- - You can no longer equip more than one of the same accessory on a single party member.
- - State resistance accessories no longer remove already applied states when equipped.
- - Heavily rebalanced stat allocation.
-  ~ All AP is multiplied by x4 now, making the max AP at level 100 be 10,000 instead of the old 2,500.
-  ~ JP costs of all allocations have been greatly increased, now making JP the main limiting factor for allocation.
+Item/Equipment Balancing:
  - Heavily nerfed the recovery of the Potion, Elixir, and Ether.
   ~ Potion's HP recovery was reduced from 90 to 60, and Elixir's MP recovery was reduced from 36 to 24.
   ~ Since Ether heals ~20% more HP/MP than its Potion/Elixir counterpart, it has been nerfed accordingly.
- - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100 and +5 INT at Alpha 15's level cap of 25.
- - Revival now increases success rate instead of healing when using BP.
- - Wand Impulse and Backstab now only heavily decrease MAT/ATK (respectively) for 2 turns instead of 3.
- - Quadrupled the chance of encountering a rare enemy.
- - Buffed the drop chance of rare enemy accessories from 1/3 to 1/2.
- - Channel Divinity I and Cure II's learn levels have been swapped to now be learned at levels 8 and 11, respectively.
- - Greatly increased earned JP from all sources.
- - Skill mastery's effect is 1.5x what it was previously.
- - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
- - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
- - Greatly increased the acceleration of the EXP curve at later levels. This barely affects the game in its current state considering the low level cap, but this change will help future proof the late- and end-game.
- - Buffed the drop rate of all resistance accessories from 2% to 3.33%.
- - Buffed Double Slash's damage by 25%.
- - Nerfed Focused Slash's damage by 16.6%.
- - Nerfed The Warden's Trade-off from -10% MDR, +10% PDR to -5% MDR, +20% PDR
+ - Nerfed The Warden's Trade-off from [-10% MDR, +10% PDR] to [-5% MDR, +20% PDR].
  - Nerfed Giant Goblin's Rage's ATK increase from +20% to +10%.
- - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
+ - Nerfed the Steel Axe's stun chance by 5% (was originally 10%).
+ - Increased price of Metal Wristbraces ★ from 180B to 300B.
+ - Gave Bloodlust +2% PLS.
+ - Nerfed CRI of Red Mask from +2% to +1%.
+ - Reworked Blood-Red Headband to grant +0.5% PLS and +3 AGI rather than +4% MHP and +3% CRI. Its price has increased from 80B to 120B.
+ - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
+ - Buffed the Knight's Greaves' DEF by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
+
+Skill Balancing:
+ - Using BP with Revival now increases success rate instead of the amount of HP recovered on a successful revive.
+ - Wand Impulse and Backstab now only heavily decrease MAT/ATK (respectively) for 2 turns instead of 3.
+ - Channel Divinity I and Cure II's learn levels have been swapped to now be learned at levels 8 and 11, respectively.
+ - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%.
+  ~ These changes make Double Slash a relevant skill again, as it only hitting once will still do as much damage as Focused Slash. Focused Slash's CRI boost and lower MP cost make the choice between the skills dependant on playstyle.
  - Nerfed Purify's MP cost to 15 MP (was originally 8 MP).
  - Nerfed Curify MP cost to 30 MP (was originally 18 MP).
  - Nerfed Mana Refund's MP cost to 50 MP (was originally 15 MP).
- - Nerfed the Steel Axe's stun chance by 5% (was originally 10%).
- - Nerfed Mana Refund's return to 1% of damage dealt (was originally 5%).
+ - Nerfed Mana Refund's MP recovery to 1% of damage dealt (was originally 5%).
  - Nerfed Foresight's MP cost to 12 MP (was originally 8 MP).
- - Nerfed Inspire's effect from +12% ATK and MAT to +10% ATK and MAT.
+ - Nerfed Inspire's effect to +10% ATK and MAT (was originally +12%).
  - Nerfed Lightning II's MP cost to 30 MP (was originally 22 MP).
- - Nerfed Gust ATK multiplier from 600% to 500%.
- - Nerfed Bat's ATK from 17 to 15.
- - Increased price of Metal Wristbraces ★ from 180B to 300B.
+ - Nerfed Gust's damage by 16.6%.
  - Increased Critical Heal I's max effectiveness from +10% to +20%.
- - Gave Bloodlust +2% PLS.
- - Nerfed CRI of Red Mask from +2% to +1%.
- - Reworked Blood-Red Headband to grant +0.5% PLS and +3 AGI rather than +4% MHP and +3% CRI. Price has increased from 80B to 120B
+ - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill, except it does not debuff MDF.
+
+RNG Balancing:
+ - Quadrupled the chance of encountering a rare enemy.
+ - Buffed the drop chance of rare enemy accessories from 1/3 to 1/2.
+ - Buffed the drop rate of all resistance accessories from 2% to 3.33%.
+
+Miscellaneous Balancing:
+ - You can no longer equip more than one of the same accessory on a single party member.
+ - State resistance accessories no longer remove already applied states when equipped.
+ - Heavily rebalanced stat allocation.
+  ~ All AP gain is x4 what it was in Alpha 14, making the max AP at level 100 be 10,000 instead of the old 2,500.
+  ~ JP costs of all allocations have been greatly increased, now making JP the main limiting factor for allocation.
+ - Greatly increased earned JP from all sources.
+ - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100 and +6 INT at Alpha 15's level cap of 30.
+ - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
+ - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
+ - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
+ - Greatly increased the acceleration of the EXP curve at later levels. This barely affects the game in its current state considering the low level cap, but this change will help prevent leveling up from being too easy in the late/end-game.
+ - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
+ - Nerfed Bat's ATK from 17 to 15.
  - Greatly increased Bit drops from all Blazing Sands enemies to account for high shop prices in Telluria Castle Town.
- - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
- - Buffed the Knight's Greaves' DEF by 1 and AGI by 2 and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
- - All levels of Well Fed increase ATK and MAT by +2%, +4%, and +6% at each respective level (respectively).
- - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54].
- - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill except it does not debuff MDF.
+ - All levels of Well Fed increase ATK and MAT by +2%, +4%, and +6% at their respective levels.
+ - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
  - Many other small changes have been made to equipment/item stats, prices, and crafting recipes, as well as enemy stats/drops.
 
 Bug Fixes:
