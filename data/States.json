@@ -4282,5 +4282,35 @@
     "removeByWalking": true,
     "restriction": 0,
     "stepsToRemove": 300
+  },
+  {
+    "id": 127,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
+      }
+    ],
+    "iconIndex": 728,
+    "maxTurns": 1,
+    "message1": " will be immune from poison for a bit.",
+    "message2": "",
+    "message3": "",
+    "message4": " lost their resistance to poison.",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Antidote",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>",
+    "overlay": 0,
+    "priority": 30,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": true,
+    "restriction": 0,
+    "stepsToRemove": 300
   }
 ]
