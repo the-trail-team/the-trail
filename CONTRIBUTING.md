@@ -22,7 +22,7 @@ After the hook runs, go ahead and stage your files, enter your title and descrip
 
 const data_directory = "data"
 const file = ['package.json']
-let command = '';
+let command = ''
 const fs = require('fs')
 const { exec } = require('child_process')
 try {
@@ -54,7 +54,7 @@ try {
         for (i = 1; i < armors.length; i++) {
             if (armors[i].traits.length > 0) {
                 for (j = 0; j < armors[i].traits.length; j++) {
-                    if (armors[i].traits[j].code === 14) armors[i].traits[j].value = 2;
+                    if (armors[i].traits[j].code === 14) armors[i].traits[j].value = 2
                 }
             }
         }
