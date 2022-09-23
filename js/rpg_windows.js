@@ -4220,7 +4220,9 @@ Window_EventItem.prototype.updatePlacement = function() {
 
 Window_EventItem.prototype.includes = function(item) {
     var itypeId = $gameMessage.itemChoiceItypeId();
-    return DataManager.isItem(item) && item.itypeId === itypeId;
+    if (typeof itypeId == "string") return DataManager.isItem(item) && item.itemCategory.contains(itypeId);
+    if (typeof itypeid == "number") return DataManager.isItem(item) && item.itypeId === itypeId;
+    return false;
 };
 
 Window_EventItem.prototype.isEnabled = function(item) {

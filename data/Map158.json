@@ -16887,58 +16887,51 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "",
+                35,
+                35,
                 0,
                 0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "What would you like to plant?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "\\ii[94]",
-                  "\\ii[109]",
-                  "\\ii[235]",
-                  "\\ii[83]",
-                  "Nothing."
-                ],
-                4,
-                0,
-                2,
                 0
               ]
             },
             {
-              "code": 402,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                0,
-                "\\ii[94]"
+                "$gameMap._interpreter._params = [35, \"Seeds\"];"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameMap._interpreter.command104();"
+              ]
+            },
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "Extra line to fix bug with interpreter"
               ]
             },
             {
               "code": 111,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
-                8,
-                236
+                1,
+                35,
+                0,
+                236,
+                0
               ]
             },
             {
               "code": 126,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 236,
                 1,
@@ -16948,7 +16941,7 @@
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip3",
@@ -16960,14 +16953,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip2",
@@ -16979,14 +16972,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 122,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 61,
                 61,
@@ -16997,14 +16990,14 @@
             },
             {
               "code": 355,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Yanfly.MorphEvent(this.eventId(), 158, 71, true);"
               ]
             },
             {
               "code": 101,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "",
                 0,
@@ -17014,77 +17007,40 @@
             },
             {
               "code": 401,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Your \\ii[236] have been planted!"
               ]
             },
             {
               "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
               "indent": 1,
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You don't have any \\ii[236]."
-              ]
-            },
-            {
               "code": 0,
-              "indent": 2,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
               "indent": 0,
-              "parameters": [
-                1,
-                "\\ii[109]"
-              ]
+              "parameters": []
             },
             {
               "code": 111,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
-                8,
-                237
+                1,
+                35,
+                0,
+                237,
+                0
               ]
             },
             {
               "code": 126,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 237,
                 1,
@@ -17094,7 +17050,7 @@
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip3",
@@ -17106,14 +17062,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip2",
@@ -17125,14 +17081,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 122,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 61,
                 61,
@@ -17143,14 +17099,14 @@
             },
             {
               "code": 355,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Yanfly.MorphEvent(this.eventId(), 158, 73, true);"
               ]
             },
             {
               "code": 101,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "",
                 0,
@@ -17160,77 +17116,40 @@
             },
             {
               "code": 401,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Your \\ii[237] have been planted!"
               ]
             },
             {
               "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
               "indent": 1,
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You don't have any \\ii[237]."
-              ]
-            },
-            {
               "code": 0,
-              "indent": 2,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
               "indent": 0,
-              "parameters": [
-                2,
-                "\\ii[235]"
-              ]
+              "parameters": []
             },
             {
               "code": 111,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
-                8,
-                238
+                1,
+                35,
+                0,
+                238,
+                0
               ]
             },
             {
               "code": 126,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 238,
                 1,
@@ -17240,7 +17159,7 @@
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip3",
@@ -17252,14 +17171,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip2",
@@ -17271,14 +17190,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 122,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 61,
                 61,
@@ -17289,14 +17208,14 @@
             },
             {
               "code": 355,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Yanfly.MorphEvent(this.eventId(), 158, 75, true);"
               ]
             },
             {
               "code": 101,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "",
                 0,
@@ -17306,77 +17225,40 @@
             },
             {
               "code": 401,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Your \\ii[238] have been planted!"
               ]
             },
             {
               "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
               "indent": 1,
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You don't have any \\ii[238]."
-              ]
-            },
-            {
               "code": 0,
-              "indent": 2,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
               "indent": 0,
-              "parameters": [
-                3,
-                "\\ii[83]"
-              ]
+              "parameters": []
             },
             {
               "code": 111,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
-                8,
-                239
+                1,
+                1,
+                0,
+                239,
+                0
               ]
             },
             {
               "code": 126,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 239,
                 1,
@@ -17386,7 +17268,7 @@
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip3",
@@ -17398,14 +17280,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 250,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Equip2",
@@ -17417,14 +17299,14 @@
             },
             {
               "code": 230,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 122,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 61,
                 61,
@@ -17435,14 +17317,14 @@
             },
             {
               "code": 355,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Yanfly.MorphEvent(this.eventId(), 158, 77, true);"
               ]
             },
             {
               "code": 101,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "",
                 0,
@@ -17452,78 +17334,23 @@
             },
             {
               "code": 401,
-              "indent": 2,
+              "indent": 1,
               "parameters": [
                 "Your \\ii[239] have been planted!"
               ]
             },
             {
               "code": 115,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
               "indent": 1,
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You don't have any \\ii[239]."
-              ]
-            },
-            {
               "code": 0,
-              "indent": 2,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                4,
-                "Nothing."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
               "indent": 0,
               "parameters": []
             },
