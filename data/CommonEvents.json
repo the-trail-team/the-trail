@@ -15928,5 +15928,368 @@
     "name": "Party Heal",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 63,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          98,
+          0
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          98,
+          98,
+          1
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "The seed planting animation will now play."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          98,
+          98,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "The seed planting animation will no longer play."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Farmer's Gloves",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 64,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          58,
+          0,
+          0,
+          5
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Your seed priority is already set to:"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\ii[\\V[58]]"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "What would you like to do?"
+        ]
+      },
+      {
+        "code": 102,
+        "indent": 1,
+        "parameters": [
+          [
+            "Change the priority.",
+            "Remove the priority.",
+            "Leave it as it is."
+          ],
+          2,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          0,
+          "Change the priority."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          1,
+          "Remove the priority."
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          58,
+          58,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Your seed priority has been removed."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 1,
+        "parameters": [
+          2,
+          "Leave it as it is."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameMap._interpreter._params = [58, \"Seeds\"];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$gameMap._interpreter.command104();"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "Extra line to fix bug with interpreter"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          58,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "You have no seeds. No priority was set."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Your seed priority has been set to:"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\ii[\\V[58]]"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Use the \\ii[249] again to change"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "or remove the priority."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Seed Bag",
+    "switchId": 1,
+    "trigger": 0
   }
 ]

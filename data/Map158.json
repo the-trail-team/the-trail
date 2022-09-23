@@ -16887,10 +16887,96 @@
           },
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                58,
+                0,
+                0,
+                5
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "!$gameParty.hasItem($dataItems[$gameVariables.value(58)])"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "You have no more \\ii[\\V[58]]!"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "Obtain more, or use your \\ii[249]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "to change/remove your seed priority."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 122,
               "indent": 0,
               "parameters": [
                 35,
+                35,
+                0,
+                1,
+                58
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
                 35,
                 0,
                 0,
@@ -16899,24 +16985,34 @@
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameMap._interpreter._params = [35, \"Seeds\"];"
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameMap._interpreter.command104();"
               ]
             },
             {
               "code": 108,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Extra line to fix bug with interpreter"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 111,
@@ -16942,15 +17038,24 @@
               ]
             },
             {
-              "code": 230,
+              "code": 111,
               "indent": 1,
               "parameters": [
-                60
+                0,
+                98,
+                1
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                30
               ]
             },
             {
               "code": 250,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 {
                   "name": "Equip2",
@@ -16962,10 +17067,20 @@
             },
             {
               "code": 230,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
-                60
+                30
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 111,
@@ -17164,8 +17279,17 @@
               "parameters": []
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 1,
+              "parameters": [
+                0,
+                98,
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
               "parameters": [
                 "",
                 0,
@@ -17175,10 +17299,20 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
                 "Your \\ii[\\V[35]] have been planted!"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
