@@ -8863,11 +8863,33 @@
         "code": 111,
         "indent": 0,
         "parameters": [
-          1,
-          35,
-          0,
-          827,
-          0
+          12,
+          "[147, 156].contains($gameMap._mapId)"
+        ]
+      },
+      {
+        "code": 119,
+        "indent": 1,
+        "parameters": [
+          "Bladesville Cutscene"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap._mapId == 12"
         ]
       },
       {
@@ -9647,6 +9669,13 @@
           7,
           40,
           0
+        ]
+      },
+      {
+        "code": 118,
+        "indent": 5,
+        "parameters": [
+          "Bladesville Cutscene"
         ]
       },
       {
@@ -10623,10 +10652,9 @@
             "12:00 (Noon)",
             "17:30 (5:30 PM)",
             "21:00 (9:00 PM)",
-            "03:00 (3:00 AM)",
-            "I changed my mind."
+            "03:00 (3:00 AM)"
           ],
-          5,
+          -1,
           0,
           2,
           0
@@ -10863,41 +10891,6 @@
         "parameters": []
       },
       {
-        "code": 402,
-        "indent": 1,
-        "parameters": [
-          5,
-          "I changed my mind."
-        ]
-      },
-      {
-        "code": 101,
-        "indent": 2,
-        "parameters": [
-          "People1",
-          5,
-          0,
-          2
-        ]
-      },
-      {
-        "code": 401,
-        "indent": 2,
-        "parameters": [
-          "\\innOh, that's alright. Have a good day!"
-        ]
-      },
-      {
-        "code": 115,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
         "code": 404,
         "indent": 1,
         "parameters": []
@@ -11075,6 +11068,31 @@
           1,
           15
         ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "[147, 156].contains($gameMap._mapId)"
+        ]
+      },
+      {
+        "code": 119,
+        "indent": 1,
+        "parameters": [
+          "skiprandomize"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 111,
@@ -12322,7 +12340,25 @@
         ]
       },
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "![147, 156].contains($gameMap._mapId)"
+        ]
+      },
+      {
         "code": 222,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
         "indent": 0,
         "parameters": []
       },

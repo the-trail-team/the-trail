@@ -3213,67 +3213,17 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 117,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                43
+                0,
+                24,
+                0
               ]
             },
             {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 24,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 4,
-            "variableValid": false,
-            "variableValue": 13
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "People1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 5
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "People1",
                 5,
@@ -3283,21 +3233,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\innOh, hello there, \\N[1]! It's"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "great to see you again!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "People1",
                 5,
@@ -3307,35 +3257,34 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\innI think that you qualify for our"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "hero's discount! Half off on all"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "stays at the inn!"
               ]
             },
             {
-              "code": 122,
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
-              "parameters": [
-                35,
-                35,
-                0,
-                0,
-                827
-              ]
+              "parameters": []
             },
             {
               "code": 117,
