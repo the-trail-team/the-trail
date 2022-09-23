@@ -4312,5 +4312,40 @@
     "removeByWalking": true,
     "restriction": 0,
     "stepsToRemove": 300
+  },
+  {
+    "id": 128,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.8
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 729,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Exhaustion",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\nif ($gameVariables.value(52) == 0) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>\n\n<Help Description>\nReduces ATK and MAT by 20%. Can be removed by sleeping.\n</Help Description>",
+    "overlay": 0,
+    "priority": 5,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

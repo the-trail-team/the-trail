@@ -60,9 +60,17 @@ Game_Temp.prototype.destinationY = function() {
     return this._destinationY;
 };
 
+// The Trail game constants
+// These exist so that they're easy to change on the fly without me having to scour the entire project every time I want to change one
+// Making this game sucks sometimes
+
 Game_Temp.prototype.rareEnemy = function() {
     var rate = 25;
     return Math.floor(Math.random() * rate) < 1;
+}
+
+Game_Temp.prototype.exhaustionTime = function() {
+    return 36;
 }
 
 //-----------------------------------------------------------------------------

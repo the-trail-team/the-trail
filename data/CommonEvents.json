@@ -7511,6 +7511,45 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# The timer for the Exhausted state will tick down if necessary as well"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          52,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          52,
+          52,
+          2,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
@@ -12269,6 +12308,17 @@
         "parameters": [
           0,
           0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          52,
+          52,
+          0,
+          4,
+          "$gameTemp.exhaustionTime()"
         ]
       },
       {
