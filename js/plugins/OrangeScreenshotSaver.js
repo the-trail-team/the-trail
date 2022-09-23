@@ -55,6 +55,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 
     if (event.keyCode == 44) {
       $.saveScreenshot();
+      AudioManager.playSe({name: "Save", pan: 0, pitch: 100, volume: 100});
     }
   };
 })(OrangeScreenshotSaver);
