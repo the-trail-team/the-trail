@@ -38,12 +38,14 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 
         fs.writeFile(fileName, base64Data, 'base64', function(error){
           if (error !== undefined && error !== null) {
+            alert("An error occured while saving the screenshot.");
             console.error('An error occured while saving the screenshot', error); 
           }
         });
       });
     } catch(error) {
       if (error !== undefined && error !== null) {
+        alert("An error occured while saving the screenshot.");
         console.error('An error occured while saving the screenshot:', error);
       }
     }
