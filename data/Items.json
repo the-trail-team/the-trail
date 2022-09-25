@@ -443,19 +443,19 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A ration of food. It smells delicious, and will\nsurely taste delicious... mmm! \\c[31]+10 HP\\c[0]",
+    "description": "A ration of food. It smells delicious, and will\nsurely taste delicious... mmm! \\c[31]+5 HP\\c[0]",
     "effects": [
       {
         "code": 21,
-        "dataId": 4,
+        "dataId": 6,
         "value1": 1,
         "value2": 0
       },
       {
         "code": 11,
-        "dataId": 1,
+        "dataId": 0,
         "value1": 0,
-        "value2": 10
+        "value2": 5
       }
     ],
     "hitType": 0,
@@ -534,11 +534,11 @@
       "type": 0,
       "variance": 20
     },
-    "description": "An even tastier ration. It smells more delicious than\never, and will surely taste incredible... mmm! \\c[31]+30 HP\\c[0]",
+    "description": "An even tastier ration. It smells more delicious than\never, and will surely taste incredible... mmm! \\c[31]+15 HP\\c[0]",
     "effects": [
       {
         "code": 21,
-        "dataId": 5,
+        "dataId": 4,
         "value1": 1,
         "value2": 0
       },
@@ -546,7 +546,7 @@
         "code": 11,
         "dataId": 0,
         "value1": 0,
-        "value2": 30
+        "value2": 15
       }
     ],
     "hitType": 0,
@@ -1305,11 +1305,11 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A loaf of organic whole wheat bread. Made\nwith care and tastiness in mind. \\c[31]+12 HP\\c[0]",
+    "description": "A loaf of organic whole wheat bread. Made\nwith care and tastiness in mind. \\c[31]+6 HP\\c[0]",
     "effects": [
       {
         "code": 21,
-        "dataId": 5,
+        "dataId": 4,
         "value1": 1,
         "value2": 0
       },
@@ -1317,7 +1317,7 @@
         "code": 11,
         "dataId": 0,
         "value1": 0,
-        "value2": 12
+        "value2": 6
       }
     ],
     "hitType": 0,
@@ -3212,7 +3212,7 @@
     "effects": [
       {
         "code": 21,
-        "dataId": 5,
+        "dataId": 97,
         "value1": 1,
         "value2": 0
       },
@@ -3803,7 +3803,7 @@
     "name": "Granola",
     "note": "<Menu Category: Recovery, Materials, Foodstuffs>\n\n<Synthesis Ingredients>\nNuts: 5\nHoney: 1\nProcessed Oats: 3\n</Synthesis Ingredients>\n<Mask Name: Breakfast Food + Ingredient>\n<Synthesis SE: Equip3>",
     "occasion": 0,
-    "price": 142,
+    "price": 120,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -3855,7 +3855,7 @@
     "name": "Honey",
     "note": "<Menu Category: Materials, Foodstuffs>",
     "occasion": 3,
-    "price": 40,
+    "price": 20,
     "repeats": 1,
     "scope": 0,
     "speed": 0,
@@ -3946,7 +3946,7 @@
     "name": "Trail Mix",
     "note": "<Menu Category: Recovery, Buffs, Foodstuffs>\n<Remove State Category: weak debuff>\n<Remove State Category: debuff>\n\n<Synthesis Ingredients>\nGranola: 3\nDried Blueberries: 2\nNuts: 5\nHeedup Berry: 1\nEther: 1\nMonsterous Seasoning: 2\nEmpty Bag: 1\n</Synthesis Ingredients>\n<Mask Name: Wild Snack Mix>\n<Synthesis SE: Equip3>",
     "occasion": 0,
-    "price": 500,
+    "price": 400,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -6335,15 +6335,15 @@
     "description": "A zesty fruit that explodes into flavor upon a single bite.\nIncredible on its own, but a meal with it might be even better...",
     "effects": [
       {
-        "code": 11,
-        "dataId": 0,
-        "value1": 0.25,
-        "value2": 0
-      },
-      {
         "code": 21,
         "dataId": 97,
         "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.25,
         "value2": 0
       }
     ],
