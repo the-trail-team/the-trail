@@ -305,6 +305,12 @@ Additions:
  - Added roaming Giant Rats in the Dark Forest.
 
 Changes:
+ - Removed stat allocation.
+  ~ Stat allocation was introduced early in Alpha 14's development as a system providing a means to customize character builds. On paper, it made sense: being able to spend points in any stat you want would accomplish just that.
+  ~ This system has some problems. It clashes with the game's already-existing form of character builds: equipment types. Changing the type of weapon or armor a party member has equipped can drastically change the way they are played in battle.
+  ~ In addition, it was already becoming hard to balance Alpha 15's new content around stat allocation, and it would just have become much harder in the future. It's simply too hard to predict and develop around.
+  ~ While this is a nerf to all party members, a lot of changes have been made in this update to further tip the scales in the player's favor. Still, if the party needs further buffs to compensate, they will be made.
+  ~ INT Books and Rare Enemy Certificates don't do anything at the moment. Another use will be found for them in a future update.
  - Recapped the max level from level 20 to level 30.
  - Replaced the Mage class's 2nd magic equip slot with an offhand slot (light shields).
  - The game's icons have finally been resprited at a non-blurred 32px resolution. Many items have additionally had their icons changed to stand out a bit more.
@@ -381,9 +387,6 @@ RNG Balancing:
 Miscellaneous Balancing:
  - You can no longer equip more than one of the same accessory on a single party member.
  - State resistance accessories no longer remove already applied states when equipped.
- - Heavily rebalanced stat allocation.
-  ~ All AP gain is x4 what it was in Alpha 14, making the max AP at level 100 be 10,000 instead of the old 2,500.
-  ~ JP costs of all allocations have been greatly increased, now making JP the main limiting factor for allocation.
  - Greatly increased earned JP from all sources.
  - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100 and +6 INT at Alpha 15's level cap of 30.
  - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
@@ -412,7 +415,6 @@ Bug Fixes:
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
  - Fixed a bug where states with no overlay would override states with an overlay if they had a higher priority value.
- - Fixed a bug where AP would be shown on all character menus, when it was only meant to show on the main menu and stat allocation menu.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
  - Fixed a bug where playtime wouldn't increase correctly on non-60hz displays.
  - Fixed a bug where the crafted weapons/armor counters could be wrong.
