@@ -3528,17 +3528,24 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A peculiar book that allows an experienced\nadventurer to boost their intelligence.",
-    "effects": [],
+    "description": "A peculiar book that allows an experienced adventurer to permanently\nincrease their intelligence. A single person can only read 5 of these.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 65,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 670,
     "itypeId": 1,
     "name": "INT Book",
-    "note": "",
-    "occasion": 3,
+    "note": "<Before Eval>\n$gameTemp._actorId = target.actorId();\n</Before Eval>",
+    "occasion": 2,
     "price": 0,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

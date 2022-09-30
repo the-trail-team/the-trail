@@ -16291,5 +16291,181 @@
     "name": "Seed Bag",
     "switchId": 1,
     "trigger": 0
+  },
+  {
+    "id": 65,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "![1, 2, 3, 4].contains($gameTemp._actorId)"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "This party mebmer can't use \\ii[121]\\c[0]s."
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameActors._data[$gameTemp._actorId]._intBooks === undefined"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameActors._data[$gameTemp._actorId]._intBooks = 0;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameActors._data[$gameTemp._actorId]._intBooks < 5"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameActors._data[$gameTemp._actorId]._intBooks++;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameActors._data[$gameTemp._actorId].addParam(7, 4);"
+        ]
+      },
+      {
+        "code": 126,
+        "indent": 1,
+        "parameters": [
+          121,
+          1,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 1,
+        "parameters": [
+          {
+            "name": "Powerup",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "Increased INT by +4!"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "This party member can't use any more \\ii[121]\\c[0]s."
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "INT Book",
+    "switchId": 1,
+    "trigger": 0
   }
 ]
