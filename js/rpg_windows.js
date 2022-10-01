@@ -2640,6 +2640,97 @@ Window_Status.prototype.maxEquipmentLines = function() {
     return 6;
 };
 
+//=============================================================================
+// Window_ProficiencyCommand
+//=============================================================================
+
+function Window_ProficiencyCommand() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_ProficiencyCommand.prototype = Object.create(Window_Command.prototype);
+Window_ProficiencyCommand.prototype.constructor = Window_ProficiencyCommand;
+
+Window_ProficiencyCommand.prototype.initialize = function() {
+    Window_Command.prototype.initialize.call(this, 0, 0);
+    this._actor = null;
+};
+
+Window_ProficiencyCommand.prototype.windowWidth = function() {
+    return Yanfly.Param.StatusCmdWidth;
+};
+
+Window_ProficiencyCommand.prototype.setActor = function(actor) {
+    if (this._actor === actor) return;
+    this._actor = actor;
+    this.refresh();
+		this.select(0);
+};
+
+Window_ProficiencyCommand.prototype.numVisibleRows = function() {
+    return Yanfly.Param.StatusCmdRows;
+};
+
+Window_ProficiencyCommand.prototype.makeCommandList = function() {
+    proficiencies = SceneManager._scene._actor.proficiencies();
+	for (i = 0; i < proficiencies.length; i++) {
+        this.addCommand($gameParty.proficiencyName(proficiencies[i]), 'proficiency', true, proficiencies[i]);
+    }
+};
+
+Window_ProficiencyCommand.prototype.setInfoWindow = function(infoWindow) {
+		this._infoWindow = infoWindow;
+};
+
+Window_ProficiencyCommand.prototype.update = function() {
+    Window_Command.prototype.update.call(this);
+		if (this._infoWindow) this._infoWindow.setSymbol(this.currentSymbol());
+};
+
+Window_ProficiencyCommand.prototype.itemTextAlign = function() {
+    return Yanfly.Param.StatusCmdAlign;
+};
+
+Window_ProficiencyCommand.prototype.playOkSound = function() {
+    if (this.isPlayOkSound()) SoundManager.playOk();
+};
+
+Window_ProficiencyCommand.prototype.isPlayOkSound = function() {
+    if (this.currentSymbol() === 'cancel') return true;
+    return false;
+};
+
+//=============================================================================
+// Window_ProficiencyCommand2
+//=============================================================================
+
+function Window_ProficiencyCommand2() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_ProficiencyCommand2.prototype = Object.create(Window_ProficiencyCommand.prototype);
+Window_ProficiencyCommand2.prototype.constructor = Window_ProficiencyCommand2;
+
+Window_ProficiencyCommand2.prototype.makeCommandList = function() {
+    this.addCommand("Info", 'info', true);
+    this.addCommand("Progress", 'progress', true);
+};
+
+//=============================================================================
+// Window_ProficiencyInfo
+//=============================================================================
+
+function Window_ProficiencyInfo() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_ProficiencyInfo.prototype = Object.create(Window_Selectable.prototype);
+Window_ProficiencyInfo.prototype.constructor = Window_ProficiencyInfo;
+
+Window_ProficiencyInfo.prototype.initialize = function(x, y, width, height) {
+    Window_Selectable.prototype.initialize.call(this, x, y, width, height);
+};
+
 //-----------------------------------------------------------------------------
 // Window_Options
 //
