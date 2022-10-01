@@ -4349,6 +4349,16 @@ Game_Actor.prototype.bloodlustEquipped = function() {
     return false;
 };
 
+// Proficiencies
+Game_Actor.prototype.proficiencies = function() {
+    keys = [];
+    id = this.actorId();
+    Object.keys($dataProficiencies).forEach(function(key) {
+        if ($dataProficiencies[key].actor == id) keys.push(key);
+    });
+    return keys;
+};
+
 //-----------------------------------------------------------------------------
 // Game_Enemy
 //
@@ -4844,6 +4854,7 @@ Game_Party.prototype.initialize = function() {
     this._menuActorId = 0;
     this._targetActorId = 0;
     this._actors = [];
+    this._proficiencyLevels = {};
     this.initAllItems();
 };
 
@@ -5269,6 +5280,7 @@ Game_Party.prototype.requestMotionRefresh = function() {
     });
 };
 
+// Bloodlust test
 Game_Party.prototype.bloodlustOwned = function() {
     members = this.members();
     for (i = 0; i < members.length; i++) {
@@ -5281,6 +5293,7 @@ Game_Party.prototype.bloodlustOwned = function() {
     return false;
 };
 
+// Pickaxe tests
 Game_Party.prototype.gildedPickaxe = function() {
     if (this.hasItem($dataItems[210])) return true;
     return false;
@@ -5308,6 +5321,25 @@ Game_Party.prototype.hasPickaxe = function() {
     if (this.hasItem($dataItems[101])) return true;
     if (this.hasTelluriumPickaxe()) return true;
     return false;
+};
+
+// Proficiencies
+Game_Party.prototype.proficiencyExistCheck = function(name) {
+    if (!this._proficiencyLevels.hasOwnProperty(name)) this._proficiencyLevels[name] = 0;
+};
+
+Game_Party.prototype.proficiencyLevel = function(name) {
+    this.proficiencyExistCheck(name);
+    return this._proficiencyLevels[name];
+};
+
+Game_Party.prototype.proficiencyName = function(name) {
+    return $dataProficiencies[name].name;
+};
+
+Game_Party.prototype.proficiencyLevelUp = function(name, levels) {
+    this.proficiencyExistCheck(name);
+    this._proficiencyLevels[name] += levels;
 };
 
 //-----------------------------------------------------------------------------

@@ -1927,6 +1927,20 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Patching in proficiency system"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty._proficiencyLevels) $gameParty._proficiencyLevels = {};"
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []
