@@ -2700,6 +2700,11 @@ Window_ProficiencyCommand.prototype.isPlayOkSound = function() {
     return false;
 };
 
+Window_ProficiencyCommand.prototype.update = function() {
+    Window_Command.prototype.update.call(this);
+	if (SceneManager._scene._infoWindow) SceneManager._scene._infoWindow.refresh();
+};
+
 //=============================================================================
 // Window_ProficiencyCommand2
 //=============================================================================
@@ -2716,6 +2721,11 @@ Window_ProficiencyCommand2.prototype.makeCommandList = function() {
     this.addCommand("Progress", 'progress', true);
 };
 
+Window_ProficiencyCommand2.prototype.update = function() {
+    Window_Command.prototype.update.call(this);
+	if (SceneManager._scene._infoWindow) SceneManager._scene._infoWindow.setSymbol(this.currentSymbol());
+};
+
 //=============================================================================
 // Window_ProficiencyInfo
 //=============================================================================
@@ -2729,6 +2739,68 @@ Window_ProficiencyInfo.prototype.constructor = Window_ProficiencyInfo;
 
 Window_ProficiencyInfo.prototype.initialize = function(x, y, width, height) {
     Window_Selectable.prototype.initialize.call(this, x, y, width, height);
+};
+
+Window_ProficiencyInfo.prototype.setSymbol = function(symbol) {
+    var needRefresh = this._symbol !== symbol;
+	this._symbol = symbol;
+	if (needRefresh) this.refresh();
+};
+
+Window_ProficiencyInfo.prototype.resetFontSettings = function() {
+    if (this._bypassResetText) return;
+    Window_Base.prototype.resetFontSettings.call(this);
+};
+
+Window_ProficiencyInfo.prototype.resetTextColor = function() {
+    if (this._bypassResetTextColor) return;
+    Window_Base.prototype.resetTextColor.call(this);
+};
+
+Window_ProficiencyInfo.prototype.refresh = function() {
+    this.contents.clear();
+	this.drawInfoContents(this._symbol);
+};
+
+Window_ProficiencyInfo.prototype.drawInfoContents = function(symbol) {
+    this.resetFontSettings();
+    if (!symbol) return;
+    switch (symbol.toLowerCase()) {
+    case 'info':
+      this.drawInfo();
+      break;
+    case 'progress':
+      this.drawProgress();
+      break;
+    default:
+      break;
+    }
+};
+
+Window_ProficiencyInfo.prototype.drawInfo = function() {
+    var dx = this.standardPadding();
+    var dy = this.lineHeight() / 2;
+    var dw = (this.contents.width - this.standardPadding());
+    var dh = this.lineHeight();
+    var text = "Info";
+    this.changeTextColor(this.systemColor());
+    this.drawText(text, dx, dy, dw, 'center');
+    dy += this.lineHeight();
+    text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
+    this.drawText(text, dx, dy, dw, 'center');
+};
+
+Window_ProficiencyInfo.prototype.drawProgress = function() {
+    var dx = this.standardPadding();
+    var dy = this.lineHeight() / 2;
+    var dw = (this.contents.width - this.standardPadding());
+    var dh = this.lineHeight();
+    var text = "Progress";
+    this.changeTextColor(this.systemColor());
+    this.drawText(text, dx, dy, dw, 'center');
+    dy += this.lineHeight();
+    text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
+    this.drawText(text, dx, dy, dw, 'center');
 };
 
 //-----------------------------------------------------------------------------

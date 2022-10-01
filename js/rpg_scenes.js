@@ -1665,6 +1665,7 @@ Scene_Proficiency.prototype.progress = function() {
 };
 
 Scene_Proficiency.prototype.returnToProficiencies = function() {
+    this._commandWindow2.select(0);
     this._commandWindow2.hide();
     this._commandWindow2.deactivate();
     this._commandWindow.show();
