@@ -1,22 +1,97 @@
 {
   "mining": {
     "actor": 1,
-    "name": "Mining"
+    "name": "Mining",
+    "perks": {
+      "bonusOreChance": {
+        "name": "Bonus Ore Chance",
+        "base": 0,
+        "format": "percent"
+      },
+      "oreleafRespawnTime": {
+        "name": "Oreleaf Respawn Time",
+        "base": 1,
+        "format": "percent"
+      },
+      "nodePreservationChance": {
+        "name": "Node Preservation Chance",
+        "base": 0,
+        "format": "percent"
+      }
+    }
   },
   "farming": {
     "actor": 2,
-    "name": "Farming"
+    "name": "Farming",
+    "perks": {
+      "bonusCropChance": {
+        "name": "Bonus Crop Chance",
+        "base": 0,
+        "format": "percent"
+      },
+      "cropGrowthTime": {
+        "name": "Crop Growth Time",
+        "base": 1,
+        "format": "percent"
+      }
+    }
   },
   "cooking": {
     "actor": 3,
-    "name": "Cooking"
+    "name": "Cooking",
+    "perks": {
+      "ingredientPreservationChance": {
+        "name": "Ingredient Preservation Chance",
+        "base": 0,
+        "format": "percent"
+      },
+      "extraFoodRecovery": {
+        "name": "Extra Food Recovery",
+        "base": 0,
+        "format": "percent"
+      },
+      "extraWellFedTurns": {
+        "name": "Extra Well Fed Turns",
+        "base": 0,
+        "format": "plus"
+      }
+    }
   },
   "gathering": {
     "actor": 4,
-    "name": "Gathering"
+    "name": "Gathering",
+    "perks": {
+      "doubleGatherChance": {
+        "name": "Double Gather Chance",
+        "base": 0,
+        "format": "percent"
+      },
+      "gatherRespawnTime": {
+        "name": "Gather Respawn Time",
+        "base": 1,
+        "format": "percent"
+      },
+      "instantRespawnChance": {
+        "name": "Instant Respawn Chance",
+        "base": 0,
+        "format": "percent"
+      }
+    }
   },
   "fishing": {
     "actor": 4,
-    "name": "Fishing"
+    "name": "Fishing",
+    "perks": {
+      "baitPreservationChance": {
+        "name": "Bait Preservation Chance",
+        "base": 0,
+        "format": "percent"
+      },
+      "rodStrengthIncrease": {
+        "name": "Rod Strength Increase",
+        "base": 0,
+        "format": "plus"
+      }
+    }
   }
 }

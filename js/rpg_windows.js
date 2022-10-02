@@ -2777,17 +2777,25 @@ Window_ProficiencyInfo.prototype.drawInfoContents = function(symbol) {
     }
 };
 
+Window_ProficiencyInfo.prototype.drawDarkRect = function(dx, dy, dw, dh) {
+    var color = this.gaugeBackColor();
+    this.changePaintOpacity(false);
+    this.contents.fillRect(dx + 1, dy + 1, dw - 2, dh - 2, color);
+    this.changePaintOpacity(true);
+};
+
 Window_ProficiencyInfo.prototype.drawInfo = function() {
     var dx = this.standardPadding();
     var dy = this.lineHeight() / 2;
     var dw = (this.contents.width - this.standardPadding());
     var dh = this.lineHeight();
-    var text = "Info";
+    var text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
     this.changeTextColor(this.systemColor());
     this.drawText(text, dx, dy, dw, 'center');
     dy += this.lineHeight();
-    text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
+    text = "Info";
     this.drawText(text, dx, dy, dw, 'center');
+    this.drawPerks(dx, dy, dw, dh);
 };
 
 Window_ProficiencyInfo.prototype.drawProgress = function() {
@@ -2795,12 +2803,42 @@ Window_ProficiencyInfo.prototype.drawProgress = function() {
     var dy = this.lineHeight() / 2;
     var dw = (this.contents.width - this.standardPadding());
     var dh = this.lineHeight();
-    var text = "Progress";
+    var text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
     this.changeTextColor(this.systemColor());
     this.drawText(text, dx, dy, dw, 'center');
     dy += this.lineHeight();
-    text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
+    text = "Progress";
     this.drawText(text, dx, dy, dw, 'center');
+};
+
+Window_ProficiencyInfo.prototype.drawPerks = function() {
+    var proficiency = SceneManager._scene._commandWindow.currentExt();
+    var rect = new Rectangle();
+    rect.width = (this.contents.width - this.standardPadding()) / 2;
+    rect.y = this.lineHeight() * 3;
+    rect.height = this.lineHeight();
+    var dx = rect.x + this.textPadding();
+    var dw = rect.width - this.textPadding() * 2;
+    this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+    this.changeTextColor(this.systemColor());
+    this.drawText(TextManager.level, dx, rect.y, dw, 'left');
+    this.changeTextColor(this.normalColor());
+    text = $gameParty.proficiencyLevel(proficiency);
+    this.drawText(text, dx, rect.y, dw, 'right');
+    var perks = $gameParty.proficiencyPerksArray(proficiency);
+    for (var i = 0; i < perks.length; ++i) {
+        rect.y += this.lineHeight();
+        this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+        this.changeTextColor(this.systemColor());
+        this.drawText(perks[i][0].name, dx, rect.y, dw, 'left');
+        this.changeTextColor(this.normalColor());
+        format = perks[i][0]['format'];
+        num = $gameParty._proficiencyPerks[proficiency][perks[i][1]];
+        if (format == "percent") text = num * 100 + "%";
+        else if (format == "plus") text = "+" + num;
+        else text = num;
+        this.drawText(text, dx, rect.y, dw, 'right');
+    }
 };
 
 //-----------------------------------------------------------------------------
