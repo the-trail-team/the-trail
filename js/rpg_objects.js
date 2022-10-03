@@ -4349,16 +4349,6 @@ Game_Actor.prototype.bloodlustEquipped = function() {
     return false;
 };
 
-// Proficiencies
-Game_Actor.prototype.proficiencies = function() {
-    keys = [];
-    id = this.actorId();
-    Object.keys($dataProficiencies).forEach(function(key) {
-        if ($dataProficiencies[key].actor == id) keys.push(key);
-    });
-    return keys;
-};
-
 //-----------------------------------------------------------------------------
 // Game_Enemy
 //
@@ -4854,8 +4844,6 @@ Game_Party.prototype.initialize = function() {
     this._menuActorId = 0;
     this._targetActorId = 0;
     this._actors = [];
-    this._proficiencyLevels = {};
-    this._proficiencyPerks = {};
     this.initAllItems();
 };
 
@@ -5322,45 +5310,6 @@ Game_Party.prototype.hasPickaxe = function() {
     if (this.hasItem($dataItems[101])) return true;
     if (this.hasTelluriumPickaxe()) return true;
     return false;
-};
-
-// Proficiencies
-Game_Party.prototype.proficiencyExistCheck = function(name) {
-    if (!this._proficiencyLevels.hasOwnProperty(name)) this._proficiencyLevels[name] = 0;
-    if (!this._proficiencyPerks.hasOwnProperty(name)) {
-        this._proficiencyPerks[name] = {};
-        let perks = $gameParty.proficiencyPerks(name);
-        Object.keys(perks).forEach(function(key) {
-            $gameParty._proficiencyPerks[name][key] = perks[key].base;
-        });
-    }
-};
-
-Game_Party.prototype.proficiencyLevel = function(name) {
-    this.proficiencyExistCheck(name);
-    return this._proficiencyLevels[name];
-};
-
-Game_Party.prototype.proficiencyName = function(name) {
-    return $dataProficiencies[name].name;
-};
-
-Game_Party.prototype.proficiencyLevelUp = function(name, levels) {
-    this.proficiencyExistCheck(name);
-    this._proficiencyLevels[name] += levels;
-};
-
-Game_Party.prototype.proficiencyPerks = function(name) {
-    return $dataProficiencies[name].perks;
-};
-
-Game_Party.prototype.proficiencyPerksArray = function(name) {
-    let perks = $gameParty.proficiencyPerks(name);
-    let array = [];
-    Object.keys(perks).forEach(function(key) {
-        array.push([perks[key], key]);
-    });
-    return array;
 };
 
 //-----------------------------------------------------------------------------
