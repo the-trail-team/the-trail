@@ -354,8 +354,6 @@ Scene_Proficiency.prototype.createCommandWindow = function() {
 Scene_Proficiency.prototype.setCommandWindowHandlers = function() {
     this._commandWindow.setHandler('proficiency', this.proficiency.bind(this));
     this._commandWindow.setHandler('cancel', this.popScene.bind(this));
-    this._commandWindow.setHandler('pagedown', this.nextActor.bind(this));
-    this._commandWindow.setHandler('pageup', this.previousActor.bind(this));
 };
 
 Scene_Proficiency.prototype.createCommandWindow2 = function() {
