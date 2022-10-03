@@ -2,7 +2,7 @@
   {
     "type": "Text",
     "Value": "🕰️ ${$gameVariables.value(36)}",
-    "Condition": "$gameSwitches.value(25)==true&&$gameSwitches.value(72)==true",
+    "Condition": "$gameSwitches.value(25)&&$gameSwitches.value(72)",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "150",
