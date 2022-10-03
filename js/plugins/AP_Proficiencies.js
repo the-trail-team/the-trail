@@ -242,7 +242,9 @@ Window_ProficiencyInfo.prototype.drawLevels = function(symbol) {
 };
 
 Window_ProficiencyInfo.prototype.drawLevelPerks = function(symbol) {
-    var proficiency = $dataProficiencies[SceneManager._scene._commandWindow.currentExt()[1]];
+    var ext = SceneManager._scene._commandWindow.currentExt();
+    var proficiency = ext[0];
+    var internal = ext[1];
     switch (symbol) {
         case 'levels1':
             max = 10;
@@ -268,7 +270,8 @@ Window_ProficiencyInfo.prototype.drawLevelPerks = function(symbol) {
         this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
         this.changeTextColor(this.systemColor());
         this.drawText("Level " + [i], dx, rect.y, dw, 'left');
-        this.changeTextColor(this.normalColor());
+        this.resetTextColor();
+        this.changePaintOpacity($gameParty.proficiencyLevel(internal) >= i);
         if (proficiency.levels[i]) {
             perk = proficiency.levels[i][0];
             num = proficiency.levels[i][1];
@@ -284,6 +287,7 @@ Window_ProficiencyInfo.prototype.drawLevelPerks = function(symbol) {
         this.drawText(text, dx, rect.y, dw, 'right');
         rect.y += this.lineHeight();
     }
+    this.changePaintOpacity(true);
 };
 
 Window_ProficiencyInfo.prototype.drawPerks = function() {
