@@ -41,6 +41,7 @@ Game_Party.prototype.proficiencyName = function(name) {
 Game_Party.prototype.proficiencyLevelUp = function(name, levels) {
     this.proficiencyExistCheck(name);
     this._proficiencyLevels[name] += levels;
+    this.calculatePerkEffects(name);
 };
 
 Game_Party.prototype.proficiencyPerks = function(name) {
@@ -54,6 +55,18 @@ Game_Party.prototype.proficiencyPerksArray = function(name) {
         array.push([perks[key], key]);
     });
     return array;
+};
+
+Game_Party.prototype.calculatePerkEffects = function(name) {
+    this.proficiencyExistCheck(name);
+    perks = this._proficiencyPerks[name];
+    Object.keys(perks).forEach(function(key) {
+        perks[key] = $dataProficiencies[name].perks[key].base;
+        for (i = 1; i <= $gameParty.proficiencyLevel(name); i++) {
+            level = $dataProficiencies[name].levels[i];
+            if (level[0] == key) perks[key] += level[1];
+        }
+    });
 };
 
 //=============================================================================
