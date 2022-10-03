@@ -53,32 +53,13 @@ v1.00 - First release (Nov, 18, 2015)
  @param Scenes To Draw
  @desc The Scenes where icons should appear in command windows.
  Separate them with a single space.
- @default Scene_Menu Scene_Battle Scene_Title
+ @default ["Scene_Menu", "Scene_Battle", "Scene_Title"]
+ @type string[]
 
- @param Command Icons Batch 1
- @desc First batch of commands and icons. Follow the example:
- Command Name:Icon, Command Name:Icon, Command Name:Icon
-
- @param Command Icons Batch 2
- @desc Second batch of commands and icons. Follow the example:
- Command Name:Icon, Command Name:Icon, Command Name:Icon
-
- @param Command Icons Batch 3
- @desc Third batch of commands and icons. Follow the example:
- Command Name:Icon, Command Name:Icon, Command Name:Icon
-
- @param Command Icons Batch 4
- @desc Forth batch of commands and icons. Follow the example:
- Command Name:Icon, Command Name:Icon, Command Name:Icon
-
- @param Command Icons Batch 5
- @desc Fifth batch of commands and icons. Follow the example:
- Command Name:Icon, Command Name:Icon, Command Name:Icon
-
- @param Command Icons Batch 6
- @desc Sixth batch of commands and icons. Follow the example:
- Command Name:Icon, Command Name:Icon, Command Name:Icon
-
+ @param Command Icons
+ @desc Format - Name:Icon
+ @type string[]
+ 
  @param === WEAPON ICONS ===
 
  @param Draw Weapon Icon
@@ -101,24 +82,12 @@ var parameters = $plugins.filter(function(p) {
         return p.description.contains('<ARP_ComIcons>');
     })[0].parameters;
 
-var scenesToDraw 	= String(parameters['Scenes To Draw'] || 'Scene_Menu Scene_Battle Scene_Title').split(' ');
-	for(var i = 0; i < scenesToDraw.length; i++){ scenesToDraw[i] = eval(scenesToDraw[i]);}
+var scenesToDraw 	= JSON.parse(parameters['Scenes To Draw']);
+for(var i = 0; i < scenesToDraw.length; i++){ scenesToDraw[i] = eval(scenesToDraw[i]);}
 var drawWeaponIcon 	= String(parameters['Draw Weapon Icon'] 	|| true);
 var barehandIcon	= Number(parameters['Barehanded Icon'] 		|| 106);
 var weaponIconOffset = Number(parameters['Weapon Unique Icons']	|| 0);
-var commandIcon1 = String(parameters['Command Icons Batch 1'] || '').split(',');
-var commandIcon2 = String(parameters['Command Icons Batch 2'] || '').split(',');
-var commandIcon3 = String(parameters['Command Icons Batch 3'] || '').split(',');
-var commandIcon4 = String(parameters['Command Icons Batch 4'] || '').split(',');
-var commandIcon5 = String(parameters['Command Icons Batch 5'] || '').split(',');
-var commandIcon6 = String(parameters['Command Icons Batch 6'] || '').split(',');
-var commandIconPrep = [];
-if(commandIcon1[0] !== ''){commandIconPrep = commandIconPrep.concat(commandIcon1);}
-if(commandIcon2[0] !== ''){commandIconPrep = commandIconPrep.concat(commandIcon2);}
-if(commandIcon3[0] !== ''){commandIconPrep = commandIconPrep.concat(commandIcon3);}
-if(commandIcon4[0] !== ''){commandIconPrep = commandIconPrep.concat(commandIcon4);}
-if(commandIcon5[0] !== ''){commandIconPrep = commandIconPrep.concat(commandIcon5);}
-if(commandIcon6[0] !== ''){commandIconPrep = commandIconPrep.concat(commandIcon6);}
+var commandIconPrep = JSON.parse(parameters['Command Icons']);
 var commandIcon = {};
 for(i = 0; i < commandIconPrep.length; i++){
 	if (['',' '].indexOf(commandIconPrep[i]) < 0) {
