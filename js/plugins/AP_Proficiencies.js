@@ -291,7 +291,7 @@ Window_ProficiencyInfo.prototype.drawLevelPerks = function(symbol) {
             perkName = proficiency.perks[perk].name;
             format = proficiency.perks[perk].format;
             text = perkName + ": "
-            if (format == "percent") text += num * 100 + "%";
+            if (format == "percent") text += (num > 0 ? "+" : "") + num * 100 + "%";
             else if (format == "plus") text += "+" + num;
             else text = num;
         } else {
