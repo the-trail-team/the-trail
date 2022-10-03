@@ -20,6 +20,15 @@ Game_Party.prototype.proficiencyExistCheck = function(name) {
     }
 };
 
+Game_Party.prototype.proficiencyArray = function() {
+    let proficiencies = $dataProficiencies;
+    let array = [];
+    Object.keys(proficiencies).forEach(function(key) {
+        array.push([proficiencies[key], key]);
+    });
+    return array;
+};
+
 Game_Party.prototype.proficiencyLevel = function(name) {
     this.proficiencyExistCheck(name);
     return this._proficiencyLevels[name];
@@ -48,19 +57,6 @@ Game_Party.prototype.proficiencyPerksArray = function(name) {
 };
 
 //=============================================================================
-// Game_Actor
-//=============================================================================
-
-Game_Actor.prototype.proficiencies = function() {
-    keys = [];
-    id = this.actorId();
-    Object.keys($dataProficiencies).forEach(function(key) {
-        if ($dataProficiencies[key].actor == id) keys.push(key);
-    });
-    return keys;
-};
-
-//=============================================================================
 // Window_ProficiencyCommand
 //=============================================================================
 
@@ -73,42 +69,46 @@ Window_ProficiencyCommand.prototype.constructor = Window_ProficiencyCommand;
 
 Window_ProficiencyCommand.prototype.initialize = function() {
     Window_Command.prototype.initialize.call(this, 0, 0);
-    this._actor = null;
 };
 
 Window_ProficiencyCommand.prototype.windowWidth = function() {
-    return Yanfly.Param.StatusCmdWidth;
-};
-
-Window_ProficiencyCommand.prototype.setActor = function(actor) {
-    if (this._actor === actor) return;
-    this._actor = actor;
-    this.refresh();
-		this.select(0);
+    return Graphics.boxWidth;
 };
 
 Window_ProficiencyCommand.prototype.numVisibleRows = function() {
-    return Yanfly.Param.StatusCmdRows;
+    return Math.max(Math.floor($gameParty.proficiencyArray().length / 5), 1);
+};
+
+Window_ProficiencyCommand.prototype.maxCols = function() {
+    return 5;
 };
 
 Window_ProficiencyCommand.prototype.makeCommandList = function() {
-    proficiencies = SceneManager._scene._actor.proficiencies();
-	for (i = 0; i < proficiencies.length; i++) {
-        this.addCommand($gameParty.proficiencyName(proficiencies[i]), 'proficiency', true, proficiencies[i]);
+    let array = $gameParty.proficiencyArray().sort((a, b) => {
+        if (a[0].name < b[0].name) {
+            return -1;
+        }
+        if (a[0].name > b[0].name) {
+            return 1;
+        }
+        return 0;
+    });
+	for (i = 0; i < array.length; i++) {
+        this.addCommand(array[i][0].name, 'proficiency', true, array[i]);
     }
 };
 
 Window_ProficiencyCommand.prototype.setInfoWindow = function(infoWindow) {
-		this._infoWindow = infoWindow;
+	this._infoWindow = infoWindow;
 };
 
 Window_ProficiencyCommand.prototype.update = function() {
     Window_Command.prototype.update.call(this);
-		if (this._infoWindow) this._infoWindow.setSymbol(this.currentSymbol());
+	if (this._infoWindow) this._infoWindow.setSymbol(this.currentSymbol());
 };
 
 Window_ProficiencyCommand.prototype.itemTextAlign = function() {
-    return Yanfly.Param.StatusCmdAlign;
+    return 'center';
 };
 
 Window_ProficiencyCommand.prototype.playOkSound = function() {
@@ -209,7 +209,7 @@ Window_ProficiencyInfo.prototype.drawInfo = function() {
     var dy = this.lineHeight() / 2;
     var dw = (this.contents.width - this.standardPadding());
     var dh = this.lineHeight();
-    var text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
+    var text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt()[1]);
     this.changeTextColor(this.systemColor());
     this.drawText(text, dx, dy, dw, 'center');
     dy += this.lineHeight();
@@ -223,7 +223,7 @@ Window_ProficiencyInfo.prototype.drawProgress = function() {
     var dy = this.lineHeight() / 2;
     var dw = (this.contents.width - this.standardPadding());
     var dh = this.lineHeight();
-    var text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt());
+    var text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt()[1]);
     this.changeTextColor(this.systemColor());
     this.drawText(text, dx, dy, dw, 'center');
     dy += this.lineHeight();
@@ -232,7 +232,7 @@ Window_ProficiencyInfo.prototype.drawProgress = function() {
 };
 
 Window_ProficiencyInfo.prototype.drawPerks = function() {
-    var proficiency = SceneManager._scene._commandWindow.currentExt();
+    var proficiency = SceneManager._scene._commandWindow.currentExt()[1];
     var rect = new Rectangle();
     rect.width = (this.contents.width - this.standardPadding()) / 2;
     rect.y = this.lineHeight() * 3;
@@ -280,9 +280,7 @@ Scene_Proficiency.prototype.create = function() {
     Scene_MenuBase.prototype.create.call(this);
     this.createCommandWindow();
     this.createCommandWindow2();
-    this.createStatusWindow();
     this.createInfoWindow();
-    this.refreshActor();
     this._commandWindow.activate();
 };
 
@@ -315,15 +313,6 @@ Scene_Proficiency.prototype.setCommandWindow2Handlers = function() {
     this._commandWindow2.setHandler('info', this.info.bind(this));
     this._commandWindow2.setHandler('progress', this.progress.bind(this));
     this._commandWindow2.setHandler('cancel', this.returnToProficiencies.bind(this));
-};
-
-Scene_Proficiency.prototype.createStatusWindow = function() {
-    var wx = this._commandWindow.width;
-    var wy = 0;
-    var ww = Graphics.boxWidth - wx;
-    var wh = this._commandWindow.height;
-    this._statusWindow = new Window_SkillStatus(wx, wy, ww, wh);
-    this.addWindow(this._statusWindow);
 };
 
 Scene_Proficiency.prototype.createInfoWindow = function() {
@@ -359,18 +348,16 @@ Scene_Proficiency.prototype.returnToProficiencies = function() {
     this._commandWindow.activate();
 };
 
-Scene_Proficiency.prototype.start = function() {
-    Scene_MenuBase.prototype.start.call(this);
-    this.refreshActor();
+//=============================================================================
+// Scene_Menu
+//=============================================================================
+
+let __= Scene_Menu.prototype.createCommandWindow;
+Scene_Menu.prototype.createCommandWindow = function() {
+    __.call(this);
+    this._commandWindow.setHandler('proficiency', this.commandProficiency.bind(this));
 };
 
-Scene_Proficiency.prototype.refreshActor = function() {
-    var actor = this.actor();
-    this._commandWindow.refresh();
-    this._statusWindow.setActor(actor);
-};
-
-Scene_Proficiency.prototype.onActorChange = function() {
-    this.refreshActor();
-    this._commandWindow.activate();
+Scene_Menu.prototype.commandProficiency = function() {
+    SceneManager.push(Scene_Proficiency);
 };
