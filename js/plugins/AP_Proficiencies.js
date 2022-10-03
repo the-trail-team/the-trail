@@ -138,7 +138,10 @@ Window_ProficiencyCommand2.prototype.constructor = Window_ProficiencyCommand2;
 
 Window_ProficiencyCommand2.prototype.makeCommandList = function() {
     this.addCommand("Info", 'info', true);
-    this.addCommand("Progress", 'progress', true);
+    this.addCommand("Levels 1-10", 'levels1', true);
+    this.addCommand("Levels 11-20", 'levels2', true);
+    this.addCommand("Levels 21-30", 'levels3', true);
+    this.addCommand("Levels 31-40", 'levels4', true);
 };
 
 Window_ProficiencyCommand2.prototype.update = function() {
@@ -186,14 +189,17 @@ Window_ProficiencyInfo.prototype.drawInfoContents = function(symbol) {
     this.resetFontSettings();
     if (!symbol) return;
     switch (symbol.toLowerCase()) {
-    case 'info':
-      this.drawInfo();
-      break;
-    case 'progress':
-      this.drawProgress();
-      break;
-    default:
-      break;
+        case 'info':
+            this.drawInfo();
+            break;
+        case 'levels1':
+        case 'levels2':
+        case 'levels3':
+        case 'levels4':
+            this.drawLevels(symbol);
+            break;
+        default:
+            break;
     }
 };
 
@@ -215,10 +221,10 @@ Window_ProficiencyInfo.prototype.drawInfo = function() {
     dy += this.lineHeight();
     text = "Info";
     this.drawText(text, dx, dy, dw, 'center');
-    this.drawPerks(dx, dy, dw, dh);
+    this.drawPerks(dx);
 };
 
-Window_ProficiencyInfo.prototype.drawProgress = function() {
+Window_ProficiencyInfo.prototype.drawLevels = function(symbol) {
     var dx = this.standardPadding();
     var dy = this.lineHeight() / 2;
     var dw = (this.contents.width - this.standardPadding());
@@ -227,8 +233,57 @@ Window_ProficiencyInfo.prototype.drawProgress = function() {
     this.changeTextColor(this.systemColor());
     this.drawText(text, dx, dy, dw, 'center');
     dy += this.lineHeight();
-    text = "Progress";
+    text = "Levels 1-10";
+    if (symbol == 'levels2') text = "Levels 11-20";
+    if (symbol == 'levels3') text = "Levels 21-30";
+    if (symbol == 'levels4') text = "Levels 31-40";
     this.drawText(text, dx, dy, dw, 'center');
+    this.drawLevelPerks(symbol);
+};
+
+Window_ProficiencyInfo.prototype.drawLevelPerks = function(symbol) {
+    var proficiency = $dataProficiencies[SceneManager._scene._commandWindow.currentExt()[1]];
+    switch (symbol) {
+        case 'levels1':
+            max = 10;
+            break;
+        case 'levels2':
+            max = 20;
+            break;
+        case 'levels3':
+            max = 30;
+            break;
+        default:
+            max = 40;
+            break;
+    }
+    min = max - 9;
+    var rect = new Rectangle();
+    rect.width = (this.contents.width - this.standardPadding());
+    rect.y = this.lineHeight() * 3;
+    rect.height = this.lineHeight();
+    var dx = rect.x + this.textPadding();
+    var dw = rect.width - this.textPadding() * 2;
+    for (i = min; i <= max; i++) {
+        this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+        this.changeTextColor(this.systemColor());
+        this.drawText("Level " + [i], dx, rect.y, dw, 'left');
+        this.changeTextColor(this.normalColor());
+        if (proficiency.levels[i]) {
+            perk = proficiency.levels[i][0];
+            num = proficiency.levels[i][1];
+            perkName = proficiency.perks[perk].name;
+            format = proficiency.perks[perk].format;
+            text = perkName + ": "
+            if (format == "percent") text += num * 100 + "%";
+            else if (format == "plus") text += "+" + num;
+            else text = num;
+        } else {
+            text = "Undefined";
+        }
+        this.drawText(text, dx, rect.y, dw, 'right');
+        rect.y += this.lineHeight();
+    }
 };
 
 Window_ProficiencyInfo.prototype.drawPerks = function() {
@@ -311,7 +366,10 @@ Scene_Proficiency.prototype.createCommandWindow2 = function() {
 
 Scene_Proficiency.prototype.setCommandWindow2Handlers = function() {
     this._commandWindow2.setHandler('info', this.info.bind(this));
-    this._commandWindow2.setHandler('progress', this.progress.bind(this));
+    this._commandWindow2.setHandler('levels1', this.levels.bind(this));
+    this._commandWindow2.setHandler('levels2', this.levels.bind(this));
+    this._commandWindow2.setHandler('levels3', this.levels.bind(this));
+    this._commandWindow2.setHandler('levels4', this.levels.bind(this));
     this._commandWindow2.setHandler('cancel', this.returnToProficiencies.bind(this));
 };
 
@@ -336,7 +394,7 @@ Scene_Proficiency.prototype.info = function() {
     this._commandWindow2.activate();
 };
 
-Scene_Proficiency.prototype.progress = function() {
+Scene_Proficiency.prototype.levels = function() {
     this._commandWindow2.activate();
 };
 
