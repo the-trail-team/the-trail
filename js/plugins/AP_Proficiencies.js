@@ -44,6 +44,12 @@ Game_Party.prototype.proficiencyLevelUp = function(name, levels) {
     this.calculatePerkEffects(name);
 };
 
+Game_Party.prototype.proficiencyLevelSet = function(name, level) {
+    this.proficiencyExistCheck(name);
+    this._proficiencyLevels[name] = level;
+    this.calculatePerkEffects(name);
+};
+
 Game_Party.prototype.proficiencyPerks = function(name) {
     return $dataProficiencies[name].perks;
 };
