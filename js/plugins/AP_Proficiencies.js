@@ -64,7 +64,7 @@ Game_Party.prototype.calculatePerkEffects = function(name) {
         perks[key] = $dataProficiencies[name].perks[key].base;
         for (i = 1; i <= $gameParty.proficiencyLevel(name); i++) {
             level = $dataProficiencies[name].levels[i];
-            if (level[0] == key) perks[key] += level[1];
+            if (level) if (level[0] == key) perks[key] += level[1];
         }
     });
 };
