@@ -1948,6 +1948,20 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Other missing $gameSystem initializations"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameSystem._rareEnemyTries) $gameSystem._rareEnemyTries = 0;"
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []

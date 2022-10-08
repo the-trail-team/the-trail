@@ -60,19 +60,6 @@ Game_Temp.prototype.destinationY = function() {
     return this._destinationY;
 };
 
-// The Trail game constants
-// These exist so that they're easy to change on the fly without me having to scour the entire project every time I want to change one
-// Making this game sucks sometimes
-
-Game_Temp.prototype.rareEnemy = function() {
-    var rate = 25;
-    return Math.floor(Math.random() * rate) < 1;
-}
-
-Game_Temp.prototype.exhaustionTime = function() {
-    return 36;
-}
-
 //-----------------------------------------------------------------------------
 // Game_System
 //
@@ -101,6 +88,7 @@ Game_System.prototype.initialize = function() {
     this._defeatMe = null;
     this._savedBgm = null;
     this._walkingBgm = null;
+    this._rareEnemyEncounters = 0;
 };
 
 Game_System.prototype.isJapanese = function() {
@@ -286,6 +274,41 @@ Game_System.prototype.replayWalkingBgm = function() {
 
 Game_System.prototype.saveWalkingBgm2 = function() {
 	this._walkingBgm = $dataMap.bgm;
+};
+
+// Rare enemies
+
+Game_System.prototype.rareEnemyBase = function() {
+    return 25;
+};
+
+Game_System.prototype.rareEnemyModifier = function() {
+    let total = this._rareEnemyTries / this.rareEnemyBase(); // 2.4
+    let rng = Math.floor(total); // 2
+    let rollover = total - rng; // 0.4
+    let modifier = 1;
+    for (i = 0; i < rng; i++) modifier += modifier; // 4
+    modifier += rollover * modifier; // 5.4
+    return Math.min(modifier, this.rareEnemyBase());
+};
+
+Game_System.prototype.rareEnemyChance = function() {
+    let denominator = this.rareEnemyBase() / this.rareEnemyModifier();
+    return 1 / denominator;
+};
+
+Game_System.prototype.rareEnemyRoll = function() {
+    let chance = 1 / this.rareEnemyChance();
+    let roll = Math.random() * chance < 1;
+    this._rareEnemyTries++;
+    if (roll) this._rareEnemyTries = 0;
+    return roll;
+};
+
+// Constants
+
+Game_System.prototype.exhaustionTime = function() {
+    return 36;
 };
 
 //-----------------------------------------------------------------------------
