@@ -283,12 +283,12 @@ Game_System.prototype.rareEnemyBase = function() {
 };
 
 Game_System.prototype.rareEnemyModifier = function() {
-    let total = this._rareEnemyTries / this.rareEnemyBase(); // 2.4
-    let rng = Math.floor(total); // 2
-    let rollover = total - rng; // 0.4
+    let total = this._rareEnemyTries / this.rareEnemyBase(); 
+    let rng = Math.floor(total);
+    let rollover = total - rng;
     let modifier = 1;
-    for (i = 0; i < rng; i++) modifier += modifier; // 4
-    modifier += rollover * modifier; // 5.4
+    for (i = 0; i < rng; i++) modifier += modifier;
+    modifier += rollover * modifier;
     return Math.min(modifier, this.rareEnemyBase());
 };
 
