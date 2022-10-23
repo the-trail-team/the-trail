@@ -3478,11 +3478,11 @@
     3136,
     0,
     3145,
-    3137,
-    3137,
     3149,
     0,
     3147,
+    3137,
+    3137,
     3143,
     0,
     0,
@@ -5328,9 +5328,9 @@
     0,
     0,
     0,
-    0,
-    0,
     7,
+    0,
+    0,
     0,
     0,
     0,
@@ -5371,10 +5371,10 @@
     0,
     0,
     35,
+    0,
     32,
     32,
-    0,
-    0,
+    35,
     0,
     0,
     0,
@@ -5414,9 +5414,9 @@
     0,
     0,
     0,
-    0,
-    0,
     76,
+    0,
+    0,
     0,
     0,
     0,
@@ -7306,9 +7306,9 @@
     0,
     0,
     0,
-    0,
-    0,
     68,
+    0,
+    0,
     0,
     0,
     0,
@@ -16338,105 +16338,12 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Door1",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 4
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "NOTICE"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Pub closed for maintenance."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Will be re-opened soon."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
             "switch1Id": 2,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 2,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 13
           },
           "directionFix": false,
@@ -16468,6 +16375,73 @@
           "trigger": 1,
           "walkAnime": false,
           "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                2,
+                0,
+                13,
+                4
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "NOTICE"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Pub closed for maintenance."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "Will be re-opened soon."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
             {
               "code": 111,
               "indent": 0,
@@ -16722,12 +16696,40 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                39,
+                0
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
+              "parameters": [
+                37,
+                37,
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 201,
               "indent": 0,
               "parameters": [
                 0,
                 76,
-                20,
+                6,
                 17,
                 0,
                 0
@@ -16741,7 +16743,7 @@
           ]
         }
       ],
-      "x": 9,
+      "x": 7,
       "y": 34
     },
     {

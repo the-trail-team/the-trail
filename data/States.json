@@ -580,7 +580,7 @@
       {
         "code": 21,
         "dataId": 0,
-        "value": 1.15
+        "value": 1.25
       }
     ],
     "iconIndex": 645,
@@ -592,7 +592,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Vital Cola",
-    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MHP by 15%.\n</Help Description>\n\n<Custom Apply Effect>\nvar mhpBoost = 1.15;\nvar x1 = user.hp;\nvar x2;\nvar y1;\nvar y2 = user.mhp;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mhpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainHp(deltaX);\n\n/*console.log(x1);\nconsole.log(x2);\nconsole.log(y1);\nconsole.log(y2);\nconsole.log(a);\nconsole.log(deltaX);\nconsole.log(x1/y1);\nconsole.log(x2/y2);*/\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.hp !== user.mhp) {\n\nvar mhpBoost = 1.15;\nvar x1;\nvar x2 = user.hp;\nvar y1 = user.mhp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mhpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainHp(-deltaX);\n\n/*console.log(x1);\nconsole.log(x2);\nconsole.log(y1);\nconsole.log(y2);\nconsole.log(a);\nconsole.log(deltaX);\nconsole.log(x1/y1);\nconsole.log(x2/y2);*/\n\n}\n</Custom Remove Effect>",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MHP by 25%.\n</Help Description>\n\n<Custom Apply Effect>\nvar boost = 1.25;\nvar stat = user.hp;\nvar gain = Math.round(stat * (boost - 1)) + 1;\nuser.gainHp(gain);\n</Custom Apply Effect>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -610,7 +610,7 @@
       {
         "code": 21,
         "dataId": 1,
-        "value": 1.15
+        "value": 1.25
       }
     ],
     "iconIndex": 646,
@@ -622,7 +622,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Mana Fizz",
-    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MMP by 15%.\n</Help Description>\n\n<Custom Apply Effect>\nvar mmpBoost = 1.15;\nvar x1 = user.mp;\nvar x2;\nvar y1;\nvar y2 = user.mmp;\nvar a = user._paramAllocationTimes[user._actorId][1] * 3;\nvar deltaX;\n\ny1 = Math.round(((y2 - a) / mmpBoost) + a);\nx2 = Math.round((((x1 + a) * (y2 + a))/(y1 + a)) - a);\ndeltaX = x2 - x1;\nif ((x1 / y1) > (x2 / y2)) deltaX++;\n\nuser.gainMp(deltaX);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nif (user.mp !== user.mmp) {\n\nvar mmpBoost = 1.15;\nvar x1;\nvar x2 = user.mp;\nvar y1 = user.mmp;\nvar y2;\nvar a = user._paramAllocationTimes[user._actorId][0] * 5;\nvar deltaX;\n\ny2 = Math.round(((y1 - a) * mmpBoost) + a);\nx1 = Math.round((((x2 + a) * (y1 + a))/(y2 + a)) - a);\ndeltaX = x2 - x1;\n\nif ((x1 / y1) > (x2 / y2)) deltaX--;\n\nuser.gainMp(-deltaX);\n\n}\n</Custom Remove Effect>",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MMP by 25%.\n</Help Description>\n\n<Custom Apply Effect>\nvar boost = 1.25;\nvar stat = user.mp;\nvar gain = Math.round(stat * (boost - 1)) + 1;\nuser.gainMp(gain);\n</Custom Apply Effect>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -640,7 +640,7 @@
       {
         "code": 21,
         "dataId": 3,
-        "value": 1.15
+        "value": 1.25
       }
     ],
     "iconIndex": 647,
@@ -652,7 +652,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Rocky Sip",
-    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts DEF by 15%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts DEF by 25%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -670,7 +670,7 @@
       {
         "code": 21,
         "dataId": 4,
-        "value": 1.15
+        "value": 1.25
       }
     ],
     "iconIndex": 648,
@@ -682,7 +682,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Arcanic Chug",
-    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MAT by 15%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MAT by 25%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -1314,7 +1314,7 @@
       {
         "code": 21,
         "dataId": 2,
-        "value": 1.15
+        "value": 1.25
       }
     ],
     "iconIndex": 649,
@@ -1326,7 +1326,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Brawl Brew",
-    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts ATK by 15%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts ATK by 25%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -1344,7 +1344,7 @@
       {
         "code": 21,
         "dataId": 5,
-        "value": 1.15
+        "value": 1.25
       }
     ],
     "iconIndex": 650,
@@ -1356,7 +1356,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Warding Swig",
-    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MDF by 15%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Category: Bypass Death Removal>\n\n<Help Description>\nBoosts MDF by 25%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
