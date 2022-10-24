@@ -1757,13 +1757,18 @@
   {
     "id": 54,
     "animationId": 122,
-    "description": "A metal-lined book filled with illegible writing.\nTrades some MAT for a massive boost to MMP.",
+    "description": "A metal-lined book filled with illegible writing. Trades some MAT for a\nmassive amount of MMP. Increases MMP by +10% after all other calculations.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 21,
+        "dataId": 1,
+        "value": 1.1
       }
     ],
     "iconIndex": 707,
