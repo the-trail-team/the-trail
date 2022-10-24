@@ -2574,7 +2574,10 @@ Game_BattlerBase.prototype.attackTimesAdd = function() {
 };
 
 Game_BattlerBase.prototype.addedSkillTypes = function() {
-    return this.traitsSet(Game_BattlerBase.TRAIT_STYPE_ADD);
+    let types = $gameSystem.skillTypes;
+    let array = [];
+    for (i = 1; i < types.length; i++) array[i-1] = i;
+    return array;
 };
 
 Game_BattlerBase.prototype.isSkillTypeSealed = function(stypeId) {
@@ -2598,11 +2601,11 @@ Game_BattlerBase.prototype.isSkillSealed = function(skillId) {
 };
 
 Game_BattlerBase.prototype.isEquipWtypeOk = function(wtypeId) {
-    return this.traitsSet(Game_BattlerBase.TRAIT_EQUIP_WTYPE).contains(wtypeId);
+    return true;
 };
 
 Game_BattlerBase.prototype.isEquipAtypeOk = function(atypeId) {
-    return this.traitsSet(Game_BattlerBase.TRAIT_EQUIP_ATYPE).contains(atypeId);
+    return true;
 };
 
 Game_BattlerBase.prototype.isEquipTypeLocked = function(etypeId) {
