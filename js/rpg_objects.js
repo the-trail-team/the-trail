@@ -2574,7 +2574,7 @@ Game_BattlerBase.prototype.attackTimesAdd = function() {
 };
 
 Game_BattlerBase.prototype.addedSkillTypes = function() {
-    let types = $gameSystem.skillTypes;
+    let types = $dataSystem.skillTypes;
     let array = [];
     for (i = 1; i < types.length; i++) array[i-1] = i;
     return array;
