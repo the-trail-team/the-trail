@@ -2475,11 +2475,6 @@
         "value": 0.5
       },
       {
-        "code": 23,
-        "dataId": 6,
-        "value": 0.5
-      },
-      {
         "code": 14,
         "dataId": 34,
         "value": 1
@@ -2497,7 +2492,7 @@
     ],
     "gold": 45,
     "name": "Lost Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30% +++ HP% param <= 50%: Cure II, Lowest HP%\nRandom 60% +++ State !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nJade Charm: 2%\nDark Essence: 20%\nMalicious Essence: 10%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Malicious Essence Drop>\nSwitch 69 ON: +10%\n</Conditional Malicious Essence Drop>",
+    "note": "<Passive State: 129>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30% +++ HP% param <= 50%: Cure II, Lowest HP%\nRandom 60% +++ State !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nJade Charm: 2%\nDark Essence: 20%\nMalicious Essence: 10%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Malicious Essence Drop>\nSwitch 69 ON: +10%\n</Conditional Malicious Essence Drop>",
     "params": [
       500,
       999,
@@ -2725,11 +2720,6 @@
         "value": 0.5
       },
       {
-        "code": 23,
-        "dataId": 6,
-        "value": 0.5
-      },
-      {
         "code": 14,
         "dataId": 34,
         "value": 1
@@ -2747,7 +2737,7 @@
     ],
     "gold": 30,
     "name": "Suffering Soul",
-    "note": "<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: NoMatchingSprite/Suffering Soul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\nMalicious Essence: 10%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Malicious Essence Drop>\nSwitch 69 ON: +10%\n</Conditional Malicious Essence Drop>",
+    "note": "<Passive State: 129>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: NoMatchingSprite/Suffering Soul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\nMalicious Essence: 10%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Malicious Essence Drop>\nSwitch 69 ON: +10%\n</Conditional Malicious Essence Drop>",
     "params": [
       500,
       999,
@@ -3659,11 +3649,6 @@
         "value": 2
       },
       {
-        "code": 23,
-        "dataId": 6,
-        "value": 0.5
-      },
-      {
         "code": 14,
         "dataId": 21,
         "value": 1
@@ -3696,7 +3681,7 @@
     ],
     "gold": 200,
     "name": "Will o' Wisp",
-    "note": "<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nFire Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 129>\n\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nFire Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -5835,11 +5820,6 @@
         "value": 0.5
       },
       {
-        "code": 23,
-        "dataId": 6,
-        "value": 0.5
-      },
-      {
         "code": 14,
         "dataId": 34,
         "value": 1
@@ -5857,7 +5837,7 @@
     ],
     "gold": 100,
     "name": "Chilling Apparition",
-    "note": "<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nWarm Scarf: 3.33%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\nDark Essence: 20%\n</Enemy Drops>\n\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Passive State: 129>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nWarm Scarf: 3.33%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\nDark Essence: 20%\n</Enemy Drops>\n\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
     "params": [
       2500,
       0,
@@ -6873,7 +6853,7 @@
     ],
     "gold": 0,
     "name": "Vampiric Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vampiric Spirit>\n<Element Absorb: 7>\n<Passive State: 111, 115>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 129>\n\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vampiric Spirit>\n<Element Absorb: 7>\n<Passive State: 111, 115>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -7000,7 +6980,7 @@
     ],
     "gold": 0,
     "name": "Vigorous Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vigorous Spirit>\n<Element Absorb: 7>\n<Passive State: 112, 116>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 129>\n\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vigorous Spirit>\n<Element Absorb: 7>\n<Passive State: 112, 116>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -7127,7 +7107,7 @@
     ],
     "gold": 0,
     "name": "Dexterous Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Dexterous Spirit>\n<Element Absorb: 7>\n<Passive State: 113, 117>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 129>\n\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Dexterous Spirit>\n<Element Absorb: 7>\n<Passive State: 113, 117>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -7254,7 +7234,7 @@
     ],
     "gold": 0,
     "name": "Belligerent Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Belligerent Spirit>\n<Element Absorb: 7>\n<Passive State: 114, 118>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 129>\n\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Belligerent Spirit>\n<Element Absorb: 7>\n<Passive State: 114, 118>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,

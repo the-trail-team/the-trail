@@ -4347,5 +4347,35 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 129,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 733,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Incorporeal",
+    "note": "<Help Description>\nIncoming physical damage is halved.\n</Help Description>",
+    "overlay": 0,
+    "priority": 5,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
