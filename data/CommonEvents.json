@@ -14185,6 +14185,41 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 1,
+        "parameters": [
+          "# Replaced Bits Profit stat with Damage Healed"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameSystem._replaceBitsProfit) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameVariables.setValue(26, 0);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameSystem._replaceBitsProfit = true;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
         "code": 0,
         "indent": 1,
         "parameters": []

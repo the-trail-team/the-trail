@@ -77,6 +77,12 @@
  * @desc Variable to store damage dealt
  * Default: 8
  * @default 8
+ * 
+ * @param DamageHealed
+ * @type variable
+ * @desc Variable to store damage healed
+ * Default: 9
+ * @default 9
 */
 var Imported = Imported || {};
 Imported.CGMV_ExtraStats = true;
@@ -92,6 +98,7 @@ CGMV.ExtraStats.ItemsUsed = Number(CGMV.ExtraStats.parameters["ItemsUsed"]) || 5
 CGMV.ExtraStats.GoldLooted = Number(CGMV.ExtraStats.parameters["GoldLooted"]) || 6;
 CGMV.ExtraStats.DamageTaken = Number(CGMV.ExtraStats.parameters["DamageTaken"]) || 7;
 CGMV.ExtraStats.DamageDealt = Number(CGMV.ExtraStats.parameters["DamageDealt"]) || 8;
+CGMV.ExtraStats.DamageHealed = Number(CGMV.ExtraStats.parameters["DamageHealed"]) || 9;
 //=============================================================================
 // Scene_Schop
 //-----------------------------------------------------------------------------
@@ -117,8 +124,8 @@ Scene_Shop.prototype.doSell = function(number) {
 	alias_CGMV_ExtraStats_SceneShop_doSell.call(this, number);
 	var oldItemSellCount = $gameVariables.value(CGMV.ExtraStats.ItemsSold);
 	$gameVariables.setValue(CGMV.ExtraStats.ItemsSold, oldItemSellCount + number);
-	var oldProfitCount = $gameVariables.value(CGMV.ExtraStats.GoldProfit);
-	$gameVariables.setValue(CGMV.ExtraStats.GoldProfit, oldProfitCount + (number * this.sellingPrice()));
+	/*var oldProfitCount = $gameVariables.value(CGMV.ExtraStats.GoldProfit);
+	$gameVariables.setValue(CGMV.ExtraStats.GoldProfit, oldProfitCount + (number * this.sellingPrice()));*/
 };
 //=============================================================================
 // Game_Party
@@ -157,14 +164,19 @@ BattleManager.gainGold = function() {
 // modified functions: executeDamage
 //=============================================================================
 //-----------------------------------------------------------------------------
-// Alias: Track damage taken/dealt
+// Alias: Track damage taken/dealt/healed
 //-----------------------------------------------------------------------------
 var alias_CGMV_ExtraStats_GameAction_executeHpDamage = Game_Action.prototype.executeHpDamage;
 Game_Action.prototype.executeHpDamage = function(target, value) {
 	alias_CGMV_ExtraStats_GameAction_executeHpDamage.call(this, target, value);
     if(target.isActor()) {
-		var oldDamageTaken = $gameVariables.value(CGMV.ExtraStats.DamageTaken);
-		$gameVariables.setValue(CGMV.ExtraStats.DamageTaken, oldDamageTaken + value);
+		if (value > 0) {
+			var oldDamageTaken = $gameVariables.value(CGMV.ExtraStats.DamageTaken);
+			$gameVariables.setValue(CGMV.ExtraStats.DamageTaken, oldDamageTaken + value);
+		} else if (value < 0) {
+			var oldDamageHealed = $gameVariables.value(CGMV.ExtraStats.DamageHealed);
+			$gameVariables.setValue(CGMV.ExtraStats.DamageHealed, oldDamageHealed + Math.abs(value));
+		}
 	}
 	else if(target.isEnemy()) {
 		var oldDamageDealt = $gameVariables.value(CGMV.ExtraStats.DamageDealt);
