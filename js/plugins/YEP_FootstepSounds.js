@@ -269,6 +269,31 @@ DataManager.processFootstepNotetags = function(group) {
         Yanfly.Param.Footsteps.defaultSound, 
         Yanfly.Param.Footsteps.defaultVolume, 
         Yanfly.Param.Footsteps.defaultPitch
+      ],
+      1: [
+        "step_grass",
+        5,
+        100
+      ],
+      2: [
+        "step_sand",
+        40,
+        100
+      ],
+      3: [
+        "Water1",
+        3,
+        150
+      ],
+      4: [
+        "step_snow",
+        5,
+        100
+      ],
+      5: [
+        "Cursor1",
+        3,
+        50
       ]
     };
 
