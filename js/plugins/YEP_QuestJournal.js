@@ -3039,6 +3039,7 @@ Game_System.prototype.questSetCompleted = function(questId) {
     this._questsCompleted.sort(function(a, b) {
       return a - b;
     });
+    $gameVariables.setValue(1, $gameSystem.totalQuestsCompleted());
   }
   if (this._questsFailed.contains(questId)) {
     var index = this._questsFailed.indexOf(questId);
