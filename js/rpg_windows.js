@@ -1822,10 +1822,6 @@ Window_MenuActor.prototype.initialize = function() {
     this.hide();
 };
 
-Window_MenuActor.prototype.numVisibleRows = function() {
-    return $gameParty.members().length;
-};
-
 Window_MenuActor.prototype.processOk = function() {
     if (!this.cursorAll()) {
         $gameParty.setTargetActor($gameParty.members()[this.index()]);
@@ -5422,11 +5418,7 @@ Window_ActorCommand.prototype.addGuardCommand = function() {
 };
 
 Window_ActorCommand.prototype.addItemCommand = function() {
-    if (BattleManager.actor()._useBP !== 0) {
-        this.addCommand(TextManager.item, 'item', false);
-    } else {
-        this.addCommand(TextManager.item, 'item', true);
-    }
+    this.addCommand(TextManager.item, 'item', BattleManager.actor()._useBP == 0);
 };
 
 Window_ActorCommand.prototype.setup = function(actor) {

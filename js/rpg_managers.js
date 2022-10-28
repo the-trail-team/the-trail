@@ -2258,7 +2258,6 @@ BattleManager.replayBgmAndBgs = function() {
 };
 
 BattleManager.makeEscapeRatio = function() {
-    // this._escapeRatio = 0.5 * $gameParty.agility() / $gameTroop.agility();
     this._escapeRatio = 0.2;
 };
 
@@ -2732,7 +2731,7 @@ BattleManager.updateBattleEnd = function() {
 function randomizeReward(variation) {
     variation = Math.random() < 0.5 ? variation : -variation;
     return 1 + ((Math.random() * variation) * 0.01);
-}
+};
 
 BattleManager.makeRewards = function() {
     this._rewards = {};
@@ -2754,8 +2753,6 @@ BattleManager.displayEscapeSuccessMessage = function() {
 };
 
 BattleManager.displayEscapeFailureMessage = function() {
-    /*$gameMessage.add(TextManager.escapeStart.format($gameParty.name()));
-    $gameMessage.add('\\.' + TextManager.escapeFailure);*/
     $gameMessage.add(TextManager.escapeFailure.format($gameParty.name()));
     var chance = Math.floor(this._escapeRatio * 100);
     $gameMessage.add("\\c[4]New escape chance: " + chance + "%");

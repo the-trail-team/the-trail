@@ -1935,7 +1935,6 @@ Game_Action.prototype.itemEffectAddAttackState = function(target, effect) {
         var chance = effect.value1;
         chance *= target.stateRate(stateId);
         chance *= this.subject().attackStatesRate(stateId);
-        // chance *= this.lukEffectRate(target);
         if (Math.random() < chance) {
             target.addState(stateId);
             this.makeSuccess(target);
@@ -1947,7 +1946,6 @@ Game_Action.prototype.itemEffectAddNormalState = function(target, effect) {
     var chance = effect.value1;
     if (!this.isCertainHit()) {
         chance *= target.stateRate(effect.dataId);
-        // chance *= this.lukEffectRate(target);
     }
     if (Math.random() < chance) {
         target.addState(effect.dataId);
@@ -2527,11 +2525,11 @@ Game_BattlerBase.prototype.sparam = function(sparamId) {
 
 Game_BattlerBase.prototype.bparam = function(bparamId) {
     return this.traitsSum(Game_BattlerBase.TRAIT_BPARAM, bparamId);
-}
+};
 
 Game_BattlerBase.prototype.otherparam = function(otherparamId) {
     return this.traitsSum(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId);
-}
+};
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {
     return this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId);
@@ -4100,9 +4098,8 @@ Game_Actor.prototype.isSpriteVisible = function() {
 };
 
 Game_Actor.prototype.startAnimation = function(animationId, mirror, delay) {
-    if (animationId !== 63) {
-        mirror = !mirror;
-    }
+    let noMirror = [63];
+    if (!noMirror.contains(animationId)) mirror = !mirror;
     Game_Battler.prototype.startAnimation.call(this, animationId, mirror, delay);
 };
 
@@ -4178,9 +4175,7 @@ Game_Actor.prototype.performCollapse = function() {
 };
 
 Game_Actor.prototype.performEscape = function() {
-    // if (this.canMove()) {
-        this.requestMotion('escape');
-    // }
+    this.requestMotion('escape');
 };
 
 Game_Actor.prototype.makeActionList = function() {
@@ -4704,7 +4699,7 @@ Game_Actors.prototype.resetNames = function() {
     $gameActors._data[2]._name = "Player 2";
     $gameActors._data[3]._name = "Player 3";
     $gameActors._data[4]._name = "Player 4";
-}
+};
 
 //-----------------------------------------------------------------------------
 // Game_Unit
@@ -4919,7 +4914,7 @@ Game_Party.prototype.battleMembers = function() {
 };
 
 Game_Party.prototype.maxBattleMembers = function() {
-    return 6;
+    return this._actors.length;
 };
 
 Game_Party.prototype.leader = function() {
@@ -5307,6 +5302,7 @@ Game_Party.prototype.requestMotionRefresh = function() {
 };
 
 // Bloodlust test
+
 Game_Party.prototype.bloodlustOwned = function() {
     members = this.members();
     for (i = 0; i < members.length; i++) {
@@ -5320,6 +5316,7 @@ Game_Party.prototype.bloodlustOwned = function() {
 };
 
 // Pickaxe tests
+
 Game_Party.prototype.gildedPickaxe = function() {
     if (this.hasItem($dataItems[210])) return true;
     return false;
