@@ -8,7 +8,7 @@ Current Level Cap: 30
 Sometimes I get tired of repeating myself over and over again, but am I wrong to say that every major update has been the best one yet? If we're ignoring the pre-Alpha 11 days, then no, I'm not wrong, and Alpha 15 further solidifies this point.
 Building off of the heavy overhauls introduced in Alpha 14, this brand new update focuses on a TON of new content that fits with the new standards. Whether it be juicy lore, fresh dungeons, brand new concepts, new explorations of equipment and mechanics, and even more... it's content! So much great content!
 
-Telluria Castle Town serves as the hub for EVERYTHING to get an upgrade. From hats to shields to upgrade scrolls to food to spell tomes... the list goes on and on. New enemies with never-before seen strength serve as a test of strategy, the new equipment, and the higher level cap that introduces unique and powerful skills.
+Telluria Castle Town serves as the hub for EVERYTHING to get an upgrade. From hats to shields to upgrade scrolls to food to spell tomes... the list goes on and on. New enemies with never-before seen strength serve as a test of strategy. Thankfully, the higher level cap introduces unique and powerful skills to complement the new equipment.
 Head off to the Lost Forest and World Tree to fight nature-themed enemies, or maybe take a stop in the Frozen Labyrinth first to get some icy equipment. Maybe you can stop and fish for a bit to pass the time and get some ingredients for tasty food. With so much to do, choice is everywhere in Alpha 15...
 ...and eventually, all these choices come together to direct the party to someone who's been but a hated, faceless name for the entirety of the adventure. Everything comes down to this. Every update has further built up suspense and tension for this. The time has arrived.
 
@@ -17,6 +17,7 @@ Now, let's get to the incredibly large changelog, the biggest one we've ever had
 
 Additions:
  - Added Telluria Castle Town, the newest and greatest town in The Trail. It lies just outside the north exit of the Blazing Sands, right next to the Gulf of Telluria.
+ - Added 4 new dungeons!
  - Added a new floor to the Abandoned North Mine.
  - Added lots of new crafting recipes for items both old and new.
  - Added a ton of new animations for skills, items, and more.
@@ -24,7 +25,6 @@ Additions:
  - Added a new and unique fishing system.
  - Added farming.
  - Added pets. 7 are present in this update, and more will come in the future.
- - Added 4 new dungeons!
  - Added Discord rich presence support.
  - Added 18 new player skills:
   ~ Player 1, 4 skills:
@@ -304,13 +304,19 @@ Additions:
  - Added an exhaustion mechanic.
  - Added roaming Giant Rats in the Dark Forest.
 
-Changes:
+Removals:
  - Removed stat allocation.
   ~ Stat allocation was introduced early in Alpha 14's development as a system providing a means to customize character builds. On paper, it made sense: being able to spend points in any stat you want would accomplish just that.
   ~ This system has some problems. It clashes with the game's already-existing form of character builds: equipment types. Changing the type of weapon or armor a party member has equipped can drastically change the way they are played in battle.
   ~ In addition, it was already becoming hard to balance Alpha 15's new content around stat allocation, and it would just have become much harder in the future. It's simply too hard to predict and develop around.
   ~ While this is a nerf to all party members, a lot of changes have been made in this update to further tip the scales in the player's favor. Still, if the party needs further buffs to compensate, they will be made.
   ~ INT Books can still be used in the items menu, and can increase INT up to +20, just like before. Rare Enemy Certificates are just a trophy at the moment, but another use will be found for them in a future update.
+ - Removed the Skeleton enemy from the game. It was replaced in the Adonian Monsters troop, and all other troops containing it are not implemented/encounterable.
+ - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
+ - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and seafood dishes.
+ - Removed the Rat Jerky (Ration) because it was literally useless. All methods of obtaining it have replaced it with the regular Ration.
+
+Changes:
  - Recapped the max level from level 20 to level 30.
  - Replaced the Mage class's 2nd magic equip slot with an offhand slot (light shields).
  - The game's icons have finally been resprited at a non-blurred 32px resolution. Many items have additionally had their icons changed to stand out a bit more.
@@ -326,8 +332,7 @@ Changes:
  - Many shops have had their stock changed. Some enemy drop pools have also been adjusted.
  - Increased all ore mining drop ranges by 1 on both bounds (e.g. copper ore now drops 3-5 copper clusters instead of the old 2-4).
  - The 4-skeleton enemy troop now spawns frequently anywhere in the "Forest Arena...?" after the penultimate Laeryidyean cutscene.
-  ~ Additionally, the Adonian Monsters troop has been altered. No troops with the Skeleton can be encountered anymore, effectively removing the enemy from the game.
- - Contingence also can apply Amnesia.
+ - Contingence can now also apply Amnesia.
  - Item prefixes no longer affect an item's alphabetical sorting.
  - Renaming an item can no longer modify the prefix or the boost count.
  - Uncrafted items now display their mask name if in an ingredient list. Additionally, the color of an ingredient now changes depending on if the player has enough of the item.
@@ -342,10 +347,8 @@ Changes:
  - The new Speedster Boots have replaced the spot in boot progression once held by the Hermes Boots. The Hermes Boots have been moved up to be crafted near the end of Telluria Field's progression.
  - Red Gel can now be used on party members in battle.
  - Sharpened battleback images.
- - Countless other small changes have been made throughout the game (not as much as Alpha 14, but still a lot of new quality-of-life stuff).
- - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
- - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and dishes.
- - Removed the Rat Jerky (Ration), since it has been replaced in the Giant Rat's loot pool by a regular ration.
+ - Countless other small changes have been made throughout the game (not as much as Alpha 14, but honestly, it's probably close).
+ - A huge amount of backend reworks/changes have been made to improve performance, consistency, and development efficiency.
 
 Music Update (Final Wave):
  - Redid "New Lands", "Winding Labyrinth".
@@ -441,7 +444,7 @@ Bug Fixes:
  - Fixed a bug where battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
  - Fixed a bug where vA.14.7 removed Solus Town's snow but neglected to remove the snow around it in the overworld.
  - Fixed #9 and #10.
- - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release.
+ - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release, many of these thanks to a ton of backend reworks/changes.
 
 Alpha 10.2 and the updates preceding it served to build the foundation of The Trail, allowing me to start learning how to make a game that was mechanically sound and coherent.
 Alpha 11 ported the game to RPG Maker MV and added Laeryidyean, bringing an end to the adventure down Adon and opening up a world of possibilities for the future.
