@@ -6,7 +6,7 @@ const RPC = new DiscordRPC.Client({
 
 const startTimestamp = Date.now();
 var refreshes = -1;
-const smallImageKeys = [`power`, `quests`, `bits`, `hammer`];
+const smallImageKeys = [`power`, `quests`, `bits`, `hammer`, `chest`];
 
 DiscordRPC.register(clientId);
 
@@ -44,6 +44,10 @@ async function setActivity() {
 
             if (refreshes % smallImageKeys.length === 3 && $gameSystem) {
                 smallImageText = "Crafting Completion: " + String(Math.round((($gameSystem.synthedItems().length + $gameSystem.synthedWeapons().length + $gameSystem.synthedArmors().length) / Yanfly.IS.SynthesisRecipeCount) * 100)) + "%";
+            }
+
+            if (refreshes % smallImageKeys.length === 4 && $gameVariables) {
+                smallImageText = "Small Chests Opened: " + $gameVariables.value(50);
             }
         }
     }
