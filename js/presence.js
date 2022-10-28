@@ -26,28 +26,26 @@ async function setActivity() {
         } else {
             details = "Location: " + $gameMap.displayName();
 
-            if (refreshes % smallImageKeys.length === 0 && $gameParty && $gameTemp._isGameLoaded) {
-                smallImageText = "Party Levels: ";
-                for (i = 0; i < $gameParty.members().length; i++) {
-                    smallImageText += ($gameParty.members()[i]._level + ", ");
-                }
-                smallImageText = smallImageText.slice(0, -2);
-            }
-
-            if (refreshes % smallImageKeys.length === 1 && $gameSystem) {
-                smallImageText = "Quests Complete: " + String(Math.round(($gameSystem.totalQuestsCompleted() / $gameSystem.totalQuestsInGame()) * 100)) + "%";
-            }
-            
-            if (refreshes % smallImageKeys.length === 2 && $gameParty) {
-                smallImageText = "Bits: " + $gameParty.gold();
-            }
-
-            if (refreshes % smallImageKeys.length === 3 && $gameSystem) {
-                smallImageText = "Crafting Completion: " + String(Math.round((($gameSystem.synthedItems().length + $gameSystem.synthedWeapons().length + $gameSystem.synthedArmors().length) / Yanfly.IS.SynthesisRecipeCount) * 100)) + "%";
-            }
-
-            if (refreshes % smallImageKeys.length === 4 && $gameVariables) {
-                smallImageText = "Small Chests Opened: " + $gameVariables.value(50);
+            switch(smallImageKey) {
+                case `power`:
+                    smallImageText = "Party Levels: ";
+                    for (i = 0; i < $gameParty.members().length; i++) smallImageText += ($gameParty.members()[i]._level + ", ");
+                    smallImageText = smallImageText.slice(0, -2);
+                    break;
+                case `quests`:
+                    smallImageText = "Quests Completed: " + Math.round(($gameSystem.totalQuestsCompleted() / $gameSystem.totalQuestsInGame()) * 100) + "%";
+                    break;
+                case `bits`:
+                    smallImageText = "Bits: " + $gameParty.gold();
+                    break;
+                case `hammer`:
+                    smallImageText = "Crafting Completion: " + Math.round((($gameSystem.synthedItems().length + $gameSystem.synthedWeapons().length + $gameSystem.synthedArmors().length) / Yanfly.IS.SynthesisRecipeCount) * 100) + "%";
+                    break;
+                case `chest`:
+                    smallImageText = "Small Chests Opened: " + $gameVariables.value(50);
+                    break;
+                default:
+                    smallImageText = "That wasn't supposed to happen!";
             }
         }
     }
