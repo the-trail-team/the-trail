@@ -305,7 +305,18 @@ Game_System.prototype.rareEnemyRoll = function() {
     return roll;
 };
 
-// Constants
+// Small Chests
+
+Game_System.prototype.totalSmallChests = function() {
+    return 34;
+};
+
+Game_System.prototype.smallChest = function() {
+    $gameVariables.setValue(48, $gameVariables.value(48) + 1);
+    $gameVariables.setValue(50, $gameVariables.value(48) + "/" + this.totalSmallChests());
+};
+
+// Misc. Constants
 
 Game_System.prototype.exhaustionTime = function() {
     return 36;
