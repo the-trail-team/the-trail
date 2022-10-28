@@ -4338,7 +4338,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Exhaustion",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\nif ($gameVariables.value(52) == 0) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Passive Condition>\n\n<Help Description>\nReduces ATK and MAT by 20%. Can be removed by sleeping.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = $gameVariables.value(52) >= $gameSystem.exhaustionTime();\n</Custom Passive Condition>\n\n<Help Description>\nReduces ATK and MAT by 20%. Can be removed by sleeping.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,

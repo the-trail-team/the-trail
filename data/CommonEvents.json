@@ -6207,40 +6207,19 @@
         "code": 108,
         "indent": 1,
         "parameters": [
-          "# The timer for the Exhausted state will tick down if necessary as well"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          1,
-          52,
-          0,
-          0,
-          3
+          "# Exhaustion will increase, it has no need to be capped"
         ]
       },
       {
         "code": 122,
-        "indent": 2,
+        "indent": 1,
         "parameters": [
           52,
           52,
-          2,
+          1,
           0,
           1
         ]
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
       },
       {
         "code": 0,
@@ -11028,8 +11007,8 @@
           52,
           52,
           0,
-          4,
-          "$gameSystem.exhaustionTime()"
+          0,
+          0
         ]
       },
       {
