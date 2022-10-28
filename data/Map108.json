@@ -12858,6 +12858,38 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "$gameParty.hasItem($dataItems[101]) && (!$gameSwitches.value(49) || $gameSwitches.value(50))"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "var target = $gameMap.event(4);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "target.clearIconOnEvent();"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 231,
               "indent": 0,
               "parameters": [
