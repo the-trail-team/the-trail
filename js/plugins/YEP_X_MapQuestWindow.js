@@ -916,8 +916,6 @@ Window_MapActiveQuest.prototype.updateVisible = function() {
 Window_MapActiveQuest.prototype.isWindowVisible = function() {
   if (!ConfigManager.mapQuestWindow) return false;
   if (!this.activeQuest()) return false;
-  if ($gameMessage.isBusy()) return false;
-  if (SceneManager.isSceneChanging()) return false;
   return $gameSystem.isShowMapQuestWindow();
 };
 

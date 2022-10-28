@@ -80,13 +80,6 @@
     "id": 2,
     "list": [
       {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "HideActiveQuestWindow"
-        ]
-      },
-      {
         "code": 108,
         "indent": 0,
         "parameters": [
@@ -290,13 +283,6 @@
         "code": 404,
         "indent": 0,
         "parameters": []
-      },
-      {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "ShowActiveQuestWindow"
-        ]
       },
       {
         "code": 0,
@@ -1414,13 +1400,6 @@
         ]
       },
       {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "HideActiveQuestWindow"
-        ]
-      },
-      {
         "code": 250,
         "indent": 0,
         "parameters": [
@@ -1828,13 +1807,6 @@
         "code": 222,
         "indent": 0,
         "parameters": []
-      },
-      {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "ShowActiveQuestWindow"
-        ]
       },
       {
         "code": 0,
@@ -11443,13 +11415,6 @@
     "id": 48,
     "list": [
       {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "HideActiveQuestWindow"
-        ]
-      },
-      {
         "code": 250,
         "indent": 0,
         "parameters": [
@@ -11697,13 +11662,6 @@
         "code": 222,
         "indent": 0,
         "parameters": []
-      },
-      {
-        "code": 356,
-        "indent": 0,
-        "parameters": [
-          "ShowActiveQuestWindow"
-        ]
       },
       {
         "code": 0,
@@ -14011,6 +13969,20 @@
         "indent": 0,
         "parameters": [
           "}"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Enable quest window in case it somehow got turned off"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "ShowActiveQuestWindow"
         ]
       },
       {

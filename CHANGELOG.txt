@@ -426,6 +426,7 @@ Bug Fixes:
  - Fixed a bug where Purify couldn't be used outside of battle.
  - Fixed a bug where retrying a battle would cause items from previous attempts to show up on the dropped item window at the end of battle. This was only a visual bug.
  - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
+ - Fixed a bug where the Map Quest Window would disappear while the event interpreter was running.
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
  - Fixed a bug where states with no overlay would override states with an overlay if they had a higher priority value.
