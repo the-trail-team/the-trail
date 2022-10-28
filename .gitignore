@@ -1,6 +1,17 @@
+# Personal files that should not be tracked
 save/
 SCREENSHOTS/
+
+# File only necessary for playtesting
 supertoolsengine.html
+
+# IDE Directories
 .vscode/
 .idea/
+
+# Nw.js folder that may be created by contributors
 nwjs-v0.30.0-win-x64/
+
+# RMMV IntelliSense
+js/jsconfig.json
+js/rmmv.d.ts
