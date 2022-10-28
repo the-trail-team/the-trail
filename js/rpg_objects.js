@@ -3477,7 +3477,7 @@ Game_Battler.prototype.performCollapse = function() {
 };
 
 Game_Battler.prototype.performVictory = function() {
-    if (this.canMove()) {
+    if (this.canMove() && !$gameSwitches.value(75)) {
         this.requestMotion('victory');
     }
 };
@@ -5505,7 +5505,8 @@ Game_Troop.prototype.setupBattleEvent = function() {
         var pages = this.troop().pages;
         for (var i = 0; i < pages.length; i++) {
             var page = pages[i];
-            if (this.meetsConditions(page) && !this._eventFlags[i]) {
+            if (this.meetsConditions(page) && !this._eventFlags[i] && !['actionTargetList'].contains(BattleManager._phase)) {
+                SceneManager._scene._logWindow.clear();
                 this._interpreter.setup(page.list);
                 if (page.span <= 1) {
                     this._eventFlags[i] = true;

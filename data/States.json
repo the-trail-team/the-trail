@@ -834,54 +834,8 @@
     "id": 25,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 21,
-        "dataId": 3,
-        "value": 10
-      },
-      {
-        "code": 21,
-        "dataId": 5,
-        "value": 10
-      },
-      {
-        "code": 22,
-        "dataId": 3,
-        "value": 10
-      },
-      {
-        "code": 22,
-        "dataId": 1,
-        "value": -10
-      },
-      {
-        "code": 23,
-        "dataId": 6,
-        "value": 0
-      },
-      {
-        "code": 23,
-        "dataId": 7,
-        "value": 0
-      },
-      {
-        "code": 23,
-        "dataId": 2,
-        "value": 0
-      },
-      {
-        "code": 14,
-        "dataId": 35,
-        "value": 1
-      },
-      {
-        "code": 14,
-        "dataId": 57,
-        "value": 1
-      }
-    ],
-    "iconIndex": 17,
+    "traits": [],
+    "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -889,15 +843,15 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Weak",
-    "note": "<State Motion: Dying>\n\n<HRG Rate: 0%>\n\n<Help Description>\nOn the verge of death.\n</Help Description>",
+    "name": "",
+    "note": "",
     "overlay": 0,
-    "priority": 1,
+    "priority": 50,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,
-    "restriction": 4,
+    "restriction": 0,
     "stepsToRemove": 100
   },
   {
@@ -945,7 +899,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Death Sequence",
-    "note": "<State Motion: Dying>",
+    "note": "<State Motion: Dying>\n\n<HRG Rate: 0%>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
