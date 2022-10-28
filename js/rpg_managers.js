@@ -29,6 +29,7 @@ var $dataVersion       = null;
 var $dataClassIcons    = null;
 var $dataStrings       = null;
 var $dataProficiencies = null;
+var $dataMapReplace    = null;
 var $dataMap           = null;
 var $gameTemp          = null;
 var $gameSystem        = null;
@@ -50,24 +51,25 @@ DataManager._lastAccessedId = 1;
 DataManager._errorUrl       = null;
 
 DataManager._databaseFiles = [
-    { name: '$dataActors',       src: 'Actors.json'       },
-    { name: '$dataClasses',      src: 'Classes.json'      },
-    { name: '$dataSkills',       src: 'Skills.json'       },
-    { name: '$dataItems',        src: 'Items.json'        },
-    { name: '$dataWeapons',      src: 'Weapons.json'      },
-    { name: '$dataArmors',       src: 'Armors.json'       },
-    { name: '$dataEnemies',      src: 'Enemies.json'      },
-    { name: '$dataTroops',       src: 'Troops.json'       },
-    { name: '$dataStates',       src: 'States.json'       },
-    { name: '$dataAnimations',   src: 'Animations.json'   },
-    { name: '$dataTilesets',     src: 'Tilesets.json'     },
-    { name: '$dataCommonEvents', src: 'CommonEvents.json' },
-    { name: '$dataSystem',       src: 'System.json'       },
-    { name: '$dataMapInfos',     src: 'MapInfos.json'     },
-    { name: '$dataVersion',      src: 'Version.json'      },
-    { name: '$dataClassIcons',   src: 'ClassIcons.json'   },
-    { name: '$dataStrings',      src: 'Strings.json'      },
-    { name: '$dataProficiencies',src: 'Proficiencies.json'}
+    { name: '$dataActors',          src: 'Actors.json'       },
+    { name: '$dataClasses',         src: 'Classes.json'      },
+    { name: '$dataSkills',          src: 'Skills.json'       },
+    { name: '$dataItems',           src: 'Items.json'        },
+    { name: '$dataWeapons',         src: 'Weapons.json'      },
+    { name: '$dataArmors',          src: 'Armors.json'       },
+    { name: '$dataEnemies',         src: 'Enemies.json'      },
+    { name: '$dataTroops',          src: 'Troops.json'       },
+    { name: '$dataStates',          src: 'States.json'       },
+    { name: '$dataAnimations',      src: 'Animations.json'   },
+    { name: '$dataTilesets',        src: 'Tilesets.json'     },
+    { name: '$dataCommonEvents',    src: 'CommonEvents.json' },
+    { name: '$dataSystem',          src: 'System.json'       },
+    { name: '$dataMapInfos',        src: 'MapInfos.json'     },
+    { name: '$dataVersion',         src: 'Version.json'      },
+    { name: '$dataClassIcons',      src: 'ClassIcons.json'   },
+    { name: '$dataStrings',         src: 'Strings.json'      },
+    { name: '$dataProficiencies',   src: 'Proficiencies.json'},
+    { name: '$dataMapReplace',      src: 'MapReplace.json'   }
 ];
 
 DataManager.loadDatabase = function() {

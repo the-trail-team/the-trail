@@ -569,6 +569,7 @@ Scene_Map.prototype.onMapLoaded = function() {
     if (this._transfer) {
         $gamePlayer.performTransfer();
     }
+    if ($dataMap.displayName == "Solus Town" && $gameSwitches.value(81)) $dataMap.data = $dataMapReplace['Solus Town']['Snow'];
     this.createDisplayObjects();
 };
 
