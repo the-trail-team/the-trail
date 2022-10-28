@@ -316,6 +316,78 @@ Game_System.prototype.smallChest = function() {
     $gameVariables.setValue(50, $gameVariables.value(48) + "/" + this.totalSmallChests());
 };
 
+// Battle Setups
+
+Game_System.prototype.setBattleSe = function(name, pan, pitch, volume) {
+    this.customBattleSE = name;
+    this.customBattleSEPan = pan;
+    this.customBattleSEPitch = pitch;
+    this.customBattleSEVolume = volume;
+};
+
+Game_System.prototype.tpSkills = function(enabled) {
+    let skills = [
+        [1, 22],
+        [2, 23],
+        [3, 24],
+        [4, 25]
+    ]
+    skills.forEach(index => {
+        let actor = $gameActors.actor(index[0]);
+        let skill = index[1];
+        if (enabled) actor.learnSkill(skill)
+        else actor.forgetSkill(skill)
+    });
+};
+
+Game_System.prototype.battleSetup = function(bgm, me, se, serious, tp, music) {
+    // Audio
+    this.setBattleBgm({
+        name: bgm,
+        volume: 90,
+        pitch: 100
+    });
+    this.setVictoryMe({
+        name: me,
+        volume: 90,
+        pitch: 100
+    });
+    this.setBattleSe(se, 0, 100, 90);
+    // Serious Mode (disables victory motion)
+    $gameSwitches.setValue(75, serious);
+    // TP
+    this._showPartyLimitGauge = tp;
+    this.tpSkills(tp);
+    // Victory aftermath BGM toggle
+    this._skipVictoryMusic = !music;
+};
+
+Game_System.prototype.battleTemplate = function(name) {
+    switch (name) {
+        case 'miniboss':
+            this.battleSetup(
+                "battle_miniboss",
+                "Victory2",
+                "Battle2",
+                false,
+                false,
+                true
+            );
+            break;
+        case 'normal':
+        default:
+            this.battleSetup(
+                "battle_normal",
+                "Victory1",
+                "Battle1",
+                false,
+                false,
+                true
+            );
+            break;
+    }
+};
+
 // Misc. Constants
 
 Game_System.prototype.exhaustionTime = function() {

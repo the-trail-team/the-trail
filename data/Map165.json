@@ -11223,84 +11223,6 @@
               ]
             },
             {
-              "code": 132,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "battle_miniboss",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ShowPartyLimitGauge"
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                1,
-                0,
-                22
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                2,
-                0,
-                23
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                3,
-                0,
-                24
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                4,
-                0,
-                25
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "SetBattleSE Battle3 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Victory2",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
               "code": 223,
               "indent": 1,
               "parameters": [
@@ -11312,6 +11234,62 @@
                 ],
                 1,
                 false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleSetup("
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"battle_miniboss\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Victory2\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Battle3\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  false,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                ");"
               ]
             },
             {
@@ -11360,91 +11338,10 @@
               "parameters": []
             },
             {
-              "code": 123,
+              "code": 355,
               "indent": 1,
               "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 132,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "battle_normal",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                1,
-                1,
-                22
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                2,
-                1,
-                23
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                3,
-                1,
-                24
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 1,
-              "parameters": [
-                0,
-                4,
-                1,
-                25
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "SetBattleSE Battle1 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Victory1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 1,
-              "parameters": [
-                75,
-                75,
-                1
+                "$gameSystem.battleTemplate('normal');"
               ]
             },
             {

@@ -14436,34 +14436,10 @@
               ]
             },
             {
-              "code": 132,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "battle_miniboss",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle2 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Victory2",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "$gameSystem.battleTemplate('miniboss');"
               ]
             },
             {
@@ -14477,34 +14453,10 @@
               ]
             },
             {
-              "code": 132,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "battle_normal",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle1 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Victory1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "$gameSystem.battleTemplate('normal');"
               ]
             },
             {

@@ -10403,22 +10403,59 @@
               ]
             },
             {
-              "code": 132,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "battle_terry",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "$gameSystem.battleSetup("
               ]
             },
             {
-              "code": 356,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                "SetBattleSE Battle2 0 100 90"
+                "  \"battle_terry\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"Victory2\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"Battle3\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  true,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  false,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  true"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                ");"
               ]
             },
             {
@@ -10432,22 +10469,10 @@
               ]
             },
             {
-              "code": 132,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "battle_normal",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle1 0 100 90"
+                "$gameSystem.battleTemplate('normal');"
               ]
             },
             {

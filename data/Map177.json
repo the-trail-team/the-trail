@@ -4899,181 +4899,7 @@
               ]
             },
             {
-              "code": 223,
-              "indent": 0,
-              "parameters": [
-                [
-                  -34,
-                  -34,
-                  -34,
-                  0
-                ],
-                1,
-                false
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Chtt",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 223,
-              "indent": 0,
-              "parameters": [
-                [
-                  -68,
-                  -68,
-                  -68,
-                  0
-                ],
-                1,
-                false
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Chtt",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 223,
-              "indent": 0,
-              "parameters": [
-                [
-                  -102,
-                  -102,
-                  -102,
-                  0
-                ],
-                1,
-                false
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Chtt",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 132,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "battle_laeryidyean",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                75,
-                75,
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "ShowPartyLimitGauge"
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                1,
-                0,
-                22
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                2,
-                0,
-                23
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                3,
-                0,
-                24
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                4,
-                0,
-                25
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle3 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
+              "code": 245,
               "indent": 0,
               "parameters": [
                 {
@@ -5089,6 +4915,105 @@
               "indent": 0,
               "parameters": [
                 [
+                  -34,
+                  -34,
+                  -34,
+                  0
+                ],
+                1,
+                false
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Chtt",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
+                  -68,
+                  -68,
+                  -68,
+                  0
+                ],
+                1,
+                false
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Chtt",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
+                  -102,
+                  -102,
+                  -102,
+                  0
+                ],
+                1,
+                false
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Chtt",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 223,
+              "indent": 0,
+              "parameters": [
+                [
                   0,
                   0,
                   0,
@@ -5099,10 +5024,59 @@
               ]
             },
             {
-              "code": 356,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                "DisableVictoryMusic"
+                "$gameSystem.battleSetup("
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"battle_laeryidyean\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  \"Battle3\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  true,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  true,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "  false"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                ");"
               ]
             },
             {
@@ -5116,115 +5090,19 @@
               ]
             },
             {
-              "code": 123,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 132,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "battle_normal",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                1,
-                1,
-                22
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                2,
-                1,
-                23
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                3,
-                1,
-                24
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                4,
-                1,
-                25
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle1 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Victory1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "EnableVictoryMusic"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "EnableTurnOrderDisplay"
-              ]
-            },
-            {
-              "code": 313,
-              "indent": 0,
-              "parameters": [
-                0,
-                0,
-                1,
-                26
+                "$gameSystem.battleTemplate('normal');"
               ]
             },
             {
               "code": 121,
               "indent": 0,
               "parameters": [
-                75,
-                75,
-                1
+                23,
+                23,
+                0
               ]
             },
             {
@@ -6512,9 +6390,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 23,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
