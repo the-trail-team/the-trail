@@ -465,11 +465,84 @@
     "id": 5,
     "list": [
       {
-        "code": 117,
+        "code": 231,
         "indent": 0,
         "parameters": [
-          37
+          61,
+          "NightOverlay",
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          0,
+          0
         ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "[3, 4, 6].contains($gameMap.tilesetId())"
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 1,
+        "parameters": [
+          61,
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 232,
+        "indent": 1,
+        "parameters": [
+          61,
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          255,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 245,
@@ -482,11 +555,6 @@
             "pan": 0
           }
         ]
-      },
-      {
-        "code": 214,
-        "indent": 0,
-        "parameters": []
       },
       {
         "code": 0,
@@ -4335,7 +4403,7 @@
         "parameters": []
       }
     ],
-    "name": "Elemental Guide",
+    "name": "Element Guide",
     "switchId": 1,
     "trigger": 0
   },
@@ -6577,14 +6645,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameMap.tilesetId() === 3"
-        ]
-      },
-      {
-        "code": 118,
-        "indent": 1,
-        "parameters": [
-          "indoors"
+          "[3, 4, 6].contains($gameMap.tilesetId())"
         ]
       },
       {
@@ -6609,56 +6670,6 @@
         "code": 115,
         "indent": 1,
         "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "$gameMap.tilesetId() === 4"
-        ]
-      },
-      {
-        "code": 119,
-        "indent": 1,
-        "parameters": [
-          "indoors"
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "$gameMap.tilesetId() === 6"
-        ]
-      },
-      {
-        "code": 119,
-        "indent": 1,
-        "parameters": [
-          "indoors"
-        ]
       },
       {
         "code": 0,
@@ -11731,6 +11742,13 @@
     "id": 50,
     "list": [
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Fix for playtesting"
+        ]
+      },
+      {
         "code": 122,
         "indent": 0,
         "parameters": [
@@ -11774,11 +11792,51 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Time system tint logic and display"
+        ]
+      },
+      {
         "code": 117,
         "indent": 0,
         "parameters": [
           37
         ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# For the bit of Adon at night after exiting the Dark Forest"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          12,
+          0
+        ]
+      },
+      {
+        "code": 117,
+        "indent": 1,
+        "parameters": [
+          5
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
       },
       {
         "code": 0,
@@ -16343,6 +16401,707 @@
       }
     ],
     "name": "INT Book",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 66,
+    "list": [
+      {
+        "code": 102,
+        "indent": 0,
+        "parameters": [
+          [
+            "Sure!",
+            "Sorry..."
+          ],
+          1,
+          0,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          0,
+          "Sure!"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Adon",
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\adamReally? That's great!"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          7,
+          60,
+          0
+        ]
+      },
+      {
+        "code": 125,
+        "indent": 2,
+        "parameters": [
+          1,
+          0,
+          60
+        ]
+      },
+      {
+        "code": 127,
+        "indent": 2,
+        "parameters": [
+          11,
+          0,
+          0,
+          1,
+          false
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Adon",
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\adamI hope you enjoy your new \\iw[11]!"
+        ]
+      },
+      {
+        "code": 249,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Item",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "",
+          0,
+          1,
+          1
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "A Traveler's Deal"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Quest Complete!"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Change Description Entry To 2"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Complete Objective 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 15 Claim Reward 1"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest Set Completed 15"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Adon",
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\adamI'd better keep heading south."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Oh, and a little tip: stay alert."
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "I've heard that there's been some"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Bandito activity around recently."
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Move1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          4
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 101,
+        "indent": 2,
+        "parameters": [
+          "Adon",
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "\\adamWait a second... you don't have enough"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 2,
+        "parameters": [
+          "Bits! Come back once you've got 150\\G."
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 402,
+        "indent": 0,
+        "parameters": [
+          1,
+          "Sorry..."
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 1,
+        "parameters": [
+          "Adon",
+          6,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "\\adamOh, well... I guess I'll wait and see"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "if anyone else wants to take"
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 1,
+        "parameters": [
+          "this off my hands."
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 1,
+        "parameters": [
+          9,
+          9,
+          0,
+          0,
+          3
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 404,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Adam's Deal",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 67,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          68,
+          0
+        ]
+      },
+      {
+        "code": 302,
+        "indent": 1,
+        "parameters": [
+          1,
+          16,
+          0,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          1,
+          17,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          24,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          25,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          23,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          76,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          16,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          17,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          26,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          32,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          33,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          34,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          23,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 302,
+        "indent": 1,
+        "parameters": [
+          1,
+          16,
+          0,
+          0,
+          false
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          24,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          25,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          23,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          76,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          16,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          17,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          2,
+          26,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          32,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          9,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          33,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          14,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          34,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 605,
+        "indent": 1,
+        "parameters": [
+          0,
+          23,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Sam's Shop",
     "switchId": 1,
     "trigger": 0
   }

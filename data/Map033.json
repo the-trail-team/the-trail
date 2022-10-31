@@ -14564,8 +14564,17 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 121,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 1,
               "parameters": [
                 12,
                 12,
@@ -14574,7 +14583,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -14586,7 +14595,7 @@
             },
             {
               "code": 201,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 8,
@@ -14598,21 +14607,14 @@
             },
             {
               "code": 216,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0
               ]
             },
             {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                5
-              ]
-            },
-            {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 5,
@@ -14622,35 +14624,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p2It's pretty dark... how long were we in"
+                "\\p2It's getting pretty dark... how long"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "there? No matter, we should just set"
+                "were we in there? We should stop and"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "up camp now and get ready for a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "good night's sleep. Good job in there!"
+                "set up camp soon."
               ]
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 0
@@ -14658,59 +14653,17 @@
             },
             {
               "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
               "indent": 0,
               "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
+            },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -14722,7 +14675,7 @@
             },
             {
               "code": 201,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 8,
@@ -14734,14 +14687,14 @@
             },
             {
               "code": 216,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0
               ]
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   0,
@@ -14752,6 +14705,16 @@
                 1,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -14888,21 +14851,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markMilky also says hello. Now you see, this"
+                "\\markMilky also says hello. Welcome to the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "is the Dark Forest. It's quite... dark."
+                "Dark Forest. It isn't naturally evil,"
               ]
             },
             {
-              "code": 230,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                90
+                "it just has a heavy canopy. We need"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to cleanse it of monsters!"
               ]
             },
             {
@@ -14919,231 +14889,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markSorry, that description was sort of"
+                "\\markMake your way through and eliminate any enemies"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "vague."
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                90
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markAhem... anyways, you're going to need"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to defeat the monsters in here."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markThe Dark Forest isn't evil - it's simply"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a dark forest! It needs to be saved, as"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you did with the Forest Clearing."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markThis place is overrun with blue"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "slimes and giant rats. It's a good"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "thing we addressed the issue in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the Forest Clearing so quickly."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markIf we'd left just those three blue"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "slimes, things would have gotten out"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of hand surprisngly quickly."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markTake care of as many monsters as"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you can and I'll take it from there."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markRemember, the forest is counting on"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you! I'm sure you can do this."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markWe'll meet you at the exit. I have my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "own methods for getting through..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "but your goal isn't just to make it"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "through. Your goal is to save the forest."
+                "you see on your way. I'll take things from there."
               ]
             },
             {
@@ -15198,21 +14951,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markThe slimes may have weakened you"
+                "\\markThe slimes may have weakened you a bit."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "a bit. Here, each of you, take one"
+                "Here, each of you, take one of these herbs,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "of these herbs."
+                "they should revitalize you instantly."
               ]
             },
             {
@@ -16222,7 +15975,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                1,
+                5,
                 0,
                 2
               ]
@@ -16762,14 +16515,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markWait... did... did you really do it? You"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "defeated the monsters in this forest?"
+                "\\markNice work getting through!"
               ]
             },
             {
@@ -16786,21 +16532,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Yup. We got through. It was tough, but"
+                "\\p2Our pleasure. A few encounters gave us"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the monsters have been defeated!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Well, at least, a few of them."
+                "some trouble, but we never backed down!"
               ]
             },
             {
@@ -16817,327 +16556,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markYes! You've saved this sector of Adon!"
+                "\\markGood, good. Your efforts have bought me"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Well, at least, done a huge chunk of"
+                "a lot of time. I've still got my work cut"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the saving!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
+                "out for me, but you have an adventure to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Wait... we just ran in here and defeated"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "some monsters... that was all of them?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markWell, you see, what matters is that you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "were able to beat back the monsters."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I wasn't able to do much work in this"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "forest, thanks to them."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markSince you've beaten them back now, I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "can make my way to the core of the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "evil. I can make sure the monsters"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "don't run rampant in this forest."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markMost of all, I can make sure that the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "monsters don't leave the forest and spread"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "throughout this sector once more."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markYou'd be surprised how far a little bit"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of effort can go. The Dark Forest may not"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "be free just yet, but you've put a lot of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "work towards helping to liberate it!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2But we just killed a few slimes"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and then ran away from some, uh..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2...yeah, yeah! We killed a bunch of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "monsters! The plague is gone!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Uh... yeah!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markYes, precisely. Good job!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markGranted, there will still be some"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "monsters running around. But instead of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "it feeling like a dangerous extermination"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "mission, you can gather experience."
+                "go on. I don't want to hold you two back!"
               ]
             },
             {
@@ -17270,14 +16710,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markShe says I covered everything. Well,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "that's great!"
+                "\\markShe says I covered everything. Great!"
               ]
             },
             {
@@ -17358,204 +16791,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markWell, I suppose you're ready to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "go now. Good luck."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Heh, thanks! And just so you know,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "as we head into the third sector and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "beyond, we'll spread the word..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2...that if they plan on going to the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "second sector of Adon, they should"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "seek out a Hermit of the Woodlands"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "named Mark for assistance."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markAnd I'll make sure to preserve the story"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of two brave adventurers who helped"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "save the second sector of Adon."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markI haven't been to the third sector"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "before, so I can't give you any tips. I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "do know that you haven't either, so it"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "ought to be a real adventure for you!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 17,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markMilky, got anything to say?"
+                "\\markI suppose you're ready to go now. Good luck in the third sector."
               ]
             },
             {
@@ -17588,65 +16824,6 @@
               ]
             },
             {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 19,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markShe also wishes you a fair journey,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and hopes that we will meet again."
-              ]
-            },
-            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -17660,14 +16837,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2We'll be sure to stop by and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "say hi sometime!"
+                "\\p2We'll be sure to stop by and say hi sometime!"
               ]
             },
             {
@@ -17684,21 +16854,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markOh, don't worry about that."
+                "\\markOh, don't worry about that. We'll be out and"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "We'll be out and about. If you need to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "find us, you'll find us. Don't worry."
+                "about. If you need to find us, you'll find us."
               ]
             },
             {
@@ -17759,30 +16922,6 @@
               "code": 222,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2There isn't really anything left to do "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "but go onwards... let's do just that!"
-              ]
             },
             {
               "code": 0,
@@ -18060,21 +17199,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\adamOh, hello once again, \\N[1]! It is"
+                "\\adamOh, hello once again, \\N[1]! What"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "interesting that we are in the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "same place at the same time."
+                "a coincidence that we meet again!"
               ]
             },
             {
@@ -18091,28 +17223,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\adamI'm here to defeat some monsters and"
+                "\\adamI'm came here to get some fighting"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "get the hang of adventuring. I was"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "walking by when I saw this sign..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "take a look."
+                "practice, but I saw this sign..."
               ]
             },
             {
@@ -18230,69 +17348,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\adamI'm not sure if I'm up for it... I'm"
+                "\\adamI'm not sure if I'm up for this,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "going to go for it, though. Wish"
+                "but I may as well try. I'll see you"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "me luck!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\adamI hope that we'll meet again"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "as we travel across The Trail. Oh, and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "it's nice to see you too, \\N[2]!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markRight back at you, Adam."
+                "around, \\N[1] and \\N[2]!"
               ]
             },
             {
@@ -18349,28 +17419,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markHey... let's go after him. I"
+                "\\p2Hey... let's go after him. I'm not"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "don't wanna' steal his loot or"
+                "trying to steal his loot, but I'm still"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "anything, but I just wanna' see"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "what he finds."
+                "interested in seeing what he finds."
               ]
             },
             {

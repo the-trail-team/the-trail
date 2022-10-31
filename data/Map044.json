@@ -2602,6 +2602,94 @@
           },
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                13,
+                0,
+                19,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p4Woah there... what do we need Sam's"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "doors for? The sailor is waiting for"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "us just outside town with his boat."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 217,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -2774,8 +2862,8 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
-          "walkAnime": true
+          "trigger": 3,
+          "walkAnime": false
         }
       ],
       "x": 20,
@@ -3019,7 +3107,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samHello there. I'm Sam Payne. Welcome"
+                "\\samHello there, I'm Sam Payne. Welcome"
               ]
             },
             {
@@ -3074,7 +3162,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\}\\p2Isn't he so polite?"
+                "\\}\\p2Why are mysterious people always so polite?"
               ]
             },
             {
@@ -3363,6 +3451,23 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper1",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\sam..."
+              ]
+            },
+            {
               "code": 205,
               "indent": 0,
               "parameters": [
@@ -3438,59 +3543,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2All right, \\N[1]. I'll be heading"
+                "\\p2I'll be heading out now. If you don't mind,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "off somewhere else now. Don't worry,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I'll know when we're meeting."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2There's a General Store and a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "food court in the southeast part"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of town, so make sure to check"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "those out too! Seeya around."
+                "can you get me a few things from here?"
               ]
             },
             {
@@ -3839,356 +3899,11 @@
               ]
             },
             {
-              "code": 111,
+              "code": 117,
               "indent": 1,
               "parameters": [
-                0,
-                68,
-                0
+                67
               ]
-            },
-            {
-              "code": 302,
-              "indent": 2,
-              "parameters": [
-                1,
-                16,
-                0,
-                0,
-                false
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                1,
-                17,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                24,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                25,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                76,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                16,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                17,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                26,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                32,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                9,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                33,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                14,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                34,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\samApologies if you're looking for"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "a cleric's weapon. I just sold my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "last one. I'll restock soon."
-              ]
-            },
-            {
-              "code": 302,
-              "indent": 2,
-              "parameters": [
-                1,
-                16,
-                0,
-                0,
-                false
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                24,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                25,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                76,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                16,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                17,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                26,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                32,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                9,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                33,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                14,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                34,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
             },
             {
               "code": 0,
@@ -6146,365 +5861,11 @@
               ]
             },
             {
-              "code": 111,
+              "code": 117,
               "indent": 1,
               "parameters": [
-                0,
-                68,
-                0
+                67
               ]
-            },
-            {
-              "code": 302,
-              "indent": 2,
-              "parameters": [
-                1,
-                16,
-                0,
-                0,
-                false
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                1,
-                17,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                24,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                25,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                76,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                16,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                17,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                26,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                32,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                9,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                33,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                14,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                34,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                35,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                36,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 302,
-              "indent": 2,
-              "parameters": [
-                1,
-                16,
-                0,
-                0,
-                false
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                24,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                25,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                76,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                16,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                17,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                2,
-                26,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                32,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                9,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                33,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                14,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                34,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                23,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                35,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 605,
-              "indent": 2,
-              "parameters": [
-                0,
-                36,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
             },
             {
               "code": 0,
@@ -7574,131 +6935,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samNow, as I'm sure you didn't know, I"
+                "\\samI recently received a very special shipment"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "happen to have a special supply of wood."
+                "of wood from Telluria Castle. The planks come"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "The planks come from a Boareeng tree,"
+                "from the woods near the World Tree, and are"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "which only grows in central Telluria."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samThe king himself sent this shipment"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to me personally, along with a small"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "escort of knights to guarantee that"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "it arrived safely."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samIn my opinion, that makes it"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "relatively important."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4So, what's so great about"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "this \"special wood?\""
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samGlad you asked. This wood is..."
+                "known for their high resistance to water."
               ]
             },
             {
@@ -7715,28 +6973,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Look, Sam. Thanks for what you're doing, but"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "there's no way I'm going to build an entire"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "boat. That's just... ridiculous. As I said"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "before, I'd rather swim to Laeryidyean."
+                "\\p3That's cool..."
               ]
             },
             {
@@ -7753,7 +6990,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samHm, but would you really?"
+                "\\samYou don't sound very enthusiastic about this."
               ]
             },
             {
@@ -7770,14 +7007,38 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Yes, of course."
+                "\\p3Well... I don't know. I know it was my"
               ]
             },
             {
-              "code": 230,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                120
+                "idea, but i feel bad leaving \\N[1]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "out of this."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4And \\N[2]."
               ]
             },
             {
@@ -7794,7 +7055,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3..."
+                "\\p3Yeah, him too."
               ]
             },
             {
@@ -7811,14 +7072,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samAs I thought, Anyways, this wood"
+                "\\samWell, the first stage of growth"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "has magical properties that..."
+                "is admitting that you're wrong,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "so good on you for that."
               ]
             },
             {
@@ -7835,7 +7103,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Sam... I'm not building this boat."
+                "\\p3No! I'm not wrong! I'm just..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I just didn't think this decision"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "through. But I'm not wrong!"
               ]
             },
             {
@@ -7852,57 +7134,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samPlease, I insist. This likely"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to be the best way you..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4I'm with \\N[3]. This is ridiculous."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I say we just get searching for Bits."
-              ]
-            },
-            {
-              "code": 243,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 242,
-              "indent": 0,
-              "parameters": [
-                2
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                120
+                "\\samIf you say so..."
               ]
             },
             {
@@ -8004,204 +7236,59 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samI assume that your journey down"
+                "\\samWell, this is awkward. Now"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Adon was not too difficult. You"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "got your items through battle,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "quests, and plundering."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samNow that you're nearing Telluria"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "though, you're about to enter the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "next leg of your journey. Things will"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "get much harder very quickly."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samYou think building a boat is hard?"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Trust me, that is nowhere near how"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "difficult some of the things you'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "encounter will be."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samTelluria is unforgiving. So it's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "time for you to shape up. There's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "so much more to adventuring than"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "just fighting monsters and shopping."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samNo more putting hard things off to the side,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and no more trying to find workarounds for"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the inevitable. You have to focus up and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "start acting the part of heroes."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samSo... do you want my help or not?"
+                "we're just standing here."
               ]
             },
             {
               "code": 230,
               "indent": 0,
               "parameters": [
-                120
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper1",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\samI suppose that while you're here, I"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "could help you be a little more prepared"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to fight Laeryidyean. Have you ever"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "heard of item upgraders?"
               ]
             },
             {
@@ -8218,24 +7305,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3Well... you present some fair points."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Yeah..."
+                "\\p3No..."
               ]
             },
             {
@@ -8252,28 +7322,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samI know. Now, I can tell that you're"
+                "\\samMany pieces of equipment have upgrade slots,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the type of people who won't listen"
+                "with the number of them usually dictated by"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to instructions until the moment"
+                "the quality of the item. You can take advantage"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "you'll need to heed them."
+                "of them to make good equipment even better."
               ]
             },
             {
@@ -8290,107 +7360,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samSo I'll tell you about something"
+                "\\samThe most common upgrader you'll find is"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "that you'll likely consider to be"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "much more relevant: equipment upgrades."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samDepending on the quality of an item, it"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "may have upgrade slots. The better an"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "item, the more upgrade slots it'll have."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samThis gives already good weapons a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "chance to become even better."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samThe most common upgrader you'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "find is a scroll. Here, I'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "give you a couple."
+                "a scroll. Here, I'll give you a couple."
               ]
             },
             {
@@ -8595,28 +7572,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samHm... your weapon isn't looking too"
+                "\\samHm... your weapon isn't looking too hot."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "in-shape either. Go over to those"
+                "I doubt it even has upgrade slots. Go over"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "drawers there, I believe that I wedged"
+                "to those drawers, I believe I one of them"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "in a good and proper staff there."
+                "has a good and proper staff."
               ]
             },
             {
@@ -8923,7 +7900,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samUpgrading an item is simple."
+                "\\samUpgrading an item is simple. Find it in your"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "bag, and you should be able to apply any eligible"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "upgraders you have on it. Just make sure whatever"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "you're upgrading has upgrade slots open."
               ]
             },
             {
@@ -8940,21 +7938,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samFind the item you'd like to upgrade,"
+                "\\samBe warned: item upgrades are permanent, unless"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "then... well, get to upgrading. It's"
+                "you can get your hands on a \\ii[54]. I have"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "as easy as that."
+                "a colleague in Telluria named Clara who sells"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "them, but you won't be there for some time."
               ]
             },
             {
@@ -8971,28 +7976,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samThere's lots of upgraders out there,"
+                "\\samAnyways... now that you've at least"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "so try to find the best possible combos."
+                "learned something, I think it's time"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Depending on the type, some are for"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "weapons and some are for armor."
+                "to reunite with the others."
               ]
             },
             {
@@ -9009,272 +8007,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samBut be warned... item upgrades are permanent,"
+                "\\samI'll go ahead, meet us at the port."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "unless you get your hands on a \\ii[54]. The"
+                "Oh, and please relay everything I said to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "nearest place I know that sells them is that"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of my colleague in Telluria, Clara."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samOnce we're done with all this, I'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "start selling \\ii[35]\\c[0]s and \\ii[36]\\c[0]s"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "at the front counter. Feel free to buy"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "some to get that edge over Laeryidyean."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samI'd recommend using the \\ii[36] I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "gave you on that \\iw[17], and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the \\ii[35] on something like"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a sword or dagger."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Well... that's actually pretty"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "cool. Thanks for the explanation."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Yeah, seems pretty cool."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samMy pleasure. Now, about that boat."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4You know what? Yeah, fine, let's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "do it. It'll be worth the effort."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3What \\N[4] said."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samAlright. Meet me at the port,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and we'll see if one of the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "workshops is open."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samAnd please relay everything that I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "said to \\N[1] and \\N[2]. I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "really do not want to go through the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "process of explaining this again."
+                "\\N[1] and \\N[2]. I hate repeating myself."
               ]
             },
             {
@@ -9400,21 +8147,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Hold on... how did he know the"
+                "\\p4Are we going to talk about the fact that"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "names of \\N[1] and \\N[2]?"
+                "he knew \\N[1] and \\N[2]\\c[0]'s names even"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "We never mentioned them."
+                "though we never mentioned them?"
               ]
             },
             {
@@ -9431,55 +8178,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p3He's already mysterious enough as it is."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Let's not make this any more complicated"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and just go along with it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Fair enough."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Well, let's go."
+                "\\p3He's mysterious, what can I say?"
               ]
             },
             {
@@ -9519,11 +8218,6 @@
             },
             {
               "code": 222,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 244,
               "indent": 0,
               "parameters": []
             },

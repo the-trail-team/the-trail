@@ -10944,8 +10944,17 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 205,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -10969,7 +10978,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -10980,7 +10989,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -10990,14 +10999,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Doesn't look like anyone's here..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 5,
@@ -11007,21 +11016,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2You know, I'm feeling a bit daring at"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "the moment. Let's see what's inside."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -11045,7 +11054,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19,
@@ -11056,7 +11065,7 @@
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 0
@@ -11064,111 +11073,54 @@
             },
             {
               "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                1,
+                7,
+                0,
+                1,
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                1,
+                7,
+                0,
+                4,
+                4
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
             {
               "code": 0,
-              "indent": 0,
+              "indent": 2,
               "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 9,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 7,
-            "variableValid": true,
-            "variableValue": 1
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -11180,7 +11132,7 @@
             },
             {
               "code": 122,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 7,
                 7,
@@ -11191,14 +11143,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 21,
                 {
@@ -11222,7 +11174,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -11233,7 +11185,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11243,14 +11195,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\-Why, hello there!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 13,
@@ -11260,14 +11212,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Oh, no..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11277,14 +11229,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\-What's the big rush?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 9,
@@ -11294,26 +11246,26 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Guess we should go talk to him..."
               ]
             },
             {
               "code": 221,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 216,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 1
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -11347,7 +11299,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -11358,7 +11310,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -11369,7 +11321,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -11380,7 +11332,7 @@
             },
             {
               "code": 122,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 7,
                 7,
@@ -11391,12 +11343,12 @@
             },
             {
               "code": 222,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -11406,14 +11358,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2So, who exactly are you?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11423,35 +11375,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\-I'm just an old man living in the forest."
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "I came here to live alone. The hustle-"
+                "I came here to be alone. The hustle-"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "and-bustle of a village was too much. I"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "just wanted peace and quiet."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11461,28 +11413,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\-I don't mind some company every once"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "in a while, though! Welcome to my humble"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "abode! I hope you feel welcome."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -11492,21 +11444,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Yeah, we feel pretty fine, thanks. But"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "who exactly are you? You must have a name."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11516,28 +11468,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\markThose who don't know me simply refer"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "to me as the Hermit of the Woodlands."
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "But you can call me Mark."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -11547,28 +11499,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Well, hello Mark. We were just stopping"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "by to see what this place was all about,"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "so we'd better get going..."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 23,
                 {
@@ -11592,7 +11544,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -11603,7 +11555,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -11613,14 +11565,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Let's get going, \\N[1]..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11630,14 +11582,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\markWait."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 23,
                 {
@@ -11661,7 +11613,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -11672,7 +11624,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -11682,14 +11634,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Hm?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11699,14 +11651,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\markYour friend..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -11716,14 +11668,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Yeah, \\N[1]. What about him?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11733,21 +11685,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\mark\\N[1]... yes, the name confirms."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "You have the proper look about you as well."
+                "\\mark\\N[1]..."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 24,
                 {
@@ -11770,6 +11715,43 @@
                       "parameters": []
                     },
                     {
+                      "code": 3,
+                      "indent": 0,
+                      "parameters": []
+                    },
+                    {
+                      "code": 16,
+                      "indent": 0,
+                      "parameters": []
+                    },
+                    {
+                      "code": 15,
+                      "indent": 0,
+                      "parameters": [
+                        60
+                      ]
+                    },
+                    {
+                      "code": 2,
+                      "indent": 0,
+                      "parameters": []
+                    },
+                    {
+                      "code": 1,
+                      "indent": 0,
+                      "parameters": []
+                    },
+                    {
+                      "code": 2,
+                      "indent": 0,
+                      "parameters": []
+                    },
+                    {
+                      "code": 18,
+                      "indent": 0,
+                      "parameters": []
+                    },
+                    {
                       "code": 0,
                       "indent": null,
                       "parameters": []
@@ -11783,7 +11765,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -11794,7 +11776,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -11807,7 +11789,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -11817,90 +11799,34 @@
               ]
             },
             {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                24,
-                {
-                  "list": [
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 16,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 15,
-                      "indent": null,
-                      "parameters": [
-                        60
-                      ]
-                    },
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 18,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
-                  "indent": null,
+                  "indent": 0,
                   "parameters": []
                 }
               ]
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
-                  "indent": null,
+                  "indent": 0,
                   "parameters": []
                 }
               ]
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
-                  "indent": null,
+                  "indent": 0,
                   "parameters": [
                     60
                   ]
@@ -11909,75 +11835,51 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 2,
-                  "indent": null,
+                  "indent": 0,
                   "parameters": []
                 }
               ]
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
-                  "indent": null,
+                  "indent": 0,
                   "parameters": []
                 }
               ]
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 2,
-                  "indent": null,
+                  "indent": 0,
                   "parameters": []
                 }
               ]
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
-                  "indent": null,
+                  "indent": 0,
                   "parameters": []
                 }
               ]
             },
             {
               "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Um, 'scuse me, Mr. Hermit Mark guy, erm,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "what are you doing?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -11987,14 +11889,45 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markI know this equipment..."
+                "\\markI recognize this equipment... you"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "were sent by the Village Headman! Part"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "of the Champion Program, I assume?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Yep, we're teaming up to take down \\c[18]Apocalypse\\c[0]!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -12004,218 +11937,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markI see now... you were sent by the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Village Headman!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 19,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null,
-                  "parameters": []
-                }
+                "\\markWonderful."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2\\}How does he know? Is he some sort of psychic?"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 17,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Yeah, he was sent by him. It's pretty"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "cool, I suppose. Well, bye now..."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                24,
-                {
-                  "list": [
-                    {
-                      "code": 16,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -12225,86 +11954,31 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markHey, hey, I'm not done yet."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                23,
-                {
-                  "list": [
-                    {
-                      "code": 15,
-                      "indent": null,
-                      "parameters": [
-                        60
-                      ]
-                    },
-                    {
-                      "code": 19,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "indent": null,
-                  "parameters": [
-                    60
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null,
-                  "parameters": []
-                }
+                "\\markHey, um..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
-                1,
+                5,
                 0,
                 2
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p2What now?"
+                "\\p2\\N[2]."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -12314,14 +11988,59 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markI need \\N[1] for a little bit."
+                "\\markWhen the Headman told me he would be"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "selecting a champion soon, I made sure to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "prepare some words of advice for him."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
+              "parameters": [
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\markI need to speak with \\N[1] for a"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "short while, but if you'd like to stay"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "and listen, that's perfectly fine."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -12331,14 +12050,79 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p2I... see."
+                "\\p2Hm..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2I'm sure \\N[1] can catch me up later."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "I'll scout out the rest of the sector."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\markSure, just be careful. Blue Slimes"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "have been running rampant around here."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2I can handle myself, don't worry."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -12362,7 +12146,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -12373,7 +12157,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 24,
                 {
@@ -12397,7 +12181,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -12408,11 +12192,19 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 23,
                 {
                   "list": [
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
                     {
                       "code": 1,
                       "indent": null,
@@ -12458,7 +12250,27 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -12469,7 +12281,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -12480,7 +12292,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -12491,7 +12303,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -12501,7 +12313,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -12511,7 +12323,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -12521,7 +12333,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -12531,7 +12343,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 24,
                 {
@@ -12555,7 +12367,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -12566,7 +12378,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -12590,7 +12402,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -12601,7 +12413,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -12611,45 +12423,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markYou know, your friend didn't have to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "leave. But I suppose that until he comes"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "back, we can talk without interruption."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markNow, let's chat a bit."
+                "\\markWhere do I begin..."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 24,
                 {
@@ -12673,7 +12454,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -12684,7 +12465,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 24,
                 {
@@ -12713,7 +12494,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -12724,7 +12505,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -12735,7 +12516,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -12771,7 +12552,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 29,
@@ -12784,7 +12565,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -12795,7 +12576,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -12806,7 +12587,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 24,
                 {
@@ -12830,7 +12611,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -12841,7 +12622,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -12865,7 +12646,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -12876,12 +12657,12 @@
             },
             {
               "code": 221,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 122,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 7,
                 7,
@@ -12892,7 +12673,7 @@
             },
             {
               "code": 129,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 1,
                 1,
@@ -12901,89 +12682,17 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
                   "list": [
                     {
-                      "code": 29,
-                      "indent": null,
+                      "code": 45,
                       "parameters": [
-                        6
-                      ]
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 29,
-                      "indent": null,
-                      "parameters": [
-                        4
-                      ]
+                        "TELEPORT TO: 17, 22"
+                      ],
+                      "indent": null
                     },
                     {
                       "code": 0,
@@ -12999,246 +12708,25 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
-                  "code": 29,
-                  "indent": null,
+                  "code": 45,
                   "parameters": [
-                    6
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 29,
-                  "indent": null,
-                  "parameters": [
-                    4
-                  ]
+                    "TELEPORT TO: 17, 22"
+                  ],
+                  "indent": null
                 }
               ]
             },
             {
               "code": 222,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Well, um..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Not exactly sure where to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "go without \\N[1]."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I guess there's nothing left to do but check"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "out the rest of the sector by myself."
-              ]
-            },
-            {
               "code": 313,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 2,
@@ -13248,7 +12736,7 @@
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 1
@@ -13256,56 +12744,14 @@
             },
             {
               "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "B",
-            "selfSwitchValid": false,
-            "switch1Id": 12,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 7,
-            "variableValid": true,
-            "variableValue": 4
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
+            },
             {
               "code": 0,
               "indent": 0,
@@ -13964,235 +13410,19 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 205,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                26,
-                {
-                  "list": [
-                    {
-                      "code": 36,
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 36,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markAh, welcome back!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
                 1,
+                7,
                 0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2So... are you and \\N[1] done talking?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markNo, not yet, but feel free to-"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I see."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mark..."
+                6,
+                1
               ]
             },
             {
               "code": 205,
-              "indent": 0,
-              "parameters": [
-                26,
-                {
-                  "list": [
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 35,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 35,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 12,
-            "switch1Valid": false,
-            "switch2Id": 15,
-            "switch2Valid": false,
-            "variableId": 7,
-            "variableValid": true,
-            "variableValue": 6
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Adon",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 26,
                 {
@@ -14220,7 +13450,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 36,
@@ -14230,7 +13460,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -14241,7 +13471,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -14251,14 +13481,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\markAh, welcome back!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -14268,14 +13498,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Hey, um, so..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -14285,42 +13515,110 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p2Look, can you guys just finish talking already?"
+                "\\p2..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "It already feels bad enough that you're excluding"
+                "\\p2The coast looked pretty clear, though I think"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "me from this talk, but now I can't go anywhere"
+                "I may have seen a few monsters somewhere."
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "because of three stupid blue slimes."
+                "Maybe. I'm actually not sure that they're"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "monsters, but I just think they maybe are."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Maybe."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2..."
               ]
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 120
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 25,
                 {
@@ -14344,7 +13642,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -14355,7 +13653,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 26,
                 {
@@ -14379,7 +13677,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -14389,26 +13687,15 @@
               ]
             },
             {
-              "code": 213,
-              "indent": 0,
+              "code": 230,
+              "indent": 1,
               "parameters": [
-                26,
-                2,
-                false
-              ]
-            },
-            {
-              "code": 213,
-              "indent": 0,
-              "parameters": [
-                25,
-                2,
-                true
+                120
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 25,
                 {
@@ -14432,7 +13719,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -14443,7 +13730,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 26,
                 {
@@ -14467,7 +13754,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -14478,14 +13765,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                75
+                60
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -14495,21 +13782,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markOh, I see the mix-up here! You"
+                "\\markWell, um... yes, as I said, there's like some"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "thought we were excluding you?"
+                "monsters around here. I've tried to keep them"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "contained in the Dark Forest, but occasionally"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "they slip into the clearing next to it."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -14519,316 +13820,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markNo, of course not! And in fact, we"
+                "\\markWe can't allow this to happen! If"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "were just talking about those very blue"
+                "you think you saw some monsters, we"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "slimes! As well as... some other topics."
+                "must make haste and eliminate them!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markYou were free to join in... but"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "no matter. The moment you came back,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "we were about to leave and find you."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Oh."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Well."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I feel like an idiot now."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Er, Mr. Mark..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markPlease, just call me Mark. "
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Alright, Mark... well, sorry that"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I thought you were excluding me,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "or whatever."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markHey... don't beat yourself up too"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "much. You couldn't have known what"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "my intentions were."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Yeah... thanks."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markAnyways, those slimes. I'm not sure"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "if you two have heard of the Dark Forest,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "but... well, that's what happens when you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "let a few monsters get out of control."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markWe can't let that happen to the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "forest clearing! So on that note, I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "say we waste no time in going and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "defeating those three blue slimes."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Well, let's head over and do just that!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "",
                 0,
@@ -14838,35 +13851,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 ""
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Saving the Forest: Part I"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "New Quest!"
               ]
             },
             {
               "code": 356,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Quest Add 12"
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -14890,7 +13903,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -14901,7 +13914,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -14932,7 +13945,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -14945,7 +13958,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19,
@@ -14956,7 +13969,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 26,
                 {
@@ -14980,7 +13993,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -14991,7 +14004,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -15001,21 +14014,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p2One last thing... why is there a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "cow following me?"
+                "\\p2Oh, also... what's with this cow that followed me here?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -15025,21 +14031,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markOh, you must have met Milky. She's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a special cow."
+                "\\markOh, you must have met Milky. She's a special cow."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -15049,14 +14048,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2So... a pet?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -15066,21 +14065,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markOh, no no no! She's special."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "She speaks to me."
+                "\\markOh, no no no! She's special. She speaks to me."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -15090,14 +14082,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2She... speaks to you..."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -15120,7 +14112,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -15130,7 +14122,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -15140,14 +14132,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2\\}This guy's kind of a nut job..."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -15170,7 +14162,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19,
@@ -15180,7 +14172,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 5,
@@ -15190,19 +14182,19 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Alright then. Let's get going!"
               ]
             },
             {
               "code": 221,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -15214,14 +14206,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -15233,14 +14225,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -15252,14 +14244,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Move1",
@@ -15271,14 +14263,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 122,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 7,
                 7,
@@ -15289,7 +14281,7 @@
             },
             {
               "code": 129,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 1,
                 0,
@@ -15298,7 +14290,7 @@
             },
             {
               "code": 129,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 2,
                 1,
@@ -15307,30 +14299,23 @@
             },
             {
               "code": 129,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 2,
                 0,
                 0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "RequireActor 2"
               ]
             },
             {
               "code": 216,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0
               ]
             },
             {
               "code": 201,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 31,
@@ -15342,29 +14327,15 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
                   "list": [
                     {
-                      "code": 29,
-                      "indent": null,
-                      "parameters": [
-                        6
-                      ]
-                    },
-                    {
                       "code": 1,
                       "indent": null,
                       "parameters": []
-                    },
-                    {
-                      "code": 29,
-                      "indent": null,
-                      "parameters": [
-                        4
-                      ]
                     },
                     {
                       "code": 0,
@@ -15380,20 +14351,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 29,
-                  "indent": null,
-                  "parameters": [
-                    6
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -15403,33 +14361,20 @@
               ]
             },
             {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 29,
-                  "indent": null,
-                  "parameters": [
-                    4
-                  ]
-                }
-              ]
-            },
-            {
               "code": 222,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 117,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 62
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -15439,35 +14384,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\markThis is it. It's time for a battle."
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Say, \\N[2]... did that healing herb"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "I gave you on the way here"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "help at all?"
+                "I gave you on the way here help at all?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 5,
@@ -15477,28 +14415,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\p2Yes! It was very revitalizing! Thanks"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "much, Mark! You really are the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Hermit of the Woodlands."
+                "\\p2Yes, it was very revitalizing! Thank you!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Adon",
                 0,
@@ -15508,154 +14432,219 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\markThat's great to hear. Remember you"
+                "\\markTake a moment to prepare yourselves."
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "two, if the battle gets tough, run away."
+                "In case you need to recover, there's"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "There's a spring through the north"
+                "a healing spring on the north end of"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "entrance of this clearing."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markYou can heal there, and come back to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "finish the job. You won't be able to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "continue your journey if you don't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "get these slimes out of the way!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markAnd the forest will remain in danger..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I'm ready."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2But... I say we take a moment to gather"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "ourselves and prepare for this fight."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markWise of you, \\N[2]. Feel free to do just that!"
+                "this clearing."
               ]
             },
             {
               "code": 313,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 2,
                 1,
                 3
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 36,
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 36,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 16,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\markAh, welcome back!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2Hey..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\markYou can join in if you want."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\p2No it's alright, I'll keep exploring."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 1,
+              "parameters": [
+                26,
+                {
+                  "list": [
+                    {
+                      "code": 19,
+                      "indent": null
+                    },
+                    {
+                      "code": 35,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 19,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 35,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -16187,148 +15176,15 @@
                 {
                   "list": [
                     {
-                      "code": 29,
-                      "indent": null,
+                      "code": 45,
                       "parameters": [
-                        6
-                      ]
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
+                        "TELEPORT TO: 17, 23"
+                      ],
+                      "indent": null
                     },
                     {
                       "code": 19,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 29,
-                      "indent": null,
-                      "parameters": [
-                        4
-                      ]
+                      "indent": null
                     },
                     {
                       "code": 0,
@@ -16338,7 +15194,7 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": true
+                  "wait": false
                 }
               ]
             },
@@ -16347,286 +15203,11 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 29,
-                  "indent": null,
+                  "code": 45,
                   "parameters": [
-                    6
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
+                    "TELEPORT TO: 17, 23"
+                  ],
+                  "indent": null
                 }
               ]
             },
@@ -16636,219 +15217,8 @@
               "parameters": [
                 {
                   "code": 19,
-                  "indent": null,
-                  "parameters": []
+                  "indent": null
                 }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 29,
-                  "indent": null,
-                  "parameters": [
-                    4
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mattWell, looky here! The whole"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "cast is assembled!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markActually, Milky is off ruminating. She"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "won't be back for a while."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Milky?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Long story."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Ok, what were we supposed to be talking"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "about besides Milky eating grass?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markNow look, the three of you have made"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a big impact on Adon. You've helped"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "beat back the plague of monsters."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markOur main issue here locating the source"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of the monsters. Once we stop the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "big boss, the main flow, Adon will become"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "much safer than it is now."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mattSpeaking of \"big boss\"..."
               ]
             },
             {
@@ -16866,15 +15236,46 @@
               ]
             },
             {
-              "code": 241,
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "scene_desolation",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\markLet's get straight to our main discussion"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "point. We can fight monsters all we want, but"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "if we don't stop the flow of them, our efforts"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "ultimately add up to nothing."
               ]
             },
             {
@@ -16891,121 +15292,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\matt\\N[1], you must remember how the"
+                "\\mattRemember when the Village Headman told"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Village Headman told you about"
+                "you about \\c[18]Apocalypse\\c[0]? Well, he's actually"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\c[18]Apocalypse\\c[0], the huge evil guy, the main"
+                "not responsible for the monsters in Adon."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "source of evil in the whole Overworld."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mattYeah, well, he's not the main reason Adon"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "is being overrun by monsters. Sure, he"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "may have been the cause, but he's not"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "overseeing the entire world at one time."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mattBesides, if we ever tried to go for"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "him at this time, we'd... probably die"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "instantly, if I'm being perfectly honest."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mattSo there's not really a point in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "thinking about going for him just yet."
+                "At least, not directly."
               ]
             },
             {
@@ -17022,21 +15330,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-We believe that instead, he's created a"
+                "\\eldWe believe that instead, he's appointed one"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "super-strong monster. We've been"
+                "of his strongest generals to slowly take over"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "informed that his name is..."
+                "Adon. We believe that his name is..."
               ]
             },
             {
@@ -17053,7 +15361,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-\\{Laeryidyaen."
+                "\\eld\\{Laeryidyean."
               ]
             },
             {
@@ -17077,21 +15385,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\eldSounds pretty terrifying, huh? Oh,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "before I continue, let me introduce"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "myself. I'm the Verdin Village Elder."
+                "\\eldSounds terrifying? Certainly a mouthful either way."
               ]
             },
             {
@@ -17108,21 +15402,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\eldNow, back to Laeryidyean. Mouthful,"
+                "\\eldAfter extensive research, we've come to the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "isn't it? He's one of many of what"
+                "conclusion that every major region of the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "we like to call \"Region Bosses.\""
+                "Overworld has similarly been delegated to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "a powerful monster warrior."
               ]
             },
             {
@@ -17139,21 +15440,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\eldThere is much more to the world than"
+                "\\eldWith this information, the natural next thought"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "just Adon. Every major region has its"
+                "is that taking down the scourge of a region is the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "own different boss."
+                "first step to cleansing it of evil. Our entire plan"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to save the world is banking on that thought."
               ]
             },
             {
@@ -17170,121 +15478,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\eldTelluria, the heart of our world, has"
+                "\\eldYou still have some distance to cover"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "several of these. But what we need"
+                "before reaching the bottom of Adon, but"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to focus on is saving Adon first."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                3,
-                0,
-                2
+                "please make sure you're prepared to fight"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\eldThese bosses are very strong, and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "only the most determined will be"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "able to strike them down."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\eldThe three of you are an outstanding"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "team. If you were to get one more"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "team member, you'll have no trouble"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "defeating Laeryidyaen!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\eldHey, you still have quite a ways "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to go until you reach the bottom of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Adon. I believe in you!"
+                "Laeryidyean as soon as we locate him."
               ]
             },
             {
@@ -17770,14 +15985,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "I have a message and question from"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the Village Headman."
+                "I have a message from the Headman."
               ]
             },
             {
@@ -17829,14 +16037,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\helpAnd why does this cow keep following"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "me around?"
+                "\\helpAnd why does this cow keep following me around?"
               ]
             },
             {
@@ -17882,21 +16083,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markMilky! Watch it! Oh, um... it's a long"
+                "\\markMilky! Watch it! Oh, um... it's a long story"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "story which we don't really have time"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to explain."
+                "that we don't really have time to explain."
               ]
             },
             {
@@ -17986,7 +16180,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "of reconnaissance."
+                "of reconnaissance, and guess what"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "they found? The Bandito Hideout!"
               ]
             },
             {
@@ -18003,55 +16204,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\helpAnd guess what they managed to find?"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "It's... the Bandito Hideout!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Really? That's great! Where is it?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\helpHere, come closer, I'll show you on"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "your map..."
+                "\\helpCome closer, I'll mark it on your map."
               ]
             },
             {
@@ -18090,30 +16243,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\helpNow pull out your map and let me"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "mark an X the spot..."
-              ]
-            },
-            {
               "code": 122,
               "indent": 0,
               "parameters": [
@@ -18145,63 +16274,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\helpYup, it's right around there. They"
+                "\\helpThe Headman knows you have an important"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "weren't able to relay an exact location,"
+                "job to take care of, but stopping these"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "only an estimation, but I'm sure that"
+                "Banditos would help everyone. Besides,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "you can find it with ease!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 4,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null,
-                  "parameters": []
-                }
+                "it shouldn't be that long of a detour."
               ]
             },
             {
@@ -18275,446 +16369,18 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                10,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mattWow, party of 8, huh? If only the rest"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of us could have the proficiency of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you three..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\eld\\N[1], \\N[2], and \\N[3] - best"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of luck on your journey. I'm sure"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you'll perform with excellence in your"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "mission."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3So... we can go?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markWell, I've still got a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "few things left to say."
-              ]
-            },
-            {
               "code": 205,
               "indent": 0,
               "parameters": [
-                29,
+                -1,
                 {
                   "list": [
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Equip3",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Equip3",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                23,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                29,
-                {
-                  "list": [
-                    {
-                      "code": 13,
-                      "indent": null
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 13,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markUsing this item will boost your"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "EXR, also known as EXperience Rate."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "See what I did there?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mark\\N[3], I think you should use it."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "You're the furthest behind level-wise,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "after all, so it'll be good for you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to catch up a little bit."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markOh, and \\N[2] and \\N[3]..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "take these healing herbs."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mark\\N[1] has rested, but the two of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you aren't looking your best."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                29,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Equip3",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": 0
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": 0
-                    },
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 2,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 16,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Equip3",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": 0
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 3,
-                      "indent": null,
-                      "parameters": []
-                    },
                     {
                       "code": 4,
                       "indent": null,
                       "parameters": []
                     },
                     {
-                      "code": 16,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
                       "code": 0,
                       "indent": null,
                       "parameters": []
@@ -18723,134 +16389,6 @@
                   "repeat": false,
                   "skippable": false,
                   "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Equip3",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Equip3",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": 0
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
-                  "indent": null,
-                  "parameters": []
                 }
               ]
             },
@@ -18866,13 +16404,111 @@
               ]
             },
             {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\markHere, take these healing herbs."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I also have a special gift."
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                29,
+                {
+                  "list": [
+                    {
+                      "code": 1,
+                      "indent": null,
+                      "parameters": []
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Equip3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        60
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
               "code": 505,
               "indent": 0,
               "parameters": [
                 {
-                  "code": 16,
+                  "code": 1,
                   "indent": null,
                   "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Equip3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    60
+                  ],
+                  "indent": null
                 }
               ]
             },
@@ -18912,250 +16548,6 @@
               "indent": 0,
               "parameters": [
                 "\\N[3] was healed!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Mmmmm... where do you get these"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "herbs? They're delicious"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "AND revitalizing!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markThat's a trade secret..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\eldI'm curious as well... what's the secret?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markIt's nothing... just some nice,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "revitalizing herbs. Nothing else."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3Hm..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markOh, and I have something"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "VERY important to give you."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mark\\<\\{LISTEN UP!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markApologies for raising my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "voice, but this is vital"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for your success on"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "your journey."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                29,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
               ]
             },
             {
@@ -19241,19 +16633,13 @@
                 {
                   "list": [
                     {
-                      "code": 3,
+                      "code": 13,
                       "indent": null
                     },
                     {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
+                      "code": 0,
+                      "indent": null,
+                      "parameters": []
                     }
                   ],
                   "repeat": false,
@@ -19267,27 +16653,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
+                  "code": 13,
                   "indent": null
                 }
               ]
@@ -19296,32 +16662,8 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markThese are my notes on the workings"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of elements in the Overworld."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
+                "Actor4",
+                5,
                 0,
                 2
               ]
@@ -19330,135 +16672,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markI doubt you'll have much run-in with"
+                "\\p2Mmmmm... where do you get these herbs?"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "elemental enemies just yet, but I highly"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "recommend you read up on this now and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "keep everything you learn in mind."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markUsing elements to your advantage"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "will be crucial later on in your"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "journey."
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                22
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markNow anyways, where's everyone going?"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Milky and I will be off beating back the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "monsters in the Dark Forest some more."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\mark\\N[1], I've lifted those blockades"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "on the bridges, so you shouldn't have"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to head back through the Dark"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Forest again."
+                "They're delicious AND revitalizing!"
               ]
             },
             {
@@ -19475,22 +16696,15 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\eldMatt and I will head off and continue"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "our debate of ideas and sightseeing."
+                "\\eldI'm curious as well... what's the secret?"
               ]
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People1",
-                2,
+                "Adon",
+                0,
                 0,
                 2
               ]
@@ -19499,21 +16713,97 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\helpYeah, I should probably skedaddle back"
+                "\\markIt's nothing... just some nice,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to the Village Headman. He'll soon"
+                "revitalizing herbs. Nothing else."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "be wondering where I went."
+                "Uh... secret for a reason, right?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\markAnyways, that \\ii[118] should"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "help you out. It contains my notes on"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "the workings of elements in the Overworld."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Adon",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\markUsing elements to your advantage will"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "be crucial later on in your journey. You"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "don't have to read it now, but I'm sure"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "it will be useful down the road."
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                22
               ]
             },
             {
@@ -19530,38 +16820,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\mattEveryone's set, awesome!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                10,
-                0,
-                2
+                "\\mattWell, I think we've covered everything."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\mattSo long, everyone! I'm excited for"
+                "Safe travels, everyone! Oh, and little"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "our next meeting! Oh, and \\N[1]..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "stay safe. Ok, little bro?"
+                "bro... stay safe for me, will ya'?"
               ]
             },
             {
@@ -19691,82 +16964,6 @@
               "code": 222,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3You heard what Mark said, \\N[1]."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Let's get back down the sectors"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and face the Banditos in their"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "home territory!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p3On second thought, that might actually"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "not be a very good idea... no matter,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "we have to! Let's hurry, it's already"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "pretty late in the afternoon."
-              ]
             },
             {
               "code": 0,

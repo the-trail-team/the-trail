@@ -2211,6 +2211,147 @@
           "walkAnime": true,
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                0,
+                24,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\joeAh, it's \\N[1]! First you saved my"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "store's items, and now you've saved"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "my continent! I'm so grateful!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\joeI doubt my items are going to help"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "you much at this point, but hey,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "would you like to buy some?"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People1",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\joeWelcome back, \\N[1]! Would you"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "like to buy something?"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 1,
+              "parameters": [
+                "Store"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -2784,28 +2925,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeI'll get the word to \\N[2] that "
+                "\\joeI'll get the word to \\N[2] that  the store"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the store is back up and running!"
+                "is back up and running! Now, are you interested"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Now, are you interested in browsing"
+                "in browsing our wares?"
               ]
             },
             {
-              "code": 401,
+              "code": 118,
               "indent": 0,
               "parameters": [
-                "our wares?"
+                "Store"
               ]
             },
             {
@@ -2844,7 +2985,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\joeHere's what I have:"
+                "\\joeHere's what I have."
               ]
             },
             {
@@ -2918,502 +3059,6 @@
                 "A",
                 0
               ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 2,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 5,
-            "variableValid": false,
-            "variableValue": 15
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "People1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 19,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 17,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 19,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 19,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\joeWelcome back, \\N[1]! Would you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "like to buy something?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yep!",
-                  "Not now."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yep!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeHere's what I have:"
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 1,
-              "parameters": [
-                16
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeThanks for coming!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Not now."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeOh well... come back soon!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 24,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 5,
-            "variableValid": false,
-            "variableValue": 15
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "People1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 19,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 17,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 19,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 19,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\joeAh, it's \\N[1]! First you saved my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "store's items, and now you've saved"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "my continent! I'm so grateful!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\joeI doubt my items are going to help"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you much at this point, but hey,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "would you like to buy some?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yep!",
-                  "Not now."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yep!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeHere's what I have:"
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 1,
-              "parameters": [
-                16
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeThanks for coming!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Not now."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeOh well... come back soon!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -5245,8 +4890,19 @@
               ]
             },
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                3,
+                0,
+                4,
+                2
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "People1",
                 3,
@@ -5256,161 +4912,27 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\vil...Although Verdin Village's general"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "store is a bit lacking at the moment."
               ]
             },
             {
               "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 3,
-            "variableValid": true,
-            "variableValue": 5
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "People1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 3
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\vilIt's really nice that general stores"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "provide such a wide variety of items."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\vilThey've just recently gotten some new"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "items in stock, and I'm sure that they'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "keep adding new things as time goes on."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\vilThe best part is that stock is"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "standardized between towns, so"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you never have to worry about"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "backtracking for something!"
-              ]
             },
             {
               "code": 0,
