@@ -8300,6 +8300,10 @@ Game_Follower.prototype.chaseCharacter = function(character) {
     this.setMoveSpeed($gamePlayer.realMoveSpeed());
 };
 
+Game_Follower.prototype.animationWait = function() {
+    return (9 - this.realMoveSpeed()) * 3 + Math.floor(Math.random() * 5 - 2);
+};
+
 //-----------------------------------------------------------------------------
 // Game_Followers
 //
