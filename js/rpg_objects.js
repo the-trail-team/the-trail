@@ -388,7 +388,18 @@ Game_System.prototype.battleTemplate = function(name) {
     }
 };
 
-// Misc. Constants
+// Champion's Talisman
+
+Game_System.prototype.championsTalisman = function() {
+    if ($gameSwitches.value(82)) return [20, 15, 7, 7, 11, 11, 15, 3]; // Chapter 5
+    if ($gameSwitches.value(36)) return [15, 12, 5, 5, 8, 8, 10, 2]; // Chapter 4
+    if ($gameSwitches.value(24)) return [10, 8, 3, 3, 5, 5, 5, 1]; // Chapter 3
+    if ($gameVariables.value(3) >= 8) return [3, 2, 1, 1, 2, 2, 2, 0]; // Chapter 2
+    if ($gameVariables.value(2) >= 11) return [1, 1, 0, 0, 0, 0, 1, 0]; // Chapter 1
+    return [0, 0, 0, 0, 0, 0, 0, 0]; // Prologue
+};
+
+// Constants
 
 Game_System.prototype.exhaustionTime = function() {
     return 36;
