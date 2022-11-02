@@ -14203,6 +14203,76 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Delete nameless (removed) items from inventory"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "var items = [];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "$dataItems.forEach(item => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  if (item) if (item.name == \"\") items.push(item);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          ""
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "items.forEach(item => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameParty.loseItem(item, 9999, true);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
