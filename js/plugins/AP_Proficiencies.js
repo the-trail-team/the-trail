@@ -75,6 +75,10 @@ Game_Party.prototype.calculatePerkEffects = function(name) {
     });
 };
 
+Game_Party.prototype.proficiencyAmount = function() {
+    return $gameParty.proficiencyArray().length;
+};
+
 //=============================================================================
 // Window_ProficiencyCommand
 //=============================================================================
@@ -99,7 +103,7 @@ Window_ProficiencyCommand.prototype.numVisibleRows = function() {
 };
 
 Window_ProficiencyCommand.prototype.maxCols = function() {
-    return 5;
+    return $gameParty.proficiencyAmount();
 };
 
 Window_ProficiencyCommand.prototype.makeCommandList = function() {
@@ -157,10 +161,6 @@ Window_ProficiencyCommand2.prototype.constructor = Window_ProficiencyCommand2;
 
 Window_ProficiencyCommand2.prototype.makeCommandList = function() {
     this.addCommand("Info", 'info', true);
-    this.addCommand("Levels 1-10", 'levels1', true);
-    this.addCommand("Levels 11-20", 'levels2', true);
-    this.addCommand("Levels 21-30", 'levels3', true);
-    this.addCommand("Levels 31-40", 'levels4', true);
 };
 
 Window_ProficiencyCommand2.prototype.update = function() {
@@ -211,12 +211,6 @@ Window_ProficiencyInfo.prototype.drawInfoContents = function(symbol) {
         case 'info':
             this.drawInfo();
             break;
-        case 'levels1':
-        case 'levels2':
-        case 'levels3':
-        case 'levels4':
-            this.drawLevels(symbol);
-            break;
         default:
             break;
     }
@@ -241,72 +235,6 @@ Window_ProficiencyInfo.prototype.drawInfo = function() {
     text = "Info";
     this.drawText(text, dx, dy, dw, 'center');
     this.drawPerks(dx);
-};
-
-Window_ProficiencyInfo.prototype.drawLevels = function(symbol) {
-    var dx = this.standardPadding();
-    var dy = this.lineHeight() / 2;
-    var dw = (this.contents.width - this.standardPadding());
-    var dh = this.lineHeight();
-    var text = $gameParty.proficiencyName(SceneManager._scene._commandWindow.currentExt()[1]);
-    this.changeTextColor(this.systemColor());
-    this.drawText(text, dx, dy, dw, 'center');
-    dy += this.lineHeight();
-    text = "Levels 1-10";
-    if (symbol == 'levels2') text = "Levels 11-20";
-    if (symbol == 'levels3') text = "Levels 21-30";
-    if (symbol == 'levels4') text = "Levels 31-40";
-    this.drawText(text, dx, dy, dw, 'center');
-    this.drawLevelPerks(symbol);
-};
-
-Window_ProficiencyInfo.prototype.drawLevelPerks = function(symbol) {
-    var ext = SceneManager._scene._commandWindow.currentExt();
-    var proficiency = ext[0];
-    var internal = ext[1];
-    switch (symbol) {
-        case 'levels1':
-            max = 10;
-            break;
-        case 'levels2':
-            max = 20;
-            break;
-        case 'levels3':
-            max = 30;
-            break;
-        default:
-            max = 40;
-            break;
-    }
-    min = max - 9;
-    var rect = new Rectangle();
-    rect.width = (this.contents.width - this.standardPadding());
-    rect.y = this.lineHeight() * 3;
-    rect.height = this.lineHeight();
-    var dx = rect.x + this.textPadding();
-    var dw = rect.width - this.textPadding() * 2;
-    for (i = min; i <= max; i++) {
-        this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
-        this.changeTextColor(this.systemColor());
-        this.drawText("Level " + [i], dx, rect.y, dw, 'left');
-        this.resetTextColor();
-        this.changePaintOpacity($gameParty.proficiencyLevel(internal) >= i);
-        if (proficiency.levels[i]) {
-            perk = proficiency.levels[i][0];
-            num = proficiency.levels[i][1];
-            perkName = proficiency.perks[perk].name;
-            format = proficiency.perks[perk].format;
-            text = perkName + ": "
-            if (format == "percent") text += (num > 0 ? "+" : "") + num * 100 + "%";
-            else if (format == "plus") text += "+" + num;
-            else text = num;
-        } else {
-            text = "Undefined";
-        }
-        this.drawText(text, dx, rect.y, dw, 'right');
-        rect.y += this.lineHeight();
-    }
-    this.changePaintOpacity(true);
 };
 
 Window_ProficiencyInfo.prototype.drawPerks = function() {
