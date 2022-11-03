@@ -10966,24 +10966,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4I will NOT let you kill either of us."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
+                "\\p4I will NOT let you kill either of us. One"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4One more step forward, and both of you die!"
+                "more step forward, and both of you die!"
               ]
             },
             {
@@ -11485,29 +11475,19 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Wait... Henry!"
-              ]
-            },
-            {
               "code": 205,
               "indent": 0,
               "parameters": [
                 -1,
                 {
                   "list": [
+                    {
+                      "code": 15,
+                      "parameters": [
+                        60
+                      ],
+                      "indent": null
+                    },
                     {
                       "code": 18,
                       "indent": null
@@ -11518,7 +11498,20 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    60
+                  ],
+                  "indent": null
                 }
               ]
             },
@@ -11546,7 +11539,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Henry, are you alright?"
+                "\\p4Oh shit... Henry! Henry! Are you alright?"
               ]
             },
             {
@@ -12001,7 +11994,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "something. Must be some kind of new weapon that"
+                "someone. Must be some kind of new weapon that"
               ]
             },
             {
@@ -12179,7 +12172,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Wait... what's that?"
+                "\\p4Wait... what's that on the ground?"
               ]
             },
             {
@@ -12241,7 +12234,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4That guy... uh... dropped? Dropped some papers."
+                "\\p4That guy... uh... dropped? He left some papers."
               ]
             },
             {
@@ -12295,7 +12288,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "so small shoot such a powerful shot? And that"
+                "so small shoot such powerful ammo? And that"
               ]
             },
             {
@@ -12310,6 +12303,30 @@
               "indent": 0,
               "parameters": [
                 "seen anything like this before."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4The ammo... that's the \\ii[42]"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "they used on the Crusher Thug, isn't it?"
               ]
             },
             {
@@ -12521,7 +12538,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4That guy... Terry. I'll kill him myself."
+                "\\p4Terry..."
               ]
             },
             {
@@ -12589,6 +12606,23 @@
               "code": 401,
               "indent": 0,
               "parameters": [
+                "\\p4I will kill Terry."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
                 "\\p4Man, this goes so much deeper than I thought. The"
               ]
             },
@@ -12596,7 +12630,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Town Master will definitely want to see these."
+                "Town Master will definitely want to see these plans."
               ]
             },
             {
@@ -12651,7 +12685,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "found these, but... we should really"
+                "found that, but... we should really"
               ]
             },
             {
@@ -12682,7 +12716,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "I know a quick way back."
+                "I know a quick way out of here."
               ]
             },
             {

@@ -8687,166 +8687,7 @@
       "x": 23,
       "y": 28
     },
-    {
-      "id": 8,
-      "name": "EV008",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4They've gotta' be just"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "ahead..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Let's go get 'em!"
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 1,
-      "y": 35
-    },
+    null,
     {
       "id": 9,
       "name": "EV009",
@@ -9004,21 +8845,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Well, there they are. So is this"
+                "\\p2So is this a meeting or a kidnapping?"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "a meeting or a kidnapping? I don't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "think we ever figured it out."
+                "I don't remember if we confirmed."
               ]
             },
             {
@@ -9049,7 +8883,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "all this way in a bag. And he's restrained."
+                "all this way in a bag. Now he's restrained."
               ]
             },
             {
@@ -9224,7 +9058,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\henHEY! Guys, you're here!"
+                "\\henNo way, you guys came to save me!"
               ]
             },
             {
@@ -9270,7 +9104,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\henAgh..."
+                "\\henOuch..."
               ]
             },
             {
@@ -9295,23 +9129,6 @@
               "indent": 0,
               "parameters": [
                 "\\-..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Evil2",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-They've finally made it."
               ]
             },
             {
@@ -10201,7 +10018,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Wha... that's some insane magical energy!"
+                "\\p2Wha... I'm sensing some insane magical energy!"
               ]
             },
             {
@@ -10643,7 +10460,7 @@
           "walkAnime": true
         }
       ],
-      "x": 13,
+      "x": 9,
       "y": 35
     }
   ]
