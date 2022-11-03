@@ -323,36 +323,22 @@ Removals:
 Changes:
  - Recapped the max level from level 20 to level 30.
  - A huge amount of unnecessary, repetitive, and downright boring dialogue has been culled from the game. Most cutscenes have been made much shorter, and many have even been removed entirely.
- - Replaced the Mage class's 2nd magic equip slot with an offhand slot (light shields).
- - The game's icons have finally been resprited at a non-blurred 32px resolution. Many items have additionally had their icons changed to stand out a bit more.
+ - Many cutscenes and important events have been restructured to make gameplay feel smoother.
+ - Replaced Player 2's 2nd magic equip slot with an offhand slot (light shields).
+ - Resprited all existing icons from 24px to 32px. Changed many icons of existing items.
  - The pub/tavern has been rebranded as The Tipsy Oyster! Barkeep's name has been revealed to be Jeremy, and all of his establishments have been redesigned (except for the original in Haven Harbor).
- - Solus Town now automatically becomes snowy during the holiday season. No longer will it need to be manually changed every update!
  - Skill families will now be condensed into a single dropdown.
- - Completed the salvaging system. Many items throughout the entire game are now salvageable, making the system much more relevant.
- - Greatly reduced respawn timers of most time-based respawnables (e.g. oreleaf, flowers).
+ - Fleshed out the salvaging system, making many items throughout the game now salvageable.
  - Leveling up will also remove all debuffs.
  - Victory aftermath now shows if a learnable skill has become available by leveling up.
- - Changed the preloader / title screen background.
- - Reverted most dungeons back to the old dungeon map border style (same as the indoors style).
- - Many shops have had their stock changed. Some enemy drop pools have also been adjusted.
+ - Many shop stocks and enemy drop pools have been modified.
  - Increased all ore mining drop ranges by 1 on both bounds (e.g. copper ore now drops 3-5 copper clusters instead of the old 2-4).
- - The 4-skeleton enemy troop now spawns frequently anywhere in the "Forest Arena...?" after the penultimate Laeryidyean cutscene.
- - Contingence can now also apply Amnesia.
- - Item prefixes no longer affect an item's alphabetical sorting.
- - Renaming an item can no longer modify the prefix or the boost count.
- - Uncrafted items now display their mask name if in an ingredient list. Additionally, the color of an ingredient now changes depending on if the player has enough of the item.
- - The crafting menu now has sections for all equipment types.
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
- - Raw Meat and Salt-Grilled Meat have been changed to Raw Bear Meat and Salt-Grilled Bear Meat, respectively.
  - Many food-related items have been made renewable, and as a result are no longer sold by Dalia.
- - Unknown enemy weaknesses now show a question mark icon.
- - The night overlay now shows in battle.
- - Moved Change of Heart to the Magic skill category.
- - Presents now have a 50% drop chance on December 25th rather than the default 20%.
  - The new Speedster Boots have replaced the spot in boot progression once held by the Hermes Boots. The Hermes Boots have been moved up to be crafted near the end of Telluria Field's progression.
- - Red Gel can now be used on party members in battle.
- - Sharpened battleback images.
- - Countless other small changes have been made throughout the game (not as much as Alpha 14, but honestly, it's probably close).
+ - Solus Town now automatically becomes snowy during the holiday season.
+ - Presents now have a 50% drop chance on December 25th rather than the default 20%.
+ - Countless (and I mean COUNTLESS) other small changes have been made throughout the game (not as much as Alpha 14, but honestly, it's probably close).
  - A huge amount of backend reworks/changes have been made to improve performance, consistency, and development efficiency.
 
 Music Update (Final Wave):
@@ -367,26 +353,23 @@ Item/Equipment Balancing:
   ~ Ration: Reduced from Well Fed to Somewhat Well Fed.
   ~ Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
   ~ Fruitcake: Increased from Very Well Fed to Exquisitely Well Fed.
+ - Ethers no longer require Bits to craft and are now much cheaper overall.
  - Increased the stat boost of all tavern potions from 15% to 25%.
  - Nerfed The Warden's Trade-off from [-10% MDR, +10% PDR] to [-5% MDR, +20% PDR].
  - Nerfed Giant Goblin's Rage's ATK increase from +20% to +10%.
- - Nerfed the Steel Axe's stun chance by 5% (was originally 10%).
- - Increased price of Metal Wristbraces ★ from 180B to 300B.
- - Gave Bloodlust +2% PLS.
- - Nerfed CRI of Red Mask from +2% to +1%.
+ - Gave Bloodlust's base version +2% PLS.
  - Reworked Blood-Red Headband to grant +0.5% PLS and +3 AGI rather than +4% MHP and +3% CRI. Its price has increased from 80B to 120B.
- - Ethers no longer require Bits to craft. Their price has been adjusted accordingly.
  - Buffed the Knight's Greaves' DEF by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
 
 Skill Balancing:
- - Using BP with Revival now increases success rate instead of the amount of HP recovered on a successful revive.
+ - Using BP with Revival now increases success rate (used to increase the amount of HP recovered on a successful revive).
  - Wand Impulse and Backstab apply a new state called Recovery.
   ~ It decreases ATK/MAT by 50% rather than the old 30%.
   ~ However, since it's now a state and not a debuff, it won't interfere with setups.
   ~ Additionally, this only lasts for 1 turn after using the skill, while the debuff used to last for 2 turns.
  - Channel Divinity I and Cure II's learn levels have been swapped to now be learned at levels 8 and 11, respectively.
  - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%.
-  ~ These changes make Double Slash a relevant skill again, as it only hitting once will still do as much damage as Focused Slash. Focused Slash's CRI boost and lower MP cost make the choice between the skills dependant on playstyle.
+  ~ These changes make Double Slash a relevant skill again, as it does more damage than Focused Slash even if it only hits once. Focused Slash's CRI boost, lower MP cost, and guaranteed hit make the choice between the skills dependant on playstyle.
  - Nerfed Purify's MP cost to 15 MP (was originally 8 MP).
  - Nerfed Curify MP cost to 30 MP (was originally 18 MP).
  - Nerfed Mana Refund's MP cost to 50 MP (was originally 15 MP).
@@ -409,20 +392,21 @@ RNG Balancing:
 Miscellaneous Balancing:
  - You can no longer equip more than one of the same accessory on a single party member.
  - State resistance accessories no longer remove already applied states when equipped.
- - Greatly increased earned JP from all sources.
+ - Greatly increased JP gain from all sources.
  - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100 and +6 INT at Alpha 15's level cap of 30.
  - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
  - Status effects that provide MHP/MMP no longer reduce HP/MP after wearing off.
  - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
+ - Greatly reduced respawn timers of most time-based respawnables (e.g. oreleaf, flowers).
  - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
  - Greatly increased the acceleration of the EXP curve at later levels. This barely affects the game in its current state considering the low level cap, but this change will help prevent leveling up from being too easy in the late/end-game.
  - Doubled Well Rested's step duration from 500 to 1000.
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
- - Nerfed Bat's ATK from 17 to 15.
- - Greatly increased Bit drops from all Blazing Sands enemies to account for high shop prices in Telluria Castle Town.
- - All levels of Well Fed increase ATK and MAT by +2%, +4%, +6%, and +8% at their respective levels.
+ - Nerfed Bat's ATK from 17 to 15. It was just too strong against new players in the Blazing Sands.
+ - Bits are easier to get everywhere. Enemy drops, quest rewards, chests, and more have all had their Bit rewards increased to account for the insane shop prices in Telluria Castle Town.
+ - All levels of Well Fed now increase ATK and MAT by +2%, +4%, +6%, and +8% at their respective levels.
  - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
- - Many other small changes have been made to equipment/item stats, prices, and crafting recipes, as well as enemy stats/drops.
+ - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more. If they're not here, they're not super important.
 
 Bug Fixes:
  - Fixed a game-breaking bug that I could have sworn was already fixed where you could push a boulder in Laeryidyean's Forest - Left Connector off the boulder tiles.
@@ -430,9 +414,8 @@ Bug Fixes:
  - Fixed an ancient bug that caused battle events to trigger during actions. Endings of boss battles will now flow much more smoothly.
  - Fixed several bugs with many states such as inconsistencies between regeneration effects, poison map damage not functioning as intended, and unused states doubling the effects of some traits.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
- - Fixed a bug where the critical hit formula wasn't done correctly, resulting in critical evasion being basically a useless stat.
- - Fixed a bug where the little loot explosion after defeating an enemy sometimes did not show the correct drops.
- - Fixed a bug where some mid-battle boss monologues would interrupt turns or even action sequences instead of playing between turns.
+ - Fixed a bug where the critical hit formula wasn't programmed correctly, making critical evasion basically useless.
+ - Fixed a bug where the loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where party members would rarely not gain BP between the 1st and 2nd turn of a battle.
  - Fixed a bug where Purify couldn't be used outside of battle.
  - Fixed a bug where retrying a battle would cause items from previous attempts to show up on the dropped item window at the end of battle. This was only a visual bug.
@@ -440,17 +423,16 @@ Bug Fixes:
  - Fixed a bug where the Map Quest Window would disappear while the event interpreter was running.
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
- - Fixed a bug where states with no overlay would override states with an overlay if they had a higher priority value.
+ - Fixed a bug where states with no overlay would still override states with an overlay if they had a higher priority value.
  - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
- - Fixed a bug where playtime wouldn't increase correctly on non-60hz displays.
+ - Fixed a bug where the playtime stat wouldn't increase correctly on non-60hz displays.
  - Fixed a bug where the crafted weapons/armor counters could be wrong.
- - Fixed a bug where elemental weapons did not count as physical-elemental hits.
+ - Fixed a bug where elemental weapons did not count as physical-element hits.
  - Fixed a bug where INT slightly affected state application rates.
  - Fixed a bug where Flashbang could leave an enemy at 0 HP but it wouldn't die until another action was made.
  - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
  - Fixed a bug where magic skills used the wrong motion when casting.
  - Fixed a bug where battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
- - Fixed a bug where vA.14.7 removed Solus Town's snow but neglected to remove the snow around it in the overworld.
  - Fixed #9 and #10.
  - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release, many of these thanks to a ton of backend reworks/changes.
 
