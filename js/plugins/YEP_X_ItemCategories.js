@@ -370,7 +370,7 @@ Window_ItemList.prototype.includes = function(item) {
     return DataManager.isItem(item) && item.itypeId === 1;
     break;
   case 'keyItem':
-    return (DataManager.isItem(item) && item.itypeId === 2) || (DataManager.isArmor(item) && item.baseItemId === 31);
+    return DataManager.isItem(item) && item.itypeId === 2;
     break;
   case 'HiddenItemA':
     return DataManager.isItem(item) && item.itypeId === 3;
