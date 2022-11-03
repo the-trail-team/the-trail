@@ -380,7 +380,10 @@ Item/Equipment Balancing:
 
 Skill Balancing:
  - Using BP with Revival now increases success rate instead of the amount of HP recovered on a successful revive.
- - Wand Impulse and Backstab now only heavily decrease MAT/ATK (respectively) for 2 turns instead of 3.
+ - Wand Impulse and Backstab apply a new state called Recovery.
+  ~ It decreases ATK/MAT by 50% rather than the old 30%.
+  ~ However, since it's now a state and not a debuff, it won't interfere with setups.
+  ~ Additionally, this only lasts for 1 turn after using the skill, while the debuff used to last for 2 turns.
  - Channel Divinity I and Cure II's learn levels have been swapped to now be learned at levels 8 and 11, respectively.
  - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%.
   ~ These changes make Double Slash a relevant skill again, as it only hitting once will still do as much damage as Focused Slash. Focused Slash's CRI boost and lower MP cost make the choice between the skills dependant on playstyle.
