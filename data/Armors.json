@@ -655,7 +655,7 @@
     "traits": [],
     "iconIndex": 541,
     "name": "Matt's Fedora",
-    "note": "<Cannot Discard>\n<Cannot Rename>\n<Upgrade Slots: 2>\n<Menu Category: KeyItems>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(1).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(1).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Cannot Discard>\n<Cannot Rename>\n<Upgrade Slots: 2>\n<Menu Category: Memorabilia>\n\n<Custom Equip Requirement Condition>\nif (user.name() === $gameActors.actor(1).name()) {\n  condition = true;\n} else {\n  condition = false;\n}\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\nif (user.name() === $gameActors.actor(1).name()) {\n  text += '\\\\c[1]'\n} else {\n  text += '\\\\c[8]'\n}\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       20,
       8,
