@@ -424,6 +424,10 @@ Window_ItemList.prototype.includes = function(item) {
       case 'Upgraders':
         if (DataManager.isItem(item)) if (item.meta['Upgrade Effect']) return item;
         break;
+      case 'Salvaging':
+        if (DataManager.isItem(item)) if (item.meta['Disassemble Pool'] || item.meta['Disassembler']) return item;
+        if (DataManager.isWeapon(item) || DataManager.isArmor(item)) if (item.meta['Disassemble Pool']) return item;
+        break;
       default:
         return item && item.itemCategory.contains(this._ext);
     }

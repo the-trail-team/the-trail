@@ -1456,7 +1456,7 @@ Window_ItemList.prototype.listEquippedItems = function() {
     }
     this._data = results.concat(this._data);
 
-    if (["Materials", "Drops"].contains(this._ext)) {
+    if (["Materials", "Drops", "Salvaging"].contains(this._ext)) {
       this._data.sort(function(a,b){
         if (a.baseItemName) A = a.baseItemName; else A = a.name;
         if (b.baseItemName) B = b.baseItemName; else B = b.name;
