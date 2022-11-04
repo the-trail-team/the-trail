@@ -855,7 +855,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Flashbang",
-    "note": "<Party Limit Cost: 1>\n<Require = 0 BP>\n\n<setup action>\nadd state 43: user\nimmortal: targets, true\ndisplay action\nperform start\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 45\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nremove state 43: user\nclear battle log\nperform finish\n</finish action>\n\n<Before Eval>\neval: target._flashbang = target._flashbang || 0;\n</Before Eval>\n\n<Post-Damage Eval>\neval: target._flashbang++;\n</Post-Damage Eval>\n\n<Max Mastery Level: 0>",
+    "note": "<Party Limit Cost: 1>\n<Require = 0 BP>\n\n<setup action>\nadd state 43: user\nimmortal: targets, true\ndisplay action\nperform start\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 45\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nwait: 30\n</follow action>\n\n<finish action>\nimmortal: targets, false\nremove state 43: user\nclear battle log\nperform finish\n</finish action>\n\n<Before Eval>\neval: target._flashbang = target._flashbang || 0;\n</Before Eval>\n\n<Post-Damage Eval>\neval: target._flashbang++;\n</Post-Damage Eval>\n\n<Max Mastery Level: 0>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
