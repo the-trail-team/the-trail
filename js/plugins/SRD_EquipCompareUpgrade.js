@@ -1940,9 +1940,7 @@ Window_EquipStatus.prototype.standardFontSize = function() {
 
 if(Imported.YEP_EquipCore) {
 
-// this plugin has been customized a bit TOO much, some variables have to be defined here so I don't keep getting lost in my own work
-var mhpId = 1;
-var atkId = 3;
+var mhpId = 6;
 var intId = 8;
 var elementAtk1 = 81;
 var elementAtk2 = 92;
@@ -1950,20 +1948,26 @@ var maxBpId = 100;
 
 Window_StatCompare.prototype.showStat = function(stat, diffvalue) {
 	return (
-		(stat >= atkId && stat < intId) || // ATK, DEF, MAT, MDF, AGI always show
-		(stat < atkId && diffvalue != 0) || // MHP, MMP show if changed
-		(stat >= intId && !(stat >= elementAtk1 && stat <= elementAtk2) && diffvalue != 0) || // All other stats besides attack element changes show if changed
+		(stat < mhpId) || // ATK, DEF, MAT, MDF, AGI always show
+		(stat >= mhpId && !(stat >= elementAtk1 && stat <= elementAtk2) && diffvalue != 0) || // All other stats besides attack element changes show if changed
 		(stat >= elementAtk1 && stat <= elementAtk2 && this._actor.attackElements().contains(i - elementAtk1 + 1) !== this._tempActor.attackElements().contains(i - elementAtk1 + 1)) // Attack element changes
 	);
-}
+};
+
+Window_StatCompare.prototype.drawTitle = function() {
+	this._lineHeight = Yanfly.Param.LineHeight;
+	this.contents.fontSize = 28;
+	this.drawText("Stat Comparison", 0, 0, this.contents.width, 'center');
+	this._lineHeight = null;
+	this.contents.fontSize = this.standardFontSize();
+};
 
 Window_StatCompare.prototype.refresh = function() {
 	if(this._actor && this._tempActor) {
 		this.contents.clear();
-		let place = 0;
 		this.changeTextColor(this.systemColor());
-		this.drawText("Stat Comparison", 0, place * this.lineHeight(), this.contents.width, 'center');
-		place++
+		this.drawTitle();
+		let place = 1;
 		for (i = 1; i < _.names.length; i++) {
 			if (!_.names[i]) continue;
 			let actor = this._tempActor;
@@ -1972,44 +1976,51 @@ Window_StatCompare.prototype.refresh = function() {
 			const diffvalue = newValue - eval(_.evals[i]);
 
 			if (this.showStat(i, diffvalue)) {
-				this.drawItem(0, place * this.lineHeight(), i);
+				this.drawItem(
+					(this.contents.width * ((place - 1) % 5)) / 5, 
+					Yanfly.Param.LineHeight + 8 + Math.floor((place - 1) / 5) * ((this.lineHeight() * 4) + 2), 
+					i
+				);
 				place++;
 			}
 		}
 	}
 };
 
-Window_StatCompare.prototype.drawParamName = function(y, paramId) {
-	const x = this.textPadding();
+Window_StatCompare.prototype.drawParamName = function(x, y, paramId) {
 	this.changeTextColor(this.systemColor());
-	this.drawText(_.names[paramId], x, y, this._paramNameWidth * 2.5); // slightly more room for param name
+	this.drawText(_.names[paramId], x, y, this.contents.width / 5, 'center');
 };
 
-Window_StatCompare.prototype.drawCurrentParam = function(y, paramId) {
-	let x = this.contents.width - this.textPadding();
-	x -= this._paramValueWidth * 2 + this._arrowWidth + this._bonusValueWidth;
-	Window_EquipStatus.prototype.drawCurrentParam.call(this, x, y, paramId);
+Window_StatCompare.prototype.drawCurrentParam = function(x, y, paramId) {
+    this.resetTextColor();
+	const actor = this._actor;
+	const param = eval(_.evals[paramId]);
+	const result = _.forms[paramId].replace(/val/, param);
+    this.drawText(result, x, y + this.lineHeight(), this.contents.width / 5, 'center');
 };
 
-Window_StatCompare.prototype.drawNewParam = function(y, paramId) {
-	let x = this.contents.width - this.textPadding();
-	x -= this._paramValueWidth + this._bonusValueWidth;
-	Window_EquipStatus.prototype.drawNewParam.call(this, x, y, paramId);
+Window_StatCompare.prototype.drawNewParam = function(x, y, paramId) {
+    let actor = this._tempActor;
+	const newValue = eval(_.evals[paramId]);
+	actor = this._actor;
+	const diffvalue = newValue - eval(_.evals[paramId]);
+	const result = _.forms[paramId].replace(/val/, newValue);
+    this.changeTextColor(this.textColor(diffvalue == 0 ? 7 : 14));
+    this.drawText(result, x, y + this.lineHeight() * 3, this.contents.width / 5, 'center');
 };
 
-Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
-	var x = this.contents.width - this.textPadding();
-	x -= this._bonusValueWidth;
-	//New Code
+Window_StatCompare.prototype.drawParamDifference = function(x, y, paramId) {
 	let actor = this._tempActor;
 	const newValue = eval(_.evals[paramId]);
 	actor = this._actor;
 	var diffvalue = newValue - eval(_.evals[paramId]);
-	//End of New Code
 	if (diffvalue === 0) return;
-	if (paramId >= elementAtk1 && paramId <= elementAtk2) return;
-	if (paramId >= intId + 1 && paramId !== maxBpId) diffvalue = diffvalue.toFixed(1);
-	var actorparam = Yanfly.Util.toGroup(newValue);
+	if (paramId >= elementAtk1 && paramId <= elementAtk2) {
+		this.drawRightArrow(x, y);
+		return;
+	}
+	if (paramId > intId && paramId !== maxBpId) diffvalue = diffvalue.toFixed(1);
 	this.changeTextColor(this.paramchangeTextColor(diffvalue, paramId));
 	var text = Yanfly.Util.toGroup(diffvalue) + _.forms[paramId].replace(/val/, "");
 	if (diffvalue > 0) {
@@ -2017,7 +2028,7 @@ Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
 	} else {
 		text = ' (' + text + ')';
 	}
-	this.drawText(text, x, y, this._bonusValueWidth, 'left');
+	this.drawText(text, x, y + this.lineHeight() * 2, this.contents.width / 5, 'center');
 };
 
 Window_StatCompare.prototype.paramchangeTextColor = function(change, paramId) {

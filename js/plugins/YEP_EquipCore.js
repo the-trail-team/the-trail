@@ -789,7 +789,16 @@ Window_StatCompare.prototype.initialize = function(wx, wy, ww, wh) {
     Window_Base.prototype.initialize.call(this, wx, wy, ww, wh);
     this._actor = null;
     this._tempActor = null;
+    this._lineHeight = null;
     this.refresh();
+};
+
+Window_StatCompare.prototype.standardFontSize = function() {
+    return 18;
+};
+
+Window_StatCompare.prototype.lineHeight = function() {
+    return this._lineHeight || 22;
 };
 
 Window_StatCompare.prototype.createWidths = function() {
@@ -834,68 +843,39 @@ Window_StatCompare.prototype.setTempActor = function(tempActor) {
 
 Window_StatCompare.prototype.drawItem = function(x, y, paramId) {
     this.drawDarkRect(x, y, this.contents.width, this.lineHeight());
-    this.drawParamName(y, paramId);
-    this.drawCurrentParam(y, paramId);
-    this.drawRightArrow(y);
+    this.drawParamName(x, y, paramId);
+    this.drawCurrentParam(x, y, paramId);
     if (!this._tempActor) return;
-    this.drawNewParam(y, paramId);
-    this.drawParamDifference(y, paramId);
+    this.drawNewParam(x, y, paramId);
+    this.drawParamDifference(x, y, paramId);
 };
 
 Window_StatCompare.prototype.drawDarkRect = function(dx, dy, dw, dh) {
     var color = this.gaugeBackColor();
     this.changePaintOpacity(false);
-    this.contents.fillRect(dx + 1, dy + 1, dw - 2, dh - 2, color);
+    this.contents.fillRect(dx, dy, (dw / 5) - 2, (dh * 4), color);
     this.changePaintOpacity(true);
 };
 
-Window_StatCompare.prototype.drawParamName = function(y, paramId) {
-    var x = this.textPadding();
+Window_StatCompare.prototype.drawParamName = function(x, y, paramId) {
+    // SRD_EquipCompareUpgrade
+};
+
+Window_StatCompare.prototype.drawCurrentParam = function(x, y, paramId) {
+    // SRD_EquipCompareUpgrade
+};
+
+Window_StatCompare.prototype.drawRightArrow = function(x, y) {
     this.changeTextColor(this.systemColor());
-    this.drawText(TextManager.param(paramId), x, y, this._paramNameWidth);
+    this.drawText('\u2193', x, y + this.lineHeight() * 2, this.contents.width / 5, 'center');
 };
 
-Window_StatCompare.prototype.drawCurrentParam = function(y, paramId) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._paramValueWidth * 2 + this._arrowWidth + this._bonusValueWidth;
-    this.resetTextColor();
-    var actorparam = Yanfly.Util.toGroup(this._actor.param(paramId));
-    this.drawText(actorparam, x, y, this._paramValueWidth, 'right');
-};
-
-Window_StatCompare.prototype.drawRightArrow = function(y) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._paramValueWidth + this._arrowWidth + this._bonusValueWidth;
-    var dw = this.textWidth('\u2192' + ' ');
-    this.changeTextColor(this.systemColor());
-    this.drawText('\u2192', x, y, dw, 'center');
-};
-
-Window_StatCompare.prototype.drawNewParam = function(y, paramId) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._paramValueWidth + this._bonusValueWidth;
-    var newValue = this._tempActor.param(paramId);
-    var diffvalue = newValue - this._actor.param(paramId);
-    var actorparam = Yanfly.Util.toGroup(newValue);
-    this.changeTextColor(this.paramchangeTextColor(diffvalue));
-    this.drawText(actorparam, x, y, this._paramValueWidth, 'right');
+Window_StatCompare.prototype.drawNewParam = function(x, y, paramId) {
+    // SRD_EquipCompareUpgrade
 };
 
 Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._bonusValueWidth;
-    var newValue = this._tempActor.param(paramId);
-    var diffvalue = newValue - this._actor.param(paramId);
-    if (diffvalue === 0) return;
-    var actorparam = Yanfly.Util.toGroup(newValue);
-    this.changeTextColor(this.paramchangeTextColor(diffvalue));
-    var text = Yanfly.Util.toGroup(diffvalue);
-    if (diffvalue > 0) {
-      text = ' (+' + text + ')';
-    } else {
-      text = ' (' + text + ')';
-    }
-    this.drawText(text, x, y, this._bonusValueWidth, 'left');
+    // SRD_EquipCompareUpgrade
 };
 
 //=============================================================================
