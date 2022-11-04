@@ -339,6 +339,7 @@ ItemManager.initSlotUpgradeNotes = function(item) {
     var note10 = /<(?:UPGRADE WEAPON TYPE):[ ](\d+)[ ](?:THROUGH|to)[ ](\d+)>/i;
     var note11 = /<(?:UPGRADE ARMOR TYPE):[ ](\d+)[ ](?:THROUGH|to)[ ](\d+)>/i;
     var note12 = /<(?:SLOTS VARIANCE|slot variance):[ ](\d+)>/i;
+    var note13 = /<(?:Upgrade Tooltip):[ ](.*?)>/i;
     var baseItem = DataManager.getBaseItem(item);
     var notedata = baseItem.note.split(/[\r\n]+/);
 
@@ -353,6 +354,7 @@ ItemManager.initSlotUpgradeNotes = function(item) {
     item.upgradeItemType = [];
     item.upgradeWeaponType = [];
     item.upgradeArmorType = [];
+    item.upgradeTooltip = "";
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
@@ -391,6 +393,8 @@ ItemManager.initSlotUpgradeNotes = function(item) {
         item.upgradeArmorType = item.upgradeArmorType.concat(range);
       } else if (line.match(note12)) {
         item.upgradeSlotsVariance = parseInt(RegExp.$1);
+      } else if (line.match(note13)) {
+        item.upgradeTooltip = line.match(note13)[1];
       }
     }
     if (!DataManager.isIndependent(item)) item.upgradeSlots = 0;
@@ -441,7 +445,7 @@ ItemManager.payIUSEffects = function(mainItem, effectItem) {
 
 ItemManager.addIUSLine = function(mainItem, effectItem) {
     if (!mainItem.slotsApplied) this.initSlotUpgradeNotes(mainItem);
-    var line = '\\i[' + effectItem.iconIndex + ']' + effectItem.name;
+    var line = '\\i[' + effectItem.iconIndex + ']' + effectItem.name + " \\c[8](" + effectItem.upgradeTooltip + ")";
     mainItem.slotsApplied.push(line);
 };
 
