@@ -684,6 +684,7 @@ Game_BattlerBase.prototype.param = function(paramId) {
     Yanfly.Util.displayError(e, code, 'CUSTOM PARAM FORMULA ERROR');
   }
   value = Math.round(value.clamp(minValue, maxValue));
+  if (this._flashbang) if ([2, 3, 4, 5, 6].contains(paramId)) value = Math.round(value * Math.pow(0.9, this._flashbang)); // Flashbang skill
   this._baseParamCache[paramId] = value;
   return this._baseParamCache[paramId];
 };

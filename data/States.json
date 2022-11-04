@@ -1011,27 +1011,27 @@
   },
   {
     "id": 29,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [
       {
         "code": 21,
         "dataId": 5,
-        "value": 1.15
+        "value": 1.25
       }
     ],
     "iconIndex": 69,
-    "maxTurns": 1,
+    "maxTurns": 5,
     "message1": "'s MDF was boosted!",
     "message2": "'s MDF was boosted!",
     "message3": "",
     "message4": "'s MDF went back to normal.",
-    "minTurns": 1,
+    "minTurns": 5,
     "motion": 0,
-    "name": "Magic Resistant I",
-    "note": "<Category: buff>\n\n<Help Description>\nBoosts MDF by 15%.\n</Help Description>",
+    "name": "Magic Resistant",
+    "note": "<Category: buff>\n\n<Help Description>\nBoosts MDF by 25%.\n</Help Description>",
     "overlay": 0,
-    "priority": 0,
+    "priority": 30,
     "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -1041,27 +1041,27 @@
   },
   {
     "id": 30,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [
       {
         "code": 21,
         "dataId": 5,
-        "value": 0.85
+        "value": 0.75
       }
     ],
     "iconIndex": 85,
-    "maxTurns": 1,
+    "maxTurns": 5,
     "message1": "'s MDF was weakened!",
     "message2": "'s MDF was weakened!",
     "message3": "",
     "message4": "'s MDF went back to normal.",
-    "minTurns": 1,
+    "minTurns": 5,
     "motion": 0,
-    "name": "Magic Prone I",
-    "note": "<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nReduces MDF by 15%. [WEAK DEBUFF]\n</Help Description>",
+    "name": "Magic Prone",
+    "note": "<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nReduces MDF by 25%. [WEAK DEBUFF]\n</Help Description>",
     "overlay": 0,
-    "priority": 0,
+    "priority": 48,
     "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -1631,7 +1631,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "[P] Steadfast",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Battle Effect>\nuser.addBuff(3, 3);\nuser.addBuff(5, 3);\nuser.startAnimation(51);\n</Custom Battle Effect>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Battle Effect>\nuser.addState(92);\n</Custom Battle Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -1724,7 +1724,7 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [],
-    "iconIndex": 0,
+    "iconIndex": 30,
     "maxTurns": 1,
     "message1": "",
     "message2": "",
@@ -1732,10 +1732,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "[P] Critical Protect",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Battle Effect>\n// Reset Critical Protect flag each battle.\nuser._criticalProtect = false;\n</Custom Battle Effect>\n\n<Custom Victory Effect>\n// Reset Critical Protect flag each battle.\nuser._criticalProtect = false;\n</Custom Victory Effect>\n\n<Custom Escape Effect>\n// Reset Critical Protect flag each battle.\nuser._criticalProtect = false;\n</Custom Escape Effect>\n\n<Custom Defeat Effect>\n// Reset Critical Protect flag each battle.\nuser._criticalProtect = false;\n</Custom Defeat Effect>\n\n<Custom Respond Effect>\n// This is the HP Rate the target has to be under to activate Critical Protect.\nvar crisis = 0.25;\n// Check if the player is in battle, the target is alive, and the HP rate is under the right amount.\nif ($gameParty.inBattle() && target.isAlive() && target.hpRate() <= crisis && !target._criticalProtect) {\n  // Set the critical protect flag to true.\n  target._criticalProtect = true;\n  // The number of turns the buff will last.\n  var turns = 5;\n  // Adds DEF (ID: 3) buff to target.\n  target.addBuff(3, turns);\n  target.addBuff(3, turns);\n  target.addBuff(5, turns);\n  target.addBuff(5, turns);\n  // Play an animation to indicate it activated.\n  target.startAnimation(53);\n}\n</Custom Respond Effect>",
+    "name": "Critical Protect",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Help Description>\nWhen below 30% MHP, DEF and MDF are buffed by 20%.\n</Help Description>\n\n<Custom Passive Condition>\ncondition = user.hpRate() <= 0.25 && $gameParty.inBattle();\n</Custom Passive Condition>",
     "overlay": 0,
-    "priority": 0,
+    "priority": 5,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -3009,22 +3009,33 @@
   },
   {
     "id": 92,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
-    "maxTurns": 1,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.2
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 29,
+    "maxTurns": 5,
     "message1": "",
     "message2": "",
     "message3": "",
-    "message4": "",
-    "minTurns": 1,
+    "message4": "'s \"Steadfast\" passive dissipated.",
+    "minTurns": 5,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Steadfast",
+    "note": "<Category: buff>\n\n<Help Description>\nBoosts DEF and MDF by 20%.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
-    "removeAtBattleEnd": false,
+    "priority": 30,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,
@@ -4337,6 +4348,224 @@
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 130,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": " got in a battle stance!",
+    "message2": " got in a battle stance!",
+    "message3": "",
+    "message4": " relaxed their stance.",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Offensive Stance Handling",
+    "note": "<Custom Apply Effect>\ntarget._offensiveStance = target._offensiveStance || 0;\ntarget._offensiveStance = Math.min(3, target._offensiveStance + 1);\nstack = target._offensiveStance;\nswitch (stack) {\n  case 1:\n    target.addState(131);\n    break;\n  case 2:\n    target.removeState(131);\n    target.addState(132);\n    break;\n  case 3:\n    target.removeState(132);\n    target.addState(133);\n    break;\n  default:\n    break;\n}\n</Custom Apply Effect>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 131,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.1
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.1
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.9
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 30,
+    "maxTurns": 3,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Offensive Stance (1 STACK)",
+    "note": "<Category: buff>\n\n<Help Description>\nBoosts ATK and AGI by 10%. Reduces DEF and MDF by 10%. Can stack two more times.\n</Help Description>\n\n<Custom Remove Effect>\ntarget.removeState(130);\n</Custom Remove Effect>",
+    "overlay": 0,
+    "priority": 30,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 132,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.2
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.2
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.8
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 30,
+    "maxTurns": 4,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 4,
+    "motion": 0,
+    "name": "Offensive Stance (2 STACK)",
+    "note": "<Category: buff>\n\n<Help Description>\nBoosts ATK and AGI by 20%. Reduces DEF and MDF by 20%. Can stack one more time.\n</Help Description>\n\n<Custom Remove Effect>\ntarget.removeState(130);\n</Custom Remove Effect>",
+    "overlay": 0,
+    "priority": 30,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 133,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.3
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.3
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.7
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 0.7
+      }
+    ],
+    "iconIndex": 30,
+    "maxTurns": 5,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 5,
+    "motion": 0,
+    "name": "Offensive Stance (3 STACK)",
+    "note": "<Category: buff>\n\n<Help Description>\nBoosts ATK and AGI by 30%. Reduces DEF and MDF by 30%. Fully stacked!\n</Help Description>\n\n<Custom Remove Effect>\ntarget.removeState(130);\n</Custom Remove Effect>",
+    "overlay": 0,
+    "priority": 30,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 134,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.8
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 27,
+    "maxTurns": 3,
+    "message1": " was hit with a low blow!",
+    "message2": " was hit with a low blow!",
+    "message3": "",
+    "message4": " recovered from a low blow.",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Low Blow",
+    "note": "<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nReduces ATK and AGI by 20%. [WEAK DEBUFF]\n</Help Description>",
+    "overlay": 0,
+    "priority": 48,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 135,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 745,
+    "maxTurns": 2,
+    "message1": " was flashbanged!",
+    "message2": "",
+    "message3": "",
+    "message4": " is no longer flashed.",
+    "minTurns": 2,
+    "motion": 0,
+    "name": "Flashbang",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<Help Description>\nReduces ATK, MAT, DEF, MDF, and AGI by \\evalText<<Math.round(Math.pow(0.9, this._battler._flashbang) * 100)>>%. [MODERATE DEBUFF]\n</Help Description>\n\n<Custom Remove Effect>\ntarget._flashbang = 0;\n</Custom Remove Effect>",
+    "overlay": 0,
+    "priority": 68,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,

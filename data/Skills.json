@@ -836,50 +836,26 @@
     "damage": {
       "critical": true,
       "elementId": 0,
-      "formula": "a.atk * 5 - b.def * 2",
+      "formula": "a.atk * 1 - b.def * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "With a bit of magic channeled within (still uses ATK), conjure up this nifty gadget\nthat damages and debuffs enemies in its radius. Additionally debuffs \\c[27]\\bp0[0]\\bp=1[1]\\bp=2[2]\\bp=3[3]\\bp=4[4]\\bp=5[5]\\bp=6[6] extra stat\\bp0[s]\\bp>=2[s]\\c[0].",
+    "description": "Use your inner magic to conjure up this nifty gadget. Reduces every\nstat of the target by 10% and can be infinitely stacked multiplicatively.",
     "effects": [
       {
-        "code": 32,
-        "dataId": 2,
-        "value1": 2,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 3,
-        "value1": 2,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 4,
-        "value1": 2,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 5,
-        "value1": 2,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 6,
-        "value1": 2,
+        "code": 21,
+        "dataId": 135,
+        "value1": 1,
         "value2": 0
       }
     ],
     "hitType": 0,
-    "iconIndex": 7,
+    "iconIndex": 744,
     "message1": " uses %1!",
     "message2": "",
     "mpCost": 0,
     "name": "Flashbang",
-    "note": "<Party Limit Cost: 1>\n\n<setup action>\nadd state 43: user\neval: $gameVariables.setValue(6, user.bp);\nimmortal: targets, true\ndisplay action\nperform start\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 45\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nclear battle log\nwait for effect\nIF ($gameVariables.value(6) >= 1)\nanimation 54: target\nwait for animation\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 2)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 3)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 4)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 5)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nIF ($gameVariables.value(6) >= 6)\neval: $gameVariables.setValue(35, Math.floor(Math.random() * 5) + 2);\neval: target.addDebuff($gameVariables.value(35), 2);\nEND\nwait: 15\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nremove state 43: user\n</finish action>\n\n<Max Mastery Level: 0>",
+    "note": "<Party Limit Cost: 1>\n<Require = 0 BP>\n\n<setup action>\nadd state 43: user\nimmortal: targets, true\ndisplay action\nperform start\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 45\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nimmortal: targets, false\nremove state 43: user\nclear battle log\nperform finish\n</finish action>\n\n<Before Eval>\neval: target._flashbang = target._flashbang || 0;\n</Before Eval>\n\n<Post-Damage Eval>\neval: target._flashbang++;\n</Post-Damage Eval>\n\n<Max Mastery Level: 0>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1086,12 +1062,12 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Buffs the MDF of you or an ally by 1 stage for 3 turns.",
+    "description": "Increases an ally's MDF by 25% for 5 turns.",
     "effects": [
       {
-        "code": 31,
-        "dataId": 5,
-        "value1": 3,
+        "code": 21,
+        "dataId": 29,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -1099,7 +1075,7 @@
     "iconIndex": 37,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 8,
+    "mpCost": 10,
     "name": "Magic Resistance",
     "note": "<Require = 0 BP>\n<Hide if Learned Skill: 100>\n\n<action copy: skill:11>",
     "occasion": 1,
@@ -1123,12 +1099,12 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Debuffs the MDF of an enemy by 1 stage for 3 turns.",
+    "description": "Decreases an enemy's MDF by 25% for 5 turns.",
     "effects": [
       {
-        "code": 32,
-        "dataId": 5,
-        "value1": 3,
+        "code": 21,
+        "dataId": 30,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -1136,7 +1112,7 @@
     "iconIndex": 53,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 10,
+    "mpCost": 20,
     "name": "Magic Proneness",
     "note": "<Require = 0 BP>\n<Hide if Learned Skill: 100>\n\n<action copy: skill:7>",
     "occasion": 1,
@@ -1953,7 +1929,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nBuffs DEF and MDF by 1 stage for 3 turns upon entering battle.",
+    "description": "[PASSIVE SKILL]\nBuffs DEF and MDF by 20% for the first 5 turns of battle.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 13,
@@ -2131,7 +2107,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nBuffs DEF and MDF by 2 stages for 5 turns when HP is below 25% MHP.",
+    "description": "[PASSIVE SKILL]\nWhen below 30% MHP, DEF and MDF are buffed by 20%.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 14,
@@ -2375,7 +2351,7 @@
   },
   {
     "id": 68,
-    "animationId": 0,
+    "animationId": 51,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -2383,30 +2359,12 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Prepare yourself to be on the offense, buffing ATK and AGI by 1 stage\nfor 5 turns and debuffing DEF and MDF by 1 stage for 5 turns.",
+    "description": "Prepare to get on the offense. Buffs ATK and AGI, but\ndebuffs DEF and MDF. Can stack up to three times.",
     "effects": [
       {
-        "code": 31,
-        "dataId": 2,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 6,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 3,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 5,
-        "value1": 5,
+        "code": 21,
+        "dataId": 130,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -2416,7 +2374,7 @@
     "message2": "",
     "mpCost": 8,
     "name": "Offensive Stance",
-    "note": "<Require = 0 BP>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\nwait for motion\n</setup action>\n\n<whole action>\n</whole action>\n\n<target action>\nanimation 51: target\nwait for animation\nadd atk buff: user, 5, show\nwait: 15\nadd agi buff: user, 5, show\nwait: 15\nanimation 54: target\nwait for animation\nadd def debuff: user, 5, show\nwait: 15\nadd mdf debuff: user, 5, show\nwait: 15\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
+    "note": "<Require = 0 BP>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\nwait for motion\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2438,7 +2396,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Hit an enemy where it hurts, debuffing their ATK and\nAGI by 1 stage for 2 turns. \\c[27]\\bpdamage[300]%\\c[0] ATK rate.",
+    "description": "Hit an enemy where it hurts, debuffing\nATK and AGI for \\c[27]\\bpturn[3]\\c[0] turns. \\c[27]\\bpdamage[300]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
@@ -2447,15 +2405,9 @@
         "value2": 0
       },
       {
-        "code": 32,
-        "dataId": 2,
-        "value1": 2,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 6,
-        "value1": 2,
+        "code": 21,
+        "dataId": 134,
+        "value1": 1,
         "value2": 0
       }
     ],
