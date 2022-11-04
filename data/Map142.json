@@ -16075,7 +16075,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "had 150B left to give to you directly"
+                "had 100B left to give to you directly"
               ]
             },
             {
@@ -16161,21 +16161,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "classics in that book! I'd love to"
+                "classics in that book! I'd love to hear"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "hear you play that while I'm making"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "us dinner!"
+                "you play some while I make dinner!"
               ]
             },
             {
@@ -18413,7 +18406,7 @@
     {
       "id": 7,
       "name": "EV007",
-      "note": "",
+      "note": "<Hitbox Right: 2>",
       "pages": [
         {
           "conditions": {
@@ -21454,140 +21447,8 @@
       "x": 10,
       "y": 9
     },
-    {
-      "id": 8,
-      "name": "EV008",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 55,
-            "variableValid": true,
-            "variableValue": 17
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 7"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 11,
-      "y": 9
-    },
-    {
-      "id": 9,
-      "name": "EV009",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 55,
-            "variableValid": true,
-            "variableValue": 17
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 7"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 12,
-      "y": 9
-    },
+    null,
+    null,
     {
       "id": 10,
       "name": "EV010",
