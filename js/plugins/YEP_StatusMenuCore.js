@@ -1324,27 +1324,27 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeRate(actor.jpRate(), dx, dy, dw);
       break;
     case 'pls':
-      this.drawAttributeName("Physical Life Steal", dx, dy, dw);
+      this.drawAttributeName("Physical Life Steal (PLS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpPhysicalRate'), dx, dy, dw);
       break;
     case 'mls':
-      this.drawAttributeName("Magical Life Steal", dx, dy, dw);
+      this.drawAttributeName("Magical Life Steal (MLS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpMagicalRate'), dx, dy, dw);
       break;
     case 'cls':
-      this.drawAttributeName("True Life Steal", dx, dy, dw);
+      this.drawAttributeName("True Life Steal (TLS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpCertainRate'), dx, dy, dw);
       break;
     case 'pms':
-      this.drawAttributeName("Physical MP Steal", dx, dy, dw);
+      this.drawAttributeName("Physical MP Steal (PMS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('mpPhysicalRate'), dx, dy, dw);
       break;
     case 'mms':
-      this.drawAttributeName("Magical MP Steal", dx, dy, dw);
+      this.drawAttributeName("Magical MP Steal (MMS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('mpMagicalRate'), dx, dy, dw);
       break;
     case 'cms':
-      this.drawAttributeName("True MP Steal", dx, dy, dw);
+      this.drawAttributeName("True MP Steal (TMS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('mpCertainRate'), dx, dy, dw);
       break;
     default:
