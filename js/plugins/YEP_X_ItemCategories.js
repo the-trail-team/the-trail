@@ -420,6 +420,8 @@ Window_ItemList.prototype.includes = function(item) {
       if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id)) return item;
       // if (DataManager.isWeapon(item)) if (Yanfly.EED.WeaponDropIDs.contains(item.baseItemId)) return item;
       // if (DataManager.isArmor(item)) if (Yanfly.EED.ArmorDropIDs.contains(item.baseItemId)) return item;
+    } else if (this._ext === "Upgraders") {
+      if (DataManager.isItem(item)) if (Yanfly.IUS.UpgraderIDs.contains(item.id)) return item;
     } else return item && item.itemCategory.contains(this._ext);
     break;
   default:

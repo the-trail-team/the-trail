@@ -274,6 +274,7 @@ Yanfly.IUS.DataManager_isDatabaseLoaded = DataManager.isDatabaseLoaded;
 DataManager.isDatabaseLoaded = function() {
   if (!Yanfly.IUS.DataManager_isDatabaseLoaded.call(this)) return false;
   if (!Yanfly._loaded_YEP_X_ItemUpgradeSlots) {
+    Yanfly.IUS.UpgraderIDs = [];
     this.processUpgradeNotetags1($dataItems);
     this.processUpgradeNotetags1($dataWeapons);
     this.processUpgradeNotetags1($dataArmors);
@@ -359,6 +360,7 @@ ItemManager.initSlotUpgradeNotes = function(item) {
       if (line.match(note1)) {
         item.upgradeSlots = parseInt(RegExp.$1);
       } else if (line.match(note2)) {
+        if (!Yanfly.IUS.UpgraderIDs.contains(item)) Yanfly.IUS.UpgraderIDs.push(item.id);
         upgradeEffect = true;
         item.upgradeEffect = [];
       } else if (line.match(note3)) {
