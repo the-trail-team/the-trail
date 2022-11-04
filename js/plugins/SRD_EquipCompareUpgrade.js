@@ -1948,6 +1948,15 @@ var elementAtk1 = 81;
 var elementAtk2 = 92;
 var maxBpId = 100;
 
+Window_StatCompare.prototype.showStat = function(stat, diffvalue) {
+	return (
+		(stat >= atkId && stat < intId) || // ATK, DEF, MAT, MDF, AGI always show
+		(stat < atkId && diffvalue != 0) || // MHP, MMP show if changed
+		(stat >= intId && !(stat >= elementAtk1 && stat <= elementAtk2) && diffvalue != 0) || // All other stats besides attack element changes show if changed
+		(stat >= elementAtk1 && stat <= elementAtk2 && this._actor.attackElements().contains(i - elementAtk1 + 1) !== this._tempActor.attackElements().contains(i - elementAtk1 + 1)) // Attack element changes
+	);
+}
+
 Window_StatCompare.prototype.refresh = function() {
 	if(this._actor && this._tempActor) {
 		this.contents.clear();
@@ -1955,41 +1964,16 @@ Window_StatCompare.prototype.refresh = function() {
 		this.changeTextColor(this.systemColor());
 		this.drawText("Stat Comparison", 0, place * this.lineHeight(), this.contents.width, 'center');
 		place++
-		for(var i = mhpId; i < atkId; i++) { // stats 1-2 (mhp, mmp) will be showed if they are modified
-			if(_.names[i]) {
-				let actor = this._tempActor;
-				const newValue = eval(_.evals[i]);
-				actor = this._actor;
-				const diffvalue = newValue - eval(_.evals[i]);
-				if(diffvalue !== 0) {
-					this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
-					place++;
-				}
-			}
-		}
-		for(var i = atkId; i < intId; i++) { // stats 3-7 (atk, def, mat, mdf, agi) core stats will always be displayed
-			if(_.names[i]) {
-				this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
+		for (i = 1; i < _.names.length; i++) {
+			if (!_.names[i]) continue;
+			let actor = this._tempActor;
+			const newValue = eval(_.evals[i]);
+			actor = this._actor;
+			const diffvalue = newValue - eval(_.evals[i]);
+
+			if (this.showStat(i, diffvalue)) {
+				this.drawItem(0, place * this.lineHeight(), i);
 				place++;
-			}
-		}
-		for(var i = intId; i < _.names.length; i++) { // stats 8+ will be showed if they are modified
-			if(_.names[i]) {
-				let actor = this._tempActor;
-				const newValue = eval(_.evals[i]);
-				actor = this._actor;
-				const diffvalue = newValue - eval(_.evals[i]);
-				if(!(i >= elementAtk1 && i <= elementAtk2)) { // this will run for everything that is not an attack element change
-					if(diffvalue !== 0) {
-						this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
-						place++;
-					}
-				} else { // this will only run for attack element changes
-					if(this._actor.attackElements().contains(i - elementAtk1 + 1) !== this._tempActor.attackElements().contains(i - elementAtk1 + 1)) {
-						this.drawItem(0, place * this.lineHeight()/* - ((place - 1) * 2)*/, i);
-						place++;
-					}
-				}
 			}
 		}
 	}
