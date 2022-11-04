@@ -412,17 +412,21 @@ Window_ItemList.prototype.includes = function(item) {
     return item && item.etypeId === this._ext;
     break;
   case 'Category':
-    if (this._ext === "Materials") {
-      if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return item;
-      if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return item;
-      if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return item;
-    } else if (this._ext === "Drops") {
-      if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id)) return item;
-      // if (DataManager.isWeapon(item)) if (Yanfly.EED.WeaponDropIDs.contains(item.baseItemId)) return item;
-      // if (DataManager.isArmor(item)) if (Yanfly.EED.ArmorDropIDs.contains(item.baseItemId)) return item;
-    } else if (this._ext === "Upgraders") {
-      if (DataManager.isItem(item)) if (Yanfly.IUS.UpgraderIDs.contains(item.id)) return item;
-    } else return item && item.itemCategory.contains(this._ext);
+    switch (this._ext) {
+      case 'Materials':
+        if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return item;
+        if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return item;
+        if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return item;
+        break;
+      case 'Drops':
+        if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id)) return item;
+        break;
+      case 'Upgraders':
+        if (DataManager.isItem(item)) if (item.meta['Upgrade Effect']) return item;
+        break;
+      default:
+        return item && item.itemCategory.contains(this._ext);
+    }
     break;
   default:
     return false;
