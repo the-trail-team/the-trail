@@ -1500,7 +1500,7 @@
     "minTurns": 1,
     "motion": 1,
     "name": "Terrified",
-    "note": "<Category: Bypass Death Removal>\n<Category: Group Defeat>\n<Cannot Select: All>\n\n<Help Description>\nCannot do anything. Very weak.\n</Help Description>\n\n<Custom Passive Condition>\n$gameTroop._enemies.some(e => [26, 28].contains(e.enemyId()));\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Group Defeat>\n<Cannot Select: All>\n\n<Help Description>\nCannot do anything. Very weak.\n</Help Description>\n\n<Custom Passive Condition>\ncondition = $gameTroop._enemies.some(e => [26, 28].contains(e.enemyId()));\n</Custom Passive Condition>",
     "overlay": 10,
     "priority": 95,
     "removeAtBattleEnd": true,
