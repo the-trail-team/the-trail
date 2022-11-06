@@ -298,6 +298,7 @@ Game_System.prototype.rareEnemyChance = function() {
 };
 
 Game_System.prototype.rareEnemyRoll = function() {
+    if (!$gameSwitches.value(23)) return false; // Laeryidyean must be defeated
     let chance = 1 / this.rareEnemyChance();
     let roll = Math.random() * chance < 1;
     this._rareEnemyTries++;
