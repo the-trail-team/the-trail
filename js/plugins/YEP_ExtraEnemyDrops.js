@@ -505,7 +505,9 @@ DataManager.processEEDNotetags1 = function(group) {
 
     obj.dropsMade = true;
     obj.conditionalDropItems = [];
+    obj.nightBoostDropItems = [];
     var conditionalLines = [];
+    var nightBoost = [];
     var evalMode = 'none';
 
     for (var i = 0; i < notedata.length; i++) {
@@ -602,28 +604,52 @@ DataManager.processEEDNotetags1 = function(group) {
         conditionalLines = [];
       } else if (evalMode === 'conditionalDrop') {
         conditionalLines.push(line);
+      } else if (line.match(/<NIGHT BOOST>/i)) {
+        var evalMode = 'nightBoost';
+      } else if (line.match(/<\/NIGHT BOOST>/i)) {
+        var evalMode = 'none';
+      } else if (evalMode === 'nightBoost' && line.match(/(.*):[ ](.*)[ ](.*)/i)) {
+        var name = String(RegExp.$1).toUpperCase();
+        if (Yanfly.ItemIdRef[name]) {
+          var id = Yanfly.ItemIdRef[name];
+          var item = $dataItems[id];
+        } else if (Yanfly.WeaponIdRef[name]) {
+          var id = Yanfly.WeaponIdRef[name];
+          var item = $dataWeapons[id];
+        } else if (Yanfly.ArmorIdRef[name]) {
+          var id = Yanfly.ArmorIdRef[name];
+          var item = $dataArmors[id];
+        } else continue;
+        if (!item) continue;
+        var always = "Always: +" + RegExp.$2;
+        var night = "Switch 69 ON: " + RegExp.$3;
+        var arr = [always, night];
+        obj.conditionalDropItems.push([item, arr]);
       }
     }
-    // origin crystal (1/50,000 drop)
+    this.createGlobalDrops(obj);
+  }
+};
+
+DataManager.createGlobalDrops = function(obj) {
+    // Origin Crystal (1/50,000 drop)
     var id = 34;
     var rate = 0.00002;
     if (obj.name.contains("EX")) rate *= 100; // 100x more likely to drop from EX enemies (1/500 drop)
     this.createEnemyDrop(obj, id, rate, 2);
-    // seshat's charm (1/100 drop)
+
+    // Seshat's Charm (1/100 drop)
     var id = 160;
     var rate = 0.01;
     this.createEnemyDrop(obj, id, rate, 3);
-    // present (1/5 drop)
+
+    // Present (1/5 drop during December)
     if (date.getMonth() === 11) {
       var id = 156;
-      if (date.getDate() === 25) {
-        var rate = 0.2;
-      } else {
-        var rate = 0.5;
-      }
+      var rate = 0.2;
+      if (date.getDate() === 25) rate = 0.5; // 1/2 drop on Christmas
       this.createEnemyDrop(obj, id, rate, 1);
     }
-  }
 };
 
 DataManager.createEnemyDrop = function(obj, dataId, rate, kind) {

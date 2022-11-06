@@ -912,7 +912,7 @@
     ],
     "gold": 4,
     "name": "Skeleton",
-    "note": "<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\nSkeleton Skull: 20%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1,
       15,
@@ -1023,7 +1023,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Mage",
-    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\nSkeleton Skull: 20%\nSmall Elixir: 20%\nElixir: 8.33%\nMAT Scroll: 10%\nRuby Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Elixir Drop>\nSwitch 69 ON: +20%\n</Conditional Small Elixir Drop>\n<Conditional Elixir Drop>\nSwitch 69 ON: +8.33%\n</Conditional Elixir Drop>\n<Conditional MAT Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional MAT Scroll Drop>\n<Conditional Ruby Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Ruby Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 8.33% +8.33%\nMAT Scroll: 5% +5%\nRuby Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       150,
       30,
@@ -1120,7 +1120,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\nSkeleton Skull: 20%\nSmall Potion: 20%\nPotion: 8.33%\nATK Scroll: 10%\nEmerald Ring: 4%\nDark Essence: 20%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Potion Drop>\nSwitch 69 ON: +20%\n</Conditional Small Potion Drop>\n<Conditional Potion Drop>\nSwitch 69 ON: +8.33%\n</Conditional Potion Drop>\n<Conditional ATK Scroll Drop>\nSwitch 69 ON: +5%\n</Conditional ATK Scroll Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 8.33% +8.33%\nATK Scroll: 5% +5%\nEmerald Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       180,
       10,
@@ -2400,7 +2400,7 @@
     ],
     "gold": 45,
     "name": "Skeleton Knight",
-    "note": "<Steal Item 71: 33%>\n<Steal Item 72: 20%>\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\nSkeleton Skull: 20%\nSmall Ether: 8.33%\nEther: 4%\nEmerald Ring: 5%\nDark Essence: 20%\nMalicious Essence: 10%\n</Enemy Drops>\n<Conditional Skeleton Skull Drop>\nSwitch 69 ON: +30%\n</Conditional Skeleton Skull Drop>\n<Conditional Small Ether Drop>\nSwitch 69 ON: +8.33%\n</Conditional Small Ether Drop>\n<Conditional Ether Drop>\nSwitch 69 ON: +2%\n</Conditional Ether Drop>\n<Conditional Emerald Ring Drop>\nSwitch 69 ON: +2.5%\n</Conditional Emerald Ring Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Malicious Essence Drop>\nSwitch 69 ON: +10%\n</Conditional Malicious Essence Drop>",
+    "note": "<Steal Item 71: 33%>\n<Steal Item 72: 20%>\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 8.33% +8.33%\nEther: 4% +2%\nEmerald Ring: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
     "params": [
       1000,
       20,
@@ -2487,7 +2487,7 @@
     ],
     "gold": 45,
     "name": "Lost Soul",
-    "note": "<Passive State: 129, 57>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30% +++ HP% param <= 50%: Cure II, Lowest HP%\nRandom 60% +++ State !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nJade Charm: 2%\nDark Essence: 20%\nMalicious Essence: 10%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +1%\n</Conditional Jade Charm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Malicious Essence Drop>\nSwitch 69 ON: +10%\n</Conditional Malicious Essence Drop>",
+    "note": "<Passive State: 129, 57>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30% +++ HP% param <= 50%: Cure II, Lowest HP%\nRandom 60% +++ State !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nJade Charm: 2% +1%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
     "params": [
       500,
       999,
@@ -2727,7 +2727,7 @@
     ],
     "gold": 30,
     "name": "Suffering Soul",
-    "note": "<Passive State: 129, 57>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: NoMatchingSprite/Suffering Soul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nJade Charm: 1%\nNecrotic Skull: 5%\nDark Essence: 20%\nMalicious Essence: 10%\n</Enemy Drops>\n<Conditional Jade Charm Drop>\nSwitch 69 ON: +0.5%\n</Conditional Jade Charm Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +2.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Malicious Essence Drop>\nSwitch 69 ON: +10%\n</Conditional Malicious Essence Drop>",
+    "note": "<Passive State: 129, 57>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: NoMatchingSprite/Suffering Soul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nJade Charm: 1% +0.5%\nNecrotic Skull: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
     "params": [
       500,
       999,
@@ -4232,7 +4232,7 @@
     ],
     "gold": 100,
     "name": "Darkhound",
-    "note": "<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Attack Animation: 133>\n<Sideview No Collapse>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\nDark Essence: 20%\nNecrotic Skull: 12.5%\nMetal Wristbraces ★: 5%\nAnti-Magic Charm ★: 5%\nCharm of Foresight: 5%\nINT Scroll: 2.5%\nEXR Scroll: 2.5%\n</Enemy Drops>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>\n<Conditional Necrotic Skull Drop>\nSwitch 69 ON: +12.5%\n</Conditional Necrotic Skull Drop>\n<Conditional Metal Wristbraces ★ Drop>\nSwitch 69 ON: +5%\n</Conditional Metal Wristbraces ★ Drop>\n<Conditional Anti-Magic Charm ★ Drop>\nSwitch 69 ON: +5%\n</Conditional Anti-Magic Charm ★ Drop>\n<Conditional Charm of Foresight Drop>\nSwitch 69 ON: +5%\n</Conditional Charm of Foresight Drop>\n<Conditional INT Scroll Drop>\nSwitch 69 ON: +2.5%\n</Conditional INT Scroll Drop>\n<Conditional EXR Scroll Drop>\nSwitch 69 ON: +2.5%\n</Conditional EXR Scroll Drop>",
+    "note": "<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Attack Animation: 133>\n<Sideview No Collapse>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 12.5% +12.5%\nMetal Wristbraces ★: 5% +5%\nAnti-Magic Charm ★: 5% +5%\nCharm of Foresight: 5% +5%\nINT Scroll: 2.5% +2.5%\nEXR Scroll: 2.5% +2.5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1500,
       0,
@@ -5060,7 +5060,7 @@
     ],
     "gold": 500,
     "name": "Mimic",
-    "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n\n<Enemy Drops>\nSeshat's Charm: 0%\nEXR Scroll: 0%\nBunny Hood: 0%\n</Enemy Drops>\n\n<Conditional Seshat's Charm Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Seshat's Charm Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
+    "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n\n<Conditional Seshat's Charm Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Seshat's Charm Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
     "params": [
       2500,
       0,
@@ -5792,7 +5792,7 @@
     ],
     "gold": 100,
     "name": "Chilling Apparition",
-    "note": "<Passive State: 129, 57>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nWarm Scarf: 3.33%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\nDark Essence: 20%\n</Enemy Drops>\n\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Passive State: 129, 57>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nWarm Scarf: 3.33%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       2500,
       0,
@@ -6006,7 +6006,7 @@
     ],
     "gold": 432,
     "name": "Baby Dragon",
-    "note": "<Floating>\n<Floating Rate: 0.05>\n<Breathing Speed: 20>\n<Attack Animation: 211>\n<Element Absorb: 6, 7>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nEnchanted Dragon Scale: 0%\nDragonfruit: 20%\nEarth Essence: 20%\nWind Essence: 20%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +50%\n</Conditional Enchanted Dragon Scale Drop>",
+    "note": "<Floating>\n<Floating Rate: 0.05>\n<Breathing Speed: 20>\n<Attack Animation: 211>\n<Element Absorb: 6, 7>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragonfruit: 20%\nEarth Essence: 20%\nWind Essence: 20%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +50%\n</Conditional Enchanted Dragon Scale Drop>",
     "params": [
       6000,
       0,
@@ -6671,7 +6671,7 @@
     ],
     "gold": 1500,
     "name": "Ethereal Bat",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Element Absorb: 7>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nEthereal Bat Wing: 0%\nEthereal Bat's Spirit: 0%\nWind Catalyst: 100%\nStorm Lens: 3.33%\nBat Sling: 20%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<Conditional Ethereal Bat Wing Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat Wing Drop>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat's Spirit Drop>",
+    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Element Absorb: 7>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nWind Catalyst: 100%\nStorm Lens: 3.33%\nBat Sling: 20%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<Conditional Ethereal Bat Wing Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat Wing Drop>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat's Spirit Drop>",
     "params": [
       8000,
       0,
@@ -7526,7 +7526,7 @@
     ],
     "gold": 100,
     "name": "Poltergeist",
-    "note": "<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Attack Animation: 1>\n<Sideview No Collapse>\n<Passive State: 57>\n\n<Boost Skill 132: Full>\n\n<Enemy Drops>\nFaux-Gold Headband: 2.5%\nBattle Plan: 3.33%\nEctoblood: 75%\nEctoblood: 75%\nEctoplasm: 10%\nDark Essence: 20%\n</Enemy Drops>\n\n<Conditional Faux-Gold Headband Drop>\nSwitch 69 ON: +2.5%\n</Conditional Faux-Gold Headband Drop>\n<Conditional Ectoplasm Drop>\nSwitch 69 ON: +10%\n</Conditional Ectoplasm Drop>\n<Conditional Dark Essence Drop>\nSwitch 69 ON: +20%\n</Conditional Dark Essence Drop>",
+    "note": "<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Attack Animation: 1>\n<Sideview No Collapse>\n<Passive State: 57>\n\n<Boost Skill 132: Full>\n\n<Enemy Drops>\nBattle Plan: 3.33%\nEctoblood: 75%\nEctoblood: 75%\n</Enemy Drops>\n\n<Night Boost>\nFaux-Gold Headband: 2.5% +2.5%\nEctoplasm: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       2500,
       0,
