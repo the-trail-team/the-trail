@@ -1944,7 +1944,7 @@ var mhpId = 6;
 var intId = 8;
 var elementAtk1 = 81;
 var elementAtk2 = 92;
-var maxBpId = 100;
+var specialIds = 98;
 
 Window_StatCompare.prototype.showStat = function(stat, diffvalue) {
 	return (
@@ -2020,7 +2020,7 @@ Window_StatCompare.prototype.drawParamDifference = function(x, y, paramId) {
 		this.drawRightArrow(x, y);
 		return;
 	}
-	if (paramId > intId && paramId !== maxBpId) diffvalue = diffvalue.toFixed(1);
+	if (paramId > intId && paramId < specialIds) diffvalue = diffvalue.toFixed(1);
 	this.changeTextColor(this.paramchangeTextColor(diffvalue, paramId));
 	var text = Yanfly.Util.toGroup(diffvalue) + _.forms[paramId].replace(/val/, "");
 	if (diffvalue > 0) {

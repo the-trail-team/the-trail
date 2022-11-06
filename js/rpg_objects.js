@@ -2634,9 +2634,20 @@ Game_BattlerBase.prototype.stateResistSet = function() {
 Game_BattlerBase.prototype.nonEquipStateResistSet = function() {
     var traits = this.traits(Game_BattlerBase.TRAIT_STATE_RESIST);
     var set = [];
-    for (i = 0; i < traits.length; i++) {
-        if (traits[i].value !== 2) set.push(traits[i]);
-    }
+    traits.forEach(t => {
+        if (t.value != 2) set.push(t);
+    });
+    return set.reduce(function(r, trait) {
+        return r.concat(trait.dataId);
+    }, []);
+};
+
+Game_BattlerBase.prototype.equipStateResistSet = function() {
+    var traits = this.traits(Game_BattlerBase.TRAIT_STATE_RESIST);
+    var set = [];
+    traits.forEach(t => {
+        if (t.value == 2) set.push(t);
+    });
     return set.reduce(function(r, trait) {
         return r.concat(trait.dataId);
     }, []);
