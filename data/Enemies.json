@@ -209,7 +209,7 @@
     ],
     "gold": 6,
     "name": "Green Slime",
-    "note": "Real Green Slime\n\n<Steal Item 12: 100%>\n<Attack Animation: 1>\n\n<Enemy Drops>\nGreen Gel: 50%\nWater Bottle: 20%\nSmall Potion: 7.5%\nCondensed Green Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
+    "note": "Real Green Slime\n\n<Attack Animation: 1>\n\n<Enemy Drops>\nGreen Gel: 50%\nWater Bottle: 20%\nSmall Potion: 7.5%\nCondensed Green Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
     "params": [
       50,
       1,
@@ -288,7 +288,7 @@
     ],
     "gold": 8,
     "name": "Blue Slime",
-    "note": "Real Blue Slime\n\n<AI Level: 100>\n<AI Priority>\nState === On Fire!: Purify\n</AI Priority>\n\n<Steal Item 20: 100%>\n<Steal Item 9: 75%>\n<Steal Item 14: 75%>\n<Attack Animation: 1>\n\n<Enemy Drops>\nBlue Gel: 50%\nRation: 16.67%\nSmall Elixir: 7.5%\nCondensed Blue Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
+    "note": "Real Blue Slime\n\n<AI Level: 100>\n<AI Priority>\nState === On Fire!: Purify\n</AI Priority>\n\n<Attack Animation: 1>\n\n<Enemy Drops>\nBlue Gel: 50%\nRation: 16.67%\nSmall Elixir: 7.5%\nCondensed Blue Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
     "params": [
       75,
       30,
@@ -434,7 +434,7 @@
     ],
     "gold": 10,
     "name": "Giant Rat",
-    "note": "<Sideview Battler: GiantRat>\n<Scale Sprite: 200%>\n<Steal Item 21: 100%>\n<Steal Item 22: 75%>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRat Fur: 50%\nRation: 25%\nTough Pelt: 10%\nRat Claw: 5%\nMetal Wristbraces: 2.5%\n</Enemy Drops>",
+    "note": "<Sideview Battler: GiantRat>\n<Scale Sprite: 200%>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRat Fur: 50%\nRation: 25%\nTough Pelt: 10%\nRat Claw: 5%\nMetal Wristbraces: 2.5%\n</Enemy Drops>",
     "params": [
       100,
       12,
@@ -1023,7 +1023,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Mage",
-    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Steal Item 33: 33%>\n<Steal Item 36: 20%>\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 8.33% +8.33%\nMAT Scroll: 5% +5%\nRuby Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 8.33% +8.33%\nMAT Scroll: 5% +5%\nRuby Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       150,
       30,
@@ -1120,7 +1120,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Steal Item 32: 33%>\n<Steal Item 35: 20%>\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 8.33% +8.33%\nATK Scroll: 5% +5%\nEmerald Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 8.33% +8.33%\nATK Scroll: 5% +5%\nEmerald Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       180,
       10,
@@ -1670,7 +1670,7 @@
     ],
     "gold": 25,
     "name": "Goblin",
-    "note": "<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather: 33.33%\nWorn Cloth: 50%\nWorn Cloth: 50%\nLoaf of Bread: 12.5%\nLeather Charm: 3%\nGoblin Fang: 5%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather: 33.33%\nWorn Cloth: 50%\nWorn Cloth: 50%\nLoaf of Bread: 12.5%\nLeather Charm: 3%\nGoblin Fang: 5%\nHorn: 3.33%\n</Enemy Drops>",
     "params": [
       300,
       30,
@@ -1742,7 +1742,7 @@
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Steal Item 57: 75%>\n<Steal Item 45: 50%>\n<Steal Item 51: 75%>\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather: 50%\nWorn Cloth: 75%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather: 50%\nWorn Cloth: 75%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -2195,7 +2195,7 @@
     ],
     "gold": 25,
     "name": "Red Slime",
-    "note": "<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Steal Item 81: 100%>\n<Steal Item 19: 75%>\n<Steal Item 33: 75%>\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nRed Gel: 50%\nFulfilling Ration: 16.66%\nElixir: 7.5%\nSlime Scarf: 3.33%\nCondensed Red Gel: 5%\nFire Essence: 20%\nCopper Cluster: 50%\nIron Cluster: 33.3%\nHeedup Berry: 10%\n</Enemy Drops>",
+    "note": "<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n\n<Enemy Drops>\nRed Gel: 50%\nFulfilling Ration: 16.66%\nElixir: 7.5%\nSlime Scarf: 3.33%\nCondensed Red Gel: 5%\nFire Essence: 20%\nCopper Cluster: 50%\nIron Cluster: 33.3%\nHeedup Berry: 10%\n</Enemy Drops>",
     "params": [
       300,
       60,
@@ -2400,7 +2400,7 @@
     ],
     "gold": 45,
     "name": "Skeleton Knight",
-    "note": "<Steal Item 71: 33%>\n<Steal Item 72: 20%>\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 8.33% +8.33%\nEther: 4% +2%\nEmerald Ring: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
+    "note": "<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 8.33% +8.33%\nEther: 4% +2%\nEmerald Ring: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
     "params": [
       1000,
       20,
