@@ -1304,7 +1304,8 @@ Scene_File.prototype.create = function() {
     this.createActionWindow();
     this.createInfoWindow();
     this.createConfirmWindow();
-    if ($gameTemp._inGame !== true) this.startFadeIn(this.fadeSpeed(), false);
+    if (!$gameTemp._inGame && !$gameTemp._renamingSave) this.startFadeIn(this.fadeSpeed(), false);
+    $gameTemp._renamingSave = false;
 };
 
 Scene_File.prototype.createHelpWindow = function() {

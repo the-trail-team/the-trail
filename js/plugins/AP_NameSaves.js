@@ -26,6 +26,7 @@ Scene_File.prototype.createActionWindow = function() {
 
 Scene_File.prototype.onActionRename = function() {
     $gameTemp._saveFileId = SceneManager._scene._actionWindow._currentFile;
+    $gameTemp._renamingSave = true;
     SceneManager.push(Scene_SaveFileRename);
 };
 
