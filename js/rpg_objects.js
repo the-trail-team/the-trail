@@ -5430,6 +5430,41 @@ Game_Party.prototype.hasPickaxe = function() {
     return false;
 };
 
+// Pets
+
+Game_Party.prototype.addPet = function(name) {
+    const actor = $gameActors._data[7];
+    actor.setName(name);
+    this.addGuestActor(7);
+    switch(name) {
+        case 'Pancakes':
+            actor.setCharacterImage('Dog8', 0);
+            break;
+        case 'Clover':
+            actor.setCharacterImage('Cat1', 4);
+            break;
+        case 'Oreo':
+            actor.setCharacterImage('Bunny', 6);
+            break;
+        case 'Duncan':
+            actor.setCharacterImage('Hamster', 1);
+            break;
+        case 'Fido':
+            actor.setCharacterImage('Hound', 1);
+            break;
+        case 'Tender':
+            actor.setCharacterImage('Fox', 0);
+            break;
+        case 'Reggie':
+            actor.setCharacterImage('Monkey1', 0);
+            break;
+        default: // Remove pet
+            this.removeGuestActor(7);
+            break;
+    }
+    $gamePlayer.refresh();
+};
+
 //-----------------------------------------------------------------------------
 // Game_Troop
 //
