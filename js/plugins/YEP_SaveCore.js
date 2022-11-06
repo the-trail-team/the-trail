@@ -801,9 +801,6 @@ Window_SaveAction.prototype.updateIndex = function() {
     this.refresh();
 };
 
-Window_SaveAction.prototype.playOkSound = function() {
-};
-
 Window_SaveAction.prototype.updateHelp = function() {
     var text = '';
     if (this.currentSymbol() === 'load') {
