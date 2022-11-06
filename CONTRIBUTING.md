@@ -13,18 +13,30 @@ Before beginning to stage files for a commit, run `git commit` inside the termin
 * Sets `System.json`'s versionId and editMapId to constant values
 * Sets all scrollX and scrollY values in `MapInfos.json` to 0
 * Sets certain values in `Armors.json` that allow state resistance accessories to work as intended
+* Removes unnecessary data from `Enemies.json`
 * "Prettifies" all .json files (except for `Animation.json` due to its sheer size)
 
-After the hook runs, go ahead and stage your files, enter your title and description if needed, then commit.
+Complete your commit after the hook runs.
+
+### Hook configuration
+All configurations are edited at the top of the hook.
+
+#### Minify
+Determines whether .json files are readable (`false`) or condensed (`true`).
 
 ### The hook
 ```
 #!/usr/bin/env node
 
+// CONFIGURATION
+const minify = false;
+
+// DO NOT EDIT BELOW
 const data_directory = "data"
 const file = ['package.json']
 let command = ''
 const fs = require('fs')
+const indent = minify ? 0 : 2;
 try {
     fs.readdir(`${data_directory}`, function (err, files) {
         // Error handling
@@ -37,7 +49,7 @@ try {
         let system = JSON.parse(fs.readFileSync(`${data_directory}/System.json`))
         system.versionId = 0
         system.editMapId = 164
-        fs.writeFileSync(`${data_directory}/System.json`, JSON.stringify(system, null, 2))
+        fs.writeFileSync(`${data_directory}/System.json`, JSON.stringify(system, null, indent))
 
         // MapInfos.json: all scrollX and scrollY values set to 0
         let maps = JSON.parse(fs.readFileSync(`${data_directory}/MapInfos.json`))
@@ -47,7 +59,7 @@ try {
                 maps[i].scrollY = 0
             }
         }
-        fs.writeFileSync(`${data_directory}/MapInfos.json`, JSON.stringify(maps, null, 2))
+        fs.writeFileSync(`${data_directory}/MapInfos.json`, JSON.stringify(maps, null, indent))
 
         // Armors.json: setting all state resistances to "value": 2 in order to work correctly
         let armors = JSON.parse(fs.readFileSync(`${data_directory}/Armors.json`))
@@ -58,24 +70,24 @@ try {
                 }
             }
         }
-        fs.writeFileSync(`${data_directory}/Armors.json`, JSON.stringify(armors, null, 2))
+        fs.writeFileSync(`${data_directory}/Armors.json`, JSON.stringify(armors, null, indent))
 
         // Enemies.json: resetting the default dropItems array used by RMMV, since item drops are processed by notetags instead
         let enemies = JSON.parse(fs.readFileSync(`${data_directory}/Enemies.json`))
         for (i = 1; i < enemies.length; i++) {
             enemies[i].dropItems = []
         }
-        fs.writeFileSync(`${data_directory}/Enemies.json`, JSON.stringify(enemies, null, 2))
+        fs.writeFileSync(`${data_directory}/Enemies.json`, JSON.stringify(enemies, null, indent))
 
         files.forEach(file => {
             // Load file, pretty the JSON, and write it back
             const json = fs.readFileSync(`${data_directory}/${file}`)
-            if (`${file}` !== ("Animations.json" || "System.json" || "MapInfos.json" || "Armors.json")) fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, 2))
+            if (`${file}` !== ("Animations.json" || "System.json" || "MapInfos.json" || "Armors.json" || "Enemies.json")) fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, indent))
             command += ` ${data_directory}/${file}`
         })
 
         const json = fs.readFileSync(`./${file}`)
-        fs.writeFileSync(`./${file}`, JSON.stringify(JSON.parse(json), null, 2))
+        fs.writeFileSync(`./${file}`, JSON.stringify(JSON.parse(json), null, indent))
     })
 } catch (err) {
     console.error(err)
