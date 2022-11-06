@@ -4333,6 +4333,16 @@
         "code": 23,
         "dataId": 6,
         "value": 0.5
+      },
+      {
+        "code": 14,
+        "dataId": 34,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 1
       }
     ],
     "iconIndex": 733,
@@ -4344,7 +4354,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Incorporeal",
-    "note": "<Help Description>\nIncoming physical damage is halved.\n</Help Description>",
+    "note": "<Help Description>\nIncoming physical damage is halved. Immune to \\it[34] and \\it[39].\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
