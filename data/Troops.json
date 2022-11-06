@@ -612,7 +612,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -878,7 +878,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -1507,7 +1507,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -1557,7 +1557,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -1818,7 +1818,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -1862,7 +1862,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -1906,7 +1906,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -1949,30 +1949,6 @@
     ],
     "name": "Four-Toed Kevin",
     "pages": [
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 30,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 0,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
       {
         "conditions": {
           "actorHp": 50,
@@ -2120,54 +2096,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -2209,54 +2140,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -2298,54 +2184,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -2399,7 +2240,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -2408,51 +2249,6 @@
             "parameters": [
               "<encScript:$gameSwitches.value(80)>"
             ]
-          },
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
           },
           {
             "code": 0,
@@ -2507,54 +2303,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -2602,54 +2353,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -2688,51 +2394,6 @@
           "turnValid": true
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 333,
             "indent": 0,
@@ -4095,30 +3756,6 @@
           "actorValid": false,
           "enemyHp": 50,
           "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 0,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 1,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
           "enemyValid": true,
           "switchId": 1,
           "switchValid": false,
@@ -4365,7 +4002,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -4409,7 +4046,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -4459,7 +4096,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -4713,7 +4350,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -4757,7 +4394,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -4795,54 +4432,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -4886,64 +4478,9 @@
             "indent": 0,
             "parameters": [
               0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
               61,
-              0
+              1
             ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 411,
-            "indent": 0,
-            "parameters": []
           },
           {
             "code": 313,
@@ -5027,51 +4564,6 @@
           "turnValid": true
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 111,
             "indent": 0,
@@ -5627,54 +5119,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -5740,54 +5187,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -5835,54 +5237,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -5960,54 +5317,9 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 0,
             "indent": 0,
@@ -6046,51 +5358,6 @@
           "turnValid": true
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 333,
             "indent": 0,
@@ -6628,7 +5895,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -7061,7 +6328,7 @@
           "enemyValid": false,
           "switchId": 1,
           "switchValid": false,
-          "turnA": 1,
+          "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
           "turnValid": true
@@ -7084,6 +6351,41 @@
             "parameters": [
               56
             ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameTroop._enemies.some(e => e.passiveStatesRaw().contains(57))"
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "The dark enemies were strengthened by the night!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
           },
           {
             "code": 355,
@@ -7564,51 +6866,6 @@
         },
         "list": [
           {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
-          {
             "code": 333,
             "indent": 0,
             "parameters": [
@@ -7698,69 +6955,6 @@
         },
         "list": [
           {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              3,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              4,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              7,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
-          {
             "code": 0,
             "indent": 0,
             "parameters": []
@@ -7798,51 +6992,6 @@
           "turnValid": true
         },
         "list": [
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
-          },
           {
             "code": 333,
             "indent": 0,
@@ -8491,7 +7640,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": true
+          "turnValid": false
         },
         "list": [
           {
@@ -8500,51 +7649,6 @@
             "parameters": [
               "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101>"
             ]
-          },
-          {
-            "code": 111,
-            "indent": 0,
-            "parameters": [
-              0,
-              69,
-              0
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 1,
-            "parameters": [
-              -1,
-              0,
-              57
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 1,
-            "parameters": [
-              "",
-              0,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 1,
-            "parameters": [
-              "The dark enemies were strengthened by the night!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 1,
-            "parameters": []
-          },
-          {
-            "code": 412,
-            "indent": 0,
-            "parameters": []
           },
           {
             "code": 0,
@@ -10025,7 +9129,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
           {
@@ -11385,7 +10489,7 @@
           "turnA": 0,
           "turnB": 0,
           "turnEnding": false,
-          "turnValid": false
+          "turnValid": true
         },
         "list": [
           {

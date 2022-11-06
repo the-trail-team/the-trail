@@ -1956,7 +1956,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Night Boost",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<animationRow:26>\n\n<Help Description>\nBoosts MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 10%.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<animationRow:26>\n\n<Help Description>\nBoosts MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 10%.\n</Help Description>\n\n<Custom Passive Condition>\ncondition = $gameSwitches.value(69);\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
