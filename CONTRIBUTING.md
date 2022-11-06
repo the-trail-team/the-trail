@@ -60,6 +60,13 @@ try {
         }
         fs.writeFileSync(`${data_directory}/Armors.json`, JSON.stringify(armors, null, 2))
 
+        // Enemies.json: resetting the default dropItems array used by RMMV, since item drops are processed by notetags instead
+        let enemies = JSON.parse(fs.readFileSync(`${data_directory}/Enemies.json`))
+        for (i = 1; i < enemies.length; i++) {
+            enemies[i].dropItems = []
+        }
+        fs.writeFileSync(`${data_directory}/Enemies.json`, JSON.stringify(enemies, null, 2))
+
         files.forEach(file => {
             // Load file, pretty the JSON, and write it back
             const json = fs.readFileSync(`${data_directory}/${file}`)
