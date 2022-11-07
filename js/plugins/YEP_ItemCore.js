@@ -1827,8 +1827,9 @@ Window_ItemStatus.prototype.drawEquipInfo = function(item) {
       this.changeTextColor(this.paramchangeTextColor(item.params[i]));
       var text = Yanfly.Util.toGroup(item.params[i]);
       if (item.groupType === 2) if (item.baseItemId === 157) { // Champion's Talisman
-        this.changeTextColor(this.paramchangeTextColor($gameVariables.value(54)[i]));
-        text = $gameVariables.value(54)[i];
+        stat = $gameSystem.championsTalisman()[i];
+        this.changeTextColor(this.paramchangeTextColor(stat));
+        text = stat;
       }
       if (item.params[i] >= 0) text = '+' + text;
       if (text === '+0') this.changePaintOpacity(false);
