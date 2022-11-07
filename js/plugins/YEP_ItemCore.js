@@ -1931,7 +1931,9 @@ Window_ItemStatus.prototype.getEffect = function(code) {
 };
 
 Window_ItemStatus.prototype.getItemIcons = function(i, array) {
-    this._item.effects.forEach(function(effect) {
+    var item = this._item;
+    var array;
+    item.effects.forEach(function(effect) {
       if (i === 4 && effect.code === Game_Action.EFFECT_ADD_STATE) {
         var state = $dataStates[effect.dataId];
         if (state && state.iconIndex !== 0) array.push(state.iconIndex);
@@ -1941,6 +1943,9 @@ Window_ItemStatus.prototype.getItemIcons = function(i, array) {
         if (state && state.iconIndex !== 0) array.push(state.iconIndex);
       }
     }, this);
+    if (i == 5) for (const c in item.removeCategory) DataManager.stateCategories[c].forEach(s => {
+      if (s.iconIndex !== 0 && !array.contains($dataStates[s].iconIndex)) array.push($dataStates[s].iconIndex)
+    });
     array = array.slice(0, Yanfly.Param.ItemMaxIcons);
     return array;
 };

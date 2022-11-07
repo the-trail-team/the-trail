@@ -173,6 +173,8 @@ DataManager.isDatabaseLoaded = function() {
   return true;
 };
 
+DataManager.stateCategories = {};
+
 DataManager.processStCNotetags1 = function(group) {
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
@@ -183,7 +185,10 @@ DataManager.processStCNotetags1 = function(group) {
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
       if (line.match(/<CATEGORY:[ ](.*)>/i)) {
-        obj.category.push(String(RegExp.$1).toUpperCase())
+        let note = String(RegExp.$1).toUpperCase();
+        obj.category.push(note)
+        DataManager.stateCategories[note] = DataManager.stateCategories[note] || [];
+        DataManager.stateCategories[note].push(n);
       }
     }
   }
