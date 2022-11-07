@@ -4152,7 +4152,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Ethereal Bat's Spirit - 3 Dead",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: -0.75%>\n\n<Custom Passive Condition>\ncondition = $gameParty.deadMembers().length >= 0;\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<HP Life Steal Physical: -0.75%>\n\n<Custom Passive Condition>\ncondition = $gameParty.deadMembers().length >= 3;\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
