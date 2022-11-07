@@ -428,6 +428,9 @@ Window_ItemList.prototype.includes = function(item) {
         if (DataManager.isItem(item)) if (item.meta['Disassemble Pool'] || item.meta['Disassembler']) return item;
         if (DataManager.isWeapon(item) || DataManager.isArmor(item)) if (item.meta['Disassemble Pool']) return item;
         break;
+      case 'Recovery':
+        if (DataManager.isItem(item)) if (item.effects.some(e => ([11, 12].contains(e.code) && (e.value1 > 0 || e.value2 > 0)) || (e.code == 22 && e.dataId == 1))) return item;
+        break;
       default:
         return item && item.itemCategory.contains(this._ext);
     }
