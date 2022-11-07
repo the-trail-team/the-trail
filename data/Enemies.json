@@ -44,7 +44,7 @@
     ],
     "gold": 5,
     "name": "Mini Green Slime",
-    "note": "<Attack Animation: 1>\n<Hide HP Gauge>\n<Passive State: 136>\n\n<Enemy Drops>\nGreen Gel: 100%\nSlime Scarf: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n\n<Hide HP Gauge>\n\n<Enemy Drops>\nGreen Gel: 100%\nSlime Scarf: 3.33%\n</Enemy Drops>",
     "params": [
       30,
       1,
@@ -95,7 +95,7 @@
     ],
     "gold": 10,
     "name": "Big Mouth",
-    "note": "<Sideview Battler: Bandito_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nBandito Loot: 100%\nWater Bottle: 100%\nSmall Potion: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Bandito_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Enemy Drops>\nBandito Loot: 100%\nWater Bottle: 100%\nSmall Potion: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       150,
       5,
@@ -146,7 +146,7 @@
     ],
     "gold": 6,
     "name": "Green Slime",
-    "note": "Real Green Slime\n\n<Attack Animation: 1>\n<Passive State: 136>\n\n<Enemy Drops>\nGreen Gel: 50%\nWater Bottle: 20%\nSmall Potion: 7.5%\nCondensed Green Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n\n<Enemy Drops>\nGreen Gel: 50%\nWater Bottle: 20%\nSmall Potion: 7.5%\nCondensed Green Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
     "params": [
       50,
       1,
@@ -204,7 +204,7 @@
     ],
     "gold": 8,
     "name": "Blue Slime",
-    "note": "Real Blue Slime\n\n<AI Level: 100>\n<AI Priority>\nState === On Fire!: Purify\n</AI Priority>\n\n<Attack Animation: 1>\n<Passive State: 136>\n\n<Enemy Drops>\nBlue Gel: 50%\nRation: 16.67%\nSmall Elixir: 7.5%\nCondensed Blue Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n\n<AI Priority>\nState === On Fire!: Purify\n</AI Priority>\n\n<Enemy Drops>\nBlue Gel: 50%\nRation: 16.67%\nSmall Elixir: 7.5%\nCondensed Blue Gel: 5%\nSlime Scarf: 3.33%\n</Enemy Drops>",
     "params": [
       75,
       30,
@@ -255,7 +255,7 @@
     ],
     "gold": 0,
     "name": "Blue Slime",
-    "note": "Fake Blue Slime\n\n<Attack Animation: 1>\n<Passive State: 136>",
+    "note": "<Passive State: 136>",
     "params": [
       75,
       30,
@@ -371,7 +371,7 @@
     ],
     "gold": 30,
     "name": "Smart Mouth",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_3>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nBandito Loot: 100%\nSmall Elixir: 100%\nFulfilling Ration: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Bandito_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBandito Loot: 100%\nSmall Elixir: 100%\nFulfilling Ration: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       320,
       10,
@@ -422,7 +422,7 @@
     ],
     "gold": 12,
     "name": "Bandito",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger +++ Random 50%: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Bandito_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState !== Sharpened Dagger +++ Random 50%: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       120,
       10,
@@ -480,7 +480,7 @@
     ],
     "gold": 30,
     "name": "Big Mouth",
-    "note": "<Sideview Battler: Bandito_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nSmall Potion: 100%\nSmall Potion: 100%\nSmall Potion: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Bandito_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Enemy Drops>\nSmall Potion: 100%\nSmall Potion: 100%\nSmall Potion: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       400,
       5,
@@ -538,7 +538,7 @@
     ],
     "gold": 30,
     "name": "Smart Mouth",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: Bandito_3>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Bandito_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nSmall Elixir: 100%\nSmall Elixir: 100%\nSmall Elixir: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       400,
       20,
@@ -589,7 +589,7 @@
     ],
     "gold": 300,
     "name": "Four-Toed Kevin",
-    "note": "<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Bandito_1>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>\n<Passive State: 138>\n\n<Enemy Drops>\nKevin's Cape Scrap: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Bandito_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Enemy Drops>\nKevin's Cape Scrap: 100%\nBandito Dagger: 20%\nBandito Leathers: 12.5%\nBandito Gloves: 10%\nAnti-Magic Charm: 2.5%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       1200,
       200,
@@ -655,7 +655,7 @@
     ],
     "gold": 4,
     "name": "Skeleton",
-    "note": "<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n<Passive State: 57, 136, 137>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1,
       15,
@@ -735,7 +735,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Mage",
-    "note": "<AI Level: 100>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Boost Skill 11: Full>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n<Passive State: 57, 136, 137>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 8.33% +8.33%\nMAT Scroll: 5% +5%\nRuby Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 8.33% +8.33%\nMAT Scroll: 5% +5%\nRuby Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       150,
       30,
@@ -801,7 +801,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<AI Level: 100>\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57, 136, 137>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 8.33% +8.33%\nATK Scroll: 5% +5%\nEmerald Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 8.33% +8.33%\nATK Scroll: 5% +5%\nEmerald Ring: 2% +2%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       180,
       10,
@@ -1052,7 +1052,7 @@
     ],
     "gold": 600,
     "name": "Laeryidyean",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === Exposed Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Sideview Battler: Boss1_1>\n<Attack Animation: 6>\n<Weapon Image: 2>\n<HP Gauge Width: 288>\n<Passive State: 57, 136, 137, 141>\n\n<Boost Skill 60: Full>\n\n<Enemy Drops>\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nMusic Box: 3.33%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 57, 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Exposed Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Enemy Drops>\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nMusic Box: 3.33%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -1152,7 +1152,7 @@
     ],
     "gold": 200,
     "name": "Water Elemental",
-    "note": "<AI Level: 100>\n<AI Priority>\nState !== Soaked +++ Random 50% +++ User HP% param <= 90% +++ User HP% param > 25%: Bubble\nUser HP% param <= 50% +++ User HP% param > 15% +++ Random 25%: Pure Water, User\n</AI Priority>\n\n<Boost Skill 36: At Most 1>\n\n<Sideview Battler: Elemental_1>\n<Attack Animation: 82>\n<HP Gauge Width: 216>\n<Element Absorb: 5>\n<Passive State: 136, 146>\n\n<Enemy Drops>\nWater Elemental's Pure Water: 100%\nWater Elemental's Flow: 100%\nBubble (Tome): 100%\nAqua Gem: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 136, 146>\n<Element Absorb: 5>\n\n<Sideview Battler: Elemental_1>\n<Attack Animation: 82>\n<HP Gauge Width: 216>\n\n<Boost Skill 36: At Most 1>\n<AI Priority>\nState !== Soaked +++ Random 50% +++ User HP% param <= 90% +++ User HP% param > 25%: Bubble\nUser HP% param <= 50% +++ User HP% param > 15% +++ Random 25%: Pure Water, User\n</AI Priority>\n\n<Enemy Drops>\nWater Elemental's Pure Water: 100%\nWater Elemental's Flow: 100%\nBubble (Tome): 100%\nAqua Gem: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\nWater Bottle: 100%\n</Enemy Drops>",
     "params": [
       2400,
       999,
@@ -1203,7 +1203,7 @@
     ],
     "gold": 25,
     "name": "Goblin",
-    "note": "<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n<Passive State: 139>\n\n<Enemy Drops>\nLeather: 33.33%\nWorn Cloth: 50%\nWorn Cloth: 50%\nLoaf of Bread: 12.5%\nLeather Charm: 3%\nGoblin Fang: 5%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 139>\n\n<Sideview Battler: Goblin_1>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nLeather: 33.33%\nWorn Cloth: 50%\nWorn Cloth: 50%\nLoaf of Bread: 12.5%\nLeather Charm: 3%\nGoblin Fang: 5%\nHorn: 3.33%\n</Enemy Drops>",
     "params": [
       300,
       30,
@@ -1254,7 +1254,7 @@
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<AI Priority>\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n<Passive State: 139>\n\n<Enemy Drops>\nLeather: 50%\nWorn Cloth: 75%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 139>\n\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Enemy Drops>\nLeather: 50%\nWorn Cloth: 75%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -1345,7 +1345,7 @@
     ],
     "gold": 300,
     "name": "Giant Goblin",
-    "note": "<Sideview Battler: Goblin_2>\n<Scale Sprite: 200%>\n<Attack Animation: 1>\n<HP Gauge Width: 216>\n<Passive State: 139>\n\n<Enemy Drops>\nGiant Goblin's Fang: 100%\nGiant Goblin Rage: 100%\nTerra: 100%\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 139>\n\n<Sideview Battler: Goblin_2>\n<Scale Sprite: 200%>\n<HP Gauge Width: 216>\n\n<Enemy Drops>\nGiant Goblin's Fang: 100%\nGiant Goblin Rage: 100%\nTerra: 100%\nLeather Charm: 5%\nGoblin Fang: 8%\nHorn: 3.33%\n</Enemy Drops>",
     "params": [
       4000,
       999,
@@ -1396,7 +1396,7 @@
     ],
     "gold": 45,
     "name": "Dandy Toad",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nLoaf of Bread: 33.33%\nPotion: 8.33%\nPotion: 8.33%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: DandyToad_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nLoaf of Bread: 33.33%\nPotion: 8.33%\nPotion: 8.33%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       600,
       40,
@@ -1461,7 +1461,7 @@
     ],
     "gold": 45,
     "name": "Dandy Toad (w/ Purse)",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nPeasant Woman's Purse: 100%\nLoaf of Bread: 33.33%\nPotion: 8.33%\nPotion: 8.33%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: DandyToad_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nPeasant Woman's Purse: 100%\nLoaf of Bread: 33.33%\nPotion: 8.33%\nPotion: 8.33%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       600,
       40,
@@ -1512,7 +1512,7 @@
     ],
     "gold": 60,
     "name": "Dandy Toad Captain",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: DandyToad_4>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nFulfilling Ration: 33.33%\nPotion: 16.66%\nElixir: 16.66%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nFulfilling Ration: 33.33%\nPotion: 16.66%\nElixir: 16.66%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       900,
       60,
@@ -1602,7 +1602,7 @@
     ],
     "gold": 25,
     "name": "Red Slime",
-    "note": "<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Passive State: 136>\n\n<Enemy Drops>\nRed Gel: 50%\nFulfilling Ration: 16.66%\nElixir: 7.5%\nSlime Scarf: 3.33%\nCondensed Red Gel: 5%\nFire Essence: 20%\nCopper Cluster: 50%\nIron Cluster: 33.3%\nHeedup Berry: 10%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n<Element Absorb: 2>\n\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nRed Gel: 50%\nFulfilling Ration: 16.66%\nElixir: 7.5%\nSlime Scarf: 3.33%\nCondensed Red Gel: 5%\nFire Essence: 20%\nCopper Cluster: 50%\nIron Cluster: 33.3%\nHeedup Berry: 10%\n</Enemy Drops>",
     "params": [
       300,
       60,
@@ -1680,7 +1680,7 @@
     ],
     "gold": 40,
     "name": "Bat",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: Monster1_1>\n<Element Absorb: 7>\n\n<Enemy Drops>\nBat Wing: 50%\nBat Wing: 33.33%\nStorm Lens: 3.33%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\nCopper Cluster: 50%\nIron Cluster: 33.3%\nHeedup Berry: 10%\n</Enemy Drops>",
+    "note": "<Element Absorb: 7>\n\n<Sideview Battler: Monster1_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nBat Wing: 50%\nBat Wing: 33.33%\nStorm Lens: 3.33%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\nCopper Cluster: 50%\nIron Cluster: 33.3%\nHeedup Berry: 10%\n</Enemy Drops>",
     "params": [
       350,
       35,
@@ -1760,7 +1760,7 @@
     ],
     "gold": 45,
     "name": "Skeleton Knight",
-    "note": "<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<Passive State: 57, 136, 137>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 8.33% +8.33%\nEther: 4% +2%\nEmerald Ring: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
+    "note": "<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 8.33% +8.33%\nEther: 4% +2%\nEmerald Ring: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
     "params": [
       1000,
       20,
@@ -1826,7 +1826,7 @@
     ],
     "gold": 45,
     "name": "Lost Soul",
-    "note": "<Passive State: 57, 129>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30% +++ HP% param <= 50%: Cure II, Lowest HP%\nRandom 60% +++ State !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Attack Animation: 135>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nJade Charm: 2% +1%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
+    "note": "<Passive State: 57, 129>\n\n<Sideview Battler: Monster1_7>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 135>\n\n<Boost Skill 12: Full>\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30% +++ HP% param <= 50%: Cure II, Lowest HP%\nRandom 60% +++ State !== Blinded: Dark Orb\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nJade Charm: 2% +1%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
     "params": [
       500,
       999,
@@ -1951,7 +1951,7 @@
     ],
     "gold": 900,
     "name": "The Warden",
-    "note": "<AI Priority>\nState === Bleeding +++ User HP% param >= 33%: Purify, User\nState === Poisoned +++ User HP% param >= 33%: Purify, User\n</AI Priority>\n\n<Sideview Battler: Evil1_4>\n<Attack Animation: 6>\n<Weapon Image: 229>\n<HP Gauge Width: 216>\n<Passive State: 57>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPrayer Vestments ★: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 57>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n\n<AI Priority>\nState === Bleeding +++ User HP% param >= 33%: Purify, User\nState === Poisoned +++ User HP% param >= 33%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPrayer Vestments ★: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       7500,
       999,
@@ -2024,7 +2024,7 @@
     ],
     "gold": 30,
     "name": "Suffering Soul",
-    "note": "<Passive State: 57, 129>\n\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Boost Skill 12: Full>\n\n<Floating>\n<Sideview Battler: NoMatchingSprite/Suffering Soul>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nJade Charm: 1% +0.5%\nNecrotic Skull: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
+    "note": "<Passive State: 57, 129>\n\n<Sideview Battler: NoMatchingSprite/Suffering Soul>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 133>\n\n<Boost Skill 12: Full>\n<AI Priority>\nState === Silenced: Purify\nRandom 30% +++ State !== Magical Barrier: Shield of Faith, Lowest HP\nRandom 30%: Cure I, Lowest HP%\nState !== Blinded: Dark Orb\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nJade Charm: 1% +0.5%\nNecrotic Skull: 5% +2.5%\nDark Essence: 20% +20%\nMalicious Essence: 10% +10%\n</Night Boost>",
     "params": [
       500,
       999,
@@ -2151,7 +2151,7 @@
     ],
     "gold": 900,
     "name": "Vessel of the Forgotten General",
-    "note": "<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Exposed Weak Point +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Boost Skill 60: Full>\n\n<Sideview Battler: Evil1_6>\n<Attack Animation: 126>\n<Weapon Image: 242>\n<HP Gauge Width: 288>\n<Passive State: 57, 141>\n\n<Enemy Drops>\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 57, 141>\n\n<Sideview Battler: Evil1_6>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Exposed Weak Point +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       12000,
       9999,
@@ -2209,7 +2209,7 @@
     ],
     "gold": 40,
     "name": "Crusher Thug",
-    "note": "<Sideview Battler: Evil1_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nOmelet: 4%\nSmall Ether: 8.33%\nEther: 3%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Evil1_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Enemy Drops>\nOmelet: 4%\nSmall Ether: 8.33%\nEther: 3%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       600,
       0,
@@ -2288,7 +2288,7 @@
     ],
     "gold": 380,
     "name": "Henry",
-    "note": "<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n\n<Sideview Battler: Evil1_2>\n<Attack Animation: 6>\n<Weapon Image: 1>\n<Sideview No Collapse>\n<HP Gauge Width: 216>\n<Passive State: 138>\n\n<Enemy Drops>\nHenry's Tiny Boots: 100%\nHenry's Gloves: 100%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Evil1_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire\n</AI Priority>\n\n<Enemy Drops>\nHenry's Tiny Boots: 100%\nHenry's Gloves: 100%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       3000,
       120,
@@ -2384,7 +2384,7 @@
     ],
     "gold": 500,
     "name": "Albino Rat",
-    "note": "<Sideview Battler: NoMatchingSprite/Albino Rat>\n<Attack Animation: 16>\n<Passive State: 142>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nAlbino Rat Fur: 100%\nMetallic Rat Pelt: 50%\nTough Pelt: 100%\nRat Claw: 100%\nMetal Wristbraces: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 142>\n\n<Sideview Battler: NoMatchingSprite/Albino Rat>\n<Attack Animation: 16>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nAlbino Rat Fur: 100%\nMetallic Rat Pelt: 50%\nTough Pelt: 100%\nRat Claw: 100%\nMetal Wristbraces: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRat Fur: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\nRation: 100%\n</Enemy Drops>",
     "params": [
       3000,
       50,
@@ -2475,7 +2475,7 @@
     ],
     "gold": 500,
     "name": "Strange Goblin",
-    "note": "<Sideview Battler: NoMatchingSprite/Strange Goblin>\n<Weapon Image: 15>\n<Attack Animation: 122>\n<Passive State: 139>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nBleached Leather: 100%\nArcane Leather Charm: 50%\nLeather Charm: 100%\nGoblin Fang: 100%\nHorn: 3.33%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 139>\n\n<Sideview Battler: NoMatchingSprite/Strange Goblin>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nBleached Leather: 100%\nArcane Leather Charm: 50%\nLeather Charm: 100%\nGoblin Fang: 100%\nHorn: 3.33%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nLeather: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nWorn Cloth: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\nLoaf of Bread: 100%\n</Enemy Drops>",
     "params": [
       3000,
       50,
@@ -2579,7 +2579,7 @@
     ],
     "gold": 500,
     "name": "Rainbow Slime",
-    "note": "<Attack Animation: 1>\n<DiscoDisco>\n<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 50%\nSlime Scarf: 3.33%\nCondensed Blue Gel: 100%\n\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nElixir: 100%\nElixir: 100%\nElixir: 100%\nElixir: 100%\nElixir: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 124, 136>\n<Max atk Buff: +50>\n\n<Enemy Drops>\nRare Enemy Certificate: 100%\nWhite Gel: 100%\nCondensed White Gel: 50%\nSlime Scarf: 3.33%\nCondensed Blue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nBlue Gel: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nFulfilling Ration: 100%\nElixir: 100%\nElixir: 100%\nElixir: 100%\nElixir: 100%\nElixir: 100%\n</Enemy Drops>",
     "params": [
       2000,
       50,
@@ -2705,7 +2705,7 @@
     ],
     "gold": 200,
     "name": "Will o' Wisp",
-    "note": "<Passive State: 57, 129, 147>\n\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Boost Skill 74: Full>\n\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nFire Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 57, 129, 147>\n<Element Absorb: 2>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nFire Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -2770,7 +2770,7 @@
     ],
     "gold": 0,
     "name": "???",
-    "note": "<Weapon Image: 313>\n<Attack Animation: 6>\n<Sideview Battler: Evil2_2>\n<Sideview No Collapse>\n\n<Enemy Drops>\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Sideview Battler: Evil2_2>\n<Sideview No Collapse>\n<Weapon Image: 313>\n<Attack Animation: 6>\n\n<Enemy Drops>\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -2998,7 +2998,7 @@
     ],
     "gold": 2500,
     "name": "Laeryidyean EX",
-    "note": "<AI Level: 100>\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Attack Animation: 8>\n<Weapon Image: 266>\n<HP Gauge Width: 288>\n<Passive State: 57, 136, 137, 141>\n\n<Enemy Drops>\nMusic Box: 3.33%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 57, 136, 137, 141>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 288>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 3.33%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       20000,
       9999,
@@ -3079,7 +3079,7 @@
     ],
     "gold": 2500,
     "name": "Phoenix",
-    "note": "<Attack Animation: 107>\n<HP Gauge Width: 360>\n<Element Absorb: 2>\n\n<Enemy Drops>\nPhoenix Feather: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\n</Enemy Drops>",
+    "note": "<Element Absorb: 2>\n\n<Attack Animation: 107>\n<HP Gauge Width: 360>\n\n<Enemy Drops>\nPhoenix Feather: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\n</Enemy Drops>",
     "params": [
       25000,
       0,
@@ -3147,7 +3147,7 @@
     ],
     "gold": 100,
     "name": "Darkhound",
-    "note": "<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Attack Animation: 133>\n<Sideview No Collapse>\n<Passive State: 57, 136>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 12.5% +12.5%\nMetal Wristbraces ★: 5% +5%\nAnti-Magic Charm ★: 5% +5%\nCharm of Foresight: 5% +5%\nINT Scroll: 2.5% +2.5%\nEXR Scroll: 2.5% +2.5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 12.5% +12.5%\nMetal Wristbraces ★: 5% +5%\nAnti-Magic Charm ★: 5% +5%\nCharm of Foresight: 5% +5%\nINT Scroll: 2.5% +2.5%\nEXR Scroll: 2.5% +2.5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1500,
       0,
@@ -3218,7 +3218,7 @@
     ],
     "gold": 40,
     "name": "Sahuagin",
-    "note": "<Sideview Battler: Sahuagin>\n<Attack Animation: 82>\n<Element Absorb: 5>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
+    "note": "<Element Absorb: 5>\n\n<Sideview Battler: Sahuagin>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -3299,7 +3299,7 @@
     ],
     "gold": 72,
     "name": "Flytrap",
-    "note": "<Sideview Battler: Flytrap>\n<Attack Animation: 1>\n<Element Absorb: 6>\n<Passive State: 136>\n\n<Enemy Drops>\nRazor-Sharp Fang: 5%\nFlytrap Eye: 5%\nYellow Flower: 90%\nYellow Flower: 90%\nRock: 10%\nMedicinal Herb: 30%\nMedicinal Herb: 30%\nMedicinal Root: 20%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n<Element Absorb: 6>\n\n<Sideview Battler: Flytrap>\n\n<Enemy Drops>\nRazor-Sharp Fang: 5%\nFlytrap Eye: 5%\nYellow Flower: 90%\nYellow Flower: 90%\nRock: 10%\nMedicinal Herb: 30%\nMedicinal Herb: 30%\nMedicinal Root: 20%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
@@ -3375,7 +3375,7 @@
     ],
     "gold": 108,
     "name": "Tarantula",
-    "note": "<Sideview Battler: Tarantula>\n<Attack Animation: 211>\n<Element Absorb: 6>\n<Passive State: 148>\n\n<Enemy Drops>\nWeb Ball: 50%\nWeb Ball: 33.33%\nShard of Glass: 0.5%\nVial of Poison: 16.66%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 148>\n<Element Absorb: 6>\n\n<Sideview Battler: Tarantula>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWeb Ball: 50%\nWeb Ball: 33.33%\nShard of Glass: 0.5%\nVial of Poison: 16.66%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       1000,
       0,
@@ -3446,7 +3446,7 @@
     ],
     "gold": 72,
     "name": "Feral Bat",
-    "note": "<Floating>\n<LowHpGround>\n<Sideview Battler: Bat_1>\n<Attack Animation: 211>\n<Element Absorb: 7>\n\n<AI Priority>\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nFeral Bat Wing: 50%\nFeral Bat Wing: 33.33%\nStorm Lens: 3.33%\nBat Sling: 1%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\n</Enemy Drops>",
+    "note": "<Element Absorb: 7>\n\n<Sideview Battler: Bat_1>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<AI Priority>\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nFeral Bat Wing: 50%\nFeral Bat Wing: 33.33%\nStorm Lens: 3.33%\nBat Sling: 1%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 20%\n</Enemy Drops>",
     "params": [
       1000,
       0,
@@ -3527,7 +3527,7 @@
     ],
     "gold": 250,
     "name": "Fire Spirit",
-    "note": "<Sideview Battler: Spirit_4>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n<Element Absorb: 2>\n<Passive State: 129>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 129, 147>\n<Element Absorb: 2>\n\n<Sideview Battler: Spirit_4>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -3613,7 +3613,7 @@
     ],
     "gold": 250,
     "name": "Water Spirit",
-    "note": "<Sideview Battler: Spirit_3>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 82>\n<Element Absorb: 5>\n<Passive State: 129, 147>\n\n<Enemy Drops>\nAqua Gem: 100%\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 129, 147>\n<Element Absorb: 5>\n\n<Sideview Battler: Spirit_3>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nAqua Gem: 100%\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -3699,7 +3699,7 @@
     ],
     "gold": 250,
     "name": "Earth Spirit",
-    "note": "<Sideview Battler: Spirit_8>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n<Element Absorb: 6>\n<Passive State: 129, 147>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 129, 147>\n<Element Absorb: 6>\n\n<Sideview Battler: Spirit_8>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -3780,7 +3780,7 @@
     ],
     "gold": 250,
     "name": "Wind Spirit",
-    "note": "<Sideview Battler: Spirit_7>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 219>\n<Element Absorb: 7>\n<Passive State: 129, 147>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Passive State: 129, 147>\n<Element Absorb: 7>\n\n<Sideview Battler: Spirit_7>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 219>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -3826,7 +3826,7 @@
     ],
     "gold": 500,
     "name": "Mimic",
-    "note": "<Sideview Battler: NoMatchingSprite/Mimic>\n<Attack Animation: 2>\n<Sideview No Collapse>\n<Passive State: 136>\n\n<Conditional Seshat's Charm Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Seshat's Charm Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
+    "note": "<Passive State: 136>\n\n<Sideview Battler: NoMatchingSprite/Mimic>\n<Sideview No Collapse>\n<Attack Animation: 2>\n\n<Conditional Seshat's Charm Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Seshat's Charm Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
     "params": [
       2500,
       0,
@@ -3902,7 +3902,7 @@
     ],
     "gold": 72,
     "name": "Horrorspore",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n<Passive State: 136>\n\n<AI Priority>\nState !== Poisoned +++ Random 60%: Poison Powder\n</AI Priority>\n\n<Enemy Drops>\nBrown Mushroom: 90%\nBrown Mushroom: 90%\nBrown Mushroom: 90%\nRaw Truffle: 20%\nRaw Truffle: 10%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n<Element Absorb: 6>\n\n<AI Priority>\nState !== Poisoned +++ Random 60%: Poison Powder\n</AI Priority>\n\n<Enemy Drops>\nBrown Mushroom: 90%\nBrown Mushroom: 90%\nBrown Mushroom: 90%\nRaw Truffle: 20%\nRaw Truffle: 10%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -3978,7 +3978,7 @@
     ],
     "gold": 54,
     "name": "Baby Ent",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n<Passive State: 136, 143>\n\n<AI Priority>\nState !== Amnesia +++ Random 40%: Amnesia\nState !== Silenced +++ Random 40%: Silence\n</AI Priority>\n\n<Enemy Drops>\nMedicinal Root: 16.66%\nMedicinal Root: 16.66%\nBattle Plan: 3.33%\nPetrified Wood: 60%\nPetrified Wood: 60%\nPetrified Wood: 60%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 136, 143>\n<Element Absorb: 6>\n\n<AI Priority>\nState !== Amnesia +++ Random 40%: Amnesia\nState !== Silenced +++ Random 40%: Silence\n</AI Priority>\n\n<Enemy Drops>\nMedicinal Root: 16.66%\nMedicinal Root: 16.66%\nBattle Plan: 3.33%\nPetrified Wood: 60%\nPetrified Wood: 60%\nPetrified Wood: 60%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       1800,
       0,
@@ -4049,7 +4049,7 @@
     ],
     "gold": 48,
     "name": "Beet Boxer",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n<Passive State: 136>\n\n<Enemy Drops>\nVicious Herb: 30%\nMedicinal Herb: 10%\nMedicinal Root: 3%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nCarrot Seeds: 2%\nWheat Seeds: 2%\nOat Seeds: 2%\nTomato Seeds: 2%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 136>\n<Element Absorb: 6>\n\n<Enemy Drops>\nVicious Herb: 30%\nMedicinal Herb: 10%\nMedicinal Root: 3%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nCarrot Seeds: 2%\nWheat Seeds: 2%\nOat Seeds: 2%\nTomato Seeds: 2%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       800,
       0,
@@ -4125,7 +4125,7 @@
     ],
     "gold": 48,
     "name": "Baby Turtle",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nTurtle Scute: 100%\nTurtle Scute: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Element Absorb: 6>\n\n<Enemy Drops>\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nTurtle Scute: 100%\nTurtle Scute: 50%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
@@ -4222,7 +4222,7 @@
     ],
     "gold": 240,
     "name": "Giant Turtle",
-    "note": "<Attack Animation: 1>\n<Element Absorb: 6>\n\n<Enemy Drops>\nGiant Turtle Shell: 33.33%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nEarth Essence: 20%\n</Enemy Drops>",
+    "note": "<Element Absorb: 6>\n\n<Enemy Drops>\nGiant Turtle Shell: 33.33%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 100%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nThick-Skinned Herb: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nTurtle Scute: 50%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
       4000,
       0,
@@ -4300,7 +4300,7 @@
     ],
     "gold": 250,
     "name": "Ice Golem",
-    "note": "<Breathing Speed: 20>\n<Attack Animation: 4>\n<Element Absorb: 3>\n<Passive State: 136, 140, 144>\n\n<AI Priority>\nState !== Icy Barrier +++ Random 50%: Ice Barrier\n</AI Priority>\n\n<Enemy Drops>\nFrozen Jewel: 33.33%\nWarm Scarf: 3.33%\nGlacial Bulwark: 25%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 136, 140, 144>\n<Element Absorb: 3>\n\n<Breathing Speed: 20>\n<Attack Animation: 4>\n\n<AI Priority>\nState !== Icy Barrier +++ Random 50%: Ice Barrier\n</AI Priority>\n\n<Enemy Drops>\nFrozen Jewel: 33.33%\nWarm Scarf: 3.33%\nGlacial Bulwark: 25%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 100%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       7500,
       0,
@@ -4386,7 +4386,7 @@
     ],
     "gold": 100,
     "name": "Chilling Apparition",
-    "note": "<Passive State: 57, 129, 144>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n<Element Absorb: 3>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nWarm Scarf: 3.33%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Passive State: 57, 129, 144>\n<Element Absorb: 3>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 3.33%\nWarm Scarf: 3.33%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       2500,
       0,
@@ -4457,7 +4457,7 @@
     ],
     "gold": 250,
     "name": "Werewolf",
-    "note": "<Breathing Speed: 20>\n<Attack Animation: 19>\n<Element Absorb: 3>\n<Passive State: 144>\n\n<Enemy Drops>\nWarm Scarf: 3.33%\nRazor-Sharp Fang: 5%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 144>\n<Element Absorb: 3>\n\n<Breathing Speed: 20>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 3.33%\nRazor-Sharp Fang: 5%\nIce Cube: 50%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       4000,
       0,
@@ -4523,7 +4523,7 @@
     ],
     "gold": 432,
     "name": "Baby Dragon",
-    "note": "<Floating>\n<Floating Rate: 0.05>\n<Breathing Speed: 20>\n<Attack Animation: 211>\n<Element Absorb: 6, 7>\n<Passive State: 145>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragonfruit: 20%\nEarth Essence: 20%\nWind Essence: 20%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +50%\n</Conditional Enchanted Dragon Scale Drop>",
+    "note": "<Passive State: 145>\n<Element Absorb: 6, 7>\n\n<Breathing Speed: 20>\n<Floating>\n<Floating Rate: 0.05>\n<Attack Animation: 211>\n\n<AI Priority>\nTurn % 4 === 1: Future Sight, Highest HP\nTurn % 4 === 2: Cyclone\nTurn % 4 === 3: Spike Shock\nTurn % 4 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragonfruit: 20%\nEarth Essence: 20%\nWind Essence: 20%\n</Enemy Drops>\n\n<Conditional Enchanted Dragon Scale Drop>\nSwitch 95 ON: +50%\n</Conditional Enchanted Dragon Scale Drop>",
     "params": [
       6000,
       0,
@@ -4599,7 +4599,7 @@
     ],
     "gold": 5000,
     "name": "Dilong, Nature Dragon",
-    "note": "<Sideview Battler: Dilong>\n<Sideview No Collapse>\n<Scale Sprite: 200%>\n<Floating>\n<Floating Rate: 0.025>\n<Attack Animation: 106>\n<Element Absorb: 6, 7>\n<HP Gauge Width: 360>\n<Passive State: 145>\n\n<Enemy Drops>\nDilong's Tear: 100%\nLife Crystal: 100%\nEnchanted Dragon Scale: 100%\nEnchanted Dragon Scale: 100%\nEnchanted Dragon Scale: 50%\nEnchanted Dragon Scale: 25%\nEnchanted Dragon Scale: 12.5%\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 50%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 25%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragon Scale: 12.5%\nDragon Scale: 12.5%\nDragonfruit: 20%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<AI Priority>\nUser HP% param <= 75% +++ Eval $gameVariables.value(53) === 0: Draconic Healing\nUser HP% param <= 50% +++ Eval $gameVariables.value(53) === 1: Draconic Healing\nUser HP% param <= 25% +++ Eval $gameVariables.value(53) === 2: Draconic Healing\nUser HP% param <= 10% +++ Eval $gameVariables.value(53) === 3: Draconic Healing\n\nUser HP% param > 75% +++ Turn % 4 === 1: Future Sight, Highest HP\nUser HP% param > 75% +++ Turn % 4 === 2: Cyclone\nUser HP% param > 75% +++ Turn % 4 === 3: Spike Shock\nUser HP% param > 75% +++ Turn % 4 === 0: Spike Shock\n\nUser HP% param > 50% +++ Turn % 8 === 1: Future Sight, Highest HP\nUser HP% param > 50% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 50% +++ Turn % 8 === 3: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 5: Future Sight, Highest HP\nUser HP% param > 50% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 50% +++ Turn % 8 === 7: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 0: Spike Shock\n\nUser HP% param > 25% +++ Turn % 8 === 1: Future Sight, Highest HP\nUser HP% param > 25% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 25% +++ Turn % 8 === 3: Giga Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 5: Future Sight, Highest HP\nUser HP% param > 25% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 25% +++ Turn % 8 === 7: Giga Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 0: Spike Shock\n\nUser HP% param > 10% +++ Turn % 8 === 1: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 10% +++ Turn % 8 === 3: Giga Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 5: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 7: Giga Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 0: Spike Shock\n\nTurn % 3 === 1: Wyvern's Fury\nTurn % 3 === 2: Immortal Spears\nTurn % 3 === 0: Spike Shock\n</AI Priority>",
+    "note": "<Passive State: 145>\n<Element Absorb: 6, 7>\n\n<Sideview Battler: Dilong>\n<Scale Sprite: 200%>\n<Sideview No Collapse>\n<Floating>\n<Floating Rate: 0.025>\n<Attack Animation: 106>\n<HP Gauge Width: 360>\n\n<AI Priority>\nUser HP% param <= 75% +++ Eval $gameVariables.value(53) === 0: Draconic Healing\nUser HP% param <= 50% +++ Eval $gameVariables.value(53) === 1: Draconic Healing\nUser HP% param <= 25% +++ Eval $gameVariables.value(53) === 2: Draconic Healing\nUser HP% param <= 10% +++ Eval $gameVariables.value(53) === 3: Draconic Healing\n\nUser HP% param > 75% +++ Turn % 4 === 1: Future Sight, Highest HP\nUser HP% param > 75% +++ Turn % 4 === 2: Cyclone\nUser HP% param > 75% +++ Turn % 4 === 3: Spike Shock\nUser HP% param > 75% +++ Turn % 4 === 0: Spike Shock\n\nUser HP% param > 50% +++ Turn % 8 === 1: Future Sight, Highest HP\nUser HP% param > 50% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 50% +++ Turn % 8 === 3: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 5: Future Sight, Highest HP\nUser HP% param > 50% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 50% +++ Turn % 8 === 7: Spike Shock\nUser HP% param > 50% +++ Turn % 8 === 0: Spike Shock\n\nUser HP% param > 25% +++ Turn % 8 === 1: Future Sight, Highest HP\nUser HP% param > 25% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 25% +++ Turn % 8 === 3: Giga Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 5: Future Sight, Highest HP\nUser HP% param > 25% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 25% +++ Turn % 8 === 7: Giga Spike Shock\nUser HP% param > 25% +++ Turn % 8 === 0: Spike Shock\n\nUser HP% param > 10% +++ Turn % 8 === 1: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 2: Cyclone\nUser HP% param > 10% +++ Turn % 8 === 3: Giga Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 4: Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 5: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 6: Immortal Spears\nUser HP% param > 10% +++ Turn % 8 === 7: Giga Spike Shock\nUser HP% param > 10% +++ Turn % 8 === 0: Spike Shock\n\nTurn % 3 === 1: Wyvern's Fury\nTurn % 3 === 2: Immortal Spears\nTurn % 3 === 0: Spike Shock\n</AI Priority>\n\n<Enemy Drops>\nDilong's Tear: 100%\nLife Crystal: 100%\nEnchanted Dragon Scale: 100%\nEnchanted Dragon Scale: 100%\nEnchanted Dragon Scale: 50%\nEnchanted Dragon Scale: 25%\nEnchanted Dragon Scale: 12.5%\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 100%\nDragon Scale: 50%\nDragon Scale: 50%\nDragon Scale: 50%\nDragon Scale: 25%\nDragon Scale: 25%\nDragon Scale: 25%\nDragon Scale: 12.5%\nDragon Scale: 12.5%\nDragon Scale: 12.5%\nDragonfruit: 20%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nEarth Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       50000,
       0,
@@ -4650,7 +4650,7 @@
     ],
     "gold": 750,
     "name": "Big Mouth",
-    "note": "<AI Level: 100>\n<AI Priority>\nTurn % 4 === 0: Offensive Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 4 === 1: Attack\nTurn % 4 === 2: Focused Slash\nTurn % 4 === 3: Double Slash\n\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: ThiefDuo_1>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nScaly Gloves: 10%\nAnti-Magic Charm ★: 10%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: ThiefDuo_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn % 4 === 0: Offensive Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 4 === 1: Attack\nTurn % 4 === 2: Focused Slash\nTurn % 4 === 3: Double Slash\n\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nScaly Gloves: 10%\nAnti-Magic Charm ★: 10%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       4000,
       0,
@@ -4708,7 +4708,7 @@
     ],
     "gold": 750,
     "name": "Smart Mouth",
-    "note": "<AI Level: 100>\n<AI Priority>\nTurn === 1 +++ Random 50%: Cherry Bomb, User\nTurn === 1: Foresight, User\n\nState !== Cherry Bomb +++ Random 30%: Cherry Bomb, User\nState !== Foresight +++ Random 30%: Foresight, User\n\nState !== Sharpened Dagger +++ Turn >= 3: Sharpen Dagger, User\n\nState === Magical Barrier: Shield Break, Highest HP%\n</AI Priority>\n\n<Boost Skill 15: Full>\n\n<Sideview Battler: ThiefDuo_2>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<Sideview No Collapse>\n<Passive State: 138>\n\n<Enemy Drops>\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nScaly Gloves: 10%\nAnti-Magic Charm ★: 10%\nBell: 3.33%\n</Enemy Drops>",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: ThiefDuo_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn === 1 +++ Random 50%: Cherry Bomb, User\nTurn === 1: Foresight, User\n\nState !== Cherry Bomb +++ Random 30%: Cherry Bomb, User\nState !== Foresight +++ Random 30%: Foresight, User\n\nState !== Sharpened Dagger +++ Turn >= 3: Sharpen Dagger, User\n\nState === Magical Barrier: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nScaly Gloves: 10%\nAnti-Magic Charm ★: 10%\nBell: 3.33%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -4793,7 +4793,7 @@
     ],
     "gold": 50,
     "name": "Ice Slime",
-    "note": "<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Attack Animation: 4>\n<Element Absorb: 3>\n<Passive State: 136, 144>\n\n<Enemy Drops>\nIcy Gel: 50%\nOmelet: 16.66%\nLarge Elixir: 7.5%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nSlime Scarf: 3.33%\nWarm Scarf: 3.33%\nCondensed Icy Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 136, 144>\n<Element Absorb: 3>\n\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nIcy Gel: 50%\nOmelet: 16.66%\nLarge Elixir: 7.5%\nIce Cube: 50%\nIce Cube: 50%\nFrozen Jewel: 10%\nSlime Scarf: 3.33%\nWarm Scarf: 3.33%\nCondensed Icy Gel: 5%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       60,
@@ -4839,7 +4839,7 @@
     ],
     "gold": 500,
     "name": "Attacker Tellurium Golem",
-    "note": "<Breathing Speed: 20>\n<Attack Animation: 4>\n<Passive State: 136, 140>\n\n<Enemy Drops>\nTellurium Dust: 4%\nCopper Cluster: 100%\nCopper Cluster: 100%\nCopper Cluster: 50%\nCopper Cluster: 50%\nCopper Cluster: 25%\nCopper Cluster: 25%\nIron Cluster: 100%\nIron Cluster: 100%\nIron Cluster: 50%\nIron Cluster: 50%\nIron Cluster: 25%\nIron Cluster: 25%\n</Enemy Drops>",
+    "note": "<Passive State: 136, 140>\n\n<Breathing Speed: 20>\n<Attack Animation: 4>\n\n<Enemy Drops>\nTellurium Dust: 4%\nCopper Cluster: 100%\nCopper Cluster: 100%\nCopper Cluster: 50%\nCopper Cluster: 50%\nCopper Cluster: 25%\nCopper Cluster: 25%\nIron Cluster: 100%\nIron Cluster: 100%\nIron Cluster: 50%\nIron Cluster: 50%\nIron Cluster: 25%\nIron Cluster: 25%\n</Enemy Drops>",
     "params": [
       12000,
       0,
@@ -4890,7 +4890,7 @@
     ],
     "gold": 500,
     "name": "Defender Tellurium Golem",
-    "note": "<Breathing Speed: 20>\n<Attack Animation: 4>\n<Passive State: 136, 140>\n\n<Enemy Drops>\nTellurium Dust: 4%\nCopper Cluster: 100%\nCopper Cluster: 100%\nCopper Cluster: 50%\nCopper Cluster: 50%\nCopper Cluster: 25%\nCopper Cluster: 25%\nIron Cluster: 100%\nIron Cluster: 100%\nIron Cluster: 50%\nIron Cluster: 50%\nIron Cluster: 25%\nIron Cluster: 25%\n</Enemy Drops>",
+    "note": "<Passive State: 136, 140>\n\n<Breathing Speed: 20>\n<Attack Animation: 4>\n\n<Enemy Drops>\nTellurium Dust: 4%\nCopper Cluster: 100%\nCopper Cluster: 100%\nCopper Cluster: 50%\nCopper Cluster: 50%\nCopper Cluster: 25%\nCopper Cluster: 25%\nIron Cluster: 100%\nIron Cluster: 100%\nIron Cluster: 50%\nIron Cluster: 50%\nIron Cluster: 25%\nIron Cluster: 25%\n</Enemy Drops>",
     "params": [
       12000,
       0,
@@ -4976,7 +4976,7 @@
     ],
     "gold": 1500,
     "name": "Ethereal Bat",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Element Absorb: 7>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nWind Catalyst: 100%\nStorm Lens: 3.33%\nBat Sling: 20%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<Conditional Ethereal Bat Wing Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat Wing Drop>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat's Spirit Drop>",
+    "note": "<Element Absorb: 7>\n\n<Sideview Battler: NoMatchingSprite/Ethereal Bat>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<AI Priority>\nState !== Used Ethereal Echolocation: Ethereal Echolocation\nState !== Eye of the Storm +++ Random 40%: Cyclone\n</AI Priority>\n\n<Enemy Drops>\nWind Catalyst: 100%\nStorm Lens: 3.33%\nBat Sling: 20%\nShard of Glass: 0.5%\nEnchanted Bat Skin: 5%\nWind Essence: 100%\nWind Essence: 100%\nWind Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\nLight Essence: 100%\n</Enemy Drops>\n\n<Conditional Ethereal Bat Wing Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat Wing Drop>\n<Conditional Ethereal Bat's Spirit Drop>\nSwitch 96 OFF: +100%\n</Conditional Ethereal Bat's Spirit Drop>",
     "params": [
       8000,
       0,
@@ -5072,7 +5072,7 @@
     ],
     "gold": 0,
     "name": "Vampiric Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vampiric Spirit>\n<Element Absorb: 7>\n<Passive State: 111, 115, 129, 147>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 111, 115, 129, 147>\n<Element Absorb: 7>\n\n<Sideview Battler: NoMatchingSprite/Vampiric Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -5168,7 +5168,7 @@
     ],
     "gold": 0,
     "name": "Vigorous Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Vigorous Spirit>\n<Element Absorb: 7>\n<Passive State: 112, 116, 129, 147>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 112, 116, 129, 147>\n<Element Absorb: 7>\n\n<Sideview Battler: NoMatchingSprite/Vigorous Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -5264,7 +5264,7 @@
     ],
     "gold": 0,
     "name": "Dexterous Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Dexterous Spirit>\n<Element Absorb: 7>\n<Passive State: 113, 117, 129, 147>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 113, 117, 129, 147>\n<Element Absorb: 7>\n\n<Sideview Battler: NoMatchingSprite/Dexterous Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -5360,7 +5360,7 @@
     ],
     "gold": 0,
     "name": "Belligerent Spirit",
-    "note": "<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n<Sideview Battler: NoMatchingSprite/Belligerent Spirit>\n<Element Absorb: 7>\n<Passive State: 114, 118, 129, 147>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 114, 118, 129, 147>\n<Element Absorb: 7>\n\n<Sideview Battler: NoMatchingSprite/Belligerent Spirit>\n<Floating>\n<LowHpGround>\n<Attack Animation: 211>\n\n<Enemy Drops>\nWind Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       2000,
       0,
@@ -5431,7 +5431,7 @@
     ],
     "gold": 75,
     "name": "Polar Bear",
-    "note": "<Breathing Speed: 20>\n<Attack Animation: 19>\n<Element Absorb: 3>\n<Passive State: 144>\n\n<Enemy Drops>\nWarm Scarf: 3.33%\nRaw Bear Meat: 50%\nRaw Bear Meat: 50%\nHoney: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Passive State: 144>\n<Element Absorb: 3>\n\n<Breathing Speed: 20>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 3.33%\nRaw Bear Meat: 50%\nRaw Bear Meat: 50%\nHoney: 50%\nFrozen Jewel: 10%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -5503,7 +5503,7 @@
     ],
     "gold": 100,
     "name": "Gazer",
-    "note": "<Sideview Battler: Gazer_1>\n<Attack Animation: 1>\n<Sideview No Collapse>\n<Passive State: 149>\n\n<AI Priority>\nState !== Exposed Weak Point +++ Random 50%: Nasty Glare, First\n</AI Priority>\n\n<Enemy Drops>\nWanted Poster: 3.33%\nSightful Charm: 5%\nGazer Goop: 75%\nGazer Goop: 75%\n</Enemy Drops>",
+    "note": "<Passive State: 149>\n\n<Sideview Battler: Gazer_1>\n<Sideview No Collapse>\n\n<AI Priority>\nState !== Exposed Weak Point +++ Random 50%: Nasty Glare, First\n</AI Priority>\n\n<Enemy Drops>\nWanted Poster: 3.33%\nSightful Charm: 5%\nGazer Goop: 75%\nGazer Goop: 75%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -5568,7 +5568,7 @@
     ],
     "gold": 100,
     "name": "Parasite",
-    "note": "<Sideview Battler: NoMatchingSprite/Parasite>\n<Attack Animation: 11>\n<Passive State: 148>\n\n<Enemy Drops>\nSightful Charm: 5%\nRazor-Sharp Fang: 5%\nStinger: 75%\nStinger: 75%\nVial of Poison: 16.66%\n</Enemy Drops>",
+    "note": "<Passive State: 148>\n\n<Sideview Battler: NoMatchingSprite/Parasite>\n<Attack Animation: 11>\n\n<Enemy Drops>\nSightful Charm: 5%\nRazor-Sharp Fang: 5%\nStinger: 75%\nStinger: 75%\nVial of Poison: 16.66%\n</Enemy Drops>",
     "params": [
       3000,
       0,
@@ -5648,7 +5648,7 @@
     ],
     "gold": 100,
     "name": "Poltergeist",
-    "note": "<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Attack Animation: 1>\n<Sideview No Collapse>\n<Passive State: 57, 150>\n\n<Boost Skill 132: Full>\n\n<Enemy Drops>\nBattle Plan: 3.33%\nEctoblood: 75%\nEctoblood: 75%\n</Enemy Drops>\n\n<Night Boost>\nFaux-Gold Headband: 2.5% +2.5%\nEctoplasm: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Passive State: 57, 150>\n\n<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Sideview No Collapse>\n\n<Boost Skill 132: Full>\n\n<Enemy Drops>\nBattle Plan: 3.33%\nEctoblood: 75%\nEctoblood: 75%\n</Enemy Drops>\n\n<Night Boost>\nFaux-Gold Headband: 2.5% +2.5%\nEctoplasm: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       2500,
       0,

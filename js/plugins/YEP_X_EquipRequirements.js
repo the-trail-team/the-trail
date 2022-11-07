@@ -368,10 +368,23 @@ DataManager.processEqReqNotetags1 = function(group) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
 
+    var defaultClasses = [];
+    if (DataManager.isWeapon(obj)) {
+      if ([2, 6, 7, 11].contains(obj.wtypeId)) defaultClasses.push(1);
+      if ([3, 10].contains(obj.wtypeId)) defaultClasses.push(2);
+      if ([4, 8].contains(obj.wtypeId)) defaultClasses.push(3);
+      if ([5, 9].contains(obj.wtypeId)) defaultClasses.push(4);
+    } else if (DataManager.isArmor(obj)) {
+      if ([2, 6, 7].contains(obj.atypeId)) defaultClasses.push(1);
+      if ([3, 6].contains(obj.atypeId)) defaultClasses.push(2);
+      if ([4, 6].contains(obj.atypeId)) defaultClasses.push(3);
+      if ([5].contains(obj.atypeId)) defaultClasses.push(4);
+    }
+
     obj.equipRequirements = {
       atLeast: [0, 0, 0, 0, 0, 0, 0, 0, 0],
       atMost: [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      classes: [],
+      classes: defaultClasses,
       skills: [],
       switches: [],
       unique: false
