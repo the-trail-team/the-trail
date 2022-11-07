@@ -2050,7 +2050,7 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "Strength Within The Blade",
+    "name": "Strength Within the Blade",
     "note": "<animationRow:27>\n\n<HP Life Steal Physical: +50%>\n\n<Custom Confirm Effect>\n// Registers the HP value of the user.\nuser._confirmHp = user.hp;\n</Custom Confirm Effect>\n\n<Custom Establish Effect>\n// Check to see if the effect deals damage to HP and is a physical attack.\nif (value > 0 && this.isHpEffect() && this.isPhysical()) {\n  // Check to see if the user is at full HP.\n  if (user.hp === user.mhp) {\n    // Get the user's Life Steal results.\n    var result = user.result();\n    // Get the overheal amount.\n    var overheal = -1 * result.hpDamage + user._confirmHp - user.mhp;\n    // Check if the overheal amount is above 0.\n    if (overheal > 0) {\n      // Adds a barrier to the user based on the overheal amount.\n      user.gainBarrier(overheal, 0);\n      user.customPopup(\"+\" + overheal, 3);\n    }\n  }\n}\n</Custom Establish Effect>\n\n<Help Description>\nBoosts physical lifesteal by 50%. Overhealed lifesteal is converted to a magical barrier.\n</Help Description>",
     "overlay": 4,
     "priority": 70,
@@ -5221,6 +5221,126 @@
     "note": "<Help Description>\nImmune to \\it[20], \\it[34], and \\it[39].\n</Help Description>",
     "overlay": 0,
     "priority": 5,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 151,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 1,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 1349,
+    "maxTurns": 5,
+    "message1": " has risen from the ashes!",
+    "message2": "",
+    "message3": "",
+    "message4": " cleaned off the ashes.",
+    "minTurns": 5,
+    "motion": 0,
+    "name": "From the Ashes",
+    "note": "<animationRow:27>\n\n<Help Description>\nIncreases MHP, MMP, ATK, DEF, MAT, MDF, and AGI by 50%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 30,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 152,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 763,
+    "maxTurns": 3,
+    "message1": "'s DEF was increased!",
+    "message2": "",
+    "message3": "",
+    "message4": "'s DEF went back to normal.",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Thick-Skinned Herb",
+    "note": "<Help Description>\nIncreases DEF by 20%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 30,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 153,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 764,
+    "maxTurns": 3,
+    "message1": "'s ATK was increased!",
+    "message2": "",
+    "message3": "",
+    "message4": "'s ATK went back to normal.",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Vicious Herb",
+    "note": "<Help Description>\nIncreases ATK by 20%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 30,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,

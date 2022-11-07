@@ -4017,11 +4017,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "An incredibly rare and beautiful phoenix feather. Revives a downed ally,\nrestores all HP and MP, and buffs all stats by 3 stages for 5 turns.",
+    "description": "An incredibly rare and beautiful phoenix feather. Revives a downed ally,\nrestores all HP and MP, and increases every stat by 50% for several turns.",
     "effects": [
       {
         "code": 22,
         "dataId": 1,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 151,
         "value1": 1,
         "value2": 0
       },
@@ -4035,96 +4041,6 @@
         "code": 12,
         "dataId": 0,
         "value1": 1,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 2,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 3,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 4,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 5,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 6,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 2,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 3,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 4,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 5,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 6,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 2,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 3,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 4,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 5,
-        "value1": 5,
-        "value2": 0
-      },
-      {
-        "code": 31,
-        "dataId": 6,
-        "value1": 5,
         "value2": 0
       }
     ],
@@ -5414,12 +5330,12 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A magical herb with defensive properties. Useful\nfor crafting. Can buff your DEF a bit in battle.",
+    "description": "A magical herb with defensive properties.\nUseful for crafting or buffing DEF in battle.",
     "effects": [
       {
-        "code": 31,
-        "dataId": 3,
-        "value1": 3,
+        "code": 21,
+        "dataId": 152,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -5429,7 +5345,7 @@
     "name": "Thick-Skinned Herb",
     "note": "",
     "occasion": 1,
-    "price": 30,
+    "price": 20,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -5843,12 +5759,12 @@
       "type": 0,
       "variance": 20
     },
-    "description": "An herb with a punchy flavoring to it.\nCan buff your ATK a bit in battle.",
+    "description": "An herb with a punchy flavoring to it.\nBuffs your ATK temporarily when used.",
     "effects": [
       {
-        "code": 31,
-        "dataId": 2,
-        "value1": 3,
+        "code": 21,
+        "dataId": 153,
+        "value1": 1,
         "value2": 0
       }
     ],
