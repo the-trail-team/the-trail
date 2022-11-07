@@ -1136,7 +1136,7 @@
       "type": 3,
       "variance": 0
     },
-    "description": "Restores 30% of a party member's MHP and grants them an HP\nregeneration effect (5% MHP per turn over \\c[27]\\bpturn[4]\\c[0] turns).",
+    "description": "Restores 30% of a party member's MHP and increases\ntheir health regeneration by 10% for \\c[27]\\bpturn[4]\\c[0] turns",
     "effects": [
       {
         "code": 21,
@@ -2852,7 +2852,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Give your weapon a quick lick to restore some HP and grant an HP\nregeneration effect. However, your weapon will be weaker for a few turns.",
+    "description": "Give your weapon a quick lick to restore some HP and grant an HP regeneration\neffect for \\c[27]\\bpturn[3]\\c[0] turns. However, your weapon will be weaker for the same duration.",
     "effects": [
       {
         "code": 11,
@@ -2873,7 +2873,7 @@
     "message2": "",
     "mpCost": 6,
     "name": "Lick Weapon",
-    "note": "<Require = 0 BP>\n\n<action copy: skill:11>\n",
+    "note": "<Boost Turns>\n\n<action copy: skill:11>\n",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,

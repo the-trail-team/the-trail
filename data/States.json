@@ -989,7 +989,13 @@
     "id": 28,
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.1
+      }
+    ],
     "iconIndex": 26,
     "maxTurns": 4,
     "message1": "",
@@ -999,7 +1005,7 @@
     "minTurns": 4,
     "motion": 0,
     "name": "Rejuvenation",
-    "note": "<Category: buff>\n\n<Regen Formula: b.mhp * 0.05>\n<DoT Element: 11>\n<DoT Animation: 41>\n\n<Help Description>\nRestores 5% of MHP via \\i[122]healing per turn.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases HRG by 10%.\n</Help Description>",
     "overlay": 6,
     "priority": 30,
     "removeAtBattleEnd": true,
@@ -2259,7 +2265,7 @@
   },
   {
     "id": 68,
-    "autoRemovalTiming": 1,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [
       {
@@ -2271,6 +2277,11 @@
         "code": 21,
         "dataId": 4,
         "value": 0.75
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.05
       }
     ],
     "iconIndex": 26,
@@ -2282,7 +2293,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Licked Weapon",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Regen Formula: b.mhp * 0.05>\n<DoT Animation: 137>\n\n<Help Description>\nRestores 5% of MHP per turn. Reduces ATK and MAT by 25%.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Help Description>\nIncreases HRG by 5%. Decreases ATK and MAT by 25%.\n</Help Description>",
     "overlay": 0,
     "priority": 40,
     "removeAtBattleEnd": true,
@@ -2846,9 +2857,19 @@
   },
   {
     "id": 88,
-    "autoRemovalTiming": 1,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 0.7
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 0.7
+      },
       {
         "code": 22,
         "dataId": 0,
@@ -2869,7 +2890,7 @@
     "minTurns": 2,
     "motion": 0,
     "name": "Eye of the Storm",
-    "note": "<Category: Wind>\n<Category: debuff>\n<Category: moderate debuff>\n\n<animationRow:11>\n\n<Custom Turn End Effect>\nuser.addDebuff(2, 3);\nuser.addDebuff(4, 3);\nuser.startAnimation(54);\n</Custom Turn End Effect>\n\n<Help Description>\nDecreases HIT by 15% and CRI by 6%. ATK and MAT are debuffed by one level at the end of every turn.\n</Help Description>",
+    "note": "<Category: Wind>\n<Category: debuff>\n<Category: moderate debuff>\n\n<animationRow:11>\n\n<Help Description>\nDecreases ATK and MAT by 30%, HIT by 15%, and CRI by 6%.\n</Help Description>",
     "overlay": 0,
     "priority": 69,
     "removeAtBattleEnd": true,
