@@ -433,9 +433,11 @@ Window_ItemList.prototype.includes = function(item) {
         break;
       case 'Buffs':
         if (DataManager.isItem(item)) if (item.effects.some(e => e.code == 21 && $dataStates[e.dataId].category.contains('BUFF'))) return item;
+        if (DataManager.isItem(item)) if ([23].contains(item.id)) return item; // Exceptions
         break;
       case 'Debuffs':
         if (DataManager.isItem(item)) if (item.effects.some(e => (e.code == 21 && $dataStates[e.dataId].category.contains('DEBUFF')) || (e.code == 22 && $dataStates[e.dataId].category.contains('DEBUFF')))) return item;
+        if (DataManager.isItem(item)) if ([246].contains(item.id)) return item; // Exceptions
         break;
       default:
         return item && item.itemCategory.contains(this._ext);
