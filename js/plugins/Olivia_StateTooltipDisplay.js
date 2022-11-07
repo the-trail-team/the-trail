@@ -261,6 +261,9 @@ Olivia[_0x1db1("0x25")] = function (_0x3a7c76) {
       } else if (_0xc6443b === "help description") {
         if (_0x3a7c76[_0x1db1("0x4b")][_0x1db1("0x29")] > 0) _0x3a7c76[_0x1db1("0x4b")] += "\n";
         _0x3a7c76["description"] += _0x1d7806;
+        if (_0x3a7c76.category.contains("BUFF")) _0x3a7c76["description"] += " \\c[12][BUFF]\\c[0]";
+        if (_0x3a7c76.category.contains("WEAK DEBUFF")) _0x3a7c76["description"] += " \\c[14][WEAK DEBUFF]\\c[0]";
+        if (_0x3a7c76.category.contains("MODERATE DEBUFF")) _0x3a7c76["description"] += " \\c[2][MODERATE DEBUFF]\\c[0]";
       }
     }
   }
