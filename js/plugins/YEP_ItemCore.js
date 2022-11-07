@@ -1749,7 +1749,7 @@ Window_ItemStatus.prototype.drawDarkRectEntries = function() {
     rect.height = this.lineHeight();
     for (var i = 0; i < 8; ++i) {
       rect = this.getRectPosition(rect, i);
-      this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+      if (!(DataManager.isItem(this._item) && i > 5)) this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
     }
 };
 
@@ -1774,6 +1774,11 @@ Window_ItemStatus.prototype.getRectPosition = function(rect, i) {
       } else {
         rect.x = rect.width;
       }
+    }
+    if (DataManager.isItem(this._item) && i >= 4) {
+      rect.x = Window_Base._faceWidth;
+      rect.y = (i == 4 ? 2 : 3) * this.lineHeight();
+      rect.width *= (i == 4 ? 2 : 1);
     }
     return rect;
 };
@@ -1839,7 +1844,7 @@ Window_ItemStatus.prototype.drawItemInfo = function(item) {
     } else {
       rect.width = this.contents.width / 2;
     }
-    for (var i = 0; i < 8; ++i) {
+    for (var i = 0; i < 6; ++i) {
       rect = this.getRectPosition(rect, i);
       var dx = rect.x + this.textPadding();
       var dw = rect.width - this.textPadding() * 2;
@@ -1858,8 +1863,6 @@ Window_ItemStatus.prototype.getItemInfoCategory = function(i) {
     if (i === 3) return fmt.format(TextManager.mp);
     if (i === 4) return Yanfly.Param.ItemAddState;
     if (i === 5) return Yanfly.Param.ItemRemoveState;
-    if (i === 6) return Yanfly.Param.ItemAddBuff;
-    if (i === 7) return Yanfly.Param.ItemRemoveBuff;
     return '';
 };
 
@@ -1936,22 +1939,6 @@ Window_ItemStatus.prototype.getItemIcons = function(i, array) {
       if (i === 5 && effect.code === Game_Action.EFFECT_REMOVE_STATE) {
         var state = $dataStates[effect.dataId];
         if (state && state.iconIndex !== 0) array.push(state.iconIndex);
-      }
-      if (i === 6 && effect.code === Game_Action.EFFECT_ADD_BUFF) {
-        var icon = Game_BattlerBase.ICON_BUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 6 && effect.code === Game_Action.EFFECT_ADD_DEBUFF) {
-        var icon = Game_BattlerBase.ICON_DEBUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 7 && effect.code === Game_Action.EFFECT_REMOVE_BUFF) {
-        var icon = Game_BattlerBase.ICON_BUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 7 && effect.code === Game_Action.EFFECT_REMOVE_DEBUFF) {
-        var icon = Game_BattlerBase.ICON_DEBUFF_START + effect.dataId;
-        array.push(icon);
       }
     }, this);
     array = array.slice(0, Yanfly.Param.ItemMaxIcons);
