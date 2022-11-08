@@ -513,26 +513,8 @@ Window_VictorySkills.prototype.refresh = function() {
     this.drawAllItems();
 };
 
-Window_VictorySkills.prototype.newSkillLearn = function() {
-    var learnSkills = $dataClasses[this._actor._classId].learnSkills;
-    var skillIds = [];
-    for (i = 0; i < learnSkills.length; i++) {
-      skillIds.push(learnSkills[i]);
-    }
-    for (i = 0; i < skillIds.length; i++) {
-      skill = $dataSkills[skillIds[i]];
-      if (skill.learnRequireLevel && !this._data.contains(128)) {
-        if (skill.learnRequireLevel > this._actor._preVictoryLv && skill.learnRequireLevel <= this._actor._level) {
-          if (this._data.length > 0) this._data.push(129);
-          this._data.push(128);
-        }
-      }
-    }
-};
-
 Window_VictorySkills.prototype.makeItemList = function() {
     this._data = this._actor._victorySkills.slice();
-    this.newSkillLearn();
 };
 
 Window_VictorySkills.prototype.drawItem = function(index) {

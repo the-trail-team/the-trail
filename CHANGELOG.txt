@@ -33,12 +33,12 @@ Additions:
    > [P] Steadfast: Passive skill learned at level 24.
    > Heavenswield: Magic skill learned at level 25 (replaces Bide).
   ~ Player 2, 4 skills:
-   > Ice II: Magic skill learnable at level 20 via the skill learn menu.
+   > Ice II: Magic skill learned at level 20.
    > [P] Fortitude: Passive skill learned at level 21.
    > Magical Breeze: Magic skill learned at level 23.
    > [P] Topped Off: Passive skill learned at level 25.
   ~ Player 3, 5 skills:
-   > Dispell: Magic skill learnable at level 15 via the skill learn menu.
+   > Dispell: Magic skill learned at level 15.
    > Group Heal: Magic skill learned at level 17 (replaces Blood Boost, mastery levels will be migrated).
    > Curify: Magic skill learned at level 22.
    > [P] Clear Mind: Passive skill learned at level 23.
@@ -319,6 +319,7 @@ Removals:
   ~ It was implemented in Alpha 14, but it was somewhat unnecessary as the game was perfectly fine with just having states before.
   ~ The removal of this system doesn't mean anything else will be scrapped. All skills that use this system have been reworked, with many inadvertently receiving buffs.
   ~ On that note, this removal will hopefully lessen the confusion around the terms buff and debuff, as they are now only used to refer to states.
+ - Removed the skill learn system. Why make the player learn the skill in a menu when they could just learn it via leveling up like literally every other skill normally is?
  - Removed the Skeleton enemy from the game. It was replaced in the Adonian Monsters troop, and all other troops containing it are not implemented/encounterable.
  - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
  - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and seafood dishes.
@@ -337,7 +338,6 @@ Changes:
  - Skill families will now be condensed into a single dropdown.
  - Fleshed out the salvaging system, making many items throughout the game now salvageable.
  - Leveling up will also remove all debuffs.
- - Victory aftermath now shows if a learnable skill has become available by leveling up.
  - Many shop stocks and enemy drop pools have been modified.
  - Increased all ore mining drop ranges by 1 on both bounds (e.g. copper ore now drops 3-5 copper clusters instead of the old 2-4).
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
