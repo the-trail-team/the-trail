@@ -422,6 +422,7 @@ Bug Fixes:
  - Fixed a game-breaking bug that I could have sworn was already fixed where you could push a boulder in Laeryidyean's Forest - Left Connector off the boulder tiles.
  - Fixed an old, and I mean OLD, bug where states intended to be removed by walking would occasionally never expire.
  - Fixed an ancient bug that caused battle events to trigger during actions. Endings of boss battles will now flow much more smoothly.
+ - Fixed a ridiculously old bug that has existed since Alpha 12 where items reset using the Cleansing Scroll wouldn't save.
  - Fixed several bugs with many states such as inconsistencies between regeneration effects, poison map damage not functioning as intended, and unused states doubling the effects of some traits.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - Fixed a bug where the critical hit formula wasn't programmed correctly, making critical evasion basically useless.
