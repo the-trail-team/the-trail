@@ -206,6 +206,11 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 52,
+        "value": 1
       }
     ],
     "iconIndex": 144,
@@ -910,7 +915,7 @@
   {
     "id": 30,
     "animationId": 6,
-    "description": "A single-handed axe. It isn't as strong as a greatsword,\nbut it can be used with shields and can rarely stun enemies.",
+    "description": "A single-handed axe. Not as strong as a greatsword,\nbut can stun enemies. Also grants a unique skill.",
     "etypeId": 1,
     "traits": [
       {
@@ -922,6 +927,11 @@
         "code": 32,
         "dataId": 36,
         "value": 0.05
+      },
+      {
+        "code": 43,
+        "dataId": 52,
+        "value": 1
       }
     ],
     "iconIndex": 403,
@@ -1475,6 +1485,11 @@
         "code": 22,
         "dataId": 2,
         "value": 0.01
+      },
+      {
+        "code": 43,
+        "dataId": 52,
+        "value": 1
       }
     ],
     "iconIndex": 400,
