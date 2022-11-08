@@ -321,10 +321,12 @@ Removals:
   ~ On that note, this removal will hopefully lessen the confusion around the terms buff and debuff, as they are now only used to refer to states.
  - Removed the skill learn system. Why make the player learn the skill in a menu when they could just learn it via leveling up like literally every other skill normally is?
  - Removed Job Points. After removing stat allocation and the skill learn system, JP lost all purpose. I figured it wouldn't be missed if I removed it instead of repurposing it.
- - Removed Steal Bits. Even the description of the skill reinforced how useless it was.
- - Removed Cherry Bomb and Smoke Bomb. The former did the same thing as Foresight, and the latter was a waste of a turn.
- - Removed Bide. Its function was somewhat unclear and it was basically useless, taking away three of Player 1's turns for the chance of dealing a little bit of damage.
- - Removed Blood Boost. In a game where enemy troops typically contain no more than 3 or 4 units, it makes sense that a skill that gives a mediocre buff after killing an enemy didn't see much use.
+ - Many skills were removed:
+  ~ Steal Bits: Even the description of the skill reinforced how useless it was.
+  ~ Magic Enhance: It was useful, but Player 2 needed his skill pool to get trimmed. Its ability lives on in the reworked Water Elemental's Flow.
+  ~ Cherry Bomb & Smoke Bomb: The former did the same thing as Foresight, and the latter was a waste of a turn.
+  ~ Bide: Its function was somewhat unclear and it was basically useless, taking away three of Player 1's turns for the chance of dealing a little bit of damage.
+  ~ Blood Boost: In a game where enemy troops typically contain no more than 3 or 4 units, it makes sense that a skill that gives a mediocre buff after killing an enemy didn't see much use.
  - Removed the Skeleton enemy from the game. It was replaced in the Adonian Monsters troop, and all other troops containing it are not implemented/encounterable.
  - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
  - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and seafood dishes.
@@ -364,6 +366,7 @@ Item/Equipment Balancing:
   ~ Ration: Reduced from Well Fed to Somewhat Well Fed.
   ~ Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
   ~ Fruitcake: Increased from Very Well Fed to Exquisitely Well Fed.
+ - Reworked the Water Elemental's Flow. It now provides a 15% increase to outgoing magical damage, but it increases all MP costs by 30%.
  - Ethers no longer require Bits to craft and are now much cheaper overall.
  - Increased the stat boost of all tavern potions from 15% to 25%.
  - Nerfed The Warden's Trade-off from [-10% MDR, +10% PDR] to [-5% MDR, +20% PDR].
