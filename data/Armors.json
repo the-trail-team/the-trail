@@ -4214,12 +4214,18 @@
   {
     "id": 160,
     "atypeId": 1,
-    "description": "A rare charm that boosts gained JP. Its namesake is\nthe goddess of wisdom, knowledge, and writing.",
+    "description": "A rare charm that boosts gained EXP. Its namesake is\nthe goddess of wisdom, knowledge, and writing.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.05
+      }
+    ],
     "iconIndex": 228,
     "name": "Seshat's Charm",
-    "note": "<Upgrade Slots: 1>\n<JP Rate: 125%>",
+    "note": "<Upgrade Slots: 1>",
     "params": [
       0,
       0,
@@ -4235,12 +4241,18 @@
   {
     "id": 161,
     "atypeId": 1,
-    "description": "This book contains the writings of a\nholy being. Further boosts gained JP.",
+    "description": "This book contains the writings of a\nholy being. Further increases gained EXP.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.1
+      }
+    ],
     "iconIndex": 712,
     "name": "Seshat's Tome",
-    "note": "<Upgrade Slots: 2>\n<JP Rate: 225%>\n\n<Synthesis Ingredients>\nSeshat's Charm: 4\n</Synthesis Ingredients>\n<Mask Name: JP Increaser Tier 2>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSeshat's Charm: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 2>",
     "params": [
       0,
       0,
@@ -4256,12 +4268,18 @@
   {
     "id": 162,
     "atypeId": 1,
-    "description": "Many lessons of Seshat have been written in the pages\nof this long read. Increases gained JP even more.",
+    "description": "Many lessons of Seshat have been written in the pages\nof this long read. Increases gained EXP even more.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.15
+      }
+    ],
     "iconIndex": 713,
     "name": "Seshat's Teachings",
-    "note": "<Upgrade Slots: 3>\n<JP Rate: 725%>\n\n<Synthesis Ingredients>\nSeshat's Tome: 4\n</Synthesis Ingredients>\n<Mask Name: JP Increaser Tier 3>",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSeshat's Tome: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 3>",
     "params": [
       0,
       0,
@@ -4495,12 +4513,18 @@
   {
     "id": 171,
     "atypeId": 1,
-    "description": "The complete work of a god, holier than any\nmanmade text. Increases gained JP to the max.",
+    "description": "The complete work of a god, holier than any\nmanmade text. Increases gained EXP to the max.",
     "etypeId": 6,
-    "traits": [],
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.2
+      }
+    ],
     "iconIndex": 714,
     "name": "Seshat's Opus",
-    "note": "<Upgrade Slots: 4>\n<JP Rate: 3225%>\n\n<Synthesis Ingredients>\nSeshat's Teachings: 4\n</Synthesis Ingredients>\n<Mask Name: JP Increaser Tier 4>",
+    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nSeshat's Teachings: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 4>",
     "params": [
       0,
       0,
