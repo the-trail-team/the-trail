@@ -726,7 +726,7 @@ Window_SavefileList.prototype.drawItem = function(index) {
     this.resetTextColor();
     //if (this._mode === 'load') this.changePaintOpacity(valid);
     this.changePaintOpacity(valid);
-    var icon = valid ? Yanfly.Param.SaveIconSaved : Yanfly.Param.SaveIconEmpty;
+    var icon = valid ? ($gameVariables.value(77)[id] || Yanfly.Param.SaveIconSaved) : Yanfly.Param.SaveIconEmpty;
     this.drawIcon(icon, rect.x + 2, rect.y + 2);
     this.drawFileId(id, rect.x + Window_Base._iconWidth + 4, rect.y);
 };

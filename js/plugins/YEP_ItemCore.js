@@ -678,6 +678,7 @@ DataManager.saveGameWithoutRescue = function(savefileId) {
     var globalInfo = this.loadGlobalInfo() || [];
     globalInfo[savefileId] = this.makeSavefileInfo();
     this.saveGlobalInfo(globalInfo);
+    if ($gameTemp._inGame) this.saveFileIcon(savefileId);
     return true;
 };
 
