@@ -28,7 +28,7 @@ Additions:
  - Added Discord rich presence support.
  - Added 18 new player skills:
   ~ Player 1, 4 skills:
-   > [P] Innate Magic: Passive skill learned at level 20 (replaces Bide).
+   > [P] Innate Magic: Passive skill learned at level 20.
    > Taunt: Special skill learned at level 22.
    > [P] Steadfast: Passive skill learned at level 24.
    > Heavenswield: Magic skill learned at level 25.
@@ -38,7 +38,7 @@ Additions:
    > [P] Topped Off: Passive skill learned at level 25.
   ~ Player 3, 5 skills:
    > Dispell: Magic skill learned at level 15.
-   > Group Heal: Magic skill learned at level 17 (replaces Blood Boost).
+   > Group Heal: Magic skill learned at level 20.
    > Curify: Magic skill learned at level 22.
    > [P] Clear Mind: Passive skill learned at level 23.
    > Resurgence: Magic skill learned at level 25.
@@ -323,6 +323,8 @@ Removals:
  - Removed Job Points. After removing stat allocation and the skill learn system, JP lost all purpose. I figured it wouldn't be missed if I removed it instead of repurposing it.
  - Removed Steal Bits. Even the description of the skill reinforced how useless it was.
  - Removed Cherry Bomb and Smoke Bomb. The former did the same thing as Foresight, and the latter was a waste of a turn.
+ - Removed Bide. Its function was somewhat unclear and it was basically useless, taking away three of Player 1's turns for the chance of dealing a little bit of damage.
+ - Removed Blood Boost. In a game where enemy troops typically contain no more than 3 or 4 units, it makes sense that a skill that gives a mediocre buff after killing an enemy didn't see much use.
  - Removed the Skeleton enemy from the game. It was replaced in the Adonian Monsters troop, and all other troops containing it are not implemented/encounterable.
  - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
  - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and seafood dishes.
@@ -371,14 +373,16 @@ Item/Equipment Balancing:
  - Buffed the Knight's Greaves' DEF by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
 
 Skill Balancing:
- - Skill pools were shuffled around:
-  ~ Channel Divinity I and Cure II's learn levels have been swapped to now be learned at levels 8 and 11, respectively.
-  ~ Offensive Stance is now learned at level 5 instead of level 12.
-  ~ Magic Resistance/Proneness now learned by Player 1 at level 16 (was originally learned by Player 2 at level 15).
-  ~ Shield Break now learned by Player 4 at level 18 (was originally learned by Player 1 at level 16).
-  ~ Cut Down now learned by Player 1 by equipping an axe (was originally learned at level 11).
-  ~ Soul Shackles now learned by equipping its tome (was originally learned by Player 3 at level 20).
-  ~ Sharpen Dagger now learned by Player 4 by equipping a dagger (was originally learned at level 3).
+ - Many skills had their learn levels and class shuffled around:
+  ~ Channel Divinity I: 11 → 8.
+  ~ Cure II: 8 → 27.
+  ~ Rejuvenation: 15 → 30.
+  ~ Offensive Stance: 12 → 5.
+  ~ Magic Resistance/Proneness: P2 15 → P1 16
+  ~ Shield Break: P1 16 → P4 18
+  ~ Sharpen Dagger: P4 3 → Any Dagger
+  ~ Cut Down: P1 11 → Any Axe
+  ~ Soul Shackles: P3 20 → Soul Shackles (Tome)
  - Using BP with Revival now increases success rate (used to increase the amount of HP recovered on a successful revive).
  - Wand Impulse and Backstab apply a new state called Recovery.
   ~ It decreases ATK/MAT by 50% rather than the old 30%.
