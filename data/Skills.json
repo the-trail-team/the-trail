@@ -530,7 +530,7 @@
     "note": "<Boost Turns>\n\n<setup action>\ndisplay action\nperform start\nmotion skill: user\nwait for motion\n</setup action>\n\n<whole action>\nanimation 6: user\nanimation 40: user\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\n</follow action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
     "repeats": 1,
-    "requiredWtypeId1": 5,
+    "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
     "scope": 11,
     "speed": 0,
