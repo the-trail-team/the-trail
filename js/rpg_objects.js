@@ -2325,10 +2325,13 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     fdr: { get: function() { return this.sparam(8); }, configurable: true },
     // EXperience Rate
     exr: { get: function() { return this.sparam(9); }, configurable: true },
-    // Elemental Damage Rate
-    edr: { get: function() { return this.otherparam(0) + 1; }, configurable: true},
+    // Outgoing Magical Damage
+    omd: { get: function() { return this.otherparam(0) + 1 }, configurable: true},
+    // Outgoing Elemental Damage
+    oed: { get: function() { return this.otherparam(1) + 1; }, configurable: true},
     // Outgoing Healing Rate
-    ohr: { get: function() { return this.otherparam(1) + 1; }, configurable: true}
+    ohr: { get: function() { return this.otherparam(2) + 1; }, configurable: true}
+    
 });
 
 Game_BattlerBase.prototype.initialize = function() {

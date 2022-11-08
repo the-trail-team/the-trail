@@ -1311,9 +1311,13 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeName(Yanfly.Param.StatusAttr_exr, dx, dy, dw);
       this.drawAttributeRate(actor.exr, dx, dy, dw);
       break;
-    case 'edr':
-      this.drawAttributeName("Elemental Damage Rate (EDR)", dx, dy, dw);
-      this.drawAttributeRate(actor.edr, dx, dy, dw);
+    case 'omd':
+      this.drawAttributeName("Outgoing Magical Damage (OMD)", dx, dy, dw);
+      this.drawAttributeRate(actor.omd, dx, dy, dw);
+      break;
+    case 'oed':
+      this.drawAttributeName("Outgoing Elemental Damage (OED)", dx, dy, dw);
+      this.drawAttributeRate(actor.oed, dx, dy, dw);
       break;
     case 'ohr':
       this.drawAttributeName("Outgoing Healing Rate (OHR)", dx, dy, dw);
