@@ -2322,7 +2322,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Throw a cherry bomb in front of you, making enemies less likely to hit\nyou for \\c[27]\\bpturn[5]\\c[0] turns. Cannot use \\is[66] afterwards.",
+    "description": "Detonate an explosive and form a veil of mist.\nEnemies will have trouble hitting you for \\c[27]\\bpturn[5]\\c[0] turns.",
     "effects": [
       {
         "code": 21,
@@ -2337,7 +2337,7 @@
     "message2": "",
     "mpCost": 15,
     "name": "Cherry Bomb",
-    "note": "<Boost Turns>\n\n<Hide if Learned Skill: 107>\n\n<action copy: skill:66>",
+    "note": "<Boost Turns>\n\n<action copy: skill:66>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
