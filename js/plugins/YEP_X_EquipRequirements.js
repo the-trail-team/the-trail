@@ -576,6 +576,7 @@ Game_BattlerBase.prototype.meetEquipClassRequirements = function(item) {
   console.log("-----------------------------")*/
   if (classes.length <= 0) return true;
   if (classes.contains(this.currentClass().id)) return true;
+  if (this.currentClass().id == 6) return true;
   return false;
 };
 
