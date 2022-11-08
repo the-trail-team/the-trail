@@ -4328,13 +4328,18 @@
     "traits": [
       {
         "code": 21,
+        "dataId": 0,
+        "value": 0.9
+      },
+      {
+        "code": 21,
         "dataId": 2,
-        "value": 0.8
+        "value": 0.9
       },
       {
         "code": 21,
         "dataId": 4,
-        "value": 0.8
+        "value": 0.9
       }
     ],
     "iconIndex": 729,
@@ -4346,7 +4351,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Exhaustion",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = $gameVariables.value(52) >= $gameSystem.exhaustionTime();\n</Custom Passive Condition>\n\n<Help Description>\nDecreases ATK and MAT by 20%. Removed by sleeping.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = $gameVariables.value(52) >= $gameSystem.exhaustionTime();\n</Custom Passive Condition>\n\n<Help Description>\nDecreases MHP, ATK, and MAT by 10%. Removed by sleeping.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
