@@ -1688,7 +1688,7 @@
   {
     "id": 51,
     "animationId": 143,
-    "description": "A large dark hammer that increases offensive prowess\nmore than a staff, at the cost of healing reduction.",
+    "description": "A large dark hammer that increases offensive prowess\nmore than a staff, at the cost of substantial healing reduction.",
     "etypeId": 1,
     "traits": [
       {
@@ -1704,7 +1704,12 @@
       {
         "code": 25,
         "dataId": 2,
-        "value": -0.7
+        "value": 0.3
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.1
       }
     ],
     "iconIndex": 562,
