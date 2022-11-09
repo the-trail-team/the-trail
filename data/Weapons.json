@@ -321,7 +321,7 @@
   {
     "id": 12,
     "animationId": 122,
-    "description": "A small hammer mainly used for fixing stuff.\nIt can also be used in combat, I guess.",
+    "description": "Has little combat merit. Mainly used for fixing stuff.",
     "etypeId": 1,
     "traits": [
       {
@@ -1709,7 +1709,7 @@
       {
         "code": 25,
         "dataId": 0,
-        "value": 1.1
+        "value": 1.2
       }
     ],
     "iconIndex": 562,
@@ -1884,5 +1884,43 @@
     ],
     "price": 100,
     "wtypeId": 9
+  },
+  {
+    "id": 56,
+    "animationId": 122,
+    "description": "Provides offensive capabilities for a cleric\nat the cost of heavily reduced healing.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 25,
+        "dataId": 2,
+        "value": 0.2
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 412,
+    "name": "Steel Hammer",
+    "note": "<Weapon Image: 54>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Steel Alloy: 40%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      11,
+      6,
+      0,
+      25,
+      1,
+      0,
+      0
+    ],
+    "price": 100,
+    "wtypeId": 8
   }
 ]
