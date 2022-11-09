@@ -746,7 +746,7 @@ Window_KeyConfig.prototype.makeCommandList = function(index) {
 };
 
 Window_KeyConfig.prototype.isKeyEnabled = function(keyName) {
-	return !([' ', 'Enter', 'En', '↑', '←',	'↓', '→'].contains(keyName));
+	return !([' '].contains(keyName));
 };
 
 Window_KeyConfig.prototype.itemRect = function(index) {
