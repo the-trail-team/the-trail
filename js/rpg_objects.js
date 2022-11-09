@@ -2708,11 +2708,11 @@ Game_BattlerBase.prototype.isSkillSealed = function(skillId) {
 };
 
 Game_BattlerBase.prototype.isEquipWtypeOk = function(wtypeId) {
-    return true;
+    return this.traitsSet(Game_BattlerBase.TRAIT_EQUIP_WTYPE).contains(wtypeId);
 };
 
 Game_BattlerBase.prototype.isEquipAtypeOk = function(atypeId) {
-    return true;
+    return this.traitsSet(Game_BattlerBase.TRAIT_EQUIP_ATYPE).contains(atypeId);
 };
 
 Game_BattlerBase.prototype.isEquipTypeLocked = function(etypeId) {
