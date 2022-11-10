@@ -216,7 +216,7 @@ Window_ItemNameEdit.prototype.initialize = function(item, maxLength) {
 };
 
 Window_ItemNameEdit.prototype.windowWidth = function() {
-  return 480;
+  return Yanfly.Param.ItemRenameMaxLength * 22.5;
 };
 
 Window_ItemNameEdit.prototype.windowHeight = function() {

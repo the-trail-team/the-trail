@@ -3623,10 +3623,10 @@ Window_NameInput.JAPAN3 =
           '／','＝','＠','＜','＞',  '：','；','★','かな','決定' ];
 
 Window_NameInput.prototype.initialize = function(editWindow) {
-    var x = editWindow.x;
-    var y = editWindow.y + editWindow.height + 8;
-    var width = editWindow.width;
+    var width = 480;
     var height = this.windowHeight();
+    var x = editWindow.x + (editWindow.width - width) / 2;
+    var y = editWindow.y + editWindow.height + 8;
     Window_Selectable.prototype.initialize.call(this, x, y, width, height);
     this._editWindow = editWindow;
     this._page = 0;
