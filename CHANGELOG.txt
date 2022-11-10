@@ -449,6 +449,7 @@ Bug Fixes:
  - Fixed several bugs with many states such as inconsistencies between regeneration effects, poison map damage not functioning as intended, and unused states doubling the effects of some traits.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - Fixed a bug where the critical hit formula wasn't programmed correctly, making critical evasion basically useless.
+ - Fixed a bug where elemental normal attacks wouldn't remove weak elemental states.
  - Fixed a bug where the loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where party members would rarely not gain BP between the 1st and 2nd turn of a battle.
  - Fixed a bug where Purify couldn't be used outside of battle.

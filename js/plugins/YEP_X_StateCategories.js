@@ -312,6 +312,12 @@ Game_Battler.prototype.isStateAddable = function(stateId) {
 
 Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
     var categories = obj.removeCategory;
+    processElements = [];
+    if (obj.damage.elementId == -1) processElements = processElements.concat(user.attackElements());
+    if (obj.damage.elementId > 1) processElements = processElements.concat(obj.damage.elementId);
+    if (obj.multipleElements.length > 0) processElements = processElements.concat(obj.damage.elementId);
+    Object.assign(categories, this.elementalStateCategoryRemoval(processElements));
+    console.log(categories);
     for (var category in categories) {
       var value = categories[category];
       if (value === 'ALL') {
@@ -321,6 +327,20 @@ Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
         this.removeStateCategory(category, value);
       }
     }
+};
+
+Game_Battler.prototype.elementalStateCategoryRemoval = function(elementIds) {
+    obj = {};
+    console.log(elementIds);
+    if (elementIds.contains(2)) obj['ICE'] = obj['WATER'] = "ALL";
+    if (elementIds.contains(3)) obj['WATER'] = obj['EARTH'] = "ALL";
+    if (elementIds.contains(4)) obj['WATER'] = obj['WIND'] = "ALL";
+    if (elementIds.contains(5)) obj['FIRE'] = obj['EARTH'] = "ALL";
+    if (elementIds.contains(6)) obj['FIRE'] = obj['ELECTRIC'] = "ALL";
+    if (elementIds.contains(7)) obj['FIRE'] = obj['EARTH'] = "ALL";
+    if (elementIds.contains(8)) obj['DARK'] = "ALL";
+    if (elementIds.contains(9)) obj['LIGHT'] = "ALL";
+    return obj;
 };
 
 Game_Battler.prototype.removeStateCategoryEval = function(value, obj, c, user) {
@@ -442,13 +462,13 @@ Yanfly.StC.Game_Action_applyItemUserEffect =
     Game_Action.prototype.applyItemUserEffect;
 Game_Action.prototype.applyItemUserEffect = function(target) {
     Yanfly.StC.Game_Action_applyItemUserEffect.call(this, target);
-    if (this.item() && this.item().removeCategory) {
+    if (this.item() && (this.item().removeCategory || this.item().damage.elementId != 0 || this.item().multipleElements.length > 0)) {
       this.applyStateCategoryRemovalEffect(target);
     }
 };
 
 Game_Action.prototype.applyStateCategoryRemovalEffect = function(target) {
-  target.removeStateCategoryEffect(this.item(), this.subject());
+    target.removeStateCategoryEffect(this.item(), this.subject());
 };
 
 //=============================================================================
