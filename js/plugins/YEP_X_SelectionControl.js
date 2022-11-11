@@ -680,6 +680,9 @@ DataManager.processSelectNotetags1 = function(group, isSkill) {
       }
     }
 
+    if (obj.scope == 7) obj.selectConditions.push("Not State: 1");
+    if (obj.scope == 9) obj.selectConditions.push("State: 1");
+
     this.removeAoeEffects(obj);
   }
 };
