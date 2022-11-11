@@ -271,9 +271,19 @@ Window_ItemCategory.prototype.update = function() {
 Window_ItemCategory.prototype.makeCommandList = function() {
   var data = Yanfly.Param.ItemCatOrder;
   var length = data.length;
-  for (var i = 0; i < length; i++) {
+  if (this._type == '') for (var i = 0; i < length; i++) {
     var category = data[i].trim();
     this.addItemCategory(category);
+  } else if (this._type == 'weapons') {
+    this.addItemCategory("Weapons");
+    var wtypes = [1, 2, 11, 7, 6, 3, 10, 4, 8, 5, 9];
+    for (i = 0; i < wtypes.length; i++) this.addItemCategory("WType:" + wtypes[i]);
+  } else if (this._type == 'armors') {
+    this.addItemCategory("Armors");
+    var atypes = [1, 2, 3, 4, 5, 6, 7];
+    for (i = 0; i < atypes.length; i++) this.addItemCategory("AType:" + atypes[i]);
+    var etypes = [3, 4, 5, 2, 6, 8, 9];
+    for (i = 0; i < etypes.length; i++) this.addItemCategory("EType:" + etypes[i]);
   }
 };
 

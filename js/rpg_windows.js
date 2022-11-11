@@ -1868,6 +1868,7 @@ Window_ItemCategory.prototype.constructor = Window_ItemCategory;
 
 Window_ItemCategory.prototype.initialize = function() {
     Window_HorzCommand.prototype.initialize.call(this, 0, 0);
+    this._type = '';
 };
 
 Window_ItemCategory.prototype.windowWidth = function() {

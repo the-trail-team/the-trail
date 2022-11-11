@@ -2197,7 +2197,7 @@ Scene_Item.prototype.createItemWindow = function() {
     this.createStatusWindow();
     this.createInfoWindow();
     this.createActionWindow();
-    this._categoryWindow.setHandler('cancel', this.exitScene.bind(this));
+    this._categoryWindow.setHandler('cancel', this.onCategoryCancel.bind(this));
 };
 
 Scene_Item.prototype.createStatusWindow = function() {
@@ -2270,6 +2270,16 @@ Scene_Item.prototype.exitScene = function() {
       if (member) member.refresh();
     }
     this.popScene();
+};
+
+Scene_Item.prototype.onCategoryCancel = function() {
+    if (this._categoryWindow._type == '') this.popScene();
+    else {
+      this._categoryWindow.select(this._categoryWindow._type == 'weapons' ? 2 : 3);
+      this._categoryWindow._type = '';
+      this._categoryWindow.activate();
+      this._categoryWindow.refresh();
+    }
 };
 
 //=============================================================================

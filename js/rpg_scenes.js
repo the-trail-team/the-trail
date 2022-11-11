@@ -1245,6 +1245,8 @@ Scene_Item.prototype.createCategoryWindow = function() {
     this._categoryWindow.y = this._helpWindow.height;
     this._categoryWindow.setHandler('ok',     this.onCategoryOk.bind(this));
     this._categoryWindow.setHandler('cancel', this.popScene.bind(this));
+    this._categoryWindow.setHandler('weapon', this.commandWeapon.bind(this));
+    this._categoryWindow.setHandler('armor',  this.commandArmor.bind(this));
     this.addWindow(this._categoryWindow);
 };
 
@@ -1295,6 +1297,22 @@ Scene_Item.prototype.useItem = function() {
     Scene_ItemBase.prototype.useItem.call(this);
     this._itemWindow.redrawCurrentItem();
 };
+
+Scene_Item.prototype.commandWeapon = function() {
+    if (this._categoryWindow._type != '') return;
+    this._categoryWindow._type = 'weapons';
+    this._categoryWindow.select(0);
+    this._categoryWindow.activate();
+    this._categoryWindow.refresh();
+};
+  
+Scene_Item.prototype.commandArmor = function() {
+    if (this._categoryWindow._type != '') return;
+    this._categoryWindow._type = 'armors';
+    this._categoryWindow.select(0);
+    this._categoryWindow.activate();
+    this._categoryWindow.refresh();
+};  
 
 //-----------------------------------------------------------------------------
 // Scene_Skill
