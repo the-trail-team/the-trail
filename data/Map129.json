@@ -17847,8 +17847,8 @@
     },
     {
       "id": 6,
-      "name": "EV006",
-      "note": "<shadow>",
+      "name": "skeletonknight-copy",
+      "note": "<Copy Event: 158, 95>",
       "pages": [
         {
           "conditions": {
@@ -17876,93 +17876,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                37,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 3,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -17982,10 +17895,10 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
@@ -18054,8 +17967,8 @@
     },
     {
       "id": 8,
-      "name": "EV008",
-      "note": "<shadow>",
+      "name": "skeletonknight-copy",
+      "note": "<Copy Event: 158, 95>",
       "pages": [
         {
           "conditions": {
@@ -18083,93 +17996,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                37,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 3,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -18189,10 +18015,10 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
@@ -18490,8 +18316,8 @@
     },
     {
       "id": 11,
-      "name": "EV011",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -18519,24 +18345,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -18545,24 +18353,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -18573,62 +18363,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -18637,8 +18376,8 @@
     },
     {
       "id": 12,
-      "name": "EV012",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -18666,24 +18405,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -18692,24 +18413,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -18720,62 +18423,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -18784,8 +18436,8 @@
     },
     {
       "id": 13,
-      "name": "EV013",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -18813,24 +18465,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -18839,24 +18473,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -18867,62 +18483,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -18931,8 +18496,8 @@
     },
     {
       "id": 14,
-      "name": "EV014",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -18960,24 +18525,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -18986,24 +18533,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -19014,62 +18543,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -19078,8 +18556,8 @@
     },
     {
       "id": 15,
-      "name": "EV015",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -19107,24 +18585,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -19133,24 +18593,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -19161,62 +18603,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -19225,8 +18616,8 @@
     },
     {
       "id": 16,
-      "name": "EV016",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -19254,24 +18645,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -19280,24 +18653,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -19308,62 +18663,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -19372,8 +18676,8 @@
     },
     {
       "id": 17,
-      "name": "EV017",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -19401,24 +18705,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -19427,24 +18713,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -19455,62 +18723,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -19519,8 +18736,8 @@
     },
     {
       "id": 18,
-      "name": "EV018",
-      "note": "<shadow>",
+      "name": "bat-copy",
+      "note": "<Copy Event: 158, 93>",
       "pages": [
         {
           "conditions": {
@@ -19548,24 +18765,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                36,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -19574,24 +18773,6 @@
           "moveFrequency": 4,
           "moveRoute": {
             "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
               {
                 "code": 0,
                 "parameters": []
@@ -19602,62 +18783,11 @@
             "wait": false
           },
           "moveSpeed": 4,
-          "moveType": 3,
+          "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
           "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
           "walkAnime": true
         }
       ],
@@ -19666,8 +18796,8 @@
     },
     {
       "id": 19,
-      "name": "EV019",
-      "note": "<shadow>",
+      "name": "skeletonknight-copy",
+      "note": "<Copy Event: 158, 95>",
       "pages": [
         {
           "conditions": {
@@ -19695,93 +18825,6 @@
           },
           "list": [
             {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                37,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 6"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 5"
-                ],
-                "indent": null
-              },
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 3,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -19801,10 +18844,10 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 0,
+          "priorityType": 1,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 2,
           "walkAnime": true
         }
       ],
