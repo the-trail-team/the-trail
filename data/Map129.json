@@ -18316,8 +18316,8 @@
     },
     {
       "id": 11,
-      "name": "bat-copy",
-      "note": "<Copy Event: 158, 93>",
+      "name": "rslime-copy",
+      "note": "<Copy Event: 158, 123>",
       "pages": [
         {
           "conditions": {
@@ -18338,10 +18338,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster1",
+            "characterName": "Monster2",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 6
           },
           "list": [
             {
@@ -18350,7 +18350,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
@@ -18362,7 +18362,7 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 4,
+          "moveSpeed": 2,
           "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
@@ -18676,8 +18676,8 @@
     },
     {
       "id": 17,
-      "name": "bat-copy",
-      "note": "<Copy Event: 158, 93>",
+      "name": "rslime-copy",
+      "note": "<Copy Event: 158, 123>",
       "pages": [
         {
           "conditions": {
@@ -18698,10 +18698,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster1",
+            "characterName": "Monster2",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 6
           },
           "list": [
             {
@@ -18710,7 +18710,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 4,
+          "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
@@ -18722,7 +18722,7 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 4,
+          "moveSpeed": 2,
           "moveType": 0,
           "priorityType": 1,
           "stepAnime": true,
@@ -20306,8 +20306,126 @@
       "x": 47,
       "y": 5
     },
-    null,
-    null,
+    {
+      "id": 43,
+      "name": "rslime-copy",
+      "note": "<Copy Event: 158, 123>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 6
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 20,
+      "y": 29
+    },
+    {
+      "id": 44,
+      "name": "rslime-copy",
+      "note": "<Copy Event: 158, 123>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 6
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 48,
+      "y": 23
+    },
     null,
     null,
     null,
