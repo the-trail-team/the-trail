@@ -1243,10 +1243,10 @@ Scene_Item.prototype.createCategoryWindow = function() {
     this._categoryWindow = new Window_ItemCategory();
     this._categoryWindow.setHelpWindow(this._helpWindow);
     this._categoryWindow.y = this._helpWindow.height;
-    this._categoryWindow.setHandler('ok',     this.onCategoryOk.bind(this));
-    this._categoryWindow.setHandler('cancel', this.popScene.bind(this));
-    this._categoryWindow.setHandler('weapon', this.commandWeapon.bind(this));
-    this._categoryWindow.setHandler('armor',  this.commandArmor.bind(this));
+    this._categoryWindow.setHandler('ok',        this.onCategoryOk.bind(this));
+    this._categoryWindow.setHandler('cancel',    this.popScene.bind(this));
+    this._categoryWindow.setHandler('WeaponCat', this.commandWeapon.bind(this));
+    this._categoryWindow.setHandler('ArmorCat',  this.commandArmor.bind(this));
     this.addWindow(this._categoryWindow);
 };
 

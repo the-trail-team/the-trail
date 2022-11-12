@@ -347,6 +347,12 @@ Window_ItemCategory.prototype.addItemCategory = function(category) {
     var id = parseInt(RegExp.$1);
     return this.addCommand($dataSystem.equipTypes[id], 'EType', true, id);
   }
+  if (category.match(/WeaponCat/i)) {
+    return this.addCommand(TextManager.weapon, 'WeaponCat');
+  }
+  if (category.match(/ArmorCat/i)) {
+    return this.addCommand(TextManager.armor, 'ArmorCat');
+  }
 };
 
 //=============================================================================
