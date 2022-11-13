@@ -11488,9 +11488,9 @@
         "indent": 0,
         "parameters": [
           1,
-          62,
-          63,
-          64,
+          78,
+          79,
+          80,
           2,
           2
         ]
@@ -16687,6 +16687,58 @@
       }
     ],
     "name": "TIME - Crop Growth",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 72,
+    "list": [
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          78,
+          78,
+          0,
+          3,
+          7,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          79,
+          79,
+          0,
+          3,
+          5,
+          -1,
+          0
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 0,
+        "parameters": [
+          80,
+          80,
+          0,
+          3,
+          5,
+          -1,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Setup Capture",
     "switchId": 1,
     "trigger": 0
   }
