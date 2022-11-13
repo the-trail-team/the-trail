@@ -413,12 +413,14 @@ Window_ItemList.prototype.includes = function(item) {
     return DataManager.isItem(item) && [3].contains(item.occasion);
     break;
   case 'weapon':
+  case 'WeaponCat':
     return DataManager.isWeapon(item);
     break;
   case 'WType':
     return DataManager.isWeapon(item) && item.wtypeId === this._ext;
     break;
   case 'armor':
+  case 'ArmorCat':
     return DataManager.isArmor(item) && !item.itemCategory.contains("Vanity");
     break;
   case 'AType':
