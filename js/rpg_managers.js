@@ -472,7 +472,7 @@ DataManager.extractSaveContents = function(contents) {
 
 DataManager.saveFileIcon = function(savefileId) {
     icons = $gameVariables.value(77);
-    id = Yanfly.Param.SaveIconSaved;
+    icon = Yanfly.Param.SaveIconSaved;
     if ($gameSwitches.value(24)) icon = 231;
     if (false) icon = 766;
     icons[savefileId] = icon;
