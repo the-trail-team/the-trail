@@ -1951,8 +1951,10 @@ Scene_Shop.prototype.createCategoryWindow = function() {
     this._categoryWindow.y = this._dummyWindow.y;
     this._categoryWindow.hide();
     this._categoryWindow.deactivate();
-    this._categoryWindow.setHandler('ok',     this.onCategoryOk.bind(this));
-    this._categoryWindow.setHandler('cancel', this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('ok',        this.onCategoryOk.bind(this));
+    this._categoryWindow.setHandler('cancel',    this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('WeaponCat', this.commandWeapon.bind(this));
+    this._categoryWindow.setHandler('ArmorCat',  this.commandArmor.bind(this));
     this.addWindow(this._categoryWindow);
 };
 

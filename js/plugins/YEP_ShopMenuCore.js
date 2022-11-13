@@ -975,8 +975,10 @@ Scene_Shop.prototype.createCategoryWindow = function() {
     this._categoryWindow.y = this._commandWindow.y;
     this._categoryWindow.hide();
     this._categoryWindow.deactivate();
-    this._categoryWindow.setHandler('ok',     this.onCategoryOk.bind(this));
-    this._categoryWindow.setHandler('cancel', this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('ok',        this.onCategoryOk.bind(this));
+    this._categoryWindow.setHandler('cancel',    this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('WeaponCat', this.commandWeapon.bind(this));
+    this._categoryWindow.setHandler('ArmorCat',  this.commandArmor.bind(this));
     this.addWindow(this._categoryWindow);
 };
 
@@ -1111,6 +1113,12 @@ Scene_Shop.prototype.sellingPrice = function() {
     }
     return Yanfly.Shop.Scene_Shop_sellingPrice.call(this);
 };
+
+Scene_Shop.prototype.commandWeapon = Scene_Item.prototype.commandWeapon;
+  
+Scene_Shop.prototype.commandArmor = Scene_Item.prototype.commandArmor;
+
+Scene_Shop.prototype.onCategoryCancel = Scene_Item.prototype.onCategoryCancel;
 
 //=============================================================================
 // Utilities
