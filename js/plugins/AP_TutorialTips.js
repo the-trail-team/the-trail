@@ -6,7 +6,7 @@
 //=============================================================================
 
 const tips = require('./data/Strings.json').tips;
-tips[28] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the .json file, so it cannot be used initially
+tips[26] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the .json file, so it cannot be used initially
 
 pushSeen = [];
 
