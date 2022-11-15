@@ -13517,27 +13517,6 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Patching proficiency into $gameParty"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "if (!$gameParty._proficiencyLevels) $gameParty._proficiencyLevels = {};"
-        ]
-      },
-      {
-        "code": 355,
-        "indent": 0,
-        "parameters": [
-          "if (!$gameParty._proficiencyPerks) $gameParty._proficiencyPerks = {};"
-        ]
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
           "# Patch rare enemy RNG into $gameSystem"
         ]
       },

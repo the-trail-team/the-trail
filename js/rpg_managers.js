@@ -11,40 +11,39 @@ function DataManager() {
     throw new Error('This is a static class');
 }
 
-var $dataActors        = null;
-var $dataClasses       = null;
-var $dataSkills        = null;
-var $dataItems         = null;
-var $dataWeapons       = null;
-var $dataArmors        = null;
-var $dataEnemies       = null;
-var $dataTroops        = null;
-var $dataStates        = null;
-var $dataAnimations    = null;
-var $dataTilesets      = null;
-var $dataCommonEvents  = null;
-var $dataSystem        = null;
-var $dataMapInfos      = null;
-var $dataVersion       = null;
-var $dataClassIcons    = null;
-var $dataStrings       = null;
-var $dataProficiencies = null;
-var $dataMapReplace    = null;
-var $dataMap           = null;
-var $gameTemp          = null;
-var $gameSystem        = null;
-var $gameScreen        = null;
-var $gameTimer         = null;
-var $gameMessage       = null;
-var $gameSwitches      = null;
-var $gameVariables     = null;
-var $gameSelfSwitches  = null;
-var $gameActors        = null;
-var $gameParty         = null;
-var $gameTroop         = null;
-var $gameMap           = null;
-var $gamePlayer        = null;
-var $testEvent         = null;
+var $dataActors       = null;
+var $dataClasses      = null;
+var $dataSkills       = null;
+var $dataItems        = null;
+var $dataWeapons      = null;
+var $dataArmors       = null;
+var $dataEnemies      = null;
+var $dataTroops       = null;
+var $dataStates       = null;
+var $dataAnimations   = null;
+var $dataTilesets     = null;
+var $dataCommonEvents = null;
+var $dataSystem       = null;
+var $dataMapInfos     = null;
+var $dataVersion      = null;
+var $dataClassIcons   = null;
+var $dataStrings      = null;
+var $dataMapReplace   = null;
+var $dataMap          = null;
+var $gameTemp         = null;
+var $gameSystem       = null;
+var $gameScreen       = null;
+var $gameTimer        = null;
+var $gameMessage      = null;
+var $gameSwitches     = null;
+var $gameVariables    = null;
+var $gameSelfSwitches = null;
+var $gameActors       = null;
+var $gameParty        = null;
+var $gameTroop        = null;
+var $gameMap          = null;
+var $gamePlayer       = null;
+var $testEvent        = null;
 
 DataManager._globalId       = 'RPGMV';
 DataManager._lastAccessedId = 1;
@@ -68,7 +67,6 @@ DataManager._databaseFiles = [
     { name: '$dataVersion',         src: 'Version.json'      },
     { name: '$dataClassIcons',      src: 'ClassIcons.json'   },
     { name: '$dataStrings',         src: 'Strings.json'      },
-    { name: '$dataProficiencies',   src: 'Proficiencies.json'},
     { name: '$dataMapReplace',      src: 'MapReplace.json'   }
 ];
 
