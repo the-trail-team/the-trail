@@ -167,6 +167,7 @@ DataManager.isDatabaseLoaded = function() {
     this.processStCNotetags1($dataStates);
     this.processStCNotetags2($dataSkills);
     this.processStCNotetags2($dataItems);
+    this.addElementalStateTraits();
     Yanfly._loaded_YEP_X_StateCategories = true;
   }
   
@@ -226,6 +227,16 @@ DataManager.processStCNotetags2 = function(group) {
         evalLine = evalLine + line + '\n';
       }
     }
+  }
+};
+
+DataManager.addElementalStateTraits = function() {
+  const o = DataManager.stateCategories;
+  const arr = [o["FIRE"], o["ICE"], o["ELECTRIC"], o["WATER"], o["EARTH"], o["WIND"], o["LIGHT"], o["DARK"]];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i]) arr[i].forEach(s => {
+      $dataStates[s].traits = $dataStates[s].traits.concat({code: 11, dataId: i + 2, value: 0.5}).concat($dataStates[154 + i].traits);
+    });
   }
 };
 
