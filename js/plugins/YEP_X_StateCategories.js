@@ -254,7 +254,8 @@ DataManager.addElementalStateTraits = function() {
   const arr = [o["FIRE"], o["ICE"], o["ELECTRIC"], o["WATER"], o["EARTH"], o["WIND"], o["LIGHT"], o["DARK"]];
   for (let i = 0; i < arr.length; i++) {
     if (arr[i]) arr[i].forEach(s => {
-      $dataStates[s].traits = $dataStates[s].traits.concat({code: 11, dataId: i + 2, value: 0.5}).concat($dataStates[154 + i].traits);
+      if (i <= 5) $dataStates[s].traits = $dataStates[s].traits.concat({code: 11, dataId: i + 2, value: 0.5});
+      $dataStates[s].traits = $dataStates[s].concat($dataStates[154 + i].traits);
     });
   }
 };
