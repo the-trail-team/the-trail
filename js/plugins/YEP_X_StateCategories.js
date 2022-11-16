@@ -165,6 +165,7 @@ DataManager.isDatabaseLoaded = function() {
 
   if (!Yanfly._loaded_YEP_X_StateCategories) {
     this.processStCNotetags1($dataStates);
+    this.processStCResNotetags($dataStates);
     this.processStCNotetags2($dataSkills);
     this.processStCNotetags2($dataItems);
     this.addElementalStateTraits();
@@ -190,6 +191,24 @@ DataManager.processStCNotetags1 = function(group) {
         obj.category.push(note)
         DataManager.stateCategories[note] = DataManager.stateCategories[note] || [];
         DataManager.stateCategories[note].push(n);
+      }
+    }
+  }
+};
+
+DataManager.processStCResNotetags = function(group) {
+  for (var n = 1; n < group.length; n++) {
+    var obj = group[n];
+    var notedata = obj.note.split(/[\r\n]+/);
+
+    for (var i = 0; i < notedata.length; i++) {
+      var line = notedata[i];
+      if (line.match(/<Category Resist: (.*)>/i)) {
+        let note = String(RegExp.$1).toUpperCase().split(", ");
+        var arr = [];
+        note.forEach(c => arr = arr.concat(DataManager.stateCategories[c]));
+        arr = arr.filter(n => n);
+        arr.forEach(s => obj.traits.push({code: 14, dataId: s, value: 1}));
       }
     }
   }
