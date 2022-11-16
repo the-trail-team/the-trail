@@ -332,7 +332,7 @@ Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
 Game_Battler.prototype.elementalStateCategoryRemoval = function(elementIds) {
     obj = {};
     console.log(elementIds);
-    if (elementIds.contains(2)) obj['ICE'] = obj['WATER'] = "ALL";
+    if (elementIds.contains(2)) obj['ICE'] = "ALL";
     if (elementIds.contains(3)) obj['WATER'] = obj['EARTH'] = "ALL";
     if (elementIds.contains(4)) obj['WATER'] = obj['WIND'] = "ALL";
     if (elementIds.contains(5)) obj['FIRE'] = obj['EARTH'] = "ALL";
