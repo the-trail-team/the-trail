@@ -166,20 +166,20 @@ Yanfly.Status.version = 1.04;
  * @desc This is the text color for rates over 150%.
  * @default 14
  *
- * @param 120% to 150%
- * @parent ---Resist Colors---
- * @type number
- * @min 0
- * @max 31
- * @desc This is the text color for rates over 120%.
- * @default 6
- *
- * @param 100% to 120%
+ * @param 100% to 150%
  * @parent ---Resist Colors---
  * @type number
  * @min 0
  * @max 31
  * @desc This is the text color for rates over 100%.
+ * @default 6
+ *
+ * @param Exactly 100%
+ * @parent ---Resist Colors---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc This is the text color for rates exactly 100%.
  * @default 0
  *
  * @param 80% to 100%
@@ -571,8 +571,8 @@ Yanfly.Param.ColorParam7Gauge = String(Yanfly.Parameters['LUK Color']);
 Yanfly.Param.ColorResistS = Number(Yanfly.Parameters['Above 300%']);
 Yanfly.Param.ColorResistA = Number(Yanfly.Parameters['200% to 300%']);
 Yanfly.Param.ColorResistB = Number(Yanfly.Parameters['150% to 200%']);
-Yanfly.Param.ColorResistC1 = Number(Yanfly.Parameters['120% to 150%']);
-Yanfly.Param.ColorResistC2 = Number(Yanfly.Parameters['100% to 120%']);
+Yanfly.Param.ColorResistC1 = Number(Yanfly.Parameters['100% to 150%']);
+Yanfly.Param.ColorResistC2 = Number(Yanfly.Parameters['Exactly 100%']);
 Yanfly.Param.ColorResistC3 = Number(Yanfly.Parameters['80% to 100%']);
 Yanfly.Param.ColorResistD = Number(Yanfly.Parameters['50% to 80%']);
 Yanfly.Param.ColorResistE = Number(Yanfly.Parameters['1% to 50%']);
@@ -1008,9 +1008,9 @@ Window_StatusInfo.prototype.setRateColor = function(rate) {
       colorId = Yanfly.Param.ColorResistA;
     } else if (rate >= 1.5) {
       colorId = Yanfly.Param.ColorResistB;
-    } else if (rate >= 1.2) {
+    } else if (rate > 1.0) {
       colorId = Yanfly.Param.ColorResistC1;
-    } else if (rate >= 1.0) {
+    } else if (rate === 1.0) {
       colorId = Yanfly.Param.ColorResistC2;
     } else if (rate >= 0.8) {
       colorId = Yanfly.Param.ColorResistC3;
