@@ -888,14 +888,9 @@ ItemManager.setPriorityName = function(item, value) {
 };
 
 ItemManager.updateItemName = function(item) {
-    if (item.priorityName && item.priorityName.length > 0) {
-      item.name = item.priorityName;
-      if (item.namePrefix) item.name = item.namePrefix + item.name;
-      if (item.boostCount > 0) item.name = item.name + " +" + String(item.boostCount);
-      return;
-    }
     var prefix = item.namePrefix || '';
-    var baseName = item.baseItemName || '';
+    var name = item.baseItemName || '';
+    if (item.priorityName && item.priorityName.length > 0) name = item.priorityName;
     var suffix = item.nameSuffix || '';
     var boostCount = item.boostCount || 0;
     var fmt = Yanfly.Param.ItemBoostFmt;
@@ -906,7 +901,7 @@ ItemManager.updateItemName = function(item) {
       boostText = ' ' + boostText;
     }
     fmt = Yanfly.Param.ItemNameFmt;
-    item.name = fmt.format(prefix, baseName, suffix, boostText);
+    item.name = fmt.format(prefix, name, suffix, boostText);
 };
 
 ItemManager.increaseItemBoostCount = function(item, value) {

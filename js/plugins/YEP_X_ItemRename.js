@@ -205,9 +205,7 @@ Window_ItemNameEdit.prototype.initialize = function(item, maxLength) {
     var y = (Graphics.boxHeight - (height + this.fittingHeight(9) + 8)) / 2;
     Window_Base.prototype.initialize.call(this, x, y, width, height);
     this._item = item;
-    this._name = this._item.name.slice(0, this._maxLength);
-    if (item.namePrefix) this._name = this._name.split(item.namePrefix)[1];
-    if (item.slotsApplied) this._name = this._name.split(" +" + String(item.boostCount))[0];
+    this._name = this._item.priorityName.length > 0 ? this._item.priorityName : this._item.baseItemName;
     this._index = this._name.length;
     this._maxLength = maxLength;
     this._defaultName = item.baseItemName;
