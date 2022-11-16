@@ -3559,9 +3559,14 @@
   {
     "id": 139,
     "atypeId": 1,
-    "description": "A stylish set of glasses that let's you get through the toughest\nof weather. Provides immunity to \\it[88]\\c[0].",
+    "description": "A stylish set of glasses that let's you get through the toughest\nof weather. Provides immunity to \\it[162] and \\it[88]\\c[0].",
     "etypeId": 6,
     "traits": [
+      {
+        "code": 14,
+        "dataId": 162,
+        "value": 2
+      },
       {
         "code": 14,
         "dataId": 88,
@@ -4172,12 +4177,17 @@
   {
     "id": 159,
     "atypeId": 1,
-    "description": "A critical piece of equipment for anyone wishing to brave nature.\nProvides immunity to \\it[39], \\it[88], and \\it[94].",
+    "description": "A critical piece of equipment for anyone wishing to brave nature. Provides\nimmunity to \\it[39], \\it[162], \\it[88], and \\it[94].",
     "etypeId": 6,
     "traits": [
       {
         "code": 14,
         "dataId": 39,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 162,
         "value": 2
       },
       {
@@ -4541,6 +4551,11 @@
       {
         "code": 14,
         "dataId": 39,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 162,
         "value": 2
       },
       {

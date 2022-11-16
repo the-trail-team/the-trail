@@ -2549,18 +2549,12 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Blow a gust of wind at an enemy, sometimes debuffing\ntheir attacking stats. Has a high critical chance.",
+    "description": "Blow a gust of wind at an enemy, debuffing their\nATK and MAT by 20%. Has a high critical chance.",
     "effects": [
       {
-        "code": 32,
-        "dataId": 2,
-        "value1": 3,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 4,
-        "value1": 3,
+        "code": 21,
+        "dataId": 162,
+        "value1": 1,
         "value2": 0
       }
     ],
@@ -3163,18 +3157,12 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Blow a magical gust of wind at an enemy, sometimes debuffing their\noffensive stats. Has a high critical hit chance. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Blow a magical gust of wind at an enemy, decreasing their\nATK and MAT. Has a high critical hit chance. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
     "effects": [
       {
-        "code": 32,
-        "dataId": 2,
-        "value1": 3,
-        "value2": 0
-      },
-      {
-        "code": 32,
-        "dataId": 4,
-        "value1": 3,
+        "code": 21,
+        "dataId": 162,
+        "value1": 1,
         "value2": 0
       }
     ],
