@@ -309,9 +309,9 @@ Window_ItemNameEdit.prototype.refresh = function() {
   this.contents.clear();
   var lh = this.lineHeight();
   var name = this._item.name;
-  var width = this.textWidth(name);
+  var width = this.textWidthEx(name);
   var iconWidth = Window_Base._iconWidth;
-  var x = this.contents.width / 2 - (iconWidth / 2) - 4 - (width/2);
+  var x = (this.contents.width - iconWidth - 8 - width) / 2;
   this.drawItemName(this._item, x, lh * 0.5, this.contents.width);
   var text = Yanfly.Param.ItemRenameText;
   this.drawText(text, 0, lh * 1.5, this.contents.width, 'center');
