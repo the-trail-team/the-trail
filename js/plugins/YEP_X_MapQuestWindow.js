@@ -929,8 +929,8 @@ Window_MapActiveQuest.prototype.requestRefresh = function(value) {
 
 Yanfly.AMQW.Scene_Map_createAllWindows = Scene_Map.prototype.createAllWindows;
 Scene_Map.prototype.createAllWindows = function() {
-  Yanfly.AMQW.Scene_Map_createAllWindows.call(this);
   this.createMapQuestWindow();
+  Yanfly.AMQW.Scene_Map_createAllWindows.call(this);
 };
 
 Scene_Map.prototype.createMapQuestWindow = function() {
