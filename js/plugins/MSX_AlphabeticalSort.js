@@ -43,8 +43,8 @@ if(MSX.AlphabeticalSort.sortItemList){
         allItems.sort(function(a,b){
             if (a.baseItemName) A = a.baseItemName; else A = a.name;
             if (b.baseItemName) B = b.baseItemName; else B = b.name;
-            if ([1, 2].contains(a.groupType) && a.namePrefix !== "") A = a.name.split(a.namePrefix)[1]; else A = a.name;
-            if ([1, 2].contains(b.groupType) && b.namePrefix !== "") B = b.name.split(b.namePrefix)[1]; else B = b.name;
+            if (a.priorityName && a.priorityName.length > 0) A = a.priorityName;
+            if (b.priorityName && b.priorityName.length > 0) B = b.priorityName;
             if (A.toLowerCase() < B.toLowerCase()) return -1;
             if (A.toLowerCase() > B.toLowerCase()) return 1;
             return 0;
