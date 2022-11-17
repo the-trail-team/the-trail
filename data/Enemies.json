@@ -4993,5 +4993,56 @@
       150,
       45
     ]
+  },
+  {
+    "id": 75,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Catalyst",
+    "dropItems": [],
+    "exp": 200,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.03
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.12
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.12
+      }
+    ],
+    "gold": 100,
+    "name": "Catalyst",
+    "note": "<Passive State: 138>\n\n<Sideview Battler: Evil2_3>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger +++ Random 50%: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nLarge Potion: 16.66%\nLarge Elixir: 16.66%\nBell: 3.33%\n</Enemy Drops>",
+    "params": [
+      1500,
+      60,
+      26,
+      26,
+      1,
+      60,
+      150,
+      65
+    ]
   }
 ]
