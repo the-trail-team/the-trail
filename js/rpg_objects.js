@@ -7892,6 +7892,12 @@ Game_Player.prototype.meetsEncounterConditions = function(encounter) {
 };
 
 Game_Player.prototype.executeEncounter = function() {
+    const radius = 6;
+    if ($gameMap.events().some(function(event) {
+        return Math.abs($gameMap.deltaX($gamePlayer.x, event.x)) <= radius && 
+        Math.abs($gameMap.deltaY($gamePlayer.y, event.y)) <= radius &&
+        event._chaseRange > 0;
+    })) return false;
     if (!$gameMap.isEventRunning() && this._encounterCount <= 0) {
         this.makeEncounterCount();
         var troopId = this.makeEncounterTroopId();
