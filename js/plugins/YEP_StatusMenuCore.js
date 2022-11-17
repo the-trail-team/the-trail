@@ -600,6 +600,7 @@ Yanfly.Param.StatusStateCol3 = String(Yanfly.Parameters['States Column 3']);
 Yanfly.Param.StatusStateCol3 = Yanfly.Param.StatusStateCol3.split(' ');
 Yanfly.Param.StatusStateCol4 = String(Yanfly.Parameters['States Column 4']);
 Yanfly.Param.StatusStateCol4 = Yanfly.Param.StatusStateCol4.split(' ');
+Yanfly.Param.StatusStateColAll = Yanfly.Param.StatusStateCol1.concat(Yanfly.Param.StatusStateCol2.concat(Yanfly.Param.StatusStateCol3.concat(Yanfly.Param.StatusStateCol4))).filter(n => n);
 
 Yanfly.Param.StatusAttributes = String(Yanfly.Parameters['Attributes Command']);
 Yanfly.Param.StatusAttriCol1 = String(Yanfly.Parameters['Attributes Column 1']);
