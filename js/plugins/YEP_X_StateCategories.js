@@ -348,7 +348,6 @@ Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
     if (obj.damage.elementId > 1) processElements = processElements.concat(obj.damage.elementId);
     if (obj.multipleElements.length > 0) processElements = processElements.concat(obj.damage.elementId);
     Object.assign(categories, this.elementalStateCategoryRemoval(processElements));
-    console.log(categories);
     for (var category in categories) {
       var value = categories[category];
       if (value === 'ALL') {
@@ -362,7 +361,6 @@ Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
 
 Game_Battler.prototype.elementalStateCategoryRemoval = function(elementIds) {
     obj = {};
-    console.log(elementIds);
     if (elementIds.contains(2)) obj['ICE'] = "ALL";
     if (elementIds.contains(3)) obj['WATER'] = obj['EARTH'] = "ALL";
     if (elementIds.contains(4)) obj['WATER'] = obj['WIND'] = "ALL";
