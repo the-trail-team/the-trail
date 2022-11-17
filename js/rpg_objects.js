@@ -8617,6 +8617,14 @@ Game_Vehicle.prototype.getOn = function() {
     this.setStepAnime(true);
     $gameSystem.saveWalkingBgm();
     this.playBgm();
+    if ((this.isBoat || this.isShip) && $gameSwitches.value(63) && !$gameSwitches.value(29) && Date.now() % 50 == 0) {
+        AudioManager.playSe({name: 'Attack1', volume: 90, pitch: 100, pan: 0});
+        $gamePlayer.requestBalloon(1);
+        BattleManager.setup(88, false, false);
+        $gamePlayer.makeEncounterCount();
+        SceneManager.push(Scene_Battle);
+        $gameSwitches.setValue(29, true);
+    }
 };
 
 Game_Vehicle.prototype.getOff = function() {
