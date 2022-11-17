@@ -2029,11 +2029,11 @@
     "damage": {
       "critical": true,
       "elementId": 2,
-      "formula": "a.mat * 4 - b.mdf * 2",
+      "formula": "a.mat * 5 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "At long last, a more powerful fire to summon! Applies\na more lethal burn to an enemy. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "At long last, a more powerful fire to summon! Applies\na more lethal burn to an enemy. \\c[27]\\bpdamage[500]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
@@ -2046,7 +2046,7 @@
     "iconIndex": 1421,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 16,
+    "mpCost": 20,
     "name": "Fire II",
     "note": "<Boost Damage>\n\n<setup action>\ndisplay action\nperform start\nmotion chant: user\nwait: 45\nmotion spell: user\n</setup action>\n\n<whole action>\naction animation\nshake screen: 2, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 30\n</target action>\n\n<finish action>\nclear battle log\nperform finish\n</finish action>",
     "occasion": 1,
@@ -4163,11 +4163,11 @@
     "damage": {
       "critical": true,
       "elementId": 3,
-      "formula": "a.mat * 3.75 - b.mdf * 2",
+      "formula": "a.mat * 4 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
-    "description": "The highly anticipated sequel. The damage has gotten a big\nupgrade, and the freezing is stronger than ever. \\c[27]\\bpdamage[375]%\\c[0] MAT rate.",
+    "description": "The highly anticipated sequel. The damage has gotten a big\nupgrade, and the freezing is stronger than ever. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
     "effects": [
       {
         "code": 21,
