@@ -5447,7 +5447,7 @@ Game_Party.prototype.hasPickaxe = function() {
 // Pets
 
 Game_Party.prototype.addPet = function(name) {
-    const actor = $gameActors._data[7];
+    const actor = $gameActors.actor(7);
     actor.setName(name);
     this.addGuestActor(7);
     switch(name) {
