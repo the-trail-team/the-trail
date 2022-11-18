@@ -13691,6 +13691,20 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Fix max followers"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if ($gamePlayer._followers._data.length < $gameParty.maxBattleMembers() - 1) $gamePlayer._followers = new Game_Followers;"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
