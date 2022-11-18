@@ -14449,7 +14449,14 @@
               "code": 355,
               "indent": 0,
               "parameters": [
-                "$gameSelfSwitches.setValue([8, 153, 'A'], false)"
+                "$gameSelfSwitches.setValue([8, 153, 'A'], false);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([8, 153, 'B'], true);"
               ]
             },
             {
