@@ -8486,13 +8486,6 @@
               ]
             },
             {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                0
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -10098,93 +10091,30 @@
               ]
             },
             {
-              "code": 216,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                0,
+                87,
+                1
+              ]
+            },
+            {
+              "code": 216,
+              "indent": 1,
               "parameters": [
                 1
               ]
             },
             {
               "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 87,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": false,
-            "variableValue": 17
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                115,
-                14,
-                18,
-                8,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                0
-              ]
             },
             {
               "code": 0,
