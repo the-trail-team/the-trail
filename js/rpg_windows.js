@@ -1768,6 +1768,29 @@ Window_MenuStatus.prototype.drawItemStatus = function(index) {
     this.drawActorSimpleStatus(actor, x, y, width);
 };
 
+Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width) {
+    var lineHeight = this.lineHeight();
+    var xpad = Window_Base._faceWidth + (2 * Yanfly.Param.TextPadding);
+    var x2 = x + xpad;
+    var width2 = Math.max(180, width - xpad - this.textPadding());
+    if (this.maxItems() <= 6) {
+        this.drawActorName(actor, x, y);
+        this.drawActorLevel(actor, x, y + lineHeight * 1);
+        this.drawActorIcons(actor, x, y + lineHeight * 2);
+        this.drawActorClass(actor, x2, y, width2);
+        this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
+        this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
+    } else {
+        this.drawActorName(actor, x, y + lineHeight * 0.5);
+        this.drawActorIcons(actor, x, y + lineHeight * 1.5);
+        this.drawActorHp(actor, x2, y + lineHeight * 0.5, width2);
+        this.drawActorMp(actor, x2, y + lineHeight * 1.5, width2);
+    }
+    if (Yanfly.Param.MenuTpGauge) {
+      this.drawActorTp(actor, x2, y + lineHeight * 3, width2);
+    }
+};
+
 Window_MenuStatus.prototype.processOk = function() {
     Window_Selectable.prototype.processOk.call(this);
     $gameParty.setMenuActor($gameParty.members()[this.index()]);
