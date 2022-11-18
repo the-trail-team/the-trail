@@ -8816,7 +8816,7 @@
     {
       "id": 4,
       "name": "EV004",
-      "note": "",
+      "note": "<Hitbox Down: 2>",
       "pages": [
         {
           "conditions": {
@@ -8865,6 +8865,24 @@
                 36,
                 6,
                 0
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                72
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                79,
+                79,
+                2,
+                0,
+                1
               ]
             },
             {
@@ -8897,174 +8915,8 @@
       "x": 48,
       "y": 13
     },
-    {
-      "id": 5,
-      "name": "EV005",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                168,
-                1,
-                36,
-                6,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 48,
-      "y": 14
-    },
-    {
-      "id": 6,
-      "name": "EV006",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                168,
-                1,
-                36,
-                6,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 48,
-      "y": 15
-    },
+    null,
+    null,
     {
       "id": 7,
       "name": "EV007",
