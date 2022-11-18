@@ -4724,7 +4724,7 @@
     "traits": [],
     "iconIndex": 721,
     "name": "Bottomless Fire Resistance Potion",
-    "note": "<Passive State: 126>\n\n<Synthesis Ingredients>\nFire Resistance Potion: 5\nEctoplasm: 3\n</Synthesis Ingredients>\n<Mask Name: Heat Exhaustion Permanent Prevention>",
+    "note": "<Passive State: 126>\n\n<Synthesis Ingredients>\nFire Resistance Potion: 5\nFiery Blood: 10\nEctoplasm: 3\n</Synthesis Ingredients>\n<Mask Name: Heat Exhaustion Permanent Prevention>",
     "params": [
       0,
       0,
@@ -4740,9 +4740,14 @@
   {
     "id": 178,
     "atypeId": 1,
-    "description": "It's burning hot, yet feels only lukewarm to the touch.\nProvides immunity to \\it[82] and \\it[125].",
+    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides\nimmunity to \\it[7], \\it[82], and \\it[125].",
     "etypeId": 6,
     "traits": [
+      {
+        "code": 14,
+        "dataId": 7,
+        "value": 2
+      },
       {
         "code": 14,
         "dataId": 82,
@@ -4756,7 +4761,7 @@
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nWanted Poster\nBottomless Fire Resistance Potion\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nFire Crystal\nWanted Poster\nBottomless Fire Resistance Potion\nFiery Blood: 30\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
       0,
       0,
@@ -4767,7 +4772,7 @@
       0,
       0
     ],
-    "price": 200
+    "price": 900
   },
   {
     "id": 179,
@@ -4885,5 +4890,59 @@
       0
     ],
     "price": 1000
+  },
+  {
+    "id": 184,
+    "atypeId": 1,
+    "description": "The core of a Fire Imp. Provides immunity to \\it[7]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 7,
+        "value": 2
+      }
+    ],
+    "iconIndex": 769,
+    "name": "Fire Crystal",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 185,
+    "atypeId": 1,
+    "description": "The upgrades continue! Tellurium has greatly\nenhanced the elemental flow of these wristbraces.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 770,
+    "name": "Fiery Wristbraces",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nMetal Wristbraces ★★\nFiery Blood: 20\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
+    "params": [
+      0,
+      16,
+      0,
+      0,
+      16,
+      10,
+      0,
+      0
+    ],
+    "price": 2000
   }
 ]
