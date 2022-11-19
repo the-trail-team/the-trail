@@ -5539,10 +5539,105 @@
     "message2": "",
     "message3": "",
     "message4": " is no longer winded.",
-    "minTurns": 4,
+    "minTurns": 5,
     "motion": 0,
     "name": "Winded",
     "note": "<Category: Wind>\n<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nDecreases ATK and MAT by 20%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 49,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": true,
+    "restriction": 0,
+    "stepsToRemove": 200
+  },
+  {
+    "id": 163,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 0.75
+      }
+    ],
+    "iconIndex": 771,
+    "maxTurns": 6,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "'s MDF went back to normal.",
+    "minTurns": 6,
+    "motion": 0,
+    "name": "Darkfire",
+    "note": "<Category: Dark>\n<Category: debuff>\n<Category: severe debuff>\n\n<Help Description>\nDecreases MDF by 25%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 75,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 164,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 771,
+    "maxTurns": 9,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "'s MDF went back to normal.",
+    "minTurns": 9,
+    "motion": 0,
+    "name": "Darkfire EX",
+    "note": "<Category: Dark>\n<Category: debuff>\n<Category: severe debuff>\n\n<Help Description>\nDecreases MDF by 50%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 75,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 165,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.8
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 772,
+    "maxTurns": 5,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": " recovered from Vine Whip.",
+    "minTurns": 5,
+    "motion": 0,
+    "name": "Vine Whipped",
+    "note": "<Category: Earth>\n<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nDecreases DEF and MDF by 20%.\n</Help Description>",
     "overlay": 0,
     "priority": 49,
     "removeAtBattleEnd": false,

@@ -264,6 +264,7 @@ Olivia[_0x1db1("0x25")] = function (_0x3a7c76) {
         if (_0x3a7c76.category.contains("BUFF")) _0x3a7c76["description"] += " \\c[12][BUFF]\\c[0]";
         if (_0x3a7c76.category.contains("WEAK DEBUFF")) _0x3a7c76["description"] += " \\c[14][WEAK DEBUFF]\\c[0]";
         if (_0x3a7c76.category.contains("MODERATE DEBUFF")) _0x3a7c76["description"] += " \\c[2][MODERATE DEBUFF]\\c[0]";
+        if (_0x3a7c76.category.contains("SEVERE DEBUFF")) _0x3a7c76["description"] += " \\c[18][SEVERE DEBUFF]\\c[0]";
       }
     }
   }
