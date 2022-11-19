@@ -4172,7 +4172,7 @@
   {
     "id": 159,
     "atypeId": 1,
-    "description": "A critical piece of equipment for anyone wishing to brave nature.\nProvides immunity to \\it[39], \\it[88], and \\it[94].",
+    "description": "A critical piece of equipment for anyone wishing to brave nature. Provides\nimmunity to \\it[39], \\it[162], \\it[88], \\it[165], and \\it[94].",
     "etypeId": 6,
     "traits": [
       {
@@ -4182,7 +4182,17 @@
       },
       {
         "code": 14,
+        "dataId": 162,
+        "value": 2
+      },
+      {
+        "code": 14,
         "dataId": 88,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 165,
         "value": 2
       },
       {
@@ -4193,7 +4203,7 @@
     ],
     "iconIndex": 709,
     "name": "Forest Exploration Kit",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCloth Mask\nStorm Lens\nBattle Plan\n</Synthesis Ingredients>\n<Mask Name: Nature Immunities>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCloth Mask\nTaut Rope\nStorm Lens\nArmor Bracing\nBattle Plan\n</Synthesis Ingredients>\n<Mask Name: Nature Immunities>",
     "params": [
       0,
       0,
@@ -4545,7 +4555,17 @@
       },
       {
         "code": 14,
+        "dataId": 162,
+        "value": 2
+      },
+      {
+        "code": 14,
         "dataId": 88,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 165,
         "value": 2
       },
       {
