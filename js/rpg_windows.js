@@ -5292,17 +5292,18 @@ Window_BattleLog.prototype.displayBuffs = function(target, buffs, fmt) {
 Window_BattleLog.prototype.makeHpDamageText = function(target) {
     var result = target.result();
     var damage = result.hpDamage;
+    var crit = result.critical;
     var isActor = target.isActor();
     var fmt;
     if (damage > 0 && result.drain) {
         fmt = isActor ? TextManager.actorDrain : TextManager.enemyDrain;
-        return fmt.format(target.name(), TextManager.hp, damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, damage);
     } else if (damage > 0) {
         fmt = isActor ? TextManager.actorDamage : TextManager.enemyDamage;
-        return fmt.format(target.name(), damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), damage);
     } else if (damage < 0) {
         fmt = isActor ? TextManager.actorRecovery : TextManager.enemyRecovery;
-        return fmt.format(target.name(), TextManager.hp, -damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, -damage);
     } else {
         fmt = isActor ? TextManager.actorNoDamage : TextManager.enemyNoDamage;
         return fmt.format(target.name());
