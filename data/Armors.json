@@ -3559,14 +3559,9 @@
   {
     "id": 139,
     "atypeId": 1,
-    "description": "A stylish set of glasses that let's you get through the toughest\nof weather. Provides immunity to \\it[162] and \\it[88]\\c[0].",
+    "description": "A stylish set of glasses that let's you get through the\ntoughest of weather. Provides immunity to \\it[88]\\c[0].",
     "etypeId": 6,
     "traits": [
-      {
-        "code": 14,
-        "dataId": 162,
-        "value": 2
-      },
       {
         "code": 14,
         "dataId": 88,
@@ -4177,17 +4172,12 @@
   {
     "id": 159,
     "atypeId": 1,
-    "description": "A critical piece of equipment for anyone wishing to brave nature. Provides\nimmunity to \\it[39], \\it[162], \\it[88], and \\it[94].",
+    "description": "A critical piece of equipment for anyone wishing to brave nature.\nProvides immunity to \\it[39], \\it[88], and \\it[94].",
     "etypeId": 6,
     "traits": [
       {
         "code": 14,
         "dataId": 39,
-        "value": 2
-      },
-      {
-        "code": 14,
-        "dataId": 162,
         "value": 2
       },
       {
@@ -4551,11 +4541,6 @@
       {
         "code": 14,
         "dataId": 39,
-        "value": 2
-      },
-      {
-        "code": 14,
-        "dataId": 162,
         "value": 2
       },
       {
@@ -4944,5 +4929,91 @@
       0
     ],
     "price": 2000
+  },
+  {
+    "id": 186,
+    "atypeId": 1,
+    "description": "Provides immunity to \\it[162]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 162,
+        "value": 2
+      }
+    ],
+    "iconIndex": 275,
+    "name": "Taut Rope",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 187,
+    "atypeId": 1,
+    "description": "Provides immunity to \\it[165]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 165,
+        "value": 2
+      }
+    ],
+    "iconIndex": 409,
+    "name": "Armor Bracing",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 188,
+    "atypeId": 7,
+    "description": "An ancient shield forged a millenium ago for the chosen hero. Specially\nenchanted to provide immunity to \\it[163]\\c[0], \\c[18]Apocalypse\\c[0]'s signature move.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.9
+      },
+      {
+        "code": 14,
+        "dataId": 163,
+        "value": 2
+      }
+    ],
+    "iconIndex": 506,
+    "name": "Shield of the Hero",
+    "note": "<Upgrade Slots: 3>",
+    "params": [
+      0,
+      0,
+      0,
+      12,
+      0,
+      12,
+      -2,
+      0
+    ],
+    "price": 5000
   }
 ]
