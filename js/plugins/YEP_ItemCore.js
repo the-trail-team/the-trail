@@ -1327,22 +1327,22 @@ Game_Party.prototype.clearAllMatchingBaseItems = function(baseItem, equipped) {
 
 Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
   var value = this.numItems(baseItem);
-if (DataManager.isIndependent(baseItem)) {
-  var id = baseItem.id;
-  if (DataManager.isItem(baseItem)) var group = this.items();
-  if (DataManager.isWeapon(baseItem)) var group = this.weapons();
-  if (DataManager.isArmor(baseItem)) var group = this.armors();
-  for (var i = 0; i < group.length; ++i) {
-    var item = group[i];
-    if (!item) continue;
-    if (item.boostCount && item.boostCount !== 0) continue;
-    if (item.namePrefix && item.namePrefix !== "") continue;
-    if (item.nameSuffix && item.nameSuffix !== "") continue;
-    if (item.baseItemName && item.baseItemName !== item.name) continue;
-    if (item.textColor && item.textColor !== baseItem.textColor) continue;
-    if (item.baseItemId && item.baseItemId === id) value += 1;
+  if (DataManager.isIndependent(baseItem)) {
+    var id = baseItem.id;
+    if (DataManager.isItem(baseItem)) var group = this.items();
+    if (DataManager.isWeapon(baseItem)) var group = this.weapons();
+    if (DataManager.isArmor(baseItem)) var group = this.armors();
+    for (var i = 0; i < group.length; ++i) {
+      var item = group[i];
+      if (!item) continue;
+      if (item.boostCount && item.boostCount !== 0) continue;
+      // if (item.namePrefix && item.namePrefix !== "") continue;
+      // if (item.nameSuffix && item.nameSuffix !== "") continue;
+      // if (item.baseItemName && item.baseItemName !== item.name) continue;
+      // if (item.textColor && item.textColor !== baseItem.textColor) continue;
+      if (item.baseItemId && item.baseItemId === id) value += 1;
+    }
   }
-}
   return value;
 };
 
@@ -1357,11 +1357,11 @@ Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
   for (var i = 0; i < group.length; ++i) {
     var item = group[i];
     if (!item) continue;
-  if (item.boostCount && item.boostCount !== 0) continue;
-  if (item.namePrefix && item.namePrefix !== "") continue;
-  if (item.nameSuffix && item.nameSuffix !== "") continue;
-  if (item.baseItemName && item.baseItemName !== item.name) continue;
-  if (item.textColor && item.textColor !== baseItem.textColor) continue;
+    if (item.boostCount && item.boostCount !== 0) continue;
+    // if (item.namePrefix && item.namePrefix !== "") continue;
+    // if (item.nameSuffix && item.nameSuffix !== "") continue;
+    // if (item.baseItemName && item.baseItemName !== item.name) continue;
+    // if (item.textColor && item.textColor !== baseItem.textColor) continue;
     if (item.baseItemId && item.baseItemId === id) value = item;
   }
   return value;
