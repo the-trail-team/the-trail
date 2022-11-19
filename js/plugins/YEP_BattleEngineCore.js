@@ -1330,7 +1330,7 @@ DataManager.processMELODYNotetags = function(group) {
       var line = notedata[i];
       if (line.match(/<(?:SETUP ACTION|setup)>/i)) {
         actionType = 1;
-        obj.setupActions = [];
+        obj.setupActions = Yanfly.BEC.DefaultActionSetup.slice();
       } else if (line.match(/<\/(?:SETUP ACTION|setup)>/i)) {
         var actionType = 0;
       } else if (line.match(/<(?:WHOLE ACTION|whole)>/i)) {
@@ -1375,13 +1375,13 @@ Yanfly.BEC.DefaultActionWhole = [
 Yanfly.BEC.DefaultActionTarget = [
     ['PERFORM ACTION'],
 ];
-if (Yanfly.Param.BECMotionWait) {
+/*if (Yanfly.Param.BECMotionWait) {
   Yanfly.BEC.DefaultActionWhole.push(['MOTION WAIT', ['USER']]);
   Yanfly.BEC.DefaultActionTarget.push(['MOTION WAIT', ['USER']]);
 } else {
   Yanfly.BEC.DefaultActionWhole.push(['WAIT', [10]]);
   Yanfly.BEC.DefaultActionTarget.push(['WAIT', [10]]);
-};
+};*/
 Yanfly.BEC.DefaultActionWhole.push(['ACTION ANIMATION']);
 Yanfly.BEC.DefaultActionWhole.push(['WAIT FOR ANIMATION']);
 Yanfly.BEC.DefaultActionTarget.push(['ACTION ANIMATION']);
@@ -1389,6 +1389,9 @@ Yanfly.BEC.DefaultActionTarget.push(['WAIT FOR ANIMATION']);
 Yanfly.BEC.DefaultActionFollow = [
 ];
 Yanfly.BEC.DefaultActionFinish = [
+    ['RESET CAMERA', [30]],
+    ['RESET ZOOM', [30]],
+    ['RESET DAMAGE CAP'],
     ['IMMORTAL', ['TARGETS', 'FALSE']],
     ['WAIT FOR NEW LINE'],
     ['CLEAR BATTLE LOG'],
@@ -1396,6 +1399,7 @@ Yanfly.BEC.DefaultActionFinish = [
     ['WAIT FOR MOVEMENT'],
     ['WAIT FOR EFFECT'],
     ['ACTION COMMON EVENT'],
+    ['SHOW BATTLE HUD'],
 ];
 DataManager.setDefaultActions = function(obj) {
     obj.setupActions = Yanfly.BEC.DefaultActionSetup.slice();
