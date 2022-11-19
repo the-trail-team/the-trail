@@ -5519,7 +5519,7 @@
   },
   {
     "id": 162,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
     "traits": [
       {
@@ -5534,12 +5534,12 @@
       }
     ],
     "iconIndex": 109,
-    "maxTurns": 1,
+    "maxTurns": 5,
     "message1": " is winded!",
     "message2": "",
     "message3": "",
     "message4": " is no longer winded.",
-    "minTurns": 1,
+    "minTurns": 4,
     "motion": 0,
     "name": "Winded",
     "note": "<Category: Wind>\n<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nDecreases ATK and MAT by 20%.\n</Help Description>",
@@ -5548,8 +5548,8 @@
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 200
   }
 ]
