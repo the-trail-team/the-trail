@@ -274,10 +274,10 @@
     "note": "<Category: Fire>\n<Category: debuff>\n<Category: weak debuff>\n\n<animationRow:28>\n\n<DoT Formula: 100>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 50 \\i[96]fire damage per turn.\n</Help Description>",
     "overlay": 0,
     "priority": 49,
-    "removeAtBattleEnd": true,
+    "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
     "stepsToRemove": 100
   },
@@ -3280,9 +3280,9 @@
     "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 200
   },
   {
     "id": 103,
