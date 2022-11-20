@@ -1398,6 +1398,8 @@ Yanfly.BEC.DefaultActionFinish = [
     ['PERFORM FINISH'],
     ['WAIT FOR MOVEMENT'],
     ['WAIT FOR EFFECT'],
+    ['WAIT FOR CAMERA'],
+    ['WAIT FOR ZOOM'],
     ['ACTION COMMON EVENT'],
     ['SHOW BATTLE HUD'],
 ];

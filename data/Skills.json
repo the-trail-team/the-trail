@@ -2935,7 +2935,7 @@
     "message2": "",
     "mpCost": 5,
     "name": "Hold the Line I",
-    "note": "<Boost Turns>\n\n<setup action>\nmotion guard: user\nwait: 15\n</setup action>\n\n<whole action>\nmotion guard: targets\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\n</target action>\n\n<finish action>\nmotion standby: targets\n</finish action>",
+    "note": "<Boost Turns>\n\n<setup action>\nmotion guard: user\nwait: 15\n</setup action>\n\n<whole action>\nmotion guard: targets\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\n</target action>\n\n<follow action>\nmotion standby: targets\n</follow action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
