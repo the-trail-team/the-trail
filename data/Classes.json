@@ -5656,16 +5656,6 @@
       {
         "level": 18,
         "note": "Alpha 15",
-        "skillId": 85
-      },
-      {
-        "level": 18,
-        "note": "Alpha 15",
-        "skillId": 30
-      },
-      {
-        "level": 18,
-        "note": "Alpha 15",
         "skillId": 19
       },
       {
@@ -5680,7 +5670,7 @@
       }
     ],
     "name": "Hero",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nParty Dead Members >= 1: Revival\nHP% param <= 40%: Cure I, Lowest HP%\nState !== Inspired: Inspire\nUser MP param >= 4: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nParty Dead Members >= 1: Revival\nHP% param <= 40%: Cure I, Lowest HP%\nAlways: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
@@ -6589,6 +6579,11 @@
       {
         "level": 18,
         "note": "Alpha 15",
+        "skillId": 30
+      },
+      {
+        "level": 18,
+        "note": "Alpha 15",
         "skillId": 85
       },
       {
@@ -6613,7 +6608,7 @@
       }
     ],
     "name": "Paladin",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line II: Hold the Line II\nState === Magical Barrier +++ State !== Soul Barrier I: Soul Barrier I\nUser MP param >= 7: Double Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 60 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line II: Hold the Line II\nState !== Inspired: Inspire\nState === Magical Barrier +++ State !== Soul Barrier I: Soul Barrier I\nUser MP param >= 7: Double Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 60 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
