@@ -5637,7 +5637,7 @@ Game_Troop.prototype.setupBattleEvent = function() {
         var pages = this.troop().pages;
         for (var i = 0; i < pages.length; i++) {
             var page = pages[i];
-            if (this.meetsConditions(page) && !this._eventFlags[i] && !['actionTargetList'].contains(BattleManager._phase)) {
+            if (this.meetsConditions(page) && !this._eventFlags[i] && !['actionList', 'actionTargetList'].contains(BattleManager._phase)) {
                 SceneManager._scene._logWindow.clear();
                 this._interpreter.setup(page.list);
                 if (page.span <= 1) {
