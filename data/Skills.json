@@ -855,7 +855,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Flashbang",
-    "note": "<Require = 0 BP>\n\n<Party Limit Cost: 0>\n<Max Mastery Level: 0>\n\n<Before Eval>\neval: target._flashbang = target._flashbang || 0;\n</Before Eval>\n\n<Post-Damage Eval>\neval: target._flashbang++;\n</Post-Damage Eval>\n\n<setup action>\nadd state 43: user\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 30\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 20\n</target action>\n\n<follow action>\nremove state 43: user\n</follow action>",
+    "note": "<Require = 0 BP>\n\n<Party Limit Cost: 1>\n<Max Mastery Level: 0>\n\n<Before Eval>\neval: target._flashbang = target._flashbang || 0;\n</Before Eval>\n\n<Post-Damage Eval>\neval: target._flashbang++;\n</Post-Damage Eval>\n\n<setup action>\nadd state 43: user\nmotion spell: user\nwait: 30\nmotion attack: user\nwait: 30\n</setup action>\n\n<whole action>\naction animation\nwait: 15\nshake screen: 3, 9, 30\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 20\n</target action>\n\n<follow action>\nremove state 43: user\n</follow action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
