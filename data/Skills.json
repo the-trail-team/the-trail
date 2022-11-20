@@ -214,7 +214,7 @@
     "iconIndex": 550,
     "message1": " attacks... twice!",
     "message2": "",
-    "mpCost": 7,
+    "mpCost": 6,
     "name": "Double Slash",
     "note": "<Boost Damage>\n\n<Custom Requirement>\nvalue = (!user.isActor()\n|| user.isWtypeEquipped(2)\n|| user.isWtypeEquipped(5)\n|| user.isWtypeEquipped(7)\n|| user.isWtypeEquipped(11));\n</Custom Requirement>\n\n<setup action>\nhide battle hud\nopacity not focus: 0\ncamera focus: user\nzoom: 200%\nmotion skill: user\nwait: 45\nmove user: target, front base, 20\nwait for movement\nmotion attack: user\naction animation\nwait: 8\n</setup action>\n\n<target action>\naction effect\nmove user: target, back base, 8\nface user: backward\nmotion attack: user\nwait: 28\nshow battle hud\naction effect\nwait for effect\n</target action>\n\n<follow action>\nopacity not focus: 255, 30\n</follow action>",
     "occasion": 1,
