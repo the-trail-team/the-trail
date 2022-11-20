@@ -10258,5 +10258,55 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 90,
+    "members": [
+      {
+        "enemyId": 55,
+        "x": 430,
+        "y": 193,
+        "hidden": false
+      },
+      {
+        "enemyId": 55,
+        "x": 227,
+        "y": 415,
+        "hidden": false
+      },
+      {
+        "enemyId": 55,
+        "x": 324,
+        "y": 298,
+        "hidden": false
+      }
+    ],
+    "name": "Ice Golem x3",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
