@@ -3047,7 +3047,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Future Sight",
-    "note": "<Barrier Penetration: +100%>\n\n<Custom Remove Effect>\nuser.startAnimation(236);\nuser.gainHp(-(Math.round((user.mhp * 0.75))));\n</Custom Remove Effect>\n\n<Cannot Select: Skill 116>\n\n<Help Description>\nThis battler will take heavy damage after this state expires. Bypasses barriers.\n</Help Description>",
+    "note": "<Category: debuff>\n<Category: severe debuff>\n\n<Barrier Penetration: +100%>\n\n<Custom Remove Effect>\nuser.startAnimation(236);\nuser.gainHp(-(Math.round((user.mhp * 0.75))));\n</Custom Remove Effect>\n\n<Cannot Select: Skill 116>\n\n<Help Description>\nThis battler will take heavy damage after this state expires. Bypasses barriers.\n</Help Description>",
     "overlay": 9,
     "priority": 70,
     "removeAtBattleEnd": true,
