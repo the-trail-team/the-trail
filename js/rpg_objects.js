@@ -3695,7 +3695,6 @@ Game_Actor.prototype.battlerName = function() {
 
 Game_Actor.prototype.clearStates = function() {
     Game_Battler.prototype.clearStates.call(this);
-    this._stateSteps = {};
 };
 
 Game_Actor.prototype.eraseState = function(stateId) {
