@@ -657,13 +657,11 @@ Window_ShopStatus.prototype.setDisplayMode = function(mode) {
 };
 
 Window_ShopStatus.prototype.isDefaultMode = function() {
-    // return this.displayMode() === 'default';
-    return !$gameSwitches.value(89);
+    return $gameSwitches.value(89);
 };
 
 Window_ShopStatus.prototype.isActorMode = function() {
-    // return this.displayMode() === 'actor';
-    return $gameSwitches.value(89);
+    return !$gameSwitches.value(89);
 };
 
 Window_ShopStatus.prototype.refresh = function() {
