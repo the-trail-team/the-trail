@@ -636,9 +636,16 @@ Window_ShopStatus.prototype.initialize = function(x, y, width, height) {
     if (Yanfly.Param.ShopStatSwitch) this._paramId = 2;
     this._displayMode = Yanfly.Param.ShopDefaultMode;
     this._actorIndex = 0;
-    this._maxActorIndex = $gameParty.members().length - 1;
     this._clickZoneX = this.textWidth('<<') + this.standardPadding();
     this._clickZoneY = this.standardPadding() + this.lineHeight() * 2;
+};
+
+Window_ShopStatus.prototype.filterParty = function() {
+    return $gameParty.members().filter(a => a.canEquip(this._item));
+};
+
+Window_ShopStatus.prototype.maxActorIndex = function() {
+    return this.filterParty().length - 1;
 };
 
 Window_ShopStatus.prototype.displayMode = function() {
@@ -699,7 +706,8 @@ Window_ShopStatus.prototype.drawActorData = function() {
 };
 
 Window_ShopStatus.prototype.getActor = function() {
-    return $gameParty.members()[this._actorIndex];
+    if (this._actorIndex > this.maxActorIndex()) this._actorIndex = 0;
+    return this.filterParty()[this._actorIndex];
 };
 
 Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
@@ -852,7 +860,7 @@ Window_ShopStatus.prototype.adjustLeft = function() {
       if (this._paramId < 0) this._paramId = 7;
     } else if (this.isActorMode()) {
       this._actorIndex -= 1;
-      if (this._actorIndex < 0) this._actorIndex = this._maxActorIndex;
+      if (this._actorIndex < 0) this._actorIndex = this.maxActorIndex();
     }
 };
 
@@ -862,7 +870,7 @@ Window_ShopStatus.prototype.adjustRight = function() {
       if (this._paramId > 7) this._paramId = 0;
     } else if (this.isActorMode()) {
       this._actorIndex += 1;
-      if (this._actorIndex > this._maxActorIndex) this._actorIndex = 0;
+      if (this._actorIndex > this.maxActorIndex()) this._actorIndex = 0;
     }
 };
 
