@@ -2254,6 +2254,7 @@ Game_Enemy.prototype.performEscape = function() {
 
 Game_Enemy.prototype.isBreathing = function() {
     if (this.isDead()) return false;
+    if (!this.spriteCanMove()) return false;
     return this.enemy().sideviewBreathing;
 };
 
@@ -2276,6 +2277,7 @@ Game_Enemy.prototype.linkBreathing = function() {
 Game_Enemy.prototype.isFloating = function() {
     if (this.isDead() && !this.enemy().sideviewFloatDeath) return false;
     if (this.enemy().sideviewFloatingLowHpGround && (this.hpRate() <= 0.25 || !this.spriteCanMove() || [1,2].contains(this.stateMotionIndex()))) return false;
+    if (!this.spriteCanMove()) return false;
     return this.enemy().sideviewFloating;
 };
 
