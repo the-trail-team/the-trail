@@ -5731,5 +5731,29 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 168,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "[P] Finisher I",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar boost = 0.1;\nvar multiplier = boost * (1 - target.hpRate()) + 1;\nvalue = Math.ceil(value * multiplier);\n</Custom Confirm Effect>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
