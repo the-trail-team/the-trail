@@ -538,6 +538,7 @@ DataManager.processISNotetags1 = function(group, type) {
   var note9 = /<(?:MASK NAME):[ ](.*)>/i;
   var note10a = /<(?:CUSTOM SYNTHESIS EFFECT)>/i;
   var note10b = /<\/(?:CUSTOM SYNTHESIS EFFECT)>/i;
+  var note11 = /<Craft Category: (.*)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -556,6 +557,7 @@ DataManager.processISNotetags1 = function(group, type) {
     obj.synthSePan = Yanfly.Param.ISDefPan;
     obj.customSynthEval = '';
     var evalMode = 'none';
+    obj.craftCategory = [];
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
@@ -602,6 +604,9 @@ DataManager.processISNotetags1 = function(group, type) {
         evalMode = 'none';
       } else if (evalMode === 'custom synthesis effect') {
         obj.customSynthEval += line + '\n';
+      } else if (line.match(note11)) {
+        var array = String(RegExp.$1).toUpperCase().split(", ");
+        obj.craftCategory = obj.craftCategory.concat(array);
       }
     }
     this.processRecipeCounts(obj);
@@ -921,11 +926,15 @@ Window_SynthesisCommand.prototype.initialize = function() {
 };
 
 Window_SynthesisCommand.prototype.windowWidth = function() {
-    return 240;
+    return 610;
 };
 
 Window_SynthesisCommand.prototype.numVisibleRows = function() {
-    return 4;
+    return Math.ceil(this._list.length / 3);
+};
+
+Window_SynthesisCommand.prototype.maxCols = function() {
+  return 3;
 };
 
 Window_SynthesisCommand.prototype.itemTextAlign = function() {
@@ -942,6 +951,13 @@ Window_SynthesisCommand.prototype.addItemCommands = function() {
     this.addCommand(Yanfly.Param.ISItemCmd, 'item', Scene_Synthesis.availableItems().length > 0);
     this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', Scene_Synthesis.availableWeapons().length > 0);
     this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors(0).length > 0);
+    this.addCommand("Craft Tool", 'tool', Scene_Synthesis.availableCategory('tool').length > 0);
+    this.addCommand("Craft Material", 'material', Scene_Synthesis.availableCategory('material').length > 0);
+    if ($gameParty.hasItem($dataItems[59])) { // Telluria Castle Town forge
+      this.addCommand("Craft Telluria Field Equipment", 'field', Scene_Synthesis.availableCategory('field').length > 0);
+      this.addCommand("Craft Tellurium Equipment", 'tellurium', Scene_Synthesis.availableCategory('tellurium').length > 0);
+    }
+    this.addCommand("Craft Misc. Item", 'misc', Scene_Synthesis.availableCategory('misc').length > 0);
     this.addCommand("Craft Headgear", 'headgear', Scene_Synthesis.availableArmors(3).length > 0);
     this.addCommand("Craft Bodygear", 'bodygear', Scene_Synthesis.availableArmors(4).length > 0);
     this.addCommand("Craft Footgear", 'footgear', Scene_Synthesis.availableArmors(5).length > 0);
@@ -1159,7 +1175,7 @@ Window_SynthesisList.prototype.makeItemList = function() {
         data = Scene_Synthesis.availableArmors(8);
         break;
       default:
-        data = [];
+        data = Scene_Synthesis.availableCategory(this._commandWindow.currentSymbol());
         break;
     }
     this._data = data;
@@ -1732,19 +1748,27 @@ Scene_Synthesis.availableWeapons = function() {
 };
 
 Scene_Synthesis.availableArmors = function(type) {
-    var list = this.getAvailableItems(2);
-    if (type !== 0) {
-      var newList = [];
-      for (i = 0; i < list.length; i++) {
-        if (list[i].etypeId === type) newList.push(list[i]);
-      }
-      return newList;
+    let list = this.getAvailableItems(2);
+    if (type != 0) {
+      let newList = [];
+      list.forEach(a => {
+        if (a.etypeId == type) newList.push(a);
+      });
+      list = newList;
     }
     return list;
 };
 
+Scene_Synthesis.availableCategory = function(category) {
+    let list = [];
+    this.getAvailableItems(0).concat(this.getAvailableItems(1).concat(this.getAvailableItems(2))).forEach(i => {
+      if (i.craftCategory.contains(category.toUpperCase())) list.push(i);
+    });
+    return list;
+};
+
 Scene_Synthesis.prototype.refreshWindows = function() {
-    this._statusWindow.refresh();
+    // this._statusWindow.refresh();
     this._listWindow.refresh();
     this._goldWindow.refresh();
     this._ingredientsWindow.refresh(this._listWindow.item());
@@ -1754,7 +1778,7 @@ Scene_Synthesis.prototype.create = function() {
     Scene_MenuBase.prototype.create.call(this);
     this.createHelpWindow();
     this.createCommandWindow();
-    this.createStatusWindow();
+    // this.createStatusWindow();
     this.createListWindow();
     this.createGoldWindow();
     this.createIngredientsWindow();
