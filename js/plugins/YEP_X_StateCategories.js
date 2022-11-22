@@ -251,11 +251,11 @@ DataManager.processStCNotetags2 = function(group) {
 
 DataManager.addElementalStateTraits = function() {
   const o = DataManager.stateCategories;
-  const arr = [o["FIRE"], o["ICE"], o["ELECTRIC"], o["WATER"], o["EARTH"], o["WIND"], o["LIGHT"], o["DARK"]];
+  const arr = [[o["FIRE"], 2, 154], [o["ICE"], 3, 155], [o["ELECTRIC"], 4, 156], [o["WATER"], 5, 157], [o["EARTH"], 6, 158], [o["WIND"], 7, 159], [o["PLANT"], 13, 171], [o["METAL"], 14, 172], [o["LIGHT"], 8, 160], [o["DARK"], 9, 161]];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i]) arr[i].forEach(s => {
-      if (i <= 5) $dataStates[s].traits = $dataStates[s].traits.concat({code: 11, dataId: i + 2, value: 0.5});
-      $dataStates[s].traits = $dataStates[s].traits.concat($dataStates[154 + i].traits);
+    if (arr[i][0]) arr[i][0].forEach(s => {
+      if (![8, 9].contains(arr[i][1])) $dataStates[s].traits = $dataStates[s].traits.concat({code: 11, dataId: arr[i][1], value: 0.5});
+      $dataStates[s].traits = $dataStates[s].traits.concat($dataStates[arr[i][2]].traits);
     });
   }
 };
@@ -361,14 +361,16 @@ Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
 
 Game_Battler.prototype.elementalStateCategoryRemoval = function(elementIds) {
     obj = {};
-    if (elementIds.contains(2)) obj['ICE'] = "ALL";
-    if (elementIds.contains(3)) obj['WATER'] = obj['EARTH'] = "ALL";
-    if (elementIds.contains(4)) obj['WATER'] = obj['WIND'] = "ALL";
-    if (elementIds.contains(5)) obj['FIRE'] = obj['EARTH'] = "ALL";
-    if (elementIds.contains(6)) obj['FIRE'] = obj['ELECTRIC'] = "ALL";
-    if (elementIds.contains(7)) obj['FIRE'] = obj['EARTH'] = "ALL";
-    if (elementIds.contains(8)) obj['DARK'] = "ALL";
-    if (elementIds.contains(9)) obj['LIGHT'] = "ALL";
+    if (elementIds.contains(2))  obj['ICE'] = obj['PLANT'] = obj['METAL'] = "ALL";
+    if (elementIds.contains(3))  obj['WATER'] = obj['EARTH'] = obj['PLANT'] = "ALL";
+    if (elementIds.contains(4))  obj['WATER'] = obj['WIND'] = "ALL";
+    if (elementIds.contains(5))  obj['FIRE'] = obj['EARTH'] = "ALL";
+    if (elementIds.contains(6))  obj['FIRE'] = obj['ELECTRIC'] = "ALL";
+    if (elementIds.contains(7))  obj['FIRE'] = obj['EARTH'] = obj['PLANT'] = "ALL";
+    if (elementIds.contains(8))  obj['DARK'] = "ALL";
+    if (elementIds.contains(9))  obj['LIGHT'] = "ALL";
+    if (elementIds.contains(13)) obj['WATER'] = obj['EARTH'] = "ALL";
+    if (elementIds.contains(14)) obj['ELECTRIC'] = obj['PLANT'] = "ALL";
     return obj;
 };
 

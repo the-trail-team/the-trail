@@ -3304,7 +3304,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "FIRE STATE",
-    "note": "<Category: Bypass Death Removal>\n<Category Resist: Ice>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"FIRE\"));\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n<Category Resist: Ice, Plant, Metal>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"FIRE\"));\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -3328,7 +3328,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "ICE STATE",
-    "note": "<Category: Bypass Death Removal>\n<Category Resist: Water, Earth>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"ICE\"));\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n<Category Resist: Water, Earth, Plant>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"ICE\"));\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -3424,7 +3424,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "WIND STATE",
-    "note": "<Category: Bypass Death Removal>\n<Category Resist: Fire, Earth>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"WIND\"));\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n<Category Resist: Fire, Earth, Plant>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"WIND\"));\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5217,6 +5217,16 @@
         "code": 11,
         "dataId": 7,
         "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 13,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 14,
+        "value": 0.5
       }
     ],
     "iconIndex": 0,
@@ -5256,6 +5266,11 @@
       {
         "code": 11,
         "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 13,
         "value": 0.5
       }
     ],
@@ -5297,6 +5312,11 @@
         "code": 11,
         "dataId": 7,
         "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 14,
+        "value": 2
       }
     ],
     "iconIndex": 0,
@@ -5342,6 +5362,11 @@
         "code": 11,
         "dataId": 6,
         "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 13,
+        "value": 2
       }
     ],
     "iconIndex": 0,
@@ -5392,6 +5417,11 @@
         "code": 11,
         "dataId": 7,
         "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 13,
+        "value": 2
       }
     ],
     "iconIndex": 0,
@@ -5431,6 +5461,11 @@
       {
         "code": 11,
         "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 13,
         "value": 0.5
       }
     ],
@@ -5653,7 +5688,7 @@
     "minTurns": 5,
     "motion": 0,
     "name": "Vine Whipped",
-    "note": "<Category: Earth>\n<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nDecreases DEF and MDF by 20%.\n</Help Description>",
+    "note": "<Category: Plant>\n<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nDecreases DEF and MDF by 20%.\n</Help Description>",
     "overlay": 0,
     "priority": 49,
     "removeAtBattleEnd": false,
@@ -5747,6 +5782,149 @@
     "motion": 0,
     "name": "[P] Finisher I",
     "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar boost = 0.1;\nvar multiplier = boost * (1 - target.hpRate()) + 1;\nvalue = Math.ceil(value * multiplier);\n</Custom Confirm Effect>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 169,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "PLANT STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category Resist: Water, Earth>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"PLANT\"));\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 170,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "METAL STATE",
+    "note": "<Category: Bypass Death Removal>\n<Category Resist: Electric, Plant>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"METAL\"));\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 171,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 14,
+        "value": 2
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "PLANT ELEMENT",
+    "note": "<Element Absorb: 13>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"PLANT\");\n</Custom Passive Condition>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 172,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 13,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "METAL ELEMENT",
+    "note": "<Element Absorb: 14>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"METAL\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,

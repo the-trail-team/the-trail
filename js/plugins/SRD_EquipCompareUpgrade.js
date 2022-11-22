@@ -1943,7 +1943,7 @@ if(Imported.YEP_EquipCore) {
 var mhpId = 6;
 var intId = 8;
 var elementAtk1 = 81;
-var elementAtk2 = 92;
+var elementAtk2 = 94;
 var specialIds = 98;
 
 Window_StatCompare.prototype.showStat = function(stat, diffvalue) {

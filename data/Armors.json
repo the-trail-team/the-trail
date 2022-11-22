@@ -2519,7 +2519,7 @@
   {
     "id": 103,
     "atypeId": 1,
-    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the eight elements by 10%.",
+    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the ten elements by 10%.",
     "etypeId": 8,
     "traits": [
       {
@@ -3624,6 +3624,11 @@
       {
         "code": 11,
         "dataId": 6,
+        "value": 0.9
+      },
+      {
+        "code": 11,
+        "dataId": 13,
         "value": 0.9
       }
     ],

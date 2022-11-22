@@ -4317,7 +4317,7 @@
         "code": 356,
         "indent": 0,
         "parameters": [
-          "AddCommonEventMenu 23, 24, 49, 25, 26"
+          "AddCommonEventMenu 23, 24, 49, 25"
         ]
       },
       {
@@ -4540,14 +4540,7 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "it is strong against it, it will"
-        ]
-      },
-      {
-        "code": 408,
-        "indent": 0,
-        "parameters": [
-          "do half damage."
+          "it is strong against it, it will do half damage."
         ]
       },
       {
@@ -4561,7 +4554,7 @@
         "code": 408,
         "indent": 0,
         "parameters": [
-          "Light and Dark are an exception."
+          "Light and dark are an exception."
         ]
       },
       {
@@ -4797,7 +4790,7 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "<Icon: 234>"
+          "<Icon: 112>"
         ]
       },
       {
@@ -4818,7 +4811,7 @@
         "code": 408,
         "indent": 0,
         "parameters": [
-          "Additional Elemental Notes: Important Reminders"
+          "Elemental Absorption: Don't Heal Your Enemy!"
         ]
       },
       {
@@ -4839,35 +4832,35 @@
         "code": 408,
         "indent": 0,
         "parameters": [
-          "ADDITIONAL ELEMENTAL NOTES"
+          "ELEMENTAL ABSORPTION"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "‎"
+          ""
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "Here are a few extra notes, as well as reminders of"
+          "When an elemental enemy is hit with an attack that"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "previously stated important concepts. Refer to this"
+          "matches its element, the attack will be absorbed,"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "if you need a quick refresher on something important."
+          "healing it."
         ]
       },
       {
@@ -4881,46 +4874,32 @@
         "code": 408,
         "indent": 0,
         "parameters": [
-          "- Fire, Ice, Electric, Water, Earth, and Wind are"
+          "Elemental states will not cause same-element"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "considered to be the \"natural\" elements. Light and"
+          "attacks to be absorbed."
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "Dark, however, are considered the \"pure\" elements,"
+          ""
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "which is why they are seperated from the other six"
+          "Light and Dark do not absorb themselves."
         ]
       },
       {
         "code": 408,
-        "indent": 0,
-        "parameters": [
-          "elements on the chart. This is also why they are"
-        ]
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
-          "both strong against each other."
-        ]
-      },
-      {
-        "code": 108,
         "indent": 0,
         "parameters": [
           "</Subtext>"
@@ -4939,7 +4918,7 @@
         "parameters": []
       }
     ],
-    "name": "Additional Notes 1",
+    "name": "Elemental Absorption",
     "switchId": 1,
     "trigger": 0
   },
@@ -11637,21 +11616,14 @@
         "code": 408,
         "indent": 0,
         "parameters": [
-          "Additionally, element attacks will remove elemental status effects"
+          "Additionally, element attacks will remove elemental"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "they are strong against. The exception to this is Fire, which"
-        ]
-      },
-      {
-        "code": 408,
-        "indent": 0,
-        "parameters": [
-          "will remove Water status effects."
+          "status effects they are strong against."
         ]
       },
       {
@@ -11669,14 +11641,14 @@
         ]
       },
       {
-        "code": 108,
+        "code": 408,
         "indent": 0,
         "parameters": [
           "status effect will make the affected battler immune to afflication"
         ]
       },
       {
-        "code": 408,
+        "code": 108,
         "indent": 0,
         "parameters": [
           "of elemental status effects that the currently applied one is"
@@ -11686,14 +11658,14 @@
         "code": 408,
         "indent": 0,
         "parameters": [
-          "resistant to. For example, being turned to Fire would make a"
+          "resistant to. For example, being turned to fire would make a"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "battler immune to Ice status effects."
+          "battler immune to ice status effects."
         ]
       },
       {
