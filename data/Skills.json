@@ -616,7 +616,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Jump behind your enemy and land a devastating attack. This attack is always a\ncritical hit. Reduces ATK by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
+    "description": "Jump behind your enemy and land a devastating attack. This attack is always a\ncritical hit and never misses. Reduces ATK by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
@@ -743,7 +743,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "An incredibly powerful attack that damages an enemy 5 times.\nExtremely difficult to pull off. \\c[27]\\bp0[0]\\bp=1[1]\\bp=2[2]\\bp=3[3]\\bp=4[4]\\bp=5[5]\\c[0] critical hit\\bp0[s are]\\bp=1[ is]\\bp=2[s are]\\bp=3[s are]\\bp=4[s are]\\bp=5[s are] guaranteed.",
+    "description": "An incredibly powerful attack that damages an enemy 5 times. Extremely\ndifficult to pull off. \\c[27]\\bp0[0]\\bp=1[1]\\bp=2[2]\\bp=3[3]\\bp=4[4]\\bp=5[5]\\c[0] critical and 100% accurate hit\\bp0[s are]\\bp=1[ is]\\bp=2[s are]\\bp=3[s are]\\bp=4[s are]\\bp=5[s are] guaranteed.",
     "effects": [
       {
         "code": 21,
@@ -2773,7 +2773,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Afflicts the target with \\it[67]. Battlers who attack the target will\ngain MP equal to 1% of damage dealt, capped at 5% of MMP. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
+    "description": "Afflicts the target with \\it[67]. Battlers who attack the target will gain\nMP equal to 1% of damage dealt, capped at 5% of MMP. Can't miss. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
     "effects": [
       {
         "code": 21,
