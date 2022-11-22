@@ -1126,6 +1126,7 @@ Window_Base.prototype.drawItemName = function(item, x, y, width) {
 Window_Base.prototype.drawSkillMasteryGauge = function(skill, x, y, width) {
   if (skill.masteryMaxLevel <= 0) return;
   if ($gameParty.inBattle()) return;
+  if (this._actor.isMaxedSkillMasteryLevel(skill)) return;
   x += Window_Base._iconWidth + 4;
   width -= Window_Base._iconWidth + 4;
   var color1 = this.textColor(Yanfly.Param.SMLGauge1);
