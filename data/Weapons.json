@@ -1627,13 +1627,18 @@
   {
     "id": 49,
     "animationId": 122,
-    "description": "Take your damage to the next level. The strength and\nmagic-conduciveness of tellurium is nearly unparalleled.",
+    "description": "Take your damage to the next level. The strength, luster, and\nelemental conduciveness of tellurium is nearly unparalleled.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.1
       }
     ],
     "iconIndex": 421,
@@ -1832,6 +1837,11 @@
       },
       {
         "code": 21,
+        "dataId": 1,
+        "value": 1.1
+      },
+      {
+        "code": 25,
         "dataId": 1,
         "value": 1.1
       }
