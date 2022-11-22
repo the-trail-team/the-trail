@@ -2596,7 +2596,7 @@
     "name": "Hold the Line II",
     "note": "<Category: buff>\n\n<Cannot Select: Skill 84>\n\n<Help Description>\nDecreases PDR and MDR by 20%.\n</Help Description>",
     "overlay": 0,
-    "priority": 21,
+    "priority": 20,
     "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -5681,6 +5681,51 @@
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 167,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.7
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.7
+      },
+      {
+        "code": 14,
+        "dataId": 80,
+        "value": 1
+      },
+      {
+        "code": 14,
+        "dataId": 81,
+        "value": 1
+      }
+    ],
+    "iconIndex": 777,
+    "maxTurns": 10,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 8,
+    "motion": 0,
+    "name": "Hold the Line III",
+    "note": "<Category: buff>\n\n<Cannot Select: Skill 84>\n<Cannot Select: Skill 85>\n\n<Help Description>\nDecreases PDR and MDR by 30%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 20,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": false,

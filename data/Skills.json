@@ -3321,7 +3321,7 @@
   },
   {
     "id": 96,
-    "animationId": 0,
+    "animationId": 53,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -3329,20 +3329,27 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Form a practically impenetrable wall with your team,\nreducing all incoming damage by 30% for \\c[27]\\bpturn[8]\\c[0] to \\c[27]\\bpturn[10]\\c[0] turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 167,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
-    "message1": "",
+    "iconIndex": 13,
+    "message1": " holds the line!",
     "message2": "",
-    "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "mpCost": 45,
+    "name": "Hold the Line III",
+    "note": "<Boost Turns>\n\n<action copy: skill:84>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 1,
+    "scope": 8,
     "speed": 0,
     "stypeId": 1,
     "successRate": 100,
