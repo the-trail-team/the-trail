@@ -2519,13 +2519,13 @@
   {
     "id": 103,
     "atypeId": 1,
-    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the eight elements by 15%.",
+    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the eight elements by 10%.",
     "etypeId": 8,
     "traits": [
       {
         "code": 25,
         "dataId": 1,
-        "value": 1.15
+        "value": 1.1
       }
     ],
     "iconIndex": 182,
@@ -5040,6 +5040,33 @@
     "iconIndex": 774,
     "name": "Fiery Harp",
     "note": "<Upgrade Slots: 3>\n<Passive State: 166>\n\n<Synthesis Ingredients>\nConjurer's Harp\nFiery Blood: 20\nEctoplasm: 10\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Harp>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 2000
+  },
+  {
+    "id": 190,
+    "atypeId": 1,
+    "description": "Increases outgoing elemental damage by a\nwhopping 20%. Tellurium is powerful!",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 775,
+    "name": "Fiery Lace",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 20\nEctoplasm: 10\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
     "params": [
       0,
       0,
