@@ -833,13 +833,15 @@ Game_System.prototype.canSynthesize = function(item, times) {
       var ingredient = DataManager.getSynthesisIngredient(item, i);
       var quantity = DataManager.getSynthesisQuantity(item, i);
       // if (quantity * times > $gameParty.numItems(ingredient)) return false;
-      if (quantity * times > $gameParty.numNotUpgradedIndependentItems(ingredient)) return false;
+      if (ingredient.synthIngredients.length > 0) {
+        if (!this.canSynthesize(ingredient, quantity * times) && $gameParty.numNotUpgradedIndependentItems(ingredient) < quantity * times) return false;
+      } else if (quantity * times > $gameParty.numNotUpgradedIndependentItems(ingredient)) return false;
     }
     return true;
 };
 
 Game_System.prototype.maxSynthesize = function(item) {
-//    var maximum = $gameParty.maxItems(item) - $gameParty.numItems(item);
+    // var maximum = $gameParty.maxItems(item) - $gameParty.numItems(item);
     var maximum = $gameParty.maxItems(item) - $gameParty.numNotUpgradedIndependentItems(item);
     if (item.synthCost > 0) {
       maximum = Math.min(maximum, $gameParty.gold() / item.synthCost);
@@ -848,7 +850,7 @@ Game_System.prototype.maxSynthesize = function(item) {
       var ingredient = DataManager.getSynthesisIngredient(item, i);
       var quantity = DataManager.getSynthesisQuantity(item, i);
       // maximum = Math.min(maximum, $gameParty.numItems(ingredient) / quantity);
-      maximum = Math.min(maximum, $gameParty.numNotUpgradedIndependentItems(ingredient) / quantity);
+      maximum = Math.min(maximum, ($gameParty.numNotUpgradedIndependentItems(ingredient) + ((ingredient.synthIngredients.length > 0 && $gameSystem.canSynthesize(ingredient)) ? this.maxSynthesize(ingredient) : 0)) / quantity);
     }
     return parseInt(Math.max(maximum, 0));
 };
@@ -1258,6 +1260,8 @@ Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width,
       var quantity = DataManager.getSynthesisQuantity(this._item, index);
       if (owned >= quantity) {
         this.changeTextColor(this.powerUpColor());
+      } else if (item.synthIngredients.length > 0 && $gameSystem.canSynthesize(item) && $gameSystem.maxSynthesize(item) >= quantity) {
+        this.changeTextColor(this.textColor(14));
       } else {
         this.changeTextColor(this.powerDownColor());
       }
@@ -1302,23 +1306,36 @@ Window_SynthesisIngredients.prototype.drawItemQuantity = function(index, wy) {
 Window_SynthesisIngredients.prototype.drawItemQuantity2 = function(index, wy) {
     var ingredient = DataManager.getSynthesisIngredient(this._item, index);
     var quantity = DataManager.getSynthesisQuantity(this._item, index);
-    // var owned = $gameParty.numItems(ingredient);
     var owned = $gameParty.numNotUpgradedIndependentItems(ingredient);
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     this.changeTextColor(this.normalColor());
     var num = '/' + Yanfly.Util.toGroup(quantity);
-//    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(quantity));
     this.drawText(num, 0, wy, ww, 'right');
     ww -= this.textWidth(num);
-    // if ($gameParty.numItems(ingredient) >= quantity) {
-    if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
-      this.changeTextColor(this.powerUpColor());
+    if (ingredient.synthIngredients.length > 0 && $gameSystem.canSynthesize(ingredient)) {
+      if (owned + $gameSystem.maxSynthesize(ingredient) >= quantity) this.changeTextColor(this.powerUpColor());
+      else this.changeTextColor(this.powerDownColor());
+      var text = String(Yanfly.Util.toGroup(owned + $gameSystem.maxSynthesize(ingredient)));
+      this.drawText(text, 0, wy, ww, 'right');
+      ww -= this.textWidth(text);
+      this.changeTextColor(this.textColor(8));
+      this.contents.fontSize = 14;
+      text = ")   ";
+      this.drawText(text, 0, wy, ww, 'right');
+      ww -= this.textWidth(text);
+      this.changeTextColor(this.textColor(14));
+      this.drawText($gameSystem.maxSynthesize(ingredient), 0, wy, ww, 'right');
+      ww -= this.textWidth($gameSystem.maxSynthesize(ingredient));
+      this.changeTextColor(this.textColor(8));
+      this.drawText("(" + Yanfly.Util.toGroup(owned) + "+", 0, wy, ww, 'right');
+      this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     } else {
-      this.changeTextColor(this.powerDownColor());
+      if (owned >= quantity) this.changeTextColor(this.powerUpColor());
+      else this.changeTextColor(this.powerDownColor());
+      var text = String(Yanfly.Util.toGroup(owned));
+      this.drawText(text, 0, wy, ww, 'right');
     }
-    var text = String(Yanfly.Util.toGroup(owned));
-    this.drawText(text, 0, wy, ww, 'right');
 }
 
 Window_SynthesisIngredients.prototype.drawItemSynthCost = function(item, wy) {
@@ -1460,7 +1477,7 @@ Window_SynthesisNumber.prototype.drawNumber = function() {
     var width = this.cursorWidth() - this.textPadding();
     this.resetTextColor();
     number = this._number;
-    if (SceneManager._scene._listWindow.item()) if (SceneManager._scene._listWindow.item().id === 229) number *= 3; // fiery powder
+    if (SceneManager._scene._listWindow.item()) if (SceneManager._scene._listWindow.item().id === 229) number *= 3; // Fiery Powder
     this.drawText(Yanfly.Util.toGroup(number), x, y, width, 'right');
 };
 
@@ -1488,20 +1505,35 @@ Window_SynthesisNumber.prototype.drawItemQuantity = function(index, wy) {
     var ingredient = DataManager.getSynthesisIngredient(this._item, index);
     var quantity = DataManager.getSynthesisQuantity(this._item, index);
     quantity *= this.number();
+    var owned = $gameParty.numNotUpgradedIndependentItems(ingredient);
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
-    this.changeTextColor(this.normalColor());
-    // var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
-    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(ingredient));
-    this.drawText(num, 0, wy, ww, 'right');
-    ww -= this.textWidth(num);
-    // if ($gameParty.numItems(ingredient) >= quantity) {
-      if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
-      this.changeTextColor(this.powerUpColor());
+    if (ingredient.synthIngredients.length > 0 && $gameSystem.canSynthesize(ingredient)) {
+      this.changeTextColor(this.textColor(8));
+      this.contents.fontSize = 14;
+      this.drawText(")", 0, wy, ww, 'right');
+      ww -= this.textWidth(")");
+      this.changeTextColor(this.textColor(14));
+      text = $gameSystem.maxSynthesize(ingredient);
+      this.drawText(text, 0, wy, ww, 'right');
+      ww -= this.textWidth(text);
+      this.changeTextColor(this.textColor(8));
+      text = "   (" + Yanfly.Util.toGroup(owned) + "+";
+      this.drawText(text, 0, wy, ww, 'right');
+      ww -= this.textWidth(text);
+      this.contents.fontSize = Yanfly.Param.ISQuantitySize;
+      if (owned + $gameSystem.maxSynthesize(ingredient) >= quantity) this.changeTextColor(this.powerUpColor());
+      else this.changeTextColor(this.powerDownColor());
+      text = String(Yanfly.Util.toGroup(owned + $gameSystem.maxSynthesize(ingredient)));
     } else {
-      this.changeTextColor(this.powerDownColor());
+      if (owned >= quantity) this.changeTextColor(this.powerUpColor());
+      else this.changeTextColor(this.powerDownColor());
+      text = String(Yanfly.Util.toGroup(owned));
     }
-    var text = String(Yanfly.Util.toGroup(quantity));
+    this.drawText(text, 0, wy, ww, 'right');
+    ww -= this.textWidth(text);
+    this.changeTextColor(this.normalColor());
+    text = String(Yanfly.Util.toGroup(quantity)) + '/';
     this.drawText(text, 0, wy, ww, 'right');
 }
 
@@ -1814,7 +1846,7 @@ Scene_Synthesis.prototype.onListOk = function() {
 Scene_Synthesis.prototype.onNumberOk = function() {
     this.playSynthesisSound();
     var number = this._numberWindow.number();
-    this.doBuy(number);
+    this.doBuy(this._item, number);
     this.customSynthEffect(number);
     this.endNumberInput();
     this.refreshWindows();
@@ -1830,28 +1862,31 @@ Scene_Synthesis.prototype.playSynthesisSound = function() {
     AudioManager.playSe(se);
 };
 
-Scene_Synthesis.prototype.doBuy = function(number) {
-    var price = number * this._item.synthCost;
+Scene_Synthesis.prototype.doBuy = function(item, number) {
+    var price = number * item.synthCost;
     $gameParty.loseGold(price);
-    for (var i = 0; i < this._item.synthIngredients.length; ++i) {
-      var ingredient = DataManager.getSynthesisIngredient(this._item, i);
-      var quantity = DataManager.getSynthesisQuantity(this._item, i);
+    for (var i = 0; i < item.synthIngredients.length; ++i) {
+      var ingredient = DataManager.getSynthesisIngredient(item, i);
+      var quantity = DataManager.getSynthesisQuantity(item, i);
       quantity *= number;
       if (!ingredient) continue;
       // $gameParty.loseItem(ingredient, quantity, false);
       // $gameParty.gainIndependentItem(ingredient, -quantity, false);
-	  if (DataManager.isIndependent(ingredient)) {
-	    for (var j = 0; j < quantity; ++j) {
-	      var nuItem = $gameParty.getNotUpgradedIndependentItem(ingredient);
-		  $gameParty.gainIndependentItem(nuItem, -1, false);
-	    }
-	  } else {
-      $gameParty.loseItem(ingredient, quantity, false);
+      while ($gameParty.numNotUpgradedIndependentItems(ingredient) < quantity) {
+        this.doBuy(ingredient, 1);
+      }
+      if (DataManager.isIndependent(ingredient)) {
+        for (var j = 0; j < quantity; ++j) {
+          var nuItem = $gameParty.getNotUpgradedIndependentItem(ingredient);
+          $gameParty.gainIndependentItem(nuItem, -1, false);
+        }
+      } else {
+        $gameParty.loseItem(ingredient, quantity, false);
+      }
     }
-    }
-    if (this._listWindow.item()) if (this._listWindow.item().id === 229) number *= 3; // fiery powder
-    $gameParty.gainItem(this._item, number);
-    $gameSystem.addSynth(this._item);
+    if (this._listWindow.item()) if (this._listWindow.item().id === 229) number *= 3; // Fiery Powder
+    $gameParty.gainItem(item, number);
+    $gameSystem.addSynth(item);
 };
 
 Scene_Synthesis.prototype.customSynthEffect = function(number) {
