@@ -2498,12 +2498,18 @@
   {
     "id": 102,
     "atypeId": 1,
-    "description": "Has a 20% chance to double Bits\nreceived at the end of any battle.",
+    "description": "Increases Bits received at the end of battle by\n10%. Stacks if equipped on multiple party members.",
     "etypeId": 8,
-    "traits": [],
+    "traits": [
+      {
+        "code": 64,
+        "dataId": 4,
+        "value": 1.1
+      }
+    ],
     "iconIndex": 199,
     "name": "Magic Coin",
-    "note": "<Upgrade Slots: 2>\n<Passive State: 71>",
+    "note": "<Upgrade Slots: 1>",
     "params": [
       0,
       0,

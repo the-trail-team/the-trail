@@ -2755,6 +2755,14 @@ Game_BattlerBase.prototype.partyAbility = function(abilityId) {
     });
 };
 
+Game_BattlerBase.prototype.partyStat = function(abilityId) {
+    let value = 1;
+    this.traits(Game_BattlerBase.TRAIT_PARTY_ABILITY).forEach(t => {
+        if (t.dataId == abilityId) value *= t.value;
+    });
+    return value;
+};
+
 Game_BattlerBase.prototype.isAutoBattle = function() {
     return this.specialFlag(Game_BattlerBase.FLAG_ID_AUTO_BATTLE);
 };
@@ -5334,6 +5342,12 @@ Game_Party.prototype.partyAbility = function(abilityId) {
     });
 };
 
+Game_Party.prototype.partyStat = function(abilityId) {
+    let stat = 1;
+    this.battleMembers().forEach(a => stat *= a.partyStat(abilityId));
+    return stat;
+};
+
 Game_Party.prototype.hasEncounterHalf = function() {
     return this.partyAbility(Game_Party.ABILITY_ENCOUNTER_HALF);
 };
@@ -5352,6 +5366,10 @@ Game_Party.prototype.hasRaisePreemptive = function() {
 
 Game_Party.prototype.hasGoldDouble = function() {
     return this.partyAbility(Game_Party.ABILITY_GOLD_DOUBLE);
+};
+
+Game_Party.prototype.goldRate = function() {
+    return this.partyStat(Game_Party.ABILITY_GOLD_DOUBLE);
 };
 
 Game_Party.prototype.hasDropItemDouble = function() {
@@ -5673,7 +5691,7 @@ Game_Troop.prototype.goldTotal = function() {
 };
 
 Game_Troop.prototype.goldRate = function() {
-    return $gameParty.hasGoldDouble() ? 2 : 1;
+    return $gameParty.goldRate();
 };
 
 Game_Troop.prototype.makeDropItems = function() {
