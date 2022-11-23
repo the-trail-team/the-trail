@@ -1235,6 +1235,12 @@ Game_Party.prototype.checkItemIsEquipped = function(item) {
     return false;
 };
 
+Game_Party.prototype.checkIndependentItemIsEquipped = function(item) {
+    return this.members().filter(n => n).some(a => {
+      return a.equips().filter(n => n).some(e => e.baseItemId == item.id && e.groupType == item.groupType);
+    });
+};
+
 Yanfly.Item.Game_Party_items = Game_Party.prototype.items;
 Game_Party.prototype.items = function() {
     var results = Yanfly.Item.Game_Party_items.call(this);

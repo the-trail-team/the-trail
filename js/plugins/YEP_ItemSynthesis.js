@@ -1319,6 +1319,7 @@ Window_SynthesisIngredients.prototype.drawItemQuantity2 = function(index, wy) {
       var text = String(Yanfly.Util.toGroup(owned + $gameSystem.maxSynthesize(ingredient)));
       this.drawText(text, 0, wy, ww, 'right');
       ww -= this.textWidth(text);
+      if (!(owned + $gameSystem.maxSynthesize(ingredient) >= quantity)) ww -= this.drawIndependentItem(ingredient, wy, ww);
       this.changeTextColor(this.textColor(8));
       this.contents.fontSize = 14;
       text = ")   ";
@@ -1335,8 +1336,22 @@ Window_SynthesisIngredients.prototype.drawItemQuantity2 = function(index, wy) {
       else this.changeTextColor(this.powerDownColor());
       var text = String(Yanfly.Util.toGroup(owned));
       this.drawText(text, 0, wy, ww, 'right');
+      ww -= this.textWidth(text);
+      if (!(owned >= quantity)) this.drawIndependentItem(ingredient, wy, ww);
     }
 }
+
+Window_SynthesisIngredients.prototype.drawIndependentItem = function(item, wy, ww) {
+    if (!DataManager.isIndependent(item)) return;
+    this.contents.fontSize = 14;
+    this.changeTextColor(this.powerUpColor());
+    if ($gameParty.numIndependentItems(item) > 0) text = "Cleansing required   ";
+    else if ($gameParty.checkIndependentItemIsEquipped(item)) text = "Equipped   ";
+    else text = "";
+    this.drawText(text, 0, wy, ww, 'right');
+    this.contents.fontSize = Yanfly.Param.ISQuantitySize;
+    return this.textWidth(text);
+};
 
 Window_SynthesisIngredients.prototype.drawItemSynthCost = function(item, wy) {
     if (item.synthCost <= 0) return;
