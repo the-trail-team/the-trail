@@ -538,6 +538,7 @@ DataManager.processISNotetags1 = function(group, type) {
   var note9 = /<(?:MASK NAME):[ ](.*)>/i;
   var note10a = /<(?:CUSTOM SYNTHESIS EFFECT)>/i;
   var note10b = /<\/(?:CUSTOM SYNTHESIS EFFECT)>/i;
+  var note11 = /<Craft Amount: (\d+)(.*)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -556,6 +557,7 @@ DataManager.processISNotetags1 = function(group, type) {
     obj.synthSePan = Yanfly.Param.ISDefPan;
     obj.customSynthEval = '';
     var evalMode = 'none';
+    obj.craftAmount = 1;
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
@@ -602,6 +604,8 @@ DataManager.processISNotetags1 = function(group, type) {
         evalMode = 'none';
       } else if (evalMode === 'custom synthesis effect') {
         obj.customSynthEval += line + '\n';
+      } else if (line.match(note11)) {
+        obj.craftAmount = parseInt(RegExp.$1);
       }
     }
     this.processRecipeCounts(obj);
@@ -1492,7 +1496,7 @@ Window_SynthesisNumber.prototype.drawNumber = function() {
     var width = this.cursorWidth() - this.textPadding();
     this.resetTextColor();
     number = this._number;
-    if (SceneManager._scene._listWindow.item()) if (SceneManager._scene._listWindow.item().id === 229) number *= 3; // Fiery Powder
+    if (SceneManager._scene._listWindow.item()) number *= SceneManager._scene._listWindow.item().craftAmount;
     this.drawText(Yanfly.Util.toGroup(number), x, y, width, 'right');
 };
 
@@ -1899,7 +1903,7 @@ Scene_Synthesis.prototype.doBuy = function(item, number) {
         $gameParty.loseItem(ingredient, quantity, false);
       }
     }
-    if (this._listWindow.item()) if (this._listWindow.item().id === 229) number *= 3; // Fiery Powder
+    number *= item.craftAmount;
     $gameParty.gainItem(item, number);
     $gameSystem.addSynth(item);
 };
