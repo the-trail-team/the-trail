@@ -538,7 +538,6 @@ DataManager.processISNotetags1 = function(group, type) {
   var note9 = /<(?:MASK NAME):[ ](.*)>/i;
   var note10a = /<(?:CUSTOM SYNTHESIS EFFECT)>/i;
   var note10b = /<\/(?:CUSTOM SYNTHESIS EFFECT)>/i;
-  var note11 = /<Craft Category: (.*)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -557,7 +556,6 @@ DataManager.processISNotetags1 = function(group, type) {
     obj.synthSePan = Yanfly.Param.ISDefPan;
     obj.customSynthEval = '';
     var evalMode = 'none';
-    obj.craftCategory = [];
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
@@ -604,9 +602,6 @@ DataManager.processISNotetags1 = function(group, type) {
         evalMode = 'none';
       } else if (evalMode === 'custom synthesis effect') {
         obj.customSynthEval += line + '\n';
-      } else if (line.match(note11)) {
-        var array = String(RegExp.$1).toUpperCase().split(", ");
-        obj.craftCategory = obj.craftCategory.concat(array);
       }
     }
     this.processRecipeCounts(obj);
@@ -951,19 +946,6 @@ Window_SynthesisCommand.prototype.addItemCommands = function() {
     this.addCommand(Yanfly.Param.ISItemCmd, 'item', Scene_Synthesis.availableItems().length > 0);
     this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', Scene_Synthesis.availableWeapons().length > 0);
     this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors(0).length > 0);
-    this.addCommand("Craft Tool", 'tool', Scene_Synthesis.availableCategory('tool').length > 0);
-    this.addCommand("Craft Material", 'material', Scene_Synthesis.availableCategory('material').length > 0);
-    if ($gameParty.hasItem($dataItems[59])) { // Telluria Castle Town forge
-      this.addCommand("Craft Telluria Field Equipment", 'field', Scene_Synthesis.availableCategory('field').length > 0);
-      this.addCommand("Craft Tellurium Equipment", 'tellurium', Scene_Synthesis.availableCategory('tellurium').length > 0);
-    }
-    this.addCommand("Craft Misc. Item", 'misc', Scene_Synthesis.availableCategory('misc').length > 0);
-    this.addCommand("Craft Headgear", 'headgear', Scene_Synthesis.availableArmors(3).length > 0);
-    this.addCommand("Craft Bodygear", 'bodygear', Scene_Synthesis.availableArmors(4).length > 0);
-    this.addCommand("Craft Footgear", 'footgear', Scene_Synthesis.availableArmors(5).length > 0);
-    this.addCommand("Craft Offhand", 'offhand', Scene_Synthesis.availableArmors(2).length > 0);
-    this.addCommand("Craft Accessory", 'accessory', Scene_Synthesis.availableArmors(6).length > 0);
-    this.addCommand("Craft Magic Equip", 'magicequip', Scene_Synthesis.availableArmors(8).length > 0);
 };
 
 Window_SynthesisCommand.prototype.addCustomCommand = function() {
@@ -1154,28 +1136,10 @@ Window_SynthesisList.prototype.makeItemList = function() {
         data = Scene_Synthesis.availableWeapons();
         break;
       case 'armor':
-        data = Scene_Synthesis.availableArmors(0);
-        break;
-      case 'headgear':
-        data = Scene_Synthesis.availableArmors(3);
-        break;
-      case 'bodygear':
-        data = Scene_Synthesis.availableArmors(4);
-        break;
-      case 'footgear':
-        data = Scene_Synthesis.availableArmors(5);
-        break;
-      case 'offhand':
-        data = Scene_Synthesis.availableArmors(2);
-        break;
-      case 'accessory':
-        data = Scene_Synthesis.availableArmors(6);
-        break;
-      case 'magicequip':
-        data = Scene_Synthesis.availableArmors(8);
+        data = Scene_Synthesis.availableArmors();
         break;
       default:
-        data = Scene_Synthesis.availableCategory(this._commandWindow.currentSymbol());
+        data = [];
         break;
     }
     this._data = data;
@@ -1748,23 +1712,7 @@ Scene_Synthesis.availableWeapons = function() {
 };
 
 Scene_Synthesis.availableArmors = function(type) {
-    let list = this.getAvailableItems(2);
-    if (type != 0) {
-      let newList = [];
-      list.forEach(a => {
-        if (a.etypeId == type) newList.push(a);
-      });
-      list = newList;
-    }
-    return list;
-};
-
-Scene_Synthesis.availableCategory = function(category) {
-    let list = [];
-    this.getAvailableItems(0).concat(this.getAvailableItems(1).concat(this.getAvailableItems(2))).forEach(i => {
-      if (i.craftCategory.contains(category.toUpperCase())) list.push(i);
-    });
-    return list;
+    return this.getAvailableItems(2);
 };
 
 Scene_Synthesis.prototype.refreshWindows = function() {
