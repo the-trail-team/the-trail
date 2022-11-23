@@ -5342,9 +5342,9 @@ Game_Party.prototype.partyAbility = function(abilityId) {
     });
 };
 
-Game_Party.prototype.partyStat = function(abilityId) {
+Game_Party.prototype.partyStat = function(abilityId, actorId) {
     let stat = 1;
-    this.battleMembers().forEach(a => stat *= a.partyStat(abilityId));
+    this.battleMembers().filter(a => a.actorId() != actorId).forEach(a => stat *= a.partyStat(abilityId));
     return stat;
 };
 
@@ -5369,7 +5369,7 @@ Game_Party.prototype.hasGoldDouble = function() {
 };
 
 Game_Party.prototype.goldRate = function() {
-    return this.partyStat(Game_Party.ABILITY_GOLD_DOUBLE);
+    return this.partyStat(Game_Party.ABILITY_GOLD_DOUBLE, 0);
 };
 
 Game_Party.prototype.hasDropItemDouble = function() {
