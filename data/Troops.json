@@ -10308,5 +10308,49 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 91,
+    "members": [
+      {
+        "enemyId": 72,
+        "x": 281,
+        "y": 340,
+        "hidden": false
+      },
+      {
+        "enemyId": 72,
+        "x": 364,
+        "y": 223,
+        "hidden": false
+      }
+    ],
+    "name": "Parasite x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
