@@ -858,6 +858,10 @@ ImageManager.loadBust = function(filename, hue) {
     return this.loadBitmap('img/pictures/busts/', filename, hue, true);
 };
 
+ImageManager.loadTitleChar = function(filename, hue) {
+    return this.loadBitmap('img/pictures/title/', filename, hue, true);
+};
+
 ImageManager.loadSvActor = function(filename, hue) {
     return this.loadBitmap('img/sv_actors/', filename, hue, false);
 };

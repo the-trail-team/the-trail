@@ -108,13 +108,11 @@ Scene_Title.prototype.initialize = function() {
 // * Load Images
 //==============================
 Scene_Title.prototype.loadImages = function() {
-	this._back_img = [ImageManager.loadTitle1("Background_1"),
-	                   ImageManager.loadTitle1("Background_2"),
-					  ];
+	this._back_img = ImageManager.loadParallax("Mountains5");
 	// this._flower_img = ImageManager.loadTitle1("Flower");
 	this._char_img = [];
 	for (var i = 1; i < this._char_number ; i++) {
-	     this._char_img.push(ImageManager.loadTitle1("Char_" + i));
+	     this._char_img.push(ImageManager.loadTitleChar("Char_" + i));
 	};
 };
 
@@ -144,17 +142,14 @@ Scene_Title.prototype.createHimariSprites = function() {
 Scene_Title.prototype.createHbackground = function() {
 	var width = Graphics.boxWidth * 2;
 	var height = Graphics.boxHeight * 2;
-	this._background = [];
-	for (var i = 0; i < 2 ; i++) {
-		 this._background[i] = new TilingSprite(this._back_img[i]);
-		 this._background[i].move(0,0, width, height);
-	     this._background[i].anchor.x = 0.5;
-		 this._background[i].anchor.y = 0.5;
-		 this._scenarioField.addChild(this._background[i]);
-	}
-	this._background[1].y = Graphics.boxHeight / 2;
-	this._background[1].scale.x = 1.5;
-	this._background[1].scale.y = 1.5;
+	this._background = new TilingSprite(this._back_img);
+	this._background.move(0,0, width, height);
+	this._background.anchor.x = 0.5;
+	this._background.anchor.y = 0.5;
+	this._scenarioField.addChild(this._background);
+	this._background.y = Graphics.boxHeight / 2;
+	this._background.scale.x = 1.5;
+	this._background.scale.y = 1.5;
 };
 
 //==============================
@@ -222,7 +217,7 @@ Scene_Title.prototype.firstRefresh = function() {
 	 for (var i = 0; i < this._char_img.length  ; i++) {	
         this._chars[0].bitmap = this._char_img[i];
 	 };
-	 this._background[1].y = Graphics.boxHeight / 2 + (this._back_img[1].height * 18 / 100);
+	 this._background.y = Graphics.boxHeight / 2 + (this._back_img.height * 18 / 100);
 };
 
 //==============================
@@ -366,9 +361,7 @@ Scene_Title.prototype.update_himawari = function() {
 // * Update Background Effects
 //==============================
 Scene_Title.prototype.update_background_effects = function() {
-	this._background[0].origin.x += 1;
-	this._background[0].origin.y += 1;
-	this._background[1].origin.x += 1;	
+	this._background.origin.x += 1;	
 };
 
 //==============================
