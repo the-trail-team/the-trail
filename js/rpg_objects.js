@@ -279,28 +279,25 @@ Game_System.prototype.saveWalkingBgm2 = function() {
 // Rare enemies
 
 Game_System.prototype.rareEnemyBase = function() {
-    return 25;
+    return 50;
 };
 
 Game_System.prototype.rareEnemyModifier = function() {
     let total = this._rareEnemyTries / this.rareEnemyBase(); 
-    let rng = Math.floor(total);
-    let rollover = total - rng;
+    let rollover = total % 1;
     let modifier = 1;
-    for (i = 0; i < rng; i++) modifier += modifier;
+    for (i = 0; i < Math.floor(total); i++) modifier += modifier;
     modifier += rollover * modifier;
     return Math.min(modifier, this.rareEnemyBase());
 };
 
-Game_System.prototype.rareEnemyChance = function() {
-    let denominator = this.rareEnemyBase() / this.rareEnemyModifier();
-    return 1 / denominator;
+Game_System.prototype.rareEnemyDenominator = function() {
+    return this.rareEnemyBase() / this.rareEnemyModifier();
 };
 
 Game_System.prototype.rareEnemyRoll = function() {
     if (!$gameSwitches.value(23)) return false; // Laeryidyean must be defeated
-    let chance = 1 / this.rareEnemyChance();
-    let roll = Math.random() * chance < 1;
+    let roll = Math.random() * this.rareEnemyDenominator() < 1;
     this._rareEnemyTries++;
     if (roll) this._rareEnemyTries = 0;
     return roll;
