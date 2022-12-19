@@ -632,11 +632,14 @@ DataManager.processEEDNotetags1 = function(group) {
 };
 
 DataManager.createGlobalDrops = function(obj) {
-    // Origin Crystal (1/50,000 drop)
-    var id = 34;
-    var rate = 0.00002;
-    if (obj.name.contains("EX")) rate *= 100; // 100x more likely to drop from EX enemies (1/500 drop)
-    this.createEnemyDrop(obj, id, rate, 2);
+    // Origin Crystal (1/50,000 drop, gets more likely as game progresses)
+    var item = $dataWeapons[34];
+    var arr = [
+      "Eval [0, 1, 2].contains($gameSystem.chapter()): +0.002%",
+      "Eval [3, 4].contains($gameSystem.chapter()): +0.0025%",
+      "Eval [5].contains($gameSystem.chapter()): +0.004%"
+    ];
+    obj.conditionalDropItems.push([item, arr]);
 
     // Seshat's Charm (1/100 drop)
     var id = 160;

@@ -400,8 +400,6 @@ Game_System.prototype.chapter = function() {
     return 0;
 };
 
-// Champion's Talisman
-
 Game_System.prototype.championsTalisman = function() {
     return [
         [0, 0, 0, 0, 0, 0, 0, 0],     // 0
