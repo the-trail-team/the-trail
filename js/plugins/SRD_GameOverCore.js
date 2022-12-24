@@ -297,21 +297,16 @@ BattleManager.processDefeat = function() {
 
 _.BattleManager_replayBgmAndBgs = BattleManager.replayBgmAndBgs;
 BattleManager.replayBgmAndBgs = function() {
-	// if($gameTemp._setUpRetry) {
-	if(true) {
-		if(this._superMapBgm) {
-			AudioManager.replayBgm(this._superMapBgm);
-			this._superMapBgm = null;
-		} else {
-			AudioManager.stopBgm();
-		}
-		if(this._superMapBgs) {
-			AudioManager.replayBgs(this._superMapBgs);
-			this._superMapBgs = null;
-		}
-	} /*else {
-		_.BattleManager_replayBgmAndBgs.apply(this, arguments);
-	}*/
+	if(this._superMapBgm) {
+		AudioManager.replayBgm(this._superMapBgm);
+		this._superMapBgm = null;
+	} else {
+		AudioManager.stopBgm();
+	}
+	if(this._superMapBgs) {
+		AudioManager.replayBgs(this._superMapBgs);
+		this._superMapBgs = null;
+	}
 };
 
 //-----------------------------------------------------------------------------
