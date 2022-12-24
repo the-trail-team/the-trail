@@ -14,9 +14,9 @@ Before beginning to stage files for a commit, run `git commit` inside the termin
 * Sets all scrollX and scrollY values in `MapInfos.json` to 0
 * Sets certain values in `Armors.json` that allow state resistance accessories to work as intended
 * Removes unnecessary data from `Enemies.json`
-* "Prettifies" all .json files (except for `Animation.json` due to its sheer size)
+* "Prettifies" all .json files (except for `Animations.json` due to its sheer size)
 
-Complete your commit after the hook runs.
+After the hook runs, stage files and complete your commit.
 
 ### Hook configuration
 All configurations are edited at the top of the hook.
