@@ -28,6 +28,8 @@ if (date.getMonth() === 11) {
         this.windowskin = ImageManager.loadSystem('Window_Christmas');
     }
 
+    Yanfly.Param.MQWSettings['Window Skin'] = 'Window_Christmas';
+
     // Menu Particles
 
     Moghunter.mpart_oy *= -1;
