@@ -438,7 +438,7 @@ _.customPreloads = SRD.parse(params['Custom Preloads']);
 _.hasPreloaded = false;
 
 _.loadPicture = function(filename, hue) {
-	return ImageManager.loadBitmap('img/SumRndmDde/preload/', filename, hue, false);
+	return ImageManager.loadBitmap('img/title/', filename, hue, false);
 };
 
 _.preloadBackground = function() {
