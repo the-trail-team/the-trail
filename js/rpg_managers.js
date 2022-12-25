@@ -855,11 +855,11 @@ ImageManager.loadPicture = function(filename, hue) {
 };
 
 ImageManager.loadBust = function(filename, hue) {
-    return this.loadBitmap('img/pictures/busts/', filename, hue, true);
+    return this.loadBitmap('img/busts/', filename, hue, true);
 };
 
 ImageManager.loadTitleChar = function(filename, hue) {
-    return this.loadBitmap('img/pictures/title/', filename, hue, true);
+    return this.loadBitmap('img/title/', filename, hue, true);
 };
 
 ImageManager.loadSvActor = function(filename, hue) {
