@@ -192,7 +192,7 @@ switch(_.comPhaseText) {
 }
 
 _.loadImage = function(filename, hue) {
-	return ImageManager.loadBitmap('img/SumRndmDde/gameover/', filename, hue, false);
+	return ImageManager.loadBitmap('img/parallaxes/', filename, hue, false);
 };
 
 _.loadBackgroundImage = function() {
