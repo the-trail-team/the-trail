@@ -22386,7 +22386,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "Date.now() % 20 <= 8"
+                "$gameMap.inTrueTelluriaCastle()"
               ]
             },
             {
@@ -22394,7 +22394,7 @@
               "indent": 1,
               "parameters": [
                 0,
-                78,
+                93,
                 false,
                 false
               ]
@@ -22414,7 +22414,7 @@
               "indent": 1,
               "parameters": [
                 12,
-                "Date.now() % 20 >= 11"
+                "Date.now() % 20 <= 8"
               ]
             },
             {
@@ -22422,7 +22422,7 @@
               "indent": 2,
               "parameters": [
                 0,
-                81,
+                78,
                 false,
                 false
               ]
@@ -22438,14 +22438,52 @@
               "parameters": []
             },
             {
-              "code": 301,
+              "code": 111,
               "indent": 2,
+              "parameters": [
+                12,
+                "Date.now() % 20 >= 11"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 3,
+              "parameters": [
+                0,
+                81,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 3,
               "parameters": [
                 0,
                 84,
                 false,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
             },
             {
               "code": 0,
@@ -22952,7 +22990,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "Date.now() % 2 === 0"
+                "$gameMap.inTrueTelluriaCastle()"
               ]
             },
             {
@@ -22960,7 +22998,7 @@
               "indent": 1,
               "parameters": [
                 0,
-                75,
+                92,
                 false,
                 false
               ]
@@ -22976,14 +23014,52 @@
               "parameters": []
             },
             {
-              "code": 301,
+              "code": 111,
               "indent": 1,
+              "parameters": [
+                12,
+                "Date.now() % 2 === 0"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                75,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 2,
               "parameters": [
                 0,
                 76,
                 false,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,

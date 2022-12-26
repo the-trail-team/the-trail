@@ -5951,5 +5951,50 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 174,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.3
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.3
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 1.3
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 1.3
+      }
+    ],
+    "iconIndex": 25,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Apocalyptic Presence",
+    "note": "<Help Description>\nIncreases ATK, DEF, MAT, and MDF by 30%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 5,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

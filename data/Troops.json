@@ -10352,5 +10352,195 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 92,
+    "members": [
+      {
+        "enemyId": 62,
+        "x": 200,
+        "y": 364,
+        "hidden": false
+      },
+      {
+        "enemyId": 62,
+        "x": 228,
+        "y": 115,
+        "hidden": false
+      },
+      {
+        "enemyId": 62,
+        "x": 364,
+        "y": 235,
+        "hidden": false
+      },
+      {
+        "enemyId": 62,
+        "x": 497,
+        "y": 97,
+        "hidden": false
+      },
+      {
+        "enemyId": 62,
+        "x": 582,
+        "y": 250,
+        "hidden": false
+      },
+      {
+        "enemyId": 62,
+        "x": 466,
+        "y": 382,
+        "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 135,
+        "y": 214,
+        "hidden": true
+      }
+    ],
+    "name": "TTC Ice Troop - Ice Slime",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              -1,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Rainbow Slime joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "members": [
+      {
+        "enemyId": 57,
+        "x": 418,
+        "y": 385,
+        "hidden": false
+      },
+      {
+        "enemyId": 57,
+        "x": 422,
+        "y": 169,
+        "hidden": false
+      },
+      {
+        "enemyId": 56,
+        "x": 180,
+        "y": 370,
+        "hidden": false
+      },
+      {
+        "enemyId": 56,
+        "x": 195,
+        "y": 163,
+        "hidden": false
+      }
+    ],
+    "name": "TTC Ice Troop - Werewolf",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              -1,
+              0,
+              174
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

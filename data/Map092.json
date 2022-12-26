@@ -3951,7 +3951,7 @@
     0,
     0,
     0,
-    0,
+    238,
     0,
     0,
     60,
@@ -3986,11 +3986,11 @@
     0,
     0,
     0,
+    229,
     0,
     0,
     0,
-    0,
-    0,
+    230,
     0,
     0,
     0,
@@ -5795,7 +5795,7 @@
     148,
     148,
     150,
-    230,
+    237,
     151,
     148,
     0,
@@ -5836,7 +5836,7 @@
     156,
     156,
     158,
-    238,
+    228,
     159,
     156,
     0,
@@ -6274,7 +6274,10 @@
     0,
     0,
     0,
+    827,
+    835,
     0,
+    874,
     0,
     0,
     0,
@@ -6287,9 +6290,12 @@
     0,
     0,
     0,
+    835,
     0,
+    874,
     0,
     0,
+    827,
     0,
     0,
     0,
@@ -6310,6 +6316,7 @@
     0,
     0,
     0,
+    843,
     0,
     0,
     0,
@@ -6322,7 +6329,9 @@
     0,
     0,
     0,
+    827,
     0,
+    843,
     0,
     0,
     0,
@@ -6345,15 +6354,18 @@
     0,
     0,
     0,
+    835,
     0,
     0,
     0,
     0,
     0,
     0,
+    827,
     0,
     0,
     0,
+    835,
     0,
     0,
     0,
@@ -6366,6 +6378,7 @@
     0,
     0,
     0,
+    874,
     0,
     0,
     0,
@@ -6382,6 +6395,7 @@
     0,
     0,
     0,
+    843,
     0,
     0,
     0,
@@ -6392,6 +6406,7 @@
     0,
     0,
     0,
+    843,
     0,
     0,
     0,
@@ -6400,9 +6415,11 @@
     0,
     0,
     0,
+    827,
     0,
     0,
     0,
+    827,
     0,
     0,
     0,
@@ -6526,6 +6543,7 @@
     0,
     0,
     0,
+    835,
     0,
     0,
     0,
@@ -6541,6 +6559,7 @@
     0,
     0,
     0,
+    827,
     0,
     0,
     0,
@@ -6565,6 +6584,7 @@
     0,
     0,
     0,
+    843,
     0,
     0,
     0,
@@ -6581,6 +6601,7 @@
     0,
     0,
     0,
+    835,
     0,
     0,
     0,
@@ -6621,28 +6642,7 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    843,
     0,
     0,
     211,
@@ -6705,6 +6705,7 @@
     0,
     0,
     0,
+    874,
     0,
     0,
     0,
@@ -6721,6 +6722,7 @@
     0,
     0,
     0,
+    874,
     0,
     0,
     0,
@@ -6828,9 +6830,7 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
+    874,
     0,
     0,
     0,
@@ -30408,6 +30408,190 @@
       ],
       "x": 8,
       "y": 8
-    }
+    },
+    {
+      "id": 58,
+      "name": "iceslime-copy",
+      "note": "<Copy Event: 158, 117>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 8,
+      "y": 22
+    },
+    null,
+    null,
+    {
+      "id": 61,
+      "name": "werewolf-copy",
+      "note": "<Copy Event: 158, 113>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Werewolf",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 4,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 20,
+      "y": 19
+    },
+    {
+      "id": 62,
+      "name": "iceslime-copy",
+      "note": "<Copy Event: 158, 117>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 32,
+      "y": 22
+    },
+    null,
+    null
   ]
 }
