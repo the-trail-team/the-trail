@@ -297,11 +297,9 @@ SRD.NotetagGetters.push(_.loadNotetags);
 // DataManager
 //-----------------------------------------------------------------------------
 
-DataManager._testExceptions = ["Windows.json", "DataEX.json", "Notes.json"];
+DataManager._testExceptions = ["Windows.json"];
 
 DataManager._databaseFiles.push({name: '$dataWindows', src: "Windows.json"});
-DataManager._databaseFiles.push({name: '$dataBasicEX', src: "DataEX.json"});
-DataManager._databaseFiles.push({name: '$dataNotes', src: "Notes.json"});
 
 if(!SRD.DataManager_isDatabaseLoaded) {
 
@@ -1429,14 +1427,10 @@ DataManagerEX._props = {
 };
 
 DataManagerEX.initManager = function() {
-	FileManager.checkDataExists("DataEX.json", "{}");
-	FileManager.checkDataExists("Notes.json", "{}");
 	this._listIndex = 0;
 };
 
 DataManagerEX.save = function() {
-	FileManager.saveData($dataBasicEX, "DataEX.json");
-	FileManager.saveData($dataNotes, "Notes.json");
 };
 
 DataManagerEX.setupWindowHtml = function() {
