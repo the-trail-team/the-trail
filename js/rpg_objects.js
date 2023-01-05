@@ -3711,6 +3711,8 @@ Game_Actor.prototype.battlerName = function() {
 
 Game_Actor.prototype.clearStates = function() {
     Game_Battler.prototype.clearStates.call(this);
+    if (!this._stateSteps) this._stateSteps = {};
+    for (const s in this._stateSteps) if (!$dataStates[s].category.contains("BYPASS DEATH REMOVAL")) delete this._stateSteps[s];
 };
 
 Game_Actor.prototype.eraseState = function(stateId) {
