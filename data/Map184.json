@@ -12050,6 +12050,447 @@
       ],
       "x": 6,
       "y": 23
+    },
+    {
+      "id": 30,
+      "name": "EV030",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "$Chef",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 576>"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\fchefHey, you four! You look like experienced adventurers!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\fchefIf you're up for it, I have a bit"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "of an odd request..."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Accept Quest",
+                  "Decline Quest"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Accept Quest"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Decline Quest"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\fchefI'll be here if you change your mind..."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\fchefI'm working on my greatest culinary feat"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "yet: the most versatile stew of all time!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\fchefUnfortunately, I need a variety of ingredients"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to prepare this stew, and some of them are,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "for lack of a better term, a hassle to find."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I just need three more ingredients."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\fchefThe \\ii[256] can be found by mining ores,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "the \\ii[257] is somewhere in the Frozen"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Labyrinth, and the \\ii[258] can be"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "fished up in Haven Harbor's waters."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\fchefWhile you search for these ingredients,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I'll be preparing the stew in my kitchen."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "The entrance is in the Lost Forest."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Chef",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\fchefThink you've explored the entire Lost"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Forest? Think again... us chefs are"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "masters at hiding our secret recipes."
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                68,
+                68,
+                0
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest Add 33"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "a_Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 68,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
+      "y": 33
     }
   ]
 }

@@ -13807,6 +13807,73 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Fancy Chef quest patches"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if (!$gameSystem._oneTimeItems) $gameSystem._oneTimeItems = [];"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSelfSwitches.value([184, 30, 'A'])"
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 1,
+        "parameters": [
+          68,
+          68,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          68,
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSelfSwitches.setValue([207, 24, 'A'], false)"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -16829,6 +16896,142 @@
       }
     ],
     "name": "Setup Capture",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 73,
+    "list": [
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          68,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!$gameSystem._oneTimeItems[256]"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          12,
+          "Math.random() < 0.2"
+        ]
+      },
+      {
+        "code": 101,
+        "indent": 3,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 3,
+        "parameters": [
+          "You found some \\ii[256]!"
+        ]
+      },
+      {
+        "code": 126,
+        "indent": 3,
+        "parameters": [
+          256,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 3,
+        "parameters": [
+          "$gameSystem._oneTimeItems[256] = true;"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 3,
+        "parameters": [
+          "Quest 33 Complete Objective 1"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Fancy Chef Roll",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 74,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem._oneTimeItems[258] = true;"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 0,
+        "parameters": [
+          "Quest 33 Complete Objective 3"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Fish-Flavored Fish",
     "switchId": 1,
     "trigger": 0
   }

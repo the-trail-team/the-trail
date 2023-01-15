@@ -89,6 +89,7 @@ Game_System.prototype.initialize = function() {
     this._savedBgm = null;
     this._walkingBgm = null;
     this._rareEnemyTries = 0;
+    this._oneTimeItems = [];
 };
 
 Game_System.prototype.isJapanese = function() {
