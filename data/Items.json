@@ -7315,5 +7315,122 @@
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
+  },
+  {
+    "id": 256,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "The purest form of the preservative, harvested directly\nfrom the source. An ingredient for the fancy chef's soup.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 306,
+    "itypeId": 2,
+    "name": "Rock Salt",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 257,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "As cold as cold gets. Do not allow contact with\nskin. An ingredient for the fancy chef's soup.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 351,
+    "itypeId": 2,
+    "name": "Dry Ice Cube",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 258,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Unlike most seafood served at restaurants, you can really taste\nthe ocean in this. An ingredient for the fancy chef's soup.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 292,
+    "itypeId": 2,
+    "name": "Fish-Flavored Fish",
+    "note": "",
+    "occasion": 3,
+    "price": 0,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 259,
+    "animationId": 41,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Preservable, temperature-controlled, and flavorful...\ncan soup get any better than this? No. \\c[31]+50% +50 HP\\c[0]",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 97,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.5,
+        "value2": 50
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 780,
+    "itypeId": 1,
+    "name": "Fancy Stew",
+    "note": "<Menu Category: Foodstuffs>",
+    "occasion": 0,
+    "price": 100,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
   }
 ]
