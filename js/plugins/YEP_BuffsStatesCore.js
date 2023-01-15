@@ -2085,12 +2085,16 @@ Window_Base.prototype.drawStateTurns = function(actor, state, wx, wy) {
   var turns = actor.stateTurns(state.id);
   if (turns !== 0 && !turns) return;
   var turns = Yanfly.Util.toGroup(Math.ceil(turns));
+  var steps = Yanfly.Util.toGroup(actor._stateSteps[state.id]);
   wx += state.turnBufferX;
   wy += state.turnBufferY;
   this.changePaintOpacity(true);
   this.changeTextColor(this.textColor(state.turnColor));
   this.contents.fontSize = state.turnFontSize;
   this.drawText(turns, wx, wy, Window_Base._iconWidth, state.turnAlign);
+  wx -= state.turnBufferX;
+  wy -= state.turnBufferY;
+  if (steps != undefined) this.drawText(steps, wx, wy + 20, Window_Base._iconWidth, 'center');
   this.resetFontSettings();
   this.resetTextColor();
 };
