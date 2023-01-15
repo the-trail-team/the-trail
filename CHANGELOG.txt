@@ -483,6 +483,7 @@ Bug Fixes:
  - Fixed a ridiculously old bug that has existed since Alpha 12 where items reset using the Cleansing Scroll wouldn't save.
  - Fixed several bugs with many states such as inconsistencies between regeneration effects, poison map damage not functioning as intended, and unused states doubling the effects of some traits.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
+ - Fixed a bug where the instant message speed setting would skip through the intro in seconds.
  - Fixed a bug where the critical hit formula wasn't programmed correctly, making critical evasion basically useless.
  - Fixed a bug where elemental normal attacks wouldn't remove weak elemental states.
  - Fixed a bug where the loot explosion after defeating an enemy sometimes did not show the correct drops.
