@@ -14071,7 +14071,7 @@
     {
       "id": 11,
       "name": "EV011",
-      "note": "",
+      "note": "<Sprite Offset X: -12>",
       "pages": [
         {
           "conditions": {
@@ -14089,20 +14089,26 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 4,
+            "characterName": "$Boat",
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -14113,26 +14119,19 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 25,
-      "y": 38
+      "y": 39
     },
     {
       "id": 12,
       "name": "EV012",
-      "note": "",
+      "note": "<Sprite Offset X: +12>",
       "pages": [
         {
           "conditions": {
@@ -14150,20 +14149,26 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 6,
+            "characterName": "$Boat",
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -14174,26 +14179,19 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 28,
-      "y": 36
+      "y": 37
     },
     {
       "id": 13,
       "name": "EV013",
-      "note": "",
+      "note": "<Sprite Offset X: +12>",
       "pages": [
         {
           "conditions": {
@@ -14211,20 +14209,26 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 6,
+            "characterName": "$Boat",
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -14235,26 +14239,19 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 36,
-      "y": 28
+      "y": 29
     },
     {
       "id": 14,
       "name": "EV014",
-      "note": "",
+      "note": "<Sprite Offset X: +12>",
       "pages": [
         {
           "conditions": {
@@ -14272,20 +14269,26 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 6,
+            "characterName": "$Boat",
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -14296,17 +14299,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         },
         {
           "conditions": {
@@ -14361,12 +14357,12 @@
         }
       ],
       "x": 13,
-      "y": 34
+      "y": 35
     },
     {
       "id": 15,
       "name": "EV015",
-      "note": "",
+      "note": "<Sprite Offset X: +12>",
       "pages": [
         {
           "conditions": {
@@ -14384,20 +14380,26 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 6,
+            "characterName": "$Boat",
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -14408,26 +14410,19 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 13,
-      "y": 39
+      "y": 40
     },
     {
       "id": 16,
       "name": "EV016",
-      "note": "",
+      "note": "<Sprite Offset X: -12>",
       "pages": [
         {
           "conditions": {
@@ -14445,20 +14440,26 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 4,
+            "characterName": "$Boat",
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -14469,21 +14470,14 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 9,
-      "y": 41
+      "y": 42
     },
     {
       "id": 17,
@@ -25437,7 +25431,7 @@
     {
       "id": 61,
       "name": "EV061",
-      "note": "",
+      "note": "<Sprite Offset X: +12>",
       "pages": [
         {
           "conditions": {
@@ -25455,20 +25449,26 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 6,
+            "characterName": "$Boat",
+            "direction": 8,
             "pattern": 1,
             "characterIndex": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -25479,21 +25479,14 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 28,
-      "y": 33
+      "y": 34
     },
     {
       "id": 62,
@@ -33749,67 +33742,7 @@
       "x": 20,
       "y": 24
     },
-    {
-      "id": 91,
-      "name": "EV091",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Vehicle1",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        }
-      ],
-      "x": 9,
-      "y": 32
-    },
+    null,
     {
       "id": 92,
       "name": "EV092",
@@ -40672,6 +40605,66 @@
       ],
       "x": 25,
       "y": 35
+    },
+    {
+      "id": 104,
+      "name": "EV104",
+      "note": "<Sprite Offset X: -12>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "$Boat",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 9,
+      "y": 34
     }
   ]
 }
