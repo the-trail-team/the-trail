@@ -14196,7 +14196,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "![33, 85, 129, 125, 203, 204, 205, 206].contains($gameMap._mapId)"
+          "![33, 85, 129, 125, 203, 204, 205, 206, 207, 208, 209, 4].contains($gameMap._mapId)"
         ]
       },
       {
@@ -14712,6 +14712,59 @@
         "indent": 1,
         "parameters": [
           "  $gameSelfSwitches.setValue([209, encounters[i], 'A'], false);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Fancy Stew"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameMap._mapId === 4"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "var encounters = [2, 3, 4, 5, 6, 7];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "for (i = 0; i < encounters.length; i++) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  $gameSelfSwitches.setValue([4, encounters[i], 'A'], false);"
         ]
       },
       {
