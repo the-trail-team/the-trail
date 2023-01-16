@@ -1405,11 +1405,11 @@
     6562,
     6562,
     6208,
-    1558,
-    1558,
-    1558,
-    1558,
-    1558,
+    2082,
+    2068,
+    2068,
+    2068,
+    2084,
     6208,
     1536,
     1536,
@@ -1445,11 +1445,11 @@
     6568,
     6568,
     6208,
-    1558,
-    1558,
-    1558,
-    1558,
-    1558,
+    2064,
+    2048,
+    2048,
+    2048,
+    2072,
     6208,
     1536,
     1536,
@@ -1485,11 +1485,11 @@
     1536,
     1536,
     6208,
-    1558,
-    1558,
-    1558,
-    1558,
-    1558,
+    2088,
+    2076,
+    2076,
+    2076,
+    2086,
     6208,
     1536,
     1536,
@@ -9633,5 +9633,143 @@
     0,
     0
   ],
-  "events": []
+  "events": [
+    null,
+    {
+      "id": 1,
+      "name": "EV001",
+      "note": "<Hitbox Up: 1> <Hitbox Down: 1> <Hitbox Left: 2> <Hitbox Right: 2>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon On Event: 112>"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Drink the water(?) and heal your party?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Yes.",
+                  "No."
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Yes."
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
+              "parameters": [
+                62
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "No."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 15,
+      "y": 35
+    }
+  ]
 }
