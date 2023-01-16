@@ -3925,9 +3925,7 @@ Game_Actor.prototype.optimizeEquipments = function() {
 Game_Actor.prototype.bestEquipItem = function(slotId) {
     var etypeId = this.equipSlots()[slotId];
     var items = $gameParty.equipItems().filter(function(item) {
-        return  item.etypeId === etypeId && 
-                this.canEquip(item) &&
-                !this.equips().filter(e => e).filter(e => e.etypeId == etypeId).map(e => e.baseItemId).contains(item.baseItemId);
+        return item.etypeId === etypeId && this.canEquip(item);
     }, this);
     var bestItem = null;
     var bestPerformance = -1000;
