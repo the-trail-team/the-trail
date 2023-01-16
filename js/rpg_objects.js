@@ -2691,10 +2691,7 @@ Game_BattlerBase.prototype.attackTimesAdd = function() {
 };
 
 Game_BattlerBase.prototype.addedSkillTypes = function() {
-    let types = $dataSystem.skillTypes;
-    let array = [];
-    for (i = 1; i < types.length; i++) array[i-1] = i;
-    return array;
+    return [1, 2, 3].concat(this.traitsSet(Game_BattlerBase.TRAIT_STYPE_ADD));
 };
 
 Game_BattlerBase.prototype.isSkillTypeSealed = function(stypeId) {
