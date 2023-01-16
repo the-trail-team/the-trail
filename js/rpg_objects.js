@@ -1439,7 +1439,8 @@ Game_Action.prototype.numRepeats = function() {
 };
 
 Game_Action.prototype.checkItemScope = function(list) {
-    return list.contains(this.item().scope);
+    if (this.item() != undefined) return list.contains(this.item().scope);
+    return;
 };
 
 Game_Action.prototype.isForOpponent = function() {

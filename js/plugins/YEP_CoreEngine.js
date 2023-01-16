@@ -2633,6 +2633,7 @@ Window_SkillType.prototype.makeCommandList = function() {
 Window_ActorCommand.prototype.addSkillCommands = function() {
     var skillTypes = this._actor.addedSkillTypes();
     skillTypes.splice(2,1); // splices Passive skill category from Window_ActorCommand
+    if ($gameMap.mapId() == 4) skillTypes = [4];
     skillTypes.sort(function(a, b){return a-b});
     skillTypes.forEach(function(stypeId) {
         var name = $dataSystem.skillTypes[stypeId];

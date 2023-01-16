@@ -5996,5 +5996,124 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 175,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 42,
+        "dataId": 1,
+        "value": 1
+      },
+      {
+        "code": 42,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 43,
+        "dataId": 135,
+        "value": 1
+      },
+      {
+        "code": 43,
+        "dataId": 136,
+        "value": 1
+      },
+      {
+        "code": 43,
+        "dataId": 137,
+        "value": 1
+      },
+      {
+        "code": 43,
+        "dataId": 138,
+        "value": 1
+      },
+      {
+        "code": 43,
+        "dataId": 139,
+        "value": 1
+      },
+      {
+        "code": 43,
+        "dataId": 140,
+        "value": 1
+      }
+    ],
+    "iconIndex": 781,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Thick Stew",
+    "note": "<Category: Bypass Death Removal>\n\n<Custom Passive Condition>\ncondition = $gameMap.mapId() == 4;\n</Custom Passive Condition>\n\n<Help Description>\nPrevents the use of \\i[164]Special and \\i[165]Magic skills. Grants the \\i[780]Stew skill set.\n</Help Description>",
+    "overlay": 0,
+    "priority": 5,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 176,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "iconIndex": 105,
+    "maxTurns": 3,
+    "message1": " was dry frozen!",
+    "message2": " was dry frozen!",
+    "message3": " is still dry frozen.",
+    "message4": " thawed out!",
+    "minTurns": 3,
+    "motion": 0,
+    "overlay": 0,
+    "name": "Dry Frozen",
+    "note": "<Category: Ice>\n<Category: debuff>\n<Category: moderate debuff>\n\n<State Motion: Dying>\n<Sprite Cannot Move>\n\n<animationRow:20>\n<yAnchor: 0.75>\n\n<Custom React Effect>\nif (DataManager.isSkill(this.item())) if (this.item().id == 138) value = Number.MAX_SAFE_INTEGER;\n</Custom React Effect>\n\n<Help Description>\nCannot do anything. This battler will instantly die if hit with \\is[138].\n</Help Description>",
+    "priority": 81,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 4,
+    "stepsToRemove": 100,
+    "traits": []
+  },
+  {
+    "id": 177,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 2
+      }
+    ],
+    "iconIndex": 782,
+    "maxTurns": 1,
+    "message1": " is now using a fish for a weapon!",
+    "message2": " is now using a fish for a weapon!",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Fish-Flavored Fish",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases ATK by 100%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 5,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

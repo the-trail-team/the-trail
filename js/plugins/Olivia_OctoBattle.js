@@ -4737,9 +4737,9 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   }
   Window_PartyCommand.prototype.numVisibleRows = function () {
     if (!this._list) {
-      return 4;
+      return Olivia.OctoBattle.SideBattleUI.WindowMaxList;
     }
-    return Math.min(Math.ceil(this.maxItems() / this.maxCols()), Olivia.OctoBattle.SideBattleUI.WindowMaxList);
+    return this._list.length;
   };
   Window_PartyCommand.prototype.scaleRate = function () {
     return Olivia.OctoBattle.SideBattleUI.WindowScale;

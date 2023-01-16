@@ -1321,6 +1321,7 @@ DataManager.processMELODYNotetags = function(group) {
     var obj = group[n];
     if (obj.actionsMade) continue;
     obj.actionsMade = true;
+    obj.noAction = false;
     var notedata = obj.note.split(/[\r\n]+/);
 
     var actionType = 0;
@@ -1328,6 +1329,7 @@ DataManager.processMELODYNotetags = function(group) {
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
+      if (line.match(/<(No Action)>/i)) obj.noAction = true;
       if (line.match(/<(?:SETUP ACTION|setup)>/i)) {
         actionType = 1;
         obj.setupActions = Yanfly.BEC.DefaultActionSetup.slice();
@@ -1356,6 +1358,10 @@ DataManager.processMELODYNotetags = function(group) {
       } else {
         this.convertSequenceLine(obj, line, actionType);
       }
+    }
+
+    if (obj.noAction) {
+      obj.setupActions = obj.wholeActions = obj.targetActions = obj.followActions = obj.finishActions = [];
     }
   }
 };
