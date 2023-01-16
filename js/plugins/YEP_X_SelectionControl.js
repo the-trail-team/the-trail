@@ -1556,6 +1556,7 @@ Window_BattleEnemy.prototype.allowedTargets = function() {
 
 Window_BattleEnemy.prototype.sortTargets = function() {
     this._enemies.sort(function(a, b) {
+      if ($gameParty.members().indexOf(a) >= 0 && $gameParty.members().indexOf(b) >= 0) return $gameParty.members().indexOf(a) - $gameParty.members().indexOf(b);
       if (a.spritePosX() === b.spritePosX()) {
         return a.spritePosY() - b.spritePosY();
       }
