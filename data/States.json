@@ -2157,7 +2157,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "[P] Critical Heal I",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar boost = 0.2;\nvar elementId = 11;\n\nvar elements = this.getItemElements();\nif (elements.contains(elementId)) {\n  var multiplier = boost * (1 - target.hpRate()) + 1;\n  value = Math.ceil(value * multiplier);\n}\n</Custom Confirm Effect>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Confirm Effect>\nvar boost = 0.2;\nvar elementId = 11;\n\nvar elements = this.getItemElements();\nif (elements.contains(elementId)) {\n  var multiplier = boost * (1 - user.hpRate()) + 1;\n  value = Math.ceil(value * multiplier);\n}\n</Custom Confirm Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
