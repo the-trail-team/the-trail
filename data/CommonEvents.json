@@ -477,7 +477,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "[3, 4, 6].contains($gameMap.tilesetId())"
+          "$gameMap.indoors()"
         ]
       },
       {
@@ -6137,53 +6137,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "$gameMap.tilesetId() === 3"
-        ]
-      },
-      {
-        "code": 115,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "$gameMap.tilesetId() === 4"
-        ]
-      },
-      {
-        "code": 115,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "$gameMap.tilesetId() === 6"
+          "$gameMap.indoors()"
         ]
       },
       {
@@ -6690,7 +6644,7 @@
         "indent": 0,
         "parameters": [
           12,
-          "[3, 4, 6, 10].contains($gameMap.tilesetId())"
+          "$gameMap.indoors()"
         ]
       },
       {
