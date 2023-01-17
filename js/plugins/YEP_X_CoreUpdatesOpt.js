@@ -4206,7 +4206,6 @@ Scene_Boot.loadSystemImages = function() {
     ImageManager.loadSystem('Balloon');
     ImageManager.loadSystem('Shadow1');
     ImageManager.loadSystem('Shadow2');
-    ImageManager.loadSystem('Damage');
     ImageManager.loadSystem('States');
     ImageManager.loadSystem('Weapons1');
     ImageManager.loadSystem('Weapons2');
@@ -8027,7 +8026,6 @@ Scene_Boot.loadSystemImages = function() {
   ImageManager.loadSystem('Balloon');
   ImageManager.loadSystem('Shadow1');
   ImageManager.loadSystem('Shadow2');
-  ImageManager.loadSystem('Damage');
   ImageManager.loadSystem('States');
   ImageManager.loadSystem('Weapons1');
   ImageManager.loadSystem('Weapons2');

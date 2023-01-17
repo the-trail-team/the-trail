@@ -1492,7 +1492,6 @@ Sprite_Damage.prototype.initialize = function() {
     this._duration = 90;
     this._flashColor = [0, 0, 0, 0];
     this._flashDuration = 0;
-    this._damageBitmap = ImageManager.loadSystem('Damage');
 };
 
 Sprite_Damage.prototype.setup = function(target) {
