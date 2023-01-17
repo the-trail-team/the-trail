@@ -601,6 +601,41 @@ Game_Interpreter.prototype.command319 = function() {
 };
 
 //=============================================================================
+// Window_EquipHelp
+//=============================================================================
+
+function Window_EquipHelp() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_EquipHelp.prototype = Object.create(Window_Help.prototype);
+Window_EquipHelp.prototype.constructor = Window_Help;
+
+Window_EquipHelp.prototype.initialize = function(x, y) {
+    Window_Help.prototype.initialize.call(this, x, y);
+}
+
+Window_EquipHelp.prototype.setItem = function(item) {
+    if (item) text = item.description;
+    else {
+      text = "\\c[8]";
+      switch(SceneManager._scene._slotWindow.emptySlotStatus()) {
+        case 0:
+          text += "This slot is sealed. It cannot be modified or hold equipment.";
+          break;
+        case 1:
+          text += "This slot is locked. It cannot be modified.";
+          break;
+        case 2:
+        default:
+          text += "This slot is empty.";
+          break;
+      }
+    }
+    this.setText(text);
+}
+
+//=============================================================================
 // Window_EquipCommand
 //=============================================================================
 
@@ -691,6 +726,14 @@ Window_EquipSlot.prototype.drawItem = function(index) {
       }
     }
     this.changePaintOpacity(true);
+};
+
+Window_EquipSlot.prototype.emptySlotStatus = function(actor, slot) {
+  actor = actor || this._actor;
+  slot = slot || this.index();
+  if (actor.isEquipTypeSealed(actor.equipSlots()[slot])) return 0;
+  if (actor.isEquipTypeLocked(actor.equipSlots()[slot])) return 1;
+  return 2;
 };
 
 Window_EquipSlot.prototype.setSlotNameWidth = function(actor) {
@@ -922,6 +965,11 @@ Scene_Equip.prototype.create = function() {
     this._lowerRightVisibility = true;
     this.updateLowerRightWindows();
     this.refreshActor();
+};
+
+Scene_Equip.prototype.createHelpWindow = function() {
+    this._helpWindow = new Window_EquipHelp();
+    this.addWindow(this._helpWindow);
 };
 
 Scene_Equip.prototype.createCommandWindow = function() {
