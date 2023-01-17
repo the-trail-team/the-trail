@@ -5012,6 +5012,35 @@ if (Imported.YEP_BattleEngineCore && Olivia.OctoBattle.SideBattleUI.Enabled) {
   };
   Window_BattleItem.prototype.drawItemName = function (item, x, y, width) {
     Window_BattleSkill.prototype.drawItemName.call(this, item, x, y, width);
+    x = this.contents.measureTextWidth(item.name + " ") + Math.round(Window_Base._iconWidth * this.scaleRate()) + 4;
+    this.contents.fontSize = 12;
+    this.changeTextColor(this.textColor(31));
+    item.effects.filter(e => e.code == 11).forEach(e => {
+      if (e.value1 > 0) {
+        text = "+" + (e.value1 * 100) + "% ";
+        this.drawText(text, x, y, width);
+        x += this.contents.measureTextWidth(text);
+      }
+      if (e.value2 > 0) {
+        text = "+" + e.value2 + "  ";
+        this.drawText(text, x, y, width);
+        x += this.contents.measureTextWidth(text);
+      }
+    });
+    this.changeTextColor(this.textColor(16));
+    item.effects.filter(e => e.code == 12).forEach(e => {
+      if (e.value1 > 0) {
+        text = "+" + (e.value1 * 100) + "% ";
+        this.drawText(text, x, y, width);
+        x += this.contents.measureTextWidth(text);
+      }
+      if (e.value2 > 0) {
+        text = "+" + e.value2 + "  ";
+        this.drawText(text, x, y, width);
+        x += this.contents.measureTextWidth(text);
+      }
+    });
+    this.resetTextColor();
   };
   function Window_BattleSideBase() {
     this.initialize.apply(this, arguments);
