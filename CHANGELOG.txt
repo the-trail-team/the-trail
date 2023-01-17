@@ -375,7 +375,7 @@ Changes:
  - A huge amount of unnecessary, repetitive, and downright boring dialogue has been culled from the game. Most cutscenes have been made much shorter, and many have even been removed entirely.
  - Many cutscenes and important events have been restructured to make gameplay feel smoother.
  - Replaced Player 2's 2nd magic equip slot with an offhand slot (light shields).
- - Resprited all existing icons from 24px to 32px. Changed many icons of existing items.
+ - Resprited all existing icons from 24px to 32px. Changed many icons of existing items in the process.
  - Overhauled the equip comparison menu.
  - The pub/tavern has been rebranded as The Tipsy Oyster! Barkeep's name has been revealed to be Jeremy, and all of his establishments have been redesigned (except for the original in Haven Harbor).
  - Fleshed out the salvaging system, making many items throughout the game now salvageable.
@@ -407,10 +407,10 @@ Item/Equipment Balancing:
   ~ Fruitcake: Increased from Very Well Fed to Exquisitely Well Fed.
  - All levels of Well Fed last for 3x as many steps (50 → 150, 100 → 300, 150 → 450).
  - Reworked the Water Elemental's Flow. It now provides a 15% increase to outgoing magical damage, but it increases all MP costs by 30%.
- - Ethers no longer require bits to craft and are now much cheaper overall.
+ - Ethers no longer require bits to craft and are much cheaper overall.
  - Increased the stat boost of all tavern potions from 15% to 25%.
  - Nerfed The Warden's Trade-off from [-10% MDR, +10% PDR] to [-5% MDR, +20% PDR].
- - Nerfed Giant Goblin's Rage's ATK increase from +20% to +10%.
+ - Nerfed the Giant Goblin's Rage's ATK increase from +20% to +10%.
  - Gave Bloodlust's base version +2% PLS.
  - Reworked Blood-Red Headband to grant +0.5% PLS and +3 AGI rather than +4% MHP and +3% CRI. Its price has increased from 80B to 120B.
  - Buffed the Knight's Greaves' DEF by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
@@ -466,7 +466,7 @@ Miscellaneous Balancing:
   ~ New:      1.0 + user.int / 40;
  - You can no longer equip more than one of the same accessory on a single party member.
  - State resistance accessories no longer remove already applied states when equipped.
- - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100 and +6 INT at Alpha 15's level cap of 30.
+ - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100.
  - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
  - Status effects that provide MHP/MMP no longer reduce HP/MP after wearing off.
  - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
@@ -487,10 +487,9 @@ Bug Fixes:
  - Fixed an absolutely archaic and very annoying bug where you could accidentally select a downed party member for a skill like Cure I and the target would change automatically.
  - Fixed an ancient bug that caused battle events to trigger during actions. Endings of boss battles will now flow much more smoothly.
  - Fixed a ridiculously old bug that has existed since Alpha 12 where items reset using the Cleansing Scroll wouldn't save.
- - Fixed several bugs with many states such as inconsistencies between regeneration effects, poison map damage not functioning as intended, and unused states doubling the effects of some traits.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - Fixed a bug where the instant message speed setting would skip through the intro in seconds.
- - Fixed a bug where the critical hit formula wasn't programmed correctly, making critical evasion basically useless.
+ - Fixed a bug where the critical hit chance formula wasn't programmed correctly, making critical evasion basically useless.
  - Fixed a bug where elemental normal attacks wouldn't remove weak elemental states.
  - Fixed a bug where the loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Fixed a bug where party members would rarely not gain BP between the 1st and 2nd turn of a battle.
@@ -510,7 +509,7 @@ Bug Fixes:
  - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
  - Fixed a bug where magic skills used the wrong motion when casting.
  - Fixed a bug where battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
- - Fixed #9 and #10.
+ - Fixed issues #9 and #10.
  - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release, many of these thanks to a ton of backend reworks/changes.
 
 Alpha 10.2 and the updates preceding it served to build the foundation of The Trail, allowing me to start learning how to make a game that was mechanically sound and coherent.
