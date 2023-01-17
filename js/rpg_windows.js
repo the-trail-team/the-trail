@@ -515,7 +515,18 @@ Window_Base.prototype.drawActorEquipIcons = function(actor, x, y) {
             icon = equips[i].iconIndex;
             this.changePaintOpacity(true);
         } else {
-            icon = this.emptySlotIcon(actor, i);
+            switch(this.emptySlotStatus(actor, i)) {
+                case 0:
+                    icon = Yanfly.Icon.SealedEquip;
+                    break;
+                case 1:
+                    icon = Yanfly.Icon.LockedEquip;
+                    break;
+                case 2:
+                default:
+                    icon = Yanfly.Icon.EmptyEquip;
+                    break;
+            }
             this.changePaintOpacity(false);
         }
         this.drawIcon(icon, x, y);
@@ -524,10 +535,10 @@ Window_Base.prototype.drawActorEquipIcons = function(actor, x, y) {
     this.changePaintOpacity(true);
 };
 
-Window_Base.prototype.emptySlotIcon = function(actor, slot) {
-    if (actor.isEquipTypeSealed(actor.equipSlots()[slot])) return 1370;
-    if (actor.isEquipTypeLocked(actor.equipSlots()[slot])) return 1368;
-    return Yanfly.Icon.EmptyEquip;
+Window_Base.prototype.emptySlotStatus = function(actor, slot) {
+    if (actor.isEquipTypeSealed(actor.equipSlots()[slot])) return 0;
+    if (actor.isEquipTypeLocked(actor.equipSlots()[slot])) return 1;
+    return 2;
 };
 
 Window_Base.prototype.drawActorNickname = function(actor, x, y, width) {

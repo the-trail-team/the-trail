@@ -265,7 +265,11 @@ Yanfly.Param.EquipFinishCmd = String(Yanfly.Parameters['Finish Command']);
 Yanfly.Param.EquipRemoveText = String(Yanfly.Parameters['Remove Text']);
 Yanfly.Icon.RemoveEquip = Number(Yanfly.Parameters['Remove Icon']);
 Yanfly.Param.EquipEmptyText = String(Yanfly.Parameters['Empty Text']);
+Yanfly.Param.EquipLockedText = "Locked";
+Yanfly.Param.EquipSealedText = "Sealed";
 Yanfly.Icon.EmptyEquip = Number(Yanfly.Parameters['Empty Icon']);
+Yanfly.Icon.LockedEquip = 1368;
+Yanfly.Icon.SealedEquip = 1370;
 Yanfly.Data = String(Yanfly.Parameters['Non-Removable Types']);
 Yanfly.Data = Yanfly.Data.split(' ');
 Yanfly.Param.EquipNonRemove = [];
@@ -671,8 +675,20 @@ Window_EquipSlot.prototype.drawItem = function(index) {
     if (item) {
       this.drawItemName(item, rect.x + ww1, rect.y, ww2);
     } else {
-      icon = this.emptySlotIcon(this._actor, index);
-      this.drawEmptySlot(icon, rect.x + ww1, rect.y, ww2);
+      this.changePaintOpacity(false);
+      this.resetTextColor();
+      switch(this.emptySlotStatus(this._actor, index)) {
+        case 0:
+          this.drawSealedSlot(rect.x + ww1, rect.y, ww2);
+          break;
+        case 1:
+          this.drawLockedSlot(rect.x + ww1, rect.y, ww2);
+          break;
+        case 2:
+        default:
+          this.drawEmptySlot(rect.x + ww1, rect.y, ww2);
+          break;
+      }
     }
     this.changePaintOpacity(true);
 };
@@ -686,12 +702,24 @@ Window_EquipSlot.prototype.setSlotNameWidth = function(actor) {
     }
 };
 
-Window_EquipSlot.prototype.drawEmptySlot = function(icon, wx, wy, ww) {
-    this.changePaintOpacity(false);
+Window_EquipSlot.prototype.drawEmptySlot = function(wx, wy, ww) {
     var ibw = Window_Base._iconWidth + 4;
-    this.resetTextColor();
-    this.drawIcon(icon, wx + 2, wy + 2);
+    this.drawIcon(Yanfly.Icon.EmptyEquip, wx + 2, wy + 2);
     var text = Yanfly.Param.EquipEmptyText;
+    this.drawText(text, wx + ibw, wy, ww - ibw);
+};
+
+Window_EquipSlot.prototype.drawLockedSlot = function(wx, wy, ww) {
+    var ibw = Window_Base._iconWidth + 4;
+    this.drawIcon(Yanfly.Icon.LockedEquip, wx + 2, wy + 2);
+    var text = Yanfly.Param.EquipLockedText;
+    this.drawText(text, wx + ibw, wy, ww - ibw);
+};
+
+Window_EquipSlot.prototype.drawSealedSlot = function(wx, wy, ww) {
+    var ibw = Window_Base._iconWidth + 4;
+    this.drawIcon(Yanfly.Icon.SealedEquip, wx + 2, wy + 2);
+    var text = Yanfly.Param.EquipSealedText;
     this.drawText(text, wx + ibw, wy, ww - ibw);
 };
 
