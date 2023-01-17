@@ -521,6 +521,7 @@ Window_Base.prototype.drawActorEquipIcons = function(actor, x, y) {
         this.drawIcon(icon, x, y);
         x += Window_Base._iconWidth;
     }
+    this.changePaintOpacity(true);
 };
 
 Window_Base.prototype.emptySlotIcon = function(actor, slot) {
