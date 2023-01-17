@@ -671,7 +671,8 @@ Window_EquipSlot.prototype.drawItem = function(index) {
     if (item) {
       this.drawItemName(item, rect.x + ww1, rect.y, ww2);
     } else {
-      this.drawEmptySlot(rect.x + ww1, rect.y, ww2);
+      icon = this.emptySlotIcon(this._actor, index);
+      this.drawEmptySlot(icon, rect.x + ww1, rect.y, ww2);
     }
     this.changePaintOpacity(true);
 };
@@ -685,11 +686,11 @@ Window_EquipSlot.prototype.setSlotNameWidth = function(actor) {
     }
 };
 
-Window_EquipSlot.prototype.drawEmptySlot = function(wx, wy, ww) {
+Window_EquipSlot.prototype.drawEmptySlot = function(icon, wx, wy, ww) {
     this.changePaintOpacity(false);
     var ibw = Window_Base._iconWidth + 4;
     this.resetTextColor();
-    this.drawIcon(Yanfly.Icon.EmptyEquip, wx + 2, wy + 2);
+    this.drawIcon(icon, wx + 2, wy + 2);
     var text = Yanfly.Param.EquipEmptyText;
     this.drawText(text, wx + ibw, wy, ww - ibw);
 };

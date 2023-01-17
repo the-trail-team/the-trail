@@ -507,20 +507,26 @@ Window_Base.prototype.drawActorClass = function(actor, x, y, width) {
     this.drawText(actor.currentClass().name, x, y, width);
 };
 
-Window_Base.prototype.drawActorEquipIcons = function(actor, x, y, width) {
-    width = width || 168;
-    equips = actor.equips().reverse();
+Window_Base.prototype.drawActorEquipIcons = function(actor, x, y) {
+    equips = actor.equips();
+    x -= equips.length * Window_Base._iconWidth;
     for (i = 0; i < equips.length; i++) {
-        x -= Window_Base._iconWidth;
         if (equips[i]) {
             icon = equips[i].iconIndex;
             this.changePaintOpacity(true);
         } else {
-            icon = Yanfly.Icon.EmptyEquip;
+            icon = this.emptySlotIcon(actor, i);
             this.changePaintOpacity(false);
         }
         this.drawIcon(icon, x, y);
+        x += Window_Base._iconWidth;
     }
+};
+
+Window_Base.prototype.emptySlotIcon = function(actor, slot) {
+    if (actor.isEquipTypeSealed(actor.equipSlots()[slot])) return 1370;
+    if (actor.isEquipTypeLocked(actor.equipSlots()[slot])) return 1368;
+    return Yanfly.Icon.EmptyEquip;
 };
 
 Window_Base.prototype.drawActorNickname = function(actor, x, y, width) {
@@ -1794,7 +1800,7 @@ Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width)
         this.drawActorLevel(actor, x, y + lineHeight * 1);
         this.drawActorIcons(actor, x, y + lineHeight * 2);
         this.drawActorClass(actor, x2, y, width2);
-        this.drawActorEquipIcons(actor, x2 + width2, y, width2);
+        this.drawActorEquipIcons(actor, x2 + width2, y);
         this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
         this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
     } else {
