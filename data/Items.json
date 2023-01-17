@@ -2169,7 +2169,7 @@
   },
   {
     "id": 76,
-    "animationId": 0,
+    "animationId": 208,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -2178,15 +2178,28 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "A combination of a \\ii[192] and \\ii[193]. This is\nthe cream of the crop when it comes to combined healing!",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 144
+      },
+      {
+        "code": 12,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 60
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 789,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the Wooden Staff.",
+    "name": "Large Ether",
+    "note": "<Sell Price: 125>\n\n<Synthesis Ingredients>\nLarge Potion\nLarge Elixir\nWater Bottle\n</Synthesis Ingredients>\n<Mask Name: Large Recovery Combo>\n<Synthesis SE: Equip3>",
     "occasion": 0,
-    "price": 0,
+    "price": 375,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
