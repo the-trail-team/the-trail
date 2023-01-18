@@ -2737,114 +2737,10 @@
         ]
       },
       {
-        "code": 302,
+        "code": 117,
         "indent": 3,
         "parameters": [
-          1,
-          1,
-          0,
-          0,
-          false
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          1,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          2,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          2,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          3,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          3,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          1,
-          4,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          4,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          5,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          6,
-          0,
-          0
-        ]
-      },
-      {
-        "code": 605,
-        "indent": 3,
-        "parameters": [
-          2,
-          7,
-          0,
-          0
+          75
         ]
       },
       {
@@ -17159,6 +17055,193 @@
       }
     ],
     "name": "Fish-Flavored Fish",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 75,
+    "list": [
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameTemp._startingGear = [];"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          1,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataArmors[5], true)) $gameTemp._startingGear.push([2, 5, 0, 0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataArmors[6], true)) $gameTemp._startingGear.push([2, 6, 0, 0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataArmors[7], true)) $gameTemp._startingGear.push([2, 7, 0, 0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataWeapons[1], true)) $gameTemp._startingGear.push([1, 1, 0, 0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataArmors[1], true)) $gameTemp._startingGear.push([2, 1, 0, 0]);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          2,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataWeapons[2], true)) $gameTemp._startingGear.push([1, 2, 0, 0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataArmors[2], true)) $gameTemp._startingGear.push([2, 2, 0, 0]);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          3,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataWeapons[3], true)) $gameTemp._startingGear.push([1, 3, 0, 0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataArmors[3], true)) $gameTemp._startingGear.push([2, 3, 0, 0]);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          4,
+          4,
+          0
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataWeapons[4], true)) $gameTemp._startingGear.push([1, 4, 0, 0]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "if (!$gameParty.hasItem($dataArmors[4], true)) $gameTemp._startingGear.push([2, 4, 0, 0]);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "SceneManager.push(Scene_Shop);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "SceneManager.prepareNextScene($gameTemp._startingGear, false);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Starting Gear",
     "switchId": 1,
     "trigger": 0
   }
