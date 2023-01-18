@@ -528,12 +528,18 @@
   {
     "id": 26,
     "atypeId": 1,
-    "description": "A small gold ring. It doesn't naturally boost any of\nyour stats, but it has many upgrade slots available.",
-    "etypeId": 6,
-    "traits": [],
-    "iconIndex": 512,
-    "name": "Gold Ring",
-    "note": "<Upgrade Slots: 3>",
+    "description": "The shadows within are contained, but slipping on the ring\nstill evokes a chilling sensation. Reduces dark damage.",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 791,
+    "name": "Ring of Shadows",
+    "note": "",
     "params": [
       0,
       0,
