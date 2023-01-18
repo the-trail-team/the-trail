@@ -308,7 +308,7 @@
     "damage": {
       "critical": true,
       "elementId": 4,
-      "formula": "a.mat * 2.75 - b.mdf * 2",
+      "formula": "// Damage Formula",
       "type": 1,
       "variance": 5
     },
@@ -709,7 +709,7 @@
     "damage": {
       "critical": true,
       "elementId": 1,
-      "formula": "a.mat * 1.5 - b.mdf * 2",
+      "formula": "// Damage Formula",
       "type": 1,
       "variance": 5
     },
@@ -721,7 +721,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Mana Wisp",
-    "note": "<Boost Damage>\n\n<Max Mastery Level: 0>\n\n<Custom Cost Display>\n\\}Free\n</Custom Cost Display>\n\n<action copy: skill:7>",
+    "note": "<Boost Damage>\n\n<Max Mastery Level: 0>\n\n<Custom Cost Display>\n\\}Free\n</Custom Cost Display>\n\n<Damage Formula>\nvalue = a.mat * 1.5 - b.mdf * 2;\nif (a.hasWeapon($dataWeapons[7])) value *= 1.3;\n</Damage Formula>\n\n<action copy: skill:7>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -2207,7 +2207,7 @@
     "damage": {
       "critical": true,
       "elementId": 4,
-      "formula": "a.mat * 4.25 - b.mdf * 2",
+      "formula": "// Damage Formula",
       "type": 1,
       "variance": 5
     },
