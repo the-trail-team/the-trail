@@ -415,6 +415,13 @@ DataManager.processEqReqNotetags1 = function(group) {
         obj.customEquipReqCondition = obj.customEquipReqCondition + line + '\n';
       }
     }
+
+    if (obj.groupType == 1) {
+      let dataId = 0;
+      if (obj.wtypeId == 5) dataId = 15;
+      if (obj.wtypeId == 7) dataId = 52;
+      if (dataId > 0) obj.traits.push({code: 43, dataId: dataId, value: 1})
+    }
   }
 };
 
