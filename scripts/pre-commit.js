@@ -9,9 +9,7 @@ const minify = config['pre-commit'].minify;
 
 // JSON EDITING/PRETTYIFYING
 
-const data_directory = "data"
-const file = ['package.json']
-let command = ''
+const data_directory = config.deployment.extraPath + "data"
 const indent = minify ? 0 : 2;
 try {
     fs.readdir(`${data_directory}`, function (err, files) {
@@ -22,6 +20,7 @@ try {
         }
 
         // Every file except Animations.json: Pretty the JSON, and write it back
+        let command = ''
         files.forEach(file => {
             const json = fs.readFileSync(`${data_directory}/${file}`)
             if (`${file}` !== "Animations.json") fs.writeFileSync(`${data_directory}/${file}`, JSON.stringify(JSON.parse(json), null, indent))
@@ -62,8 +61,10 @@ try {
         }
         fs.writeFileSync(`${data_directory}/Enemies.json`, JSON.stringify(enemies, null, indent))
 
-        const json = fs.readFileSync(`./${file}`)
-        fs.writeFileSync(`./${file}`, JSON.stringify(JSON.parse(json), null, indent))
+        // Tilesets.json: information below
+        let tilesets = JSON.parse(fs.readFileSync(`${data_directory}/Tilesets.json`))
+        tilesets = tilesetFunction(tilesets)
+        fs.writeFileSync(`${data_directory}/Tilesets.json`, JSON.stringify(tilesets, null, indent))
     })
 } catch (err) {
     console.error(err)
@@ -71,8 +72,6 @@ try {
 }
 
 // TILESETS
-
-const tilesets_path = "data/Tilesets.json"
 
 // Lower limits
 // B tiles range from 0 - 255
@@ -126,9 +125,7 @@ const dungeon = {
     ]
 }
 
-try {
-    let tilesets = JSON.parse(fs.readFileSync(`${tilesets_path}`))
-    
+function tilesetFunction(tilesets) {
     function fixFlags(obj) {
         obj.children.forEach(child => {
             flags = tilesets[child].flags
@@ -156,8 +153,5 @@ try {
         }
     }
 
-    fs.writeFileSync(`${tilesets_path}`, JSON.stringify(tilesets, null, minify))
-} catch (err) {
-    console.error(err)
-    process.exit(1)
+    return tilesets
 }
