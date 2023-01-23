@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 
+const fs = require('fs')
+
 // CONFIGURATION
 
-const minify = false;
+const config = JSON.parse(fs.readFileSync(__dirname + "/config.json"))
+const minify = config['pre-commit'].minify;
 
 // JSON EDITING/PRETTYIFYING
 
 const data_directory = "data"
 const file = ['package.json']
 let command = ''
-const fs = require('fs')
 const indent = minify ? 0 : 2;
 try {
     fs.readdir(`${data_directory}`, function (err, files) {

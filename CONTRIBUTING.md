@@ -29,7 +29,7 @@ This hook calls a file in the `scripts` folder titled `pre-commit.js`. This file
 After the hook runs, stage files and complete your commit.
 
 ### Hook configuration
-All configurations are edited at the top of the `scripts/pre-commit.js` file.
+All configurations are edited within the `scripts/config.json` file.
 
 #### Minify
 Determines whether .json files are readable (`false`) or condensed (`true`). Default is `false`.
