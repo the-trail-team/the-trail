@@ -13,6 +13,6 @@ xcopy /E /I /Y "%CD%"\img "%CD%"\nwjs-v0.30.0-win-x64\www\img
 xcopy /E /I /Y "%CD%"\js "%CD%"\nwjs-v0.30.0-win-x64\www\js
 copy "%CD%"\index.html "%CD%"\nwjs-v0.30.0-win-x64\www
 
-node "%CD%\PLAYTEST.js
+node "%CD%\scripts\playtest.js
 
 "%CD%"\nwjs-v0.30.0-win-x64\nw.exe
