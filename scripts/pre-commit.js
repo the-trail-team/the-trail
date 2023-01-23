@@ -92,31 +92,27 @@ const X3 = 8192   //       8192:  13-bit integer limit
 //  Template object = {
 //      parent: ID of template tileset
 //      children: [
-//          [
-//              Child tileset ID,
-//              Ignore all tiles before this,
-//              Ignore these tiles and all tiles after
-//          ],
-//          [..., ..., ...]
-//          [You can include as many children as you want]
+//          Child tileset ID #1,
+//          Child tileset ID #2,
+//          ...,
 //      ]
 //  }
 
 const outside = {
     parent: 2,
     children: [
-        [7, E, A5],
-        [8, E, A5],
-        [9, E, A5],
-        [11, E, A5],
-        [12, E, A5]
+        7,
+        8,
+        9,
+        11,
+        12
     ]
 }
 
 const inside = {
     parent: 3,
     children: [
-        [13, E, A5]
+        13
     ]
 }
 
@@ -124,19 +120,18 @@ const inside = {
 const dungeon = {
     parent: 4,
     children: [
-        [10, E, A5]
+        10
     ]
 }
-
 
 try {
     let tilesets = JSON.parse(fs.readFileSync(`${tilesets_path}`))
     
     function fixFlags(obj) {
         obj.children.forEach(child => {
-            flags = tilesets[child[0]].flags
+            flags = tilesets[child].flags
             for (i = 0; i < X3; i++) {
-                if (i < child[1] || i >= child[2]) flags[i] = tilesets[obj.parent].flags[i]
+                if (i < E || i >= A5) flags[i] = tilesets[obj.parent].flags[i]
             }
         })
     }
