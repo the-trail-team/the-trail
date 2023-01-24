@@ -21,6 +21,8 @@ del /f supertoolsengine.html
 
 cd ..
 
+npm prune --production
+
 del /f Game.exe
 
 rmdir /s /q "%CD%"\www\scripts
