@@ -5,7 +5,10 @@ const fs = require('fs')
 const path = require('path')
 const yauzl = require('yauzl')
 
-const file = fs.createWriteStream("nwjs.zip")
+const zipName = "nwjs.zip"
+const file = fs.createWriteStream(zipName)
+const zipPath = __dirname + `/` + zipName
+const extractPath = __dirname + `/..`
 
 try {
     https.get("https://dl.nwjs.io/v0.30.0/nwjs-v0.30.0-win-x64.zip", function(response) {
@@ -16,14 +19,12 @@ try {
             file.close()
             console.log("Download finished!")
             unzip()
+            fs.unlinkSync(zipPath)
         })
     })
 
     const unzip = () => {
         console.log("Unzipping...")
-        let zipPath = __dirname + `/nwjs.zip`
-        let extractPath = __dirname + `/..`
-
         yauzl.open(zipPath, {lazyEntries: true}, function(err, zipfile) {
             if (err) throw err
             zipfile.readEntry()
