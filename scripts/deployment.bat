@@ -1,5 +1,5 @@
-node "%CD%"\deployment.js
-node "%CD%"\pre-commit.js
+call node "%CD%"\deployment.js
+call node "%CD%"\pre-commit.js
 
 cd ..
 
@@ -7,6 +7,7 @@ move "%CD%"\node_modules ..
 move "%CD%"\.itch.toml ..
 move "%CD%"\package.json ..
 move "%CD%"\package-lock.json ..
+move "%CD%"\thetrail.exe ..
 
 rmdir /s /q .vscode
 rmdir /s /q nwjs-v0.30.0-win-x64
@@ -21,7 +22,7 @@ del /f supertoolsengine.html
 
 cd ..
 
-npm prune --production
+call npm prune --production
 
 del /f Game.exe
 
