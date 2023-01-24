@@ -76,11 +76,9 @@ runScript('./scripts/pre-commit.js', function (err) {
 #### Method #1 (requires node.js)
 Download and install [node.js](https://nodejs.org/en/download/).
 
-Afterwards, download [NW.js v0.30.0 for Windows](https://dl.nwjs.io/v0.30.0/nwjs-v0.30.0-win-x64.zip) and unzip it in the root of the cloned repository. Please ensure that the file structure of `thetrail/nwjs-v0.30-win-x64` looks like this: 
+Afterwards, go to the `scripts` folder and run the file titled `dlnwjs.bat`. NW.js will automatically download and unzip in the root of the repository.
 
-![nw.js file structure](https://user-images.githubusercontent.com/44245434/184078180-8ff4d6e4-1332-4a39-b05e-6b08d768ef0c.png)
-
-Every time you would like to play your modified game, run `PLAYTEST.bat`, located in the repository's root.
+To play the game, run `PLAYTEST.bat`, located in the repository's root.
 
 #### Method #2 (no extra downloads)
 1. Download and extract [NW.js v0.30.0 for Windows](https://dl.nwjs.io/v0.30.0/nwjs-v0.30.0-win-x64.zip).
