@@ -14,6 +14,7 @@ rmdir /s /q SCREENSHOTS
 
 del /f .gitignore
 del /f CONTRIBUTING.md
+del /f PLAYTEST.bat
 del /f README.md
 del /f supertoolsengine.html
 
