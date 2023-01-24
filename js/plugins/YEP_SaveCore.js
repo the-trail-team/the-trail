@@ -1445,7 +1445,7 @@ Scene_File.prototype.performActionSave = function() {
 
 Scene_File.prototype.onSaveSuccess = function() {
     SoundManager.playSave();
-    StorageManager.cleanBackup(this.savefileId());
+    // StorageManager.cleanBackup(this.savefileId());
     if (Yanfly.Param.SavePop) {
       this.popScene();
     } else {

@@ -698,6 +698,7 @@ StorageManager.saveToLocalFile = function(savefileId, json) {
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath);
     }
+    if (savefileId > 0 && fs.existsSync(filePath)) this.backup(savefileId);
     fs.writeFileSync(filePath, data);
 };
 
