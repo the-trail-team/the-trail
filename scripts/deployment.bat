@@ -4,6 +4,7 @@ node "%CD%"\pre-commit.js
 cd ..
 
 move "%CD%"\node_modules ..
+move "%CD%"\.itch.toml ..
 move "%CD%"\package.json ..
 move "%CD%"\package-lock.json ..
 
