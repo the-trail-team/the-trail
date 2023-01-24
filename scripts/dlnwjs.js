@@ -15,12 +15,12 @@ try {
         file.on("finish", () => {
             file.close()
             console.log("Download finished!")
-            console.log("Unzipping...")
             unzip()
         })
     })
 
     const unzip = () => {
+        console.log("Unzipping...")
         let zipPath = __dirname + `/nwjs.zip`
         let extractPath = __dirname + `/..`
 
