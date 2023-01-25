@@ -1,7 +1,7 @@
 [
   {
     "type": "Text",
-    "Value": "🕰️ ${$gameVariables.value(36)}",
+    "Value": "🕰️${$gameSystem.timeEmoji()} ${$gameVariables.value(36)}",
     "Condition": "$gameSwitches.value(25)&&$gameSwitches.value(72)",
     "Layer": "0",
     "Font": "GameFont",
@@ -38,7 +38,7 @@
         "max": 0
       }
     },
-    "id": 2,
+    "id": 1,
     "x": 85,
     "y": 28
   }

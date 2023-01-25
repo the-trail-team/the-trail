@@ -90,6 +90,7 @@ Game_System.prototype.initialize = function() {
     this._walkingBgm = null;
     this._rareEnemyTries = 0;
     this._oneTimeItems = [];
+    this._moonPhase = 0;
 };
 
 Game_System.prototype.isJapanese = function() {
@@ -407,6 +408,42 @@ Game_System.prototype.championsTalisman = function() {
         [15, 12, 5, 5, 8, 8, 10, 2],  // 4
         [20, 15, 7, 7, 11, 11, 15, 3] // 5
     ][this.chapter()];
+};
+
+// Time
+
+Game_System.prototype.timeEmoji = function() {
+    let hour = $gameVariables.value(38);
+    if (hour <= 4 || hour >= 21) {
+        switch(this._moonPhase) {
+            case 0:
+                return "🌑";
+            case 1:
+                return "🌒";
+            case 2:
+                return "🌓";
+            case 3:
+                return "🌔";
+            case 4:
+                return "🌕";
+            case 5:
+                return "🌖";
+            case 6:
+                return "🌗";
+            case 7:
+                return "🌘";
+        }
+    } else
+    if (hour == 5) return "🌅";
+    else if (hour == 20) return "🌇";
+    else if (hour <= 7 || hour == 19) return "⛅";
+    else if (hour <= 9 || hour == 18) return "🌤️";
+    else return "☀️";
+};
+
+Game_System.prototype.nextMoonPhase = function() {
+    this._moonPhase++;
+    if (this._moonPhase > 7) this._moonPhase = 0;
 };
 
 // Constants

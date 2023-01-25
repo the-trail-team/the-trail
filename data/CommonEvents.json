@@ -6528,6 +6528,13 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem.nextMoonPhase();"
+        ]
+      },
+      {
         "code": 115,
         "indent": 1,
         "parameters": []
@@ -9568,6 +9575,93 @@
           25,
           0
         ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          1,
+          38,
+          0,
+          5,
+          4
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          33,
+          0,
+          5,
+          1
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 3,
+        "parameters": [
+          "$gameSystem.nextMoonPhase();"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          1,
+          38,
+          1,
+          33,
+          3
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 3,
+        "parameters": [
+          "$gameSystem.nextMoonPhase();"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
       },
       {
         "code": 122,
@@ -13722,6 +13816,20 @@
         "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Patch moon phase into $gameSystem"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if (!$gameSystem._moonPhase) $gameSystem._moonPhase = 0;"
+        ]
       },
       {
         "code": 0,
