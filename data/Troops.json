@@ -10608,5 +10608,49 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 95,
+    "members": [
+      {
+        "enemyId": 77,
+        "x": 366,
+        "y": 208,
+        "hidden": false
+      },
+      {
+        "enemyId": 78,
+        "x": 237,
+        "y": 328,
+        "hidden": false
+      }
+    ],
+    "name": "Infernal Skeletons",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
