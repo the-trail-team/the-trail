@@ -988,6 +988,30 @@ Scene_Shop.prototype.createCategoryWindow = function() {
     this.addWindow(this._categoryWindow);
 };
 
+Scene_Shop.prototype.onCategoryCancel = function() {
+    if (this._categoryWindow._type == '') {
+      this._sellWindow.hide();
+      this._commandWindow.activate();
+      this._dummyWindow.show();
+      this._categoryWindow.hide();
+      this._statusWindow.hide();
+      this._statusWindow.setItem(null);
+      this._helpWindow.clear();
+      this._statusWindow.show();
+      this._infoWindow.setItem(null);
+      this._goldWindow.setItemSell(null);
+    } else {
+      this._categoryWindow.select(this._categoryWindow._type == 'weapons' ? 2 : 3);
+      this._categoryWindow._type = '';
+      this._categoryWindow.activate();
+      this._categoryWindow.refresh();
+    }
+};
+
+Scene_Shop.prototype.commandWeapon = Scene_Item.prototype.commandWeapon;
+  
+Scene_Shop.prototype.commandArmor = Scene_Item.prototype.commandArmor;
+
 Scene_Shop.prototype.createSellWindow = function() {
     var wy = this._dummyWindow.y;
     var ww = this._dummyWindow.width;
@@ -1119,12 +1143,6 @@ Scene_Shop.prototype.sellingPrice = function() {
     }
     return Yanfly.Shop.Scene_Shop_sellingPrice.call(this);
 };
-
-Scene_Shop.prototype.commandWeapon = Scene_Item.prototype.commandWeapon;
-  
-Scene_Shop.prototype.commandArmor = Scene_Item.prototype.commandArmor;
-
-Scene_Shop.prototype.onCategoryCancel = Scene_Item.prototype.onCategoryCancel;
 
 //=============================================================================
 // Utilities
