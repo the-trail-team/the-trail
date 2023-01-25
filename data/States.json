@@ -6115,5 +6115,29 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 178,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 1352,
+    "maxTurns": 3,
+    "message1": " was grazed by death!",
+    "message2": " was grazed by death!",
+    "message3": "",
+    "message4": "",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Death's Touch",
+    "note": "<Category: debuff>\n<Category: severe debuff>\n\n<Reapply Ignore Turns>\n\n<Custom Remove Effect>\nuser.startAnimation(65);\nuser.addState(1);\n</Custom Remove Effect>\n\n<Help Description>\nThis battler will instantly die once this state expires.\n</Help Description>",
+    "overlay": 9,
+    "priority": 75,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]

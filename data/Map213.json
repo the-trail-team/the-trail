@@ -16555,8 +16555,8 @@
     },
     {
       "id": 13,
-      "name": "fireimp-copy",
-      "note": "<Copy Event: 158, 133>",
+      "name": "fleshwalker-copy",
+      "note": "<Copy Event: 158, 135>",
       "pages": [
         {
           "conditions": {
@@ -16577,10 +16577,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster4",
+            "characterName": "Horror2",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 2
+            "characterIndex": 3
           },
           "list": [
             {
@@ -16604,7 +16604,7 @@
           "moveSpeed": 2,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 2,
           "walkAnime": true
@@ -16612,6 +16612,66 @@
       ],
       "x": 19,
       "y": 37
+    },
+    {
+      "id": 14,
+      "name": "fleshwalker-copy",
+      "note": "<Copy Event: 158, 135>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Horror2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 38,
+      "y": 42
     }
   ]
 }
