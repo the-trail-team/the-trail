@@ -6554,7 +6554,7 @@ Game_Map.prototype.inTrueTelluriaCastle = function() {
 };
 
 Game_Map.prototype.indoors = function() {
-    return [3, 4, 6, 10, 13].contains(this.tilesetId());
+    return !!this.tileset().meta['Inside'];
 };
 
 //-----------------------------------------------------------------------------
