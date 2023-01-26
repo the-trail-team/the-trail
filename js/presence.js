@@ -39,7 +39,7 @@ async function setActivity() {
                     smallImageText = "Bits: " + $gameParty.gold();
                     break;
                 case `hammer`:
-                    smallImageText = "Crafting Completion: " + Math.round((($gameSystem.synthedItems().length + $gameSystem.synthedWeapons().length + $gameSystem.synthedArmors().length) / Yanfly.IS.SynthesisRecipeCount) * 100) + "%";
+                    smallImageText = "Crafting Completion: " + Math.round((($gameSystem.synthedTotal()) / Yanfly.IS.SynthesisRecipeCount) * 100) + "%";
                     break;
                 case `chest`:
                     smallImageText = "Small Chests Opened: " + $gameVariables.value(50);

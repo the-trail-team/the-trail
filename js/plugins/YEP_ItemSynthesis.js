@@ -828,6 +828,10 @@ Game_System.prototype.synthedArmors = function() {
     return this._synthedArmors;
 };
 
+Game_System.prototype.synthedTotal = function() {
+    return this.synthedItems().length + this.synthedWeapons().length + this.synthedArmors().length;
+}
+
 Game_System.prototype.canSynthesize = function(item, times) {
     if (!item) return false;
     if ($gameParty.numItems(item) >= $gameParty.maxItems(item)) return false;
@@ -961,6 +965,24 @@ Window_SynthesisCommand.prototype.addFinishCommand = function() {
     // this.addCommand(Yanfly.Param.ISFinishCmd, 'cancel', true);
 };
 
+Window_SynthesisCommand.prototype.updateCursor = function() {
+    Window_Selectable.prototype.updateCursor.call(this);
+    let text = "\\c[8]";
+    switch (this.index()) {
+      case 0:
+        text += "Items Crafted: " + $gameSystem.synthedItems().length + "/" + Yanfly.IS.SynthesisItemTotal;
+        break;
+      case 1:
+        text += "Weapons Crafted: " + $gameSystem.synthedWeapons().length + "/" + Yanfly.IS.SynthesisItemTotal;
+        break;
+      default:
+        text += "Armor Crafted: " + $gameSystem.synthedArmors().length + "/" + Yanfly.IS.SynthesisArmorTotal;
+        break;
+    }
+    text += "\nCrafting Completion: " + $gameSystem.synthedTotal() + "/" + Yanfly.IS.SynthesisRecipeCount;
+    SceneManager._scene._helpWindow.setText(text);
+};
+
 //=============================================================================
 // Window_SynthesisStatus
 //=============================================================================
@@ -1085,7 +1107,7 @@ Window_SynthesisList.prototype.windowWidth = function() {
 
 Window_SynthesisList.prototype.updateHelp = function() {
     if (this._commandWindow.active) {
-      this._helpWindow.setText('');
+      this._commandWindow.updateCursor();
     } else if (eval(Yanfly.Param.ISMaskUnknown) &&
     !$gameSystem.hasSynthed(this.item())) {
       var text = Yanfly.Param.ISMaskHelpText;
