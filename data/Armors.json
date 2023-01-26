@@ -5191,5 +5191,59 @@
       0
     ],
     "price": 120
+  },
+  {
+    "id": 195,
+    "atypeId": 1,
+    "description": "Sign your soul away... oh, never mind, this just needs a drop\nof your blood. Increases recovery item effectiveness by 25%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 3,
+        "value": 1.25
+      }
+    ],
+    "iconIndex": 1318,
+    "name": "Blood Pact",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 196,
+    "atypeId": 1,
+    "description": "Something about this is terrifying. You want to look at\nit, but you can't. Reduces incoming physical damage by 10%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 1319,
+    "name": "Flesh Doll",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
   }
 ]
