@@ -119,6 +119,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                 [],
                 []
             ]
+            break;
         case 'RETRO':
             arr = [
                 [179],
