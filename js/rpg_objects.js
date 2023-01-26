@@ -60,6 +60,86 @@ Game_Temp.prototype.destinationY = function() {
     return this._destinationY;
 };
 
+// Crafting
+
+Game_Temp.prototype.synthItems = function() {
+    if (!this._synthItems) return [];
+    return this._synthItems.map(function(id) {
+        return $dataItems[id];
+    })
+};
+
+Game_Temp.prototype.synthWeapons = function() {
+    if (!this._synthWeapons) return [];
+    return this._synthWeapons.map(function(id) {
+        return $dataWeapons[id];
+    })
+};
+
+Game_Temp.prototype.synthArmors = function() {
+    if (!this._synthArmors) return [];
+    return this._synthArmors.map(function(id) {
+        return $dataArmors[id];
+    })
+};
+
+Game_Temp.prototype.recipeTemplate = function(name) {
+    switch (name.toUpperCase()) {
+        case 'WILL':
+            arr = [
+                [68, 74, 213, 92, 93, 50, 154],
+                [32, 51, 23, 30, 24, 25, 26, 27],
+                [78, 48, 47, 46, 44, 113, 96, 45]
+            ]
+            break;
+        case 'DALIA':
+            arr = [
+                [71, 226, 98, 117],
+                [],
+                []
+            ]
+            break;
+        case 'CASTLE FORGE':
+            arr = [
+                [68, 74, 213, 176, 214, 92, 240, 241, 242, 245, 93, 218, 228, 50, 154, 207, 123, 124, 125, 184, 208, 209, 210],
+                [45, 49, 54, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
+                [151, 150, 78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 44, 113, 96, 115, 107, 149, 148, 45, 172, 159, 134, 143, 142, 170, 181, 191, 185, 189, 190, 178, 177, 161, 162, 171, 32, 57, 164, 124]
+            ]
+            break;
+        case 'CASTLE FOOD':
+            arr = [
+                [71, 72, 226, 70, 98, 111, 223, 221, 136, 117, 196, 197, 134, 131],
+                [],
+                []
+            ]
+            break;
+        case 'FIRE':
+            arr = [
+                [229, 151, 108, 135],
+                [],
+                []
+            ]
+        case 'RETRO':
+            arr = [
+                [179],
+                [],
+                [109, 110, 111, 112]
+            ]
+            break;
+        case 'TABLET':
+            arr = [
+                [187],
+                [],
+                []
+            ]
+            break;
+        default:
+            arr = [[], [], []];
+    }
+    [this._synthItems, this._synthWeapons, this._synthArmors] = arr;
+};
+
+
 //-----------------------------------------------------------------------------
 // Game_System
 //

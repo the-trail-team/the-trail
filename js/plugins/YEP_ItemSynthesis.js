@@ -1777,15 +1777,18 @@ Scene_Synthesis.availableLibrary = function() {
 };
 
 Scene_Synthesis.availableItems = function() {
-    return this.getAvailableItems(0);
+    return $gameTemp.synthItems();
+    // return this.getAvailableItems(0);
 };
 
 Scene_Synthesis.availableWeapons = function() {
-    return this.getAvailableItems(1);
+    return $gameTemp.synthWeapons();
+    // return this.getAvailableItems(1);
 };
 
-Scene_Synthesis.availableArmors = function(type) {
-    return this.getAvailableItems(2);
+Scene_Synthesis.availableArmors = function() {
+    return $gameTemp.synthArmors();
+    // return this.getAvailableItems(2);
 };
 
 Scene_Synthesis.prototype.refreshWindows = function() {
