@@ -2192,6 +2192,9 @@ Window_FishCommand.prototype.processOk = function() {
     Window_Command.prototype.processOk.call(this);
 };
 
+Window_FishCommand.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishEquip
@@ -2304,6 +2307,9 @@ Window_FishEquip.prototype.selectLast = function() {
 Window_FishEquip.prototype.playOkSound = function() {
 };
 
+Window_FishEquip.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishHelp
@@ -2336,6 +2342,9 @@ Window_FishHelp.prototype.refresh = function() {
     this.drawText(this._text, 0, 0, this.contents.width,'center');
 };
 
+Window_FishHelp.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishDisplay
@@ -2405,6 +2414,9 @@ Window_FishDisplay.prototype.drawEquipSlot = function(type) {
 	};
 };
 
+Window_FishDisplay.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishCaught
@@ -2492,6 +2504,9 @@ Window_FishCaught.prototype.drawFish = function(fish, x, y) {
     this.contents.blt(bitmap, sx, sy, pw, ph, x, y);
 };
 
+Window_FishCaught.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 
