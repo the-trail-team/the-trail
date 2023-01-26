@@ -7418,7 +7418,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Preservable, temperature-controlled, and flavorful; can stew\nget any better than this? It even... moves on its own?",
+    "description": "Preservable, temperature-controlled, and flavorful; can fish\nstew get any better than this? It even... moves on its own?",
     "effects": [
       {
         "code": 21,
@@ -7437,7 +7437,7 @@
     "iconIndex": 780,
     "itypeId": 1,
     "name": "Fancy Stew",
-    "note": "<Menu Category: Foodstuffs>",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nOlive Oil\nTomato: 5\nFathead Carp\nSalt: 3\nIce Cube: 5\n</Synthesis Ingredients>",
     "occasion": 0,
     "price": 100,
     "repeats": 1,
@@ -7492,6 +7492,32 @@
     "note": "<Disassemble Pool: Monster>\nx5-7 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>",
     "occasion": 3,
     "price": 20,
+    "repeats": 1,
+    "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 262,
+    "animationId": 0,
+    "consumable": false,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Used in a variety of situations, from preparing a\npan for sautéing to fueling traditional lamps.",
+    "effects": [],
+    "hitType": 0,
+    "iconIndex": 795,
+    "itypeId": 1,
+    "name": "Olive Oil",
+    "note": "<Menu Category: Foodstuffs>",
+    "occasion": 3,
+    "price": 50,
     "repeats": 1,
     "scope": 0,
     "speed": 0,
