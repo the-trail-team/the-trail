@@ -698,13 +698,14 @@ Window_ShopStatus.prototype.drawStatDisplayed = function() {
 
 Window_ShopStatus.prototype.drawActorData = function() {
     var actor = this.getActor();
+    if (!actor) return;
     this.drawActorDisplayed(actor);
     this.drawDarkRectEntries();
     this.drawActorStatInfo(actor);
 };
 
 Window_ShopStatus.prototype.getActor = function() {
-    if (this._actorIndex > this.maxActorIndex()) this._actorIndex = 0;
+    if (this._actorIndex > this.maxActorIndex() || this._actorIndex < 0) this._actorIndex = 0;
     return this.filterParty()[this._actorIndex];
 };
 
