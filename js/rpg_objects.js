@@ -2459,7 +2459,7 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     // EXperience Rate
     exr: { get: function() { return this.sparam(9); }, configurable: true },
     // Outgoing Magical Damage
-    omd: { get: function() { return this.otherparam(0); }, configurable: true},
+    omd: { get: function() { return this.otherparam(0) * (this.actorId() == 2 && this.hasSkill(98)) ? (1 + Math.min(this.totalMpUsed(), 100000) * 0.000001) : 1; }, configurable: true},
     // Outgoing Elemental Damage
     oed: { get: function() { return this.otherparam(1); }, configurable: true},
     // Outgoing Healing Rate
@@ -4616,6 +4616,16 @@ Game_Actor.prototype.bloodlustEquipped = function() {
         if (weapons[i].baseItemName.contains("Bloodlust")) return true;
     }
     return false;
+};
+
+Game_Actor.prototype.paySkillCost = function(skill) {
+    Game_BattlerBase.prototype.paySkillCost.call(this, skill);
+    if (!this._totalMpUsed) this._totalMpUsed = 0;
+    this._totalMpUsed += this.skillMpCost(skill);
+};
+
+Game_Actor.prototype.totalMpUsed = function() {
+    return this._totalMpUsed || 0;
 };
 
 //-----------------------------------------------------------------------------
