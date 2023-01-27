@@ -2830,7 +2830,7 @@ Game_BattlerBase.prototype.hasSkillType = function(stypeId) {
 };
 
 Game_BattlerBase.prototype.addedSkills = function() {
-    return this.traitsSet(Game_BattlerBase.TRAIT_SKILL_ADD);
+    return [...new Set(this.traitsSet(Game_BattlerBase.TRAIT_SKILL_ADD))];
 };
 
 Game_BattlerBase.prototype.isSkillSealed = function(skillId) {
