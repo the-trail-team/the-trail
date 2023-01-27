@@ -150,14 +150,14 @@ Galv.NII.Window_ItemList_updateHelp = Window_ItemList.prototype.updateHelp;
 Window_ItemList.prototype.updateHelp = function() {
 	Galv.NII.Window_ItemList_updateHelp.call(this);
 	
-	var addToOld = Galv.NII.becomeOld(this.item());
-	if (addToOld) {
-		this._viewedNewIndex = this.index();
-	}
-
 	if (this._viewedNewIndex != null) {
 		this.redrawItem(this._viewedNewIndex);
 		this._viewedNewIndex = null;
+	}
+	
+	var addToOld = Galv.NII.becomeOld(this.item());
+	if (addToOld) {
+		this._viewedNewIndex = this.index();
 	}
 };
 
