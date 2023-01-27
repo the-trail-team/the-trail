@@ -507,9 +507,11 @@ Window_Base.prototype.drawActorClass = function(actor, x, y, width) {
     this.drawText(actor.currentClass().name, x, y, width);
 };
 
-Window_Base.prototype.drawActorEquipIcons = function(actor, x, y) {
+Window_Base.prototype.drawActorEquipIcons = function(actor, x, y, bound) {
     equips = actor.equips();
-    x -= equips.length * Window_Base._iconWidth;
+    width = equips.length * Window_Base._iconWidth;
+    if (width > bound) return;
+    x -= width;
     for (i = 0; i < equips.length; i++) {
         if (equips[i]) {
             icon = equips[i].iconIndex;
@@ -1812,7 +1814,7 @@ Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width)
         this.drawActorLevel(actor, x, y + lineHeight * 1);
         this.drawActorIcons(actor, x, y + lineHeight * 2);
         this.drawActorClass(actor, x2, y, width2);
-        this.drawActorEquipIcons(actor, x2 + width2, y);
+        this.drawActorEquipIcons(actor, x2 + width2, y, width2 - this.textWidth(actor.currentClass().name));  
         this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
         this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
     } else {
