@@ -2,6 +2,7 @@ mkdir "%CD%"\nwjs-v0.30.0-win-x64\www
 
 copy "%CD%"\package.json "%CD%"\nwjs-v0.30.0-win-x64
 copy "%CD%"\package-lock.json "%CD%"\nwjs-v0.30.0-win-x64
+copy "%CD%"\thetrail.exe "%CD%"\nwjs-v0.30.0-win-x64
 
 xcopy /E /I /Y "%CD%"\node_modules "%CD%"\nwjs-v0.30.0-win-x64\node_modules
 
@@ -15,4 +16,4 @@ copy "%CD%"\index.html "%CD%"\nwjs-v0.30.0-win-x64\www
 
 node "%CD%\scripts\playtest.js
 
-"%CD%"\nwjs-v0.30.0-win-x64\nw.exe
+"%CD%"\nwjs-v0.30.0-win-x64\thetrail.exe
