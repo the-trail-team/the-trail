@@ -289,28 +289,14 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\headQuick tip: you can also use PAGEUP and"
+              "\\headQuick tip: you can also use \\evalText<<Input.findKey('pagedown')>> and"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "PAGEDOWN to boost or unboost, respectively."
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "This still works if you have either input"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "bound to a different key, like [ and ]."
+              "\\evalText<<Input.findKey('pageup')>> to boost or unboost, respectively."
             ]
           },
           {

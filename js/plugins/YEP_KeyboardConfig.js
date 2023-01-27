@@ -617,6 +617,20 @@ ConfigManager.readKeyConfig = function(config, name) {
     }
 };
 
+Input.keyMapArray = function() {
+	let arr = [];
+	for (const k in this.keyMapper) {
+		arr[k] = this.keyMapper[k]
+	}
+	return arr;
+};
+
+Input.findKey = function(key) {
+	code = this.keyMapArray().indexOf(key);
+	keyName = Object.keys(Window_KeyConfig._refId).find(key => Window_KeyConfig._refId[key] == code);
+	return keyName ? keyName.toUpperCase() : "BIND NOT SET";
+};
+
 //=============================================================================
 // Window_Options
 //=============================================================================
