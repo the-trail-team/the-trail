@@ -809,13 +809,9 @@ ItemManager.effectIUSResetStat = function(item, stat) {
         var id = item.id;
         var item = JsonEx.makeDeepCopy(baseItem);
         item.id = id;
-        if (DataManager.isItem(baseItem)) $dataItems[id] = item;
-        if (DataManager.isWeapon(baseItem)) $dataWeapons[id] = item;
-        if (DataManager.isArmor(baseItem)) $dataArmors[id] = item;
+        DataManager.getDatabase(item)[id] = item;
         ItemManager.setNewIndependentItem(baseItem, item);
-        if (DataManager.isItem(item)) DataManager._independentItems[id - Yanfly.Param.ItemStartingId - 1] = item;
-        if (DataManager.isWeapon(item)) DataManager._independentWeapons[id - Yanfly.Param.ItemStartingId - 1] = item;
-        if (DataManager.isArmor(item)) DataManager._independentArmors[id - Yanfly.Param.ItemStartingId - 1] = item;
+        DataManager.getContainer(item)[id - Yanfly.Param.ItemStartingId - 1] = item;
         this._fullReset = true;
         this._resetItem = item;
         break;
