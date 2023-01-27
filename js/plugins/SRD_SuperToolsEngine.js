@@ -2097,7 +2097,7 @@ DebugManager.getItemList = function() {
 
 DebugManager.getWeaponList = function() {
 	let result = `<select id="weaponId" style="width:100%">`;
-	for(let i = 1; i < 3001; i++) {
+	for(let i = 1; i < Yanfly.Param.ItemStartingId; i++) {
 		const info = $dataWeapons[i];
 		if(!info) continue;
 		result += '<option value="' + info.id + '"> (' + _.pad(info.id) + ') ' + info.name + '</option>';
@@ -2108,7 +2108,7 @@ DebugManager.getWeaponList = function() {
 
 DebugManager.getArmorList = function() {
 	let result = `<select id="armorId" style="width:100%">`;
-	for(let i = 1; i < 3001; i++) {
+	for(let i = 1; i < Yanfly.Param.ItemStartingId; i++) {
 		const info = $dataArmors[i];
 		if(!info) continue;
 		result += '<option value="' + info.id + '"> (' + _.pad(info.id) + ') ' + info.name + '</option>';

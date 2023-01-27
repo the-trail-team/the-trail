@@ -13128,7 +13128,7 @@
         "code": 655,
         "indent": 0,
         "parameters": [
-          "for (i = 3001; i < weapons.length; i++) {"
+          "for (i = Yanfly.Param.ItemStartingId + 1; i < weapons.length; i++) {"
         ]
       },
       {
@@ -13156,7 +13156,7 @@
         "code": 655,
         "indent": 0,
         "parameters": [
-          "for (i = 3001; i < armors.length; i++) {"
+          "for (i = Yanfly.Param.ItemStartingId + 1; i < armors.length; i++) {"
         ]
       },
       {
@@ -13441,7 +13441,7 @@
         "code": 655,
         "indent": 0,
         "parameters": [
-          "  return x < 3001;"
+          "  return x <= Yanfly.Param.ItemStartingId;"
         ]
       },
       {
@@ -13490,7 +13490,7 @@
         "code": 655,
         "indent": 0,
         "parameters": [
-          "  return x < 3001;"
+          "  return x <= Yanfly.Param.ItemStartingId;"
         ]
       },
       {

@@ -1121,7 +1121,7 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
 };
 
 Game_Party.prototype.seenItem = function(item) {
-  if (item == null || item.id > 3000) return;
+  if (item == null || item.id > Yanfly.Param.ItemStartingId) return;
   if (item.groupType == 0) {
     if (!$gameSystem.synthedItems().contains(item.id) && $dataItems[item.id].synthIngredients.length > 0) $gameSystem.synthedItems().push(item.id);
   } else if (item.groupType == 1) {
