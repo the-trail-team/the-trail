@@ -4656,9 +4656,15 @@
   {
     "id": 174,
     "atypeId": 1,
-    "description": "Although the gold is clearly fake, or at least low carat, it\nstill carries a beautiful sheen. Provides a large amount of MMP.",
+    "description": "Although the gold is clearly fake, or at least low carat, it still\ncarries a beautiful sheen. Provides a large amount of MMP and some MRG.",
     "etypeId": 3,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.03
+      }
+    ],
     "iconIndex": 464,
     "name": "Faux-Gold Headband",
     "note": "<Upgrade Slots: 2>",
