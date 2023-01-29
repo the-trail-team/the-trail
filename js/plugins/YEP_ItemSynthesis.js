@@ -834,7 +834,6 @@ Game_System.prototype.synthedTotal = function() {
 
 Game_System.prototype.canSynthesize = function(item, times) {
     if (!item) return false;
-    if (!this.onRecipeList(item)) return false;
     if ($gameParty.numItems(item) >= $gameParty.maxItems(item)) return false;
     times = times || 1;
     if (item.synthCost * times > $gameParty.gold()) return false;
@@ -862,15 +861,6 @@ Game_System.prototype.maxSynthesize = function(item) {
       maximum = Math.min(maximum, ($gameParty.numNotUpgradedIndependentItems(ingredient) + ((ingredient.synthIngredients.length > 0 && $gameSystem.canSynthesize(ingredient)) ? this.maxSynthesize(ingredient) : 0)) / quantity);
     }
     return parseInt(Math.max(maximum, 0));
-};
-
-Game_System.prototype.onRecipeList = function(item) {
-    if (!item) return false;
-    id = DataManager.getBaseItem(item).id;
-    if (DataManager.isItem(item)) return $gameTemp._synthItems.contains(id);
-    if (DataManager.isWeapon(item)) return $gameTemp._synthWeapons.contains(id);
-    if (DataManager.isArmor(item)) return $gameTemp._synthArmors.contains(id);
-    return false;
 };
 
 //=============================================================================
