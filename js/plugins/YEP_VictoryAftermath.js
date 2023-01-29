@@ -561,7 +561,7 @@ Window_VictoryExp.prototype.windowHeight = function() {
 };
 
 Window_VictoryExp.prototype.maxItems = function() {
-    return Math.max($gameParty.members().length, 4);
+    return Math.max($gameParty.members().filter(a => a.exr != 0).length, 4);
 };
 
 Window_VictoryExp.prototype.standardFontSize = function() {
@@ -617,7 +617,7 @@ Window_VictoryExp.prototype.drawAllGauges = function() {
 };
 
 Window_VictoryExp.prototype.drawItem = function(index) {
-    var actor = $gameParty.battleMembers()[index];
+    var actor = $gameParty.battleMembers().filter(a => a.exr != 0)[index];
     if (!actor) return;
     this.drawActorProfile(actor, index);
 };
@@ -629,7 +629,7 @@ Window_VictoryExp.prototype.drawActorProfile = function(actor, index) {
 };
 
 Window_VictoryExp.prototype.drawItemGauge = function(index) {
-    var actor = $gameParty.battleMembers()[index];
+    var actor = $gameParty.battleMembers().filter(a => a.exr != 0)[index];
     if (!actor) return;
     this.drawActorGauge(actor, index);
 };
