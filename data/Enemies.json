@@ -2953,7 +2953,7 @@
     ],
     "gold": 100,
     "name": "Darkhound",
-    "note": "<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nMetal Wristbraces ★: 5% +5%\nAnti-Magic Charm ★: 5% +5%\nCharm of Foresight: 5% +5%\nINT Scroll: 5% +5%\nEXR Scroll: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nMetal Wristbraces ★: 5% +5%\nAnti-Magic Charm ★: 5% +5%\nCharm of Foresight: 5% +5%\nINT Scroll: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1500,
       0,
@@ -3447,7 +3447,7 @@
     ],
     "gold": 500,
     "name": "Mimic",
-    "note": "<Passive State: 136>\n\n<Sideview Battler: NoMatchingSprite/Mimic>\n<Sideview No Collapse>\n<Attack Animation: 2>\n\n<Conditional Magic Coin Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Magic Coin Drop>\n<Conditional INT Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional INT Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
+    "note": "<Passive State: 136>\n\n<Sideview Battler: NoMatchingSprite/Mimic>\n<Sideview No Collapse>\n<Attack Animation: 2>\n\n<Conditional Magic Coin Drop>\nEval Date.now() % 3 === 0: +100%\n</Conditional Magic Coin Drop>\n<Conditional EXR Scroll Drop>\nEval Date.now() % 3 === 1: +100%\n</Conditional EXR Scroll Drop>\n<Conditional Bunny Hood Drop>\nEval Date.now() % 3 === 2: +100%\n</Conditional Bunny Hood Drop>",
     "params": [
       2500,
       0,
