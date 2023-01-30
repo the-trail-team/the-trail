@@ -3418,7 +3418,7 @@
   },
   {
     "id": 99,
-    "animationId": 0,
+    "animationId": 58,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -3427,15 +3427,22 @@
       "variance": 20
     },
     "description": "",
-    "effects": [],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 180,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
-    "message1": "",
+    "iconIndex": 293,
+    "message1": " uses %1!",
     "message2": "",
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Horrifying Hug",
+    "note": "<setup action>\nmove user: target, front base, 20\nwait for movement\nmotion item: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\nadd state 179: user\n</target action>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,

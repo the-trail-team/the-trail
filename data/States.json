@@ -6139,5 +6139,59 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 179,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 1346,
+    "maxTurns": 2,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 2,
+    "motion": 1,
+    "name": "Horrified",
+    "note": "<Help Description>\nCannot do anything.\n</Help Description>",
+    "overlay": 10,
+    "priority": 80,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 4,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 180,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.2
+      }
+    ],
+    "iconIndex": 26,
+    "maxTurns": 3,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "'s HRG went back to normal.",
+    "minTurns": 3,
+    "motion": 0,
+    "name": "Hugged",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases HRG by 20%.\n</Help Description>",
+    "overlay": 6,
+    "priority": 30,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
