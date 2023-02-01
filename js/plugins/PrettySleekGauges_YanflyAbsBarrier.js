@@ -211,13 +211,8 @@ Special_Gauge.prototype.drawText = function() {
 		if (this._showEHPText) {
 			width -= textRightBuffer;
 			this._window.changeTextColor(this._window.normalColor());
-			if (this.critText()) {
-				if (this._curVal < this._maxVal / 10) {
-					this._window.changeTextColor(this._window.deathColor());
-				} else if (this._curVal < this._maxVal / 4) {
-					this._window.changeTextColor(this._window.crisisColor());
-				}
-			}
+			
+			this.useCriticalColor();
 			
 			//============================================================================================
 			// ** BEGIN CHANGES **
