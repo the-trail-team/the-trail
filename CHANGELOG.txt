@@ -18,13 +18,9 @@ Now, let's get to the incredibly large changelog, the biggest one we've ever had
 Additions:
  - Added Telluria Castle Town, the newest and greatest town in The Trail. It lies just outside the north exit of the Blazing Sands, right next to the Gulf of Telluria.
  - Added 4 new dungeons!
- - Added a new floor to the Abandoned North Mine.
- - Added lots of new crafting recipes for items both old and new.
  - Added a ton of new animations for skills, items, and more.
  - Added many new custom state overlays.
- - Added a new and unique fishing system.
- - Added farming.
- - Added pets. 7 are present in this update, and more will come in the future.
+ - Added new pastimes for the player to enjoy, such as farming, fishing, and pet owning.
  - Added Discord rich presence support.
  - Added 2 new elements:
   ~ Plant
@@ -352,9 +348,6 @@ Additions:
   ~ Attacker Tellurium Golem
   ~ Defender Tellurium Golem
   ~ [REDACTED BIRD]
- - Added an exhaustion mechanic.
- - Added new save file icons that dynamically change throughout the game.
- - Added roaming Giant Rats, Banditos, and Red Slimes in their respective dungeons.
 
 Removals:
  - Removed stat allocation.
@@ -385,8 +378,7 @@ Removals:
 Changes:
  - Recapped the max level from level 20 to level 30.
  - Random encounters are now blocked in a 6-tile radius around any visible enemy encounter.
- - A huge amount of unnecessary, repetitive, and downright boring dialogue has been culled from the game. Most cutscenes have been made much shorter, and many have even been removed entirely.
- - Many cutscenes and important events have been restructured to make gameplay feel smoother.
+ - A huge amount of unnecessary, repetitive, and downright boring dialogue has been culled from the game. Most cutscenes have been made much shorter and streamlined, with some having been removed entirely.
  - Replaced Player 2's 2nd magic equip slot with an offhand slot (light shields).
  - Resprited all existing icons from 24px to 32px. Changed many icons of existing items in the process.
  - Overhauled the equip comparison menu.
@@ -395,15 +387,14 @@ Changes:
  - Leveling up will also remove all debuffs.
  - Fire attacks no longer remove water states.
  - Events can now walk through followers. As a result, followers have been enabled in dungeons again.
- - Many shop stocks and enemy drop pools have been modified.
+ - Most shop stocks and enemy drop pools have been modified/standardized.
  - Increased all ore mining drop ranges by 1 on both bounds (e.g. copper ore now drops 3-5 copper clusters instead of the old 2-4).
+ - Greatly reduced respawn timers of most time-based respawnables (e.g. oreleaf, flowers).
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
  - Many food-related items have been made renewable, and as a result are no longer sold by Dalia.
  - The new Speedster Boots have replaced the spot in boot progression once held by the Hermes Boots. The Hermes Boots have been moved up to be crafted near the end of Telluria Field's progression.
- - Modified the battler positioning formula and battle status UI to make it easier to include more party members on screen.
- - Solus Town now automatically becomes snowy during the holiday season.
- - Presents now have a 50% drop chance on December 25th rather than the default 20%.
- - Countless (and I mean COUNTLESS) other small changes have been made throughout the game (not as much as Alpha 14, but honestly, it's probably close).
+ - Solus Town now automatically becomes snowy during the holiday season. On that note, presents now have a 50% drop chance on December 25th rather than the default 20%.
+ - Countless (and I mean COUNTLESS) other small changes have been made throughout the game (probably more than Alpha 14 at this point).
  - A huge amount of backend reworks/changes have been made to improve performance, consistency, and development efficiency.
 
 Music Update (Final Wave):
@@ -418,11 +409,12 @@ Item/Equipment Balancing:
   ~ Ration: Reduced from Well Fed to Somewhat Well Fed.
   ~ Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
   ~ Fruitcake: Increased from Very Well Fed to Exquisitely Well Fed.
- - All levels of Well Fed last for 3x as many steps (50 → 150, 100 → 300, 150 → 450).
+  ~ All levels of Well Fed last for 3x as many steps (50 → 150, 100 → 300, 150 → 450).
+  ~ All levels of Well Fed now increase ATK and MAT by +2%, +4%, +6%, and +8% at their respective levels.
  - Reworked most early-game weapons to not be completely useless. Notable reworks (aside from stat/price changes):
   ~ Wisp Wand: Originally the Traveler Wand. Increases Mana Wisp damage by 30%.
-  ~ Crude Hammer: Originally the Light Hammer. Functions as a typical hammer-type weapon.
- - Heavily buffed the stats of the Shadowspec Sword, Bronze Greatsword, Steel Axe, Bronze Wand, Mana Staff, and Bloodlust ★ to prevent buying Telluria Castle Town's weapons from becoming a necessity for progression.
+  ~ Crude Hammer: Originally the Light Hammer. Functions as a typical hammer-type weapon (large MAT, heavily reduced OHR).
+ - Heavily buffed the stats of the Shadowspec Sword, Bronze Greatsword, Steel Axe, Bronze Wand, Mana Staff, and Bloodlust ★ to be viable against new content. Dropping 10,000 Bits on new weapons shouldn't be a necessity!
  - Reworked the Water Elemental's Flow. It now provides a 15% increase to outgoing magical damage, but it increases all MP costs by 30%.
  - Reworked the Gold Ring. Now the Ring of Shadows, it provides resistance to dark damage.
  - Ethers no longer require bits to craft and are much cheaper overall.
@@ -447,15 +439,14 @@ Skill Balancing:
   ~ Sharpen Dagger: P4 3 → Any Dagger
   ~ Cut Down: P1 11 → Any Axe
   ~ Soul Shackles: P3 20 → Soul Shackles (Tome)
- - Using BP with Revival now increases success rate (used to increase the amount of HP recovered on a successful revive).
+ - Using BP with Revival now increases success rate (it used to increase the amount of HP recovered on a successful revive).
  - Backstab can no longer miss.
  - Wand Impulse and Backstab apply a new state called Recovery.
-  ~ It decreases ATK/MAT by 50% rather than the old 30%.
-  ~ However, since it's now a state and not a debuff, it won't interfere with setups.
-  ~ Additionally, this only lasts for 1 turn after using the skill, while the debuff used to last for 2 turns.
+  ~ Recovery decreases ATK/MAT by 50% rather than the old 30%. However, since it's now a state and not a debuff, it won't interfere with setups.
+  ~ Additionally, Recovery only lasts for 1 turn after using the skill, while the debuff used to last for 2 turns, making this a buff...?
  - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%. Decreased Double Slash's MP cost to 6 from 7.
   ~ These changes make Double Slash a relevant skill again, as it does more damage than Focused Slash even if it only hits once. Focused Slash's CRI boost, lower MP cost, and guaranteed hit make the choice between the skills dependant on playstyle.
- - Buffed Offensive Stance's stat increase/decrease per stack from 10% to 20%. It it also now capped to 3 stacks.
+ - Buffed Offensive Stance's stat increase/decrease per stack from 10% to 20%. It now caps at 3 stacks.
  - Buffed Rejuvenation's HRG increase from +5% to +10%.
  - Buffed Fire II's MAT multiplier to 500% (was originally 400%) and nerfed its MP cost to 20 MP (was originally 16 MP).
  - Buffed Ice II's MAT multiplier from 375% to 400%.
@@ -488,14 +479,12 @@ Miscellaneous Balancing:
  - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
  - Status effects that provide MHP/MMP no longer reduce HP/MP after wearing off.
  - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
- - Greatly reduced respawn timers of most time-based respawnables (e.g. oreleaf, flowers).
  - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
- - Greatly increased the acceleration of the EXP curve at later levels. This barely affects the game in its current state considering the low level cap, but this change will help prevent leveling up from being too easy in the late/end-game.
+ - Greatly increased the acceleration of the EXP curve at later levels. This barely affects the game in its current state considering the low level cap, but this change will help prevent leveling up from becoming trivial in the late/end-game.
  - Doubled Well Rested's step duration from 500 to 1000.
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
- - Nerfed Bat's ATK from 17 to 15. It was just too strong against new players in the Blazing Sands.
+ - Nerfed Bat's ATK from 17 to 15. It was overwhelmingly powerful against new players in the Blazing Sands.
  - Bits are easier to get everywhere. Enemy drops, quest rewards, chests, and more have all had their bit rewards increased to account for the insane shop prices in Telluria Castle Town.
- - All levels of Well Fed now increase ATK and MAT by +2%, +4%, +6%, and +8% at their respective levels.
  - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
  - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more. If they're not here, they're not super important.
 
@@ -506,7 +495,7 @@ Bug Fixes:
  - Fixed an ancient bug that caused battle events to trigger during actions. Endings of boss battles will now flow much more smoothly.
  - Fixed a ridiculously old bug that has existed since Alpha 12 where items reset using the Cleansing Scroll wouldn't save.
  - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
- - Fixed a bug where the instant message speed setting would skip through the intro in seconds.
+ - Fixed a bug where the instant message speed setting would skip through the intro in seconds. Sorry, speedrunners!
  - Fixed a bug where the critical hit chance formula wasn't programmed correctly, making critical evasion basically useless.
  - Fixed a bug where some headgears still had equip restrictions, even though Matt's Fedora should have been the only one with any.
  - Fixed a bug where elemental normal attacks wouldn't remove weak elemental states.
@@ -515,8 +504,7 @@ Bug Fixes:
  - Fixed a bug where Purify couldn't be used outside of battle.
  - Fixed a bug where retrying a battle would cause items from previous attempts to show up on the dropped item window at the end of battle. This was only a visual bug.
  - Fixed a bug where the color of a party member's name would not update based on their HP during battle.
- - Fixed a bug where the Suffering Soul had only 25% physical element damage reduction rather than the intended 50%.
- - Fixed a bug where the Map Quest Window would disappear while the event interpreter was running.
+ - Fixed a bug where the active quest window would disappear while the event interpreter was running.
  - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
  - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
  - Fixed a bug where states with no overlay would still override states with an overlay if they had a higher priority value.
