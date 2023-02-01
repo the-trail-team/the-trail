@@ -438,6 +438,7 @@ Window_Base.prototype.drawStaticGauge = function(x, y, width, rate, c1, c2, type
 }
 
 Window_Base.prototype.drawAnimatedGauge = function(x, y, width, rate, c1, c2, type, actor) {
+    if (this instanceof Window_MenuActor && SceneManager._scene instanceof Scene_Item) width = 274;
     if (this._gauges == null) this._gauges = {};
     var gkey = this.makeGaugeKey(x, y);
     if (this._gauges[gkey]) {
