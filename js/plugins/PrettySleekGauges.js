@@ -437,13 +437,13 @@ Window_Base.prototype.drawStaticGauge = function(x, y, width, rate, c1, c2, type
     barTypeRight = saveBarTypeRight;
 }
 
-Window_Base.prototype.drawAnimatedGauge = function(x, y, width, rate, c1, c2, type) {
+Window_Base.prototype.drawAnimatedGauge = function(x, y, width, rate, c1, c2, type, actor) {
     if (this._gauges == null) this._gauges = {};
     var gkey = this.makeGaugeKey(x, y);
     if (this._gauges[gkey]) {
         this._gauges[gkey].setRate(rate);
     } else {
-        this._gauges[gkey] = new Special_Gauge(x, y, width, rate, c1, c2, this, defaultHeight, type);
+        this._gauges[gkey] = new Special_Gauge(x, y, width, rate, c1, c2, this, defaultHeight, type, actor);
     }
 }
 
@@ -459,19 +459,19 @@ Window_Base.prototype.makeGaugeKey = function(x, y) {
 
 Window_Base.prototype.drawActorHp = function(actor, x, y, width) {
     width = width || 186;
-    this.drawAnimatedGauge(x, y, width, actor.hpRate(), this.hpGaugeColor1(), this.hpGaugeColor2(), "hp");
+    this.drawAnimatedGauge(x, y, width, actor.hpRate(), this.hpGaugeColor1(), this.hpGaugeColor2(), "hp", actor);
     this._gauges[this.makeGaugeKey(x, y)].setExtra(TextManager.hpA, actor.hp, actor.mhp);
 }
 
 Window_Base.prototype.drawActorMp = function(actor, x, y, width) {
     width = width || 186;
-    this.drawAnimatedGauge(x, y, width, actor.mpRate(), this.mpGaugeColor1(), this.mpGaugeColor2(), "mp");
+    this.drawAnimatedGauge(x, y, width, actor.mpRate(), this.mpGaugeColor1(), this.mpGaugeColor2(), "mp", actor);
     this._gauges[this.makeGaugeKey(x, y)].setExtra(TextManager.mpA, actor.mp, actor.mmp);
 }
 
 Window_Base.prototype.drawActorTp = function(actor, x, y, width) {
     width = width || 186;
-    this.drawAnimatedGauge(x, y, width, actor.tpRate(), this.tpGaugeColor1(), this.tpGaugeColor2(), "tp");
+    this.drawAnimatedGauge(x, y, width, actor.tpRate(), this.tpGaugeColor1(), this.tpGaugeColor2(), "tp", actor);
     this._gauges[this.makeGaugeKey(x, y)].setExtra(TextManager.tpA, actor.tp, actor.maxTp());
 }
 
@@ -552,7 +552,7 @@ Window_MenuStatus.prototype.drawActorLevel = function(actor, x, y) {
 }
 
 Special_Gauge.prototype.constructor = Special_Gauge;
-Special_Gauge.prototype.initialize = function(x, y, w, r, c1, c2, basewindow, h, t) {
+Special_Gauge.prototype.initialize = function(x, y, w, r, c1, c2, basewindow, h, t, a) {
     this._x = x;
     this._y = y;
     this._width = w;
@@ -567,6 +567,7 @@ Special_Gauge.prototype.initialize = function(x, y, w, r, c1, c2, basewindow, h,
     this._fallSprites = [];
     this._showEHPHP = true;
     this._showEHPText = true;
+    this._actor = a;
 }
 
 Special_Gauge.prototype.setTextVisibility = function(hpText, hpNum) {
@@ -697,11 +698,7 @@ Special_Gauge.prototype.fontSize = function() {
 
 Special_Gauge.prototype.useCriticalColor = function() {
     if (this.critText()) {
-        if (this._curVal < this._maxVal / 10) {
-            this._window.changeTextColor(this._window.deathColor());
-        } else if (this._curVal < this._maxVal / 4) {
-            this._window.changeTextColor(this._window.crisisColor());
-        }
+        this._window.changeTextColor(this._window.hpTextColorPicker(this._actor, false));
     }
 }
 
@@ -864,7 +861,7 @@ Window_EnemyHPBars.prototype.clearGauges = function(actor, x, y, width) {
 };
 
 Window_EnemyHPBars.prototype.drawActorHp = function(actor, x, y, width) {
-    this.drawAnimatedGauge(x, y, width, actor.hpRate(), this.hpGaugeColor1(), this.hpGaugeColor2(), "hp");
+    this.drawAnimatedGauge(x, y, width, actor.hpRate(), this.hpGaugeColor1(), this.hpGaugeColor2(), "hp", actor);
     this._gauges[this.makeGaugeKey(x, y)].setTextVisibility(showEHPHP, showEHPText);
     this._gauges[this.makeGaugeKey(x, y)].setExtra(TextManager.hpA, actor.hp, actor.mhp, textYOffset);
 }
