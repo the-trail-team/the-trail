@@ -255,14 +255,10 @@ Special_Gauge.prototype.drawText = function() {
 			//
 			// ** END CHANGES **
 			//============================================================================================
-				if (!this._maxVal || this._width < 186) {
-					this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width, "right");
-				} else {
-					this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width - this._window.textWidth("/" + this._maxVal), "right");
-					this._window.changeTextColor(this._window.normalColor());
-					this._window.drawText("/", x, this._y + this._yOffset, width - this._window.textWidth(this._maxVal), "right");
-					this._window.drawText(this._maxVal, x, this._y + this._yOffset, width, "right");
-				}
+				this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width - this._window.textWidth("/" + this._maxVal), "right");
+				this._window.changeTextColor(this._window.normalColor());
+				this._window.drawText("/", x, this._y + this._yOffset, width - this._window.textWidth(this._maxVal), "right");
+				this._window.drawText(this._maxVal, x, this._y + this._yOffset, width, "right");
 			}
 		}
 
