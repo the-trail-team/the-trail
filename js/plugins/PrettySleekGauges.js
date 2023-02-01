@@ -722,20 +722,16 @@ Special_Gauge.prototype.drawText = function() {
             this._window.changeTextColor(this._window.normalColor());
             
             this.useCriticalColor();
+            
+            this._window.changeTextColor(this._window.normalColor());
+            this._window.drawText(this._maxVal, x, this._y + this._yOffset, width, "right");
+            width -= this._window.textWidth("" + this._maxVal);
+            
+            this._window.drawText("/", x, this._y + this._yOffset, width, "right");
+            width -= this._window.textWidth("/");
 
-            if (!this._maxVal || this._width < 186) {
-                this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width, "right");
-            } else {
-                this._window.changeTextColor(this._window.normalColor());
-                this._window.drawText(this._maxVal, x, this._y + this._yOffset, width, "right");
-                width -= this._window.textWidth("" + this._maxVal);
-                
-                this._window.drawText("/", x, this._y + this._yOffset, width, "right");
-                width -= this._window.textWidth("/");
-
-                this.useCriticalColor();
-                this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width, "right");
-            }
+            this.useCriticalColor();
+            this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width, "right");
         }
 
         this._window.contents.fontSize = storeFontSize;
