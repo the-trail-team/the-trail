@@ -6,7 +6,6 @@ var $plugins =
 {"name":"Fullscreen","status":true,"description":"Starts the game in fullscreen","parameters":{}},
 {"name":"F11","status":true,"description":"Binds fullscreen toggling to F11 in addition to the default F4","parameters":{}},
 {"name":"GraphicsRenderFix","status":true,"description":"","parameters":{}},
-{"name":"FixPixel","status":true,"description":"","parameters":{}},
 {"name":"FSDK_HPColor","status":true,"description":"R1.05A || Allows developers to customize the HP bar and text Color depending on the remaining HP.","parameters":{"Options":"","Compatibility Mode":"true","Add Warning Color":"true","Limits":"","Warning HP":"0.50","Low HP":"0.25","Critical HP":"0.10","Colors":"","Normal HP Color 1":"11","Normal HP Color 2":"3","Warning HP Text Color":"14","Warning HP Color 1":"14","Warning HP Color 2":"6","Low HP Text Color":"2","Low HP Bar Color 1":"20","Low HP Bar Color 2":"21","Critical HP Text":"18","Critical HP Bar Color 1":"18","Critical HP Bar Color 2":"2"}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
