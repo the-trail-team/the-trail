@@ -2062,6 +2062,7 @@ Window_Base.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
     if (state.autoRemovalTiming > 0) {
       this.drawStateTurns(actor, state, wx, wy);
     }
+    if (state.stepsToRemove > 0 && !$gameParty.inBattle()) this.drawStateSteps(actor, state, wx, wy);
     this.drawStateCounter(actor, state, wx, wy);
     wx += iw;
     --shownMax;
@@ -2091,12 +2092,19 @@ Window_Base.prototype.drawStateTurns = function(actor, state, wx, wy) {
   this.changeTextColor(this.textColor(state.turnColor));
   this.contents.fontSize = state.turnFontSize;
   this.drawText(turns, wx, wy, Window_Base._iconWidth, state.turnAlign);
-  if (!$gameParty.inBattle()) {
-    var steps = Yanfly.Util.toGroup(actor._stateSteps[state.id]);
-    wx -= state.turnBufferX;
-    wy -= state.turnBufferY;
-    if (steps != undefined) this.drawText(steps, wx, wy + 20, Window_Base._iconWidth, 'center');
-  }
+  this.resetFontSettings();
+  this.resetTextColor();
+};
+
+Window_Base.prototype.drawStateSteps = function(actor, state, wx, wy) {
+  if (!state.showTurns) return;
+  var steps = actor._stateSteps[state.id];
+  if (steps != 0 && !steps) return;
+  var steps = Yanfly.Util.toGroup(Math.ceil(steps));
+  this.changePaintOpacity(true);
+  this.changeTextColor(this.textColor(state.turnColor));
+  this.contents.fontSize = state.turnFontSize;
+  this.drawText(steps, wx, wy + 20, Window_Base._iconWidth, 'center');
   this.resetFontSettings();
   this.resetTextColor();
 };
