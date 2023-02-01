@@ -1936,6 +1936,10 @@ Game_Action.prototype.apply = function(target) {
         }, this);
         this.applyItemUserEffect(target);
     }
+    if ($gameParty.inBattle() && target.isActor()) {
+        index = $gameParty.battleMembers().indexOf(target);
+        SceneManager._scene._sideStatusWindows[index].children[6].refresh()
+    }
 };
 
 Game_Action.prototype.makeDamageValue = function(target, critical) {
