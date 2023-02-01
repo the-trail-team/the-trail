@@ -479,7 +479,7 @@ Game_System.prototype.battleTemplate = function(name) {
 Game_System.prototype.chapter = function() {
     if ($gameSelfSwitches.value([8, 122, 'A'])) return 5;
     if ($gameSelfSwitches.value([8, 80, 'B'])) return 4;
-    if ($gameSwitches.value(24)) return 3;
+    if ($gameSelfSwitches.value([11, 12, 'A'])) return 3;
     if ($gameVariables.value(3) >= 8) return 2;
     if ($gameVariables.value(2) >= 11) return 1;
     return 0;
