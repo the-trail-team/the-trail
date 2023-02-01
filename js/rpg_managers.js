@@ -469,11 +469,13 @@ DataManager.extractSaveContents = function(contents) {
 };
 
 DataManager.saveFileIcon = function(savefileId) {
+    if ($gameSystem.chapter() >= 6) icon = 766;
+    else if ($gameSystem.chapter() >= 3) icon = 231;
+    else icon = Yanfly.Param.SaveIconSaved;
+
     icons = $gameVariables.value(77);
-    icon = Yanfly.Param.SaveIconSaved;
-    if ($gameSwitches.value(24)) icon = 231;
-    if (false) icon = 766;
     icons[savefileId] = icon;
+    $gameVariables.setValue(77, icons);
 };
 
 //-----------------------------------------------------------------------------
