@@ -698,7 +698,13 @@ Special_Gauge.prototype.fontSize = function() {
 
 Special_Gauge.prototype.useCriticalColor = function() {
     if (this.critText()) {
-        this._window.changeTextColor(this._window.hpTextColorPicker(this._actor, false));
+        if (this._curVal / this._maxVal < FirehawkADK.ParamDeck.CriticalHPLimit) {
+            this._window.changeTextColor(this._window.textColor(FirehawkADK.ParamDeck.CriticalHPText));
+        } else if (this._curVal / this._maxVal < FirehawkADK.ParamDeck.LowHPLimit) {
+            this._window.changeTextColor(this._window.textColor(FirehawkADK.ParamDeck.HPLowText));
+        } else if (this._curVal / this._maxVal < FirehawkADK.ParamDeck.WarningHPLimit) {
+            this._window.changeTextColor(this._window.textColor(FirehawkADK.ParamDeck.HPWarningText));
+        }
     }
 }
 
