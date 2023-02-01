@@ -691,6 +691,7 @@ Special_Gauge.prototype.fontSize = function() {
     // edit to make different font sizes:
     // for example: 
     // if (this._window instanceof Window_BattleStatus) return 20;
+    if (this._window instanceof Window_BattleSideBase) return this._window.standardFontSize();
     return gaugeFontSize;
 }
 
