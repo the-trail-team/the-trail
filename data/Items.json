@@ -331,7 +331,7 @@
         "code": 11,
         "dataId": 0,
         "value1": 0,
-        "value2": 1
+        "value2": 2
       }
     ],
     "hitType": 0,
@@ -573,17 +573,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A bottle of gel you collected from a Blue Slime.\nIt looks like water... why not give it a taste?",
+    "description": "A vial of gel you collected from a Blue Slime.\nIt looks like water... why not give it a taste?",
     "effects": [
       {
-        "code": 11,
+        "code": 12,
         "dataId": 0,
         "value1": 0,
         "value2": 2
       }
     ],
     "hitType": 0,
-    "iconIndex": 366,
+    "iconIndex": 797,
     "itypeId": 1,
     "name": "Blue Gel",
     "note": "<Disassemble Pool: Monster>\nx1-x2 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>",
@@ -2321,7 +2321,7 @@
       "type": 1,
       "variance": 0
     },
-    "description": "A bottle filled and stained with red gel. It's too hot\nfor consumption, but it can be thrown to start a fire.",
+    "description": "A vial filled with red gel. It's too hot for\nconsumption, but can be thrown to start a fire.",
     "effects": [
       {
         "code": 21,
@@ -2331,7 +2331,7 @@
       }
     ],
     "hitType": 0,
-    "iconIndex": 551,
+    "iconIndex": 798,
     "itypeId": 1,
     "name": "Red Gel",
     "note": "<Enemy or Actor Select>\n\n<Disassemble Pool: Monster>\nx2-x4 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>",
@@ -6154,8 +6154,8 @@
   },
   {
     "id": 216,
-    "animationId": 0,
-    "consumable": false,
+    "animationId": 71,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -6163,17 +6163,24 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A small sample of sub-zero gel\ncontained within an airtight vial.",
-    "effects": [],
+    "description": "A small sample of sub-zero gel contained within an airtight\nvial. Exposure to this would result in immediate freezing.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 8,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 697,
     "itypeId": 1,
     "name": "Icy Gel",
-    "note": "<Disassemble Pool: Monster>\nx3-5 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>",
-    "occasion": 3,
+    "note": "<Enemy or Actor Select>\n\n<Disassemble Pool: Monster>\nx3-5 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>",
+    "occasion": 1,
     "price": 16,
     "repeats": 1,
-    "scope": 0,
+    "scope": 1,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
