@@ -3430,7 +3430,7 @@
     "effects": [
       {
         "code": 21,
-        "dataId": 180,
+        "dataId": 179,
         "value1": 1,
         "value2": 0
       }
@@ -3441,7 +3441,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Horrifying Hug",
-    "note": "<setup action>\nmove user: target, front base, 20\nwait for movement\nmotion item: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\nadd state 179: user\n</target action>",
+    "note": "<setup action>\nmove user: target, front base, 20\nwait for movement\nmotion item: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\nadd state 180: user\n</target action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
