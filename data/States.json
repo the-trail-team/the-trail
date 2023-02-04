@@ -6130,7 +6130,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Death's Touch",
-    "note": "<Category: debuff>\n<Category: severe debuff>\n\n<Reapply Ignore Turns>\n\n<Custom Remove Effect>\nuser.startAnimation(65);\nuser.addState(1);\n</Custom Remove Effect>\n\n<Help Description>\nThis battler will instantly die once this state expires.\n</Help Description>",
+    "note": "<Category: debuff>\n<Category: severe debuff>\n\n<Reapply Ignore Turns>\n\n<Custom Leave Effect>\nuser.startAnimation(65);\nuser.addState(1);\n</Custom Leave Effect>\n\n<Help Description>\nThis battler will instantly die once this state expires.\n</Help Description>",
     "overlay": 9,
     "priority": 75,
     "removeAtBattleEnd": true,
