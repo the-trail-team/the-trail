@@ -2062,7 +2062,7 @@ Window_Base.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
     if (state.autoRemovalTiming > 0) {
       this.drawStateTurns(actor, state, wx, wy);
     }
-    if (state.stepsToRemove > 0 && !$gameParty.inBattle()) this.drawStateSteps(actor, state, wx, wy);
+    if (state.removeByWalking && !$gameParty.inBattle()) this.drawStateSteps(actor, state, wx, wy);
     this.drawStateCounter(actor, state, wx, wy);
     wx += iw;
     --shownMax;
