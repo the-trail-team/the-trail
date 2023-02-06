@@ -4085,24 +4085,24 @@
         "value": 1
       }
     ],
-    "iconIndex": 0,
+    "iconIndex": 799,
     "maxTurns": 1,
-    "message1": " will stave off the heat for a bit.",
+    "message1": " will stave off the heat for a while.",
     "message2": "",
     "message3": "",
     "message4": " lost their resistance to the heat.",
     "minTurns": 1,
     "motion": 0,
-    "name": "Intense Heat Resist",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>",
+    "name": "Fire Resistance Potion",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Help Description>\nImmune to \\it[125].\n</Help Description>",
     "overlay": 0,
-    "priority": 0,
+    "priority": 30,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
     "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 300
+    "stepsToRemove": 500
   },
   {
     "id": 127,
@@ -4117,14 +4117,14 @@
     ],
     "iconIndex": 728,
     "maxTurns": 1,
-    "message1": " will be immune from poison for a bit.",
+    "message1": " will be immune from poison for a while.",
     "message2": "",
     "message3": "",
     "message4": " lost their resistance to poison.",
     "minTurns": 1,
     "motion": 0,
     "name": "Antidote",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Help Description>\nImmune to \\it[39].\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": false,
@@ -4132,7 +4132,7 @@
     "removeByRestriction": false,
     "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 300
+    "stepsToRemove": 500
   },
   {
     "id": 128,
