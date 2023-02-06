@@ -9099,6 +9099,7 @@ Game_Event.prototype.refresh = function() {
         this._pageIndex = newPageIndex;
         this.setupPage();
     }
+    this._monster = this.event().note.contains("<Monster>");
 };
 
 Game_Event.prototype.findProperPageIndex = function() {
