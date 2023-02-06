@@ -1111,7 +1111,7 @@
       }
     ],
     "name": "Mage",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nTroop Alive Members >= 2 +++ Random 20%: Wand Impulse\nAlways: Fire II, Lowest HP\nAlways: Fire I, Lowest HP\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 47 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nTroop Alive Members >= 2 +++ Random 20%: Wand Impulse\nAlways: Fire II, Lowest HP\nAlways: Fire I, Lowest HP\nAlways: Mana Wisp, Lowest RES\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 47 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,
@@ -2074,7 +2074,7 @@
       }
     ],
     "name": "Cleric",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\nAlways: Mana Wisp, Lowest RES\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,

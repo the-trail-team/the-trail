@@ -124,10 +124,10 @@ Additions:
    > Cleric Token
    > Rogue Token
   ~ 13 upgraders:
-   > ATK Scroll ★
-   > MAT Scroll ★
-   > DEF Scroll ★
-   > MDF Scroll ★
+   > STR Scroll ★
+   > SPI Scroll ★
+   > END Scroll ★
+   > RES Scroll ★
    > EVA Scroll
    > PDR Scroll
    > MDR Scroll
@@ -376,6 +376,13 @@ Removals:
  - Removed the Telluria Map Fragment. The Map of Telluria can now be purchased immediately from the general store after defeating Laeryidyean.
 
 Changes:
+ - Renamed most of the core stats:
+  ~ MHP → VIT
+  ~ MMP → WIS
+  ~ ATK → STR
+  ~ DEF → END
+  ~ MAT → SPI
+  ~ MDF → RES
  - Recapped the max level from level 20 to level 30.
  - Random encounters are now blocked in a 6-tile radius around any visible enemy encounter.
  - A huge amount of unnecessary, repetitive, and downright boring dialogue has been culled from the game. Most cutscenes have been made much shorter and streamlined, with some having been removed entirely.
@@ -410,20 +417,20 @@ Item/Equipment Balancing:
   ~ Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
   ~ Fruitcake: Increased from Very Well Fed to Exquisitely Well Fed.
   ~ All levels of Well Fed last for 3x as many steps (50 → 150, 100 → 300, 150 → 450).
-  ~ All levels of Well Fed now increase ATK and MAT by +2%, +4%, +6%, and +8% at their respective levels.
+  ~ All levels of Well Fed now increase STR and SPI by +2%, +4%, +6%, and +8% at their respective levels.
  - Reworked most early-game weapons to not be completely useless. Notable reworks (aside from stat/price changes):
   ~ Wisp Wand: Originally the Traveler Wand. Increases Mana Wisp damage by 30%.
-  ~ Crude Hammer: Originally the Light Hammer. Functions as a typical hammer-type weapon (large MAT, heavily reduced OHR).
+  ~ Crude Hammer: Originally the Light Hammer. Functions as a typical hammer-type weapon (large SPI, heavily reduced OHR).
  - Heavily buffed the stats of the Shadowspec Sword, Bronze Greatsword, Steel Axe, Bronze Wand, Mana Staff, and Bloodlust ★ to be viable against new content. Dropping 10,000 Bits on new weapons shouldn't be a necessity!
  - Reworked the Water Elemental's Flow. It now provides a 15% increase to outgoing magical damage, but it increases all MP costs by 30%.
  - Reworked the Gold Ring. Now the Ring of Shadows, it provides resistance to dark damage.
  - Ethers no longer require bits to craft and are much cheaper overall.
  - Increased the stat boost of all tavern potions from 15% to 25%.
  - Nerfed The Warden's Trade-off from [-10% MDR, +10% PDR] to [-5% MDR, +20% PDR].
- - Nerfed the Giant Goblin's Rage's ATK increase from +20% to +10%.
+ - Nerfed the Giant Goblin's Rage's STR increase from +20% to +10%.
  - Gave Bloodlust's base version +2% PLS.
- - Reworked Blood-Red Headband to grant +1% PLS and +3 AGI rather than +4% MHP and +3% CRI. Its price has increased from 80B to 120B.
- - Buffed the Knight's Greaves' DEF by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
+ - Reworked Blood-Red Headband to grant +1% PLS and +3 AGI rather than +4% VIT and +3% CRI. Its price has increased from 80B to 120B.
+ - Buffed the Knight's Greaves' END by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
 
 Skill Balancing:
  - Many skills had their learn levels and associated party member shuffled around:
@@ -443,25 +450,25 @@ Skill Balancing:
  - Using BP with Revival now increases success rate (it used to increase the amount of HP recovered on a successful revive).
  - Backstab can no longer miss.
  - Wand Impulse and Backstab apply a new state called Fatigue.
-  ~ Fatigue decreases ATK/MAT by 50% rather than the old 30%. However, since it's now a state and not a debuff, it won't interfere with setups.
+  ~ Fatigue decreases STR/SPI by 50% rather than the old 30%. However, since it's now a state and not a debuff, it won't interfere with setups.
   ~ Additionally, Fatigue only lasts for 1 turn after using the skill, while the debuff used to last for 2 turns, making this a buff...?
  - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%. Decreased Double Slash's MP cost to 6 from 7.
   ~ These changes make Double Slash a relevant skill again, as it does more damage than Focused Slash even if it only hits once. Focused Slash's CRI boost, lower MP cost, and guaranteed hit make the choice between the skills dependant on playstyle.
- - Buffed Cut Down's DEF penetration from 50% to 100%.
+ - Buffed Cut Down's END penetration from 50% to 100%.
  - Buffed Offensive Stance's stat increase/decrease per stack from 10% to 20%. It now caps at 3 stacks.
  - Buffed Rejuvenation's HRG increase from +5% to +10%.
- - Buffed Fire II's MAT multiplier to 500% (was originally 400%) and nerfed its MP cost to 20 MP (was originally 16 MP).
- - Buffed Ice II's MAT multiplier from 375% to 400%.
+ - Buffed Fire II's SPI multiplier to 500% (was originally 400%) and nerfed its MP cost to 20 MP (was originally 16 MP).
+ - Buffed Ice II's SPI multiplier from 375% to 400%.
  - Buffed Critical Heal I's max effectiveness from +10% to +20%.
  - Nerfed Purify's MP cost to 15 MP (was originally 8 MP).
  - Nerfed Curify MP cost to 30 MP (was originally 18 MP).
  - Nerfed Mana Refund's MP cost to 50 MP (was originally 15 MP).
  - Nerfed Mana Refund's MP recovery to 1% of damage dealt (was originally 5%).
  - Nerfed Foresight's MP cost to 12 MP (was originally 8 MP).
- - Nerfed Inspire's effect to +10% ATK and MAT (was originally +12%).
+ - Nerfed Inspire's effect to +10% STR and SPI (was originally +12%).
  - Nerfed Lightning II's MP cost to 30 MP (was originally 22 MP).
  - Nerfed Gust's damage by 16.6%.
- - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill, except it does not debuff MDF.
+ - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill, except it does not debuff RES.
 
 RNG Balancing:
  - Made a lot of mechanics based around rare enemies a lot less grindy.
@@ -479,15 +486,15 @@ Miscellaneous Balancing:
  - State resistance accessories no longer remove already applied states when equipped.
  - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100.
  - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
- - Status effects that provide MHP/MMP no longer reduce HP/MP after wearing off.
+ - Status effects that provide VIT/WIS no longer reduce HP/MP after wearing off.
  - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
  - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
  - Greatly increased the acceleration of the EXP curve at later levels. This barely affects the game in its current state considering the low level cap, but this change will help prevent leveling up from becoming trivial in the late/end-game.
  - Doubled Well Rested's step duration from 500 to 1000.
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
- - Nerfed Bat's ATK from 17 to 15. It was overwhelmingly powerful against new players in the Blazing Sands.
+ - Nerfed Bat's STR from 17 to 15. It was overwhelmingly powerful against new players in the Blazing Sands.
  - Bits are easier to get everywhere. Enemy drops, quest rewards, chests, and more have all had their bit rewards increased to account for the insane shop prices in Telluria Castle Town.
- - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
+ - Increased Player 1's base VIT at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
  - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more. If they're not here, they're not super important.
 
 Bug Fixes:

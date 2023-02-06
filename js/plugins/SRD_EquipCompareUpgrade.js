@@ -1948,7 +1948,7 @@ var specialIds = 98;
 
 Window_StatCompare.prototype.showStat = function(stat, diffvalue) {
 	return (
-		(stat < mhpId) || // ATK, DEF, MAT, MDF, AGI always show
+		(stat < mhpId) || // STR, END, SPI, RES, AGI always show
 		(stat >= mhpId && !(stat >= elementAtk1 && stat <= elementAtk2) && diffvalue != 0) || // All other stats besides attack element changes show if changed
 		(stat >= elementAtk1 && stat <= elementAtk2 && this._actor.attackElements().contains(i - elementAtk1 + 1) !== this._tempActor.attackElements().contains(i - elementAtk1 + 1)) // Attack element changes
 	);

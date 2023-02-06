@@ -234,7 +234,7 @@
   {
     "id": 12,
     "atypeId": 1,
-    "description": "When people see this on your head, they'll be sure to\ncompliment you! But how does it boost your MHP and MMP?",
+    "description": "When people see this on your head, they'll be sure to\ncompliment you! But how does it boost your VIT and WIS?",
     "etypeId": 3,
     "traits": [],
     "iconIndex": 457,
@@ -624,7 +624,7 @@
   {
     "id": 30,
     "atypeId": 1,
-    "description": "Boosts ATK and MAT by 10% each.",
+    "description": "Boosts STR and SPI by 10% each.",
     "etypeId": 9,
     "traits": [
       {
@@ -933,7 +933,7 @@
   {
     "id": 42,
     "atypeId": 1,
-    "description": "Boosts ATK by 10% but decreases DEF by 20%.",
+    "description": "Boosts STR by 10% but decreases END by 20%.",
     "etypeId": 9,
     "traits": [
       {
@@ -1355,7 +1355,7 @@
   {
     "id": 58,
     "atypeId": 1,
-    "description": "Boosts DEF and MDF by 10% each.",
+    "description": "Boosts END and RES by 10% each.",
     "etypeId": 9,
     "traits": [
       {
@@ -1721,7 +1721,7 @@
   {
     "id": 73,
     "atypeId": 1,
-    "description": "A generic glass shard you found laying around.\nIncreases ATK by 25%, but cuts into you as well.",
+    "description": "A generic glass shard you found laying around.\nIncreases STR by 25%, but cuts into you as well.",
     "etypeId": 6,
     "traits": [
       {
@@ -2159,7 +2159,7 @@
   {
     "id": 90,
     "atypeId": 2,
-    "description": "A jolly set of heavy armor for a knight.\nRestores 3% of MHP per turn.",
+    "description": "A jolly set of heavy armor for a knight.\nRestores 3% HP per turn.",
     "etypeId": 4,
     "traits": [
       {
@@ -2186,7 +2186,7 @@
   {
     "id": 91,
     "atypeId": 3,
-    "description": "A merry set of robes for a mage.\nRestores 3% of MHP per turn.",
+    "description": "A merry set of robes for a mage.\nRestores 3% HP per turn.",
     "etypeId": 4,
     "traits": [
       {
@@ -2213,7 +2213,7 @@
   {
     "id": 92,
     "atypeId": 4,
-    "description": "A happy set of vestments for a cleric.\nRestores 3% of MHP per turn.",
+    "description": "A happy set of vestments for a cleric.\nRestores 3% HP per turn.",
     "etypeId": 4,
     "traits": [
       {
@@ -2240,7 +2240,7 @@
   {
     "id": 93,
     "atypeId": 5,
-    "description": "A jovial set of leathers for a rogue.\nRestores 3% of MHP per turn.",
+    "description": "A jovial set of leathers for a rogue.\nRestores 3% HP per turn.",
     "etypeId": 4,
     "traits": [
       {
@@ -2420,7 +2420,7 @@
   {
     "id": 98,
     "atypeId": 1,
-    "description": "A mysterious charm that acts similarly to the\n\\ia[17], minus the MAT decrease.",
+    "description": "A mysterious charm that acts similarly to the\n\\ia[17], minus the SPI decrease.",
     "etypeId": 6,
     "traits": [],
     "iconIndex": 617,
@@ -2579,7 +2579,7 @@
   {
     "id": 105,
     "atypeId": 1,
-    "description": "A mysterious orb with a burning fire raging inside.\nIncreases ATK and MAT of party members and enemies by 15%.",
+    "description": "A mysterious orb with a burning fire raging inside.\nIncreases STR and SPI of party members and enemies by 15%.",
     "etypeId": 8,
     "traits": [],
     "iconIndex": 352,
@@ -2600,7 +2600,7 @@
   {
     "id": 106,
     "atypeId": 1,
-    "description": "A curious orb with blue waves crashing on shores inside.\nIncreases DEF and MDF of party members and enemies by 15%.",
+    "description": "A curious orb with blue waves crashing on shores inside.\nIncreases END and RES of party members and enemies by 15%.",
     "etypeId": 8,
     "traits": [],
     "iconIndex": 353,
@@ -3503,7 +3503,7 @@
     "traits": [],
     "iconIndex": 496,
     "name": "Tellurian Knight's Shield",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nDEF Scroll ★\nDisposable Hammer: 2\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nEND Scroll ★\nDisposable Hammer: 2\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -3524,7 +3524,7 @@
     "traits": [],
     "iconIndex": 497,
     "name": "Tellurian Knight's Bulwark",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nDEF Scroll ★\nThick-Skinned Herb: 5\nEnchanted Dragon Scale\nForest Core\nFrozen Core\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nEND Scroll ★\nThick-Skinned Herb: 5\nEnchanted Dragon Scale\nForest Core\nFrozen Core\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
     "params": [
       0,
       0,
@@ -3884,7 +3884,7 @@
   {
     "id": 148,
     "atypeId": 2,
-    "description": "An enchanted set of gauntlets that focuses on offense rather\nthan defense. Attacks debuff the target's DEF for a few turns.",
+    "description": "An enchanted set of gauntlets that focuses on offense rather\nthan defense. Attacks debuff the target's END for a few turns.",
     "etypeId": 6,
     "traits": [],
     "iconIndex": 656,
@@ -4656,7 +4656,7 @@
   {
     "id": 174,
     "atypeId": 1,
-    "description": "Although the gold is clearly fake, or at least low carat, it still\ncarries a beautiful sheen. Provides a large amount of MMP and some MRG.",
+    "description": "Although the gold is clearly fake, or at least low carat, it still\ncarries a beautiful sheen. Provides a large amount of WIS and some MRG.",
     "etypeId": 3,
     "traits": [
       {
@@ -4795,7 +4795,7 @@
   {
     "id": 179,
     "atypeId": 6,
-    "description": "An even tighter chunk of rat fur, providing\nmuch more DEF than most light shields.",
+    "description": "An even tighter chunk of rat fur, providing\nmuch more END than most light shields.",
     "etypeId": 2,
     "traits": [],
     "iconIndex": 743,
@@ -4891,7 +4891,7 @@
   {
     "id": 183,
     "atypeId": 6,
-    "description": "Difficult to forge, and its price reflects that. Provides DEF on\npar with some heavy shields while remaining light and non-obstructive.",
+    "description": "Difficult to forge, and its price reflects that. Provides END on\npar with some heavy shields while remaining light and non-obstructive.",
     "etypeId": 2,
     "traits": [],
     "iconIndex": 767,

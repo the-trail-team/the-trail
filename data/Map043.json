@@ -38713,9 +38713,9 @@
               "indent": 1,
               "parameters": [
                 [
-                  "MHP",
+                  "VIT",
                   "HP",
-                  "MMP",
+                  "WIS",
                   "MP",
                   "Next Page",
                   "Goodbye."
@@ -38731,7 +38731,7 @@
               "indent": 1,
               "parameters": [
                 0,
-                "MHP"
+                "VIT"
               ]
             },
             {
@@ -38748,21 +38748,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\solMHP stands for Max Health Points."
+                "\\solVIT stands for Vitality. This is your"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "This is the most amount of HP you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "can have without external sources."
+                "maximum amount of HP possible."
               ]
             },
             {
@@ -38840,7 +38833,7 @@
               "indent": 1,
               "parameters": [
                 2,
-                "MMP"
+                "WIS"
               ]
             },
             {
@@ -38857,21 +38850,14 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\solMMP stands for Max Magic Points"
+                "\\solWIS stands for Wisdom. This is your"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "This is the most amount of MP you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "can have without external sources."
+                "maximum amount of MP possible."
               ]
             },
             {
@@ -38999,8 +38985,8 @@
               "indent": 1,
               "parameters": [
                 [
-                  "ATK/DEF",
-                  "MAT/MDF",
+                  "STR/END",
+                  "SPI/RES",
                   "AGI",
                   "INT",
                   "Next Page",
@@ -39017,7 +39003,7 @@
               "indent": 1,
               "parameters": [
                 0,
-                "ATK/DEF"
+                "STR/END"
               ]
             },
             {
@@ -39034,28 +39020,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\solATK stands for Attack, while"
+                "\\solSTR stands for Strength, while END stands"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "DEF stands for Defense. They are"
+                "for Endurance. They are used for damage"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "used for damage formulas involving"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "physical attacks."
+                "formulas involving physical attacks."
               ]
             },
             {
@@ -39075,7 +39054,7 @@
               "indent": 1,
               "parameters": [
                 1,
-                "MAT/MDF"
+                "SPI/RES"
               ]
             },
             {
@@ -39092,28 +39071,21 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\solMAT stands for Magic Attack, while"
+                "\\solSPI stands for Spirit, while RES stands"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "MDF stands for Magic Defense. They are"
+                "for Resistance. They are used for damage"
               ]
             },
             {
               "code": 401,
               "indent": 2,
               "parameters": [
-                "used for damage formulas involving"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "magical attacks."
+                "formulas involving magical attacks."
               ]
             },
             {

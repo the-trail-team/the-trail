@@ -84,7 +84,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Take a second or two to think before you attack. As a result, your\ndamage and CRI will be boosted. The hit always lands. \\c[27]\\bpdamage[500]%\\c[0] ATK rate.",
+    "description": "Take a second or two to think before you attack. As a result, your\ndamage and CRI will be boosted. The hit always lands. \\c[27]\\bpdamage[500]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -201,7 +201,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Slice up an enemy in a V-shape. Deal damage fast - now that's\nthe true meaning of efficiency! \\c[27]\\bpdamage[500]%\\c[0] ATK rate.",
+    "description": "Slice up an enemy in a V-shape. Deal damage fast - now that's\nthe true meaning of efficiency! \\c[27]\\bpdamage[500]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -238,7 +238,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Sets an enemy ablaze. It's a weaker magic attack, but\nit's better than a wand smack. \\c[27]\\bpdamage[250]%\\c[0] MAT rate.",
+    "description": "Sets an enemy ablaze. It's a weaker magic attack, but\nit's better than a wand smack. \\c[27]\\bpdamage[250]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -275,7 +275,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Damages an enemy with ice. It isn't as powerful as \\is[7],\nbut can freeze an enemy for a turn. \\c[27]\\bpdamage[225]%\\c[0] MAT rate.",
+    "description": "Damages an enemy with ice. It isn't as powerful as \\is[7],\nbut can freeze an enemy for a turn. \\c[27]\\bpdamage[225]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -312,7 +312,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "The most basic of lightning-element attacks. It still packs quite a punch,\nthough. Damages 1 extra enemy. \\c[27]\\bpdamage[275]%\\c[0] MAT rate.",
+    "description": "The most basic of lightning-element attacks. It still packs quite a punch,\nthough. Damages 1 extra enemy. \\c[27]\\bpdamage[275]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 1481,
@@ -342,7 +342,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Reduces MAT by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Creates an explosion behind enemy lines. It isn't too effective against single enemies, but\nit devastates groups. Reduces SPI by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -379,7 +379,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "Restores a small bit of HP to one of your allies, even out of\nbattle. Doesn't work on \\it[1] party members. \\c[27]\\bpdamage[120]%\\c[0] MAT rate.",
+    "description": "Restores a small bit of HP to one of your allies, even out of\nbattle. Doesn't work on \\it[1] party members. \\c[27]\\bpdamage[120]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1441,
@@ -409,7 +409,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "A stronger version of \\is[11]. It heals a considerably\nhigher amount of HP. \\c[27]\\bpdamage[280]%\\c[0] MAT rate.",
+    "description": "A stronger version of \\is[11]. It heals a considerably\nhigher amount of HP. \\c[27]\\bpdamage[280]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1444,
@@ -506,7 +506,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Take a turn to sharpen your dagger, boosting\nyour ATK and CRI for \\c[27]\\bpturn[3]\\c[0] to \\c[27]\\bpturn[4]\\c[0] turns.",
+    "description": "Take a turn to sharpen your dagger, boosting\nyour STR and CRI for \\c[27]\\bpturn[3]\\c[0] to \\c[27]\\bpturn[4]\\c[0] turns.",
     "effects": [
       {
         "code": 21,
@@ -616,7 +616,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Jump behind your enemy and land a devastating attack. This attack is always a\ncritical hit and never misses. Reduces ATK by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
+    "description": "Jump behind your enemy and land a devastating attack. This attack is always a\ncritical hit and never misses. Reduces STR by 50% the next turn. \\c[27]\\bpdamage[400]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -713,7 +713,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Summons a weak trail of magical energy. Deals\nlow damage, but uses no MP. \\c[27]\\bpdamage[150]%\\c[0] MAT rate.",
+    "description": "Summons a weak trail of magical energy. Deals\nlow damage, but uses no MP. \\c[27]\\bpdamage[150]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 559,
@@ -780,7 +780,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Deals great magic damage to all enemies. Ignores\nenemy MDF and has no element. \\c[27]\\bpdamage[800]%\\c[0] MAT rate.",
+    "description": "Deals great magic damage to all enemies. Ignores\nenemy RES and has no element. \\c[27]\\bpdamage[800]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 119,
@@ -1025,7 +1025,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Give everyone a morale boost! Boosts the ATK and\nMAT of the party by 10% for \\c[27]\\bpturn[8]\\c[0] to \\c[27]\\bpturn[10]\\c[0] turns.",
+    "description": "Give everyone a morale boost! Boosts the STR and\nSPI of the party by 10% for \\c[27]\\bpturn[8]\\c[0] to \\c[27]\\bpturn[10]\\c[0] turns.",
     "effects": [
       {
         "code": 21,
@@ -1062,7 +1062,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Increases an ally's MDF by 25% for 5 turns.",
+    "description": "Increases an ally's RES by 25% for 5 turns.",
     "effects": [
       {
         "code": 21,
@@ -1099,7 +1099,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Decreases an enemy's MDF by 25% for 5 turns.",
+    "description": "Decreases an enemy's RES by 25% for 5 turns.",
     "effects": [
       {
         "code": 21,
@@ -1136,7 +1136,7 @@
       "type": 3,
       "variance": 0
     },
-    "description": "Restores 30% of a party member's MHP and increases\ntheir health regeneration by 10% for \\c[27]\\bpturn[4]\\c[0] turns",
+    "description": "Restores 30% of a party member's HP and increases\ntheir health regeneration by 10% for \\c[27]\\bpturn[4]\\c[0] turns",
     "effects": [
       {
         "code": 21,
@@ -1263,7 +1263,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Smack an enemy with a few bubbles. Can soak the target, changing their element\nrates and reducing their AGI and EVA. \\c[27]\\bpdamage[300]%\\c[0] MAT rate.",
+    "description": "Smack an enemy with a few bubbles. Can soak the target, changing their element\nrates and reducing their AGI and EVA. \\c[27]\\bpdamage[300]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -1508,7 +1508,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Channel the power of Trailia, dealing a good amount of damage to most\nenemies and even more to dark enemies. \\c[27]\\bpdamage[300]%\\c[0] MAT rate.",
+    "description": "Channel the power of Trailia, dealing a good amount of damage to most\nenemies and even more to dark enemies. \\c[27]\\bpdamage[300]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 1509,
@@ -1624,7 +1624,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Conjure up an orb of darkness onto an enemy. Can\nsometimes blind them. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Conjure up an orb of darkness onto an enemy. Can\nsometimes blind them. \\c[27]\\bpdamage[400]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -1788,7 +1788,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "A powerful axe attack that ignores\nall enemy DEF. \\c[27]\\bpdamage[450]%\\c[0] ATK rate.",
+    "description": "A powerful axe attack that ignores\nall enemy END. \\c[27]\\bpdamage[450]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -1892,7 +1892,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Sacrifice your life force to intensify an ally's mindeset. Affected allies have either\nATK, DEF, MAT, or MDF heavily buffed when they defeat an enemy, whichever is the highest.",
+    "description": "Sacrifice your life force to intensify an ally's mindeset. Affected allies have either\nSTR, END, SPI, or RES heavily buffed when they defeat an enemy, whichever is the highest.",
     "effects": [
       {
         "code": 21,
@@ -1929,7 +1929,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nBuffs DEF and MDF by 20% for the first 5 turns of battle.",
+    "description": "[PASSIVE SKILL]\nBuffs END and RES by 20% for the first 5 turns of battle.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 13,
@@ -1959,7 +1959,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Bind an enemy's soul, allowing the caster to leech HP from afflicted enemies every turn.\nLeeched HP is equal to 1/16th of the target's MHP, capped at 1/5th of the caster's MHP.",
+    "description": "Bind an enemy's soul, allowing the caster to leech HP from afflicted enemies every turn.\nLeeched HP is equal to 1/16th of the target's VIT, capped at 1/5th of the caster's VIT.",
     "effects": [
       {
         "code": 21,
@@ -2033,7 +2033,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "At long last, a more powerful fire to summon! Applies\na more lethal burn to an enemy. \\c[27]\\bpdamage[500]%\\c[0] MAT rate.",
+    "description": "At long last, a more powerful fire to summon! Applies\na more lethal burn to an enemy. \\c[27]\\bpdamage[500]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -2107,7 +2107,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nWhen below 30% MHP, DEF and MDF are buffed by 20%.",
+    "description": "[PASSIVE SKILL]\nWhen below 30% HP, END and RES are buffed by 20%.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 14,
@@ -2174,7 +2174,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Rip a chunk of earth out of the ground and hurl it at an enemy.\nUses MAT but acts as a physical hit. \\c[27]\\bpdamage[350]%\\c[0] MAT rate.",
+    "description": "Rip a chunk of earth out of the ground and hurl it at an enemy.\nUses SPI but acts as a physical hit. \\c[27]\\bpdamage[350]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -2211,7 +2211,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "A much stronger lightning attack, guaranteed to fry an enemy and even sometimes\nparalyze them. Damages 2 extra enemies. \\c[27]\\bpdamage[425]%\\c[0] MAT rate.",
+    "description": "A much stronger lightning attack, guaranteed to fry an enemy and even sometimes\nparalyze them. Damages 2 extra enemies. \\c[27]\\bpdamage[425]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -2359,7 +2359,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Prepare to get on the offense. Buffs ATK and AGI, but\ndebuffs DEF and MDF. Can stack up to three times.",
+    "description": "Prepare to get on the offense. Buffs STR and AGI, but\ndebuffs END and RES. Can stack up to three times.",
     "effects": [
       {
         "code": 21,
@@ -2396,7 +2396,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Hit an enemy where it hurts, debuffing\nATK and AGI for \\c[27]\\bpturn[3]\\c[0] turns. \\c[27]\\bpdamage[300]%\\c[0] ATK rate.",
+    "description": "Hit an enemy where it hurts, debuffing\nSTR and AGI for \\c[27]\\bpturn[3]\\c[0] turns. \\c[27]\\bpdamage[300]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -2439,7 +2439,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Just like a normal attack, but 50% of the damage goes through\nenemy's absorption barrier. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
+    "description": "Just like a normal attack, but 50% of the damage goes through\nenemy's absorption barrier. \\c[27]\\bpdamage[400]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -2476,7 +2476,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Swaps HP and MP percentages.\nBase MP cost is equal to \\c[27]\\bp0[15%]\\bp=1[12%]\\bp=2[9%]\\bp=3[6%]\\bp=4[3%]\\bp=5[0%]\\c[0] of the user's MMP.",
+    "description": "Swaps HP and MP percentages.\nBase MP cost is equal to \\c[27]\\bp0[15%]\\bp=1[12%]\\bp=2[9%]\\bp=3[6%]\\bp=4[3%]\\bp=5[0%]\\c[0] of the user's WIS.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 122,
@@ -2549,7 +2549,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Blow a gust of wind at an enemy, debuffing their\nATK and MAT by 20%. Has a high critical chance.",
+    "description": "Blow a gust of wind at an enemy, debuffing their\nSTR and SPI by 20%. Has a high critical chance.",
     "effects": [
       {
         "code": 21,
@@ -2586,7 +2586,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "\\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "\\c[27]\\bpdamage[400]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -2713,7 +2713,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nWhen below 50% MMP, 3% of MMP will be regenerated per turn.",
+    "description": "[PASSIVE SKILL]\nIncreases MRG by 3% when below 50% MP.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 660,
@@ -2773,7 +2773,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Afflicts the target with \\it[67]. Battlers who attack the target will gain\nMP equal to 1% of damage dealt, capped at 5% of MMP. Can't miss. \\c[27]\\bpdamage[400]%\\c[0] ATK rate.",
+    "description": "Afflicts the target with \\it[67]. Battlers who attack the target will gain\nMP equal to 1% of damage dealt, capped at 5% of WIS. Can't miss. \\c[27]\\bpdamage[400]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -2890,7 +2890,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Decimate the opposition with the\npower of wind. \\c[27]\\bpdamage[600]%\\c[0] MAT rate.",
+    "description": "Decimate the opposition with the\npower of wind. \\c[27]\\bpdamage[600]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 1497,
@@ -3031,7 +3031,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "A high-utility skill that restores some HP to a party\nmember and additionally cures weak debuffs. \\c[27]\\bpdamage[120]%\\c[0] MAT rate.",
+    "description": "A high-utility skill that restores some HP to a party\nmember and additionally cures weak debuffs. \\c[27]\\bpdamage[120]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1445,
@@ -3128,7 +3128,7 @@
       "type": 3,
       "variance": 5
     },
-    "description": "Why heal one person a lot when you could\nheal everyone a bit? \\c[27]\\bpdamage[60]%\\c[0] MAT rate.",
+    "description": "Why heal one person a lot when you could\nheal everyone a bit? \\c[27]\\bpdamage[60]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1446,
@@ -3158,7 +3158,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Blow a magical gust of wind at an enemy, decreasing their\nATK and MAT. Has a high critical hit chance. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "Blow a magical gust of wind at an enemy, decreasing their\nSTR and SPI. Has a high critical hit chance. \\c[27]\\bpdamage[400]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -3195,7 +3195,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "Same thing as \\is[29], but no MDF debuff.",
+    "description": "Same thing as \\is[29], but no RES debuff.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1463,
@@ -4176,7 +4176,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "The highly anticipated sequel. The damage has gotten a big\nupgrade, and the freezing is stronger than ever. \\c[27]\\bpdamage[400]%\\c[0] MAT rate.",
+    "description": "The highly anticipated sequel. The damage has gotten a big\nupgrade, and the freezing is stronger than ever. \\c[27]\\bpdamage[400]%\\c[0] SPI rate.",
     "effects": [
       {
         "code": 21,
@@ -4480,7 +4480,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nIncreases MMP by 10%.",
+    "description": "[PASSIVE SKILL]\nIncreases WIS by 10%.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 660,
@@ -4687,7 +4687,7 @@
       "type": 1,
       "variance": 80
     },
-    "description": "Imbue your blade with the power of stew! Requires at least \\c[27]1 BP\\c[0]\nto use, and has a very large damage variation. \\c[27]\\bpdamage[600]%\\c[0] ATK rate.",
+    "description": "Imbue your blade with the power of stew! Requires at least \\c[27]1 BP\\c[0]\nto use, and has a very large damage variation. \\c[27]\\bpdamage[600]%\\c[0] STR rate.",
     "effects": [
       {
         "code": 21,
@@ -4724,7 +4724,7 @@
       "type": 1,
       "variance": 5
     },
-    "description": "It's preserving the very floor you stand on, but taking just\na bit should be fine. Will hit \\c[27]\\bprepeat[2]\\c[0] times. \\c[27]\\bpdamage[150]%\\c[0] MAT rate.",
+    "description": "It's preserving the very floor you stand on, but taking just\na bit should be fine. Will hit \\c[27]\\bprepeat[2]\\c[0] times. \\c[27]\\bpdamage[150]%\\c[0] SPI rate.",
     "effects": [],
     "hitType": 1,
     "iconIndex": 306,
@@ -4791,7 +4791,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Grab a powerful fish from your surroundings. Using it \nas your weapon will double your ATK. Requires \\c[27]5 BP\\c[0].",
+    "description": "Grab a powerful fish from your surroundings. Using it \nas your weapon will double your STR. Requires \\c[27]5 BP\\c[0].",
     "effects": [
       {
         "code": 21,
