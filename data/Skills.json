@@ -1758,7 +1758,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Reveal HP and \\c[27]\\bpanalyze[1]\\c[0] elemental weakness\\bp[es] of a single enemy.",
+    "description": "Reveals all enemy weaknesses. Allows you to\nsee enemy HP for the duration of the battle.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1347,
@@ -1766,7 +1766,7 @@
     "message2": "",
     "mpCost": 2,
     "name": "Analyze",
-    "note": "<Boost Analyze>\n<Analyze Weakness: 1>\n\n<Before Eval>\nif (target.barrierPoints() > 0) {\n  var text = '\\\\c[4]' + target.name() + '\\\\c[0]: ' + Yanfly.Util.toGroup(target.hp) + '\\\\c[13]+(' + target.barrierPoints() + ')\\\\c[0]/' + Yanfly.Util.toGroup(target.mhp);\n} else {\n  var text = '\\\\c[4]' + target.name() + '\\\\c[0]: ' + Yanfly.Util.toGroup(target.hp) + '/' + Yanfly.Util.toGroup(target.mhp);\n}\n$gameMessage.add(text);\nBattleManager.addText(\"Analysis successful!\", 0);\n</Before Eval>\n\n<setup action>\nmotion skill: user\nwait: 10\naction animation: targets\nwait for animation\n</setup action>\n\n<target action>\naction effect\n</target action>",
+    "note": "<Analyze Weakness: 999>\n\n<Before Eval>\nif (target.barrierPoints() > 0) {\n  var text = '\\\\c[4]' + target.name() + '\\\\c[0]: ' + Yanfly.Util.toGroup(target.hp) + '\\\\c[13]+(' + target.barrierPoints() + ')\\\\c[0]/' + Yanfly.Util.toGroup(target.mhp);\n} else {\n  var text = '\\\\c[4]' + target.name() + '\\\\c[0]: ' + Yanfly.Util.toGroup(target.hp) + '/' + Yanfly.Util.toGroup(target.mhp);\n}\n$gameMessage.add(text);\nBattleManager.addText(\"Analysis successful!\", 0);\ntarget._analyzed = true;\n</Before Eval>\n\n<setup action>\nmotion skill: user\nwait: 10\naction animation: targets\nwait for animation\n</setup action>\n\n<target action>\naction effect\n</target action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,

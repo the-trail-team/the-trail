@@ -663,11 +663,11 @@ Window_VisualHPGauge.prototype.drawActorHp = function(actor, x, y, width) {
     } else {
       this.drawGauge(x, y, width, rate, color1, color2);
     }
-    if (Yanfly.Param.VHGShowHP) {
+    if (Yanfly.Param.VHGShowHP || actor._analyzed) {
       this.changeTextColor(this.systemColor());
       this.drawText(TextManager.hpA, x, y, 44);
     }
-    if (Yanfly.Param.VHGShowValue) {
+    if (Yanfly.Param.VHGShowValue || actor._analyzed) {
       var val = this._displayedValue
       var max = actor.mhp;
       var w = width;
