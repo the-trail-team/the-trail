@@ -109,6 +109,10 @@
  * Use 'val' to represent the value.
  * @default val
  * 
+ * @param Reverse Colors
+ * @type boolean
+ * @default false
+ * 
  * @param Category
  * @type select
  * @option Other
@@ -144,18 +148,20 @@ _.defaultNeg = String(params['Default Neg Color']);
 _.windowWidth = parseInt(params['Window Width']);
 _.fontSize = parseInt(params['Font Size']);
 _.fontPad = parseInt(params['Line Padding']);
-_.stats = SRD.parse(params['Stat List']);
+_.stats = [{}].concat(SRD.parse(params['Stat List']));
 
 _.names = [];
 _.evals = [];
 _.tags = [];
 _.forms = [];
+_.reves = [];
 _.cates = [];
 _.extrs = [];
-for(let i = 0; i < _.stats.length; i++) {
+for(let i = 1; i < _.stats.length; i++) {
 	const name = String(_.stats[i]['Name']);
 	const evil = String(_.stats[i]['Eval']);
 	const form = String(_.stats[i]['Format']);
+	const reve = Boolean(_.stats[i]['Reverse Colors']);
 	const cate = String(_.stats[i]['Category']);
 	const extr = Number(_.stats[i]['Extra']);
 
@@ -165,8 +171,11 @@ for(let i = 0; i < _.stats.length; i++) {
 	_.forms[i] = form;
 	_.forms[i] = _.forms[i].replace(/\s*<Pos\s*Color\s*:\s*[^>]*\s*>\s*/, '');
 	_.forms[i] = _.forms[i].replace(/\s*<Neg\s*Color\s*:\s*[^>]*\s*>\s*/, '');
+	_.reves[i] = reve;
 	_.cates[i] = cate;
 	_.extrs[i] = extr;
+
+	if (_.cates[i] == 'Decimal Place') _.evals[i] = "(" + _.evals[i] + " * 100).toFixed(1)";
 }
 
 //-----------------------------------------------------------------------------
@@ -222,6 +231,7 @@ Window_EquipStatus.prototype.powerUpColor = function(paramId) {
 	if(_.tags[paramId] && _.tags[paramId].match(/\s*<Pos\s*Color\s*:\s*([^>]*)\s*>\s*/)) {
 		return String(RegExp.$1);
 	}
+	if (_.reves[paramId]) return _.defaultNeg;
     return _.defaultPos;
 };
 
@@ -230,6 +240,7 @@ Window_EquipStatus.prototype.powerDownColor = function(paramId) {
 	if(_.tags[paramId] && _.tags[paramId].match(/\s*<Neg\s*Color\s*:\s*([^>]*)\s*>\s*/)) {
 		return String(RegExp.$1);
 	}
+	if (_.reves[paramId]) return _.defaultPos;
     return _.defaultNeg;
 };
 
