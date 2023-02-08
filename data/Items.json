@@ -6545,7 +6545,7 @@
     "iconIndex": 211,
     "itypeId": 1,
     "name": "Well-Rounded Combination",
-    "note": "<Synthesis Ingredients>\nVital Cola\nMana Fizz\nRocky Sip\nArcanic Chug\nBrawl Brew\nWarding Swig\n</Synthesis Ingredients>\n<Mask Name: Buffing Time Saver>\n<Synthesis SE: Equip3>",
+    "note": "",
     "occasion": 2,
     "price": 360,
     "repeats": 1,
@@ -7527,6 +7527,96 @@
     "price": 50,
     "repeats": 1,
     "scope": 0,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 263,
+    "animationId": 208,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A combination of several drinks that boosts\nsome of your offensive stats by 25% for 10 turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 17,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 19,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 37,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 211,
+    "itypeId": 1,
+    "name": "Offense Combination",
+    "note": "",
+    "occasion": 2,
+    "price": 180,
+    "repeats": 1,
+    "scope": 7,
+    "speed": 0,
+    "successRate": 100,
+    "tpGain": 0
+  },
+  {
+    "id": 264,
+    "animationId": 208,
+    "consumable": true,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "A combination of several drinks that boosts\nsome of your defensive stats by 25% for 10 turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 16,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 18,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 38,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 211,
+    "itypeId": 1,
+    "name": "Defense Combination",
+    "note": "",
+    "occasion": 2,
+    "price": 180,
+    "repeats": 1,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
