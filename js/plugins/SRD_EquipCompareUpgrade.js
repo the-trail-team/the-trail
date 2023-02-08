@@ -389,6 +389,7 @@ Window_StatCompare.prototype.powerUpColor = function(paramId) {
 	if(_.tags[paramId] && _.tags[paramId].match(/\s*<Pos\s*Color\s*:\s*([^>]*)\s*>\s*/)) {
 		return String(RegExp.$1);
 	}
+	if (_.reves[paramId]) return _.defaultNeg;
     return _.defaultPos;
 };
 
@@ -397,6 +398,7 @@ Window_StatCompare.prototype.powerDownColor = function(paramId) {
 	if(_.tags[paramId] && _.tags[paramId].match(/\s*<Neg\s*Color\s*:\s*([^>]*)\s*>\s*/)) {
 		return String(RegExp.$1);
 	}
+	if (_.reves[paramId]) return _.defaultPos;
     return _.defaultNeg;
 };
 
