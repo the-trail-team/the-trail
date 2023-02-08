@@ -6283,5 +6283,40 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 184,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
+      }
+    ],
+    "iconIndex": 800,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Flame Body",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<Category: Fire>\n\n<Element Absorb: 2>\n\n<animationRow:28>\n<yAnchor: 0.85>\n\n<Help Description>\nThis battler has taken on the properties of a fire elemental.\n</Help Description>",
+    "overlay": 0,
+    "priority": 5,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
