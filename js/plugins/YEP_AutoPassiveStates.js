@@ -302,6 +302,7 @@ DataManager.processAPSNotetags1 = function(group, inheritArray) {
 
     obj.passiveStates = [];
     obj.elements = [];
+    obj.armorWeaknesses = [];
     if (inheritArray) {
       obj.passiveStates = obj.passiveStates.concat(inheritArray);
     }
@@ -318,11 +319,7 @@ DataManager.processAPSNotetags1 = function(group, inheritArray) {
       } else if (line.match(note3)) {
         obj.elements = obj.elements.concat(RegExp.$1.toUpperCase().split(", "));
       } else if (line.match(note4)) {
-        var type = RegExp.$1.toUpperCase();
-        if (type == 'SLASHING') id = 181;
-        if (type == 'BLUDGEONING') id = 182;
-        if (type == 'PIERCING') id = 183;
-        if (id) obj.passiveStates = obj.passiveStates.concat(id);
+        obj.armorWeaknesses = obj.armorWeaknesses.concat(RegExp.$1.toUpperCase());
       }
     }
   }
