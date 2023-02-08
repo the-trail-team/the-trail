@@ -3969,13 +3969,19 @@
     "animationId": 301,
     "damage": {
       "critical": true,
-      "elementId": 1,
+      "elementId": -1,
       "formula": "a.atk * 5 - b.def * 2",
       "type": 1,
       "variance": 5
     },
     "description": "",
     "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      },
       {
         "code": 21,
         "dataId": 39,
@@ -3989,7 +3995,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Poison Fang",
-    "note": "<Multiple Elements: 17>\n\n<action copy: skill:1>",
+    "note": "<action copy: skill:1>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
