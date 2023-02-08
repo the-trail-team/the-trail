@@ -1931,7 +1931,7 @@
     "minTurns": 3,
     "motion": 0,
     "name": "Goblin Guard",
-    "note": "<State Motion: Guard>\n\n<Barrier Regen: +300>\n<Custom Apply Effect>\nuser.startAnimation(53);\n</Custom Apply Effect>\n<Custom Turn Start Effect>\ntarget.removeStateCategoryAll('debuff');\n</Custom Turn Start Effect>\n<Custom Turn End Effect>\ntarget.removeStateCategoryAll('debuff');\nuser.startAnimation(45);\nuser.customPopup(\"+300\", 3);\n</Custom Turn End Effect>\n<Custom Remove Effect>\nuser.startAnimation(56);\n</Custom Remove Effect>\n\n<Help Description>\nGuard and regenerate 300 barrier points per turn.\n</Help Description>",
+    "note": "<State Motion: Guard>\n\n<Custom Apply Effect>\nuser.startAnimation(53);\n</Custom Apply Effect>\n<Custom Remove Effect>\nuser.startAnimation(56);\n</Custom Remove Effect>\n\n<Help Description>\nThis battler will guard until the state expires.\n</Help Description>",
     "overlay": 0,
     "priority": 70,
     "removeAtBattleEnd": false,
