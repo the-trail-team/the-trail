@@ -295,6 +295,7 @@ DataManager.processAPSNotetags1 = function(group, inheritArray) {
   var note1 = /<(?:PASSIVE STATE):[ ]*(\d+(?:\s*,\s*\d+)*)>/i;
   var note2 = /<(?:PASSIVE STATE):[ ](\d+)[ ](?:THROUGH|to)[ ](\d+)>/i;
   var note3 = /<Element: (.*)>/i;
+  var note4 = /<Armor Weakness: (.*)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -316,6 +317,12 @@ DataManager.processAPSNotetags1 = function(group, inheritArray) {
         obj.passiveStates = obj.passiveStates.concat(range);
       } else if (line.match(note3)) {
         obj.elements = obj.elements.concat(RegExp.$1.toUpperCase().split(", "));
+      } else if (line.match(note4)) {
+        var type = RegExp.$1.toUpperCase();
+        if (type == 'SLASHING') id = 181;
+        if (type == 'BLUDGEONING') id = 182;
+        if (type == 'PIERCING') id = 183;
+        if (id) obj.passiveStates = obj.passiveStates.concat(id);
       }
     }
   }
