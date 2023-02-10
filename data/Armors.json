@@ -362,7 +362,13 @@
     "atypeId": 5,
     "description": "A shoddy set of leathers, visibly worn over\nyears of use. Likely to be stolen property.",
     "etypeId": 4,
-    "traits": [],
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
     "iconIndex": 450,
     "name": "Bandito Leathers",
     "note": "<Disassemble Pool: Basic>\nx1-2 item 51: 100%\nx1 Leather: 60%\n</Disassemble Pool: Basic>",
@@ -370,13 +376,13 @@
       0,
       0,
       0,
-      3,
+      1,
       0,
       0,
       1,
       0
     ],
-    "price": 20
+    "price": 30
   },
   {
     "id": 19,
@@ -704,15 +710,9 @@
   {
     "id": 33,
     "atypeId": 5,
-    "description": "A powerful set of leathers colored with a mesmerizing \nshade of red. Not made with real blood. Boosts EVA.",
+    "description": "A powerful set of leathers colored with a mesmerizing\nshade of red. Not made with real blood.",
     "etypeId": 4,
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 1,
-        "value": 0.02
-      }
-    ],
+    "traits": [],
     "iconIndex": 446,
     "name": "Blood-Red Leathers",
     "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-4 Yarn: 100%\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>",
