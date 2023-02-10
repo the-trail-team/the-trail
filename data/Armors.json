@@ -1227,11 +1227,17 @@
   {
     "id": 53,
     "atypeId": 4,
-    "description": "A simple yet powerful set of vestments. The lining\nseems to be shinier, and it emanates magical power.",
+    "description": "A simple yet powerful set of vestments. The lining seems to\nbe shinier, and it emanates magical power. Increases OMD by 5%.",
     "etypeId": 4,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 2,
+        "value": 1.05
+      }
+    ],
     "iconIndex": 736,
-    "name": "Prayer Vestments ★",
+    "name": "Phantasmal Vestments",
     "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
@@ -3191,18 +3197,18 @@
   {
     "id": 127,
     "atypeId": 4,
-    "description": "The truly repaired form of the vestments guarded by\nThe Warden. Strengthens outgoing healing by 5%.",
+    "description": "The truly repaired form of the vestments guarded by\nThe Warden. Further strengthens outgoing healing.",
     "etypeId": 4,
     "traits": [
       {
         "code": 25,
         "dataId": 2,
-        "value": 1.05
+        "value": 1.075
       }
     ],
     "iconIndex": 739,
-    "name": "True Prayer Vestments ★",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPrayer Vestments ★\nTarantula Silk: 5\nShadowspec Ingot: 2\nEnchanting Crystal: 6\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "name": "True Phantasmal Vestments",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\nEnchanting Crystal: 6\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       7,
