@@ -644,7 +644,7 @@
     ],
     "gold": 300,
     "name": "Four-Toed Kevin",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: Bandito_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest END\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nScrap of Kevin's Cape: 100%\nBandito Dagger: 12.5%\nBandito Leathers: 12.5%\nBandito Gloves: 12.5%\nAnti-Magic Charm ★: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: Bandito_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n<Boost Skill 15: Full>\n<Boost Skill 18: Full>\n<AI Priority>\nUser HP% param <= 10%: Backstab, Lowest END\n\nState !== Foresight +++ User HP% param >= 30%: Foresight, User\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\n\nTroop Alive Members > 1 +++ State !== Inspired: Inspire, First\nTroop Alive Members > 1 +++ Random 50%: Guard, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nScrap of Kevin's Cape: 100%\nBandito Dagger: 12.5%\nBandito Leathers: 12.5%\nBandito Gloves: 12.5%\nEnchanted Anti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
       1200,
       200,
@@ -3148,7 +3148,7 @@
     ],
     "gold": 100,
     "name": "Darkhound",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nIron Wristbraces: 5% +5%\nAnti-Magic Charm ★: 5% +5%\nCharm of Foresight: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136>\n\n<Sideview Battler: Hound_3>\n<Scale Sprite: 200%>\n<Sideview No Collapse>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nNecrotic Skull: 20% +30%\nIron Wristbraces: 5% +5%\nEnchanted Anti-Magic Charm: 5% +5%\nCharm of Foresight: 5% +5%\nINT Scroll: 10% +10%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1500,
       0,
@@ -4368,7 +4368,7 @@
     ],
     "gold": 750,
     "name": "Big Mouth",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: ThiefDuo_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn % 4 === 0: Offensive Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 4 === 1: Attack\nTurn % 4 === 2: Focused Slash\nTurn % 4 === 3: Double Slash\n\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nScaly Gloves: 12.5%\nAnti-Magic Charm ★: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: ThiefDuo_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn % 4 === 0: Offensive Stance\nState !== Sharpened Dagger: Sharpen Dagger, User\nTurn % 4 === 1: Attack\nTurn % 4 === 2: Focused Slash\nTurn % 4 === 3: Double Slash\n\nUser HP% param <= 15%: Backstab, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nScaly Gloves: 12.5%\nEnchanted Anti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
       4000,
       0,
@@ -4431,7 +4431,7 @@
     ],
     "gold": 750,
     "name": "Smart Mouth",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: ThiefDuo_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn === 1 +++ Random 50%: Cherry Bomb, User\nTurn === 1: Foresight, User\n\nState !== Cherry Bomb +++ Random 30%: Cherry Bomb, User\nState !== Foresight +++ Random 30%: Foresight, User\n\nState !== Sharpened Dagger +++ Turn >= 3: Sharpen Dagger, User\n\nState === Magical Barrier: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nScaly Gloves: 12.5%\nAnti-Magic Charm ★: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: ThiefDuo_2>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nTurn === 1 +++ Random 50%: Cherry Bomb, User\nTurn === 1: Foresight, User\n\nState !== Cherry Bomb +++ Random 30%: Cherry Bomb, User\nState !== Foresight +++ Random 30%: Foresight, User\n\nState !== Sharpened Dagger +++ Turn >= 3: Sharpen Dagger, User\n\nState === Magical Barrier: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nScaly Gloves: 12.5%\nEnchanted Anti-Magic Charm: 5%\n</Enemy Drops>",
     "params": [
       3000,
       0,
