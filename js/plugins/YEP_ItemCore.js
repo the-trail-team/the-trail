@@ -1945,8 +1945,8 @@ Window_ItemStatus.prototype.getItemIcons = function(i, array) {
         if (state && state.iconIndex !== 0) array.push(state.iconIndex);
       }
     }, this);
-    if (i == 5) for (const c in item.removeCategory) DataManager.stateCategories[c].forEach(s => {
-      if (s.iconIndex !== 0 && !array.contains($dataStates[s].iconIndex) && Yanfly.Param.StatusStateColAll.contains(String(s))) array.push($dataStates[s].iconIndex)
+    if (i == 5) for (const c in item.removeCategory) if (DataManager.stateCategories[c]) DataManager.stateCategories[c].forEach(s => {
+      if (s.iconIndex !== 0 && !array.contains($dataStates[s].iconIndex) && Yanfly.Param.StatusStateColAll.contains(String(s))) array.push($dataStates[s].iconIndex);
     });
     array = array.slice(0, Yanfly.Param.ItemMaxIcons);
     return array;
