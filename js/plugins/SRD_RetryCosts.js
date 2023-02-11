@@ -489,8 +489,9 @@ Window_GameOverCommand.prototype.setRetryCosts = function(sprite) {
 
 Window_GameOverCommand.prototype.makeCommandList = function() {
 	if(__.allowRetry) {
-		this.addCommand(__.retryText, 'retry', !!$gameTemp._setUpRetry && $gameTemp._setUpRetry[3].canPayRetryCosts());
+		this.addCommand(__.retryText, 'retry', !!$gameTemp._setUpRetry);
 	}
+	this.addCommand("Give Up", 'giveup');
 	this.addCommand(__.loadText, 'load');
 	this.addCommand(__.titleText, 'title');
 };
@@ -499,7 +500,7 @@ _.Window_GameOverCommand_select = Window_GameOverCommand.prototype.select;
 Window_GameOverCommand.prototype.select = function(index) {
 	_.Window_GameOverCommand_select.apply(this, arguments);
 	if(this._retryCosts && this.isOpen()) {
-		if(index === 0) {
+		if(index === 1) {
 			this._retryCosts.setOpacitySpeed(15);
 		} else {
 			this._retryCosts.setOpacitySpeed(-15);
@@ -510,7 +511,7 @@ Window_GameOverCommand.prototype.select = function(index) {
 _.Window_GameOverCommand_open = Window_GameOverCommand.prototype.open;
 Window_GameOverCommand.prototype.open = function() {
 	_.Window_GameOverCommand_open.apply(this, arguments);
-	if(this.index() === 0) {
+	if(this.index() === 1) {
 		this._retryCosts.setOpacitySpeed(15);
 	}
 };
