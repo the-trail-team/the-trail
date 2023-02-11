@@ -539,6 +539,21 @@ Game_System.prototype.nextMoonPhase = function() {
     if (this._moonPhase > 7) this._moonPhase = 0;
 };
 
+// Melee Damage Types
+
+Game_System.prototype.meleeDamageWeakness = function(user, type) {
+    if (user.isActor()) {
+        return true;
+    } else if (user.isEnemy()) {
+        if (!!user.enemy().armorWeaknesses) {
+            if (user.enemy().armorWeaknesses.contains(type)) {
+                return true;
+            }
+        }
+    }
+    return false;
+};
+
 // Constants
 
 Game_System.prototype.exhaustionTime = function() {
