@@ -694,6 +694,10 @@ Window_VisualHPGauge.prototype.gaugeHeight = function() {
     return this._battler.hpGaugeHeight();
 };
 
+Window_VisualHPGauge.prototype.standardFontSize = function() {
+    return 16;
+};
+
 if (Imported.YEP_CoreEngine && Yanfly.Param.VHGThick) {
 
 Window_VisualHPGauge.prototype.drawGauge =
