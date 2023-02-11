@@ -12571,8 +12571,17 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "People3",
                 7,
@@ -12582,17 +12591,27 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\solOh, it's you four. You've done"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "a lot of world-saving, huh?"
+                "a lot of world-saving, right?"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 101,
@@ -12633,273 +12652,12 @@
               ]
             },
             {
-              "code": 101,
+              "code": 123,
               "indent": 0,
               "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\solThis place just got robbed,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "we can't take any more risks."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\solCare to hear the details?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "I'm all ears.",
-                  "I'm good."
-                ],
-                1,
-                0,
-                2,
+                "A",
                 0
               ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "I'm all ears."
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 1,
-              "parameters": [
-                31,
-                31,
-                0,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "OpenActorSelect 31"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                1,
-                31,
-                0,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 119,
-              "indent": 2,
-              "parameters": [
-                "no actor"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\solAlright, here we go."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\solTrust me, you'll be feeling pretty"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Wary after hearing this, too."
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 1,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\solCrazy, right? You never know"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "when the enemy will strike."
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ChangeActorNature v[31] 9"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "I'm good."
-              ]
-            },
-            {
-              "code": 118,
-              "indent": 1,
-              "parameters": [
-                "no actor"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\solThat's alright, you probably"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "have better things to do."
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
