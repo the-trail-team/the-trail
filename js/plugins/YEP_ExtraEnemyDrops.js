@@ -647,10 +647,18 @@ DataManager.createGlobalDrops = function(obj) {
     this.createEnemyDrop(obj, id, rate, 3);
 
     // Present (1/5 drop during December)
-    if (date.getMonth() === 11) {
+    if (date.getMonth() == 11) {
       var id = 156;
       var rate = 0.2;
-      if (date.getDate() === 25) rate = 0.5; // 1/2 drop on Christmas
+      if (date.getDate() == 25) rate = 0.5; // 1/2 drop on Christmas
+      this.createEnemyDrop(obj, id, rate, 1);
+    }
+
+    // Pumpkin (1/5 drop during October)
+    if (date.getMonth() == 9) {
+      var id = 59;
+      var rate = 0.2;
+      if (date.getDate() == 31) rate = 0.5; // 1/2 drop on Halloween
       this.createEnemyDrop(obj, id, rate, 1);
     }
 };
