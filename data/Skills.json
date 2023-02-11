@@ -4099,7 +4099,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Draconic Healing",
-    "note": "<Custom User Barrier 3 Turns>\nvalue = 2000 * $gameVariables.value(53);\n</Custom User Barrier 3 Turns>\n\n<Custom Execution>\nvalue = $gameVariables.value(53) + 1;\n$gameVariables.setValue(53, value);\n</Custom Execution>\n\n<After Eval>\ntarget.customPopup(\"+\" + String(2000 * $gameVariables.value(53)), 3);\n</After Eval>\n\n<setup action>\nanimation 53: user\nanimation 40: user\nanimation 215: user\nwait for animation\n</setup action>\n\n<follow action>\nadd state 96: target\n</follow action>",
+    "note": "<Custom User Barrier 3 Turns>\nvalue = 1500 * $gameVariables.value(53);\n</Custom User Barrier 3 Turns>\n\n<Custom Execution>\nvalue = $gameVariables.value(53) + 1;\n$gameVariables.setValue(53, value);\n</Custom Execution>\n\n<After Eval>\ntarget.customPopup(\"+\" + String(1500 * $gameVariables.value(53)), 3);\n</After Eval>\n\n<setup action>\nanimation 53: user\nanimation 40: user\nanimation 215: user\nwait for animation\n</setup action>\n\n<follow action>\nadd state 96: target\n</follow action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -4117,7 +4117,7 @@
     "damage": {
       "critical": true,
       "elementId": 6,
-      "formula": "a.atk * 5 - b.def * 2",
+      "formula": "a.atk * 4 - b.def * 2",
       "type": 1,
       "variance": 5
     },
