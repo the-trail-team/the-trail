@@ -575,6 +575,10 @@ Game_System.prototype.exhaustionTime = function() {
     return 36;
 };
 
+Game_System.prototype.coreStatIcons = function() {
+    return [14, [122, 559, 11, 13, 117, 121, 12, 1353]];
+};
+
 //-----------------------------------------------------------------------------
 // Game_Timer
 //

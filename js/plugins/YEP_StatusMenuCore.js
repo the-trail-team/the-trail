@@ -825,6 +825,7 @@ Window_StatusInfo.prototype.drawGeneral = function() {
 };
 
 Window_StatusInfo.prototype.drawGeneralParam = function() {
+    const icons = $gameSystem.coreStatIcons();
     var rect = new Rectangle();
     rect.width = (this.contents.width - this.standardPadding()) / 2;
     rect.y = this.lineHeight() * 2;
@@ -832,8 +833,9 @@ Window_StatusInfo.prototype.drawGeneralParam = function() {
     var dx = rect.x + this.textPadding();
     var dw = rect.width - this.textPadding() * 2;
     this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+    this.drawIcon(icons[0], dx, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2);
     this.changeTextColor(this.systemColor());
-		this.drawText(TextManager.level, dx, rect.y, dw, 'left');
+		this.drawText(TextManager.level, dx + Window_Base._iconWidth, rect.y, dw, 'left');
 		this.changeTextColor(this.normalColor());
 		text = Yanfly.Util.toGroup(this._actor.level);
 		this.drawText(text, dx, rect.y, dw, 'right');
@@ -853,8 +855,9 @@ Window_StatusInfo.prototype.drawGeneralParam = function() {
         dx += rect.width;
       }
       this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+      this.drawIcon(icons[1][i], dx, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2);
       this.changeTextColor(this.systemColor());
-  		this.drawText(TextManager.param(i), dx, rect.y, dw, 'left');
+  		this.drawText(TextManager.param(i), dx + Window_Base._iconWidth, rect.y, dw, 'left');
   		this.changeTextColor(this.normalColor());
   		text = Yanfly.Util.toGroup(this._actor.param(i));
   		this.drawText(text, dx, rect.y, dw, 'right');
