@@ -13960,6 +13960,34 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Change give up cost"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if ($gameSystem.goldRetryCost == \"Math.floor($gameParty._gold / 10);\") {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameSystem.goldRetryCost = \"Math.floor($gameParty.gold() / 2);\";"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []

@@ -211,6 +211,7 @@ _.retryBattle = function() {
 };
 
 _.giveUp = function() {
+	$gameParty.payRetryCosts();
 	this._params = [0].concat($gameSystem.safePlace()).concat(0);
 	_.specialCommand201();
 };
