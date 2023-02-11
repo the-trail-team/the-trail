@@ -584,7 +584,7 @@ Scene_Map.prototype.start = function() {
         this.startFadeIn(this.fadeSpeed(), false);
     }
     this.menuCalling = false;
-    if (!$gameTemp._patchSave) $gameTemp.reserveCommonEvent(55);
+    if (!$gameTemp._patchSave) $gameTemp.reserveCommonEvent(77);
     $gameTemp._patchSave = true;
 };
 
