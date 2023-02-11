@@ -5318,7 +5318,7 @@
     "description": "Mysterious currency of an unknown denomination.\nBrings out the inner flame that lurks within.",
     "etypeId": 8,
     "traits": [],
-    "iconIndex": 801,
+    "iconIndex": 800,
     "name": "Infernal Coin",
     "note": "<Upgrade Slots: 3>\n<Passive State: 184>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
