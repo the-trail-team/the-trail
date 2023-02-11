@@ -161,7 +161,7 @@ for(let i = 1; i < _.stats.length; i++) {
 	const name = String(_.stats[i]['Name']);
 	const evil = String(_.stats[i]['Eval']);
 	const form = String(_.stats[i]['Format']);
-	const reve = Boolean(_.stats[i]['Reverse Colors']);
+	const reve = _.stats[i]['Reverse Colors'] === 'true';
 	const cate = String(_.stats[i]['Category']);
 	const extr = Number(_.stats[i]['Extra']);
 
