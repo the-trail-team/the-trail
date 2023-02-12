@@ -5439,6 +5439,14 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     }
   };
   BattleManager[_0x3084("0x57")] = function () {
+    this.prepareVictoryPreLevel();
+    $gameParty.allMembers().forEach(function(actor) {
+      ImageManager.loadFace(actor.faceName());
+      actor._preVictoryExp = actor.currentExp();
+      actor._preVictoryLv = actor._level;
+      actor._victoryPhase = true;
+      actor._victorySkills = [];
+    }, this);
     this[_0x3084("0xdd")][_0x3084("0xa7")]();
     this[_0x3084("0xee")] = true;
     if (this[_0x3084("0xa4")]) {
@@ -5464,6 +5472,11 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
       setTimeout(SceneManager._scene[_0x3084("0x74")][_0x3084("0xb6")](SceneManager[_0x3084("0xab")]), Olivia.OctoBattle[_0x3084("0x1c")].WaitHideWindows);
       setTimeout(SceneManager[_0x3084("0xab")][_0x3084("0x80")][_0x3084("0xb6")](SceneManager._scene), Olivia[_0x3084("0x3")][_0x3084("0x1c")].WaitDisplayVictory);
     }
+    this.prepareVictoryPostLevel();
+    $gameParty.allMembers().forEach(function(actor) {
+      actor._expGained = actor.currentExp() - actor._preVictoryExp;
+      actor._postVictoryLv = actor._level;
+    }, this);
   };
   BattleManager[_0x3084("0x8e")] = function () {
     AudioManager[_0x3084("0x97")](Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x68")]);
@@ -5578,7 +5591,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     this[_0x3084("0x20")](this[_0x3084("0xf3")]);
   };
   Window_BattleVictory.prototype[_0x3084("0x40")] = function () {
-    var _0x4a0925 = $gameParty[_0x3084("0x91")]();
+    var _0x4a0925 = $gameParty.members().filter(a => a.exr != 0);
     for (var _0x3f1fe3 = 0; _0x3f1fe3 < _0x4a0925[_0x3084("0x3a")]; _0x3f1fe3++) {
       var _0x20fb13 = _0x4a0925[_0x3f1fe3];
       if (!!_0x20fb13) {
@@ -5704,6 +5717,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     this[_0x3084("0xef")].fontSize = Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x2f")];
     this[_0x3084("0x9d")](this[_0x3084("0xba")](Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0xeb")]));
     this[_0x3084("0x29")](_0x549bf1, _0x579461, _0x67e614, _0x56aabd, "right");
+    if (_0x3dec5d == _0x3084("0x9c")) this.drawIcon(Yanfly.Icon.Gold, _0x579461 + _0x56aabd - this.textWidth(_0x549bf1) - Window_Base._iconWidth - this.textPadding(), _0x67e614 + 2);
   };
   Window_BattleVictory[_0x3084("0xa8")][_0x3084("0x75")] = function () {
     this[_0x3084("0xb3")](true);
@@ -5741,10 +5755,20 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
         this[_0x3084("0xbe")]--;
       }
     } else if (!this[_0x3084("0x2d")] && (Input[_0x3084("0xe1")]("ok") || Input.isRepeated(_0x3084("0xbc")) || TouchInput[_0x3084("0x1")]())) {
-      Input[_0x3084("0xa7")]();
-      TouchInput[_0x3084("0xa7")]();
-      this._ending = true;
-      BattleManager.endVictoryPhase();
+      if (BattleManager.aftermathLeveledActors().length > 0) {
+        if (!SceneManager._scene._victoryTitleWindow) SceneManager._scene.createVictoryTitle();
+        SceneManager._scene.setupNextAftermathLevelUpActor();
+      } else {
+        if (SceneManager._scene._victoryLevelWindow) {
+          SceneManager._scene._victoryLevelWindow.close();
+          SceneManager._scene._victoryTitleWindow.close();
+          if (SceneManager._scene._victorySkillWindow) SceneManager._scene._victorySkillWindow.close();
+        }
+        Input[_0x3084("0xa7")]();
+        TouchInput[_0x3084("0xa7")]();
+        this._ending = true;
+        BattleManager.endVictoryPhase();
+      }
     } else {
       this[_0x3084("0xc8")] += Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x83")];
     }
@@ -5802,6 +5826,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     return true;
   };
   Window_BattleVictoryItems[_0x3084("0xa8")][_0x3084("0x5c")] = function () {
+    BattleManager._rewards.items = $droppeditems;
     BattleManager[_0x3084("0xde")][_0x3084("0xdb")][_0x3084("0x81")](function (_0x3deeee) {
       if (!_0x3deeee) return;
       if (DataManager[_0x3084("0xf8")](_0x3deeee)) this[_0x3084("0x5a")].push(_0x3deeee.id);
@@ -5829,6 +5854,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
       var _0x55b6f0 = $dataArmors[_0x5f4e23];
       if (_0x55b6f0 && !this._data.contains(_0x55b6f0)) this[_0x3084("0xcc")].push(_0x55b6f0);
     }, this);
+    $droppeditems = [];
   };
   Window_BattleVictoryItems[_0x3084("0xa8")][_0x3084("0x3c")] = function (_0x32e8b2, _0x13d8dd, _0x280f64, _0x1da437) {
     if (!this[_0x3084("0xcb")]()) return;
@@ -5862,6 +5888,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     return _0x8c74eb;
   };
   Yanfly[_0x3084("0x12")][_0x3084("0x33")] = function (_0x78f4be) {
+    if (!_0x78f4be) return;
     if (typeof _0x78f4be === _0x3084("0x27")) return _0x78f4be;
     return _0x78f4be[_0x3084("0x2")]("en");
     return _0x78f4be[_0x3084("0x9a")](/(^|[^\w.])(\d{4,})/g, function (_0x459e1a, _0x5b2265, _0x224673) {
@@ -5932,7 +5959,8 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     this[_0x3084("0xb3")](true);
     this[_0x3084("0xa3")]();
     this[_0x3084("0xef")][_0x3084("0xd0")] = Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0xc1")];
-    this[_0x3084("0x29")](this._actor[_0x3084("0xe3")](), Math[_0x3084("0xed")](this[_0x3084("0xd1")]() / 2), 0, this[_0x3084("0x36")] - this[_0x3084("0xd1")]());
+    this.drawIcon($dataClassIcons[this._actor.actorId()], Math[_0x3084("0xed")](this[_0x3084("0xd1")]() / 2), 2);
+    this[_0x3084("0x29")](this._actor[_0x3084("0xe3")](), Math[_0x3084("0xed")](this[_0x3084("0xd1")]() / 2) + Window_Base._iconWidth + this.textPadding(), 0, this[_0x3084("0x36")] - this[_0x3084("0xd1")]());
   };
   Window_BattleVictoryActor[_0x3084("0xa8")].drawForegroundJPLabel = function () {
     this[_0x3084("0xb3")](true);
@@ -6138,10 +6166,10 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     var _0xe9e9f7 = Math[_0x3084("0xed")](this.lineHeight() / 2) + this[_0x3084("0xbb")]();
     var _0x141d8c = this[_0x3084("0x36")] - this[_0x3084("0xd1")]() - this[_0x3084("0xbb")]() * 2;
     this[_0x3084("0xef")][_0x3084("0xd0")] = Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x43")];
-    this[_0x3084("0x29")](TextManager[_0x3084("0xe")], _0xe9e9f7, this.lineHeight(), _0x141d8c, "left");
+    this[_0x3084("0x29")](TextManager[_0x3084("0xe")], _0xe9e9f7, this.lineHeight() + 2, _0x141d8c, "left");
     this[_0x3084("0x9d")](this[_0x3084("0xba")](Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x65")]));
     this[_0x3084("0xef")][_0x3084("0xd0")] = Olivia[_0x3084("0x3")][_0x3084("0x1c")][_0x3084("0x85")];
-    this[_0x3084("0x29")](_0xd16d2b, _0xe9e9f7, this.lineHeight(), _0x141d8c, "right");
+    this[_0x3084("0x29")](_0xd16d2b, _0xe9e9f7, this.lineHeight() + 1, _0x141d8c, "right");
     _0x141d8c -= this[_0x3084("0x6d")](_0xd16d2b);
     this[_0x3084("0x9d")](this[_0x3084("0xba")](Olivia[_0x3084("0x3")][_0x3084("0x1c")].ExpCurrentFontColor));
     this[_0x3084("0xef")][_0x3084("0xd0")] = Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0xa2")];

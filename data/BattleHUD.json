@@ -2,7 +2,7 @@
   {
     "type": "Text",
     "Value": "${$gameTroop.turnCount()}",
-    "Condition": "$gameSwitches.value(78) !== true && $gameTroop.turnCount() > 0 && $gameSwitches.value(79)",
+    "Condition": "!$gameSwitches.value(78) && $gameTroop.turnCount() > 0 && $gameSwitches.value(79) && !BattleManager.isBattleEnd()",
     "Layer": "0",
     "Font": "GameFont",
     "Max Width": "30",

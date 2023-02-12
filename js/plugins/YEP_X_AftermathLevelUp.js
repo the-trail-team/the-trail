@@ -368,15 +368,19 @@ Window_VictoryLevelUp.prototype.drawStatChanges = function() {
 };
 
 Window_VictoryLevelUp.prototype.drawParamName = function(index, rect) {
+    const icons = $gameSystem.coreStatIcons();
     var x = rect.x + this.textPadding();
     var y = rect.y;
     if (index === 0) {
       var text = TextManager.level;
+      var icon = icons[0];
     } else {
       var text = TextManager.param(index - 1);
+      var icon = icons[1][index - 1];
     }
     this.changeTextColor(this.systemColor());
-    this.drawText(text, x, y, this._paramNameWidth);
+    this.drawIcon(icon, x, y + (this.lineHeight() - Window_Base._iconHeight) / 2)
+    this.drawText(text, x + Window_Base._iconWidth, y, this._paramNameWidth);
 };
 
 Window_VictoryLevelUp.prototype.drawRightArrow = function(rect) {
@@ -497,9 +501,9 @@ Window_VictorySkills.prototype.windowHeight = function() {
 
 Window_VictorySkills.prototype.setActor = function(actor) {
     this._actor = actor;
-    this.select(0);
+    // this.select(0);
     if (this._actor._victorySkills.length <= 0) this.select(-1);
-    this.activate();
+    // this.activate();
     this.refresh();
 };
 

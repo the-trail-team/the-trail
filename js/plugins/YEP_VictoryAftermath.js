@@ -878,7 +878,7 @@ Window_VictoryDrop.prototype.numItems = function(item) {
 Yanfly.VA.Scene_Battle_update = Scene_Battle.prototype.update;
 Scene_Battle.prototype.update = function() {
     Yanfly.VA.Scene_Battle_update.call(this);
-    this.updateVictoryAftermath();
+    // this.updateVictoryAftermath();
 };
 
 Scene_Battle.prototype.processNextVictoryStep = function() {
