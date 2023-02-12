@@ -5491,6 +5491,9 @@ Window_ActorCommand.prototype.setup = function(actor) {
     this.selectLast();
     this.activate();
     this.open();
+
+    if (this._boosting) this.selectSymbol(this._boosting);
+    this._boosting = null;
 };
 
 Window_ActorCommand.prototype.processOk = function() {

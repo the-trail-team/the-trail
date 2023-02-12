@@ -3566,6 +3566,7 @@ if (Olivia[_0x252a("0xa4")][_0x252a("0x4c")].Enabled) {
     this._actorCommandWindow[_0x252a("0x77")](_0x252a("0x4e"), this.commandUnboost[_0x252a("0x3b")](this));
   };
   Scene_Battle[_0x252a("0xad")][_0x252a("0x43")] = function () {
+    this._actorCommandWindow._boosting = 'boost';
     BattleManager[_0x252a("0xb6")]()[_0x252a("0x49")](-1);
     BattleManager.actor()[_0x252a("0x4d")](1);
     BattleManager.actor()[_0x252a("0x3d")]();
@@ -3577,6 +3578,7 @@ if (Olivia[_0x252a("0xa4")][_0x252a("0x4c")].Enabled) {
     }
   };
   Scene_Battle[_0x252a("0xad")].commandUnboost = function () {
+    this._actorCommandWindow._boosting = 'unboost';
     BattleManager[_0x252a("0xb6")]()[_0x252a("0x4d")](-1);
     BattleManager[_0x252a("0xb6")]().gainStoredBP(1);
     BattleManager[_0x252a("0xb6")]()[_0x252a("0x3d")]();
