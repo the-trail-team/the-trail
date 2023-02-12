@@ -556,6 +556,12 @@ Game_System.prototype.meleeDamageWeakness = function(user, type) {
 
 // Safe Place
 
+Game_System.prototype.safePlace = function() {
+    let arr = [this._safePlaceMap, this._safePlaceX, this._safePlaceY, this._safePlaceDirection];
+    if (arr.contains(undefined)) return [11, 17, 14, 'left'];
+    else return arr;
+};
+
 Game_System.prototype.setSafePlace = function() {
     this._safePlaceMap = $gameMap.mapId();
     this._safePlaceX = $gamePlayer.x;
@@ -563,10 +569,19 @@ Game_System.prototype.setSafePlace = function() {
     this._safePlaceDirection = $gamePlayer.direction();
 };
 
-Game_System.prototype.safePlace = function() {
-    let arr = [this._safePlaceMap, this._safePlaceX, this._safePlaceY, this._safePlaceDirection];
-    if (arr.contains(undefined)) return [11, 17, 14, 'left'];
+// Recall Potion
+
+Game_System.prototype.recall = function() {
+    let arr = [this._recallMap, this._recallX, this._recallY, this._recallDirection];
+    if (arr.contains(undefined)) return [$gameMap.mapId(), $gamePlayer.x, $gamePlayer.y, $gamePlayer.direction()];
     else return arr;
+};
+
+Game_System.prototype.setRecall = function() {
+    this._recallMap = $gameMap.mapId();
+    this._recallX = $gamePlayer.x;
+    this._recallY = $gamePlayer.y;
+    this._recallDirection = $gamePlayer.direction();
 };
 
 // Constants

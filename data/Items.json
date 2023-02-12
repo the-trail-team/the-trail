@@ -1801,17 +1801,24 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Stuck between a rock and a hard place? Drinking this\npotion will warp your party to a safe(r) location.",
+    "effects": [
+      {
+        "code": 44,
+        "dataId": 78,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 705,
     "itypeId": 1,
-    "name": "",
+    "name": "Recall Potion",
     "note": "Was once the WILL'S RECIPES.",
-    "occasion": 0,
-    "price": 0,
+    "occasion": 2,
+    "price": 100,
     "repeats": 1,
-    "scope": 7,
+    "scope": 8,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
