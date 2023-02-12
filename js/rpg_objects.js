@@ -584,6 +584,14 @@ Game_System.prototype.setRecall = function() {
     this._recallDirection = $gamePlayer.direction();
 };
 
+Game_System.prototype.recallAllowed = function() {
+    return this._recallAllowed || true;
+};
+
+Game_System.prototype.setRecallAllowed = function(allow) {
+    this._recallAllowed = allow;
+}
+
 // Constants
 
 Game_System.prototype.exhaustionTime = function() {
