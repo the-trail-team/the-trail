@@ -1860,10 +1860,10 @@ Window_ItemStatus.prototype.drawItemInfo = function(item) {
 
 Window_ItemStatus.prototype.getItemInfoCategory = function(i) {
     var fmt = Yanfly.Param.ItemRecoverFmt;
-    if (i === 0) return fmt.format(TextManager.hp) + " (+)";
-    if (i === 1) return fmt.format(TextManager.hp) + " (%)";
-    if (i === 2) return fmt.format(TextManager.mp) + " (+)";
-    if (i === 3) return fmt.format(TextManager.mp) + " (%)";
+    if (i === 0) return fmt.format(TextManager.hp) + " (%)";
+    if (i === 1) return fmt.format(TextManager.hp) + " (+)";
+    if (i === 2) return fmt.format(TextManager.mp) + " (%)";
+    if (i === 3) return fmt.format(TextManager.mp) + " (+)";
     if (i === 4) return Yanfly.Param.ItemAddState;
     if (i === 5) return Yanfly.Param.ItemRemoveState;
     return '';
