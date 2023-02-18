@@ -1134,7 +1134,7 @@
   },
   {
     "id": 39,
-    "animationId": 0,
+    "animationId": 208,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -1143,15 +1143,22 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Blueberries seriously do taste like the color\nblue! Boosts HRG by 5%, lasts for 15 turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 185,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 802,
     "itypeId": 1,
-    "name": "MRG Drink",
+    "name": "Blueberry Sizzle",
     "note": "Was once the Boss Soul (Mini-Boss).",
-    "occasion": 0,
-    "price": 0,
+    "occasion": 2,
+    "price": 90,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -1160,7 +1167,7 @@
   },
   {
     "id": 40,
-    "animationId": 0,
+    "animationId": 208,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -1169,15 +1176,28 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "A combination of two drinks that increases\nyour HRG by 5% and MRG by 10% for 15 turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 69,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 185,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 211,
     "itypeId": 1,
-    "name": "Regen Combo",
+    "name": "Regen Combination",
     "note": "Was once the Boss Soul (Region Boss).",
-    "occasion": 0,
-    "price": 0,
+    "occasion": 2,
+    "price": 180,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -1186,7 +1206,7 @@
   },
   {
     "id": 41,
-    "animationId": 0,
+    "animationId": 208,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -1195,15 +1215,64 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "A combination of several drinks that boosts\nyour core stats and HP/MP regen for 15 turns.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 16,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 17,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 18,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 19,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 37,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 38,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 69,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 185,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 211,
     "itypeId": 1,
-    "name": "Bigger All Combo",
+    "name": "Fine-Tuned Combination",
     "note": "Was once the Boss Soul (Dimension Boss).",
-    "occasion": 0,
-    "price": 0,
+    "occasion": 2,
+    "price": 540,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -4651,7 +4720,7 @@
   },
   {
     "id": 162,
-    "animationId": 51,
+    "animationId": 208,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -4660,7 +4729,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "I had just one query...\nBoosts HRG by 5%. Lasts for 10 turns.",
+    "description": "I had just one query... boosts\nHRG by 5%, lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -4672,10 +4741,10 @@
     "hitType": 0,
     "iconIndex": 578,
     "itypeId": 1,
-    "name": "Fizzy Cranberry Beverage",
-    "note": "<Item Present Buy Price: 4>\n<Item Present Sell Price: 2>",
+    "name": "Cranberry Fizz",
+    "note": "",
     "occasion": 2,
-    "price": 0,
+    "price": 90,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -7549,7 +7618,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A combination of several drinks that boosts\nsome of your offensive stats by 25% for 10 turns.",
+    "description": "A combination of several drinks that boosts\nsome of your offensive stats by 25% for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -7594,7 +7663,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A combination of several drinks that boosts\nsome of your defensive stats by 25% for 10 turns.",
+    "description": "A combination of several drinks that boosts\nsome of your defensive stats by 25% for 15 turns.",
     "effects": [
       {
         "code": 21,
