@@ -1062,7 +1062,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Increases an ally's RES by 25% for 5 turns.",
+    "description": "Increases an ally's RES by 25% for \\c[27]\\bpturn[5]\\c[0] turns.",
     "effects": [
       {
         "code": 21,
@@ -1077,7 +1077,7 @@
     "message2": "",
     "mpCost": 10,
     "name": "Magic Resistance",
-    "note": "<Require = 0 BP>\n\n<action copy: skill:11>",
+    "note": "<Boost Turns>\n\n<action copy: skill:11>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
@@ -1099,7 +1099,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Decreases an enemy's RES by 25% for 5 turns.",
+    "description": "Decreases an enemy's RES by 25% for \\c[27]\\bpturn[5]\\c[0] turns.",
     "effects": [
       {
         "code": 21,
@@ -1114,7 +1114,7 @@
     "message2": "",
     "mpCost": 20,
     "name": "Magic Proneness",
-    "note": "<Require = 0 BP>\n\n<action copy: skill:7>",
+    "note": "<Boost Turns>\n\n<action copy: skill:7>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
