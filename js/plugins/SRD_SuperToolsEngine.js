@@ -2086,8 +2086,17 @@ DebugManager.getEntireActorList = function() {
 
 DebugManager.getItemList = function() {
 	let result = `<select id="itemId" style="width:100%">`;
-	for(let i = 1; i < $dataItems.length; i++) {
-		const info = $dataItems[i];
+	const items = $dataItems.filter(i => i).filter(i => i.name != "").sort(function (a, b) {
+		if (a.name < b.name) {
+			return -1;
+		}
+		if (a.name > b.name) {
+			return 1;
+		}
+		return 0;
+	});
+	for(let i = 0; i < items.length; i++) {
+		const info = items[i];
 		if(!info) continue;
 		result += '<option value="' + info.id + '"> (' + _.pad(info.id) + ') ' + info.name + '</option>';
 	}
@@ -2097,8 +2106,17 @@ DebugManager.getItemList = function() {
 
 DebugManager.getWeaponList = function() {
 	let result = `<select id="weaponId" style="width:100%">`;
-	for(let i = 1; i < Yanfly.Param.ItemStartingId; i++) {
-		const info = $dataWeapons[i];
+	const weapons = $dataWeapons.filter(w => w).filter(w => w.id < Yanfly.Param.ItemStartingId).sort(function (a, b) {
+		if (a.name < b.name) {
+			return -1;
+		}
+		if (a.name > b.name) {
+			return 1;
+		}
+		return 0;
+	});
+	for(let i = 0; i < weapons.length; i++) {
+		const info = weapons[i];
 		if(!info) continue;
 		result += '<option value="' + info.id + '"> (' + _.pad(info.id) + ') ' + info.name + '</option>';
 	}
@@ -2108,8 +2126,17 @@ DebugManager.getWeaponList = function() {
 
 DebugManager.getArmorList = function() {
 	let result = `<select id="armorId" style="width:100%">`;
-	for(let i = 1; i < Yanfly.Param.ItemStartingId; i++) {
-		const info = $dataArmors[i];
+	const armors = $dataArmors.filter(a => a).filter(a => a.id < Yanfly.Param.ItemStartingId).sort(function (a, b) {
+		if (a.name < b.name) {
+			return -1;
+		}
+		if (a.name > b.name) {
+			return 1;
+		}
+		return 0;
+	});
+	for(let i = 0; i < armors.length; i++) {
+		const info = armors[i];
 		if(!info) continue;
 		result += '<option value="' + info.id + '"> (' + _.pad(info.id) + ') ' + info.name + '</option>';
 	}
