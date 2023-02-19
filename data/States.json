@@ -6348,5 +6348,35 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 186,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 804,
+    "maxTurns": 2,
+    "message1": "'s armor broke!",
+    "message2": "",
+    "message3": "",
+    "message4": " repaired their armor.",
+    "minTurns": 2,
+    "motion": 0,
+    "name": "Broken Armor",
+    "note": "<Category: debuff>\n<Category: weak debuff>\n\n<Help Description>\nReduces END by 50%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 48,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
