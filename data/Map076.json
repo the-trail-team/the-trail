@@ -4827,8 +4827,8 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                2,
-                "B",
+                0,
+                38,
                 1
               ]
             },
@@ -4884,9 +4884,9 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                2,
-                "A",
-                0
+                0,
+                103,
+                1
               ]
             },
             {
@@ -5697,33 +5697,40 @@
               ]
             },
             {
-              "code": 355,
+              "code": 205,
               "indent": 0,
               "parameters": [
-                "$gameSelfSwitches.setValue([76, 20, 'A'], true);"
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "this.setIconOnEvent(0);"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
               ]
             },
             {
-              "code": 356,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                "CallEvent 20"
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "B",
-                0
+                {
+                  "code": 45,
+                  "parameters": [
+                    "this.setIconOnEvent(0);"
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -9775,8 +9782,8 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                2,
-                "A",
+                0,
+                38,
                 1
               ]
             },
@@ -9790,7 +9797,7 @@
                     {
                       "code": 45,
                       "parameters": [
-                        "this.setIconOnEvent(576)"
+                        "this.setIconOnEvent(576);"
                       ],
                       "indent": null
                     },
@@ -9811,54 +9818,7 @@
                 {
                   "code": 45,
                   "parameters": [
-                    "this.setIconOnEvent(576)"
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                12,
-                {
-                  "list": [
-                    {
-                      "code": 45,
-                      "parameters": [
-                        "this.setIconOnEvent(0)"
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 45,
-                  "parameters": [
-                    "this.setIconOnEvent(0)"
+                    "this.setIconOnEvent(576);"
                   ],
                   "indent": null
                 }
