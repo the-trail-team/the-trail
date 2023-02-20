@@ -2505,6 +2505,7 @@ BattleManager.isForcedTurn = function () {
 
 BattleManager.updateTurnEnd = function() {
     this.startInput();
+    SceneManager._scene._sideStatusWindows.forEach(w => w.children.find(c => c instanceof Window_BattleSideBoost).refresh());
 };
 
 BattleManager.getNextSubject = function() {
