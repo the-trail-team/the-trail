@@ -649,19 +649,24 @@ Game_Interpreter.prototype.command101 = function() {
         }
         if ($gameMessage._texts.length >= $gameSystem.messageRows()) break;
       }
-      switch (this.nextEventCode()) {
-      case 102:
-        this._index++;
-        this.setupChoices(this.currentCommand().parameters);
-        break;
-      case 103:
-        this._index++;
-        this.setupNumInput(this.currentCommand().parameters);
-        break;
-      case 104:
-        this._index++;
-        this.setupItemChoice(this.currentCommand().parameters);
-        break;
+      while ([102, 103, 104, 108].contains(this.nextEventCode())) {
+        switch (this.nextEventCode()) {
+          case 102:
+            this._index++;
+            this.setupChoices(this.currentCommand().parameters);
+            break;
+          case 103:
+            this._index++;
+            this.setupNumInput(this.currentCommand().parameters);
+            break;
+          case 104:
+            this._index++;
+            this.setupItemChoice(this.currentCommand().parameters);
+            break;
+          case 108:
+            this._index++;
+            break;
+        }
       }
       this._index++;
       this.setWaitMode('message');
