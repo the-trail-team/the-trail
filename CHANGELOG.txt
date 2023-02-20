@@ -5,36 +5,28 @@ Alpha 15 (??/??/????)
 The Champion Update
 Current Level Cap: 30
 - - - - - - - - - - - - -
-Sometimes I get tired of repeating myself over and over again, but am I wrong to say that every major update has been the best one yet? If we're ignoring the pre-Alpha 11 days, then no, I'm not wrong, and Alpha 15 further solidifies this point.
-Building off of the heavy overhauls introduced in Alpha 14, this brand new update focuses on a TON of new content that fits with the new standards. Whether it be juicy lore, fresh dungeons, brand new concepts, new explorations of equipment and mechanics, and even more... it's content! So much great content!
-
-Telluria Castle Town serves as the hub for EVERYTHING to get an upgrade. From hats to shields to upgrade scrolls to food to spell tomes... the list goes on and on. New enemies with never-before seen strength serve as a test of strategy. Thankfully, the higher level cap introduces unique and powerful skills to complement the new equipment.
-Head off to the Lost Forest and World Tree to fight nature-themed enemies, or maybe take a stop in the Frozen Labyrinth first to get some icy equipment. Maybe you can stop and fish for a bit to pass the time and get some ingredients for tasty food. With so much to do, choice is everywhere in Alpha 15...
-...and eventually, all these choices come together to direct the party to someone who's been but a hated, faceless name for the entirety of the adventure. Everything comes down to this. Every update has further built up suspense and tension for this. The time has arrived.
-
-Please note that while Alpha 14 saves are compatible with the update, there's been a few progression changes throughout the game that could break things. Issues should hopefully be rare, but if anything weird happens, try reverting to Alpha 14 and progressing a bit more before updating.
-Now, let's get to the incredibly large changelog, the biggest one we've ever had. Note that this changelog will include Alpha 13 items reintroduced alongside the Ruined Fort.
+Every major update has been the best yet, and Alpha 15 is no exception! Building off of Alpha 14's heavy overhauls, this update focuses on adding a massive amount of content that fits with the new standards.
+Telluria Castle Town is the hub of the world. Buy insanely powerful equipment, upgrade (almost) everything, discover new mechanics, etc... you can do anything and everything in the capital.
+Outside those walls, super-powerful enemies lurk within a variety of brand new dungeons. They'll be a challenge at first, but with so many new ways to strengthen your party, you'll never have a shortage of ways to progress.
 
 Additions:
- - Added Telluria Castle Town, the newest and greatest town in The Trail. It lies just outside the north exit of the Blazing Sands, right next to the Gulf of Telluria.
- - Added 4 story dungeons!
- - Added a ton of animations for skills, items, and more.
- - Added many custom state overlays.
- - Added new pastimes for the player to enjoy, such as farming, fishing, and pet owning.
- - Added Discord rich presence support.
- - Added damage type system and 3 damage types:
+ - All chapter 5 content.
+ - Various additions to augment previous content (e.g. Solus Town tavern's extended questline).
+ - Graphics for animations, state overlays, icons.
+ - Discord rich presence support.
+ - Damage type system and 3 damage types:
   ~ Slashing
   ~ Bludgeoning
   ~ Piercing
- - Added 2 elements:
+ - 2 elements:
   ~ Plant
   ~ Metal
- - Added 3 new attributes:
+ - 3 new attributes:
   ~ OMD: Outgoing Magical Damage
   ~ OED: Outgoing Elemental Damage
   ~ OHR: Outgoing Healing Rate
   ~ These attributes existed in some capacity prior to this update (e.g. Rose Headpiece) but now they have tracked numerical values and displays.
- - Added 21 new player skills:
+ - 21 new player skills:
   ~ Player 1, 5 skills:
    > [P] Innate Magic: Passive @ L20
    > [P] Steadfast: Passive @ L23
@@ -62,7 +54,7 @@ Additions:
    > Soul Shackles: Tome
    > Wyvern's Fury: Weapon, Tome
    > Ice II: Tome
- - Added 119 new items:
+ - 119 new items:
   ~ 15 recovery/buff items:
    > Blueberry Sizzle
    > Offense Combination
@@ -188,7 +180,7 @@ Additions:
    > [REDACTED HELMET]
    > [REDACTED TEAR]
    > [REDACTED WING]
- - Added 113 new equipment items:
+ - 113 new equipment items:
   ~ 20 weapons:
    > Steel Hammer
    > Steel Knuckles
@@ -362,31 +354,24 @@ Additions:
   ~ [REDACTED BIRD]
 
 Removals:
- - Removed stat allocation.
-  ~ Stat allocation was introduced early in Alpha 14's development as a system providing a means to customize character builds. On paper, it made sense: being able to spend points in any stat you want would accomplish just that.
-  ~ This system has some problems. It clashes with the game's already-existing form of character builds: equipment types. Changing the type of weapon or armor a party member has equipped can drastically change the way they are played in battle.
-  ~ In addition, it was already becoming hard to balance Alpha 15's new content around stat allocation, and it would just have become much harder in the future. It's simply too hard to predict and develop around.
-  ~ While this is a nerf to all party members, a lot of changes have been made in this update to further tip the scales in the player's favor. Still, if the party needs further buffs to compensate, they will be made.
-  ~ INT Books can still be used in the items menu, and can increase INT up to +20, just like before. Rare Enemy Certificates are just a trophy at the moment, but another use will be found for them in a future update.
- - Removed the scale-based buff/debuff system.
-  ~ It was implemented in Alpha 14, but it was somewhat unnecessary as the game was perfectly fine with just having states before.
-  ~ The removal of this system doesn't mean anything else will be scrapped. All skills that use this system have been reworked, with many inadvertently receiving buffs.
-  ~ On that note, this removal will hopefully lessen the confusion around the terms buff and debuff, as they are now only used to refer to states.
- - Removed the skill learn system. Why make the player learn the skill in a menu when they could just learn it via leveling up like literally every other skill normally is?
- - Removed Job Points. After removing stat allocation and the skill learn system, JP lost all purpose. I figured it wouldn't be missed if I removed it instead of repurposing it.
- - Removed many skills:
-  ~ Steal Bits: Even the description of the skill reinforced how useless it was.
-  ~ Magic Enhance: It was useful, but Player 2 needed his skill pool to get trimmed. Its ability lives on in the reworked Water Elemental's Flow.
-  ~ Cherry Bomb & Smoke Bomb: The former did the same thing as Foresight, and the latter was a waste of a turn.
-  ~ Bide: Its function was somewhat unclear and it was basically useless, taking away three of Player 1's turns for the chance of dealing a little bit of damage.
-  ~ Blood Boost: In a game where enemy troops typically contain no more than 3 or 4 units, it makes sense that a skill that gives a mediocre buff after killing an enemy didn't see much use.
- - Removed moods. The fact that you probably don't know what I'm referencing is all the reason I needed to get scrap them.
- - Removed the Skeleton enemy from the game. It was replaced in the Adonian Monsters troop, and all other troops containing it are not implemented/encounterable.
- - Removed the item discard feature, since I'm pretty sure not a single person has ever used it once and it was just menu clutter.
- - Removed the Raw Fish and Cooked Fish items due to the new fishing system having specific types of fish and seafood dishes.
- - Removed the Rat Jerky (Ration) because it was literally useless. All methods of obtaining it have replaced it with the regular Ration.
- - Removed the Letter of Recommendation and everything related to Jack in Greenfield. You now head straight to the Mayor's office after entering town.
- - Removed the Telluria Map Fragment. The Map of Telluria can now be purchased immediately from the general store after defeating Laeryidyean.
+ - Stat allocation. It was introduced as a method to provide easy character build customization, but overlapped with our preference to make the majority of progression equipment-based.
+ - Skill learning. Why click through menus to learn a skill when you could just learn it right as you level up?
+ - Job Points. Without stat allocation or skill learning, JP no longer has a use, so why force one?
+ - The scale-based buff/debuff system. It was added in Alpha 14, but was kind of shoe-horned in without a reason, as using only states had never been a problem.
+ - Many skills:
+  ~ Steal Bits: Ridiculously niche use case.
+  ~ Magic Enhance: Concept lives on in Water Elemental's Flow rework.
+  ~ Cherry Bomb: Had essentially the same type of effect as Foresight.
+  ~ Smoke Bomb: Simply pointless, a waste of a turn.
+  ~ Bide: Unclear function, very drastic penalty, very little gain.
+  ~ Blood Boost: Small enemy troops caused this buff to barely ever proc. It was useless in most bosses, too.
+ - Moods. The fact that you probably don't know what I'm referencing is reason enough.
+ - The Skeleton enemy. Removed from Adonian Monsters troop, the last one containing it.
+ - The item discard feature. Pointless in almost all scenarios, just menu clutter.
+ - The Raw Fish and Cooked Fish items. New fishing system introduces specific types of fish and meals.
+ - The Rat Jerky (Ration). Rare with negligible effect, now replaced with Ration.
+ - The Letter of Recommendation and everything related to Jack in Greenfield. You now go straight to the Mayor's office after entering town.
+ - The Telluria Map Fragment. The Map of Telluria can now be purchased immediately from the general store after defeating Laeryidyean.
 
 Changes:
  - Renamed most of the core stats:
@@ -398,9 +383,9 @@ Changes:
   ~ MDF → RES
  - Recapped the max level from level 20 to level 30.
  - Random encounters are now blocked in a 6-tile radius around any visible enemy encounter.
- - A huge amount of unnecessary, repetitive, and downright boring dialogue has been culled from the game. Most cutscenes have been made much shorter and streamlined, with some having been removed entirely.
+ - Almost all dialogues were reworkened and shortened. Many cutscenes reworked, a few even removed.
  - Replaced Player 2's 2nd magic equip slot with an offhand slot (light shields).
- - Retrying battles is now free, and you now have the option to give up. This will return you to the last safe place you rested at; however, this will cost you half of your bits.
+ - Retrying battles is now free, and you have the option to give up. This will return you to the last safe place you rested at; however, this will cost you half of your bits.
  - Resprited all existing icons from 24px to 32px. Changed many icons of existing items in the process.
  - Overhauled the equip comparison menu.
  - The pub/tavern has been rebranded as The Tipsy Oyster! Barkeep's name has been revealed to be Jeremy, and all of his establishments have been redesigned (except for the original in Haven Harbor).
@@ -415,9 +400,9 @@ Changes:
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
  - Many food-related items have been made renewable, and as a result are no longer sold by Dalia.
  - The new Speedster Boots have replaced the spot in boot progression once held by the Hermes Boots. The Hermes Boots have been moved up to be crafted near the end of Telluria Field's progression.
- - Solus Town now automatically becomes snowy during the holiday season. On that note, presents now have a 50% drop chance on December 25th rather than the default 20%.
+ - Solus Town now automatically becomes snowy during the holiday season. Presents now have a 50% drop chance on December 25th rather than the default 20%.
  - Countless (and I mean COUNTLESS) other small changes have been made throughout the game (probably more than Alpha 14 at this point).
- - A huge amount of backend reworks/changes have been made to improve performance, consistency, and development efficiency.
+ - A huge amount of backend reworks/changes have been made to improve performance, consistency, and development efficiency. This is the main reason this update took so long to come out!
 
 Music Update (Final Wave):
  - Redid "New Lands", "Winding Labyrinth".
@@ -425,27 +410,26 @@ Music Update (Final Wave):
 
 Item/Equipment Balancing:
  - Heavily nerfed the recovery of the Potion, Elixir, and Ether.
-  ~ Potion's HP recovery was reduced from 90 to 60, and Elixir's MP recovery was reduced from 36 to 24.
-  ~ Since Ether heals ~20% more HP/MP than its Potion/Elixir counterpart, it has been nerfed accordingly.
- - Rebalanced the level of Well Fed applied by several food items. This is in order to make higher levels of the buff more rewarding and encourages cooking.
+  ~ Potion: +90 HP → +60 HP
+  ~ Elixir: +36 MP → +24 MP
+  ~ Ether: +108 HP → +72 HP; +42 MP → +30 MP
+  ~ Small Ether and Ether are much no longer require bits to craft.
+ - Reworked Well Fed to make the buff more enticing and encourage cooking.
   ~ Ration: Reduced from Well Fed to Somewhat Well Fed.
   ~ Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
   ~ Fruitcake: Increased from Very Well Fed to Exquisitely Well Fed.
   ~ All levels of Well Fed last for 3x as many steps (50 → 150, 100 → 300, 150 → 450).
   ~ All levels of Well Fed now increase STR and SPI by +2%, +4%, +6%, and +8% at their respective levels.
- - Reworked most early-game weapons to not be completely useless. Notable reworks (aside from stat/price changes):
-  ~ Wisp Wand: Originally the Traveler Wand. Increases Mana Wisp damage by 30%.
-  ~ Crude Hammer: Originally the Light Hammer. Functions as a typical hammer-type weapon (large SPI, heavily reduced OHR).
- - Heavily buffed the stats of the Shadowspec Sword, Bronze Greatsword, Steel Axe, Bronze Wand, Mana Staff, and Bloodlust ★ to be viable against new content. Dropping 10,000 Bits on new weapons shouldn't be a necessity!
+ - Buffed most weapons from the Blazing Sands to make them viable against new content. Dropping 10,000 Bits on new weapons shouldn't be a necessity!
+ - Buffed tavern potion stat increases from 15% to 25% and turn duration from 10 turns to 15 turns.
+ - Buffed the Knight's Greaves' END by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
+ - Reworked most early-game weapons to not be completely useless.
  - Reworked the Water Elemental's Flow. It now provides a 15% increase to outgoing magical damage, but it increases all MP costs by 30%.
+ - Reworked Blood-Red Headband to grant +1% PLS and +3 AGI rather than +4% VIT and +3% CRI. Its price has increased from 80B to 120B.
  - Reworked the Gold Ring. Now the Ring of Shadows, it provides resistance to dark damage.
- - Ethers no longer require bits to craft and are much cheaper overall.
- - Increased the stat boost of all tavern potions from 15% to 25%. Also increased their duration from 10 turns to 15 turns.
  - Nerfed The Warden's Trade-off from [-10% MDR, +10% PDR] to [-5% MDR, +20% PDR].
  - Nerfed the Giant Goblin's Rage's STR increase from +20% to +10%.
  - Gave Bloodlust's base version +2% PLS.
- - Reworked Blood-Red Headband to grant +1% PLS and +3 AGI rather than +4% VIT and +3% CRI. Its price has increased from 80B to 120B.
- - Buffed the Knight's Greaves' END by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
 
 Skill Balancing:
  - Many skills had their learn levels and associated party member shuffled around:
@@ -462,32 +446,27 @@ Skill Balancing:
   ~ Sharpen Dagger: P4 3 → Any Dagger
   ~ Cut Down: P1 11 → Any Axe
   ~ Soul Shackles: P3 20 → Soul Shackles (Tome)
- - Using BP with Revival now increases success rate (it used to increase the amount of HP recovered on a successful revive).
+ - Using BP with Revival now increases success rate (used to increase the amount of HP recovered on a successful revive).
  - Backstab can no longer miss.
- - Wand Impulse and Backstab apply a new state called Fatigue.
-  ~ Fatigue decreases STR/SPI by 50% rather than the old 30%. However, since it's now a state and not a debuff, it won't interfere with setups.
-  ~ Additionally, Fatigue only lasts for 1 turn after using the skill, while the debuff used to last for 2 turns, making this a buff...?
- - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%. Decreased Double Slash's MP cost to 6 from 7.
+ - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%. Decreased Double Slash's MP cost from 7 to 6.
   ~ These changes make Double Slash a relevant skill again, as it does more damage than Focused Slash even if it only hits once. Focused Slash's CRI boost, lower MP cost, and guaranteed hit make the choice between the skills dependant on playstyle.
  - Reworked Analyze. It now reveals all enemy weaknesses and allows you to see enemy HP for the duration of the battle.
- - Buffed Cut Down's END penetration from 50% to 100%.
- - Buffed Offensive Stance's stat increase/decrease per stack from 10% to 20%. It now caps at 3 stacks.
+ - Buffed Cut Down's END penetration from 50% to 100%. Now applies Broken Armor, reducing END by 50% for 2 turns.
+ - Buffed Offensive Stance's stat increase/decrease per stack from 10% to 20%. Capped at 3 stacks.
  - Buffed Rejuvenation's HRG increase from +5% to +10%.
  - Buffed Fire II's SPI multiplier to 500% (was originally 400%) and nerfed its MP cost to 20 MP (was originally 16 MP).
  - Buffed Ice II's SPI multiplier from 375% to 400%.
  - Buffed Critical Heal I's max effectiveness from +10% to +20%.
  - Nerfed Purify's MP cost to 15 MP (was originally 8 MP).
  - Nerfed Curify MP cost to 30 MP (was originally 18 MP).
- - Nerfed Mana Refund's MP cost to 50 MP (was originally 15 MP).
- - Nerfed Mana Refund's MP recovery to 1% of damage dealt (was originally 5%).
+ - Nerfed Mana Refund's MP cost to 50 MP (was originally 15 MP) and MP recovery to 1% of damage dealt (was originally 5%).
  - Nerfed Foresight's MP cost to 12 MP (was originally 8 MP).
  - Nerfed Inspire's effect to +10% STR and SPI (was originally +12%).
  - Nerfed Lightning II's MP cost to 30 MP (was originally 22 MP).
- - Nerfed Gust's damage by 16.6%.
  - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill, except it does not debuff RES.
 
 RNG Balancing:
- - Made a lot of mechanics based around rare enemies a lot less grindy.
+ - Made a lot of mechanics based around rare enemies less grindy.
   ~ Doubled the base chance of encountering a rare enemy.
   ~ As rare enemy spawns fail, the spawn chance will increase exponentially, being reset once a rare enemy finally spawns.
   ~ Buffed the drop chance of rare enemy accessories from 1/3 to 1/2.
@@ -505,56 +484,47 @@ Miscellaneous Balancing:
  - Status effects that provide VIT/WIS no longer reduce HP/MP after wearing off.
  - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
  - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
- - Greatly increased the acceleration of the EXP curve at later levels. This barely affects the game in its current state considering the low level cap, but this change will help prevent leveling up from becoming trivial in the late/end-game.
+ - Greatly increased the acceleration of the EXP curve at later levels. Barely affects the game now with such a low level cap, but will help prevent leveling up from becoming trivial in the late/end-game.
  - Doubled Well Rested's step duration from 500 to 1000.
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
- - Nerfed Bat's STR from 17 to 15. It was overwhelmingly powerful against new players in the Blazing Sands.
- - Bits are easier to get everywhere. Enemy drops, quest rewards, chests, and more have all had their bit rewards increased to account for the insane shop prices in Telluria Castle Town.
+ - Nerfed the Bat across the board. It was overwhelmingly powerful against new players in the Blazing Sands, wiping parties with ease.
+ - Bit drops are higher from almost every source.
  - Increased Player 1's base VIT at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
  - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more. If they're not here, they're not super important.
 
 Bug Fixes:
- - Fixed a game-breaking bug that I could have sworn was already fixed where you could push a boulder in Laeryidyean's Forest - Left Connector off the boulder tiles.
- - Fixed an old, and I mean OLD, bug where states intended to be removed by walking would occasionally never expire.
- - Fixed an absolutely archaic and very annoying bug where you could accidentally select a downed party member for a skill like Cure I and the target would change automatically.
- - Fixed an ancient bug that caused battle events to trigger during actions. Endings of boss battles will now flow much more smoothly.
- - Fixed a ridiculously old bug that has existed since Alpha 12 where items reset using the Cleansing Scroll wouldn't save.
- - Fixed a bug where conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
- - Fixed a bug where the instant message speed setting would skip through the intro in seconds. Sorry, speedrunners!
- - Fixed a bug where the critical hit chance formula wasn't programmed correctly, making critical evasion basically useless.
- - Fixed a bug where some headgears still had equip restrictions, even though Matt's Fedora should have been the only one with any.
- - Fixed a bug where elemental normal attacks wouldn't remove weak elemental states.
- - Fixed a bug where the loot explosion after defeating an enemy sometimes did not show the correct drops.
- - Fixed a bug where party members would rarely not gain BP between the 1st and 2nd turn of a battle.
- - Fixed a bug where Purify couldn't be used outside of battle.
- - Fixed a bug where retrying a battle would cause items from previous attempts to show up on the dropped item window at the end of battle. This was only a visual bug.
- - Fixed a bug where the color of a party member's name would not update based on their HP during battle.
- - Fixed a bug where the active quest window would disappear while the event interpreter was running.
- - Fixed a bug where Brawl Brew and Warding Swig would not bypass death removal.
- - Fixed a bug where On Fire!'s damage at the end of every turn was half of the intended value.
- - Fixed a bug where states with no overlay would still override states with an overlay if they had a higher priority value.
- - Fixed a bug where life steal attributes with decimals would not be parsed correctly.
- - Fixed a bug where the playtime stat wouldn't increase correctly on non-60hz displays.
- - Fixed a bug where the crafted weapons/armor counters could be wrong.
- - Fixed a bug where elemental weapons did not count as physical-element hits.
- - Fixed a bug where INT slightly affected state application rates.
- - Fixed a bug where Flashbang could leave an enemy at 0 HP but it wouldn't die until another action was made.
- - Fixed a bug where exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
- - Fixed a bug where magic skills used the wrong motion when casting.
- - Fixed a bug where battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
- - Fixed issues #9 and #10.
+ - Softlock caused by pushing a boulder in Laeryidyean's Forest off the boulder tiles.
+ - States intended to be removed by walking would occasionally never expire.
+ - You could accidentally select a downed party member for a skill like Cure I and the target would change automatically.
+ - Battle events triggering during actions. Endings of boss battles will now flow much more smoothly.
+ - Items reset using the Cleansing Scroll wouldn't save.
+ - Conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
+ - The instant message speed setting would skip through the intro in seconds. Sorry, speedrunners!
+ - The critical hit chance formula wasn't programmed correctly, making critical evasion basically useless.
+ - Elemental normal attacks wouldn't remove weak elemental states.
+ - The loot explosion after defeating an enemy sometimes did not show the correct drops.
+ - Party members would rarely not gain BP between the 1st and 2nd turn of a battle.
+ - Purify couldn't be used outside of battle.
+ - Retrying a battle would cause items from previous attempts to show up on the dropped item window at the end of battle. This was only a visual bug.
+ - The color of a party member's name would not update based on their HP during battle.
+ - The active quest window would disappear while the event interpreter was running.
+ - Brawl Brew and Warding Swig would not bypass death removal.
+ - On Fire!'s damage at the end of every turn was half of the intended value.
+ - States with no overlay would still override states with an overlay if they had a higher priority value.
+ - Life steal attributes with decimals would not be parsed correctly.
+ - The playtime stat wouldn't increase correctly on non-60hz displays.
+ - The crafted weapons/armor counters could be wrong.
+ - Elemental weapons did not count as physical-element hits.
+ - INT slightly affected state application rates.
+ - Flashbang could leave an enemy at 0 HP but it wouldn't die until another action was made.
+ - Exiting the keyboard config menu would fade the options menu back in instead directly cutting to it.
+ - Magic skills used the wrong motion when casting.
+ - Battlers affected by Frozen I would still have their sprite move if an action sequence commanded them to.
+ - Issues #9 and #10.
  - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release, many of these thanks to a ton of backend reworks/changes.
 
-Alpha 10.2 and the updates preceding it served to build the foundation of The Trail, allowing me to start learning how to make a game that was mechanically sound and coherent.
-Alpha 11 ported the game to RPG Maker MV and added Laeryidyean, bringing an end to the adventure down Adon and opening up a world of possibilities for the future.
-Alpha 12 was the first steps in Telluria and began to explore more complex mechanics and ideas. The quality-of-life changes also served to be a good lesson in how to effectively reflect on my work and polish it.
-Alpha 13 introduced the Blazing Sands, the biggest content expansion in The Trail's history at the time. Crafting became a huge feature in the game, and the new dungeons alongside the story further upped the bar for what determined a good update.
-Alpha 14 took the best parts of all these updates, made them even better, then applied them to the entire game. Words can't really describe how much this update evolved the game's quality and changed it forever.
-
-All these updates have led up to this day. Alpha 15 introduces crazy new plot development, tons of unique equipment, mind-bending dungeons, and just a lot of new... everything.
-This update finally allows the game to embody what I always thought it felt like: a real adventure. Alpha 15 truly defines what The Trail is about.
-
-I won't make promises I can't keep, so I can't guarantee Alpha 16 will come anytime soon. Maybe it'll be another Alpha 14, or maybe it'll add a ton of new content like Alpha 15. Who knows? That day will come eventually.
+Alpha 15 truly defines what The Trail is about. This is the update I've wanted to make since the beginning, and it's finally here. Now, what comes next?
+I don't like making promise I can't keep, so I can't guarantee Alpha 16 will come anytime soon. I don't even know what the update is going to be about!
 
 Until then...
 
