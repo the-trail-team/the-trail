@@ -37,25 +37,29 @@ var params = PluginManager.parameters(/([^\/]+)\.js$/.exec(document.currentScrip
 MSX.AlphabeticalSort.sortItemList = eval(String(params["Items List"]));
 MSX.AlphabeticalSort.sortSkillList = eval(String(params["Skills List"]));
 
+DataManager.getSortName = function(item) {
+    if (item.priorityName && item.priorityName.length > 0) return item.priorityName;
+    return DataManager.getBaseItem(item).name;
+}
+
+Window_ItemList.prototype.sortItemList = function(data) {
+    var allItems = data || $gameParty.allItems();
+    allItems.sort(function(a,b){
+        if (DataManager.getSortName(a).toLowerCase() < DataManager.getSortName(b).toLowerCase()) return -1;
+        if (DataManager.getSortName(a).toLowerCase() > DataManager.getSortName(b).toLowerCase()) return 1;
+        return 0;
+    });
+    this._data = allItems.filter(function(item) {
+        return this.includes(item);
+    }, this);
+    if (this.includes(null)) {
+        this._data.push(null);
+    }
+};
+
 if(MSX.AlphabeticalSort.sortItemList){
     Window_ItemList.prototype.makeItemList = function() {
-        var allItems = $gameParty.allItems();
-        allItems.sort(function(a,b){
-            if (a.baseItemName) A = a.baseItemName; else A = a.name;
-            if (b.baseItemName) B = b.baseItemName; else B = b.name;
-            if (a.priorityName && a.priorityName.length > 0) A = a.priorityName;
-            if (b.priorityName && b.priorityName.length > 0) B = b.priorityName;
-            if (A.toLowerCase() < B.toLowerCase()) return -1;
-            if (A.toLowerCase() > B.toLowerCase()) return 1;
-            return 0;
-        });
-        this._data = allItems.filter(function(item) {
-            return this.includes(item);
-        }, this);
-        if (this.includes(null)) {
-            this._data.push(null);
-        }
-
+        this.sortItemList();
         if(Imported.YEP_ItemCore){
             if (SceneManager._scene instanceof Scene_Item) this.listEquippedItems();
         }
