@@ -39867,14 +39867,14 @@
     0,
     0,
     0,
-    0,
+    3050,
     3145,
     3137,
     3137,
     3137,
     3137,
     3143,
-    3050,
+    0,
     0,
     0,
     0,
@@ -40074,17 +40074,17 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     3051,
     3030,
     3028,
-    3029,
-    3047,
+    3015,
+    3053,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -40285,15 +40285,15 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    2898,
-    2900,
-    0,
     3048,
     3036,
     3046,
+    2898,
+    2900,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -157467,19 +157467,19 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     108,
     0,
     0,
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     161,
     161,
     161,
@@ -157672,12 +157672,6 @@
     161,
     161,
     161,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     0,
     108,
@@ -157690,6 +157684,12 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     161,
     161,
     161,
@@ -157882,18 +157882,18 @@
     161,
     161,
     161,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
     0,
     0,
     0,
     108,
     108,
     108,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -181252,6 +181252,27 @@
               ]
             },
             {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 609>"
+              ]
+            },
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event Buffer X: -24>"
+              ]
+            },
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event Buffer Y: -12>"
+              ]
+            },
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -181386,92 +181407,6 @@
               "code": 412,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 10,
-            "variableValid": true,
-            "variableValue": 10
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Region Trigger: 109>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 609>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event Buffer X: -24>"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event Buffer Y: -12>"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 47"
-              ]
             },
             {
               "code": 0,
@@ -182603,7 +182538,7 @@
           ]
         }
       ],
-      "x": 116,
+      "x": 110,
       "y": 50
     },
     null,
