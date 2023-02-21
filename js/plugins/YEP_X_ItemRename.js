@@ -344,12 +344,14 @@ Scene_Item.prototype.onActionRename = function() {
 };
 
 Scene_Item.prototype.preItemRename = function() {
+  $gameTemp._itemCategoryType = this._categoryWindow._type;
   $gameTemp._itemCategoryIndex = this._categoryWindow.index();
   $gameTemp._itemActionIndex = this._itemActionWindow.index();
   $gameTemp._itemRename = this.item();
 };
 
 Scene_Item.prototype.postItemRename1 = function() {
+  this._categoryWindow._type = $gameTemp._itemCategoryType;
   this._categoryWindow.select($gameTemp._itemCategoryIndex);
   this._categoryWindow.update();
   $gameTemp._itemCategoryIndex = undefined;
