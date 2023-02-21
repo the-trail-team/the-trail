@@ -345,31 +345,36 @@ Scene_Item.prototype.onActionRename = function() {
 
 Scene_Item.prototype.preItemRename = function() {
   $gameTemp._itemCategoryIndex = this._categoryWindow.index();
-  $gameTemp._itemListIndex = this._itemWindow.index();
   $gameTemp._itemActionIndex = this._itemActionWindow.index();
   $gameTemp._itemRename = this.item();
 };
 
-Scene_Item.prototype.postItemRename = function() {
+Scene_Item.prototype.postItemRename1 = function() {
   this._categoryWindow.select($gameTemp._itemCategoryIndex);
   this._categoryWindow.update();
   $gameTemp._itemCategoryIndex = undefined;
-  this._itemWindow.update();
-  this._itemWindow.select(this._itemWindow._data.findIndex(element => element === $gameTemp._itemRename));
-  this._itemWindow.updateHelp();
-  $gameTemp._itemListIndex = undefined;
-  this._itemActionWindow.setItem($gameTemp._itemRename);
-  this._itemActionWindow.select($gameTemp._itemActionIndex);
-  $gameTemp._itemActionIndex = undefined;
-  $gameTemp._itemRename = undefined;
   this._categoryWindow.deactivate();
 };
+
+Scene_Item.prototype.postItemRename2 = function() {
+  if (SceneManager._scene._itemWindow._data.length == 0) window.setTimeout(SceneManager._scene.postItemRename2, 100);
+  else {
+    SceneManager._scene._itemWindow.update();
+    SceneManager._scene._itemWindow.select(SceneManager._scene._itemWindow._data.findIndex(i => i.id == $gameTemp._itemRename.id));
+    SceneManager._scene._itemWindow.updateHelp();
+    $gameTemp._itemRename = undefined;
+    SceneManager._scene._itemActionWindow.setItem(SceneManager._scene.item())
+    SceneManager._scene._itemActionWindow.select($gameTemp._itemActionIndex);
+    $gameTemp._itemActionIndex = undefined;
+  }
+}
 
 Yanfly.ItemRename.Scene_Item_create = Scene_Item.prototype.create;
 Scene_Item.prototype.create = function() {
   Yanfly.ItemRename.Scene_Item_create.call(this);
-  if ($gameTemp._itemCategoryIndex) {
-    this.postItemRename();
+  if ($gameTemp._itemRename) {
+    this.postItemRename1();
+    this.postItemRename2();
   }
 };
 
