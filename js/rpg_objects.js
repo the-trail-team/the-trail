@@ -558,7 +558,7 @@ Game_System.prototype.meleeDamageWeakness = function(user, type) {
 
 Game_System.prototype.safePlace = function() {
     let arr = [this._safePlaceMap, this._safePlaceX, this._safePlaceY, this._safePlaceDirection];
-    if (arr.contains(undefined)) return [11, 17, 14, 'left'];
+    if (arr.contains(undefined)) return [11, 17, 14, 4];
     else return arr;
 };
 
