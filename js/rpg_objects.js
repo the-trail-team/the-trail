@@ -2527,12 +2527,11 @@ Object.defineProperties(Game_BattlerBase.prototype, {
     // EXperience Rate
     exr: { get: function() { return this.sparam(9); }, configurable: true },
     // Outgoing Magical Damage
-    omd: { get: function() { return this.otherparam(0) * (this.actorId() == 2 && this.hasSkill(98)) ? (1 + Math.min(this.totalMpUsed(), 100000) * 0.000001) : 1; }, configurable: true},
+    omd: { get: function() { return this.otherparam(0); }, configurable: true},
     // Outgoing Elemental Damage
     oed: { get: function() { return this.otherparam(1); }, configurable: true},
     // Outgoing Healing Rate
     ohr: { get: function() { return this.otherparam(2); }, configurable: true}
-    
 });
 
 Game_BattlerBase.prototype.initialize = function() {
@@ -2815,8 +2814,12 @@ Game_BattlerBase.prototype.bparam = function(bparamId) {
     return this.traitsSum(Game_BattlerBase.TRAIT_BPARAM, bparamId);
 };
 
-Game_BattlerBase.prototype.otherparam = function(otherparamId) {
-    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId);
+Game_BattlerBase.prototype.otherparam = function(otherparamId) { 
+    var rm = 1;
+    if (otherparamId == 0 && this.isActor()) {
+        if (this.actorId() == 2 && this.hasSkill(98)) rm += Math.min(this.totalMpUsed(), 100000) * 0.000001; // Hardcoded Residual Mana
+    }
+    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId) * rm;
 };
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {
