@@ -2181,7 +2181,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Mana Refund",
-    "note": "<animationRow:22>\n\n<Custom Respond Effect>\nif (value > 0) {\n  var mp = Math.ceil(value * 0.01);\n  var cap = Math.ceil(user.mmp * 0.05);\n  if (mp > cap) {\n    mp = cap;\n  }\n  user.gainMp(mp);\n  user.startDamagePopup();\n  user.clearResult();\n}\n</Custom Respond Effect>\n\n<Help Description>\nAttacking this battler will restore MP equal to 1% of damage dealt, capped at 5% of WIS.\n</Help Description>",
+    "note": "<animationRow:22>\n\n<Help Description>\nAttacking this battler will restore MP equal to 1% of damage dealt, capped at 5% of WIS.\n</Help Description>\n\nHardcoded in YEP_LifeSteal.js.",
     "overlay": 9,
     "priority": 41,
     "removeAtBattleEnd": true,

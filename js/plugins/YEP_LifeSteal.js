@@ -492,6 +492,7 @@ Game_Battler.prototype.magicSteal = function(damage, type, target, rate, flat) {
       var lifeSteal = Math.max(0, Math.floor(damage * (1 - rate) + flat));
     }
     if (Yanfly.Param.LSMPOver) lifeSteal = Math.min(lifeSteal, damage);
+    if (target.hasState(67)) lifeSteal += Math.min(Math.ceil(damage * 0.01), Math.ceil(this.mmp * 0.05)); // Hardcoded Mana Refund
     if (lifeSteal <= 0) return;
     this.gainMp(lifeSteal);
 };
