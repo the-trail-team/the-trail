@@ -3627,38 +3627,12 @@
   {
     "id": 141,
     "atypeId": 6,
-    "description": "A unique shield that lightly simulates the\nelemental strengths and weaknesses of ice.",
+    "description": "Made with an unknown cold material. Nullifies\nall incoming ice damage while guarding.",
     "etypeId": 2,
-    "traits": [
-      {
-        "code": 11,
-        "dataId": 2,
-        "value": 1.2
-      },
-      {
-        "code": 11,
-        "dataId": 3,
-        "value": 0.9
-      },
-      {
-        "code": 11,
-        "dataId": 5,
-        "value": 0.9
-      },
-      {
-        "code": 11,
-        "dataId": 6,
-        "value": 0.9
-      },
-      {
-        "code": 11,
-        "dataId": 13,
-        "value": 0.9
-      }
-    ],
+    "traits": [],
     "iconIndex": 509,
     "name": "Glacial Bulwark",
-    "note": "<Upgrade Slots: 2>",
+    "note": "<Upgrade Slots: 2>\n<Replace Guard: 100>",
     "params": [
       0,
       0,
@@ -3701,18 +3675,18 @@
   {
     "id": 143,
     "atypeId": 1,
-    "description": "A nifty magical accessory that provides\na sizable resistance to Ice attacks.",
+    "description": "A nifty magical accessory that provides\na sizable resistance to ice attacks.",
     "etypeId": 6,
     "traits": [
       {
         "code": 11,
         "dataId": 3,
-        "value": 0.7
+        "value": 0.6
       }
     ],
     "iconIndex": 353,
     "name": "Snow Globe",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSnow Gloves\nSnow Jacket\nGlacial Bulwark\nFrozen Core\nIcy Gel: 5\nEnchanting Crystal\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Advanced>\nx1 Snow Gloves: 90%\nx1 Snow Jacket: 90%\nx1 Glacial Bulwark: 90%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nFrozen Core: 2\nIcy Gel: 10\nIce Cube: 50\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -4122,7 +4096,7 @@
       {
         "code": 11,
         "dataId": 3,
-        "value": 0.9
+        "value": 0.8
       }
     ],
     "iconIndex": 484,

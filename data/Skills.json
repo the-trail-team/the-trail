@@ -3475,22 +3475,35 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Decreases the amount of damage taken.\nNullifies all incoming ice damage.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 21,
+        "dataId": 71,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
-    "message1": "",
+    "iconIndex": 509,
+    "message1": " guards.",
     "message2": "",
     "mpCost": 0,
-    "name": "",
-    "note": "",
-    "occasion": 0,
+    "name": "Ice Guard",
+    "note": "<Bypass Target Change>\n\n<Require = 0 BP>\n\n<Max Mastery Level: 0>",
+    "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
     "requiredWtypeId2": 0,
-    "scope": 1,
-    "speed": 0,
-    "stypeId": 1,
+    "scope": 11,
+    "speed": 1000,
+    "stypeId": 0,
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0

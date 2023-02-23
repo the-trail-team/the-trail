@@ -2287,9 +2287,9 @@
   },
   {
     "id": 71,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 1,
     "chanceByDamage": 100,
-    "traits": [],
+    "description": "",
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -2298,16 +2298,23 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
+    "name": "Ice Guard",
     "note": "",
     "overlay": 0,
-    "priority": 50,
-    "removeAtBattleEnd": false,
+    "priority": 0,
+    "removeAtBattleEnd": true,
     "removeByDamage": false,
-    "removeByRestriction": false,
+    "removeByRestriction": true,
     "removeByWalking": false,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 100,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0
+      }
+    ]
   },
   {
     "id": 72,
