@@ -7339,7 +7339,7 @@
             "code": 108,
             "indent": 0,
             "parameters": [
-              "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101>"
+              "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101 && $gameSystem._moonPhase != 4>"
             ]
           },
           {
@@ -10667,6 +10667,75 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 97,
+    "members": [
+      {
+        "enemyId": 57,
+        "x": 329,
+        "y": 268,
+        "hidden": false
+      },
+      {
+        "enemyId": 57,
+        "x": 466,
+        "y": 130,
+        "hidden": false
+      },
+      {
+        "enemyId": 57,
+        "x": 453,
+        "y": 391,
+        "hidden": false
+      },
+      {
+        "enemyId": 57,
+        "x": 191,
+        "y": 148,
+        "hidden": false
+      },
+      {
+        "enemyId": 57,
+        "x": 145,
+        "y": 364,
+        "hidden": false
+      }
+    ],
+    "name": "Werewolf x5",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 108,
+            "indent": 0,
+            "parameters": [
+              "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101 && $gameSystem._moonPhase == 4>"
+            ]
+          },
           {
             "code": 0,
             "indent": 0,
