@@ -404,12 +404,7 @@ DataManager.processEqReqNotetags1 = function(group) {
       }
     }
 
-    if (obj.groupType == 1) {
-      let dataId = 0;
-      if (obj.wtypeId == 5) dataId = 15;
-      if (obj.wtypeId == 7) dataId = 52;
-      if (dataId > 0) obj.traits.push({code: 43, dataId: dataId, value: 1})
-    }
+    if (obj.groupType == 1) this.defaultAddedSkills(obj);
   }
 };
 
@@ -452,6 +447,21 @@ DataManager.defaultClassRestrictions = function(obj) {
   }
   console.error("MISSING CLASS RESTRICTION:", obj.name);
   return;
+};
+
+DataManager.defaultAddedSkills = function(obj) {
+  switch (obj.wtypeId) {
+    case 5:
+      dataId = 15;
+      break;
+    case 7:
+      dataId = 52;
+      break;
+    default:
+      dataId = 0;
+      break;
+  }
+  if (dataId > 0) obj.traits.push({code: 43, dataId: dataId, value: 1});
 };
 
 DataManager.makeEquipRequirement = function(obj, line) {
