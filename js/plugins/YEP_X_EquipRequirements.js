@@ -368,19 +368,7 @@ DataManager.processEqReqNotetags1 = function(group) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
 
-    var defaultClasses = [];
-    if (DataManager.isWeapon(obj)) {
-      if ([2, 6, 7, 11].contains(obj.wtypeId)) defaultClasses.push(1);
-      if ([3, 10].contains(obj.wtypeId)) defaultClasses.push(2);
-      if ([4, 8].contains(obj.wtypeId)) defaultClasses.push(3);
-      if ([5, 9].contains(obj.wtypeId)) defaultClasses.push(4);
-    } else if (DataManager.isArmor(obj)) {
-      if ([2, 6, 7].contains(obj.atypeId)) defaultClasses.push(1);
-      if ([3, 6].contains(obj.atypeId)) defaultClasses.push(2);
-      if ([4, 6].contains(obj.atypeId)) defaultClasses.push(3);
-      if ([5].contains(obj.atypeId)) defaultClasses.push(4);
-    }
-
+    var defaultClasses = [].concat(this.defaultClassRestrictions(obj) || []);
     obj.equipRequirements = {
       atLeast: [0, 0, 0, 0, 0, 0, 0, 0, 0],
       atMost: [0, 0, 0, 0, 0, 0, 0, 0, 0],
@@ -423,6 +411,47 @@ DataManager.processEqReqNotetags1 = function(group) {
       if (dataId > 0) obj.traits.push({code: 43, dataId: dataId, value: 1})
     }
   }
+};
+
+DataManager.defaultClassRestrictions = function(obj) {
+  if (DataManager.isWeapon(obj)) switch (obj.wtypeId) {
+    case 1:  // Generic
+      return;
+    case 2:  // Plate Armor
+    case 6:  // Spear
+    case 7:  // Axe
+    case 11: // Greatsword
+      return 1;
+    case 3:  // Wand
+    case 10: // Spellbook
+      return 2;
+    case 4:  // Staff
+    case 8:  // Hammer
+      return 3;
+    case 5:  // Dagger
+    case 9:  // Knuckles
+      return 4;
+  }
+  if (DataManager.isArmor(obj)) switch (obj.atypeId) {
+      case 1:  // Generic
+      case 8:  // Gambeson
+      case 9:  // Chainmail
+        return;
+      case 6:  // Light Shield
+        return [1, 2, 3];
+      case 2:  // Plate Armor
+      case 7:  // Heavy Armor
+        return 1;
+      case 3:  // Robes
+        return 2;
+      case 4:  // Vestments
+        return 3;
+      case 5:  // Leathers
+      case 10: // Cloak
+        return 4;
+  }
+  console.error("MISSING CLASS RESTRICTION:", obj.name);
+  return;
 };
 
 DataManager.makeEquipRequirement = function(obj, line) {
