@@ -111,6 +111,11 @@ Window_Command.prototype.drawItem = function(index) {
 	    	this.drawIcon($gameTemp.weaponIconARPCI, rect.x-4, rect.y+2);
 	    	rect.x += 30;
 	    	rect.width -= 30;
+		} else if (SceneManager._scene.constructor === Scene_Battle &&
+				commandName === TextManager.guard) {
+			this.drawIcon($gameTemp.offhandIconARPCI, rect.x-4, rect.y+2);
+			rect.x += 30;
+			rect.width -= 30;
 	    } else if ( commandIcon[commandName] ) {
 	    	this.drawIcon(commandIcon[commandName], rect.x-4, rect.y+2);
 	    	rect.x += 30;
@@ -121,14 +126,24 @@ Window_Command.prototype.drawItem = function(index) {
     this.drawText(this.commandName(index), rect.x, rect.y, rect.width, align);
 };
 
-
+var Window_ActorCommand_prototype_addAttackCommand = Window_ActorCommand.prototype.addAttackCommand;
 Window_ActorCommand.prototype.addAttackCommand = function() {
 	if (this._actor.weapons()[0]){
 		$gameTemp.weaponIconARPCI = this._actor.weapons()[0].iconIndex + weaponIconOffset;
 	} else {
 		$gameTemp.weaponIconARPCI = barehandIcon;
 	}
-    this.addCommand(TextManager.attack, 'attack', this._actor.canAttack());
+    Window_ActorCommand_prototype_addAttackCommand.call(this);
+};
+
+var Window_ActorCommand_prototype_addGuardCommand = Window_ActorCommand.prototype.addGuardCommand;
+Window_ActorCommand.prototype.addGuardCommand = function() {
+	if (this._actor.armors().some(a => a.etypeId == 2)) {
+		$gameTemp.offhandIconARPCI = this._actor.armors().find(a => a.etypeId == 2).iconIndex + weaponIconOffset;
+	} else {
+		$gameTemp.offhandIconARPCI = commandIcon['Guard'];
+	}
+	Window_ActorCommand_prototype_addGuardCommand.call(this);
 };
 
 
