@@ -105,14 +105,15 @@ Window_Command.prototype.drawItem = function(index) {
     this.changePaintOpacity(this.isCommandEnabled(index));
     if(scenesToDraw.indexOf(SceneManager._scene.constructor) >= 0){
     	var commandName = this.commandName(index);
+		var commandSymbol = this._list[index].symbol;
 	    if (eval(drawWeaponIcon) && 
 	    	   SceneManager._scene.constructor === Scene_Battle && 
-	    	   commandName === TextManager.attack ){
+	    	   commandSymbol === "attack" ){
 	    	this.drawIcon($gameTemp.weaponIconARPCI, rect.x-4, rect.y+2);
 	    	rect.x += 30;
 	    	rect.width -= 30;
 		} else if (SceneManager._scene.constructor === Scene_Battle &&
-				commandName === TextManager.guard) {
+				commandSymbol === "guard") {
 			this.drawIcon($gameTemp.offhandIconARPCI, rect.x-4, rect.y+2);
 			rect.x += 30;
 			rect.width -= 30;
