@@ -590,6 +590,18 @@ Game_Battler.prototype.replaceGuardSkillId = function() {
   return 0;
 };
 
+Game_Battler.prototype.attackSkillName = function() {
+  var id = this.replaceAttackSkillId();
+  if (id == 0) id = 1;
+  return $dataSkills[id].name;
+};
+
+Game_Battler.prototype.guardSkillName = function() {
+  var id = this.replaceGuardSkillId();
+  if (id == 0) id = 2;
+  return $dataSkills[id].name;
+};
+
 Game_Battler.prototype.weaponUnleashes = function() {
     var arr = [];
     var length = this.states().length;
