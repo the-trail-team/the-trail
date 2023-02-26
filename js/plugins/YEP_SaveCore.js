@@ -721,7 +721,7 @@ Window_SavefileList.prototype.itemHeight = function() {
 
 Window_SavefileList.prototype.drawItem = function(index) {
     var id = index + 1;
-    var valid = DataManager.isThisGameFile(id);
+    var valid = DataManager.isThisGameFile(id) && !(this.index() == index && $gameTemp._deletingFile);
     var rect = this.itemRect(index);
     this.resetTextColor();
     //if (this._mode === 'load') this.changePaintOpacity(valid);

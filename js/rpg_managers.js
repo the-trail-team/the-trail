@@ -695,6 +695,7 @@ StorageManager.isLocalMode = function() {
 StorageManager.trashFile = async function(filePath) {
     const trash = require('trash');
     await trash([filePath]);
+    $gameTemp._deletingFile = undefined;
 };
 
 StorageManager.replaceFile = async function(dirPath, filePath, data) {
@@ -760,6 +761,7 @@ StorageManager.localFileExists = function(savefileId) {
 
 StorageManager.removeLocalFile = function(savefileId) {
     var filePath = this.localFilePath(savefileId);
+    $gameTemp._deletingFile = true;
     this.trashFile(filePath);
 };
 
