@@ -345,7 +345,7 @@ DataManager.maxSavefiles = function() {
 
 DataManager.saveGame = function(savefileId) {
     try {
-        StorageManager.backup(savefileId);
+        // StorageManager.backup(savefileId);
         return this.saveGameWithoutRescue(savefileId);
     } catch (e) {
         console.error(e);
@@ -692,6 +692,30 @@ StorageManager.isLocalMode = function() {
     return Utils.isNwjs();
 };
 
+StorageManager.trashFile = async function(filePath) {
+    const trash = require('trash');
+    await trash([filePath]);
+};
+
+StorageManager.replaceFile = async function(dirPath, filePath, data) {
+    const fs = require('fs');
+    const path = require('path');
+    $gameTemp._tempPath = path.join(dirPath, 'temp');
+    $gameTemp._filePath = filePath;
+    await this.trashFile($gameTemp._filePath);
+    await fs.writeFileSync($gameTemp._tempPath, data);
+    this.renameTemp();
+};
+
+StorageManager.renameTemp = function() {
+    const fs = require('fs');
+    if (fs.existsSync($gameTemp._filePath)) window.setTimeout(StorageManager.renameTemp, 100);
+    else {
+        fs.rename($gameTemp._tempPath, $gameTemp._filePath);
+        $gameTemp._tempPath = $gameTemp._filePath = undefined;
+    }
+};
+
 StorageManager.saveToLocalFile = function(savefileId, json) {
     var data = LZString.compressToBase64(json);
     var fs = require('fs');
@@ -700,8 +724,8 @@ StorageManager.saveToLocalFile = function(savefileId, json) {
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath);
     }
-    if (savefileId > 0 && fs.existsSync(filePath)) this.backup(savefileId);
-    fs.writeFileSync(filePath, data);
+    if (savefileId > 0 && fs.existsSync(filePath)) this.replaceFile(dirPath, filePath, data);
+    else fs.writeFileSync(filePath, data);
 };
 
 StorageManager.loadFromLocalFile = function(savefileId) {
@@ -735,12 +759,8 @@ StorageManager.localFileExists = function(savefileId) {
 };
 
 StorageManager.removeLocalFile = function(savefileId) {
-    var fs = require('fs');
     var filePath = this.localFilePath(savefileId);
-    this.backup(savefileId);
-    if (fs.existsSync(filePath)) {
-        fs.unlinkSync(filePath);
-    }
+    this.trashFile(filePath);
 };
 
 StorageManager.saveToWebStorage = function(savefileId, json) {
