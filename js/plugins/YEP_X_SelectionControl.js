@@ -1056,9 +1056,9 @@ Game_Unit.prototype.filterSelection = function(members) {
   for (var i = 0; i < length; ++i) {
     var target = members[i];
     if (!target) continue;
-    if (action.checkAllSelectionConditions(user, target)) {
+    // if (action.checkAllSelectionConditions(user, target)) {
       targets.push(target);
-    }
+    // }
   }
   $gameTemp._selectionFilterInProgress = false;
   targets = this.filterTauntMembers(user, action, targets);
