@@ -2043,7 +2043,7 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 10
+        "value": 5
       }
     ],
     "iconIndex": 0,
@@ -4187,9 +4187,14 @@
     "chanceByDamage": 100,
     "traits": [
       {
+        "code": 22,
+        "dataId": 1,
+        "value": 10
+      },
+      {
         "code": 23,
         "dataId": 6,
-        "value": 0.5
+        "value": 0
       },
       {
         "code": 14,
@@ -4211,7 +4216,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Incorporeal",
-    "note": "<Help Description>\nIncoming physical damage is halved. Immune to \\it[34] and \\it[39].\n</Help Description>",
+    "note": "<Help Description>\nCannot be hit by physical attacks. Immune to \\it[34] and \\it[39].\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
