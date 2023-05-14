@@ -6431,5 +6431,93 @@
     "removeByWalking": false,
     "restriction": 0,
     "stepsToRemove": 100
+  },
+  {
+    "id": 188,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 805,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Watchful Gaze",
+    "note": "<Custom Apply Effect>\ntarget._watchfulGaze = target._watchfulGaze || 0;\ntarget._watchfulGaze = Math.min(5, target._watchfulGaze + 1);\nstack = target._watchfulGaze;\npool = DataManager.stateCategories['DEBUFF'];\nif (stack > 1 && stack < 5) {\n  for (i = 0; i < (stack - 1) * 2; i++) {\n    target.addState(pool[Math.floor(Math.random() * pool.length)]);\n  }\n}\nif (stack == 5) {\n  target.gainHp(-Number.MAX_SAFE_INTEGER);\n}\n</Custom Apply Effect>\n\n<Custom Remove Effect>\ntarget._watchfulGaze = 0;\n</Custom Remove Effect>\n\n<Help Description>\nProgressively applies more debuffs, eventually culminating in death. Gazes: \\evalText<<this._battler._watchfulGaze>>.\n</Help Description>",
+    "overlay": 9,
+    "priority": 70,
+    "removeAtBattleEnd": true,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 189,
+    "autoRemovalTiming": 2,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": -0.5
+      },
+      {
+        "code": 44,
+        "dataId": 134,
+        "value": 1
+      },
+      {
+        "code": 44,
+        "dataId": 128,
+        "value": 1
+      }
+    ],
+    "iconIndex": 806,
+    "maxTurns": 3,
+    "message1": "",
+    "message2": "'s eye was poked! Ouch!",
+    "message3": "",
+    "message4": " found eye drops.",
+    "minTurns": 3,
+    "motion": 1,
+    "name": "Poked Eye",
+    "note": "<Help Description>\nThis battler cannot use their eye(s). Reduces HIT by 50%.\n</Help Description>",
+    "overlay": 0,
+    "priority": 70,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 190,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Poked Eye Processing",
+    "note": "<Custom React Effect>\nif (user.attackElements().contains(17)) target.addState(189);\n</Custom React Effect>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
   }
 ]
