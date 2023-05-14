@@ -542,7 +542,9 @@ Game_System.prototype.nextMoonPhase = function() {
 // Melee Damage Types
 
 Game_System.prototype.meleeDamageWeakness = function(user, type) {
-    if (user.isActor()) {
+    if (!!user.overrideArmorWeaknesses) {
+        if (user.overrideArmorWeaknesses.contains(type)) return true;
+    } else if (user.isActor()) {
         return true;
     } else if (user.isEnemy()) {
         if (!!user.enemy().armorWeaknesses) {
