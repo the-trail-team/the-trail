@@ -593,13 +593,22 @@ Game_System.prototype.recallAllowed = function() {
 
 Game_System.prototype.setRecallAllowed = function(allow) {
     this._recallAllowed = allow;
-}
+};
 
 // Statues
+
+Game_System.prototype.totalStatues = function() {
+    return 11;
+};
 
 Game_System.prototype.statue = function(mapId) {
     this._statues = this._statues || [];
     return this._statues[mapId];
+};
+
+Game_System.prototype.statuesFound = function(total) {
+    this._statues = this._statues || [];
+    return this._statues.filter(s => !!s).length + (total ? "/" + this.totalStatues() : "");
 };
 
 // Constants

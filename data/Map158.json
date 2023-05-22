@@ -12034,7 +12034,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "New statue registered! Unlocked permanent buff!"
+                "New statue found! Blessing granted!"
               ]
             },
             {
@@ -12042,6 +12042,20 @@
               "indent": 1,
               "parameters": [
                 "$gameSystem._statues[$gameMap.mapId()] = true;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.refreshActiveQuestWindow();"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "$gameParty.refreshMembers();"
               ]
             },
             {
