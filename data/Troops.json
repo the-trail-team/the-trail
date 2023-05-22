@@ -1243,9 +1243,15 @@
         "x": 216,
         "y": 295,
         "hidden": true
+      },
+      {
+        "enemyId": 80,
+        "x": 297,
+        "y": 181,
+        "hidden": false
       }
     ],
-    "name": "Blue Slime, Giant Rat",
+    "name": "Blue Slime, Giant Rat, Living Plant",
     "pages": [
       {
         "conditions": {
@@ -10730,6 +10736,88 @@
               "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101 && $gameSystem._moonPhase == 4>"
             ]
           },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 98,
+    "members": [
+      {
+        "enemyId": 80,
+        "x": 305,
+        "y": 265,
+        "hidden": false
+      }
+    ],
+    "name": "Living Plant",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 99,
+    "members": [
+      {
+        "enemyId": 80,
+        "x": 272,
+        "y": 349,
+        "hidden": false
+      },
+      {
+        "enemyId": 80,
+        "x": 356,
+        "y": 199,
+        "hidden": false
+      }
+    ],
+    "name": "Living Plant x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
           {
             "code": 0,
             "indent": 0,

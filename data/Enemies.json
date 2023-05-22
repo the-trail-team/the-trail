@@ -3265,7 +3265,7 @@
     ],
     "gold": 96,
     "name": "Flytrap",
-    "note": "<Armor Weakness: Piercing>\n<Element: Plant>\n<Passive State: 136>\n\n<Sideview Battler: Flytrap>\n\n<Enemy Drops>\nArmor Bracing: 3.33%\nYellow Flower: 75%\nYellow Flower: 75%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMedicinal Herb: 25%\nMedicinal Herb: 25%\nMedicinal Root: 10%\nRock: 10%\nRazor-Sharp Fang: 5%\nPlant Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Piercing>\n<Element: Plant>\n<Passive State: 136>\n\n<Sideview Battler: Flytrap>\n<Attack Animation: 211>\n\n<Enemy Drops>\nArmor Bracing: 3.33%\nYellow Flower: 75%\nYellow Flower: 75%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMedicinal Herb: 25%\nMedicinal Herb: 25%\nMedicinal Root: 10%\nRock: 10%\nRazor-Sharp Fang: 5%\nPlant Essence: 20%\n</Enemy Drops>",
     "params": [
       1500,
       0,
@@ -5666,6 +5666,69 @@
       90,
       150,
       1
+    ]
+  },
+  {
+    "id": 80,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 111
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Living Plant",
+    "dropItems": [],
+    "exp": 20,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.92
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.02
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      }
+    ],
+    "gold": 12,
+    "name": "Living Plant",
+    "note": "<Armor Weakness: Piercing>\n<Element: Plant>\n<Passive State: 136>\n\n<Sideview Battler: Living Plant>\n<Attack Animation: 211>\n\n<Enemy Drops>\nArmor Bracing: 3.33%\nYellow Flower: 25%\nYellow Flower: 25%\nSharp Tooth: 5%\nRing of the Woods: 5%\nPlant Essence: 20%\n</Enemy Drops>",
+    "params": [
+      100,
+      0,
+      10,
+      8,
+      1,
+      3,
+      1,
+      2
     ]
   }
 ]
