@@ -1452,70 +1452,46 @@
     "id": 21,
     "actions": [
       {
-        "conditionParam1": 1,
-        "conditionParam2": 0,
-        "conditionType": 1,
-        "rating": 5,
-        "skillId": 15
-      },
-      {
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
         "skillId": 1
-      },
-      {
-        "conditionParam1": 0,
-        "conditionParam2": 0.15,
-        "conditionType": 2,
-        "rating": 9,
-        "skillId": 18
       }
     ],
     "battlerHue": 0,
-    "battlerName": "Dandy Toad",
+    "battlerName": "",
     "dropItems": [],
-    "exp": 75,
+    "exp": 0,
     "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.95
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      },
       {
         "code": 31,
         "dataId": 1,
         "value": 0
-      },
-      {
-        "code": 31,
-        "dataId": 15,
-        "value": 1
-      },
-      {
-        "code": 22,
-        "dataId": 0,
-        "value": 0.99
-      },
-      {
-        "code": 22,
-        "dataId": 1,
-        "value": 0.07
-      },
-      {
-        "code": 22,
-        "dataId": 2,
-        "value": 0.07
       }
     ],
-    "gold": 45,
-    "name": "Dandy Toad (w/ Purse)",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: DandyToad_1>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nPeasant Woman's Purse: 100%\nLoaf of Bread: 50%\nPotion: 10%\nPotion: 10%\n</Enemy Drops>",
+    "gold": 0,
+    "name": "",
+    "note": "",
     "params": [
-      600,
-      40,
-      19,
-      19,
-      1,
-      42,
-      140,
-      52
+      100,
+      0,
+      10,
+      10,
+      10,
+      10,
+      10,
+      10
     ]
   },
   {
