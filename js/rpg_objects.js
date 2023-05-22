@@ -184,6 +184,7 @@ Game_System.prototype.initialize = function() {
     this._rareEnemyTries = 0;
     this._oneTimeItems = [];
     this._moonPhase = 0;
+    this._statues = {};
 };
 
 Game_System.prototype.isJapanese = function() {
@@ -593,6 +594,13 @@ Game_System.prototype.recallAllowed = function() {
 Game_System.prototype.setRecallAllowed = function(allow) {
     this._recallAllowed = allow;
 }
+
+// Statues
+
+Game_System.prototype.statue = function(mapId) {
+    this._statues = this._statues || [];
+    return this._statues[mapId];
+};
 
 // Constants
 
