@@ -2171,7 +2171,7 @@ Game_Enemy.prototype.sideviewHeight = function() {
 };
 
 Game_Enemy.prototype.sideviewCollapse = function() {
-    return this.enemy().sideviewCollapse;
+    return this.enemy().sideviewCollapse || this._forceCollapse;
 };
 
 Game_Enemy.prototype.showSideviewShadow = function() {
@@ -2275,6 +2275,7 @@ Game_Enemy.prototype.linkBreathing = function() {
 };
 
 Game_Enemy.prototype.isFloating = function() {
+    if (this._forceFloating) return true;
     if (this.isDead() && !this.enemy().sideviewFloatDeath) return false;
     if (this.enemy().sideviewFloatingLowHpGround && (this.hpRate() <= 0.25 || !this.spriteCanMove() || [1,2].contains(this.stateMotionIndex()))) return false;
     if (!this.spriteCanMove()) return false;
