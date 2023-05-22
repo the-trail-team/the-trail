@@ -2817,11 +2817,14 @@ Game_BattlerBase.prototype.bparam = function(bparamId) {
 };
 
 Game_BattlerBase.prototype.otherparam = function(otherparamId) { 
-    var rm = 1;
+    var boost = 1;
     if (otherparamId == 0 && this.isActor()) {
-        if (this.actorId() == 2 && this.hasSkill(98)) rm += Math.min(this.totalMpUsed(), 100000) * 0.000001; // Hardcoded Residual Mana
+        if (this.hasSkill(98)) boost += Math.min(this.totalMpUsed(), 100000) * 0.000001; // Hardcoded Residual Mana
     }
-    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId) * rm;
+    if (otherparamId == 2 && this.isActor()) {
+        if (this.hasSkill(79)) boost += Math.abs(Math.min(this.hpRate() - 0.5, 0)); // Hardcoded Critical Heal I
+    }
+    return this.traitsPi(Game_BattlerBase.TRAIT_OTHERPARAM, otherparamId) * boost;
 };
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {

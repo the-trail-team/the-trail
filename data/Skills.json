@@ -2749,7 +2749,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nOutgoing healing increases as HP approaches 0 (up to 20%).",
+    "description": "[PASSIVE SKILL]\nStarting at 50% HP, OHR increases linearly as HP approaches 0 (up to 50%).",
     "effects": [],
     "hitType": 0,
     "iconIndex": 122,
@@ -2757,7 +2757,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "[P] Critical Heal I",
-    "note": "<Passive State: 66>\n\n<Max Mastery Level: 0>\n\n<Custom Cost Display>\n\\}Passive\n</Custom Cost Display>",
+    "note": "<Max Mastery Level: 0>\n\n<Custom Cost Display>\n\\}Passive\n</Custom Cost Display>\n\nHardcoded in rpg_objects.js.",
     "occasion": 3,
     "repeats": 1,
     "requiredWtypeId1": 0,
