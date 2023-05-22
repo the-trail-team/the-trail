@@ -1445,7 +1445,7 @@
       1,
       42,
       140,
-      52
+      50
     ]
   },
   {
@@ -1532,7 +1532,7 @@
     "battlerHue": 0,
     "battlerName": "Dandy Toad Captain",
     "dropItems": [],
-    "exp": 100,
+    "exp": 120,
     "traits": [
       {
         "code": 31,
@@ -1547,31 +1547,31 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 1
+        "value": 1.01
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.09
+        "value": 0.1
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.09
+        "value": 0.1
       }
     ],
-    "gold": 60,
+    "gold": 72,
     "name": "Dandy Toad Captain",
     "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nFulfilling Ration: 50%\nPotion: 16.66%\nPotion: 16.66%\n</Enemy Drops>",
     "params": [
-      900,
+      1200,
       60,
-      21,
+      23,
       20,
       1,
       45,
       180,
-      55
+      60
     ]
   },
   {
