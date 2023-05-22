@@ -6181,36 +6181,6 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "# Tests to see if the player is indoors"
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          12,
-          "$gameMap.indoors()"
-        ]
-      },
-      {
-        "code": 115,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 108,
-        "indent": 0,
-        "parameters": [
           "# Adds 1 minute to the time"
         ]
       },
@@ -6396,8 +6366,25 @@
         "parameters": []
       },
       {
-        "code": 231,
+        "code": 121,
         "indent": 1,
+        "parameters": [
+          69,
+          69,
+          0
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!$gameMap.indoors()"
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 2,
         "parameters": [
           61,
           "NightOverlay",
@@ -6413,7 +6400,7 @@
       },
       {
         "code": 232,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           61,
           0,
@@ -6431,7 +6418,7 @@
       },
       {
         "code": 232,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           69,
           0,
@@ -6448,13 +6435,14 @@
         ]
       },
       {
-        "code": 121,
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
         "indent": 1,
-        "parameters": [
-          69,
-          69,
-          0
-        ]
+        "parameters": []
       },
       {
         "code": 115,
@@ -6523,8 +6511,16 @@
         ]
       },
       {
-        "code": 232,
+        "code": 111,
         "indent": 1,
+        "parameters": [
+          12,
+          "!$gameMap.indoors()"
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 2,
         "parameters": [
           61,
           0,
@@ -6542,7 +6538,7 @@
       },
       {
         "code": 111,
-        "indent": 1,
+        "indent": 2,
         "parameters": [
           0,
           74,
@@ -6551,7 +6547,7 @@
       },
       {
         "code": 232,
-        "indent": 2,
+        "indent": 3,
         "parameters": [
           69,
           0,
@@ -6566,6 +6562,16 @@
           600,
           false
         ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
       },
       {
         "code": 0,
