@@ -978,14 +978,12 @@ AIManager.getParamId = function(string) {
     switch (string) {
     case 'MAXHP':
     case 'MAX HP':
-    case 'VIT':
       return 0;
       break;
     case 'MAXMP':
     case 'MAX MP':
     case 'MAXSP':
     case 'MAX SP':
-    case 'WIS':
       return 1;
       break;
     case 'ATK':
@@ -993,7 +991,6 @@ AIManager.getParamId = function(string) {
       return 2;
       break;
     case 'DEF':
-    case 'END':
       return 3;
       break;
     case 'MAT':

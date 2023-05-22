@@ -293,7 +293,7 @@ if(Imported.YEP_EquipCore) {
 
 Window_StatCompare.prototype.showStat = function(paramId, diffvalue) {
 	return (
-		(_.cates[paramId] == "Core Stat") || // STR, END, SPI, RES, AGI always show
+		(_.cates[paramId] == "Core Stat") || // ATK, DEF, MAT, MDF, AGI always show
 		(["Other", "Decimal Place"].contains(_.cates[paramId]) && diffvalue != 0) || // All other stats besides attack element changes show if changed
 		(_.cates[paramId] == "Elemental Attack" && this._actor.attackElements().contains(_.extrs[paramId]) != this._tempActor.attackElements().contains(_.extrs[paramId])) || // Attack element changes
 		(_.cates[paramId] == "Attack Skill" && this._actor.replaceAttackSkillId() != this._tempActor.replaceAttackSkillId()) || // Attack Skill

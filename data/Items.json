@@ -776,7 +776,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A smooth cherry-flavored drink that boosts\nyour VIT by 25%. Lasts for 15 turns.",
+    "description": "A smooth cherry-flavored drink that boosts\nyour MHP by 25%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -809,7 +809,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A fizzy blueberry-flavored drink that boosts\nyour WIS by 25%. Lasts for 15 turns.",
+    "description": "A fizzy blueberry-flavored drink that boosts\nyour MMP by 25%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -842,7 +842,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A viscous almond-flavored drink that boosts\nyour END by 25%. Lasts for 15 turns.",
+    "description": "A viscous almond-flavored drink that boosts\nyour DEF by 25%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -875,7 +875,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A spicy grape-flavored drink that boosts\nyour SPI by 25%. Lasts for 15 turns.",
+    "description": "A spicy grape-flavored drink that boosts\nyour MAT by 25%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -1039,13 +1039,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the STR of a weapon by +2.",
+    "description": "Boosts the ATK of a weapon by +2.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 724,
     "itypeId": 1,
-    "name": "STR Scroll",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nSTR: +2\nPrefix: Pointy\n</Upgrade Effect>\n<Upgrade Tooltip: STR +2>",
+    "name": "ATK Scroll",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nATK: +2\nPrefix: Pointy\n</Upgrade Effect>\n<Upgrade Tooltip: ATK +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1065,13 +1065,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the SPI of a weapon by +2.",
+    "description": "Boosts the MAT of a weapon by +2.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 724,
     "itypeId": 1,
-    "name": "SPI Scroll",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nSPI: +2\nPrefix: Mystic\n</Upgrade Effect>\n<Upgrade Tooltip: SPI +2>",
+    "name": "MAT Scroll",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nMAT: +2\nPrefix: Mystic\n</Upgrade Effect>\n<Upgrade Tooltip: MAT +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1466,13 +1466,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the END of a headgear, bodygear, or footgear by +2.",
+    "description": "Boosts the DEF of a headgear, bodygear, or footgear by +2.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 725,
     "itypeId": 1,
-    "name": "END Scroll",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nEND: +2\nPrefix: Hard\n</Upgrade Effect>\n<Upgrade Tooltip: END +2>",
+    "name": "DEF Scroll",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nDEF: +2\nPrefix: Hard\n</Upgrade Effect>\n<Upgrade Tooltip: DEF +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1492,13 +1492,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the RES of a headgear, bodygear, or footgear by +2.",
+    "description": "Boosts the MDF of a headgear, bodygear, or footgear by +2.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 725,
     "itypeId": 1,
-    "name": "RES Scroll",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nRES: +2\nPrefix: Warding\n</Upgrade Effect>\n<Upgrade Tooltip: RES +2>",
+    "name": "MDF Scroll",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nMDF: +2\nPrefix: Warding\n</Upgrade Effect>\n<Upgrade Tooltip: MDF +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1778,7 +1778,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A gritty chicken-flavored drink that boosts\nyour STR by 25%. Lasts for 15 turns.",
+    "description": "A gritty chicken-flavored drink that boosts\nyour ATK by 25%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -1811,7 +1811,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A sparkly huckleberry-flavored drink that boosts\nyour RES by 25%. Lasts for 15 turns.",
+    "description": "A sparkly huckleberry-flavored drink that boosts\nyour MDF by 25%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -4795,13 +4795,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the STR of a weapon by +3.",
+    "description": "Boosts the ATK of a weapon by +3.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 238,
     "itypeId": 1,
-    "name": "STR Scroll ★",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nSTR: +3\nPrefix: Sharp\n</Upgrade Effect>\n<Upgrade Tooltip: STR +3>",
+    "name": "ATK Scroll ★",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nATK: +3\nPrefix: Sharp\n</Upgrade Effect>\n<Upgrade Tooltip: ATK +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4821,13 +4821,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the SPI of a weapon by +3.",
+    "description": "Boosts the MAT of a weapon by +3.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 238,
     "itypeId": 1,
-    "name": "SPI Scroll ★",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nSPI: +3\nPrefix: Occult\n</Upgrade Effect>\n<Upgrade Tooltip: SPI +3>",
+    "name": "MAT Scroll ★",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nMAT: +3\nPrefix: Occult\n</Upgrade Effect>\n<Upgrade Tooltip: MAT +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4847,13 +4847,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the END of a headgear, bodygear, or footgear by +3.",
+    "description": "Boosts the DEF of a headgear, bodygear, or footgear by +3.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 624,
     "itypeId": 1,
-    "name": "END Scroll ★",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nEND: +3\nPrefix: Armored\n</Upgrade Effect>\n<Upgrade Tooltip: END +3>",
+    "name": "DEF Scroll ★",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nDEF: +3\nPrefix: Armored\n</Upgrade Effect>\n<Upgrade Tooltip: DEF +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4873,13 +4873,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the RES of a headgear, bodygear, or footgear by +3.",
+    "description": "Boosts the MDF of a headgear, bodygear, or footgear by +3.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 624,
     "itypeId": 1,
-    "name": "RES Scroll ★",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nRES: +3\nPrefix: Precluding\n</Upgrade Effect>\n<Upgrade Tooltip: RES +3>",
+    "name": "MDF Scroll ★",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nMDF: +3\nPrefix: Precluding\n</Upgrade Effect>\n<Upgrade Tooltip: MDF +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -5419,7 +5419,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A magical herb with defensive properties.\nUseful for crafting or buffing END in battle.",
+    "description": "A magical herb with defensive properties.\nUseful for crafting or buffing DEF in battle.",
     "effects": [
       {
         "code": 21,
@@ -5848,7 +5848,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "An herb with a punchy flavoring to it.\nBuffs your STR temporarily when used.",
+    "description": "An herb with a punchy flavoring to it.\nBuffs your ATK temporarily when used.",
     "effects": [
       {
         "code": 21,

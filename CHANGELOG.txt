@@ -127,10 +127,10 @@ Additions:
    > Cleric Token
    > Rogue Token
   ~ 13 upgraders:
-   > STR Scroll ★
-   > SPI Scroll ★
-   > END Scroll ★
-   > RES Scroll ★
+   > ATK Scroll ★
+   > MAT Scroll ★
+   > DEF Scroll ★
+   > MDF Scroll ★
    > EVA Scroll
    > PDR Scroll
    > MDR Scroll
@@ -372,13 +372,6 @@ Removals:
  - The Telluria Map Fragment. The Map of Telluria can now be purchased immediately from the general store after defeating Laeryidyean.
 
 Changes:
- - Renamed most of the core stats:
-  ~ MHP → VIT
-  ~ MMP → WIS
-  ~ ATK → STR
-  ~ DEF → END
-  ~ MAT → SPI
-  ~ MDF → RES
  - Recapped the max level from level 20 to level 30.
  - Random encounters are now blocked in a 6-tile radius around any visible enemy encounter.
  - Almost all dialogues were reworkened and shortened. Many cutscenes reworked, a few even removed.
@@ -413,16 +406,16 @@ Item/Equipment Balancing:
   ~ Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
   ~ Fruitcake: Increased from Very Well Fed to Exquisitely Well Fed.
   ~ All levels of Well Fed last for 3x as many steps (50 → 150, 100 → 300, 150 → 450).
-  ~ All levels of Well Fed now increase STR and SPI by +2%, +4%, +6%, and +8% at their respective levels.
+  ~ All levels of Well Fed now increase ATK and MAT by +2%, +4%, +6%, and +8% at their respective levels.
  - Buffed most weapons from the Blazing Sands to make them viable against new content. Dropping 10,000 Bits on new weapons shouldn't be a necessity!
  - Buffed tavern potion stat increases from 15% to 25% and turn duration from 10 turns to 15 turns.
- - Buffed the Knight's Greaves' END by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
+ - Buffed the Knight's Greaves' DEF by 1 and AGI by 2, and also gave them +0.5% EVA and +0.5% CRI to be able to compete with the Leather Boots.
  - Reworked most early-game weapons to not be completely useless.
  - Reworked the Water Elemental's Flow. It now provides a 15% increase to outgoing magical damage, but it increases all MP costs by 30%.
- - Reworked Blood-Red Headband to grant +1% PLS and +3 AGI rather than +4% VIT and +3% CRI. Its price has increased from 80B to 120B.
+ - Reworked Blood-Red Headband to grant +1% PLS and +3 AGI rather than +4% MHP and +3% CRI. Its price has increased from 80B to 120B.
  - Reworked the Gold Ring. Now the Ring of Shadows, it provides resistance to dark damage.
  - Nerfed The Warden's Trade-off from [-10% MDR, +10% PDR] to [-5% MDR, +20% PDR].
- - Nerfed the Giant Goblin's Rage's STR increase from +20% to +10%.
+ - Nerfed the Giant Goblin's Rage's ATK increase from +20% to +10%.
  - Gave Bloodlust's base version +2% PLS.
 
 Skill Balancing:
@@ -445,19 +438,19 @@ Skill Balancing:
  - Buffed Double Slash's damage by 25% and nerfed Focused Slash's damage by 16.6%. Decreased Double Slash's MP cost from 7 to 6.
   ~ These changes make Double Slash a relevant skill again, as it does more damage than Focused Slash even if it only hits once. Focused Slash's CRI boost, lower MP cost, and guaranteed hit make the choice between the skills dependant on playstyle.
  - Reworked Analyze. It now reveals all enemy weaknesses and allows you to see enemy HP for the duration of the battle.
- - Buffed Cut Down's END penetration from 50% to 100%. Now applies Broken Armor, reducing END by 50% for 2 turns.
+ - Buffed Cut Down's DEF penetration from 50% to 100%. Now applies Broken Armor, reducing DEF by 50% for 2 turns.
  - Buffed Offensive Stance's stat increase/decrease per stack from 10% to 20%. Capped at 3 stacks.
  - Buffed Rejuvenation's HRG increase from +5% to +10%.
- - Buffed Fire II's SPI multiplier to 500% (was originally 400%) and nerfed its MP cost to 20 MP (was originally 16 MP).
- - Buffed Ice II's SPI multiplier from 375% to 400%.
+ - Buffed Fire II's MAT multiplier to 500% (was originally 400%) and nerfed its MP cost to 20 MP (was originally 16 MP).
+ - Buffed Ice II's MAT multiplier from 375% to 400%.
  - Buffed Critical Heal I's max effectiveness from +10% to +20%.
  - Nerfed Purify's MP cost to 15 MP (was originally 8 MP).
  - Nerfed Curify MP cost to 30 MP (was originally 18 MP).
  - Nerfed Mana Refund's MP cost to 50 MP (was originally 15 MP) and MP recovery to 1% of damage dealt (was originally 5%).
  - Nerfed Foresight's MP cost to 12 MP (was originally 8 MP).
- - Nerfed Inspire's effect to +10% STR and SPI (was originally +12%).
+ - Nerfed Inspire's effect to +10% ATK and MAT (was originally +12%).
  - Nerfed Lightning II's MP cost to 30 MP (was originally 22 MP).
- - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill, except it does not debuff RES.
+ - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill, except it does not debuff MDF.
 
 RNG Balancing:
  - Made a lot of mechanics based around rare enemies less grindy.
@@ -475,7 +468,7 @@ Miscellaneous Balancing:
  - State resistance accessories no longer remove already applied states when equipped.
  - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100.
  - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
- - Status effects that provide VIT/WIS no longer reduce HP/MP after wearing off.
+ - Status effects that provide MHP/MMP no longer reduce HP/MP after wearing off.
  - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
  - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
  - Greatly increased the acceleration of the EXP curve at later levels. Barely affects the game now with such a low level cap, but will help prevent leveling up from becoming trivial in the late/end-game.
@@ -484,7 +477,7 @@ Miscellaneous Balancing:
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
  - Nerfed the Bat across the board. It was overwhelmingly powerful against new players in the Blazing Sands, wiping parties with ease.
  - Bit drops are higher from almost every source.
- - Increased Player 1's base VIT at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
+ - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
  - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more. If they're not here, they're not super important.
 
 Bug Fixes:

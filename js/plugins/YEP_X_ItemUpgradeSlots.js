@@ -827,7 +827,6 @@ ItemManager.effectIUSParamRateChange = function(item, stat, value) {
       case 'HP':
       case 'MAXHP':
       case 'MAX HP':
-      case 'VIT':
         item.params[0] += value * 0.01 * baseItem.params[0];
         break;
       case 'MP':
@@ -836,7 +835,6 @@ ItemManager.effectIUSParamRateChange = function(item, stat, value) {
       case 'SP':
       case 'MAXSP':
       case 'MAX SP':
-      case 'WIS':
         item.params[1] += value * 0.01 * baseItem.params[1];
         break;
       case 'ATK':
@@ -844,7 +842,6 @@ ItemManager.effectIUSParamRateChange = function(item, stat, value) {
         item.params[2] += value * 0.01 * baseItem.params[2];
         break;
       case 'DEF':
-      case 'END':
         item.params[3] += value * 0.01 * baseItem.params[3];
         break;
       case 'MAT':
