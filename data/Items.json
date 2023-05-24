@@ -7714,7 +7714,7 @@
     "iconIndex": 809,
     "itypeId": 1,
     "name": "Holy Water",
-    "note": "<Post-Damage Eval>\nenemy = $gameTroop.members()[this._targetIndex];\nelements = enemy.enemy().elements;\nif (elements.contains(\"DARK\")) enemy.addState(66);\n</Post-Damage Eval>",
+    "note": "<Post-Damage Eval>\nelements = target.enemy().elements;\nif (elements.contains(\"DARK\")) target.addState(66);\n</Post-Damage Eval>",
     "occasion": 1,
     "price": 20,
     "repeats": 1,
