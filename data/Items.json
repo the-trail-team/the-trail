@@ -7730,28 +7730,16 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "// Damage Formula",
+      "formula": "$gameTemp._yellowSalve",
       "type": 3,
       "variance": 0
     },
     "description": "Ointment enchanted to heal the user using\ntheir internal magical ability (MP%).",
     "effects": [
       {
-        "code": 11,
+        "code": 12,
         "dataId": 0,
-        "value1": 0,
-        "value2": 1
-      },
-      {
-        "code": 21,
-        "dataId": 73,
-        "value1": 1,
-        "value2": 0
-      },
-      {
-        "code": 22,
-        "dataId": 73,
-        "value1": 1,
+        "value1": -1,
         "value2": 0
       }
     ],
@@ -7759,7 +7747,7 @@
     "iconIndex": 811,
     "itypeId": 1,
     "name": "Yellow Salve",
-    "note": "<Damage Formula>\nb.gainHp(Math.ceil(b.mhp * b.mpRate()));\nb.gainMp(-b.mp);\n</Damage Formula>",
+    "note": "<Effects Display>\n{\"code\":11,\"dataId\":0,\"value1\":\"+MP\",\"value2\":0}\n</Effects Display>\n\n<Before Eval>\n$gameTemp._yellowSalve = Math.max(1, Math.ceil(target.mhp * target.mpRate()));\n</Before Eval>\n<After Eval>\ndelete $gameTemp._yellowSalve;\n</After Eval>",
     "occasion": 0,
     "price": 20,
     "repeats": 1,

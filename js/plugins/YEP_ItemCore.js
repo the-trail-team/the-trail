@@ -582,6 +582,7 @@ DataManager.processItemCoreNotetags = function(group) {
     obj.infoTextTop = '';
     obj.infoTextBottom = '';
     obj.onCreationEval = '';
+    obj.effectsDisplay = [];
     var evalMode = 'none';
 
    for (var i = 0; i < notedata.length; i++) {
@@ -604,6 +605,10 @@ DataManager.processItemCoreNotetags = function(group) {
         evalMode = 'info text bottom';
       } else if (line.match(/<\/(?:INFO TEXT BOTTOM)>/i)) {
         evalMode = 'none';
+      } else if (line.match(/<(?:EFFECTS DISPLAY)>/i)) {
+        evalMode = 'effects display';
+      } else if (line.match(/<\/(?:EFFECTS DISPLAY)>/i)) {
+        evalMode = 'none';
       } else if (evalMode === 'info eval') {
         obj.infoEval = obj.infoEval + line + '\n';
       } else if (evalMode === 'info text top') {
@@ -620,6 +625,9 @@ DataManager.processItemCoreNotetags = function(group) {
         evalMode = 'none';
       } else if (evalMode === 'on create eval') {
         obj.onCreationEval = obj.onCreationEval + line + '\n';
+      } else if (evalMode === 'effects display') {
+        console.log(line);
+        obj.effectsDisplay.push(JSON.parse(line));
       }
     }
   }
@@ -1863,7 +1871,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
     }
     if (i === 1) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
@@ -1874,7 +1882,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
     }
     if (i === 3) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
@@ -1889,7 +1897,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       this.changePaintOpacity(false);
     } else if (i < 4) {
       if (value > 0) pre = '+';
-      value = Yanfly.Util.toGroup(parseInt(value));
+      if (typeof value == 'number') value = Yanfly.Util.toGroup(parseInt(value));
       if ([0, 2].contains(i)) text = '%';
     }
     if (icons.length > 0) {
@@ -1911,6 +1919,9 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
 Window_ItemStatus.prototype.getEffect = function(code) {
     var targetEffect;
     this._item.effects.forEach(function(effect) {
+      if (effect.code === code) targetEffect = effect;
+    }, this);
+    this._item.effectsDisplay.forEach(function(effect) {
       if (effect.code === code) targetEffect = effect;
     }, this);
     return targetEffect;
