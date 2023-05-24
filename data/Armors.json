@@ -1227,18 +1227,12 @@
   {
     "id": 53,
     "atypeId": 4,
-    "description": "A simple yet powerful set of vestments. The lining seems to\nbe shinier, and it emanates magical power. Increases OMD by 5%.",
+    "description": "A simple yet powerful set of vestments. The lining seems to be\nshinier, and it emanates magical power. Increases outgoing healing.",
     "etypeId": 4,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 2,
-        "value": 1.05
-      }
-    ],
+    "traits": [],
     "iconIndex": 736,
     "name": "Phantasmal Vestments",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Magnify Healing: +5%>\n\n<Disassemble Pool: Basic>\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       5,
@@ -1837,16 +1831,10 @@
     "atypeId": 1,
     "description": "An intricate headpiece created using fine silk and a beautiful rose.\nIt boosts the wearer's outgoing healing by a small but noticeable 5%.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 2,
-        "value": 1.05
-      }
-    ],
+    "traits": [],
     "iconIndex": 519,
     "name": "Rose Headpiece",
-    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Tarantula Silk: 100%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Magnify Healing: +5%>\n\n<Disassemble Pool: Advanced>\nx1-2 Tarantula Silk: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       5,
       12,
@@ -3199,16 +3187,10 @@
     "atypeId": 4,
     "description": "The truly repaired form of the vestments guarded by\nThe Warden. Further strengthens outgoing healing.",
     "etypeId": 4,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 2,
-        "value": 1.075
-      }
-    ],
+    "traits": [],
     "iconIndex": 739,
     "name": "True Phantasmal Vestments",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\nEnchanting Crystal: 6\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 2>\n\n<Element Magnify Healing: +7.5%>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\nEnchanting Crystal: 6\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       7,
@@ -3925,16 +3907,10 @@
     "atypeId": 1,
     "description": "\"Confinement to your destiny is still confinement.\"\nIncreases outgoing healing by 10%.",
     "etypeId": 3,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 2,
-        "value": 1.1
-      }
-    ],
+    "traits": [],
     "iconIndex": 658,
     "name": "Sorrowful Headpiece",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nRose Headpiece\nEnchanted Dragon Scale\nDragon Scale: 6\nRed Flower: 15\nEnchanting Crystal\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Cleric's Headgear>",
+    "note": "<Upgrade Slots: 2>\n\n<Element Magnify Healing: +10%>\n\n<Synthesis Ingredients>\nRose Headpiece\nEnchanted Dragon Scale\nDragon Scale: 6\nRed Flower: 15\nEnchanting Crystal\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Cleric's Headgear>",
     "params": [
       12,
       25,
