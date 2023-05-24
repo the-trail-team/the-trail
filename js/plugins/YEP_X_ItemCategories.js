@@ -454,17 +454,13 @@ Window_ItemList.prototype.includes = function(item) {
         break;
       case 'Buffs':
         if (DataManager.isItem(item)) if (item.effects.some(e => e.code == 21 && $dataStates[e.dataId].category.contains('BUFF'))) return item;
-        if (DataManager.isItem(item)) if ([23].contains(item.id)) return item; // Exceptions: Tome of Experience
         break;
       case 'Debuffs':
         if (DataManager.isItem(item)) if (item.effects.some(e => [21, 22].contains(e.code) && $dataStates[e.dataId].category.contains('DEBUFF'))) return item;
         if (DataManager.isItem(item)) if (Object.keys(item.removeCategory).length > 0) return item;
-        if (DataManager.isItem(item)) if ([246].contains(item.id)) return item; // Exceptions: Fire Resistance Potion
         break;
-      default:
-        return item && item.itemCategory.contains(this._ext);
     }
-    break;
+    return item && item.itemCategory.contains(this._ext);
   default:
     return false;
   }
