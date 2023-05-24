@@ -265,6 +265,16 @@ Olivia[_0x1db1("0x25")] = function (_0x3a7c76) {
         if (_0x3a7c76.category.contains("WEAK DEBUFF")) _0x3a7c76["description"] += " \\c[14][WEAK DEBUFF]\\c[0]";
         if (_0x3a7c76.category.contains("MODERATE DEBUFF")) _0x3a7c76["description"] += " \\c[2][MODERATE DEBUFF]\\c[0]";
         if (_0x3a7c76.category.contains("SEVERE DEBUFF")) _0x3a7c76["description"] += " \\c[18][SEVERE DEBUFF]\\c[0]";
+        if (_0x3a7c76.category.contains("FIRE")) _0x3a7c76["description"] += " \\c[8][\\i[96]]\\c[0]";
+        if (_0x3a7c76.category.contains("ICE")) _0x3a7c76["description"] += " \\c[8][\\i[97]]\\c[0]";
+        if (_0x3a7c76.category.contains("ELECTRIC")) _0x3a7c76["description"] += " \\c[8][\\i[98]]\\c[0]";
+        if (_0x3a7c76.category.contains("WATER")) _0x3a7c76["description"] += " \\c[8][\\i[99]]\\c[0]";
+        if (_0x3a7c76.category.contains("EARTH")) _0x3a7c76["description"] += " \\c[8][\\i[100]]\\c[0]";
+        if (_0x3a7c76.category.contains("WIND")) _0x3a7c76["description"] += " \\c[8][\\i[101]]\\c[0]";
+        if (_0x3a7c76.category.contains("PLANT")) _0x3a7c76["description"] += " \\c[8][\\i[200]]\\c[0]";
+        if (_0x3a7c76.category.contains("METAL")) _0x3a7c76["description"] += " \\c[8][\\i[778]]\\c[0]";
+        if (_0x3a7c76.category.contains("LIGHT")) _0x3a7c76["description"] += " \\c[8][\\i[102]]\\c[0]";
+        if (_0x3a7c76.category.contains("DARK")) _0x3a7c76["description"] += " \\c[8][\\i[103]]\\c[0]";
       }
     }
   }
