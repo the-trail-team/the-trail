@@ -6619,7 +6619,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Protective Crystal",
-    "note": "<animationRow:30>\n\n<Custom React Effect>\nvalue = Math.ceil(value / 5);\n</Custom React Effect>\n\n<Custom Passive Condition>\ncondition = user.hpRate <= 0.5;\n</Custom Passive Condition>\n\n<Help Description>\nReduces incoming damage by 1/5 when below 50% HP.\n</Help Description>",
+    "note": "<animationRow:30>\n\n<Custom React Effect>\nvalue = Math.ceil(value / 5);\n</Custom React Effect>\n\n<Custom Passive Condition>\ncondition = user.hpRate() <= 0.5;\n</Custom Passive Condition>\n\n<Help Description>\nReduces incoming damage by 1/5 when below 50% HP.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
