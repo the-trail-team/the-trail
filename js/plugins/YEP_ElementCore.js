@@ -570,6 +570,10 @@ Game_Battler.prototype.elementMagnifyRate = function(elementId) {
   return rate;
 };
 
+Game_Battler.prototype.elementOutgoingRate = function(elementId) {
+  return (1 + this.elementAmplifyRate(elementId)) * this.elementMagnifyRate(elementId);
+};
+
 Game_Battler.prototype.isNullElement = function() {
   var length = this.states().length;
   for (var i = 0; i < length; ++i) {

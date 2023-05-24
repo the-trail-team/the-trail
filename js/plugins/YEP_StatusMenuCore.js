@@ -1097,15 +1097,19 @@ Window_StatusInfo.prototype.drawElementData = function(eleId, dx, dy, dw) {
     eleId = parseInt(eleId);
     var eleName = $dataSystem.elements[eleId];
     var eleRate = this._actor.elementRate(eleId);
+    var eleRateOut = this._actor.elementOutgoingRate(eleId);
     dx += this.textPadding();
     dw -= this.textPadding() * 2;
     this._bypassResetTextColor = true;
     this.changeTextColor(this.systemColor());
     this.drawTextEx(eleName, dx, dy);
     this._bypassResetTextColor = false;
+    var text1 = "↙ " + (eleRate * 100).toFixed(Yanfly.Param.StatusEleDec) + '%';
+    var text2 = "↗ " + (eleRateOut * 100).toFixed(Yanfly.Param.StatusEleDec) + '%';
     this.setRateColor(eleRate);
-    var text = (eleRate * 100).toFixed(Yanfly.Param.StatusEleDec) + '%';
-    this.drawText(text, dx, dy, dw, 'right');
+    this.drawText(text1, dx - 140, dy, dw, 'right');
+    this.setRateColor(eleRateOut);
+    this.drawText(text2, dx, dy, dw, 'right');
 };
 
 Window_StatusInfo.prototype.drawStates = function() {
