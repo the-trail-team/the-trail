@@ -626,7 +626,6 @@ DataManager.processItemCoreNotetags = function(group) {
       } else if (evalMode === 'on create eval') {
         obj.onCreationEval = obj.onCreationEval + line + '\n';
       } else if (evalMode === 'effects display') {
-        console.log(line);
         obj.effectsDisplay.push(JSON.parse(line));
       }
     }
