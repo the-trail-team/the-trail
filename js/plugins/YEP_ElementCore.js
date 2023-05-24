@@ -741,10 +741,10 @@ Game_Action.prototype.calcElementRate = function(target) {
   while (elements.length > 0) {
     var elementId = elements.shift();
     var eleRate = target.elementRate(elementId);
+    eleRate += this.subject().elementAmplifyRate(elementId);
     eleRate *= Math.max(0, this.subject().elementMagnifyRate(elementId));
     var absorbed = eleRate < 0;
 
-    eleRate += this.subject().elementAmplifyRate(elementId);
     if (rule === 0) { // Lowest Rate
       finalRate = finalRate || eleRate;
       finalRate = Math.min(finalRate, eleRate);
