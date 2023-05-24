@@ -163,7 +163,7 @@
       }
     ],
     "name": "Knight",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line I: Hold the Line I\nState !== Inspire: Inspire\nRandom 75%: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 164>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line I: Hold the Line I\nState !== Inspire: Inspire\nRandom 75%: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
@@ -1131,7 +1131,7 @@
       }
     ],
     "name": "Mage",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nTroop Alive Members >= 2 +++ Random 20%: Wand Impulse\nAlways: Fire II, Lowest HP\nAlways: Fire I, Lowest HP\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 47 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 165>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nTroop Alive Members >= 2 +++ Random 20%: Wand Impulse\nAlways: Fire II, Lowest HP\nAlways: Fire I, Lowest HP\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 47 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,
@@ -2104,7 +2104,7 @@
       }
     ],
     "name": "Cleric",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 463>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nHP% param <= 50%: Cure I, Lowest HP%\nAlways: Mana Wisp, Lowest MDF\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 56 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,
@@ -3052,7 +3052,7 @@
       }
     ],
     "name": "Rogue",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 52 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 466>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Sharpened Dagger +++ User HP% param >= 30%: Sharpen Dagger, User\nAlways: Attack\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 52 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         0,
@@ -3924,7 +3924,7 @@
     ],
     "learnings": [],
     "name": "Traveler",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 162>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
@@ -4827,7 +4827,7 @@
       }
     ],
     "name": "Soldier",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nAlways: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 163>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nAlways: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
@@ -5760,7 +5760,7 @@
       }
     ],
     "name": "Hero",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nParty Dead Members >= 1: Revival\nHP% param <= 40%: Cure I, Lowest HP%\nAlways: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 457>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nParty Dead Members >= 1: Revival\nHP% param <= 40%: Cure I, Lowest HP%\nAlways: Focused Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 50 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,
@@ -6708,7 +6708,7 @@
       }
     ],
     "name": "Paladin",
-    "note": "<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line II: Hold the Line II\nState !== Inspired: Inspire\nState === Magical Barrier +++ State !== Soul Barrier I: Soul Barrier I\nUser MP param >= 7: Double Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 60 + Math.floor(level / 5);\n</Custom LUK Formula>",
+    "note": "<Icon: 458>\n\n<Equip Slot>\nWeapon\nOffhand\nHeadgear\nBodygear\nFootgear\nAccessory\nAccessory\nAccessory\nMagic Equip\nPower\nVanity\n</Equip Slot>\n\n<AI Priority>\nState !== Hold the Line II: Hold the Line II\nState !== Inspired: Inspire\nState === Magical Barrier +++ State !== Soul Barrier I: Soul Barrier I\nUser MP param >= 7: Double Slash, Lowest HP\nAlways: Attack, Lowest HP\n</AI Priority>\n\n<Custom LUK Formula>\nvalue = 60 + Math.floor(level / 5);\n</Custom LUK Formula>",
     "params": [
       [
         1,

@@ -1326,6 +1326,13 @@ DataManager.processCORENotetags4 = function(group) {
         if (learning.level < 1) obj.maxLevel = 1;
       }
     }, this);
+
+    obj.icon = 0;
+    notedata.forEach(function(line) {
+      if (line.match(/<(?:ICON):[ ](\d+)>/i)) {
+        obj.icon = parseInt(RegExp.$1);
+      }
+    });
   }
 };
 

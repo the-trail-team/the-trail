@@ -26,7 +26,6 @@ var $dataCommonEvents = null;
 var $dataSystem       = null;
 var $dataMapInfos     = null;
 var $dataVersion      = null;
-var $dataClassIcons   = null;
 var $dataStrings      = null;
 var $dataMapReplace   = null;
 var $dataMap          = null;
@@ -65,7 +64,6 @@ DataManager._databaseFiles = [
     { name: '$dataSystem',          src: 'System.json'       },
     { name: '$dataMapInfos',        src: 'MapInfos.json'     },
     { name: '$dataVersion',         src: 'Version.json'      },
-    { name: '$dataClassIcons',      src: 'ClassIcons.json'   },
     { name: '$dataStrings',         src: 'Strings.json'      },
     { name: '$dataMapReplace',      src: 'MapReplace.json'   }
 ];

@@ -710,7 +710,7 @@ Window_ShopStatus.prototype.getActor = function() {
 };
 
 Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
-    var text = "\\i[" + $dataClassIcons[actor._classId] + "]" + actor.name();
+    var text = "\\i[" + $dataClasses[actor._classId].icon + "]" + actor.name();
     var tx = (this.contents.width - this.textWidth(text)) / 2;
     this.changeTextColor(this.normalColor());
     this.drawTextEx(text, tx, this.lineHeight(), this.contents.width, 'center');
@@ -795,7 +795,7 @@ Window_ShopStatus.prototype.drawActorEquipInfo = function(x, y, actor) {
     this.changePaintOpacity(enabled);
     this.resetTextColor();
     this.resetFontSettings();
-    this.drawTextEx("\\i[" + $dataClassIcons[actor._classId] + "] " + actor.name(), x, y, this.contents.width - x);
+    this.drawTextEx("\\i[" + $dataClasses[actor._classId].icon + "] " + actor.name(), x, y, this.contents.width - x);
     var item1 = this.currentEquippedItem(actor, this._item.etypeId);
     if (enabled) {
       this.contents.fontSize = Yanfly.Param.ShopStatFontSize;
