@@ -6631,27 +6631,48 @@
   },
   {
     "id": 195,
-    "autoRemovalTiming": 0,
+    "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
-    "maxTurns": 1,
-    "message1": "",
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.02
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.02
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.02
+      }
+    ],
+    "iconIndex": 813,
+    "maxTurns": 8,
+    "message1": "'s eyes are rejuvenated!",
     "message2": "",
     "message3": "",
-    "message4": "",
-    "minTurns": 1,
+    "message4": "'s eyes are dry again.",
+    "minTurns": 7,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Medicated Eyedrops",
+    "note": "<Category: Bypass Death Removal>\n\n<Help Description>\nIncreases HIT by 4%. Increases EVA, CRI, and CEV by 2%.\n</Help Description>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 30,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 2000
   },
   {
     "id": 196,

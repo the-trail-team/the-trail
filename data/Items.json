@@ -2219,7 +2219,7 @@
   },
   {
     "id": 75,
-    "animationId": 0,
+    "animationId": 42,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -2229,14 +2229,21 @@
       "variance": 20
     },
     "description": "",
-    "effects": [],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 195,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 812,
     "itypeId": 1,
-    "name": "",
+    "name": "Medicated Eyedrops",
     "note": "Was once the CLOTHING RECIPES.\nWas once the RETRO RECIPES.",
     "occasion": 0,
-    "price": 0,
+    "price": 50,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
