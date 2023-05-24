@@ -168,7 +168,7 @@ DataManager.isDatabaseLoaded = function() {
     this.processStCResNotetags($dataStates);
     this.processStCNotetags2($dataSkills);
     this.processStCNotetags2($dataItems);
-    this.addElementalStateTraits();
+    // this.addElementalStateTraits();
     Yanfly._loaded_YEP_X_StateCategories = true;
   }
   

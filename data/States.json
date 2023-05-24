@@ -271,7 +271,7 @@
     "minTurns": 2,
     "motion": 1,
     "name": "On Fire!",
-    "note": "<Category: Fire>\n<Category: debuff>\n<Category: weak debuff>\n\n<animationRow:28>\n\n<DoT Formula: 100>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 50 \\i[96]fire damage per turn.\n</Help Description>",
+    "note": "<Category: Fire>\n<Category: debuff>\n<Category: weak debuff>\n\n<animationRow:28>\n\n<DoT Formula: 50>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 50 \\i[96]fire damage per turn.\n</Help Description>",
     "overlay": 0,
     "priority": 49,
     "removeAtBattleEnd": false,
@@ -2899,7 +2899,7 @@
       {
         "code": 11,
         "dataId": 2,
-        "value": 0.25
+        "value": 0.5
       }
     ],
     "iconIndex": 105,
@@ -3293,7 +3293,7 @@
     "minTurns": 3,
     "motion": 1,
     "name": "Burning Up!",
-    "note": "<Category: Fire>\n<Category: debuff>\n<Category: moderate debuff>\n\n<animationRow:28>\n\n<DoT Formula: 400>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 200 \\i[96]fire damage per turn.\n</Help Description>",
+    "note": "<Category: Fire>\n<Category: debuff>\n<Category: moderate debuff>\n\n<animationRow:28>\n\n<DoT Formula: 200>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 200 \\i[96]fire damage per turn.\n</Help Description>",
     "overlay": 0,
     "priority": 49,
     "removeAtBattleEnd": true,
@@ -6317,11 +6317,6 @@
         "code": 31,
         "dataId": 2,
         "value": 1
-      },
-      {
-        "code": 11,
-        "dataId": 2,
-        "value": 2
       }
     ],
     "iconIndex": 799,
