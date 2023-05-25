@@ -5,9 +5,9 @@ Alpha 15 (??/??/????)
 The Champion Update
 Current Level Cap: 30
 - - - - - - - - - - - - -
-Every major update has been the best yet, and Alpha 15 is no exception! Building off of Alpha 14's heavy overhauls, this update focuses on adding a massive amount of content that fits with the new standards.
-Telluria Castle Town is the hub of the world. Buy insanely powerful equipment, upgrade (almost) everything, discover new mechanics, etc... you can do anything and everything in the capital.
-Outside those walls, super-powerful enemies lurk within a variety of brand new dungeons. They'll be a challenge at first, but with so many new ways to strengthen your party, you'll never have a shortage of ways to progress.
+Every major update has been the best yet, and Alpha 15 is no exception! Building off of Alpha 14's heavy overhauls, this update focuses on adding a massive amount of content that fits with the new standards, as well as redefining them.
+Telluria Castle Town is the hub of the world. Buy insanely powerful equipment, upgrade (almost) everything, discover new mechanics, etc... you can do anything and everything in the capital!
+Outside those walls, super-powerful enemies lurk within a variety of places. They'll be a challenge at first, but with so many new ways to strengthen your party, you'll never have a shortage of ways to progress.
 
 Additions:
  - All chapter 5 content.
@@ -113,9 +113,9 @@ Additions:
    > Ectoplasm
    > Fiery Blood
    > Rotten Flesh
-   > Tellurium Core
    > Tellurium Dust
    > Tellurium Alloy
+   > Tellurium Core
    > Life Crystal
    > Mana Crystal
    > Mysterious Yellow Badge
@@ -370,7 +370,7 @@ Removals:
  - The Skeleton enemy. Removed from Adonian Monsters troop, the last one containing it.
  - The item discard feature. Pointless in almost all scenarios, just menu clutter.
  - The Raw Fish and Cooked Fish items. New fishing system introduces specific types of fish and meals.
- - The Rat Jerky (Ration). Rare with negligible effect, now replaced with Ration.
+ - The Rat Jerky (Ration). Rare with negligible effect, all instances replaced with Ration.
  - The Letter of Recommendation and everything related to Jack in Greenfield. You now go straight to the Mayor's office after entering town.
  - The Telluria Map Fragment. The Map of Telluria can now be purchased immediately from the general store after defeating Laeryidyean.
 
@@ -384,6 +384,7 @@ Changes:
  - Resprited all existing icons from 24px to 32px. Changed many icons of existing items in the process.
  - Overhauled the equip comparison menu.
  - The pub/tavern has been rebranded as The Tipsy Oyster! Barkeep's name has been revealed to be Jeremy, and all of his establishments have been redesigned (except for the original in Haven Harbor).
+ - Revamped Barkeep and Kevin's side quest chains.
  - Fleshed out the salvaging system, making many items throughout the game now salvageable.
  - Leveling up will also remove all debuffs.
  - Renamed almost all items with stars in their name to make them easier to differentiate.
@@ -395,15 +396,15 @@ Changes:
  - Many food-related items have been made renewable, and as a result are no longer sold by Dalia.
  - The new Speedster Boots have replaced the spot in boot progression once held by the Hermes Boots. The Hermes Boots have been moved up to be crafted near the end of Telluria Field's progression.
  - Solus Town now automatically becomes snowy during the holiday season. Presents now have a 50% drop chance on December 25th rather than the default 20%.
- - Countless (and I mean COUNTLESS) other small changes have been made throughout the game (probably more than Alpha 14 at this point).
+ - Countless (and I mean COUNTLESS) other small changes have been made throughout the game (probably more than Alpha 14).
  - A huge amount of backend reworks/changes have been made to improve performance, consistency, and development efficiency. This is the main reason this update took so long to come out!
 
 Item/Equipment Balancing:
- - Heavily nerfed the recovery of the Potion, Elixir, and Ether.
+ - Nerfed the recovery of the Potion, Elixir, and Ether.
   ~ Potion: +90 HP → +60 HP
   ~ Elixir: +36 MP → +24 MP
   ~ Ether: +108 HP → +72 HP; +42 MP → +30 MP
-  ~ Small Ether and Ether are much no longer require bits to craft.
+  ~ Small Ether and Ether are cheaper. They no longer require bits to craft.
  - Reworked Well Fed to make the buff more enticing and encourage cooking.
   ~ Ration: Reduced from Well Fed to Somewhat Well Fed.
   ~ Fulfilling Ration, Loaf of Bread: Reduced from Very Well Fed to Well Fed.
@@ -445,20 +446,19 @@ Skill Balancing:
  - Buffed Cut Down's DEF penetration from 50% to 100%. Now applies Broken Armor, reducing DEF by 50% for 2 turns.
  - Buffed Offensive Stance's stat increase/decrease per stack from 10% to 20%. Capped at 3 stacks.
  - Buffed Rejuvenation's HRG increase from +5% to +10%.
- - Buffed Fire II's MAT multiplier to 500% (was originally 400%) and nerfed its MP cost to 20 MP (was originally 16 MP).
+ - Buffed Fire II's MAT multiplier to 500% (originally 400%) but nerfed its MP cost to 20 MP (originally 16 MP).
  - Buffed Ice II's MAT multiplier from 375% to 400%.
- - Nerfed Purify's MP cost to 15 MP (was originally 8 MP).
- - Nerfed Curify MP cost to 30 MP (was originally 18 MP).
- - Nerfed Mana Refund's MP cost to 50 MP (was originally 15 MP) and MP recovery to 1% of damage dealt (was originally 5%).
- - Nerfed Foresight's MP cost to 12 MP (was originally 8 MP).
- - Nerfed Inspire's effect to +10% ATK and MAT (was originally +12%).
- - Nerfed Lightning II's MP cost to 30 MP (was originally 22 MP).
- - Replaced The Warden's Darkfire with Engulfing Darkness, which is mechanically the same skill, except it does not debuff MDF.
+ - Nerfed Purify's MP cost to 15 MP (originally 8 MP).
+ - Nerfed Curify MP cost to 30 MP (originally 18 MP).
+ - Nerfed Mana Refund's MP cost to 50 MP (originally 15 MP) and MP recovery to 1% of damage dealt (originally 5%).
+ - Nerfed Foresight's MP cost to 12 MP (originally 8 MP).
+ - Nerfed Inspire's effect to +10% ATK and MAT (originally +12%).
+ - Nerfed Lightning II's MP cost to 30 MP (originally 22 MP).
 
 RNG Balancing:
  - Elements have been heavily revamped. Some of the major changes include:
-  ~ Less standardization so each element has unique behaviors instead of being cookie-cutter
-  ~ Elemental states no longer apply the damage rates and resistances of their element
+  ~ Less standardization so each element has unique behaviors instead of being cookie-cutter.
+  ~ Elemental states no longer apply the damage rates and resistances of their element.
  - Made a lot of mechanics based around rare enemies less grindy.
   ~ Doubled the base chance of encountering a rare enemy.
   ~ As rare enemy spawns fail, the spawn chance will increase exponentially, being reset once a rare enemy finally spawns.
@@ -475,28 +475,28 @@ Miscellaneous Balancing:
  - All party members now gain +1 INT per 5 levels, for a total of +20 INT at level 100.
  - Skill mastery's effect is 1.5x what it was previously, meaning damage can be increased up to +30% and MP cost can be decreased down to -30%.
  - Status effects that provide MHP/MMP no longer reduce HP/MP after wearing off.
- - Henry can now be killed without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
+ - Henry can now be defeated without entering his second phase; however, he now enters his second phase at 40% HP instead of 30%.
  - Reduced every level up EXP requirement by 20, making it much easier to level up in the early-game.
  - Greatly increased the acceleration of the EXP curve at later levels. Barely affects the game now with such a low level cap, but will help prevent leveling up from becoming trivial in the late/end-game.
  - Doubled Well Rested's step duration from 500 to 1000.
- - Reworked the Lost Soul.
+ - Reworked the Lost Soul (in a very cool way).
  - Nerfed the Rogue class's base HIT, EVA, and CRI by 1% each.
- - Nerfed the Bat across the board. It was overwhelmingly powerful against new players in the Blazing Sands, wiping parties with ease.
+ - Nerfed the Bat across the board. It was overwhelmingly powerful against new players in the Blazing Sands, wiping unprepared parties with ease.
  - Bit drops are higher from almost every source.
  - Increased Player 1's base MHP at levels 1 and 2 from [40, 48] to [48, 54], making Green Slime Cavern even easier for new players and reducing the chance of dying to the Mini Green Slime.
- - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more. If they're not here, they're not super important.
+ - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more.
 
 Bug Fixes:
  - Softlock caused by pushing a boulder in Laeryidyean's Forest off the boulder tiles.
  - States intended to be removed by walking would occasionally never expire.
- - You could accidentally select a downed party member for a skill like Cure I and the target would change automatically.
+ - Accidentally select a downed party member for a support skill (e.g. Cure I) would automatically pick a new target instead of failing.
  - Buttons for attack/skills would randomly grey out during battle and be unusuable.
  - Battle events triggering during actions. Endings of boss battles will now flow much more smoothly.
  - Items reset using the Cleansing Scroll wouldn't save.
  - Conditional drops did not work correctly (e.g. night boosted enemies did not properly increase their item drop rate).
  - The instant message speed setting would skip through the intro in seconds. Sorry, speedrunners!
  - The critical hit chance formula wasn't programmed correctly, making critical evasion basically useless.
- - Elemental normal attacks wouldn't remove weak elemental states.
+ - Elemental normal attacks wouldn't remove elemental states.
  - The loot explosion after defeating an enemy sometimes did not show the correct drops.
  - Party members would rarely not gain BP between the 1st and 2nd turn of a battle.
  - Purify couldn't be used outside of battle.
@@ -508,7 +508,7 @@ Bug Fixes:
  - States with no overlay would still override states with an overlay if they had a higher priority value.
  - Life steal attributes with decimals would not be parsed correctly.
  - The playtime stat wouldn't increase correctly on non-60hz displays.
- - The crafted weapons/armor counters could be wrong.
+ - The crafted weapons/armor counters could become very wrong.
  - Elemental weapons did not count as physical-element hits.
  - INT slightly affected state application rates.
  - Flashbang could leave an enemy at 0 HP but it wouldn't die until another action was made.
@@ -518,8 +518,9 @@ Bug Fixes:
  - Issues #9 and #10.
  - Just like usual, a huge amount of minor bugs, textual errors, and visual issues were corrected in this release, many of these thanks to a ton of backend reworks/changes.
 
-Alpha 15 truly defines what The Trail is about. This is the update I've wanted to make since the beginning, and it's finally here. Now, what comes next?
-I don't like making promises I can't keep, so I can't guarantee Alpha 16 will come anytime soon. I don't even know what the update is going to be about!
+Alpha 15 truly defines what The Trail is about. This is the update I've wanted to make since the beginning, and it's finally here. Honestly hard to believe...
+This update was also really important from a development standpoint. A lot of our philosophies and styles have morphed with experience, and we're always aiming to make playing the game as enjoyable as possible.
+Now, what comes next? I don't like making promises I can't keep, so I can't guarantee Alpha 16 will come anytime soon. I don't even know what the update is going to be about!
 
 Until then...
 
