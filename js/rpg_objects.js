@@ -153,7 +153,7 @@ Game_Temp.unlockFoodRecipes = function() {
     return arr;
 };
 
-Game_Temp.openHours = function(open, close) {
+Game_Temp.prototype.openHours = function(open, close) {
     hour = $gameVariables.value(38);
     if (close > open) return hour >= open && hour < close;
     else return hour >= open || hour < close;
