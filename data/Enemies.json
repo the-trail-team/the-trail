@@ -846,7 +846,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 3.33%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       180,
       10,
@@ -1092,7 +1092,7 @@
     ],
     "gold": 600,
     "name": "Laeryidyean",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Exposed Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 3.33%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 3.33%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -1284,7 +1284,7 @@
     ],
     "gold": 35,
     "name": "Goblin Captain",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 139>\n\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Enemy Drops>\nHorn: 3.33%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLeather: 50%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 139>\n\n<Sideview Battler: Goblin_2>\n<Weapon Image: 15>\n<Attack Animation: 122>\n\n<AI Priority>\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire, First\n</AI Priority>\n\n<Enemy Drops>\nHorn: 3.33%\nWorn Cloth: 75%\nWorn Cloth: 75%\nLeather: 50%\nLoaf of Bread: 20%\nLeather Charm: 5%\nGoblin Fang: 5%\n</Enemy Drops>",
     "params": [
       450,
       30,
@@ -1562,7 +1562,7 @@
     ],
     "gold": 72,
     "name": "Dandy Toad Captain",
-    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Exposed Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nFulfilling Ration: 50%\nPotion: 16.66%\nPotion: 16.66%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Passive State: 138>\n\n<Sideview Battler: DandyToad_4>\n<Sideview No Collapse>\n<Weapon Image: 1>\n<Attack Animation: 6>\n\n<Boost Skill 15: Full>\n<AI Priority>\nUser HP% param <= 15%: Backstab, Lowest DEF\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point, Lowest DEF\nTroop Alive Members > 1 +++ State !== Inspired +++ Random 80%: Inspire\nState !== Sharpened Dagger: Sharpen Dagger, User\n</AI Priority>\n\n<Enemy Drops>\nBell: 3.33%\nFulfilling Ration: 50%\nPotion: 16.66%\nPotion: 16.66%\n</Enemy Drops>",
     "params": [
       1200,
       60,
@@ -2152,7 +2152,7 @@
     ],
     "gold": 900,
     "name": "Vessel of the Forgotten General",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 141>\n\n<Sideview Battler: Evil1_6>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Exposed Weak Point +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nSoul Shackles (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 141>\n\n<Sideview Battler: Evil1_6>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Weak Point +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nSoul Shackles (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       12000,
       9999,
@@ -5141,7 +5141,7 @@
     ],
     "gold": 150,
     "name": "Gazer",
-    "note": "<Armor Weakness: Piercing>\n<Passive State: 149, 190>\n\n<Sideview Battler: Gazer_1>\n<Sideview No Collapse>\n\n<AI Priority>\nEval user.hasState(189): Attack\nState === Watchful Gaze: Watchful Gaze\nState !== Exposed Weak Point +++ Random 50%: Nasty Glare\nAlways: Watchful Gaze\n</AI Priority>\n\n<Enemy Drops>\nWanted Poster: 3.33%\nGazer Goop: 75%\nGazer Goop: 75%\nMedicated Eyedrops: 33.33%\nSightful Charm: 5%\nMDR Scroll: 10%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Piercing>\n<Passive State: 149, 190>\n\n<Sideview Battler: Gazer_1>\n<Sideview No Collapse>\n\n<AI Priority>\nEval user.hasState(189): Attack\nState === Watchful Gaze: Watchful Gaze\nState !== Weak Point +++ Random 50%: Nasty Glare\nAlways: Watchful Gaze\n</AI Priority>\n\n<Enemy Drops>\nWanted Poster: 3.33%\nGazer Goop: 75%\nGazer Goop: 75%\nMedicated Eyedrops: 33.33%\nSightful Charm: 5%\nMDR Scroll: 10%\n</Enemy Drops>",
     "params": [
       2500,
       0,
