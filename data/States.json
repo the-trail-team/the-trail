@@ -6753,7 +6753,13 @@
     "id": 197,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 24,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -6762,10 +6768,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Infernal Skeleton's Synergy",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Custom Passive Condition>\ncondition = $gameParty.members().some(a => a.hasArmor($dataArmors[204])) && $gameParty.members().some(a => a.hasArmor($dataArmors[205]));\n</Custom Passive Condition>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
