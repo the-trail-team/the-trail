@@ -504,6 +504,8 @@ Window_Base.prototype.drawActorName = function(actor, x, y, width) {
 Window_Base.prototype.drawActorClass = function(actor, x, y, width) {
     width = width || 168;
     this.resetTextColor();
+    this.drawIcon(actor.currentClass().icon, x, y, width);
+    x += Window_Base._iconWidth + this.textPadding() / 2;
     this.drawText(actor.currentClass().name, x, y, width);
 };
 
