@@ -3854,12 +3854,123 @@
     "id": 18,
     "list": [
       {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          63,
+          1
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          29,
+          0
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "Date.now() % 50 != 0"
+        ]
+      },
+      {
+        "code": 115,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 250,
+        "indent": 0,
+        "parameters": [
+          {
+            "name": "Attack1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 213,
+        "indent": 0,
+        "parameters": [
+          -1,
+          1,
+          true
+        ]
+      },
+      {
+        "code": 301,
+        "indent": 0,
+        "parameters": [
+          0,
+          88,
+          false,
+          false
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          29,
+          29,
+          0
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Catalyst Vehicle Ambush",
     "switchId": 1,
     "trigger": 0
   },
@@ -17115,6 +17226,66 @@
       }
     ],
     "name": "Recall",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 79,
+    "list": [
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          18
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Enter Boat",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 80,
+    "list": [
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          18
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Enter Ship",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 81,
+    "list": [
+      {
+        "code": 117,
+        "indent": 0,
+        "parameters": [
+          18
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Enter Airship",
     "switchId": 1,
     "trigger": 0
   }
