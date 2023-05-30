@@ -3909,7 +3909,7 @@
   },
   {
     "id": 132,
-    "animationId": 0,
+    "animationId": 41,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -3918,15 +3918,28 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "A ready-to-go and ready-to-eat meal. Crack open\nthe bag and get munching, whenever and wherever!",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 5,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 50
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 307,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the FIRE RECIPES.",
+    "name": "Earl's Takeout",
+    "note": "<Menu Category: Foodstuffs>\n\nWas once the FIRE RECIPES.",
     "occasion": 0,
-    "price": 0,
+    "price": 100,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
