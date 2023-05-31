@@ -1104,7 +1104,7 @@
     ],
     "iconIndex": 385,
     "name": "Sacrificial Dagger",
-    "note": "<Weapon Image: 229>\n<Upgrade Slots: 2>",
+    "note": "<Weapon Image: 229>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([126, 8, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -2167,7 +2167,7 @@
     ],
     "iconIndex": 531,
     "name": "Infernal Sword",
-    "note": "<Weapon Image: 386>\n<Upgrade Slots: 2>",
+    "note": "<Weapon Image: 386>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -2205,7 +2205,7 @@
     ],
     "iconIndex": 779,
     "name": "Infernal Wand",
-    "note": "<Weapon Image: 390>\n<Upgrade Slots: 2>",
+    "note": "<Weapon Image: 390>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       20,

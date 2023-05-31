@@ -4496,369 +4496,174 @@
               ]
             },
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "# Get milestones"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "$gameTemp._adventurersGuild = [];"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                12,
-                "$gameSelfSwitches.value([126, 8, 'A'])"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Sacrifical Dagger"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([1, 31, 1, 1200]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                0,
-                56,
-                0
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Warden Armor"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 51, 1, 800]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 52, 1, 800]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 53, 1, 800]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 54, 1, 800]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                0,
-                53,
-                0
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Soulstealer's Necklace"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 59, 1, 5000]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 182, 1, 5000]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
+              "code": 302,
               "indent": 0,
               "parameters": [
                 1,
-                46,
-                0,
-                3,
-                1
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Henry"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 60, 1, 500]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 49, 1, 500]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                0,
-                95,
-                0
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Life Crystal"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([0, 65, 1, 1000]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                12,
-                "$gameSelfSwitches.value([209, 16, 'A'])"
-              ]
-            },
-            {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Mana Crystal"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([0, 66, 1, 1000]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                55,
-                0,
                 31,
-                1
+                1,
+                1200,
+                false
               ]
             },
             {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Tellurium Armor"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 144, 1, 20000]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 145, 1, 20000]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 146, 1, 20000]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([2, 147, 1, 20000]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
+              "code": 605,
               "indent": 0,
-              "parameters": []
+              "parameters": [
+                2,
+                51,
+                1,
+                800
+              ]
             },
             {
-              "code": 111,
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                52,
+                1,
+                800
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                53,
+                1,
+                800
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                54,
+                1,
+                800
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                59,
+                1,
+                5000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                182,
+                1,
+                5000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                60,
+                1,
+                500
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                49,
+                1,
+                500
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                0,
+                65,
+                1,
+                1000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                0,
+                66,
+                1,
+                1000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                144,
+                1,
+                20000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                145,
+                1,
+                20000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                146,
+                1,
+                20000
+              ]
+            },
+            {
+              "code": 605,
+              "indent": 0,
+              "parameters": [
+                2,
+                147,
+                1,
+                20000
+              ]
+            },
+            {
+              "code": 605,
               "indent": 0,
               "parameters": [
                 1,
-                55,
-                0,
-                37,
-                1
+                57,
+                1,
+                10000
               ]
             },
             {
-              "code": 108,
-              "indent": 1,
-              "parameters": [
-                "# Infernal Sword/Wand"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([1, 57, 1, 10000]);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 1,
-              "parameters": [
-                "$gameTemp._adventurersGuild.push([1, 58, 1, 10000]);"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 108,
+              "code": 605,
               "indent": 0,
               "parameters": [
-                "# Shop processing"
-              ]
-            },
-            {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "SceneManager.push(Scene_Shop);"
-              ]
-            },
-            {
-              "code": 655,
-              "indent": 0,
-              "parameters": [
-                "SceneManager.prepareNextScene($gameTemp._adventurersGuild, false);"
+                1,
+                58,
+                1,
+                10000
               ]
             },
             {
