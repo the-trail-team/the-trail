@@ -94,6 +94,7 @@ if (typeof WAY === "undefined") {
 
     return visible;
   };
+  Window_ShopBuy.prototype.meetsCustomBuyShowEval = meetsCustomBuyShowEval;
 
   var meetsCustomBuyEnableEval = function meetsCustomBuyEnableEval(item) {
     if (!item || item.customBuyEnableEval === null) {
@@ -115,15 +116,6 @@ if (typeof WAY === "undefined") {
     }
 
     return enable;
-  };
-
-  $.alias.Window_ShopBuy_makeItemList = Window_ShopBuy.prototype.makeItemList;
-
-  Window_ShopBuy.prototype.makeItemList = function () {
-    $.alias.Window_ShopBuy_makeItemList.call(this);
-    this._data = this._data.filter(function (item) {
-      return meetsCustomBuyShowEval(item);
-    });
   };
 
   $.alias.Window_ShopBuy_isEnabled = Window_ShopBuy.prototype.isEnabled;

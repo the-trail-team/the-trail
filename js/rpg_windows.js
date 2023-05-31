@@ -3045,7 +3045,7 @@ Window_ShopBuy.prototype.makeItemList = function() {
             item = $dataArmors[goods[1]];
             break;
         }
-        if (item) {
+        if (item) if (this.meetsCustomBuyShowEval(item)) {
             this._data.push(item);
             this._price.push(goods[2] === 0 ? item.price : goods[3]);
         }
