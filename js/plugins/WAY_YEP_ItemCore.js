@@ -148,29 +148,12 @@ if (typeof WAY === "undefined") {
     this._resetTextColor = evalCustomTextColor(item) || item.textColor;
   };
 
+  Window_Base_prototype_drawItemName = Window_Base.prototype.drawItemName;
   Window_Base.prototype.drawItemName = function (item, x, y) {
-    var width = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 312;
-
     if (item) {
-      this.setItemTextColor(item);
-      this.setItemTextColorEval(item);
-      var iconBoxWidth = Window_Base._iconWidth + 4;
-
-      if (item.iconBackground) {
-        this.drawIcon(item.iconBackground, x + 2, y + 2);
-      }
-
-      this.drawIcon(item.iconIndex, x + 2, y + 2);
-
-      if (item.iconForeground) {
-        this.drawIcon(item.iconForeground, x + 2, y + 2);
-      }
-
-      var itemName = evalCustomName(item);
-      this.resetTextColor();
-      this.drawText(itemName, x + iconBoxWidth, y, width - iconBoxWidth);
-      this._resetTextColor = undefined;
-      this.resetTextColor();
+      if (item.iconBackground) this.drawIcon(item.iconBackground, x + 2, y + 2);
+      Window_Base_prototype_drawItemName.call(this, item, x, y);
+      if (item.iconForeground) this.drawIcon(item.iconForeground, x + 2, y + 2);
     }
   };
 })(WAYModuleLoader.getModule("WAY_YEP_ItemCore"));
