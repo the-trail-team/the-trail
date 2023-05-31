@@ -14,8 +14,9 @@
 ==============================================================================
 -- Items, Weapons, Armors, Skills Notetag:
 <Icon Background: x>
+<Icon Foreground: x>
 
-Specify an icon index that will show a certain icon behind the normal icon.
+Specify an icon index that will show a certain icon behind/above the normal icon.
 
 ==============================================================================
  ■ Lunatic Mode - Custom Name Eval
@@ -91,6 +92,7 @@ if (typeof WAY === "undefined") {
     obj.customNameEval = getMultiLineNotetag(obj.note, "Custom Name Eval", null, trim);
     obj.customTextColorEval = getMultiLineNotetag(obj.note, "custom textcolor eval", null, trim);
     obj.iconBackground = getNotetag(obj.note, "Icon Background", null, toInt);
+    obj.iconForeground = getNotetag(obj.note, "Icon Foreground", null, toInt);
   };
 
   WAY.EventEmitter.on("load-item-notetags", parseNotetags);
@@ -159,6 +161,11 @@ if (typeof WAY === "undefined") {
       }
 
       this.drawIcon(item.iconIndex, x + 2, y + 2);
+
+      if (item.iconForeground) {
+        this.drawIcon(item.iconForeground, x + 2, y + 2);
+      }
+
       var itemName = evalCustomName(item);
       this.resetTextColor();
       this.drawText(itemName, x + iconBoxWidth, y, width - iconBoxWidth);
