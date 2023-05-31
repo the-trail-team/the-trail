@@ -2279,11 +2279,10 @@ Scene_Battle.prototype.start = function() {
 // On occasion, BP would either carry over from the previous battle or not generate after the 1st turn
 // This function addresses both of those issues, I guess using brute force rather than fixing the root of the problem worked out
 Scene_Battle.prototype.fixBP = function() {
-    for (i = 0; i < $gameParty.battleMembers().length; i++) {
-        obj = $gameParty.battleMembers()[i];
-        obj._storedBP = 0;
-        obj._turnUsedBP = 0;
-    }
+    $gameParty.battleMembers().forEach(a => {
+        a.setupBattleBP();
+        a._turnUsedBP = 0;
+    });
 };
 
 Scene_Battle.prototype.update = function() {
