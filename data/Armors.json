@@ -299,7 +299,13 @@
     "atypeId": 1,
     "description": "One of those cool floppy hats you see on the\nwizards in books. Provides some extra magic ability.",
     "etypeId": 3,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.01
+      }
+    ],
     "iconIndex": 165,
     "name": "Floppy Hat",
     "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
@@ -473,7 +479,13 @@
     "atypeId": 1,
     "description": "The floppier the hat, the stronger the magic.",
     "etypeId": 3,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.02
+      }
+    ],
     "iconIndex": 693,
     "name": "Floppier Hat",
     "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
@@ -4363,7 +4375,13 @@
     "atypeId": 1,
     "description": "Floppy to the max! The tip of the hat now sags enough to attract stray\nmagical particles in the air, increasing its power more than ever.",
     "etypeId": 3,
-    "traits": [],
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.03
+      }
+    ],
     "iconIndex": 694,
     "name": "Floppiest Hat",
     "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
