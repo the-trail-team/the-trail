@@ -10832,5 +10832,79 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 100,
+    "members": [
+      {
+        "enemyId": 42,
+        "x": 332,
+        "y": 379,
+        "hidden": false
+      },
+      {
+        "enemyId": 42,
+        "x": 395,
+        "y": 151,
+        "hidden": false
+      },
+      {
+        "enemyId": 51,
+        "x": 141,
+        "y": 202,
+        "hidden": false
+      },
+      {
+        "enemyId": 51,
+        "x": 162,
+        "y": 367,
+        "hidden": false
+      },
+      {
+        "enemyId": 43,
+        "x": 291,
+        "y": 256,
+        "hidden": false
+      },
+      {
+        "enemyId": 50,
+        "x": 258,
+        "y": 124,
+        "hidden": false
+      },
+      {
+        "enemyId": 50,
+        "x": 450,
+        "y": 289,
+        "hidden": false
+      }
+    ],
+    "name": "TTC Plant Troop",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]

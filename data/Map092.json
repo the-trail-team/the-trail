@@ -2111,6 +2111,7 @@
     0,
     0,
     0,
+    3914,
     0,
     0,
     0,
@@ -2150,15 +2151,14 @@
     0,
     0,
     0,
+    3907,
+    3903,
+    3917,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    3906,
+    3908,
     0,
     0,
     0,
@@ -2192,14 +2192,14 @@
     0,
     0,
     0,
+    3904,
     0,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
+    3150,
+    3912,
+    3897,
     0,
     0,
     0,
@@ -2233,15 +2233,15 @@
     0,
     0,
     0,
-    0,
+    3916,
     0,
     0,
     3955,
     3953,
     3965,
     0,
-    0,
-    0,
+    3913,
+    3917,
     0,
     0,
     0,
@@ -2316,7 +2316,7 @@
     0,
     0,
     0,
-    0,
+    3914,
     0,
     3952,
     0,
@@ -2357,8 +2357,8 @@
     0,
     0,
     0,
-    0,
-    0,
+    3891,
+    3917,
     3964,
     0,
     0,
@@ -2397,8 +2397,8 @@
     0,
     0,
     0,
-    0,
-    0,
+    3907,
+    3911,
     0,
     0,
     0,
@@ -2438,6 +2438,7 @@
     0,
     0,
     0,
+    3916,
     0,
     0,
     0,
@@ -2446,8 +2447,7 @@
     0,
     0,
     0,
-    0,
-    0,
+    4206,
     0,
     0,
     0,
@@ -4237,7 +4237,7 @@
     0,
     0,
     104,
-    0,
+    104,
     0,
     0,
     0,
@@ -5725,7 +5725,7 @@
     0,
     230,
     0,
-    0,
+    932,
     0,
     0,
     0,
@@ -5762,12 +5762,12 @@
     0,
     0,
     238,
-    0,
+    927,
     0,
     238,
     0,
     0,
-    0,
+    935,
     0,
     0,
     0,
@@ -5802,7 +5802,7 @@
     0,
     0,
     0,
-    0,
+    828,
     0,
     0,
     0,
@@ -5849,7 +5849,7 @@
     0,
     0,
     0,
-    0,
+    820,
     0,
     0,
     0,
@@ -5883,15 +5883,15 @@
     0,
     0,
     0,
+    836,
+    0,
+    820,
     0,
     0,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
+    836,
     0,
     0,
     0,
@@ -5914,6 +5914,7 @@
     0,
     0,
     0,
+    820,
     0,
     0,
     0,
@@ -5921,6 +5922,9 @@
     0,
     0,
     0,
+    828,
+    0,
+    844,
     0,
     0,
     0,
@@ -5928,11 +5932,7 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    844,
     0,
     0,
     0,
@@ -6005,14 +6005,14 @@
     0,
     0,
     0,
+    836,
     0,
     0,
     0,
     0,
     0,
     0,
-    0,
-    0,
+    932,
     0,
     0,
     0,
@@ -6046,7 +6046,7 @@
     0,
     0,
     0,
-    0,
+    844,
     0,
     0,
     0,
@@ -6082,7 +6082,7 @@
     0,
     104,
     211,
-    104,
+    836,
     0,
     0,
     0,
@@ -6090,8 +6090,8 @@
     0,
     0,
     0,
-    0,
-    0,
+    828,
+    925,
     0,
     0,
     0,
@@ -6123,14 +6123,17 @@
     0,
     0,
     0,
+    844,
     0,
     0,
     0,
     0,
     0,
     0,
+    820,
     0,
     0,
+    820,
     0,
     0,
     0,
@@ -6156,6 +6159,7 @@
     0,
     0,
     0,
+    828,
     0,
     0,
     0,
@@ -6207,6 +6211,7 @@
     0,
     0,
     0,
+    836,
     0,
     0,
     0,
@@ -6247,12 +6252,7 @@
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    844,
     0,
     0,
     0,
@@ -12194,15 +12194,135 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Jump1",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 45,
+                      "parameters": [
+                        "JUMP TO: 37, 13"
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Jump1",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 45,
+                  "parameters": [
+                    "JUMP TO: 37, 13"
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Fall",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "a_Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                0,
+                2,
+                37,
+                13,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
             {
               "code": 0,
               "indent": 0,
@@ -12224,70 +12344,19 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 55,
-            "variableValid": true,
-            "variableValue": 40
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 0,
+          "trigger": 1,
           "walkAnime": false
         }
       ],
-      "x": 17,
-      "y": 17
+      "x": 37,
+      "y": 13
     },
     {
       "id": 12,
-      "name": "EV012",
-      "note": "",
+      "name": "flytrap-copy",
+      "note": "<Copy Event: 158, 105>",
       "pages": [
         {
           "conditions": {
@@ -12305,11 +12374,11 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 8,
+            "characterName": "$Flytrap",
+            "direction": 2,
             "pattern": 1,
             "characterIndex": 0
           },
@@ -12337,63 +12406,12 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 55,
-            "variableValid": true,
-            "variableValue": 40
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
+          "trigger": 2,
+          "walkAnime": true
         }
       ],
-      "x": 23,
-      "y": 17
+      "x": 29,
+      "y": 6
     },
     {
       "id": 13,
@@ -12508,8 +12526,8 @@
     },
     {
       "id": 14,
-      "name": "EV014",
-      "note": "",
+      "name": "horrorspore-copy",
+      "note": "<Copy Event: 158, 109>",
       "pages": [
         {
           "conditions": {
@@ -12527,13 +12545,13 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 8,
+            "characterName": "Monster3",
+            "direction": 2,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 1
           },
           "list": [
             {
@@ -12559,63 +12577,12 @@
           "priorityType": 1,
           "stepAnime": true,
           "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 55,
-            "variableValid": true,
-            "variableValue": 40
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
+          "trigger": 2,
+          "walkAnime": true
         }
       ],
-      "x": 29,
-      "y": 16
+      "x": 32,
+      "y": 13
     },
     {
       "id": 15,
