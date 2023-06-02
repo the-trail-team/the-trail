@@ -17573,13 +17573,6 @@
           },
           "list": [
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 288>"
-              ]
-            },
-            {
               "code": 117,
               "indent": 0,
               "parameters": [
@@ -17609,10 +17602,14 @@
               ]
             },
             {
-              "code": 355,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "Yanfly.MorphEvent(this.eventId(), 158, 69, true);"
+                76,
+                76,
+                0,
+                0,
+                72
               ]
             },
             {
@@ -17706,7 +17703,7 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 25
           },
           "directionFix": true,
           "image": {
@@ -17757,7 +17754,7 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 17
+            "variableValue": 49
           },
           "directionFix": true,
           "image": {
@@ -17889,13 +17886,6 @@
           },
           "list": [
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 2010>"
-              ]
-            },
-            {
               "code": 117,
               "indent": 0,
               "parameters": [
@@ -17925,10 +17915,14 @@
               ]
             },
             {
-              "code": 355,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "Yanfly.MorphEvent(this.eventId(), 158, 69, true);"
+                76,
+                76,
+                0,
+                0,
+                96
               ]
             },
             {
@@ -18022,7 +18016,7 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 25
           },
           "directionFix": true,
           "image": {
@@ -18073,7 +18067,7 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 17
+            "variableValue": 49
           },
           "directionFix": true,
           "image": {
@@ -18082,6 +18076,57 @@
             "direction": 8,
             "pattern": 2,
             "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 76,
+            "variableValid": true,
+            "variableValue": 73
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Farming",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 4
           },
           "list": [
             {
@@ -18205,13 +18250,6 @@
           },
           "list": [
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 310>"
-              ]
-            },
-            {
               "code": 117,
               "indent": 0,
               "parameters": [
@@ -18241,10 +18279,14 @@
               ]
             },
             {
-              "code": 355,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "Yanfly.MorphEvent(this.eventId(), 158, 69, true);"
+                76,
+                76,
+                0,
+                0,
+                48
               ]
             },
             {
@@ -18338,7 +18380,7 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 13
           },
           "directionFix": true,
           "image": {
@@ -18389,7 +18431,7 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 17
+            "variableValue": 25
           },
           "directionFix": true,
           "image": {
@@ -18398,6 +18440,57 @@
             "direction": 8,
             "pattern": 0,
             "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 76,
+            "variableValid": true,
+            "variableValue": 37
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Farming",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 4
           },
           "list": [
             {
@@ -18521,13 +18614,6 @@
           },
           "list": [
             {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "<Icon on Event: 317>"
-              ]
-            },
-            {
               "code": 117,
               "indent": 0,
               "parameters": [
@@ -18557,10 +18643,14 @@
               ]
             },
             {
-              "code": 355,
+              "code": 122,
               "indent": 0,
               "parameters": [
-                "Yanfly.MorphEvent(this.eventId(), 158, 69, true);"
+                76,
+                76,
+                0,
+                0,
+                60
               ]
             },
             {
@@ -18654,7 +18744,7 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 9
+            "variableValue": 21
           },
           "directionFix": true,
           "image": {
@@ -18705,13 +18795,13 @@
             "switch2Valid": false,
             "variableId": 76,
             "variableValid": true,
-            "variableValue": 17
+            "variableValue": 41
           },
           "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "!Farming",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
             "characterIndex": 4
           },
