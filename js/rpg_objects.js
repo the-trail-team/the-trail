@@ -408,7 +408,7 @@ Game_System.prototype.rareEnemyRoll = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 35;
+    return 36;
 };
 
 Game_System.prototype.smallChest = function() {
