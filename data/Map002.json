@@ -11191,340 +11191,7 @@
     },
     {
       "id": 2,
-      "name": "electric",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "B",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 20,
-      "y": 14
-    },
-    {
-      "id": 3,
-      "name": "plant",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 2
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "B",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 2
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 19,
-      "y": 15
-    },
-    {
-      "id": 4,
-      "name": "water",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 3
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "B",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Crystal",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 3
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": false
-        }
-      ],
-      "x": 21,
-      "y": 15
-    },
-    {
-      "id": 5,
-      "name": "ice",
+      "name": "ice1",
       "note": "",
       "pages": [
         {
@@ -11585,9 +11252,342 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "B",
+            "selfSwitchValid": false,
+            "switch1Id": 106,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Crystal",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 20,
+      "y": 14
+    },
+    {
+      "id": 3,
+      "name": "plant1",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
             "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Crystal",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Crystal",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 19,
+      "y": 15
+    },
+    {
+      "id": 4,
+      "name": "plant2",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Crystal",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Crystal",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 21,
+      "y": 15
+    },
+    {
+      "id": 5,
+      "name": "ice2",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": true,
+          "image": {
+            "tileId": 0,
+            "characterName": "!Crystal",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "B",
+            "selfSwitchValid": false,
+            "switch1Id": 106,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -11841,6 +11841,57 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 20,
@@ -11914,6 +11965,57 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -15244,9 +15346,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 106,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
@@ -15355,9 +15457,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 106,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
@@ -15466,9 +15568,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 106,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
@@ -15637,9 +15739,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
@@ -15748,9 +15850,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
@@ -15859,9 +15961,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
@@ -16663,6 +16765,57 @@
           "through": false,
           "trigger": 0,
           "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 6,
@@ -16740,6 +16893,57 @@
           "through": false,
           "trigger": 0,
           "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 5,
@@ -16822,6 +17026,57 @@
           "through": false,
           "trigger": 0,
           "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 107,
+            "switch1Valid": true,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 5,
