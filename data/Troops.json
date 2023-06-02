@@ -10921,5 +10921,189 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 101,
+    "members": [
+      {
+        "enemyId": 73,
+        "x": 309,
+        "y": 349,
+        "hidden": false
+      },
+      {
+        "enemyId": 73,
+        "x": 421,
+        "y": 190,
+        "hidden": false
+      },
+      {
+        "enemyId": 57,
+        "x": 471,
+        "y": 331,
+        "hidden": false
+      },
+      {
+        "enemyId": 56,
+        "x": 300,
+        "y": 235,
+        "hidden": false
+      },
+      {
+        "enemyId": 62,
+        "x": 177,
+        "y": 364,
+        "hidden": false
+      },
+      {
+        "enemyId": 62,
+        "x": 234,
+        "y": 133,
+        "hidden": false
+      },
+      {
+        "enemyId": 35,
+        "x": 162,
+        "y": 247,
+        "hidden": true
+      }
+    ],
+    "name": "Ice + Poltergeist x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 111,
+            "indent": 0,
+            "parameters": [
+              12,
+              "$gameSystem.rareEnemyRoll()"
+            ]
+          },
+          {
+            "code": 335,
+            "indent": 1,
+            "parameters": [
+              6
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 1,
+            "parameters": [
+              "",
+              0,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 1,
+            "parameters": [
+              "A Rainbow Slime joined the enemy troop!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 1,
+            "parameters": []
+          },
+          {
+            "code": 412,
+            "indent": 0,
+            "parameters": []
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 102,
+    "members": [
+      {
+        "enemyId": 73,
+        "x": 309,
+        "y": 349,
+        "hidden": false
+      },
+      {
+        "enemyId": 73,
+        "x": 421,
+        "y": 190,
+        "hidden": false
+      },
+      {
+        "enemyId": 51,
+        "x": 273,
+        "y": 121,
+        "hidden": false
+      },
+      {
+        "enemyId": 42,
+        "x": 180,
+        "y": 274,
+        "hidden": false
+      },
+      {
+        "enemyId": 43,
+        "x": 279,
+        "y": 217,
+        "hidden": false
+      },
+      {
+        "enemyId": 50,
+        "x": 441,
+        "y": 319,
+        "hidden": false
+      }
+    ],
+    "name": "Plant + Poltergeist x2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
