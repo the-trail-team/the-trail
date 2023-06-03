@@ -11177,5 +11177,61 @@
         "span": 0
       }
     ]
+  },
+  {
+    "id": 103,
+    "members": [
+      {
+        "enemyId": 81,
+        "x": 192,
+        "y": 322,
+        "hidden": false
+      }
+    ],
+    "name": "Apocalypse",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": true
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              24
+            ]
+          },
+          {
+            "code": 121,
+            "indent": 0,
+            "parameters": [
+              108,
+              108,
+              0
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
   }
 ]
