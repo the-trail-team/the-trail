@@ -6745,7 +6745,7 @@ Game_Map.prototype.isAnyEventStarting = function() {
 // Return if in certain zones
 
 Game_Map.prototype.inTrueTelluriaCastle = function() {
-    return [2, 88, 92, 93, 94, 213, 214].contains(this.mapId());
+    return [93, 92, 2, 88, 94, 213, 214, 7].contains(this.mapId());
 };
 
 Game_Map.prototype.indoors = function() {

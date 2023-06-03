@@ -4083,7 +4083,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Intense Heat",
-    "note": "<Category: Bypass Death Removal>\n\n<HRG Rate: 0%>\n\n<Custom Passive Condition>\nif (([94, 213, 214].contains($gameMap.mapId())) && !user.isStateAffected(126)) {\ncondition = true;\n} else {\ncondition = false;\n}\n</Custom Passive Condition>\n\n<Help Description>\nReduces HRG to 0%. Decreases AGI by 40%.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n\n<HRG Rate: 0%>\n\n<Custom Passive Condition>\nif (([94, 213, 214, 7].contains($gameMap.mapId())) && !user.isStateAffected(126)) {\ncondition = true;\n} else {\ncondition = false;\n}\n</Custom Passive Condition>\n\n<Help Description>\nReduces HRG to 0%. Decreases AGI by 40%.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
