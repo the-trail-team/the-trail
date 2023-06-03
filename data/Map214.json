@@ -11157,6 +11157,177 @@
           },
           "directionFix": false,
           "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 15 1600"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                120
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                0,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 15, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                15,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 16, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                16,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                1,
+                62,
+                63,
+                64,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM PLAYER"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 55,
+            "variableValid": false,
+            "variableValue": 48
+          },
+          "directionFix": true,
+          "image": {
             "tileId": 36,
             "characterName": "",
             "characterIndex": 0,
@@ -11188,7 +11359,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11206,16 +11377,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 48
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11248,7 +11419,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11266,16 +11437,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 48
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11308,7 +11479,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11337,6 +11508,177 @@
           },
           "directionFix": false,
           "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 18 1600"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                120
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                0,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 18, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                18,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 19, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                19,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                1,
+                62,
+                63,
+                64,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM PLAYER"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 55,
+            "variableValid": false,
+            "variableValue": 48
+          },
+          "directionFix": true,
+          "image": {
             "tileId": 36,
             "characterName": "",
             "characterIndex": 0,
@@ -11368,7 +11710,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11386,16 +11728,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 49
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11428,7 +11770,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11446,16 +11788,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 49
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11488,7 +11830,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11517,6 +11859,177 @@
           },
           "directionFix": false,
           "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 21 1600"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                120
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                0,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 21, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                21,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 22, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                22,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                1,
+                62,
+                63,
+                64,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM PLAYER"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 55,
+            "variableValid": false,
+            "variableValue": 48
+          },
+          "directionFix": true,
+          "image": {
             "tileId": 36,
             "characterName": "",
             "characterIndex": 0,
@@ -11548,7 +12061,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11566,16 +12079,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 50
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11608,7 +12121,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11626,16 +12139,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 50
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11668,7 +12181,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11697,6 +12210,177 @@
           },
           "directionFix": false,
           "image": {
+            "tileId": 0,
+            "characterName": "",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 4
+          },
+          "list": [
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 24 1600"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                120
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                0,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 24, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                24,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameSelfSwitches.setValue([214, 25, 'A'], true)"
+              ]
+            },
+            {
+              "code": 212,
+              "indent": 0,
+              "parameters": [
+                25,
+                13,
+                true
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 0,
+              "parameters": [
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 0,
+              "parameters": [
+                1,
+                62,
+                63,
+                64,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM PLAYER"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 3,
+          "walkAnime": false
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 55,
+            "variableValid": false,
+            "variableValue": 48
+          },
+          "directionFix": true,
+          "image": {
             "tileId": 36,
             "characterName": "",
             "characterIndex": 0,
@@ -11728,7 +12412,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11746,16 +12430,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 51
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11788,7 +12472,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
@@ -11806,16 +12490,16 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
+            "selfSwitchValid": true,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 55,
-            "variableValid": true,
+            "variableValid": false,
             "variableValue": 51
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 36,
             "characterName": "",
@@ -11848,7 +12532,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
+          "walkAnime": false
         }
       ],
       "x": 18,
