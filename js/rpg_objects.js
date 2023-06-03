@@ -517,21 +517,21 @@ Game_System.prototype.timeEmoji = function() {
     if (hour <= 4 || hour >= 21) {
         switch(this._moonPhase) {
             case 0:
-                return "🌑";
-            case 1:
                 return "🌒";
-            case 2:
+            case 1:
                 return "🌓";
-            case 3:
+            case 2:
                 return "🌔";
-            case 4:
+            case 3:
                 return "🌕";
-            case 5:
+            case 4:
                 return "🌖";
-            case 6:
+            case 5:
                 return "🌗";
-            case 7:
+            case 6:
                 return "🌘";
+            case 7:
+                return "🌑";
         }
     } else
     if (hour == 5) return "🌅";
