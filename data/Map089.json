@@ -12009,6 +12009,154 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 55,
+            "variableValid": true,
+            "variableValue": 57
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Telluria1",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\genHappy to see you four made it out relatively"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "unscathed. I knew we could count on you."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\genI should be debriefing you on what's next..."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "but this is just Alpha 15. There's nothing"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\"next\" to debrief you on!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Telluria1",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\genKeep an eye out for Alpha 16. Until then,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "I've parked a ship outside the castle."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Feel free to use it to explore the world."
+              ]
+            },
+            {
+              "code": 202,
+              "indent": 0,
+              "parameters": [
+                1,
+                0,
+                8,
+                57,
+                63
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
         }
       ],
       "x": 10,
