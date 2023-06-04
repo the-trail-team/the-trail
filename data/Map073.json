@@ -3525,11 +3525,53 @@
           },
           "list": [
             {
-              "code": 356,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameSelfSwitches.value([10, 7, 'A'])"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
               "parameters": [
                 "CallEvent 7, Map 10, Page 2"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "CallEvent 7, Map 10, Page 1"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSelfSwitches.setValue([10, 7, 'A'], true);"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
