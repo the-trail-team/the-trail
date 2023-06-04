@@ -190,6 +190,8 @@ Game_System.prototype.initialize = function() {
     this._rareEnemyTries = 0;
     this._oneTimeItems = [];
     this._moonPhase = 0;
+    this._moonRespawn = false;
+    this._moonRespawnList = [];
     this._statues = {};
 };
 
@@ -544,7 +546,11 @@ Game_System.prototype.timeEmoji = function() {
 
 Game_System.prototype.nextMoonPhase = function() {
     this._moonPhase++;
-    if (this._moonPhase > 7) this._moonPhase = 0;
+    if (this._moonPhase > 7) {
+        this._moonPhase = 0;
+        this._moonRespawn = true;
+        this._moonCycleComplete = true;
+    }
 };
 
 // Melee Damage Types
