@@ -9056,28 +9056,11 @@
           "image": {
             "tileId": 0,
             "characterName": "People3",
-            "direction": 8,
+            "direction": 6,
             "pattern": 1,
             "characterIndex": 6
           },
           "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                6,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\knightThis is not good news at all..."
-              ]
-            },
             {
               "code": 0,
               "indent": 0,
@@ -9156,8 +9139,8 @@
           "walkAnime": true
         }
       ],
-      "x": 18,
-      "y": 11
+      "x": 9,
+      "y": 24
     },
     {
       "id": 11,
@@ -9184,7 +9167,7 @@
           "image": {
             "tileId": 0,
             "characterName": "People3",
-            "direction": 2,
+            "direction": 4,
             "pattern": 1,
             "characterIndex": 6
           },
@@ -9203,7 +9186,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\knightHas the general given us a new plan yet?"
+                "\\knightThis is not good news at all... has"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "the general given us a new plan yet?"
               ]
             },
             {
@@ -9284,8 +9274,8 @@
           "walkAnime": true
         }
       ],
-      "x": 18,
-      "y": 10
+      "x": 10,
+      "y": 24
     },
     {
       "id": 12,
@@ -9899,6 +9889,13 @@
               "parameters": []
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM PLAYER"
+              ]
+            },
+            {
               "code": 122,
               "indent": 0,
               "parameters": [
@@ -10149,6 +10146,13 @@
               "indent": 0,
               "parameters": [
                 2
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 13 1600"
               ]
             },
             {
@@ -11353,6 +11357,13 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 12 1600"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -11726,6 +11737,44 @@
               "code": 222,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM PLAYER"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Beginning The Skeleton-Hunt"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "New Quest!"
+              ]
             },
             {
               "code": 356,
