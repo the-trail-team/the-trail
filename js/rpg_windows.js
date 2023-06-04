@@ -636,7 +636,9 @@ Window_Base.prototype.drawItemName = function(item, x, y, width) {
     if (item) {
         var iconBoxWidth = Window_Base._iconWidth + 4;
         this.resetTextColor();
+        if (item.iconBackground) this.drawIcon(item.iconBackground, x + 2, y + 2);
         this.drawIcon(item.iconIndex, x + 2, y + 2);
+        if (item.iconForeground) this.drawIcon(item.iconForeground, x + 2, y + 2);
         this.drawTextEx(item.name, x + iconBoxWidth, y, width - iconBoxWidth);
     }
 };

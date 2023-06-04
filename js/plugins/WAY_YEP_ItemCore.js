@@ -147,13 +147,4 @@ if (typeof WAY === "undefined") {
     if (!item) return;
     this._resetTextColor = evalCustomTextColor(item) || item.textColor;
   };
-
-  Window_Base_prototype_drawItemName = Window_Base.prototype.drawItemName;
-  Window_Base.prototype.drawItemName = function (item, x, y) {
-    if (item) {
-      if (item.iconBackground) this.drawIcon(item.iconBackground, x + 2, y + 2);
-      Window_Base_prototype_drawItemName.call(this, item, x, y);
-      if (item.iconForeground) this.drawIcon(item.iconForeground, x + 2, y + 2);
-    }
-  };
 })(WAYModuleLoader.getModule("WAY_YEP_ItemCore"));
