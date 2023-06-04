@@ -122,7 +122,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             break;
         case 'PICKAXE':
             arr = [
-                [184, 208, 209, 210],
+                [208, 209, 210],
                 [],
                 []
             ]
