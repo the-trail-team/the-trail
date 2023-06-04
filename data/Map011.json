@@ -4196,24 +4196,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "It's your drawers."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Take a look?"
+                "It's your drawers. Take a look?"
               ]
             },
             {
@@ -4222,7 +4205,7 @@
               "parameters": [
                 [
                   "Sure.",
-                  "I already know what's in there."
+                  "Nope."
                 ],
                 1,
                 0,
@@ -4239,8 +4222,35 @@
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 1,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameSelfSwitches.value([11, 9, 'A'])"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
               "parameters": [
                 "",
                 0,
@@ -4250,17 +4260,79 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
-                "You already know what's in there."
+                "Nothing but old clothes..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 126,
+              "indent": 2,
+              "parameters": [
+                9,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
               ]
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 2,
               "parameters": [
-                "There's no point in looking."
+                "When did that get there?"
               ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "$gameSelfSwitches.setValue([11, 9, 'A'], true);"
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -4272,24 +4344,7 @@
               "indent": 0,
               "parameters": [
                 1,
-                "I already know what's in there."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Right answer."
+                "Nope."
               ]
             },
             {
