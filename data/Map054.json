@@ -1556,7 +1556,7 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": false,
+          "directionFix": true,
           "image": {
             "tileId": 0,
             "characterName": "Boss1",
@@ -1679,7 +1679,11 @@
                 {
                   "list": [
                     {
-                      "code": 13,
+                      "code": 14,
+                      "parameters": [
+                        0,
+                        -1
+                      ],
                       "indent": null
                     },
                     {
@@ -1697,7 +1701,11 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 13,
+                  "code": 14,
+                  "parameters": [
+                    0,
+                    -1
+                  ],
                   "indent": null
                 }
               ]
