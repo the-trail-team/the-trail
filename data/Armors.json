@@ -5007,7 +5007,7 @@
     ],
     "iconIndex": 506,
     "name": "Shield of the Hero",
-    "note": "<Upgrade Slots: 3>",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([7, 14, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
