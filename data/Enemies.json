@@ -5772,12 +5772,32 @@
     "battlerHue": 0,
     "battlerName": "Apocalypse",
     "dropItems": [],
-    "exp": 0,
+    "exp": 25000,
     "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 7,
+        "value": 1
+      },
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
@@ -5785,23 +5805,28 @@
         "value": 0.05
       },
       {
-        "code": 31,
-        "dataId": 1,
-        "value": 0
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
       }
     ],
-    "gold": 0,
+    "gold": 10000,
     "name": "Apocalypse",
-    "note": "<Enemy Drops>\nChip of Golden Armor: 100%\nTellurium Spellbook: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 141>\n\n<Sideview Battler: Boss1_2>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n\n<AI Priority>\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nChip of Golden Armor: 100%\nTellurium Spellbook: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
-      100,
+      100000,
       0,
-      10,
-      10,
-      10,
-      10,
-      10,
-      10
+      45,
+      40,
+      65,
+      90,
+      80,
+      70
     ]
   }
 ]
