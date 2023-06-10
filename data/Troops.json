@@ -11231,6 +11231,229 @@
           }
         ],
         "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 1,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Boss1",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\apocYour efforts are nothing more than in vain."
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "The longer you fight, the longer you suffer!"
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 0,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 313,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              1,
+              1
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Boss1",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\apocKeep on swinging, keep on healing,"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "keep on getting back up. I can do"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "this all day!"
+            ]
+          },
+          {
+            "code": 339,
+            "indent": 0,
+            "parameters": [
+              1,
+              1,
+              1,
+              0
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Boss1",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\apocSee, nothing! I'm a god with this"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "armor! There's nothing you can-"
+            ]
+          },
+          {
+            "code": 250,
+            "indent": 0,
+            "parameters": [
+              {
+                "name": "Sword2",
+                "volume": 90,
+                "pitch": 120,
+                "pan": 0
+              }
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 0,
+            "parameters": [
+              180
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Boss1",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\apocYou... you... put a chip... in my armor..."
+            ]
+          },
+          {
+            "code": 101,
+            "indent": 0,
+            "parameters": [
+              "Boss1",
+              1,
+              0,
+              2
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "\\apocHow? How is this possible?? This armor,"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "it's invincible, all-powerful! How could"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "you weaklings do such a thing??"
+            ]
+          },
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              1,
+              24
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
       }
     ]
   },
