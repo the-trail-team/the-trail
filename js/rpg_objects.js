@@ -5744,6 +5744,11 @@ Game_Party.prototype.addPet = function(name) {
     $gamePlayer.refresh();
 };
 
+Game_Party.prototype.addPetFromItem = function(id) {
+    const item = $dataItems[id];
+    this.addPet(item.meta['Pet'].trim());
+};
+
 //-----------------------------------------------------------------------------
 // Game_Troop
 //
