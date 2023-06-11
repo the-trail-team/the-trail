@@ -3686,7 +3686,7 @@ Game_Battler.prototype.regenerateTp = function() {
 };
 
 Game_Battler.prototype.regenerateAll = function() {
-    if (this.isAlive()) {
+    if (this.isAlive() && $gameParty.inBattle()) {
         this.regenerateHp();
         this.regenerateMp();
         this.regenerateTp();
