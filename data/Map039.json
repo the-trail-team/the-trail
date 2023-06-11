@@ -6923,6 +6923,13 @@
           },
           "list": [
             {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<shadow>"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -6966,11 +6973,11 @@
           },
           "directionFix": true,
           "image": {
-            "characterIndex": 0,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "!Flame",
             "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "pattern": 1,
+            "characterIndex": 7
           },
           "list": [
             {
@@ -7108,7 +7115,7 @@
     {
       "id": 5,
       "name": "dandytoad2",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -9769,7 +9776,7 @@
     {
       "id": 12,
       "name": "dandytoad3",
-      "note": "",
+      "note": "<shadow>",
       "pages": [
         {
           "conditions": {
@@ -9911,9 +9918,9 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                0,
-                43,
-                1
+                2,
+                "A",
+                0
               ]
             },
             {
@@ -10330,6 +10337,14 @@
               "indent": 1,
               "parameters": [
                 "\\p4Check it out! Their captain dropped the purse!"
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
               ]
             },
             {
