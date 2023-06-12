@@ -168,7 +168,6 @@ DataManager.isDatabaseLoaded = function() {
     this.processStCResNotetags($dataStates);
     this.processStCNotetags2($dataSkills);
     this.processStCNotetags2($dataItems);
-    // this.addElementalStateTraits();
     Yanfly._loaded_YEP_X_StateCategories = true;
   }
   
@@ -246,17 +245,6 @@ DataManager.processStCNotetags2 = function(group) {
         evalLine = evalLine + line + '\n';
       }
     }
-  }
-};
-
-DataManager.addElementalStateTraits = function() {
-  const o = DataManager.stateCategories;
-  const arr = [[o["FIRE"], 2, 154], [o["ICE"], 3, 155], [o["ELECTRIC"], 4, 156], [o["WATER"], 5, 157], [o["EARTH"], 6, 158], [o["WIND"], 7, 159], [o["PLANT"], 13, 171], [o["METAL"], 14, 172], [o["LIGHT"], 8, 160], [o["DARK"], 9, 161]];
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i][0]) arr[i][0].forEach(s => {
-      if (![8, 9].contains(arr[i][1])) $dataStates[s].traits = $dataStates[s].traits.concat({code: 11, dataId: arr[i][1], value: 0.5});
-      $dataStates[s].traits = $dataStates[s].traits.concat($dataStates[arr[i][2]].traits);
-    });
   }
 };
 
