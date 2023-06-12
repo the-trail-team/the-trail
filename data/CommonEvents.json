@@ -14254,7 +14254,7 @@
         "code": 355,
         "indent": 0,
         "parameters": [
-          "$gameSystem._questQueue = [];"
+          "if (!$gameSystem._questQueue) $gameSystem._questQueue = [];"
         ]
       },
       {

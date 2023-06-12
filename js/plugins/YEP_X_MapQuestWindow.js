@@ -579,7 +579,11 @@ Game_System.prototype.setNextAvailableQuestActive = function(condition) {
 };
 
 Game_System.prototype.getNextAvailableQuestActive = function() {
-  if (this.getQuestQueue().length > 0) return this.getQuestQueue()[0];
+  if (this.getQuestQueue().length > 0) {
+    queue = this.getQuestQueue()[0];
+    this._questQueue.shift();
+    return queue;
+  }
   else return this.getQuestsAvailable()[0];
 };
 
