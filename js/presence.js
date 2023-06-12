@@ -24,7 +24,8 @@ async function setActivity() {
         if ($gameMap._mapId === 0 || !$gameTemp._isGameLoaded) {
             details = "In the main menu";
         } else {
-            details = "Location: " + $gameMap.displayName();
+            if ($gameMap.displayName()) details = "Location: " + $gameMap.displayName();
+            else details = "Location: ???";
 
             switch(smallImageKey) {
                 case `power`:
