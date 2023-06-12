@@ -525,6 +525,7 @@ Game_Action.prototype.executeDamage = function(target, value) {
     } else if (this._resist === 'absorb' && value < 0) {
         result.resist = 'absorb';
     }
+    result.rate = this.calcElementRate(target);
 };
 
 //=============================================================================
@@ -537,6 +538,7 @@ Game_ActionResult.prototype.clear = function() {
     this.customText.string = '';
     this.customText.format = 0;
     this.resist = '';
+    this.rate = 1;
     this.itemElements = [];
 };
 
@@ -556,6 +558,10 @@ Game_ActionResult.prototype.hasResist = function() {
 Game_ActionResult.prototype.hasElements = function() {
     return (this.itemElements.length > 0);
 }
+
+Game_ActionResult.prototype.rateText = function() {
+    return "(" + this.rate * 100 + "%)";
+};
 
 //=============================================================================
 // Game_Battler
@@ -1042,9 +1048,9 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     	resSprite.anchor.y = 1;
     	var resistText = '';
     	if (result.resist === 'weak') {
-    		resistText = this._customTextValues[2];
+    		resistText = this._customTextValues[2] + " " + result.rateText();
     	} else if (result.resist === 'resist') {
-    		resistText = this._customTextValues[3];
+    		resistText = this._customTextValues[3] + " " + result.rateText();
     	} else if (result.Resist === 'absorbed') {
     		resistText = this._customTextValues[4];
     	}
