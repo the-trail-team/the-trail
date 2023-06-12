@@ -1047,18 +1047,24 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     	resSprite.anchor.x = 0.5;
     	resSprite.anchor.y = 1;
     	var resistText = '';
+        var textColor = LGP.Param.BDPmissC;
+        var outlineColor = LGP.Param.BDPmissOC;
     	if (result.resist === 'weak') {
     		resistText = this._customTextValues[2] + " " + result.rateText();
+            textColor = "rgb(255, 165, 50)";
+            outlineColor = "rgb(100, 65, 0)";
     	} else if (result.resist === 'resist') {
     		resistText = this._customTextValues[3] + " " + result.rateText();
+            textColor = "rgb(150, 150, 255)";
+            outlineColor = "rgb(50, 50, 100)";
     	} else if (result.Resist === 'absorbed') {
     		resistText = this._customTextValues[4];
     	}
     	var rw = this.getTextWidth(resistText) + LGP.Param.BDPfontSizeBuffer;
     	var rh = this._fontSize;
     	resSprite.bitmap = new Bitmap(rw, rh);
-        resSprite.bitmap.textColor = LGP.Param.BDPmissC;        
-        resSprite.bitmap.outlineColor = LGP.Param.BDPmissOC;   		
+        resSprite.bitmap.textColor = textColor;        
+        resSprite.bitmap.outlineColor = outlineColor;   		
         if (Imported.LGP_CustomWindowText) resSprite.bitmap.textShadow = LGP.Param.BDPtextShadow;
     	resSprite.bitmap.drawText(resistText, 0, 0, rw, h);
     	resSprite.scale.x = 0.8;
