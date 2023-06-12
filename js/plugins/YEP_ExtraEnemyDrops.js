@@ -662,6 +662,14 @@ DataManager.createGlobalDrops = function(obj) {
       if (date.getDate() == 31) rate = 0.5; // 1/2 drop on Halloween
       this.createEnemyDrop(obj, id, rate, 1);
     }
+
+    // Charcoal (1/1 drop when plant enemy is hit by fire attack)
+    var item = $dataItems[151];
+    var arr = [
+      "Times Element Fire Struck >= 1: +100%",
+      "Eval !user.enemy().elements.contains(\"PLANT\"): -100%"
+    ];
+    obj.conditionalDropItems.push([item, arr]);
 };
 
 DataManager.createEnemyDrop = function(obj, dataId, rate, kind) {
