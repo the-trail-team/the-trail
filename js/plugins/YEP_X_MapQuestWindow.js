@@ -495,6 +495,7 @@ Game_System.prototype.initMapQuestWindowSettings = function() {
   this._showMapQuestWindow = 
     eval(Yanfly.Param.MQWSettings['Default Show'] || 'true');
   this._activeQuestId = 0;
+  this._questQueue = [];
 };
 
 Game_System.prototype.isShowMapQuestWindow = function() {
@@ -512,9 +513,29 @@ Game_System.prototype.getActiveQuestId = function() {
   return this._activeQuestId;
 };
 
+Game_System.prototype.getQuestQueue = function() {
+  if (this._questQueue === undefined || typeof this._questQueue != 'object') this._questQueue = [];
+  return this._questQueue;
+};
+
+Game_System.prototype.addToQueue = function(id) {
+  queue = this.getQuestQueue();
+  queue.unshift(id);
+  this._questQueue = queue;
+};
+
+Game_System.prototype.removeFromQueue = function(id) {
+  queue = this.getQuestQueue();
+  queue.filter(q => q != id);
+  this._questQueue = queue;
+};
+
 Game_System.prototype.setActiveQuestId = function(questId) {
   if (this._activeQuestId === undefined) this.initMapQuestWindowSettings();
-  if (questId === 0 || $dataQuests[questId]) this._activeQuestId = questId;
+  if (questId === 0 || $dataQuests[questId]) {
+    this.addToQueue(this.getActiveQuestId());
+    this._activeQuestId = questId;
+  }
   this.refreshActiveQuestWindow();
 };
 
@@ -545,7 +566,7 @@ Game_System.prototype.questRemove = function(questId) {
 
 Game_System.prototype.setNextAvailableQuestActive = function(condition) {
   if (condition) {
-    var questId = this.getQuestsAvailable()[0];
+    var questId = this.getNextAvailableQuestActive();
     if (questId) {
       this.setActiveQuestId(questId);
     } else {
@@ -557,10 +578,16 @@ Game_System.prototype.setNextAvailableQuestActive = function(condition) {
   this.refreshActiveQuestWindow();
 };
 
+Game_System.prototype.getNextAvailableQuestActive = function() {
+  if (this.getQuestQueue().length > 0) return this.getQuestQueue()[0];
+  else return this.getQuestsAvailable()[0];
+};
+
 Yanfly.AMQW.Game_System_questSetCompleted = 
   Game_System.prototype.questSetCompleted;
 Game_System.prototype.questSetCompleted = function(questId) {
   Yanfly.AMQW.Game_System_questSetCompleted.call(this, questId);
+  this.removeFromQueue(questId);
   if (this.getActiveQuestId() === questId) {
     this.setNextAvailableQuestActive(Yanfly.Param.MQWQuestComplete);
   };
@@ -570,6 +597,7 @@ Yanfly.AMQW.Game_System_questSetFailed =
   Game_System.prototype.questSetFailed;
 Game_System.prototype.questSetFailed = function(questId) {
   Yanfly.AMQW.Game_System_questSetFailed.call(this, questId);
+  this.removeFromQueue(questId);
   if (this.getActiveQuestId() === questId) {
     this.setNextAvailableQuestActive(Yanfly.Param.MQWQuestComplete);
   };
