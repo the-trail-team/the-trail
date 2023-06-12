@@ -19,7 +19,7 @@
     ],
     "iconIndex": 147,
     "name": "Squire Sword",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -52,7 +52,7 @@
     ],
     "iconIndex": 555,
     "name": "Apprentice Wand",
-    "note": "<Weapon Image: 39>\n<Can Sell>",
+    "note": "<Weapon Image: 39>\n<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(2));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -85,7 +85,7 @@
     ],
     "iconIndex": 152,
     "name": "Training Staff",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(3));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -118,7 +118,7 @@
     ],
     "iconIndex": 150,
     "name": "Novice Dagger",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(4));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,

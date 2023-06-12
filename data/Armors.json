@@ -8,7 +8,7 @@
     "traits": [],
     "iconIndex": 438,
     "name": "Squire Armor",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -29,7 +29,7 @@
     "traits": [],
     "iconIndex": 440,
     "name": "Apprentice Robes",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(2));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -50,7 +50,7 @@
     "traits": [],
     "iconIndex": 623,
     "name": "Training Vestments",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(3));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -71,7 +71,7 @@
     "traits": [],
     "iconIndex": 455,
     "name": "Novice Leathers",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(4));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -92,7 +92,7 @@
     "traits": [],
     "iconIndex": 162,
     "name": "Traveler Hat",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -113,7 +113,7 @@
     "traits": [],
     "iconIndex": 443,
     "name": "Traveler Shirt",
-    "note": "<Hit Damage Sound: Equip3, 90, 150, 0>\n<Can Sell>",
+    "note": "<Hit Damage Sound: Equip3, 90, 150, 0>\n<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -134,7 +134,7 @@
     "traits": [],
     "iconIndex": 529,
     "name": "Traveler Boots",
-    "note": "<Can Sell>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
