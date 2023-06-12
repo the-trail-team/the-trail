@@ -637,7 +637,8 @@ DataManager.createGlobalDrops = function(obj) {
     var arr = [
       "Eval [0, 1, 2].contains($gameSystem.chapter()): +0.002%",
       "Eval [3, 4].contains($gameSystem.chapter()): +0.0025%",
-      "Eval [5].contains($gameSystem.chapter()): +0.004%"
+      "Eval [5].contains($gameSystem.chapter()): +0.004%",
+      "Eval [6].contains($gameSystem.chapter()): +0.005%"
     ];
     obj.conditionalDropItems.push([item, arr]);
 
