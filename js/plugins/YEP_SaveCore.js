@@ -895,6 +895,7 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   if (!this._info) return dy;
   if (!this._info.title) return dy;
   this.resetFontSettings();
+
   // Title and Version
   var loadedSave = JsonEx.parse(StorageManager.load(this._currentFile));
   if (loadedSave.version !== undefined) try {
@@ -907,12 +908,19 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   this.drawText(text, 0, dy, this.contents.width, 'center');
 
   // Save Date and Time Since Last Save
-  var saveEpoch = DataManager.loadGlobalInfo()[this._currentFile].timestamp;
-  var differenceEpoch = Math.floor((Date.now() - saveEpoch) / 1000);
-  var interval = this.returnInterval(differenceEpoch);
+  try {
+    var saveEpoch = DataManager.loadGlobalInfo()[this._currentFile].timestamp;
+    var differenceEpoch = Math.floor((Date.now() - saveEpoch) / 1000);
+    var interval = this.returnInterval(differenceEpoch);
+    var date = new Date(saveEpoch);
+    var text = date.toLocaleString();
+  } catch (err) {
+    console.error(err);
+    var text = "Error loading time";
+    var interval = "Error loading interval";
+  }
+  this.drawText("Last Saved: " + text + " (" + interval + ")", 0, dy + this.lineHeight(), this.contents.width, 'center');
 
-  date = new Date(saveEpoch);
-  this.drawText("Last Saved: " + date.toLocaleString() + " (" + interval + ")", 0, dy + this.lineHeight(), this.contents.width, 'center');
   return dy + this.lineHeight();
 };
 
