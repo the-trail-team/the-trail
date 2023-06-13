@@ -7289,6 +7289,580 @@
       ],
       "x": 8,
       "y": 20
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "People2",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\n<Captain>I've sailed the world and learned a lot of things from"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "a lot of people. Want me to share a bag organization"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "trick with you? It'll hide ingredients and weak"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "healing items from your bag during battle."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "Sure!",
+                  "No thanks."
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "Sure!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Captain>Here, let me tell you..."
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 121,
+              "indent": 2,
+              "parameters": [
+                14,
+                14,
+                0
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 2,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Captain>There you go. Looking through your bag"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "in battle should be a lot easier now."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "No thanks."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Captain>Come back if you're ever interested."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                0,
+                14,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Captain>Want your bag to go back to normal?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "Sure!",
+                  "No thanks."
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "Sure!"
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 121,
+              "indent": 3,
+              "parameters": [
+                14,
+                14,
+                1
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 3,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "\\n<Captain>Come back if you'd ever like to re-organize."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "No thanks."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "\\n<Captain>Come back if you're ever interested."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\n<Captain>Want to re-organize your bag?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 2,
+              "parameters": [
+                [
+                  "Sure!",
+                  "No thanks."
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                0,
+                "Sure!"
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 121,
+              "indent": 3,
+              "parameters": [
+                14,
+                14,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 3,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "\\n<Captain>There you go. Looking through your bag"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "in battle should be a lot easier now."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 2,
+              "parameters": [
+                1,
+                "No thanks."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 3,
+              "parameters": [
+                "People2",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 3,
+              "parameters": [
+                "\\n<Captain>Come back if you're ever interested."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 10
     }
   ]
 }

@@ -153,10 +153,18 @@ Game_Temp.unlockFoodRecipes = function() {
     return arr;
 };
 
+// Calculate open hours
+
 Game_Temp.prototype.openHours = function(open, close) {
     hour = $gameVariables.value(38);
     if (close > open) return hour >= open && hour < close;
     else return hour >= open || hour < close;
+};
+
+// Bag organization
+
+Game_Temp.prototype.bagOrganized = function() {
+    return $gameSwitches.value(14) && $gameParty.inBattle();
 };
 
 //-----------------------------------------------------------------------------
