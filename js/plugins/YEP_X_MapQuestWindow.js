@@ -550,6 +550,7 @@ if (Yanfly.Param.MQWAddQuest) {
 Yanfly.AMQW.Game_System_questAdd = Game_System.prototype.questAdd;
 Game_System.prototype.questAdd = function(questId) {
   Yanfly.AMQW.Game_System_questAdd.call(this, questId);
+  if (this._questsKnown.contains(questId)) return;
   this.setActiveQuestId(questId);
 };
 
