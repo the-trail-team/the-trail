@@ -4707,13 +4707,19 @@
   },
   {
     "id": 177,
-    "atypeId": 1,
-    "description": "No matter how many times you drink from it, it just keeps\nrefilling itself. Provides immunity to \\it[125].",
-    "etypeId": 6,
-    "traits": [],
-    "iconIndex": 721,
-    "name": "Bottomless Fire Resistance Potion",
-    "note": "<Passive State: 126>\n\n<Synthesis Ingredients>\nFire Resistance Potion: 3\nFiery Blood: 10\nEctoplasm: 3\n</Synthesis Ingredients>\n<Mask Name: Heat Exhaustion Permanent Prevention>",
+    "atypeId": 0,
+    "description": "",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0
+      }
+    ],
+    "iconIndex": 0,
+    "name": "",
+    "note": "",
     "params": [
       0,
       0,
@@ -4724,7 +4730,7 @@
       0,
       0
     ],
-    "price": 100
+    "price": 0
   },
   {
     "id": 178,
@@ -4750,7 +4756,7 @@
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nBottomless Fire Resistance Potion\nFiery Blood: 30\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nFire Resistance Potion: 3\nFiery Blood: 30\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
       0,
       0,
