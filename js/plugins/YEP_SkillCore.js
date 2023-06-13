@@ -515,8 +515,6 @@ DataManager.processSkillNotetags = function(group) {
   var noteCostEval2 = /<\/(?:COST DISPLAY EVAL|display cost eval)>/i;
   var noteCostText1 = /<(?:CUSTOM COST DISPLAY|custom display cost)>/i;
   var noteCostText2 = /<\/(?:CUSTOM COST DISPLAY|custom display cost)>/i;
-  var noteShowEval1 = /<(?:CUSTOM SHOW EVAL)>/i;
-  var noteShowEval2 = /<\/(?:CUSTOM SHOW EVAL)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -535,7 +533,6 @@ DataManager.processSkillNotetags = function(group) {
     obj.requireEval = '';
     obj.executeEval = '';
     obj.costdisplayEval = '';
-    obj.costShowEval = '';
     obj.customCostText = '';
 
     for (var i = 0; i < notedata.length; i++) {
@@ -592,10 +589,6 @@ DataManager.processSkillNotetags = function(group) {
         evalMode = 'custom display cost';
       } else if (line.match(noteCostText2)) {
         evalMode = 'none';
-      } else if (line.match(noteShowEval1)) {
-        evalMode = 'custom show eval';
-      } else if (line.match(noteShowEval2)) {
-        evalMode = 'none';
       } else if (evalMode === 'mp') {
         obj.mpCostEval = obj.mpCostEval + line + '\n';
       } else if (evalMode === 'tp') {
@@ -610,8 +603,6 @@ DataManager.processSkillNotetags = function(group) {
         obj.costdisplayEval = obj.costdisplayEval + line + '\n';
       } else if (evalMode === 'custom display cost') {
         obj.customCostText = obj.customCostText + line;
-      } else if (evalMode === 'custom show eval') {
-        obj.costShowEval = obj.costShowEval + line + '\n';
       }
     }
   }
@@ -626,6 +617,8 @@ DataManager.processObjectNotetags = function(group) {
   var note6 = /<\/(?:POST-DAMAGE EVAL)>/i;
   var note7 = /<(?:AFTER EVAL)>/i;
   var note8 = /<\/(?:AFTER EVAL)>/i;
+  var noteShowEval1 = /<(?:CUSTOM SHOW EVAL)>/i;
+  var noteShowEval2 = /<\/(?:CUSTOM SHOW EVAL)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -635,6 +628,7 @@ DataManager.processObjectNotetags = function(group) {
     obj.customPreDamageEval = '';
     obj.customPostDamageEval = '';
     obj.customAfterEval = '';
+    obj.costShowEval = '';
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
@@ -654,6 +648,10 @@ DataManager.processObjectNotetags = function(group) {
         customMode = 'after';
       } else if (line.match(note8)) {
         customMode = 'none';
+      } else if (line.match(noteShowEval1)) {
+        customMode = 'custom show eval';
+      } else if (line.match(noteShowEval2)) {
+        customMode = 'none';
       } else if (customMode === 'before') {
         obj.customBeforeEval = obj.customBeforeEval + line + '\n';
       } else if (customMode === 'pre-damage') {
@@ -662,6 +660,8 @@ DataManager.processObjectNotetags = function(group) {
         obj.customPostDamageEval = obj.customPostDamageEval + line + '\n';
       } else if (customMode === 'after') {
         obj.customAfterEval = obj.customAfterEval + line + '\n';
+      } else if (customMode === 'custom show eval') {
+        obj.costShowEval = obj.costShowEval + line + '\n';
       }
     }
   }
@@ -732,8 +732,17 @@ Yanfly.Skill.Game_BattlerBase_mSC =
 Game_BattlerBase.prototype.meetsSkillConditions = function(skill) {
     if (!Yanfly.Skill.Game_BattlerBase_mSC.call(this, skill)) return false;
     if (!skill) return false;
-    // if (!this.noHiddenSkillConditionsMet(skill)) return false;
+    if (!this.noHiddenSkillConditionsMet(skill)) return false;
     return this.meetsSkillConditionsEval(skill);
+};
+
+Yanfly.Skill.Game_BattlerBase_mIC =
+    Game_BattlerBase.prototype.meetsItemConditions;
+Game_BattlerBase.prototype.meetsItemConditions = function(item) {
+    if (!Yanfly.Skill.Game_BattlerBase_mIC.call(this, item)) return false;
+    if (!item) return false;
+    if (!this.meetsCustomShowEval(item)) return false;
+    return true;
 };
 
 Game_BattlerBase.prototype.noHiddenSkillConditionsMet = function(skill) {
