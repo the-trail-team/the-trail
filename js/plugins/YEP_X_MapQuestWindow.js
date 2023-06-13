@@ -515,6 +515,7 @@ Game_System.prototype.getActiveQuestId = function() {
 
 Game_System.prototype.getQuestQueue = function() {
   if (this._questQueue === undefined || typeof this._questQueue != 'object') this._questQueue = [];
+  this._questQueue = this._questQueue.filter(q => !(this._questsCompleted.contains(q) || this._questsFailed.contains(q)));
   return this._questQueue;
 };
 
