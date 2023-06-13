@@ -526,8 +526,7 @@ Game_System.prototype.addToQueue = function(id) {
 };
 
 Game_System.prototype.removeFromQueue = function(id) {
-  queue = this.getQuestQueue();
-  queue.filter(q => q != id);
+  queue = this.getQuestQueue().filter(q => q != id);
   this._questQueue = queue;
 };
 
