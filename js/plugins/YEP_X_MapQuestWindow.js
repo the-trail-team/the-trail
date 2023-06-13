@@ -519,6 +519,7 @@ Game_System.prototype.getQuestQueue = function() {
 };
 
 Game_System.prototype.addToQueue = function(id) {
+  if (id == 0) return;
   queue = this.getQuestQueue();
   queue.unshift(id);
   this._questQueue = queue;
