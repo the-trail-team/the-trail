@@ -352,13 +352,13 @@ Sprite_GalvBust.prototype.loadBitmap = function() {
 	var name = $gameMessage.faceName() + "_" + (index);
 
 	if ($gameMessage.faceName() === "Actor4") {
-		if (index % 4 === 2 && $gameActors.actor(4).equips()[10]) { // Player 2
+		if (index % 4 === 2 && $gameActors.actor(2).equips()[10]) { // Player 2
 			id = $gameActors.actor(2).equips()[10].baseItemId;
 			if ($gameActors.actor(2).equips()[8]) {
 				if ($gameActors.actor(2).equips()[8].baseItemId == 199) name += "_F";
 			} else if (id === 121) name += "_C";
 		}
-		if (index % 4 === 1 && $gameActors.actor(4).equips()[10]) { // Player 3
+		if (index % 4 === 1 && $gameActors.actor(3).equips()[10]) { // Player 3
 			id = $gameActors.actor(3).equips()[10].baseItemId;
 			if (id === 122) name += "_C";
 		}
