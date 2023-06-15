@@ -334,6 +334,7 @@ Yanfly.Message.version = 1.19;
  *    \na[x]    - Writes out armour x's name.
  *    \ns[x]    - Writes out skill x's name.
  *    \nt[x]    - Writes out state x's name.
+ *    \nl[x]    - Writes out element x's name.
  *
  * - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
  *
@@ -775,6 +776,10 @@ Window_Base.prototype.convertExtraEscapeCharacters = function(text) {
     // \NT[n]
     text = text.replace(/\x1bNT\[(\d+)\]/gi, function() {
         return $dataStates[parseInt(arguments[1])].name;
+    }.bind(this));
+    // \NL[n]
+    text = text.replace(/\x1bNL\[(\d+)\]/gi, function() {
+        return $dataSystem.elements[(parseInt(arguments[1]))];
     }.bind(this));
     // \II[n]
     text = text.replace(/\x1bII\[(\d+)\]/gi, function() {
