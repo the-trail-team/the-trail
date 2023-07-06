@@ -2612,9 +2612,9 @@ Yanfly.Quest.version = 1.02;
  * @parent Title
  * @type combo
  * @option Main Quests
+ * @option Side Stories
  * @option Side Quests
  * @option Character Quests
- * @option Tutorial Quests
  * @desc What type of quest is this?
  * @default Main Quests
  *
