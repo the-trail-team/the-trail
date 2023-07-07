@@ -10423,7 +10423,63 @@
             "code": 230,
             "indent": 1,
             "parameters": [
-              120
+              30
+            ]
+          },
+          {
+            "code": 223,
+            "indent": 1,
+            "parameters": [
+              [
+                255,
+                255,
+                255,
+                0
+              ],
+              180,
+              true
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[0]._forceCollapse = true;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[1]._forceCollapse = true;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[0].performCollapse();"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[1].performCollapse();"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "SceneManager._scene._spriteset.children[0].children[2].children.find(c => c._enemy == $gameTroop._enemies[0])._appeared = true"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "SceneManager._scene._spriteset.children[0].children[2].children.find(c => c._enemy == $gameTroop._enemies[1])._appeared = true"
             ]
           },
           {
@@ -10431,6 +10487,27 @@
             "indent": 1,
             "parameters": [
               2
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 1,
+            "parameters": [
+              30
+            ]
+          },
+          {
+            "code": 223,
+            "indent": 1,
+            "parameters": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              120,
+              true
             ]
           },
           {
@@ -10504,7 +10581,63 @@
             "code": 230,
             "indent": 1,
             "parameters": [
-              120
+              30
+            ]
+          },
+          {
+            "code": 223,
+            "indent": 1,
+            "parameters": [
+              [
+                255,
+                255,
+                255,
+                0
+              ],
+              180,
+              true
+            ]
+          },
+          {
+            "code": 355,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[0]._forceCollapse = true;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[1]._forceCollapse = true;"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[0].performCollapse();"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "$gameTroop._enemies[1].performCollapse();"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "SceneManager._scene._spriteset.children[0].children[2].children.find(c => c._enemy == $gameTroop._enemies[0])._appeared = true"
+            ]
+          },
+          {
+            "code": 655,
+            "indent": 1,
+            "parameters": [
+              "SceneManager._scene._spriteset.children[0].children[2].children.find(c => c._enemy == $gameTroop._enemies[1])._appeared = true"
             ]
           },
           {
@@ -10512,6 +10645,27 @@
             "indent": 1,
             "parameters": [
               2
+            ]
+          },
+          {
+            "code": 230,
+            "indent": 1,
+            "parameters": [
+              30
+            ]
+          },
+          {
+            "code": 223,
+            "indent": 1,
+            "parameters": [
+              [
+                0,
+                0,
+                0,
+                0
+              ],
+              120,
+              true
             ]
           },
           {
