@@ -722,6 +722,13 @@ function(dx, dy, dw, rate, color1, color2) {
       this.contents.fillRect(dx, gaugeY, dw, gaugeH, color3);
     }
     this.contents.gradientFillRect(dx, gaugeY, fillW, gaugeH, color1, color2);
+
+    lb = this._battler._lightBreak;
+    if (lb > 0) {
+      lbFillW = dw * (lb / this._battler.mhp);
+      this.contents.gradientFillRect(dx + fillW - lbFillW, gaugeY, lbFillW, gaugeH, this.textColor(Yanfly.Param.VHGHpColor1), this.textColor(Yanfly.Param.VHGHpColor2));
+      console.log(lbFillW);
+    }
 };
 
 } // Imported.YEP_CoreEngine
