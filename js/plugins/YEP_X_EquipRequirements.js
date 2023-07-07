@@ -407,6 +407,7 @@ DataManager.processEqReqNotetags1 = function(group) {
 };
 
 DataManager.defaultClassRestrictions = function(obj) {
+  if (obj.name == "") return;
   if (DataManager.isWeapon(obj)) switch (obj.wtypeId) {
     case 1:  // Generic
       return;
