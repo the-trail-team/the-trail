@@ -287,6 +287,7 @@ DataManager.processVHGNotetags = function(group) {
 		obj.hpGaugeBackColor = Yanfly.Param.VHGBackColor;
 		obj.hpGaugeColor1 = Yanfly.Param.VHGHpColor1;
 		obj.hpGaugeColor2 = Yanfly.Param.VHGHpColor2;
+    obj.lightBreak = 0;
 
 		for (var i = 0; i < notedata.length; i++) {
 			var line = notedata[i];
@@ -304,7 +305,9 @@ DataManager.processVHGNotetags = function(group) {
 				obj.hpGaugeColor1 = parseInt(RegExp.$1);
 			} else if (line.match(/<(?:HP GAUGE COLOR 2):[ ](\d+)>/i)) {
 				obj.hpGaugeColor2 = parseInt(RegExp.$1);
-			}
+			} else if (line.match(/<(?:LIGHT BREAK):[ ](\d+)>/i)) {
+        obj.lightBreak = parseInt(RegExp.$1);
+      }
 		}
 	}
 };
