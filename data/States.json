@@ -4753,19 +4753,30 @@
     "id": 143,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 0,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 25,
+        "value": 1
+      },
+      {
+        "code": 61,
+        "dataId": 0,
+        "value": 1
+      }
+    ],
+    "iconIndex": 761,
     "maxTurns": 1,
     "message1": "",
-    "message2": "",
+    "message2": " is enraged!",
     "message3": "",
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
-    "overlay": 0,
-    "priority": 50,
+    "name": "Enraged",
+    "note": "<Help Description>\nYou've made a terrible mistake.\n</Help Description>",
+    "overlay": 4,
+    "priority": 70,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
