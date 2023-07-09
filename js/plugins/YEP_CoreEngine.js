@@ -2441,6 +2441,19 @@ Window_Base.prototype.drawActorLevel = function(actor, x, y) {
 
 Window_Base.prototype.drawCurrentAndMax = function(current, max, x, y,
                                                    width, color1, color2) {
+    var bp = '';
+    var bpWidth = 0;
+    var lb = '';
+    var lbWidth = 0;
+    if (this instanceof Window_VisualHPGauge) {
+      var battler = this._battler;
+      bp = battler.barrierPoints();
+      bpText = '+(' + bp + ')';
+      if (bp > 0) bpWidth = this.textWidth(Yanfly.Util.toGroup(bpText));
+      lb = battler.lightBreak();
+      lbText = '/' + lb;
+      if (lb > 0) lbWidth = this.textWidth(Yanfly.Util.toGroup(lbText));
+    }
     var labelWidth = this.textWidth('HP');
     var valueWidth = this.textWidth(Yanfly.Util.toGroup(max));
     var slashWidth = this.textWidth('/');
@@ -2449,8 +2462,12 @@ Window_Base.prototype.drawCurrentAndMax = function(current, max, x, y,
     var x3 = x2 - valueWidth;
     if (x3 >= x + labelWidth) {
         this.changeTextColor(color1);
-        this.drawText(Yanfly.Util.toGroup(current), x3, y, valueWidth,
+        this.drawText(Yanfly.Util.toGroup(current), x3 - bpWidth - lbWidth, y, valueWidth,
           'right');
+        this.changeTextColor(this.textColor(13));
+        if (bp > 0) this.drawText(bpText, x3 - bpWidth - lbWidth + valueWidth, y, bpWidth, 'right');
+        this.changeTextColor(this.textColor(6));
+        if (lb > 0) this.drawText(lbText, x3 - lbWidth + valueWidth, y, lbWidth, 'right');
         this.changeTextColor(color2);
         this.drawText('/', x2, y, slashWidth, 'right');
         this.drawText(Yanfly.Util.toGroup(max), x1, y, valueWidth, 'right');

@@ -383,6 +383,11 @@ Game_Battler.prototype.hpGaugeColor2 = function() {
 		return Yanfly.Param.VHGHpColor2;
 };
 
+Game_Battler.prototype.lightBreak = function() {
+    this._lightBreak = this._lightBreak || 0;
+    return this._lightBreak;
+};
+
 //=============================================================================
 // Game_Actor
 //=============================================================================
