@@ -5032,6 +5032,11 @@ Game_Enemy.prototype.makeActions = function() {
     this.setActionState('waiting');
 };
 
+Game_Enemy.prototype.phase = function() {
+    this._phase = this._phase || 1;
+    return this._phase;
+};
+
 //-----------------------------------------------------------------------------
 // Game_Actors
 //
