@@ -6765,8 +6765,8 @@
     0,
     0,
     0,
-    112,
-    113,
+    0,
+    0,
     0,
     0,
     0,
@@ -6805,10 +6805,10 @@
     0,
     0,
     0,
-    120,
-    121,
     0,
     0,
+    112,
+    113,
     102,
     0,
     0,
@@ -6847,8 +6847,8 @@
     0,
     0,
     0,
-    0,
-    0,
+    120,
+    121,
     91,
     0,
     0,
@@ -7185,9 +7185,9 @@
     0,
     0,
     0,
-    829,
+    0,
     830,
-    831,
+    0,
     0,
     0,
     0,
@@ -7225,9 +7225,9 @@
     0,
     0,
     0,
-    837,
+    0,
     838,
-    839,
+    0,
     0,
     0,
     0,
@@ -12038,7 +12038,7 @@
     {
       "id": 1,
       "name": "cleric",
-      "note": "<Sprite Offset X: -24> <shadow>",
+      "note": "<Sprite Offset X: -24> <Sprite Offset Y: -8> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -12971,10 +12971,6 @@
                       "indent": null
                     },
                     {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
                       "code": 4,
                       "indent": null
                     },
@@ -13004,47 +13000,6 @@
                     },
                     {
                       "code": 3,
-                      "indent": null
-                    },
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        120
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        30
-                      ],
                       "indent": null
                     },
                     {
@@ -13242,16 +13197,6 @@
               "indent": 0,
               "parameters": [
                 {
-                  "code": 3,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
                   "code": 4,
                   "indent": null
                 }
@@ -13324,6 +13269,71 @@
                 {
                   "code": 3,
                   "indent": null
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "CAM EVENT 14 1600"
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                0,
+                {
+                  "list": [
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        60
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 18,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        30
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
                 }
               ]
             },
@@ -13781,7 +13791,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to survive in this nasty, dangerous world..."
+                "to survive in this nasty, unforgiving world..."
               ]
             },
             {
@@ -13931,21 +13941,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "what they're up against, they'll never unite, and"
+                "what they're up against, they'll never unite, and without"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "without the strength of the entire Overworld..."
+                "the strength of the entire Overworld... we'll never be"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "we'll never be able to stop \\c[30]this threat\\c[0]."
+                "able to stop \\c[30]this threat\\c[0]."
               ]
             },
             {
@@ -14083,7 +14093,7 @@
           "walkAnime": true
         }
       ],
-      "x": 12,
+      "x": 13,
       "y": 4
     },
     {
@@ -14515,7 +14525,7 @@
     {
       "id": 9,
       "name": "EV009",
-      "note": "<Sprite Offset X: +24>",
+      "note": "<Sprite Offset X: +24> <Sprite Offset Y: -8> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -14572,11 +14582,306 @@
       "x": 34,
       "y": 29
     },
-    null,
-    null,
-    null,
-    null,
-    null,
+    {
+      "id": 10,
+      "name": "EV010",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 837,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 33,
+      "y": 29
+    },
+    {
+      "id": 11,
+      "name": "EV011",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 839,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 35,
+      "y": 29
+    },
+    {
+      "id": 12,
+      "name": "EV012",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 829,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 33,
+      "y": 28
+    },
+    {
+      "id": 13,
+      "name": "EV013",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 831,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 2,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": false
+        }
+      ],
+      "x": 35,
+      "y": 28
+    },
+    {
+      "id": 14,
+      "name": "CAM 14",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "characterIndex": 0,
+            "characterName": "",
+            "direction": 2,
+            "pattern": 0,
+            "tileId": 0
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 0,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 31,
+      "y": 31
+    },
     null,
     null,
     null,
