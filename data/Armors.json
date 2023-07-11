@@ -4564,17 +4564,17 @@
       {
         "code": 11,
         "dataId": 3,
-        "value": 0.6
+        "value": 0.5
       },
       {
         "code": 11,
         "dataId": 6,
-        "value": 0.8
+        "value": 0.5
       },
       {
         "code": 11,
         "dataId": 7,
-        "value": 0.8
+        "value": 0.5
       },
       {
         "code": 31,
@@ -4584,7 +4584,7 @@
     ],
     "iconIndex": 354,
     "name": "Bionomic Globe",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nForest Exploration Kit\nSnow Globe\nBat Sling\nWarmer Scarf\nEnchanted Dragon Scale: 3\nForest Core: 5\nFrozen Core: 5\nEarth Essence: 5\nPlant Essence: 5\nWind Essence: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Telluria Field Conquerer>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Magnify Ice: +20%>\n<Element Magnify Earth: +20%>\n<Element Magnify Wind: +20%>\n\n<Synthesis Ingredients>\nForest Exploration Kit\nSnow Globe\nBat Sling\nWarmer Scarf\nEnchanted Dragon Scale: 3\nForest Core: 5\nFrozen Core: 5\nEarth Essence: 5\nPlant Essence: 5\nWind Essence: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Telluria Field Conquerer>",
     "params": [
       0,
       0,
@@ -4707,18 +4707,18 @@
   },
   {
     "id": 177,
-    "atypeId": 0,
-    "description": "",
-    "etypeId": 2,
+    "atypeId": 1,
+    "description": "Advanced sand-warping technology used by ancient civilizations\nto prevent oversleeping. Provides immunity to \\it[149]\\c[0].",
+    "etypeId": 6,
     "traits": [
       {
-        "code": 22,
-        "dataId": 1,
-        "value": 0
+        "code": 14,
+        "dataId": 149,
+        "value": 2
       }
     ],
-    "iconIndex": 0,
-    "name": "",
+    "iconIndex": 280,
+    "name": "Sleepy Hourglass",
     "note": "",
     "params": [
       0,
@@ -4730,12 +4730,12 @@
       0,
       0
     ],
-    "price": 0
+    "price": 100
   },
   {
     "id": 178,
     "atypeId": 1,
-    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides\nimmunity to \\it[7], \\it[82], and \\it[125].",
+    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides\nimmunity to \\it[7], \\it[82], \\it[149], and \\it[125].",
     "etypeId": 6,
     "traits": [
       {
@@ -4750,13 +4750,18 @@
       },
       {
         "code": 14,
+        "dataId": 149,
+        "value": 2
+      },
+      {
+        "code": 14,
         "dataId": 125,
         "value": 2
       }
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nFire Resistance Potion: 3\nFiery Blood: 30\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 3\nFiery Blood: 30\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
       0,
       0,
@@ -4767,7 +4772,7 @@
       0,
       0
     ],
-    "price": 900
+    "price": 1000
   },
   {
     "id": 179,

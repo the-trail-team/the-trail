@@ -5256,6 +5256,13 @@
         "conditionParam1": 0,
         "conditionParam2": 0,
         "conditionType": 0,
+        "rating": 5,
+        "skillId": 102
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
         "rating": 1,
         "skillId": 1
       }
@@ -5303,7 +5310,7 @@
     ],
     "gold": 150,
     "name": "Poltergeist",
-    "note": "<Element: Dark>\n<Passive State: 57, 150>\n\n<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Sideview No Collapse>\n\n<Boost Skill 132: Full>\n<AI Priority>\nState !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\n</AI Priority>\n\n<Enemy Drops>\nBattle Plan: 5%\n</Enemy Drops>\n\n<Night Boost>\nEctoblood: 75% +25%\nEctoblood: 75% +25%\nEctoplasm: 10% +10%\nFaux-Gold Headband: 5% +5%\nMRG Scroll: 10%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Element: Dark>\n<Passive State: 57, 150>\n\n<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Sideview No Collapse>\n\n<Boost Skill 132: Full>\n<AI Priority>\nState !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\n</AI Priority>\n\n<Enemy Drops>\nBattle Plan: 5%\nSleepy Hourglass: 5%\n</Enemy Drops>\n\n<Night Boost>\nEctoblood: 75% +25%\nEctoblood: 75% +25%\nEctoplasm: 10% +10%\nFaux-Gold Headband: 5% +5%\nMRG Scroll: 10%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       2500,
       0,
@@ -5849,11 +5856,200 @@
     "id": 81,
     "actions": [
       {
-        "conditionParam1": 0,
-        "conditionParam2": 0,
-        "conditionType": 0,
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
         "rating": 5,
-        "skillId": 1
+        "skillId": 101
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 104
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 105
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 59
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 121
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 64
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 117
+      },
+      {
+        "conditionParam1": 0.5,
+        "conditionParam2": 1,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 0.35,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 6
+      },
+      {
+        "conditionParam1": 0.35,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 104
+      },
+      {
+        "conditionParam1": 0.35,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 105
+      },
+      {
+        "conditionParam1": 0.35,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 3,
+        "skillId": 103
+      },
+      {
+        "conditionParam1": 0.35,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 3,
+        "skillId": 119
+      },
+      {
+        "conditionParam1": 0.35,
+        "conditionParam2": 0.5,
+        "conditionType": 2,
+        "rating": 3,
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 0.2,
+        "conditionParam2": 0.35,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 6
+      },
+      {
+        "conditionParam1": 0.2,
+        "conditionParam2": 0.35,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 104
+      },
+      {
+        "conditionParam1": 0.2,
+        "conditionParam2": 0.35,
+        "conditionType": 2,
+        "rating": 5,
+        "skillId": 105
+      },
+      {
+        "conditionParam1": 0.2,
+        "conditionParam2": 0.35,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 103
+      },
+      {
+        "conditionParam1": 0.2,
+        "conditionParam2": 0.35,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 119
+      },
+      {
+        "conditionParam1": 0.2,
+        "conditionParam2": 0.35,
+        "conditionType": 2,
+        "rating": 4,
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 0.2,
+        "conditionParam2": 0.35,
+        "conditionType": 2,
+        "rating": 3,
+        "skillId": 29
+      },
+      {
+        "conditionParam1": 0.05,
+        "conditionParam2": 0.2,
+        "conditionType": 2,
+        "rating": 1,
+        "skillId": 6
+      },
+      {
+        "conditionParam1": 0.05,
+        "conditionParam2": 0.2,
+        "conditionType": 2,
+        "rating": 1,
+        "skillId": 104
+      },
+      {
+        "conditionParam1": 0.05,
+        "conditionParam2": 0.2,
+        "conditionType": 2,
+        "rating": 1,
+        "skillId": 105
+      },
+      {
+        "conditionParam1": 0.05,
+        "conditionParam2": 0.2,
+        "conditionType": 2,
+        "rating": 1,
+        "skillId": 103
+      },
+      {
+        "conditionParam1": 0.05,
+        "conditionParam2": 0.2,
+        "conditionType": 2,
+        "rating": 1,
+        "skillId": 119
+      },
+      {
+        "conditionParam1": 0.05,
+        "conditionParam2": 0.2,
+        "conditionType": 2,
+        "rating": 1,
+        "skillId": 12
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0.2,
+        "conditionType": 2,
+        "rating": 1,
+        "skillId": 29
       }
     ],
     "battlerHue": 0,
@@ -5897,6 +6093,11 @@
         "value": 0.05
       },
       {
+        "code": 23,
+        "dataId": 2,
+        "value": 3
+      },
+      {
         "code": 61,
         "dataId": 0,
         "value": 1
@@ -5904,7 +6105,7 @@
     ],
     "gold": 10000,
     "name": "Apocalypse",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 139, 141>\n<Light Break: 10>\n\n<Sideview Battler: Boss1_2>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<AI Priority>\nEval user.timesStruckElement(8) == 0: Guard\n\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nChip of Golden Armor: 100%\nTellurium Spellbook: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 139, 141>\n<Light Break: 10>\n\n<Sideview Battler: Boss1_2>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<Boost Skill 60: Full>\n<AI Priority>\nEval user.timesStruckElement(8) == 0: Guard\nState !== Magic Enhance +++ User HP% param >= 35%: Magic Enhance, User\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nSleepy Hourglass: 5%\nChip of Golden Armor: 100%\nTellurium Spellbook: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       100000,
       0,
