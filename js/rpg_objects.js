@@ -3832,6 +3832,11 @@ Game_Battler.prototype.performVictory = function() {
     }
 };
 
+Game_Battler.prototype.trueDarkness = function() {
+    this._trueDarkness = this._trueDarkness || 0;
+    return this._trueDarkness;
+};
+
 //-----------------------------------------------------------------------------
 // Game_Actor
 //

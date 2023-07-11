@@ -3681,7 +3681,7 @@
     "message2": "",
     "mpCost": 7,
     "name": "True Darkness",
-    "note": "<Boost Damage>\n\n<action copy: skill:7>",
+    "note": "<Boost Damage>\n\n<Post-Damage Eval>\ntarget._trueDarkness = target.trueDarkness() + value;\n</Post-Damage Eval>\n\n<action copy: skill:7>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
