@@ -419,11 +419,11 @@ Game_Actor.prototype.hpGaugeBackColor = function() {
 };
 
 Game_Actor.prototype.hpGaugeColor1 = function() {
-		return this.currentClass().hpGaugeColor1;
+    return this.trueDarkness() > 0 ? 15 : this.currentClass().hpGaugeColor1;
 };
 
 Game_Actor.prototype.hpGaugeColor2 = function() {
-		return this.currentClass().hpGaugeColor2;
+    return this.trueDarkness() > 0 ? 30 : this.currentClass().hpGaugeColor2;
 };
 
 //=============================================================================
