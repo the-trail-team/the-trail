@@ -6371,7 +6371,10 @@ Game_Map.prototype.canvasToMapY = function(y) {
 };
 
 Game_Map.prototype.autoplay = function() {
-    if ($gameMap._mapId == 8 && $gameSwitches.value(24)) $dataMap.bgm.name = "map_telluria";
+    if ($gameMap._mapId == 8) {
+        if ($gameSwitches.value(24))  $dataMap.bgm.name = "map_telluria";
+        if ($gameSwitches.value(109)) $dataMap.bgm.name = "map_hunting";
+    }
     if ($dataMap.autoplayBgm) {
         if ($gamePlayer.isInVehicle()) {
             $gameSystem.saveWalkingBgm2();
