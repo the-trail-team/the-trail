@@ -995,6 +995,7 @@ Window_ChoiceList.prototype.updatePlacement = function() {
     } else if (messagePosType === 2) {
       this.y = Graphics.boxHeight - this._messageWindow.height - this.height;
     }
+    this.y -= this.textPadding() * 2;
 };
 
 //=============================================================================

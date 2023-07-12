@@ -813,7 +813,7 @@ Game_Message.prototype.setChoiceBackground = function(background) {
 };
 
 Game_Message.prototype.setChoicePositionType = function(positionType) {
-    this._choicePositionType = positionType;
+    this._choicePositionType = Math.min(positionType, 1);
 };
 
 Game_Message.prototype.setNumberInput = function(variableId, maxDigits) {
