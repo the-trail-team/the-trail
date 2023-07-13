@@ -2671,7 +2671,7 @@ BattleManager.checkBattleEnd = function() {
         } else if ($gameParty.isAllDead()) {
             this.processDefeat();
             return true;
-        } else if ($gameTroop.isAllDead()) {
+        } else if ($gameTroop.isAllDead() && !$gameSwitches.value(111)) {
             this.processVictory();
             return true;
         }
