@@ -1357,7 +1357,7 @@
     ],
     "iconIndex": 375,
     "name": "Dark Orb (Tome)",
-    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nBlank Tome\nShadowspec Ingot: 4\nDark Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Single-Target Dark Spell>\n<Synthesis SE: Book2>",
+    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
