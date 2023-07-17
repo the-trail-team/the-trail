@@ -776,11 +776,11 @@
     "damage": {
       "critical": true,
       "elementId": 0,
-      "formula": "a.mat * 8",
+      "formula": "a.mat * 10",
       "type": 1,
       "variance": 5
     },
-    "description": "Deals great magic damage to all enemies. Ignores\nenemy MDF and has no element. \\c[27]\\bpdamage[800]%\\c[0] MAT rate.",
+    "description": "Deals great magic damage to all enemies. Ignores\nenemy MDF and has no element. \\c[27]\\bpdamage[1000]%\\c[0] MAT rate.",
     "effects": [],
     "hitType": 2,
     "iconIndex": 119,
@@ -2685,7 +2685,7 @@
     "damage": {
       "critical": false,
       "elementId": 0,
-      "formula": "a.mat * 20 - b.mdf * 1",
+      "formula": "a.mat * 50 - b.mdf * 2",
       "type": 1,
       "variance": 5
     },
