@@ -5446,5 +5446,89 @@
       0
     ],
     "price": 0
+  },
+  {
+    "id": 206,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of a powerful skeleton.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 437,
+    "name": "Skeletal Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 207,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[2]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of an old mage.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 171,
+    "name": "Ancient Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 208,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[3]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of a water elemental.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 453,
+    "name": "Watery Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 209,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of a Bandito leader.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 450,
+    "name": "Leader Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
   }
 ]

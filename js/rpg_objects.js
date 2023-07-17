@@ -9338,6 +9338,10 @@ Game_Event.prototype.actorCharacter = function(image) {
                 name = "Actor4";
                 index = 0;
                 break;
+            case 206: // Skeletal Outfit
+                name = "Boss1";
+                index = 0;
+                break;
             case 120: // Cavalier Outfit
                 name = "Actor4";
                 index = 4;
@@ -9352,6 +9356,10 @@ Game_Event.prototype.actorCharacter = function(image) {
                 name = "Actor4";
                 index = 1;
                 break;
+            case 207: // Ancient Outfit
+                name = "Evil1";
+                index = 3;
+                break;
             case 121: // Sorcerer Outfit
                 name = "Actor4";
                 index = 5;
@@ -9365,6 +9373,10 @@ Game_Event.prototype.actorCharacter = function(image) {
             case 87: // Cleric Outfit
                 name = "Actor4";
                 index = 2;
+                break;
+            case 208: // Watery Outfit
+                name = "Elemental";
+                index = 0;
                 break;
             case 122: // Bishop Outfit
                 name = "Actor4";
@@ -9383,6 +9395,10 @@ Game_Event.prototype.actorCharacter = function(image) {
             case 88: // Rogue Outfit
                 name = "Actor4";
                 index = 3;
+                break;
+            case 209: // Leader Outfit
+                name = "Bandito";
+                index = 0;
                 break;
             case 123: // Scapegrace Outfit
                 name = "Actor4";
