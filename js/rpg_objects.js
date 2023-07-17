@@ -200,7 +200,7 @@ Game_System.prototype.initialize = function() {
     this._moonPhase = 0;
     this._moonRespawn = false;
     this._moonRespawnList = [];
-    this._statues = {};
+    this._statues = [];
 };
 
 Game_System.prototype.isJapanese = function() {
