@@ -5153,20 +5153,20 @@
   {
     "id": 195,
     "atypeId": 1,
-    "description": "Sign your soul away... oh, never mind, this just needs a drop\nof your blood. Increases recovery item effectiveness by 25%.",
+    "description": "Sign your soul away... oh, never mind, this just needs a drop\nof your blood. Doubles the effectiveness of recovery items.",
     "etypeId": 6,
     "traits": [
       {
         "code": 23,
         "dataId": 3,
-        "value": 1.25
+        "value": 2
       }
     ],
     "iconIndex": 1318,
     "name": "Blood Pact",
     "note": "<Upgrade Slots: 2>",
     "params": [
-      20,
+      40,
       0,
       0,
       0,
@@ -5180,13 +5180,13 @@
   {
     "id": 196,
     "atypeId": 1,
-    "description": "Something about this is terrifying. You want to look at\nit, but you can't. Reduces incoming physical damage by 10%.",
+    "description": "Something about this is terrifying. You want to look at\nit, but you can't. Reduces incoming physical damage by 20%.",
     "etypeId": 6,
     "traits": [
       {
         "code": 23,
         "dataId": 6,
-        "value": 0.9
+        "value": 0.8
       }
     ],
     "iconIndex": 1319,
@@ -5196,7 +5196,7 @@
       0,
       0,
       0,
-      5,
+      10,
       0,
       0,
       0,
