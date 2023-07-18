@@ -3931,18 +3931,12 @@
   {
     "id": 152,
     "atypeId": 1,
-    "description": "You start the battle with 1 BP.",
+    "description": "BP keeps generating even on turns that you use it.",
     "etypeId": 9,
-    "traits": [
-      {
-        "code": 24,
-        "dataId": 1,
-        "value": 1
-      }
-    ],
+    "traits": [],
     "iconIndex": 125,
     "name": "Dilong's Wisdom",
-    "note": "<Cannot Rename>",
+    "note": "<Cannot Rename>\n\nHardcoded in Olivia_OctoBattle.js.",
     "params": [
       0,
       0,
@@ -5051,19 +5045,19 @@
   },
   {
     "id": 191,
-    "atypeId": 0,
-    "description": "",
-    "etypeId": 2,
+    "atypeId": 1,
+    "description": "You start the battle with 1 BP.",
+    "etypeId": 9,
     "traits": [
       {
-        "code": 22,
+        "code": 24,
         "dataId": 1,
-        "value": 0
+        "value": 1
       }
     ],
-    "iconIndex": 0,
-    "name": "",
-    "note": "",
+    "iconIndex": 126,
+    "name": "Old Dilong's Wisdom",
+    "note": "<Cannot Rename>",
     "params": [
       0,
       0,
