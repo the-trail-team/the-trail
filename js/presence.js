@@ -54,7 +54,7 @@ async function setActivity() {
     if ($dataVersion) {
         state += $dataVersion.name;
     } else {
-        state += "unknown version";
+        state += "the game";
     }
 
     RPC.setActivity({
