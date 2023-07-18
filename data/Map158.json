@@ -4784,8 +4784,8 @@
           "walkAnime": true
         }
       ],
-      "x": 2,
-      "y": 11
+      "x": 0,
+      "y": 12
     },
     {
       "id": 2,
@@ -4846,24 +4846,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Some copper ore."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Would you like to mine it?"
+                "Some copper ore. Would you like to mine it?"
               ]
             },
             {
@@ -4889,21 +4872,13 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "hide_treasure_popup"
-              ]
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 0,
-                2,
-                3,
+                0,
                 5
               ]
             },
@@ -4919,8 +4894,8 @@
               "code": 122,
               "indent": 3,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 1,
                 0,
                 1
@@ -4940,8 +4915,8 @@
               "code": 122,
               "indent": 2,
               "parameters": [
-                34,
-                34,
+                60,
+                60,
                 0,
                 0,
                 0
@@ -5000,14 +4975,109 @@
               ]
             },
             {
-              "code": 126,
+              "code": 122,
               "indent": 4,
+              "parameters": [
+                6,
+                6,
+                0,
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
               "parameters": [
                 67,
                 0,
                 0,
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                56,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                97,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
             },
             {
               "code": 230,
@@ -5075,45 +5145,6 @@
               ]
             },
             {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                35,
-                35,
-                0,
-                2,
-                1,
-                2
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You mined \\V[33] \\ii[67]\\c[0]s and \\V[35] \\ii[55]\\c[0]!"
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 2,
-              "parameters": [
-                55,
-                0,
-                1,
-                35
-              ]
-            },
-            {
               "code": 111,
               "indent": 2,
               "parameters": [
@@ -5156,66 +5187,6 @@
                 0,
                 1,
                 34
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                6,
-                6,
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                6,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "And you got a \\ii[56]\\c[0]..."
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 3,
-              "parameters": [
-                56,
-                0,
-                0,
-                1
               ]
             },
             {
@@ -5381,7 +5352,7 @@
         }
       ],
       "x": 2,
-      "y": 2
+      "y": 8
     },
     {
       "id": 3,
@@ -5441,7 +5412,7 @@
         }
       ],
       "x": 2,
-      "y": 3
+      "y": 9
     },
     {
       "id": 4,
@@ -5502,24 +5473,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Some iron ore."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Would you like to mine it?"
+                "Some iron ore. Would you like to mine it?"
               ]
             },
             {
@@ -5545,22 +5499,14 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "hide_treasure_popup"
-              ]
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 0,
-                2,
-                2,
-                4
+                0,
+                5
               ]
             },
             {
@@ -5575,8 +5521,8 @@
               "code": 122,
               "indent": 3,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 1,
                 0,
                 1
@@ -5596,8 +5542,8 @@
               "code": 122,
               "indent": 2,
               "parameters": [
-                34,
-                34,
+                60,
+                60,
                 0,
                 0,
                 0
@@ -5656,14 +5602,140 @@
               ]
             },
             {
-              "code": 126,
+              "code": 122,
               "indent": 4,
+              "parameters": [
+                6,
+                6,
+                0,
+                2,
+                0,
+                3
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
               "parameters": [
                 64,
                 0,
                 0,
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                56,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                97,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                3,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                55,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
             },
             {
               "code": 230,
@@ -5731,93 +5803,6 @@
               ]
             },
             {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                35,
-                35,
-                0,
-                2,
-                1,
-                2
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                33,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You mined \\V[33] \\ii[64]\\c[0] and \\V[35] \\ii[55]\\c[0]!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You mined \\V[33] \\ii[64]\\c[0]s and \\V[35] \\ii[55]\\c[0]!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 126,
-              "indent": 2,
-              "parameters": [
-                55,
-                0,
-                1,
-                35
-              ]
-            },
-            {
               "code": 111,
               "indent": 2,
               "parameters": [
@@ -5860,66 +5845,6 @@
                 0,
                 1,
                 34
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                6,
-                6,
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                6,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "And you got a \\ii[56]\\c[0]..."
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 3,
-              "parameters": [
-                56,
-                0,
-                0,
-                1
               ]
             },
             {
@@ -6085,7 +6010,7 @@
         }
       ],
       "x": 3,
-      "y": 2
+      "y": 8
     },
     {
       "id": 5,
@@ -6145,7 +6070,7 @@
         }
       ],
       "x": 3,
-      "y": 3
+      "y": 9
     },
     {
       "id": 6,
@@ -9351,21 +9276,13 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "hide_treasure_popup"
-              ]
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 0,
-                2,
-                3,
+                0,
                 5
               ]
             },
@@ -9381,8 +9298,8 @@
               "code": 122,
               "indent": 3,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 1,
                 0,
                 1
@@ -9402,8 +9319,8 @@
               "code": 122,
               "indent": 2,
               "parameters": [
-                34,
-                34,
+                60,
+                60,
                 0,
                 0,
                 0
@@ -9462,14 +9379,109 @@
               ]
             },
             {
-              "code": 126,
+              "code": 122,
               "indent": 4,
+              "parameters": [
+                6,
+                6,
+                0,
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
               "parameters": [
                 67,
                 0,
                 0,
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                56,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                97,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
             },
             {
               "code": 230,
@@ -9569,45 +9581,6 @@
               ]
             },
             {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                35,
-                35,
-                0,
-                2,
-                1,
-                2
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You mined \\V[33] \\ii[67]\\c[0]s and \\V[35] \\ii[55]\\c[0]!"
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 2,
-              "parameters": [
-                55,
-                0,
-                1,
-                35
-              ]
-            },
-            {
               "code": 111,
               "indent": 2,
               "parameters": [
@@ -9650,66 +9623,6 @@
                 0,
                 1,
                 34
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                6,
-                6,
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                6,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "And you got a \\ii[56]\\c[0]..."
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 3,
-              "parameters": [
-                56,
-                0,
-                0,
-                1
               ]
             },
             {
@@ -9881,8 +9794,8 @@
           "walkAnime": false
         }
       ],
-      "x": 17,
-      "y": 2
+      "x": 2,
+      "y": 10
     },
     {
       "id": 34,
@@ -9941,8 +9854,8 @@
           "walkAnime": false
         }
       ],
-      "x": 17,
-      "y": 3
+      "x": 2,
+      "y": 11
     },
     {
       "id": 35,
@@ -10046,22 +9959,14 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "hide_treasure_popup"
-              ]
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 0,
-                2,
-                2,
-                4
+                0,
+                5
               ]
             },
             {
@@ -10076,8 +9981,8 @@
               "code": 122,
               "indent": 3,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 1,
                 0,
                 1
@@ -10097,8 +10002,8 @@
               "code": 122,
               "indent": 2,
               "parameters": [
-                34,
-                34,
+                60,
+                60,
                 0,
                 0,
                 0
@@ -10157,14 +10062,140 @@
               ]
             },
             {
-              "code": 126,
+              "code": 122,
               "indent": 4,
+              "parameters": [
+                6,
+                6,
+                0,
+                2,
+                0,
+                3
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
               "parameters": [
                 64,
                 0,
                 0,
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                56,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                97,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                3,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                55,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
             },
             {
               "code": 230,
@@ -10264,93 +10295,6 @@
               ]
             },
             {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                35,
-                35,
-                0,
-                2,
-                1,
-                2
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                33,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You mined \\V[33] \\ii[64]\\c[0] and \\V[35] \\ii[55]\\c[0]!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 411,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "You mined \\V[33] \\ii[64]\\c[0]s and \\V[35] \\ii[55]\\c[0]!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 126,
-              "indent": 2,
-              "parameters": [
-                55,
-                0,
-                1,
-                35
-              ]
-            },
-            {
               "code": 111,
               "indent": 2,
               "parameters": [
@@ -10393,66 +10337,6 @@
                 0,
                 1,
                 34
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                6,
-                6,
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                6,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "And you got a \\ii[56]\\c[0]..."
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 3,
-              "parameters": [
-                56,
-                0,
-                0,
-                1
               ]
             },
             {
@@ -10624,8 +10508,8 @@
           "walkAnime": false
         }
       ],
-      "x": 18,
-      "y": 2
+      "x": 3,
+      "y": 10
     },
     {
       "id": 36,
@@ -10684,8 +10568,8 @@
           "walkAnime": false
         }
       ],
-      "x": 18,
-      "y": 3
+      "x": 3,
+      "y": 11
     },
     {
       "id": 37,
@@ -14048,24 +13932,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "Some tellurium ore."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Would you like to mine it?"
+                "Some tellurium ore. Would you like to mine it?"
               ]
             },
             {
@@ -14091,22 +13958,14 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "hide_treasure_popup"
-              ]
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 0,
-                2,
-                2,
-                3
+                0,
+                5
               ]
             },
             {
@@ -14121,8 +13980,8 @@
               "code": 122,
               "indent": 3,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 1,
                 0,
                 1
@@ -14142,8 +14001,8 @@
               "code": 122,
               "indent": 2,
               "parameters": [
-                34,
-                34,
+                60,
+                60,
                 0,
                 0,
                 0
@@ -14202,14 +14061,109 @@
               ]
             },
             {
-              "code": 126,
+              "code": 122,
               "indent": 4,
+              "parameters": [
+                6,
+                6,
+                0,
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
               "parameters": [
                 175,
                 0,
                 0,
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                56,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                97,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
             },
             {
               "code": 230,
@@ -14277,23 +14231,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You mined \\V[33] \\ii[175]\\c[0]!"
-              ]
-            },
-            {
               "code": 111,
               "indent": 2,
               "parameters": [
@@ -14336,66 +14273,6 @@
                 0,
                 1,
                 34
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                6,
-                6,
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                6,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "And you got a \\ii[56]\\c[0]..."
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 3,
-              "parameters": [
-                56,
-                0,
-                0,
-                1
               ]
             },
             {
@@ -14567,8 +14444,8 @@
           "walkAnime": false
         }
       ],
-      "x": 29,
-      "y": 2
+      "x": 4,
+      "y": 8
     },
     {
       "id": 58,
@@ -14627,8 +14504,8 @@
           "walkAnime": true
         }
       ],
-      "x": 29,
-      "y": 3
+      "x": 4,
+      "y": 9
     },
     {
       "id": 59,
@@ -14732,22 +14609,14 @@
               ]
             },
             {
-              "code": 356,
-              "indent": 2,
-              "parameters": [
-                "hide_treasure_popup"
-              ]
-            },
-            {
               "code": 122,
               "indent": 2,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 0,
-                2,
-                2,
-                3
+                0,
+                5
               ]
             },
             {
@@ -14762,8 +14631,8 @@
               "code": 122,
               "indent": 3,
               "parameters": [
-                33,
-                33,
+                59,
+                59,
                 1,
                 0,
                 1
@@ -14783,8 +14652,8 @@
               "code": 122,
               "indent": 2,
               "parameters": [
-                34,
-                34,
+                60,
+                60,
                 0,
                 0,
                 0
@@ -14843,14 +14712,109 @@
               ]
             },
             {
-              "code": 126,
+              "code": 122,
               "indent": 4,
+              "parameters": [
+                6,
+                6,
+                0,
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
               "parameters": [
                 175,
                 0,
                 0,
                 1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                1,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                56,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                1,
+                6,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 5,
+              "parameters": [
+                97,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
             },
             {
               "code": 230,
@@ -14950,23 +14914,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "You mined \\V[33] \\ii[175]\\c[0]!"
-              ]
-            },
-            {
               "code": 111,
               "indent": 2,
               "parameters": [
@@ -15022,70 +14969,17 @@
               "parameters": []
             },
             {
-              "code": 122,
-              "indent": 2,
-              "parameters": [
-                6,
-                6,
-                0,
-                2,
-                1,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                1,
-                6,
-                0,
-                1,
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 3,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 3,
-              "parameters": [
-                "And you got a \\ii[56]\\c[0]..."
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 3,
-              "parameters": [
-                56,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
               "code": 117,
               "indent": 2,
               "parameters": [
                 73
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 2,
+              "parameters": [
+                "Quest 38 Complete Objective 1"
               ]
             },
             {
@@ -15240,8 +15134,8 @@
           "walkAnime": false
         }
       ],
-      "x": 30,
-      "y": 2
+      "x": 4,
+      "y": 10
     },
     {
       "id": 60,
@@ -15300,8 +15194,8 @@
           "walkAnime": false
         }
       ],
-      "x": 30,
-      "y": 3
+      "x": 4,
+      "y": 11
     },
     {
       "id": 61,
