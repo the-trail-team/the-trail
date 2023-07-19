@@ -5696,7 +5696,14 @@ Game_Party.prototype.bloodlustOwned = function() {
     return false;
 };
 
-// Pickaxe tests
+// Pickaxes
+
+Game_Party.prototype.maxPickaxeHits = function() {
+    if (this.gildedPickaxe()) return 8;
+    if (this.fortunatePickaxe()) return 7;
+    if (this.fertilizingPickaxe()) return 6;
+    return 5;
+};
 
 Game_Party.prototype.gildedPickaxe = function() {
     if (this.hasItem($dataItems[210])) return true;
