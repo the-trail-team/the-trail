@@ -103,7 +103,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
         case 'CASTLE FOOD':
         case 'FOOD':
             arr = [
-                [71, 72, 70, 98, 111, 223, 221, 136].concat(Game_Temp.unlockFoodRecipes()).concat([117, 196, 197, 134, 131]),
+                [71, 72, 70, 98, 111, 223, 221, 136, 131, 134].concat(Game_Temp.unlockFoodRecipes()).concat([117, 196, 197]),
                 [],
                 []
             ]
