@@ -92,13 +92,6 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                 [78, 48, 47, 46, 44, 113, 96, 45]
             ]
             break;
-        case 'DALIA':
-            arr = [
-                [71, 98, 117],
-                [],
-                []
-            ]
-            break;
         case 'CASTLE FORGE':
             arr = [
                 [68, 74, 213, 176, 92, 214, 240, 241, 242, 93, 50, 154, 207, 123, 124, 125],
@@ -106,7 +99,9 @@ Game_Temp.prototype.recipeTemplate = function(name) {
                 [78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 44, 113, 96, 115, 149, 148, 45, 172, 159, 134, 143, 170, 181, 185, 189, 190, 178, 199, 161, 162, 171, 124]
             ]
             break;
+        case 'DALIA':
         case 'CASTLE FOOD':
+        case 'FOOD':
             arr = [
                 [71, 72, 70, 98, 111, 223, 221, 136].concat(Game_Temp.unlockFoodRecipes()).concat([117, 196, 197, 134, 131]),
                 [],
