@@ -710,7 +710,7 @@ StorageManager.renameTemp = function() {
     const fs = require('fs');
     if (fs.existsSync($gameTemp._filePath)) window.setTimeout(StorageManager.renameTemp, 100);
     else {
-        fs.rename($gameTemp._tempPath, $gameTemp._filePath);
+        fs.rename($gameTemp._tempPath, $gameTemp._filePath, (err) => err && console.error(err));
         $gameTemp._tempPath = $gameTemp._filePath = undefined;
     }
 };
