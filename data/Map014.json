@@ -2139,21 +2139,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeAh! Hello \\N[1]! Welcome back! Now,"
+                "\\joeHey \\N[1]! Say, the shop is closed"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "did your brother's silverware order"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "make it to your house?"
+                "right now... you have something urgent?"
               ]
             },
             {
@@ -2161,169 +2154,8 @@
               "indent": 0,
               "parameters": [
                 [
-                  "Yes.",
-                  "No.",
-                  "...the what?"
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yes."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeThat's good! I mean, your house is just"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "a building over, but it's good to know"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "that it arrived safely."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "No."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeHuh. That's strange. I'll have to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "check on that later."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                2,
-                "...the what?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\joeOh, if you don't know about it,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "then nevermind."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\joeNow... the shop is closed"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "right now, why are you here?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "You see..."
+                  "You see...",
+                  "No"
                 ],
                 -1,
                 0,
@@ -2337,6 +2169,19 @@
               "parameters": [
                 0,
                 "You see..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "No"
               ]
             },
             {
@@ -2401,8 +2246,13 @@
               "parameters": []
             },
             {
-              "code": 101,
+              "code": 112,
               "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "People1",
                 4,
@@ -2412,15 +2262,10 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\joeI'll get the \\ii[6] right away."
               ]
-            },
-            {
-              "code": 112,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 302,
@@ -2457,37 +2302,6 @@
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "People1",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\joeWhy didn't you get the package? Come"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "on, you can't just run off with the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "Village Headman's bits!"
-              ]
-            },
-            {
               "code": 0,
               "indent": 2,
               "parameters": []
@@ -2521,21 +2335,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\joeThere you go! You can come back to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the shop later, once I've gotten"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "everything set up. See you later!"
+                "\\joeHere you go! Feel free to return later!"
               ]
             },
             {
