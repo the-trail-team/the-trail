@@ -79,4 +79,4 @@ RPC.on('ready', async () => {
 
 RPC.login({
     clientId: clientId
-}).catch(err => console.error(error));
+}).catch(err => console.error(err));
