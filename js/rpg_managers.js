@@ -798,9 +798,7 @@ StorageManager.removeWebStorage = function(savefileId) {
 
 StorageManager.localFileDirectoryPath = function() {
     var path = require('path');
-
-    var base = path.dirname(process.mainModule.filename);
-    return path.join(base, 'save/');
+    return path.join(process.env.APPDATA, '.thetrail/');
 };
 
 StorageManager.localFilePath = function(savefileId) {
