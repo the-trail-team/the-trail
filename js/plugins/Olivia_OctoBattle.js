@@ -3301,7 +3301,7 @@ if (Olivia[_0x252a("0xa4")][_0x252a("0x4c")].Enabled) {
   };
   Game_Battler[_0x252a("0xad")][_0x252a("0x2f")] = function () {
     var dilongsWisdom = false;
-    if (this.isActor()) if (this.hasEquip(152)) dilongsWisdom = true;
+    if (this.isActor()) if (this.isEquipped($dataArmors[152])) dilongsWisdom = true;
     if (Olivia[_0x252a("0xa4")][_0x252a("0x4c")][_0x252a("0x53")] || this[_0x252a("0x36")] <= 0 || dilongsWisdom) {
       this.gainStoredBP(this.bpRegenValue());
     }
