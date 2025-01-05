@@ -10,7 +10,7 @@ move "%CD%"\package-lock.json ..
 move "%CD%"\thetrail.exe ..
 
 rmdir /s /q .vscode
-rmdir /s /q nwjs-v0.82.0-win-x64
+rmdir /s /q nwjs-v0.94.0-win-x64
 rmdir /s /q save
 rmdir /s /q SCREENSHOTS
 
