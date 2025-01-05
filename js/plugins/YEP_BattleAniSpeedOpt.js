@@ -270,10 +270,10 @@ Yanfly.BASO.Sprite_Animation_setupRate = Sprite_Animation.prototype.setupRate;
 Sprite_Animation.prototype.setupRate = function() {
   if ($gameParty.inBattle()) {
     this._rate = ConfigManager.battleAniSpeed;
-    if (this._animation.id > 200) this._rate /= 2;
+    if (this._animation.id > 200) this._rate = Math.ceil(this._rate / 2);
   } else {
     Yanfly.BASO.Sprite_Animation_setupRate.call(this);
-    if (this._animation.id > 200) this._rate = 2;
+    if (this._animation.id > 200) this._rate = Math.ceil(this._rate / 2);
   }
 };
 
