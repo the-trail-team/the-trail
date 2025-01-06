@@ -1890,9 +1890,9 @@ Scene_Synthesis.prototype.doBuy = function(number) {
       $gameParty.loseItem(ingredient, quantity, false);
     }
     }
-    number *= item.craftAmount;
-    $gameParty.gainItem(item, number);
-    $gameSystem.addSynth(item);
+    number *= this._item.craftAmount;
+    $gameParty.gainItem(this._item, number);
+    $gameSystem.addSynth(this._item);
 };
 
 Scene_Synthesis.prototype.customSynthEffect = function(number) {
