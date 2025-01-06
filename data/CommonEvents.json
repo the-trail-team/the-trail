@@ -6141,6 +6141,13 @@
         "code": 655,
         "indent": 1,
         "parameters": [
+          "if ($gameSwitches.value(23) && !$gameSwitches.value(24)) value = 0; // Laeryidyean respawns everything"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
           "this.setSelfVariableValue(mapId, eventId, varId, value);"
         ]
       },
