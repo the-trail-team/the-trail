@@ -155,14 +155,14 @@ BattleManager.prepareVictoryPreLevel = function() {
       if (!actor) continue;
       actor._preVictoryLv = actor._level;
       actor._preVictoryParams = [];
-      actor._preVictoryParams.push(actor.mhp);
-      actor._preVictoryParams.push(actor.mmp);
-      actor._preVictoryParams.push(actor.atk);
-      actor._preVictoryParams.push(actor.def);
-      actor._preVictoryParams.push(actor.mat);
-      actor._preVictoryParams.push(actor.mdf);
-      actor._preVictoryParams.push(actor.agi);
-      actor._preVictoryParams.push(actor.luk);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[0][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[1][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[2][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[3][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[4][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[5][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[6][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[7][actor._preVictoryLv]);
     }
 };
 
@@ -174,14 +174,14 @@ BattleManager.prepareVictoryPostLevel = function() {
       if (actor._preVictoryLv === actor._level) continue;
       this._leveledActors.push(actor);
       actor._postVictoryParams = [];
-      actor._postVictoryParams.push(actor.mhp);
-      actor._postVictoryParams.push(actor.mmp);
-      actor._postVictoryParams.push(actor.atk);
-      actor._postVictoryParams.push(actor.def);
-      actor._postVictoryParams.push(actor.mat);
-      actor._postVictoryParams.push(actor.mdf);
-      actor._postVictoryParams.push(actor.agi);
-      actor._postVictoryParams.push(actor.luk);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[0][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[1][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[2][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[3][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[4][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[5][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[6][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[7][actor._level]);
     }
 };
 
