@@ -4559,7 +4559,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "???",
-    "note": "<Custom React Effect>\nb._lightBreak = b._lightBreak || 0;\nif (this.getItemElements().contains(8)) {\n  if (b._lightBreak == 0) b.startAnimation(56);\n  b._lightBreak += value * (b.enemy().lightBreak - 1);\n} else {\n  value = Math.min(value, b._lightBreak);\n  b._lightBreak -= value;\n}\n</Custom React Effect>\n\n<Help Description>\n???\n</Help Description>",
+    "note": "<Custom React Effect>\nb._lightBreak = b._lightBreak || 0;\nif (this.getItemElements().contains(8)) {\n  if (b._lightBreak == 0) b.startAnimation(56);\n  b._lightBreak += value * (b.enemy().lightBreak - 1);\n} else {\n  value = Math.min(value, b._lightBreak);\n  b._lightBreak -= value;\n}\n</Custom React Effect>\n\n<Help Description>\nThe \\nl[8]...\n</Help Description>",
     "overlay": 0,
     "priority": 70,
     "removeAtBattleEnd": false,
