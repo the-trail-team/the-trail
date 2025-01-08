@@ -1199,11 +1199,12 @@ Window_SynthesisList.prototype.drawItemName = function(item, x, y, width) {
     var text = item.name;
     if (eval(Yanfly.Param.ISMaskUnknown)) {
       this.contents.fontItalic = Yanfly.Param.ISMaskItalic;
-      if (item.maskName !== '') {
+      text = item.name;
+      /*if (item.maskName !== '') {
         text = item.maskName;
       } else {
         text = Yanfly.Util.maskString(text, Yanfly.Param.ISMaskText);
-      }
+      }*/
     }
     this.drawText(text, x + iconBoxWidth, y, width - iconBoxWidth);
     this.contents.fontItalic = false;
