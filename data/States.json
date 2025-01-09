@@ -2342,7 +2342,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Lost Soul Cloak",
-    "note": "<Custom Passive Condition>\ncondition = !user._uncloaked;\n</Custom Passive Condition>\n\n<Custom React Effect>\nif (target.hp - value < target.mhp / 2) {\n  value = target.hp - target.mhp / 2;\n}\n</Custom React Effect>\n\n<Custom Deselect Effect>\nif (target.hp <= target.mhp / 2) {\n  target.startAnimation(60);\n  target._svBattlerName = \"NoMatchingSprite/Uncloaked Soul\";\n  target._svAttackAnimationId = 133;\n  target._uncloaked = true;\n  target.overrideArmorWeaknesses = [];\n}\n</Custom Deselect Effect>",
+    "note": "<Custom Passive Condition>\ncondition = !user._uncloaked;\n</Custom Passive Condition>\n\n<Custom React Effect>\nhealth = target.hp + target.barrierPoints();\nif (health - value < target.mhp / 2 && this.isPhysical()) {\n  value = health - target.mhp / 2;\n}\n</Custom React Effect>\n\n<Custom Deselect Effect>\nif (target.hp <= target.mhp / 2) {\n  target.startAnimation(60);\n  target._svBattlerName = \"NoMatchingSprite/Uncloaked Soul\";\n  target._svAttackAnimationId = 133;\n  target._uncloaked = true;\n  target.overrideArmorWeaknesses = [];\n}\n</Custom Deselect Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
