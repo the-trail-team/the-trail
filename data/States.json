@@ -6967,6 +6967,36 @@
         "code": 11,
         "dataId": 8,
         "value": 0.99
+      }
+    ],
+    "iconIndex": 0,
+    "maxTurns": 1,
+    "message1": "",
+    "message2": "",
+    "message3": "",
+    "message4": "",
+    "minTurns": 1,
+    "motion": 0,
+    "name": "Statue - Great Pyramid",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<MDF Plus: +2>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(124);\n</Custom Passive Condition>\n\n<Statue Icon: 117>\n<Statue Buff: +2 MDF>",
+    "overlay": 0,
+    "priority": 0,
+    "removeAtBattleEnd": false,
+    "removeByDamage": false,
+    "removeByRestriction": false,
+    "removeByWalking": false,
+    "restriction": 0,
+    "stepsToRemove": 100
+  },
+  {
+    "id": 208,
+    "autoRemovalTiming": 0,
+    "chanceByDamage": 100,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 0.99
       },
       {
         "code": 64,
@@ -6994,7 +7024,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 208,
+    "id": 209,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -7024,7 +7054,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 209,
+    "id": 210,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -7054,7 +7084,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 210,
+    "id": 211,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -7084,7 +7114,7 @@
     "stepsToRemove": 100
   },
   {
-    "id": 211,
+    "id": 212,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
@@ -7109,36 +7139,6 @@
     "motion": 0,
     "name": "Statue - True Castle",
     "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(88);\n</Custom Passive Condition>\n\n<Statue Icon: 96>\n<Statue Buff: -2% Incoming Fire>",
-    "overlay": 0,
-    "priority": 0,
-    "removeAtBattleEnd": false,
-    "removeByDamage": false,
-    "removeByRestriction": false,
-    "removeByWalking": false,
-    "restriction": 0,
-    "stepsToRemove": 100
-  },
-  {
-    "id": 212,
-    "autoRemovalTiming": 0,
-    "chanceByDamage": 100,
-    "traits": [
-      {
-        "code": 11,
-        "dataId": 8,
-        "value": 0.99
-      }
-    ],
-    "iconIndex": 0,
-    "maxTurns": 1,
-    "message1": "",
-    "message2": "",
-    "message3": "",
-    "message4": "",
-    "minTurns": 1,
-    "motion": 0,
-    "name": "Statue - ?",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(0);\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,

@@ -615,7 +615,7 @@ Game_System.prototype.setRecallAllowed = function(allow) {
 // Statues
 
 Game_System.prototype.totalStatues = function() {
-    return 11;
+    return 12;
 };
 
 Game_System.prototype.statue = function(mapId) {
