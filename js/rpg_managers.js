@@ -472,6 +472,7 @@ DataManager.saveFileIcon = function(savefileId) {
     else icon = Yanfly.Param.SaveIconSaved;
 
     icons = $gameVariables.value(77);
+    icons = icons == 0 ? [] : icons; // If the value is 0, make it an array
     icons[savefileId] = icon;
     $gameVariables.setValue(77, icons);
 };
