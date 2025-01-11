@@ -1463,7 +1463,7 @@ Game_Action.prototype.applyMinimumDamage = function(value, baseDamage, target) {
 };
 
 Game_Action.prototype.applyMaximumDamage = function(value, baseDamage, target, critical) {
-    if (target.hpRate() == 1 && value >= target.hp && critical && target.isActor()) {
+    if (target.hpRate() == 1 && value >= target.hp && value <= target.hp * 1.5 && critical && target.isActor()) {
       value = target.hp - 1;
     };
     return value;
