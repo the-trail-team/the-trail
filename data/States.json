@@ -5023,13 +5023,7 @@
     "id": 149,
     "autoRemovalTiming": 2,
     "chanceByDamage": 50,
-    "traits": [
-      {
-        "code": 22,
-        "dataId": 7,
-        "value": -0.2
-      }
-    ],
+    "traits": [],
     "iconIndex": 817,
     "maxTurns": 3,
     "message1": " fell asleep!",
@@ -5039,7 +5033,7 @@
     "minTurns": 3,
     "motion": 2,
     "name": "Nightmare",
-    "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<Help Description>\nCannot do anything. Decreases HRG by 20%. 50% chance to wake up when receiving any damage.\n</Help Description>",
+    "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<DoT Formula: b.mhp * 0.2>\n<DoT Animation: 268>\n\n<Help Description>\nCannot do anything. Deals 20% of MHP per turn. 50% chance to wake up when receiving any damage.\n</Help Description>",
     "overlay": 9,
     "priority": 80,
     "removeAtBattleEnd": true,
