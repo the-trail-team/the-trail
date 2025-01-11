@@ -1291,15 +1291,7 @@ Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width,
 
       var iconBoxWidth = Window_Base._iconWidth + 4;
       this.drawIcon(item.iconIndex, x + 2, y + 2);
-      if (item.groupType == 0) hasSynthed = $gameSystem.synthedItems().contains(item.id);
-      if (item.groupType == 1) hasSynthed = $gameSystem.synthedWeapons().contains(item.id);
-      if (item.groupType == 2) hasSynthed = $gameSystem.synthedArmors().contains(item.id);
-      if (item.maskName == "" || hasSynthed) {
-        text = item.name;
-      } else {
-        this.contents.fontItalic = true;
-        text = item.maskName;
-      }
+      text = item.name;
       this.drawText(text, x + iconBoxWidth, y, width - iconBoxWidth);
       this.contents.fontItalic = false;
       this.resetTextColor();
