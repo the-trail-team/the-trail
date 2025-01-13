@@ -560,7 +560,7 @@ Game_ActionResult.prototype.hasElements = function() {
 }
 
 Game_ActionResult.prototype.rateText = function() {
-    return "(" + this.rate * 100 + "%)";
+    return "(" + Math.round(this.rate * 100) + "%)";
 };
 
 //=============================================================================
