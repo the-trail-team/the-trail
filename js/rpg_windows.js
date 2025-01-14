@@ -3433,7 +3433,8 @@ Window_ShopStatus.prototype.currentEquippedItem = function(actor, etypeId) {
             list.push(equips[i]);
         }
     }
-    var paramId = this.paramId();
+    return list;
+    /*var paramId = this.paramId();
     var worstParam = Number.MAX_VALUE;
     var worstItem = null;
     for (var j = 0; j < list.length; j++) {
@@ -3442,7 +3443,7 @@ Window_ShopStatus.prototype.currentEquippedItem = function(actor, etypeId) {
             worstItem = list[j];
         }
     }
-    return worstItem;
+    return worstItem;*/
 };
 
 Window_ShopStatus.prototype.update = function() {

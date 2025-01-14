@@ -700,7 +700,7 @@ Window_ShopStatus.prototype.drawActorData = function() {
     var actor = this.getActor();
     if (!actor) return;
     this.drawActorDisplayed(actor);
-    this.drawDarkRectEntries();
+    this.drawDarkRectEntries(actor);
     this.drawActorStatInfo(actor);
 };
 
@@ -721,8 +721,8 @@ Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
     this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
 };
 
-Window_ShopStatus.prototype.drawDarkRectEntries = function() {
-    for (var i = 0; i < 8; ++i) {
+Window_ShopStatus.prototype.drawDarkRectEntries = function(actor) {
+    for (var i = 0; i < 8 * this.currentEquippedItem(actor, this._item.etypeId).length; ++i) {
       var rect = this.getRectPosition(i);
       this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
     }
@@ -746,26 +746,30 @@ Window_ShopStatus.prototype.drawDarkRect = function(dx, dy, dw, dh) {
 
 Window_ShopStatus.prototype.drawActorStatInfo = function(actor) {
     this.contents.fontSize = Yanfly.Param.ShopStatFontSize;
-    var item1 = this.currentEquippedItem(actor, this._item.etypeId);
+    var items = this.currentEquippedItem(actor, this._item.etypeId);
     var canEquip = actor.canEquip(this._item);
     canEquip = actor.checkEquipRequirements(this._item);
-    for (var i = 0; i < 8; ++i) {
-      this.changePaintOpacity(true);
-      var rect = this.getRectPosition(i);
-      rect.x += this.textPadding();
-      rect.width -= this.textPadding() * 2;
-      this.changeTextColor(this.systemColor());
-      if (i == 0) {
-        var icon = item1.iconIndex;
-        this.drawIcon(icon, rect.x + (rect.width - Window_Base._iconWidth) / 2, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2)
-      } else {
-        var text = TextManager.param(i - 1);
-        this.drawText(text, rect.x, rect.y, rect.width);
-        if (!canEquip) this.drawActorCantEquip(actor, rect);
-        if (canEquip) this.drawActorChange(actor, rect, item1, i - 1);
+    for (index = 0; index < items.length; index++) {
+      item = items[index];
+      for (var i = 0; i < 8; ++i) {
+        this.changePaintOpacity(true);
+        var rect = this.getRectPosition(i);
+        rect.x += this.textPadding();
+        rect.y += index * this.lineHeight() * 2;
+        rect.width -= this.textPadding() * 2;
+        this.changeTextColor(this.systemColor());
+        if (i == 0) {
+          var icon = item.iconIndex;
+          this.drawIcon(icon, rect.x + (rect.width - Window_Base._iconWidth) / 2, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2)
+        } else {
+          var text = TextManager.param(i - 1);
+          this.drawText(text, rect.x, rect.y, rect.width);
+          if (!canEquip) this.drawActorCantEquip(actor, rect);
+          if (canEquip) this.drawActorChange(actor, rect, item, i - 1);
+        }
       }
+      this.changePaintOpacity(true);
     }
-    this.changePaintOpacity(true);
 };
 
 Window_ShopStatus.prototype.drawActorCantEquip = function(actor, rect) {
