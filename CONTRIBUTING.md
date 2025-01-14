@@ -12,21 +12,16 @@ If you use either MacOS or Linux, you might be on your own.
 
 ### Enabling hidden folders
 - [Windows](https://support.microsoft.com/en-us/windows/view-hidden-files-and-folders-in-windows-97fbc472-c603-9d90-91d0-1166d1d9f4b5)
+- Mac: Cmd + Shift + .
 
 ### Setting up the hook
-In the root of the cloned repository, navigate to `.git/hooks`. If it doesn't already exist, create a file titled `pre-commit` (note that there is no file extension). After creating the file, open it via a text editor and paste in the hook below.
+1. In the root of the cloned repository, navigate to `.git/hooks`.
+2. If it doesn't already exist, create a file titled `pre-commit` (note that there is no file extension).
+3. After creating `pre-commit`, open it via a text editor and paste in the hook below.
 
 ### Using the hook
-Before beginning to stage files for a commit, run `git commit` inside the terminal to activate the hook.
-This hook calls a file in the `scripts` folder titled `pre-commit.js`. This file:
-
-* Sets `System.json`'s versionId and editMapId to constant values
-* Sets all scrollX and scrollY values in `MapInfos.json` to 0
-* Sets certain values in `Armors.json` that allow state resistance accessories to work as intended
-* Removes unnecessary data from `Enemies.json`
-* "Prettifies" all .json files (except for `Animations.json` due to its sheer size)
-
-After the hook runs, stage files and complete your commit.
+1. Before beginning to stage files for a commit, run `git commit` inside the terminal to activate the hook.
+2. After the hook runs, stage files and complete your commit.
 
 ### Hook configuration
 All configurations are edited within the `scripts/config.json` file.
