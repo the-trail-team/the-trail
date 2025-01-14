@@ -34464,6 +34464,159 @@
           "walkAnime": true,
           "list": [
             {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 2082>"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                69,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                61,
+                61,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Cow1",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  300
+                ]
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  240
+                ]
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  210
+                ]
+              },
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true,
+          "list": [
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -34513,6 +34666,162 @@
             "variableId": 1,
             "variableValid": false,
             "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Cow2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  450
+                ]
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  300
+                ]
+              },
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true,
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 2082>"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                69,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                61,
+                61,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
           },
           "directionFix": false,
           "image": {
