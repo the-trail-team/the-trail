@@ -799,7 +799,8 @@ StorageManager.removeWebStorage = function(savefileId) {
 
 StorageManager.localFileDirectoryPath = function() {
     var path = require('path');
-    return path.join(process.env.APPDATA, '.thetrail/');
+    if (process.platform === 'darwin') return path.join(process.env.HOME, '.thetrail/');
+    else return path.join(process.env.APPDATA, '.thetrail/');
 };
 
 StorageManager.localFilePath = function(savefileId) {
@@ -1229,7 +1230,7 @@ AudioManager.playBgm = function(bgm, pos) {
         this.updateBgmParameters(bgm);
     } else {
         this.stopBgm();
-        if (bgm.name) { 
+        if (bgm.name) {
             if(Decrypter.hasEncryptedAudio && this.shouldUseHtml5Audio()){
                 this.playEncryptedBgm(bgm, pos);
             }
