@@ -730,10 +730,10 @@ Window_ShopStatus.prototype.drawDarkRectEntries = function() {
 
 Window_ShopStatus.prototype.getRectPosition = function(index) {
     var rect = new Rectangle();
-    rect.width = Math.floor(this.contents.width / 2);
+    rect.width = Math.floor(this.contents.width / 4);
     rect.height = this.lineHeight();
-    rect.x = index % 2 === 0 ? 0 : rect.width;
-    rect.y = Math.floor(index / 2) * this.lineHeight() + this.lineHeight() * 2;
+    rect.x = (index % 4) * rect.width;
+    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 2;
     return rect;
 };
 
@@ -755,10 +755,15 @@ Window_ShopStatus.prototype.drawActorStatInfo = function(actor) {
       rect.x += this.textPadding();
       rect.width -= this.textPadding() * 2;
       this.changeTextColor(this.systemColor());
-      var text = TextManager.param(i);
-      this.drawText(text, rect.x, rect.y, rect.width);
-      if (!canEquip) this.drawActorCantEquip(actor, rect);
-      if (canEquip) this.drawActorChange(actor, rect, item1, i);
+      if (i == 0) {
+        var icon = item1.iconIndex;
+        this.drawIcon(icon, rect.x + (rect.width - Window_Base._iconWidth) / 2, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2)
+      } else {
+        var text = TextManager.param(i - 1);
+        this.drawText(text, rect.x, rect.y, rect.width);
+        if (!canEquip) this.drawActorCantEquip(actor, rect);
+        if (canEquip) this.drawActorChange(actor, rect, item1, i - 1);
+      }
     }
     this.changePaintOpacity(true);
 };
