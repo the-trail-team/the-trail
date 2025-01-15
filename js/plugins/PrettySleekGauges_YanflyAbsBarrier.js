@@ -218,8 +218,11 @@ Special_Gauge.prototype.drawText = function() {
 			// ** BEGIN CHANGES **
 			//
 			
-			var td = this._window._actor.trueDarkness();
-			var tdWidth = td > 0 ? this._window.textWidth("-" + td) : 0;
+			var td = 0;
+			if (this._window instanceof Window_BattleSideHP) {
+				this._window._actor.trueDarkness();
+				var tdWidth = td > 0 ? this._window.textWidth("-" + td) : 0;
+			}
 
 			if (this._type === "hp" && this._curAbsp > 0) {
 				var abspWidth = this._window.textWidth("+" + Math.round(this._curAbsp));
