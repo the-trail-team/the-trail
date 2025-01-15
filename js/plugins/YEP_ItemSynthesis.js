@@ -302,7 +302,7 @@ Yanfly.IS.version = 1.11;
  * ---
  *
  * Item, Weapon, and Armor Notetags:
- * 
+ *
  *   <Custom Synthesis Effect>
  *    var bottle = $dataItems[123];
  *    $gameParty.gainItem(bottle, 2);
@@ -340,7 +340,7 @@ Yanfly.IS.version = 1.11;
  * the Item 15, Weapon 20, or Armor 30 without needing it and not showing the
  * recipes of any recipe items within the player's inventory.
  *
- * ============================================================================ 
+ * ============================================================================
  * Unofficial fix to use Independent Items as Ingredients (Ozirisz)
  * ============================================================================
  *
@@ -364,7 +364,7 @@ Yanfly.IS.version = 1.11;
  *   ...
  *
  * Only the "Short Sword" could be used in synthesis, the others are not.
- * Important note: the code only checks the Independent Item's few 
+ * Important note: the code only checks the Independent Item's few
  * property to decide, it's modifided or "original" item.
  *
  *   boostCount = 0
@@ -374,7 +374,7 @@ Yanfly.IS.version = 1.11;
  *   textColor = baseItem.textColor
  *
  * If these conditions not meet, the item will be treat as "Upgraded" item and
- * not used for synthesis. If all conditions meet, the item can be used as 
+ * not used for synthesis. If all conditions meet, the item can be used as
  * ingredients.
  *
  *
@@ -1274,7 +1274,7 @@ Window_SynthesisIngredients.prototype.drawItemDetails = function(index, wy) {
     } else {
       this.drawItemQuantity2(index, wy);
     }
-    
+
     return wy + this.lineHeight();
 };
 
@@ -1338,6 +1338,8 @@ Window_SynthesisIngredients.prototype.drawItemQuantity2 = function(index, wy) {
     }
     var text = String(Yanfly.Util.toGroup(owned));
     this.drawText(text, 0, wy, ww, 'right');
+    ww -= this.textWidth(text);
+    if (!(owned >= quantity)) this.drawIndependentItem(ingredient, wy, ww);
 }
 
 Window_SynthesisIngredients.prototype.drawIndependentItem = function(item, wy, ww) {
