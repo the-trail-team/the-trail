@@ -2448,11 +2448,11 @@ Window_Base.prototype.drawCurrentAndMax = function(current, max, x, y,
     if (this instanceof Window_VisualHPGauge) {
       var battler = this._battler;
       bp = battler.barrierPoints();
-      bpText = '+(' + bp + ')';
-      if (bp > 0) bpWidth = this.textWidth(Yanfly.Util.toGroup(bpText));
+      bpText = '+(' + Yanfly.Util.toGroup(bp) + ')';
+      if (bp > 0) bpWidth = this.textWidth(bpText);
       lb = battler.lightBreak();
-      lbText = '/' + lb;
-      if (lb > 0) lbWidth = this.textWidth(Yanfly.Util.toGroup(lbText));
+      lbText = '/' + Yanfly.Util.toGroup(lb);
+      if (lb > 0) lbWidth = this.textWidth(lbText);
     }
     var labelWidth = this.textWidth('HP');
     var valueWidth = this.textWidth(Yanfly.Util.toGroup(max));
