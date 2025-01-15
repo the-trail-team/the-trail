@@ -453,6 +453,7 @@ Miscellaneous Balancing:
  - Many other small balance changes have been made to equipment/item stats, prices, crafting recipes, enemy stats/drops, and more.
 
 Bug Fixes:
+ - Black bars in fullscreen; game should now scale properly to any window size.
  - Softlock caused by pushing a boulder in Laeryidyean's Forest off the boulder tiles.
  - States intended to be removed by walking would occasionally never expire.
  - Accidentally select a downed party member for a support skill (e.g. Cure I) would automatically pick a new target instead of failing.
@@ -670,7 +671,7 @@ Additions:
  - Recovery item descriptions will show how much HP/MP they recover, both static and percentage.
  - Added a merchant in Sector 2 of Adon that sells Small Potions and Small Elixirs. He will disappear after Laeryidyean has been defeated.
   ~ As a result of this, the soldier outside the Bandito Hideout that's always sold Small Elixirs will now sell them at 16B rather than 20B.
- 
+
 Changes:
  - Replaced Player 1's Defend I/II and Mark skills with three new skills.
   ~ Hold the Line I: Learned by Player 1 at level 5.
@@ -740,11 +741,11 @@ Additions:
   ~ Condensed White Gel
   ~ Metallic Rat Pelt
   ~ Arcane Leather Charm
-  
+
 Changes:
  - Changed around drops of state resistance accessories to be more consistent. Additionally, the accessories will always have a 1% drop from their enemy type, regardless if the specific enemy is normal, rare, or a boss.
  - The location of the Bandito Loot found in the drawers in the Bandito Hideout has been randomized using the new "Playthrough Seed" set at the start of each run. It's a 50/50 chance to be one drawer or the other.
- 
+
 Bug Fixes:
  - Fixed a few problems with the Linux release of the game.
  - Fixed the positioning of the gab window as to not overlap with the map name display.
@@ -789,7 +790,7 @@ Bugs we are aware of:
 Yes, there are STILL just a couple bugs I haven't managed to squash from Alpha 13, and a few have popped up during the development of Alpha 14 that I haven't found a fix for just yet. Apologies for that...
 But hey, there's no more need for this section thanks to the issue tracker on GitHub! It's been nice having this here for a while, but it's finally time to move on. Check out the issue tracker via the link below.
 https://github.com/NoLongerLucky/thetrail/issues
- 
+
 Planned features:
 Well, what do you know? Everything on this list has finally been ticked off. Looks like it might be time to retire this section too. It hasn't ever served much of a purpose, either...
 
