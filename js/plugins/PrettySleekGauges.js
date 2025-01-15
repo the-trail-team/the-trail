@@ -444,6 +444,7 @@ Window_Base.prototype.drawAnimatedGauge = function(x, y, width, rate, c1, c2, ty
     var gkey = this.makeGaugeKey(x, y);
     if (this._gauges[gkey]) {
         this._gauges[gkey].setRate(rate);
+        this._gauges[gkey]._color = [c1, c2];
     } else {
         this._gauges[gkey] = new Special_Gauge(x, y, width, rate, c1, c2, this, defaultHeight, type, actor);
     }

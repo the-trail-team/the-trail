@@ -54,7 +54,7 @@ var tinyGaugeYOffset = parseInt(parameters['Tiny Gauge Y Offset']) || 0;
 var shouldDrawEnemyTP = (parameters['Show Enemy TP'] || "true") === "true";
 
 Window_Base.prototype.drawActorHp = function(actor, x, y, width) {
-	this.drawAnimatedGauge(x, y, (width || 186), actor, this.hpGaugeColor1(), this.hpGaugeColor2(), "hp");
+	this.drawAnimatedGauge(x, y, (width || 186), actor, this.textColor(actor.hpGaugeColor1()), this.textColor(actor.hpGaugeColor2()), "hp");
 	this._gauges[this.makeGaugeKey(x, y)].setExtra(TextManager.hpA, actor.hp, actor.mhp);
 }
 
