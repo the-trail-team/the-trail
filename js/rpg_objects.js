@@ -4278,6 +4278,7 @@ Game_Actor.prototype.attackElements = function() {
     var set = Game_Battler.prototype.attackElements.call(this);
     if (this.hasNoWeapons() && !set.contains(this.bareHandsElementId())) {
         set.push(this.bareHandsElementId());
+        set.push(16); // Fists have bludgeoning damage
     }
     return set;
 };
