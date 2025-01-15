@@ -3635,6 +3635,13 @@ Game_Battler.prototype.consumeItem = function(item) {
 Game_Battler.prototype.gainHp = function(value) {
     this._result.hpDamage = -value;
     this._result.hpAffected = true;
+    if (this.trueDarkness() > 0 && value > 0) {
+        this._result.trueDarkness = true;
+        var resist = this.trueDarkness();
+        this._trueDarkness = Math.max(this.trueDarkness() - value, 0);
+        value = Math.max(value - resist, 0);
+        if (this.trueDarkness() == 0) this.removeState(198);
+    }
     this.setHp(this.hp + value);
 };
 
