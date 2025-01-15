@@ -217,12 +217,19 @@ Special_Gauge.prototype.drawText = function() {
 			//============================================================================================
 			// ** BEGIN CHANGES **
 			//
+			
+			var td = this._window._actor.trueDarkness();
+			var tdWidth = td > 0 ? this._window.textWidth("-" + td) : 0;
 
 			if (this._type === "hp" && this._curAbsp > 0) {
 				var abspWidth = this._window.textWidth("+" + Math.round(this._curAbsp));
 
 				if (this._maxVal && abspWidth + this._window.textWidth((this._setVal || this._curVal) + "/" + this._maxVal) <= width) {
-					this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width - abspWidth - this._window.textWidth("/" + this._maxVal), "right");
+					this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width - tdWidth - abspWidth - this._window.textWidth("/" + this._maxVal), "right");
+					if (td > 0) {
+						this._window.changeTextColor("#A060E0");
+						this._window.drawText("-" + td, x, this._y + this._yOffset, width - abspWidth - this._window.textWidth("/" + this._maxVal), "right");
+					}
 					var color = "#";
 					for (var i = 0; i < 3; i++) color += Yanfly.Param.ABRPop[i].toString(16).padZero(2);
 					this._window.changeTextColor(color);
@@ -250,7 +257,11 @@ Special_Gauge.prototype.drawText = function() {
 			//
 			// ** END CHANGES **
 			//============================================================================================
-				this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width - this._window.textWidth("/" + this._maxVal), "right");
+				this._window.drawText(Math.round(this._curVal), x, this._y + this._yOffset, width - tdWidth - this._window.textWidth("/" + this._maxVal), "right");
+				if (td > 0) {
+					this._window.changeTextColor("#A060E0");
+					this._window.drawText("-" + td, x, this._y + this._yOffset, width - this._window.textWidth("/" + this._maxVal), "right");
+				}
 				this._window.changeTextColor(this._window.normalColor());
 				this._window.drawText("/", x, this._y + this._yOffset, width - this._window.textWidth(this._maxVal), "right");
 				this._window.drawText(this._maxVal, x, this._y + this._yOffset, width, "right");
