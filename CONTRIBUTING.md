@@ -58,7 +58,7 @@ function runScript(scriptPath, callback) {
 
 runScript('./scripts/pre-commit.js', function (err) {
     if (err) throw err
-    console.log('finished running some-script.js')
+    console.log('Finished running pre-commit.js')
 })
 ```
 
