@@ -759,7 +759,8 @@ Window_ShopStatus.prototype.drawActorStatInfo = function(actor) {
         rect.width -= this.textPadding() * 2;
         this.changeTextColor(this.systemColor());
         if (i == 0) {
-          var icon = item.iconIndex;
+          var icon = item ? item.iconIndex : Yanfly.Icon.EmptyEquip;
+          this.changePaintOpacity(!!item);
           this.drawIcon(icon, rect.x + (rect.width - Window_Base._iconWidth) / 2, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2)
         } else {
           var text = TextManager.param(i - 1);
