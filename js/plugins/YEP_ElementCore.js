@@ -732,6 +732,9 @@ Game_Action.prototype.getItemElements = function() {
   if ($gameTemp._addedElements !== undefined) {
     Yanfly.Util.extend(elements, $gameTemp._addedElements);
   }
+  if (this._addedElements !== undefined) {
+    Yanfly.Util.extend(elements, this._addedElements); // Mainly for Bat Sling
+  }
   return elements.filter(Yanfly.Util.onlyUnique);
 };
 

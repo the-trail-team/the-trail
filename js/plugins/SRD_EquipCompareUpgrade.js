@@ -119,6 +119,7 @@
  * @option Core Stat
  * @option Decimal Place
  * @option Elemental Attack
+ * @option ON/OFF
  * @option Attack Skill
  * @option Guard Skill
  * @default Other
@@ -294,7 +295,7 @@ if(Imported.YEP_EquipCore) {
 Window_StatCompare.prototype.showStat = function(paramId, diffvalue) {
 	return (
 		(_.cates[paramId] == "Core Stat") || // ATK, DEF, MAT, MDF, AGI always show
-		(["Other", "Decimal Place"].contains(_.cates[paramId]) && diffvalue != 0) || // All other stats besides attack element changes show if changed
+		(["Other", "Decimal Place", "ON/OFF"].contains(_.cates[paramId]) && diffvalue != 0) || // All other stats besides attack element changes show if changed
 		(_.cates[paramId] == "Elemental Attack" && this._actor.attackElements().contains(_.extrs[paramId]) != this._tempActor.attackElements().contains(_.extrs[paramId])) || // Attack element changes
 		(_.cates[paramId] == "Attack Skill" && this._actor.replaceAttackSkillId() != this._tempActor.replaceAttackSkillId()) || // Attack Skill
 		(_.cates[paramId] == "Guard Skill" && this._actor.replaceGuardSkillId() != this._tempActor.replaceGuardSkillId()) // Guard Skill
@@ -363,7 +364,7 @@ Window_StatCompare.prototype.drawParamDifference = function(x, y, paramId) {
 	actor = this._actor;
 	var diffvalue = newValue - eval(_.evals[paramId]);
 	if (diffvalue === 0) return;
-	if (["Elemental Attack", "Attack Skill", "Guard Skill"].contains(_.cates[paramId])) {
+	if (["Elemental Attack", "ON/OFF", "Attack Skill", "Guard Skill"].contains(_.cates[paramId])) {
 		this.drawRightArrow(x, y);
 		return;
 	}
