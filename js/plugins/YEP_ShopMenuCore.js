@@ -859,7 +859,7 @@ Window_ShopStatus.prototype.updateParamSwitch = function() {
 };
 
 Window_ShopStatus.prototype.getInput = function(input) {
-    if (SceneManager._scene._numberWindow.active) return false;
+    if (SceneManager._scene._numberWindow.active && !(SceneManager._scene instanceof Scene_Synthesis)) return false;
     return Input.isRepeated(input)
 };
 
