@@ -603,7 +603,7 @@ DataManager.processSelectNotetagsSys = function(group) {
   Yanfly.ElementIdRef = {};
   for (var i = 1; i < group.elements.length; ++i) {
     var name = group.elements[i].toUpperCase();
-    name = name.replace(/\\I\[(\d+)\]/gi, '');
+    name = name.replace(/\\\w\[(\d+)\]/gi, '');
     Yanfly.ElementIdRef[name] = i;
   }
 };
