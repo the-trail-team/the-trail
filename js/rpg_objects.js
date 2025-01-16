@@ -2467,6 +2467,7 @@ function Game_BattlerBase() {
 }
 
 Game_BattlerBase.TRAIT_ELEMENT_RATE   = 11;
+Game_BattlerBase.TRAIT_ELEMENT_RATE_ADDITIVE = 11.1;
 Game_BattlerBase.TRAIT_DEBUFF_RATE    = 12;
 Game_BattlerBase.TRAIT_STATE_RATE     = 13;
 Game_BattlerBase.TRAIT_STATE_RESIST   = 14;
@@ -2862,7 +2863,7 @@ Game_BattlerBase.prototype.otherparam = function(otherparamId) {
 };
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {
-    return this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId);
+    return this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId) + this.traitsSum(Game_BattlerBase.TRAIT_ELEMENT_RATE_ADDITIVE, elementId);
 };
 
 Game_BattlerBase.prototype.debuffRate = function(paramId) {
