@@ -1767,6 +1767,7 @@ Scene_Synthesis.prototype.create = function() {
     this.createGoldWindow();
     this.createIngredientsWindow();
     this.createNumberWindow();
+    this.createItemWindow();
     this.createStatusWindow();
 };
 
@@ -1828,11 +1829,21 @@ Scene_Synthesis.prototype.createNumberWindow = function() {
     this.addWindow(this._numberWindow);
 };
 
-Scene_Synthesis.prototype.createStatusWindow = function () {
+Scene_Synthesis.prototype.createItemWindow = function() {
     var wx = this._listWindow.x;
     var wy = this._listWindow.y;
     var ww = this._listWindow.width;
-    var wh = this._listWindow.height;
+    var wh = 180;
+    this._itemWindow = new Window_ItemStatus(wx, wy, ww, wh);
+    this._itemWindow.hide();
+    this.addWindow(this._itemWindow);
+}
+
+Scene_Synthesis.prototype.createStatusWindow = function () {
+    var wx = this._listWindow.x;
+    var wy = this._listWindow.y + this._itemWindow.height;
+    var ww = this._listWindow.width;
+    var wh = this._listWindow.height - this._itemWindow.height;
     this._statusWindow = new Window_ShopStatus(wx, wy, ww, wh);
     this._statusWindow.hide();
     this.addWindow(this._statusWindow);
@@ -1857,6 +1868,8 @@ Scene_Synthesis.prototype.onListOk = function() {
     this._numberWindow.show();
     this._numberWindow.activate();
     if (this._item.groupType == 0) return;
+    this._itemWindow.show();
+    this._itemWindow.setItem(this._item);
     this._statusWindow.show();
     this._statusWindow.setItem(this._item);
 };
@@ -1922,6 +1935,7 @@ Scene_Synthesis.prototype.customSynthEffect = function(number) {
 
 Scene_Synthesis.prototype.endNumberInput = function() {
     this._numberWindow.hide();
+    this._itemWindow.hide();
     this._statusWindow.hide();
     this._listWindow.activate();
     this._ingredientsWindow.show();
