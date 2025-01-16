@@ -410,7 +410,7 @@ Scene_Gameover.prototype.create = function() {
 	this.createMessageWindow();
 	this.createScrollTextWindow();
 	this.createCommandWindow();
-	this.createPictures();
+	// this.createPictures();
 	DataManager.loadAllSavefileImages();
 	this.createHelpWindow();
 	this.createListWindow();
