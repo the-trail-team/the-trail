@@ -18868,8 +18868,11 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                12,
-                "($gameVariables.value(55) >= 11 && $gameVariables.value(55) < 54) || $gameVariables.value(55) >= 57"
+                1,
+                55,
+                0,
+                11,
+                1
               ]
             },
             {
@@ -18944,6 +18947,79 @@
                   "indent": null
                 }
               ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                1,
+                55,
+                0,
+                54,
+                1
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                1,
+                55,
+                0,
+                57,
+                4
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 4,
+              "parameters": [
+                19,
+                {
+                  "list": [
+                    {
+                      "code": 39,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 4,
+              "parameters": [
+                {
+                  "code": 39,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
             },
             {
               "code": 0,
