@@ -614,45 +614,40 @@ Yanfly.AMQW.Game_System_questObjectivesShow =
   Game_System.prototype.questObjectivesShow;
 Game_System.prototype.questObjectivesShow = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesShow.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesHide =
   Game_System.prototype.questObjectivesHide;
 Game_System.prototype.questObjectivesHide = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesHide.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesNormal =
   Game_System.prototype.questObjectivesNormal;
 Game_System.prototype.questObjectivesNormal = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesNormal.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesComplete =
   Game_System.prototype.questObjectivesComplete;
 Game_System.prototype.questObjectivesComplete = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesComplete.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesFail =
   Game_System.prototype.questObjectivesFail;
 Game_System.prototype.questObjectivesFail = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesFail.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 }; // Yanfly.Param.MQWChangeObj
