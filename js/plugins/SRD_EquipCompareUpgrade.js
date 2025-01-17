@@ -321,7 +321,8 @@ Window_StatCompare.prototype.refresh = function() {
 			let actor = this._tempActor;
 			const newValue = eval(_.evals[i]);
 			actor = this._actor;
-			const diffvalue = newValue - eval(_.evals[i]);
+			let diffvalue = newValue - eval(_.evals[i]);
+			if (_.cates[i] == "ON/OFF") diffvalue = newValue != eval(_.evals[i]) ? 1 : 0;
 
 			if (this.showStat(i, diffvalue)) {
 				this.drawItem(
