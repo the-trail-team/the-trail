@@ -6929,7 +6929,7 @@
             "code": 108,
             "indent": 0,
             "parameters": [
-              "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101 && $gameSystem._moonPhase != 3>"
+              "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && !$gameSwitches.value(112) && !$gameSwitches.value(114) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101 && $gameSystem._moonPhase != 3>"
             ]
           },
           {
@@ -10740,7 +10740,7 @@
             "code": 108,
             "indent": 0,
             "parameters": [
-              "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101 && $gameSystem._moonPhase == 3>"
+              "<encScript:$gameSwitches.value(69) && $gameSwitches.value(82) && !$gameSwitches.value(112) && !$gameSwitches.value(114) && $gamePlayer.regionId() !== 161 && $gamePlayer.regionId() !== 268 && $gamePlayer.regionId() !== 101 && $gameSystem._moonPhase == 3>"
             ]
           },
           {
