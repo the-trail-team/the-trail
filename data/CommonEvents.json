@@ -16295,6 +16295,15 @@
     "id": 79,
     "list": [
       {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          0
+        ]
+      },
+      {
         "code": 117,
         "indent": 0,
         "parameters": [
@@ -16314,6 +16323,24 @@
   {
     "id": 80,
     "list": [
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          0
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          113,
+          113,
+          0
+        ]
+      },
       {
         "code": 117,
         "indent": 0,
@@ -16335,6 +16362,15 @@
     "id": 81,
     "list": [
       {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          114,
+          114,
+          0
+        ]
+      },
+      {
         "code": 117,
         "indent": 0,
         "parameters": [
@@ -16348,6 +16384,81 @@
       }
     ],
     "name": "Enter Airship",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 82,
+    "list": [
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Exit Boat",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 83,
+    "list": [
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          112,
+          112,
+          1
+        ]
+      },
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          113,
+          113,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Exit Ship",
+    "switchId": 1,
+    "trigger": 0
+  },
+  {
+    "id": 84,
+    "list": [
+      {
+        "code": 121,
+        "indent": 0,
+        "parameters": [
+          114,
+          114,
+          1
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 0,
+        "parameters": []
+      }
+    ],
+    "name": "Exit Airship",
     "switchId": 1,
     "trigger": 0
   }
