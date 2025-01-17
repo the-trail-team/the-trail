@@ -1,7 +1,7 @@
 [
   {
     "type": "Text",
-    "Value": "${$gameSystem.timeEmoji()} ${$gameVariables.value(36)}",
+    "Value": "${$gameVariables.value(36)}",
     "Condition": "$gameSwitches.value(25)&&$gameSwitches.value(72)",
     "Layer": "0",
     "Font": "GameFont",

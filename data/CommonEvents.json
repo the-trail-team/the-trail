@@ -4925,7 +4925,7 @@
           36,
           0,
           4,
-          "$gameVariables.value(40) + \":\" + $gameVariables.value(39)"
+          "$gameSystem.timeEmoji() + \" \" + $gameVariables.value(40) + \":\" + $gameVariables.value(39)"
         ]
       },
       {
