@@ -551,7 +551,6 @@ if (Yanfly.Param.MQWAddQuest) {
 Yanfly.AMQW.Game_System_questAdd = Game_System.prototype.questAdd;
 Game_System.prototype.questAdd = function(questId) {
   Yanfly.AMQW.Game_System_questAdd.call(this, questId);
-  if (questId == 4 && $gameMap.mapId() != 17) return;
   this.setActiveQuestId(questId);
 };
 
