@@ -5766,6 +5766,13 @@
             ]
           },
           {
+            "code": 655,
+            "indent": 0,
+            "parameters": [
+              "$gameParty.battleMembers().forEach(a => a._watchfulGaze = 0);"
+            ]
+          },
+          {
             "code": 121,
             "indent": 0,
             "parameters": [
