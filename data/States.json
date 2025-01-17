@@ -5205,6 +5205,11 @@
     "traits": [
       {
         "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
         "dataId": 3,
         "value": 0
       },
@@ -5238,7 +5243,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "FIRE ELEMENT",
-    "note": "<Category: Fire>\n<Element Absorb: 2>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
+    "note": "<Category: Fire>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5260,6 +5265,16 @@
       },
       {
         "code": 11,
+        "dataId": 3,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 0.5
+      },
+      {
+        "code": 11,
         "dataId": 13,
         "value": 0.5
       }
@@ -5273,7 +5288,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "ICE ELEMENT",
-    "note": "<Category: Ice>\n<Element Absorb: 3, 5>\n<Category Resist: Plant>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"ICE\");\n</Custom Passive Condition>",
+    "note": "<Category: Ice>\n<Category Resist: Plant>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"ICE\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5288,6 +5303,11 @@
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
     "traits": [
+      {
+        "code": 11,
+        "dataId": 4,
+        "value": 0.5
+      },
       {
         "code": 11,
         "dataId": 6,
@@ -5308,7 +5328,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "ELECTRIC ELEMENT",
-    "note": "<Category: Electric>\n<Element Absorb: 4>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"ELECTRIC\");\n</Custom Passive Condition>",
+    "note": "<Category: Electric>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"ELECTRIC\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5340,6 +5360,11 @@
       },
       {
         "code": 11,
+        "dataId": 5,
+        "value": 0.5
+      },
+      {
+        "code": 11,
         "dataId": 13,
         "value": 2
       }
@@ -5353,7 +5378,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "WATER ELEMENT",
-    "note": "<Category: Water>\n<Element Absorb: 5>\n<Category Resist: Fire>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"WATER\");\n</Custom Passive Condition>",
+    "note": "<Category: Water>\n<Category Resist: Fire>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"WATER\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5390,6 +5415,11 @@
       },
       {
         "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
         "dataId": 7,
         "value": 2
       },
@@ -5408,7 +5438,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "EARTH ELEMENT",
-    "note": "<Category: Earth>\n<Element Absorb: 6>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"EARTH\");\n</Custom Passive Condition>",
+    "note": "<Category: Earth>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"EARTH\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5437,6 +5467,11 @@
         "code": 11,
         "dataId": 6,
         "value": 0
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 0.5
       }
     ],
     "iconIndex": 0,
@@ -5448,7 +5483,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "WIND ELEMENT",
-    "note": "<Category: Wind>\n<Element Absorb: 7>\n<Category Resist: Earth>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"WIND\");\n</Custom Passive Condition>",
+    "note": "<Category: Wind>\n<Category Resist: Earth>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"WIND\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5821,6 +5856,11 @@
       },
       {
         "code": 11,
+        "dataId": 13,
+        "value": 0.5
+      },
+      {
+        "code": 11,
         "dataId": 14,
         "value": 2
       }
@@ -5834,7 +5874,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "PLANT ELEMENT",
-    "note": "<Category: Plant>\n<Element Absorb: 13, 5>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"PLANT\");\n</Custom Passive Condition>",
+    "note": "<Category: Plant>\n<Element Absorb: Water>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"PLANT\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5848,7 +5888,18 @@
     "id": 172,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 14,
+        "value": 0.5
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -5858,7 +5909,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "METAL ELEMENT",
-    "note": "<Category: Metal>\n<Element Absorb: 14, 2>\n\n<Custom React Effect>\nif (this.item().damage.elementId == 2 || this.item().multipleElements.contains(2)) target.addState(138);\n</Custom React Effect>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"METAL\");\n</Custom Passive Condition>",
+    "note": "<Category: Metal>\n\n<Custom React Effect>\nif (this.item().damage.elementId == 2 || this.item().multipleElements.contains(2)) target.addState(138);\n</Custom React Effect>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"METAL\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,

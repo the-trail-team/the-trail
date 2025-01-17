@@ -1628,7 +1628,7 @@
     ],
     "gold": 25,
     "name": "Red Slime",
-    "note": "<Element: Fire>\n<Passive State: 136>\n\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Fire>\n<Element Absorb: Fire>\n<Passive State: 136>\n\n<Attack Animation: 3>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nRed Gel: 75%\nRed Gel: 75%\nFulfilling Ration: 20%\nElixir: 10%\nHeedup Berry: 10%\nCopper Cluster: 33.33%\nIron Cluster: 20%\nCondensed Red Gel: 5%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
       300,
       60,
@@ -2711,7 +2711,7 @@
     ],
     "gold": 200,
     "name": "Will o' Wisp",
-    "note": "<Element: Fire, Dark>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire, Dark>\n<Element Absorb: Fire>\n<Passive State: 57, 129, 147>\n\n<Sideview Battler: NoMatchingSprite/Will o' Wisp>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Boost Skill 74: Full>\n<AI Priority>\nUser HP% param <= 75% +++ Random 50%: Steam Therapy, User\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nFire Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       400,
@@ -3443,7 +3443,7 @@
     ],
     "gold": 250,
     "name": "Fire Spirit",
-    "note": "<Element: Fire, Light>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_4>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Fire, Light>\n<Element Absorb: Fire>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_4>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 3>\n\n<Enemy Drops>\nFire Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -3509,7 +3509,7 @@
     ],
     "gold": 250,
     "name": "Water Spirit",
-    "note": "<Element: Water, Light>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_3>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nAqua Gem: 100%\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Water, Light>\n<Element Absorb: Water>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_3>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nAqua Gem: 100%\nWater Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -3570,7 +3570,7 @@
     ],
     "gold": 250,
     "name": "Earth Spirit",
-    "note": "<Element: Earth, Light>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_8>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Earth, Light>\n<Element Absorb: Earth>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_8>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -3636,7 +3636,7 @@
     ],
     "gold": 250,
     "name": "Wind Spirit",
-    "note": "<Element: Wind, Light>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_7>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 219>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Wind, Light>\n<Element Absorb: Wind>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_7>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 219>\n\n<Enemy Drops>\nWind Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
     "params": [
       6000,
       0,
@@ -4134,7 +4134,7 @@
     ],
     "gold": 72,
     "name": "Chilling Apparition",
-    "note": "<Element: Ice, Dark>\n<Passive State: 57, 129, 144>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nWarm Scarf: 5%\nIce Cube: 75%\nIce Cube: 75%\nFrozen Jewel: 20%\nMAT Scroll ★: 10%\nIce II (Tome): 2%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Element: Ice, Dark>\n<Element Absorb: Ice>\n<Passive State: 57, 129, 144>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nWarm Scarf: 5%\nIce Cube: 75%\nIce Cube: 75%\nFrozen Jewel: 20%\nMAT Scroll ★: 10%\nIce II (Tome): 2%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1500,
       0,
@@ -4511,7 +4511,7 @@
     ],
     "gold": 60,
     "name": "Ice Slime",
-    "note": "<Element: Ice>\n<Passive State: 136, 144>\n\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nWarm Scarf: 5%\nIcy Gel: 75%\nIcy Gel: 75%\nIce Cube: 75%\nIce Cube: 75%\nElixir: 20%\nLarge Elixir: 10%\nFrozen Jewel: 20%\nCondensed Icy Gel: 5%\nIce II (Tome): 2%\nIce Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Ice>\n<Element Absorb: Ice>\n<Passive State: 136, 144>\n\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nWarm Scarf: 5%\nIcy Gel: 75%\nIcy Gel: 75%\nIce Cube: 75%\nIce Cube: 75%\nElixir: 20%\nLarge Elixir: 10%\nFrozen Jewel: 20%\nCondensed Icy Gel: 5%\nIce II (Tome): 2%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
       1200,
       60,
