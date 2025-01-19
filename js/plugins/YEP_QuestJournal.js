@@ -2620,6 +2620,19 @@ Yanfly.Quest.version = 1.02;
  *
  * @param Difficulty
  * @parent Title
+ * @type select
+ * @option Pushover
+ * @value \i[127] Pushover
+ * @option Easy Peasy
+ * @value \i[127]\i[127] Easy Peasy
+ * @option Slight Challenge
+ * @value \i[126]\i[126]\i[126] Slight Challenge
+ * @option A Bit Tricky
+ * @value \i[126]\i[126]\i[126]\i[126] A Bit Tricky
+ * @option Tough Objective
+ * @value \i[125]\i[125]\i[125]\i[125]\i[125] Tough Objective
+ * @option Legendary Challenge
+ * @value \i[125]\i[125]\i[125]\i[125]\i[125]\i[125] Legendary Challenge
  * @desc Difficulty level for this quest.
  * Text codes allowed.
  * @default Easy Peasy
