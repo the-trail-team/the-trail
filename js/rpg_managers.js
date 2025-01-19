@@ -692,18 +692,23 @@ StorageManager.isLocalMode = function() {
 };
 
 StorageManager.trashFile = async function(filePath) {
-    const trash = require('trash');
-    await trash([filePath]);
+    if (process.platform == 'darwin') {
+        const fs = require('fs');
+        fs.unlinkSync(filePath);
+    } else {
+        const trash = require('trash');
+        await trash([filePath]);
+    }
     $gameTemp._deletingFile = undefined;
 };
 
-StorageManager.replaceFile = async function(dirPath, filePath, data) {
+StorageManager.replaceFile = function(dirPath, filePath, data) {
     const fs = require('fs');
     const path = require('path');
     $gameTemp._tempPath = path.join(dirPath, 'temp');
     $gameTemp._filePath = filePath;
-    await this.trashFile($gameTemp._filePath);
-    await fs.writeFileSync($gameTemp._tempPath, data);
+    this.trashFile($gameTemp._filePath);
+    fs.writeFileSync($gameTemp._tempPath, data);
     this.renameTemp();
 };
 
