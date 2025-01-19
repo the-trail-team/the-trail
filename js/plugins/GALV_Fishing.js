@@ -2411,7 +2411,11 @@ Window_FishDisplay.prototype.drawEquipSlot = function(type) {
 		var tx = obj.x - tw / 2;
 		var ty = obj.y - this.lineHeight() / 2;
 		this.drawText(txt,tx,ty,tw,'center');
-	};
+	} else if (type == 'bait') {
+		this.contents.fontSize = 14;
+		var text = $gameParty.numItems($dataItems[Galv.FISH.fisher._baitEquipped]);
+		this.drawText(text, px + Window_Base._iconWidth - 12, py + Window_Base._iconHeight - 6, pw, 'center');
+	}
 };
 
 Window_FishDisplay.prototype.loadWindowskin = function() {
