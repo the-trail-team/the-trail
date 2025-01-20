@@ -2,6 +2,7 @@
   "name": "thetrail",
   "main": "index.html",
   "js-flags": "--exposegc",
+  "chromium-args": "--disable-raf-throttling",
   "window": {
     "position": "center",
     "show": true,
