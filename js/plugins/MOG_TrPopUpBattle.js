@@ -104,7 +104,8 @@ Game_Enemy.prototype.makeDropItems = function() {
 var _mog_BMangr_gainDropItems = BattleManager.gainDropItems;
 BattleManager.gainDropItems = function() {
 	if ($gameTemp._trBatDropLock) {return};
-	_mog_BMangr_gainDropItems.call(this);
+	// This should NEVER run; it duplicates drops for some boss battles
+	// _mog_BMangr_gainDropItems.call(this);
 };
 
 //=============================================================================
