@@ -631,6 +631,8 @@ Game_Actor.prototype.elementAmplifyRate = function(elementId) {
   }
   rate += this.getObjElementAmplifyRate(this.actor(), elementId);
   rate += this.getObjElementAmplifyRate(this.currentClass(), elementId);
+  // Critical Heal I
+  if (this.hasSkill(79) && elementId == Yanfly.ElementIdRef['HEALING']) rate += Math.abs(Math.min(this.hpRate() - 0.5, 0));
   return rate;
 };
 

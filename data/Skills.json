@@ -2749,7 +2749,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "[PASSIVE SKILL]\nStarting at 50% HP, outgoing healing increases linearly as HP approaches 0 (up to 50%).",
+    "description": "[PASSIVE SKILL]\nBelow 50% HP, for every 1% HP missing, outgoing healing increases by 1%.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 122,
@@ -2757,7 +2757,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "[P] Critical Heal I",
-    "note": "<Max Mastery Level: 0>\n\n<Custom Cost Display>\n\\}Passive\n</Custom Cost Display>\n\nHardcoded in YEP_ElementCore.js.",
+    "note": "<Max Mastery Level: 0>\n\n<Custom Cost Display>\n\\}Passive\n</Custom Cost Display>\n\nHardcoded in YEP_ElementCore.js:\nGame_Actor.prototype.elementMagnifyRate",
     "occasion": 3,
     "repeats": 1,
     "requiredWtypeId1": 0,
