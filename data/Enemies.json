@@ -1092,7 +1092,7 @@
     ],
     "gold": 600,
     "name": "Laeryidyean",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -1957,7 +1957,7 @@
     ],
     "gold": 900,
     "name": "The Warden",
-    "note": "<Armor Weakness: Slashing>\n<Element: Dark>\n<Passive State: 57>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n\n<AI Priority>\nState === Bleeding +++ User HP% param >= 33%: Purify, User\nState === Poisoned +++ User HP% param >= 33%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPhantasmal Vestments: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Orb (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Dark>\n\n<Sideview Battler: Evil1_4>\n<Weapon Image: 229>\n<Attack Animation: 6>\n<HP Gauge Width: 216>\n\n\n<AI Priority>\nState === Bleeding +++ User HP% param >= 33%: Purify, User\nState === Poisoned +++ User HP% param >= 33%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nThe Warden's Trade-off: 100%\nThe Warden's Belt: 100%\nShadowplate Armor: 100%\nPhantasmal Robes: 100%\nPhantasmal Vestments: 100%\nShadowspec Leathers: 100%\nPhantasmal Scarf: 100%\nAncient Outfit: 100%\nDark Orb (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       7500,
       999,
@@ -2152,7 +2152,7 @@
     ],
     "gold": 900,
     "name": "Vessel of the Forgotten General",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 141>\n\n<Sideview Battler: Evil1_6>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Weak Point +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nSoul Shackles (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 141>\n\n<Sideview Battler: Evil1_6>\n<Weapon Image: 242>\n<Attack Animation: 126>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nTurn < 3 +++ State !== State 48: Skill 57, Highest MaxHP\n\nState !== Magic Enhance +++ User HP% param >= 30%: Magic Enhance, User\n\nState === Weak Point +++ User HP% param >= 30%: Purify, User\n</AI Priority>\n\n<Enemy Drops>\nForgotten General's Resistance: 100%\nForgotten General's Helmet: 100%\nSoulstealer's Necklace: 100%\nSoul Shackles (Tome): 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\nMalicious Essence: 100%\n</Enemy Drops>",
     "params": [
       12000,
       9999,
@@ -3009,7 +3009,7 @@
     ],
     "gold": 2500,
     "name": "Laeryidyean EX",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 136, 137, 141>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 288>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 141>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 288>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       20000,
       9999,
