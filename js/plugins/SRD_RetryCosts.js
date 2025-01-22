@@ -158,9 +158,9 @@ if(!_.meetsRequirements) {
 
 _.GameOverCore_retryBattle = __.retryBattle;
 __.retryBattle = function() {
-	if($gameTemp._setUpRetry) {
+	/*if($gameTemp._setUpRetry) {
 		$gameTemp._setUpRetry[3].payRetryCosts();
-	}
+	}*/
 	_.GameOverCore_retryBattle.apply(this, arguments);
 };
 
