@@ -11649,9 +11649,9 @@
           "actorHp": 50,
           "actorId": 1,
           "actorValid": false,
-          "enemyHp": 50,
+          "enemyHp": 0,
           "enemyIndex": 0,
-          "enemyValid": false,
+          "enemyValid": true,
           "switchId": 1,
           "switchValid": false,
           "turnA": 0,
@@ -11660,6 +11660,66 @@
           "turnValid": false
         },
         "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              1,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              1,
+              215,
+              false
+            ]
+          },
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      },
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 0,
+          "enemyIndex": 1,
+          "enemyValid": true,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 333,
+            "indent": 0,
+            "parameters": [
+              0,
+              0,
+              143
+            ]
+          },
+          {
+            "code": 337,
+            "indent": 0,
+            "parameters": [
+              0,
+              215,
+              false
+            ]
+          },
           {
             "code": 0,
             "indent": 0,
