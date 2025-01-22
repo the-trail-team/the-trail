@@ -1434,7 +1434,7 @@
     "minTurns": 1,
     "motion": 1,
     "name": "Terrified",
-    "note": "<Category: Bypass Death Removal>\n<Category: Group Defeat>\n\n<Custom Passive Condition>\ncondition = !user.equips().filter(n => n).some(e => e.baseItemId == 50 && e.groupType == 2) && $gameParty.inBattle() && $gameTroop._enemies.some(e => [26, 28].contains(e.enemyId())) && !$gameSwitches.value(61);\n</Custom Passive Condition>\n\n<Cannot Select: All>\n\n<Help Description>\nCannot do anything. Counts towards group defeat.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Group Defeat>\n\n<Custom Passive Condition>\ncondition = !user.equips().filter(n => n).some(e => e.baseItemId == 50 && e.groupType == 2) && $gameParty.inBattle() && $gameTroop._enemies.some(e => [26, 28].contains(e.enemyId())) && !$gameSwitches.value(61);\n</Custom Passive Condition>\n\n<Cannot Select: All>\n\n<Help Description>\nCannot do anything. Equip a \\ia[50] to resist this.\n</Help Description>",
     "overlay": 10,
     "priority": 95,
     "removeAtBattleEnd": true,
