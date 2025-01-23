@@ -2032,6 +2032,9 @@ Sprite_StateIcon.prototype.drawBuffRate = function(paramId) {
     var ww = Window_Base._iconWidth;
     var wh = Window_Base.prototype.lineHeight.call(this);
     var contents = this._turnCounterSprite.bitmap;
+    // Move to top left
+    wx -= 4;
+    wy -= 16;
     contents.fontSize = Yanfly.Param.BSCFontSize * 0.75;
     contents.textColor = this.textColor(0);
     contents.drawText(text, wx, wy, ww, wh, 'center');
