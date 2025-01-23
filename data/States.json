@@ -4525,17 +4525,48 @@
     "id": 138,
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
-    "iconIndex": 16,
-    "maxTurns": 5,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 14,
+        "value": 2
+      },
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.5
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 799,
+    "maxTurns": 3,
     "message1": "",
     "message2": " is heating up!",
     "message3": "",
     "message4": " cooled back down.",
-    "minTurns": 5,
+    "minTurns": 3,
     "motion": 0,
     "name": "Heated Metal",
-    "note": "<Element Absorb: Metal>\n\n<Help Description>\n\\n[14] attacks will be absorbed.\n</Help Description>",
+    "note": "<Element Absorb: Metal>\n\n<Custom React Effect>\nif (this.item().damage.elementId == 3 ||\n    this.item().damage.elementId == 5 ||\n    this.item().multipleElements.contains(3) ||\n    this.item().multipleElements.contains(5)) target.removeState(138);\n</Custom React Effect>\n\n<Help Description>\nIncreases AGI by 50%. Decreases DEF by 20%. Weak to \\nl[3] and \\nl[5], normal damage from \\nl[2]. \\nl[14] attacks will be absorbed.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": true,
