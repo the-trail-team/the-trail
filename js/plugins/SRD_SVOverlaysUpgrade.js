@@ -114,6 +114,8 @@ Sprite_StateOverlay.prototype.initMembers = function() {
     this._overlayIndex = 0;
     this._animationCount = 0;
     this._pattern = 0;
+    this._index = 0;
+    this._nextIndex = false;
     this.anchor.x = xAnchor; //0.5;
     this.anchor.y = yAnchor; //1;
 };
@@ -154,26 +156,37 @@ Sprite_StateOverlay.prototype.updatePattern = function() {
     this._pattern++;
     this._pattern %= 8;
     if (this._battler) {
-        if(this._battler.states().length > 0) {
-            states = this.priorityOverlay();
-            if(states[0].meta.animationRow)
+        states = this.priorityOverlay();
+        if(states.length > 0) {
+            // Move through every state
+            if (this._pattern == 0 && this._nextIndex) {
+                this._nextIndex = false;
+                this._index++;
+            }
+            if (this._pattern == 7) {
+                this._nextIndex = true;
+            }
+            this._index %= states.length
+            // Individual state processing
+            state = states[this._index];
+            if(state.meta.animationRow)
             {
-                this._overlayIndex = states[0].meta.animationRow;
+                this._overlayIndex = state.meta.animationRow;
             }
             else
             {
                 this._overlayIndex = this._battler.stateOverlayIndex();  
             }
 
-            if(states[0].meta.xAnchor) {
-                this.anchor.x = states[0].meta.xAnchor;
+            if(state.meta.xAnchor) {
+                this.anchor.x = state.meta.xAnchor;
             }
             else {
                 this.anchor.x = xAnchor;
             }
 
-            if(states[0].meta.yAnchor) {
-                this.anchor.y = states[0].meta.yAnchor;
+            if(state.meta.yAnchor) {
+                this.anchor.y = state.meta.yAnchor;
             }
             else {
                 this.anchor.y = yAnchor;
@@ -182,6 +195,8 @@ Sprite_StateOverlay.prototype.updatePattern = function() {
         else
         {
             this._overlayIndex = 0;
+            this._index = 0;
+            this._nextIndex = false;
         }
     }
 };
