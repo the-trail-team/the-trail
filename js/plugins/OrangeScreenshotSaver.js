@@ -29,26 +29,20 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
     var path = './SCREENSHOTS';
 
     try {
-      fs.mkdir(path, function(){
-        var fileName = path + '/' + $.generateFileName();
-
-        var snap = SceneManager.snap();
-        var urlData = snap._canvas.toDataURL();
-        var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
-
-        fs.writeFile(fileName, base64Data, 'base64', function(error){
-          if (error !== undefined && error !== null) {
-            alert("An error occured while saving the screenshot.");
-            console.error('An error occured while saving the screenshot', error); 
-          }
-        });
-      });
-    } catch(error) {
-      if (error !== undefined && error !== null) {
-        alert("An error occured while saving the screenshot.");
-        console.error('An error occured while saving the screenshot:', error);
+      if (!fs.existsSync(path)) {
+        fs.mkdirSync(path, { recursive: true });
       }
-    }
+      var fileName = path + '/' + $.generateFileName();
+    
+      var snap = SceneManager.snap();
+      var urlData = snap._canvas.toDataURL();
+      var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
+    
+      fs.writeFileSync(fileName, base64Data, 'base64');
+    } catch (error) {
+      console.error("An error occurred while saving the screenshot:", error);
+      alert("Screenshot failed: " + error.message);
+    }    
   };
 
   var oldInput_onKeyUp = Input._onKeyUp;
