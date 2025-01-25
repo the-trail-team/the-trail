@@ -1858,11 +1858,42 @@
         "indent": 1,
         "parameters": [
           1,
-          "Boss1",
-          0,
+          "Damage4",
+          3,
           "Boss1",
           0,
           "Boss1_1"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 18,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 18,
+            "indent": null
+          }
         ]
       },
       {
@@ -1954,8 +1985,8 @@
         "indent": 1,
         "parameters": [
           1,
-          "Developers",
-          0,
+          "Damage4",
+          7,
           "Developers",
           0,
           "Developers_1"
@@ -1986,11 +2017,42 @@
         "indent": 1,
         "parameters": [
           1,
-          "Developers",
-          1,
+          "Damage4",
+          7,
           "Developers",
           1,
           "Developers_2"
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 1,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 17,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 1,
+        "parameters": [
+          {
+            "code": 17,
+            "indent": null
+          }
         ]
       },
       {
@@ -2056,6 +2118,37 @@
         "indent": 0,
         "parameters": [
           53
+        ]
+      },
+      {
+        "code": 205,
+        "indent": 0,
+        "parameters": [
+          -1,
+          {
+            "list": [
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 0
+              }
+            ],
+            "repeat": false,
+            "skippable": false,
+            "wait": false
+          }
+        ]
+      },
+      {
+        "code": 505,
+        "indent": 0,
+        "parameters": [
+          {
+            "code": 16,
+            "indent": null
+          }
         ]
       },
       {
