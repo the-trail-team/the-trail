@@ -5728,7 +5728,7 @@
             "indent": 0,
             "parameters": [
               12,
-              "$gameTroop._enemies.some(e => e.passiveStatesRaw().contains(57)) && $gameTroop._troopId != 103"
+              "$gameTroop._enemies.some(e => e.passiveStatesRaw().contains(57)) && $gameActors.actor(7).name() != 'Fido'"
             ]
           },
           {
