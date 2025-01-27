@@ -4886,7 +4886,7 @@
                 59,
                 0,
                 4,
-                "$gameParty.maxPickaxeHits()"
+                "$gameParty.maxPickaxeHits() + (Math.random() < 0.5 ? 1 : 0)"
               ]
             },
             {
@@ -4990,7 +4990,7 @@
                 0,
                 2,
                 1,
-                10
+                20
               ]
             },
             {
@@ -5040,7 +5040,7 @@
                 1,
                 6,
                 0,
-                7,
+                12,
                 2
               ]
             },
@@ -5071,7 +5071,7 @@
                 1,
                 6,
                 0,
-                9,
+                18,
                 2
               ]
             },
@@ -5566,7 +5566,7 @@
                 59,
                 0,
                 4,
-                "$gameParty.maxPickaxeHits() - 1"
+                "$gameParty.maxPickaxeHits() + (Math.random() < 0.5 ? 1 : 0) - 1"
               ]
             },
             {
@@ -9360,7 +9360,7 @@
                 59,
                 0,
                 4,
-                "$gameParty.maxPickaxeHits()"
+                "$gameParty.maxPickaxeHits() + (Math.random() < 0.5 ? 1 : 0)"
               ]
             },
             {
@@ -9514,7 +9514,7 @@
                 1,
                 6,
                 0,
-                7,
+                12,
                 2
               ]
             },
@@ -9545,7 +9545,7 @@
                 1,
                 6,
                 0,
-                9,
+                18,
                 2
               ]
             },
@@ -10096,7 +10096,7 @@
                 59,
                 0,
                 4,
-                "$gameParty.maxPickaxeHits() - 1"
+                "$gameParty.maxPickaxeHits() + (Math.random() < 0.5 ? 1 : 0) - 1"
               ]
             },
             {
@@ -10200,7 +10200,7 @@
                 0,
                 2,
                 1,
-                10
+                20
               ]
             },
             {
@@ -10250,7 +10250,7 @@
                 1,
                 6,
                 0,
-                7,
+                12,
                 2
               ]
             },
@@ -10275,14 +10275,55 @@
               "parameters": []
             },
             {
-              "code": 126,
+              "code": 111,
               "indent": 5,
+              "parameters": [
+                1,
+                6,
+                0,
+                17,
+                2
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 6,
               "parameters": [
                 55,
                 0,
                 1,
                 58
               ]
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 126,
+              "indent": 6,
+              "parameters": [
+                97,
+                0,
+                1,
+                58
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
             },
             {
               "code": 0,
@@ -14076,7 +14117,7 @@
                 59,
                 0,
                 4,
-                "$gameParty.maxPickaxeHits() - 2"
+                "$gameParty.maxPickaxeHits() + (Math.random() < 0.5 ? 1 : 0) - 2"
               ]
             },
             {
@@ -14686,7 +14727,7 @@
                 59,
                 0,
                 4,
-                "$gameParty.maxPickaxeHits() - 2"
+                "$gameParty.maxPickaxeHits() + (Math.random() < 0.5 ? 1 : 0) - 2"
               ]
             },
             {
