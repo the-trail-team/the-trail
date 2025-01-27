@@ -5952,13 +5952,6 @@
         ]
       },
       {
-        "code": 117,
-        "indent": 0,
-        "parameters": [
-          70
-        ]
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -15414,7 +15407,7 @@
           31,
           0,
           0,
-          4
+          2
         ]
       },
       {
@@ -15432,28 +15425,21 @@
         "code": 108,
         "indent": 0,
         "parameters": [
-          "40% - Nothing"
+          "50% - 2"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "30% - +1 crops"
+          "30% - 3"
         ]
       },
       {
         "code": 408,
         "indent": 0,
         "parameters": [
-          "20% - +2 crops"
-        ]
-      },
-      {
-        "code": 408,
-        "indent": 0,
-        "parameters": [
-          "10% - +3 crops"
+          "20% - 4"
         ]
       },
       {
@@ -15463,7 +15449,7 @@
           1,
           32,
           0,
-          4,
+          5,
           1
         ]
       },
@@ -15495,39 +15481,7 @@
           1,
           32,
           0,
-          7,
-          1
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          31,
-          31,
-          1,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 111,
-        "indent": 0,
-        "parameters": [
-          1,
-          32,
-          0,
-          9,
+          8,
           1
         ]
       },
@@ -15682,30 +15636,12 @@
     "id": 70,
     "list": [
       {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          31,
-          31,
-          0,
-          0,
-          197
-        ]
-      },
-      {
-        "code": 117,
-        "indent": 0,
-        "parameters": [
-          71
-        ]
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "TIME - Crop Maps",
+    "name": "",
     "switchId": 1,
     "trigger": 0
   },
@@ -15713,131 +15649,12 @@
     "id": 71,
     "list": [
       {
-        "code": 122,
-        "indent": 0,
-        "parameters": [
-          32,
-          32,
-          0,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 112,
-        "indent": 0,
-        "parameters": []
-      },
-      {
-        "code": 355,
-        "indent": 1,
-        "parameters": [
-          "var mapId = $gameVariables.value(31); // This variable contains the Map ID."
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "var eventId = $gameVariables.value(32); // This variable contains the Event ID."
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "var varId = 76; // This is the self variable ID you're using for Respawn Days."
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          ""
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "// Update the self variable"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "var value = this.getSelfVariableValue(mapId, eventId, varId);"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "if (value > 0) value -= 1;"
-        ]
-      },
-      {
-        "code": 655,
-        "indent": 1,
-        "parameters": [
-          "this.setSelfVariableValue(mapId, eventId, varId, value);"
-        ]
-      },
-      {
-        "code": 122,
-        "indent": 1,
-        "parameters": [
-          32,
-          32,
-          1,
-          0,
-          1
-        ]
-      },
-      {
-        "code": 111,
-        "indent": 1,
-        "parameters": [
-          1,
-          32,
-          0,
-          91,
-          3
-        ]
-      },
-      {
-        "code": 113,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 2,
-        "parameters": []
-      },
-      {
-        "code": 412,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 0,
-        "indent": 1,
-        "parameters": []
-      },
-      {
-        "code": 413,
-        "indent": 0,
-        "parameters": []
-      },
-      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "TIME - Crop Growth",
+    "name": "",
     "switchId": 1,
     "trigger": 0
   },
