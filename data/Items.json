@@ -3324,7 +3324,7 @@
     "iconIndex": 2115,
     "itypeId": 1,
     "name": "Fruitcake",
-    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nApple: 2\nBlueberries: 3\nSugar Cube: 3\nWheat: 3\nEgg\n</Synthesis Ingredients>\n<Mask Name: Fruity Dessert>\n<Synthesis SE: Equip3>",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nApple: 2\nBlueberries: 3\nWheat: 3\nMilk\nEgg\n</Synthesis Ingredients>\n<Mask Name: Fruity Dessert>\n<Synthesis SE: Equip3>",
     "occasion": 0,
     "price": 120,
     "repeats": 1,
@@ -3831,8 +3831,8 @@
   },
   {
     "id": 129,
-    "animationId": 0,
-    "consumable": false,
+    "animationId": 41,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -3840,17 +3840,30 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A high-quality bag made specifically for\nlong-term storage of food and snacks.",
-    "effects": [],
+    "description": "A scrumptious cake! It doesn't really taste\nlike carrots, but noneless, it's mouthwatering.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 97,
+        "value1": 1,
+        "value2": 0
+      },
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0.25,
+        "value2": 40
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 307,
+    "iconIndex": 2121,
     "itypeId": 1,
-    "name": "Empty Bag",
-    "note": "<Menu Category: Foodstuffs>",
-    "occasion": 3,
-    "price": 20,
+    "name": "Carrot Cake",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nCarrot: 5\nWheat: 3\nMilk\nEgg\n</Synthesis Ingredients>\n<Synthesis SE: Equip3>\n\nWas once the Empty Bag.",
+    "occasion": 0,
+    "price": 120,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
