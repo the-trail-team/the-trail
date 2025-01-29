@@ -22,50 +22,6 @@
           "enemyValid": false,
           "switchId": 1,
           "switchValid": false,
-          "turnA": 0,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 333,
-            "indent": 0,
-            "parameters": [
-              0,
-              0,
-              45
-            ]
-          },
-          {
-            "code": 331,
-            "indent": 0,
-            "parameters": [
-              -1,
-              0,
-              0,
-              9999,
-              false
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
           "turnA": 1,
           "turnB": 0,
           "turnEnding": false,
@@ -86,14 +42,21 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\headAlright \\N[1], it's time for battle!"
+              "\\headAlright \\N[1], it's time for battle."
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "Why don't you try out a basic attack?"
+              "Here's the basics: defeat your enemies"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "before they defeat you!"
             ]
           },
           {
@@ -141,14 +104,21 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "Try boosting your attack to increase"
+              "You'll generate 1 BP per turn, except"
             ]
           },
           {
             "code": 401,
             "indent": 0,
             "parameters": [
-              "your damage!"
+              "for turns you use a boost. Try out an"
+            ]
+          },
+          {
+            "code": 401,
+            "indent": 0,
+            "parameters": [
+              "empowered attack against this slime!"
             ]
           },
           {
@@ -189,123 +159,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\headYou'll generate 1 BP every turn, unless"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "you boosted the turn before."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headGuarding reduces damage taken and helps you"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "get the jump on the next turn. Try it out and"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "get the advantage over this little slime!"
-            ]
-          },
-          {
-            "code": 0,
-            "indent": 0,
-            "parameters": []
-          }
-        ],
-        "span": 0
-      },
-      {
-        "conditions": {
-          "actorHp": 50,
-          "actorId": 1,
-          "actorValid": false,
-          "enemyHp": 50,
-          "enemyIndex": 0,
-          "enemyValid": false,
-          "switchId": 1,
-          "switchValid": false,
-          "turnA": 4,
-          "turnB": 0,
-          "turnEnding": false,
-          "turnValid": true
-        },
-        "list": [
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "People1",
-              6,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\headKeep attacking this slime and it"
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "should fall easily. You've got this!"
-            ]
-          },
-          {
-            "code": 333,
-            "indent": 0,
-            "parameters": [
-              0,
-              1,
-              45
-            ]
-          },
-          {
-            "code": 334,
-            "indent": 0,
-            "parameters": [
-              0
-            ]
-          },
-          {
-            "code": 355,
-            "indent": 0,
-            "parameters": [
-              "obj = $dataEnemies[1];"
-            ]
-          },
-          {
-            "code": 655,
-            "indent": 0,
-            "parameters": [
-              "obj.hideHpGauge = false;"
+              "\\headKeep attacking, \\N[1]! You've got this!"
             ]
           },
           {
