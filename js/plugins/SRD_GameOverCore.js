@@ -265,7 +265,7 @@ Game_Interpreter.prototype.command301 = function() {
 
 _.BattleManager_setup = BattleManager.setup;
 BattleManager.setup = function(troopId, canEscape, canLose) {
-	// if(!$gameTemp._setUpRetry) {
+	if(!$gameTemp._setUpRetry) {
 		$gameTemp._setUpRetry = [
 			troopId,
 			canEscape,
@@ -273,7 +273,7 @@ BattleManager.setup = function(troopId, canEscape, canLose) {
 			JsonEx.makeDeepCopy($gameParty),
 			JsonEx.makeDeepCopy($gameActors)
 		];
-	// }
+	}
 	_.BattleManager_setup.apply(this, arguments);
 };
 
