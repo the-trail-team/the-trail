@@ -12645,19 +12645,19 @@
         "code": 111,
         "indent": 0,
         "parameters": [
-          12,
-          "!$gameSystem.isQuestObjectiveCompleted(4, 3)"
+          1,
+          2,
+          0,
+          11,
+          1
         ]
       },
       {
         "code": 111,
         "indent": 1,
         "parameters": [
-          1,
-          2,
-          0,
-          11,
-          1
+          12,
+          "!$gameSystem._questsKnown.contains(4)"
         ]
       },
       {
@@ -12675,8 +12675,74 @@
         ]
       },
       {
-        "code": 111,
+        "code": 0,
         "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          2,
+          0,
+          14,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!$gameSystem.isQuestObjectiveCompleted(4, 2)"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Complete Objective 2"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 0,
         "parameters": [
           0,
           49,
@@ -12684,21 +12750,19 @@
         ]
       },
       {
-        "code": 356,
-        "indent": 3,
+        "code": 111,
+        "indent": 1,
         "parameters": [
-          "Quest 4 Show Objective 3"
+          12,
+          "!$gameSystem.questObjectivesShowEval(4, 3)"
         ]
       },
       {
-        "code": 0,
-        "indent": 3,
-        "parameters": []
-      },
-      {
-        "code": 412,
+        "code": 356,
         "indent": 2,
-        "parameters": []
+        "parameters": [
+          "Quest 4 Show Objective 3"
+        ]
       },
       {
         "code": 0,
