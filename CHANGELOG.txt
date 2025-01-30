@@ -352,7 +352,7 @@ Additions:
 Changes:
  - Recapped the max level from level 20 to level 30.
  - Random encounters are now blocked in a 6-tile radius around any visible enemy encounter.
- - Almost all dialogues were reworkened and shortened. Many cutscenes reworked, a few even removed.
+ - Lots of dialogues were shortened. Many cutscenes were reworked, and a few were even removed.
  - Replaced Player 2's 2nd magic equip slot with an offhand slot (light shields).
  - Retrying battles is now free, and you have the option to give up. This will return you to the last safe place you rested at; however, this will cost you half of your bits.
  - Time now moves indoors.
@@ -366,7 +366,7 @@ Changes:
  - Renamed almost all items with stars in their name to make them easier to differentiate.
  - Events can now walk through followers. As a result, followers have been enabled in dungeons again.
  - Most shop stocks and enemy drop pools have been modified/standardized.
- - Increased all ore mining drop ranges by 1 on both bounds (e.g. copper ore now drops 3-5 copper clusters instead of the old 2-4).
+ - Rebalanced mining drops to be much more generous.
  - Greatly reduced respawn timers of most time-based respawnables (e.g. oreleaf, flowers).
  - Being defeated by a Lost Soul in the Great Pyramid will now send you back to the start of the dungeon instead of giving a game over.
  - Many food-related items have been made renewable, and as a result are no longer sold by Dalia.
@@ -412,7 +412,6 @@ Skill Balancing:
   ~ Shield Break: P1 16 → P4 18
   ~ Sharpen Dagger: P4 3 → Any Dagger
   ~ Cut Down: P1 11 → Any Axe
-  ~ Soul Shackles: P3 20 → Soul Shackles (Tome)
   ~ Several skills were removed entirely.
  - Using BP with Revival now increases success rate (used to increase the amount of HP recovered on a successful revive).
  - Backstab can no longer miss.
@@ -429,6 +428,7 @@ Miscellaneous Balancing:
  - Elements have been heavily revamped. Some of the major changes include:
   ~ Less standardization so each element has unique behaviors instead of being cookie-cutter.
   ~ Elemental states no longer apply the damage rates and resistances of their element.
+  ~ Most enemies no longer absorb their element.
  - You can no longer equip more than one of the same accessory on a single party member.
  - Made a lot of mechanics based around rare enemies less grindy.
   ~ Doubled the base chance of encountering a rare enemy.
@@ -464,7 +464,7 @@ Bug Fixes:
  - The critical hit chance formula wasn't programmed correctly, making critical evasion basically useless.
  - Elemental normal attacks wouldn't remove elemental states.
  - The loot explosion after defeating an enemy sometimes did not show the correct drops.
- - Party members would rarely not gain BP between the 1st and 2nd turn of a battle.
+ - Party members would sometimes not gain BP between the 1st and 2nd turn of a battle.
  - Purify couldn't be used outside of battle.
  - Retrying a battle would cause items from previous attempts to show up on the dropped item window at the end of battle. This was only a visual bug.
  - The color of a party member's name would not update based on their HP during battle.
