@@ -3994,13 +3994,18 @@
   {
     "id": 154,
     "atypeId": 1,
-    "description": "Nasty! If you can bear how gross this is, equipping\nit reduces the chance that enemies land crits on you.",
+    "description": "Nasty! If you can bear how gross this is, equipping\nit makes it easier to both land AND avoid crits.",
     "etypeId": 6,
     "traits": [
       {
         "code": 22,
+        "dataId": 2,
+        "value": 0.06
+      },
+      {
+        "code": 22,
         "dataId": 3,
-        "value": 0.05
+        "value": 0.06
       }
     ],
     "iconIndex": 1313,
