@@ -9359,6 +9359,14 @@ Game_Event.prototype.actorCharacter = function(image) {
                 name = "Actor4_Old";
                 index = 0;
                 break;
+            case 211: // Blue Developer Outfit
+                name = "Developers";
+                index = 0;
+                break;
+            case 212: // Red Developer Outfit
+                name = "Developers";
+                index = 1;
+                break;
             
             // Player 2
             case 86: // Mage Outfit
@@ -9377,6 +9385,7 @@ Game_Event.prototype.actorCharacter = function(image) {
                 name = "Actor4_Old";
                 index = 1;
                 break;
+            // Blue/Red Developer outfits handled by Player 1
             
             // Player 3
             case 87: // Cleric Outfit
