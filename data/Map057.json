@@ -24331,6 +24331,496 @@
       ],
       "x": 43,
       "y": 26
+    },
+    {
+      "id": 25,
+      "name": "guard",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Evil2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                23
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  120
+                ],
+                "indent": null
+              },
+              {
+                "code": 20,
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 23,
+      "y": 37
+    },
+    {
+      "id": 26,
+      "name": "guard",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Evil2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                23
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  120
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  120
+                ],
+                "indent": null
+              },
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 6,
+      "y": 41
+    },
+    {
+      "id": 27,
+      "name": "guard",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Evil2",
+            "direction": 8,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                23
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  180
+                ],
+                "indent": null
+              },
+              {
+                "code": 34,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  60
+                ],
+                "indent": null
+              },
+              {
+                "code": 18,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  60
+                ],
+                "indent": null
+              },
+              {
+                "code": 16,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  180
+                ],
+                "indent": null
+              },
+              {
+                "code": 19,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  60
+                ],
+                "indent": null
+              },
+              {
+                "code": 33,
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 22,
+      "y": 9
+    },
+    {
+      "id": 28,
+      "name": "guard",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Evil2",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 0
+          },
+          "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                23
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 5"
+                ],
+                "indent": 0
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 3,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  300
+                ],
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 2,
+                "indent": null
+              },
+              {
+                "code": 15,
+                "parameters": [
+                  300
+                ],
+                "indent": null
+              },
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 11,
+      "y": 26
     }
   ]
 }
