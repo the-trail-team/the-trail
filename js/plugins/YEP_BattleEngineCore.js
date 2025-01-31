@@ -4457,6 +4457,7 @@ Game_Enemy.prototype.performDamage = function() {
 };
 
 Game_Enemy.prototype.attackAnimationId = function() {
+    if (this._overrideAttackAnimationId) return this._overrideAttackAnimationId;
     return this.enemy().attackAnimationId;
 };
 
