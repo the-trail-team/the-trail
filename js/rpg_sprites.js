@@ -2652,6 +2652,7 @@ Spriteset_Battle.prototype.createActors = function() {
     this._actorSprites = [];
     for (var i = 0; i < $gameParty.maxBattleMembers(); i++) {
         this._actorSprites[i] = new Sprite_Actor();
+        this._actorSprites[i].z = i + 1
         this._battleField.addChild(this._actorSprites[i]);
     }
 };
