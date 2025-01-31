@@ -2791,24 +2791,14 @@
     "chanceByDamage": 100,
     "traits": [
       {
-        "code": 21,
-        "dataId": 2,
-        "value": 0.7
-      },
-      {
-        "code": 21,
-        "dataId": 4,
-        "value": 0.7
-      },
-      {
         "code": 22,
         "dataId": 0,
-        "value": -0.15
+        "value": -0.2
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": -0.06
+        "value": -0.1
       }
     ],
     "iconIndex": 109,
@@ -2820,7 +2810,7 @@
     "minTurns": 2,
     "motion": 0,
     "name": "Eye of the Storm",
-    "note": "<Category: Wind>\n<Category: debuff>\n<Category: moderate debuff>\n\n<animationRow:11>\n\n<Help Description>\nDecreases ATK and MAT by 30%, HIT by 15%, and CRI by 6%.\n</Help Description>",
+    "note": "<Category: Wind>\n<Category: debuff>\n<Category: moderate debuff>\n\n<animationRow:11>\n\n<Help Description>\nDecreases HIT by 20% and CRI by 10%.\n</Help Description>",
     "overlay": 0,
     "priority": 69,
     "removeAtBattleEnd": true,
