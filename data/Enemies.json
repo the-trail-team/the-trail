@@ -3854,25 +3854,30 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.95
+        "value": 1
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
       }
     ],
     "gold": 50,
     "name": "Beet Boxer",
     "note": "<Armor Weakness: Slashing>\n<Element: Plant>\n<Passive State: 136>\n\n<Enemy Drops>\nVicious Herb: 75%\nVicious Herb: 75%\nWorm: 50%\nWorm: 50%\nWorm: 50%\nMedicinal Herb: 12.5%\nMedicinal Herb: 12.5%\nMedicinal Root: 5%\nRing of the Forest: 5%\nATK Scroll ★: 10%\nPlant Essence: 20%\n</Enemy Drops>\n\n<Conditional Reggie's Bananas Drop>\nEval !$gameParty.hasItem($dataItems[78]): +0.5%\n</Conditional Reggie's Bananas Drop>",
     "params": [
-      800,
+      1000,
       0,
       28,
       20,
       10,
       40,
-      90,
+      135,
       30
     ]
   },
