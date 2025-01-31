@@ -3317,7 +3317,7 @@
     "iconIndex": 117,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 70,
+    "mpCost": 50,
     "name": "Dispell",
     "note": "<Require = 0 BP>\n\n<Remove State Category: weak debuff>\n<Remove State Category: moderate debuff>\n\n<Custom Select Condition>\ncondition = (\n  target.isStateCategoryAffected('WEAK DEBUFF') ||\n  target.isStateCategoryAffected('MODERATE DEBUFF')\n);\n</Custom Select Condition>\n\n<action copy: skill:11>",
     "occasion": 0,
