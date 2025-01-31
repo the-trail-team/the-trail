@@ -4148,12 +4148,12 @@
     "name": "Chilling Apparition",
     "note": "<Element: Ice, Dark>\n<Element Absorb: Ice>\n<Passive State: 57, 129, 144>\n\n<Breathing Speed: 15>\n<Attack Animation: 4>\n\n<AI Priority>\nRandom 50% +++ State !== Frozen II: Ice II\nRandom 50% +++ State !== Blinded: Dark Orb\nAlways: Attack\n</AI Priority>\n\n<Enemy Drops>\nPocket Mirror: 5%\nWarm Scarf: 5%\nIce Cube: 75%\nIce Cube: 75%\nFrozen Jewel: 20%\nMAT Scroll ★: 10%\nIce II (Tome): 2%\nIce Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      1500,
+      2000,
       0,
       22,
       30,
       60,
-      80,
+      85,
       30,
       15
     ]
@@ -4483,7 +4483,7 @@
     "battlerHue": 0,
     "battlerName": "Ice Slime",
     "dropItems": [],
-    "exp": 50,
+    "exp": 60,
     "traits": [
       {
         "code": 31,
@@ -4521,11 +4521,11 @@
         "value": 1
       }
     ],
-    "gold": 40,
+    "gold": 48,
     "name": "Ice Slime",
     "note": "<Element: Ice>\n<Element Absorb: Ice>\n<Passive State: 136, 144>\n\n<Attack Animation: 4>\n\n<AI Priority>\nState === Confused: Purify\nState === Poisoned: Purify\nState === Paralyzed: Purify\n</AI Priority>\n\n<Enemy Drops>\nSlime Scarf: 5%\nWarm Scarf: 5%\nIcy Gel: 75%\nIcy Gel: 75%\nIce Cube: 75%\nIce Cube: 75%\nElixir: 20%\nLarge Elixir: 10%\nFrozen Jewel: 20%\nCondensed Icy Gel: 5%\nIce II (Tome): 2%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
-      1200,
+      1500,
       60,
       24,
       40,
@@ -5111,7 +5111,7 @@
     "name": "Polar Bear",
     "note": "<Armor Weakness: Slashing>\n<Element: Ice>\n<Passive State: 144>\n\n<Breathing Speed: 20>\n<Attack Animation: 19>\n\n<Enemy Drops>\nWarm Scarf: 5%\nRaw Bear Meat: 75%\nRaw Bear Meat: 75%\nHoney: 25%\nFrozen Jewel: 20%\nIce II (Tome): 2%\nIce Essence: 20%\n</Enemy Drops>",
     "params": [
-      1600,
+      1800,
       0,
       30,
       35,
