@@ -25,6 +25,8 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
   $.saveScreenshot = function(){
     if (!Utils.isNwjs()) return;
 
+    $gameSystem.setShowMapQuestWindow(false);
+
     var fs = require('fs');
     var path = './SCREENSHOTS';
 
@@ -34,14 +36,19 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
       }
       var fileName = path + '/' + $.generateFileName();
     
-      var snap = SceneManager.snap();
-      var urlData = snap._canvas.toDataURL();
-      var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
-    
-      fs.writeFileSync(fileName, base64Data, 'base64');
+      requestAnimationFrame(function() {
+        var snap = SceneManager.snap();
+        var urlData = snap._canvas.toDataURL();
+        var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
+      
+        fs.writeFileSync(fileName, base64Data, 'base64');
+
+        $gameSystem.setShowMapQuestWindow(true);
+      });
     } catch (error) {
       console.error("An error occurred while saving the screenshot:", error);
       alert("Screenshot failed: " + error.message);
+      $gameSystem.setShowMapQuestWindow(true);
     }    
   };
 
