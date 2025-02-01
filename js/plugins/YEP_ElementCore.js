@@ -740,6 +740,11 @@ Game_Action.prototype.getItemElements = function() {
   return elements.filter(Yanfly.Util.onlyUnique);
 };
 
+Game_Action.prototype.hasElement = function(elements) {
+  elements = [].concat(elements);
+  return this.getItemElements().some(e => elements.includes(e));
+};
+
 Game_Action.prototype.calcElementRate = function(target) {
   if (!this.item()) return 1;
   var finalRate;
