@@ -1385,15 +1385,62 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Monster3",
+            "characterName": "People1",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 1
+            "characterIndex": 4
           },
           "list": [
             {
-              "code": 122,
+              "code": 101,
               "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Welcome to the work-in-progress pet shop! For now, all"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "you can do here is equip any pet items you may have found."
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Summon pet",
+                  "Remove pet",
+                  "Goodbye"
+                ],
+                2,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Summon pet"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 1,
               "parameters": [
                 35,
                 35,
@@ -1404,73 +1451,144 @@
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameMap._interpreter._params = [35, \"Pets\"];"
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameMap._interpreter.command104();"
               ]
             },
             {
               "code": 108,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Extra line to fix bug with interpreter"
               ]
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "SceneManager._scene._spriteset.destroyAllBShadows()"
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 ""
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "const id = $gameVariables.value(35);"
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "if (id > 0) $gameParty.addPetFromItem(id);"
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "else $gameParty.addPet();"
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 ""
               ]
             },
             {
               "code": 655,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "SceneManager._scene._spriteset.createCharacterShadows()"
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                1,
+                "Remove pet"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "SceneManager._scene._spriteset.destroyAllBShadows()"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "$gameParty.removePet();"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                ""
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "SceneManager._scene._spriteset.createCharacterShadows()"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                2,
+                "Goodbye"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,

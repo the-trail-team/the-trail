@@ -5780,6 +5780,13 @@ Game_Party.prototype.addPetFromItem = function(id) {
     this.addPet(item.meta['Pet'].trim());
 };
 
+Game_Party.prototype.removePet = function() {
+    const actor = $gameActors.actor(7);
+    actor.setName("Pet");
+    this.removeGuestActor(7);
+    $gamePlayer.refresh();
+};
+
 //-----------------------------------------------------------------------------
 // Game_Troop
 //
