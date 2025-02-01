@@ -5160,12 +5160,12 @@
       }
     ],
     "iconIndex": 763,
-    "maxTurns": 3,
+    "maxTurns": 10,
     "message1": "'s DEF was increased!",
     "message2": "",
     "message3": "",
     "message4": "'s DEF went back to normal.",
-    "minTurns": 3,
+    "minTurns": 10,
     "motion": 0,
     "name": "Thick-Skinned Herb",
     "note": "<Help Description>\nIncreases DEF by 20%.\n</Help Description>",
@@ -5174,9 +5174,9 @@
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 1000
   },
   {
     "id": 153,
@@ -5190,12 +5190,12 @@
       }
     ],
     "iconIndex": 764,
-    "maxTurns": 3,
+    "maxTurns": 10,
     "message1": "'s ATK was increased!",
     "message2": "",
     "message3": "",
     "message4": "'s ATK went back to normal.",
-    "minTurns": 3,
+    "minTurns": 10,
     "motion": 0,
     "name": "Vicious Herb",
     "note": "<Help Description>\nIncreases ATK by 20%.\n</Help Description>",
@@ -5204,9 +5204,9 @@
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
-    "removeByWalking": false,
+    "removeByWalking": true,
     "restriction": 0,
-    "stepsToRemove": 100
+    "stepsToRemove": 1000
   },
   {
     "id": 154,
