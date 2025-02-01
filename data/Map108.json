@@ -12777,7 +12777,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "$gameParty.hasItem($dataItems[101]) && (!$gameSwitches.value(49) || $gameSwitches.value(50))"
+                "$gameParty.hasPickaxe() && (!$gameSwitches.value(49) || $gameSwitches.value(50))"
               ]
             },
             {
