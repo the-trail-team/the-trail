@@ -5612,6 +5612,10 @@ Game_Party.prototype.partyAbility = function(abilityId) {
 
 Game_Party.prototype.partyStat = function(abilityId, actorId) {
     let stat = 1;
+    if (abilityId == Game_Party.ABILITY_GOLD_DOUBLE) {
+        if ($gameSystem.statue(51)) stat += 0.02; // Haven Harbor
+        if ($gameSystem.statue(148)) stat += 0.02; // Crusher Cave
+    }
     this.battleMembers().filter(a => a.actorId() != actorId).forEach(a => stat *= a.partyStat(abilityId));
     return stat;
 };

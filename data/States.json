@@ -9297,11 +9297,6 @@
         "code": 11.1,
         "dataId": 8,
         "value": -0.01
-      },
-      {
-        "code": 64,
-        "dataId": 4,
-        "value": 1.02
       }
     ],
     "iconIndex": 0,
@@ -9313,7 +9308,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Statue - Haven Harbor",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(51);\n</Custom Passive Condition>\n\n<Statue Icon: 199>\n<Statue Buff: +2% Bit Find>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\nEffect hardcoded into Game_Party.partyStat\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(51);\n</Custom Passive Condition>\n\n<Statue Icon: 199>\n<Statue Buff: +2% Bit Find>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -9452,11 +9447,6 @@
         "code": 11.1,
         "dataId": 8,
         "value": -0.01
-      },
-      {
-        "code": 64,
-        "dataId": 4,
-        "value": 1.02
       }
     ],
     "iconIndex": 0,
@@ -9468,7 +9458,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Statue - Crusher Cave",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(148);\n</Custom Passive Condition>\n\n<Statue Icon: 199>\n<Statue Buff: +2% Bit Find>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n\nEffect hardcoded into Game_Party.partyStat\n\n<Element Amplify Light: +1%>\n\n<Custom Passive Condition>\ncondition = $gameSystem.statue(148);\n</Custom Passive Condition>\n\n<Statue Icon: 199>\n<Statue Buff: +2% Bit Find>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
