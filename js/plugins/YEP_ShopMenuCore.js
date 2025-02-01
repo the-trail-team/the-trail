@@ -783,6 +783,7 @@ Window_ShopStatus.prototype.drawActorCantEquip = function(actor, rect) {
 
 Window_ShopStatus.prototype.drawActorChange = function(actor, rect, item1, i) {
     var change = this._item.params[i]
+    if (item1) if (item1.baseItemId == 157) change -= $gameSystem.championsTalisman()[i]; // Champion's Talisman
     change -= (item1 ? item1.params[i] : 0);
     this.changePaintOpacity(change !== 0);
     this.changeTextColor(this.paramchangeTextColor(change));
