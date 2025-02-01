@@ -3876,17 +3876,8 @@
           },
           "list": [
             {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                2,
-                "A",
-                1
-              ]
-            },
-            {
               "code": 101,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 "People1",
                 4,
@@ -3896,24 +3887,45 @@
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 "\\n<Employee>Welcome to Mrs. Wuttersborth's Pastry Palace!"
               ]
             },
             {
               "code": 401,
-              "indent": 1,
+              "indent": 0,
               "parameters": [
                 "It's a bit of a WIP..."
               ]
             },
             {
-              "code": 123,
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Shop",
+                  "Goodbye"
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Shop"
+              ]
+            },
+            {
+              "code": 117,
               "indent": 1,
               "parameters": [
-                "A",
-                0
+                61
               ]
             },
             {
@@ -3922,16 +3934,22 @@
               "parameters": []
             },
             {
-              "code": 412,
+              "code": 402,
               "indent": 0,
+              "parameters": [
+                1,
+                "Goodbye"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
               "parameters": []
             },
             {
-              "code": 117,
+              "code": 404,
               "indent": 0,
-              "parameters": [
-                61
-              ]
+              "parameters": []
             },
             {
               "code": 0,
@@ -3954,10 +3972,10 @@
           "moveSpeed": 3,
           "moveType": 0,
           "priorityType": 1,
-          "stepAnime": true,
+          "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false
+          "walkAnime": true
         }
       ],
       "x": 11,
