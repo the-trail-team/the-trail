@@ -599,8 +599,7 @@ DataManager.processEEDNotetags1 = function(group) {
           continue;
         }
         if (!item) continue;
-        var arr = [item, conditionalLines];
-        obj.conditionalDropItems.push(arr);
+        DataManager.createConditionalEnemyDrop(obj, item, conditionalLines);
         conditionalLines = [];
       } else if (evalMode === 'conditionalDrop') {
         conditionalLines.push(line);
@@ -624,7 +623,7 @@ DataManager.processEEDNotetags1 = function(group) {
         var always = "Always: +" + RegExp.$2;
         var night = "Switch 69 ON: " + RegExp.$3;
         var arr = [always, night];
-        obj.conditionalDropItems.push([item, arr]);
+        DataManager.createConditionalEnemyDrop(obj, item, arr);
       }
     }
     this.createGlobalDrops(obj);
@@ -640,7 +639,7 @@ DataManager.createGlobalDrops = function(obj) {
       "Eval [5].contains($gameSystem.chapter()): +0.004%",
       "Eval [6].contains($gameSystem.chapter()): +0.005%"
     ];
-    obj.conditionalDropItems.push([item, arr]);
+    DataManager.createConditionalEnemyDrop(obj, item, arr);
 
     // Seshat's Charm (1/100 drop)
     var id = 160;
@@ -669,7 +668,7 @@ DataManager.createGlobalDrops = function(obj) {
       "Times Element Fire Struck >= 1: +100%",
       "Eval !user.enemy().elements.contains(\"PLANT\"): -100%"
     ];
-    obj.conditionalDropItems.push([item, arr]);
+    DataManager.createConditionalEnemyDrop(obj, item, arr);
 };
 
 DataManager.createEnemyDrop = function(obj, dataId, rate, kind) {
@@ -683,6 +682,14 @@ DataManager.createEnemyDrop = function(obj, dataId, rate, kind) {
     if (kind === 2 && !Yanfly.EED.WeaponDropIDs.contains(dataId)) Yanfly.EED.WeaponDropIDs.push(dataId);
     if (kind === 3 && !Yanfly.EED.ArmorDropIDs.contains(dataId)) Yanfly.EED.ArmorDropIDs.push(dataId);
 };
+
+DataManager.createConditionalEnemyDrop = function(obj, item, conditions) {
+    obj.conditionalDropItems.push([item, conditions]);
+    dataId = item.id;
+    if (DataManager.isItem(item) && !Yanfly.EED.ItemDropIDs.contains(dataId)) Yanfly.EED.ItemDropIDs.push(dataId);
+    if (DataManager.isWeapon(item) && !Yanfly.EED.WeaponDropIDs.contains(dataId)) Yanfly.EED.WeaponDropIDs.push(dataId);
+    if (DataManager.isArmor(item) && !Yanfly.EED.ArmorDropIDs.contains(dataId)) Yanfly.EED.ArmorDropIDs.push(dataId);
+}
 
 //=============================================================================
 // Game_BattlerBase
