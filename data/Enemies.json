@@ -5186,14 +5186,14 @@
     ],
     "gold": 72,
     "name": "Gazer",
-    "note": "<Armor Weakness: Piercing>\n<Passive State: 190>\n\n<Sideview Battler: Gazer_1>\n<Sideview No Collapse>\n\n<AI Priority>\nEval user.hasState(189): Attack\nState === Watchful Gaze: Watchful Gaze\nState !== Weak Point +++ Random 50%: Nasty Glare\nAlways: Watchful Gaze\n</AI Priority>\n\n<Enemy Drops>\nWanted Poster: 5%\nGazer Goop: 75%\nGazer Goop: 75%\nMedicated Eyedrops: 33.33%\nGazer Charm: 5%\nMDR Scroll: 10%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Piercing>\n<Passive State: 190>\n\n<Sideview Battler: Gazer_1>\n<Sideview No Collapse>\n\n<AI Priority>\nEval user.hasState(189): Attack\nState === Watchful Gaze: Watchful Gaze\nState !== Weak Point +++ Random 50%: Nasty Glare\nAlways: Watchful Gaze\n</AI Priority>\n\n<Enemy Drops>\nWanted Poster: 5%\nGazer Goop: 75%\nGazer Goop: 75%\nMedicated Eyedrops: 50%\nGazer Charm: 5%\nMDR Scroll: 10%\n</Enemy Drops>",
     "params": [
-      2500,
+      2000,
       0,
       25,
       40,
       60,
-      90,
+      80,
       50,
       30
     ]
@@ -5258,7 +5258,7 @@
     "name": "Parasite",
     "note": "<Armor Weakness: Piercing>\n<Passive State: 148>\n\n<Sideview Battler: NoMatchingSprite/Parasite>\n<Attack Animation: 11>\n\n<Enemy Drops>\nStinger: 75%\nStinger: 75%\nVial of Poison: 25%\nDismembered Eye: 5%\nRazor-Sharp Fang: 5%\nPDR Scroll: 10%\n</Enemy Drops>",
     "params": [
-      2500,
+      2000,
       0,
       40,
       35,
@@ -5336,14 +5336,14 @@
     ],
     "gold": 80,
     "name": "Poltergeist",
-    "note": "<Element: Dark>\n<Passive State: 57, 150>\n\n<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Sideview No Collapse>\n\n<Boost Skill 132: Full>\n<AI Priority>\nState !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\n</AI Priority>\n\n<Enemy Drops>\nBattle Plan: 5%\nSleepy Hourglass: 5%\nPocket Mirror: 5%\n</Enemy Drops>\n\n<Night Boost>\nEctoblood: 75% +25%\nEctoblood: 75% +25%\nEctoplasm: 10% +10%\nFaux-Gold Headband: 5% +5%\nMRG Scroll: 10%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Element: Dark>\n<Passive State: 57, 150>\n\n<Sideview Battler: NoMatchingSprite/Poltergeist>\n<Sideview No Collapse>\n\n<Boost Skill 132: Full>\n<AI Priority>\nState !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\n</AI Priority>\n\n<Enemy Drops>\nBattle Plan: 5%\nSleepy Hourglass: 5%\nPocket Mirror: 5%\n</Enemy Drops>\n\n<Night Boost>\nEctoblood: 75% +25%\nEctoblood: 75% +25%\nEctoplasm: 50% +50%\nFaux-Gold Headband: 5% +5%\nMRG Scroll: 10%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      2500,
+      2000,
       0,
       15,
       30,
       75,
-      200,
+      120,
       150,
       70
     ]
@@ -5406,14 +5406,14 @@
     ],
     "gold": 72,
     "name": "Feral Rat",
-    "note": "<Armor Weakness: Slashing>\n<Sideview Battler: FeralRat>\n<Attack Animation: 16>\n\n<AI Priority>\nState === Magical Barrier: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nFeral Rat Fur: 75%\nFeral Rat Fur: 75%\nFulfilling Ration: 33.33%\nResiliant Pelt: 5%\nRazor-Sharp Fang: 5%\nSilver Wristbraces: 5%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Sideview Battler: FeralRat>\n<Attack Animation: 16>\n\n<AI Priority>\nState === Magical Barrier: Shield Break, Highest HP%\n</AI Priority>\n\n<Enemy Drops>\nFeral Rat Fur: 75%\nFeral Rat Fur: 75%\nFulfilling Ration: 50%\nResiliant Pelt: 5%\nRazor-Sharp Fang: 5%\nSilver Wristbraces: 5%\n</Enemy Drops>",
     "params": [
-      2500,
+      2000,
       0,
-      50,
-      35,
+      40,
+      30,
       10,
-      60,
+      50,
       150,
       45
     ]
@@ -5535,13 +5535,13 @@
     ],
     "gold": 80,
     "name": "Fire Imp",
-    "note": "<Armor Weakness: Slashing>\n<Element: Fire>\n\n<Sideview Battler: Monster4_3>\n<Attack Animation: 18>\n\n<Enemy Drops>\nSelfish Candle: 5%\nFiery Blood: 75%\nFiery Blood: 75%\nFire Resistance Potion: 33.33%\nFire Essence: 20%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Fire>\n\n<Sideview Battler: Monster4_3>\n<Attack Animation: 18>\n\n<Enemy Drops>\nSelfish Candle: 5%\nFiery Blood: 75%\nFiery Blood: 75%\nFire Resistance Potion: 50%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
-      2500,
+      2000,
       0,
       33,
       33,
-      68,
+      62,
       70,
       140,
       45
