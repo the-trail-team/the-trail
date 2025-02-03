@@ -1,5 +1,13 @@
+@echo off
+echo Move the OS deployment files to the NW.js folder
+pause
+
 call node "%CD%"\deployment.js
+
+cd ..
+
 call node "%CD%"\pre-commit.js
+
 
 cd ..
 

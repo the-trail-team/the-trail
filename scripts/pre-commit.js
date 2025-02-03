@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 
 const fs = require('fs')
+const path = require('path')
 
 // CONFIGURATION
 
-const config = JSON.parse(fs.readFileSync(__dirname + "/config.json"))
+const config_path = path.join(__dirname, 'config.json')
+const config = JSON.parse(fs.readFileSync(config_path))
 const minify = config['pre-commit'].minify;
 
 // JSON EDITING/PRETTYIFYING
 
-const data_directory = config.deployment.extraPath + "data"
+const data_directory = path.join(config.deployment.extraPath, 'data')
 const indent = minify ? 0 : 2;
 try {
     fs.readdir(`${data_directory}`, function (err, files) {
