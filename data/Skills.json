@@ -4964,7 +4964,7 @@
     "damage": {
       "critical": false,
       "elementId": 14,
-      "formula": "Math.ceil(a._kinetic / $gameParty.aliveMembers().length / 2.5)",
+      "formula": "Math.ceil(a._kinetic / $gameParty.aliveMembers().length / 3.5)",
       "type": 1,
       "variance": 0
     },
