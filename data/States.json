@@ -1655,12 +1655,12 @@
       {
         "code": 21,
         "dataId": 3,
-        "value": 1.3
+        "value": 1.2
       },
       {
         "code": 21,
         "dataId": 5,
-        "value": 1.3
+        "value": 1.2
       }
     ],
     "iconIndex": 30,
@@ -1672,7 +1672,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Critical Protect",
-    "note": "<Custom Passive Condition>\ncondition = user.hpRate() <= 0.25 && $gameParty.inBattle() && user.isAlive();\n</Custom Passive Condition>\n\n<Help Description>\nIncreases DEF and MDF by 30% when below HP is below 20% MHP.\n</Help Description>",
+    "note": "<Custom Passive Condition>\ncondition = user.hpRate() <= 0.4 && $gameParty.inBattle() && user.isAlive();\n</Custom Passive Condition>\n\n<Help Description>\nIncreases DEF and MDF by 30% when below HP is below 20% MHP.\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
