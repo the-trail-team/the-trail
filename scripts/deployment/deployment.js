@@ -17,11 +17,13 @@ try {
     fs.writeFileSync(path_config, JSON.stringify(config, null, 0))
 
     // Fix package.json
-    const path_package = path.join(__dirname, '..', '..', 'package.json')
-    let package = JSON.parse(fs.readFileSync(path_package))
-    package.main = "www/index.html"
-    package.window.icon = "www/icon/icon.png"
-    fs.writeFileSync(path_package, JSON.stringify(package, null, 0))
+    if (process.platform != 'darwin') {
+        const path_package = path.join(__dirname, '..', '..', 'package.json')
+        let package = JSON.parse(fs.readFileSync(path_package))
+        package.main = "www/index.html"
+        package.window.icon = "www/icon/icon.png"
+        fs.writeFileSync(path_package, JSON.stringify(package, null, 0))
+    }
 } catch (err) {
     console.error(err)
     process.exit(1)
