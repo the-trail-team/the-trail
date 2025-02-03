@@ -4964,19 +4964,19 @@
     "damage": {
       "critical": false,
       "elementId": 14,
-      "formula": "(a._kinetic / $gameParty.aliveMembers() / 3) - b.def * 2",
+      "formula": "Math.ceil(a._kinetic / $gameParty.aliveMembers().length / 2.5)",
       "type": 1,
-      "variance": 5
+      "variance": 0
     },
     "description": "",
     "effects": [],
-    "hitType": 1,
+    "hitType": 0,
     "iconIndex": 11,
     "message1": " uses %1!",
     "message2": "",
     "mpCost": 0,
     "name": "Kinetic Energy",
-    "note": "<After Eval>\nthis.subject()._kinetic = 0;\nconsole.log(value);\n</After Eval>\n\n<action copy: skill:1>",
+    "note": "<setup action>\nmove user: target, front base, 20\nwait for movement\nmotion attack: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\neval: user._kinetic = 0;\n</follow action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
