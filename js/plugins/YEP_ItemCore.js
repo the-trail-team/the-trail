@@ -1092,6 +1092,10 @@ Game_Actor.prototype.unequipItem = function(item) {
     }
 };
 
+Game_Actor.prototype.isEquipped = function(item) {
+    return this.equips().some(equip => equip.baseItemId == item.id);
+};
+
 //=============================================================================
 // Game_Party
 //=============================================================================
