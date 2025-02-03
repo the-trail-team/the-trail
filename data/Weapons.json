@@ -2048,7 +2048,7 @@
     ],
     "iconIndex": 1234,
     "name": "Tellurium Spellbook",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nBlank Tome\nTellurium Alloy: 3\nTellurium Core\n</Synthesis Ingredients>\n<Mask Name: Alloy-Based Book>",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([201, 17, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       300,

@@ -6141,7 +6141,7 @@
     ],
     "gold": 3000,
     "name": "Apocalypse",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 139, 141>\n<Light Break: 5>\n\n<Sideview Battler: Boss1_2>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<Boost Skill 60: Full>\n<AI Priority>\nEval user.timesStruckElement(8) == 0: Guard\nState !== Magic Enhance +++ User HP% param >= 35%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 110 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nSleepy Hourglass: 5%\nChip of Golden Armor: 100%\nTellurium Spellbook: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 139, 141>\n<Light Break: 5>\n\n<Sideview Battler: Boss1_2>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 360>\n<HP Gauge Color 1: 15>\n<HP Gauge Color 2: 14>\n\n<Boost Skill 60: Full>\n<AI Priority>\nEval user.timesStruckElement(8) == 0: Guard\nState !== Magic Enhance +++ User HP% param >= 35%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 110 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nSleepy Hourglass: 5%\nChip of Golden Armor: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       70000,
       0,
