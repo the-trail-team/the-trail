@@ -398,6 +398,7 @@ Window_StatusInfo.prototype.drawBattleStatistics = function() {
 		this.drawKDACount();
 		this.drawKDARatios();
 		this.drawTotalDamageHealing();
+		this.drawTotalMpUsed();
 };
 
 Window_StatusInfo.prototype.drawBattleCount = function() {
@@ -488,6 +489,18 @@ Window_StatusInfo.prototype.drawTotalDamageHealing = function() {
 		this.drawText(text, p, lh * 6, this.contents.width - p * 2, 'right');
 		text = Yanfly.Util.toGroup(this._actor.totalHealingTaken());
 		this.drawText(text, p, lh * 7, this.contents.width - p * 2, 'right');
+};
+
+Window_StatusInfo.prototype.drawTotalMpUsed = function() {
+		var lh = this.lineHeight();
+		var p = this.textPadding();
+		this.drawDarkRect(0, lh * 8, this.contents.width, lh);
+		this.changeTextColor(this.systemColor());
+		var text = "Total MP Used";
+		this.drawText(text, p, lh * 8, this.contents.width - p * 2);
+		this.changeTextColor(this.normalColor());
+		text = Yanfly.Util.toGroup(this._actor.totalMpUsed());
+		this.drawText(text, p, lh * 8, this.contents.width - p * 2, 'right');
 };
 
 //=============================================================================

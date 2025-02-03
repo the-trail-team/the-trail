@@ -1,3 +1,12 @@
+//=============================================================================
+// AP_NameSaves
+//=============================================================================
+const maxNameLength = 32;
+
+//=============================================================================
+// Overrides
+//=============================================================================
+
 Window_SavefileList.prototype.drawFileId = function(id, x, y) {
     var saveNames = [];
     if ($gameVariables.value(74) !== 0) {
@@ -8,8 +17,7 @@ Window_SavefileList.prototype.drawFileId = function(id, x, y) {
         }
         $gameVariables.setValue(74, saveNames);
     }
-
-    this.drawText(saveNames[id], x, y, 180);
+    this.drawText(saveNames[id], x, y, this.width - 80);
 };
 
 var Window_SaveAction_makeCommandList = Window_SaveAction.prototype.makeCommandList;
@@ -26,6 +34,7 @@ Scene_File.prototype.createActionWindow = function() {
 
 Scene_File.prototype.onActionRename = function() {
     $gameTemp._saveFileId = SceneManager._scene._actionWindow._currentFile;
+    $gameTemp._renamingSave = true;
     SceneManager.push(Scene_SaveFileRename);
 };
 
@@ -55,7 +64,7 @@ Scene_SaveFileRename.prototype.initialize = function() {
 };
 
 Scene_SaveFileRename.prototype.createEditWindow = function() {
-  this._editWindow = new Window_SaveFileRename($gameTemp._saveFileId, 16);
+  this._editWindow = new Window_SaveFileRename($gameTemp._saveFileId, maxNameLength);
   this.addWindow(this._editWindow);
 };
 
@@ -96,7 +105,7 @@ Window_SaveFileRename.prototype.initialize = function(saveFileId, maxLength) {
 };
 
 Window_SaveFileRename.prototype.windowWidth = function() {
-  return 480;
+  return maxNameLength * 22.5;
 };
 
 Window_SaveFileRename.prototype.windowHeight = function() {

@@ -753,7 +753,7 @@ Bitmap._reuseImages = [];
 
 Bitmap.prototype._createCanvas = function(width, height){
     this.__canvas = this.__canvas || document.createElement('canvas');
-    this.__context = this.__canvas.getContext('2d');
+    this.__context = this.__canvas.getContext('2d', { willReadFrequently : true });
 
     this.__canvas.width = Math.max(width || 0, 1);
     this.__canvas.height = Math.max(height || 0, 1);
@@ -2406,7 +2406,7 @@ Graphics._testCanvasBlendModes = function() {
     canvas = document.createElement('canvas');
     canvas.width = 1;
     canvas.height = 1;
-    context = canvas.getContext('2d');
+    context = canvas.getContext('2d', { willReadFrequently : true });
     context.globalCompositeOperation = 'source-over';
     context.fillStyle = 'white';
     context.fillRect(0, 0, 1, 1);
@@ -2550,6 +2550,7 @@ Graphics._updateUpperCanvas = function() {
 Graphics._clearUpperCanvas = function() {
     var context = this._upperCanvas.getContext('2d');
     context.clearRect(0, 0, this._width, this._height);
+    document.getElementById('loading').innerHTML="";
 };
 
 /**
@@ -2566,7 +2567,8 @@ Graphics._paintUpperCanvas = function() {
         var alpha = ((this._loadingCount - 20) / 30).clamp(0, 1);
         context.save();
         context.globalAlpha = alpha;
-        context.drawImage(this._loadingImage, dx, dy);
+        // context.drawImage(this._loadingImage, dx, dy);
+        document.getElementById('loading').innerHTML="<img style='margin: 0; width: 38px; height: 24px; position: absolute; bottom: 0px; left: 29px; -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); z-index: 7' src='img/system/Loading.gif'>"
         context.restore();
     }
 };
@@ -3691,7 +3693,7 @@ TouchInput._setupEventHandlers = function() {
     document.addEventListener('mousedown', this._onMouseDown.bind(this));
     document.addEventListener('mousemove', this._onMouseMove.bind(this));
     document.addEventListener('mouseup', this._onMouseUp.bind(this));
-    document.addEventListener('wheel', this._onWheel.bind(this));
+    document.addEventListener('wheel', this._onWheel.bind(this), { passive: false });
     document.addEventListener('touchstart', this._onTouchStart.bind(this), isSupportPassive ? {passive: false} : false);
     document.addEventListener('touchmove', this._onTouchMove.bind(this), isSupportPassive ? {passive: false} : false);
     document.addEventListener('touchend', this._onTouchEnd.bind(this));

@@ -1326,6 +1326,13 @@ DataManager.processCORENotetags4 = function(group) {
         if (learning.level < 1) obj.maxLevel = 1;
       }
     }, this);
+
+    obj.icon = 0;
+    notedata.forEach(function(line) {
+      if (line.match(/<(?:ICON):[ ](\d+)>/i)) {
+        obj.icon = parseInt(RegExp.$1);
+      }
+    });
   }
 };
 
@@ -2434,6 +2441,19 @@ Window_Base.prototype.drawActorLevel = function(actor, x, y) {
 
 Window_Base.prototype.drawCurrentAndMax = function(current, max, x, y,
                                                    width, color1, color2) {
+    var bp = '';
+    var bpWidth = 0;
+    var lb = '';
+    var lbWidth = 0;
+    if (this instanceof Window_VisualHPGauge) {
+      var battler = this._battler;
+      bp = battler.barrierPoints();
+      bpText = '+(' + Yanfly.Util.toGroup(bp) + ')';
+      if (bp > 0) bpWidth = this.textWidth(bpText);
+      lb = battler.lightBreak();
+      lbText = '/' + Yanfly.Util.toGroup(lb);
+      if (lb > 0) lbWidth = this.textWidth(lbText);
+    }
     var labelWidth = this.textWidth('HP');
     var valueWidth = this.textWidth(Yanfly.Util.toGroup(max));
     var slashWidth = this.textWidth('/');
@@ -2442,8 +2462,12 @@ Window_Base.prototype.drawCurrentAndMax = function(current, max, x, y,
     var x3 = x2 - valueWidth;
     if (x3 >= x + labelWidth) {
         this.changeTextColor(color1);
-        this.drawText(Yanfly.Util.toGroup(current), x3, y, valueWidth,
+        this.drawText(Yanfly.Util.toGroup(current), x3 - bpWidth - lbWidth, y, valueWidth,
           'right');
+        this.changeTextColor(this.textColor(13));
+        if (bp > 0) this.drawText(bpText, x3 - bpWidth - lbWidth + valueWidth, y, bpWidth, 'right');
+        this.changeTextColor(this.textColor(6));
+        if (lb > 0) this.drawText(lbText, x3 - lbWidth + valueWidth, y, lbWidth, 'right');
         this.changeTextColor(color2);
         this.drawText('/', x2, y, slashWidth, 'right');
         this.drawText(Yanfly.Util.toGroup(max), x1, y, valueWidth, 'right');
@@ -2633,10 +2657,11 @@ Window_SkillType.prototype.makeCommandList = function() {
 Window_ActorCommand.prototype.addSkillCommands = function() {
     var skillTypes = this._actor.addedSkillTypes();
     skillTypes.splice(2,1); // splices Passive skill category from Window_ActorCommand
+    if ($gameMap.mapId() == 4) skillTypes = [4];
     skillTypes.sort(function(a, b){return a-b});
     skillTypes.forEach(function(stypeId) {
         var name = $dataSystem.skillTypes[stypeId];
-        this.addCommand(name, 'skill', true, stypeId);
+        this.addCommand(name, 'skill', this._actor.hasSkillType(stypeId), stypeId);
     }, this);
 };
 
@@ -2788,9 +2813,8 @@ Yanfly.Util = Yanfly.Util || {};
 if (Utils.RPGMAKER_VERSION && Utils.RPGMAKER_VERSION >= '1.5.0') {
 
 Yanfly.Util.toGroup = function(inVal) {
-  if (typeof inVal === 'string') return inVal;
-  if (!Yanfly.Param.DigitGroup) return inVal;
-  return inVal.toLocaleString('en');
+  if (typeof inVal !== 'string') { inVal = String(inVal); }
+  if (!eval(Yanfly.Param.DigitGroup)) return inVal;
   return inVal.replace(/(^|[^\w.])(\d{4,})/g, function($0, $1, $2) {
     return $1 + $2.replace(/\d(?=(?:\d\d\d)+(?!\d))/g, "$&,");
   });

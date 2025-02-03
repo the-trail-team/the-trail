@@ -721,12 +721,12 @@ Window_SavefileList.prototype.itemHeight = function() {
 
 Window_SavefileList.prototype.drawItem = function(index) {
     var id = index + 1;
-    var valid = DataManager.isThisGameFile(id);
+    var valid = DataManager.isThisGameFile(id) && !(this.index() == index && $gameTemp._deletingFile);
     var rect = this.itemRect(index);
     this.resetTextColor();
     //if (this._mode === 'load') this.changePaintOpacity(valid);
     this.changePaintOpacity(valid);
-    var icon = valid ? Yanfly.Param.SaveIconSaved : Yanfly.Param.SaveIconEmpty;
+    var icon = valid ? ($gameVariables.value(77)[id] || Yanfly.Param.SaveIconSaved) : Yanfly.Param.SaveIconEmpty;
     this.drawIcon(icon, rect.x + 2, rect.y + 2);
     this.drawFileId(id, rect.x + Window_Base._iconWidth + 4, rect.y);
 };
@@ -799,9 +799,6 @@ Window_SaveAction.prototype.update = function() {
 Window_SaveAction.prototype.updateIndex = function() {
     this._currentFile = this.savefileId();
     this.refresh();
-};
-
-Window_SaveAction.prototype.playOkSound = function() {
 };
 
 Window_SaveAction.prototype.updateHelp = function() {
@@ -898,19 +895,32 @@ Window_SaveInfo.prototype.drawGameTitle = function(dy) {
   if (!this._info) return dy;
   if (!this._info.title) return dy;
   this.resetFontSettings();
+
   // Title and Version
   var loadedSave = JsonEx.parse(StorageManager.load(this._currentFile));
-  if (loadedSave.version !== undefined) versionName = JsonEx.parse(StorageManager.load(this._currentFile)).version.name; else versionName = "Unknown Version";
+  if (loadedSave.version !== undefined) try {
+    versionName = JsonEx.parse(StorageManager.load(this._currentFile)).version.name
+  } catch (err) {
+    console.error(err);
+    versionName = "Failed to load version";
+  } else versionName = "Unknown version";
   var text = this._info.title + " (" + versionName + ")";
   this.drawText(text, 0, dy, this.contents.width, 'center');
 
   // Save Date and Time Since Last Save
-  var saveEpoch = DataManager.loadGlobalInfo()[this._currentFile].timestamp;
-  var differenceEpoch = Math.floor((Date.now() - saveEpoch) / 1000);
-  var interval = this.returnInterval(differenceEpoch);
+  try {
+    var saveEpoch = DataManager.loadGlobalInfo()[this._currentFile].timestamp;
+    var differenceEpoch = Math.floor((Date.now() - saveEpoch) / 1000);
+    var interval = this.returnInterval(differenceEpoch);
+    var date = new Date(saveEpoch);
+    var text = date.toLocaleString();
+  } catch (err) {
+    console.error(err);
+    var text = "Error loading time";
+    var interval = "Error loading interval";
+  }
+  this.drawText("Last Saved: " + text + " (" + interval + ")", 0, dy + this.lineHeight(), this.contents.width, 'center');
 
-  date = new Date(saveEpoch);
-  this.drawText("Last Saved: " + date.toLocaleString() + " (" + interval + ")", 0, dy + this.lineHeight(), this.contents.width, 'center');
   return dy + this.lineHeight();
 };
 
@@ -976,7 +986,7 @@ Window_SaveInfo.prototype.drawContents = function(dy) {
 Window_SaveInfo.prototype.drawPartyGraphics = function(dy) {
   if (Yanfly.Param.SaveInfoPartyType === 0) return dy;
   dy = eval(Yanfly.Param.SaveInfoPartyY);
-  var length = this._saveContents.party.maxBattleMembers();
+  var length = this._saveContents.party._actors.length;
   var dw = this.contents.width / length;;
   dw = Math.floor(dw);
   var dx = Math.floor(dw / 2);
@@ -1034,7 +1044,7 @@ Window_SaveInfo.prototype.drawPartyNames = function(dy) {
   if (!Yanfly.Param.SaveInfoActorName) return dy;
   this.resetFontSettings();
   this.contents.fontSize = Yanfly.Param.SaveInfoActorNameSz;
-  var length = this._saveContents.party.maxBattleMembers();
+  var length = this._saveContents.party._actors.length;
   var dw = this.contents.width / length;;
   dw = Math.floor(dw);
   var dx = 0;
@@ -1053,7 +1063,7 @@ Window_SaveInfo.prototype.drawPartyNames = function(dy) {
 Window_SaveInfo.prototype.drawPartyLevels = function(dy) {
   if (!Yanfly.Param.SaveInfoActorLv) return dy;
   this._drawLevel = true;
-  var length = this._saveContents.party.maxBattleMembers();
+  var length = this._saveContents.party._actors.length;
   var dw = this.contents.width / length;;
   dw = Math.floor(dw);
   var dx = 0;
@@ -1307,7 +1317,8 @@ Scene_File.prototype.create = function() {
     this.createActionWindow();
     this.createInfoWindow();
     this.createConfirmWindow();
-    if ($gameTemp._inGame !== true) this.startFadeIn(this.fadeSpeed(), false);
+    if (!$gameTemp._inGame && !$gameTemp._renamingSave) this.startFadeIn(this.fadeSpeed(), false);
+    $gameTemp._renamingSave = false;
 };
 
 Scene_File.prototype.createHelpWindow = function() {
@@ -1405,6 +1416,7 @@ Scene_File.prototype.onLoadSuccess = function() {
     this.reloadMapIfUpdated();
     SceneManager.goto(Scene_Map);
     this._loadSuccess = true;
+    $gameTemp._isGameLoaded = true;
 };
 
 Scene_Load.prototype.onLoadSuccess = function() {
@@ -1446,7 +1458,7 @@ Scene_File.prototype.performActionSave = function() {
 
 Scene_File.prototype.onSaveSuccess = function() {
     SoundManager.playSave();
-    StorageManager.cleanBackup(this.savefileId());
+    // StorageManager.cleanBackup(this.savefileId());
     if (Yanfly.Param.SavePop) {
       this.popScene();
     } else {

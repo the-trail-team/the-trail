@@ -350,6 +350,7 @@ Scene_Boot.prototype.create = function() {
     DataManager.loadDatabase();
     ConfigManager.load();
     this.loadSystemWindowImage();
+    if (Utils.isOptionValid('test') == 0) console.log("Welcome to The Trail's console!\nHow'd you even get here?\nWell, if you somehow got this far and still don't know what you're doing, feel free to find out.\nIf you do know what you're doing, I'm probably interested in your help...\nCheck out the GitHub issues page to see how you can contribute!");
 };
 
 Scene_Boot.prototype.loadSystemWindowImage = function() {
@@ -403,11 +404,6 @@ Scene_Boot.prototype.start = function() {
         SceneManager.goto(Scene_Title);
         Window_TitleCommand.initCommandPosition();
     }
-    this.updateDocumentTitle();
-};
-
-Scene_Boot.prototype.updateDocumentTitle = function() {
-    document.title = $dataSystem.gameTitle;
 };
 
 Scene_Boot.prototype.checkPlayerLocation = function() {
@@ -434,6 +430,7 @@ Scene_Title.prototype.initialize = function() {
 
 Scene_Title.prototype.create = function() {
     Scene_Base.prototype.create.call(this);
+    $gameTemp._isGameLoaded = false;
     this.createBackground();
     this.createForeground();
     this.createWindowLayer();
@@ -522,6 +519,7 @@ Scene_Title.prototype.commandContinue = function() {
 Scene_Title.prototype.commandOptions = function() {
     this._commandWindow.close();
     this.startFadeOut(this.fadeSpeed(), false);
+    $gameTemp._keyboardConfig = false;
     SceneManager.push(Scene_Options);
 };
 
@@ -571,6 +569,7 @@ Scene_Map.prototype.onMapLoaded = function() {
     if (this._transfer) {
         $gamePlayer.performTransfer();
     }
+    if ($dataMap.displayName == "Solus Town" && $gameSwitches.value(81)) $dataMap.data = $dataMapReplace['Solus Town']['Snow'];
     this.createDisplayObjects();
 };
 
@@ -585,6 +584,8 @@ Scene_Map.prototype.start = function() {
         this.startFadeIn(this.fadeSpeed(), false);
     }
     this.menuCalling = false;
+    if (!$gameTemp._patchSave) $gameTemp.reserveCommonEvent(77);
+    $gameTemp._patchSave = true;
 };
 
 Scene_Map.prototype.update = function() {
@@ -1242,8 +1243,10 @@ Scene_Item.prototype.createCategoryWindow = function() {
     this._categoryWindow = new Window_ItemCategory();
     this._categoryWindow.setHelpWindow(this._helpWindow);
     this._categoryWindow.y = this._helpWindow.height;
-    this._categoryWindow.setHandler('ok',     this.onCategoryOk.bind(this));
-    this._categoryWindow.setHandler('cancel', this.popScene.bind(this));
+    this._categoryWindow.setHandler('ok',        this.onCategoryOk.bind(this));
+    this._categoryWindow.setHandler('cancel',    this.popScene.bind(this));
+    this._categoryWindow.setHandler('WeaponCat', this.commandWeapon.bind(this));
+    this._categoryWindow.setHandler('ArmorCat',  this.commandArmor.bind(this));
     this.addWindow(this._categoryWindow);
 };
 
@@ -1294,6 +1297,22 @@ Scene_Item.prototype.useItem = function() {
     Scene_ItemBase.prototype.useItem.call(this);
     this._itemWindow.redrawCurrentItem();
 };
+
+Scene_Item.prototype.commandWeapon = function() {
+    if (this._categoryWindow._type != '') return;
+    this._categoryWindow._type = 'weapons';
+    this._categoryWindow.select(0);
+    this._categoryWindow.activate();
+    this._categoryWindow.refresh();
+};
+  
+Scene_Item.prototype.commandArmor = function() {
+    if (this._categoryWindow._type != '') return;
+    this._categoryWindow._type = 'armors';
+    this._categoryWindow.select(0);
+    this._categoryWindow.activate();
+    this._categoryWindow.refresh();
+};  
 
 //-----------------------------------------------------------------------------
 // Scene_Skill
@@ -1719,7 +1738,7 @@ Scene_Save.prototype.onSavefileOk = function() {
 
 Scene_Save.prototype.onSaveSuccess = function() {
     SoundManager.playSave();
-	StorageManager.cleanBackup(this.savefileId());
+	// StorageManager.cleanBackup(this.savefileId());
     this.popScene();
 };
 
@@ -1932,8 +1951,10 @@ Scene_Shop.prototype.createCategoryWindow = function() {
     this._categoryWindow.y = this._dummyWindow.y;
     this._categoryWindow.hide();
     this._categoryWindow.deactivate();
-    this._categoryWindow.setHandler('ok',     this.onCategoryOk.bind(this));
-    this._categoryWindow.setHandler('cancel', this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('ok',        this.onCategoryOk.bind(this));
+    this._categoryWindow.setHandler('cancel',    this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('WeaponCat', this.commandWeapon.bind(this));
+    this._categoryWindow.setHandler('ArmorCat',  this.commandArmor.bind(this));
     this.addWindow(this._categoryWindow);
 };
 
@@ -2249,9 +2270,19 @@ Scene_Battle.prototype.create = function() {
 
 Scene_Battle.prototype.start = function() {
     Scene_Base.prototype.start.call(this);
+    this.fixBP();
     this.startFadeIn(this.fadeSpeed(), false);
     BattleManager.playBattleBgm();
     BattleManager.startBattle();
+};
+
+// On occasion, BP would either carry over from the previous battle or not generate after the 1st turn
+// This function addresses both of those issues, I guess using brute force rather than fixing the root of the problem worked out
+Scene_Battle.prototype.fixBP = function() {
+    $gameParty.battleMembers().forEach(a => {
+        a.setupBattleBP();
+        a._turnUsedBP = 0;
+    });
 };
 
 Scene_Battle.prototype.update = function() {

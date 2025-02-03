@@ -514,8 +514,9 @@ Game_Action.prototype.calcElementRate = function(target) {
     return result;
 };
 
-
-LGP.BDP.Game_Action_executeDamage = Game_Action.prototype.executeDamage;
+// Fixed bug where this would be done after all buffs/states phases, even after Respond and Deselect
+// Some of this code weas moved to YEP_BuffsStatesCore definition for Game_Action.prototype.executeDamage
+/*LGP.BDP.Game_Action_executeDamage = Game_Action.prototype.executeDamage;
 Game_Action.prototype.executeDamage = function(target, value) {
     LGP.BDP.Game_Action_executeDamage.call(this, target, value);
     var result = target.result();
@@ -525,7 +526,8 @@ Game_Action.prototype.executeDamage = function(target, value) {
     } else if (this._resist === 'absorb' && value < 0) {
         result.resist = 'absorb';
     }
-};
+    result.rate = this.calcElementRate(target);
+};*/
 
 //=============================================================================
 // Game_ActionResult
@@ -537,6 +539,7 @@ Game_ActionResult.prototype.clear = function() {
     this.customText.string = '';
     this.customText.format = 0;
     this.resist = '';
+    this.rate = 1;
     this.itemElements = [];
 };
 
@@ -556,6 +559,10 @@ Game_ActionResult.prototype.hasResist = function() {
 Game_ActionResult.prototype.hasElements = function() {
     return (this.itemElements.length > 0);
 }
+
+Game_ActionResult.prototype.rateText = function() {
+    return "(" + Math.round(this.rate * 100) + "%)";
+};
 
 //=============================================================================
 // Game_Battler
@@ -945,7 +952,6 @@ Sprite_Damage.prototype.defaultMovementCode = function() {
     if (result.customText.format == 3) {
         if (!this._critDuration > 0){
             var sprite = this.getChild("custom");
-            console.log(sprite);
 
             sprite.scale.x = 1;
             sprite.scale.y = 1;
@@ -1016,8 +1022,8 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
                 }
             }
         } else {
-            bitmap.textColor = LGP.Param.BDPhpRecC;   
-            bitmap.outlineColor = LGP.Param.BDPhpRecOC;    
+            bitmap.textColor = !result.trueDarkness ? LGP.Param.BDPhpRecC : 'rgb(160, 96, 224)';   
+            bitmap.outlineColor = !result.trueDarkness ? LGP.Param.BDPhpRecOC : 'rgb(0, 0, 0)';    
         }
     } else if (result.mpDamage !== 0) {
         if (value > 0) {
@@ -1042,18 +1048,24 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     	resSprite.anchor.x = 0.5;
     	resSprite.anchor.y = 1;
     	var resistText = '';
+        var textColor = LGP.Param.BDPmissC;
+        var outlineColor = LGP.Param.BDPmissOC;
     	if (result.resist === 'weak') {
-    		resistText = this._customTextValues[2];
+    		resistText = this._customTextValues[2] + " " + result.rateText();
+            textColor = "rgb(255, 165, 50)";
+            outlineColor = "rgb(100, 65, 0)";
     	} else if (result.resist === 'resist') {
-    		resistText = this._customTextValues[3];
+    		resistText = this._customTextValues[3] + " " + result.rateText();
+            textColor = "rgb(150, 150, 255)";
+            outlineColor = "rgb(50, 50, 100)";
     	} else if (result.Resist === 'absorbed') {
     		resistText = this._customTextValues[4];
     	}
     	var rw = this.getTextWidth(resistText) + LGP.Param.BDPfontSizeBuffer;
     	var rh = this._fontSize;
     	resSprite.bitmap = new Bitmap(rw, rh);
-        resSprite.bitmap.textColor = LGP.Param.BDPmissC;        
-        resSprite.bitmap.outlineColor = LGP.Param.BDPmissOC;   		
+        resSprite.bitmap.textColor = textColor;        
+        resSprite.bitmap.outlineColor = outlineColor;   		
         if (Imported.LGP_CustomWindowText) resSprite.bitmap.textShadow = LGP.Param.BDPtextShadow;
     	resSprite.bitmap.drawText(resistText, 0, 0, rw, h);
     	resSprite.scale.x = 0.8;

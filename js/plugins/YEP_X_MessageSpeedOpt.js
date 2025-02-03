@@ -212,7 +212,9 @@ Window_Message.prototype.updateShowFast = function() {
 };
 
 Window_Message.prototype.messageSpeed = function() {
-  return 10 - (ConfigManager.messageSpeed.clamp(0, 11));
+  if (this._forceNormalSpeed) return 0;
+  if (ConfigManager.messageSpeed) return -1;
+  return 0;
 };
 
 Window_Message.prototype.updateMessage = function() {

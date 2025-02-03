@@ -16,7 +16,7 @@
     "volume": 80
   },
   "disableDashing": false,
-  "displayName": "Tavern",
+  "displayName": "The Tipsy Oyster",
   "encounterList": [],
   "encounterStep": 30,
   "height": 22,
@@ -4459,7 +4459,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "streets when the General Store"
+                "streets when the general store"
               ]
             },
             {
@@ -4574,7 +4574,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "confusing me for an Inn worker."
+                "confusing me for an inn worker."
               ]
             },
             {
@@ -4652,6 +4652,185 @@
           },
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                0,
+                17,
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People3",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\barQuiet day today... oh, welcome back,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "my friend \\N[1]! Would you like to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "buy some drinks?"
+              ]
+            },
+            {
+              "code": 102,
+              "indent": 1,
+              "parameters": [
+                [
+                  "Yes, please!",
+                  "No, not now."
+                ],
+                1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                0,
+                "Yes, please!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\barSounds great! Here, I'll pull"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "up my inventory..."
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 2,
+              "parameters": [
+                11
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\barHope you're glad with what"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "you bought! Seeya' around!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 402,
+              "indent": 1,
+              "parameters": [
+                1,
+                "No, not now."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "People3",
+                4,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\barOof, alright. If your interest is"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "ever piqued, feel free to return!"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 404,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -4689,28 +4868,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barI'm the bartender of this here"
+                "\\barWell, I'm Jeremy, the owner of this establishment."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "establishment. And you look the"
+                "And you look the part of a traveler! What's your"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "part of a traveler! Mind telling"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "me your name and backstory?"
+                "name and business, if you don't mind saying?"
               ]
             },
             {
@@ -4886,7 +5058,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\barClandesting business, huh? "
+                "\\barClandestine business, huh? "
               ]
             },
             {
@@ -5019,328 +5191,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barWell, regardless, welcome to"
+                "\\barWell, regardless, welcome to the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the Tavern, \\N[1]!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
+                "Tipsy Oyster, \\N[1]! So, you and"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barAnyways, first things first: do"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "NOT call this place a pub."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barThat makes it seem like some typical"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "dirty underground speakeasy. This place"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "is more of a tavern. Makes it seem much"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "more respectable, does it not?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yep.",
-                  "Um, ok.",
-                  "But the sign outside..."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yep."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barWoah, you're one of few not to question"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "it. Thanks, buddy. Well, thank Trailia"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "that's over, this is usually the most"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "awkward part of greeting new customers."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "Um, ok."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barHey, I'm serious. If I hear you goin'"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "around calling this place a pub, we're"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "gonna' have a bit 'o trouble, ya' hear?"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                2,
-                "But the sign outside..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\bar...says \"pub\", not \"tavern\". Yeah, yeah,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "I know. I've learned to start finishing"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "that sentence at this point."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barThe sign is just too damn small,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "what can I say. I wish that it could"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "fit \"tavern\" on it!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barNow, next order of business. You know"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "how a tavern usually sells alcohol, right?"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Well, yeah, this one does, but we have"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "alternatives for those who are underage."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barPeople like you and \\N[4] can"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "come in and get alternatives."
+                "\\N[4] here know each other?"
               ]
             },
             {
@@ -5426,44 +5291,6 @@
               "code": 101,
               "indent": 0,
               "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barOh, hey, \\N[4]. I was just explaining"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to \\N[1] here how our selling to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "those who are underage works."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Care to explain to him?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
                 "Actor4",
                 3,
                 0,
@@ -5474,69 +5301,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Oh, sure, I'd love to put my drink"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "down and ramble on about something"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I already know about and get my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "throat sore."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barYou know, if you don't want to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "do, I'd be more than willing to..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4No, no, it's fine. I'll do it."
+                "\\p4Oh, yeah... you could say we do, I guess."
               ]
             },
             {
@@ -5544,7 +5309,7 @@
               "indent": 0,
               "parameters": [
                 [
-                  "How do you two know each other?"
+                  "So how do you two know each other?"
                 ],
                 0,
                 0,
@@ -5557,7 +5322,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                "How do you two know each other?"
+                "So how do you two know each other?"
               ]
             },
             {
@@ -5584,372 +5349,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Well, you see, the Banditos weren't"
+                "\\p4Well, the Banditos were never stupid enough to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "stupid enough to raid a town as rich"
+                "raid a town as rich as Haven Harbor, so I'm in"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "as Haven Harbor. But when they would"
+                "everyone's good graces. I'm thankful for that;"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "occasionally, I'd stay behind."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Don't wanna' mess up my Haven Harbor"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "rep, ya' know?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4People know my backstory, but as long"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "as I don't pickpocket 'em, they don't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "really care. They still accept me."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4That's why it may not look like it,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "but I really love this town."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barAh, yes, quite a great story,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "in my opinion."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Now, for the explanation."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4As it's been stated, we can't purchase"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "alcohol due to our age. But, as it's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "also been stated, there are other"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "things we can purchase."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4The best thing about these alternative"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "beverages is that we don't even have to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "stay in the pu- er, tavern. We can"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "take 'em on the go!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4As long as you provide the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "bottle, at least."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Now, these beverages that I speak"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of are sort of like... potions? I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "don't really know a good name for"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "them, so let's call them that."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Grab one from your bag, chug it down,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and you'll get some sweet stat boosts."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "You can buy different potions and get"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "some pretty cool combinations going."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Whether exploring a dungeon or"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "about to enter a heated battle,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "these potions can really help out."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4So uh... yeah. Buy them."
+                "I love Haven Harbor, it's like a second home."
               ]
             },
             {
@@ -6028,21 +5449,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barThat was a great explanation!"
+                "\\barYes, we love having \\N[4] in town!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Now, \\N[1]... would you like"
+                "Now, \\N[1]... would you like to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to buy any beverages?"
+                "buy any beverages?"
               ]
             },
             {
@@ -6183,28 +5604,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barOh, and one more thing! I'm not only"
+                "\\barThe Tipsy Oyster is actually a chain of taverns"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the owner of this tavern, but the"
+                "that stretches across the entire Overworld. And"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "manager of the entire chain of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "taverns across the Overworld."
+                "I... am the owner of every single establishment!"
               ]
             },
             {
@@ -6391,7 +5805,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "so if you wanna' get some drinks,"
+                "so if you'd like to get some drinks,"
               ]
             },
             {
@@ -6642,28 +6056,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barWell, anyways. I've been thinking of"
+                "\\barI've been thinking of making some improvements to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "making some upgrades to the tavern"
+                "the chain sometime. It would help if I had more"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "chain sometime. Make it look better"
+                "than four drinks on the menu, and I'm sure there's"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "and maybe stock more stuff."
+                "plenty of other ways to bring in more guests."
               ]
             },
             {
@@ -6680,28 +6094,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barI've only got four drinks now, and"
+                "\\barIf you're as skilled as you seem, I'm sure"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "as you can see, there's not many people"
+                "we could both profit from doing business. I"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "here. Though that may be due to the"
+                "still need to work out the details... but"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "time of day... meh."
+                "don't worry, we'll find each other."
               ]
             },
             {
@@ -6718,169 +6132,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\barYou see, I was wondering if maybe"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "in the future, you could help me out"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "with the tavern? Yeah, I don't know..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\bar...but if you're as skilled as you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "look, then I'm pretty sure that you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "should be pretty capable."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barI don't have the details worked out"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "just yet. But don't worry: when I need"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you, I'll find you."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barSeeya' around!"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Wait, I didn't quite catch your name..."
-                ],
-                0,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Wait, I didn't quite catch your name..."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barWell... my name is on a need-to-know"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "basis. For now, just keep referring"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to me as Barkeep. Everyone will"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "know who I am. Goodbye, \\N[1]."
+                "\\barI'll see you around! Enjoy your time in town!"
               ]
             },
             {
@@ -7032,38 +6284,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Yo, \\N[1], I'm heading out. I'll meet"
+                "\\p4Hey, \\N[1], I'm heading out. I'll"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "back in the center of town when it's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "time. Don't worry, I'll know when."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Seeya' then."
+                "see you again when we all meet."
               ]
             },
             {
@@ -7217,212 +6445,6 @@
                 17,
                 0
               ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 17,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "People3",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\barQuiet day today... oh, welcome back,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "my friend \\N[1]! Would you like to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "buy some drinks?"
-              ]
-            },
-            {
-              "code": 102,
-              "indent": 0,
-              "parameters": [
-                [
-                  "Yes, please!",
-                  "No, not now."
-                ],
-                1,
-                0,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                0,
-                "Yes, please!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barSounds great! Here, I'll pull"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "up my inventory..."
-              ]
-            },
-            {
-              "code": 117,
-              "indent": 1,
-              "parameters": [
-                11
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barHope you're glad with what"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "you bought! Seeya' around!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 402,
-              "indent": 0,
-              "parameters": [
-                1,
-                "No, not now."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "People3",
-                4,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "\\barOof, alright. If your interest is"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "ever piqued, feel free to return!"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 404,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,

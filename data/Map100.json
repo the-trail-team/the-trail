@@ -4,7 +4,7 @@
   "battleback1Name": "Grassland",
   "battleback2Name": "Bridge",
   "bgm": {
-    "name": "",
+    "name": "dungeon_maze",
     "pan": 0,
     "pitch": 100,
     "volume": 90
@@ -3426,10 +3426,10 @@
           },
           "list": [
             {
-              "code": 356,
+              "code": 242,
               "indent": 0,
               "parameters": [
-                "HideActiveQuestWindow"
+                2
               ]
             },
             {
@@ -3505,7 +3505,7 @@
                       "code": 44,
                       "parameters": [
                         {
-                          "name": "a_Move1",
+                          "name": "Move1",
                           "volume": 90,
                           "pitch": 100,
                           "pan": 0
@@ -3535,7 +3535,7 @@
                   "code": 44,
                   "parameters": [
                     {
-                      "name": "a_Move1",
+                      "name": "Move1",
                       "volume": 90,
                       "pitch": 100,
                       "pan": 0
@@ -3608,7 +3608,7 @@
                       "code": 44,
                       "parameters": [
                         {
-                          "name": "a_Move1",
+                          "name": "Move1",
                           "volume": 90,
                           "pitch": 100,
                           "pan": 0
@@ -3638,7 +3638,7 @@
                   "code": 44,
                   "parameters": [
                     {
-                      "name": "a_Move1",
+                      "name": "Move1",
                       "volume": 90,
                       "pitch": 100,
                       "pan": 0
@@ -3742,7 +3742,7 @@
                       "code": 44,
                       "parameters": [
                         {
-                          "name": "a_Move1",
+                          "name": "Move1",
                           "volume": 90,
                           "pitch": 100,
                           "pan": 0
@@ -3792,7 +3792,7 @@
                   "code": 44,
                   "parameters": [
                     {
-                      "name": "a_Move1",
+                      "name": "Move1",
                       "volume": 90,
                       "pitch": 100,
                       "pan": 0
@@ -4654,43 +4654,10 @@
               ]
             },
             {
-              "code": 132,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "battle_miniboss",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle2 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Victory2",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                30,
-                30,
-                0
+                "$gameSystem.battleTemplate('miniboss');"
               ]
             },
             {
@@ -4704,59 +4671,19 @@
               ]
             },
             {
-              "code": 123,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                "A",
+                "$gameSystem.battleTemplate('normal');"
+              ]
+            },
+            {
+              "code": 121,
+              "indent": 0,
+              "parameters": [
+                30,
+                30,
                 0
-              ]
-            },
-            {
-              "code": 132,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "battle_normal",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle1 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Victory1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "EnableTurnOrderDisplay"
-              ]
-            },
-            {
-              "code": 313,
-              "indent": 0,
-              "parameters": [
-                0,
-                0,
-                1,
-                26
               ]
             },
             {
@@ -5010,7 +4937,7 @@
                       "code": 44,
                       "parameters": [
                         {
-                          "name": "a_Move1",
+                          "name": "Move1",
                           "volume": 90,
                           "pitch": 100,
                           "pan": 0
@@ -5066,7 +4993,7 @@
                   "code": 44,
                   "parameters": [
                     {
-                      "name": "a_Move1",
+                      "name": "Move1",
                       "volume": 90,
                       "pitch": 100,
                       "pan": 0
@@ -5304,7 +5231,7 @@
                       "code": 44,
                       "parameters": [
                         {
-                          "name": "a_Move1",
+                          "name": "Move1",
                           "volume": 90,
                           "pitch": 100,
                           "pan": 0
@@ -5390,7 +5317,7 @@
                   "code": 44,
                   "parameters": [
                     {
-                      "name": "a_Move1",
+                      "name": "Move1",
                       "volume": 90,
                       "pitch": 100,
                       "pan": 0
@@ -5780,13 +5707,6 @@
               "parameters": []
             },
             {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "ShowActiveQuestWindow"
-              ]
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -5819,9 +5739,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 30,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -5870,7 +5790,7 @@
     {
       "id": 2,
       "name": "EV002",
-      "note": "",
+      "note": "<Hitbox Right: 4>",
       "pages": [
         {
           "conditions": {
@@ -5919,13 +5839,6 @@
                 2,
                 2,
                 0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
               ]
             },
             {
@@ -5958,279 +5871,9 @@
       "x": 12,
       "y": 19
     },
-    {
-      "id": 3,
-      "name": "EV003",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                157,
-                11,
-                2,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 13,
-      "y": 19
-    },
-    {
-      "id": 4,
-      "name": "EV004",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                157,
-                11,
-                2,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 14,
-      "y": 19
-    },
-    {
-      "id": 5,
-      "name": "EV005",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                157,
-                11,
-                2,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 15,
-      "y": 19
-    },
+    null,
+    null,
+    null,
     {
       "id": 6,
       "name": "sam",
@@ -6879,97 +6522,7 @@
       "x": 16,
       "y": 18
     },
-    {
-      "id": 10,
-      "name": "EV010",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                157,
-                11,
-                2,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 16,
-      "y": 19
-    },
+    null,
     {
       "id": 11,
       "name": "wood-template",

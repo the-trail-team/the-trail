@@ -22,8 +22,11 @@
 (function() {
 
     var parameters = PluginManager.parameters('ARP_TitleCommandExit');
-    var textExit = parameters['Command Exit'];
     var showExit = parameters['Show Exit'];
+    Object.defineProperty(TextManager, 'exitGame', {
+        get: function() { return parameters['Command Exit']; },
+        configurable: true
+    });
 
     // TitleCommand
     var _Window_TitleCommand_makeCommandList = 
@@ -31,7 +34,7 @@
     Window_TitleCommand.prototype.makeCommandList = function() {
         _Window_TitleCommand_makeCommandList.call(this);
         if (eval(showExit)){
-            this.addCommand(textExit, 'exitGame');
+            this.addCommand(TextManager.exitGame, 'exitGame');
         }
     };
 
@@ -52,7 +55,7 @@
     Window_GameEnd.prototype.makeCommandList = function() {
         this.addCommand(TextManager.toTitle, 'toTitle');
         if (eval(showExit)){
-            this.addCommand(textExit, 'exitGame');
+            this.addCommand(TextManager.exitGame, 'exitGame');
         }
         this.addCommand(TextManager.cancel,  'cancel');
     };

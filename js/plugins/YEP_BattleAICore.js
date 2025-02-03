@@ -868,17 +868,17 @@ AIManager.isDecidedActionAI = function(line) {
 AIManager.getPatternSkills = function(array, patterns) {
     for (var i = 0; i < patterns.length; ++i) {
       var line = patterns[i];
-      if (line.match(/[ ]*(.*):[ ](?:SKILL)[ ](\d+),[ ](.*)/i)) {
+      /*if (line.match(/[ ]*(.*):[ ](?:SKILL)[ ](\d+),[ ](.*)/i)) {
         var skillId = parseInt(RegExp.$2);
       } else if (line.match(/[ ]*(.*):[ ](?:SKILL)[ ](\d+)/i)) {
         var skillId = parseInt(RegExp.$2);
       } else if (line.match(/[ ]*(.*):[ ](.*),[ ](.*)/i)) {
         var skillId = Yanfly.SkillIdRef[String(RegExp.$2).toUpperCase()];
-      } else if (line.match(/[ ]*(.*):[ ](.*)/i)) {
+      } else if (line.match(/[ ]*(.*):[ ](.*)/i)) {*/
         var skillId = Yanfly.SkillIdRef[String(RegExp.$2).toUpperCase()];
-      } else {
+      /*} else {
         continue;
-      }
+      }*/
       if ($dataSkills[skillId]) array.push($dataSkills[skillId]);
     }
     return array;

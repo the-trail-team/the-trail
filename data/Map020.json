@@ -20,7 +20,7 @@
   "encounterList": [],
   "encounterStep": 30,
   "height": 44,
-  "note": "<Region 1 Footstep Sound: Cursor1, 3, 50>",
+  "note": "",
   "parallaxLoopX": false,
   "parallaxLoopY": false,
   "parallaxName": "",
@@ -13130,7 +13130,7 @@
     0,
     0,
     0,
-    1,
+    0,
     0,
     0,
     0,
@@ -13671,7 +13671,7 @@
     0,
     0,
     0,
-    1,
+    0,
     0,
     0,
     0,
@@ -14346,7 +14346,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -14431,7 +14431,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -14943,7 +14943,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -16164,56 +16164,6 @@
           "walkAnime": false,
           "list": [
             {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                38,
-                0,
-                6,
-                4
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "CLOSED"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Hours: 6:00 - 0:00"
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -16388,7 +16338,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -16468,13 +16418,6 @@
           "trigger": 1,
           "walkAnime": true,
           "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "HideActiveQuestWindow"
-              ]
-            },
             {
               "code": 205,
               "indent": 0,
@@ -16979,7 +16922,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -21940,31 +21883,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Huff, puff... huh? Who are you?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-You look like... a knight? Or at"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "least a traveler."
+                "\\-Huff, puff... huh? Who are you? A traveler?"
               ]
             },
             {
@@ -22005,45 +21924,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-I need help. I'm a citizen of"
+                "\\-I need help. I'm a citizen of Verdin,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Verdin Village, and there's a group"
+                "and there's a group of Banditos trying"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "of Banditos trying to steal from"
+                "to steal from the general store!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the General Store!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Can you help me out?"
+                "Can you help me out?"
               ]
             },
             {
@@ -22185,65 +22087,6 @@
                 {
                   "list": [
                     {
-                      "code": 19,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-They're coming. We need to prepare"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for a fight!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                35,
-                {
-                  "list": [
-                    {
                       "code": 16,
                       "indent": null,
                       "parameters": []
@@ -22299,14 +22142,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "too many Banditos! That's why I"
+                "too many Banditos, and I'm not exactly"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "need your help."
+                "the best at physical combat."
               ]
             },
             {
@@ -22451,63 +22294,6 @@
               ]
             },
             {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
               "code": 203,
               "indent": 0,
               "parameters": [
@@ -22538,6 +22324,13 @@
                 18,
                 33,
                 2
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {
@@ -22699,21 +22492,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\kevAnyways, uh, where were we..."
+                "\\kevAnyways, uh, where were we... oh,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "oh, yeah, I don't care about what is who's."
+                "yeah. I don't care about what is"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "We need it, we take it."
+                "who's. We need it, we take it."
               ]
             },
             {
@@ -23026,20 +22819,6 @@
               ]
             },
             {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "ChangeActorNature 2 2"
-              ]
-            },
-            {
               "code": 320,
               "indent": 0,
               "parameters": [
@@ -23228,14 +23007,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\kevBig Mouth! You idiot! Don't lose"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "next time!"
+                "\\kevBig Mouth! You idiot! Don't lose next time!"
               ]
             },
             {
@@ -23304,14 +23076,52 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\kevWe will return. And next time we won't"
+                "\\kevYou know what... that general store's"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "lose as easily."
+                "stock was lame anyways. That loot's not"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "worth fighting over. You picked a lucky"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "time to interrupt us."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Bandito",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\kevIf I were you, I'd try not"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to cross paths with us again."
               ]
             },
             {
@@ -23338,7 +23148,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -23357,7 +23167,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -23376,7 +23186,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -23797,7 +23607,7 @@
               "indent": 1,
               "parameters": [
                 [
-                  "\\fb\\N[2]\\fr?",
+                  "\\N[2]\\fr?",
                   "Hold up..."
                 ],
                 1,
@@ -23811,7 +23621,7 @@
               "indent": 1,
               "parameters": [
                 0,
-                "\\fb\\N[2]\\fr?"
+                "\\N[2]\\fr?"
               ]
             },
             {
@@ -23858,6 +23668,140 @@
               "code": 413,
               "indent": 0,
               "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "hide_treasure_popup"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                2,
+                1,
+                "Andrew"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                10,
+                211,
+                true
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 128,
+              "indent": 2,
+              "parameters": [
+                211,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                4,
+                2,
+                1,
+                "Brendan"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                10,
+                212,
+                true
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 128,
+              "indent": 2,
+              "parameters": [
+                212,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "show_treasure_popup"
+              ]
             },
             {
               "code": 205,
@@ -24662,7 +24606,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Mage. I'm a lifelong citizen of"
+                "mage. I'm a lifelong citizen of"
               ]
             },
             {
@@ -24686,28 +24630,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Truth be told, I've been out on the"
+                "\\p2Truth be told, I've been out on the mountains"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "mountains for a hike every once in"
+                "for a hike every once in a while, but the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "a while, but the village has never"
+                "village has never been out of my sight."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "been out of my sight. Safety, you know."
+                "For safety, y'know?"
               ]
             },
             {
@@ -24724,28 +24668,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Anyways, I feel like we should get to"
+                "\\p2But I've been working hard on my skills!"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "know each other a little better. And"
+                "I've always been interested in magic, so"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "what better way to do that than"
+                "I recently asked Matilda, one of the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "a couple stories? I'll start."
+                "shopkeepers here, to train me."
               ]
             },
             {
@@ -24762,28 +24706,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Every day in Verdin Village is"
+                "\\p2I'm still rather inexperienced... but"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "pretty much the same thing. However,"
+                "I'm getting better by the day. I hope"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "every day these little things have small"
+                "that one day I'll be able to set out"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "variations to spice them up!"
+                "on my own journey on The Trail!"
               ]
             },
             {
@@ -24800,300 +24744,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2For example: one day, me and some of"
+                "\\p2Now, what brings you here to Verdin Village?"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "the other boys went to get some lumber"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for the redoing of the General"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Store's roof."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2We ended up getting lost somehow..."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "but it was fun! We trekked through"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the woods, talked, and had a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "great time!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Anyways... my whole life I've always"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "liked magic tricks. Watching the cards"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "magically disappear and reappear"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "was very fascinating!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2So about half a year ago, I asked"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Matilda from Matilda's Magical"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Warehouse to train me in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "being a mage."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2She agreed. My training is going"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "along quite well!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2\\}I actually was busy with the physical training this"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "past 6 months, while I'm all ready to learn the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "magic part of being a mage, I don't know a single"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "spell yet. Not even one spell! Don't tell anyone..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Ahem, anyways..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2That's my story. Now, what brings you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "here to Verdin Village? We don't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "get travelers here very often..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2True, we do have beautiful sights and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "tasty water, but you don't look like"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the average traveler."
+                "We don't get visitors very often..."
               ]
             },
             {
@@ -25399,52 +25057,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2A couple days ago, someone from"
+                "\\p2A couple days ago, someone from Solus Town"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Solus Town came here on diplomatic"
+                "came here on diplomatic errands. Apparently"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "errands. Apparently some issues have"
+                "some monster-related issues have arisen"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "arisen in the areas around our towns..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Something about monsters and such."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I'm not sure exactly what it's about."
+                "in the areas around our towns..."
               ]
             },
             {
@@ -25526,6 +25160,50 @@
               "parameters": []
             },
             {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "\\p2Hold on, let's walk to the river."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 123,
+              "indent": 1,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
               "code": 230,
               "indent": 1,
               "parameters": [
@@ -25571,23 +25249,6 @@
                   "code": 19,
                   "indent": null
                 }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hey, wait a second..."
               ]
             },
             {
@@ -25702,6 +25363,13 @@
                       "parameters": []
                     },
                     {
+                      "code": 15,
+                      "parameters": [
+                        60
+                      ],
+                      "indent": null
+                    },
+                    {
                       "code": 0,
                       "indent": null,
                       "parameters": []
@@ -25709,7 +25377,7 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
                 }
               ]
             },
@@ -25725,15 +25393,16 @@
               ]
             },
             {
-              "code": 221,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 230,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                60
+                {
+                  "code": 15,
+                  "parameters": [
+                    60
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -25754,46 +25423,24 @@
               ]
             },
             {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
+                "Unfortunately you just missed him - he and"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2He's not in the village right now. Last"
+                "the Village Elder went to inspect some"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "I heard, he and the Elder of our"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "village left to inspect some things"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "outside the village boundaries."
+                "weird stuff just outside our border."
               ]
             },
             {
@@ -25810,14 +25457,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I'm sure that you'll encounter him"
+                "\\p2But hey, if you're headed down Adon, I'm"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "if you're heading down Adon, though!"
+                "sure you'll run into them at some point!"
               ]
             },
             {
@@ -26055,439 +25702,6 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Hey, if you're going to be staying here"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for a bit, it's time for the "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "village tour! Now let's see here..."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 19,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 19,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CAM EVENT 38 1600"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Ah, yes, the Inn! That's where you'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "be staying overnight, most likely."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "There's also some shops in there,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "including Matilda's!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2The shops in the Inn cater to specific"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "categories of items. They're way higher"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "quality than the stuff at the General Store,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and they'll be assets for your travels!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CAM EVENT 30 1600"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2The aforementioned General Store! You "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "saved the loot from the clutches of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Four-Toed Kevin and his gang of Banditos!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I'm sure it's just like the General Store"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "in any town. While you're dropping"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "off the \\ii[13], you should check "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "out what the owner has in stock!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CAM EVENT 42 1600"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2There's some houses further up."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Nothing too special. There is"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "one pretty important house, though!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CAM EVENT 46 1600"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2It's the Village Elder's house! Like"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I said earlier, he's not in town now,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "but when he is, that's where he deals"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "with important matters and such."
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CAM EVENT 43 1600"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2There's also a Church here. Like"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the houses, there's nothing too"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "special. The statue in there is"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "quite a sight, however!"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CAM PLAYER 1600"
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                75
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 16,
-                      "indent": null,
-                      "parameters": []
-                    },
-                    {
-                      "code": 0,
-                      "indent": null,
-                      "parameters": []
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null,
-                  "parameters": []
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2And that is beautiful Verdin Village! I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "hope you find your stay"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "enjoyable!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
                 "\\p2I guess this is our time to part. It was"
               ]
             },
@@ -26624,7 +25838,33 @@
               ]
             },
             {
-              "code": 221,
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Actually, yeah..."
+                ],
+                -1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Actually, yeah..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
               "indent": 0,
               "parameters": []
             },
@@ -26634,28 +25874,6 @@
               "parameters": [
                 60
               ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2What's this?"
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 101,
@@ -26727,7 +25945,33 @@
               ]
             },
             {
-              "code": 221,
+              "code": 102,
+              "indent": 0,
+              "parameters": [
+                [
+                  "Well..."
+                ],
+                -1,
+                0,
+                2,
+                0
+              ]
+            },
+            {
+              "code": 402,
+              "indent": 0,
+              "parameters": [
+                0,
+                "Well..."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 404,
               "indent": 0,
               "parameters": []
             },
@@ -26752,28 +25996,6 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Oh, really?"
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
                 "\\p2You got that \\iw[1] earlier today?! Huh..."
               ]
             },
@@ -26782,7 +26004,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                1,
+                5,
                 0,
                 2
               ]
@@ -26791,7 +26013,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2..."
+                "\\p2You were still really impressive!"
               ]
             },
             {
@@ -26808,7 +26030,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2You were still pretty impressive."
+                "\\p2Well, if you need my help, I'd be glad to"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "offer my services! I just need you to do"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "something first. A chore, to be specific."
               ]
             },
             {
@@ -26825,231 +26061,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Well, if you need my help, I'd be glad"
+                "\\p2I've got to straighten three scarecrows."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to offer my services! I just need a couple"
+                "There's a field next to us, another by the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "things in return."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
+                "entrance of town, and the last one is due"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I have to do some chores, but I'd"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "really like to do some other"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "things with my day."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I need you to help me straighten a couple"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "scarecrows and return the \\ii[13]"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to the General Store."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I'll debrief you on the scarecrows first."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2One is in the field across the river,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "another is near the entrance of the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "village, and the final one is in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a field just south of here."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2The southern one is in a bit of a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "more abandoned area, but it's still"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "important that we frequently"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "monitor the scarecrow!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2For the \\ii[13], all you have to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "do is head to the General Store and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "return it. Nothing complicated."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I don't think that sounds too difficult."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Are you up for it?"
+                "south after you exit town."
               ]
             },
             {
@@ -27221,28 +26254,38 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I'm going to head off to the Inn"
+                "\\p2Oh, and please make sure you return"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "for now. Once you've done"
+                "the \\ii[13] to the general store."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "everything, come to me and"
+                "\\p2I'll be in the inn. Come and meet"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "we can talk more."
+                "me as soon as you're done."
               ]
             },
             {
@@ -27855,7 +26898,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -27888,7 +26931,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solNice job out there, kid."
+                "\\solNice job out there, kid. With those"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Banditos out of the way, it's time for"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "me to take my leave."
               ]
             },
             {
@@ -27905,69 +26962,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solLooks like it's time for me"
+                "\\solI'll hang around the village for now"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to take my leave."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                8,
-                0,
-                2
+                "and head back to Solus tomorrow. If you"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\solI'll hang around the village for"
+                "need anything, come find me and we'll"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "now and head back to Solus tomorrow."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "If you need anything, come find me"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and we'll have a chat."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                8,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\solGood luck, kid."
+                "have a chat. Good luck, kid."
               ]
             },
             {
@@ -27992,23 +27008,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\N[6] left the party."
-              ]
-            },
-            {
               "code": 129,
               "indent": 0,
               "parameters": [
@@ -28022,7 +27021,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -28040,13 +27039,6 @@
               "code": 222,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "ShowActiveQuestWindow"
-              ]
             },
             {
               "code": 122,
@@ -29174,7 +28166,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -30112,7 +29104,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -30251,43 +29243,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "cupboard under the stairs."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
+                "cupboard under the stairs. Where"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Now, where will we put it..."
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
+                "can we put it..."
               ]
             },
             {
@@ -30327,13 +29290,6 @@
               ]
             },
             {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
               "code": 126,
               "indent": 0,
               "parameters": [
@@ -30341,6 +29297,13 @@
                 0,
                 0,
                 1
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {
@@ -30357,28 +29320,74 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2\\$Now, if you have no more Bits"
+                "\\p2And I'll be bringing this, too..."
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                137,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "left, don't fret - the"
+                "\\p2Cooking's, like, my thing. Arguably more than"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "monsters ought to drop some more"
+                "magic. Whenever I think about a grand journey,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Bits in compensation."
+                "I always get excited when I think about cooking"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "for my friends on the road."
               ]
             },
             {
@@ -30388,6 +29397,13 @@
                 0,
                 {
                   "list": [
+                    {
+                      "code": 15,
+                      "parameters": [
+                        30
+                      ],
+                      "indent": null
+                    },
                     {
                       "code": 19,
                       "indent": null,
@@ -30401,7 +29417,20 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    30
+                  ],
+                  "indent": null
                 }
               ]
             },
@@ -30430,21 +29459,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I set up a rope ladder behind those"
+                "\\p2I've already set up the rope ladder in the"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "houses I showed you during the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "tour. Let me just go in prop it up..."
+                "northwest of town, so we're good to go!"
               ]
             },
             {
@@ -30527,7 +29549,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2See, we've got a rather large cave"
+                "\\p2See, there's a rather large cave"
               ]
             },
             {
@@ -30542,37 +29564,6 @@
               "indent": 0,
               "parameters": [
                 "Cavern, we call it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I'm sure you can tell what it is just"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "from the name. A cavern... filled with"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "green slimes! Shocker, am I right?"
               ]
             },
             {
@@ -30649,82 +29640,6 @@
               "indent": 0,
               "parameters": [
                 "Quest Add 9"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2If both of us work together, we should"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "be able to take those slimes out!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "As we defeat them, and other monsters"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "as well..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2...we can gain experience! With"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "experience, our knowledge and vigor"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "will increase. We may even learn new"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "skills! It sounds pretty cool to me."
               ]
             },
             {
@@ -30866,6 +29781,14 @@
                       "code": 4,
                       "indent": null,
                       "parameters": []
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
                     },
                     {
                       "code": 4,
@@ -31023,6 +29946,26 @@
                   "code": 4,
                   "indent": null,
                   "parameters": []
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
                 }
               ]
             },
@@ -31401,7 +30344,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Travelers can sleep at the Inn!"
+                "Travelers can sleep at the inn!"
               ]
             },
             {
@@ -33422,340 +32365,17 @@
               ]
             },
             {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 24,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Dog1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 6
-          },
-          "moveFrequency": 5,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
-                "parameters": [
-                  60
-                ]
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
-                "parameters": [
-                  60
-                ]
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 4,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 3,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 15,
-                "indent": null,
-                "parameters": [
-                  90
-                ]
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 2,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 1,
-                "indent": null,
-                "parameters": []
-              },
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 4,
-          "moveType": 3,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 250,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "Dog",
-                  "volume": 90,
-                  "pitch": 120,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
+                0,
+                24,
+                0
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "",
                 0,
@@ -33765,10 +32385,20 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "The dog looks grateful."
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -33920,7 +32550,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "You saved the General Store's goods"
+                "You saved the general store's goods"
               ]
             },
             {
@@ -33996,21 +32626,21 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "but the General Store doesn't have"
+                "but the general store 's is too expensive"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "one! I need that \\iw[5]"
+                "for me! I need that \\iw[5] if I"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "if I want to go on a journey..."
+                "want to go on a journey..."
               ]
             },
             {
@@ -34027,28 +32657,28 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\adamSay... do you think you could help me?"
+                "\\adamSay... do you think you could help me? I could"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "I could give you a \\iw[10] in"
+                "give you a \\iw[10] in return. It's a bit too"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "return. It's a bit too advanced of"
+                "advanced of a sword for me to use, but I can't"
               ]
             },
             {
               "code": 401,
               "indent": 1,
               "parameters": [
-                "a sword for me to use."
+                "sell it for enough to buy the \\iw[5]."
               ]
             },
             {
@@ -34324,6 +32954,13 @@
           "trigger": 0,
           "walkAnime": true,
           "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 576>"
+              ]
+            },
             {
               "code": 101,
               "indent": 0,
@@ -34759,27 +33396,33 @@
               ]
             },
             {
-              "code": 101,
+              "code": 250,
               "indent": 2,
               "parameters": [
-                "Adon",
-                6,
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 127,
+              "indent": 2,
+              "parameters": [
+                10,
                 0,
-                2
+                0,
+                1,
+                false
               ]
             },
             {
-              "code": 401,
+              "code": 230,
               "indent": 2,
               "parameters": [
-                "\\adamThis is just what I needed! Now, your"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "reward..."
+                60
               ]
             },
             {
@@ -34818,17 +33461,6 @@
               "indent": 2,
               "parameters": [
                 "is a win-win for both of us!"
-              ]
-            },
-            {
-              "code": 127,
-              "indent": 2,
-              "parameters": [
-                10,
-                0,
-                0,
-                1,
-                false
               ]
             },
             {
@@ -34879,7 +33511,7 @@
               "indent": 2,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -34991,7 +33623,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "they're sold in the General Store in"
+                "they're sold in the general store in"
               ]
             },
             {
@@ -35304,19 +33936,19 @@
               ]
             },
             {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
               "code": 125,
               "indent": 0,
               "parameters": [
                 0,
                 0,
                 250
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {
@@ -35443,7 +34075,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -35832,6 +34464,159 @@
           "walkAnime": true,
           "list": [
             {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 2082>"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                69,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                61,
+                61,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Cow1",
+            "direction": 4,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  300
+                ]
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  240
+                ]
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  210
+                ]
+              },
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true,
+          "list": [
+            {
               "code": 250,
               "indent": 0,
               "parameters": [
@@ -35881,6 +34666,162 @@
             "variableId": 1,
             "variableValid": false,
             "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Cow2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 5
+          },
+          "moveFrequency": 1,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 2,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 4,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  450
+                ]
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 3,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 1,
+                "indent": null,
+                "parameters": []
+              },
+              {
+                "code": 15,
+                "indent": null,
+                "parameters": [
+                  300
+                ]
+              },
+              {
+                "code": 0,
+                "indent": null,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 1,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true,
+          "list": [
+            {
+              "code": 108,
+              "indent": 0,
+              "parameters": [
+                "<Icon on Event: 2082>"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 126,
+              "indent": 0,
+              "parameters": [
+                69,
+                0,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                61,
+                61,
+                0,
+                0,
+                12
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ]
+        },
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 61,
+            "variableValid": true,
+            "variableValue": 1
           },
           "directionFix": false,
           "image": {
@@ -37595,8 +36536,8 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "switch1Id": 63,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -37616,24 +36557,227 @@
               "code": 111,
               "indent": 0,
               "parameters": [
-                1,
-                3,
-                0,
-                3,
-                2
+                2,
+                "A",
+                1
               ]
             },
             {
-              "code": 241,
+              "code": 111,
               "indent": 1,
               "parameters": [
+                12,
+                "Date.now() % 10 == 0"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "$gameSelfSwitches.setValue([20, 93, 'A'], true)"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "$gameSelfSwitches.setValue([20, 94, 'A'], true)"
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 2,
+              "parameters": [
                 {
-                  "name": "",
+                  "name": "Attack1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
                 }
               ]
+            },
+            {
+              "code": 213,
+              "indent": 2,
+              "parameters": [
+                -1,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                93,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 1,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 1,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 205,
+              "indent": 2,
+              "parameters": [
+                94,
+                {
+                  "list": [
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 3,
+                      "indent": null
+                    },
+                    {
+                      "code": 4,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 3,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 2,
+              "parameters": [
+                {
+                  "code": 4,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 2,
+              "parameters": [
+                0,
+                88,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "$gameSelfSwitches.setValue([20, 93, 'A'], false)"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 2,
+              "parameters": [
+                "$gameSelfSwitches.setValue([20, 94, 'A'], false)"
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 2,
+              "parameters": [
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
             },
             {
               "code": 0,
@@ -37642,11 +36786,6 @@
             },
             {
               "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 214,
               "indent": 0,
               "parameters": []
             },
@@ -37673,12 +36812,12 @@
           "priorityType": 0,
           "stepAnime": false,
           "through": false,
-          "trigger": 3,
+          "trigger": 1,
           "walkAnime": true
         }
       ],
-      "x": 20,
-      "y": 43
+      "x": 11,
+      "y": 27
     },
     {
       "id": 67,
@@ -38214,7 +37353,7 @@
               "parameters": [
                 0,
                 25,
-                25,
+                28,
                 9,
                 4,
                 0
@@ -38653,14 +37792,10 @@
               ]
             },
             {
-              "code": 122,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                48,
-                48,
-                1,
-                0,
-                1
+                "$gameSystem.smallChest();"
               ]
             },
             {
@@ -38894,14 +38029,10 @@
               ]
             },
             {
-              "code": 122,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                48,
-                48,
-                1,
-                0,
-                1
+                "$gameSystem.smallChest();"
               ]
             },
             {
@@ -39325,14 +38456,10 @@
               ]
             },
             {
-              "code": 122,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                48,
-                48,
-                1,
-                0,
-                1
+                "$gameSystem.smallChest();"
               ]
             },
             {
@@ -40159,7 +39286,7 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "!$_PandaMaru_MV_windmillarms",
+            "characterName": "!$Windmill",
             "direction": 2,
             "pattern": 1,
             "characterIndex": 0
@@ -40270,6 +39397,54 @@
           },
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People1",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\vilHopefully you like that"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "berry more than I did..."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -40379,81 +39554,6 @@
           "through": false,
           "trigger": 0,
           "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 3,
-            "variableValid": true,
-            "variableValue": 4
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "People1",
-            "direction": 4,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "People1",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\vilHopefully you like that"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "berry more than I did..."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
         }
       ],
       "x": 34,
@@ -40490,6 +39590,61 @@
           },
           "list": [
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                0
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "People2",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "\\vilTake good care of that charm. I have"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "a feeling it will be useful during your"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "journey in one way or another."
+              ]
+            },
+            {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -40503,21 +39658,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vilWe just recently got statues of the"
+                "\\vilHm, so you're the one that helped our"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "First Champions at the entrance of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the village."
+                "\\N[2] beat those Banditos back?"
               ]
             },
             {
@@ -40534,21 +39682,245 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vilIt's a nice addition to the scenery,"
+                "\\vilI praise you for your help, thank you."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "and it's always respectful to honor"
+                "\\N[2] has always been... well, a bit"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "their legacy."
+                "unprepared for situations like these. It's"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "good that you were there to help him out."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilOh, I hope the statues didn't get damaged..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilWe just recently had those two statues of the First"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "Champions put down at the entrance of town. They're a"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "nice addition to the scenery, and it's always respectful"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "to honor the legacy of the First Champions."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilIt would be a shame if they ended up"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "more scratched than they already were"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "after that scuffle!"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilSpeaking of the statues... I found this"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "strange gold charm laying on the base of"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "one of them the same day it was put down."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilNo one has come back to inquire about it,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "and I have no use for it... I figure that"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "it could be of more use to you than me."
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Equip3",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 128,
+              "indent": 0,
+              "parameters": [
+                157,
+                0,
+                0,
+                1,
+                false
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "People2",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\vilTake good care of that charm. I have"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "a feeling it will be useful during your"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "journey in one way or another."
+              ]
+            },
+            {
+              "code": 123,
+              "indent": 0,
+              "parameters": [
+                "A",
+                0
               ]
             },
             {
@@ -40844,6 +40216,126 @@
       ],
       "x": 20,
       "y": 19
+    },
+    {
+      "id": 93,
+      "name": "catalyst1",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Evil2",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 5,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 24
+    },
+    {
+      "id": 94,
+      "name": "catalyst2",
+      "note": "<shadow>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Evil2",
+            "direction": 6,
+            "pattern": 1,
+            "characterIndex": 2
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 5,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": true,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 29
     }
   ]
 }

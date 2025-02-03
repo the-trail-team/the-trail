@@ -104,7 +104,8 @@ Game_Enemy.prototype.makeDropItems = function() {
 var _mog_BMangr_gainDropItems = BattleManager.gainDropItems;
 BattleManager.gainDropItems = function() {
 	if ($gameTemp._trBatDropLock) {return};
-	_mog_BMangr_gainDropItems.call(this);
+	// This should NEVER run; it duplicates drops for some boss battles
+	// _mog_BMangr_gainDropItems.call(this);
 };
 
 //=============================================================================
@@ -225,6 +226,7 @@ SpriteEnemyTrP.prototype.gainDropItems = function() {
     var items = this._enemy._treasure.item;
     items.forEach(function(item) {
         $gameParty.gainItem(item, 1);
+		$droppeditems.push(item) // Edit: Added to show exact number of drops.
     });
 };
 

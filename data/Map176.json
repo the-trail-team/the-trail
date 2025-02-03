@@ -10890,13 +10890,6 @@
               ]
             },
             {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
               "code": 244,
               "indent": 0,
               "parameters": []
@@ -10986,103 +10979,38 @@
               ]
             },
             {
-              "code": 216,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
+            },
+            {
+              "code": 216,
+              "indent": 1,
               "parameters": [
                 1
               ]
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 0
               ]
             },
             {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                75,
-                75,
-                0
-              ]
+              "code": 0,
+              "indent": 1,
+              "parameters": []
             },
             {
-              "code": 0,
+              "code": 412,
               "indent": 0,
               "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                177,
-                8,
-                18,
-                8,
-                0
-              ]
             },
             {
               "code": 0,
@@ -11117,7 +11045,7 @@
     {
       "id": 3,
       "name": "EV003",
-      "note": "<Save Event Location> <Illegal Jump> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -11158,28 +11086,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samWell, here we are. This is the southern-most"
+                "\\samThe southern-most point of Adon. We're"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "point considered to be part of Adon. You've"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "finally made it to the end of your journey"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "down the continent. Let that sink in."
+                "finally here. Let that sink in."
               ]
             },
             {
@@ -11210,28 +11124,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samLaeryidyean is just up ahead. If you"
+                "\\samLaeryidyean is just up ahead. Feel free"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "need to head back to Haven Harbor and"
+                "to return to Haven Harbor if you'd like to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "prepare first, that's fine. Take your"
+                "make any last preparations. Taking your time"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "time, you don't want to risk a loss."
+                "is better than risking death at his hands."
               ]
             },
             {
@@ -11279,21 +11193,38 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samWhy, this is your journey, not mine."
+                "\\sam..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper1",
+                3,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "It's not my right to interfere. You"
+                "\\samMy time is long past, \\N[2]. I can"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "must do this yourselves."
+                "mentor the new generation, but I'm"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "out of the fight."
               ]
             },
             {
@@ -11341,7 +11272,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samThis is one of my most prized"
+                "\\samIt's is one of my most prized"
               ]
             },
             {
@@ -11355,7 +11286,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "be more of use for you four."
+                "be more of use to you four."
               ]
             },
             {
@@ -11368,13 +11299,6 @@
                   "pitch": 100,
                   "pan": 0
                 }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
               ]
             },
             {
@@ -11705,138 +11629,7 @@
       "x": 12,
       "y": 4
     },
-    {
-      "id": 4,
-      "name": "EV004",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "[hint]"
-              ]
-            },
-            {
-              "code": 408,
-              "indent": 0,
-              "parameters": [
-                "Encounter Ahead!"
-              ]
-            },
-            {
-              "code": 408,
-              "indent": 0,
-              "parameters": [
-                "It would be highly advisable to save your game."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 23,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 12,
-      "y": 12
-    },
+    null,
     {
       "id": 5,
       "name": "EV005",

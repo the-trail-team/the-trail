@@ -4528,138 +4528,7 @@
       "x": 0,
       "y": 0
     },
-    {
-      "id": 13,
-      "name": "EV013",
-      "note": "<shadowSource>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "[hint]"
-              ]
-            },
-            {
-              "code": 408,
-              "indent": 0,
-              "parameters": [
-                "Encounter Ahead!"
-              ]
-            },
-            {
-              "code": 408,
-              "indent": 0,
-              "parameters": [
-                "It would be highly advisable to save your game."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 52,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 11,
-      "y": 16
-    },
+    null,
     {
       "id": 14,
       "name": "EV014",
@@ -5303,22 +5172,6 @@
               "code": 412,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "HideActiveQuestWindow"
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                75,
-                75,
-                0
-              ]
             },
             {
               "code": 221,
@@ -7073,88 +6926,59 @@
               ]
             },
             {
-              "code": 356,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                "EnableVictoryMusic"
+                "$gameSystem.battleSetup("
               ]
             },
             {
-              "code": 132,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                {
-                  "name": "battle_bladesville",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "  \"battle_bladesville\","
               ]
             },
             {
-              "code": 356,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                "ShowPartyLimitGauge"
+                "  \"Victory2\","
               ]
             },
             {
-              "code": 318,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                0,
-                1,
-                0,
-                22
+                "  \"Battle3\","
               ]
             },
             {
-              "code": 318,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                0,
-                2,
-                0,
-                23
+                "  false,"
               ]
             },
             {
-              "code": 318,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                0,
-                3,
-                0,
-                24
+                "  true,"
               ]
             },
             {
-              "code": 318,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                0,
-                4,
-                0,
-                25
+                "  true"
               ]
             },
             {
-              "code": 356,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                "SetBattleSE Battle3 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Victory2",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                ");"
               ]
             },
             {
@@ -7168,108 +6992,19 @@
               ]
             },
             {
-              "code": 123,
+              "code": 355,
               "indent": 0,
               "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 132,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "battle_normal",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                1,
-                1,
-                22
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                2,
-                1,
-                23
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                3,
-                1,
-                24
-              ]
-            },
-            {
-              "code": 318,
-              "indent": 0,
-              "parameters": [
-                0,
-                4,
-                1,
-                25
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "SetBattleSE Battle1 0 100 90"
-              ]
-            },
-            {
-              "code": 133,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Victory1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "EnableTurnOrderDisplay"
-              ]
-            },
-            {
-              "code": 313,
-              "indent": 0,
-              "parameters": [
-                0,
-                0,
-                1,
-                26
+                "$gameSystem.battleTemplate('normal');"
               ]
             },
             {
               "code": 121,
               "indent": 0,
               "parameters": [
-                75,
-                75,
-                1
+                52,
+                52,
+                0
               ]
             },
             {
@@ -8115,13 +7850,6 @@
               "parameters": []
             },
             {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                1
-              ]
-            },
-            {
               "code": 201,
               "indent": 0,
               "parameters": [
@@ -8175,9 +7903,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
+            "selfSwitchValid": false,
+            "switch1Id": 52,
+            "switch1Valid": true,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -8781,7 +8509,7 @@
     {
       "id": 26,
       "name": "knight",
-      "note": "<No Footsteps>",
+      "note": "",
       "pages": [
         {
           "conditions": {

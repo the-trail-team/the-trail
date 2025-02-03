@@ -1201,6 +1201,7 @@ Scene_Fishing.prototype.commandCast = function() {
 
 Scene_Fishing.prototype.openWindows = function() {
 	this._commandWindow.open();
+	this._commandWindow.refresh();
 	this._equipWindow.open();
 	this._displayWindow.show();
 	this._castPow.display(false);
@@ -1604,6 +1605,8 @@ Spriteset_Fishing.prototype.createBackground = function() {
 	this._lanLayer = new Sprite();
 	this._lanLayer.bitmap = ImageManager.loadFishGraphic($gameSystem.fishing.hole.land);
 	this._lanLayer.z = -88;
+	this._lanLayer.x = 464;
+	this._lanLayer.y = 96;
 	this._sprites.addChild(this._lanLayer);
 };
 
@@ -2189,6 +2192,9 @@ Window_FishCommand.prototype.processOk = function() {
     Window_Command.prototype.processOk.call(this);
 };
 
+Window_FishCommand.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishEquip
@@ -2301,6 +2307,9 @@ Window_FishEquip.prototype.selectLast = function() {
 Window_FishEquip.prototype.playOkSound = function() {
 };
 
+Window_FishEquip.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishHelp
@@ -2333,6 +2342,9 @@ Window_FishHelp.prototype.refresh = function() {
     this.drawText(this._text, 0, 0, this.contents.width,'center');
 };
 
+Window_FishHelp.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishDisplay
@@ -2399,9 +2411,16 @@ Window_FishDisplay.prototype.drawEquipSlot = function(type) {
 		var tx = obj.x - tw / 2;
 		var ty = obj.y - this.lineHeight() / 2;
 		this.drawText(txt,tx,ty,tw,'center');
-	};
+	} else if (type == 'bait') {
+		this.contents.fontSize = 14;
+		var text = $gameParty.numItems($dataItems[Galv.FISH.fisher._baitEquipped]);
+		this.drawText(text, px + Window_Base._iconWidth - 12, py + Window_Base._iconHeight - 6, pw, 'center');
+	}
 };
 
+Window_FishDisplay.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 // Window_FishCaught
@@ -2437,7 +2456,7 @@ Window_FishCaught.prototype.doCatch = function(fishId) {
 	if (data.customText) {
 		var txt = data.customText;
 	} else if (item) {
-		var txt = Galv.FISH.caughtText + " " + item.name;
+		var txt = Galv.FISH.caughtText + " " + item.name + "!";
 	} else {
 		var txt = Galv.FISH.caughtText + data.graphic;
 	}
@@ -2452,21 +2471,24 @@ Window_FishCaught.prototype.doCatch = function(fishId) {
 	
 	// Calc Length/weight
 	var rate = Math.random();
-	var length = this.randScale(data.length[0],data.length[1],rate);
-	length = +length.toFixed(2);
-	var weight = this.randScale(data.weight[0],data.weight[1],rate);
-	weight = +weight.toFixed(2);
+	// var length = this.randScale(data.length[0],data.length[1],rate);
+	// length = +length.toFixed(2);
+	var length = (rate * (data.length[1] - data.length[0]) + data.length[0]).toFixed(2);
+	// var weight = this.randScale(data.weight[0],data.weight[1],rate);
+	// weight = +weight.toFixed(2);
+	var weight = (rate * (data.weight[1] - data.weight[0]) + data.weight[0]).toFixed(2);
 
 	// Record stuff
 	Galv.FISH.addRecords(fishId,length,weight);
 
 	// Draw length/weight
-	this.drawText(length, 0, this.lineHeight() + 20, this.contents.width / 2, 'right');  // Length
-	this.drawText(weight, 0, this.lineHeight() * 2 + 20, this.contents.width / 2, 'right');  // Weight
+	this.drawText(length + " cm", 30, this.lineHeight() + 20, this.contents.width / 2, 'right');  // Length
+	this.drawText(weight + " kg", 30, this.lineHeight() * 2 + 20, this.contents.width / 2, 'right');  // Weight
 	
 	// Draw fish graphic
 	var fx = this.contents.width - this.contents.width / 4;
-	this.drawFish(data,fx,90);
+	// this.drawFish(data,fx,90);
+	this.drawIcon($dataItems[data.item].iconIndex, fx, 80);
 	
 	this.open();
 };
@@ -2486,6 +2508,9 @@ Window_FishCaught.prototype.drawFish = function(fish, x, y) {
     this.contents.blt(bitmap, sx, sy, pw, ph, x, y);
 };
 
+Window_FishCaught.prototype.loadWindowskin = function() {
+	this.windowskin = ImageManager.loadSystem('Window_Fishing');
+}
 
 //-----------------------------------------------------------------------------
 
@@ -2965,7 +2990,8 @@ Window_FishRecordList.prototype.drawItem = function(index) {
     if (name) {
         var rect = this.itemRect(index);
         rect.width -= this.textPadding();
-        this.drawText(name, rect.x + 10, rect.y, rect.width);
+		this.drawIcon($dataItems[Galv.FISH.fish[fishId].item].iconIndex, rect.x + 4, rect.y + 2);
+        this.drawText(name, rect.x + 40, rect.y, rect.width);
     }
 };
 
@@ -3013,8 +3039,8 @@ Window_FishStatus.prototype.setItem = function(item) {
 		
 		this.resetTextColor();
 		this.drawText(item.amount,0,y - line * 2,this.contents.width,'right'); // Amount
-		this.drawText(item.length,0,y - line,this.contents.width,'right');  // Length
-		this.drawText(item.weight,0,y,this.contents.width,'right');  // Weight
+		this.drawText(item.length + " cm",0,y - line,this.contents.width,'right');  // Length
+		this.drawText(item.weight + " kg",0,y,this.contents.width,'right');  // Weight
 		
 		// Fish Sprite
 		if (this._sprite) {

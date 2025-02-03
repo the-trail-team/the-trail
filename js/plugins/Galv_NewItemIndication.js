@@ -74,7 +74,7 @@ Galv.NII.becomeOld = function(item) {
 	if (item.atypeId) var type = 'armors';
 	
 	if (type) {
-		$gameSystem._seenItems[type][item.id] = 1;
+		$gameSystem._seenItems[type][DataManager.getBaseItem(item).id] = 1;
 		return true;
 	}
 	return false;
@@ -120,13 +120,13 @@ Window_ItemList.prototype.initialize = function(x, y, width, height) {
 Galv.NII.Window_ItemList_drawItemName = Window_ItemList.prototype.drawItemName;
 Window_ItemList.prototype.drawItemName = function(item, x, y, width) {
 	Galv.NII.Window_ItemList_drawItemName.call(this,item,x,y,width);
-	if (!(SceneManager._scene instanceof Scene_Item || SceneManager._scene instanceof Scene_Battle)) return;
+	if (!(SceneManager._scene instanceof Scene_Item)) return;
     if (item) {
 		if (item.itypeId) var type = 'items';
 		if (item.wtypeId) var type = 'weapons';
 		if (item.atypeId) var type = 'armors';
 
-		if (type && !$gameSystem._seenItems[type][item.id]) {
+		if (type && !$gameSystem._seenItems[type][DataManager.getBaseItem(item).id]) {
 			var bitmap = ImageManager.loadSystem(Galv.NII.newIcon);
 			var pw = bitmap.width;
 			var ph = bitmap.height;

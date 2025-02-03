@@ -271,9 +271,22 @@ Window_ItemCategory.prototype.update = function() {
 Window_ItemCategory.prototype.makeCommandList = function() {
   var data = Yanfly.Param.ItemCatOrder;
   var length = data.length;
-  for (var i = 0; i < length; i++) {
+  if (this._type == '') for (var i = 0; i < length; i++) {
     var category = data[i].trim();
     this.addItemCategory(category);
+  } else if (this._type == 'weapons') {
+    this.addItemCategory("Weapons");
+    var wtypes = [1, 2, 11, 7, 6, 3, 10, 4, 8, 5, 9];
+    if (wtypes.length < $dataSystem.weaponTypes.length - 1) console.error('error', "MISSING WEAPON TYPES");
+    for (i = 0; i < wtypes.length; i++) this.addItemCategory("WType:" + wtypes[i]);
+  } else if (this._type == 'armors') {
+    this.addItemCategory("Armors");
+    var atypes = [1, 8, 9, 2, 3, 4, 5, 10, 6, 7];
+    for (i = 0; i < atypes.length; i++) this.addItemCategory("AType:" + atypes[i]);
+    if (atypes.length < $dataSystem.armorTypes.length - 1) console.error('error', "MISSING ARMOR TYPES");
+    var etypes = [3, 4, 5, 2, 6, 8, 9];
+    if (etypes.length < $dataSystem.equipTypes.length - 3) console.error('error', "MISSING EQUIP TYPES");
+    for (i = 0; i < etypes.length; i++) this.addItemCategory("EType:" + etypes[i]);
   }
 };
 
@@ -337,6 +350,12 @@ Window_ItemCategory.prototype.addItemCategory = function(category) {
     var id = parseInt(RegExp.$1);
     return this.addCommand($dataSystem.equipTypes[id], 'EType', true, id);
   }
+  if (category.match(/WeaponCat/i)) {
+    return this.addCommand(TextManager.weapon, 'WeaponCat');
+  }
+  if (category.match(/ArmorCat/i)) {
+    return this.addCommand(TextManager.armor, 'ArmorCat');
+  }
 };
 
 //=============================================================================
@@ -397,12 +416,14 @@ Window_ItemList.prototype.includes = function(item) {
     return DataManager.isItem(item) && [3].contains(item.occasion);
     break;
   case 'weapon':
+  case 'WeaponCat':
     return DataManager.isWeapon(item);
     break;
   case 'WType':
     return DataManager.isWeapon(item) && item.wtypeId === this._ext;
     break;
   case 'armor':
+  case 'ArmorCat':
     return DataManager.isArmor(item) && !item.itemCategory.contains("Vanity");
     break;
   case 'AType':
@@ -412,8 +433,34 @@ Window_ItemList.prototype.includes = function(item) {
     return item && item.etypeId === this._ext;
     break;
   case 'Category':
+    switch (this._ext) {
+      case 'Materials':
+        if (DataManager.isItem(item)) if (Yanfly.IS.ItemIngredientIDs.contains(item.id)) return item;
+        if (DataManager.isWeapon(item)) if (Yanfly.IS.WeaponIngredientIDs.contains(item.baseItemId)) return item;
+        if (DataManager.isArmor(item)) if (Yanfly.IS.ArmorIngredientIDs.contains(item.baseItemId)) return item;
+        break;
+      case 'Drops':
+        if (DataManager.isItem(item)) if (Yanfly.EED.ItemDropIDs.contains(item.id)) return item;
+        break;
+      case 'Upgraders':
+        if (DataManager.isItem(item)) if (item.meta['Upgrade Effect']) return item;
+        break;
+      case 'Salvaging':
+        if (DataManager.isItem(item)) if (item.meta['Disassemble Pool'] || item.meta['Disassembler']) return item;
+        if (DataManager.isWeapon(item) || DataManager.isArmor(item)) if (item.meta['Disassemble Pool']) return item;
+        break;
+      case 'Recovery':
+        if (DataManager.isItem(item)) if (item.effects.some(e => ([11, 12].contains(e.code) && (e.value1 > 0 || e.value2 > 0)) || (e.code == 22 && e.dataId == 1))) return item;
+        break;
+      case 'Buffs':
+        if (DataManager.isItem(item)) if (item.effects.some(e => e.code == 21 && $dataStates[e.dataId].category.contains('BUFF'))) return item;
+        break;
+      case 'Debuffs':
+        if (DataManager.isItem(item)) if (item.effects.some(e => [21, 22].contains(e.code) && $dataStates[e.dataId].category.contains('DEBUFF'))) return item;
+        if (DataManager.isItem(item)) if (Object.keys(item.removeCategory).length > 0) return item;
+        break;
+    }
     return item && item.itemCategory.contains(this._ext);
-    break;
   default:
     return false;
   }

@@ -603,7 +603,7 @@ DataManager.processSelectNotetagsSys = function(group) {
   Yanfly.ElementIdRef = {};
   for (var i = 1; i < group.elements.length; ++i) {
     var name = group.elements[i].toUpperCase();
-    name = name.replace(/\\I\[(\d+)\]/gi, '');
+    name = name.replace(/\\\w\[(\d+)\]/gi, '');
     Yanfly.ElementIdRef[name] = i;
   }
 };
@@ -679,6 +679,9 @@ DataManager.processSelectNotetags1 = function(group, isSkill) {
         obj.selectConditions.push('DISPERSE DAMAGE SELECT');
       }
     }
+
+    if (obj.scope == 7) obj.selectConditions.push("Not State: 1");
+    if (obj.scope == 9) obj.selectConditions.push("State: 1");
 
     this.removeAoeEffects(obj);
   }
@@ -1053,9 +1056,9 @@ Game_Unit.prototype.filterSelection = function(members) {
   for (var i = 0; i < length; ++i) {
     var target = members[i];
     if (!target) continue;
-    if (action.checkAllSelectionConditions(user, target)) {
+    // if (action.checkAllSelectionConditions(user, target)) {
       targets.push(target);
-    }
+    // }
   }
   $gameTemp._selectionFilterInProgress = false;
   targets = this.filterTauntMembers(user, action, targets);
@@ -1553,6 +1556,7 @@ Window_BattleEnemy.prototype.allowedTargets = function() {
 
 Window_BattleEnemy.prototype.sortTargets = function() {
     this._enemies.sort(function(a, b) {
+      if ($gameParty.members().indexOf(a) >= 0 && $gameParty.members().indexOf(b) >= 0) return $gameParty.members().indexOf(a) - $gameParty.members().indexOf(b);
       if (a.spritePosX() === b.spritePosX()) {
         return a.spritePosY() - b.spritePosY();
       }

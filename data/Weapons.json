@@ -10,11 +10,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
     "iconIndex": 147,
     "name": "Squire Sword",
-    "note": "<Can Sell>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -31,18 +36,23 @@
   {
     "id": 2,
     "animationId": 122,
-    "description": "A simple wand created by Matilda. It's pretty\nmuch just an enchanted stick.",
+    "description": "A simple wand created by Matilda. It's\npretty much just an enchanted stick.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 555,
     "name": "Apprentice Wand",
-    "note": "<Can Sell>\n<Weapon Image: 39>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "note": "<Weapon Image: 39>\n<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(2));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -59,18 +69,23 @@
   {
     "id": 3,
     "animationId": 122,
-    "description": "A well-carved wooden staff. It's not too strong,\nbut it makes a good first cleric's weapon.",
+    "description": "A well-carved wooden staff. It's not too strong,\nbut it makes for a good first cleric's weapon.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 152,
     "name": "Training Staff",
-    "note": "<Can Sell>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(3));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -87,18 +102,23 @@
   {
     "id": 4,
     "animationId": 6,
-    "description": "A dagger handcrafted by a rogue. It's lacking\nin strength, but easy to conceal... huh?",
+    "description": "A dagger handcrafted by a rogue. It lacks sheer\nstrength but is easy to conceal and draw quickly.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
     "iconIndex": 150,
     "name": "Novice Dagger",
-    "note": "<Can Sell>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(4));\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -122,11 +142,16 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
-    "iconIndex": 147,
+    "iconIndex": 386,
     "name": "Traveler Sword",
-    "note": "",
+    "note": "<Disassemble Pool: Advanced>\nx1 Iron Cluster: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -150,16 +175,21 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 0
       }
     ],
     "iconIndex": 146,
     "name": "Soldier's Spear",
-    "note": "<Equip Requirement>\nclass: Soldier\nclass: Knight\n</Equip Requirement>",
+    "note": "",
     "params": [
       0,
       0,
       6,
-      2,
+      0,
       0,
       0,
       0,
@@ -171,74 +201,89 @@
   {
     "id": 7,
     "animationId": 122,
-    "description": "A basic wand useful for magic learners, although\nit looks remarkably similar to a normal stick.",
+    "description": "A basic wand useful for new magic students.\nDoubles the damage dealt by \\is[21].",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
-    "iconIndex": 555,
-    "name": "Traveler Wand",
+    "iconIndex": 790,
+    "name": "Wisp Wand",
     "note": "<Weapon Image: 39>",
     "params": [
       0,
       0,
       1,
       0,
-      3,
+      5,
       0,
       0,
       0
     ],
-    "price": 20,
+    "price": 30,
     "wtypeId": 3
   },
   {
     "id": 8,
     "animationId": 6,
-    "description": "A small axe that is easy to wield and is mainly\nused for chopping wood. Not very good in combat.",
+    "description": "A small, easy to wield axe mainly used for chopping wood.\nHas some combat merit, and also grants a unique skill.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
         "value": 0
       }
     ],
     "iconIndex": 144,
     "name": "Woodcutting Axe",
-    "note": "<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Disassemble Pool: Advanced>\nx1 Iron Cluster: 10%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
-      3,
-      1,
+      4,
+      0,
       0,
       0,
       -1,
       0
     ],
-    "price": 10,
+    "price": 30,
     "wtypeId": 7
   },
   {
     "id": 9,
     "animationId": 122,
-    "description": "A wand with cool orb on its end. The orb is what\ngives the staff its magical properties.",
+    "description": "A wand with cool orb on its end. The\norb provides the magical properties.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
-    "iconIndex": 416,
+    "iconIndex": 723,
     "name": "Orb Wand",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 121>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "note": "<Weapon Image: 121>",
     "params": [
       0,
       2,
@@ -249,7 +294,7 @@
       0,
       0
     ],
-    "price": 15,
+    "price": 30,
     "wtypeId": 3
   },
   {
@@ -262,16 +307,21 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
-    "iconIndex": 391,
-    "name": "Bronze Sword",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 207>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "iconIndex": 690,
+    "name": "Copper Sword",
+    "note": "<Weapon Image: 337>\n\n<Disassemble Pool: Advanced>\nx1 Copper Cluster: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
       5,
-      1,
+      0,
       0,
       0,
       0,
@@ -290,67 +340,82 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 416,
     "name": "Orb Staff",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 121>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Weapon Image: 121>",
     "params": [
       0,
-      3,
+      4,
       2,
       0,
-      7,
-      1,
+      5,
+      0,
       0,
       0
     ],
-    "price": 60,
+    "price": 30,
     "wtypeId": 4
   },
   {
     "id": 12,
     "animationId": 122,
-    "description": "A small hammer mainly used for fixing stuff.\nIt can also be used in combat, I guess.",
+    "description": "A smithing tool repurposed into a magic weapon. Provides\nmore MAT than a staff, but greatly reduces outgoing healing.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 284,
-    "name": "Light Hammer",
-    "note": "<Weapon Image: 52>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>",
+    "name": "Crude Hammer",
+    "note": "<Weapon Image: 402>\n\n<Element Magnify Healing: -60%>\n\n<Disassemble Pool: Advanced>\nx1 Iron Cluster: 10%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
-      0,
+      7,
       3,
-      1,
+      0,
+      10,
       0,
       0,
-      -1,
       0
     ],
-    "price": 10,
+    "price": 30,
     "wtypeId": 8
   },
   {
     "id": 13,
     "animationId": 6,
-    "description": "A typical dagger used a Bandito. It still\nneeds some training to be usable.",
+    "description": "A typical dagger used a Bandito. Works\nwell in tandem with the \\iw[4].",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
     "iconIndex": 150,
     "name": "Bandito Dagger",
-    "note": "<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Disassemble Pool: Advanced>\nx1 Iron Cluster: 10%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -361,29 +426,34 @@
       1,
       0
     ],
-    "price": 10,
+    "price": 30,
     "wtypeId": 5
   },
   {
     "id": 14,
     "animationId": 6,
-    "description": "A tough blade crafted with steel imported from\nTelluria. The spikes on it have a huge damage boost.",
+    "description": "A tough blade crafted with steel imported from\nTelluria. The spikes give it a huge damage boost.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
     "iconIndex": 389,
     "name": "Steel Sword",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 254>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Weapon Image: 254>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
       9,
-      1,
+      0,
       0,
       0,
       0,
@@ -395,18 +465,23 @@
   {
     "id": 15,
     "animationId": 6,
-    "description": "A dagger hand-designed by Bob and James. It's easy\nto carry and conceal, and packs quite a punch.",
+    "description": "A dagger designed by Bob and James. It's easy\nto carry and conceal, and packs quite a punch.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
     "iconIndex": 384,
     "name": "Swift",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 253>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Weapon Image: 253>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -423,24 +498,29 @@
   {
     "id": 16,
     "animationId": 122,
-    "description": "A wand with a wood core enforced with enchanted\nsilver. Dishes out huge magic damage!",
+    "description": "A wand made by reinforcing a wooden core with\nenchanted steel. Dishes out huge magic damage!",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 417,
-    "name": "Silver Wand",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 115>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "name": "Steel Wand",
+    "note": "<Weapon Image: 115>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       4,
       3,
       0,
-      12,
+      17,
       0,
       0,
       0
@@ -451,40 +531,50 @@
   {
     "id": 17,
     "animationId": 122,
-    "description": "It's a staff made of steel. Nothing too special,\nright? Well, that's where the magic comes in.",
+    "description": "A versatile tool for well-versed clerics. Often forged\nto be used as a material for more powerful weapons.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 411,
     "name": "Steel Staff",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 258>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Weapon Image: 258>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       7,
       3,
       0,
-      11,
-      2,
+      12,
+      0,
       0,
       0
     ],
-    "price": 110,
+    "price": 100,
     "wtypeId": 4
   },
   {
     "id": 18,
-    "animationId": 6,
-    "description": "An archaic and once very strong blade, 'till Andy spilled\nsome cider on it. It can probably be restored, though...",
+    "animationId": 201,
+    "description": "An archaic and once powerful blade that lost its magic\nafter being trapped underground for centuries.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
         "value": 0
       },
       {
@@ -495,7 +585,7 @@
     ],
     "iconIndex": 577,
     "name": "Bloodlust",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 206>\n<Cannot Discard>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +2%>",
     "params": [
       0,
       0,
@@ -521,14 +611,19 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
         "code": 32,
         "dataId": 23,
         "value": 0.1
       }
     ],
-    "iconIndex": 408,
+    "iconIndex": 708,
     "name": "Andy's Dusters",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 238>\n<Equip Requirement>\nclass: Knight\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Weapon Image: 238>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Copper Cluster: 100%\nx1-2 Copper Cluster: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -539,7 +634,7 @@
       5,
       0
     ],
-    "price": 180,
+    "price": 200,
     "wtypeId": 9
   },
   {
@@ -552,44 +647,54 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 422,
     "name": "Passion",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 209>\n<HP Life Steal Physical: +5%>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Weapon Image: 209>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +5%>",
     "params": [
       0,
       10,
       4,
       0,
-      15,
-      5,
+      18,
+      0,
       0,
       0
     ],
-    "price": 250,
+    "price": 200,
     "wtypeId": 4
   },
   {
     "id": 21,
     "animationId": 6,
-    "description": "Steadier and sheenier (?) than the \\iw[10].\nA throwback to old times, and a solid weapon.",
+    "description": "Steadies easily when properly gripped. Layered with a\nprotected coat to preserve the blade's fine edge.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
       }
     ],
     "iconIndex": 391,
-    "name": "Bronze Sword ★",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 207>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBronze Sword: 1\nBronze Alloy: 3\nSteel Alloy: 1\n</Synthesis Ingredients>\n<Mask Name: Strengthened Old Weapon>",
+    "name": "Bronze Sword",
+    "note": "<Weapon Image: 337>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
       12,
-      1,
+      0,
       0,
       0,
       0,
@@ -601,24 +706,29 @@
   {
     "id": 22,
     "animationId": 122,
-    "description": "A peculiarly powerful branch. A construct this weak\nshould not be able to house this much magic, yet it does.",
+    "description": "A peculiarly powerful branch. Such a frail object should\nnot be able to house this much magic, yet here we are.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 555,
     "name": "Enchanted Stick",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 39>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Synthesis Ingredients>\nStick: 1\nBark: 15\nWorn Cloth: 5\nMAT Scroll: 1\n</Synthesis Ingredients>\n<Mask Name: Magical Twig>\n<Synthesis SE: Equip3>",
+    "note": "<Weapon Image: 39>\n<Upgrade Slots: 1>",
     "params": [
       0,
       6,
       2,
       0,
-      16,
+      22,
       0,
       0,
       0
@@ -638,6 +748,11 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
         "code": 54,
         "dataId": 2,
         "value": 1
@@ -645,19 +760,19 @@
     ],
     "iconIndex": 396,
     "name": "Bronze Greatsword",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 92>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBronze Sword ★: 1\nBronze Alloy: 6\nSteel Alloy: 3\nATK Scroll: 1\nDisposable Hammer: 1\n</Synthesis Ingredients>\n<Mask Name: Strong Two-Handed Sword>",
+    "note": "<Weapon Image: 92>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBronze Sword\nBronze Ingot: 6\nIron Cluster: 3\n</Synthesis Ingredients>\n<Mask Name: Two-Handed Sword>\n\n<Disassemble Pool: Advanced>\nx1-2 Bronze Ingot: 100%\nx1-2 Bronze Ingot: 60%\nx1-2 Bronze Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
-      18,
-      3,
+      22,
+      0,
       0,
       0,
       -15,
       0
     ],
     "price": 400,
-    "wtypeId": 2
+    "wtypeId": 11
   },
   {
     "id": 24,
@@ -669,18 +784,23 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 419,
     "name": "Bronze Wand",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 14>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Synthesis Ingredients>\nEnchanted Stick: 1\nBronze Alloy: 4\nIron Cluster: 2\nMAT Scroll: 1\nEnchanting Crystal: 1\n</Synthesis Ingredients>\n<Mask Name: Strong Wand>",
+    "note": "<Weapon Image: 14>\n<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nEnchanted Stick\nBronze Ingot: 6\nIron Cluster: 3\n</Synthesis Ingredients>\n<Mask Name: Strong Wand>\n\n<Disassemble Pool: Advanced>\nx1 Bronze Ingot: 100%\nx1-3 Bronze Ingot: 75%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
-      9,
+      12,
       3,
       0,
-      23,
-      1,
+      35,
+      0,
       0,
       0
     ],
@@ -690,12 +810,17 @@
   {
     "id": 25,
     "animationId": 122,
-    "description": "A steel staff with a green tint, due to its pure mana imbuement. It\nrestores mana relative to 10% of damage dealt and grants a unique skill.",
+    "description": "A steel staff with a heavy blue tint, due to its pure mana imbuement. It\nrestores mana relative to 10% of damage dealt and grants a unique skill.",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
         "value": 0
       },
       {
@@ -706,14 +831,14 @@
     ],
     "iconIndex": 420,
     "name": "Mana Staff",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 118>\n<MP Life Steal Physical: +10%>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nWooden Staff: 1\nSteel Alloy: 5\nElixir: 2\nMDF Scroll: 1\nEnchanting Crystal: 1\n</Synthesis Ingredients>\n<Mask Name: MP Leeching Staff>",
+    "note": "<Weapon Image: 118>\n<Upgrade Slots: 1>\n<MP Life Steal Physical: +10%>\n\n<Synthesis Ingredients>\nWood: 5\nSteel Ingot: 3\nElixir: 2\n</Synthesis Ingredients>\n<Mask Name: MP Leeching Staff>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 100%\nx1-2 Steel Ingot: 100%\nx1-3 Steel Ingot: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
-      14,
+      17,
       6,
       0,
-      31,
-      7,
+      34,
+      0,
       0,
       0
     ],
@@ -722,8 +847,8 @@
   },
   {
     "id": 26,
-    "animationId": 6,
-    "description": "A partially restored form of the blade. Continue to\nrestore it to unlock the blade's true splendor!",
+    "animationId": 201,
+    "description": "A partially restored form of the blade. Continue\nrepairs to unlock the blade's true splendor!",
     "etypeId": 1,
     "traits": [
       {
@@ -732,21 +857,26 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
         "code": 32,
         "dataId": 34,
         "value": 0.16
       }
     ],
-    "iconIndex": 577,
+    "iconIndex": 691,
     "name": "Bloodlust ★",
-    "note": "<Upgrade Slots: 1>\n<Weapon Image: 206>\n<HP Life Steal Physical: +4%>\n<Cannot Discard>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Synthesis Ingredients>\nBloodlust: 1\nSteel Alloy: 3\nATK Scroll: 1\nDisposable Hammer: 1\nEnchanting Crystal: 1\n</Synthesis Ingredients>\n<Mask Name: Better Bloody Dagger>",
+    "note": "<Weapon Image: 206>\n<Upgrade Slots: 1>\n<HP Life Steal Physical: +4%>\n\n<Synthesis Ingredients>\nBloodlust\nBronze Ingot: 2\nSteel Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Better Bloody Dagger>",
     "params": [
       5,
       2,
-      11,
+      13,
       0,
       0,
-      2,
+      0,
       11,
       0
     ],
@@ -763,22 +893,27 @@
         "code": 31,
         "dataId": 1,
         "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
       }
     ],
     "iconIndex": 277,
     "name": "Iron Shovel",
-    "note": "<Synthesis Ingredients>\nIron Cluster: 3\nWood: 1\n</Synthesis Ingredients>\n<Mask Name: Digging Tool>\n\n<Weapon Image: 325>",
+    "note": "<Weapon Image: 325>\n\n<Synthesis Ingredients>\nIron Cluster: 3\nWood\n</Synthesis Ingredients>\n<Mask Name: Digging Tool>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
       6,
-      2,
+      0,
       0,
       0,
       0,
       0
     ],
-    "price": 90,
+    "price": 50,
     "wtypeId": 1
   },
   {
@@ -830,7 +965,7 @@
     ],
     "iconIndex": 149,
     "name": "Hardwood Bow",
-    "note": "</Synthesis Ingredients>\nIron Cluster: 2\nSteel Alloy: 1\nWood: 5\n<//Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 1>\n\n<Upgrade Slots: 1>",
+    "note": "<Upgrade Slots: 1>\n\n</Synthesis Ingredients>\nIron Cluster: 2\nSteel Ingot\nWood: 5\n<//Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 1>",
     "params": [
       0,
       0,
@@ -893,7 +1028,7 @@
     ],
     "iconIndex": 153,
     "name": "Pistol",
-    "note": "</Synthesis Ingredients>\nIron Cluster: 3\nSteel Alloy: 2\n<//Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 2>\n\n<Upgrade Slots: 1>",
+    "note": "<Upgrade Slots: 1>\n\n</Synthesis Ingredients>\nIron Cluster: 3\nSteel Ingot: 2\n<//Synthesis Ingredients>\n<Mask Name: Basic Ranged Weapon 2>",
     "params": [
       0,
       0,
@@ -910,7 +1045,7 @@
   {
     "id": 30,
     "animationId": 6,
-    "description": "A single-handed axe. It isn't as strong as a greatsword,\nbut it can be used with shields and can confuse enemies.",
+    "description": "A single-handed axe. Not as strong as a greatsword,\nbut can stun enemies. Also grants a unique skill.",
     "etypeId": 1,
     "traits": [
       {
@@ -919,19 +1054,24 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
         "code": 32,
         "dataId": 36,
-        "value": 0.1
+        "value": 0.05
       }
     ],
     "iconIndex": 403,
     "name": "Steel Axe",
-    "note": "<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nSteel Alloy: 4\nBronze Alloy: 1\nWood: 2\nATK Scroll: 1\nDisposable Hammer: 1\n</Synthesis Ingredients>\n<Mask Name: One-Handed Axe>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSteel Ingot: 3\nCopper Cluster: 2\nWood: 2\n</Synthesis Ingredients>\n<Mask Name: One-Handed Axe>\n\n<Disassemble Pool: Advanced>\nx1-2 Steel Ingot: 100%\nx1-2 Steel Ingot: 50%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
-      14,
-      2,
+      18,
+      0,
       0,
       0,
       -2,
@@ -952,6 +1092,11 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
         "code": 22,
         "dataId": 2,
         "value": 0.015
@@ -959,7 +1104,7 @@
     ],
     "iconIndex": 385,
     "name": "Sacrificial Dagger",
-    "note": "<Upgrade Slots: 2>\n<Weapon Image: 229>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Weapon Image: 229>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([126, 8, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -981,24 +1126,34 @@
     "traits": [
       {
         "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
         "dataId": 9,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
         "value": 0
       }
     ],
     "iconIndex": 564,
     "name": "Shadowspec Sword",
-    "note": "<Remove State Category: Light>\n\n<Upgrade Slots: 2>\n<Weapon Image: 242>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Weapon Image: 242>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Mask Name: Dark Sword>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
-      16,
-      2,
+      21,
+      0,
       0,
       0,
       0,
       0
     ],
-    "price": 600,
+    "price": 800,
     "wtypeId": 2
   },
   {
@@ -1009,13 +1164,23 @@
     "traits": [
       {
         "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
         "dataId": 10,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
         "value": 0
       }
     ],
     "iconIndex": 153,
     "name": "Semi-Automatic Glizzy",
-    "note": "<Upgrade Slots: 99>\n<Cannot Discard>",
+    "note": "<Upgrade Slots: 99>",
     "params": [
       0,
       0,
@@ -1032,12 +1197,17 @@
   {
     "id": 34,
     "animationId": 106,
-    "description": "An ancient gem created alongside the Overworld when high excess energy rapidly condensed.\n\\c[2]A strong foe has cursed this weapon. It rejects your hands. Vendors wouldn't dare accept it.\\c[0]",
+    "description": "An ancient gem created alongside the Overworld when high excess energy rapidly condensed.\n\\c[2]How did you even find this? Well, treat your new toy as a reward for your incredible luck.\\c[0]",
     "etypeId": 1,
     "traits": [
       {
         "code": 31,
         "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
         "value": 0
       },
       {
@@ -1078,7 +1248,7 @@
     ],
     "iconIndex": 341,
     "name": "Origin Crystal",
-    "note": "<mat: +900>\n<Cannot Sell>\n\n<Equip Requirement>\nclass: Mage\nlevel >= 20\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 10>\n<mat: +900>",
     "params": [
       200,
       700,
@@ -1104,6 +1274,11 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
         "code": 43,
         "dataId": 82,
         "value": 1
@@ -1111,7 +1286,7 @@
     ],
     "iconIndex": 534,
     "name": "Candy Cane Sword",
-    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
     "params": [
       6,
       3,
@@ -1137,6 +1312,11 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
         "code": 43,
         "dataId": 82,
         "value": 1
@@ -1144,7 +1324,7 @@
     ],
     "iconIndex": 535,
     "name": "Candy Cane Wand",
-    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
     "params": [
       6,
       6,
@@ -1170,6 +1350,11 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
         "code": 43,
         "dataId": 82,
         "value": 1
@@ -1177,14 +1362,14 @@
     ],
     "iconIndex": 536,
     "name": "Candy Cane Staff",
-    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
     "params": [
       6,
       9,
       2,
       0,
       10,
-      1,
+      0,
       0,
       0
     ],
@@ -1203,6 +1388,11 @@
         "value": 0
       },
       {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
         "code": 43,
         "dataId": 82,
         "value": 1
@@ -1210,7 +1400,7 @@
     ],
     "iconIndex": 537,
     "name": "Candy Cane Dagger",
-    "note": "<Item 156 Buy Price: 10>\n<Item 156 Sell Price: 5>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
     "params": [
       6,
       3,
@@ -1232,13 +1422,23 @@
     "traits": [
       {
         "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
         "dataId": 10,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
         "value": 0
       }
     ],
     "iconIndex": 540,
     "name": "Leek Sword",
-    "note": "<Item 2 Buy Price: 12>\n<Item 2 Sell Price: 12>\n<Upgrade Slots: 3>",
+    "note": "<Upgrade Slots: 3>\n\n<Item Leek Buy Price: 12>\n<Item Leek Sell Price: 12>",
     "params": [
       10,
       6,
@@ -1251,5 +1451,772 @@
     ],
     "price": 0,
     "wtypeId": 2
+  },
+  {
+    "id": 40,
+    "animationId": 122,
+    "description": "A wand imbued with the power of dragons. An asset for any mage who\nwishes to go above and beyond. Grants the skill \\is[83].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 83,
+        "value": 1
+      }
+    ],
+    "iconIndex": 418,
+    "name": "Draconic Wand",
+    "note": "<Weapon Image: 282>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-3 Dragon Scale: 100%\nx3-6 Wind Essence: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      15,
+      5,
+      0,
+      42,
+      0,
+      5,
+      0
+    ],
+    "price": 2000,
+    "wtypeId": 3
+  },
+  {
+    "id": 41,
+    "animationId": 122,
+    "description": "A powerful staff with no remarkable special traits.\nIt looks like a gem could slot into it perfectly...",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      }
+    ],
+    "iconIndex": 621,
+    "name": "Void Crystal Staff",
+    "note": "<Weapon Image: 117>\n<Upgrade Slots: 2>",
+    "params": [
+      0,
+      20,
+      8,
+      0,
+      40,
+      0,
+      0,
+      0
+    ],
+    "price": 2000,
+    "wtypeId": 4
+  },
+  {
+    "id": 42,
+    "animationId": 122,
+    "description": "A combination of the \\iw[41] and a \\ii[65].\nLeeches enemy HP upon a hit, whether physical or magical.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      }
+    ],
+    "iconIndex": 622,
+    "name": "Life Crystal Staff",
+    "note": "<Weapon Image: 110>\n<Upgrade Slots: 2>\n<HP Life Steal Physical: +12.5%>\n<HP Life Steal Magical: +5%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nLife Crystal\n</Synthesis Ingredients>\n<Mask Name: For HP-Focused Clerics>",
+    "params": [
+      0,
+      20,
+      8,
+      0,
+      40,
+      0,
+      0,
+      0
+    ],
+    "price": 2000,
+    "wtypeId": 4
+  },
+  {
+    "id": 43,
+    "animationId": 122,
+    "description": "A combination of the \\iw[41] and a \\ii[66].\nLeeches MP on physical hits and grants the \\is[80] skill.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 80,
+        "value": 1
+      }
+    ],
+    "iconIndex": 423,
+    "name": "Mana Crystal Staff",
+    "note": "<Weapon Image: 109>\n<Upgrade Slots: 2>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nVoid Crystal Staff\nMana Crystal\n</Synthesis Ingredients>\n<Mask Name: For MP-Focused Clerics>",
+    "params": [
+      0,
+      20,
+      8,
+      0,
+      40,
+      0,
+      0,
+      0
+    ],
+    "price": 2000,
+    "wtypeId": 4
+  },
+  {
+    "id": 44,
+    "animationId": 201,
+    "description": "As the blade grows stronger, it glows a bloodier red.\nIts full strength must be unimaginably powerful.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 34,
+        "value": 0.2
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.015
+      }
+    ],
+    "iconIndex": 692,
+    "name": "Bloodlust ★★",
+    "note": "<Weapon Image: 206>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +6%>\n\n<Synthesis Ingredients>\nBloodlust ★\nEctoplasm: 3\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Mask Name: Even Better Bloody Dagger>",
+    "params": [
+      10,
+      5,
+      23,
+      0,
+      0,
+      0,
+      15,
+      0
+    ],
+    "price": 0,
+    "wtypeId": 5
+  },
+  {
+    "id": 45,
+    "animationId": 6,
+    "description": "A copy of the legendary blade used by the First Knight to seal \\c[18]Apocalypse\\c[0], and the culmination of\nyour journey to find \\c[18]him\\c[0]. Although just a replica, it still holds up as a very powerful one-handed sword.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.04
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 1204,
+    "name": "Hero Sword Replica",
+    "note": "<Weapon Image: 346>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSquire Sword\nCopper Sword\nSteel Sword\nBronze Sword\nShadowspec Sword\nBronze Greatsword\nSteel Greatsword\nSteel Axe\nUnstoppable Force\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Legendary Blade Copy>",
+    "params": [
+      0,
+      0,
+      36,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 5000,
+    "wtypeId": 2
+  },
+  {
+    "id": 46,
+    "animationId": 6,
+    "description": "A deadly axe that cuts through flesh like butter. Be\ncareful not to prick your finger on it while drawing it.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 400,
+    "name": "Unstoppable Force",
+    "note": "<Weapon Image: 159>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      22,
+      0,
+      0,
+      0,
+      -2,
+      0
+    ],
+    "price": 2000,
+    "wtypeId": 7
+  },
+  {
+    "id": 47,
+    "animationId": 6,
+    "description": "It's lost the spikes from the \\iw[14], but its sheer size\nand weight more than make up for that. Requires two hands to use.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 398,
+    "name": "Steel Greatsword",
+    "note": "<Weapon Image: 86>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      28,
+      0,
+      0,
+      0,
+      -25,
+      0
+    ],
+    "price": 2000,
+    "wtypeId": 11
+  },
+  {
+    "id": 48,
+    "animationId": 122,
+    "description": "Give 'em what for! Has an even better chance\nto confuse enemies than \\iw[19].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 23,
+        "value": 0.16
+      },
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 406,
+    "name": "Knuckle Spikes",
+    "note": "<Weapon Image: 262>\n<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx3-5 Steel Ingot: 100%\nx2-4 Steel Ingot: 60%\nx1-3 Steel Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      17,
+      4,
+      0,
+      0,
+      8,
+      0
+    ],
+    "price": 2000,
+    "wtypeId": 9
+  },
+  {
+    "id": 49,
+    "animationId": 122,
+    "description": "Take your damage to the next level. The strength, luster, and\nelemental conduciveness of tellurium is nearly unparalleled.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 421,
+    "name": "Tellurium Wand",
+    "note": "<Weapon Image: 258>\n<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nBronze Wand\nTellurium Alloy: 3\nTellurium Core\n</Synthesis Ingredients>\n<Mask Name: Alloy-Based Wand>",
+    "params": [
+      0,
+      22,
+      7,
+      0,
+      62,
+      0,
+      0,
+      0
+    ],
+    "price": 5000,
+    "wtypeId": 3
+  },
+  {
+    "id": 50,
+    "animationId": 122,
+    "description": "A staff forged to bring peace to The Trail, whatever the cost.\nGrants HP/MP stealing abilities and the \\is[80] skill.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 43,
+        "dataId": 80,
+        "value": 1
+      }
+    ],
+    "iconIndex": 414,
+    "name": "Harmony",
+    "note": "<Weapon Image: 294>\n<Upgrade Slots: 3>\n<HP Life Steal Physical: +12.5%>\n<HP Life Steal Magical: +5%>\n<MP Life Steal Physical: +15%>\n\n<Synthesis Ingredients>\nLife Crystal Staff\nMana Crystal Staff\nPassion\nMana Staff\nTellurium Alloy\nTellurium Core\n</Synthesis Ingredients>\n<Mask Name: Harmonious Staff>",
+    "params": [
+      0,
+      25,
+      10,
+      0,
+      50,
+      0,
+      0,
+      0
+    ],
+    "price": 5000,
+    "wtypeId": 4
+  },
+  {
+    "id": 51,
+    "animationId": 143,
+    "description": "A large dark hammer that increases offensive prowess more\nthan a staff, at the cost of substantial healing reduction.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 9,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 562,
+    "name": "Shadowspec Warhammer",
+    "note": "<Weapon Image: 58>\n<Upgrade Slots: 2>\n\n<Element Magnify Healing: -50%>\n\n<Synthesis Ingredients>\nShadowspec Ingot: 4\n</Synthesis Ingredients>\n<Mask Name: Dark Hammer>\n\n<Disassemble Pool: Advanced>\nx2-4 Shadowspec Ingot: 100%\nx1-2 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      22,
+      11,
+      0,
+      70,
+      0,
+      0,
+      0
+    ],
+    "price": 800,
+    "wtypeId": 8
+  },
+  {
+    "id": 52,
+    "animationId": 9,
+    "description": "It's... so... cold...\nCan inflict enemies with \\it[8].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 3,
+        "value": 1
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 8,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.015
+      }
+    ],
+    "iconIndex": 545,
+    "name": "Frost Edge",
+    "note": "<Weapon Image: 373>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSacrificial Dagger\nSwift\nFrozen Jewel: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Chilling Blade>",
+    "params": [
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      13,
+      0
+    ],
+    "price": 1500,
+    "wtypeId": 5
+  },
+  {
+    "id": 53,
+    "animationId": 144,
+    "description": "Steel knuckles imbued with magical nature energy.\nStronger than the \\iw[48] across the board.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 6,
+        "value": 1
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 23,
+        "value": 0.16
+      },
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 2
+      }
+    ],
+    "iconIndex": 706,
+    "name": "Grass Knuckles",
+    "note": "<Weapon Image: 202>\n<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnuckle Spikes\nAndy's Dusters\nEnchanted Dragon Scale\nDragon Scale: 6\nBronze Ingot: 2\nEarth Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Natural Fist Attachment>",
+    "params": [
+      0,
+      0,
+      20,
+      5,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 3000,
+    "wtypeId": 9
+  },
+  {
+    "id": 54,
+    "animationId": 122,
+    "description": "A metal-lined book filled with illegible writing. Trades some MAT for a\nmassive amount of MMP. Increases MMP by +10% after all other calculations.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 21,
+        "dataId": 1,
+        "value": 1.1
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 1234,
+    "name": "Tellurium Spellbook",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([201, 17, 'A']);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      300,
+      3,
+      0,
+      50,
+      0,
+      0,
+      0
+    ],
+    "price": 5000,
+    "wtypeId": 10
+  },
+  {
+    "id": 55,
+    "animationId": 122,
+    "description": "Nifty fist attachments that allow you to attack an enemy with blunt\nforce rather than cutting them. Hits can rarely confuse enemies.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 23,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 408,
+    "name": "Steel Knuckles",
+    "note": "<Weapon Image: 238>\n<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      4,
+      1,
+      0,
+      0,
+      3,
+      0
+    ],
+    "price": 100,
+    "wtypeId": 9
+  },
+  {
+    "id": 56,
+    "animationId": 122,
+    "description": "Provides offensive capabilities for a cleric\nat the cost of heavily reduced healing.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      },
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 412,
+    "name": "Steel Hammer",
+    "note": "<Weapon Image: 54>\n<Upgrade Slots: 1>\n\n<Element Magnify Healing: -55%>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 40%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      11,
+      6,
+      0,
+      26,
+      0,
+      0,
+      0
+    ],
+    "price": 100,
+    "wtypeId": 8
+  },
+  {
+    "id": 57,
+    "animationId": 8,
+    "description": "Forged in the core of an active volcano.\nSomehow doesn't burn the skin off your hands.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 531,
+    "name": "Infernal Sword",
+    "note": "<Weapon Image: 386>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      30,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 3000,
+    "wtypeId": 2
+  },
+  {
+    "id": 58,
+    "animationId": 147,
+    "description": "Molten silver cast onto an ash wood handle. An enchantment\nallows it to maintain its incredible heat after solidifying.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 16,
+        "value": 0
+      }
+    ],
+    "iconIndex": 779,
+    "name": "Infernal Wand",
+    "note": "<Weapon Image: 390>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      20,
+      5,
+      0,
+      50,
+      0,
+      0,
+      0
+    ],
+    "price": 3000,
+    "wtypeId": 3
   }
 ]

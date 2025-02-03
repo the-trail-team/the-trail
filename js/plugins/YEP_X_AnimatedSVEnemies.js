@@ -1842,6 +1842,7 @@ DataManager.processSVENotetags1 = function(group) {
     obj.sideviewBreathYRate = Math.max(0, Yanfly.Param.SVEBreathYRate);
     obj.sideviewLinkBreathing = Yanfly.Param.SVELinkBreathing;
     obj.sideviewFloating = false;
+    obj.sideviewFloatingLowHpGround = false;
     obj.sideviewFloatSpeed = Yanfly.Param.SVEFloatSpeed;
     obj.sideviewFloatRate = Yanfly.Param.SVEFloatRate;
     obj.sideviewFloatHeight = Yanfly.Param.SVEFloatHeight;
@@ -1916,6 +1917,8 @@ DataManager.processSVENotetags1 = function(group) {
         obj.sideviewFrameSpeed = parseInt(RegExp.$1);
       } else if (line.match(/<(?:FLOATING|float)>/i)) {
         obj.sideviewFloating = true;
+      } else if (line.match(/<(?:LOWHPGROUND)>/i)) {
+        obj.sideviewFloatingLowHpGround = true;
       } else if (line.match(/<(?:FLOATING SPEED):[ ](\d+)>/i)) {
         obj.sideviewFloatSpeed = Math.max(1, parseInt(RegExp.$1));
       } else if (line.match(/<(?:FLOATING RATE):[ ](\d+)[.](\d+)>/i)) {
@@ -2168,7 +2171,7 @@ Game_Enemy.prototype.sideviewHeight = function() {
 };
 
 Game_Enemy.prototype.sideviewCollapse = function() {
-    return this.enemy().sideviewCollapse;
+    return this.enemy().sideviewCollapse || this._forceCollapse;
 };
 
 Game_Enemy.prototype.showSideviewShadow = function() {
@@ -2251,6 +2254,7 @@ Game_Enemy.prototype.performEscape = function() {
 
 Game_Enemy.prototype.isBreathing = function() {
     if (this.isDead()) return false;
+    if (!this.spriteCanMove()) return false;
     return this.enemy().sideviewBreathing;
 };
 
@@ -2271,7 +2275,10 @@ Game_Enemy.prototype.linkBreathing = function() {
 };
 
 Game_Enemy.prototype.isFloating = function() {
+    if (this._forceFloating) return true;
     if (this.isDead() && !this.enemy().sideviewFloatDeath) return false;
+    if (this.enemy().sideviewFloatingLowHpGround && (this.hpRate() <= 0.25 || !this.spriteCanMove() || [1,2].contains(this.stateMotionIndex()))) return false;
+    if (!this.spriteCanMove()) return false;
     return this.enemy().sideviewFloating;
 };
 

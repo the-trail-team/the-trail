@@ -181,9 +181,9 @@
     2850,
     2836,
     2836,
-    2837,
-    2849,
-    2838,
+    2836,
+    2836,
+    2836,
     2836,
     2836,
     2836,
@@ -208,9 +208,9 @@
     2834,
     2844,
     2824,
-    2840,
-    5934,
-    2832,
+    2816,
+    2816,
+    2816,
     2816,
     2816,
     2816,
@@ -235,9 +235,9 @@
     2855,
     5930,
     2832,
-    2840,
-    6287,
-    2832,
+    2816,
+    2816,
+    2816,
     2816,
     2816,
     2816,
@@ -262,9 +262,9 @@
     1604,
     5920,
     2856,
-    2846,
-    2849,
-    2825,
+    2844,
+    2844,
+    2824,
     2816,
     2816,
     2816,
@@ -2721,7 +2721,7 @@
     0,
     0,
     0,
-    5,
+    0,
     0,
     0,
     0,
@@ -3764,7 +3764,7 @@
     {
       "id": 1,
       "name": "EV001",
-      "note": "",
+      "note": "<Hitbox Right: 2>",
       "pages": [
         {
           "conditions": {
@@ -3791,6 +3791,35 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 117,
+              "indent": 0,
+              "parameters": [
+                72
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                79,
+                79,
+                0,
+                0,
+                22
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 0,
+              "parameters": [
+                80,
+                80,
+                0,
+                0,
+                20
+              ]
+            },
             {
               "code": 250,
               "indent": 0,
@@ -3845,178 +3874,12 @@
       "x": 21,
       "y": 22
     },
-    {
-      "id": 2,
-      "name": "EV002",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                168,
-                5,
-                44,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 22,
-      "y": 22
-    },
-    {
-      "id": 3,
-      "name": "EV003",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                168,
-                5,
-                44,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 23,
-      "y": 22
-    },
+    null,
+    null,
     {
       "id": 4,
       "name": "b4",
-      "note": "<Copy Event: 158, 41> <Save Event Location> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -4044,11 +3907,307 @@
           },
           "list": [
             {
-              "code": 117,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                8,
+                146
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
               "parameters": [
                 17
               ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "!$gameSelfSwitches.value([169, 24, 'A'])"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameMap.event(4).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "$gameMap.event(5).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "$gameMap.event(7).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "$gameMap.event(8).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                12,
+                "$gameMap.event(10).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 7,
+              "parameters": [
+                12,
+                "$gameMap.event(11).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 8,
+              "parameters": [
+                12,
+                "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 9,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 9,
+              "parameters": [
+                "$gameSelfSwitches.setValue([169, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                31,
+                31,
+                0,
+                3,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                32,
+                32,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                33,
+                33,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 9,
+              "parameters": [
+                0,
+                168,
+                18,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                16,
+                16,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "You aren't strong enough to move this boulder."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -4083,7 +4242,7 @@
     {
       "id": 5,
       "name": "b1",
-      "note": "<Copy Event: 158, 41> <Save Event Location> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -4111,11 +4270,307 @@
           },
           "list": [
             {
-              "code": 117,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                8,
+                146
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
               "parameters": [
                 17
               ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "!$gameSelfSwitches.value([169, 24, 'A'])"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameMap.event(4).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "$gameMap.event(5).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "$gameMap.event(7).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "$gameMap.event(8).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                12,
+                "$gameMap.event(10).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 7,
+              "parameters": [
+                12,
+                "$gameMap.event(11).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 8,
+              "parameters": [
+                12,
+                "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 9,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 9,
+              "parameters": [
+                "$gameSelfSwitches.setValue([169, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                31,
+                31,
+                0,
+                3,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                32,
+                32,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                33,
+                33,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 9,
+              "parameters": [
+                0,
+                168,
+                18,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                16,
+                16,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "You aren't strong enough to move this boulder."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -4675,7 +5130,7 @@
     {
       "id": 7,
       "name": "b2",
-      "note": "<Copy Event: 158, 39> <Save Event Location> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -4710,6 +5165,257 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "!$gameSelfSwitches.value([169, 24, 'A'])"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameMap.event(4).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameMap.event(5).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "$gameMap.event(7).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "$gameMap.event(8).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "$gameMap.event(10).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                12,
+                "$gameMap.event(11).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 7,
+              "parameters": [
+                12,
+                "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 8,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 8,
+              "parameters": [
+                "$gameSelfSwitches.setValue([169, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                31,
+                31,
+                0,
+                3,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                32,
+                32,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                33,
+                33,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 8,
+              "parameters": [
+                0,
+                168,
+                18,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                16,
+                16,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -4742,7 +5448,7 @@
     {
       "id": 8,
       "name": "b3",
-      "note": "<Copy Event: 158, 41> <Save Event Location> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -4770,11 +5476,307 @@
           },
           "list": [
             {
-              "code": 117,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                8,
+                146
+              ]
+            },
+            {
+              "code": 117,
+              "indent": 1,
               "parameters": [
                 17
               ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "!$gameSelfSwitches.value([169, 24, 'A'])"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameMap.event(4).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "$gameMap.event(5).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "$gameMap.event(7).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "$gameMap.event(8).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                12,
+                "$gameMap.event(10).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 7,
+              "parameters": [
+                12,
+                "$gameMap.event(11).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 8,
+              "parameters": [
+                12,
+                "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 9,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 9,
+              "parameters": [
+                "$gameSelfSwitches.setValue([169, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                31,
+                31,
+                0,
+                3,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                32,
+                32,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                33,
+                33,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 9,
+              "parameters": [
+                0,
+                168,
+                18,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 9,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 9,
+              "parameters": [
+                16,
+                16,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 9,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 101,
+              "indent": 1,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 1,
+              "parameters": [
+                "You aren't strong enough to move this boulder."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -4881,7 +5883,7 @@
     {
       "id": 10,
       "name": "b6",
-      "note": "<Copy Event: 158, 39> <Save Event Location> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -4916,6 +5918,257 @@
               ]
             },
             {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "!$gameSelfSwitches.value([169, 24, 'A'])"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameMap.event(4).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameMap.event(5).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "$gameMap.event(7).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "$gameMap.event(8).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "$gameMap.event(10).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                12,
+                "$gameMap.event(11).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 7,
+              "parameters": [
+                12,
+                "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 8,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 8,
+              "parameters": [
+                "$gameSelfSwitches.setValue([169, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                31,
+                31,
+                0,
+                3,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                32,
+                32,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                33,
+                33,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 8,
+              "parameters": [
+                0,
+                168,
+                18,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                16,
+                16,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -4948,7 +6201,7 @@
     {
       "id": 11,
       "name": "b7",
-      "note": "<Copy Event: 158, 39> <Save Event Location> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -4981,6 +6234,257 @@
               "parameters": [
                 17
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "!$gameSelfSwitches.value([169, 24, 'A'])"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameMap.event(4).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameMap.event(5).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "$gameMap.event(7).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "$gameMap.event(8).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "$gameMap.event(10).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                12,
+                "$gameMap.event(11).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 7,
+              "parameters": [
+                12,
+                "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 8,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 8,
+              "parameters": [
+                "$gameSelfSwitches.setValue([169, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                31,
+                31,
+                0,
+                3,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                32,
+                32,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                33,
+                33,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 8,
+              "parameters": [
+                0,
+                168,
+                18,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                16,
+                16,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -5540,7 +7044,7 @@
     {
       "id": 13,
       "name": "b5",
-      "note": "<Copy Event: 158, 39> <Save Event Location> <shadow>",
+      "note": "<Save Event Location> <shadow>",
       "pages": [
         {
           "conditions": {
@@ -5573,6 +7077,257 @@
               "parameters": [
                 17
               ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                12,
+                "!$gameSelfSwitches.value([169, 24, 'A'])"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 1,
+              "parameters": [
+                12,
+                "$gameMap.event(4).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 2,
+              "parameters": [
+                12,
+                "$gameMap.event(5).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 3,
+              "parameters": [
+                12,
+                "$gameMap.event(7).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 4,
+              "parameters": [
+                12,
+                "$gameMap.event(8).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 5,
+              "parameters": [
+                12,
+                "$gameMap.event(10).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 6,
+              "parameters": [
+                12,
+                "$gameMap.event(11).regionId() === 21"
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 7,
+              "parameters": [
+                12,
+                "$gameMap.event(13).regionId() === 21"
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 221,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 211,
+              "indent": 8,
+              "parameters": [
+                0
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 8,
+              "parameters": [
+                "$gameSelfSwitches.setValue([169, 24, 'A'], true);"
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                31,
+                31,
+                0,
+                3,
+                7,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                32,
+                32,
+                0,
+                3,
+                5,
+                -1,
+                0
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                33,
+                33,
+                0,
+                3,
+                5,
+                -1,
+                1
+              ]
+            },
+            {
+              "code": 201,
+              "indent": 8,
+              "parameters": [
+                0,
+                168,
+                18,
+                13,
+                0,
+                0
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                60
+              ]
+            },
+            {
+              "code": 222,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 230,
+              "indent": 8,
+              "parameters": [
+                30
+              ]
+            },
+            {
+              "code": 122,
+              "indent": 8,
+              "parameters": [
+                16,
+                16,
+                1,
+                0,
+                1
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 8,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 7,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 6,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 5,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 4,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 3,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -7160,7 +8915,7 @@
     },
     {
       "id": 24,
-      "name": "EV024",
+      "name": "this was once a button",
       "note": "",
       "pages": [
         {
@@ -7179,622 +8934,13 @@
             "variableValid": false,
             "variableValue": 0
           },
-          "directionFix": true,
+          "directionFix": false,
           "image": {
-            "tileId": 0,
-            "characterName": "!Switch2",
+            "characterIndex": 0,
+            "characterName": "",
             "direction": 2,
-            "pattern": 1,
-            "characterIndex": 7
-          },
-          "list": [
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                6,
-                -1,
-                8
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 36,
-                      "indent": null
-                    },
-                    {
-                      "code": 44,
-                      "parameters": [
-                        {
-                          "name": "Switch2",
-                          "volume": 90,
-                          "pitch": 100,
-                          "pan": 0
-                        }
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 17
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 18
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 19
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 35,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 36,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 44,
-                  "parameters": [
-                    {
-                      "name": "Switch2",
-                      "volume": 90,
-                      "pitch": 100,
-                      "pan": 0
-                    }
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 17
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 18
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 19
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 35,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                12,
-                "$gameMap.event(4).regionId() === 21"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                12,
-                "$gameMap.event(5).regionId() === 21"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 3,
-              "parameters": [
-                12,
-                "$gameMap.event(7).regionId() === 21"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 4,
-              "parameters": [
-                12,
-                "$gameMap.event(8).regionId() === 21"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 5,
-              "parameters": [
-                12,
-                "$gameMap.event(10).regionId() === 21"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 6,
-              "parameters": [
-                12,
-                "$gameMap.event(11).regionId() === 21"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 7,
-              "parameters": [
-                12,
-                "$gameMap.event(13).regionId() === 21"
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 8,
-              "parameters": []
-            },
-            {
-              "code": 211,
-              "indent": 8,
-              "parameters": [
-                0
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 8,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 8,
-              "parameters": [
-                31,
-                31,
-                0,
-                3,
-                7,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 8,
-              "parameters": [
-                32,
-                32,
-                0,
-                3,
-                5,
-                -1,
-                0
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 8,
-              "parameters": [
-                33,
-                33,
-                0,
-                3,
-                5,
-                -1,
-                1
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 8,
-              "parameters": [
-                0,
-                168,
-                18,
-                13,
-                0,
-                0
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 8,
-              "parameters": []
-            },
-            {
-              "code": 230,
-              "indent": 8,
-              "parameters": [
-                30
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 8,
-              "parameters": [
-                16,
-                16,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 115,
-              "indent": 8,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 8,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 7,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 7,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 6,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 6,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 5,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 5,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 4,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 4,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Nothing happened..."
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 1,
-              "parameters": [
-                0,
-                {
-                  "list": [
-                    {
-                      "code": 36,
-                      "indent": null
-                    },
-                    {
-                      "code": 18,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        3
-                      ]
-                    },
-                    {
-                      "code": 16,
-                      "indent": null
-                    },
-                    {
-                      "code": 35,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 36,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 18,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    3
-                  ]
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 16,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 1,
-              "parameters": [
-                {
-                  "code": 35,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 57,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Switch2",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 7
+            "pattern": 0,
+            "tileId": 0
           },
           "list": [
             {
@@ -7817,7 +8963,7 @@
           },
           "moveSpeed": 3,
           "moveType": 0,
-          "priorityType": 1,
+          "priorityType": 0,
           "stepAnime": false,
           "through": false,
           "trigger": 0,
@@ -7827,206 +8973,8 @@
       "x": 15,
       "y": 7
     },
-    {
-      "id": 25,
-      "name": "EV025",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 21,
-      "y": 21
-    },
-    {
-      "id": 26,
-      "name": "EV026",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 22,
-      "y": 21
-    },
-    {
-      "id": 27,
-      "name": "EV027",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 23,
-      "y": 21
-    }
+    null,
+    null,
+    null
   ]
 }

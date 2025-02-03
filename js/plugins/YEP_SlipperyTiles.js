@@ -89,7 +89,7 @@ Yanfly.Slip.version = 1.05
 Yanfly.Parameters = PluginManager.parameters('YEP_SlipperyTiles');
 Yanfly.Param = Yanfly.Param || {};
 
-Yanfly.Param.SlipRegion = Number(Yanfly.Parameters['Slippery Region']);
+Yanfly.Param.SlipRegion = Yanfly.Parameters['Slippery Region'].split(" ");
 Yanfly.Param.SlipFrame = Number(Yanfly.Parameters['Slippery Frame']);
 Yanfly.Param.SlipSpeed = Number(Yanfly.Parameters['Slippery Speed']);
 
@@ -132,8 +132,7 @@ DataManager.processSlipNotetags = function(group) {
 Game_Map.prototype.isSlippery = function(mx, my) {
     if ($gameParty.inBattle()) return false;
     if (this.isValid(mx, my) && this.tileset()) {
-      if (Yanfly.Param.SlipRegion !== 0 &&
-        this.regionId(mx, my) === Yanfly.Param.SlipRegion) return true;
+      if (Yanfly.Param.SlipRegion.contains(String(this.regionId(mx, my)))) return true;
       var tagId = this.terrainTag(mx, my);
       var slipTiles = this.tileset().slippery;
       return slipTiles.contains(tagId);

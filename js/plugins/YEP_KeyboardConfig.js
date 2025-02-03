@@ -487,7 +487,7 @@ ConfigManager.defaultMap = {
   90: 'ok', 88: 'escape' 
 };
 ConfigManager.clearMap = {
-	87: 'up', 65: 'left', 83: 'down', 68: 'right', 90: 'ok', 88: 'cancel'
+	87: 'up', 65: 'left', 83: 'down', 68: 'right', 90: 'ok', 88: 'escape'
 };
 
 if (Imported.YEP_ButtonCommonEvents) {
@@ -617,6 +617,20 @@ ConfigManager.readKeyConfig = function(config, name) {
     }
 };
 
+Input.keyMapArray = function() {
+	let arr = [];
+	for (const k in this.keyMapper) {
+		arr[k] = this.keyMapper[k]
+	}
+	return arr;
+};
+
+Input.findKey = function(key) {
+	code = this.keyMapArray().indexOf(key);
+	keyName = Object.keys(Window_KeyConfig._refId).find(key => Window_KeyConfig._refId[key] == code);
+	return keyName ? keyName.toUpperCase() : "BIND NOT SET";
+};
+
 //=============================================================================
 // Window_Options
 //=============================================================================
@@ -685,14 +699,14 @@ Window_KeyConfig._keyLayout = [
 Window_KeyConfig._refId = {
 	'~':    192, '0':     48, '1':     49, '2':     50, '3':     51, '4':     52,
 	'5':     53, '6':     54, '7':     55, '8':     56, '9':     57, '-':    189,
-	'=':    187, 'Ins':   45,	'Home':  36, 'PgUp':  33, '#pD/': 111, '*':    106,
+	'=':    187, 'Ins':   45, 'Home':  36, 'PgUp':  33, '#pD/': 111, '*':    106,
 	'#pD-': 109, 'Q':     81, 'W':     87, 'E':     69, 'R':     82, 'T':     84,
 	'Y':     89, 'U':     85, 'I':     73, 'O':     79, 'P':     80, '[':    219,
 	']':    221, '\\':   220, 'Del':   46, 'End':   35, 'PgDn':  34, '#pD7': 103,
 	'#pD8': 104, '#pD9': 105, '+':    107, 'A':     65, 'S':     83, 'D':     68,
 	'F':     70, 'G':     71, 'H':     72, 'J':     74, 'K':     75, 'L':     76,
 	';':    186, "'":    222, 'Enter': 13, '#pD4': 100, '#pD5': 101, '#pD6': 102,
-  'Shift': 16, 'Z':     90, 'X':     88, 'C':     67, 'V':     86, 'B':     66,
+    'Shift': 16, 'Z':     90, 'X':     88, 'C':     67, 'V':     86, 'B':     66,
 	'N':     78, 'M':     77, ',':    188, '.':    190, '/':    191, 'Shift': 16,
 	'↑':     38, '#pD1':  97, '#pD2':  98, '#pD3':  99, 'En':    13, 'Space': 32,
 	'←':     37, '↓':     40, '→':     39, '#pD0':  96, '#pD.': 110
@@ -746,7 +760,7 @@ Window_KeyConfig.prototype.makeCommandList = function(index) {
 };
 
 Window_KeyConfig.prototype.isKeyEnabled = function(keyName) {
-	return !([' ', 'Enter', 'En', '↑', '←',	'↓', '→'].contains(keyName));
+	return !([' '].contains(keyName));
 };
 
 Window_KeyConfig.prototype.itemRect = function(index) {

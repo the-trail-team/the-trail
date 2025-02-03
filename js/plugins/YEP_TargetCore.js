@@ -578,6 +578,7 @@ Game_Action.prototype.isForOpponent = function() {
 
 Yanfly.Target.Game_Action_isForFriend = Game_Action.prototype.isForFriend;
 Game_Action.prototype.isForFriend = function() {
+    if (this.item() == undefined) return;
     if (this.item().scope === 'EVERYBODY') return true;
     if (this.item().scope === 'ALL BUT USER') return true;
     if (this.item().scope === 'TARGET ALL ALLIES') return true;

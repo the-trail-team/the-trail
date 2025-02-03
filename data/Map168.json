@@ -14438,129 +14438,6 @@
           "through": true,
           "trigger": 0,
           "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 16,
-            "variableValid": true,
-            "variableValue": 8
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Other1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 108,
-              "indent": 0,
-              "parameters": [
-                "[hint]"
-              ]
-            },
-            {
-              "code": 408,
-              "indent": 0,
-              "parameters": [
-                "Encounter Ahead!"
-              ]
-            },
-            {
-              "code": 408,
-              "indent": 0,
-              "parameters": [
-                "It would be highly advisable to save your game."
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "B",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 16,
-            "variableValid": false,
-            "variableValue": 9
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "!Other1",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 4
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": true,
-          "trigger": 0,
-          "walkAnime": true
         }
       ],
       "x": 18,
@@ -15340,7 +15217,7 @@
     {
       "id": 13,
       "name": "EV013",
-      "note": "",
+      "note": "<Hitbox Right: 2>",
       "pages": [
         {
           "conditions": {
@@ -15428,188 +15305,8 @@
       "x": 17,
       "y": 54
     },
-    {
-      "id": 14,
-      "name": "EV014",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                167,
-                8,
-                2,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 18,
-      "y": 54
-    },
-    {
-      "id": 15,
-      "name": "EV015",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
-              "indent": 0,
-              "parameters": [
-                0,
-                167,
-                8,
-                2,
-                2,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 19,
-      "y": 54
-    },
+    null,
+    null,
     {
       "id": 16,
       "name": "sam",
@@ -15754,6 +15451,47 @@
               "code": 101,
               "indent": 0,
               "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4Wha... how did you..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Shopkeeper1",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\samNot a concern. The real concern"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "is the trials that await you."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
                 "Shopkeeper1",
                 3,
                 0,
@@ -15809,45 +15547,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "this forest, and many of his skeleton"
+                "this forest, and his skeleton minions"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "minions have been dispatched to take"
+                "have been dispatched to take out any"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "out any adventurers."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samI'm sure that you four will be able"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to make it through, though."
+                "adventurers who dare enter."
               ]
             },
             {
@@ -16016,14 +15730,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\samWell, best of luck. I'll be up"
+                "\\samBest of luck. I'll be up ahead"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "ahead to help you later on."
+                "to help you later on."
               ]
             },
             {
@@ -16036,7 +15750,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -20373,20 +20087,31 @@
           },
           "list": [
             {
-              "code": 243,
+              "code": 117,
               "indent": 0,
-              "parameters": []
+              "parameters": [
+                72
+              ]
+            },
+            {
+              "code": 111,
+              "indent": 0,
+              "parameters": [
+                2,
+                "A",
+                1
+              ]
             },
             {
               "code": 242,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 2
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -20414,7 +20139,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 4,
@@ -20424,7 +20149,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -20436,15 +20161,8 @@
               ]
             },
             {
-              "code": 355,
-              "indent": 0,
-              "parameters": [
-                "$gameSelfSwitches.setValue([168, 7, 'B'], true)"
-              ]
-            },
-            {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 5,
@@ -20454,14 +20172,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2Hey! Sam! It's good to see you!"
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 17,
                 {
@@ -20482,7 +20200,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -20492,7 +20210,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -20502,14 +20220,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\sam..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 7,
@@ -20519,14 +20237,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Well, we've made it here... where to next?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 7,
@@ -20536,14 +20254,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4And hey, what's in that chest?"
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 17,
                 {
@@ -20564,7 +20282,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -20574,7 +20292,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -20584,14 +20302,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\sam..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -20601,14 +20319,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Guys... something isn't right."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -20618,14 +20336,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\sam..."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -20635,14 +20353,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3\\N[1], move!"
               ]
             },
             {
               "code": 241,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "scene_laeryidyean",
@@ -20654,7 +20372,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Saint3",
@@ -20666,7 +20384,7 @@
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   255,
@@ -20679,36 +20397,43 @@
               ]
             },
             {
+              "code": 216,
+              "indent": 1,
+              "parameters": [
+                1
+              ]
+            },
+            {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 17, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 57, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 58, 'A'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 59, 'A'], true)"
               ]
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   0,
@@ -20722,7 +20447,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -20763,7 +20488,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -20773,7 +20498,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 35,
@@ -20783,7 +20508,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 14,
@@ -20797,7 +20522,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 36,
@@ -20807,7 +20532,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 13,
@@ -20817,7 +20542,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 17,
                 {
@@ -20853,7 +20578,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 14,
@@ -20867,7 +20592,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -20877,7 +20602,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -20890,7 +20615,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -20933,7 +20658,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -20943,7 +20668,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -20956,7 +20681,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19,
@@ -20966,7 +20691,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -20979,7 +20704,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 17,
@@ -20989,7 +20714,7 @@
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 17,
                 {
@@ -21010,7 +20735,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -21020,7 +20745,7 @@
             },
             {
               "code": 301,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 0,
                 51,
@@ -21030,35 +20755,35 @@
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 17, 'B'], true)"
               ]
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 57, 'A'], false)"
               ]
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 58, 'A'], false)"
               ]
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 30
               ]
             },
             {
               "code": 213,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 59,
                 5,
@@ -21067,14 +20792,14 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 30
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -21095,7 +20820,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 18,
@@ -21105,7 +20830,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -21115,14 +20840,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Laeryidyean! Give us a real fight!"
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -21143,7 +20868,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 3,
@@ -21153,7 +20878,7 @@
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "name": "Saint3",
@@ -21165,7 +20890,7 @@
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   255,
@@ -21179,14 +20904,14 @@
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 59, 'A'], false)"
               ]
             },
             {
               "code": 223,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 [
                   0,
@@ -21200,21 +20925,21 @@
             },
             {
               "code": 242,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 2
               ]
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 120
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 2,
@@ -21224,21 +20949,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p3Great... there he goes again. We"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "were so close to him too!"
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -21259,7 +20984,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19,
@@ -21269,7 +20994,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21279,26 +21004,33 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\samHey, you four! Are you ok?"
               ]
             },
             {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 60, 'A'], true)"
               ]
             },
             {
-              "code": 244,
-              "indent": 0,
-              "parameters": []
+              "code": 241,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "dungeon_laeryidyean",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60,
                 {
@@ -21335,7 +21067,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -21345,7 +21077,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -21355,7 +21087,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -21365,7 +21097,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -21375,7 +21107,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -21385,7 +21117,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -21395,14 +21127,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Hey! Stop!"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 3,
@@ -21412,14 +21144,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Sam... who are your neighbors?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21429,14 +21161,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\samMy... neighbors?"
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21446,35 +21178,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\samOdd question to ask, since you've been"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "in Haven Harbor yourself, but\\ they would"
+                "in Haven Harbor yourself, but they would"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "be that Bob and James, the ones that run"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "that weapon, equipment, and shield store."
+                "that physical equipment store."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21484,28 +21216,21 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\samThey're certainly some... odd fellows,"
+                "\\samThey're certainly some... odd fellows, but their"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "but their occasional company is enjoyable"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "nonetheless."
+                "occasional company is enjoyable nonetheless."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 7,
@@ -21515,14 +21240,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p4Good, so it really is you."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21532,31 +21257,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\samWell... yes? Of course I'm me."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samOr... hold on."
+                "\\samWell... yes? Of course I'm me. Or... hold on."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60,
                 {
@@ -21602,7 +21310,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -21615,7 +21323,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 29,
@@ -21628,7 +21336,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -21638,7 +21346,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 1,
@@ -21648,7 +21356,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -21661,7 +21369,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21671,28 +21379,28 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\samOh, I understand now. You're a bit"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "beat up... Laeryidyean must have"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "created an illusion."
               ]
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21702,66 +21410,35 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\samHe's a master of manipulating the mind"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "and influencing others. Be wary of this"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "as you continue to progress to the end"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "of the island."
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Shopkeeper1",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\samI'll be continuing forward. Best"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of luck making it through the rest"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of these puzzles."
-              ]
-            },
-            {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60,
                 {
@@ -21793,7 +21470,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 19,
@@ -21803,7 +21480,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 15,
@@ -21816,7 +21493,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 16,
@@ -21826,7 +21503,7 @@
             },
             {
               "code": 101,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "Shopkeeper1",
                 3,
@@ -21836,50 +21513,50 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "\\samAlso... I'd recommend grabbing that"
+                "\\samI'd recommend grabbing that chest next"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "chest next to us. I'm sure that"
+                "to us. I'm sure that whatever you find will"
               ]
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                "whatever you find could be of use"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for traversing this forest."
+                "be of use for traversing this forest."
               ]
             },
             {
               "code": 221,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
+              "code": 216,
+              "indent": 1,
+              "parameters": [
+                0
+              ]
+            },
+            {
               "code": 355,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "$gameSelfSwitches.setValue([168, 60, 'A'], false)"
               ]
             },
             {
               "code": 250,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -21888,19 +21565,19 @@
             },
             {
               "code": 230,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 60
               ]
             },
             {
               "code": 222,
-              "indent": 0,
+              "indent": 1,
               "parameters": []
             },
             {
               "code": 123,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "A",
                 0
@@ -21908,61 +21585,13 @@
             },
             {
               "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
             },
             {
               "code": 0,
@@ -25092,207 +24721,9 @@
       "x": 31,
       "y": 43
     },
-    {
-      "id": 53,
-      "name": "EV053",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 35
-    },
-    {
-      "id": 54,
-      "name": "EV054",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 36
-    },
-    {
-      "id": 55,
-      "name": "EV055",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 117,
-              "indent": 0,
-              "parameters": [
-                47
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        }
-      ],
-      "x": 2,
-      "y": 37
-    },
+    null,
+    null,
+    null,
     {
       "id": 56,
       "name": "EV056",
@@ -26801,47 +26232,10 @@
               ]
             },
             {
-              "code": 314,
+              "code": 117,
               "indent": 1,
               "parameters": [
-                0,
-                0
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 1,
-              "parameters": [
-                {
-                  "name": "Recovery",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                1,
-                1
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                ""
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "Your party was healed!"
+                62
               ]
             },
             {

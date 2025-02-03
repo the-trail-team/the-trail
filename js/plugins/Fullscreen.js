@@ -19,7 +19,7 @@
   }
  
   extend(Scene_Boot, 'start', function() {
-		$gameSwitches.value(77) ? Graphics._switchFullScreen() : false;
+		false ? Graphics._switchFullScreen() : false;
   })
   
   

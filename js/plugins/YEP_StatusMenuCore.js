@@ -166,20 +166,20 @@ Yanfly.Status.version = 1.04;
  * @desc This is the text color for rates over 150%.
  * @default 14
  *
- * @param 120% to 150%
- * @parent ---Resist Colors---
- * @type number
- * @min 0
- * @max 31
- * @desc This is the text color for rates over 120%.
- * @default 6
- *
- * @param 100% to 120%
+ * @param 100% to 150%
  * @parent ---Resist Colors---
  * @type number
  * @min 0
  * @max 31
  * @desc This is the text color for rates over 100%.
+ * @default 6
+ *
+ * @param Exactly 100%
+ * @parent ---Resist Colors---
+ * @type number
+ * @min 0
+ * @max 31
+ * @desc This is the text color for rates exactly 100%.
  * @default 0
  *
  * @param 80% to 100%
@@ -571,8 +571,8 @@ Yanfly.Param.ColorParam7Gauge = String(Yanfly.Parameters['LUK Color']);
 Yanfly.Param.ColorResistS = Number(Yanfly.Parameters['Above 300%']);
 Yanfly.Param.ColorResistA = Number(Yanfly.Parameters['200% to 300%']);
 Yanfly.Param.ColorResistB = Number(Yanfly.Parameters['150% to 200%']);
-Yanfly.Param.ColorResistC1 = Number(Yanfly.Parameters['120% to 150%']);
-Yanfly.Param.ColorResistC2 = Number(Yanfly.Parameters['100% to 120%']);
+Yanfly.Param.ColorResistC1 = Number(Yanfly.Parameters['100% to 150%']);
+Yanfly.Param.ColorResistC2 = Number(Yanfly.Parameters['Exactly 100%']);
 Yanfly.Param.ColorResistC3 = Number(Yanfly.Parameters['80% to 100%']);
 Yanfly.Param.ColorResistD = Number(Yanfly.Parameters['50% to 80%']);
 Yanfly.Param.ColorResistE = Number(Yanfly.Parameters['1% to 50%']);
@@ -600,6 +600,7 @@ Yanfly.Param.StatusStateCol3 = String(Yanfly.Parameters['States Column 3']);
 Yanfly.Param.StatusStateCol3 = Yanfly.Param.StatusStateCol3.split(' ');
 Yanfly.Param.StatusStateCol4 = String(Yanfly.Parameters['States Column 4']);
 Yanfly.Param.StatusStateCol4 = Yanfly.Param.StatusStateCol4.split(' ');
+Yanfly.Param.StatusStateColAll = Yanfly.Param.StatusStateCol1.concat(Yanfly.Param.StatusStateCol2.concat(Yanfly.Param.StatusStateCol3.concat(Yanfly.Param.StatusStateCol4))).filter(n => n);
 
 Yanfly.Param.StatusAttributes = String(Yanfly.Parameters['Attributes Command']);
 Yanfly.Param.StatusAttriCol1 = String(Yanfly.Parameters['Attributes Column 1']);
@@ -824,6 +825,7 @@ Window_StatusInfo.prototype.drawGeneral = function() {
 };
 
 Window_StatusInfo.prototype.drawGeneralParam = function() {
+    const icons = $gameSystem.coreStatIcons();
     var rect = new Rectangle();
     rect.width = (this.contents.width - this.standardPadding()) / 2;
     rect.y = this.lineHeight() * 2;
@@ -831,8 +833,9 @@ Window_StatusInfo.prototype.drawGeneralParam = function() {
     var dx = rect.x + this.textPadding();
     var dw = rect.width - this.textPadding() * 2;
     this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+    this.drawIcon(icons[0], dx, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2);
     this.changeTextColor(this.systemColor());
-		this.drawText(TextManager.level, dx, rect.y, dw, 'left');
+		this.drawText(TextManager.level, dx + Window_Base._iconWidth, rect.y, dw, 'left');
 		this.changeTextColor(this.normalColor());
 		text = Yanfly.Util.toGroup(this._actor.level);
 		this.drawText(text, dx, rect.y, dw, 'right');
@@ -852,8 +855,9 @@ Window_StatusInfo.prototype.drawGeneralParam = function() {
         dx += rect.width;
       }
       this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+      this.drawIcon(icons[1][i], dx, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2);
       this.changeTextColor(this.systemColor());
-  		this.drawText(TextManager.param(i), dx, rect.y, dw, 'left');
+  		this.drawText(TextManager.param(i), dx + Window_Base._iconWidth, rect.y, dw, 'left');
   		this.changeTextColor(this.normalColor());
   		text = Yanfly.Util.toGroup(this._actor.param(i));
   		this.drawText(text, dx, rect.y, dw, 'right');
@@ -1008,9 +1012,9 @@ Window_StatusInfo.prototype.setRateColor = function(rate) {
       colorId = Yanfly.Param.ColorResistA;
     } else if (rate >= 1.5) {
       colorId = Yanfly.Param.ColorResistB;
-    } else if (rate >= 1.2) {
+    } else if (rate > 1.0) {
       colorId = Yanfly.Param.ColorResistC1;
-    } else if (rate >= 1.0) {
+    } else if (rate === 1.0) {
       colorId = Yanfly.Param.ColorResistC2;
     } else if (rate >= 0.8) {
       colorId = Yanfly.Param.ColorResistC3;
@@ -1093,15 +1097,19 @@ Window_StatusInfo.prototype.drawElementData = function(eleId, dx, dy, dw) {
     eleId = parseInt(eleId);
     var eleName = $dataSystem.elements[eleId];
     var eleRate = this._actor.elementRate(eleId);
+    var eleRateOut = this._actor.elementOutgoingRate(eleId);
     dx += this.textPadding();
     dw -= this.textPadding() * 2;
     this._bypassResetTextColor = true;
     this.changeTextColor(this.systemColor());
     this.drawTextEx(eleName, dx, dy);
     this._bypassResetTextColor = false;
+    var text1 = "↙ " + (eleRate * 100).toFixed(Yanfly.Param.StatusEleDec) + '%';
+    var text2 = "↗ " + (eleRateOut * 100).toFixed(Yanfly.Param.StatusEleDec) + '%';
     this.setRateColor(eleRate);
-    var text = (eleRate * 100).toFixed(Yanfly.Param.StatusEleDec) + '%';
-    this.drawText(text, dx, dy, dw, 'right');
+    this.drawText(text1, dx - 140, dy, dw, 'right');
+    this.setRateColor(eleRateOut);
+    this.drawText(text2, dx, dy, dw, 'right');
 };
 
 Window_StatusInfo.prototype.drawStates = function() {
@@ -1311,28 +1319,40 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       this.drawAttributeName(Yanfly.Param.StatusAttr_exr, dx, dy, dw);
       this.drawAttributeRate(actor.exr, dx, dy, dw);
       break;
+    case 'omd':
+      this.drawAttributeName("Outgoing Magical Damage (OMD)", dx, dy, dw);
+      this.drawAttributeRate(actor.omd, dx, dy, dw);
+      break;
+    case 'oed':
+      this.drawAttributeName("Outgoing Elemental Damage (OED)", dx, dy, dw);
+      this.drawAttributeRate(actor.oed, dx, dy, dw);
+      break;
+    case 'ohr':
+      this.drawAttributeName("Outgoing Healing Rate (OHR)", dx, dy, dw);
+      this.drawAttributeRate(actor.ohr, dx, dy, dw);
+      break;
     case 'pls':
-      this.drawAttributeName("Physical Life Steal", dx, dy, dw);
+      this.drawAttributeName("Physical Life Steal (PLS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpPhysicalRate'), dx, dy, dw);
       break;
     case 'mls':
-      this.drawAttributeName("Magical Life Steal", dx, dy, dw);
+      this.drawAttributeName("Magical Life Steal (MLS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpMagicalRate'), dx, dy, dw);
       break;
     case 'cls':
-      this.drawAttributeName("Certain Life Steal", dx, dy, dw);
+      this.drawAttributeName("True Life Steal (TLS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('hpCertainRate'), dx, dy, dw);
       break;
     case 'pms':
-      this.drawAttributeName("Physical MP Steal", dx, dy, dw);
+      this.drawAttributeName("Physical MP Steal (PMS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('mpPhysicalRate'), dx, dy, dw);
       break;
     case 'mms':
-      this.drawAttributeName("Magical MP Steal", dx, dy, dw);
+      this.drawAttributeName("Magical MP Steal (MMS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('mpMagicalRate'), dx, dy, dw);
       break;
     case 'cms':
-      this.drawAttributeName("Certain MP Steal", dx, dy, dw);
+      this.drawAttributeName("True MP Steal (TMS)", dx, dy, dw);
       this.drawAttributeRate(actor.getLifeStealRate('mpCertainRate'), dx, dy, dw);
       break;
     default:

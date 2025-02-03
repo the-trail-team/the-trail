@@ -986,6 +986,11 @@ Yanfly.Quest.version = 1.02;
  * @desc Add custom code to each of the plugin's major functions.
  * @default {"---Quest Menu---":"","Before Create Windows":"\"// Variables\\n//   background - background image used for the menu\\n//   windowLayer - sprite layer that contains all windows\\n//\\n// background.bitmap = ImageManager.loadTitle1(\\\"Book\\\");\\n// this.fitScreen(background);\"","After Create Windows":"\"// Variables\\n//   background - background image used for the menu\\n//   windowLayer - sprite layer that contains all windows\"","Close Quest Menu":"\"// Variables\\n//   background - background image used for the menu\\n//   windowLayer - sprite layer that contains all windows\"","---Quest Status---":"","Quest Add":"\"// Variables:\\n//   questId - ID of the quest being added\\n//\\n// console.log('Quest ' + questId + ' successfully added!')\"","Quest Remove":"\"// Variables:\\n//   questId - ID of the quest being removed\\n//\\n// console.log('Quest ' + questId + ' successfully removed!')\"","Quest Complete":"\"// Variables:\\n//   questId - ID of the quest set to completed\\n//\\n// console.log('Quest ' + questId + ' status changed to Completed!')\"","Quest Fail":"\"// Variables:\\n//   questId - ID of the quest set to failed\\n//\\n// console.log('Quest ' + questId + ' status changed to Failed!')\"","Quest Available":"\"// Variables:\\n//   questId - ID of the quest set to available\\n//\\n// console.log('Quest ' + questId + ' status changed to Available!')\"","---Description---":"","Change Description":"\"// Variables:\\n//   questId - ID of the quest whose description is changed\\n//   index - Description index being changed to\\n//\\n// console.log('Quest ' + questId + ' description index changed to ' + index)\"","---Objectives---":"","Show Objective":"\"// Variables:\\n//   questId - ID of the quest whose objectives are altered\\n//   objectiveId - ID of the objective being shown\\n//\\n// console.log('Quest ' + questId + ' objective ' + objectiveId + ' changed to shown!')\"","Hide Objective":"\"// Variables:\\n//   questId - ID of the quest whose objectives are altered\\n//   objectiveId - ID of the objective being hidden\\n//\\n// console.log('Quest ' + questId + ' objective ' + objectiveId + ' changed to hidden!')\"","Complete Objective":"\"// Variables:\\n//   questId - ID of the quest whose objectives are altered\\n//   objectiveId - ID of the objective being completed\\n//\\n// console.log('Quest ' + questId + ' objective ' + objectiveId + ' changed to completed!')\"","Fail Objective":"\"// Variables:\\n//   questId - ID of the quest whose objectives are altered\\n//   objectiveId - ID of the objective having failed\\n//\\n// console.log('Quest ' + questId + ' objective ' + objectiveId + ' changed to failed!')\"","Normalize Objective":"\"// Variables:\\n//   questId - ID of the quest whose objectives are altered\\n//   objectiveId - ID of the objective normalized\\n//\\n// console.log('Quest ' + questId + ' objective ' + objectiveId + ' changed to normal!')\"","---Rewards---":"","Show Reward":"\"// Variables:\\n//   questId - ID of the quest whose rewards are altered\\n//   rewardId - ID of the reward being shown\\n//\\n// console.log('Quest ' + questId + ' reward ' + rewardId + ' becomes shown!')\"","Hide Reward":"\"// Variables:\\n//   questId - ID of the quest whose rewards are altered\\n//   rewardId - ID of the reward being hidden\\n//\\n// console.log('Quest ' + questId + ' reward ' + rewardId + ' becomes hidden!')\"","Claim Reward":"\"// Variables:\\n//   questId - ID of the quest whose rewards are altered\\n//   rewardId - ID of the reward becoming claimed\\n//\\n// console.log('Quest ' + questId + ' reward ' + rewardId + ' is now claimed!')\"","Deny Reward":"\"// Variables:\\n//   questId - ID of the quest whose rewards are altered\\n//   rewardId - ID of the reward becoming denied\\n//\\n// console.log('Quest ' + questId + ' reward ' + rewardId + ' is now denied!')\"","Normalize Reward":"\"// Variables:\\n//   questId - ID of the quest whose rewards are altered\\n//   rewardId - ID of the reward normalized\\n//\\n// console.log('Quest ' + questId + ' reward ' + rewardId + ' is normalized!')\"","---Subtext---":"","Change Subtext":"\"// Variables:\\n//   questId - ID of the quest whose subtext is changed\\n//   index - Subtext index being changed to\\n//\\n// console.log('Quest ' + questId + ' subtext index changed to ' + index)\""}
  *
+ * @param Unused Quests
+ * @parent ---Quest Menu---
+ * @desc Amount of unused quests in the game
+ * @default 0
+ *
  * @param ---Quest List---
  * @default
  *
@@ -2607,14 +2612,27 @@ Yanfly.Quest.version = 1.02;
  * @parent Title
  * @type combo
  * @option Main Quests
+ * @option Side Stories
  * @option Side Quests
  * @option Character Quests
- * @option Tutorial Quests
  * @desc What type of quest is this?
  * @default Main Quests
  *
  * @param Difficulty
  * @parent Title
+ * @type select
+ * @option Pushover
+ * @value \i[127] Pushover
+ * @option Easy Peasy
+ * @value \i[127]\i[127] Easy Peasy
+ * @option Slight Challenge
+ * @value \i[126]\i[126]\i[126] Slight Challenge
+ * @option A Bit Tricky
+ * @value \i[126]\i[126]\i[126]\i[126] A Bit Tricky
+ * @option Tough Objective
+ * @value \i[125]\i[125]\i[125]\i[125]\i[125] Tough Objective
+ * @option Legendary Challenge
+ * @value \i[125]\i[125]\i[125]\i[125]\i[125]\i[125] Legendary Challenge
  * @desc Difficulty level for this quest.
  * Text codes allowed.
  * @default Easy Peasy
@@ -2695,6 +2713,8 @@ Yanfly.Param.QuestDataWindow =
   JSON.parse(Yanfly.Parameters['Quest Data Window']);
 Yanfly.Quest.LunaticMode = 
   JSON.parse(Yanfly.Parameters['Lunatic Mode']);
+
+Yanfly.Param.UnusedQuests = Number(Yanfly.Parameters['Unused Quests']);
 
 //=============================================================================
 // TouchInput
@@ -3032,6 +3052,7 @@ Game_System.prototype.questSetCompleted = function(questId) {
     this._questsCompleted.sort(function(a, b) {
       return a - b;
     });
+    $gameVariables.setValue(1, $gameSystem.totalQuestsCompleted());
   }
   if (this._questsFailed.contains(questId)) {
     var index = this._questsFailed.indexOf(questId);
@@ -3611,7 +3632,7 @@ Game_System.prototype.totalQuestsKnown = function() {
 };
 
 Game_System.prototype.totalQuestsInGame = function() {
-  return Yanfly.Quest.totalCount;
+  return Yanfly.Quest.totalCount - Yanfly.Param.UnusedQuests;
 };
 
 Game_System.prototype.totalQuestTypes = function(category, type) {

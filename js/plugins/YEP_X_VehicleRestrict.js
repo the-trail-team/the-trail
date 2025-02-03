@@ -36,6 +36,11 @@ Yanfly.VR.version = 1.01;
  * @desc This region ID is a place a boat can land. If this is
  * left as only 0, then all regions can be landed on.
  * @default 0
+ * 
+ * @param Boat No Land
+ * @parent ---Boat---
+ * @desc This region ID is a place a boat can't land.
+ * @default 0
  *
  * @param ---Ship---
  * @default
@@ -57,6 +62,11 @@ Yanfly.VR.version = 1.01;
  * @desc This region ID is a place a ship can land. If this is
  * left as only 0, then all regions can be landed on.
  * @default 0
+ * 
+ * @param Ship No Land
+ * @parent ---Ship---
+ * @desc This region ID is a place a ship can't land.
+ * @default 0
  *
  * @param ---Airship---
  * @default
@@ -77,6 +87,11 @@ Yanfly.VR.version = 1.01;
  * @parent ---Airship---
  * @desc This region ID is a place an airship can land. If this is
  * left as only 0, then all regions can be landed on.
+ * @default 0
+ * 
+ * @param Airship No Land
+ * @parent ---Airship---
+ * @desc This region ID is a place an airship can't land.
  * @default 0
  *
  * @help
@@ -179,6 +194,11 @@ Yanfly.SetupParameters = function() {
   for (var i = 0; i < Yanfly.Param.VRBoatLand.length; ++i) {
     Yanfly.Param.VRBoatLand[i] = Number(Yanfly.Param.VRBoatLand[i]);
   }
+  Yanfly.Param.VRBoatNoLand = String(parameters['Boat No Land']);
+  Yanfly.Param.VRBoatNoLand = Yanfly.Param.VRBoatNoLand.split(' ');
+  for (var i = 0; i < Yanfly.Param.VRBoatNoLand.length; ++i) {
+    Yanfly.Param.VRBoatNoLand[i] = Number(Yanfly.Param.VRBoatNoLand[i]);
+  }
   Yanfly.Param.VRShipRestrict = String(parameters['Ship Restrict']);
   Yanfly.Param.VRShipRestrict = Yanfly.Param.VRShipRestrict.split(' ');
   for (var i = 0; i < Yanfly.Param.VRShipRestrict.length; ++i) {
@@ -194,6 +214,11 @@ Yanfly.SetupParameters = function() {
   for (var i = 0; i < Yanfly.Param.VRShipLand.length; ++i) {
     Yanfly.Param.VRShipLand[i] = Number(Yanfly.Param.VRShipLand[i]);
   }
+  Yanfly.Param.VRShipNoLand = String(parameters['Ship No Land']);
+  Yanfly.Param.VRShipNoLand = Yanfly.Param.VRShipNoLand.split(' ');
+  for (var i = 0; i < Yanfly.Param.VRShipNoLand.length; ++i) {
+    Yanfly.Param.VRShipNoLand[i] = Number(Yanfly.Param.VRShipNoLand[i]);
+  }
   Yanfly.Param.VRAirRestrict = String(parameters['Airship Restrict']);
   Yanfly.Param.VRAirRestrict = Yanfly.Param.VRAirRestrict.split(' ');
   for (var i = 0; i < Yanfly.Param.VRAirRestrict.length; ++i) {
@@ -208,6 +233,11 @@ Yanfly.SetupParameters = function() {
   Yanfly.Param.VRAirLand = Yanfly.Param.VRAirLand.split(' ');
   for (var i = 0; i < Yanfly.Param.VRAirLand.length; ++i) {
     Yanfly.Param.VRAirLand[i] = Number(Yanfly.Param.VRAirLand[i]);
+  }
+  Yanfly.Param.VRAirNoLand = String(parameters['Airship No Land']);
+  Yanfly.Param.VRAirNoLand = Yanfly.Param.VRAirNoLand.split(' ');
+  for (var i = 0; i < Yanfly.Param.VRAirNoLand.length; ++i) {
+    Yanfly.Param.VRAirNoLand[i] = Number(Yanfly.Param.VRAirNoLand[i]);
   }
 };
 Yanfly.SetupParameters();
@@ -230,7 +260,11 @@ DataManager.processVRNotetags = function() {
 
     boatLand:        Yanfly.Param.VRBoatLand.slice(),
     shipLand:        Yanfly.Param.VRShipLand.slice(),
-    airshipLand:     Yanfly.Param.VRAirLand.slice()
+    airshipLand:     Yanfly.Param.VRAirLand.slice(),
+
+    boatNoLand:     Yanfly.Param.VRBoatNoLand.slice(),
+    shipNoLand:     Yanfly.Param.VRShipNoLand.slice(),
+    airshipNoLand:  Yanfly.Param.VRAirNoLand.slice()
   };
 
   var note1 = /<(.*)[ ](?:RESTRICT REGION):[ ]*(\d+(?:\s*,\s*\d+)*)>/i;
@@ -370,37 +404,46 @@ Game_Map.prototype.isPassableVehicleRegionAllow = function(x, y, vehicle) {
 Game_Map.prototype.isVehicleRegionLandSpecific = function(vehicle) {
   this.processVehicleRestrictionNotetags();
   var regions = [];
+  var noRegions = [];
   switch (vehicle) {
   case 'boat':
     regions = $dataMap.vehicleRestrictions.boatLand || regions;
+    noRegions = $dataMap.vehicleRestrictions.boatNoLand || noRegions;
     break;
   case 'ship':
     regions = $dataMap.vehicleRestrictions.shipLand || regions;
+    noRegions = $dataMap.vehicleRestrictions.shipNoLand || noRegions;
     break;
   case 'airship':
     regions = $dataMap.vehicleRestrictions.airshipLand || regions;
+    noRegions = $dataMap.vehicleRestrictions.shipNoLand || noRegions;
     break;
   }
-  if (regions.length <= 0) return false;
-  if (regions.length <= 1 && regions[0] === 0) return false;
+  if (regions.length <= 0 && noRegions.length <= 0) return false;
+  if (regions.length <= 1 && regions[0] === 0 && noRegions.length <= 1 && noRegions[0] === 0) return false;
   return true;
 };
 
 Game_Map.prototype.isVehicleRegionLandOk = function(regionId, vehicle) {
   this.processVehicleRestrictionNotetags();
   var regions = [];
+  var noRegions = [];
   switch (vehicle) {
   case 'boat':
     regions = $dataMap.vehicleRestrictions.boatLand || regions;
+    noRegions = $dataMap.vehicleRestrictions.boatNoLand || noRegions;
     break;
   case 'ship':
     regions = $dataMap.vehicleRestrictions.shipLand || regions;
+    noRegions = $dataMap.vehicleRestrictions.shipNoLand || noRegions;
     break;
   case 'airship':
     regions = $dataMap.vehicleRestrictions.airshipLand || regions;
+    noRegions = $dataMap.vehicleRestrictions.airshipNoLand || noRegions;
     break;
   }
-  return regions.contains(regionId);
+  if (regions.length == 0) return !noRegions.contains(regionId);
+  return regions.contains(regionId) && !noRegions.contains(regionId);
 };
 
 //=============================================================================

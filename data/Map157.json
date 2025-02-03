@@ -4440,86 +4440,30 @@
               ]
             },
             {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 30,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Move1",
-                  "pan": 0,
-                  "pitch": 100,
-                  "volume": 90
-                }
-              ]
-            },
-            {
-              "code": 201,
+              "code": 111,
               "indent": 0,
               "parameters": [
                 0,
-                100,
-                14,
-                18,
-                8,
-                0
+                30,
+                1
               ]
             },
             {
               "code": 216,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
-                0
+                1
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 0,
@@ -4602,13 +4546,6 @@
                 12,
                 1,
                 2,
-                0
-              ]
-            },
-            {
-              "code": 216,
-              "indent": 0,
-              "parameters": [
                 0
               ]
             },
@@ -4968,8 +4905,8 @@
     },
     {
       "id": 5,
-      "name": "EV005",
-      "note": "",
+      "name": "waterspirit-template",
+      "note": "<Copy Event: 158, 143>",
       "pages": [
         {
           "conditions": {
@@ -4979,8 +4916,8 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 65,
-            "switch1Valid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -4989,32 +4926,29 @@
           },
           "directionFix": false,
           "image": {
-            "characterIndex": 0,
-            "characterName": "",
+            "tileId": 0,
+            "characterName": "Spirit",
             "direction": 2,
-            "pattern": 0,
-            "tileId": 0
+            "pattern": 1,
+            "characterIndex": 2
           },
           "list": [
             {
-              "code": 108,
+              "code": 301,
               "indent": 0,
               "parameters": [
-                "[hint]"
+                0,
+                62,
+                false,
+                false
               ]
             },
             {
-              "code": 408,
+              "code": 123,
               "indent": 0,
               "parameters": [
-                "Encounter Ahead!"
-              ]
-            },
-            {
-              "code": 408,
-              "indent": 0,
-              "parameters": [
-                "It would be highly advisable to save your game."
+                "A",
+                0
               ]
             },
             {
@@ -5023,9 +4957,27 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 2,
           "moveRoute": {
             "list": [
+              {
+                "code": 9,
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseRange = 4"
+                ],
+                "indent": null
+              },
+              {
+                "code": 45,
+                "parameters": [
+                  "this._chaseSpeed = 4"
+                ],
+                "indent": null
+              },
               {
                 "code": 0,
                 "parameters": []
@@ -5035,10 +4987,10 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
+          "moveSpeed": 2,
+          "moveType": 3,
+          "priorityType": 1,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
           "walkAnime": true
@@ -5050,9 +5002,9 @@
             "itemId": 1,
             "itemValid": false,
             "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 30,
-            "switch1Valid": true,
+            "selfSwitchValid": true,
+            "switch1Id": 1,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
             "variableId": 1,
@@ -5095,8 +5047,8 @@
           "walkAnime": true
         }
       ],
-      "x": 11,
-      "y": 3
+      "x": 9,
+      "y": 21
     },
     {
       "id": 6,
@@ -7009,8 +6961,8 @@
     },
     {
       "id": 14,
-      "name": "EV014",
-      "note": "<shadow>",
+      "name": "waterspirit-template",
+      "note": "<Copy Event: 158, 143>",
       "pages": [
         {
           "conditions": {
@@ -7031,10 +6983,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Goblin",
+            "characterName": "Spirit",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 2
           },
           "list": [
             {
@@ -7042,7 +6994,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                26,
+                62,
                 false,
                 false
               ]
@@ -7061,7 +7013,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 2,
           "moveRoute": {
             "list": [
               {
@@ -7091,12 +7043,12 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
+          "moveSpeed": 2,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -8151,8 +8103,8 @@
     },
     {
       "id": 20,
-      "name": "EV020",
-      "note": "<shadow>",
+      "name": "waterspirit-template",
+      "note": "<Copy Event: 158, 143>",
       "pages": [
         {
           "conditions": {
@@ -8173,10 +8125,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Goblin",
+            "characterName": "Spirit",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 2
           },
           "list": [
             {
@@ -8184,7 +8136,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                26,
+                62,
                 false,
                 false
               ]
@@ -8203,7 +8155,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 2,
           "moveRoute": {
             "list": [
               {
@@ -8233,12 +8185,12 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
+          "moveSpeed": 2,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
-          "trigger": 2,
+          "trigger": 0,
           "walkAnime": true
         },
         {
@@ -8298,8 +8250,8 @@
     },
     {
       "id": 21,
-      "name": "EV021",
-      "note": "<shadow>",
+      "name": "waterspirit-template",
+      "note": "<Copy Event: 158, 143>",
       "pages": [
         {
           "conditions": {
@@ -8320,10 +8272,10 @@
           "directionFix": false,
           "image": {
             "tileId": 0,
-            "characterName": "Goblin",
+            "characterName": "Spirit",
             "direction": 2,
             "pattern": 1,
-            "characterIndex": 0
+            "characterIndex": 2
           },
           "list": [
             {
@@ -8331,7 +8283,7 @@
               "indent": 0,
               "parameters": [
                 0,
-                26,
+                62,
                 false,
                 false
               ]
@@ -8350,7 +8302,7 @@
               "parameters": []
             }
           ],
-          "moveFrequency": 3,
+          "moveFrequency": 2,
           "moveRoute": {
             "list": [
               {
@@ -8380,159 +8332,12 @@
             "skippable": false,
             "wait": false
           },
-          "moveSpeed": 3,
+          "moveSpeed": 2,
           "moveType": 3,
           "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
+          "stepAnime": true,
           "through": false,
           "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 9,
-      "y": 21
-    },
-    {
-      "id": 22,
-      "name": "EV022",
-      "note": "<shadow>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Goblin",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                26,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 9,
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseRange = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 45,
-                "parameters": [
-                  "this._chaseSpeed = 4"
-                ],
-                "indent": null
-              },
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 3,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 2,
           "walkAnime": true
         },
         {
@@ -8589,6 +8394,7 @@
       ],
       "x": 6,
       "y": 5
-    }
+    },
+    null
   ]
 }

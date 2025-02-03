@@ -7255,30 +7255,6 @@
           },
           "list": [
             {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "HideActiveQuestWindow"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Dang, it's a bit dark in here."
-              ]
-            },
-            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -7292,14 +7268,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I think it'll be fine."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "It's not too bad."
+                "\\p2Man, it's real dark in here..."
               ]
             },
             {
@@ -7774,7 +7743,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Hey, um..."
+                "\\p4Sorry if this is a bit of"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "an awkward question, but..."
               ]
             },
             {
@@ -7785,7 +7761,21 @@
                 {
                   "list": [
                     {
+                      "code": 15,
+                      "parameters": [
+                        60
+                      ],
+                      "indent": 0
+                    },
+                    {
                       "code": 16,
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        60
+                      ],
                       "indent": null
                     },
                     {
@@ -7794,7 +7784,20 @@
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    60
+                  ],
+                  "indent": 0
                 }
               ]
             },
@@ -7809,20 +7812,16 @@
               ]
             },
             {
-              "code": 101,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Yeah?"
+                {
+                  "code": 15,
+                  "parameters": [
+                    60
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -7839,38 +7838,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Sorry if this is a bit of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "an awkward question, but..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4How come you don't seem to like"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "me and \\N[3] being around?"
+                "\\p4What's up with you and \\N[3]?"
               ]
             },
             {
@@ -8010,23 +7978,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                9,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2There's a bit to it."
-              ]
-            },
-            {
               "code": 241,
               "indent": 0,
               "parameters": [
@@ -8036,6 +7987,23 @@
                   "pitch": 100,
                   "pan": 0
                 }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2It's been an ongoing issue."
               ]
             },
             {
@@ -8057,145 +8025,20 @@
               ]
             },
             {
-              "code": 205,
+              "code": 101,
               "indent": 0,
               "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 29,
-                      "parameters": [
-                        3
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        4
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
+                "Actor4",
+                1,
+                0,
+                2
               ]
             },
             {
-              "code": 505,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    3
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    4
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                17,
-                {
-                  "list": [
-                    {
-                      "code": 29,
-                      "parameters": [
-                        3
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 2,
-                      "indent": null
-                    },
-                    {
-                      "code": 29,
-                      "parameters": [
-                        4
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    3
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 2,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 29,
-                  "parameters": [
-                    4
-                  ],
-                  "indent": null
-                }
+                "\\p2Whatever I do, it's somehow wrong."
               ]
             },
             {
@@ -8212,21 +8055,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2With \\N[3], it's a different story."
+                "\\p2You weren't here for this, but... something"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "But with you... let me think of"
+                "happened to me right at the start of this"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "how I can put this."
+                "journey. My very first day on The Trail,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "and I took a big hit to my confidence..."
               ]
             },
             {
@@ -8243,21 +8093,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I had a few friends back in Verdin"
+                "\\p2When something like that happens, you don't"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "Village, but we were never that"
+                "forget it, even if you try to. I guess that"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "close."
+                "I haven't, since my first impression on"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\N[3] was clearly not a good one."
               ]
             },
             {
@@ -8274,376 +8131,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2It's like, you know... you talk to"
+                "\\p2I feel confident right now. I don't feel"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "each other, you hang out when you"
+                "embarassed about what happened anymore."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "happen to be in the same place."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
+                "Looks like a first impression means everything"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2You just don't seek each other out."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "You don't ask 'em to hang out with"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you. It's all just coincidence."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2With \\N[1] though, I think we really"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "hit it off. He doesn't say much, but"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "he's always been treating me with"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "respect and helping me out."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Sharing \\ii[16]\\c[0]s, reminding me to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "drink \\ii[33]\\c[0]s... all of that stuff."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Then you two came along."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I think the reason I'm so off around"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you two is because I was used to it"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "just being \\N[1] and I."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Even though I agreed to going out and"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "finding new teammates, I still knew"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "that it was going to suck not being"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "able to hang out around just my best bro."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2When we met up with you guys and invited"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you to the team, I put a smile on my"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "face because I didn't wanna' seem"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "rude or anything."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2It's not 'cause you guys are girls"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "or anything, it's just that I'm"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "still getting used to the group"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "dynamic."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2It's mostly my fault, at least regarding"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you. I haven't made much of an effort to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "talk to you. It's good that we're having"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "this time to talk."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Don't get me wrong, \\N[4]. From"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "what I've seen, you're a great person."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "So I guess I just have to take the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "time to become a better friend."
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                120
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Wow."
+                "when it comes to \\N[3], though..."
               ]
             },
             {
@@ -8653,17 +8162,44 @@
                 17,
                 {
                   "list": [
+                    {
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": 0
+                    },
                     {
                       "code": 19,
                       "indent": null
                     },
                     {
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": null
+                    },
+                    {
                       "code": 0
                     }
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    120
+                  ],
+                  "indent": 0
                 }
               ]
             },
@@ -8678,20 +8214,16 @@
               ]
             },
             {
-              "code": 101,
+              "code": 505,
               "indent": 0,
               "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4\\N[2], that was... kinda' deep. Wow."
+                {
+                  "code": 15,
+                  "parameters": [
+                    120
+                  ],
+                  "indent": null
+                }
               ]
             },
             {
@@ -8708,31 +8240,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Didn't know you had all"
+                "\\p4\\N[2]... you shouldn't blame"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "these emotions bottled up."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hmph, yeah."
+                "yourself for \\N[3]'s actions."
               ]
             },
             {
@@ -8780,7 +8295,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Hey, look."
+                "\\p4What she's doing isn't right. You losing"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "your confidence for a little bit doesn't"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "define you as a person."
               ]
             },
             {
@@ -8788,7 +8317,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                3,
+                1,
                 0,
                 2
               ]
@@ -8797,176 +8326,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4I'm totally open to us"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "being better friends."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4We're not just saving a city. We're not"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "just saving a region. We're not just"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "saving a continent. We're saving"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the whole dang world!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4If our team doesn't have good"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "relationships, what good will"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "all the XP and items do if"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "we cause ourselves to lose?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Even if we're beyond squabbles and simply"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "neutral, we still need to work well"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "together, and that starts with being"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "good friends."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4So yeah... let's totally try"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to improve our relationship."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2All of that is true."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Thanks for saying that."
+                "\\p2Yeah, I guess."
               ]
             },
             {
@@ -8977,36 +8337,12 @@
                 {
                   "list": [
                     {
-                      "code": 17,
-                      "indent": null
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": 0
                     },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                17,
-                {
-                  "list": [
                     {
                       "code": 17,
                       "indent": null
@@ -9025,6 +8361,19 @@
                   "repeat": false,
                   "skippable": false,
                   "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    120
+                  ],
+                  "indent": 0
                 }
               ]
             },
@@ -9065,7 +8414,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2With \\N[3], it's a different story."
+                "\\p2Still... sometimes I wonder if she's right."
               ]
             },
             {
@@ -9082,162 +8431,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I tried to maintain my happy face"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "around her, I tried to be nice to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "her, I tried enduring her insults."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2But she continued to be"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "a total jerk."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Most of our squabbling was not around"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you or \\N[1], but it definitely"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "happened."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2And it's just... I don't know. I've"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "kinda' given up on being nice to her,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I just don't think it's worth it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2If she's gonna' keep being a jerk,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "I can't do nothin' but keep myself"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "cool and calm."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Don't try to be nice to her, don't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "respond to her, just remain neutral."
+                "\\p2Maybe I really am useless."
               ]
             },
             {
@@ -9254,7 +8448,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Hm."
+                "\\p4Hey, hey, hey. \\N[2], don't say that ever again."
               ]
             },
             {
@@ -9271,7 +8465,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Alright, I see your point. But..."
+                "\\p4We haven't known each other for long, but"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "everything I've seen from you has been positive."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "You're enthusiastic, hard-working, charismatic,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "and generally a fun guy to be around."
               ]
             },
             {
@@ -9288,316 +8503,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4...I still think you should give being"
+                "\\p4You can't let \\N[3] get you down like"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "friends with her another shot."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
+                "this. I don't know why she's being like"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4She's really not that bad once"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you get to know her."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Naw, it's not worth the effort."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I just want to focus on the journey."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I do have her to thank"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "for something, I guess."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2She helped me realize that keeping a"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "smile on my face all the time isn't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "always the best idea."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hiding my emotions behind a happy"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "mask isn't good. I shouldn't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "bottle up how I feel."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Thanks to that realization, I can"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "have talks like this with people."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Luckily, I can still keep that"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "smile most of the time."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Well, at least something"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "good came out of that."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4I didn't know you had a side like"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "this, \\N[2]. I always saw you"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "as just the happy-go-lucky"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "guy with a wand."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Everyone's got layers, I suppose."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Yep... and hey, that for some"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "reason reminded me of something"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "that's somewhat off-topic."
+                "this... I'll have a word with her."
               ]
             },
             {
@@ -9632,34 +8552,20 @@
               ]
             },
             {
-              "code": 205,
+              "code": 101,
               "indent": 0,
               "parameters": [
-                17,
-                {
-                  "list": [
-                    {
-                      "code": 19,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
+                "Actor4",
+                1,
+                0,
+                2
               ]
             },
             {
-              "code": 505,
+              "code": 401,
               "indent": 0,
               "parameters": [
-                {
-                  "code": 19,
-                  "indent": null
-                }
+                "\\p2NO!"
               ]
             },
             {
@@ -9676,28 +8582,45 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Did \\N[1] ever end up giving us some"
+                "\\p2No... you can't let her know I've said"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "sort of story? We all had our sob moments,"
+                "anything. I never respond to her for a"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "but \\N[1] has remained silent about"
+                "reason. It'll have to stop eventually."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "his past."
+                "\\p2Besides, if you have to stand up for"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "me, I'll never hear the end of it."
               ]
             },
             {
@@ -9714,21 +8637,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4I say we leave him alone. I'm willing"
+                "\\p4Well, I'll respect your decision. But \\N[2],"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to bet some stuff happened that he just"
+                "please promise me that if it ever gets worse,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "doesn't want to talk about."
+                "you'll come right to me. Got it?"
               ]
             },
             {
@@ -9745,14 +8668,94 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Alright, fair enough."
+                "\\p2Sure... yeah, I promise."
               ]
             },
             {
-              "code": 242,
+              "code": 101,
               "indent": 0,
               "parameters": [
+                "Actor4",
+                3,
+                0,
                 2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4Good. I'm sorry to hear all this, \\N[2]."
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                180
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4\\N[2]."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                1,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p2Yeah?"
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                3,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p4Do you..."
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
               ]
             },
             {
@@ -9802,7 +8805,7 @@
               "code": 213,
               "indent": 0,
               "parameters": [
-                -1,
+                17,
                 1,
                 false
               ]
@@ -9811,26 +8814,9 @@
               "code": 213,
               "indent": 0,
               "parameters": [
-                17,
+                -1,
                 1,
-                false
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Um... what was that sound?"
+                true
               ]
             },
             {
@@ -9847,7 +8833,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Sounded like... a crossbow."
+                "\\p4Ah! A crossbow!"
               ]
             },
             {
@@ -9895,7 +8881,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4\\}I hear talking! Quick, hide!"
+                "\\p4Quick, we need to hide!"
               ]
             },
             {
@@ -9914,10 +8900,6 @@
                     },
                     {
                       "code": 4,
-                      "indent": null
-                    },
-                    {
-                      "code": 3,
                       "indent": null
                     },
                     {
@@ -10012,16 +8994,6 @@
               "parameters": [
                 {
                   "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
                   "indent": null
                 }
               ]
@@ -10222,10 +9194,6 @@
                       "indent": null
                     },
                     {
-                      "code": 3,
-                      "indent": null
-                    },
-                    {
                       "code": 1,
                       "indent": null
                     },
@@ -10310,16 +9278,6 @@
               "parameters": [
                 {
                   "code": 4,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 3,
                   "indent": null
                 }
               ]
@@ -11345,23 +10303,6 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Good, no one's here."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
                 "\\-That was a close call, guards almost"
               ]
             },
@@ -11496,24 +10437,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "goods if ya got 'em!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                1,
-                0,
-                2
+                "goods if ya got 'em! And uh, "
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\bmouthAnd, uh... wha' didya thief again?"
+                "wha' didya thief again?"
               ]
             },
             {
@@ -11530,31 +10461,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Oh, just the usual."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
+                "\\-Just the usual. Food, materials for"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Food, materials to make clothing,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and fuel for the project."
+                "clothes, fuel for the project..."
               ]
             },
             {
@@ -11657,28 +10571,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\smouthDo not fret, all will be fine. The"
+                "\\smouthDo not fret, all will be fine."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "odds of an unassuming traveler"
+                "The odds of an unassuming traveler"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "entering the forest at this"
+                "entering the forest at this time"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "time are quite slim."
+                "are quite slim."
               ]
             },
             {
@@ -11822,7 +10736,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\smouthWell, now that I ponder this..."
+                "\\smouthAlthough now that I ponder the situation,"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "it may not be wise to maintain all of these"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "precious materials in our possessions whilst"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "meandering about the continent."
               ]
             },
             {
@@ -11839,121 +10774,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\smouth...it may not be the wisest idea"
+                "\\smouthDeposit the items at the hideout. We"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "to keep all of these precious materials"
+                "must depart on a few errands, then we will"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "in our possesions whilst meandering"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "about the continent."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\smouthWe do pride ourselves on hiding ourselves"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "where anyone could see, after all. So"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "instead of directly giving us the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "items, I have an alternate suggestion."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\smouthDeposit the items at the hideout."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "We must depart on a few errands,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and then we will return to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "make sure the items are intact."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\smouthGood luck."
+                "return to ensure everything is intact."
               ]
             },
             {
@@ -12429,45 +11264,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Don't worry man, same here. It's"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "getting kinda' late too, we"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "might have to stop at the Inn."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-I don't know if that's the best idea,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "we're still hauling all these items."
+                "\\-Unfortunately not. We might have a problem."
               ]
             },
             {
@@ -12491,31 +11288,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4\\}Ok, I have an idea."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4\\}I'm going to go sneak up on"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "them. Stay behind."
+                "\\p4\\}I'll sneak up on them. Stay behind."
               ]
             },
             {
@@ -12556,14 +11329,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4\\}Hey, this is my job."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Don't worry, I got this."
+                "\\p4\\}Don't worry, I'm good at this."
               ]
             },
             {
@@ -12749,7 +11515,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Hey, I've got an idea."
+                "\\-What if we just dump all the items"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "in a tree stump or something?"
               ]
             },
             {
@@ -12766,72 +11539,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Hm?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Why don't we just dump these items"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "somewhere in the forest?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Looks like no one ever goes in"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "here, everything'll be fine."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Hm. Lemme' think."
+                "\\-Hm..."
               ]
             },
             {
@@ -12969,14 +11677,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-That's actually not that bad"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "of an idea!"
+                "\\-I don't know... are you sure that's safe?"
               ]
             },
             {
@@ -12993,55 +11694,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Where exactly, though? In a tree"
+                "\\-No one really comes here. Still,"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "trunk? In... a tree trunk?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-There's not that many good"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "hiding spots in here."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Hm, that's true."
+                "I'll think of something better..."
               ]
             },
             {
@@ -13137,45 +11797,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Hey, hold up."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-I think I remembered where the base is!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "We're in the Easin Plains, right?"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Well, we just have to head north"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "and pass right next-"
+                "\\-Hey, I think I remember where the base is!"
               ]
             },
             {
@@ -13413,7 +12035,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4\\{HEY! STOP RIGHT THERE!"
+                "\\p4\\{STOP RIGHT THERE!!"
               ]
             },
             {
@@ -13669,41 +12291,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-AH! BY TRAILIA!!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
+                "\\-AH! BY TRAILIA!! Scared the crap"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Scared the crap out of me, damnit!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Were you standing back"
+                "outta' me, damnit! Were you standing"
               ]
             },
             {
@@ -15095,14 +13690,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Hey man, slow down! I can't"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "run that fast! Jeez!"
+                "\\-Huff, puff... man, slow down! I can't run that fast!"
               ]
             },
             {
@@ -15201,21 +13789,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Shut up. Just tell us who you are,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "who your leader is, and where your"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\"base\" is located!"
+                "\\p4Spill! Who are you, who's your leader, and where's your HQ?"
               ]
             },
             {
@@ -15232,7 +13806,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Oh, these are easy questions!"
+                "\\-That's... confidential."
               ]
             },
             {
@@ -15249,48 +13823,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-One, don't got no identity."
+                "\\-And I..."
               ]
             },
             {
-              "code": 101,
+              "code": 230,
               "indent": 0,
               "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Two, we got more than one "
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "person I'd consider a \"leader\"."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Three... we got more than one base."
+                60
               ]
             },
             {
@@ -15298,7 +13838,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                1,
+                3,
                 0,
                 2
               ]
@@ -15307,7 +13847,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Cut it out! Just tell us!"
+                "\\p4Speak up! Tell me now!"
               ]
             },
             {
@@ -15324,7 +13864,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Oh, I just did, didn't I?"
+                "\\-And I..."
               ]
             },
             {
@@ -15341,55 +13881,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\-Well, it was fun talking to you,"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "but I gotta' go catch up to"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "my friend."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-No one can catch a Dandy Toad!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\-Catcha' later, losers!"
+                "\\-...have finally caught my breath."
               ]
             },
             {
@@ -16313,7 +14805,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Jeez, he's fast. Ugh, we lost him!"
+                "\\p4Ugh, we lost him!"
               ]
             },
             {
@@ -16361,24 +14853,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Maybe he's up ahead. Let's go!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I'll lead the way."
+                "\\p4Maybe he's up ahead. Run!"
               ]
             },
             {
@@ -16426,13 +14901,6 @@
               "indent": 0,
               "parameters": [
                 0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "ShowActiveQuestWindow"
               ]
             },
             {
@@ -17071,128 +15539,11 @@
       "x": 12,
       "y": 21
     },
-    {
-      "id": 22,
-      "name": "EV022",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 13
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 23"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 14
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 11,
-      "y": 8
-    },
+    null,
     {
       "id": 23,
       "name": "EV023",
-      "note": "",
+      "note": "<Hitbox Left: 1> <Hitbox Right: 1>",
       "pages": [
         {
           "conditions": {
@@ -17329,69 +15680,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4We were interrupted during our"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "conversation earlier, and there"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "were still some things I"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "wanted to bring up."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4So..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                7,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Wanna' just chill here on the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "bridge and talk about stuff?"
+                "\\p4Do you wanna' just... talk for a little?"
               ]
             },
             {
@@ -17408,14 +15697,24 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I would love to take"
+                "\\p2..."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                5,
+                0,
+                2
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "you up on that offer."
+                "\\p2I'd love to take you up on that offer."
               ]
             },
             {
@@ -17523,318 +15822,10 @@
               "parameters": []
             },
             {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 14
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 12,
-      "y": 8
-    },
-    {
-      "id": 24,
-      "name": "EV024",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 13
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
               "code": 356,
               "indent": 0,
               "parameters": [
-                "CallEvent 23"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 19,
-            "variableValid": true,
-            "variableValue": 14
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 13,
-      "y": 8
-    },
-    {
-      "id": 25,
-      "name": "EV025",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 42,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Hm... doesn't look like anyone's out here..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Wait... listen."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4We were in a situation like this last"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "time. They're bound to come walking over"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "here any second now..."
-              ]
-            },
-            {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                3,
-                3,
-                0
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
+                "Quest 21 Complete Objective 1"
               ]
             },
             {
@@ -17845,668 +15836,37 @@
               ]
             },
             {
-              "code": 205,
+              "code": 250,
               "indent": 0,
               "parameters": [
-                27,
                 {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
+                  "name": "Move1",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
                 }
               ]
             },
             {
-              "code": 505,
+              "code": 211,
               "indent": 0,
               "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                28,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 15,
-                      "parameters": [
-                        60
-                      ],
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 15,
-                  "parameters": [
-                    60
-                  ],
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\toadHey... who are you?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4We're here to get back that purse"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you stole from that woman!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\toadOh, ok."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\toadWell, I assume you guys know who we"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "are, and everyone has the basic gist of"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "what's going on here."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\toadShould we just skip the long boring"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "dialogue and get straight to the fight?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                3,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p4Yeah, I'm cool with that."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\toadAlright. Let's do this!"
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                27,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                28,
-                {
-                  "list": [
-                    {
-                      "code": 1,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 1,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 301,
-              "indent": 0,
-              "parameters": [
-                0,
-                30,
-                false,
-                false
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                27,
-                {
-                  "list": [
-                    {
-                      "code": 13,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 13,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                28,
-                {
-                  "list": [
-                    {
-                      "code": 13,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": true
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 13,
-                  "indent": null
-                }
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\toadOuch..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "DandyToad",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\toadWe should've known this'd happen."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Why do the good guys always have"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to win?"
-              ]
-            },
-            {
-              "code": 221,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 121,
-              "indent": 0,
-              "parameters": [
-                3,
-                3,
                 1
               ]
             },
             {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
               "code": 230,
               "indent": 0,
               "parameters": [
                 60
               ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "a_Move1",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 230,
-              "indent": 0,
-              "parameters": [
-                60
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 25 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 25 Complete Objective 1"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 25 Show Objective 2"
-              ]
-            },
-            {
-              "code": 222,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 101,
               "indent": 0,
               "parameters": [
                 "Actor4",
-                7,
+                2,
                 0,
                 2
               ]
@@ -18515,7 +15875,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Nice job guys, we got the purse!"
+                "\\p3Ugh, why did we have to get stuck on cleanup duty?"
               ]
             },
             {
@@ -18523,7 +15883,7 @@
               "indent": 0,
               "parameters": [
                 "Actor4",
-                7,
+                2,
                 0,
                 2
               ]
@@ -18532,14 +15892,45 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p4Let's head back to that lady"
+                "\\p3Practically all we did was pick flowers"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "and return it to her."
+                "and look for keys in crates... now my"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "back is killing me."
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "Actor4",
+                2,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "\\p3\\N[2] and \\N[4] have been taking"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "a while... let's go look for them."
               ]
             },
             {
@@ -18572,68 +15963,17 @@
           "conditions": {
             "actorId": 1,
             "actorValid": false,
-            "itemId": 62,
-            "itemValid": true,
+            "itemId": 1,
+            "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 1,
             "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 43,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 19,
+            "variableValid": true,
+            "variableValue": 14
           },
           "directionFix": false,
           "image": {
@@ -18672,297 +16012,13 @@
         }
       ],
       "x": 12,
-      "y": 10
+      "y": 8
     },
-    {
-      "id": 26,
-      "name": "EV026",
-      "note": "",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 42,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 25"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 62,
-            "itemValid": true,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 43,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "characterIndex": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "tileId": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 11,
-      "y": 10
-    },
-    {
-      "id": 27,
-      "name": "dandyleft",
-      "note": "<shadow>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 3,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "DandyToad",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 12,
-      "y": 1
-    },
-    {
-      "id": 28,
-      "name": "dandyright",
-      "note": "<shadow>",
-      "pages": [
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 3,
-            "switch1Valid": true,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "DandyToad",
-            "direction": 2,
-            "pattern": 1,
-            "characterIndex": 0
-          },
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ],
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 0,
-          "walkAnime": true
-        }
-      ],
-      "x": 13,
-      "y": 1
-    },
+    null,
+    null,
+    null,
+    null,
+    null,
     {
       "id": 29,
       "name": "redmushroom-test",

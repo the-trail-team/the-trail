@@ -495,6 +495,7 @@ Game_System.prototype.initMapQuestWindowSettings = function() {
   this._showMapQuestWindow = 
     eval(Yanfly.Param.MQWSettings['Default Show'] || 'true');
   this._activeQuestId = 0;
+  this._questQueue = [];
 };
 
 Game_System.prototype.isShowMapQuestWindow = function() {
@@ -512,9 +513,30 @@ Game_System.prototype.getActiveQuestId = function() {
   return this._activeQuestId;
 };
 
+Game_System.prototype.getQuestQueue = function() {
+  if (this._questQueue === undefined || typeof this._questQueue != 'object') this._questQueue = [];
+  this._questQueue = this._questQueue.filter(q => !(this._questsCompleted.contains(q) || this._questsFailed.contains(q)));
+  return this._questQueue;
+};
+
+Game_System.prototype.addToQueue = function(id) {
+  if (id == 0) return;
+  queue = this.getQuestQueue();
+  queue.unshift(id);
+  this._questQueue = queue;
+};
+
+Game_System.prototype.removeFromQueue = function(id) {
+  queue = this.getQuestQueue().filter(q => q != id);
+  this._questQueue = queue;
+};
+
 Game_System.prototype.setActiveQuestId = function(questId) {
   if (this._activeQuestId === undefined) this.initMapQuestWindowSettings();
-  if (questId === 0 || $dataQuests[questId]) this._activeQuestId = questId;
+  if (questId === 0 || $dataQuests[questId]) {
+    this.addToQueue(this.getActiveQuestId());
+    this._activeQuestId = questId;
+  }
   this.refreshActiveQuestWindow();
 };
 
@@ -529,7 +551,7 @@ if (Yanfly.Param.MQWAddQuest) {
 Yanfly.AMQW.Game_System_questAdd = Game_System.prototype.questAdd;
 Game_System.prototype.questAdd = function(questId) {
   Yanfly.AMQW.Game_System_questAdd.call(this, questId);
-  if (questId !== 1000) this.setActiveQuestId(questId);
+  this.setActiveQuestId(questId);
 };
 
 }; // Yanfly.Param.MQWAddQuest
@@ -545,7 +567,7 @@ Game_System.prototype.questRemove = function(questId) {
 
 Game_System.prototype.setNextAvailableQuestActive = function(condition) {
   if (condition) {
-    var questId = this.getQuestsAvailable()[0];
+    var questId = this.getNextAvailableQuestActive();
     if (questId) {
       this.setActiveQuestId(questId);
     } else {
@@ -557,10 +579,20 @@ Game_System.prototype.setNextAvailableQuestActive = function(condition) {
   this.refreshActiveQuestWindow();
 };
 
+Game_System.prototype.getNextAvailableQuestActive = function() {
+  if (this.getQuestQueue().length > 0) {
+    queue = this.getQuestQueue()[0];
+    this._questQueue.shift();
+    return queue;
+  }
+  else return this.getQuestsAvailable()[0];
+};
+
 Yanfly.AMQW.Game_System_questSetCompleted = 
   Game_System.prototype.questSetCompleted;
 Game_System.prototype.questSetCompleted = function(questId) {
   Yanfly.AMQW.Game_System_questSetCompleted.call(this, questId);
+  this.removeFromQueue(questId);
   if (this.getActiveQuestId() === questId) {
     this.setNextAvailableQuestActive(Yanfly.Param.MQWQuestComplete);
   };
@@ -570,6 +602,7 @@ Yanfly.AMQW.Game_System_questSetFailed =
   Game_System.prototype.questSetFailed;
 Game_System.prototype.questSetFailed = function(questId) {
   Yanfly.AMQW.Game_System_questSetFailed.call(this, questId);
+  this.removeFromQueue(questId);
   if (this.getActiveQuestId() === questId) {
     this.setNextAvailableQuestActive(Yanfly.Param.MQWQuestComplete);
   };
@@ -581,45 +614,40 @@ Yanfly.AMQW.Game_System_questObjectivesShow =
   Game_System.prototype.questObjectivesShow;
 Game_System.prototype.questObjectivesShow = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesShow.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesHide =
   Game_System.prototype.questObjectivesHide;
 Game_System.prototype.questObjectivesHide = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesHide.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesNormal =
   Game_System.prototype.questObjectivesNormal;
 Game_System.prototype.questObjectivesNormal = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesNormal.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesComplete =
   Game_System.prototype.questObjectivesComplete;
 Game_System.prototype.questObjectivesComplete = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesComplete.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 Yanfly.AMQW.Game_System_questObjectivesFail =
   Game_System.prototype.questObjectivesFail;
 Game_System.prototype.questObjectivesFail = function(questId, objId) {
   Yanfly.AMQW.Game_System_questObjectivesFail.call(this, questId, objId);
-  if (this.getActiveQuestId() === questId) {
-    this.refreshActiveQuestWindow();
-  };
+  this.setActiveQuestId(questId);
+  this.refreshActiveQuestWindow();
 };
 
 }; // Yanfly.Param.MQWChangeObj
@@ -916,8 +944,6 @@ Window_MapActiveQuest.prototype.updateVisible = function() {
 Window_MapActiveQuest.prototype.isWindowVisible = function() {
   if (!ConfigManager.mapQuestWindow) return false;
   if (!this.activeQuest()) return false;
-  if ($gameMessage.isBusy()) return false;
-  if (SceneManager.isSceneChanging()) return false;
   return $gameSystem.isShowMapQuestWindow();
 };
 
@@ -931,8 +957,8 @@ Window_MapActiveQuest.prototype.requestRefresh = function(value) {
 
 Yanfly.AMQW.Scene_Map_createAllWindows = Scene_Map.prototype.createAllWindows;
 Scene_Map.prototype.createAllWindows = function() {
-  Yanfly.AMQW.Scene_Map_createAllWindows.call(this);
   this.createMapQuestWindow();
+  Yanfly.AMQW.Scene_Map_createAllWindows.call(this);
 };
 
 Scene_Map.prototype.createMapQuestWindow = function() {

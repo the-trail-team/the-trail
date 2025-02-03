@@ -29,9 +29,9 @@ Window_SkillList.prototype.drawSkillName = function(item, x, y, width) {
         this.drawText(item.name, x + iconBoxWidth, y, width - iconBoxWidth);
         var offset = this.contents.measureTextWidth(item.name);
         if (this._actor.skillMasteryLevel(item) == 0 && this._actor.isMaxedSkillMasteryLevel(item)) return;
-        this.changeTextColor(this.textColor(29));
+        this.changeTextColor(this.textColor(this._actor.isMaxedSkillMasteryLevel(item) ? 14 : 29));
         this.contents.fontSize = 16;
-        this.drawText(" LV." + this._actor.skillMasteryLevel(item), x + iconBoxWidth + offset + 4, y, width - iconBoxWidth);
+        this.drawText(" " + Yanfly.Param.SMLTextFmt.format(this._actor.skillMasteryLevel(item)), x + iconBoxWidth + offset + 4, y, width - iconBoxWidth);
     }
 };
 
@@ -46,8 +46,8 @@ Window_BattleSkill.prototype.drawSkillName = function(item, x, y, width) {
         this.drawText(item.name, x + iconBoxWidth, y, width - iconBoxWidth);
         var offset = this.contents.measureTextWidth(item.name);
         if (this._actor.skillMasteryLevel(item) == 0 && this._actor.isMaxedSkillMasteryLevel(item)) return;
-        this.changeTextColor(this.textColor(29));
+        this.changeTextColor(this.textColor(this._actor.isMaxedSkillMasteryLevel(item) ? 14 : 29));
         this.contents.fontSize = 12;
-        this.drawText(" LV." + this._actor.skillMasteryLevel(item), x + iconBoxWidth + offset + 4, y, width - iconBoxWidth);
+        this.drawText(" " + Yanfly.Param.SMLTextFmt.format(this._actor.skillMasteryLevel(item)), x + iconBoxWidth + offset + 4, y, width - iconBoxWidth);
     }
 };

@@ -205,16 +205,16 @@ Window_ItemNameEdit.prototype.initialize = function(item, maxLength) {
     var y = (Graphics.boxHeight - (height + this.fittingHeight(9) + 8)) / 2;
     Window_Base.prototype.initialize.call(this, x, y, width, height);
     this._item = item;
-    this._name = this._item.name.slice(0, this._maxLength);
+    this._name = this._item.priorityName.length > 0 ? this._item.priorityName : this._item.baseItemName;
     this._index = this._name.length;
     this._maxLength = maxLength;
-    this._defaultName = this._name;
+    this._defaultName = item.baseItemName;
     this.deactivate();
     this.refresh();
 };
 
 Window_ItemNameEdit.prototype.windowWidth = function() {
-  return 480;
+  return Yanfly.Param.ItemRenameMaxLength * 22.5;
 };
 
 Window_ItemNameEdit.prototype.windowHeight = function() {
@@ -309,9 +309,9 @@ Window_ItemNameEdit.prototype.refresh = function() {
   this.contents.clear();
   var lh = this.lineHeight();
   var name = this._item.name;
-  var width = this.textWidth(name);
+  var width = this.textWidthEx(name);
   var iconWidth = Window_Base._iconWidth;
-  var x = this.contents.width / 2 - (iconWidth / 2) - 4 - (width/2);
+  var x = (this.contents.width - iconWidth - 8 - width) / 2;
   this.drawItemName(this._item, x, lh * 0.5, this.contents.width);
   var text = Yanfly.Param.ItemRenameText;
   this.drawText(text, 0, lh * 1.5, this.contents.width, 'center');
@@ -344,32 +344,39 @@ Scene_Item.prototype.onActionRename = function() {
 };
 
 Scene_Item.prototype.preItemRename = function() {
+  $gameTemp._itemCategoryType = this._categoryWindow._type;
   $gameTemp._itemCategoryIndex = this._categoryWindow.index();
-  $gameTemp._itemListIndex = this._itemWindow.index();
   $gameTemp._itemActionIndex = this._itemActionWindow.index();
   $gameTemp._itemRename = this.item();
 };
 
-Scene_Item.prototype.postItemRename = function() {
+Scene_Item.prototype.postItemRename1 = function() {
+  this._categoryWindow._type = $gameTemp._itemCategoryType;
   this._categoryWindow.select($gameTemp._itemCategoryIndex);
   this._categoryWindow.update();
   $gameTemp._itemCategoryIndex = undefined;
-  this._itemWindow.update();
-  this._itemWindow.select($gameTemp._itemListIndex);
-  this._itemWindow.updateHelp();
-  $gameTemp._itemListIndex = undefined;
-  this._itemActionWindow.setItem($gameTemp._itemRename);
-  this._itemActionWindow.select($gameTemp._itemActionIndex);
-  $gameTemp._itemActionIndex = undefined;
-  $gameTemp._itemRename = undefined;
   this._categoryWindow.deactivate();
 };
+
+Scene_Item.prototype.postItemRename2 = function() {
+  if (SceneManager._scene._itemWindow._data.length == 0) window.setTimeout(SceneManager._scene.postItemRename2, 100);
+  else {
+    SceneManager._scene._itemWindow.update();
+    SceneManager._scene._itemWindow.select(SceneManager._scene._itemWindow._data.findIndex(i => i.id == $gameTemp._itemRename.id));
+    SceneManager._scene._itemWindow.updateHelp();
+    $gameTemp._itemRename = undefined;
+    SceneManager._scene._itemActionWindow.setItem(SceneManager._scene.item())
+    SceneManager._scene._itemActionWindow.select($gameTemp._itemActionIndex);
+    $gameTemp._itemActionIndex = undefined;
+  }
+}
 
 Yanfly.ItemRename.Scene_Item_create = Scene_Item.prototype.create;
 Scene_Item.prototype.create = function() {
   Yanfly.ItemRename.Scene_Item_create.call(this);
-  if ($gameTemp._itemCategoryIndex) {
-    this.postItemRename();
+  if ($gameTemp._itemRename) {
+    this.postItemRename1();
+    this.postItemRename2();
   }
 };
 

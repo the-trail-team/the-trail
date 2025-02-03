@@ -192,7 +192,7 @@ switch(_.comPhaseText) {
 }
 
 _.loadImage = function(filename, hue) {
-	return ImageManager.loadBitmap('img/SumRndmDde/gameover/', filename, hue, false);
+	return ImageManager.loadBitmap('img/parallaxes/', filename, hue, false);
 };
 
 _.loadBackgroundImage = function() {
@@ -208,6 +208,13 @@ _.retryBattle = function() {
 		$gamePlayer.makeEncounterCount();
 		SceneManager.goto(Scene_Battle);
 	}
+};
+
+_.giveUp = function() {
+	$gameParty.payRetryCosts();
+	this._params = [0].concat($gameSystem.safePlace()).concat(0);
+	_.specialCommand201();
+	$gameMap._interpreter._index = $gameMap._interpreter._list.length;
 };
 
 _.informInvalidCommonEvent = [
@@ -232,13 +239,13 @@ _.specialCommand201 = function() {
 			mapId = this._params[1];
 			x = this._params[2];
 			y = this._params[3];
-		} else {  // Designation with variables
+		}/* else {  // Designation with variables
 			mapId = $gameVariables.value(this._params[1]);
 			x = $gameVariables.value(this._params[2]);
 			y = $gameVariables.value(this._params[3]);
-		}
+		}*/
 		$gamePlayer.reserveTransfer(mapId, x, y, this._params[4], this._params[5]);
-		this.setWaitMode('transfer');
+		// this.setWaitMode('transfer');
 		this._index++;
 	}
 	return false;
@@ -297,21 +304,16 @@ BattleManager.processDefeat = function() {
 
 _.BattleManager_replayBgmAndBgs = BattleManager.replayBgmAndBgs;
 BattleManager.replayBgmAndBgs = function() {
-	// if($gameTemp._setUpRetry) {
-	if(true) {
-		if(this._superMapBgm) {
-			AudioManager.replayBgm(this._superMapBgm);
-			this._superMapBgm = null;
-		} else {
-			AudioManager.stopBgm();
-		}
-		if(this._superMapBgs) {
-			AudioManager.replayBgs(this._superMapBgs);
-			this._superMapBgs = null;
-		}
-	} /*else {
-		_.BattleManager_replayBgmAndBgs.apply(this, arguments);
-	}*/
+	if(this._superMapBgm) {
+		AudioManager.replayBgm(this._superMapBgm);
+		this._superMapBgm = null;
+	} else {
+		AudioManager.stopBgm();
+	}
+	if(this._superMapBgs) {
+		AudioManager.replayBgs(this._superMapBgs);
+		this._superMapBgs = null;
+	}
 };
 
 //-----------------------------------------------------------------------------
@@ -408,7 +410,7 @@ Scene_Gameover.prototype.create = function() {
 	this.createMessageWindow();
 	this.createScrollTextWindow();
 	this.createCommandWindow();
-	this.createPictures();
+	// this.createPictures();
 	DataManager.loadAllSavefileImages();
 	this.createHelpWindow();
 	this.createListWindow();
@@ -519,6 +521,7 @@ Scene_Gameover.prototype.createCommandWindow = function() {
 	this._commandWindow.x = eval(_.comX);
 	this._commandWindow.y = eval(_.comY);
 	this._commandWindow.setHandler('retry', this.retryCommand.bind(this));
+	this._commandWindow.setHandler('giveup', this.giveUpCommand.bind(this));
 	this._commandWindow.setHandler('load', this.loadCommand.bind(this));
 	this._commandWindow.setHandler('title', this.titleCommand.bind(this));
 	this._commandWindow.deactivate();
@@ -565,6 +568,10 @@ Scene_Gameover.prototype.createListWindow = function() {
 
 Scene_Gameover.prototype.retryCommand = function() {
 	_.retryBattle();
+};
+
+Scene_Gameover.prototype.giveUpCommand = function() {
+	_.giveUp();
 };
 
 Scene_Gameover.prototype.loadCommand = function() {

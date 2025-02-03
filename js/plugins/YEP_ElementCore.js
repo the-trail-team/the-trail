@@ -250,7 +250,7 @@ DataManager.processElementNotetagsSys = function(group) {
   Yanfly.ElementIdRef = {};
   for (var i = 1; i < group.elements.length; ++i) {
     var name = group.elements[i].toUpperCase();
-    name = name.replace(/\\I\[(\d+)\]/gi, '');
+    name = name.replace(/\\\w\[(\d+)\]/gi, '');
     Yanfly.ElementIdRef[name] = i;
   }
 };
@@ -308,12 +308,12 @@ DataManager.processElementNotetags1 = function(group) {
 
 DataManager.processElementNotetags2 = function(group) {
   var noteA1 = /<(?:ELEMENT ABSORB):[ ](\d+)[ ](?:THROUGH|to)[ ](\d+)>/i;
-  var noteB1 = /<(?:ELEMENT REFLECT)[ ](\d+):[ ]([\+\-]\d+)([%％])>/i;
-  var noteB2 = /<(?:ELEMENT REFLECT)[ ](.*):[ ]([\+\-]\d+)([%％])>/i;
-  var noteC1 = /<(?:ELEMENT AMPLIFY)[ ](\d+):[ ]([\+\-]\d+)([%％])>/i;
-  var noteC2 = /<(?:ELEMENT AMPLIFY)[ ](.*):[ ]([\+\-]\d+)([%％])>/i;
-  var noteC3 = /<(?:ELEMENT MAGNIFY)[ ](\d+):[ ]([\+\-]\d+)([%％])>/i;
-  var noteC4 = /<(?:ELEMENT MAGNIFY)[ ](.*):[ ]([\+\-]\d+)([%％])>/i;
+  var noteB1 = /<(?:ELEMENT REFLECT)[ ](\d+):[ ]([\+\-]\d+(?:\.\d+)?)([%％])>/i;
+  var noteB2 = /<(?:ELEMENT REFLECT)[ ](.*):[ ]([\+\-]\d+(?:\.\d+)?)([%％])>/i;
+  var noteC1 = /<(?:ELEMENT AMPLIFY)[ ](\d+):[ ]([\+\-]\d+(?:\.\d+)?)([%％])>/i;
+  var noteC2 = /<(?:ELEMENT AMPLIFY)[ ](.*):[ ]([\+\-]\d+(?:\.\d+)?)([%％])>/i;
+  var noteC3 = /<(?:ELEMENT MAGNIFY)[ ](\d+):[ ]([\+\-]\d+(?:\.\d+)?)([%％])>/i;
+  var noteC4 = /<(?:ELEMENT MAGNIFY)[ ](.*):[ ]([\+\-]\d+(?:\.\d+)?)([%％])>/i;
   var noteD1 = /<FORCE ELEMENT[ ](\d+)[ ]RATE:[ ](\d+)([%％])>/i;
   var noteD2 = /<FORCE ELEMENT[ ](\d+)[ ]RATE:[ ]-(\d+)([%％])>/i;
   var noteD3 = /<FORCE ELEMENT[ ](.*)[ ]RATE:[ ](\d+)([%％])>/i;
@@ -570,6 +570,10 @@ Game_Battler.prototype.elementMagnifyRate = function(elementId) {
   return rate;
 };
 
+Game_Battler.prototype.elementOutgoingRate = function(elementId) {
+  return (1 + this.elementAmplifyRate(elementId)) * this.elementMagnifyRate(elementId);
+};
+
 Game_Battler.prototype.isNullElement = function() {
   var length = this.states().length;
   for (var i = 0; i < length; ++i) {
@@ -627,6 +631,8 @@ Game_Actor.prototype.elementAmplifyRate = function(elementId) {
   }
   rate += this.getObjElementAmplifyRate(this.actor(), elementId);
   rate += this.getObjElementAmplifyRate(this.currentClass(), elementId);
+  // Critical Heal I
+  if (this.hasSkill(79) && elementId == Yanfly.ElementIdRef['HEALING']) rate += Math.abs(Math.min(this.hpRate() - 0.5, 0));
   return rate;
 };
 
@@ -728,7 +734,15 @@ Game_Action.prototype.getItemElements = function() {
   if ($gameTemp._addedElements !== undefined) {
     Yanfly.Util.extend(elements, $gameTemp._addedElements);
   }
+  if (this._addedElements !== undefined) {
+    Yanfly.Util.extend(elements, this._addedElements); // Mainly for Bat Sling
+  }
   return elements.filter(Yanfly.Util.onlyUnique);
+};
+
+Game_Action.prototype.hasElement = function(elements) {
+  elements = [].concat(elements);
+  return this.getItemElements().some(e => elements.includes(e));
 };
 
 Game_Action.prototype.calcElementRate = function(target) {
@@ -741,10 +755,10 @@ Game_Action.prototype.calcElementRate = function(target) {
   while (elements.length > 0) {
     var elementId = elements.shift();
     var eleRate = target.elementRate(elementId);
+    eleRate += this.subject().elementAmplifyRate(elementId);
     eleRate *= Math.max(0, this.subject().elementMagnifyRate(elementId));
     var absorbed = eleRate < 0;
 
-    eleRate += this.subject().elementAmplifyRate(elementId);
     if (rule === 0) { // Lowest Rate
       finalRate = finalRate || eleRate;
       finalRate = Math.min(finalRate, eleRate);

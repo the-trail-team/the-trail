@@ -6,12 +6,13 @@
 //=============================================================================
 
 var Seasons_Scene_Title_initialize = Scene_Title.prototype.initialize;
+date = new Date();
 
 //
 // CHRISTMAS
 //
 
-if (Date().split(" ")[1] == "Dec") {
+if (date.getMonth() === 11) {
 
     // Switch
 
@@ -26,6 +27,8 @@ if (Date().split(" ")[1] == "Dec") {
     Window_Base.prototype.loadWindowskin = function() {
         this.windowskin = ImageManager.loadSystem('Window_Christmas');
     }
+
+    Yanfly.Param.MQWSettings['Window Skin'] = 'Window_Christmas';
 
     // Menu Particles
 

@@ -16039,45 +16039,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Why, hello there, cow! My,"
+                "\\p2Why, hello there, cow! My, you're"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "you're quite the specimen,"
+                "quite the specimen, aren't you? Your"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "aren't you?"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2That's a beautiful color you've"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "got going for you!"
+                "coloring is beautiful!"
               ]
             },
             {
@@ -17319,62 +17295,6 @@
               "parameters": []
             },
             {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "bro how the actual fuck did you do that"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "these guys should not be able to be hit"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 1,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "stop cheating and fucking play the game right"
-              ]
-            },
-            {
-              "code": 353,
-              "indent": 1,
-              "parameters": []
-            },
-            {
               "code": 0,
               "indent": 1,
               "parameters": []
@@ -17614,52 +17534,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2There's probably some lesson to be"
+                "\\p2That's kind of humiliating... I was hoping"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "learned from this. Something about"
+                "to make some progress, but I almost died"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "teamwork and needing your friends,"
+                "on the first fight. I don't want to have to"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "or whatever."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                1,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I'll just take this as me"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "not wanting to die, though."
+                "tell \\N[1] and Mark about this..."
               ]
             },
             {
@@ -17711,21 +17607,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2Well, cow, thanks for teaching me this"
+                "\\p2Cow, mind following me back to Mark's house? Just"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\"lesson\" of sorts. I guess I should go"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "talk to Mark and \\N[1] now."
+                "please don't mention anything about this..."
               ]
             },
             {
@@ -17767,7 +17656,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -17786,7 +17675,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -17942,8 +17831,19 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                1,
+                7,
+                0,
+                7,
+                4
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 1,
               "parameters": [
                 "Actor4",
                 1,
@@ -17953,14 +17853,14 @@
             },
             {
               "code": 401,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 "\\p2I'm not looking to fight just now..."
               ]
             },
             {
               "code": 205,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 -1,
                 {
@@ -17984,7 +17884,7 @@
             },
             {
               "code": 505,
-              "indent": 0,
+              "indent": 1,
               "parameters": [
                 {
                   "code": 13,
@@ -17994,57 +17894,20 @@
               ]
             },
             {
+              "code": 115,
+              "indent": 1,
+              "parameters": []
+            },
+            {
               "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
               "indent": 0,
               "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 14,
-            "switch1Valid": false,
-            "switch2Id": 16,
-            "switch2Valid": false,
-            "variableId": 7,
-            "variableValid": true,
-            "variableValue": 7
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Monster1",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
+            },
             {
               "code": 301,
               "indent": 0,
@@ -18084,21 +17947,7 @@
               "code": 401,
               "indent": 1,
               "parameters": [
-                "\\markWell, better you escape than have the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "slimes take you down. Don't forget about"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 1,
-              "parameters": [
-                "the healing spring north of the clearing!"
+                "\\markThat's alright."
               ]
             },
             {
@@ -18143,11 +17992,6 @@
               "parameters": [
                 "\\p2YES! We did it!"
               ]
-            },
-            {
-              "code": 217,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 205,
@@ -18309,134 +18153,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markGreat job, guys!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Thanks!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Mark... I just want to thank you for"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "the support you've given us. It's great"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "to know that we have an ally!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2I didn't like you originally, but"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "really, you're not that bad of a guy."
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Sorry again for my inital harshess!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markThank you! But remember, this was all"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "you. I couldn't defeat the monsters"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "without you two!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Heh, no problem, I guess."
+                "\\markGreat job, you two!"
               ]
             },
             {
@@ -18517,7 +18234,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markMilky and I will head forward now."
+                "\\markMilky and I will push onwards."
               ]
             },
             {
@@ -18531,62 +18248,14 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "but there's still way more in this"
+                "but there's still much more evil"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "sector that's plagued by evil."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markAnd it's not as easy as just"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "three blue slimes, unfortunately."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markKeep heading forward, and you'll"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "see what I mean. We'll meet up ahead."
+                "plaguing the forests of this sector."
               ]
             },
             {
@@ -18619,44 +18288,6 @@
               ]
             },
             {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Adon",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\markAh, and we can't forget Milky!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "She hopes that we'll able to finally"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "get rid of the evil this sector"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "thanks to you two!"
-              ]
-            },
-            {
               "code": 221,
               "indent": 0,
               "parameters": []
@@ -18666,7 +18297,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -18685,7 +18316,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -18714,54 +18345,6 @@
               "code": 222,
               "indent": 0,
               "parameters": []
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2Well, now that the slimes are out of the way..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "Actor4",
-                5,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "\\p2...we can get to the un-broken bridge!"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Wait, is that a word? Whatever. We"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "can keep going now!"
-              ]
             },
             {
               "code": 0,
@@ -19150,65 +18733,6 @@
             "itemValid": false,
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
-            "switch1Id": 14,
-            "switch1Valid": false,
-            "switch2Id": 16,
-            "switch2Valid": false,
-            "variableId": 7,
-            "variableValid": true,
-            "variableValue": 7
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Monster1",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 14, Page 2"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
             "switch1Id": 17,
             "switch1Valid": false,
             "switch2Id": 1,
@@ -19312,65 +18836,6 @@
               "indent": 0,
               "parameters": [
                 "CallEvent 14"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": false,
-            "switch1Id": 14,
-            "switch1Valid": false,
-            "switch2Id": 16,
-            "switch2Valid": false,
-            "variableId": 7,
-            "variableValid": true,
-            "variableValue": 7
-          },
-          "directionFix": false,
-          "image": {
-            "tileId": 0,
-            "characterName": "Monster1",
-            "direction": 8,
-            "pattern": 1,
-            "characterIndex": 1
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 1,
-          "stepAnime": true,
-          "through": false,
-          "trigger": 1,
-          "walkAnime": true,
-          "list": [
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "CallEvent 14, Page 2"
               ]
             },
             {
@@ -19505,14 +18970,28 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\markJust remember, the forest is counting"
+                "\\markTake a moment to prepare yourselves."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "on you. Don't let it down!"
+                "In case you need to recover, there's"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "a healing spring on the north end of"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "this clearing."
               ]
             },
             {

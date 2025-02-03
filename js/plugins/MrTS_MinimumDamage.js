@@ -30,6 +30,7 @@
 
 	Game_Action.prototype.makeDamageValue = function(target, critical) {
 		var value = _Game_Action_makeDamageValue.call(this, target, critical);
+		if (this._item) if (this._item._dataClass === "item") if (this._item._itemId === 106) return value; // Red Mushroom exception
 		return (value >= 0 ? Math.max(value, minDamage) : value);
 	};
 })();

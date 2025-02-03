@@ -2,6 +2,7 @@
   "name": "thetrail",
   "main": "index.html",
   "js-flags": "--exposegc",
+  "chromium-args": "--disable-raf-throttling",
   "window": {
     "position": "center",
     "show": true,
@@ -10,5 +11,13 @@
     "width": 1280,
     "height": 720,
     "title": "The Trail"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "trash": "^1.4.1"
+  },
+  "devDependencies": {
+    "path": "^0.12.7",
+    "yauzl": "^2.10.0"
   }
 }

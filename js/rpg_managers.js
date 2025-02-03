@@ -25,6 +25,9 @@ var $dataTilesets     = null;
 var $dataCommonEvents = null;
 var $dataSystem       = null;
 var $dataMapInfos     = null;
+var $dataVersion      = null;
+var $dataStrings      = null;
+var $dataMapReplace   = null;
 var $dataMap          = null;
 var $gameTemp         = null;
 var $gameSystem       = null;
@@ -46,20 +49,23 @@ DataManager._lastAccessedId = 1;
 DataManager._errorUrl       = null;
 
 DataManager._databaseFiles = [
-    { name: '$dataActors',       src: 'Actors.json'       },
-    { name: '$dataClasses',      src: 'Classes.json'      },
-    { name: '$dataSkills',       src: 'Skills.json'       },
-    { name: '$dataItems',        src: 'Items.json'        },
-    { name: '$dataWeapons',      src: 'Weapons.json'      },
-    { name: '$dataArmors',       src: 'Armors.json'       },
-    { name: '$dataEnemies',      src: 'Enemies.json'      },
-    { name: '$dataTroops',       src: 'Troops.json'       },
-    { name: '$dataStates',       src: 'States.json'       },
-    { name: '$dataAnimations',   src: 'Animations.json'   },
-    { name: '$dataTilesets',     src: 'Tilesets.json'     },
-    { name: '$dataCommonEvents', src: 'CommonEvents.json' },
-    { name: '$dataSystem',       src: 'System.json'       },
-    { name: '$dataMapInfos',     src: 'MapInfos.json'     }
+    { name: '$dataActors',          src: 'Actors.json'       },
+    { name: '$dataClasses',         src: 'Classes.json'      },
+    { name: '$dataSkills',          src: 'Skills.json'       },
+    { name: '$dataItems',           src: 'Items.json'        },
+    { name: '$dataWeapons',         src: 'Weapons.json'      },
+    { name: '$dataArmors',          src: 'Armors.json'       },
+    { name: '$dataEnemies',         src: 'Enemies.json'      },
+    { name: '$dataTroops',          src: 'Troops.json'       },
+    { name: '$dataStates',          src: 'States.json'       },
+    { name: '$dataAnimations',      src: 'Animations.json'   },
+    { name: '$dataTilesets',        src: 'Tilesets.json'     },
+    { name: '$dataCommonEvents',    src: 'CommonEvents.json' },
+    { name: '$dataSystem',          src: 'System.json'       },
+    { name: '$dataMapInfos',        src: 'MapInfos.json'     },
+    { name: '$dataVersion',         src: 'Version.json'      },
+    { name: '$dataStrings',         src: 'Strings.json'      },
+    { name: '$dataMapReplace',      src: 'MapReplace.json'   }
 ];
 
 DataManager.loadDatabase = function() {
@@ -220,6 +226,7 @@ DataManager.setupNewGame = function() {
     $gamePlayer.reserveTransfer($dataSystem.startMapId,
         $dataSystem.startX, $dataSystem.startY);
     Graphics.frameCount = 0;
+    $gameTemp._isGameLoaded = true;
 };
 
 DataManager.setupBattleTest = function() {
@@ -336,7 +343,7 @@ DataManager.maxSavefiles = function() {
 
 DataManager.saveGame = function(savefileId) {
     try {
-        StorageManager.backup(savefileId);
+        // StorageManager.backup(savefileId);
         return this.saveGameWithoutRescue(savefileId);
     } catch (e) {
         console.error(e);
@@ -457,6 +464,17 @@ DataManager.extractSaveContents = function(contents) {
     $gameParty         = contents.party;
     $gameMap           = contents.map;
     $gamePlayer        = contents.player;
+};
+
+DataManager.saveFileIcon = function(savefileId) {
+    if ($gameSystem.chapter() >= 6) icon = 766;
+    else if ($gameSystem.chapter() >= 3) icon = 231;
+    else icon = Yanfly.Param.SaveIconSaved;
+
+    icons = $gameVariables.value(77);
+    icons = icons == 0 ? [] : icons; // If the value is 0, make it an array
+    icons[savefileId] = icon;
+    $gameVariables.setValue(77, icons);
 };
 
 //-----------------------------------------------------------------------------
@@ -673,6 +691,36 @@ StorageManager.isLocalMode = function() {
     return Utils.isNwjs();
 };
 
+StorageManager.trashFile = async function(filePath) {
+    if (process.platform == 'darwin') {
+        const fs = require('fs');
+        fs.unlinkSync(filePath);
+    } else {
+        const trash = require('trash');
+        await trash([filePath]);
+    }
+    $gameTemp._deletingFile = undefined;
+};
+
+StorageManager.replaceFile = function(dirPath, filePath, data) {
+    const fs = require('fs');
+    const path = require('path');
+    $gameTemp._tempPath = path.join(dirPath, 'temp');
+    $gameTemp._filePath = filePath;
+    this.trashFile($gameTemp._filePath);
+    fs.writeFileSync($gameTemp._tempPath, data);
+    this.renameTemp();
+};
+
+StorageManager.renameTemp = function() {
+    const fs = require('fs');
+    if (fs.existsSync($gameTemp._filePath)) window.setTimeout(StorageManager.renameTemp, 100);
+    else {
+        fs.rename($gameTemp._tempPath, $gameTemp._filePath, (err) => err && console.error(err));
+        $gameTemp._tempPath = $gameTemp._filePath = undefined;
+    }
+};
+
 StorageManager.saveToLocalFile = function(savefileId, json) {
     var data = LZString.compressToBase64(json);
     var fs = require('fs');
@@ -681,7 +729,8 @@ StorageManager.saveToLocalFile = function(savefileId, json) {
     if (!fs.existsSync(dirPath)) {
         fs.mkdirSync(dirPath);
     }
-    fs.writeFileSync(filePath, data);
+    if (savefileId > 0 && fs.existsSync(filePath)) this.replaceFile(dirPath, filePath, data);
+    else fs.writeFileSync(filePath, data);
 };
 
 StorageManager.loadFromLocalFile = function(savefileId) {
@@ -715,13 +764,9 @@ StorageManager.localFileExists = function(savefileId) {
 };
 
 StorageManager.removeLocalFile = function(savefileId) {
-    var fs = require('fs');
     var filePath = this.localFilePath(savefileId);
-    var newPath = filePath + '.bak';
-    if (fs.existsSync(newPath)) {
-        fs.unlinkSync(newPath);
-    }
-    fs.rename(filePath, newPath);
+    $gameTemp._deletingFile = true;
+    this.trashFile(filePath);
 };
 
 StorageManager.saveToWebStorage = function(savefileId, json) {
@@ -759,9 +804,8 @@ StorageManager.removeWebStorage = function(savefileId) {
 
 StorageManager.localFileDirectoryPath = function() {
     var path = require('path');
-
-    var base = path.dirname(process.mainModule.filename);
-    return path.join(base, 'save/');
+    if (process.platform === 'darwin') return path.join(process.env.HOME, '.thetrail/');
+    else return path.join(process.env.APPDATA, '.thetrail/');
 };
 
 StorageManager.localFilePath = function(savefileId) {
@@ -834,11 +878,16 @@ ImageManager.loadParallax = function(filename, hue) {
 };
 
 ImageManager.loadPicture = function(filename, hue) {
+    if (filename == "god-rays-png-8") filename = "Godrays"; // DELETE AFTER ALPHA 15
     return this.loadBitmap('img/pictures/', filename, hue, true);
 };
 
 ImageManager.loadBust = function(filename, hue) {
-    return this.loadBitmap('img/pictures/busts/', filename, hue, true);
+    return this.loadBitmap('img/busts/', filename, hue, true);
+};
+
+ImageManager.loadTitleChar = function(filename, hue) {
+    return this.loadBitmap('img/title/', filename, hue, true);
 };
 
 ImageManager.loadSvActor = function(filename, hue) {
@@ -869,7 +918,7 @@ ImageManager.loadBitmap = function(folder, filename, hue, smooth) {
     if (filename) {
         var path = folder + encodeURIComponent(filename) + '.png';
         var bitmap = this.loadNormalBitmap(path, hue || 0);
-        bitmap.smooth = smooth;
+        bitmap.smooth = false;
         return bitmap;
     } else {
         return this.loadEmptyBitmap();
@@ -1186,7 +1235,7 @@ AudioManager.playBgm = function(bgm, pos) {
         this.updateBgmParameters(bgm);
     } else {
         this.stopBgm();
-        if (bgm.name) { 
+        if (bgm.name) {
             if(Decrypter.hasEncryptedAudio && this.shouldUseHtml5Audio()){
                 this.playEncryptedBgm(bgm, pos);
             }
@@ -1831,7 +1880,7 @@ SceneManager.initGraphics = function() {
     Graphics.initialize(this._screenWidth, this._screenHeight, type);
     Graphics.boxWidth = this._boxWidth;
     Graphics.boxHeight = this._boxHeight;
-    Graphics.setLoadingImage('img/system/Loading.png');
+    // Graphics.setLoadingImage('img/system/Loading.png');
     if (Utils.isOptionValid('showfps')) {
         Graphics.showFps();
     }
@@ -1921,7 +1970,7 @@ SceneManager.update = function() {
 };
 
 SceneManager.terminate = function() {
-    window.close();
+    Utils.isNwjs() ? nw.App.quit() : window.close();
 };
 
 SceneManager.onError = function(e) {
@@ -1941,6 +1990,7 @@ SceneManager.onKeyDown = function(event) {
         case 116:   // F5
             if (Utils.isNwjs()) {
                 if (window.confirm("Do you want to reload the game and return to the title screen?\nAll progress since the last save will be lost.\n\nRELOADING IN THIS WAY IS UNSUPPORTED AND CAN CAUSE VARIOUS BUGS/CRASHES!\nFULLY CLOSING THE GAME AND RELAUNCHING IT IS RECOMMENDED!")) {
+                    if (RPC) RPC.destroy();
                     location.reload();
                 }
             }
@@ -2248,7 +2298,6 @@ BattleManager.replayBgmAndBgs = function() {
 };
 
 BattleManager.makeEscapeRatio = function() {
-    // this._escapeRatio = 0.5 * $gameParty.agility() / $gameTroop.agility();
     this._escapeRatio = 0.2;
 };
 
@@ -2481,6 +2530,7 @@ BattleManager.isForcedTurn = function () {
 
 BattleManager.updateTurnEnd = function() {
     this.startInput();
+    SceneManager._scene._sideStatusWindows.forEach(w => w.children.find(c => c instanceof Window_BattleSideBoost).refresh());
 };
 
 BattleManager.getNextSubject = function() {
@@ -2626,7 +2676,7 @@ BattleManager.checkBattleEnd = function() {
         } else if ($gameParty.isAllDead()) {
             this.processDefeat();
             return true;
-        } else if ($gameTroop.isAllDead()) {
+        } else if ($gameTroop.isAllDead() && !$gameSwitches.value(111)) {
             this.processVictory();
             return true;
         }
@@ -2679,6 +2729,7 @@ BattleManager.processAbort = function() {
 };
 
 BattleManager.processDefeat = function() {
+    $gameTroop.performVictory();
     this.displayDefeatMessage();
     this.playDefeatMe();
     if (this._canLose) {
@@ -2721,7 +2772,7 @@ BattleManager.updateBattleEnd = function() {
 function randomizeReward(variation) {
     variation = Math.random() < 0.5 ? variation : -variation;
     return 1 + ((Math.random() * variation) * 0.01);
-}
+};
 
 BattleManager.makeRewards = function() {
     this._rewards = {};
@@ -2743,8 +2794,6 @@ BattleManager.displayEscapeSuccessMessage = function() {
 };
 
 BattleManager.displayEscapeFailureMessage = function() {
-    /*$gameMessage.add(TextManager.escapeStart.format($gameParty.name()));
-    $gameMessage.add('\\.' + TextManager.escapeFailure);*/
     $gameMessage.add(TextManager.escapeFailure.format($gameParty.name()));
     var chance = Math.floor(this._escapeRatio * 100);
     $gameMessage.add("\\c[4]New escape chance: " + chance + "%");

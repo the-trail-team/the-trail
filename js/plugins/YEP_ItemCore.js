@@ -518,8 +518,8 @@ Yanfly.Parameters = PluginManager.parameters('YEP_ItemCore');
 Yanfly.Param = Yanfly.Param || {};
 
 Yanfly.Param.ItemMaxItems = Number(Yanfly.Parameters['Max Items']);
-Yanfly.Param.ItemMaxWeapons = Number(Yanfly.Parameters['Max Weapons']);
-Yanfly.Param.ItemMaxArmors = Number(Yanfly.Parameters['Max Armors']);
+Yanfly.Param.ItemMaxWeapons = eval(Yanfly.Parameters['Max Weapons']);
+Yanfly.Param.ItemMaxArmors = eval(Yanfly.Parameters['Max Armors']);
 Yanfly.Param.ItemStartingId = Number(Yanfly.Parameters['Starting ID']);
 Yanfly.Param.ItemRandomVariance = Number(Yanfly.Parameters['Random Variance']);
 Yanfly.Param.ItemNegVar = eval(String(Yanfly.Parameters['Negative Variance']));
@@ -582,6 +582,7 @@ DataManager.processItemCoreNotetags = function(group) {
     obj.infoTextTop = '';
     obj.infoTextBottom = '';
     obj.onCreationEval = '';
+    obj.effectsDisplay = [];
     var evalMode = 'none';
 
    for (var i = 0; i < notedata.length; i++) {
@@ -604,6 +605,10 @@ DataManager.processItemCoreNotetags = function(group) {
         evalMode = 'info text bottom';
       } else if (line.match(/<\/(?:INFO TEXT BOTTOM)>/i)) {
         evalMode = 'none';
+      } else if (line.match(/<(?:EFFECTS DISPLAY)>/i)) {
+        evalMode = 'effects display';
+      } else if (line.match(/<\/(?:EFFECTS DISPLAY)>/i)) {
+        evalMode = 'none';
       } else if (evalMode === 'info eval') {
         obj.infoEval = obj.infoEval + line + '\n';
       } else if (evalMode === 'info text top') {
@@ -620,6 +625,8 @@ DataManager.processItemCoreNotetags = function(group) {
         evalMode = 'none';
       } else if (evalMode === 'on create eval') {
         obj.onCreationEval = obj.onCreationEval + line + '\n';
+      } else if (evalMode === 'effects display') {
+        obj.effectsDisplay.push(JSON.parse(line));
       }
     }
   }
@@ -678,6 +685,7 @@ DataManager.saveGameWithoutRescue = function(savefileId) {
     var globalInfo = this.loadGlobalInfo() || [];
     globalInfo[savefileId] = this.makeSavefileInfo();
     this.saveGlobalInfo(globalInfo);
+    if ($gameTemp._inGame) this.saveFileIcon(savefileId);
     return true;
 };
 
@@ -887,12 +895,9 @@ ItemManager.setPriorityName = function(item, value) {
 };
 
 ItemManager.updateItemName = function(item) {
-    if (item.priorityName && item.priorityName.length > 0) {
-      item.name = item.priorityName;
-      return;
-    }
     var prefix = item.namePrefix || '';
-    var baseName = item.baseItemName || '';
+    var name = item.baseItemName || '';
+    if (item.priorityName && item.priorityName.length > 0) name = item.priorityName;
     var suffix = item.nameSuffix || '';
     var boostCount = item.boostCount || 0;
     var fmt = Yanfly.Param.ItemBoostFmt;
@@ -903,7 +908,7 @@ ItemManager.updateItemName = function(item) {
       boostText = ' ' + boostText;
     }
     fmt = Yanfly.Param.ItemNameFmt;
-    item.name = fmt.format(prefix, baseName, suffix, boostText);
+    item.name = fmt.format(prefix, name, suffix, boostText);
 };
 
 ItemManager.increaseItemBoostCount = function(item, value) {
@@ -1087,6 +1092,10 @@ Game_Actor.prototype.unequipItem = function(item) {
     }
 };
 
+Game_Actor.prototype.isEquipped = function(item) {
+    return this.equips().some(equip => equip.baseItemId == item.id);
+};
+
 //=============================================================================
 // Game_Party
 //=============================================================================
@@ -1123,7 +1132,7 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
 };
 
 Game_Party.prototype.seenItem = function(item) {
-  if (item == null) return;
+  if (item == null || item.id > Yanfly.Param.ItemStartingId) return;
   if (item.groupType == 0) {
     if (!$gameSystem.synthedItems().contains(item.id) && $dataItems[item.id].synthIngredients.length > 0) $gameSystem.synthedItems().push(item.id);
   } else if (item.groupType == 1) {
@@ -1237,6 +1246,12 @@ Game_Party.prototype.checkItemIsEquipped = function(item) {
     return false;
 };
 
+Game_Party.prototype.checkIndependentItemIsEquipped = function(item) {
+    return this.members().filter(n => n).some(a => {
+      return a.equips().filter(n => n).some(e => e.baseItemId == item.id && e.groupType == item.groupType);
+    });
+};
+
 Yanfly.Item.Game_Party_items = Game_Party.prototype.items;
 Game_Party.prototype.items = function() {
     var results = Yanfly.Item.Game_Party_items.call(this);
@@ -1329,22 +1344,22 @@ Game_Party.prototype.clearAllMatchingBaseItems = function(baseItem, equipped) {
 
 Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
   var value = this.numItems(baseItem);
-if (DataManager.isIndependent(baseItem)) {
-  var id = baseItem.id;
-  if (DataManager.isItem(baseItem)) var group = this.items();
-  if (DataManager.isWeapon(baseItem)) var group = this.weapons();
-  if (DataManager.isArmor(baseItem)) var group = this.armors();
-  for (var i = 0; i < group.length; ++i) {
-    var item = group[i];
-    if (!item) continue;
-    if (item.boostCount && item.boostCount !== 0) continue;
-    if (item.namePrefix && item.namePrefix !== "") continue;
-    if (item.nameSuffix && item.nameSuffix !== "") continue;
-    if (item.baseItemName && item.baseItemName !== item.name) continue;
-    if (item.textColor && item.textColor !== baseItem.textColor) continue;
-    if (item.baseItemId && item.baseItemId === id) value += 1;
+  if (DataManager.isIndependent(baseItem)) {
+    var id = baseItem.id;
+    if (DataManager.isItem(baseItem)) var group = this.items();
+    if (DataManager.isWeapon(baseItem)) var group = this.weapons();
+    if (DataManager.isArmor(baseItem)) var group = this.armors();
+    for (var i = 0; i < group.length; ++i) {
+      var item = group[i];
+      if (!item) continue;
+      if (item.boostCount && item.boostCount !== 0) continue;
+      // if (item.namePrefix && item.namePrefix !== "") continue;
+      // if (item.nameSuffix && item.nameSuffix !== "") continue;
+      // if (item.baseItemName && item.baseItemName !== item.name) continue;
+      // if (item.textColor && item.textColor !== baseItem.textColor) continue;
+      if (item.baseItemId && item.baseItemId === id) value += 1;
+    }
   }
-}
   return value;
 };
 
@@ -1359,11 +1374,11 @@ Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
   for (var i = 0; i < group.length; ++i) {
     var item = group[i];
     if (!item) continue;
-  if (item.boostCount && item.boostCount !== 0) continue;
-  if (item.namePrefix && item.namePrefix !== "") continue;
-  if (item.nameSuffix && item.nameSuffix !== "") continue;
-  if (item.baseItemName && item.baseItemName !== item.name) continue;
-  if (item.textColor && item.textColor !== baseItem.textColor) continue;
+    if (item.boostCount && item.boostCount !== 0) continue;
+    // if (item.namePrefix && item.namePrefix !== "") continue;
+    // if (item.nameSuffix && item.nameSuffix !== "") continue;
+    // if (item.baseItemName && item.baseItemName !== item.name) continue;
+    // if (item.textColor && item.textColor !== baseItem.textColor) continue;
     if (item.baseItemId && item.baseItemId === id) value = item;
   }
   return value;
@@ -1453,6 +1468,7 @@ Window_ItemList.prototype.listEquippedItems = function() {
       }
     }
     this._data = results.concat(this._data);
+    if (["Materials", "Salvaging"].contains(this._ext)) this.sortItemList(this._data);
 };
 
 Yanfly.Item.Window_ItemList_drawItemNumber =
@@ -1729,7 +1745,7 @@ Window_ItemStatus.prototype.drawDarkRectEntries = function() {
     rect.height = this.lineHeight();
     for (var i = 0; i < 8; ++i) {
       rect = this.getRectPosition(rect, i);
-      this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
+      if (!(DataManager.isItem(this._item) && i > 5)) this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
     }
 };
 
@@ -1754,6 +1770,11 @@ Window_ItemStatus.prototype.getRectPosition = function(rect, i) {
       } else {
         rect.x = rect.width;
       }
+    }
+    if (DataManager.isItem(this._item) && i >= 4) {
+      rect.x = Window_Base._faceWidth;
+      rect.y = (i == 4 ? 2 : 3) * this.lineHeight();
+      rect.width *= (i == 4 ? 2 : 1);
     }
     return rect;
 };
@@ -1801,6 +1822,11 @@ Window_ItemStatus.prototype.drawEquipInfo = function(item) {
       this.drawText(TextManager.param(i), dx, rect.y, dw);
       this.changeTextColor(this.paramchangeTextColor(item.params[i]));
       var text = Yanfly.Util.toGroup(item.params[i]);
+      if (item.groupType === 2) if (item.baseItemId === 157) { // Champion's Talisman
+        stat = $gameSystem.championsTalisman()[i];
+        this.changeTextColor(this.paramchangeTextColor(stat));
+        text = stat;
+      }
       if (item.params[i] >= 0) text = '+' + text;
       if (text === '+0') this.changePaintOpacity(false);
       this.drawText(text, dx, rect.y, dw, 'right');
@@ -1815,7 +1841,7 @@ Window_ItemStatus.prototype.drawItemInfo = function(item) {
     } else {
       rect.width = this.contents.width / 2;
     }
-    for (var i = 0; i < 8; ++i) {
+    for (var i = 0; i < 6; ++i) {
       rect = this.getRectPosition(rect, i);
       var dx = rect.x + this.textPadding();
       var dw = rect.width - this.textPadding() * 2;
@@ -1828,14 +1854,12 @@ Window_ItemStatus.prototype.drawItemInfo = function(item) {
 
 Window_ItemStatus.prototype.getItemInfoCategory = function(i) {
     var fmt = Yanfly.Param.ItemRecoverFmt;
-    if (i === 0) return fmt.format(TextManager.param(0));
-    if (i === 1) return fmt.format(TextManager.hp);
-    if (i === 2) return fmt.format(TextManager.param(1));
-    if (i === 3) return fmt.format(TextManager.mp);
+    if (i === 0) return fmt.format(TextManager.hp) + " (%)";
+    if (i === 1) return fmt.format(TextManager.hp) + " (+)";
+    if (i === 2) return fmt.format(TextManager.mp) + " (%)";
+    if (i === 3) return fmt.format(TextManager.mp) + " (+)";
     if (i === 4) return Yanfly.Param.ItemAddState;
     if (i === 5) return Yanfly.Param.ItemRemoveState;
-    if (i === 6) return Yanfly.Param.ItemAddBuff;
-    if (i === 7) return Yanfly.Param.ItemRemoveBuff;
     return '';
 };
 
@@ -1850,7 +1874,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
     }
     if (i === 1) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
@@ -1861,7 +1885,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
       value = (effect) ? effect.value1 : '---';
       if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
+      if (value !== '---' && value !== 0 && typeof value == 'number') value *= 100;
     }
     if (i === 3) {
       effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
@@ -1876,7 +1900,7 @@ Window_ItemStatus.prototype.drawItemData = function(i, dx, dy, dw) {
       this.changePaintOpacity(false);
     } else if (i < 4) {
       if (value > 0) pre = '+';
-      value = Yanfly.Util.toGroup(parseInt(value));
+      if (typeof value == 'number') value = Yanfly.Util.toGroup(parseInt(value));
       if ([0, 2].contains(i)) text = '%';
     }
     if (icons.length > 0) {
@@ -1900,11 +1924,15 @@ Window_ItemStatus.prototype.getEffect = function(code) {
     this._item.effects.forEach(function(effect) {
       if (effect.code === code) targetEffect = effect;
     }, this);
+    this._item.effectsDisplay.forEach(function(effect) {
+      if (effect.code === code) targetEffect = effect;
+    }, this);
     return targetEffect;
 };
 
 Window_ItemStatus.prototype.getItemIcons = function(i, array) {
-    this._item.effects.forEach(function(effect) {
+    var item = this._item;
+    item.effects.forEach(function(effect) {
       if (i === 4 && effect.code === Game_Action.EFFECT_ADD_STATE) {
         var state = $dataStates[effect.dataId];
         if (state && state.iconIndex !== 0) array.push(state.iconIndex);
@@ -1913,23 +1941,10 @@ Window_ItemStatus.prototype.getItemIcons = function(i, array) {
         var state = $dataStates[effect.dataId];
         if (state && state.iconIndex !== 0) array.push(state.iconIndex);
       }
-      if (i === 6 && effect.code === Game_Action.EFFECT_ADD_BUFF) {
-        var icon = Game_BattlerBase.ICON_BUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 6 && effect.code === Game_Action.EFFECT_ADD_DEBUFF) {
-        var icon = Game_BattlerBase.ICON_DEBUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 7 && effect.code === Game_Action.EFFECT_REMOVE_BUFF) {
-        var icon = Game_BattlerBase.ICON_BUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 7 && effect.code === Game_Action.EFFECT_REMOVE_DEBUFF) {
-        var icon = Game_BattlerBase.ICON_DEBUFF_START + effect.dataId;
-        array.push(icon);
-      }
     }, this);
+    if (i == 5) for (const c in item.removeCategory) if (DataManager.stateCategories[c]) DataManager.stateCategories[c].forEach(s => {
+      if (s.iconIndex !== 0 && !array.contains($dataStates[s].iconIndex) && Yanfly.Param.StatusStateColAll.contains(String(s))) array.push($dataStates[s].iconIndex);
+    });
     array = array.slice(0, Yanfly.Param.ItemMaxIcons);
     return array;
 };
@@ -2179,7 +2194,7 @@ Scene_Item.prototype.createItemWindow = function() {
     this.createStatusWindow();
     this.createInfoWindow();
     this.createActionWindow();
-    this._categoryWindow.setHandler('cancel', this.exitScene.bind(this));
+    this._categoryWindow.setHandler('cancel', this.onCategoryCancel.bind(this));
 };
 
 Scene_Item.prototype.createStatusWindow = function() {
@@ -2252,6 +2267,16 @@ Scene_Item.prototype.exitScene = function() {
       if (member) member.refresh();
     }
     this.popScene();
+};
+
+Scene_Item.prototype.onCategoryCancel = function() {
+    if (this._categoryWindow._type == '') this.popScene();
+    else {
+      this._categoryWindow.select(this._categoryWindow._type == 'weapons' ? 2 : 3);
+      this._categoryWindow._type = '';
+      this._categoryWindow.activate();
+      this._categoryWindow.refresh();
+    }
 };
 
 //=============================================================================

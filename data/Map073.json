@@ -3126,7 +3126,7 @@
               "indent": 0,
               "parameters": [
                 {
-                  "name": "a_Move1",
+                  "name": "Move1",
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
@@ -3341,37 +3341,11 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 111,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                6,
-                -1,
-                2
+                "CallEvent 4, Map 10"
               ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "GabText Small Library"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -3435,37 +3409,11 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 111,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                6,
-                -1,
-                8
+                "CallEvent 5, Map 10"
               ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "GabText Guest Bedroom"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -3529,37 +3477,11 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 111,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                6,
-                -1,
-                8
+                "CallEvent 6, Map 10"
               ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "GabText Kitchen"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "ForceGab"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
             },
             {
               "code": 0,
@@ -3603,69 +3525,53 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 111,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
+                12,
+                "$gameSelfSwitches.value([10, 7, 'A'])"
               ]
             },
             {
-              "code": 401,
-              "indent": 0,
+              "code": 356,
+              "indent": 1,
               "parameters": [
-                "It's a bookshelf."
+                "CallEvent 7, Map 10, Page 2"
               ]
             },
             {
-              "code": 101,
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
               "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 356,
+              "indent": 1,
               "parameters": [
-                "",
-                0,
-                0,
-                2
+                "CallEvent 7, Map 10, Page 1"
               ]
             },
             {
-              "code": 401,
-              "indent": 0,
+              "code": 355,
+              "indent": 1,
               "parameters": [
-                "There's probably some interesting"
+                "$gameSelfSwitches.setValue([10, 7, 'A'], true);"
               ]
             },
             {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "reads here..."
-              ]
+              "code": 0,
+              "indent": 1,
+              "parameters": []
             },
             {
-              "code": 101,
+              "code": 412,
               "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Naw, they're books. There's nothing"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "interesting about books."
-              ]
+              "parameters": []
             },
             {
               "code": 0,
@@ -3728,68 +3634,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "It's a bookshelf."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "There's probably some interesting"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "reads here..."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Naw, they're books. There's nothing"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "interesting about books."
+                "CallEvent 8, Map 10"
               ]
             },
             {
@@ -3853,20 +3701,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "A guest bed."
+                "CallEvent 9, Map 10"
               ]
             },
             {
@@ -3930,20 +3768,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "A guest bed."
+                "CallEvent 10, Map 10"
               ]
             },
             {
@@ -4007,20 +3835,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "A guest bed."
+                "CallEvent 11, Map 10"
               ]
             },
             {
@@ -4084,20 +3902,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "A guest bed."
+                "CallEvent 12, Map 10"
               ]
             },
             {
@@ -4161,20 +3969,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Some storage for the guests."
+                "CallEvent 13, Map 10"
               ]
             },
             {
@@ -4238,20 +4036,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Some storage for the guests."
+                "CallEvent 14, Map 10"
               ]
             },
             {
@@ -4315,34 +4103,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "The good 'ol cabinet crammed with stuff"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "that you have no clue about the"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "identity of."
+                "CallEvent 15, Map 10"
               ]
             },
             {
@@ -4406,20 +4170,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "It's a sink."
+                "CallEvent 16, Map 10"
               ]
             },
             {
@@ -4484,20 +4238,10 @@
           },
           "list": [
             {
-              "code": 101,
+              "code": 356,
               "indent": 0,
               "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "It's a stove."
+                "CallEvent 18, Map 10"
               ]
             },
             {

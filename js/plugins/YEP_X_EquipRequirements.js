@@ -368,10 +368,11 @@ DataManager.processEqReqNotetags1 = function(group) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
 
+    var defaultClasses = [].concat(this.defaultClassRestrictions(obj) || []);
     obj.equipRequirements = {
       atLeast: [0, 0, 0, 0, 0, 0, 0, 0, 0],
       atMost: [0, 0, 0, 0, 0, 0, 0, 0, 0],
-      classes: [],
+      classes: defaultClasses,
       skills: [],
       switches: [],
       unique: false
@@ -403,6 +404,48 @@ DataManager.processEqReqNotetags1 = function(group) {
       }
     }
   }
+};
+
+DataManager.defaultClassRestrictions = function(obj) {
+  if (obj.name == "") return;
+  if (DataManager.isWeapon(obj)) switch (obj.wtypeId) {
+    case 1:  // Generic
+      return;
+    case 2:  // Plate Armor
+    case 6:  // Spear
+    case 7:  // Axe
+    case 11: // Greatsword
+      return 1;
+    case 3:  // Wand
+    case 10: // Spellbook
+      return 2;
+    case 4:  // Staff
+    case 8:  // Hammer
+      return 3;
+    case 5:  // Dagger
+    case 9:  // Knuckles
+      return 4;
+  }
+  if (DataManager.isArmor(obj)) switch (obj.atypeId) {
+      case 1:  // Generic
+      case 8:  // Gambeson
+      case 9:  // Chainmail
+        return;
+      case 6:  // Light Shield
+        return [1, 2, 3];
+      case 2:  // Plate Armor
+      case 7:  // Heavy Armor
+        return 1;
+      case 3:  // Robes
+        return 2;
+      case 4:  // Vestments
+        return 3;
+      case 5:  // Leathers
+      case 10: // Cloak
+        return 4;
+  }
+  console.error("MISSING CLASS RESTRICTION:", obj.name);
+  return;
 };
 
 DataManager.makeEquipRequirement = function(obj, line) {
@@ -515,8 +558,10 @@ Game_BattlerBase.prototype.meetAllEquipRequirements = function(item) {
       return true;
     }
   }
-  if (item.id <= 3000) return true;
-  if (!this.checkEquipRequirements(item)) return false;
+  if (item.id < Yanfly.Param.ItemStartingId) return true; // Non-independent items, if they somehow exist
+  if (this.isEquipTypeLocked(item.etypeId)) return true; // Guest party members
+  if (this.equips().filter(e => e).filter(e => e.etypeId == item.etypeId).some(e => e.baseItemId == item.baseItemId) && !this.equips().contains(item)) return false; // No duplicates
+  if (!this.checkEquipRequirements(item)) return false; // Per-item equip requirements
   return true;
 };
 
@@ -647,6 +692,7 @@ Window_EquipSlot.prototype.updateHelp = function() {
 Yanfly.EqReq.Window_EquipItem_isEnabled = Window_EquipItem.prototype.isEnabled;
 Window_EquipItem.prototype.isEnabled = function(item) {
     if (item !== null && this._actor) {
+      equips = this._actor.equips();
       if (!this._actor.meetAllEquipRequirements(item)) return false;
     }
     return Yanfly.EqReq.Window_EquipItem_isEnabled.call(this, item);
@@ -934,6 +980,10 @@ Window_EquipRequirement.prototype.drawSkillRequirements = function(dy) {
 };
 
 Window_EquipRequirement.prototype.drawSwitchRequirements = function(dy) {
+    if (this._item.equipRequirements['switches'].length <= 0) return dy;
+    var switchTx = "Progression: ";
+    this.changeTextColor(this.systemColor());
+    this.drawText(switchTx, this.textPadding(), dy, this.contents.width - this.textPadding());
     this.resetFontSettings();
     this.changePaintOpacity(true);
     var switches = this._item.equipRequirements['switches'];
@@ -943,7 +993,7 @@ Window_EquipRequirement.prototype.drawSwitchRequirements = function(dy) {
       var name = $dataSystem.switches[sw];
       name = name.replace(/<<(.*?)>>/i, '');
       this.changePaintOpacity($gameSwitches.value(sw));
-      this.drawTextEx(name, this.textPadding(), dy);
+      this.drawTextEx(name, this.textWidth(switchTx) + this.textPadding(), dy);
       dy += this.lineHeight();
     }
     this.changePaintOpacity(true)

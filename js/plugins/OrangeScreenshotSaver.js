@@ -19,34 +19,37 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 
   $.generateFileName = function(){
     var date = new Date();
-    return '' + date.getFullYear() + '_' + (date.getMonth() + 1) + '_' + date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds() + '_' + date.getMilliseconds() + '_' + Math.floor(Math.random() * 5000) + '.png';
+    return '' + date.getFullYear() + '_' + (date.getMonth() + 1) + '_' + date.getDate() + '_' + date.getHours() + '_' + date.getMinutes() + '_' + date.getSeconds() + '_' + date.getMilliseconds() + '.png';
   };
 
   $.saveScreenshot = function(){
     if (!Utils.isNwjs()) return;
 
+    $gameSystem.setShowMapQuestWindow(false);
+
     var fs = require('fs');
     var path = './SCREENSHOTS';
 
     try {
-      fs.mkdir(path, function(){
-        var fileName = path + '/' + $.generateFileName();
-
+      if (!fs.existsSync(path)) {
+        fs.mkdirSync(path, { recursive: true });
+      }
+      var fileName = path + '/' + $.generateFileName();
+    
+      requestAnimationFrame(function() {
         var snap = SceneManager.snap();
         var urlData = snap._canvas.toDataURL();
         var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
+      
+        fs.writeFileSync(fileName, base64Data, 'base64');
 
-        fs.writeFile(fileName, base64Data, 'base64', function(error){
-          if (error !== undefined && error !== null) {
-            console.error('An error occured while saving the screenshot', error); 
-          }
-        });
+        $gameSystem.setShowMapQuestWindow(true);
       });
-    } catch(error) {
-      if (error !== undefined && error !== null) {
-        console.error('An error occured while saving the screenshot:', error);
-      }
-    }
+    } catch (error) {
+      console.error("An error occurred while saving the screenshot:", error);
+      alert("Screenshot failed: " + error.message);
+      $gameSystem.setShowMapQuestWindow(true);
+    }    
   };
 
   var oldInput_onKeyUp = Input._onKeyUp;
@@ -55,6 +58,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 
     if (event.keyCode == 44) {
       $.saveScreenshot();
+      AudioManager.playSe({name: "Save", pan: 0, pitch: 100, volume: 100});
     }
   };
 })(OrangeScreenshotSaver);
