@@ -35,16 +35,20 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
         fs.mkdirSync(path, { recursive: true });
       }
       var fileName = path + '/' + $.generateFileName();
-    
-      requestAnimationFrame(function() {
-        var snap = SceneManager.snap();
-        var urlData = snap._canvas.toDataURL();
-        var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
-      
-        fs.writeFileSync(fileName, base64Data, 'base64');
 
-        $gameSystem.setShowMapQuestWindow(true);
-      });
+      setTimeout(function() {
+        requestAnimationFrame(function() {
+          var snap = SceneManager.snap();
+          var urlData = snap._canvas.toDataURL();
+          var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
+        
+          fs.writeFileSync(fileName, base64Data, 'base64');
+  
+          setTimeout(function() {
+            $gameSystem.setShowMapQuestWindow(true);
+          }, 100);
+        });
+      }, 100);
     } catch (error) {
       console.error("An error occurred while saving the screenshot:", error);
       alert("Screenshot failed: " + error.message);
