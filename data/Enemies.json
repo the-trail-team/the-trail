@@ -2815,14 +2815,14 @@
         "conditionParam2": 0.9,
         "conditionType": 2,
         "rating": 5,
-        "skillId": 12
+        "skillId": 105
       },
       {
         "conditionParam1": 0.5,
         "conditionParam2": 1,
         "conditionType": 2,
         "rating": 5,
-        "skillId": 26
+        "skillId": 132
       },
       {
         "conditionParam1": 0.5,
@@ -2836,21 +2836,21 @@
         "conditionParam2": 1,
         "conditionType": 2,
         "rating": 5,
-        "skillId": 27
+        "skillId": 102
       },
       {
         "conditionParam1": 0.35,
         "conditionParam2": 0.5,
         "conditionType": 2,
         "rating": 4,
-        "skillId": 52
+        "skillId": 101
       },
       {
         "conditionParam1": 0.35,
         "conditionParam2": 0.5,
         "conditionType": 2,
         "rating": 4,
-        "skillId": 47
+        "skillId": 104
       },
       {
         "conditionParam1": 0.35,
@@ -2864,7 +2864,7 @@
         "conditionParam2": 0.5,
         "conditionType": 2,
         "rating": 4,
-        "skillId": 12
+        "skillId": 105
       },
       {
         "conditionParam1": 0.35,
@@ -2878,14 +2878,14 @@
         "conditionParam2": 0.35,
         "conditionType": 2,
         "rating": 5,
-        "skillId": 52
+        "skillId": 101
       },
       {
         "conditionParam1": 0.2,
         "conditionParam2": 0.35,
         "conditionType": 2,
         "rating": 5,
-        "skillId": 47
+        "skillId": 104
       },
       {
         "conditionParam1": 0.2,
@@ -2899,7 +2899,7 @@
         "conditionParam2": 0.35,
         "conditionType": 2,
         "rating": 5,
-        "skillId": 12
+        "skillId": 105
       },
       {
         "conditionParam1": 0.2,
@@ -2913,14 +2913,14 @@
         "conditionParam2": 0.2,
         "conditionType": 2,
         "rating": 1,
-        "skillId": 52
+        "skillId": 101
       },
       {
         "conditionParam1": 0.1,
         "conditionParam2": 0.2,
         "conditionType": 2,
         "rating": 1,
-        "skillId": 47
+        "skillId": 104
       },
       {
         "conditionParam1": 0.1,
@@ -2934,7 +2934,7 @@
         "conditionParam2": 0.2,
         "conditionType": 2,
         "rating": 1,
-        "skillId": 12
+        "skillId": 105
       },
       {
         "conditionParam1": 0.2,
@@ -2954,7 +2954,7 @@
     "battlerHue": 0,
     "battlerName": "Laeryidyean EX",
     "dropItems": [],
-    "exp": 5000,
+    "exp": 8000,
     "traits": [
       {
         "code": 31,
@@ -3007,17 +3007,17 @@
         "value": 1
       }
     ],
-    "gold": 2500,
+    "gold": 4000,
     "name": "Laeryidyean EX",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 141>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 288>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nOrigin Crystal: 100%\nSemi-Automatic Glizzy: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 141>\n<Light Break: 3>\n\n<Sideview Battler: NoMatchingSprite/Laeryidyean EX>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 288>\n\n<AI Priority>\nState === State 7 +++ User HP% param >= 35%: Bubble\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nOrigin Crystal: 100%\nSemi-Automatic Glizzy: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
-      20000,
+      100000,
       9999,
-      35,
-      40,
+      55,
+      45,
       80,
-      80,
-      60,
+      85,
+      90,
       70
     ]
   },
