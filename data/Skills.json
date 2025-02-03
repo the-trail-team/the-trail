@@ -4994,9 +4994,9 @@
     "damage": {
       "critical": false,
       "elementId": 11,
-      "formula": "(a._kinetic / $gameTroop.aliveMembers() / 4)",
+      "formula": "Math.ceil(a._kinetic / $gameTroop.aliveMembers().length / 1.5)",
       "type": 3,
-      "variance": 5
+      "variance": 0
     },
     "description": "",
     "effects": [],
@@ -5006,7 +5006,7 @@
     "message2": "",
     "mpCost": 0,
     "name": "Disperse",
-    "note": "<After Eval>\nthis.subject()._kinetic = 0;\n</After Eval>\n\n<action copy: skill:24>",
+    "note": "<setup action>\nmotion chant: user\nwait: 30\nmotion spell: user\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 15\n</target action>\n\n<follow action>\neval: user._kinetic = 0;\n</follow action>",
     "occasion": 0,
     "repeats": 1,
     "requiredWtypeId1": 0,
