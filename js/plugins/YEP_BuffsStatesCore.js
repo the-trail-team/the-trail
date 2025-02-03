@@ -1852,6 +1852,16 @@ Game_Action.prototype.executeDamage = function(target, value) {
     value = this.onPreDamageStateEffects(target, value);
     value = this.onReactStateEffects(target, value);
     Yanfly.BSC.Game_Action_executeDamage.call(this, target, value);
+    // Copied from LGP_BetterDamagePopup
+      var result = target.result();
+      if (Imported.YEP_ElementCore) result.itemElements = this.getItemElements();
+      if (this._resist !== 'absorb' && value >= 0) {
+          result.resist = this._resist;
+      } else if (this._resist === 'absorb' && value < 0) {
+          result.resist = 'absorb';
+      }
+      result.rate = this.calcElementRate(target);
+    // End of copy from LGP_BetterDamagePopup
     value = this.onRespondStateEffects(target, value);
     value = this.onPostDamageStateEffects(target, value);
 };

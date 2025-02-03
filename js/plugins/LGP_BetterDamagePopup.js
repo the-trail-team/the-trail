@@ -514,8 +514,9 @@ Game_Action.prototype.calcElementRate = function(target) {
     return result;
 };
 
-
-LGP.BDP.Game_Action_executeDamage = Game_Action.prototype.executeDamage;
+// Fixed bug where this would be done after all buffs/states phases, even after Respond and Deselect
+// Some of this code weas moved to YEP_BuffsStatesCore definition for Game_Action.prototype.executeDamage
+/*LGP.BDP.Game_Action_executeDamage = Game_Action.prototype.executeDamage;
 Game_Action.prototype.executeDamage = function(target, value) {
     LGP.BDP.Game_Action_executeDamage.call(this, target, value);
     var result = target.result();
@@ -526,7 +527,7 @@ Game_Action.prototype.executeDamage = function(target, value) {
         result.resist = 'absorb';
     }
     result.rate = this.calcElementRate(target);
-};
+};*/
 
 //=============================================================================
 // Game_ActionResult
