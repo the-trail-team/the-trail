@@ -1092,7 +1092,7 @@
     ],
     "gold": 600,
     "name": "Laeryidyean",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 136, 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 21 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
