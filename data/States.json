@@ -5253,7 +5253,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "FIRE ELEMENT",
-    "note": "<Category: Fire>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
+    "note": "<Category: Fire>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.isActor() ? true : user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
