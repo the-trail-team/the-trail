@@ -60,7 +60,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
   Input._onKeyUp = function(event) {
     oldInput_onKeyUp.call(this, event);
 
-    if (event.keyCode == 44 || Input.keyMapper[event.keyCode] == "p") {
+    if ((event.keyCode == 44 || Input.keyMapper[event.keyCode] == "p") && !(SceneManager._scene instanceof Scene_Name)) {
       $.saveScreenshot();
       AudioManager.playSe({name: "Save", pan: 0, pitch: 100, volume: 100});
     }
