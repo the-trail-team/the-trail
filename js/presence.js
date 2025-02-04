@@ -24,8 +24,12 @@ async function setActivity() {
         if ($gameMap._mapId === 0 || !$gameTemp._isGameLoaded) {
             details = "In the main menu";
         } else {
-            if ($gameMap.displayName()) details = "Location: " + $gameMap.displayName();
-            else details = "Location: ???";
+            if ($gameParty.inBattle()) {
+                details = "Fighting " + $dataTroops[$gameTroop._troopId].name;
+            } else {
+                if ($gameMap.displayName()) details = "Location: " + $gameMap.displayName();
+                else details = "Location: ???";
+            }
 
             switch(smallImageKey) {
                 case `power`:
