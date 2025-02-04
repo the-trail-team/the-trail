@@ -804,8 +804,9 @@ StorageManager.removeWebStorage = function(savefileId) {
 
 StorageManager.localFileDirectoryPath = function() {
     var path = require('path');
-    if (process.platform === 'darwin') return path.join(process.env.HOME, '.thetrail/');
-    else return path.join(process.env.APPDATA, '.thetrail/');
+    if (process.platform === 'win32') directory = process.env.APPDATA;
+    else directory = process.env.HOME;
+    return path.join(directory, '.thetrail/');
 };
 
 StorageManager.localFilePath = function(savefileId) {

@@ -6,7 +6,7 @@
 //=============================================================================
 
 const tips = require('./data/Strings.json').tips;
-tips[26] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the .json file, so it cannot be used initially
+tips[19] = "There's a total of " + tips.length + " Tutorial Tips that you can see here. Have you seen all of them?"; // tips.length is first defined with the .json file, so it cannot be used initially
 
 pushSeen = [];
 
@@ -108,12 +108,12 @@ Window_TipsPage.prototype.windowWidth = function() {
 };
 
 Window_TipsPage.prototype.windowHeight = function() {
-    return 252;
+    return SceneManager._scene._commandWindow.height;
 }
 
 Window_TipsPage.prototype.updatePlacement = function() {
     this.x = 760;
-    this.y = 372;
+    this.y = SceneManager._scene._commandWindow.y;
 }
 
 Window_TipsPage.prototype.makeCommandList = function() {

@@ -329,12 +329,11 @@ Game_Battler.prototype.isStateAddable = function(stateId) {
   return Yanfly.StC.Game_Battler_isStateAddable.call(this, stateId);
 };
 
-Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
+Game_Battler.prototype.removeStateCategoryEffect = function(action) {
+    obj = action.item();
+    user = action.subject();
     var categories = obj.removeCategory;
-    processElements = [];
-    if (obj.damage.elementId == -1) processElements = processElements.concat(user.attackElements());
-    if (obj.damage.elementId > 1) processElements = processElements.concat(obj.damage.elementId);
-    if (obj.multipleElements.length > 0) processElements = processElements.concat(obj.damage.elementId);
+    processElements = action.getItemElements();
     Object.assign(categories, this.elementalStateCategoryRemoval(processElements));
     for (var category in categories) {
       var value = categories[category];
@@ -487,7 +486,7 @@ Game_Action.prototype.applyItemUserEffect = function(target) {
 };
 
 Game_Action.prototype.applyStateCategoryRemovalEffect = function(target) {
-    target.removeStateCategoryEffect(this.item(), this.subject());
+    target.removeStateCategoryEffect(this);
 };
 
 //=============================================================================

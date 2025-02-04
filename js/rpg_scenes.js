@@ -547,6 +547,7 @@ Scene_Map.prototype.initialize = function() {
     this._encounterEffectDuration = 0;
     this._mapLoaded = false;
     this._touchCount = 0;
+    this._canFastForward = true;
     $gameTemp._inGame = true
 };
 
@@ -617,7 +618,8 @@ Scene_Map.prototype.updateMain = function() {
 
 Scene_Map.prototype.isFastForward = function() {
     return ($gameMap.isEventRunning() && !SceneManager.isSceneChanging() &&
-            (Input.isLongPressed('ok') || TouchInput.isLongPressed()));
+            (Input.isLongPressed('ok') || TouchInput.isLongPressed()) &&
+            this._canFastForward);
 };
 
 Scene_Map.prototype.stop = function() {

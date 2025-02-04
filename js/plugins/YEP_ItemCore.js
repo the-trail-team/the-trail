@@ -1093,7 +1093,7 @@ Game_Actor.prototype.unequipItem = function(item) {
 };
 
 Game_Actor.prototype.isEquipped = function(item) {
-    return this.equips().some(equip => equip.baseItemId == item.id);
+    return this.equips().filter(e => e).some(equip => equip.baseItemId == item.id);
 };
 
 //=============================================================================

@@ -261,7 +261,23 @@
     "id": 7,
     "autoRemovalTiming": 2,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 2
+      }
+    ],
     "iconIndex": 104,
     "maxTurns": 3,
     "message1": " is on fire!",
@@ -271,7 +287,7 @@
     "minTurns": 2,
     "motion": 1,
     "name": "On Fire!",
-    "note": "<Category: Fire>\n<Category: debuff>\n<Category: weak debuff>\n\n<Reapply Add Turns>\n\n<animationRow:28>\n\n<DoT Formula: 50>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 50 \\nl[2] damage per turn.\n</Help Description>",
+    "note": "<Category: Fire>\n<Category: debuff>\n<Category: weak debuff>\n\n<Custom Respond Effect>\nif (this.hasElement([5, 6, 7])) target.removeState(7);\n</Custom Respond Effect>\n\n<Reapply Add Turns>\n\n<animationRow:28>\n\n<DoT Formula: 50>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 50 \\nl[2] damage per turn.\n</Help Description>",
     "overlay": 0,
     "priority": 49,
     "removeAtBattleEnd": false,
@@ -3261,6 +3277,21 @@
         "code": 14,
         "dataId": 7,
         "value": 1
+      },
+      {
+        "code": 11,
+        "dataId": 5,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 2
       }
     ],
     "iconIndex": 104,
@@ -3272,7 +3303,7 @@
     "minTurns": 3,
     "motion": 1,
     "name": "Burning Up!",
-    "note": "<Category: Fire>\n<Category: debuff>\n<Category: moderate debuff>\n\n<Reapply Add Turns>\n\n<animationRow:28>\n\n<DoT Formula: 200>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 200 \\nl[2] damage per turn.\n</Help Description>",
+    "note": "<Category: Fire>\n<Category: debuff>\n<Category: moderate debuff>\n\n<Custom Respond Effect>\nif (this.hasElement([5, 6, 7])) target.removeState(102);\n</Custom Respond Effect>\n\n<Reapply Add Turns>\n\n<animationRow:28>\n\n<DoT Formula: 200>\n<DoT Element: 2>\n<DoT Animation: 67>\n\n<Help Description>\nDeals 200 \\nl[2] damage per turn.\n</Help Description>",
     "overlay": 0,
     "priority": 49,
     "removeAtBattleEnd": true,
@@ -5253,7 +5284,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "FIRE ELEMENT",
-    "note": "<Category: Fire>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
+    "note": "<Category: Fire>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.isActor() ? true : user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -6294,6 +6325,11 @@
         "code": 31,
         "dataId": 2,
         "value": 1
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 2
       }
     ],
     "iconIndex": 799,
@@ -6305,7 +6341,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Flame Body",
-    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<Category: Fire>\n\n<Element Absorb: Fire>\n<Element Amplify Fire: +20%>\n\n<animationRow:28>\n<yAnchor: 0.85>\n\n<Help Description>\nIncoming \\nl[2] attacks are absorbed. Outgoing \\nl[2] damage is magnified by 20%. Your weapon is imbued with \\nl[2].\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n<Category: Bypass Recover All Removal>\n<Category: Fire>\n\n<Element Absorb: Fire>\n<Element Amplify Fire: +20%>\n\n<animationRow:28>\n<yAnchor: 0.85>\n\n<Help Description>\nTakes on the properties of \\nl[2]. Incoming \\nl[2] attacks are absorbed. Outgoing \\nl[2] damage is magnified by 20%. Your weapon is imbued with \\nl[2].\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
