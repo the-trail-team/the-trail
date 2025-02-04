@@ -5703,6 +5703,44 @@
               ]
             },
             {
+              "code": 205,
+              "indent": 0,
+              "parameters": [
+                -1,
+                {
+                  "list": [
+                    {
+                      "code": 17,
+                      "indent": null
+                    },
+                    {
+                      "code": 0
+                    }
+                  ],
+                  "repeat": false,
+                  "skippable": false,
+                  "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 0,
+              "parameters": [
+                {
+                  "code": 17,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.followers()._data.forEach(f => f.setDirection(4));"
+              ]
+            },
+            {
               "code": 101,
               "indent": 0,
               "parameters": [
@@ -5761,37 +5799,6 @@
                   "volume": 90,
                   "pitch": 100,
                   "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 205,
-              "indent": 0,
-              "parameters": [
-                -1,
-                {
-                  "list": [
-                    {
-                      "code": 17,
-                      "indent": null
-                    },
-                    {
-                      "code": 0
-                    }
-                  ],
-                  "repeat": false,
-                  "skippable": false,
-                  "wait": false
-                }
-              ]
-            },
-            {
-              "code": 505,
-              "indent": 0,
-              "parameters": [
-                {
-                  "code": 17,
-                  "indent": null
                 }
               ]
             },
@@ -6061,6 +6068,13 @@
                   "code": 19,
                   "indent": null
                 }
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gamePlayer.followers()._data.forEach(f => f.setDirection(8));"
               ]
             },
             {
