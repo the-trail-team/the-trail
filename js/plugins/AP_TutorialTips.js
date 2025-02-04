@@ -108,12 +108,12 @@ Window_TipsPage.prototype.windowWidth = function() {
 };
 
 Window_TipsPage.prototype.windowHeight = function() {
-    return 252;
+    return SceneManager._scene._commandWindow.height;
 }
 
 Window_TipsPage.prototype.updatePlacement = function() {
     this.x = 760;
-    this.y = 372;
+    this.y = SceneManager._scene._commandWindow.y;
 }
 
 Window_TipsPage.prototype.makeCommandList = function() {
