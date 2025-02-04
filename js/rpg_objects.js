@@ -615,7 +615,7 @@ Game_System.prototype.setRecallAllowed = function(allow) {
 // Statues
 
 Game_System.prototype.totalStatues = function() {
-    return 12;
+    return $dataStates.filter(s => s).filter(s => s.name.startsWith("Statue - ") && s.name != "Statue - ?").length;
 };
 
 Game_System.prototype.statue = function(mapId) {
@@ -635,7 +635,7 @@ Game_System.prototype.exhaustionTime = function() {
 };
 
 Game_System.prototype.coreStatIcons = function() {
-    return [14, [122, 559, 11, 13, 117, 121, 12, 1353]];
+    return [14, [122, 559, 116, 13, 117, 121, 12, 1353]];
 };
 
 //-----------------------------------------------------------------------------
