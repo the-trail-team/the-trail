@@ -17,6 +17,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 (function($) {
   "use strict";
 
+  const fs = require('fs');
   const path = require('path');
   const screenshotPath = path.join(StorageManager.localFileDirectoryPath(), './screenshots');
 
@@ -29,7 +30,6 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
     if (!Utils.isNwjs()) return;
     try {
       $gameSystem.setShowMapQuestWindow(false);
-      const fs = require('fs');
 
       if (!fs.existsSync(screenshotPath)) {
         fs.mkdirSync(screenshotPath, { recursive: true });
@@ -75,6 +75,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
 
   Scene_Title.prototype.commandScreenshots = function() {
     const openExplorer = require('open-file-explorer');
+    if (!fs.existsSync(screenshotPath)) fs.mkdir(screenshotPath, (err) => { if (err) return console.error(err); }); 
     openExplorer(screenshotPath, err => {
       if (err) console.error(err);
     });
