@@ -81,6 +81,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
     });
     this._commandWindow.activate();
   };
+  Scene_Menu.prototype.commandScreenshots = Scene_Title.prototype.commandScreenshots;
 })(OrangeScreenshotSaver);
 
 Imported["OrangeScreenshotSaver"] = true;
