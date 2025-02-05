@@ -79,7 +79,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
     openExplorer(screenshotPath, err => {
       if (err) console.error(err);
     });
-    this._commandWindow.active = true;
+    this._commandWindow.activate();
   };
 })(OrangeScreenshotSaver);
 
