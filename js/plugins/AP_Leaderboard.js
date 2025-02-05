@@ -210,7 +210,7 @@ Scene_Leaderboard.prototype.logoutCommand = async function() {
 };
 
 Scene_Leaderboard.prototype.refreshCommand = async function() {
-    await API_LEADERBOARD.push();
+    if (API_ITCH.loggedIn()) await API_LEADERBOARD.push();
     await API_LEADERBOARD.pull();
     alert("Leaderboard refreshed");
     this._leaderboardWindow.refresh();
