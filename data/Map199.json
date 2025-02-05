@@ -16,7 +16,7 @@
     "volume": 90
   },
   "disableDashing": false,
-  "displayName": "Smithery",
+  "displayName": "Castle Town Smithery",
   "encounterList": [],
   "encounterStep": 30,
   "height": 17,
@@ -2687,12 +2687,12 @@
             "selfSwitchCh": "A",
             "selfSwitchValid": false,
             "switch1Id": 109,
-            "switch1Valid": true,
+            "switch1Valid": false,
             "switch2Id": 1,
             "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
+            "variableId": 55,
+            "variableValid": true,
+            "variableValue": 58
           },
           "directionFix": true,
           "image": {
@@ -3119,6 +3119,20 @@
               "code": 356,
               "indent": 0,
               "parameters": [
+                "Quest 37 Complete Objective 2"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 37 Show Objective 3"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
                 "Quest Add 38"
               ]
             },
@@ -3359,6 +3373,13 @@
               "indent": 1,
               "parameters": [
                 "immensely on your journey."
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "Quest 37 Complete Objective 3"
               ]
             },
             {
