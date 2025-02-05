@@ -84,7 +84,7 @@ API_ITCH.userId = function() {
 API_LEADERBOARD = new Object();
 
 API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycby0KHaXUKbUi4aXDCE7eNp-JRbLMJC_86OcgzmZ3gpmI7YUIOTXkWljjeU78kRRsTs/exec`;
-API_LEADERBOARD._data = API_LEADERBOARD._data || {};
+API_LEADERBOARD._dataVariable = 83;
 
 API_LEADERBOARD.leaderboards = function() {
     return [
@@ -115,11 +115,22 @@ API_LEADERBOARD.addToLeaderboard = function(leaderboard, value) {
 };
 
 API_LEADERBOARD.getLeaderboard = function(leaderboard) {
-    return this._data[leaderboard];
+    return this.getData()[leaderboard] ? this.getData()[leaderboard].sort((a, b) => b[2] - a[2]) : [];
 };
 
 API_LEADERBOARD.setLeaderboard = function(leaderboard, data) {
-    this._data[leaderboard] = data;
+    tempData = this.getData();
+    tempData[leaderboard] = data;
+    this.setData(tempData);
+};
+
+API_LEADERBOARD.getData = function() {
+    data = $gameVariables.value(this._dataVariable);
+    return data != 0 ? data : {};
+};
+
+API_LEADERBOARD.setData = function(data) {
+    $gameVariables.setValue(this._dataVariable, data);
 };
 
 API_LEADERBOARD.push = function() {
@@ -163,7 +174,13 @@ Scene_Leaderboard.prototype.create = function() {
 };
 
 Scene_Leaderboard.prototype.createWindows = function() {
+    this.createLeaderboardWindow();
     this.createLoginWindow();
+};
+
+Scene_Leaderboard.prototype.createLeaderboardWindow = function() {
+    this._leaderboardWindow = new Window_Leaderboard();
+    this.addWindow(this._leaderboardWindow);
 };
 
 Scene_Leaderboard.prototype.createLoginWindow = function() {
@@ -203,6 +220,89 @@ Scene_Leaderboard.prototype.pullCommand = function() {
 // Window_Leaderboard
 //=============================================================================
 
+function Window_Leaderboard() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_Leaderboard.prototype = Object.create(Window_Command.prototype);
+Window_Leaderboard.prototype.constructor = Window_Leaderboard;
+
+Window_Leaderboard.prototype.initialize = function() {
+    Window_Command.prototype.initialize.call(this, 0, 0);
+    this.deselect();
+    this.deactivate();
+};
+
+Window_Leaderboard.prototype.maxCols = function() {
+    return API_LEADERBOARD.leaderboards().length;
+};
+
+Window_Leaderboard.prototype.maxRows = function() {
+    return (this.windowHeight() / this.lineHeight()) - 1;
+};
+
+Window_Leaderboard.prototype.windowWidth = function() {
+    return Graphics.boxWidth;
+};
+
+Window_Leaderboard.prototype.windowHeight = function() {
+    return Graphics.boxHeight - Window_Login.prototype.windowHeight();
+};
+
+Window_Leaderboard.prototype.itemTextAlign = function() {
+    return 'center';
+};
+
+Window_Leaderboard.prototype.makeCommandList = function() {
+    for (const lb of API_LEADERBOARD.leaderboards()) {
+        this.addCommand(lb[0], '');
+        i = 0;
+        leaderboard = API_LEADERBOARD.getLeaderboard(lb[0])
+        for (i = 0; i < this.maxRows() - 1; i++) {
+            if (leaderboard[i]) {
+                entry = leaderboard[i];
+                this.addCommand("#" + (i + 1) + " " + entry[1] + ": " + Yanfly.Util.toGroup(entry[2]));
+            } else {
+                this.addCommand("");
+            }
+        }
+    }
+};
+
+Window_Leaderboard.prototype.itemRect = function(index) {
+    var rect = new Rectangle();
+    var maxCols = this.maxCols();
+    var maxRows = this.maxRows();
+    rect.width = this.itemWidth();
+    rect.height = this.itemHeight();
+    rect.x = Math.floor(index / maxRows) * (rect.width + this.spacing()) - this._scrollX;
+    rect.y = (index % maxRows) * rect.height - this._scrollY;
+    return rect;
+};
+
+Window_Leaderboard.prototype.drawItem = function(index) {
+    var rect = this.itemRectForText(index);
+    var align = this.itemTextAlign();
+    switch (index % this.maxRows()) {
+        case 0:
+            this.resetTextColor();
+            break;
+        case 1:
+            this.changeTextColor(this.textColor(14));
+            break;
+        case 2:
+            this.changeTextColor(this.textColor(8));
+            break;
+        case 3:
+            this.changeTextColor(this.textColor(20));
+            break;
+        default:
+            this.changeTextColor(this.textColor(7));
+            break;
+    }
+    this.changePaintOpacity(this.isCommandEnabled(index));
+    this.drawText(this.commandName(index), rect.x, rect.y, rect.width, align);
+};
 
 //=============================================================================
 // Window_Login
