@@ -261,12 +261,21 @@ Window_Leaderboard.prototype.makeCommandList = function() {
         for (i = 0; i < this.maxRows() - 1; i++) {
             if (leaderboard[i]) {
                 entry = leaderboard[i];
-                this.addCommand("#" + (i + 1) + " " + entry[1] + ": " + Yanfly.Util.toGroup(entry[2]));
+                if (lb[0] == "Playtime") value = this.formatPlaytime(entry[2]);
+                else value = Yanfly.Util.toGroup(entry[2]);
+                this.addCommand("#" + (i + 1) + " " + entry[1] + ": " + value);
             } else {
                 this.addCommand("");
             }
         }
     }
+};
+
+Window_Leaderboard.prototype.formatPlaytime = function(playtime) {
+    var hour = Math.floor(playtime / 60 / 60);
+    var min = Math.floor(playtime / 60) % 60;
+    var sec = playtime % 60;
+    return hour.padZero(2) + ':' + min.padZero(2) + ':' + sec.padZero(2);
 };
 
 Window_Leaderboard.prototype.itemRect = function(index) {
