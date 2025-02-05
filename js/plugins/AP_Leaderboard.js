@@ -86,6 +86,14 @@ API_LEADERBOARD = new Object();
 API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycby0KHaXUKbUi4aXDCE7eNp-JRbLMJC_86OcgzmZ3gpmI7YUIOTXkWljjeU78kRRsTs/exec`;
 API_LEADERBOARD._data = API_LEADERBOARD._data || {};
 
+API_LEADERBOARD.leaderboards = function() {
+    return [
+        ["Bits", $gameParty.gold()],
+        ["Damage Dealt", $gameVariables.value(27)],
+        ["Playtime", $gameSystem.playtime()]
+    ];
+};
+
 API_LEADERBOARD.fetchLeaderboard = function(leaderboard) {
     url = this._url + "?leaderboard=" + leaderboard;
     fetch(url, {
@@ -112,6 +120,18 @@ API_LEADERBOARD.getLeaderboard = function(leaderboard) {
 
 API_LEADERBOARD.setLeaderboard = function(leaderboard, data) {
     this._data[leaderboard] = data;
+};
+
+API_LEADERBOARD.push = function() {
+    for (const l of this.leaderboards()) {
+        this.addToLeaderboard(l[0], l[1]);
+    }
+};
+
+API_LEADERBOARD.pull = function() {
+    for (const l of this.leaderboards()) {
+        this.fetchLeaderboard(l[0]);
+    }
 };
 
 //=============================================================================
@@ -151,6 +171,9 @@ Scene_Leaderboard.prototype.createLoginWindow = function() {
     this._loginWindow.y = Graphics.boxHeight - this._loginWindow.windowHeight();
     this._loginWindow.setHandler('login', this.loginCommand.bind(this));
     this._loginWindow.setHandler('logout', this.logoutCommand.bind(this));
+    this._loginWindow.setHandler('push', this.pushCommand.bind(this));
+    this._loginWindow.setHandler('pull', this.pullCommand.bind(this));
+    this._loginWindow.setHandler('cancel', this.popScene.bind(this));
     this.addWindow(this._loginWindow);
 };
 
@@ -160,9 +183,19 @@ Scene_Leaderboard.prototype.loginCommand = async function() {
     this._loginWindow.activate();
 };
 
-Scene_Leaderboard.prototype.logoutCommand = async function () {
+Scene_Leaderboard.prototype.logoutCommand = async function() {
     await API_ITCH.logout();
     this._loginWindow.refresh();
+    this._loginWindow.activate();
+};
+
+Scene_Leaderboard.prototype.pushCommand = function() {
+    API_LEADERBOARD.push();
+    this._loginWindow.activate();
+};
+
+Scene_Leaderboard.prototype.pullCommand = function() {
+    API_LEADERBOARD.pull();
     this._loginWindow.activate();
 };
 
@@ -187,7 +220,7 @@ Window_Login.prototype.initialize = function() {
 };
 
 Window_Login.prototype.maxCols = function() {
-    return 2;
+    return 4;
 };
 
 Window_Login.prototype.windowWidth = function() {
@@ -205,6 +238,8 @@ Window_Login.prototype.itemTextAlign = function() {
 Window_Login.prototype.makeCommandList = function() {
     this.addCommand(this.loginText(), 'login', !API_ITCH.loggedIn());
     this.addCommand("Logout", 'logout', API_ITCH.loggedIn());
+    this.addCommand("Push", 'push');
+    this.addCommand("Pull", 'pull');
 };
 
 Window_Login.prototype.loginText = function() {
