@@ -95,23 +95,29 @@ API_LEADERBOARD.leaderboards = function() {
 };
 
 API_LEADERBOARD.fetchLeaderboard = function(leaderboard) {
-    url = this._url + "?leaderboard=" + leaderboard;
-    fetch(url, {
+    const url = this._url + "?leaderboard=" + leaderboard;
+    return fetch(url, {
         method: 'GET'
     })
     .then(response => response.json())
     .then(data => {
         this.setLeaderboard(leaderboard, data);
     })
-    .catch(error => alert("Error fetching data: " + error));
+    .catch(error => {
+        alert("Error fetching data: " + error);
+        throw error;
+    });
 };
 
 API_LEADERBOARD.addToLeaderboard = function(leaderboard, value) {
-    fetch(this._url, {
+    return fetch(this._url, {
         method: "POST",
         body: JSON.stringify([leaderboard, API_ITCH.userId(), API_ITCH.username(), value])
     })
-    .catch(error => alert("Error adding data: " + error));
+    .catch(error => {
+        alert("Error adding data: " + error);
+        throw error;
+    });
 };
 
 API_LEADERBOARD.getLeaderboard = function(leaderboard) {
@@ -134,15 +140,13 @@ API_LEADERBOARD.setData = function(data) {
 };
 
 API_LEADERBOARD.push = function() {
-    for (const l of this.leaderboards()) {
-        this.addToLeaderboard(l[0], l[1]);
-    }
+    const promises = this.leaderboards().map(l => this.addToLeaderboard(l[0], l[1]));
+    return Promise.all(promises);
 };
 
 API_LEADERBOARD.pull = function() {
-    for (const l of this.leaderboards()) {
-        this.fetchLeaderboard(l[0]);
-    }
+    const promises = this.leaderboards().map(l => this.fetchLeaderboard(l[0]));
+    return Promise.all(promises);
 };
 
 //=============================================================================
@@ -188,8 +192,7 @@ Scene_Leaderboard.prototype.createLoginWindow = function() {
     this._loginWindow.y = Graphics.boxHeight - this._loginWindow.windowHeight();
     this._loginWindow.setHandler('login', this.loginCommand.bind(this));
     this._loginWindow.setHandler('logout', this.logoutCommand.bind(this));
-    this._loginWindow.setHandler('push', this.pushCommand.bind(this));
-    this._loginWindow.setHandler('pull', this.pullCommand.bind(this));
+    this._loginWindow.setHandler('refresh', this.refreshCommand.bind(this));
     this._loginWindow.setHandler('cancel', this.popScene.bind(this));
     this.addWindow(this._loginWindow);
 };
@@ -206,13 +209,11 @@ Scene_Leaderboard.prototype.logoutCommand = async function() {
     this._loginWindow.activate();
 };
 
-Scene_Leaderboard.prototype.pushCommand = function() {
-    API_LEADERBOARD.push();
-    this._loginWindow.activate();
-};
-
-Scene_Leaderboard.prototype.pullCommand = function() {
-    API_LEADERBOARD.pull();
+Scene_Leaderboard.prototype.refreshCommand = async function() {
+    await API_LEADERBOARD.push();
+    await API_LEADERBOARD.pull();
+    alert("Leaderboard refreshed");
+    this._leaderboardWindow.refresh();
     this._loginWindow.activate();
 };
 
@@ -329,7 +330,7 @@ Window_Login.prototype.initialize = function() {
 };
 
 Window_Login.prototype.maxCols = function() {
-    return 4;
+    return 3;
 };
 
 Window_Login.prototype.windowWidth = function() {
@@ -347,8 +348,7 @@ Window_Login.prototype.itemTextAlign = function() {
 Window_Login.prototype.makeCommandList = function() {
     this.addCommand(this.loginText(), 'login', !API_ITCH.loggedIn());
     this.addCommand("Logout", 'logout', API_ITCH.loggedIn());
-    this.addCommand("Push", 'push');
-    this.addCommand("Pull", 'pull');
+    this.addCommand("Refresh", 'refresh');
 };
 
 Window_Login.prototype.loginText = function() {
