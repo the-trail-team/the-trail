@@ -43,6 +43,8 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
           var base64Data = urlData.replace(/^data:image\/png;base64,/, "");
         
           fs.writeFileSync(fileName, base64Data, 'base64');
+
+          if (!fs.existsSync(fileName)) alert("Screenshot failed to save");
   
           setTimeout(function() {
             $gameSystem.setShowMapQuestWindow(true);
@@ -53,7 +55,7 @@ var OrangeScreenshotSaver = OrangeScreenshotSaver || {};
       console.error("An error occurred while saving the screenshot:", error);
       alert("Screenshot failed: " + error.message);
       $gameSystem.setShowMapQuestWindow(true);
-    }    
+    }
   };
 
   var oldInput_onKeyUp = Input._onKeyUp;
