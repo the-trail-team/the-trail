@@ -69,6 +69,43 @@ API_ITCH.userId = function() {
 };
 
 //=============================================================================
+// API_LEADERBOARD
+//=============================================================================
+
+API_LEADERBOARD = new Object();
+
+API_LEADERBOARD._url = `https://script.google.com/macros/s/AKfycby0KHaXUKbUi4aXDCE7eNp-JRbLMJC_86OcgzmZ3gpmI7YUIOTXkWljjeU78kRRsTs/exec`;
+API_LEADERBOARD._data = API_LEADERBOARD._data || {};
+
+API_LEADERBOARD.fetchLeaderboard = function(leaderboard) {
+    url = this._url + "?leaderboard=" + leaderboard;
+    fetch(url, {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => {
+        this.setLeaderboard(leaderboard, data);
+    })
+    .catch(error => alert("Error fetching data: " + error));
+};
+
+API_LEADERBOARD.addToLeaderboard = function(leaderboard, value) {
+    fetch(this._url, {
+        method: "POST",
+        body: JSON.stringify([leaderboard, API_ITCH.userId(), API_ITCH.username(), value])
+    })
+    .catch(error => alert("Error adding data: " + error));
+};
+
+API_LEADERBOARD.getLeaderboard = function(leaderboard) {
+    return this._data[leaderboard];
+};
+
+API_LEADERBOARD.setLeaderboard = function(leaderboard, data) {
+    this._data[leaderboard] = data;
+};
+
+//=============================================================================
 // Scene_Menu
 //=============================================================================
 
