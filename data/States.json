@@ -4063,7 +4063,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Rainbow Slime ATK Up",
-    "note": "<Custom Turn End Effect>\nif (user.isAppeared()) {\n  user.addBuff(2, 2);\n  user.startAnimation(51);\n}\n</Custom Turn End Effect>",
+    "note": "<Custom Turn End Effect>\nif (user.isAppeared() && user.isAlive()) {\n  user.addBuff(2, 2);\n  user.startAnimation(51);\n}\n</Custom Turn End Effect>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
