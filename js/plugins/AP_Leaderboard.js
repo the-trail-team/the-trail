@@ -174,6 +174,18 @@ Scene_Title.prototype.start = function() {
     API_LEADERBOARD.pull();
 };
 
+Scene_Title_prototype_createCommandWindow = Scene_Title.prototype.createCommandWindow;
+Scene_Title.prototype.createCommandWindow = function() {
+    Scene_Title_prototype_createCommandWindow.call(this);
+    this._commandWindow.setHandler('leaderboard', this.commandLeaderboard.bind(this));
+};
+
+Scene_Title.prototype.commandLeaderboard = function() {
+    this._commandWindow.close();
+    this.startFadeOut(this.fadeSpeed(), false);
+    SceneManager.push(Scene_Leaderboard);
+};
+
 //=============================================================================
 // Scene_File
 //=============================================================================
@@ -210,6 +222,7 @@ Scene_Leaderboard.prototype.initialize = function() {
 Scene_Leaderboard.prototype.create = function() {
     Scene_MenuBase.prototype.create.call(this);
     this.createWindows();
+    if (!$gameTemp._inGame) this.startFadeIn(this.fadeSpeed(), false);
 };
 
 Scene_Leaderboard.prototype.createWindows = function() {
@@ -228,7 +241,7 @@ Scene_Leaderboard.prototype.createLoginWindow = function() {
     this._loginWindow.setHandler('login', this.loginCommand.bind(this));
     this._loginWindow.setHandler('logout', this.logoutCommand.bind(this));
     this._loginWindow.setHandler('refresh', this.refreshCommand.bind(this));
-    this._loginWindow.setHandler('cancel', this.popScene.bind(this));
+    this._loginWindow.setHandler('cancel', this.cancel.bind(this));
     this.addWindow(this._loginWindow);
 };
 
@@ -249,6 +262,11 @@ Scene_Leaderboard.prototype.refreshCommand = async function() {
     alert("Leaderboard refreshed");
     this._leaderboardWindow.refresh();
     this._loginWindow.activate();
+};
+
+Scene_Leaderboard.prototype.cancel = function() {
+    if (!$gameTemp._inGame) this.startFadeOut(this.fadeSpeed(), false);
+    this.popScene();
 };
 
 //=============================================================================
