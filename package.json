@@ -1,22 +1,24 @@
 {
-	"name":"The Trail",
-	"main":"index.html",
-	"js-flags":"--exposegc",
-	"window":{
-		"position":"center",
-		"show":true,
-		"toolbar":false,
-		"icon":"icon/icon.png",
-		"width":816,
-		"height":624,
-		"min_width":408,
-		"min_height":312,
-		"max_width":null,
-		"max_height":null,
-		"title":"The Trail",
-		"resizable":true,
-		"fullscreen":false,
-		"frame":true,
-		"always-on-top":false
-	}
+  "name": "thetrail",
+  "main": "index.html",
+  "js-flags": "--exposegc",
+  "chromium-args": "--disable-raf-throttling",
+  "window": {
+    "position": "center",
+    "show": true,
+    "toolbar": false,
+    "icon": "icon/icon.png",
+    "width": 1280,
+    "height": 720,
+    "title": "The Trail"
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1",
+    "open-file-explorer": "^1.0.2",
+    "trash": "^7.2.0"
+  },
+  "devDependencies": {
+    "path": "^0.12.7",
+    "yauzl": "^2.10.0"
+  }
 }

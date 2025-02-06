@@ -1,78 +1,5617 @@
 [
-null,
-{"id":1,"atypeId":2,"description":"A set of armor given to you by the Solus Town\nVillage Headman. It's very dusty, but unused.","etypeId":4,"traits":[],"iconIndex":170,"name":"Squire Armor","note":"<Cannot Discard>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>","params":[0,0,0,4,0,0,0,0],"price":0},
-{"id":2,"atypeId":3,"description":"Purple robes woven by Matilda. They have some\nmagical defense; physical, not so much.","etypeId":4,"traits":[],"iconIndex":171,"name":"Apprentice Robes","note":"<Cannot Discard>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>","params":[0,0,0,2,0,3,0,0],"price":0},
-{"id":3,"atypeId":4,"description":"Generic vestments that can probably be found\nin a magic shop. A good starter for a Cleric.","etypeId":4,"traits":[],"iconIndex":168,"name":"Training Vestments","note":"<Cannot Discard>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>","params":[0,0,0,2,0,3,0,0],"price":0},
-{"id":4,"atypeId":5,"description":"A run-of-the-mill leather cloak that was once\nowned by an ex-Bandito. It looks pretty cool.","etypeId":4,"traits":[],"iconIndex":444,"name":"Novice Leathers","note":"<Cannot Discard>\n<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>","params":[0,0,0,3,0,0,1,0],"price":0},
-{"id":5,"atypeId":1,"description":"A simple hat worn by a simple traveler.","etypeId":3,"traits":[],"iconIndex":162,"name":"Traveler Hat","note":"<Disassemble Pool: Basic>\nx1 item 51: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,1,0,0,0,0],"price":10},
-{"id":6,"atypeId":1,"description":"Simple clothes worn by a simple traveler.","etypeId":4,"traits":[],"iconIndex":433,"name":"Traveler Garments","note":"<Hit Damage Sound: Equip3, 90, 150, 0>\n\n<Disassemble Pool: Basic>\nx1-2 item 51: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,1,0,0,0,0],"price":10},
-{"id":7,"atypeId":1,"description":"Simple boots worn by a simple traveler.","etypeId":5,"traits":[],"iconIndex":529,"name":"Traveler Boots","note":"<Disassemble Pool: Basic>\nx1 item 51: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,1,0,0,1,0],"price":10},
-{"id":8,"atypeId":2,"description":"It's a soldier's helmet. What more is there to say?","etypeId":3,"traits":[],"iconIndex":163,"name":"Soldier Helmet","note":"<Equip Requirement>\nclass: Soldier\nclass: Knight\n</Equip Requirement>","params":[0,0,0,3,0,0,0,0],"price":80},
-{"id":9,"atypeId":2,"description":"It's a soldier's armor. What more is there to say?","etypeId":4,"traits":[],"iconIndex":170,"name":"Soldier Armor","note":"<Equip Requirement>\nclass: Soldier\nclass: Knight\n</Equip Requirement>","params":[0,0,0,5,0,0,0,0],"price":100},
-{"id":10,"atypeId":2,"description":"It's a soldier's greaves. What more is there to say?","etypeId":5,"traits":[],"iconIndex":172,"name":"Soldier Greaves","note":"<Equip Requirement>\nclass: Soldier\nclass: Knight\n</Equip Requirement>","params":[0,0,0,1,0,0,6,0],"price":60},
-{"id":11,"atypeId":6,"description":"It's a soldier's shield. What more is there to say?","etypeId":2,"traits":[],"iconIndex":160,"name":"Soldier Shield","note":"<Equip Requirement>\nclass: Soldier\nclass: Knight\n</Equip Requirement>","params":[0,0,0,2,0,0,0,0],"price":80},
-{"id":12,"atypeId":1,"description":"When people see this on your head, they'll be sure to\ncompliment you! But how does it boost your MHP and MMP?","etypeId":3,"traits":[],"iconIndex":457,"name":"Cool-Looking Hat","note":"<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1 Feather: 100%\nx1-2 Yarn: 100%\n</Disassemble Pool: Basic>","params":[8,1,0,1,0,0,0,0],"price":50},
-{"id":13,"atypeId":1,"description":"Some basic leather armor. It's has a metal lining\non the inside, providing a little extra defense.","etypeId":4,"traits":[],"iconIndex":434,"name":"Leather Armor","note":"","params":[0,0,0,3,0,0,0,0],"price":15},
-{"id":14,"atypeId":1,"description":"Leather boots fortified with metal. They don't give\nmuch defense, but they make movement easier.","etypeId":5,"traits":[],"iconIndex":468,"name":"Hiking Boots","note":"","params":[0,0,0,1,0,0,4,0],"price":15},
-{"id":15,"atypeId":3,"description":"One of those cool floppy hats you see on the\nwizards in books. Provides some extra magic ability.","etypeId":3,"traits":[],"iconIndex":165,"name":"Floppy Hat","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>","params":[0,3,0,1,1,1,0,0],"price":12},
-{"id":16,"atypeId":1,"description":"They don't brace your wrists much, but they\ndo provide more magical power.","etypeId":6,"traits":[],"iconIndex":177,"name":"Metal Wristbraces","note":"","params":[0,2,0,0,2,1,0,0],"price":80},
-{"id":17,"atypeId":1,"description":"While it does help defend against magical attacks,\nit also reduces the power of your own.","etypeId":6,"traits":[],"iconIndex":179,"name":"Anti-Magic Charm","note":"<Equip Requirement>\nunique only\n</Equip Requirement>","params":[0,0,0,0,-3,3,0,0],"price":100},
-{"id":18,"atypeId":5,"description":"Some spare leathers you fetched from the\nbag of an unsuspecting Bandito.","etypeId":4,"traits":[],"iconIndex":450,"name":"Bandito Leathers","note":"<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1-2 item 51: 100%\nx1 Leather: 60%\n</Disassemble Pool: Basic>","params":[0,0,0,3,0,0,1,0],"price":20},
-{"id":19,"atypeId":2,"description":"Steel is basically like upgraded iron. So this\nis basically an upgrade of any iron armor.","etypeId":4,"traits":[],"iconIndex":170,"name":"Steel Armor","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>","params":[0,0,0,7,0,0,-1,0],"price":80},
-{"id":20,"atypeId":6,"description":"A small wooden shield reinforced by a steel ring. It\nwon't grant too much of a defense boost, but it's cheap.","etypeId":2,"traits":[],"iconIndex":502,"name":"Wooden Buckler","note":"<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>","params":[0,0,0,2,0,0,0,0],"price":40},
-{"id":21,"atypeId":7,"description":"A heavy shield that packs quite a good defense\nboost. Not for the weak-hearted... or weak.","etypeId":2,"traits":[],"iconIndex":161,"name":"Steel Shield","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>","params":[0,0,0,4,0,0,-1,0],"price":90},
-{"id":22,"atypeId":2,"description":"One of those cool helmets that you see knights\nwearing in books and stuff. Looks awesome.","etypeId":3,"traits":[],"iconIndex":164,"name":"Classic Helmet","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>","params":[0,0,0,3,0,0,0,0],"price":70},
-{"id":23,"atypeId":3,"description":"The floppier the hat, the stronger the magic.","etypeId":3,"traits":[],"iconIndex":165,"name":"Floppy Hat ★","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>","params":[0,6,0,1,3,3,0,0],"price":50},
-{"id":24,"atypeId":3,"description":"They may not look too special, but they've been\nenchanted to have some decently strong magic.","etypeId":4,"traits":[],"iconIndex":443,"name":"Gray Robes","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx2-x4 item 51: 100%\nx1-x2 Yarn: 80%\n</Disassemble Pool: Basic>","params":[0,1,0,3,2,6,0,0],"price":80},
-{"id":25,"atypeId":4,"description":"Vestments crafted for clerics who have a true\nconnection with Trailia. They're pretty good!","etypeId":4,"traits":[],"iconIndex":168,"name":"Prayer Vestments","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx2-x4 Yarn: 100%\n</Disassemble Pool: Basic>","params":[0,1,0,3,1,7,0,0],"price":80},
-{"id":26,"atypeId":1,"description":"A small gold ring. It doesn't naturally boost any of\nyour stats, but it has many upgrade slots available.","etypeId":6,"traits":[],"iconIndex":512,"name":"Gold Ring","note":"<Upgrade Slots: 3>","params":[0,0,0,0,0,0,0,0],"price":250},
-{"id":27,"atypeId":1,"description":"Make movement easier than ever with the newest\nmodel of \\ia[14]! Made for pro travelers.","etypeId":5,"traits":[],"iconIndex":468,"name":"Hiking Boots ★","note":"","params":[0,0,0,1,0,0,8,0],"price":24},
-{"id":28,"atypeId":5,"description":"Soft red leathers with a gold trim on the bottom.\nLooks sweet, feels sweet, and boosts sweet.","etypeId":4,"traits":[],"iconIndex":445,"name":"Red Leathers","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx2-x5 Yarn: 100%\nx1-x2 Leather: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,4,0,0,4,0],"price":80},
-{"id":29,"atypeId":5,"description":"Part of the Red Leathers set. Boosts CRI.","etypeId":3,"traits":[{"code":22,"dataId":2,"value":0.02}],"iconIndex":466,"name":"Red Mask","note":"<Upgrade Slots: 0>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1 Yarn: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,0,0,0,1,0],"price":50},
-{"id":30,"atypeId":1,"description":"Boosts ATK and MAT by 10% each.","etypeId":9,"traits":[{"code":21,"dataId":2,"value":1.1},{"code":21,"dataId":4,"value":1.1}],"iconIndex":126,"name":"Laeryidyean's Strength","note":"<Cannot Discard>\n<Cannot Rename>","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":31,"atypeId":1,"description":"A classy hat that belonged to your brother for many years.\nHe gifted it to you, wishing you good luck saving the world.","etypeId":3,"traits":[],"iconIndex":541,"name":"Matt's Fedora","note":"<Cannot Discard>\n<Cannot Rename>\n<Upgrade Slots: 2>\n<Menu Category: KeyItems>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>","params":[20,8,0,1,0,0,0,0],"price":0},
-{"id":32,"atypeId":1,"description":"A tome containing the information\nnecessary to cast \\is[37].","etypeId":8,"traits":[{"code":43,"dataId":37,"value":1}],"iconIndex":371,"name":"Bubble (Tome)","note":"<Cannot Rename>\n<Equip Requirement>\nclass: Mage\nclass: Cleric\n</Equip Requirement>","params":[0,0,0,0,0,0,0,0],"price":300},
-{"id":33,"atypeId":5,"description":"A mesmerizing shade of red, lookin' hella and remaining\npowerful. Not made with real blood. Boosts EVA.","etypeId":4,"traits":[{"code":22,"dataId":1,"value":0.02}],"iconIndex":446,"name":"Blood-Red Leathers","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx3-x5 Yarn: 100%\nx2-x3 Leather: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,5,0,0,7,0],"price":120},
-{"id":34,"atypeId":5,"description":"Part of the Blood-Red Leathers set.\nBoosts CRI and MHP.","etypeId":3,"traits":[{"code":22,"dataId":2,"value":0.03},{"code":21,"dataId":0,"value":1.04}],"iconIndex":585,"name":"Blood-Red Headband","note":"<Upgrade Slots: 0>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,0,0,0,2,0],"price":80},
-{"id":35,"atypeId":4,"description":"A set of bright pink vestments. Even if pink ain't\nyour style, the sweet boosts are (kinda') worth it.","etypeId":4,"traits":[],"iconIndex":439,"name":"Pink Vestments","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx3-x5 Yarn: 100%\n</Disassemble Pool: Basic>","params":[0,3,0,4,3,9,0,0],"price":120},
-{"id":36,"atypeId":2,"description":"An old suit of armor left to crystallize in a cave for\nyears. The tough mineral provides a solid defense boost.","etypeId":4,"traits":[],"iconIndex":169,"name":"Crystalline Platemail","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>","params":[0,0,0,10,0,0,-2,0],"price":120},
-{"id":37,"atypeId":3,"description":"It feels like dirt, but it still has the softness\nof silk. Reduces damage taken by Earth-type attacks.","etypeId":4,"traits":[{"code":11,"dataId":6,"value":0.92}],"iconIndex":581,"name":"Earthen Grassrobes","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx1 Rock: 100%\nx1-x4 item 51: 100%\n</Disassemble Pool: Basic>","params":[0,3,0,5,3,8,0,0],"price":120},
-{"id":38,"atypeId":1,"description":"A mystical orb containing the power of an unknown\nplanet inside of it. Boosts Earth resistance.","etypeId":8,"traits":[{"code":11,"dataId":6,"value":0.9}],"iconIndex":583,"name":"Terra","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\nclass: Cleric\n</Equip Requirement>","params":[0,8,0,0,1,2,0,0],"price":360},
-{"id":39,"atypeId":1,"description":"The bracing is even worse than before,\nbut the magic is definitely stronger.","etypeId":6,"traits":[],"iconIndex":177,"name":"Metal Wristbraces ★","note":"<Upgrade Slots: 1>","params":[0,4,0,0,4,3,0,0],"price":180},
-{"id":40,"atypeId":1,"description":"Boots made out of a fine leather, boosting AGI, CRI,\nand EVA at the cost of less protection than metal boots.","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0.02},{"code":22,"dataId":2,"value":0.01}],"iconIndex":467,"name":"Leather Boots","note":"<Disassemble Pool: Basic>\nx1-x3 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Disassemble Pool: Itemization>\nx1 item 65: 100%\n</Disassemble Pool: Itemization>","params":[0,0,0,0,0,0,20,0],"price":60},
-{"id":41,"atypeId":1,"description":"Slim black gloves that give you a better grip\non your weapon, boosting your HIT and CRI.","etypeId":6,"traits":[{"code":22,"dataId":0,"value":0.02},{"code":22,"dataId":2,"value":0.01}],"iconIndex":174,"name":"Black Gloves","note":"<Disassemble Pool: Basic>\nx1-x2 Leather: 100%\n</Disassemble Pool: Basic>","params":[0,0,2,0,0,0,0,0],"price":50},
-{"id":42,"atypeId":1,"description":"Boosts ATK by 20% but decreases DEF by 20%.","etypeId":9,"traits":[{"code":21,"dataId":2,"value":1.2},{"code":21,"dataId":3,"value":0.8}],"iconIndex":127,"name":"Giant Goblin's Rage","note":"<Cannot Discard>\n<Cannot Rename>","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":43,"atypeId":1,"description":"The warding effect of this charm is much stronger than\nusual. Its negative effect on the user has also been lessened.","etypeId":6,"traits":[],"iconIndex":179,"name":"Anti-Magic Charm ★","note":"<Upgrade Slots: 1>","params":[0,0,0,0,-2,6,0,0],"price":300},
-{"id":44,"atypeId":2,"description":"A set of heavily reinforced greaves meant to\nboost your defense and agility simultaneously.","etypeId":5,"traits":[],"iconIndex":469,"name":"Knight's Greaves","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nLeather: 4\nWorn Cloth: 5\nIron Cluster: 4\n</Synthesis Ingredients>\n<Mask Name: Protective Footwear>","params":[0,0,0,3,0,0,14,0],"price":100},
-{"id":45,"atypeId":2,"description":"A set of heavily enforced gauntlets. They've been\nspecially made to provide defense and support attacks.","etypeId":6,"traits":[],"iconIndex":493,"name":"Knight's Gauntlets","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nIron Cluster: 7\n</Synthesis Ingredients>\n<Mask Name: Protective Armwear>","params":[0,0,3,4,0,0,-1,0],"price":100},
-{"id":46,"atypeId":1,"description":"Taking speed EVEN FURTHER BEYOND!!\nFurther boosts your AGI, EVA, and CRI.","etypeId":5,"traits":[{"code":22,"dataId":1,"value":0.03},{"code":22,"dataId":2,"value":0.03}],"iconIndex":474,"name":"Hermes Boots","note":"<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\nx2 Feather: 100%\n</Disassemble Pool: Basic>\n\n<Synthesis Ingredients>\n~Leather Boots: 1\nFeather: 2\nBat Wing: 2\nYarn: 1\nWind Essence: 1\n</Synthesis Ingredients>\n<Mask Name: Speedy Footwear>","params":[0,0,0,0,0,0,40,0],"price":180},
-{"id":47,"atypeId":6,"description":"A shield offering a respectable amount of defense, while\nmaintaining its \"light\" status and minimizing AGI loss.","etypeId":2,"traits":[],"iconIndex":160,"name":"Copper Buckler","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Synthesis Ingredients>\nCopper Cluster: 8\n</Synthesis Ingredients>\n<Mask Name: Respectable Light Shield>","params":[0,0,0,4,0,0,-1,0],"price":80},
-{"id":48,"atypeId":7,"description":"A shield crafted for the royal knights of Telluria Castle.\nIt's remniscient of the shields made for knights long ago.","etypeId":2,"traits":[],"iconIndex":530,"name":"Knight's Shield","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>\n\n<Synthesis Ingredients>\nSteel Alloy: 3\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>","params":[0,0,0,7,0,0,-2,0],"price":140},
-{"id":49,"atypeId":1,"description":"Allows the wearer to look a bit into the future, helping\nthem predict the enemy's moves and dodge crits 10% easier.","etypeId":6,"traits":[{"code":22,"dataId":3,"value":0.1}],"iconIndex":180,"name":"Charm of Foresight","note":"<Upgrade Slots: 1>","params":[0,0,0,0,0,0,0,0],"price":180},
-{"id":50,"atypeId":1,"description":"Allows the wearer to see the undead, preventing\nthem from being scared of the unknown.","etypeId":6,"traits":[{"code":14,"dataId":42,"value":1}],"iconIndex":272,"name":"Soulfire Lantern","note":"<Cannot Discard>\n<Cannot Rename>","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":51,"atypeId":2,"description":"Armor consisting of several dark plates welded together.\nIt seems to almost absorb light. Reduces dark damage.","etypeId":4,"traits":[{"code":11,"dataId":9,"value":0.92}],"iconIndex":435,"name":"Shadowplate Armor","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Knight\n</Equip Requirement>","params":[0,5,0,12,0,3,-3,0],"price":400},
-{"id":52,"atypeId":3,"description":"A set of mystical robes. They seem to almost be phasing\nin and out of another plane. Reduces light damage.","etypeId":4,"traits":[{"code":11,"dataId":8,"value":0.92}],"iconIndex":447,"name":"Phantasmal Robes","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Mage\n</Equip Requirement>","params":[0,6,0,6,5,12,0,0],"price":400},
-{"id":53,"atypeId":4,"description":"A simple yet powerful set of vestments. The lining\nseems to be shinier, and it emanates magical power.","etypeId":4,"traits":[],"iconIndex":168,"name":"Prayer Vestments ★","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Cleric\n</Equip Requirement>","params":[0,5,0,6,4,14,0,0],"price":400},
-{"id":54,"atypeId":5,"description":"Otherworldly leathers. The shadowy essence coursing\nthrough them allows you to rarely dodge magic attacks.","etypeId":4,"traits":[{"code":22,"dataId":4,"value":0.06}],"iconIndex":456,"name":"Shadowspec Leathers","note":"<Upgrade Slots: 1>\n<Equip Requirement>\nclass: Rogue\n</Equip Requirement>","params":[0,3,0,6,0,3,12,0],"price":400},
-{"id":55,"atypeId":1,"description":"A fancy and extremely powerful scarf. A quick whip\nof it can rarely reflect an enemy's magic attack.","etypeId":6,"traits":[{"code":22,"dataId":5,"value":0.06}],"iconIndex":448,"name":"Phantasmal Scarf","note":"<Upgrade Slots: 1>","params":[0,5,0,0,2,2,5,0],"price":300},
-{"id":56,"atypeId":1,"description":"Reduces damage taken by magic attacks by 10%, but\nincreases the damage taken by physical attacks by 10%.","etypeId":9,"traits":[{"code":23,"dataId":7,"value":0.9},{"code":23,"dataId":6,"value":1.1}],"iconIndex":127,"name":"The Warden's Trade-off","note":"<Cannot Discard>\n<Cannot Rename>","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":57,"atypeId":1,"description":"A tome containing the information\nnecessary to cast \\is[47].","etypeId":8,"traits":[{"code":43,"dataId":47,"value":1}],"iconIndex":375,"name":"Dark Orb (Tome)","note":"<Cannot Rename>","params":[0,0,0,0,0,0,0,0],"price":300},
-{"id":58,"atypeId":1,"description":"Boosts DEF and MDF by 10% each.","etypeId":9,"traits":[{"code":21,"dataId":3,"value":1.1},{"code":21,"dataId":5,"value":1.1}],"iconIndex":126,"name":"Forgotten General's Resistance","note":"<Cannot Discard>\n<Cannot Rename>","params":[0,0,0,0,0,0,0,0],"price":0},
-{"id":59,"atypeId":1,"description":"An ancient necklace that allows the wearer to leech\ntheir target's life force, equal to 3% of damage dealt.","etypeId":6,"traits":[],"iconIndex":522,"name":"Soulstealer's Necklace","note":"<HP Life Steal Physical: +3%>\n<HP Life Steal Magical: +3%>\n<HP Life Steal Certain: +3%>","params":[0,0,0,0,0,0,0,0],"price":1000},
-{"id":60,"atypeId":1,"description":"Padded leather gloves that combine comfort and\npracticality. They once belonged to Henry.","etypeId":6,"traits":[{"code":22,"dataId":0,"value":0.04},{"code":22,"dataId":2,"value":0.02}],"iconIndex":481,"name":"Henry's Gloves","note":"<Disassemble Pool: Basic>\nx2-x3 Leather: 100%\n</Disassemble Pool: Basic>","params":[0,0,2,0,0,0,2,0],"price":250},
-{"id":61,"atypeId":1,"description":"A clump of dense green slime, with bonds similar to that\nof a crystal. Can be equipped or sold for a good price.","etypeId":6,"traits":[],"iconIndex":340,"name":"Condensed Green Slime","note":"","params":[3,3,1,1,1,1,1,0],"price":120},
-{"id":62,"atypeId":1,"description":"A hunk of dense blue slime, with the luster of a of\na crystal. Can be equipped or sold for a good price.","etypeId":6,"traits":[],"iconIndex":359,"name":"Condensed Blue Slime","note":"<Upgrade Slots: 1>","params":[5,5,2,2,2,2,2,0],"price":180},
-{"id":63,"atypeId":6,"description":"A massive clump of rat fur stuck together so solidly\nthat it's practically a shield in its own right.","etypeId":2,"traits":[],"iconIndex":333,"name":"Tough Pelt","note":"<Equip Requirement>\nclass: Knight\nclass: Cleric\n</Equip Requirement>\n\n<Disassemble Pool: Basic>\nx7-x15 Rat Fur: 100%\n</Disassemble Pool: Basic>","params":[0,0,0,1,0,0,0,0],"price":50},
-{"id":64,"atypeId":1,"description":"A pristine claw once belonging to a very large rat.","etypeId":6,"traits":[],"iconIndex":326,"name":"Rat Claw","note":"","params":[0,0,3,0,0,0,0,0],"price":80},
-{"id":65,"atypeId":1,"description":"A tribal horn that makes one's voice boom as loud\nas an avalanche. Provides immunity to \\it[21]\\c[0].","etypeId":6,"traits":[{"code":14,"dataId":21,"value":1}],"iconIndex":252,"name":"Horn","note":"","params":[0,0,0,0,0,0,0,0],"price":100},
-{"id":66,"atypeId":1,"description":"A small hand-held mirror that allows you to watch the\nenemy from an angle. Provides immunity to \\it[20]\\c[0].","etypeId":6,"traits":[{"code":14,"dataId":20,"value":1}],"iconIndex":283,"name":"Pocket Mirror","note":"","params":[0,0,0,0,0,0,0,0],"price":100},
-{"id":67,"atypeId":1,"description":"A small bell that can be hung on one's hair, jingling\nto keep them awake. Provides immunity to \\it[22]\\c[0].","etypeId":6,"traits":[{"code":14,"dataId":22,"value":1}],"iconIndex":254,"name":"Bell","note":"","params":[0,0,0,0,0,0,0,0],"price":100},
-{"id":68,"atypeId":1,"description":"A basic pair of gloves that most Banditos can\nbe found wearing. They boost your HIT and CRI.","etypeId":6,"traits":[{"code":22,"dataId":0,"value":0.01},{"code":22,"dataId":2,"value":0.01}],"iconIndex":174,"name":"Bandito Gloves","note":"<Disassemble Pool: Basic>\nx1 Leather: 100%\n</Disassemble Pool: Basic>","params":[0,0,1,0,0,0,0,0],"price":40},
-{"id":69,"atypeId":1,"description":"A curious ring with a fine emerald as its centerpiece.\nIt mysteriously boosts the vigor of its holder.","etypeId":6,"traits":[],"iconIndex":176,"name":"Emerald Ring","note":"<Upgrade Slots: 1>","params":[8,0,0,3,0,5,0,0],"price":250},
-{"id":70,"atypeId":1,"description":"A strange ring with a fine ruby as its centerpiece.\nIt mysteriously boosts the strength of its holder.","etypeId":6,"traits":[],"iconIndex":513,"name":"Ruby Ring","note":"<Upgrade Slots: 1>","params":[0,8,3,0,5,0,0,0],"price":250},
-{"id":71,"atypeId":1,"description":"A rather clean fang that once belonged to\na goblin. It was dislodged during battle.","etypeId":6,"traits":[],"iconIndex":325,"name":"Goblin Fang","note":"<Upgrade Slots:","params":[0,0,5,0,0,0,0,0],"price":120},
-{"id":72,"atypeId":1,"description":"A group of dense red slime, with the texture of a of\na gem. Can be equipped or sold for a pretty good price.","etypeId":6,"traits":[],"iconIndex":358,"name":"Condensed Red Slime","note":"<Upgrade Slots: 2>","params":[7,7,3,3,3,3,3,0],"price":240},
-{"id":73,"atypeId":1,"description":"A generic glass shard you found laying around.\nIncreases ATK by 25%, but cuts into you as well.","etypeId":6,"traits":[{"code":21,"dataId":2,"value":1.25}],"iconIndex":554,"name":"Shard of Glass","note":"<Passive State: 34>","params":[0,0,0,0,0,0,0,0],"price":10},
-{"id":74,"atypeId":1,"description":"A flake of bat skin with a bit of the Blazing Sands's\nmagic within. Imbues attacks with the power of Wind.","etypeId":6,"traits":[{"code":31,"dataId":7,"value":1}],"iconIndex":329,"name":"Enchanted Bat Skin","note":"<Upgrade Slots: 1>","params":[0,0,0,0,0,0,10,0],"price":100},
-{"id":75,"atypeId":1,"description":"A small charm with a bead of jade at the end. It's said to\nguide lost souls to the afterlife. Boosts received healing.","etypeId":6,"traits":[{"code":23,"dataId":2,"value":1.25}],"iconIndex":515,"name":"Jade Charm","note":"<Upgrade Slots: 2>","params":[0,6,0,0,2,4,0,0],"price":400}
+  null,
+  {
+    "id": 1,
+    "atypeId": 2,
+    "description": "A set of armor given to you by the Solus Town\nVillage Headman. It's very dusty, but unused.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 438,
+    "name": "Squire Armor",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 2,
+    "atypeId": 3,
+    "description": "Green robes woven by Matilda. They have some\nmagical defense; physical, not so much.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 440,
+    "name": "Apprentice Robes",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(2));\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      3,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 3,
+    "atypeId": 4,
+    "description": "Generic vestments that can probably be found\nin a magic shop. A good start for a cleric.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 623,
+    "name": "Training Vestments",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(3));\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      3,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 4,
+    "atypeId": 5,
+    "description": "A run-of-the-mill leather cloak owned by\nan ex-Bandito. Dyed red to fit her style.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 455,
+    "name": "Novice Leathers",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(4));\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      1,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 5,
+    "atypeId": 1,
+    "description": "A simple hat worn by a simple traveler. Tip it to\nyour neighbor, or your other neighbor, or both!",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 162,
+    "name": "Traveler Hat",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 6,
+    "atypeId": 1,
+    "description": "Crafted with fine yarn. Provides comfort,\nbut not much defense. Or color.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 443,
+    "name": "Traveler Shirt",
+    "note": "<Hit Damage Sound: Equip3, 90, 150, 0>\n<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 7,
+    "atypeId": 1,
+    "description": "The ideal boots for hikes around your hometown, though\nthe soles quickly give out after leaving flat land.",
+    "etypeId": 5,
+    "traits": [],
+    "iconIndex": 529,
+    "name": "Traveler Boots",
+    "note": "<Can Sell>\n\n<Custom Buy Show Eval>\nvisible = $gameParty.members().contains($gameActors.actor(1));\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 8,
+    "atypeId": 1,
+    "description": "It's a soldier's helmet. What more is there to say?",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 163,
+    "name": "Soldier Helmet",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 80
+  },
+  {
+    "id": 9,
+    "atypeId": 2,
+    "description": "It's a soldier's armor. What more is there to say?",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 170,
+    "name": "Soldier Plate Armor",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 10,
+    "atypeId": 2,
+    "description": "It's a soldier's greaves. What more is there to say?",
+    "etypeId": 5,
+    "traits": [],
+    "iconIndex": 172,
+    "name": "Soldier Greaves",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      6,
+      0
+    ],
+    "price": 60
+  },
+  {
+    "id": 11,
+    "atypeId": 6,
+    "description": "It's a soldier's shield. What more is there to say?",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 160,
+    "name": "Soldier Shield",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 80
+  },
+  {
+    "id": 12,
+    "atypeId": 1,
+    "description": "When people see this on your head, they'll be sure to\ncompliment you! But how does it boost your MHP and MMP?",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 457,
+    "name": "Cool-Looking Hat",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1 Feather: 100%\nx1-2 Yarn: 80%\n</Disassemble Pool: Basic>",
+    "params": [
+      8,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 13,
+    "atypeId": 8,
+    "description": "Some basic leather armor. It's has a metal lining\non the inside, providing a little extra defense.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 434,
+    "name": "Leather Gambeson",
+    "note": "<Disassemble Pool: Basic>\nx1-2 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 15
+  },
+  {
+    "id": 14,
+    "atypeId": 1,
+    "description": "Leather boots fortified with metal. They don't give\nmuch defense, but they make movement easier.",
+    "etypeId": 5,
+    "traits": [],
+    "iconIndex": 529,
+    "name": "Hiking Boots",
+    "note": "<Disassemble Pool: Basic>\nx1-2 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      4,
+      0
+    ],
+    "price": 10
+  },
+  {
+    "id": 15,
+    "atypeId": 1,
+    "description": "One of those cool floppy hats you see on the\nwizards in books. Provides some extra magic ability.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.01
+      }
+    ],
+    "iconIndex": 165,
+    "name": "Floppy Hat",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-x2 item 51: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      3,
+      0,
+      1,
+      1,
+      1,
+      0,
+      0
+    ],
+    "price": 12
+  },
+  {
+    "id": 16,
+    "atypeId": 1,
+    "description": "They don't brace your wrists much, but they\ndo provide more magical power.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 734,
+    "name": "Copper Wristbraces",
+    "note": "<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      2,
+      0,
+      0,
+      2,
+      1,
+      0,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 17,
+    "atypeId": 1,
+    "description": "While it does help defend against magical attacks,\nit also reduces the power of your own.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 179,
+    "name": "Anti-Magic Charm",
+    "note": "<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      -3,
+      3,
+      0,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 18,
+    "atypeId": 10,
+    "description": "A unique style of Bandito uniform with a\nfocus on evasion rather than raw defense.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 450,
+    "name": "Bandito Cloak",
+    "note": "<Disassemble Pool: Basic>\nx1-2 item 51: 100%\nx1 Leather: 60%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      1,
+      0
+    ],
+    "price": 30
+  },
+  {
+    "id": 19,
+    "atypeId": 2,
+    "description": "Steel is basically like upgraded iron. So this\nis basically an upgrade of any iron armor.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 170,
+    "name": "Steel Plate Armor",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 20%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      7,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "price": 80
+  },
+  {
+    "id": 20,
+    "atypeId": 6,
+    "description": "A small wooden shield reinforced by a steel ring. It\nwon't grant too much of a defense boost, but it's cheap.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 502,
+    "name": "Wooden Buckler",
+    "note": "<Disassemble Pool: Advanced>\nx2-5 Wood: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 30
+  },
+  {
+    "id": 21,
+    "atypeId": 7,
+    "description": "A heavy shield that packs quite a good defense\nboost. Not for the weak-hearted... or weak.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 161,
+    "name": "Steel Shield",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 20%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "price": 60
+  },
+  {
+    "id": 22,
+    "atypeId": 1,
+    "description": "One of those cool helmets that you see knights\nwearing in books and stuff. Looks awesome.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 164,
+    "name": "Classic Helmet",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 23,
+    "atypeId": 1,
+    "description": "The floppier the hat, the stronger the magic.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.02
+      }
+    ],
+    "iconIndex": 693,
+    "name": "Floppier Hat",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-x3 item 51: 100%\nx1 Yarn: 70%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      8,
+      0,
+      1,
+      4,
+      2,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 24,
+    "atypeId": 3,
+    "description": "They may not look too special, but they've been\nenchanted to have some decently strong magic.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 443,
+    "name": "Gray Robes",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-x4 item 51: 100%\nx1-x2 Yarn: 80%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      1,
+      0,
+      3,
+      0,
+      6,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 25,
+    "atypeId": 4,
+    "description": "Vestments crafted for clerics who have a true\nconnection with Trailia. They're pretty good!",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 168,
+    "name": "Prayer Vestments",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-3 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      1,
+      0,
+      3,
+      0,
+      7,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 26,
+    "atypeId": 1,
+    "description": "The shadows within are contained, but slipping on the ring still\nevokes a chilling sensation. Reduces incoming \\nl[9] damage by 20%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 791,
+    "name": "Ring of Shadows",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 250
+  },
+  {
+    "id": 27,
+    "atypeId": 1,
+    "description": "Make movement easier than ever with the newest\nmodel of \\ia[14]! Made for pro travelers.",
+    "etypeId": 5,
+    "traits": [],
+    "iconIndex": 704,
+    "name": "Voyager Boots",
+    "note": "<Disassemble Pool: Basic>\nx1-3 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      8,
+      0
+    ],
+    "price": 25
+  },
+  {
+    "id": 28,
+    "atypeId": 5,
+    "description": "Soft red leathers with a gold trim on the bottom.\nLooks sweet, feels sweet, and boosts sweet.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 445,
+    "name": "Red Leathers",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-3 Yarn: 100%\nx1-x3 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      4,
+      0
+    ],
+    "price": 80
+  },
+  {
+    "id": 29,
+    "atypeId": 1,
+    "description": "Matches perfectly with the \\ia[28]. Boosts CRI.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 466,
+    "name": "Red Mask",
+    "note": "<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 30,
+    "atypeId": 1,
+    "description": "Increases ATK and MAT by 10%.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.1
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 126,
+    "name": "Laeryidyean's Strength",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 31,
+    "atypeId": 1,
+    "description": "A classy hat that belonged to your brother for many years.\nHe gifted it to you, wishing you good luck saving the world.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 541,
+    "name": "Matt's Fedora",
+    "note": "<Menu Category: Memorabilia>\n<Upgrade Slots: 2>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      20,
+      8,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 32,
+    "atypeId": 1,
+    "description": "A tome containing the information\nnecessary to cast \\is[37].",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 37,
+        "value": 1
+      }
+    ],
+    "iconIndex": 371,
+    "name": "Bubble (Tome)",
+    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(30);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 33,
+    "atypeId": 5,
+    "description": "A powerful set of leathers colored with a mesmerizing\nshade of red. Not made with real blood.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 446,
+    "name": "Blood-Red Leathers",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-4 Yarn: 100%\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      7,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 34,
+    "atypeId": 1,
+    "description": "A yarn-woven headband dyed with a bloody red identical\nto the \\ia[33]. Boosts physical lifesteal.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 585,
+    "name": "Blood-Red Headband",
+    "note": "<HP Life Steal Physical: +1%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      6,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 35,
+    "atypeId": 4,
+    "description": "A set of bright pink vestments. Even if pink ain't\nyour style, the sweet boosts are totally worth it!",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 439,
+    "name": "Pink Vestments",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-4 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      3,
+      0,
+      4,
+      0,
+      9,
+      0,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 36,
+    "atypeId": 2,
+    "description": "An old suit of armor left to crystallize in a cave for\nyears. The tough mineral provides a solid defense boost.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 169,
+    "name": "Crystalline Plate Armor",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      -2,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 37,
+    "atypeId": 3,
+    "description": "It feels like dirt, but it still has the softness\nof silk. Reduces damage taken by \\nl[6] attacks.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 581,
+    "name": "Earthen Grassrobes",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-3 Rock: 100%\nx2-x4 item 51: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      3,
+      0,
+      5,
+      0,
+      8,
+      0,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 38,
+    "atypeId": 1,
+    "description": "A mystical orb containing the power of an unknown\nplanet inside of it. Increases \\nl[6] resistance.",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 583,
+    "name": "Terra",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      8,
+      0,
+      0,
+      1,
+      2,
+      0,
+      0
+    ],
+    "price": 200
+  },
+  {
+    "id": 39,
+    "atypeId": 1,
+    "description": "The bracing is even worse than before,\nbut the magic is definitely stronger.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 177,
+    "name": "Iron Wristbraces",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      4,
+      0,
+      0,
+      4,
+      3,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 40,
+    "atypeId": 1,
+    "description": "Boots made out of a fine leather, boosting AGI, CRI,\nand EVA at the cost of less protection than metal boots.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      }
+    ],
+    "iconIndex": 467,
+    "name": "Leather Boots",
+    "note": "<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 60
+  },
+  {
+    "id": 41,
+    "atypeId": 1,
+    "description": "Slim black gloves that give you a better grip\non your weapon, boosting your HIT and CRI.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 174,
+    "name": "Black Gloves",
+    "note": "<Disassemble Pool: Basic>\nx1-x3 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 42,
+    "atypeId": 1,
+    "description": "Increases ATK by 10% but decreases DEF by 20%.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.1
+      },
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 127,
+    "name": "Giant Goblin's Rage",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 43,
+    "atypeId": 1,
+    "description": "The warding effect of this charm is much stronger than\nusual. Its negative effect on the user has also increased.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.95
+      }
+    ],
+    "iconIndex": 707,
+    "name": "Enchanted Anti-Magic Charm",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      -6,
+      6,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 44,
+    "atypeId": 2,
+    "description": "A set of heavily reinforced greaves meant to\nboost your defense and agility simultaneously.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      }
+    ],
+    "iconIndex": 469,
+    "name": "Knight's Greaves",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather: 4\nWorn Cloth: 5\nIron Cluster: 4\n</Synthesis Ingredients>\n<Mask Name: Protective Footwear>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      16,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 45,
+    "atypeId": 2,
+    "description": "A set of heavily enforced gauntlets. They've been\nspecially made to provide defense and support attacks.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 493,
+    "name": "Knight's Gauntlets",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nIron Cluster: 7\n</Synthesis Ingredients>\n<Mask Name: Protective Armwear>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      3,
+      4,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 46,
+    "atypeId": 1,
+    "description": "Taking speed EVEN FURTHER BEYOND!!\nFurther boosts your AGI, EVA, and CRI.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.02
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 573,
+    "name": "Speedster Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nFeather: 2\nBat Wing: 2\nYarn\nWind Essence\n</Synthesis Ingredients>\n<Mask Name: Speedy Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\nx1 Feather: 100%\nx1 Feather: 50%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      40,
+      0
+    ],
+    "price": 180
+  },
+  {
+    "id": 47,
+    "atypeId": 6,
+    "description": "A shield offering a respectable amount of defense, while\nmaintaining its \"light\" status and minimizing AGI loss.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 160,
+    "name": "Copper Buckler",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCopper Cluster: 8\n</Synthesis Ingredients>\n<Mask Name: Respectable Light Shield>\n\n<Disassemble Pool: Advanced>\nx1-2 Copper Cluster: 60%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      4,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "price": 80
+  },
+  {
+    "id": 48,
+    "atypeId": 7,
+    "description": "A well-made copy of the shields used by Tellurian knights. However,\nit's not as strong, and it doesn't have the beautiful red coloring.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 530,
+    "name": "Replica Knight's Shield",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSteel Ingot: 3\n</Synthesis Ingredients>\n<Mask Name: Heavy Shield>\n\n<Disassemble Pool: Advanced>\nx1 Steel Ingot: 60%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      7,
+      0,
+      0,
+      -2,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 49,
+    "atypeId": 1,
+    "description": "Allows the wearer to look a bit into the future, helping them predict\nthe enemy's moves. Reduces enemy crit chance against the user by 8%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.08
+      }
+    ],
+    "iconIndex": 514,
+    "name": "Henry's Charm",
+    "note": "<Upgrade Slots: 1>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 250
+  },
+  {
+    "id": 50,
+    "atypeId": 1,
+    "description": "Allows the wearer to see the undead, preventing\nthem from being scared of the unknown.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 42,
+        "value": 2
+      }
+    ],
+    "iconIndex": 272,
+    "name": "Soulfire Lantern",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 51,
+    "atypeId": 2,
+    "description": "Armor consisting of several dark plates welded together.\nIt seems to almost absorb light. Reduces incoming \\nl[9] damage.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 435,
+    "name": "Shadowplate Armor",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Dark Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      5,
+      0,
+      12,
+      0,
+      3,
+      -3,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 52,
+    "atypeId": 3,
+    "description": "A set of mystical robes. They seem to almost be phasing\nin and out of another plane. Reduces incoming \\nl[8] damage.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 447,
+    "name": "Phantasmal Robes",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Light Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      6,
+      0,
+      6,
+      0,
+      12,
+      0,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 53,
+    "atypeId": 4,
+    "description": "A simple yet powerful set of vestments. The lining seems to be\nshinier, and it emanates magical power. Increases outgoing healing.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 736,
+    "name": "Phantasmal Vestments",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Healing: +5%>\n\n<Disassemble Pool: Basic>\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      5,
+      0,
+      6,
+      0,
+      14,
+      0,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 54,
+    "atypeId": 5,
+    "description": "Otherworldly leathers. The shadowy essence coursing\nthrough them allows you to rarely dodge magic attacks.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 456,
+    "name": "Shadowspec Leathers",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Dark Essence: 100%\n</Disassemble Pool: Advanced>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      3,
+      0,
+      6,
+      0,
+      3,
+      12,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 55,
+    "atypeId": 1,
+    "description": "A fancy and extremely powerful scarf. A quick whip\nof it can rarely reflect an enemy's magic attack.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 5,
+        "value": 0.06
+      }
+    ],
+    "iconIndex": 682,
+    "name": "Phantasmal Scarf",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      5,
+      0,
+      0,
+      2,
+      2,
+      5,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 56,
+    "atypeId": 1,
+    "description": "Reduces damage taken by magic attacks by 5%, but\nincreases damage taken by physical attacks by 20%.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.95
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 127,
+    "name": "The Warden's Trade-off",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 57,
+    "atypeId": 1,
+    "description": "A tome containing the information\nnecessary to cast \\is[47].",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 47,
+        "value": 1
+      }
+    ],
+    "iconIndex": 375,
+    "name": "Dark Orb (Tome)",
+    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(56);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 58,
+    "atypeId": 1,
+    "description": "Increases DEF and MDF by 10%.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.1
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 126,
+    "name": "Forgotten General's Resistance",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 59,
+    "atypeId": 1,
+    "description": "An ancient necklace that allows the wearer to leech\ntheir target's life force, equal to 3% of damage dealt.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 522,
+    "name": "Soulstealer's Necklace",
+    "note": "<Upgrade Slots: 2>\n<HP Life Steal: +3%>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 2500
+  },
+  {
+    "id": 60,
+    "atypeId": 1,
+    "description": "Padded leather gloves that combine comfort and\npracticality. They once belonged to Henry.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.06
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.015
+      }
+    ],
+    "iconIndex": 481,
+    "name": "Henry's Gloves",
+    "note": "<Disassemble Pool: Basic>\nx2-4 Leather: 100%\n</Disassemble Pool: Basic>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(46) >= 3;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "price": 250
+  },
+  {
+    "id": 61,
+    "atypeId": 1,
+    "description": "A clump of dense green gel, with bonds similar to that\nof a crystal. Can be equipped or sold for a good price.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 340,
+    "name": "Condensed Green Gel",
+    "note": "<Disassemble Pool: Advanced>\nx5-10 Green Gel: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      3,
+      3,
+      1,
+      1,
+      1,
+      1,
+      1,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 62,
+    "atypeId": 1,
+    "description": "A hunk of dense blue gel, with the luster of a of\na jewel. Can be equipped or sold for a good price.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 359,
+    "name": "Condensed Blue Gel",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx5-10 Blue Gel: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      5,
+      5,
+      2,
+      2,
+      2,
+      2,
+      2,
+      0
+    ],
+    "price": 180
+  },
+  {
+    "id": 63,
+    "atypeId": 6,
+    "description": "A massive clump of rat fur stuck together so solidly\nthat it's practically a shield in its own right.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 333,
+    "name": "Tough Pelt",
+    "note": "<Disassemble Pool: Basic>\nx4-10 Rat Fur: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 64,
+    "atypeId": 1,
+    "description": "A pristine claw once belonging to a very large rat.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 326,
+    "name": "Rat Claw",
+    "note": "",
+    "params": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 80
+  },
+  {
+    "id": 65,
+    "atypeId": 1,
+    "description": "A tribal horn that makes one's voice boom as loud\nas an avalanche. Provides immunity to \\it[21]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 2
+      }
+    ],
+    "iconIndex": 252,
+    "name": "Horn",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 66,
+    "atypeId": 1,
+    "description": "A small hand-held mirror that allows you to watch the\nenemy from an angle. Provides immunity to \\it[20]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 2
+      }
+    ],
+    "iconIndex": 283,
+    "name": "Pocket Mirror",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 67,
+    "atypeId": 1,
+    "description": "A small bell that can be hung on one's hair, jingling\nto keep them awake. Provides immunity to \\it[22]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 2
+      }
+    ],
+    "iconIndex": 254,
+    "name": "Bell",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 68,
+    "atypeId": 1,
+    "description": "A basic pair of gloves that most Banditos can\nbe found wearing. They boost your HIT and CRI.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.02
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 174,
+    "name": "Bandito Gloves",
+    "note": "<Disassemble Pool: Basic>\nx1 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 40
+  },
+  {
+    "id": 69,
+    "atypeId": 1,
+    "description": "A curious ring with a fine emerald as its centerpiece.\nIt mysteriously boosts the vigor of its holder.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 726,
+    "name": "Emerald Ring",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      8,
+      0,
+      0,
+      3,
+      0,
+      5,
+      0,
+      0
+    ],
+    "price": 250
+  },
+  {
+    "id": 70,
+    "atypeId": 1,
+    "description": "A strange ring with a fine ruby as its centerpiece.\nIt mysteriously boosts the strength of its holder.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 513,
+    "name": "Ruby Ring",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      8,
+      3,
+      0,
+      5,
+      0,
+      0,
+      0
+    ],
+    "price": 250
+  },
+  {
+    "id": 71,
+    "atypeId": 1,
+    "description": "A rather clean fang that once belonged to\na goblin. It was dislodged during battle.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 325,
+    "name": "Goblin Fang",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 72,
+    "atypeId": 1,
+    "description": "A group of dense red gel, with the texture of a of\na gem. Can be equipped or sold for a pretty good price.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 358,
+    "name": "Condensed Red Gel",
+    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx5-10 Red Gel: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      7,
+      7,
+      3,
+      3,
+      3,
+      3,
+      3,
+      0
+    ],
+    "price": 240
+  },
+  {
+    "id": 73,
+    "atypeId": 1,
+    "description": "A generic glass shard you found laying around.\nIncreases ATK by 25%, but cuts into you as well.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 2,
+        "value": 1.25
+      }
+    ],
+    "iconIndex": 554,
+    "name": "Shard of Glass",
+    "note": "<Passive State: 34>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 10
+  },
+  {
+    "id": 74,
+    "atypeId": 1,
+    "description": "A flake of bat skin with a little bit of magic\nwithin. Imbues attacks with the power of Wind.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 7,
+        "value": 1
+      }
+    ],
+    "iconIndex": 329,
+    "name": "Enchanted Bat Skin",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Wind Essence: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 75,
+    "atypeId": 1,
+    "description": "A small charm with a bead of jade at the end. It's said to guide\nlost souls to the afterlife. Increases received \\nl[11] by 50%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 11,
+        "value": 1.5
+      }
+    ],
+    "iconIndex": 515,
+    "name": "Jade Charm",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      6,
+      0,
+      0,
+      2,
+      4,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 76,
+    "atypeId": 1,
+    "description": "An arc-shaped headpiece that fits easily\nonto one's head. Increases magical stats.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 463,
+    "name": "Prayer Headpiece",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1 Tarantula Silk: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      8,
+      0,
+      1,
+      2,
+      4,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 77,
+    "atypeId": 1,
+    "description": "An intricate headpiece created using fine silk and a beautiful rose.\nIt boosts the wearer's outgoing healing by a small but noticeable 5%.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 519,
+    "name": "Rose Headpiece",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Healing: +5%>\n\n<Disassemble Pool: Advanced>\nx1-2 Tarantula Silk: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      5,
+      12,
+      0,
+      1,
+      6,
+      6,
+      0,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 78,
+    "atypeId": 1,
+    "description": "A peculiar piece of head armor that still contains the\nenergy of its previous owner. Increases \\nl[9] resistance.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 339,
+    "name": "Skull Hat",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSkeleton Skull\nDark Essence: 2\n</Synthesis Ingredients>\n<Mask Name: Peculiar Dark Head Armor>\n<Synthesis SE: Equip3>",
+    "params": [
+      5,
+      5,
+      0,
+      2,
+      0,
+      3,
+      0,
+      0
+    ],
+    "price": 40
+  },
+  {
+    "id": 79,
+    "atypeId": 1,
+    "description": "A legendary power bestowed upon you by Andrew.\nTriples your experience gain as long as it's equipped.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 3
+      }
+    ],
+    "iconIndex": 495,
+    "name": "Andrew's Guidance",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 80,
+    "atypeId": 1,
+    "description": "A legendary power bestowed upon you by Andrew.\nOverpowers your experience gain as long as it's equipped.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 10
+      },
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 10
+      }
+    ],
+    "iconIndex": 495,
+    "name": "Andrew's Guidance+",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 81,
+    "atypeId": 1,
+    "description": "A mass of dense white gel, with the feel of a precious\nstone. A powerful accessory that would be a waste to sell.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 345,
+    "name": "Condensed White Gel",
+    "note": "<Upgrade Slots: 3>",
+    "params": [
+      11,
+      11,
+      5,
+      5,
+      5,
+      5,
+      5,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 82,
+    "atypeId": 6,
+    "description": "A giant clump of Albino Rat fur stuck together so firmly that it's\npractically gained the properties of a metal. Provides immunity to \\it[36].",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 2
+      }
+    ],
+    "iconIndex": 501,
+    "name": "Metallic Rat Pelt",
+    "note": "<Upgrade Slots: 3>",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 83,
+    "atypeId": 1,
+    "description": "A strange leather charm that radiates a\nmagic reflecting aura. Increases MRF by 10%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 5,
+        "value": 0.1
+      }
+    ],
+    "iconIndex": 618,
+    "name": "Arcane Leather Charm",
+    "note": "<Upgrade Slots: 3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      9,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 84,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[25]Humble Beginnings\\c[0] set.\nA set of brown clothing.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 443,
+    "name": "Traveling Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 85,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[14]Prophecy Defiers\\c[0] set.\nA set of blue heavy armor.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 438,
+    "name": "Knight Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 86,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[2]. Part of the \\c[14]Prophecy Defiers\\c[0] set.\nA set of green robes.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 440,
+    "name": "Mage Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 87,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[3]. Part of the \\c[14]Prophecy Defiers\\c[0] set.\nA set of purple vestments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 623,
+    "name": "Cleric Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 88,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[14]Prophecy Defiers\\c[0] set.\nA set of red leathers.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 455,
+    "name": "Rogue Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 89,
+    "atypeId": 1,
+    "description": "Increases outgoing magical damage by 15%,\nbut also increases all MP costs by 30%.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.15
+      },
+      {
+        "code": 23,
+        "dataId": 4,
+        "value": 1.3
+      }
+    ],
+    "iconIndex": 127,
+    "name": "Water Elemental's Flow",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 90,
+    "atypeId": 2,
+    "description": "A jolly set of heavy armor for a knight.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 437,
+    "name": "Festive Plate Armor",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
+    "params": [
+      8,
+      0,
+      0,
+      6,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 91,
+    "atypeId": 3,
+    "description": "A merry set of robes for a mage.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 449,
+    "name": "Festive Robes",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
+    "params": [
+      8,
+      0,
+      0,
+      2,
+      0,
+      5,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 92,
+    "atypeId": 4,
+    "description": "A happy set of vestments for a cleric.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 454,
+    "name": "Festive Vestments",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
+    "params": [
+      8,
+      0,
+      0,
+      2,
+      0,
+      6,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 93,
+    "atypeId": 5,
+    "description": "A jovial set of leathers for a rogue.\nRestores 3% of MHP per turn.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 451,
+    "name": "Festive Leathers",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
+    "params": [
+      8,
+      0,
+      0,
+      3,
+      0,
+      0,
+      3,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 94,
+    "atypeId": 6,
+    "description": "Protect yourself, holiday style.\nMakes guarding twice as effective.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 1,
+        "value": 2
+      }
+    ],
+    "iconIndex": 538,
+    "name": "Candy Cane Shield",
+    "note": "<Upgrade Slots: 1>\n<Item Present Buy Price: 10>\n<Item Present Sell Price: 5>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 95,
+    "atypeId": 1,
+    "description": "A little music box that constantly plays a tune to keep\nyour head in the game. Provides immunity to \\it[23]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 2
+      }
+    ],
+    "iconIndex": 255,
+    "name": "Music Box",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 96,
+    "atypeId": 1,
+    "description": "A strange charm that provides immunity to\n\\it[21], \\it[20], \\it[22], and \\it[23].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 2
+      }
+    ],
+    "iconIndex": 511,
+    "name": "Vishnu's Charm",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nHorn\nPocket Mirror\nBell\nMusic Box\nSlime Scarf\n</Synthesis Ingredients>\n<Mask Name: Status Effect Preventer>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 97,
+    "atypeId": 6,
+    "description": "A powerful shield with the ability to ward away many ailments.\nCombines the effects of \\ia[96] and \\ia[82].",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 2
+      }
+    ],
+    "iconIndex": 507,
+    "name": "Vishnu's Shield",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nMetallic Rat Pelt\nVishnu's Charm\n</Synthesis Ingredients>\n<Mask Name: Powerful Debuff Blocker>",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 98,
+    "atypeId": 1,
+    "description": "A mysterious charm that acts similarly to the\n\\ia[17], minus the MAT decrease.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 617,
+    "name": "Leather Charm",
+    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx4-9 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      6,
+      0,
+      0
+    ],
+    "price": 200
+  },
+  {
+    "id": 99,
+    "atypeId": 1,
+    "description": "Even better boots than the \\ia[27]!\nThe ultimate traveler's footwear.",
+    "etypeId": 5,
+    "traits": [],
+    "iconIndex": 468,
+    "name": "Globetrotter Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 100,
+    "atypeId": 1,
+    "description": "An exquisite display of one's wealth, sure to\nhave heads turning when walking the streets.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 565,
+    "name": "Dapper-Looking Hat",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1 Feather: 100%\nx2-5 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      15,
+      3,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 200
+  },
+  {
+    "id": 101,
+    "atypeId": 1,
+    "description": "\\N[3] says that comets symbolize the death of an evil god from long ago. Once per battle,\nwhen the wearer's MP drops below 25%, they will instantly regenerate 50% of their MP.",
+    "etypeId": 8,
+    "traits": [],
+    "iconIndex": 574,
+    "name": "Comet Charm",
+    "note": "<Upgrade Slots: 2>\n<Passive State: 70>",
+    "params": [
+      0,
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 102,
+    "atypeId": 1,
+    "description": "Increases bits received at the end of battle by\n10%. Stacks if equipped on multiple party members.",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 64,
+        "dataId": 4,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 199,
+    "name": "Magic Coin",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 103,
+    "atypeId": 1,
+    "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the ten elements by 10%.",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 182,
+    "name": "Elemental Lace",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 104,
+    "atypeId": 1,
+    "description": "A beautifully crafted harp. Any hit on an enemy has a 40% chance to generate\na healing orb that will heal the most injured party member by 8% of damage dealt.",
+    "etypeId": 8,
+    "traits": [],
+    "iconIndex": 248,
+    "name": "Conjurer's Harp",
+    "note": "<Upgrade Slots: 2>\n<Passive State: 74>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 105,
+    "atypeId": 1,
+    "description": "A mysterious orb with a burning fire raging inside.\nIncreases ATK and MAT of party members and enemies by 15%.",
+    "etypeId": 8,
+    "traits": [],
+    "iconIndex": 352,
+    "name": "Orb of Wrath",
+    "note": "<Upgrade Slots: 2>\n<Passive State: 75>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 106,
+    "atypeId": 1,
+    "description": "A curious orb with blue waves crashing on shores inside.\nIncreases DEF and MDF of party members and enemies by 15%.",
+    "etypeId": 8,
+    "traits": [],
+    "iconIndex": 353,
+    "name": "Orb of Protection",
+    "note": "<Upgrade Slots: 2>\n<Passive State: 77>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 107,
+    "atypeId": 1,
+    "description": "Provides a lot of DEF and MDF, as well as nullifying a\nlot of incoming damage. However, you'll be a lot slower.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.8
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 334,
+    "name": "Giant Turtle Shell",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      10,
+      -80,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 108,
+    "atypeId": 7,
+    "description": "Best of luck to whoever dares attack the holder of \\ia[108].\nCombines the effects of several very powerful shields.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 21,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 20,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 22,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 23,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 36,
+        "value": 2
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.01
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.9
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 510,
+    "name": "Vishnu's Aegis",
+    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nVishnu's Shield\nTurtle Shield\nTellurian Knight's Bulwark\nThick-Skinned Herb: 15\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Damage-Soaking Debuff-Stopping Super-Shield>",
+    "params": [
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 6000
+  },
+  {
+    "id": 109,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[24]Retro\\c[0] set.\nAn old-school set of blue clothes.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 629,
+    "name": "Retro Knight Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nKnight Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 110,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[2]. Part of the \\c[24]Retro\\c[0] set.\nAn old-school set of green clothes.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 433,
+    "name": "Retro Mage Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nMage Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 111,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[3]. Part of the \\c[24]Retro\\c[0] set.\nAn old-school set of red clothes.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 630,
+    "name": "Retro Cleric Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nCleric Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 112,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[24]Retro\\c[0] set.\nAn old-school set of orange clothes.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 631,
+    "name": "Retro Rogue Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nRogue Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 113,
+    "atypeId": 1,
+    "description": "Extremely heavy boots that provide a great defensive boost.\nHowever, their size and weight slow the wearer down a LOT.",
+    "etypeId": 5,
+    "traits": [],
+    "iconIndex": 173,
+    "name": "Iron Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      -50,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 114,
+    "atypeId": 1,
+    "description": "A fancy scarf that allows you to quickly wipe down any\nslime that gets on you. Provides immunity to \\it[56]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 56,
+        "value": 2
+      }
+    ],
+    "iconIndex": 448,
+    "name": "Slime Scarf",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 115,
+    "atypeId": 1,
+    "description": "An asset for anyone who needs to be ready for\ntrouble on the dot. Provides HRG and CEV.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 180,
+    "name": "Vigilante's Charm",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nHenry's Charm\nCondensed White Gel\n</Synthesis Ingredients>\n<Mask Name: HRG/CEV Charm>\n\n<Disassemble Pool: Advanced>\nx1 Henry's Charm: 90%\nx1 Condensed White Gel: 90%\n</Disassemble Pool: Advanced>",
+    "params": [
+      11,
+      11,
+      5,
+      5,
+      5,
+      5,
+      0,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 116,
+    "atypeId": 7,
+    "description": "A nigh-impenetrable shield that stops the heaviest and hardest\nof attacks. Be careful not to drop it on your toes by accident.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 503,
+    "name": "Immovable Object",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 117,
+    "atypeId": 7,
+    "description": "An immovable object with the resiliance of a\nturtle is sure to give attackers a hard time.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.01
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.9
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 504,
+    "name": "Turtle Shield",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nImmovable Object\nGiant Turtle Shell\nTurtle Scute: 10\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Percentage-Based Damage Reducer>",
+    "params": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      -5,
+      0
+    ],
+    "price": 1500
+  },
+  {
+    "id": 118,
+    "atypeId": 1,
+    "description": "The bracelet is imbued with the power of revival.\nRevives the holder with a sliver of HP once, then breaks.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 166,
+    "name": "Phoenix Bracelet",
+    "note": "<Upgrade Slots: 3>\n\n</Synthesis Ingredients>\nPhoenix Feather Replica\nGold Ring\nSteel Ingot: 5\n</Synthesis Ingredients>\n<Mask Name: Auto Reviver>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 119,
+    "atypeId": 1,
+    "description": "Just like a phoenix, the bracelet has turned\nto ashes. It's completely useless now.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 616,
+    "name": "Broken Phoenix Bracelet",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 2
+  },
+  {
+    "id": 120,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[10]Chosen Champions\\c[0] set.\nA set of fire-red heavy armor.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 437,
+    "name": "Cavalier Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 121,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[2]. Part of the \\c[10]Chosen Champions\\c[0] set.\nA set of blood-red robes.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 627,
+    "name": "Sorcerer Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 122,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[3]. Part of the \\c[10]Chosen Champions\\c[0] set.\nA set of fire-red vestments.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 628,
+    "name": "Bishop Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 123,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[10]Chosen Champions\\c[0] set.\nA set of blood-red leathers.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 446,
+    "name": "Scapegrace Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 124,
+    "atypeId": 1,
+    "description": "A tome containing the information\nnecessary to cast \\is[83].",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 83,
+        "value": 1
+      }
+    ],
+    "iconIndex": 373,
+    "name": "Wyvern's Fury (Tome)",
+    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nBlank Tome\nDraconic Wand\nEnchanted Dragon Scale\nWind Catalyst\nWind Essence: 5\n</Synthesis Ingredients>\n<Mask Name: AoE Wind Spell>\n<Synthesis SE: Book2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 125,
+    "atypeId": 2,
+    "description": "The fully restored form of the heavy armor guarded\nby The Warden. Further reduces incoming \\nl[9] damage.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.85
+      }
+    ],
+    "iconIndex": 737,
+    "name": "True Shadowplate Armor",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowplate Armor\nTurtle Scute: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Heavy Armor>\n\n<Disassemble Pool: Advanced>\nx1-4 Turtle Scute: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      8,
+      0,
+      18,
+      0,
+      5,
+      -3,
+      0
+    ],
+    "price": 1200
+  },
+  {
+    "id": 126,
+    "atypeId": 3,
+    "description": "The properly mended form of the robes guarded by\nThe Warden. Further reduces incoming \\nl[8] damage.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 8,
+        "value": 0.85
+      }
+    ],
+    "iconIndex": 738,
+    "name": "True Phantasmal Robes",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nPhantasmal Robes\nIcy Gel: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Light Robes>\n\n<Disassemble Pool: Advanced>\nx1-4 Icy Gel: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      9,
+      0,
+      9,
+      0,
+      18,
+      0,
+      0
+    ],
+    "price": 1200
+  },
+  {
+    "id": 127,
+    "atypeId": 4,
+    "description": "The truly repaired form of the vestments guarded by\nThe Warden. Further strengthens outgoing healing.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 739,
+    "name": "True Phantasmal Vestments",
+    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Healing: +7.5%>\n\n<Synthesis Ingredients>\nPhantasmal Vestments\nTarantula Silk: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Basic Vestments>\n\n<Disassemble Pool: Advanced>\nx1-4 Tarantula Silk: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      7,
+      0,
+      9,
+      0,
+      21,
+      0,
+      0
+    ],
+    "price": 1200
+  },
+  {
+    "id": 128,
+    "atypeId": 5,
+    "description": "The properly powerful form of the leathers guarded\nby The Warden. Further boosts magic evasion.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.075
+      }
+    ],
+    "iconIndex": 740,
+    "name": "True Shadowspec Leathers",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nShadowspec Leathers\nFeral Bat Wing: 5\nShadowspec Ingot: 2\n</Synthesis Ingredients>\n<Mask Name: Repaired Dark Leathers>\n\n<Disassemble Pool: Advanced>\nx1-4 Feral Bat Wing: 100%\nx1 Shadowspec Ingot: 60%\nx1 Shadowspec Ingot: 30%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      5,
+      0,
+      9,
+      0,
+      5,
+      18,
+      0
+    ],
+    "price": 1200
+  },
+  {
+    "id": 129,
+    "atypeId": 1,
+    "description": "It's about time to get in tune with nature, ain't\nit? Increases all outgoing elemental damage by 5%.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.05
+      }
+    ],
+    "iconIndex": 473,
+    "name": "Flower Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nYellow Flower: 10\nRed Flower: 10\nBlue Flower: 10\n</Synthesis Ingredients>\n<Mask Name: Natural Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 130,
+    "atypeId": 1,
+    "description": "Everyone's shoes need some nice padding on the inside!\nNot as fast as the \\ia[40], but boosts HRG.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 480,
+    "name": "Padded Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nWorn Cloth: 8\nTarantula Silk: 3\n</Synthesis Ingredients>\n<Mask Name: Comfortable Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      15,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 131,
+    "atypeId": 1,
+    "description": "Reduces incoming \\nl[3] damage by 10%. That's strange, since they\nonly cover your feet... but cold starts from the bottom up, right?",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 479,
+    "name": "Snow Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nFire Essence\nIce Essence\n</Synthesis Ingredients>\n<Mask Name: Insulated Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 132,
+    "atypeId": 1,
+    "description": "Combines the \\ia[129], \\ia[130],\nand \\ia[131] into one amazing set of footwear.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.005
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.005
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.95
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.025
+      }
+    ],
+    "iconIndex": 477,
+    "name": "Survivalist Boots",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nFlower Boots\nPadded Boots\nSnow Boots\nDragon Scale: 2\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: General Purpose Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 360
+  },
+  {
+    "id": 133,
+    "atypeId": 1,
+    "description": "Imagine having a great pair of shoes, then making them even\nbetter than before in every way? That's what these boots are.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.02
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 7,
+        "value": 0.01
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.9
+      },
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.05
+      }
+    ],
+    "iconIndex": 741,
+    "name": "Trailblazing Boots",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSurvivalist Boots\nElemental Lace\nHRG Scroll\nFire Essence: 3\nIce Essence: 3\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 1800
+  },
+  {
+    "id": 134,
+    "atypeId": 1,
+    "description": "A three-ply mask used to ward away ailments. A bit\ndifficult to breath in. Provides immunity to \\it[39]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 2
+      }
+    ],
+    "iconIndex": 632,
+    "name": "Cloth Mask",
+    "note": "<Synthesis Ingredients>\nWorn Cloth: 5\nTarantula Silk: 3\nAntidote\nRaw Truffle\nVial of Poison\n</Synthesis Ingredients>\n<Mask Name: Sickness Stopper>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Worn Cloth: 100%\nx1-2 Tarantula Silk: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 135,
+    "atypeId": 1,
+    "description": "It once belonged to a farmer.\nBoosts the wearer's AGI by 68%.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 6,
+        "value": 1.68
+      }
+    ],
+    "iconIndex": 462,
+    "name": "Bunny Hood",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 200
+  },
+  {
+    "id": 136,
+    "atypeId": 7,
+    "description": "A shield crafted for the royal knights of Telluria Castle.\nIt's remniscient of the shields made for knights long ago.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 496,
+    "name": "Tellurian Knight's Shield",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nReplica Knight's Shield\nThick-Skinned Herb: 5\n</Synthesis Ingredients>\n<Mask Name: Royal Heavy Shield>",
+    "params": [
+      0,
+      0,
+      0,
+      12,
+      0,
+      0,
+      -2,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 137,
+    "atypeId": 7,
+    "description": "A full strength shield saved for the most elite of the\nTellurian military due to how difficult it is to forge.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 497,
+    "name": "Tellurian Knight's Bulwark",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nTellurian Knight's Shield\nThick-Skinned Herb: 10\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Royal Heavy Shield>",
+    "params": [
+      0,
+      0,
+      0,
+      20,
+      0,
+      0,
+      -3,
+      0
+    ],
+    "price": 1500
+  },
+  {
+    "id": 138,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[25]Humble Beginnings\\c[0] set.\nA set of red leathers and a snazzy hat.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 466,
+    "name": "Bandito Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 139,
+    "atypeId": 1,
+    "description": "A stylish set of glasses that let's you get through the\ntoughest of weather. Provides immunity to \\it[88]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 88,
+        "value": 2
+      }
+    ],
+    "iconIndex": 3,
+    "name": "Storm Lens",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 140,
+    "atypeId": 1,
+    "description": "A long fuzzy scarf you can wrap around your neck\nto keep warm. Provides immunity to \\it[8]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 8,
+        "value": 2
+      }
+    ],
+    "iconIndex": 683,
+    "name": "Warm Scarf",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 141,
+    "atypeId": 6,
+    "description": "Made with an unknown cold material. Nullifies\nall incoming \\nl[3] damage while guarding.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 509,
+    "name": "Glacial Bulwark",
+    "note": "<Upgrade Slots: 2>\n<Replace Guard: 100>",
+    "params": [
+      0,
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 142,
+    "atypeId": 1,
+    "description": "A warm jacket you can drape over your\narmor. Reduces incoming \\nl[3] damage.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 452,
+    "name": "Snow Jacket",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx3-6 Worn Cloth: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      2,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 143,
+    "atypeId": 1,
+    "description": "A nifty magical accessory that provides\na sizable resistance to \\nl[3] attacks.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.6
+      }
+    ],
+    "iconIndex": 353,
+    "name": "Snow Globe",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nFrozen Jewel: 2\nIcy Gel: 5\nIce Cube: 30\n</Synthesis Ingredients>\n<Mask Name: Ice Resistance Accessory>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 800
+  },
+  {
+    "id": 144,
+    "atypeId": 2,
+    "description": "Expertly smithed armor made with fine tellurium\nplates. Enchanted to resist the darkness.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.8
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.95
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.95
+      }
+    ],
+    "iconIndex": 436,
+    "name": "Tellurium Plate Armor",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "params": [
+      15,
+      5,
+      0,
+      25,
+      0,
+      10,
+      -5,
+      0
+    ],
+    "price": 5000
+  },
+  {
+    "id": 145,
+    "atypeId": 3,
+    "description": "Professionally crafted robes reinforced with tellurium\nbetween layers of fabric. Enchanted to resist the darkness.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.8
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.95
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.95
+      }
+    ],
+    "iconIndex": 653,
+    "name": "Tellurium Robes",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "params": [
+      5,
+      15,
+      0,
+      12,
+      0,
+      25,
+      0,
+      0
+    ],
+    "price": 5000
+  },
+  {
+    "id": 146,
+    "atypeId": 4,
+    "description": "Adroitly enchanted vestments with an expensive\ntellurium trim. Enchanted to resist the darkness.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.8
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.95
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.95
+      }
+    ],
+    "iconIndex": 654,
+    "name": "Tellurium Vestments",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "params": [
+      10,
+      15,
+      0,
+      15,
+      0,
+      30,
+      0,
+      0
+    ],
+    "price": 5000
+  },
+  {
+    "id": 147,
+    "atypeId": 5,
+    "description": "Skillfully woven leathers stitched with the finest\ntellurium threads. Enchanted to resist the darkness.",
+    "etypeId": 4,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.8
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.95
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.95
+      }
+    ],
+    "iconIndex": 451,
+    "name": "Tellurium Leathers",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 31;\n</Custom Buy Show Eval>",
+    "params": [
+      10,
+      15,
+      0,
+      13,
+      0,
+      8,
+      30,
+      0
+    ],
+    "price": 5000
+  },
+  {
+    "id": 148,
+    "atypeId": 2,
+    "description": "An enchanted set of gauntlets that focuses on offense rather\nthan defense. Attacks debuff the target's DEF for a few turns.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 32,
+        "dataId": 91,
+        "value": 1
+      }
+    ],
+    "iconIndex": 656,
+    "name": "Dragonforce Gauntlets",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nKnight's Gauntlets\nEnchanted Dragon Scale\nDragon Scale: 6\nSteel Ingot: 3\nEarth Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Offensive Armwear>",
+    "params": [
+      0,
+      0,
+      10,
+      8,
+      0,
+      0,
+      -4,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 149,
+    "atypeId": 1,
+    "description": "A set of gloves covered with tough dragon scales.\nProvides the wearer with good offensive boosts.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.08
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.02
+      }
+    ],
+    "iconIndex": 657,
+    "name": "Scaly Gloves",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nBlack Gloves\nDragon Scale: 3\nVicious Herb: 10\n</Synthesis Ingredients>\n<Mask Name: Covered Gloves>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    "price": 150
+  },
+  {
+    "id": 150,
+    "atypeId": 1,
+    "description": "\"Confinement to your destiny is still confinement.\"\nIncreases outgoing healing by 10%.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 658,
+    "name": "Sorrowful Headpiece",
+    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Healing: +10%>",
+    "params": [
+      12,
+      25,
+      0,
+      2,
+      10,
+      10,
+      0,
+      0
+    ],
+    "price": 1200
+  },
+  {
+    "id": 151,
+    "atypeId": 1,
+    "description": "Taking head defense to the next level. Reduces\nincoming physical/magical damage by 5%.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.95
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.95
+      }
+    ],
+    "iconIndex": 659,
+    "name": "Dragon Scale Helmet",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1200
+  },
+  {
+    "id": 152,
+    "atypeId": 1,
+    "description": "BP keeps generating even on turns that you use it.",
+    "etypeId": 9,
+    "traits": [],
+    "iconIndex": 125,
+    "name": "Dilong's Wisdom",
+    "note": "<Cannot Rename>\n\nHardcoded in Olivia_OctoBattle.js.",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 153,
+    "atypeId": 1,
+    "description": "A brutal, sharp, and worn fang ripped off of a monster in\nbattle. Its sharpness has not been replicated by mankind.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 335,
+    "name": "Razor-Sharp Fang",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 154,
+    "atypeId": 1,
+    "description": "Nasty! If you can bear how gross this is, equipping\nit makes it easier to both land AND avoid crits.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.06
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.06
+      }
+    ],
+    "iconIndex": 1313,
+    "name": "Dismembered Eye",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 155,
+    "atypeId": 1,
+    "description": "Get your ideas written down so you don't forget your\nstrategy mid-battle. Provides immunity to \\it[94]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 94,
+        "value": 2
+      }
+    ],
+    "iconIndex": 236,
+    "name": "Battle Plan",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 156,
+    "atypeId": 1,
+    "description": "A pair of warm gloves bought from the\ngeneral store. Reduces incoming \\nl[3] damage.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 484,
+    "name": "Snow Gloves",
+    "note": "<Upgrade Slots: 1>\n\n<Disassemble Pool: Basic>\nx1-2 Leather: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 157,
+    "atypeId": 1,
+    "description": "A curious charm found laying at the base of Verdin's statue of the First\nKnight. Gives a variety of buffs that increase as your adventure continues.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 167,
+    "name": "Champion's Talisman",
+    "note": "<Custom Parameters>\n[maxhp, maxmp, atk, def, mat, mdf, agi, luk] = $gameSystem.championsTalisman();\n</Custom Parameters>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 158,
+    "atypeId": 1,
+    "description": "A curious slingshot found in the Lost Forest.\nIncreases damage dealt to bats by 100%.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 158,
+    "name": "Bat Sling",
+    "note": "<Passive State: 200>",
+    "params": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 159,
+    "atypeId": 1,
+    "description": "A critical piece of equipment for anyone wishing to brave nature. Provides\nimmunity to \\it[39], \\it[162], \\it[88], \\it[165], and \\it[94].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 162,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 88,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 165,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 94,
+        "value": 2
+      }
+    ],
+    "iconIndex": 709,
+    "name": "Forest Exploration Kit",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nCloth Mask\nTaut Rope\nStorm Lens\nArmor Bracing\nBattle Plan\n</Synthesis Ingredients>\n<Mask Name: Nature Immunities>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 160,
+    "atypeId": 1,
+    "description": "A rare charm that boosts gained EXP. Its namesake is\nthe goddess of wisdom, knowledge, and writing.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.05
+      }
+    ],
+    "iconIndex": 228,
+    "name": "Seshat's Charm",
+    "note": "<Upgrade Slots: 1>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 161,
+    "atypeId": 1,
+    "description": "This book contains the writings of a\nholy being. Further increases gained EXP.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 712,
+    "name": "Seshat's Tome",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSeshat's Charm: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 400
+  },
+  {
+    "id": 162,
+    "atypeId": 1,
+    "description": "Many lessons of Seshat have been written in the pages\nof this long read. Increases gained EXP even more.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.15
+      }
+    ],
+    "iconIndex": 713,
+    "name": "Seshat's Teachings",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSeshat's Tome: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1600
+  },
+  {
+    "id": 163,
+    "atypeId": 1,
+    "description": "A chunk of dense icy gel, with the conchoidal properties of\nfine quartz. Can be equipped or sold for a pretty good price.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 21,
+        "dataId": 3,
+        "value": 1.05
+      },
+      {
+        "code": 21,
+        "dataId": 5,
+        "value": 1.05
+      }
+    ],
+    "iconIndex": 342,
+    "name": "Condensed Icy Gel",
+    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx5-10 Icy Gel: 100%\n</Disassemble Pool: Advanced>",
+    "params": [
+      9,
+      9,
+      4,
+      4,
+      4,
+      4,
+      4,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 164,
+    "atypeId": 1,
+    "description": "A tome containing the information\nnecessary to cast \\is[121].",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 121,
+        "value": 1
+      }
+    ],
+    "iconIndex": 369,
+    "name": "Ice II (Tome)",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 165,
+    "atypeId": 1,
+    "description": "A stylish silver headband with a cloth lining that makes it sit comfortably\naround one's head. Provides a decent increase to physical life steal.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 460,
+    "name": "Silver Headband",
+    "note": "<Upgrade Slots: 2>\n<HP Life Steal Physical: +1.5%>",
+    "params": [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 166,
+    "atypeId": 1,
+    "description": "A tough silver mask lined with fine leather on\nthe inside. Provides a decent increase to CRI.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 465,
+    "name": "Silver Mask",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 167,
+    "atypeId": 1,
+    "description": "Floppy to the max! The tip of the hat now sags enough to attract stray\nmagical particles in the air, increasing its power more than ever.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 0,
+        "value": 1.03
+      }
+    ],
+    "iconIndex": 694,
+    "name": "Floppiest Hat",
+    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx4-x7 item 51: 100%\nx3-5 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      35,
+      0,
+      2,
+      15,
+      8,
+      0,
+      0
+    ],
+    "price": 800
+  },
+  {
+    "id": 168,
+    "atypeId": 1,
+    "description": "The problem with being faster than light is\nthat you're always living in darkness.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.02
+      }
+    ],
+    "iconIndex": 474,
+    "name": "Hermes Boots",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSpeedster Boots\nWind Catalyst\nEnchanted Bat Skin\nFeral Bat Wing: 5\nWind Essence: 5\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Ridiculously Fast Footwear>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      80,
+      0
+    ],
+    "price": 1800
+  },
+  {
+    "id": 169,
+    "atypeId": 1,
+    "description": "Grants various stat boosts that lower in strength based on how\nmany party members are downed, eventually having a negative effect.",
+    "etypeId": 9,
+    "traits": [],
+    "iconIndex": 127,
+    "name": "Ethereal Bat's Spirit",
+    "note": "<Passive State: 119 to 122>\n<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 170,
+    "atypeId": 1,
+    "description": "An upgraded scarf that provides immunity\nto both \\it[8]\\c[0] and \\it[89]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 8,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 89,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 742,
+    "name": "Warmer Scarf",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nWarm Scarf\nFrozen Jewel\nIce Cube: 10\nIce Essence: 3\n</Synthesis Ingredients>\n<Mask Name: Better Cold State Protection>\n<Synthesis SE: Equip3>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 171,
+    "atypeId": 1,
+    "description": "The complete work of a god, holier than any\nmanmade text. Increases gained EXP to the max.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 714,
+    "name": "Seshat's Opus",
+    "note": "<Upgrade Slots: 4>\n\n<Synthesis Ingredients>\nSeshat's Teachings: 4\n</Synthesis Ingredients>\n<Mask Name: EXR Increaser Tier 4>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 6400
+  },
+  {
+    "id": 172,
+    "atypeId": 1,
+    "description": "From lush forests to frozen wastelands, you have conquered Telluria Field. Combines the\n\\ia[159], \\ia[143], \\ia[210], \\ia[158], and \\ia[170].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 39,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 162,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 88,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 165,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 94,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 8,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 89,
+        "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 6,
+        "value": 0.5
+      },
+      {
+        "code": 11,
+        "dataId": 7,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 354,
+    "name": "Bionomic Globe",
+    "note": "<Upgrade Slots: 3>\n\n<Passive State: 199, 200>\n\n<Element Amplify Ice: +20%>\n<Element Amplify Earth: +20%>\n<Element Amplify Wind: +20%>\n\n<Synthesis Ingredients>\nForest Exploration Kit\nSnow Globe\nRing of the Forest\nBat Sling\nWarmer Scarf\nEnchanted Dragon Scale: 3\nFrozen Jewel: 5\nEarth Essence: 5\nPlant Essence: 5\nWind Essence: 5\nIce Essence: 5\n</Synthesis Ingredients>\n<Mask Name: Telluria Field Conquerer>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 4000
+  },
+  {
+    "id": 173,
+    "atypeId": 1,
+    "description": "A curious accessory that helps your eyesight,\nallowing you to hit your targets more often.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.12
+      }
+    ],
+    "iconIndex": 719,
+    "name": "Gazer Charm",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 174,
+    "atypeId": 1,
+    "description": "Although the gold is clearly fake, or at least low carat, it still\ncarries a beautiful sheen. Provides a large amount of MMP and some MRG.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 8,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 464,
+    "name": "Faux-Gold Headband",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      75,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 175,
+    "atypeId": 1,
+    "description": "Look right here, I'm not the one you want!\nProvides immunity to \\it[82]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 82,
+        "value": 2
+      }
+    ],
+    "iconIndex": 233,
+    "name": "Wanted Poster",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 176,
+    "atypeId": 1,
+    "description": "Disables all experience gain, in case you would like to\nfarm an area without breaking progression by over-leveling.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 9,
+        "value": 0
+      }
+    ],
+    "iconIndex": 225,
+    "name": "EXP Suppressor",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 10
+  },
+  {
+    "id": 177,
+    "atypeId": 1,
+    "description": "Advanced sand-warping technology used by ancient civilizations\nto prevent oversleeping. Provides immunity to \\it[149]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 149,
+        "value": 2
+      }
+    ],
+    "iconIndex": 280,
+    "name": "Sleepy Hourglass",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 178,
+    "atypeId": 1,
+    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides\nimmunity to \\it[7], \\it[82], \\it[149], and \\it[125].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 7,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 82,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 149,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 125,
+        "value": 2
+      }
+    ],
+    "iconIndex": 722,
+    "name": "Fiery Tablet",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 179,
+    "atypeId": 6,
+    "description": "An even tighter chunk of rat fur, providing\nmuch more DEF than most light shields.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 743,
+    "name": "Resiliant Pelt",
+    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Basic>\nx8-20 Rat Fur: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      0,
+      12,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 180,
+    "atypeId": 1,
+    "description": "All semblance of actual bracing has been lost; however, the magical\npower of these wristbraces has reached the highest potential.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 735,
+    "name": "Silver Wristbraces",
+    "note": "<Upgrade Slots: 2>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 100%\nx2-4 Iron Cluster: 50%\nx3-6 Iron Cluster: 25%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      8,
+      0,
+      0,
+      8,
+      6,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 181,
+    "atypeId": 1,
+    "description": "Removing the gems in each ring and affixing both of them to the\n\\ia[173] results in the creation of this powerful accessory.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.08
+      }
+    ],
+    "iconIndex": 727,
+    "name": "Charm of Duality",
+    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nGazer Charm\nRuby Ring\nEmerald Ring\n</Synthesis Ingredients>\n<Mask Name: Combination Charm>",
+    "params": [
+      8,
+      8,
+      3,
+      3,
+      5,
+      5,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 182,
+    "atypeId": 1,
+    "description": "A tome containing the information\nnecessary to cast \\is[57].",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 43,
+        "dataId": 57,
+        "value": 1
+      }
+    ],
+    "iconIndex": 375,
+    "name": "Soul Shackles (Tome)",
+    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSwitches.value(53);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300
+  },
+  {
+    "id": 183,
+    "atypeId": 6,
+    "description": "Difficult to forge, and its price reflects that. Provides DEF on\npar with some heavy shields while remaining light and non-obstructive.",
+    "etypeId": 2,
+    "traits": [],
+    "iconIndex": 767,
+    "name": "Silver Buckler",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      7,
+      0,
+      0,
+      -1,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 184,
+    "atypeId": 1,
+    "description": "Desperate for attention, this candle draws all the fire to it,\nleaving you without any. Provides immunity to \\it[7]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 7,
+        "value": 2
+      }
+    ],
+    "iconIndex": 274,
+    "name": "Selfish Candle",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 185,
+    "atypeId": 1,
+    "description": "The upgrades continue! Tellurium has enhanced\nthe elemental flow of these wristbraces.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.05
+      }
+    ],
+    "iconIndex": 770,
+    "name": "Fiery Wristbraces",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
+    "params": [
+      0,
+      16,
+      0,
+      0,
+      16,
+      10,
+      0,
+      0
+    ],
+    "price": 2000
+  },
+  {
+    "id": 186,
+    "atypeId": 1,
+    "description": "Tying yourself to a nearby tree or rock makes it hard for\nthe wind to knock you back. Provides immunity to \\it[162]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 162,
+        "value": 2
+      }
+    ],
+    "iconIndex": 275,
+    "name": "Taut Rope",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 187,
+    "atypeId": 1,
+    "description": "Properly braced armor prevents hard impacts from\ndenting it. Provides immunity to \\it[165]\\c[0].",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 165,
+        "value": 2
+      }
+    ],
+    "iconIndex": 409,
+    "name": "Armor Bracing",
+    "note": "",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 188,
+    "atypeId": 7,
+    "description": "An ancient shield forged a millenium ago for the chosen hero. Specially\nenchanted to provide immunity to \\it[163]\\c[0], \\c[18]Apocalypse\\c[0]'s signature move.",
+    "etypeId": 2,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.9
+      },
+      {
+        "code": 14,
+        "dataId": 163,
+        "value": 2
+      }
+    ],
+    "iconIndex": 506,
+    "name": "Shield of the Hero",
+    "note": "<Upgrade Slots: 3>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([7, 14, 'A']);\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      12,
+      0,
+      12,
+      -2,
+      0
+    ],
+    "price": 5000
+  },
+  {
+    "id": 189,
+    "atypeId": 1,
+    "description": "Tellurium and imp blood have enhanced this magic equip. Attacks have a 60% chance\nto generate an orb that heals the lowest HP party member by 12% of damage dealt.",
+    "etypeId": 8,
+    "traits": [],
+    "iconIndex": 774,
+    "name": "Fiery Harp",
+    "note": "<Upgrade Slots: 3>\n<Passive State: 166>\n\n<Synthesis Ingredients>\nConjurer's Harp\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Harp>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 2000
+  },
+  {
+    "id": 190,
+    "atypeId": 1,
+    "description": "Increases outgoing elemental damage by a\nwhopping 20%. Tellurium is powerful!",
+    "etypeId": 8,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.2
+      }
+    ],
+    "iconIndex": 775,
+    "name": "Fiery Lace",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 2000
+  },
+  {
+    "id": 191,
+    "atypeId": 1,
+    "description": "You start the battle with 1 BP.",
+    "etypeId": 9,
+    "traits": [
+      {
+        "code": 24,
+        "dataId": 1,
+        "value": 1
+      }
+    ],
+    "iconIndex": 126,
+    "name": "Old Dilong's Wisdom",
+    "note": "<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 192,
+    "atypeId": 1,
+    "description": "Infused with the essence of the Dark Forest.\nThe wearer recovers 5 HP at the end of every turn.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 176,
+    "name": "Ring of the Woods",
+    "note": "<Passive State: 173>",
+    "params": [
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 100
+  },
+  {
+    "id": 193,
+    "atypeId": 1,
+    "description": "A unique yarn-woven head accessory. Its red coloration\nis faded yet seemingly vivid. Boosts physical lifesteal.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 793,
+    "name": "Red Headband",
+    "note": "<HP Life Steal Physical: +0.5%>\n\n<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 194,
+    "atypeId": 1,
+    "description": "Don't worry, this won't put\nblood in your eyes. Boosts CRI.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.02
+      }
+    ],
+    "iconIndex": 792,
+    "name": "Blood-Red Mask",
+    "note": "<Disassemble Pool: Basic>\nx1-x2 Yarn: 100%\n</Disassemble Pool: Basic>",
+    "params": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      6,
+      0
+    ],
+    "price": 120
+  },
+  {
+    "id": 195,
+    "atypeId": 1,
+    "description": "Sign your soul away... oh, never mind, this just needs a drop\nof your blood. Doubles the effectiveness of recovery items.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 3,
+        "value": 2
+      }
+    ],
+    "iconIndex": 1318,
+    "name": "Blood Pact",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      40,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 196,
+    "atypeId": 1,
+    "description": "Something about this is terrifying. You want to look at\nit, but you can't. Reduces incoming physical damage by 20%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 1319,
+    "name": "Flesh Doll",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      10,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 197,
+    "atypeId": 9,
+    "description": "Unique armor made with thousands of tiny silver\nlinks. Doesn't provide any class-specific benefits.",
+    "etypeId": 4,
+    "traits": [],
+    "iconIndex": 1216,
+    "name": "Silver Chainmail",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      15,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 750
+  },
+  {
+    "id": 198,
+    "atypeId": 1,
+    "description": "A peculiar phenomenon caused by mana overflowing a plant and permanently\naltering part of its coloration. Not dangerous. Reduces MP costs by 20%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 23,
+        "dataId": 4,
+        "value": 0.8
+      }
+    ],
+    "iconIndex": 796,
+    "name": "Mana-Stained Blueroot",
+    "note": "<Upgrade Slots: 2>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 199,
+    "atypeId": 1,
+    "description": "Mysterious currency of an unknown denomination.\nBrings out the inner flame that lurks within.",
+    "etypeId": 8,
+    "traits": [],
+    "iconIndex": 800,
+    "name": "Infernal Coin",
+    "note": "<Upgrade Slots: 3>\n<Passive State: 184, 154>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 3000
+  },
+  {
+    "id": 200,
+    "atypeId": 1,
+    "description": "This is the next level of wristbraces after the\n\\ia[185]! Power creep, am I right?",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 25,
+        "dataId": 1,
+        "value": 1.1
+      }
+    ],
+    "iconIndex": 770,
+    "name": "Andrew's Wristbraces",
+    "note": "<Upgrade Slots: 4>",
+    "params": [
+      0,
+      32,
+      0,
+      0,
+      32,
+      15,
+      0,
+      0
+    ],
+    "price": 2000
+  },
+  {
+    "id": 201,
+    "atypeId": 1,
+    "description": "Slightly stained. A plant was pleasantly surprised\nto find it could bite people trying to pick it.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 807,
+    "name": "Sharp Tooth",
+    "note": "",
+    "params": [
+      0,
+      0,
+      3,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 80
+  },
+  {
+    "id": 202,
+    "atypeId": 1,
+    "description": "Nabbed from a fanatic magician obsessed with staying\nalive. Negates half of incoming damage when below 50% HP.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 5,
+        "value": 0.05
+      }
+    ],
+    "iconIndex": 347,
+    "name": "Green Mage Crystal",
+    "note": "<Passive State: 194>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 203,
+    "atypeId": 1,
+    "description": "Wisdom passed down in the form of a story over thousands of years.\nReduces \\nl[9] damage by 10% and increases outgoing \\nl[8] damage by 10%.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.9
+      }
+    ],
+    "iconIndex": 808,
+    "name": "Holy Scriptures",
+    "note": "<Element Amplify Light: +10%>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 50
+  },
+  {
+    "id": 204,
+    "atypeId": 1,
+    "description": "Grants 1 extra BP capacity, but only if a different\nparty member has \\ia[205] equipped.",
+    "etypeId": 9,
+    "traits": [],
+    "iconIndex": 127,
+    "name": "Infernal Knight's Synergy",
+    "note": "<Passive State: 197>\n<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 205,
+    "atypeId": 1,
+    "description": "Grants 1 extra BP capacity, but only if a different\nparty member has \\ia[204] equipped.",
+    "etypeId": 9,
+    "traits": [],
+    "iconIndex": 127,
+    "name": "Infernal Mage's Synergy",
+    "note": "<Passive State: 197>\n<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 206,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of a powerful skeleton.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 437,
+    "name": "Skeletal Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 207,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[2]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of an old mage.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 171,
+    "name": "Ancient Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 208,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[3]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of a water elemental.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 453,
+    "name": "Watery Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 209,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[4]. Part of the \\c[30]Villainous\\c[0] set.\nChanges your appearance to mimic that of a Bandito leader.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 450,
+    "name": "Leader Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 210,
+    "atypeId": 1,
+    "description": "Infused with the essence of the Lost Forest.\nThe wearer recovers 25 HP at the end of every turn.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 176,
+    "name": "Ring of the Forest",
+    "note": "<Passive State: 199>",
+    "params": [
+      25,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 500
+  },
+  {
+    "id": 211,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1] and \\N[2]. Part of the \\c[16]Trail Team\\c[0] set.\nMakes you look like a slightly unstable programmer.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 442,
+    "name": "Blue Developer Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 212,
+    "atypeId": 1,
+    "description": "Vanity outfit for \\N[1] and \\N[2]. Part of the \\c[16]Trail Team\\c[0] set.\nMakes you look like a somewhat reserved thinker.",
+    "etypeId": 7,
+    "traits": [],
+    "iconIndex": 776,
+    "name": "Red Developer Outfit",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 213,
+    "atypeId": 2,
+    "description": "Now enhanced with tellurium, these powerful greaves\nprovide a hefty amount of stats and resistances.",
+    "etypeId": 5,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 9,
+        "value": 0.9
+      },
+      {
+        "code": 22,
+        "dataId": 4,
+        "value": 0.025
+      },
+      {
+        "code": 23,
+        "dataId": 6,
+        "value": 0.975
+      },
+      {
+        "code": 23,
+        "dataId": 7,
+        "value": 0.975
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.01
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.01
+      }
+    ],
+    "iconIndex": 710,
+    "name": "Tellurium Greaves",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nKnight's Greaves\nFeral Rat Fur: 5\nSteel Ingot: 5\nTellurium Alloy\n</Synthesis Ingredients>\n\n<Disassemble Pool: Advanced>\nx1-2 Iron Cluster: 60%\nx1-2 Tellurium Dust: 60%\n</Disassemble Pool: Advanced>",
+    "params": [
+      0,
+      5,
+      0,
+      8,
+      0,
+      5,
+      20,
+      0
+    ],
+    "price": 1800
+  }
 ]

@@ -155,14 +155,14 @@ BattleManager.prepareVictoryPreLevel = function() {
       if (!actor) continue;
       actor._preVictoryLv = actor._level;
       actor._preVictoryParams = [];
-      actor._preVictoryParams.push(actor.mhp);
-      actor._preVictoryParams.push(actor.mmp);
-      actor._preVictoryParams.push(actor.atk);
-      actor._preVictoryParams.push(actor.def);
-      actor._preVictoryParams.push(actor.mat);
-      actor._preVictoryParams.push(actor.mdf);
-      actor._preVictoryParams.push(actor.agi);
-      actor._preVictoryParams.push(actor.luk);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[0][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[1][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[2][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[3][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[4][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[5][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[6][actor._preVictoryLv]);
+      actor._preVictoryParams.push($dataClasses[actor._classId].params[7][actor._preVictoryLv]);
     }
 };
 
@@ -174,14 +174,14 @@ BattleManager.prepareVictoryPostLevel = function() {
       if (actor._preVictoryLv === actor._level) continue;
       this._leveledActors.push(actor);
       actor._postVictoryParams = [];
-      actor._postVictoryParams.push(actor.mhp);
-      actor._postVictoryParams.push(actor.mmp);
-      actor._postVictoryParams.push(actor.atk);
-      actor._postVictoryParams.push(actor.def);
-      actor._postVictoryParams.push(actor.mat);
-      actor._postVictoryParams.push(actor.mdf);
-      actor._postVictoryParams.push(actor.agi);
-      actor._postVictoryParams.push(actor.luk);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[0][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[1][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[2][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[3][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[4][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[5][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[6][actor._level]);
+      actor._postVictoryParams.push($dataClasses[actor._classId].params[7][actor._level]);
     }
 };
 
@@ -277,7 +277,7 @@ Window_VictoryLevelUp.prototype.createPresets = function() {
   var buffer = this.textWidth(' ');
   for (var i = 0; i < 8; ++i) {
     var value1 = this.textWidth(TextManager.param(i));
-    var value2 = this.textWidth(Yanfly.Util.toGroup(this._actor.paramMax(i)));
+    var value2 = this.textWidth(99999/*Yanfly.Util.toGroup(this._actor.paramMax(i))*/);
     this._paramNameWidth = Math.max(value1, this._paramNameWidth);
     this._paramValueWidth = Math.max(value2, this._paramValueWidth);
   }
@@ -368,15 +368,19 @@ Window_VictoryLevelUp.prototype.drawStatChanges = function() {
 };
 
 Window_VictoryLevelUp.prototype.drawParamName = function(index, rect) {
+    const icons = $gameSystem.coreStatIcons();
     var x = rect.x + this.textPadding();
     var y = rect.y;
     if (index === 0) {
       var text = TextManager.level;
+      var icon = icons[0];
     } else {
       var text = TextManager.param(index - 1);
+      var icon = icons[1][index - 1];
     }
     this.changeTextColor(this.systemColor());
-    this.drawText(text, x, y, this._paramNameWidth);
+    this.drawIcon(icon, x, y + (this.lineHeight() - Window_Base._iconHeight) / 2)
+    this.drawText(text, x + Window_Base._iconWidth, y, this._paramNameWidth);
 };
 
 Window_VictoryLevelUp.prototype.drawRightArrow = function(rect) {
@@ -497,9 +501,9 @@ Window_VictorySkills.prototype.windowHeight = function() {
 
 Window_VictorySkills.prototype.setActor = function(actor) {
     this._actor = actor;
-    this.select(0);
+    // this.select(0);
     if (this._actor._victorySkills.length <= 0) this.select(-1);
-    this.activate();
+    // this.activate();
     this.refresh();
 };
 

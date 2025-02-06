@@ -165,6 +165,7 @@ DataManager.isDatabaseLoaded = function() {
 
   if (!Yanfly._loaded_YEP_X_StateCategories) {
     this.processStCNotetags1($dataStates);
+    this.processStCResNotetags($dataStates);
     this.processStCNotetags2($dataSkills);
     this.processStCNotetags2($dataItems);
     Yanfly._loaded_YEP_X_StateCategories = true;
@@ -172,6 +173,8 @@ DataManager.isDatabaseLoaded = function() {
   
   return true;
 };
+
+DataManager.stateCategories = {};
 
 DataManager.processStCNotetags1 = function(group) {
   for (var n = 1; n < group.length; n++) {
@@ -183,7 +186,28 @@ DataManager.processStCNotetags1 = function(group) {
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
       if (line.match(/<CATEGORY:[ ](.*)>/i)) {
-        obj.category.push(String(RegExp.$1).toUpperCase())
+        let note = String(RegExp.$1).toUpperCase();
+        obj.category.push(note)
+        DataManager.stateCategories[note] = DataManager.stateCategories[note] || [];
+        DataManager.stateCategories[note].push(n);
+      }
+    }
+  }
+};
+
+DataManager.processStCResNotetags = function(group) {
+  for (var n = 1; n < group.length; n++) {
+    var obj = group[n];
+    var notedata = obj.note.split(/[\r\n]+/);
+
+    for (var i = 0; i < notedata.length; i++) {
+      var line = notedata[i];
+      if (line.match(/<Category Resist: (.*)>/i)) {
+        let note = String(RegExp.$1).toUpperCase().split(", ");
+        var arr = [];
+        note.forEach(c => arr = arr.concat(DataManager.stateCategories[c]));
+        arr = arr.filter(n => n);
+        arr.forEach(s => obj.traits.push({code: 14, dataId: s, value: 1}));
       }
     }
   }
@@ -305,8 +329,12 @@ Game_Battler.prototype.isStateAddable = function(stateId) {
   return Yanfly.StC.Game_Battler_isStateAddable.call(this, stateId);
 };
 
-Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
+Game_Battler.prototype.removeStateCategoryEffect = function(action) {
+    obj = action.item();
+    user = action.subject();
     var categories = obj.removeCategory;
+    processElements = action.getItemElements();
+    Object.assign(categories, this.elementalStateCategoryRemoval(processElements));
     for (var category in categories) {
       var value = categories[category];
       if (value === 'ALL') {
@@ -316,6 +344,21 @@ Game_Battler.prototype.removeStateCategoryEffect = function(obj, user) {
         this.removeStateCategory(category, value);
       }
     }
+};
+
+Game_Battler.prototype.elementalStateCategoryRemoval = function(elementIds) {
+    obj = {};
+    if (elementIds.contains(2))  obj['ICE'] = obj['WATER'] = obj['PLANT'] = "ALL";
+    if (elementIds.contains(3))  obj['PLANT'] = "ALL";
+    if (elementIds.contains(4))  
+    if (elementIds.contains(5))  obj['FIRE'] = "ALL";
+    if (elementIds.contains(6))  obj['FIRE'] = "ALL";
+    if (elementIds.contains(7))  obj['FIRE'] = "ALL";
+    if (elementIds.contains(13)) 
+    if (elementIds.contains(14)) 
+    if (elementIds.contains(8))  obj['DARK'] = "ALL";
+    if (elementIds.contains(9))  obj['LIGHT'] = "ALL";
+    return obj;
 };
 
 Game_Battler.prototype.removeStateCategoryEval = function(value, obj, c, user) {
@@ -437,13 +480,13 @@ Yanfly.StC.Game_Action_applyItemUserEffect =
     Game_Action.prototype.applyItemUserEffect;
 Game_Action.prototype.applyItemUserEffect = function(target) {
     Yanfly.StC.Game_Action_applyItemUserEffect.call(this, target);
-    if (this.item() && this.item().removeCategory) {
+    if (this.item() && (this.item().removeCategory || this.item().damage.elementId != 0 || this.item().multipleElements.length > 0)) {
       this.applyStateCategoryRemovalEffect(target);
     }
 };
 
 Game_Action.prototype.applyStateCategoryRemovalEffect = function(target) {
-  target.removeStateCategoryEffect(this.item(), this.subject());
+    target.removeStateCategoryEffect(this);
 };
 
 //=============================================================================

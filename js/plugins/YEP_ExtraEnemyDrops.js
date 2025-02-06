@@ -414,6 +414,9 @@ Yanfly.EED.DataManager_isDatabaseLoaded = DataManager.isDatabaseLoaded;
 DataManager.isDatabaseLoaded = function() {
   if (!Yanfly.EED.DataManager_isDatabaseLoaded.call(this)) return false;
   if (!Yanfly._loaded_YEP_ExtraEnemyDrops) {
+    Yanfly.EED.ItemDropIDs    = [];
+    Yanfly.EED.WeaponDropIDs  = [];
+    Yanfly.EED.ArmorDropIDs   = [];
     this.processEEDNotetagsI($dataItems);
     this.processEEDNotetagsW($dataWeapons);
     this.processEEDNotetagsA($dataArmors);
@@ -486,15 +489,15 @@ DataManager.processEEDNotetagsSys = function(group) {
   Yanfly.ElementIdRef = {};
   for (var i = 1; i < group.elements.length; ++i) {
     var name = group.elements[i].toUpperCase();
-    name = name.replace(/\\I\[(\d+)\]/gi, '');
+    name = name.replace(/\\\w\[(\d+)\]/gi, '');
     Yanfly.ElementIdRef[name] = i;
   }
 };
 
 DataManager.processEEDNotetags1 = function(group) {
-  var noteD1 = /<(?:ITEM|DROP ITEM)[ ](\d+):[ ](\d+)([%％])>/i;
-  var noteD2 = /<(?:WEAPON|DROP WEAPON)[ ](\d+):[ ](\d+)([%％])>/i;
-  var noteD3 = /<(?:ARMOR|DROP armor)[ ](\d+):[ ](\d+)([%％])>/i;
+  var noteD1 = /<(?:ITEM|DROP ITEM)[ ](\d+):[ ](\d+(?:\.\d+)?)([%％])>/i;
+  var noteD2 = /<(?:WEAPON|DROP WEAPON)[ ](\d+):[ ](\d+(?:\.\d+)?)([%％])>/i;
+  var noteD3 = /<(?:ARMOR|DROP armor)[ ](\d+):[ ](\d+(?:\.\d+)?)([%％])>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     if (obj.dropsMade) continue;
@@ -502,7 +505,9 @@ DataManager.processEEDNotetags1 = function(group) {
 
     obj.dropsMade = true;
     obj.conditionalDropItems = [];
+    obj.nightBoostDropItems = [];
     var conditionalLines = [];
+    var nightBoost = [];
     var evalMode = 'none';
 
     for (var i = 0; i < notedata.length; i++) {
@@ -519,7 +524,7 @@ DataManager.processEEDNotetags1 = function(group) {
         var id = parseInt(RegExp.$1);
         var rate = parseFloat(RegExp.$2) * 0.01;
         this.createEnemyDrop(obj, id, rate, 3);
-      } else if (line.match(/<DROP[ ](.*):[ ](\d+)([%％])>/i)) {
+      } else if (line.match(/<DROP[ ](.*):[ ](\d+(?:\.\d+)?)([%％])>/i)) {
         var name = String(RegExp.$1).toUpperCase();
         var rate = parseFloat(RegExp.$2) * 0.01;
         if (Yanfly.ItemIdRef[name]) {
@@ -540,19 +545,19 @@ DataManager.processEEDNotetags1 = function(group) {
       } else if (line.match(/<\/(?:ENEMY DROP|ENEMY DROPS)>/i)) {
         var evalMode = 'none';
       } else if (evalMode === 'drops') {
-        if (line.match(/ITEM[ ](\d+):[ ](\d+)([%％])/i)) {
+        if (line.match(/ITEM[ ](\d+):[ ](\d+(?:\.\d+)?)([%％])/i)) {
           var id = parseInt(RegExp.$1);
           var rate = parseFloat(RegExp.$2) * 0.01;
           this.createEnemyDrop(obj, id, rate, 1);
-        } else if (line.match(/WEAPON[ ](\d+):[ ](\d+)([%％])/i)) {
+        } else if (line.match(/WEAPON[ ](\d+):[ ](\d+(?:\.\d+)?)([%％])/i)) {
           var id = parseInt(RegExp.$1);
           var rate = parseFloat(RegExp.$2) * 0.01;
           this.createEnemyDrop(obj, id, rate, 2);
-        } else if (line.match(/ARMOR[ ](\d+):[ ](\d+)([%％])/i)) {
+        } else if (line.match(/ARMOR[ ](\d+):[ ](\d+(?:\.\d+)?)([%％])/i)) {
           var id = parseInt(RegExp.$1);
           var rate = parseFloat(RegExp.$2) * 0.01;
           this.createEnemyDrop(obj, id, rate, 3);
-        } else if (line.match(/(.*):[ ](\d+)([%％])/i)) {
+        } else if (line.match(/(.*):[ ](\d+(?:\.\d+)?)([%％])/i)) {
           var name = String(RegExp.$1).toUpperCase();
           var rate = parseFloat(RegExp.$2) * 0.01;
           if (Yanfly.ItemIdRef[name]) {
@@ -594,14 +599,76 @@ DataManager.processEEDNotetags1 = function(group) {
           continue;
         }
         if (!item) continue;
-        var arr = [item, conditionalLines];
-        obj.conditionalDropItems.push(arr);
+        DataManager.createConditionalEnemyDrop(obj, item, conditionalLines);
         conditionalLines = [];
       } else if (evalMode === 'conditionalDrop') {
         conditionalLines.push(line);
+      } else if (line.match(/<NIGHT BOOST>/i)) {
+        var evalMode = 'nightBoost';
+      } else if (line.match(/<\/NIGHT BOOST>/i)) {
+        var evalMode = 'none';
+      } else if (evalMode === 'nightBoost' && line.match(/(.*):[ ](.*)[ ](.*)/i)) {
+        var name = String(RegExp.$1).toUpperCase();
+        if (Yanfly.ItemIdRef[name]) {
+          var id = Yanfly.ItemIdRef[name];
+          var item = $dataItems[id];
+        } else if (Yanfly.WeaponIdRef[name]) {
+          var id = Yanfly.WeaponIdRef[name];
+          var item = $dataWeapons[id];
+        } else if (Yanfly.ArmorIdRef[name]) {
+          var id = Yanfly.ArmorIdRef[name];
+          var item = $dataArmors[id];
+        } else continue;
+        if (!item) continue;
+        var always = "Always: +" + RegExp.$2;
+        var night = "Switch 69 ON: " + RegExp.$3;
+        var arr = [always, night];
+        DataManager.createConditionalEnemyDrop(obj, item, arr);
       }
     }
+    this.createGlobalDrops(obj);
   }
+};
+
+DataManager.createGlobalDrops = function(obj) {
+    // Origin Crystal (1/50,000 drop, gets more likely as game progresses)
+    var item = $dataWeapons[34];
+    var arr = [
+      "Eval [0, 1, 2].contains($gameSystem.chapter()): +0.002%",
+      "Eval [3, 4].contains($gameSystem.chapter()): +0.0025%",
+      "Eval [5].contains($gameSystem.chapter()): +0.004%",
+      "Eval [6].contains($gameSystem.chapter()): +0.005%"
+    ];
+    DataManager.createConditionalEnemyDrop(obj, item, arr);
+
+    // Seshat's Charm (1/100 drop)
+    var id = 160;
+    var rate = 0.01;
+    this.createEnemyDrop(obj, id, rate, 3);
+
+    // Present (1/5 drop during December)
+    if (date.getMonth() == 11) {
+      var id = 156;
+      var rate = 0.2;
+      if (date.getDate() == 25) rate = 0.5; // 1/2 drop on Christmas
+      this.createEnemyDrop(obj, id, rate, 1);
+    }
+
+    // Pumpkin (1/5 drop during October)
+    if (date.getMonth() == 9) {
+      var id = 59;
+      var rate = 0.2;
+      if (date.getDate() == 31) rate = 0.5; // 1/2 drop on Halloween
+      this.createEnemyDrop(obj, id, rate, 1);
+    }
+
+    // Charcoal (1/1 drop when plant enemy is hit by fire attack)
+    var item = $dataItems[151];
+    var arr = [
+      "Times Element Fire Struck >= 1: +100%",
+      "Eval !user.enemy().elements.contains(\"PLANT\"): -100%"
+    ];
+    DataManager.createConditionalEnemyDrop(obj, item, arr);
 };
 
 DataManager.createEnemyDrop = function(obj, dataId, rate, kind) {
@@ -611,7 +678,18 @@ DataManager.createEnemyDrop = function(obj, dataId, rate, kind) {
       kind: kind
     }
     obj.dropItems.push(dropItem);
+    if (kind === 1 && !Yanfly.EED.ItemDropIDs.contains(dataId)) Yanfly.EED.ItemDropIDs.push(dataId);
+    if (kind === 2 && !Yanfly.EED.WeaponDropIDs.contains(dataId)) Yanfly.EED.WeaponDropIDs.push(dataId);
+    if (kind === 3 && !Yanfly.EED.ArmorDropIDs.contains(dataId)) Yanfly.EED.ArmorDropIDs.push(dataId);
 };
+
+DataManager.createConditionalEnemyDrop = function(obj, item, conditions) {
+    obj.conditionalDropItems.push([item, conditions]);
+    dataId = item.id;
+    if (DataManager.isItem(item) && !Yanfly.EED.ItemDropIDs.contains(dataId)) Yanfly.EED.ItemDropIDs.push(dataId);
+    if (DataManager.isWeapon(item) && !Yanfly.EED.WeaponDropIDs.contains(dataId)) Yanfly.EED.WeaponDropIDs.push(dataId);
+    if (DataManager.isArmor(item) && !Yanfly.EED.ArmorDropIDs.contains(dataId)) Yanfly.EED.ArmorDropIDs.push(dataId);
+}
 
 //=============================================================================
 // Game_BattlerBase
@@ -802,7 +880,7 @@ DropManager.getConditionalRate = function(conditions) {
     var length = conditions.length;
     for (var i = 0; i < length; ++i) {
       var condition = conditions[i];
-      if (condition.match(/(.*):[ ]([\+\-]\d+)([%％])/i)) {
+      if (condition.match(/(.*):[ ]([\+\-]\d+(?:\.\d+)?)([%％])/i)) {
         var line = String(RegExp.$1);
         var value = parseFloat(RegExp.$2) * 0.01;
         if (this.meetsLineCondition(line)) rate += value;
@@ -858,7 +936,7 @@ DropManager.meetsLineCondition = function(line) {
       return this.conditionPartyMembers(line);
     }
     // RANDOM X%
-    if (line.match(/RANDOM[ ](\d+)([%％])/i)) {
+    if (line.match(/RANDOM[ ](\d+(?:\.\d+)?)([%％])/i)) {
       var rate = parseFloat(RegExp.$1) * 0.01;
       return this.conditionRandom(rate);
     }

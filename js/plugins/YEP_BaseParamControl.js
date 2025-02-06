@@ -684,6 +684,7 @@ Game_BattlerBase.prototype.param = function(paramId) {
     Yanfly.Util.displayError(e, code, 'CUSTOM PARAM FORMULA ERROR');
   }
   value = Math.round(value.clamp(minValue, maxValue));
+  if (this._flashbang) if ([2, 3, 4, 5, 6].contains(paramId)) value = Math.round(value * Math.pow(0.9, this._flashbang)); // Flashbang skill
   this._baseParamCache[paramId] = value;
   return this._baseParamCache[paramId];
 };
@@ -1162,7 +1163,7 @@ Game_Enemy.prototype.customParamMin = function(paramId) {
 // Game_Action
 //=============================================================================
 
-Game_Action.prototype.lukEffectRate = function(target) {
+/*Game_Action.prototype.lukEffectRate = function(target) {
     var item = this.item();
     var skill = this.item();
     var a = this.subject();
@@ -1172,7 +1173,7 @@ Game_Action.prototype.lukEffectRate = function(target) {
     var s = $gameSwitches._data;
     var v = $gameVariables._data;
     return eval(Yanfly.Param.BPCLukEffectRate);
-};
+};*/
 
 //=============================================================================
 // Utilities

@@ -848,7 +848,7 @@ SceneManager.initNwjs = function() {
 			const win = require('nw.gui').Window.get();
 			GameWindowManager.window = win;
 			if(SRD.isPlaytest) {
-				this.updatePackageJson();
+				// this.updatePackageJson();
 			}
 			win.on('close', GameWindowManager.onWindowClose);
 		} else {

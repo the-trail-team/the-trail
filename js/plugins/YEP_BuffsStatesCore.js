@@ -1852,6 +1852,16 @@ Game_Action.prototype.executeDamage = function(target, value) {
     value = this.onPreDamageStateEffects(target, value);
     value = this.onReactStateEffects(target, value);
     Yanfly.BSC.Game_Action_executeDamage.call(this, target, value);
+    // Copied from LGP_BetterDamagePopup
+      var result = target.result();
+      if (Imported.YEP_ElementCore) result.itemElements = this.getItemElements();
+      if (this._resist !== 'absorb' && value >= 0) {
+          result.resist = this._resist;
+      } else if (this._resist === 'absorb' && value < 0) {
+          result.resist = 'absorb';
+      }
+      result.rate = this.calcElementRate(target);
+    // End of copy from LGP_BetterDamagePopup
     value = this.onRespondStateEffects(target, value);
     value = this.onPostDamageStateEffects(target, value);
 };
@@ -2032,6 +2042,9 @@ Sprite_StateIcon.prototype.drawBuffRate = function(paramId) {
     var ww = Window_Base._iconWidth;
     var wh = Window_Base.prototype.lineHeight.call(this);
     var contents = this._turnCounterSprite.bitmap;
+    // Move to top left
+    wx -= 4;
+    wy -= 16;
     contents.fontSize = Yanfly.Param.BSCFontSize * 0.75;
     contents.textColor = this.textColor(0);
     contents.drawText(text, wx, wy, ww, wh, 'center');
@@ -2062,6 +2075,7 @@ Window_Base.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
     if (state.autoRemovalTiming > 0) {
       this.drawStateTurns(actor, state, wx, wy);
     }
+    if (state.removeByWalking && !$gameParty.inBattle()) this.drawStateSteps(actor, state, wx, wy);
     this.drawStateCounter(actor, state, wx, wy);
     wx += iw;
     --shownMax;
@@ -2071,7 +2085,7 @@ Window_Base.prototype.drawActorIconsTurns = function(actor, wx, wy, ww) {
     if (actor._buffs[i] === 0) continue;
     this.drawBuffTurns(actor, i, wx, wy);
     if (Yanfly.Param.BSCShowBuffRate) {
-      this.drawBuffRate(actor, i, wx, wy);
+      this.drawBuffRate(actor, i, wx, wy - 12);
     }
     wx += iw;
     --shownMax;
@@ -2091,6 +2105,19 @@ Window_Base.prototype.drawStateTurns = function(actor, state, wx, wy) {
   this.changeTextColor(this.textColor(state.turnColor));
   this.contents.fontSize = state.turnFontSize;
   this.drawText(turns, wx, wy, Window_Base._iconWidth, state.turnAlign);
+  this.resetFontSettings();
+  this.resetTextColor();
+};
+
+Window_Base.prototype.drawStateSteps = function(actor, state, wx, wy) {
+  if (!state.showTurns) return;
+  var steps = actor._stateSteps[state.id];
+  if (steps != 0 && !steps) return;
+  var steps = Yanfly.Util.toGroup(Math.ceil(steps));
+  this.changePaintOpacity(true);
+  this.changeTextColor(this.textColor(state.turnColor));
+  this.contents.fontSize = state.turnFontSize;
+  this.drawText(steps, wx, wy + 20, Window_Base._iconWidth, 'center');
   this.resetFontSettings();
   this.resetTextColor();
 };

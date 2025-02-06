@@ -419,6 +419,7 @@ _.preloadSE = String(params['Preload SE']).trim();
 
 _.preloadSystem = String(params['Preload System']).trim();
 _.preloadAnimations = String(params['Preload Animations']).trim();
+if (Utils.isOptionValid('test') == 1) _.preloadAnimations = "none";
 _.preloadBattlebacks1 = String(params['Preload Battlebacks1']).trim();
 _.preloadBattlebacks2 = String(params['Preload Battlebacks2']).trim();
 _.preloadCharacters = String(params['Preload Characters']).trim();
@@ -437,7 +438,7 @@ _.customPreloads = SRD.parse(params['Custom Preloads']);
 _.hasPreloaded = false;
 
 _.loadPicture = function(filename, hue) {
-	return ImageManager.loadBitmap('img/SumRndmDde/preload/', filename, hue, false);
+	return ImageManager.loadBitmap('img/title/', filename, hue, false);
 };
 
 _.preloadBackground = function() {
@@ -534,10 +535,14 @@ _.preloadAudioFolder = function(folder, variable) {
 
 _.setupAudioPreloads = function() {
 	this.audioPreloadCount = 0;
-	this.preloadAudioFolder('bgm', this.preloadBGM);
-	this.preloadAudioFolder('bgs', this.preloadBGS);
-	this.preloadAudioFolder('me', this.preloadME);
-	this.preloadAudioFolder('se', this.preloadSE);
+	if (Utils.isOptionValid('test') == 1) {
+		this.preloadAudioFolder('bgm', "important");
+	} else {
+		this.preloadAudioFolder('bgm', this.preloadBGM);
+		this.preloadAudioFolder('bgs', this.preloadBGS);
+		this.preloadAudioFolder('me', this.preloadME);
+		this.preloadAudioFolder('se', this.preloadSE);
+	}
 	this.audioReady = true;
 };
 
@@ -929,10 +934,16 @@ Scene_Preload.prototype.gotoBoot = function() {
 	SceneManager.goto(Scene_Boot);
 };
 
+Scene_Preload.prototype.updateDocumentTitle = function() {
+	const splashes = require('./data/Strings.json').splashes;
+    document.title = $dataSystem.gameTitle + ": " + splashes[Math.floor(Math.random() * splashes.length)];
+};
+
 if(_.fadeTrans) {
 
 Scene_Preload.prototype.start = function() {
 	Scene_Base.prototype.start.call(this);
+	this.updateDocumentTitle();
 	this.startFadeIn(24, false);
 };
 

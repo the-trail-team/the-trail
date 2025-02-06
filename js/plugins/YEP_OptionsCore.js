@@ -882,6 +882,7 @@ Scene_Options.prototype.create = function() {
   this.createHelpWindow();
   this.createOptionsWindow();
   this.createCategoryWindow();
+  if (!$gameTemp._inGame && !$gameTemp._keyboardConfig) this.startFadeIn(this.fadeSpeed(), false);
 };
 
 Yanfly.Options.Scene_Options_createOptionsWindow =
@@ -896,7 +897,7 @@ Scene_Options.prototype.createCategoryWindow = function() {
   var helpWin = this._helpWindow;
   var optionsWin = this._optionsWindow;
   this._categoryWindow = new Window_OptionsCategory(helpWin, optionsWin);
-  this._categoryWindow.setHandler('cancel', this.popScene.bind(this));
+  this._categoryWindow.setHandler('cancel', this.cancel.bind(this));
   this._categoryWindow.setHandler('category', this.onCategoryOk.bind(this));
   this.addWindow(this._categoryWindow);
 };
@@ -910,6 +911,11 @@ Scene_Options.prototype.onOptionsCancel = function() {
   this._optionsWindow.deselect();
   this._categoryWindow.activate();
 };
+
+Scene_Options.prototype.cancel = function() {
+  if ($gameTemp._inGame !== true) this.startFadeOut(this.fadeSpeed(), false);
+  this.popScene();
+}
 
 //=============================================================================
 // Utilities

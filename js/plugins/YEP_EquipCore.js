@@ -265,7 +265,11 @@ Yanfly.Param.EquipFinishCmd = String(Yanfly.Parameters['Finish Command']);
 Yanfly.Param.EquipRemoveText = String(Yanfly.Parameters['Remove Text']);
 Yanfly.Icon.RemoveEquip = Number(Yanfly.Parameters['Remove Icon']);
 Yanfly.Param.EquipEmptyText = String(Yanfly.Parameters['Empty Text']);
+Yanfly.Param.EquipLockedText = "Locked";
+Yanfly.Param.EquipSealedText = "Sealed";
 Yanfly.Icon.EmptyEquip = Number(Yanfly.Parameters['Empty Icon']);
+Yanfly.Icon.LockedEquip = 1368;
+Yanfly.Icon.SealedEquip = 1370;
 Yanfly.Data = String(Yanfly.Parameters['Non-Removable Types']);
 Yanfly.Data = Yanfly.Data.split(' ');
 Yanfly.Param.EquipNonRemove = [];
@@ -597,6 +601,41 @@ Game_Interpreter.prototype.command319 = function() {
 };
 
 //=============================================================================
+// Window_EquipHelp
+//=============================================================================
+
+function Window_EquipHelp() {
+    this.initialize.apply(this, arguments);
+}
+
+Window_EquipHelp.prototype = Object.create(Window_Help.prototype);
+Window_EquipHelp.prototype.constructor = Window_Help;
+
+Window_EquipHelp.prototype.initialize = function(x, y) {
+    Window_Help.prototype.initialize.call(this, x, y);
+}
+
+Window_EquipHelp.prototype.setItem = function(item) {
+    if (item) text = item.description;
+    else {
+      text = "\\c[8]";
+      switch(SceneManager._scene._slotWindow.emptySlotStatus()) {
+        case 0:
+          text += "This slot is sealed. It cannot be modified or hold equipment.";
+          break;
+        case 1:
+          text += "This slot is locked. It cannot be modified.";
+          break;
+        case 2:
+        default:
+          text += "This slot is empty.";
+          break;
+      }
+    }
+    this.setText(text);
+}
+
+//=============================================================================
 // Window_EquipCommand
 //=============================================================================
 
@@ -671,9 +710,30 @@ Window_EquipSlot.prototype.drawItem = function(index) {
     if (item) {
       this.drawItemName(item, rect.x + ww1, rect.y, ww2);
     } else {
-      this.drawEmptySlot(rect.x + ww1, rect.y, ww2);
+      this.changePaintOpacity(false);
+      this.resetTextColor();
+      switch(this.emptySlotStatus(this._actor, index)) {
+        case 0:
+          this.drawSealedSlot(rect.x + ww1, rect.y, ww2);
+          break;
+        case 1:
+          this.drawLockedSlot(rect.x + ww1, rect.y, ww2);
+          break;
+        case 2:
+        default:
+          this.drawEmptySlot(rect.x + ww1, rect.y, ww2);
+          break;
+      }
     }
     this.changePaintOpacity(true);
+};
+
+Window_EquipSlot.prototype.emptySlotStatus = function(actor, slot) {
+  actor = actor || this._actor;
+  slot = slot || this.index();
+  if (actor.isEquipTypeSealed(actor.equipSlots()[slot])) return 0;
+  if (actor.isEquipTypeLocked(actor.equipSlots()[slot])) return 1;
+  return 2;
 };
 
 Window_EquipSlot.prototype.setSlotNameWidth = function(actor) {
@@ -686,11 +746,23 @@ Window_EquipSlot.prototype.setSlotNameWidth = function(actor) {
 };
 
 Window_EquipSlot.prototype.drawEmptySlot = function(wx, wy, ww) {
-    this.changePaintOpacity(false);
     var ibw = Window_Base._iconWidth + 4;
-    this.resetTextColor();
     this.drawIcon(Yanfly.Icon.EmptyEquip, wx + 2, wy + 2);
     var text = Yanfly.Param.EquipEmptyText;
+    this.drawText(text, wx + ibw, wy, ww - ibw);
+};
+
+Window_EquipSlot.prototype.drawLockedSlot = function(wx, wy, ww) {
+    var ibw = Window_Base._iconWidth + 4;
+    this.drawIcon(Yanfly.Icon.LockedEquip, wx + 2, wy + 2);
+    var text = Yanfly.Param.EquipLockedText;
+    this.drawText(text, wx + ibw, wy, ww - ibw);
+};
+
+Window_EquipSlot.prototype.drawSealedSlot = function(wx, wy, ww) {
+    var ibw = Window_Base._iconWidth + 4;
+    this.drawIcon(Yanfly.Icon.SealedEquip, wx + 2, wy + 2);
+    var text = Yanfly.Param.EquipSealedText;
     this.drawText(text, wx + ibw, wy, ww - ibw);
 };
 
@@ -789,7 +861,16 @@ Window_StatCompare.prototype.initialize = function(wx, wy, ww, wh) {
     Window_Base.prototype.initialize.call(this, wx, wy, ww, wh);
     this._actor = null;
     this._tempActor = null;
+    this._lineHeight = null;
     this.refresh();
+};
+
+Window_StatCompare.prototype.standardFontSize = function() {
+    return 18;
+};
+
+Window_StatCompare.prototype.lineHeight = function() {
+    return this._lineHeight || 22;
 };
 
 Window_StatCompare.prototype.createWidths = function() {
@@ -799,7 +880,7 @@ Window_StatCompare.prototype.createWidths = function() {
     var buffer = this.textWidth(' ');
     for (var i = 0; i < 8; ++i) {
       var value1 = this.textWidth(TextManager.param(i));
-      var value2 = this.textWidth(Yanfly.Util.toGroup(this._actor.paramMax(i)));
+      var value2 = this.textWidth(99999/*Yanfly.Util.toGroup(this._actor.paramMax(i))*/);
       this._paramNameWidth = Math.max(value1, this._paramNameWidth);
       this._paramValueWidth = Math.max(value2, this._paramValueWidth);
     }
@@ -834,68 +915,39 @@ Window_StatCompare.prototype.setTempActor = function(tempActor) {
 
 Window_StatCompare.prototype.drawItem = function(x, y, paramId) {
     this.drawDarkRect(x, y, this.contents.width, this.lineHeight());
-    this.drawParamName(y, paramId);
-    this.drawCurrentParam(y, paramId);
-    this.drawRightArrow(y);
+    this.drawParamName(x, y, paramId);
+    this.drawCurrentParam(x, y, paramId);
     if (!this._tempActor) return;
-    this.drawNewParam(y, paramId);
-    this.drawParamDifference(y, paramId);
+    this.drawNewParam(x, y, paramId);
+    this.drawParamDifference(x, y, paramId);
 };
 
 Window_StatCompare.prototype.drawDarkRect = function(dx, dy, dw, dh) {
     var color = this.gaugeBackColor();
     this.changePaintOpacity(false);
-    this.contents.fillRect(dx + 1, dy + 1, dw - 2, dh - 2, color);
+    this.contents.fillRect(dx, dy, (dw / 5) - 2, (dh * 4), color);
     this.changePaintOpacity(true);
 };
 
-Window_StatCompare.prototype.drawParamName = function(y, paramId) {
-    var x = this.textPadding();
+Window_StatCompare.prototype.drawParamName = function(x, y, paramId) {
+    // SRD_EquipCompareUpgrade
+};
+
+Window_StatCompare.prototype.drawCurrentParam = function(x, y, paramId) {
+    // SRD_EquipCompareUpgrade
+};
+
+Window_StatCompare.prototype.drawRightArrow = function(x, y) {
     this.changeTextColor(this.systemColor());
-    this.drawText(TextManager.param(paramId), x, y, this._paramNameWidth);
+    this.drawText('\u2193', x, y + this.lineHeight() * 2, this.contents.width / 5, 'center');
 };
 
-Window_StatCompare.prototype.drawCurrentParam = function(y, paramId) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._paramValueWidth * 2 + this._arrowWidth + this._bonusValueWidth;
-    this.resetTextColor();
-    var actorparam = Yanfly.Util.toGroup(this._actor.param(paramId));
-    this.drawText(actorparam, x, y, this._paramValueWidth, 'right');
-};
-
-Window_StatCompare.prototype.drawRightArrow = function(y) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._paramValueWidth + this._arrowWidth + this._bonusValueWidth;
-    var dw = this.textWidth('\u2192' + ' ');
-    this.changeTextColor(this.systemColor());
-    this.drawText('\u2192', x, y, dw, 'center');
-};
-
-Window_StatCompare.prototype.drawNewParam = function(y, paramId) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._paramValueWidth + this._bonusValueWidth;
-    var newValue = this._tempActor.param(paramId);
-    var diffvalue = newValue - this._actor.param(paramId);
-    var actorparam = Yanfly.Util.toGroup(newValue);
-    this.changeTextColor(this.paramchangeTextColor(diffvalue));
-    this.drawText(actorparam, x, y, this._paramValueWidth, 'right');
+Window_StatCompare.prototype.drawNewParam = function(x, y, paramId) {
+    // SRD_EquipCompareUpgrade
 };
 
 Window_StatCompare.prototype.drawParamDifference = function(y, paramId) {
-    var x = this.contents.width - this.textPadding();
-    x -= this._bonusValueWidth;
-    var newValue = this._tempActor.param(paramId);
-    var diffvalue = newValue - this._actor.param(paramId);
-    if (diffvalue === 0) return;
-    var actorparam = Yanfly.Util.toGroup(newValue);
-    this.changeTextColor(this.paramchangeTextColor(diffvalue));
-    var text = Yanfly.Util.toGroup(diffvalue);
-    if (diffvalue > 0) {
-      text = ' (+' + text + ')';
-    } else {
-      text = ' (' + text + ')';
-    }
-    this.drawText(text, x, y, this._bonusValueWidth, 'left');
+    // SRD_EquipCompareUpgrade
 };
 
 //=============================================================================
@@ -913,6 +965,11 @@ Scene_Equip.prototype.create = function() {
     this._lowerRightVisibility = true;
     this.updateLowerRightWindows();
     this.refreshActor();
+};
+
+Scene_Equip.prototype.createHelpWindow = function() {
+    this._helpWindow = new Window_EquipHelp();
+    this.addWindow(this._helpWindow);
 };
 
 Scene_Equip.prototype.createCommandWindow = function() {
@@ -993,6 +1050,7 @@ Yanfly.Equip.Scene_Equip_refreshActor = Scene_Equip.prototype.refreshActor;
 Scene_Equip.prototype.refreshActor = function() {
     Yanfly.Equip.Scene_Equip_refreshActor.call(this);
     this._compareWindow.setActor(this.actor());
+    SceneManager._scene._compareWindow.setTempActor(this.actor());
 };
 
 Yanfly.Equip.Scene_Equip_commandOptimize =
@@ -1042,6 +1100,7 @@ Scene_Equip.prototype.onSlotCancel = function() {
     Yanfly.Equip.Scene_Equip_onSlotCancel.call(this);
     if (this._infoWindow) this._infoWindow.setItem(null);
     this._compareWindow.setTempActor(null);
+    while (SceneManager._scene._compareWindow !== this._lowerRightWindows[0]) this.shiftLowerRightWindows();
 };
 
 Yanfly.Equip.Scene_Equip_onItemOk = Scene_Equip.prototype.onItemOk;
@@ -1053,7 +1112,7 @@ Scene_Equip.prototype.onItemOk = function() {
     var hpAmount = Math.max(max, parseInt(this.actor().mhp * hpRate));
     this.actor().setHp(hpAmount);
     this.actor().setMp(parseInt(this.actor().mmp * mpRate));
-    this._itemWindow.hide();
+    if (!$gameSwitches.value(92)) this._itemWindow.hide();
     this._statusWindow.refresh();
 };
 
@@ -1071,6 +1130,7 @@ Scene_Equip.prototype.update = function() {
 
 Scene_Equip.prototype.updateLowerRightWindowTriggers = function() {
     if (!this._lowerRightVisibility) return;
+    if (SceneManager._scene._commandWindow.active) return;
     if (Input.isRepeated('right')) {
       this.shiftLowerRightWindows();
     } else if (Input.isRepeated('left')) {

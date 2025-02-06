@@ -368,83 +368,8 @@ function Window_ShopInfo() {
     this.initialize.apply(this, arguments);
 }
 
-Window_ShopInfo.prototype = Object.create(Window_Base.prototype);
+Window_ShopInfo.prototype = Object.create(Window_ItemStatus.prototype);
 Window_ShopInfo.prototype.constructor = Window_ShopInfo;
-
-Window_ShopInfo.prototype.initialize = function(x, y, width, height) {
-    Window_Base.prototype.initialize.call(this, x, y, width, height);
-    this._item = null;
-    this.deactivate();
-    this.refresh();
-};
-
-Window_ShopInfo.prototype.setItem = function(item) {
-    if (this._item === item) return;
-    this._item = item;
-    this.refresh();
-};
-
-Window_ShopInfo.prototype.refresh = function() {
-    this.contents.clear();
-    this.drawDarkRectEntries();
-    if (!this._item) return;
-    this.contents.fontSize = Yanfly.Param.ItemFontSize;
-    this.drawItemEntry();
-};
-
-Window_ShopInfo.prototype.drawDarkRectEntries = function() {
-    var rect = new Rectangle();
-    if (eval(Yanfly.Param.ItemShowIcon)) {
-      rect.width = Window_Base._faceWidth;
-      rect.height = Window_Base._faceHeight;
-      this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
-      rect.width = (this.contents.width - Window_Base._faceWidth) / 2;
-    } else {
-      rect.width = this.contents.width / 2;
-    }
-    rect.height = this.lineHeight();
-    for (var i = 0; i < 8; ++i) {
-      rect = this.getRectPosition(rect, i);
-      this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
-    }
-};
-
-Window_ShopInfo.prototype.drawDarkRect = function(dx, dy, dw, dh) {
-    var color = this.gaugeBackColor();
-    this.changePaintOpacity(false);
-    this.contents.fillRect(dx + 1, dy + 1, dw - 2, dh - 2, color);
-    this.changePaintOpacity(true);
-};
-
-Window_ShopInfo.prototype.getRectPosition = function(rect, i) {
-    if (i % 2 === 0) {
-      if (eval(Yanfly.Param.ItemShowIcon)) {
-        rect.x = Window_Base._faceWidth;
-      } else {
-        rect.x = 0;
-      }
-      rect.y = i / 2 * this.lineHeight();
-    } else {
-      if (eval(Yanfly.Param.ItemShowIcon)) {
-        rect.x = Window_Base._faceWidth + rect.width;
-      } else {
-        rect.x = rect.width;
-      }
-    }
-    return rect;
-};
-
-Window_ShopInfo.prototype.drawItemEntry = function() {
-    var item = this._item;
-    if (eval(Yanfly.Param.ItemShowIcon)) this.drawItemIcon(item);
-    if (DataManager.isItem(item)) this.drawItemInfo(item);
-    if (DataManager.isWeapon(item)) this.drawEquipInfo(item);
-    if (DataManager.isArmor(item)) this.drawEquipInfo(item);
-};
-
-Window_ShopInfo.prototype.drawItemIcon = function() {
-    this.drawLargeIcon();
-};
 
 if (Imported.YEP_X_ItemPictureImg) {
 
@@ -498,170 +423,6 @@ Window_ShopInfo.prototype.drawItemPictureImage = function(bitmap) {
 
 }; // Imported.YEP_X_ItemPictureImg
 
-Window_ShopInfo.prototype.drawLargeIcon = function() {
-    var iconIndex = this._item.iconIndex;
-    var bitmap = ImageManager.loadSystem('IconSet');
-    var pw = Window_Base._iconWidth;
-    var ph = Window_Base._iconHeight;
-    var sx = iconIndex % 16 * pw;
-    var sy = Math.floor(iconIndex / 16) * ph;
-    var dw = Yanfly.Param.ItemIconSize;
-    var dh = Yanfly.Param.ItemIconSize;
-    var dx = (Window_Base._faceWidth - dw) / 2;
-    var dy = (Window_Base._faceHeight - dh) / 2;
-    this.contents._context.imageSmoothingEnabled = false;
-    this.contents.blt(bitmap, sx, sy, pw, ph, dx, dy, dw, dh);
-    this.contents._context.imageSmoothingEnabled = true;
-};
-
-Window_ShopInfo.prototype.drawEquipInfo = function(item) {
-    var rect = new Rectangle();
-    if (eval(Yanfly.Param.ItemShowIcon)) {
-      rect.width = (this.contents.width - Window_Base._faceWidth) / 2;
-    } else {
-      rect.width = this.contents.width / 2;
-    }
-    for (var i = 0; i < 8; ++i) {
-      rect = this.getRectPosition(rect, i);
-      var dx = rect.x + this.textPadding();
-      var dw = rect.width - this.textPadding() * 2;
-      this.changeTextColor(this.systemColor());
-      this.drawText(TextManager.param(i), dx, rect.y, dw);
-      this.changeTextColor(this.paramchangeTextColor(item.params[i]));
-      var text = Yanfly.Util.toGroup(item.params[i]);
-      if (item.params[i] >= 0) text = '+' + text;
-      if (text === '+0') this.changePaintOpacity(false);
-      this.drawText(text, dx, rect.y, dw, 'right');
-      this.changePaintOpacity(true);
-    }
-};
-
-Window_ShopInfo.prototype.drawItemInfo = function(item) {
-    var rect = new Rectangle();
-    if (eval(Yanfly.Param.ItemShowIcon)) {
-      rect.width = (this.contents.width - Window_Base._faceWidth) / 2;
-    } else {
-      rect.width = this.contents.width / 2;
-    }
-    for (var i = 0; i < 8; ++i) {
-      rect = this.getRectPosition(rect, i);
-      var dx = rect.x + this.textPadding();
-      var dw = rect.width - this.textPadding() * 2;
-      this.changeTextColor(this.systemColor());
-      var text = this.getItemInfoCategory(i);
-      this.drawText(text, dx, rect.y, dw);
-      this.drawItemData(i, dx, rect.y, dw);
-    }
-};
-
-Window_ShopInfo.prototype.getItemInfoCategory = function(i) {
-    var fmt = Yanfly.Param.ItemRecoverFmt;
-    if (i === 0) return fmt.format(TextManager.param(0));
-    if (i === 1) return fmt.format(TextManager.hp);
-    if (i === 2) return fmt.format(TextManager.param(1));
-    if (i === 3) return fmt.format(TextManager.mp);
-    if (i === 4) return Yanfly.Param.ItemAddState;
-    if (i === 5) return Yanfly.Param.ItemRemoveState;
-    if (i === 6) return Yanfly.Param.ItemAddBuff;
-    if (i === 7) return Yanfly.Param.ItemRemoveBuff;
-    return '';
-};
-
-Window_ShopInfo.prototype.drawItemData = function(i, dx, dy, dw) {
-    if (!this._item) return;
-    var effect;
-    var value = '---';
-    var pre = '';
-    var text = '';
-    var icons = [];
-    if (i === 0) {
-      effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
-      value = (effect) ? effect.value1 : '---';
-      if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
-    }
-    if (i === 1) {
-      effect = this.getEffect(Game_Action.EFFECT_RECOVER_HP);
-      value = (effect) ? effect.value2 : '---';
-      if (value === 0) value = '---';
-    }
-    if (i === 2) {
-      effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
-      value = (effect) ? effect.value1 : '---';
-      if (value === 0) value = '---';
-      if (value !== '---' && value !== 0) value *= 100;
-    }
-    if (i === 3) {
-      effect = this.getEffect(Game_Action.EFFECT_RECOVER_MP);
-      value = (effect) ? effect.value2 : '---';
-      if (value === 0) value = '---';
-    }
-    if (i >= 4) {
-      icons = this.getItemIcons(i, icons);
-    }
-    this.changeTextColor(this.normalColor());
-    if (value === '---') {
-      this.changePaintOpacity(false);
-    } else if (i < 4) {
-      if (value > 0) pre = '+';
-      value = Yanfly.Util.toGroup(parseInt(value));
-      if ([0, 2].contains(i)) text = '%';
-    }
-    if (icons.length > 0) {
-      this.changePaintOpacity(true);
-      dx = dx + dw - icons.length * Window_Base._iconWidth;
-      dx += this.textPadding() - 2;
-      for (var j = 0; j < icons.length; ++j) {
-        var icon = icons[j];
-        this.drawIcon(icon, dx, dy + 2);
-        dx += Window_Base._iconWidth;
-      }
-    } else {
-      text = pre + value + text;
-      this.drawText(text, dx, dy, dw, 'right');
-      this.changePaintOpacity(true);
-    }
-};
-
-Window_ShopInfo.prototype.getEffect = function(code) {
-    var targetEffect;
-    this._item.effects.forEach(function(effect) {
-      if (effect.code === code) targetEffect = effect;
-    }, this);
-    return targetEffect;
-};
-
-Window_ShopInfo.prototype.getItemIcons = function(i, array) {
-    this._item.effects.forEach(function(effect) {
-      if (i === 4 && effect.code === Game_Action.EFFECT_ADD_STATE) {
-        var state = $dataStates[effect.dataId];
-        if (state && state.iconIndex !== 0) array.push(state.iconIndex);
-      }
-      if (i === 5 && effect.code === Game_Action.EFFECT_REMOVE_STATE) {
-        var state = $dataStates[effect.dataId];
-        if (state && state.iconIndex !== 0) array.push(state.iconIndex);
-      }
-      if (i === 6 && effect.code === Game_Action.EFFECT_ADD_BUFF) {
-        var icon = Game_BattlerBase.ICON_BUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 6 && effect.code === Game_Action.EFFECT_ADD_DEBUFF) {
-        var icon = Game_BattlerBase.ICON_DEBUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 7 && effect.code === Game_Action.EFFECT_REMOVE_BUFF) {
-        var icon = Game_BattlerBase.ICON_BUFF_START + effect.dataId;
-        array.push(icon);
-      }
-      if (i === 7 && effect.code === Game_Action.EFFECT_REMOVE_DEBUFF) {
-        var icon = Game_BattlerBase.ICON_DEBUFF_START + effect.dataId;
-        array.push(icon);
-      }
-    }, this);
-    array = array.slice(0, Yanfly.Param.ItemMaxIcons);
-    return array;
-};
-
 //=============================================================================
 // Window_ShopNumber
 //=============================================================================
@@ -675,7 +436,7 @@ Window_ShopNumber.prototype.refresh = function() {
     this._index = 0;
     this.resetFontSettings();
     this.drawItemName(this._item, 0, this.lineHeight(), this.contents.width);
-    this.drawMultiplicationSign();
+    if (this._max !== 1) this.drawMultiplicationSign();
     this.drawNumber();
     this.drawTotalPrice();
 };
@@ -742,6 +503,7 @@ Window_ShopNumber.prototype.cursorWidth = function() {
       if (DataManager.isArmor(this._item)) item = $dataArmors[id];
     }
     var value = $gameParty.maxItems(item);
+    if (this._max == 1) value = this._buyOrSell;
     var digitWidth = this.textWidth(Yanfly.Util.toGroup(value));
     return digitWidth + this.textPadding() * 2;
 };
@@ -874,9 +636,16 @@ Window_ShopStatus.prototype.initialize = function(x, y, width, height) {
     if (Yanfly.Param.ShopStatSwitch) this._paramId = 2;
     this._displayMode = Yanfly.Param.ShopDefaultMode;
     this._actorIndex = 0;
-    this._maxActorIndex = $gameParty.members().length - 1;
     this._clickZoneX = this.textWidth('<<') + this.standardPadding();
     this._clickZoneY = this.standardPadding() + this.lineHeight() * 2;
+};
+
+Window_ShopStatus.prototype.filterParty = function() {
+    return $gameParty.members().filter(a => a.canEquip(this._item));
+};
+
+Window_ShopStatus.prototype.maxActorIndex = function() {
+    return this.filterParty().length - 1;
 };
 
 Window_ShopStatus.prototype.displayMode = function() {
@@ -888,11 +657,11 @@ Window_ShopStatus.prototype.setDisplayMode = function(mode) {
 };
 
 Window_ShopStatus.prototype.isDefaultMode = function() {
-    return this.displayMode() === 'default';
+    return false;
 };
 
 Window_ShopStatus.prototype.isActorMode = function() {
-    return this.displayMode() === 'actor';
+    return true;
 };
 
 Window_ShopStatus.prototype.refresh = function() {
@@ -929,19 +698,22 @@ Window_ShopStatus.prototype.drawStatDisplayed = function() {
 
 Window_ShopStatus.prototype.drawActorData = function() {
     var actor = this.getActor();
+    if (!actor) return;
     this.drawActorDisplayed(actor);
-    this.drawDarkRectEntries();
+    this.drawDarkRectEntries(actor);
     this.drawActorStatInfo(actor);
 };
 
 Window_ShopStatus.prototype.getActor = function() {
-    return $gameParty.members()[this._actorIndex];
+    if (this._actorIndex > this.maxActorIndex() || this._actorIndex < 0) this._actorIndex = 0;
+    return this.filterParty()[this._actorIndex];
 };
 
 Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
-    var text = actor.name();
+    var text = "\\i[" + $dataClasses[actor._classId].icon + "]" + actor.name();
+    var tx = (this.contents.width - this.textWidth(text)) / 2;
     this.changeTextColor(this.normalColor());
-    this.drawText(text, 0, this.lineHeight(), this.contents.width, 'center');
+    this.drawTextEx(text, tx, this.lineHeight(), this.contents.width, 'center');
     this.changeTextColor(this.systemColor());
     var text = '<<';
     this.drawText(text, 0, this.lineHeight(), this.contents.width, 'left');
@@ -949,8 +721,8 @@ Window_ShopStatus.prototype.drawActorDisplayed = function(actor) {
     this.drawText(text, 0, this.lineHeight(), this.contents.width, 'right');
 };
 
-Window_ShopStatus.prototype.drawDarkRectEntries = function() {
-    for (var i = 0; i < 8; ++i) {
+Window_ShopStatus.prototype.drawDarkRectEntries = function(actor) {
+    for (var i = 0; i < 8 * this.currentEquippedItem(actor, this._item.etypeId).length; ++i) {
       var rect = this.getRectPosition(i);
       this.drawDarkRect(rect.x, rect.y, rect.width, rect.height);
     }
@@ -958,10 +730,10 @@ Window_ShopStatus.prototype.drawDarkRectEntries = function() {
 
 Window_ShopStatus.prototype.getRectPosition = function(index) {
     var rect = new Rectangle();
-    rect.width = Math.floor(this.contents.width / 2);
+    rect.width = Math.floor(this.contents.width / 4);
     rect.height = this.lineHeight();
-    rect.x = index % 2 === 0 ? 0 : rect.width;
-    rect.y = Math.floor(index / 2) * this.lineHeight() + this.lineHeight() * 2;
+    rect.x = (index % 4) * rect.width;
+    rect.y = Math.floor(index / 4) * this.lineHeight() + this.lineHeight() * 2;
     return rect;
 };
 
@@ -974,32 +746,44 @@ Window_ShopStatus.prototype.drawDarkRect = function(dx, dy, dw, dh) {
 
 Window_ShopStatus.prototype.drawActorStatInfo = function(actor) {
     this.contents.fontSize = Yanfly.Param.ShopStatFontSize;
-    var item1 = this.currentEquippedItem(actor, this._item.etypeId);
+    var items = this.currentEquippedItem(actor, this._item.etypeId);
     var canEquip = actor.canEquip(this._item);
-    for (var i = 0; i < 8; ++i) {
+    canEquip = actor.checkEquipRequirements(this._item);
+    for (index = 0; index < items.length; index++) {
+      item = items[index];
+      for (var i = 0; i < 8; ++i) {
+        this.changePaintOpacity(true);
+        var rect = this.getRectPosition(i);
+        rect.x += this.textPadding();
+        rect.y += index * this.lineHeight() * 2;
+        rect.width -= this.textPadding() * 2;
+        this.changeTextColor(this.systemColor());
+        if (i == 0) {
+          var icon = item ? item.iconIndex : Yanfly.Icon.EmptyEquip;
+          this.changePaintOpacity(!!item);
+          this.drawIcon(icon, rect.x + (rect.width - Window_Base._iconWidth) / 2, rect.y + (this.lineHeight() - Window_Base._iconHeight) / 2)
+        } else {
+          var text = TextManager.param(i - 1);
+          this.drawText(text, rect.x, rect.y, rect.width);
+          if (!canEquip) this.drawActorCantEquip(actor, rect);
+          if (canEquip) this.drawActorChange(actor, rect, item, i - 1);
+        }
+      }
       this.changePaintOpacity(true);
-      var rect = this.getRectPosition(i);
-      rect.x += this.textPadding();
-      rect.width -= this.textPadding() * 2;
-      this.changeTextColor(this.systemColor());
-      var text = TextManager.param(i);
-      this.drawText(text, rect.x, rect.y, rect.width);
-      if (!canEquip) this.drawActorCantEquip(actor, rect);
-      if (canEquip) this.drawActorChange(actor, rect, item1, i);
     }
-    this.changePaintOpacity(true);
 };
 
 Window_ShopStatus.prototype.drawActorCantEquip = function(actor, rect) {
     this.changePaintOpacity(false);
     this.resetTextColor();
     this.contents.fontSize = Yanfly.Param.ShopCantSize;
-    var text = '-';
+    var text = "Can't Equip";
     this.drawText(text, rect.x, rect.y, rect.width, 'right');
 };
 
 Window_ShopStatus.prototype.drawActorChange = function(actor, rect, item1, i) {
     var change = this._item.params[i]
+    if (item1) if (item1.baseItemId == 157) change -= $gameSystem.championsTalisman()[i]; // Champion's Talisman
     change -= (item1 ? item1.params[i] : 0);
     this.changePaintOpacity(change !== 0);
     this.changeTextColor(this.paramchangeTextColor(change));
@@ -1018,10 +802,11 @@ Window_ShopStatus.prototype.drawEquipInfo = function(x, y) {
 
 Window_ShopStatus.prototype.drawActorEquipInfo = function(x, y, actor) {
     var enabled = actor.canEquip(this._item);
+    enabled = actor.checkEquipRequirements(this._item);
     this.changePaintOpacity(enabled);
     this.resetTextColor();
     this.resetFontSettings();
-    this.drawText(actor.name(), x, y, this.contents.width - x);
+    this.drawTextEx("\\i[" + $dataClasses[actor._classId].icon + "] " + actor.name(), x, y, this.contents.width - x);
     var item1 = this.currentEquippedItem(actor, this._item.etypeId);
     if (enabled) {
       this.contents.fontSize = Yanfly.Param.ShopStatFontSize;
@@ -1075,7 +860,7 @@ Window_ShopStatus.prototype.updateParamSwitch = function() {
 };
 
 Window_ShopStatus.prototype.getInput = function(input) {
-    if (SceneManager._scene._numberWindow.active) return false;
+    if (SceneManager._scene._numberWindow.active && !(SceneManager._scene instanceof Scene_Synthesis)) return false;
     return Input.isRepeated(input)
 };
 
@@ -1085,7 +870,7 @@ Window_ShopStatus.prototype.adjustLeft = function() {
       if (this._paramId < 0) this._paramId = 7;
     } else if (this.isActorMode()) {
       this._actorIndex -= 1;
-      if (this._actorIndex < 0) this._actorIndex = this._maxActorIndex;
+      if (this._actorIndex < 0) this._actorIndex = this.maxActorIndex();
     }
 };
 
@@ -1095,7 +880,7 @@ Window_ShopStatus.prototype.adjustRight = function() {
       if (this._paramId > 7) this._paramId = 0;
     } else if (this.isActorMode()) {
       this._actorIndex += 1;
-      if (this._actorIndex > this._maxActorIndex) this._actorIndex = 0;
+      if (this._actorIndex > this.maxActorIndex()) this._actorIndex = 0;
     }
 };
 
@@ -1208,10 +993,36 @@ Scene_Shop.prototype.createCategoryWindow = function() {
     this._categoryWindow.y = this._commandWindow.y;
     this._categoryWindow.hide();
     this._categoryWindow.deactivate();
-    this._categoryWindow.setHandler('ok',     this.onCategoryOk.bind(this));
-    this._categoryWindow.setHandler('cancel', this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('ok',        this.onCategoryOk.bind(this));
+    this._categoryWindow.setHandler('cancel',    this.onCategoryCancel.bind(this));
+    this._categoryWindow.setHandler('WeaponCat', this.commandWeapon.bind(this));
+    this._categoryWindow.setHandler('ArmorCat',  this.commandArmor.bind(this));
     this.addWindow(this._categoryWindow);
 };
+
+Scene_Shop.prototype.onCategoryCancel = function() {
+    if (this._categoryWindow._type == '') {
+      this._sellWindow.hide();
+      this._commandWindow.activate();
+      this._dummyWindow.show();
+      this._categoryWindow.hide();
+      this._statusWindow.hide();
+      this._statusWindow.setItem(null);
+      this._helpWindow.clear();
+      this._statusWindow.show();
+      this._infoWindow.setItem(null);
+      this._goldWindow.setItemSell(null);
+    } else {
+      this._categoryWindow.select(this._categoryWindow._type == 'weapons' ? 2 : 3);
+      this._categoryWindow._type = '';
+      this._categoryWindow.activate();
+      this._categoryWindow.refresh();
+    }
+};
+
+Scene_Shop.prototype.commandWeapon = Scene_Item.prototype.commandWeapon;
+  
+Scene_Shop.prototype.commandArmor = Scene_Item.prototype.commandArmor;
 
 Scene_Shop.prototype.createSellWindow = function() {
     var wy = this._dummyWindow.y;

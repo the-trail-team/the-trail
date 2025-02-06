@@ -297,8 +297,8 @@ DataManager.isDatabaseLoaded = function() {
 };
 
 DataManager.processLSNotetags1 = function(group) {
-  var noteA1 = /<(.*)[ ]LIFE STEAL[ ](.*):[ ]([\+\-]\d+)([%％])>/i;
-  var noteA2 = /<(.*)[ ]LIFE STEAL[ ](.*):[ ]([\+\-]\d+)>/i;
+  var noteA1 = /<(.*)[ ]LIFE STEAL[ ](.*):[ ]([\+\-]\d+(?:\.\d+)?)([%％])>/i;
+  var noteA2 = /<(.*)[ ]LIFE STEAL[ ](.*):[ ]([\+\-]\d+(?:\.\d+)?)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -477,6 +477,7 @@ Game_Battler.prototype.lifeSteal = function(damage, type, target, rate, flat) {
     if (Yanfly.Param.LSHPOver) lifeSteal = Math.min(lifeSteal, damage);
     if (lifeSteal <= 0) return;
     this.gainHp(lifeSteal);
+    if (this.isActor()) this.increaseTotalHealingDealt(lifeSteal);
 };
 
 Game_Battler.prototype.magicSteal = function(damage, type, target, rate, flat) {
@@ -491,6 +492,7 @@ Game_Battler.prototype.magicSteal = function(damage, type, target, rate, flat) {
       var lifeSteal = Math.max(0, Math.floor(damage * (1 - rate) + flat));
     }
     if (Yanfly.Param.LSMPOver) lifeSteal = Math.min(lifeSteal, damage);
+    if (target.hasState(67)) lifeSteal += Math.min(Math.ceil(damage * 0.01), Math.ceil(this.mmp * 0.05)); // Hardcoded Mana Refund
     if (lifeSteal <= 0) return;
     this.gainMp(lifeSteal);
 };

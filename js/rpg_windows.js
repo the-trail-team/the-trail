@@ -504,7 +504,45 @@ Window_Base.prototype.drawActorName = function(actor, x, y, width) {
 Window_Base.prototype.drawActorClass = function(actor, x, y, width) {
     width = width || 168;
     this.resetTextColor();
+    this.drawIcon(actor.currentClass().icon, x, y, width);
+    x += Window_Base._iconWidth + this.textPadding() / 2;
     this.drawText(actor.currentClass().name, x, y, width);
+};
+
+Window_Base.prototype.drawActorEquipIcons = function(actor, x, y, bound) {
+    equips = actor.equips();
+    width = equips.length * Window_Base._iconWidth;
+    if (width > bound) return;
+    x -= width;
+    for (i = 0; i < equips.length; i++) {
+        if (equips[i]) {
+            icon = equips[i].iconIndex;
+            this.changePaintOpacity(true);
+        } else {
+            switch(this.emptySlotStatus(actor, i)) {
+                case 0:
+                    icon = Yanfly.Icon.SealedEquip;
+                    break;
+                case 1:
+                    icon = Yanfly.Icon.LockedEquip;
+                    break;
+                case 2:
+                default:
+                    icon = Yanfly.Icon.EmptyEquip;
+                    break;
+            }
+            this.changePaintOpacity(false);
+        }
+        this.drawIcon(icon, x, y);
+        x += Window_Base._iconWidth;
+    }
+    this.changePaintOpacity(true);
+};
+
+Window_Base.prototype.emptySlotStatus = function(actor, slot) {
+    if (actor.isEquipTypeSealed(actor.equipSlots()[slot])) return 0;
+    if (actor.isEquipTypeLocked(actor.equipSlots()[slot])) return 1;
+    return 2;
 };
 
 Window_Base.prototype.drawActorNickname = function(actor, x, y, width) {
@@ -598,8 +636,10 @@ Window_Base.prototype.drawItemName = function(item, x, y, width) {
     if (item) {
         var iconBoxWidth = Window_Base._iconWidth + 4;
         this.resetTextColor();
+        if (item.iconBackground) this.drawIcon(item.iconBackground, x + 2, y + 2);
         this.drawIcon(item.iconIndex, x + 2, y + 2);
-        this.drawText(item.name, x + iconBoxWidth, y, width - iconBoxWidth);
+        if (item.iconForeground) this.drawIcon(item.iconForeground, x + 2, y + 2);
+        this.drawTextEx(item.name, x + iconBoxWidth, y, width - iconBoxWidth);
     }
 };
 
@@ -1726,7 +1766,7 @@ Window_MenuStatus.prototype.itemHeight = function() {
 };
 
 Window_MenuStatus.prototype.numVisibleRows = function() {
-    return 4;
+    return $gameParty.members().length;
 };
 
 Window_MenuStatus.prototype.loadImages = function() {
@@ -1766,6 +1806,30 @@ Window_MenuStatus.prototype.drawItemStatus = function(index) {
     var y = rect.y + rect.height / 2 - this.lineHeight() * 1.5;
     var width = rect.width - x - this.textPadding();
     this.drawActorSimpleStatus(actor, x, y, width);
+};
+
+Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width) {
+    var lineHeight = this.lineHeight();
+    var xpad = Window_Base._faceWidth + (2 * Yanfly.Param.TextPadding);
+    var x2 = x + xpad;
+    var width2 = Math.max(180, width - xpad - this.textPadding());
+    if (this.maxItems() <= 6) {
+        this.drawActorName(actor, x, y);
+        this.drawActorLevel(actor, x, y + lineHeight * 1);
+        this.drawActorIcons(actor, x, y + lineHeight * 2);
+        this.drawActorClass(actor, x2, y, width2);
+        this.drawActorEquipIcons(actor, x2 + width2, y, width2 - this.textWidth(actor.currentClass().name));  
+        this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
+        this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
+    } else {
+        this.drawActorName(actor, x, y + lineHeight * 0.5);
+        this.drawActorIcons(actor, x, y + lineHeight * 1.5);
+        this.drawActorHp(actor, x2, y + lineHeight * 0.5, width2);
+        this.drawActorMp(actor, x2, y + lineHeight * 1.5, width2);
+    }
+    if (Yanfly.Param.MenuTpGauge) {
+      this.drawActorTp(actor, x2, y + lineHeight * 3, width2);
+    }
 };
 
 Window_MenuStatus.prototype.processOk = function() {
@@ -1868,6 +1932,7 @@ Window_ItemCategory.prototype.constructor = Window_ItemCategory;
 
 Window_ItemCategory.prototype.initialize = function() {
     Window_HorzCommand.prototype.initialize.call(this, 0, 0);
+    this._type = '';
 };
 
 Window_ItemCategory.prototype.windowWidth = function() {
@@ -2480,6 +2545,7 @@ Window_EquipItem.prototype.includes = function(item) {
     if (this._slotId < 0 || item.etypeId !== this._actor.equipSlots()[this._slotId]) {
         return false;
     }
+    if (this._slotId == 10 && !this._actor.checkEquipRequirements(item)) return false;
     return this._actor.canEquip(item);
 };
 
@@ -2981,7 +3047,7 @@ Window_ShopBuy.prototype.makeItemList = function() {
             item = $dataArmors[goods[1]];
             break;
         }
-        if (item) {
+        if (item) if (this.meetsCustomBuyShowEval(item)) {
             this._data.push(item);
             this._price.push(goods[2] === 0 ? item.price : goods[3]);
         }
@@ -3120,6 +3186,7 @@ Window_ShopNumber.prototype.placeButtons = function() {
 
 Window_ShopNumber.prototype.updateButtonsVisiblity = function() {
     if (TouchInput.date > Input.date) {
+        this.hideButtons();
         this.showButtons();
     } else {
         this.hideButtons();
@@ -3127,9 +3194,14 @@ Window_ShopNumber.prototype.updateButtonsVisiblity = function() {
 };
 
 Window_ShopNumber.prototype.showButtons = function() {
-    for (var i = 0; i < this._buttons.length; i++) {
-        this._buttons[i].visible = true;
+    if (this._max !== 1) {
+        for (var i = 0; i < this._buttons.length; i++) {
+            this._buttons[i].visible = true;
+        }
+    } else {
+        this._buttons[4].visible = true;
     }
+
 };
 
 Window_ShopNumber.prototype.hideButtons = function() {
@@ -3361,7 +3433,8 @@ Window_ShopStatus.prototype.currentEquippedItem = function(actor, etypeId) {
             list.push(equips[i]);
         }
     }
-    var paramId = this.paramId();
+    return list;
+    /*var paramId = this.paramId();
     var worstParam = Number.MAX_VALUE;
     var worstItem = null;
     for (var j = 0; j < list.length; j++) {
@@ -3370,7 +3443,7 @@ Window_ShopStatus.prototype.currentEquippedItem = function(actor, etypeId) {
             worstItem = list[j];
         }
     }
-    return worstItem;
+    return worstItem;*/
 };
 
 Window_ShopStatus.prototype.update = function() {
@@ -3527,7 +3600,7 @@ Window_NameEdit.prototype.drawUnderline = function(index) {
 Window_NameEdit.prototype.drawChar = function(index) {
     var rect = this.itemRect(index);
     this.resetTextColor();
-    this.drawText(this._name[index] || '', rect.x, rect.y);
+    this.drawText(this._name[index] || '', rect.x, rect.y, rect.width, 'center');
 };
 
 Window_NameEdit.prototype.refresh = function() {
@@ -3563,7 +3636,7 @@ Window_NameInput.LATIN1 =
           'Z','[',']','^','_',  'z','{','}','|','~',
           '0','1','2','3','4',  '!','#','$','%','&',
           '5','6','7','8','9',  '(',')','*','+','-',
-          '/','=','@','<','>',  ':',';',' ','Page','OK' ];
+          '/','=','@','<','>',  ':',';','★','Page','OK' ];
 Window_NameInput.LATIN2 =
         [ 'Á','É','Í','Ó','Ú',  'á','é','í','ó','ú',
           'À','È','Ì','Ò','Ù',  'à','è','ì','ò','ù',
@@ -3573,7 +3646,7 @@ Window_NameInput.LATIN2 =
           'Ã','Å','Æ','Ç','Ð',  'ã','å','æ','ç','ð',
           'Ñ','Õ','Ø','Š','Ŵ',  'ñ','õ','ø','š','ŵ',
           'Ý','Ŷ','Ÿ','Ž','Þ',  'ý','ÿ','ŷ','ž','þ',
-          'Ĳ','Œ','ĳ','œ','ß',  '«','»',' ','Page','OK' ];
+          'Ĳ','Œ','ĳ','œ','ß',  '«','»','★','Page','OK' ];
 Window_NameInput.RUSSIA =
         [ 'А','Б','В','Г','Д',  'а','б','в','г','д',
           'Е','Ё','Ж','З','И',  'е','ё','ж','з','и',
@@ -3583,7 +3656,7 @@ Window_NameInput.RUSSIA =
           'Ш','Щ','Ъ','Ы','Ь',  'ш','щ','ъ','ы','ь',
           'Э','Ю','Я','^','_',  'э','ю','я','%','&',
           '0','1','2','3','4',  '(',')','*','+','-',
-          '5','6','7','8','9',  ':',';',' ','','OK' ];
+          '5','6','7','8','9',  ':',';','★','','OK' ];
 Window_NameInput.JAPAN1 =
         [ 'あ','い','う','え','お',  'が','ぎ','ぐ','げ','ご',
           'か','き','く','け','こ',  'ざ','じ','ず','ぜ','ぞ',
@@ -3593,7 +3666,7 @@ Window_NameInput.JAPAN1 =
           'は','ひ','ふ','へ','ほ',  'ぁ','ぃ','ぅ','ぇ','ぉ',
           'ま','み','む','め','も',  'っ','ゃ','ゅ','ょ','ゎ',
           'や','ゆ','よ','わ','ん',  'ー','～','・','＝','☆',
-          'ら','り','る','れ','ろ',  'ゔ','を','　','カナ','決定' ];
+          'ら','り','る','れ','ろ',  'ゔ','を','★','カナ','決定' ];
 Window_NameInput.JAPAN2 =
         [ 'ア','イ','ウ','エ','オ',  'ガ','ギ','グ','ゲ','ゴ',
           'カ','キ','ク','ケ','コ',  'ザ','ジ','ズ','ゼ','ゾ',
@@ -3603,7 +3676,7 @@ Window_NameInput.JAPAN2 =
           'ハ','ヒ','フ','ヘ','ホ',  'ァ','ィ','ゥ','ェ','ォ',
           'マ','ミ','ム','メ','モ',  'ッ','ャ','ュ','ョ','ヮ',
           'ヤ','ユ','ヨ','ワ','ン',  'ー','～','・','＝','☆',
-          'ラ','リ','ル','レ','ロ',  'ヴ','ヲ','　','英数','決定' ];
+          'ラ','リ','ル','レ','ロ',  'ヴ','ヲ','★','英数','決定' ];
 Window_NameInput.JAPAN3 =
         [ 'Ａ','Ｂ','Ｃ','Ｄ','Ｅ',  'ａ','ｂ','ｃ','ｄ','ｅ',
           'Ｆ','Ｇ','Ｈ','Ｉ','Ｊ',  'ｆ','ｇ','ｈ','ｉ','ｊ',
@@ -3613,13 +3686,13 @@ Window_NameInput.JAPAN3 =
           'Ｚ','［','］','＾','＿',  'ｚ','｛','｝','｜','～',
           '０','１','２','３','４',  '！','＃','＄','％','＆',
           '５','６','７','８','９',  '（','）','＊','＋','－',
-          '／','＝','＠','＜','＞',  '：','；','　','かな','決定' ];
+          '／','＝','＠','＜','＞',  '：','；','★','かな','決定' ];
 
 Window_NameInput.prototype.initialize = function(editWindow) {
-    var x = editWindow.x;
-    var y = editWindow.y + editWindow.height + 8;
-    var width = editWindow.width;
+    var width = 480;
     var height = this.windowHeight();
+    var x = editWindow.x + (editWindow.width - width) / 2;
+    var y = editWindow.y + editWindow.height + 8;
     Window_Selectable.prototype.initialize.call(this, x, y, width, height);
     this._editWindow = editWindow;
     this._page = 0;
@@ -4209,7 +4282,9 @@ Window_EventItem.prototype.updatePlacement = function() {
 
 Window_EventItem.prototype.includes = function(item) {
     var itypeId = $gameMessage.itemChoiceItypeId();
-    return DataManager.isItem(item) && item.itypeId === itypeId;
+    if (typeof itypeId == "string") return DataManager.isItem(item) && item.itemCategory.contains(itypeId);
+    if (typeof itypeid == "number") return DataManager.isItem(item) && item.itypeId === itypeId;
+    return false;
 };
 
 Window_EventItem.prototype.isEnabled = function(item) {
@@ -5259,17 +5334,18 @@ Window_BattleLog.prototype.displayBuffs = function(target, buffs, fmt) {
 Window_BattleLog.prototype.makeHpDamageText = function(target) {
     var result = target.result();
     var damage = result.hpDamage;
+    var crit = result.critical;
     var isActor = target.isActor();
     var fmt;
     if (damage > 0 && result.drain) {
         fmt = isActor ? TextManager.actorDrain : TextManager.enemyDrain;
-        return fmt.format(target.name(), TextManager.hp, damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, damage);
     } else if (damage > 0) {
         fmt = isActor ? TextManager.actorDamage : TextManager.enemyDamage;
-        return fmt.format(target.name(), damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), damage);
     } else if (damage < 0) {
         fmt = isActor ? TextManager.actorRecovery : TextManager.enemyRecovery;
-        return fmt.format(target.name(), TextManager.hp, -damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, -damage);
     } else {
         fmt = isActor ? TextManager.actorNoDamage : TextManager.enemyNoDamage;
         return fmt.format(target.name());
@@ -5409,7 +5485,7 @@ Window_ActorCommand.prototype.addGuardCommand = function() {
 };
 
 Window_ActorCommand.prototype.addItemCommand = function() {
-    this.addCommand(TextManager.item, 'item');
+    this.addCommand(TextManager.item, 'item', BattleManager.actor()._useBP == 0);
 };
 
 Window_ActorCommand.prototype.setup = function(actor) {
@@ -5420,6 +5496,9 @@ Window_ActorCommand.prototype.setup = function(actor) {
     this.selectLast();
     this.activate();
     this.open();
+
+    if (this._boosting) this.selectSymbol(this._boosting);
+    this._boosting = null;
 };
 
 Window_ActorCommand.prototype.processOk = function() {

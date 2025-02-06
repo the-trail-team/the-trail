@@ -302,7 +302,7 @@ Yanfly.IS.version = 1.11;
  * ---
  *
  * Item, Weapon, and Armor Notetags:
- * 
+ *
  *   <Custom Synthesis Effect>
  *    var bottle = $dataItems[123];
  *    $gameParty.gainItem(bottle, 2);
@@ -339,6 +339,44 @@ Yanfly.IS.version = 1.11;
  * This will make the synthesis menu, when opened up, only allow the recipes of
  * the Item 15, Weapon 20, or Armor 30 without needing it and not showing the
  * recipes of any recipe items within the player's inventory.
+ *
+ * ============================================================================
+ * Unofficial fix to use Independent Items as Ingredients (Ozirisz)
+ * ============================================================================
+ *
+ * If you want to use Armors/Weapons as Ingredients, default its impossible.
+ * I provided this workaround with editing this plugin and extend Item_Core
+ * for the functionality. So you also need the modified Item_Core.
+ * The plugin only see the "original", unupgraded version of the Armor/Weapon.
+ * So, if it's upgraded or it has some augment it's not count as Ingredient.
+ *
+ * For expample, you have this recipe:
+ *  <Synthesis Ingredients>
+ *    Iron Bar: 4
+ *    Short Sword: 1
+ *  </Synthesis Ingredients>
+ *
+ * And you have in inventory:
+ *   Short Sword
+ *   Short Sword (+1)
+ *   Short Sword of Might
+ *   Fiery Short Sword
+ *   ...
+ *
+ * Only the "Short Sword" could be used in synthesis, the others are not.
+ * Important note: the code only checks the Independent Item's few
+ * property to decide, it's modifided or "original" item.
+ *
+ *   boostCount = 0
+ *   namePrefix = ""
+ *   nameSuffix = ""
+ *   name = baseItemName
+ *   textColor = baseItem.textColor
+ *
+ * If these conditions not meet, the item will be treat as "Upgraded" item and
+ * not used for synthesis. If all conditions meet, the item can be used as
+ * ingredients.
+ *
  *
  * ============================================================================
  * Changelog
@@ -440,6 +478,9 @@ Yanfly.IS.DataManager_isDatabaseLoaded = DataManager.isDatabaseLoaded;
 DataManager.isDatabaseLoaded = function() {
   if (!Yanfly.IS.DataManager_isDatabaseLoaded.call(this)) return false;
   if (!Yanfly._loaded_YEP_ItemSynthesis) {
+    Yanfly.IS.ItemIngredientIDs    = [];
+    Yanfly.IS.WeaponIngredientIDs  = [];
+    Yanfly.IS.ArmorIngredientIDs   = [];
     this.processISNotetagsI($dataItems);
     this.processISNotetagsW($dataWeapons);
     this.processISNotetagsA($dataArmors);
@@ -497,6 +538,7 @@ DataManager.processISNotetags1 = function(group, type) {
   var note9 = /<(?:MASK NAME):[ ](.*)>/i;
   var note10a = /<(?:CUSTOM SYNTHESIS EFFECT)>/i;
   var note10b = /<\/(?:CUSTOM SYNTHESIS EFFECT)>/i;
+  var note11 = /<Craft Amount: (\d+)(.*)>/i;
   for (var n = 1; n < group.length; n++) {
     var obj = group[n];
     var notedata = obj.note.split(/[\r\n]+/);
@@ -515,6 +557,7 @@ DataManager.processISNotetags1 = function(group, type) {
     obj.synthSePan = Yanfly.Param.ISDefPan;
     obj.customSynthEval = '';
     var evalMode = 'none';
+    obj.craftAmount = 1;
 
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
@@ -561,10 +604,13 @@ DataManager.processISNotetags1 = function(group, type) {
         evalMode = 'none';
       } else if (evalMode === 'custom synthesis effect') {
         obj.customSynthEval += line + '\n';
+      } else if (line.match(note11)) {
+        obj.craftAmount = parseInt(RegExp.$1);
       }
     }
     this.processRecipeCounts(obj);
   }
+  Yanfly.IS.SynthesisRecipeCount = Yanfly.IS.SynthesisItemTotal + Yanfly.IS.SynthesisWeaponTotal + Yanfly.IS.SynthesisArmorTotal;
 };
 
 DataManager.addSynthesisIngredient = function(obj, line) {
@@ -628,6 +674,9 @@ DataManager.addSynthesisIngredient = function(obj, line) {
     if (!this.isSynthesisIngredientOk(ingId, ingType)) return;
     var length = obj.synthIngredients.length;
     obj.synthIngredients[length] = [ingType, ingId, ingValue];
+    if (ingType === 0 && !Yanfly.IS.ItemIngredientIDs.contains(ingId)) Yanfly.IS.ItemIngredientIDs.push(ingId);
+    if (ingType === 1 && !Yanfly.IS.WeaponIngredientIDs.contains(ingId)) Yanfly.IS.WeaponIngredientIDs.push(ingId);
+    if (ingType === 2 && !Yanfly.IS.ArmorIngredientIDs.contains(ingId)) Yanfly.IS.ArmorIngredientIDs.push(ingId);
 };
 
 DataManager.isSynthesisIngredientOk = function(ingId, ingType) {
@@ -636,7 +685,7 @@ DataManager.isSynthesisIngredientOk = function(ingId, ingType) {
     if (ingType === 1) item = $dataWeapons[ingId];
     if (ingType === 2) item = $dataArmors[ingId];
     if (!item) return false;
-    if (Imported.YEP_ItemCore && this.isIndependent(item)) return false;
+    // if (Imported.YEP_ItemCore && this.isIndependent(item)) return false;
     return true;
 };
 
@@ -657,12 +706,12 @@ DataManager.getSynthesisQuantity = function(item, index) {
 };
 
 DataManager.processRecipeCounts = function(obj) {
-    if (obj.recipeItem.length > 0 || obj.recipeWeapon.length > 0 ||
+    /*if (obj.recipeItem.length > 0 || obj.recipeWeapon.length > 0 ||
     obj.recipeArmor.length > 0) {
       Yanfly.IS.SynthesisRecipeCount += obj.recipeItem.length;
       Yanfly.IS.SynthesisRecipeCount += obj.recipeWeapon.length;
       Yanfly.IS.SynthesisRecipeCount += obj.recipeArmor.length;
-    }
+    }*/
     if (obj.name === '') return;
     if (obj.synthCost > 0 || obj.synthIngredients.length > 0) {
       if (obj.groupType === 0) Yanfly.IS.SynthesisItemTotal += 1;
@@ -779,6 +828,10 @@ Game_System.prototype.synthedArmors = function() {
     return this._synthedArmors;
 };
 
+Game_System.prototype.synthedTotal = function() {
+    return this.synthedItems().length + this.synthedWeapons().length + this.synthedArmors().length;
+}
+
 Game_System.prototype.canSynthesize = function(item, times) {
     if (!item) return false;
     if ($gameParty.numItems(item) >= $gameParty.maxItems(item)) return false;
@@ -787,20 +840,23 @@ Game_System.prototype.canSynthesize = function(item, times) {
     for (var i = 0; i < item.synthIngredients.length; ++i) {
       var ingredient = DataManager.getSynthesisIngredient(item, i);
       var quantity = DataManager.getSynthesisQuantity(item, i);
-      if (quantity * times > $gameParty.numItems(ingredient)) return false;
+      // if (quantity * times > $gameParty.numItems(ingredient)) return false;
+      if (quantity * times > $gameParty.numNotUpgradedIndependentItems(ingredient)) return false;
     }
     return true;
 };
 
 Game_System.prototype.maxSynthesize = function(item) {
-    var maximum = $gameParty.maxItems(item) - $gameParty.numItems(item);
+//    var maximum = $gameParty.maxItems(item) - $gameParty.numItems(item);
+    var maximum = $gameParty.maxItems(item) - $gameParty.numNotUpgradedIndependentItems(item);
     if (item.synthCost > 0) {
       maximum = Math.min(maximum, $gameParty.gold() / item.synthCost);
     }
     for (var i = 0; i < item.synthIngredients.length; ++i) {
       var ingredient = DataManager.getSynthesisIngredient(item, i);
       var quantity = DataManager.getSynthesisQuantity(item, i);
-      maximum = Math.min(maximum, $gameParty.numItems(ingredient) / quantity);
+      // maximum = Math.min(maximum, $gameParty.numItems(ingredient) / quantity);
+      maximum = Math.min(maximum, $gameParty.numNotUpgradedIndependentItems(ingredient) / quantity);
     }
     return parseInt(Math.max(maximum, 0));
 };
@@ -873,11 +929,15 @@ Window_SynthesisCommand.prototype.initialize = function() {
 };
 
 Window_SynthesisCommand.prototype.windowWidth = function() {
-    return 240;
+    return Graphics.boxWidth / 2;
 };
 
 Window_SynthesisCommand.prototype.numVisibleRows = function() {
-    return 4;
+    return Math.ceil(this._list.length / 3);
+};
+
+Window_SynthesisCommand.prototype.maxCols = function() {
+  return 3;
 };
 
 Window_SynthesisCommand.prototype.itemTextAlign = function() {
@@ -891,22 +951,34 @@ Window_SynthesisCommand.prototype.makeCommandList = function() {
 };
 
 Window_SynthesisCommand.prototype.addItemCommands = function() {
-    if (Scene_Synthesis.availableItems().length > 0) {
-      this.addCommand(Yanfly.Param.ISItemCmd, 'item', true);
-    }
-    if (Scene_Synthesis.availableWeapons().length > 0) {
-      this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', true);
-    }
-    if (Scene_Synthesis.availableArmors().length > 0) {
-      this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', true);
-    }
+    this.addCommand(Yanfly.Param.ISItemCmd, 'item', Scene_Synthesis.availableItems().length > 0);
+    this.addCommand(Yanfly.Param.ISWeaponCmd, 'weapon', Scene_Synthesis.availableWeapons().length > 0);
+    this.addCommand(Yanfly.Param.ISArmorCmd, 'armor', Scene_Synthesis.availableArmors(0).length > 0);
 };
 
 Window_SynthesisCommand.prototype.addCustomCommand = function() {
 };
 
 Window_SynthesisCommand.prototype.addFinishCommand = function() {
-    this.addCommand(Yanfly.Param.ISFinishCmd, 'cancel', true);
+    // this.addCommand(Yanfly.Param.ISFinishCmd, 'cancel', true);
+};
+
+Window_SynthesisCommand.prototype.updateCursor = function() {
+    Window_Selectable.prototype.updateCursor.call(this);
+    let text = "\\c[8]";
+    switch (this.index()) {
+      case 0:
+        text += "Items Crafted: " + $gameSystem.synthedItems().length + "/" + Yanfly.IS.SynthesisItemTotal;
+        break;
+      case 1:
+        text += "Weapons Crafted: " + $gameSystem.synthedWeapons().length + "/" + Yanfly.IS.SynthesisItemTotal;
+        break;
+      default:
+        text += "Armor Crafted: " + $gameSystem.synthedArmors().length + "/" + Yanfly.IS.SynthesisArmorTotal;
+        break;
+    }
+    text += "\nCrafting Completion: " + $gameSystem.synthedTotal() + "/" + Yanfly.IS.SynthesisRecipeCount;
+    SceneManager._scene._helpWindow.setText(text);
 };
 
 //=============================================================================
@@ -928,7 +1000,7 @@ Window_SynthesisStatus.prototype.initialize = function(wx, wy, ww, wh) {
 Window_SynthesisStatus.prototype.refresh = function() {
     this.contents.clear();
     var dy = 0;
-    dy = this.drawCollectedRecipes(dy);
+    // dy = this.drawCollectedRecipes(dy);
     dy = this.drawCraftedItems(dy);
     dy = this.drawCraftedWeapons(dy);
     dy = this.drawCraftedArmors(dy);
@@ -1033,7 +1105,7 @@ Window_SynthesisList.prototype.windowWidth = function() {
 
 Window_SynthesisList.prototype.updateHelp = function() {
     if (this._commandWindow.active) {
-      this._helpWindow.setText('');
+      this._commandWindow.updateCursor();
     } else if (eval(Yanfly.Param.ISMaskUnknown) &&
     !$gameSystem.hasSynthed(this.item())) {
       var text = Yanfly.Param.ISMaskHelpText;
@@ -1082,14 +1154,21 @@ Window_SynthesisList.prototype.refresh = function() {
 };
 
 Window_SynthesisList.prototype.makeItemList = function() {
-    this._data = [];
-    if (this._commandWindow.currentSymbol() === 'item') {
-      this._data = Scene_Synthesis.availableItems();
-    } else if (this._commandWindow.currentSymbol() === 'weapon') {
-      this._data = Scene_Synthesis.availableWeapons();
-    } else if (this._commandWindow.currentSymbol() === 'armor') {
-      this._data = Scene_Synthesis.availableArmors();
+    switch (this._commandWindow.currentSymbol()) {
+      case 'item':
+        data = Scene_Synthesis.availableItems();
+        break;
+      case 'weapon':
+        data = Scene_Synthesis.availableWeapons();
+        break;
+      case 'armor':
+        data = Scene_Synthesis.availableArmors();
+        break;
+      default:
+        data = [];
+        break;
     }
+    this._data = data;
 };
 
 Window_SynthesisList.prototype.maxItems = function() {
@@ -1108,7 +1187,9 @@ Window_SynthesisList.prototype.drawItem = function(index) {
 
 Window_SynthesisList.prototype.drawItemName = function(item, x, y, width) {
     if (!item) return;
-    if ($gameSystem.hasSynthed(item)) {
+	// if no object is masked, the <Text Color: x> notation will not prevail until the object is created
+  if ((!eval(Yanfly.Param.ISMaskUnknown)) || ($gameSystem.hasSynthed(item))) {
+    // if ($gameSystem.hasSynthed(item)) {
       Window_Base.prototype.drawItemName.call(this, item, x, y, width);
       return;
     }
@@ -1118,11 +1199,12 @@ Window_SynthesisList.prototype.drawItemName = function(item, x, y, width) {
     var text = item.name;
     if (eval(Yanfly.Param.ISMaskUnknown)) {
       this.contents.fontItalic = Yanfly.Param.ISMaskItalic;
-      if (item.maskName !== '') {
+      text = item.name;
+      /*if (item.maskName !== '') {
         text = item.maskName;
       } else {
         text = Yanfly.Util.maskString(text, Yanfly.Param.ISMaskText);
-      }
+      }*/
     }
     this.drawText(text, x + iconBoxWidth, y, width - iconBoxWidth);
     this.contents.fontItalic = false;
@@ -1186,14 +1268,34 @@ Window_SynthesisIngredients.prototype.drawItemDetails = function(index, wy) {
     var ww = this.contents.width;
     if (!ingredient) return wy;
     this.resetFontSettings();
-    this.drawItemName.call(this, ingredient, 0, wy, ww);
+    this.drawItemName.call(this, ingredient, 0, wy, ww, index);
     if (Yanfly.Param.ISAmountFmt) {
       this.drawItemQuantity(index, wy);
     } else {
       this.drawItemQuantity2(index, wy);
     }
-    
+
     return wy + this.lineHeight();
+};
+
+Window_SynthesisIngredients.prototype.drawItemName = function(item, x, y, width, index) {
+  width = width || 312;
+  if (item) {
+      var owned = $gameParty.numNotUpgradedIndependentItems(DataManager.getSynthesisIngredient(this._item, index));
+      var quantity = DataManager.getSynthesisQuantity(this._item, index);
+      if (owned >= quantity) {
+        this.changeTextColor(this.powerUpColor());
+      } else {
+        this.changeTextColor(this.powerDownColor());
+      }
+
+      var iconBoxWidth = Window_Base._iconWidth + 4;
+      this.drawIcon(item.iconIndex, x + 2, y + 2);
+      text = item.name;
+      this.drawText(text, x + iconBoxWidth, y, width - iconBoxWidth);
+      this.contents.fontItalic = false;
+      this.resetTextColor();
+  }
 };
 
 Window_SynthesisIngredients.prototype.drawItemQuantity = function(index, wy) {
@@ -1202,10 +1304,12 @@ Window_SynthesisIngredients.prototype.drawItemQuantity = function(index, wy) {
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     this.changeTextColor(this.normalColor());
-    var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    // var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(ingredient));
     this.drawText(num, 0, wy, ww, 'right');
     ww -= this.textWidth(num);
-    if ($gameParty.numItems(ingredient) >= quantity) {
+    // if ($gameParty.numItems(ingredient) >= quantity) {
+    if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
       this.changeTextColor(this.powerUpColor());
     } else {
       this.changeTextColor(this.powerDownColor());
@@ -1217,21 +1321,38 @@ Window_SynthesisIngredients.prototype.drawItemQuantity = function(index, wy) {
 Window_SynthesisIngredients.prototype.drawItemQuantity2 = function(index, wy) {
     var ingredient = DataManager.getSynthesisIngredient(this._item, index);
     var quantity = DataManager.getSynthesisQuantity(this._item, index);
-    var owned = $gameParty.numItems(ingredient);
+    // var owned = $gameParty.numItems(ingredient);
+    var owned = $gameParty.numNotUpgradedIndependentItems(ingredient);
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     this.changeTextColor(this.normalColor());
     var num = '/' + Yanfly.Util.toGroup(quantity);
+//    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(quantity));
     this.drawText(num, 0, wy, ww, 'right');
     ww -= this.textWidth(num);
-    if ($gameParty.numItems(ingredient) >= quantity) {
+    // if ($gameParty.numItems(ingredient) >= quantity) {
+    if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
       this.changeTextColor(this.powerUpColor());
     } else {
       this.changeTextColor(this.powerDownColor());
     }
     var text = String(Yanfly.Util.toGroup(owned));
     this.drawText(text, 0, wy, ww, 'right');
+    ww -= this.textWidth(text);
+    if (!(owned >= quantity)) this.drawIndependentItem(ingredient, wy, ww);
 }
+
+Window_SynthesisIngredients.prototype.drawIndependentItem = function(item, wy, ww) {
+    if (!DataManager.isIndependent(item)) return;
+    this.contents.fontSize = 14;
+    this.changeTextColor(this.powerUpColor());
+    if ($gameParty.numIndependentItems(item) > 0) text = "Cleansing required   ";
+    else if ($gameParty.checkIndependentItemIsEquipped(item)) text = "Equipped   ";
+    else text = "";
+    this.drawText(text, 0, wy, ww, 'right');
+    this.contents.fontSize = Yanfly.Param.ISQuantitySize;
+    return this.textWidth(text);
+};
 
 Window_SynthesisIngredients.prototype.drawItemSynthCost = function(item, wy) {
     if (item.synthCost <= 0) return;
@@ -1347,7 +1468,7 @@ Window_SynthesisNumber.prototype.refresh = function() {
     this.drawAmountText()
     this.drawMultiplicationSign();
     this.drawNumber();
-    this.drawIngredients();
+    if (!SceneManager._scene._commandWindow.active) this.drawIngredients();
 };
 
 Window_SynthesisNumber.prototype.drawAmountText = function() {
@@ -1371,7 +1492,9 @@ Window_SynthesisNumber.prototype.drawNumber = function() {
     var y = this.itemY();
     var width = this.cursorWidth() - this.textPadding();
     this.resetTextColor();
-    this.drawText(Yanfly.Util.toGroup(this._number), x, y, width, 'right');
+    number = this._number;
+    if (SceneManager._scene._listWindow.item()) number *= SceneManager._scene._listWindow.item().craftAmount;
+    this.drawText(Yanfly.Util.toGroup(number), x, y, width, 'right');
 };
 
 Window_SynthesisNumber.prototype.drawIngredients = function() {
@@ -1401,10 +1524,12 @@ Window_SynthesisNumber.prototype.drawItemQuantity = function(index, wy) {
     var ww = this.contents.width;
     this.contents.fontSize = Yanfly.Param.ISQuantitySize;
     this.changeTextColor(this.normalColor());
-    var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    // var num = '/' + Yanfly.Util.toGroup($gameParty.numItems(ingredient));
+    var num = '/' + Yanfly.Util.toGroup($gameParty.numNotUpgradedIndependentItems(ingredient));
     this.drawText(num, 0, wy, ww, 'right');
     ww -= this.textWidth(num);
-    if ($gameParty.numItems(ingredient) >= quantity) {
+    // if ($gameParty.numItems(ingredient) >= quantity) {
+      if ($gameParty.numNotUpgradedIndependentItems(ingredient) >= quantity) {
       this.changeTextColor(this.powerUpColor());
     } else {
       this.changeTextColor(this.powerDownColor());
@@ -1612,34 +1737,22 @@ Scene_Synthesis.availableLibrary = function() {
 };
 
 Scene_Synthesis.availableItems = function() {
-    var list = this.getAvailableItems(0);
-    return this.sortList(list);
+    return $gameTemp.synthItems();
+    // return this.getAvailableItems(0);
 };
 
 Scene_Synthesis.availableWeapons = function() {
-    var list = this.getAvailableItems(1);
-    return this.sortList(list);
+    return $gameTemp.synthWeapons();
+    // return this.getAvailableItems(1);
 };
 
 Scene_Synthesis.availableArmors = function() {
-    var list = this.getAvailableItems(2);
-    return this.sortList(list);
-};
-
-Scene_Synthesis.sortList = function(list) {
-    list.sort(function(a, b) {
-        var p1 = a.id;
-        var p2 = b.id;
-        if (p1 !== p2) {
-            return p1 - p2;
-        }
-        return b - a;
-    });
-    return list;
+    return $gameTemp.synthArmors();
+    // return this.getAvailableItems(2);
 };
 
 Scene_Synthesis.prototype.refreshWindows = function() {
-    this._statusWindow.refresh();
+    // this._statusWindow.refresh();
     this._listWindow.refresh();
     this._goldWindow.refresh();
     this._ingredientsWindow.refresh(this._listWindow.item());
@@ -1649,11 +1762,13 @@ Scene_Synthesis.prototype.create = function() {
     Scene_MenuBase.prototype.create.call(this);
     this.createHelpWindow();
     this.createCommandWindow();
-    this.createStatusWindow();
+    // this.createStatusWindow();
     this.createListWindow();
     this.createGoldWindow();
     this.createIngredientsWindow();
     this.createNumberWindow();
+    this.createItemWindow();
+    this.createStatusWindow();
 };
 
 Scene_Synthesis.prototype.createCommandWindow = function() {
@@ -1714,6 +1829,26 @@ Scene_Synthesis.prototype.createNumberWindow = function() {
     this.addWindow(this._numberWindow);
 };
 
+Scene_Synthesis.prototype.createItemWindow = function() {
+    var wx = this._listWindow.x;
+    var wy = this._listWindow.y;
+    var ww = this._listWindow.width;
+    var wh = 180;
+    this._itemWindow = new Window_ItemStatus(wx, wy, ww, wh);
+    this._itemWindow.hide();
+    this.addWindow(this._itemWindow);
+}
+
+Scene_Synthesis.prototype.createStatusWindow = function () {
+    var wx = this._listWindow.x;
+    var wy = this._listWindow.y + this._itemWindow.height;
+    var ww = this._listWindow.width;
+    var wh = this._listWindow.height - this._itemWindow.height;
+    this._statusWindow = new Window_ShopStatus(wx, wy, ww, wh);
+    this._statusWindow.hide();
+    this.addWindow(this._statusWindow);
+}
+
 Scene_Synthesis.prototype.onCommandOk = function() {
     this._listWindow.activate();
     this._listWindow.select(0);
@@ -1732,6 +1867,11 @@ Scene_Synthesis.prototype.onListOk = function() {
     this._numberWindow.setCurrencyUnit(this.currencyUnit());
     this._numberWindow.show();
     this._numberWindow.activate();
+    if (this._item.groupType == 0) return;
+    this._itemWindow.show();
+    this._itemWindow.setItem(this._item);
+    this._statusWindow.show();
+    this._statusWindow.setItem(this._item);
 };
 
 Scene_Synthesis.prototype.onNumberOk = function() {
@@ -1761,8 +1901,18 @@ Scene_Synthesis.prototype.doBuy = function(number) {
       var quantity = DataManager.getSynthesisQuantity(this._item, i);
       quantity *= number;
       if (!ingredient) continue;
+      // $gameParty.loseItem(ingredient, quantity, false);
+      // $gameParty.gainIndependentItem(ingredient, -quantity, false);
+	  if (DataManager.isIndependent(ingredient)) {
+	    for (var j = 0; j < quantity; ++j) {
+	      var nuItem = $gameParty.getNotUpgradedIndependentItem(ingredient);
+		  $gameParty.gainIndependentItem(nuItem, -1, false);
+	    }
+	  } else {
       $gameParty.loseItem(ingredient, quantity, false);
     }
+    }
+    number *= this._item.craftAmount;
     $gameParty.gainItem(this._item, number);
     $gameSystem.addSynth(this._item);
 };
@@ -1785,6 +1935,8 @@ Scene_Synthesis.prototype.customSynthEffect = function(number) {
 
 Scene_Synthesis.prototype.endNumberInput = function() {
     this._numberWindow.hide();
+    this._itemWindow.hide();
+    this._statusWindow.hide();
     this._listWindow.activate();
     this._ingredientsWindow.show();
 };

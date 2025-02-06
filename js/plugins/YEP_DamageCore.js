@@ -1462,6 +1462,13 @@ Game_Action.prototype.applyMinimumDamage = function(value, baseDamage, target) {
     return value;
 };
 
+Game_Action.prototype.applyMaximumDamage = function(value, baseDamage, target, critical) {
+    if (target.hpRate() == 1 && value >= target.hp && value <= target.hp * 1.5 && critical && target.isActor()) {
+      value = target.hp - 1;
+    };
+    return value;
+};
+
 Game_Action.prototype.isDamageCapped = function() {
     var item = this.item();
     if ($gameSystem.getActSeqBypassDamageCap()) return false;

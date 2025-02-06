@@ -653,8 +653,10 @@ Window_EventItem.prototype.backlogAddSelectedChoice = function() {
   if (!Yanfly.Param.MsgBacklogSpcInput) return;
   var fmt = Yanfly.Param.MsgBacklogSpcFmt;
   var item = this.item();
-  var text = fmt.format('\\i[' + item.iconIndex + ']' + item.name);
-  $gameSystem.addMessageBacklog(text);
+  if (item) {
+    var text = fmt.format('\\i[' + item.iconIndex + ']' + item.name);
+    $gameSystem.addMessageBacklog(text);
+  }
 };
 
 //=============================================================================

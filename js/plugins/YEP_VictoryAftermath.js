@@ -561,7 +561,7 @@ Window_VictoryExp.prototype.windowHeight = function() {
 };
 
 Window_VictoryExp.prototype.maxItems = function() {
-    return $gameParty.maxBattleMembers();
+    return Math.max($gameParty.members().filter(a => a.exr != 0).length, 4);
 };
 
 Window_VictoryExp.prototype.standardFontSize = function() {
@@ -617,7 +617,7 @@ Window_VictoryExp.prototype.drawAllGauges = function() {
 };
 
 Window_VictoryExp.prototype.drawItem = function(index) {
-    var actor = $gameParty.battleMembers()[index];
+    var actor = $gameParty.battleMembers().filter(a => a.exr != 0)[index];
     if (!actor) return;
     this.drawActorProfile(actor, index);
 };
@@ -629,7 +629,7 @@ Window_VictoryExp.prototype.drawActorProfile = function(actor, index) {
 };
 
 Window_VictoryExp.prototype.drawItemGauge = function(index) {
-    var actor = $gameParty.battleMembers()[index];
+    var actor = $gameParty.battleMembers().filter(a => a.exr != 0)[index];
     if (!actor) return;
     this.drawActorGauge(actor, index);
 };
@@ -799,6 +799,7 @@ Window_VictoryDrop.prototype.makeItemList = function() {
 };
 
 Window_VictoryDrop.prototype.extractDrops = function() {
+    BattleManager._rewards.items = $droppeditems // Edit: Added to force match to MOG drops.
     BattleManager._rewards.items.forEach(function(item) {
       if (!item) return;
       if (DataManager.isItem(item)) this._dropItems.push(item.id);
@@ -820,6 +821,7 @@ Window_VictoryDrop.prototype.extractDrops = function() {
       var item = $dataArmors[id];
       if (item && !this._data.contains(item)) this._data.push(item);
     }, this);
+    $droppeditems = [] // Edit: Added to reset after battle rewards shown.
 };
 
 Window_VictoryDrop.prototype.drawItem = function(index) {
@@ -876,7 +878,7 @@ Window_VictoryDrop.prototype.numItems = function(item) {
 Yanfly.VA.Scene_Battle_update = Scene_Battle.prototype.update;
 Scene_Battle.prototype.update = function() {
     Yanfly.VA.Scene_Battle_update.call(this);
-    this.updateVictoryAftermath();
+    // this.updateVictoryAftermath();
 };
 
 Scene_Battle.prototype.processNextVictoryStep = function() {

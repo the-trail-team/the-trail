@@ -460,6 +460,8 @@ DataManager.processIDANotetags1 = function(group) {
         evalMode = 'disassemble pool';
         evalType = String(RegExp.$1).toUpperCase().trim();
         obj.disassembleItems[evalType] = obj.disassembleItems[evalType] || [];
+        obj.disassembleTypes = obj.disassembleTypes || [];
+        obj.disassembleTypes.push(evalType);
       } else if (line.match(/<\/DISASSEMBLE POOL:[ ](.*)>/i)) {
         evalMode = 'none';
         evalType = 'none';
@@ -800,7 +802,7 @@ Window_DisassemblePool.prototype.updateVisibility = function() {
     var win = SceneManager._scene._itemActionWindow;
     if (!win) return;
     var current = this.visible;
-    var visible = win.visible && win.currentSymbol() === 'disassemble';
+    var visible = SceneManager._scene._disassemblerListWindow.visible && win.currentSymbol() === 'disassemble';
     win = SceneManager._scene._disassemblerListWindow;
     if (win && win.visible) visible = true;
     this.visible = visible;
@@ -838,14 +840,18 @@ Window_DisassemblePool.prototype.drawItemNumber = function(item, dx, dy, dw) {
 };
 
 Window_DisassemblePool.prototype.drawDisassembleItems = function() {
+    if (!this._currentItem) return;
+    if (this._currentItem.groupType === 0) data = this._currentItem;
+    if (this._currentItem.groupType === 1) data = $dataWeapons[this._currentItem.baseItemId];
+    if (this._currentItem.groupType === 2) data = $dataArmors[this._currentItem.baseItemId];
+    data = data.disassembleTypes;
+    if (!data) return;
     var dx = this.textPadding();
     var dy = this.lineHeight() * 2;
     var dw = this.contentsWidth() - dx * 2;
-    var length = this._types.length;
-    for (var i = 0; i < length; ++i) {
-      var type = this._types[i];
-      dy = this.drawDisassembleTypePool(dy, type);
-    }
+    this._types = data;
+    var type = this._types[Math.round(SceneManager._scene._disassemblerListWindow._cursorRect.y / 36)];
+    dy = this.drawDisassembleTypePool(dy, type);
 };
 
 Window_DisassemblePool.prototype.drawDisassembleTypePool = function(dy, type) {
@@ -943,13 +949,21 @@ Window_DisassemblerList.prototype.containsType = function(item) {
 };
 
 Window_DisassemblerList.prototype.isEnabled = function(item) {
-    return item;
+    return $gameParty.hasItem(item);
 };
 
 Window_DisassemblerList.prototype.makeItemList = function() {
-    this._data = $gameParty.allItems().filter(function(item) {
+    this._data = $dataItems.filter(function(item) {
         return this.includes(item);
     }, this);
+};
+
+Window_DisassemblerList.prototype.drawItemNumber = function() {}
+
+Window_DisassemblerList.prototype.drawItemName = function(item, x, y, width) {
+    if (item.synthIngredients.length === 0) proto = Window_ItemList.prototype.drawItemName;
+    else proto = Window_SynthesisList.prototype.drawItemName;
+    proto.call(this, item, x, y, width);
 };
 
 Window_DisassemblerList.prototype.updateHelp = function() {
@@ -1147,6 +1161,7 @@ Scene_Item.prototype.closeDisassembleLootWindow = function() {
       this._disassemblerListWindow.activate();
     }
     this._infoWindow.setItem(this.item());
+    this._statusWindow.setItem(this.item());
 };
 
 Scene_Item.prototype.isCloseDisassembleWindow = function() {

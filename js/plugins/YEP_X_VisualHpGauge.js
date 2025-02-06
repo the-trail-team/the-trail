@@ -249,8 +249,8 @@ Yanfly.Param.VHGAlwaysShow = eval(String(Yanfly.Parameters['Always Visible']));
 Yanfly.Param.VHGMinHpWidth = Number(Yanfly.Parameters['Minimum Gauge Width']);
 Yanfly.Param.VHGGaugeHeight = Number(Yanfly.Parameters['Gauge Height']);
 Yanfly.Param.VHGBackColor = Number(Yanfly.Parameters['Back Color']);
-Yanfly.Param.VHGHpColor1 = Number(Yanfly.Parameters['HP Color 1']);
-Yanfly.Param.VHGHpColor2 = Number(Yanfly.Parameters['HP Color 2']);
+Yanfly.Param.VHGHpColor1 = Number(Yanfly.Parameters['HP Color 1']) || Yanfly.Param.ColorHpGauge1;
+Yanfly.Param.VHGHpColor2 = Number(Yanfly.Parameters['HP Color 2']) || Yanfly.Param.ColorHpGauge2;
 Yanfly.Param.VHGGaugeDuration = Number(Yanfly.Parameters['Gauge Duration']);
 Yanfly.Param.VHGGaugePos = eval(String(Yanfly.Parameters['Gauge Position']));
 Yanfly.Param.VHGBufferY = Number(Yanfly.Parameters['Y Buffer']);
@@ -287,6 +287,7 @@ DataManager.processVHGNotetags = function(group) {
 		obj.hpGaugeBackColor = Yanfly.Param.VHGBackColor;
 		obj.hpGaugeColor1 = Yanfly.Param.VHGHpColor1;
 		obj.hpGaugeColor2 = Yanfly.Param.VHGHpColor2;
+    obj.lightBreak = 0;
 
 		for (var i = 0; i < notedata.length; i++) {
 			var line = notedata[i];
@@ -304,7 +305,9 @@ DataManager.processVHGNotetags = function(group) {
 				obj.hpGaugeColor1 = parseInt(RegExp.$1);
 			} else if (line.match(/<(?:HP GAUGE COLOR 2):[ ](\d+)>/i)) {
 				obj.hpGaugeColor2 = parseInt(RegExp.$1);
-			}
+			} else if (line.match(/<(?:LIGHT BREAK):[ ](\d+)>/i)) {
+        obj.lightBreak = parseInt(RegExp.$1);
+      }
 		}
 	}
 };
@@ -380,6 +383,11 @@ Game_Battler.prototype.hpGaugeColor2 = function() {
 		return Yanfly.Param.VHGHpColor2;
 };
 
+Game_Battler.prototype.lightBreak = function() {
+    this._lightBreak = this._lightBreak || 0;
+    return this._lightBreak;
+};
+
 //=============================================================================
 // Game_Actor
 //=============================================================================
@@ -411,11 +419,11 @@ Game_Actor.prototype.hpGaugeBackColor = function() {
 };
 
 Game_Actor.prototype.hpGaugeColor1 = function() {
-		return this.currentClass().hpGaugeColor1;
+    return this.trueDarkness() > 0 ? 15 : this.currentClass().hpGaugeColor1;
 };
 
 Game_Actor.prototype.hpGaugeColor2 = function() {
-		return this.currentClass().hpGaugeColor2;
+    return this.trueDarkness() > 0 ? 30 : this.currentClass().hpGaugeColor2;
 };
 
 //=============================================================================
@@ -663,11 +671,11 @@ Window_VisualHPGauge.prototype.drawActorHp = function(actor, x, y, width) {
     } else {
       this.drawGauge(x, y, width, rate, color1, color2);
     }
-    if (Yanfly.Param.VHGShowHP) {
+    if (Yanfly.Param.VHGShowHP || actor._analyzed) {
       this.changeTextColor(this.systemColor());
       this.drawText(TextManager.hpA, x, y, 44);
     }
-    if (Yanfly.Param.VHGShowValue) {
+    if (Yanfly.Param.VHGShowValue || actor._analyzed) {
       var val = this._displayedValue
       var max = actor.mhp;
       var w = width;
@@ -694,6 +702,10 @@ Window_VisualHPGauge.prototype.gaugeHeight = function() {
     return this._battler.hpGaugeHeight();
 };
 
+Window_VisualHPGauge.prototype.standardFontSize = function() {
+    return 16;
+};
+
 if (Imported.YEP_CoreEngine && Yanfly.Param.VHGThick) {
 
 Window_VisualHPGauge.prototype.drawGauge =
@@ -715,6 +727,12 @@ function(dx, dy, dw, rate, color1, color2) {
       this.contents.fillRect(dx, gaugeY, dw, gaugeH, color3);
     }
     this.contents.gradientFillRect(dx, gaugeY, fillW, gaugeH, color1, color2);
+
+    lb = this._battler._lightBreak;
+    if (lb > 0) {
+      lbFillW = dw * (lb / this._battler.mhp);
+      this.contents.gradientFillRect(dx + fillW - lbFillW, gaugeY, lbFillW, gaugeH, this.textColor(Yanfly.Param.VHGHpColor1), this.textColor(Yanfly.Param.VHGHpColor2));
+    }
 };
 
 } // Imported.YEP_CoreEngine
