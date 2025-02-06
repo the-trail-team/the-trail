@@ -156,7 +156,7 @@ API_LEADERBOARD.pull = function() {
 API_LEADERBOARD.refresh = function() {
     return new Promise(async (resolve, reject) => {
         try {
-            if (API_ITCH.loggedIn()) {
+            if (API_ITCH.loggedIn() && $gameTemp._inGame) {
                 await API_LEADERBOARD.push();
             }
             await API_LEADERBOARD.pull();
