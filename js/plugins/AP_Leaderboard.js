@@ -149,6 +149,40 @@ API_LEADERBOARD.pull = function() {
     return Promise.all(promises);
 };
 
+API_LEADERBOARD.refresh = function() {
+    return new Promise(async (resolve, reject) => {
+        try {
+            if (API_ITCH.loggedIn()) {
+                await API_LEADERBOARD.push();
+            }
+            await API_LEADERBOARD.pull();
+            resolve();
+        } catch (error) {
+            reject(error);
+        }
+    });
+};
+
+//=============================================================================
+// Scene_Title
+//=============================================================================
+
+Scene_Title_prototype_start = Scene_Title.prototype.start;
+Scene_Title.prototype.start = function() {
+    Scene_Title_prototype_start.call(this);
+    API_LEADERBOARD.pull();
+};
+
+//=============================================================================
+// Scene_File
+//=============================================================================
+
+Scene_File_prototype_onSaveSuccess = Scene_File.prototype.onSaveSuccess;
+Scene_File.prototype.onSaveSuccess = function() {
+    Scene_File_prototype_onSaveSuccess.call(this);
+    API_LEADERBOARD.push();
+};
+
 //=============================================================================
 // Scene_Menu
 //=============================================================================
@@ -210,8 +244,7 @@ Scene_Leaderboard.prototype.logoutCommand = async function() {
 };
 
 Scene_Leaderboard.prototype.refreshCommand = async function() {
-    if (API_ITCH.loggedIn()) await API_LEADERBOARD.push();
-    await API_LEADERBOARD.pull();
+    await API_LEADERBOARD.refresh();
     alert("Leaderboard refreshed");
     this._leaderboardWindow.refresh();
     this._loginWindow.activate();
