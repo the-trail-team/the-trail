@@ -90,6 +90,7 @@ API_LEADERBOARD.leaderboards = function() {
     return [
         ["Bits", $gameParty.gold()],
         ["Damage Dealt", $gameVariables.value(27)],
+        ["Enemies Defeated", $gameParty.killCount()],
         ["Playtime", $gameSystem.playtime()]
     ];
 };

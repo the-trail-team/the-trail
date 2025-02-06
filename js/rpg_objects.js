@@ -5787,6 +5787,18 @@ Game_Party.prototype.removePet = function() {
     $gamePlayer.refresh();
 };
 
+// Other
+
+Game_Party.prototype.membersPerm = function() {
+    return this.members().filter(a => !a.hasState(196))
+};
+
+Game_Party.prototype.killCount = function() {
+    var sum = 0;
+    this.membersPerm().forEach(m => sum += m.killCount());
+    return sum;
+};
+
 //-----------------------------------------------------------------------------
 // Game_Troop
 //
