@@ -1,4 +1,36 @@
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+                             ALPHA 15.3 CHANGELOG
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+Alpha 15.3 (2/6/2025)
+Current Level Cap: 25
+- - - - - - - - - - - - -
+This small update contains a new pair of boots, a leaderboard for kills, and several small tweaks and fixes.
+
+Additions:
+ - Added Tellurium Greaves.
+ - Added leaderboard for Enemies Defeated.
+ - Added leaderboard command on title screen.
+ - Leaderboards automatically pull on launch and push after saving.
+ - Discord rich presence displays turn count in battle.
+ - Added tutorial tip regarding Baby Dragons and Enchanted Dragon Scales.
+
+Changes:
+ - Fire takes 25% damage from Ice instead of 0%.
+ - Ethereal Bat Wing can drop more than once.
+ - Reduced bits/EXP variation from 5% to 3%.
+ - Moved Iron Boots from forge to smithery shop.
+ - Flower Boots can be crafted at Will's forge.
+ - Adjusted a few tellurium related recipes.
+ - Infernal Coin now dropped by Apocalypse instead of crafted with Infernal Wand.
+ - Apocalypse uses idle motion in place of dying/dead motions.
+
+Bug Fixes:
+ - Fixed a memory leak when rendering characters in tall chairs.
+ - Fixed statues that buff elemental resistance not working as intended.
+ - Fixed element absorption not working as intended.
+ - Fixed map display name error when RPC updates before map is loaded.
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
                              ALPHA 15.2 CHANGELOG
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 Alpha 15.2 (2/5/2025)

@@ -89,14 +89,14 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             arr = [
                 [68, 74, 213, 92, 93, 50, 154],
                 [32, 51, 23, 30, 24, 25, 26, 27],
-                [78, 48, 47, 46, 44, 113, 96, 45]
+                [78, 48, 47, 46, 129, 44, 96, 45]
             ]
             break;
         case 'CASTLE FORGE':
             arr = [
                 [68, 74, 213, 176, 92, 214, 242, 93, 50, 154, 207, 123, 124, 125],
                 [45, 49, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
-                [78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 44, 113, 96, 115, 149, 148, 45, 172, 159, 134, 143, 170, 181, 185, 189, 190, 178, 199, 161, 162, 171, 124]
+                [78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 134, 143, 170, 181, 185, 189, 190, 178, 161, 162, 171, 124]
             ]
             break;
         case 'DALIA':
@@ -2860,7 +2860,7 @@ Game_BattlerBase.prototype.otherparam = function(otherparamId) {
 };
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {
-    return this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId) + this.traitsSum(Game_BattlerBase.TRAIT_ELEMENT_RATE_ADDITIVE, elementId);
+    return Math.max(this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId) * (1 + this.traitsSum(Game_BattlerBase.TRAIT_ELEMENT_RATE_ADDITIVE, elementId)), 0);
 };
 
 Game_BattlerBase.prototype.debuffRate = function(paramId) {
@@ -5785,6 +5785,18 @@ Game_Party.prototype.removePet = function() {
     actor.setName("Pet");
     this.removeGuestActor(7);
     $gamePlayer.refresh();
+};
+
+// Other
+
+Game_Party.prototype.membersPerm = function() {
+    return this.members().filter(a => !a.hasState(196))
+};
+
+Game_Party.prototype.killCount = function() {
+    var sum = 0;
+    this.membersPerm().forEach(m => sum += m.killCount());
+    return sum;
 };
 
 //-----------------------------------------------------------------------------
