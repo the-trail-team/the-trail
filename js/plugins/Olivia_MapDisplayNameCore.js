@@ -255,7 +255,7 @@ Game_Map.prototype.displayName = function() {
     if (this._overrideDisplayName) {
         return this._overrideDisplayName;
     } else {
-        return $dataMap.displayName;
+        return $dataMap ? $dataMap.displayName : '???';
     }
 };
 
