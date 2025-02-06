@@ -98,7 +98,7 @@ API_LEADERBOARD.leaderboards = function() {
     ];
 };
 
-API_LEADERBOARD.fetchLeaderboard = function(leaderboard) {
+API_LEADERBOARD.fetchLeaderboard = async function(leaderboard) {
     const url = this._url + "?leaderboard=" + leaderboard;
     return fetch(url, {
         method: 'GET'
@@ -113,7 +113,7 @@ API_LEADERBOARD.fetchLeaderboard = function(leaderboard) {
     });
 };
 
-API_LEADERBOARD.addToLeaderboard = function(leaderboard, value) {
+API_LEADERBOARD.addToLeaderboard = async function(leaderboard, value) {
     return fetch(this._url, {
         method: "POST",
         body: JSON.stringify([leaderboard, API_ITCH.userId(), API_ITCH.username(), value])
