@@ -19,6 +19,7 @@ Changes:
  - Apocalypse uses idle motion in place of dying/dead motions.
 
 Bug Fixes:
+ - Fixed a memory leak when rendering characters in tall chairs.
  - Fixed statues giving an element rate decrease not working as intended.
  - Fixed element absorption not working as intended.
  - Fixed map display name error when RPC updates before map is loaded.
