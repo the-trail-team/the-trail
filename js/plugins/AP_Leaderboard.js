@@ -199,17 +199,19 @@ Scene_Title.prototype.commandLeaderboard = function() {
 Scene_File_prototype_onSaveSuccess = Scene_File.prototype.onSaveSuccess;
 Scene_File.prototype.onSaveSuccess = function() {
     Scene_File_prototype_onSaveSuccess.call(this);
-    API_LEADERBOARD.push();
-    // Update local leaderboard
-    lbData = API_LEADERBOARD.getData();
-    API_LEADERBOARD.leaderboards().forEach(lb => {
-        const name = lb[0];
-        const value = lb[1];
-        lbData[name].forEach(entry => {
-            if (entry[0] == API_ITCH.userId() && value > entry[2]) entry[2] = value;
+    if (API_ITCH.loggedIn()) {
+        API_LEADERBOARD.push();
+        // Update local leaderboard
+        lbData = API_LEADERBOARD.getData();
+        API_LEADERBOARD.leaderboards().forEach(lb => {
+            const name = lb[0];
+            const value = lb[1];
+            lbData[name].forEach(entry => {
+                if (entry[0] == API_ITCH.userId() && value > entry[2]) entry[2] = value;
+            });
         });
-    });
-    API_LEADERBOARD.setData(lbData);
+        API_LEADERBOARD.setData(lbData);
+    }
 };
 
 //=============================================================================
