@@ -1004,8 +1004,9 @@ Window_StatusInfo.prototype.getArrayDW = function(maxCols) {
     return dw;
 };
 
-Window_StatusInfo.prototype.setRateColor = function(rate) {
+Window_StatusInfo.prototype.setRateColor = function(rate, base) {
     var colorId = 0;
+    if (base) rate += 1 - base;
     if (rate >= 3.0) {
       colorId = Yanfly.Param.ColorResistS;
     } else if (rate >= 2.0) {
@@ -1245,39 +1246,39 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       break;
     case 'eva':
       this.drawAttributeName(Yanfly.Param.StatusAttr_eva, dx, dy, dw);
-      this.drawAttributeRate(actor.eva, dx, dy, dw);
+      this.drawAttributeRate(actor.eva, dx, dy, dw, 0);
       break;
     case 'cri':
       this.drawAttributeName(Yanfly.Param.StatusAttr_cri, dx, dy, dw);
-      this.drawAttributeRate(actor.cri, dx, dy, dw);
+      this.drawAttributeRate(actor.cri, dx, dy, dw, 0);
       break;
     case 'cev':
       this.drawAttributeName(Yanfly.Param.StatusAttr_cev, dx, dy, dw);
-      this.drawAttributeRate(actor.cev, dx, dy, dw);
+      this.drawAttributeRate(actor.cev, dx, dy, dw, 0);
       break;
     case 'mev':
       this.drawAttributeName(Yanfly.Param.StatusAttr_mev, dx, dy, dw);
-      this.drawAttributeRate(actor.mev, dx, dy, dw);
+      this.drawAttributeRate(actor.mev, dx, dy, dw, 0);
       break;
     case 'mrf':
       this.drawAttributeName(Yanfly.Param.StatusAttr_mrf, dx, dy, dw);
-      this.drawAttributeRate(actor.mrf, dx, dy, dw);
+      this.drawAttributeRate(actor.mrf, dx, dy, dw, 0);
       break;
     case 'cnt':
       this.drawAttributeName(Yanfly.Param.StatusAttr_cnt, dx, dy, dw);
-      this.drawAttributeRate(actor.cnt, dx, dy, dw);
+      this.drawAttributeRate(actor.cnt, dx, dy, dw, 0);
       break;
     case 'hrg':
       this.drawAttributeName(Yanfly.Param.StatusAttr_hrg, dx, dy, dw);
-      this.drawAttributeRate(actor.hrg, dx, dy, dw);
+      this.drawAttributeRate(actor.hrg, dx, dy, dw, 0);
       break;
     case 'mrg':
       this.drawAttributeName(Yanfly.Param.StatusAttr_mrg, dx, dy, dw);
-      this.drawAttributeRate(actor.mrg, dx, dy, dw);
+      this.drawAttributeRate(actor.mrg, dx, dy, dw, 0);
       break;
     case 'trg':
       this.drawAttributeName(Yanfly.Param.StatusAttr_trg, dx, dy, dw);
-      this.drawAttributeRate(actor.trg, dx, dy, dw);
+      this.drawAttributeRate(actor.trg, dx, dy, dw, 0);
       break;
     case 'tgr':
       this.drawAttributeName(Yanfly.Param.StatusAttr_tgr, dx, dy, dw);
@@ -1333,27 +1334,27 @@ Window_StatusInfo.prototype.drawAttributeData = function(attr, dx, dy, dw) {
       break;
     case 'pls':
       this.drawAttributeName("Physical Life Steal (PLS)", dx, dy, dw);
-      this.drawAttributeRate(actor.getLifeStealRate('hpPhysicalRate'), dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('hpPhysicalRate'), dx, dy, dw, 0);
       break;
     case 'mls':
       this.drawAttributeName("Magical Life Steal (MLS)", dx, dy, dw);
-      this.drawAttributeRate(actor.getLifeStealRate('hpMagicalRate'), dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('hpMagicalRate'), dx, dy, dw, 0);
       break;
     case 'cls':
       this.drawAttributeName("True Life Steal (TLS)", dx, dy, dw);
-      this.drawAttributeRate(actor.getLifeStealRate('hpCertainRate'), dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('hpCertainRate'), dx, dy, dw, 0);
       break;
     case 'pms':
       this.drawAttributeName("Physical MP Steal (PMS)", dx, dy, dw);
-      this.drawAttributeRate(actor.getLifeStealRate('mpPhysicalRate'), dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('mpPhysicalRate'), dx, dy, dw, 0);
       break;
     case 'mms':
       this.drawAttributeName("Magical MP Steal (MMS)", dx, dy, dw);
-      this.drawAttributeRate(actor.getLifeStealRate('mpMagicalRate'), dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('mpMagicalRate'), dx, dy, dw, 0);
       break;
     case 'cms':
       this.drawAttributeName("True MP Steal (TMS)", dx, dy, dw);
-      this.drawAttributeRate(actor.getLifeStealRate('mpCertainRate'), dx, dy, dw);
+      this.drawAttributeRate(actor.getLifeStealRate('mpCertainRate'), dx, dy, dw, 0);
       break;
     default:
       break;
@@ -1376,9 +1377,9 @@ Window_StatusInfo.prototype.drawAttributeName = function(name, dx, dy, dw) {
     this._bypassResetText = false;
 };
 
-Window_StatusInfo.prototype.drawAttributeRate = function(rate, dx, dy, dw) {
+Window_StatusInfo.prototype.drawAttributeRate = function(rate, dx, dy, dw, base) {
     var value = (rate * 100).toFixed(Yanfly.Param.StatusAttrDec) + '%';
-    this.setRateColor(rate);
+    this.setRateColor(rate, base);
     this.drawAttributeValue(value, dx, dy, dw);
 };
 
