@@ -5258,7 +5258,7 @@
     "traits": [],
     "iconIndex": 800,
     "name": "Infernal Coin",
-    "note": "<Upgrade Slots: 3>\n<Passive State: 184, 154>\n\n<Synthesis Ingredients>\nInfernal Wand\n</Synthesis Ingredients>\n<Mask Name: New Form>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Upgrade Slots: 3>\n<Passive State: 184, 154>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
