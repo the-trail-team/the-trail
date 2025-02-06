@@ -1,3 +1,6 @@
+var AP = AP || {};
+AP.Leaderboard = AP.Leaderboard || {};
+
 //=============================================================================
 // API_ITCH
 //=============================================================================
@@ -171,7 +174,10 @@ API_LEADERBOARD.refresh = function() {
 Scene_Title_prototype_start = Scene_Title.prototype.start;
 Scene_Title.prototype.start = function() {
     Scene_Title_prototype_start.call(this);
-    API_LEADERBOARD.pull();
+    if (!AP.Leaderboard.InitialAPIPull) {
+        API_LEADERBOARD.pull();
+        AP.Leaderboard.InitialAPIPull = true;
+    }
 };
 
 Scene_Title_prototype_createCommandWindow = Scene_Title.prototype.createCommandWindow;
