@@ -89,7 +89,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             arr = [
                 [68, 74, 213, 92, 93, 50, 154],
                 [32, 51, 23, 30, 24, 25, 26, 27],
-                [78, 48, 47, 46, 44, 96, 45]
+                [78, 48, 47, 46, 129, 44, 96, 45]
             ]
             break;
         case 'CASTLE FORGE':
