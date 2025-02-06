@@ -1006,7 +1006,7 @@ Window_StatusInfo.prototype.getArrayDW = function(maxCols) {
 
 Window_StatusInfo.prototype.setRateColor = function(rate, base) {
     var colorId = 0;
-    if (base) rate += 1 - base;
+    if (base != undefined) rate += 1 - base;
     if (rate >= 3.0) {
       colorId = Yanfly.Param.ColorResistS;
     } else if (rate >= 2.0) {
