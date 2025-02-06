@@ -20,16 +20,20 @@ async function setActivity() {
     var smallImageKey = smallImageKeys[refreshes % smallImageKeys.length];
     var smallImageText = "No save loaded";
 
+    if ($dataVersion) {
+        state += $dataVersion.name;
+    } else {
+        state += "the game";
+    }
+
     if ($gameMap) {
         if ($gameMap._mapId === 0 || !$gameTemp._isGameLoaded) {
             details = "In the main menu";
         } else {
             if ($gameParty.inBattle()) {
-                details = "Fighting " + $dataTroops[$gameTroop._troopId].name;
-            } else {
-                if ($gameMap.displayName()) details = "Location: " + $gameMap.displayName();
-                else details = "Location: ???";
-            }
+                details = `Fighting ${$dataTroops[$gameTroop._troopId].name})`;
+                state = `Turn ${Math.max($gameTroop.turnCount(), 1)}`;
+            } else details = `Location: ${$gameMap.displayName() ? $gameMap.displayName() : '???'}`;
 
             switch(smallImageKey) {
                 case `power`:
@@ -53,12 +57,6 @@ async function setActivity() {
                     smallImageText = "That wasn't supposed to happen!";
             }
         }
-    }
-    
-    if ($dataVersion) {
-        state += $dataVersion.name;
-    } else {
-        state += "the game";
     }
 
     RPC.setActivity({

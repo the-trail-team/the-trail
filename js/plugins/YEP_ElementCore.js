@@ -496,7 +496,7 @@ Game_BattlerBase.prototype.elementRate = function(elementId) {
   if (rate !== undefined) return rate;
   var result = Yanfly.Ele.Game_BtlrBase_elementRate.call(this, elementId);
   if (this.isAbsorbElement(elementId) && result > 0) {
-    result = Math.min(result - 2.0, -0.01);
+    result = Math.min(0 - result, 0);
   }
   return result;
 };

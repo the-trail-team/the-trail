@@ -2860,7 +2860,7 @@ Game_BattlerBase.prototype.otherparam = function(otherparamId) {
 };
 
 Game_BattlerBase.prototype.elementRate = function(elementId) {
-    return this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId) + this.traitsSum(Game_BattlerBase.TRAIT_ELEMENT_RATE_ADDITIVE, elementId);
+    return Math.max(this.traitsPi(Game_BattlerBase.TRAIT_ELEMENT_RATE, elementId) * (1 + this.traitsSum(Game_BattlerBase.TRAIT_ELEMENT_RATE_ADDITIVE, elementId)), 0);
 };
 
 Game_BattlerBase.prototype.debuffRate = function(paramId) {
@@ -5785,6 +5785,18 @@ Game_Party.prototype.removePet = function() {
     actor.setName("Pet");
     this.removeGuestActor(7);
     $gamePlayer.refresh();
+};
+
+// Other
+
+Game_Party.prototype.membersPerm = function() {
+    return this.members().filter(a => !a.hasState(196))
+};
+
+Game_Party.prototype.killCount = function() {
+    var sum = 0;
+    this.membersPerm().forEach(m => sum += m.killCount());
+    return sum;
 };
 
 //-----------------------------------------------------------------------------

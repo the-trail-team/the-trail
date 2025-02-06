@@ -4477,6 +4477,7 @@ Game_Enemy.prototype.reflectAnimationId = function() {
 };
 
 Game_Enemy.prototype.spriteCanMove = function() {
+    if (this._spriteCanMove) return true;
     if (this.enemy().spriteCannotMove) return false;
     return Game_Battler.prototype.spriteCanMove.call(this);
 };

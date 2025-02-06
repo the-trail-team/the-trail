@@ -2770,14 +2770,14 @@ BattleManager.updateBattleEnd = function() {
     this._phase = null;
 };
 
-function randomizeReward(variation) {
-    variation = Math.random() < 0.5 ? variation : -variation;
-    return 1 + ((Math.random() * variation) * 0.01);
+randomizeReward = function(reward, variation) {
+    // E.g. variance = 5 returns between 0.95 to 1.05
+    return Math.round(reward * (1 + ((Math.random() - 0.5) * variation * 0.02)));
 };
 
 BattleManager.makeRewards = function() {
     this._rewards = {};
-    this._rewards.gold = Math.round($gameTroop.goldTotal() * randomizeReward(5));
+    this._rewards.gold = randomizeReward($gameTroop.goldTotal(), 3);
     this._rewards.exp = $gameTroop.expTotal();
     this._rewards.items = $gameTroop.makeDropItems();
 };
@@ -2840,7 +2840,7 @@ BattleManager.gainRewards = function() {
 BattleManager.gainExp = function() {
     var exp = this._rewards.exp;
     $gameParty.allMembers().forEach(function(actor) {
-        actor.gainExp(Math.round(exp * randomizeReward(5)));
+        actor.gainExp(randomizeReward(exp, 3));
     });
 };
 

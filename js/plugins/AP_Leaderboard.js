@@ -1,3 +1,6 @@
+var AP = AP || {};
+AP.Leaderboard = AP.Leaderboard || {};
+
 //=============================================================================
 // API_ITCH
 //=============================================================================
@@ -90,11 +93,12 @@ API_LEADERBOARD.leaderboards = function() {
     return [
         ["Bits", $gameParty.gold()],
         ["Damage Dealt", $gameVariables.value(27)],
+        ["Enemies Defeated", $gameParty.killCount()],
         ["Playtime", $gameSystem.playtime()]
     ];
 };
 
-API_LEADERBOARD.fetchLeaderboard = function(leaderboard) {
+API_LEADERBOARD.fetchLeaderboard = async function(leaderboard) {
     const url = this._url + "?leaderboard=" + leaderboard;
     return fetch(url, {
         method: 'GET'
@@ -109,7 +113,7 @@ API_LEADERBOARD.fetchLeaderboard = function(leaderboard) {
     });
 };
 
-API_LEADERBOARD.addToLeaderboard = function(leaderboard, value) {
+API_LEADERBOARD.addToLeaderboard = async function(leaderboard, value) {
     return fetch(this._url, {
         method: "POST",
         body: JSON.stringify([leaderboard, API_ITCH.userId(), API_ITCH.username(), value])
@@ -149,6 +153,65 @@ API_LEADERBOARD.pull = function() {
     return Promise.all(promises);
 };
 
+API_LEADERBOARD.refresh = function() {
+    return new Promise(async (resolve, reject) => {
+        try {
+            if (API_ITCH.loggedIn() && $gameTemp._inGame) {
+                await API_LEADERBOARD.push();
+            }
+            await API_LEADERBOARD.pull();
+            resolve();
+        } catch (error) {
+            reject(error);
+        }
+    });
+};
+
+//=============================================================================
+// Scene_Title
+//=============================================================================
+
+Scene_Title_prototype_start = Scene_Title.prototype.start;
+Scene_Title.prototype.start = function() {
+    Scene_Title_prototype_start.call(this);
+    if (!AP.Leaderboard.InitialAPIPull) {
+        API_LEADERBOARD.pull();
+        AP.Leaderboard.InitialAPIPull = true;
+    }
+};
+
+Scene_Title_prototype_createCommandWindow = Scene_Title.prototype.createCommandWindow;
+Scene_Title.prototype.createCommandWindow = function() {
+    Scene_Title_prototype_createCommandWindow.call(this);
+    this._commandWindow.setHandler('leaderboard', this.commandLeaderboard.bind(this));
+};
+
+Scene_Title.prototype.commandLeaderboard = function() {
+    this._commandWindow.close();
+    this.startFadeOut(this.fadeSpeed(), false);
+    SceneManager.push(Scene_Leaderboard);
+};
+
+//=============================================================================
+// Scene_File
+//=============================================================================
+
+Scene_File_prototype_onSaveSuccess = Scene_File.prototype.onSaveSuccess;
+Scene_File.prototype.onSaveSuccess = function() {
+    Scene_File_prototype_onSaveSuccess.call(this);
+    API_LEADERBOARD.push();
+    // Update local leaderboard
+    lbData = API_LEADERBOARD.getData();
+    API_LEADERBOARD.leaderboards().forEach(lb => {
+        const name = lb[0];
+        const value = lb[1];
+        lbData[name].forEach(entry => {
+            if (entry[0] == API_ITCH.userId() && value > entry[2]) entry[2] = value;
+        });
+    });
+    API_LEADERBOARD.setData(lbData);
+};
+
 //=============================================================================
 // Scene_Menu
 //=============================================================================
@@ -175,6 +238,7 @@ Scene_Leaderboard.prototype.initialize = function() {
 Scene_Leaderboard.prototype.create = function() {
     Scene_MenuBase.prototype.create.call(this);
     this.createWindows();
+    if (!$gameTemp._inGame) this.startFadeIn(this.fadeSpeed(), false);
 };
 
 Scene_Leaderboard.prototype.createWindows = function() {
@@ -193,7 +257,7 @@ Scene_Leaderboard.prototype.createLoginWindow = function() {
     this._loginWindow.setHandler('login', this.loginCommand.bind(this));
     this._loginWindow.setHandler('logout', this.logoutCommand.bind(this));
     this._loginWindow.setHandler('refresh', this.refreshCommand.bind(this));
-    this._loginWindow.setHandler('cancel', this.popScene.bind(this));
+    this._loginWindow.setHandler('cancel', this.cancel.bind(this));
     this.addWindow(this._loginWindow);
 };
 
@@ -210,11 +274,15 @@ Scene_Leaderboard.prototype.logoutCommand = async function() {
 };
 
 Scene_Leaderboard.prototype.refreshCommand = async function() {
-    if (API_ITCH.loggedIn()) await API_LEADERBOARD.push();
-    await API_LEADERBOARD.pull();
+    await API_LEADERBOARD.refresh();
     alert("Leaderboard refreshed");
     this._leaderboardWindow.refresh();
     this._loginWindow.activate();
+};
+
+Scene_Leaderboard.prototype.cancel = function() {
+    if (!$gameTemp._inGame) this.startFadeOut(this.fadeSpeed(), false);
+    this.popScene();
 };
 
 //=============================================================================
