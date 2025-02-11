@@ -2545,7 +2545,7 @@ Window_EquipItem.prototype.includes = function(item) {
     if (this._slotId < 0 || item.etypeId !== this._actor.equipSlots()[this._slotId]) {
         return false;
     }
-    if (this._slotId == 10 && !this._actor.checkEquipRequirements(item)) return false;
+    if (this._actor.equipSlots()[this._slotId] == 7 && !this._actor.checkEquipRequirements(item)) return false; // Vanity fix
     return this._actor.canEquip(item);
 };
 

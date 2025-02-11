@@ -717,7 +717,7 @@
       0,
       0
     ],
-    "price": 300
+    "price": 250
   },
   {
     "id": 33,
@@ -1368,7 +1368,7 @@
       0,
       0
     ],
-    "price": 300
+    "price": 500
   },
   {
     "id": 58,
@@ -1862,7 +1862,7 @@
   {
     "id": 78,
     "atypeId": 1,
-    "description": "A peculiar piece of head armor that still contains the\nenergy of its previous owner. Increases \\nl[9] resistance.",
+    "description": "A peculiar piece of headgear that still contains the\nenergy of its previous owner. Increases \\nl[9] resistance.",
     "etypeId": 3,
     "traits": [
       {
@@ -1873,7 +1873,7 @@
     ],
     "iconIndex": 339,
     "name": "Skull Hat",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSkeleton Skull\nDark Essence: 2\n</Synthesis Ingredients>\n<Mask Name: Peculiar Dark Head Armor>\n<Synthesis SE: Equip3>",
+    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nSkeleton Skull\nDark Essence: 2\n</Synthesis Ingredients>\n<Mask Name: Peculiar Dark Headgear>\n<Synthesis SE: Equip3>",
     "params": [
       5,
       5,
@@ -2545,16 +2545,10 @@
     "atypeId": 1,
     "description": "An enchanted strip of lace taken from an old dress. Boosts the\ndamage of skills that harness any of the ten elements by 10%.",
     "etypeId": 8,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 1,
-        "value": 1.1
-      }
-    ],
+    "traits": [],
     "iconIndex": 182,
     "name": "Elemental Lace",
-    "note": "",
+    "note": "<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>",
     "params": [
       0,
       0,
@@ -3097,7 +3091,7 @@
     ],
     "iconIndex": 373,
     "name": "Wyvern's Fury (Tome)",
-    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nBlank Tome\nDraconic Wand\nEnchanted Dragon Scale\nWind Catalyst\nWind Essence: 5\n</Synthesis Ingredients>\n<Mask Name: AoE Wind Spell>\n<Synthesis SE: Book2>",
+    "note": "<Cannot Rename>\n\n<Synthesis Ingredients>\nDraconic Wand\nEnchanted Dragon Scale\nWind Catalyst\nWind Essence: 5\n</Synthesis Ingredients>\n<Mask Name: AoE Wind Spell>\n<Synthesis SE: Book2>",
     "params": [
       0,
       0,
@@ -3108,7 +3102,7 @@
       0,
       0
     ],
-    "price": 300
+    "price": 2000
   },
   {
     "id": 125,
@@ -3236,7 +3230,7 @@
     ],
     "iconIndex": 473,
     "name": "Flower Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nLeather Boots\nYellow Flower: 10\nRed Flower: 10\nBlue Flower: 10\n</Synthesis Ingredients>\n<Mask Name: Natural Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nLeather Boots\nYellow Flower: 10\nRed Flower: 10\nBlue Flower: 10\n</Synthesis Ingredients>\n<Mask Name: Natural Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Leather: 100%\n</Disassemble Pool: Basic>\n<Disassemble Pool: Advanced>\nx1 Leather Boots: 80%\n</Disassemble Pool: Advanced>",
     "params": [
       0,
       0,
@@ -3348,16 +3342,11 @@
         "code": 11,
         "dataId": 3,
         "value": 0.95
-      },
-      {
-        "code": 25,
-        "dataId": 1,
-        "value": 1.025
       }
     ],
     "iconIndex": 477,
     "name": "Survivalist Boots",
-    "note": "<Upgrade Slots: 1>\n\n<Synthesis Ingredients>\nFlower Boots\nPadded Boots\nSnow Boots\nDragon Scale: 2\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: General Purpose Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Upgrade Slots: 1>\n\n<Element Amplify Fire: +2.5%>\n<Element Amplify Ice: +2.5%>\n<Element Amplify Electric: +2.5%>\n<Element Amplify Water: +2.5%>\n<Element Amplify Earth: +2.5%>\n<Element Amplify Wind: +2.5%>\n<Element Amplify Plant: +2.5%>\n<Element Amplify Metal: +2.5%>\n<Element Amplify Light: +2.5%>\n<Element Amplify Dark: +2.5%>\n\n<Synthesis Ingredients>\nFlower Boots\nPadded Boots\nSnow Boots\nDragon Scale: 2\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: General Purpose Footwear>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-x4 Leather: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -3395,16 +3384,11 @@
         "code": 11,
         "dataId": 3,
         "value": 0.9
-      },
-      {
-        "code": 25,
-        "dataId": 1,
-        "value": 1.05
       }
     ],
     "iconIndex": 741,
     "name": "Trailblazing Boots",
-    "note": "<Upgrade Slots: 2>\n\n<Synthesis Ingredients>\nSurvivalist Boots\nElemental Lace\nHRG Scroll\nFire Essence: 3\nIce Essence: 3\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
+    "note": "<Upgrade Slots: 2>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nSurvivalist Boots\nElemental Lace\nHRG Scroll\nFire Essence: 3\nIce Essence: 3\nEnchanted Dragon Scale\nFrozen Jewel\n</Synthesis Ingredients>\n<Mask Name: Super Strong Footwear>\n<Synthesis SE: Equip3>",
     "params": [
       0,
       0,
@@ -3431,7 +3415,7 @@
     ],
     "iconIndex": 632,
     "name": "Cloth Mask",
-    "note": "<Synthesis Ingredients>\nWorn Cloth: 5\nTarantula Silk: 3\nAntidote\nRaw Truffle\nVial of Poison\n</Synthesis Ingredients>\n<Mask Name: Sickness Stopper>\n<Synthesis SE: Equip3>\n\n<Disassemble Pool: Basic>\nx2-5 Worn Cloth: 100%\nx1-2 Tarantula Silk: 100%\n</Disassemble Pool: Basic>",
+    "note": "<Disassemble Pool: Basic>\nx2-5 Worn Cloth: 100%\n</Disassemble Pool: Basic>",
     "params": [
       0,
       0,
@@ -4293,7 +4277,7 @@
     ],
     "iconIndex": 369,
     "name": "Ice II (Tome)",
-    "note": "<Cannot Rename>",
+    "note": "<Cannot Rename>\n\n<Custom Buy Show Eval>\nvisible = $gameSelfSwitches.value([209, 17, 'A']);\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -4304,7 +4288,7 @@
       0,
       0
     ],
-    "price": 300
+    "price": 1000
   },
   {
     "id": 165,
@@ -4734,7 +4718,7 @@
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
       0,
       0,
@@ -4841,7 +4825,7 @@
       0,
       0
     ],
-    "price": 300
+    "price": 2500
   },
   {
     "id": 183,
@@ -4896,16 +4880,10 @@
     "atypeId": 1,
     "description": "The upgrades continue! Tellurium has enhanced\nthe elemental flow of these wristbraces.",
     "etypeId": 6,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 1,
-        "value": 1.05
-      }
-    ],
+    "traits": [],
     "iconIndex": 770,
     "name": "Fiery Wristbraces",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
+    "note": "<Upgrade Slots: 3>\n\n\n\n<Synthesis Ingredients>\nSilver Wristbraces\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Wristbraces>",
     "params": [
       0,
       16,
@@ -5030,16 +5008,10 @@
     "atypeId": 1,
     "description": "Increases outgoing elemental damage by a\nwhopping 20%. Tellurium is powerful!",
     "etypeId": 8,
-    "traits": [
-      {
-        "code": 25,
-        "dataId": 1,
-        "value": 1.2
-      }
-    ],
+    "traits": [],
     "iconIndex": 775,
     "name": "Fiery Lace",
-    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
+    "note": "<Upgrade Slots: 3>\n\n<Element Amplify Fire: +20%>\n<Element Amplify Ice: +20%>\n<Element Amplify Electric: +20%>\n<Element Amplify Water: +20%>\n<Element Amplify Earth: +20%>\n<Element Amplify Wind: +20%>\n<Element Amplify Plant: +20%>\n<Element Amplify Metal: +20%>\n<Element Amplify Light: +20%>\n<Element Amplify Dark: +20%>\n\n<Synthesis Ingredients>\nElemental Lace\nFiery Blood: 5\nEctoplasm: 3\nTellurium Alloy\n</Synthesis Ingredients>\n<Mask Name: Upgraded Lace>",
     "params": [
       0,
       0,
@@ -5285,7 +5257,7 @@
     ],
     "iconIndex": 770,
     "name": "Andrew's Wristbraces",
-    "note": "<Upgrade Slots: 4>",
+    "note": "<Upgrade Slots: 4>\n\n<Element Amplify Fire: +10%>\n<Element Amplify Ice: +10%>\n<Element Amplify Electric: +10%>\n<Element Amplify Water: +10%>\n<Element Amplify Earth: +10%>\n<Element Amplify Wind: +10%>\n<Element Amplify Plant: +10%>\n<Element Amplify Metal: +10%>\n<Element Amplify Light: +10%>\n<Element Amplify Dark: +10%>",
     "params": [
       0,
       32,
@@ -5613,5 +5585,42 @@
       0
     ],
     "price": 1800
+  },
+  {
+    "id": 214,
+    "atypeId": 1,
+    "description": "While this is an odd combination, reducing sudden spikes in damage\nand increasing received healing makes it much easier to stay alive.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 11,
+        "dataId": 11,
+        "value": 1.5
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.06
+      },
+      {
+        "code": 22,
+        "dataId": 3,
+        "value": 0.06
+      }
+    ],
+    "iconIndex": 819,
+    "name": "Optic Charm",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nJade Charm\nDismembered Eye\n</Synthesis Ingredients>",
+    "params": [
+      0,
+      6,
+      0,
+      0,
+      2,
+      4,
+      0,
+      0
+    ],
+    "price": 1000
   }
 ]

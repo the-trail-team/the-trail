@@ -5836,6 +5836,7 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     this[_0x3084("0xc9")] = [];
     this[_0x3084("0x55")] = [];
     this[_0x3084("0x5c")]();
+    this._itemListMade = true;
   };
   Window_BattleVictoryItems[_0x3084("0xa8")][_0x3084("0xca")] = function (_0x2a9a1e) {
     return true;
@@ -5902,6 +5903,13 @@ if (Olivia.OctoBattle[_0x3084("0x1c")][_0x3084("0x30")]) {
     }
     return _0x8c74eb;
   };
+  // FIX FOR SCROLLING ON ITEM LIST CAUSING ITEMS TO DISAPPEAR
+  Window_BattleVictoryItems.prototype.refresh = function () {
+    if (!this._itemListMade) this.makeItemList();
+    this.createContents();
+    this.drawAllItems();
+  };
+  // END OF FIX
   /*Yanfly[_0x3084("0x12")][_0x3084("0x33")] = function (_0x78f4be) {
     if (!_0x78f4be) return;
     if (typeof _0x78f4be === _0x3084("0x27")) return _0x78f4be;

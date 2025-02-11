@@ -31,7 +31,7 @@ async function setActivity() {
             details = "In the main menu";
         } else {
             if ($gameParty.inBattle()) {
-                details = `Fighting ${$dataTroops[$gameTroop._troopId].name})`;
+                details = `Fighting ${$dataTroops[$gameTroop._troopId].name}`;
                 state = `Turn ${Math.max($gameTroop.turnCount(), 1)}`;
             } else details = `Location: ${$gameMap.displayName() ? $gameMap.displayName() : '???'}`;
 

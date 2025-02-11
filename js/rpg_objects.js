@@ -96,7 +96,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             arr = [
                 [68, 74, 213, 176, 92, 214, 242, 93, 50, 154, 207, 123, 124, 125],
                 [45, 49, 50, 44, 42, 43, 53, 52, 32, 51, 23, 30, 24, 25, 26, 27],
-                [78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 134, 143, 170, 181, 185, 189, 190, 178, 161, 162, 171, 124]
+                [78, 125, 126, 127, 128, 108, 97, 137, 136, 48, 117, 47, 168, 46, 133, 132, 129, 130, 131, 213, 44, 96, 115, 149, 148, 45, 172, 159, 143, 170, 181, 214, 185, 189, 190, 178, 161, 162, 171, 124]
             ]
             break;
         case 'DALIA':
@@ -336,7 +336,7 @@ Game_System.prototype.onBattleEscape = function() {
 
 Game_System.prototype.onBeforeSave = function() {
     this._saveCount++;
-    this._versionId = $dataSystem.versionId;
+    this._versionId = $dataVersion.release;
     this._framesOnSave = Graphics.frameCount;
     this._bgmOnSave = AudioManager.saveBgm();
     this._bgsOnSave = AudioManager.saveBgs();
@@ -7264,6 +7264,13 @@ Game_CharacterBase.prototype.terrainTag = function() {
 
 Game_CharacterBase.prototype.regionId = function() {
     return $gameMap.regionId(this._x, this._y);
+};
+
+Game_CharacterBase.prototype.checkCliff = function() {
+    const arr = [61, 62]; // Elevation regions
+    const enemyRegion = this.regionId();
+    const playerRegion = $gamePlayer.regionId();
+    return arr.contains(enemyRegion) && arr.contains(playerRegion) && enemyRegion != playerRegion;
 };
 
 Game_CharacterBase.prototype.increaseSteps = function() {

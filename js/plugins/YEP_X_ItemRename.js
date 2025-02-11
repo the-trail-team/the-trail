@@ -362,11 +362,13 @@ Scene_Item.prototype.postItemRename2 = function() {
   if (SceneManager._scene._itemWindow._data.length == 0) window.setTimeout(SceneManager._scene.postItemRename2, 100);
   else {
     SceneManager._scene._itemWindow.update();
-    SceneManager._scene._itemWindow.select(SceneManager._scene._itemWindow._data.findIndex(i => i.id == $gameTemp._itemRename.id));
+    SceneManager._scene._itemWindow.select(SceneManager._scene._itemWindow._data.findIndex(i => !!i ? i.id == $gameTemp._itemRename.id : false));
     SceneManager._scene._itemWindow.updateHelp();
     $gameTemp._itemRename = undefined;
-    SceneManager._scene._itemActionWindow.setItem(SceneManager._scene.item())
-    SceneManager._scene._itemActionWindow.select($gameTemp._itemActionIndex);
+    if (!!SceneManager._scene._itemActionWindow) {
+      SceneManager._scene._itemActionWindow.setItem(SceneManager._scene.item());
+      SceneManager._scene._itemActionWindow.select($gameTemp._itemActionIndex);
+    }
     $gameTemp._itemActionIndex = undefined;
   }
 }
