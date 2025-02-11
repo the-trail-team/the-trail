@@ -5172,7 +5172,7 @@
   {
     "id": 177,
     "animationId": 0,
-    "consumable": false,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -5180,17 +5180,17 @@
       "type": 0,
       "variance": 20
     },
-    "description": "An empty magical tome with no remarkable properties.\nIt is, however, very useful in certain crafting recipes.",
+    "description": "",
     "effects": [],
     "hitType": 0,
-    "iconIndex": 225,
+    "iconIndex": 0,
     "itypeId": 1,
-    "name": "Blank Tome",
-    "note": "",
-    "occasion": 3,
-    "price": 300,
+    "name": "",
+    "note": "Was once the Blank Tome.",
+    "occasion": 0,
+    "price": 0,
     "repeats": 1,
-    "scope": 0,
+    "scope": 7,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0
@@ -6156,7 +6156,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Boosts the INT of head armor by +2.",
+    "description": "Boosts the INT of headgear by +2.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 664,
@@ -7189,7 +7189,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Grants resistance to \\it[125] for 1200 steps.",
+    "description": "Grants \\it[126] for 1200 steps.",
     "effects": [
       {
         "code": 21,
@@ -7202,7 +7202,7 @@
     "iconIndex": 721,
     "itypeId": 1,
     "name": "Fire Resistance Potion",
-    "note": "<Menu Category: Debuffs>",
+    "note": "<Menu Category: Buffs>",
     "occasion": 2,
     "price": 20,
     "repeats": 1,
@@ -7370,7 +7370,7 @@
   {
     "id": 253,
     "animationId": 0,
-    "consumable": false,
+    "consumable": true,
     "damage": {
       "critical": false,
       "elementId": 0,
@@ -7379,16 +7379,23 @@
       "variance": 20
     },
     "description": "A vial of burning hot plasma that\nmiraculously doesn't melt the glass.",
-    "effects": [],
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 102,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
     "iconIndex": 768,
     "itypeId": 1,
     "name": "Fiery Blood",
-    "note": "<Disassemble Pool: Monster>\nx5-7 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>",
-    "occasion": 3,
+    "note": "<Enemy or Actor Select>\n\n<Disassemble Pool: Monster>\nx5-7 Ground Monster Parts: 100%\n</Disassemble Pool: Monster>",
+    "occasion": 1,
     "price": 20,
     "repeats": 1,
-    "scope": 0,
+    "scope": 1,
     "speed": 0,
     "successRate": 100,
     "tpGain": 0

@@ -890,12 +890,12 @@ VictorEngine.BasicModule = VictorEngine.BasicModule || {};
     //=============================================================================
 
     Object.defineProperties(Sprite_Battler.prototype, {
-        z: {
+        /*z: {
             get: function() {
                 return 3;
             },
             configurable: true
-        },
+        },*/
         h: {
             get: function() {
                 return this.spriteZ();

@@ -65,7 +65,7 @@ Yanfly.MusicMenu.version = 1.01;
  *
  * When entering the song data, it has to be done in a certain format:
  *
- *   filename; display name; volume; pitch; pan; description
+ *   filename; display name; description; icon
  *
  * Each data segment is separated by a ; and must be entered in that particular
  * order to keep all the data ordered and read correctly. Here is how to apply
@@ -180,7 +180,7 @@ Yanfly.SetupMusicMenuParameters = function() {
     var paramData = paramStr.split(';')
     Yanfly.Param.MusicMenuSongList.push(paramData);
     Yanfly.Param.MusicMenuSongFilenameList.push(paramData[0]);
-    Yanfly.Param.MusicMenuSongIconList.push(paramData[6]);
+    Yanfly.Param.MusicMenuSongIconList.push(paramData[3]);
   }
 }
 
@@ -319,14 +319,14 @@ Window_MusicMenuList.prototype.makeCommandList = function() {
     if (data.length > 1) {
       var ext = {
         name: data[0],
-        volume: data[2],
-        pitch: data[3],
-        pan: data[4],
+        volume: 100,
+        pitch: 100,
+        pan: 0,
         description: ''
       }
       if ($gameSystem.isUnlockedMusicMenuSong(i)) {
         var name = [i] + ". " + data[1].trim();
-        ext.description = data[5].trim();
+        ext.description = data[2].trim();
         var enabled = true;
       } else {
         var name = [i] + ". " + Yanfly.Param.MusicMenuHiddenName.trim();
