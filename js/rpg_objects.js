@@ -336,7 +336,7 @@ Game_System.prototype.onBattleEscape = function() {
 
 Game_System.prototype.onBeforeSave = function() {
     this._saveCount++;
-    this._versionId = $dataSystem.versionId;
+    this._versionId = $dataVersion.release;
     this._framesOnSave = Graphics.frameCount;
     this._bgmOnSave = AudioManager.saveBgm();
     this._bgsOnSave = AudioManager.saveBgs();
