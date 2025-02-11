@@ -1,36 +1,39 @@
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-                              ALPHA 16 CHANGELOG
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-Alpha 16 (??/??/????)
-The Comeback Update
-Current Level Cap: 30
-- - - - - - - - - - - - -
-INTRO
+# Alpha 16: The Comeback Update (??/??/????)
+INTRO TEXT
 
-Additions:
- - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
- - 5 new skills:
-  ~ Player 1, 1 new skill:
-   > [P] Steadfast: Passive @ L27
-  ~ Player 2, 2 new skills:
-   > Magical Breeze: Magic @ L28
-   > [P] Topped Off: Passive @ L30
-  ~ Player 3, 2 new skills:
-   > Cure II: Magic @ L27
-   > Rejuvenation: Magic @ L30
-  ~ Player 4, 0 new skills:
-   > 
- - 2 new items:
-  > Phantasmal Charm
-  > [REDACTED HELMET]
- - 3 new equipment:
-  ~ Soulstealer's Necklace
-  ~ Soul Shackles (Tome)
-  ~ [REDACTED RESISTANCE]
- - 3 new enemies:
-  ~ Tortured Soul
-  ~ Will o' Wisp
-  ~ [REDACTED GENERAL]
+### Additions
+- The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
+- 5 new skills:
+  - Player 1, 1 new skill:
+    - [P] Steadfast: Passive @ L27
+  - Player 2, 2 new skills:
+    - Magical Breeze: Magic @ L28
+    - [P] Topped Off: Passive @ L30
+  - Player 3, 2 new skills:
+    - Cure II: Magic @ L27
+    - Rejuvenation: Magic @ L30
+  - Player 4, 0 new skills:
+    - Name: Category @ LXX 
+- 2 new items:
+  - Phantasmal Charm
+  - [REDACTED HELMET]
+- 3 new equipment:
+  - Soulstealer's Necklace
+  - Soul Shackles (Tome)
+  - [REDACTED RESISTANCE]
+- 3 new enemies:
+  - Tortured Soul
+  - Will o' Wisp
+  - [REDACTED GENERAL]
+
+### Changes
+-
+
+### Bug Fixes
+-
+
+<br><br>
+
 # Alpha 15.4 (2/11/2025)
 *Current Level Cap: 25*
 
