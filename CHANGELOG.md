@@ -1,8 +1,8 @@
-# Alpha 15.4 (??/??/????)
+# Alpha 15.4 (2/11/2025)
 *Current Level Cap: 25*
 
 This update brings further enhancements to the Alpha 15 experience.
-A new accessory, the return of the music menu, changes to Player 4's offhand slot, and more!
+Major changes to Telluria Castle Town, a new accessory, the return of the music menu, and more!
 
 ### Additions
  - Added the Optic Charm.
