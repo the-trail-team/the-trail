@@ -217,5 +217,6 @@ var $plugins =
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"--------------------","status":false,"description":"------------------------------------------------------------","parameters":{}},
 {"name":"SRD_HUDMaker","status":true,"description":"Allows developers to create their own map-based HUD through an in-game GUI window!","parameters":{"Active Updating":"false","Show During Events":"hide","Map Global Condition":"","Battle Global Condition":"","Disable Delete Key":"true"}},
-{"name":"TitleCommandList","status":true,"description":"","parameters":{}}
+{"name":"TitleCommandList","status":true,"description":"","parameters":{}},
+{"name":"TelluriaCastleTownMapsFix","status":true,"description":"","parameters":{}}
 ];
