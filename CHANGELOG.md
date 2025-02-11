@@ -1,6 +1,4 @@
 # Alpha 15.5 (??/??/????)
-*Current Level Cap: 25*
-
 INTRO TEXT
 
 ### Additions
@@ -15,8 +13,6 @@ INTRO TEXT
 <br><br>
 
 # Alpha 15.4 (2/11/2025)
-*Current Level Cap: 25*
-
 This update brings further enhancements to the Alpha 15 experience.
 Major changes to Telluria Castle Town, a new accessory, the return of the music menu, and more!
 
@@ -69,8 +65,6 @@ Major changes to Telluria Castle Town, a new accessory, the return of the music 
 <br><br>
 
 # Alpha 15.3 (2/6/2025)
-*Current Level Cap: 25*
-
 This small update contains a new pair of boots, a leaderboard for kills, and several small tweaks and fixes.
 
 ### Additions
@@ -100,8 +94,6 @@ This small update contains a new pair of boots, a leaderboard for kills, and sev
 <br><br>
 
 # Alpha 15.2 (2/5/2025)
-*Current Level Cap: 25*
-
 Yet another hotfix. A game breaking bug was squashed, and online leaderboards have been added!
 
 ### Additions
@@ -131,8 +123,6 @@ Yet another hotfix. A game breaking bug was squashed, and online leaderboards ha
 <br><br>
 
 # Alpha 15.1 (2/4/2025)
-*Current Level Cap: 25*
-
 Here's a quick hotfix, only a day after Alpha 15's release! Yeah, it turns out there was a bug that prevented any progress past the Mini Green Slime... oops.
 
 ### Additions
@@ -157,8 +147,6 @@ Here's a quick hotfix, only a day after Alpha 15's release! Yeah, it turns out t
 <br><br>
 
 # Alpha 15: The Champion Update (2/3/2025)
-*Current Level Cap: 25*
-
 Every major update has been the best yet, and Alpha 15 is no exception!
 Building off of Alpha 14's heavy overhauls, this update focuses on adding a massive amount of content that redefines the standard.
 
@@ -656,8 +644,6 @@ Andrew
 <br><br>
 
 # Alpha 14.7 (1/1/2022)
-*Current Level Cap: 20*
-
 Fixed a game-breaking bug where fighting the Giant Goblin after being sent by the Village Chief would completely lock a save's progression, essentially ruining the file.
 This bug will be fixed in saves already affected by it, as long as old save patching is enabled.
 Additionally, the snow over Solus Town has melted.
@@ -666,15 +652,11 @@ Oh, and happy new year, everyone!
 <br><br>
 
 # Alpha 14.6 (12/22/2021)
-*Current Level Cap: 20*
-
 Fixed a game-breaking bug where fresh downloads of the game would immediately crash upon attempting to save.
 
 <br><br>
 
 # Alpha 14.5 (12/21/2021)
-*Current Level Cap: 20*
-
 This is a very technical update, mainly serving to continue improving the gameplay experience and make a few small QoL changes.
 
 ### Additions
@@ -723,8 +705,6 @@ Run over all the items in your inventory before updating to be sure they don't h
 <br><br>
 
 # Alpha 14.4 (12/16/2021)
-*Current Level Cap: 20*
-
 Considering that Alpha 14.3 was intended to be the last sub-alpha with notable content, Alpha 14.4 doesn't have anything too crazy. However, there's plenty of bug fixes and changes that make this update worth it!
 
 ### Additions
@@ -773,8 +753,6 @@ Considering that Alpha 14.3 was intended to be the last sub-alpha with notable c
 <br><br>
 
 # Alpha 14.3 (12/11/2021)
-*Current Level Cap: 20*
-
 This sub-alpha is a pretty important one! It shakes up the progression in early Telluria, and fixes a ton of bugs. Let's get straight into the changelog!
 
 ### Additions
@@ -813,8 +791,6 @@ This sub-alpha is a pretty important one! It shakes up the progression in early 
 <br><br>
 
 # Alpha 14.2 (11/30/2021)
-*Current Level Cap: 20*
-
 Another sub-alpha! This one fixes quite a few bugs with the game, and also addresses feedback given by the community.
 
 ### Additions
@@ -860,8 +836,6 @@ Another sub-alpha! This one fixes quite a few bugs with the game, and also addre
 <br><br>
 
 # Alpha 14.1 (11/26/2021)
-*Current Level Cap: 20*
-
 Here we are, the first sub-alpha for Alpha 14. It came quickly, too!
 This little update mainly serves to add... holiday content! That's right, for the month of December, you'll get access to some fun new stuff.
 Additionally, some issues found in Alpha 14 have been addressed in order to further improve the gameplay experience.
@@ -902,8 +876,6 @@ Additionally, some issues found in Alpha 14 have been addressed in order to furt
  - Fixed textual errors in a few spots.
 
 # Alpha 14: The Overhaul Update (11/25/2021)
-*Current Level Cap: 20*
-
 This is it. The update you all have been waiting for. Just like always, the latest update is the biggest one to date.
 Consider this like a second or third fresh start for The Trail. I don't know, I don't remember what number we're on.
 The sheer amount of changes, additions, bug fixes, and balancing is unprecedented in the history of The Trail. In fact, they are so great in number that I won't even bother to create an actual changelog.
