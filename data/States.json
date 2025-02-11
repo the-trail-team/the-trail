@@ -3327,7 +3327,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "FIRE STATE",
-    "note": "<Category: Bypass Death Removal>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"FIRE\"));\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"FIRE\"));\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
