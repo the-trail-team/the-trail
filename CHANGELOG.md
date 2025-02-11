@@ -10,7 +10,7 @@ INTRO TEXT
 
 
 ### Bug Fixes
-
+ - Fixed innacurate sign in updated Telluria Castle Town.
 
 <br><br>
 
