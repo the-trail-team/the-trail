@@ -6,6 +6,7 @@ INTRO TEXT
 
 ### Changes
 - Made improvements to Telluria Castle Town.
+- Water takes 25% damage from Fire instead of 0%.
 
 ### Bug Fixes
 - Fixed the boat being able to get to more places than it should.
