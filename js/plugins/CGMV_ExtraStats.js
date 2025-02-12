@@ -169,6 +169,7 @@ BattleManager.gainGold = function() {
 var alias_CGMV_ExtraStats_GameAction_executeHpDamage = Game_Action.prototype.executeHpDamage;
 Game_Action.prototype.executeHpDamage = function(target, value) {
 	alias_CGMV_ExtraStats_GameAction_executeHpDamage.call(this, target, value);
+	if (value == Number.MAX_SAFE_INTEGER) return;
     if(target.isActor()) {
 		if (value > 0) {
 			var oldDamageTaken = $gameVariables.value(CGMV.ExtraStats.DamageTaken);
