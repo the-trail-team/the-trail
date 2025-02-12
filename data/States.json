@@ -3423,7 +3423,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "EARTH STATE",
-    "note": "<Category: Bypass Death Removal>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"WATER\"));\n</Custom Passive Condition>",
+    "note": "<Category: Bypass Death Removal>\n\n<Custom Passive Condition>\ncondition = user.states().some(s => s.category.contains(\"EARTH\"));\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5387,7 +5387,7 @@
       {
         "code": 11,
         "dataId": 2,
-        "value": 0
+        "value": 0.25
       },
       {
         "code": 11,
