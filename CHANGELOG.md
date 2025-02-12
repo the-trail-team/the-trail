@@ -8,7 +8,8 @@ INTRO TEXT
 - 
 
 ### Bug Fixes
-- Fixed innacurate sign in updated Telluria Castle Town.
+- Fixed the boat being able to get to more places than it should.
+- Fixed vehicles being able to dock on transfer tiles (thanks to this fix, the spikes next to Solus Valley have been removed).
 
 <br><br>
 
