@@ -177349,33 +177349,21 @@
               ]
             },
             {
-              "code": 111,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                0,
-                69,
-                0
+                "Galv.FISH.randFish(2,5,8);"
               ]
             },
             {
-              "code": 355,
-              "indent": 1,
+              "code": 655,
+              "indent": 0,
               "parameters": [
-                "Galv.FISH.randFish(4,1,5);"
+                "if ($gameSwitches.value(69)) Galv.FISH.randFish(4,2,5);"
               ]
             },
             {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 355,
+              "code": 655,
               "indent": 0,
               "parameters": [
                 "Galv.FISH.run();"
@@ -180194,7 +180182,97 @@
       "x": 103,
       "y": 32
     },
-    null,
+    {
+      "id": 30,
+      "name": "EV030",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 1,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "This habitat is home to the \\ii[222]\\c[0]. They are"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "a nocturnal invasive species preying on the local"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "population of \\ii[127]."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 50,
+      "y": 43
+    },
     {
       "id": 31,
       "name": "EV031",
@@ -182042,21 +182120,21 @@
               ]
             },
             {
-              "code": 355,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                "Galv.FISH.randFish(1,15,25);"
+                "Galv.FISH.randFish(1,5,10);"
               ]
             },
             {
-              "code": 355,
+              "code": 655,
               "indent": 0,
               "parameters": [
-                "Galv.FISH.randFish(2,5,10);"
+                "Galv.FISH.randFish(2,10,20);"
               ]
             },
             {
-              "code": 355,
+              "code": 655,
               "indent": 0,
               "parameters": [
                 "Galv.FISH.run();"
@@ -182092,7 +182170,97 @@
       "x": 60,
       "y": 54
     },
-    null,
+    {
+      "id": 41,
+      "name": "EV041",
+      "note": "",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 1,
+            "characterName": "",
+            "characterIndex": 0,
+            "direction": 2,
+            "pattern": 0
+          },
+          "list": [
+            {
+              "code": 101,
+              "indent": 0,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "This habitat is home to the \\ii[127]\\c[0]."
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "They are easily identified by the"
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 0,
+              "parameters": [
+                "red coloration on their stomach."
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 3,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 0,
+          "walkAnime": true
+        }
+      ],
+      "x": 58,
+      "y": 54
+    },
     null,
     null,
     null,

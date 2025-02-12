@@ -2,7 +2,7 @@
 INTRO TEXT
 
 ### Additions
-- 
+- Signs have been put up around fishing spots, giving you details about the local species.
 
 ### Changes
 - Made improvements to Telluria Castle Town.
