@@ -4975,7 +4975,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "Water Veil",
-    "note": "<Help Description>\nImmune to \\it[7], \\it[21], \\it[22], \\it[33], \\it[36], and \\it[56].\n</Help Description>",
+    "note": "<Custom Passive Condition>\ncondition = !(user.enemy().id == 83 && this._phase == 2);\n</Custom Passive Condition>\n\n<Help Description>\nImmune to \\it[7], \\it[21], \\it[22], \\it[33], \\it[36], and \\it[56].\n</Help Description>",
     "overlay": 0,
     "priority": 5,
     "removeAtBattleEnd": false,
@@ -5284,7 +5284,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "FIRE ELEMENT",
-    "note": "<Category: Fire>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\ncondition = user.isActor() ? true : user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
+    "note": "<Category: Fire>\n<Category Resist: Ice, Plant>\n\n<Custom Passive Condition>\nif (user.enemy().id == 83) condition = user._phase == 2;\nelse condition = user.isActor() ? true : user.enemy().elements.contains(\"FIRE\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -5419,7 +5419,7 @@
     "minTurns": 1,
     "motion": 0,
     "name": "WATER ELEMENT",
-    "note": "<Category: Water>\n<Category Resist: Fire>\n\n<Custom Passive Condition>\ncondition = user.enemy().elements.contains(\"WATER\");\n</Custom Passive Condition>",
+    "note": "<Category: Water>\n<Category Resist: Fire>\n\n<Custom Passive Condition>\nif (user.enemy().id == 83) condition = user._phase != 2;\nelse condition = user.enemy().elements.contains(\"WATER\");\n</Custom Passive Condition>",
     "overlay": 0,
     "priority": 0,
     "removeAtBattleEnd": false,
@@ -6892,7 +6892,23 @@
     "id": 202,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 1,
+        "value": 1
+      },
+      {
+        "code": 31,
+        "dataId": 5,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 33,
+        "value": 1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -6901,10 +6917,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Water Elemental EX 1",
+    "note": "<Element Absorb: Water>\n\n<Custom Passive Condition>\ncondition = user._phase != 2;\n</Custom Passive Condition>\n\n<Custom Deselect Effect>\nif (target.hp <= target.mhp / 2) {\n  target.startAnimation(221);\n  target._svBattlerName = \"Elemental_3\";\n  target._overrideAttackAnimationId = 3;\n  target._phase = 2;\n}\n</Custom Deselect Effect>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,
@@ -6916,7 +6932,18 @@
     "id": 203,
     "autoRemovalTiming": 0,
     "chanceByDamage": 100,
-    "traits": [],
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 2,
+        "value": 0
+      },
+      {
+        "code": 32,
+        "dataId": 102,
+        "value": 1
+      }
+    ],
     "iconIndex": 0,
     "maxTurns": 1,
     "message1": "",
@@ -6925,10 +6952,10 @@
     "message4": "",
     "minTurns": 1,
     "motion": 0,
-    "name": "",
-    "note": "",
+    "name": "Water Elemental EX 2",
+    "note": "<Element Absorb: Fire>\n\n<Custom Passive Condition>\ncondition = user._phase == 2;\n</Custom Passive Condition>",
     "overlay": 0,
-    "priority": 50,
+    "priority": 0,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
     "removeByRestriction": false,

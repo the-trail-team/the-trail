@@ -17,14 +17,16 @@ INTRO TEXT
 - 2 new items:
   - Phantasmal Charm
   - [REDACTED HELMET]
-- 3 new equipment:
+- 4 new equipment:
   - Soulstealer's Necklace
   - Soul Shackles (Tome)
   - [REDACTED RESISTANCE]
-- 3 new enemies:
+  - Tideflame Headpiece
+- 4 new enemies:
   - Tortured Soul
   - Will o' Wisp
   - [REDACTED GENERAL]
+  - [REDACTED EX]
 
 ### Changes
 -
