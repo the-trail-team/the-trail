@@ -6,7 +6,8 @@ INTRO TEXT
 
 ### Changes
 - Made improvements to Telluria Castle Town.
-- Water takes 25% damage from Fire instead of 0%.
+- Water takes 25% damage from fire instead of 0%.
+- The Water Elemental and Water Spirit now absorb water attacks.
 
 ### Bug Fixes
 - Fixed the boat being able to get to more places than it should.
