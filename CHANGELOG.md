@@ -38,13 +38,15 @@ INTRO TEXT
 INTRO TEXT
 
 ### Additions
-- 
+- Signs have been put up around fishing spots, giving you details about the local species.
 
 ### Changes
-- 
+- Made improvements to Telluria Castle Town.
 
 ### Bug Fixes
-- Fixed innacurate sign in updated Telluria Castle Town.
+- Fixed the boat being able to get to more places than it should.
+- Fixed vehicles being able to dock on transfer tiles (thanks to this fix, the spikes next to Solus Valley have been removed).
+- Fixed a couple signs in updated Telluria Castle Town.
 
 <br><br>
 
