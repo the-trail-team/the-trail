@@ -711,6 +711,7 @@ Game_BattlerBase.prototype.addNewState = function(stateId) {
 
 Yanfly.EED.Game_Enemy_makeDropItems = Game_Enemy.prototype.makeDropItems;
 Game_Enemy.prototype.makeDropItems = function() {
+    if ($gameTemp._disableDrops) return [];
     var drops = Yanfly.EED.Game_Enemy_makeDropItems.call(this);
     drops = drops.concat(this.makeConditionalDropItems());
     return drops;

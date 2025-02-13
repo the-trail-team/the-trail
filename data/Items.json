@@ -11,13 +11,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A small key you found in the Ancient Cave. It looks\nlike it'll fall apart any minute, but somehow it doesn't.",
+    "description": "The first item ever created. It looks\nlike it'll fall apart any minute.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 240,
     "itypeId": 2,
     "name": "Ancient Key",
-    "note": "",
+    "note": "<Menu Category: Memorabilia>",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -7373,10 +7373,10 @@
     "consumable": true,
     "damage": {
       "critical": false,
-      "elementId": 0,
-      "formula": "0",
-      "type": 0,
-      "variance": 20
+      "elementId": 2,
+      "formula": "80",
+      "type": 1,
+      "variance": 0
     },
     "description": "A vial of burning hot plasma that\nmiraculously doesn't melt the glass.",
     "effects": [

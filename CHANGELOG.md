@@ -40,6 +40,7 @@ INTRO TEXT
 INTRO TEXT
 
 ### Additions
+- Added the Boss Rush.
 - Updated fishing:
   - Added a fishing side quest, given to you by the fisherman in Telluria Castle Town - The Promenade.
   - Fishing rods are no longer crafted, and are instead obtained via the side quest.
@@ -55,12 +56,16 @@ INTRO TEXT
 - The Water Elemental and Water Spirit now absorb water attacks.
 - Nerfed value of Dragon Scale Helmet and Sorrowful Headpiece from 1200B → 750B.
 - Increased sink speed of baits.
+- Eclipse also applies Blinded.
+- Further reduced Dilong's yapping.
 
 ### Bug Fixes
 - Fixed the boat being able to get to more places than it should.
 - Fixed vehicles being able to dock on transfer tiles (thanks to this fix, the spikes next to Solus Valley have been removed).
 - Fixed Conjure Dry Ice Cube causing Damage Dealt stat to increase by 9,007,199,254,740,991.
+- Fixed the retry scene fading back in after closing one of its menus.
 - Fixed "Cleansing required" on crafting scene showing when not necessary.
+- Fixed Fiery Blood not dealing any damage.
 - Fixed a couple signs in updated Telluria Castle Town.
 
 <br><br>
