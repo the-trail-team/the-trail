@@ -36,8 +36,10 @@ INTRO TEXT
 
 <br><br>
 
-# Alpha 15.5 (??/??/????)
-INTRO TEXT
+# Alpha 15.5 (2/13/2025)
+The Boss Rush is here! Fight your way through a gauntlet of your previous foes, culminating with a battle against a superboss!
+Fishing has been revamped! The fisherman in The Promenade will guide you through the beginning of your lucrative career.
+Besides some small changes/fixes, that's all for today. Keep an eye out for Alpha 16 news!
 
 ### Additions
 - Added the Boss Rush.
@@ -52,6 +54,7 @@ INTRO TEXT
 ### Changes
 - Made improvements to Telluria Castle Town.
 - Increased enemy boost animation speed.
+- Compressed BGMs, reducing the game's size by 52 MB.
 - Water takes 25% damage from fire instead of 0%.
 - The Water Elemental and Water Spirit now absorb water attacks.
 - Nerfed value of Dragon Scale Helmet and Sorrowful Headpiece from 1200B → 750B.

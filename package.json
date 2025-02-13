@@ -3,6 +3,9 @@
   "main": "index.html",
   "js-flags": "--exposegc",
   "chromium-args": "--disable-raf-throttling",
+  "scripts": {
+    "compress-bgm": "node scripts/compress-bgm.js"
+  },
   "window": {
     "position": "center",
     "show": true,
@@ -18,6 +21,7 @@
     "trash": "^7.2.0"
   },
   "devDependencies": {
+    "fluent-ffmpeg": "^2.1.3",
     "path": "^0.12.7",
     "yauzl": "^2.10.0"
   }
