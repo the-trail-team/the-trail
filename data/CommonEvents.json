@@ -14250,6 +14250,20 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Fishing hole data"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if (!$gameSystem.fishing.ponds) $gameSystem.initPonds();"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
