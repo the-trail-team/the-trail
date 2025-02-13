@@ -1,8 +1,8 @@
 {
   "autoplayBgm": true,
   "autoplayBgs": true,
-  "battleback1Name": "Grassland",
-  "battleback2Name": "Forest",
+  "battleback1Name": "Translucent2",
+  "battleback2Name": "DarkSpace",
   "bgm": {
     "name": "dungeon_rift",
     "pan": 0,
@@ -15132,7 +15132,7 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "..."
+                "Begin the Boss Rush?"
               ]
             },
             {
@@ -15158,12 +15158,865 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "DisableVictoryAftermath"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._bossRush = true;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._disableDrops = true;"
+              ]
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Four-Toed Kevin"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                17,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Laeryidyean"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleSetup("
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"battle_laeryidyean\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Victory2\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Battle3\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  false,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                ");"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                24,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Water Elemental"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                27,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Giant Goblin"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                29,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Henry"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                46,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "The Warden"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                39,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Vessel of the Forgotten General"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleSetup("
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"battle_bladesville\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Victory2\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Battle3\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  false,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                ");"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                44,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Big Mouth + Smart Mouth"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                74,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Ethereal Bat"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                77,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Dilong"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleSetup("
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"battle_dilong\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Victory2\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  \"Battle3\","
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  false,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true,"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "  true"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                ");"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                73,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Infernal Skeletons"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameSystem.battleTemplate('miniboss');"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                95,
+                true,
+                false
+              ]
+            },
+            {
+              "code": 601,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 602,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 119,
+              "indent": 2,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 2,
+              "parameters": []
+            },
+            {
+              "code": 604,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 108,
+              "indent": 1,
+              "parameters": [
+                "Laeryidyean EX"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "EnableVictoryAftermath"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._disableDrops = false;"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "PreloadImage characters Boss1"
+              ]
+            },
+            {
+              "code": 242,
+              "indent": 1,
+              "parameters": [
+                2
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 1,
+              "parameters": [
+                120
+              ]
+            },
+            {
               "code": 205,
               "indent": 1,
               "parameters": [
                 0,
                 {
                   "list": [
+                    {
+                      "code": 41,
+                      "parameters": [
+                        "Boss1",
+                        0
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 44,
+                      "parameters": [
+                        {
+                          "name": "Equip3",
+                          "volume": 90,
+                          "pitch": 100,
+                          "pan": 0
+                        }
+                      ],
+                      "indent": null
+                    },
+                    {
+                      "code": 15,
+                      "parameters": [
+                        120
+                      ],
+                      "indent": null
+                    },
                     {
                       "code": 36,
                       "indent": null
@@ -15173,12 +16026,64 @@
                       "indent": null
                     },
                     {
+                      "code": 15,
+                      "parameters": [
+                        60
+                      ],
+                      "indent": null
+                    },
+                    {
                       "code": 0
                     }
                   ],
                   "repeat": false,
                   "skippable": false,
-                  "wait": false
+                  "wait": true
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "Boss1",
+                    0
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 44,
+                  "parameters": [
+                    {
+                      "name": "Equip3",
+                      "volume": 90,
+                      "pitch": 100,
+                      "pan": 0
+                    }
+                  ],
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    120
+                  ],
+                  "indent": null
                 }
               ]
             },
@@ -15198,6 +16103,19 @@
               "parameters": [
                 {
                   "code": 25,
+                  "indent": null
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 15,
+                  "parameters": [
+                    60
+                  ],
                   "indent": null
                 }
               ]
@@ -15326,7 +16244,7 @@
               "code": 655,
               "indent": 1,
               "parameters": [
-                "  \"battle_miniboss\","
+                "  \"battle_apocalypse_1\","
               ]
             },
             {
@@ -15378,13 +16296,42 @@
                 0,
                 53,
                 true,
-                true
+                false
               ]
             },
             {
               "code": 601,
               "indent": 1,
               "parameters": []
+            },
+            {
+              "code": 241,
+              "indent": 2,
+              "parameters": [
+                {
+                  "name": "dungeon_rift",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 101,
+              "indent": 2,
+              "parameters": [
+                "",
+                0,
+                0,
+                2
+              ]
+            },
+            {
+              "code": 401,
+              "indent": 2,
+              "parameters": [
+                "Congratulations on beating the Boss Rush!"
+              ]
             },
             {
               "code": 0,
@@ -15397,14 +16344,11 @@
               "parameters": []
             },
             {
-              "code": 0,
+              "code": 119,
               "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 603,
-              "indent": 1,
-              "parameters": []
+              "parameters": [
+                "fail"
+              ]
             },
             {
               "code": 0,
@@ -15415,6 +16359,46 @@
               "code": 604,
               "indent": 1,
               "parameters": []
+            },
+            {
+              "code": 118,
+              "indent": 1,
+              "parameters": [
+                "fail"
+              ]
+            },
+            {
+              "code": 241,
+              "indent": 1,
+              "parameters": [
+                {
+                  "name": "dungeon_rift",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 1,
+              "parameters": [
+                "EnableVictoryAftermath"
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._bossRush = false;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 1,
+              "parameters": [
+                "$gameTemp._disableDrops = false;"
+              ]
             },
             {
               "code": 355,
@@ -15431,6 +16415,14 @@
                 {
                   "list": [
                     {
+                      "code": 41,
+                      "parameters": [
+                        "Adon",
+                        7
+                      ],
+                      "indent": null
+                    },
+                    {
                       "code": 19,
                       "indent": null
                     },
@@ -15445,6 +16437,20 @@
                   "repeat": false,
                   "skippable": false,
                   "wait": false
+                }
+              ]
+            },
+            {
+              "code": 505,
+              "indent": 1,
+              "parameters": [
+                {
+                  "code": 41,
+                  "parameters": [
+                    "Adon",
+                    7
+                  ],
+                  "indent": null
                 }
               ]
             },

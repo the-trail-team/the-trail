@@ -2,6 +2,7 @@
 INTRO TEXT
 
 ### Additions
+- Added the Boss Rush.
 - Updated fishing:
   - Added a fishing side quest, given to you by the fisherman in Telluria Castle Town - The Promenade.
   - Fishing rods are no longer crafted, and are instead obtained via the side quest.
@@ -17,6 +18,7 @@ INTRO TEXT
 - The Water Elemental and Water Spirit now absorb water attacks.
 - Nerfed value of Dragon Scale Helmet and Sorrowful Headpiece from 1200B → 750B.
 - Increased sink speed of baits.
+- Eclipse also applies Blinded.
 
 ### Bug Fixes
 - Fixed the boat being able to get to more places than it should.

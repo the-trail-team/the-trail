@@ -4819,10 +4819,12 @@ Game_Enemy.prototype.paramBase = function(paramId) {
 };
 
 Game_Enemy.prototype.exp = function() {
+    if ($gameTemp._disableDrops) return 0;
     return this.enemy().exp;
 };
 
 Game_Enemy.prototype.gold = function() {
+    if ($gameTemp._disableDrops) return 0;
     return this.enemy().gold;
 };
 
