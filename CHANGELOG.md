@@ -40,14 +40,27 @@ INTRO TEXT
 INTRO TEXT
 
 ### Additions
-- Signs have been put up around fishing spots, giving you details about the local species.
+- Updated fishing:
+  - Added a fishing side quest, given to you by the fisherman in Telluria Castle Town - The Promenade.
+  - Fishing rods are no longer crafted, and are instead obtained via the side quest.
+  - Speaking to the fisherman lets you see your overall fishing stats.
+  - Fishing spots can be exhausted and will slowly repopulate over time.
+  - Updated fish lengths/widths to be more accurate to real life.
+  - Signs have been put up around fishing spots, giving you details about the local species.
 
 ### Changes
 - Made improvements to Telluria Castle Town.
+- Increased enemy boost animation speed.
+- Water takes 25% damage from fire instead of 0%.
+- The Water Elemental and Water Spirit now absorb water attacks.
+- Nerfed value of Dragon Scale Helmet and Sorrowful Headpiece from 1200B → 750B.
+- Increased sink speed of baits.
 
 ### Bug Fixes
 - Fixed the boat being able to get to more places than it should.
 - Fixed vehicles being able to dock on transfer tiles (thanks to this fix, the spikes next to Solus Valley have been removed).
+- Fixed Conjure Dry Ice Cube causing Damage Dealt stat to increase by 9,007,199,254,740,991.
+- Fixed "Cleansing required" on crafting scene showing when not necessary.
 - Fixed a couple signs in updated Telluria Castle Town.
 
 <br><br>

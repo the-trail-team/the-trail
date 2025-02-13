@@ -6128,6 +6128,13 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "$gameSystem.fishRespawnTick();"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -13906,6 +13913,362 @@
         "code": 412,
         "indent": 0,
         "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### ALPHA 15.5"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Fix \"Damage Dealt\" stat"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "$gameVariables.value(27) > Number.MAX_SAFE_INTEGER"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "newValue = $gameVariables.value(27) - Number.MAX_SAFE_INTEGER;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameVariables.setValue(27, newValue);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Refund crafted rods"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          0,
+          89,
+          1
+        ]
+      },
+      {
+        "code": 112,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          12,
+          "$gameParty.numItems($dataItems[125]) > 0"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.loseItem($dataItems[125], 1]);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[124], 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[199], 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[74], 8);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[222], 1);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 112,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          12,
+          "$gameParty.numItems($dataItems[124]) > 0"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.loseItem($dataItems[124], 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[123], 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[204], 5);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[214], 3);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[215], 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[68], 2);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[74], 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[126], 10);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[220], 3);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[127], 3);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 112,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 111,
+        "indent": 2,
+        "parameters": [
+          12,
+          "$gameParty.numItems($dataItems[123]) > 0"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.loseItem($dataItems[123], 1);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[43], 10);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 3,
+        "parameters": [
+          "$gameParty.gainItem($dataItems[53], 5);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 411,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 113,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 3,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 413,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Fishing update"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if (!$gameSystem.fishing.ponds) $gameSystem.initPonds();"
+        ]
       },
       {
         "code": 108,

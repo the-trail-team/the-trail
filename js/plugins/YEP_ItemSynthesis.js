@@ -1346,7 +1346,7 @@ Window_SynthesisIngredients.prototype.drawIndependentItem = function(item, wy, w
     if (!DataManager.isIndependent(item)) return;
     this.contents.fontSize = 14;
     this.changeTextColor(this.powerUpColor());
-    if ($gameParty.numIndependentItems(item) > 0) text = "Cleansing required   ";
+    if ($gameParty.numIndependentItems(item) > $gameParty.numNotUpgradedIndependentItems(item)) text = "Cleansing required   ";
     else if ($gameParty.checkIndependentItemIsEquipped(item)) text = "Equipped   ";
     else text = "";
     this.drawText(text, 0, wy, ww, 'right');

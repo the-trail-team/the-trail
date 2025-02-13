@@ -1172,7 +1172,7 @@
     ],
     "gold": 200,
     "name": "Water Elemental",
-    "note": "<Element: Water>\n<Passive State: 136, 146>\n\n<Sideview Battler: Elemental_1>\n<Attack Animation: 82>\n<HP Gauge Width: 216>\n\n<Boost Skill 36: At Most 1>\n<AI Priority>\nState !== Soaked +++ Random 50% +++ User HP% param <= 90% +++ User HP% param > 25%: Bubble\nUser HP% param <= 50% +++ User HP% param > 15% +++ Random 25%: Pure Water, User\n</AI Priority>\n\n<Enemy Drops>\nWater Elemental's Pure Water: 100%\nWater Elemental's Flow: 100%\nWatery Outfit: 100%\nBubble (Tome): 100%\nAqua Gem: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\n</Enemy Drops>",
+    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 136, 146>\n\n<Sideview Battler: Elemental_1>\n<Attack Animation: 82>\n<HP Gauge Width: 216>\n\n<Boost Skill 36: At Most 1>\n<AI Priority>\nState !== Soaked +++ Random 50% +++ User HP% param <= 90% +++ User HP% param > 25%: Bubble\nUser HP% param <= 50% +++ User HP% param > 15% +++ Random 25%: Pure Water, User\n</AI Priority>\n\n<Enemy Drops>\nWater Elemental's Pure Water: 100%\nWater Elemental's Flow: 100%\nWatery Outfit: 100%\nBubble (Tome): 100%\nAqua Gem: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\nWater Jug: 100%\n</Enemy Drops>",
     "params": [
       2400,
       999,
@@ -3516,7 +3516,7 @@
     ],
     "gold": 30,
     "name": "Water Spirit",
-    "note": "<Element: Water>\n<Passive State: 136, 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nAqua Gem: 20%\nWater Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 136, 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nAqua Gem: 20%\nWater Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
     "params": [
       400,
       0,
