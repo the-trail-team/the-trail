@@ -894,7 +894,7 @@ Window_MapActiveQuest.prototype.drawQuestDataObjectives = function() {
     if (first) text += this.wordWrap() ? '<br>' : '\n';
     first = true;
     var fmt = Yanfly.Param.QuestDataWindow[key];
-    text += fmt.format(JSON.parse(lineData[objId]));
+    if (lineData[objId]) text += fmt.format(JSON.parse(lineData[objId]));
   }
   this.drawQuestTextEx(text, 0, this.lineHeight());
 };
