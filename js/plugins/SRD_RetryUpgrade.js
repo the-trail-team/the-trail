@@ -646,7 +646,10 @@ Scene_Retry.prototype.start = function() {
 	Scene_Base.prototype.start.call(this);
 	this._statusWindow.refresh();
 	this.playRetryMusic();
-	this.startFadeIn(this.fadeSpeed(), false);
+	if (!$gameTemp._retrying) {
+		this.startFadeIn(this.fadeSpeed(), false);
+		$gameTemp._retrying = true;
+	}
 };
 
 Scene_Retry.prototype.isBusy = function() {
@@ -733,6 +736,7 @@ Scene_Retry.prototype.stop = function() {
 		if(_.battleStart) SoundManager.playBattleStart();
 		if(_.battleBgm) BattleManager.playBattleBgm();
 		this.fadeOutAll();
+		$gameTemp._retrying = false;
 	}
 };
 
