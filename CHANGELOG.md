@@ -19,6 +19,7 @@ INTRO TEXT
 - Nerfed value of Dragon Scale Helmet and Sorrowful Headpiece from 1200B → 750B.
 - Increased sink speed of baits.
 - Eclipse also applies Blinded.
+- Further reduced Dilong's yapping.
 
 ### Bug Fixes
 - Fixed the boat being able to get to more places than it should.
