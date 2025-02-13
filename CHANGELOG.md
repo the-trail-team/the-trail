@@ -2,7 +2,11 @@
 INTRO TEXT
 
 ### Additions
-- Signs have been put up around fishing spots, giving you details about the local species.
+- Updated fishing:
+  - Added a fishing side quest, given to you by the fisherman in Telluria Castle Town - The Promenade.
+  - Speaking to the fisherman lets you see your overall fishing stats.
+  - Updated fish lengths/widths to be more accurate to real life.
+  - Signs have been put up around fishing spots, giving you details about the local species.
 
 ### Changes
 - Made improvements to Telluria Castle Town.
