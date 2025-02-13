@@ -16,7 +16,14 @@ Galv.FISH.ponds = {
     ]
 }
 
+__Galv_Fish_clearPond__ = Galv.FISH.clearPond;
+Galv.FISH.clearPond = function() {
+	__Galv_Fish_clearPond__.call(this);
+    $gameSystem.fishing.hole.name = "";
+};
+
 Galv.FISH.initPond = function(name) {
+    $gameSystem.fishing.hole.name = name;
     pond = $gameSystem.fishing.ponds[name];
     pond.forEach(fish => {
         const cond = eval(this.ponds[name].find(f => f[0] == fish)[2]);
@@ -44,5 +51,7 @@ Game_System.prototype.initialize = function() {
 __Scene_Fishing_prototype_caughtFish__ = Scene_Fishing.prototype.caughtFish;
 Scene_Fishing.prototype.caughtFish = function(fish) {
     __Scene_Fishing_prototype_caughtFish__.call(this, fish);
-    // Code to remove fish from current fishing spot
+    pond = $gameSystem.fishing.ponds[$gameSystem.fishing.hole.name];
+    index = pond.indexOf(fish._fishId);
+    if (index != -1) pond.splice(index, 1);
 };
