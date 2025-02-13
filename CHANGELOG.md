@@ -1,3 +1,17 @@
+# Alpha 15.6 (??/??/????)
+INTRO
+
+### Additions
+
+
+### Changes
+
+
+### Bug Fixes
+
+
+<br><br>
+
 # Alpha 15.5 (2/13/2025)
 The Boss Rush is here! Fight your way through a gauntlet of your previous foes, culminating with a battle against a superboss!
 Fishing has been revamped! The fisherman in The Promenade will guide you through the beginning of your lucrative career.
