@@ -4,6 +4,7 @@ INTRO TEXT
 ### Additions
 - Updated fishing:
   - Added a fishing side quest, given to you by the fisherman in Telluria Castle Town - The Promenade.
+  - Fishing rods are no longer crafted, and are instead obtained via the side quest.
   - Speaking to the fisherman lets you see your overall fishing stats.
   - Updated fish lengths/widths to be more accurate to real life.
   - Signs have been put up around fishing spots, giving you details about the local species.
