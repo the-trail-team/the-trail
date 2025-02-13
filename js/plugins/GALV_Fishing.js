@@ -505,7 +505,7 @@ Galv.FISH = Galv.FISH || {};        // Galv's stuff
  * The fish settings are separated by commas, and in case of settings with
  * multiple values those values are separated by a |.
  *
- * img,spd,pull,move,lvl,x,item,baits,range,stats,length,weight,ctxt,cevent,anim
+ * img,spd,pull,move,lvl,x,item,baits,range,stats,length,weight,ctxt,cevent,anim,respawn
  *
  * img    = the image used from /img/fishing/ folder. (Fish can be any size)
  * spd    = the swim speed of the fish.
@@ -543,6 +543,7 @@ Galv.FISH = Galv.FISH || {};        // Galv's stuff
  *          when displayed in the fish stat scene.
  * cevent = When this fish is caught, it will exit fishing and run common event
  * anim   = animation id played instead of default when caught
+ * respawn= hours for 1 of this fish to respawn
  *
  * 4. Fishing
  * In order to cast a rod and start fishing, the player must equip both a rod
@@ -839,7 +840,8 @@ Galv.FISH.createFish = function(id,txt) {
 		weight: [Number(weight[0]),Number(weight[1])],           // no gameplay effect. For fish stats only. rand between [min,max]
 		customText: a[12],                                       // text displayed instead of the item name when catching a fish and in the fish stat scene.
 		cevent: Number(a[13]),                                   // When this fish is caught, it will exit and run common event
-		anim: Number(a[14])                                      // animation Id played on player instead of default
+		anim: Number(a[14]),                                     // animation Id played on player instead of default
+		respawn: Number(a[15])									 // hours for 1 of this fish to respawn
 	};
 	if (Galv.FISH.fish[id].stats) Galv.FISH.fishTotal += 1;
 };
