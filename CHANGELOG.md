@@ -25,6 +25,7 @@ INTRO TEXT
 - Fixed vehicles being able to dock on transfer tiles (thanks to this fix, the spikes next to Solus Valley have been removed).
 - Fixed Conjure Dry Ice Cube causing Damage Dealt stat to increase by 9,007,199,254,740,991.
 - Fixed "Cleansing required" on crafting scene showing when not necessary.
+- Fixed Fiery Blood not dealing any damage.
 - Fixed a couple signs in updated Telluria Castle Town.
 
 <br><br>
