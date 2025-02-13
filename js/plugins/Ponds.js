@@ -31,21 +31,46 @@ Galv.FISH.initPond = function(name) {
     });
 };
 
+__Game_System_prototype_initialize__ = Game_System.prototype.initialize;
+Game_System.prototype.initialize = function() {
+    __Game_System_prototype_initialize__.call(this);
+    this.initPonds();
+};
+
 Game_System.prototype.initPonds = function() {
     this.fishing.ponds = {};
+    this.fishing.respawn = {};
     for (const key in Galv.FISH.ponds) {
+        // Starting fish in pond
         const pondData = Galv.FISH.ponds[key];
         pond = this.fishing.ponds[key] = [];
         pondData.forEach(fish => {
             while (pond.filter(id => id == fish[0]).length < fish[1]) pond.push(fish[0]);
         });
+        // Respawn counter
+        respawn = this.fishing.respawn[key] = {};
+        [...new Set(pond)].forEach(id => respawn[id] = 0);
     }
 };
 
-__Game_System_prototype_initialize__ = Game_System.prototype.initialize;
-Game_System.prototype.initialize = function() {
-    __Game_System_prototype_initialize__.call(this);
-    this.initPonds();
+Game_System.prototype.fishRespawnTick = function() {
+    for (const pond in this.fishing.respawn) {
+        respawn = this.fishing.respawn[pond];
+        for (const fish in respawn) {
+            respawn[fish]++;
+            if (respawn[fish] >= Galv.FISH.fish[fish].respawn) {
+                this.respawnFish(pond, fish);
+                respawn[fish] = 0;
+            }
+        }
+    }
+};
+
+Game_System.prototype.respawnFish = function(pondKey, fish) {
+    pond = this.fishing.ponds[pondKey];
+    const current = pond.filter(f => f == fish).length;
+    const max = Galv.FISH.ponds[pondKey].find(f => f[0] == fish)[1];
+    if (current < max) pond.push(Number(fish));
 };
 
 __Scene_Fishing_prototype_caughtFish__ = Scene_Fishing.prototype.caughtFish;
