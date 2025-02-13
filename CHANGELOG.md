@@ -14,6 +14,7 @@ INTRO TEXT
 ### Changes
 - Made improvements to Telluria Castle Town.
 - Increased enemy boost animation speed.
+- Compressed BGMs, reducing the game's size by 52 MB.
 - Water takes 25% damage from fire instead of 0%.
 - The Water Elemental and Water Spirit now absorb water attacks.
 - Nerfed value of Dragon Scale Helmet and Sorrowful Headpiece from 1200B → 750B.
