@@ -1811,19 +1811,20 @@ Window_MenuStatus.prototype.drawItemStatus = function(index) {
 Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width) {
     var lineHeight = this.lineHeight();
     var xpad = Window_Base._faceWidth + (2 * Yanfly.Param.TextPadding);
+    if (SceneManager._scene instanceof Scene_Menu) xpad += (4 * Window_Base._iconWidth);
     var x2 = x + xpad;
     var width2 = Math.max(180, width - xpad - this.textPadding());
     if (this.maxItems() <= 6) {
         this.drawActorName(actor, x, y);
         this.drawActorLevel(actor, x, y + lineHeight * 1);
-        this.drawActorIcons(actor, x, y + lineHeight * 2);
+        this.drawActorIcons(actor, x, y + lineHeight * 2, xpad);
         this.drawActorClass(actor, x2, y, width2);
         this.drawActorEquipIcons(actor, x2 + width2, y, width2 - this.textWidth(actor.currentClass().name));  
         this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
         this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
     } else {
         this.drawActorName(actor, x, y + lineHeight * 0.5);
-        this.drawActorIcons(actor, x, y + lineHeight * 1.5);
+        this.drawActorIcons(actor, x, y + lineHeight * 1.5, xpad);
         this.drawActorHp(actor, x2, y + lineHeight * 0.5, width2);
         this.drawActorMp(actor, x2, y + lineHeight * 1.5, width2);
     }

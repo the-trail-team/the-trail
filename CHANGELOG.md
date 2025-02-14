@@ -47,6 +47,7 @@ INTRO
   - Steadfast DEF, MDF: 20% → 10%
 
 ### Changes
+- The main menu can now display up to 8 state icons.
 - Milking cows has been improved.
 
 ### Bug Fixes
