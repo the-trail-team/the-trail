@@ -647,12 +647,12 @@ DataManager.createGlobalDrops = function(obj) {
     this.createEnemyDrop(obj, id, rate, 3);
 
     // Present (1/5 drop during December)
-    if (date.getMonth() == 11) {
-      var id = 156;
-      var rate = 0.2;
-      if (date.getDate() == 25) rate = 0.5; // 1/2 drop on Christmas
-      this.createEnemyDrop(obj, id, rate, 1);
-    }
+    var item = $dataItems[156];
+    var arr = [
+      "Eval $gameSwitches.value(81): +20%",
+      "Eval date.getMonth() == 11: +30%" // 1/2 drop on Christmas
+    ];
+    DataManager.createConditionalEnemyDrop(obj, item, arr);
 
     // Pumpkin (1/5 drop during October)
     if (date.getMonth() == 9) {
