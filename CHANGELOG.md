@@ -36,6 +36,59 @@ INTRO TEXT
 
 <br><br>
 
+# Alpha 15.6 (??/??/????)
+INTRO
+
+### Additions
+
+
+### Changes
+- Nerfed a lot of equipment:
+  - Red Leathers: DEF 4 → 2
+  - Blood-Red Leathers: DEF 7 → 4
+  - Shadowplate Armor: DEF 12 → 10
+  - True Shadowplate Armor: DEF 18 → 16, MDF 5 → 8
+  - Tellurium Plate Armor: MHP 15 → 10, DEF 25 → 15
+  - Phantasmal Robes: MDF 12 → 10
+  - True Phantasmal Robes: MDF 18 → 15
+  - Tellurium Robes: MHP 5 → 10, MMP 15 → 10, DEF 12 → 10, MDF 25 → 18
+  - Phantasmal Vestments: MMP 5 → 4, MDF 14 → 12
+  - True Phantasmal Vestments: MMP 7 → 6, MDF 21 → 18
+  - Tellurium Vestments: MMP 15 → 5, DEF 15 → 10, MDF 30 → 20
+  - Shadowspec Leathers: AGI 12 → 8
+  - True Shadowspec Leathers: AGI 18 → 12
+  - Tellurium Leathers: MMP 15 → 5, DEF 13 → 10, AGI 30 → 12
+  - Silver Buckler: DEF 7 → 5
+  - Resiliant Pelt: DEF 12 → 8
+  - Replica Knight's Shield: DEF 7 → 6
+  - Tellurian Knight's Shield: DEF 12 → 9
+  - Tellurian Knight's Bulwark: DEF 20 → 12
+  - Immovable Object: DEF 10 → 8
+  - Turtle Shield: DEF 10 → 8
+  - Vishnu's Aegis: DEF 20 → 12
+  - Shield of the Hero: DEF 12 → 10, MDF 12 → 10
+  - Dragon Scale Helmet: DEF 10 → 6
+  - Floppiest Hat: MMP 35 → 15, MAT 15 → 9, MDF 8 → 3
+  - Rose Headpiece: MMP 12 → 10, MAT 6 → 3, MDF 6 → 5
+  - Sorrowful Headpiece: MHP 12 → 8, MMP 25 → 15, MAT 10 → 5, MDF 10 → 8
+  - Knight's Gauntlets: DEF 4 → 3
+  - Dragonforce Gauntlets: ATK 10 → 6, DEF 8 → 4
+  - Champion's Talisman
+- Nerfed many states:
+  - Well Fed MHP: 5% 10% 15% 20% → 4% 8% 12% 16%
+  - Well Fed HRG: 4% 6% 8% 10% → 2% 4% 6% 8%
+  - Vital Cola, Mana Fizz, Rocky Sip, Arcanic Chug, Brawl Brew, Warding Swig: 25% → 15%
+  - Cranberry Fizz HRG: 5% → 3%
+  - Blueberry Sizzle MRG: 10% → 5%
+  - Well Rested MHP, MMP, ATK, DEF, MAT, MDF, AGI, HRG: 10% → 5%
+  - Vicious Herb, Thick-Skinned Herb: 20% → 10%
+  - Steadfast DEF, MDF: 20% → 10%
+
+### Bug Fixes
+- Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
+
+<br><br>
+
 # Alpha 15.5 (2/13/2025)
 The Boss Rush is here! Fight your way through a gauntlet of your previous foes, culminating with a battle against a superboss!
 Fishing has been revamped! The fisherman in The Promenade will guide you through the beginning of your lucrative career.
