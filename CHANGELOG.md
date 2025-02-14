@@ -59,7 +59,8 @@ INTRO
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
 - Fixed the holiday event switch in Tester Tower not working properly.
 - Fixed quest completion never reaching 100%.
-- Fixed a bug where quests you hadn't yet accepted could become the active quest.
+- Fixed a bug where quests you hadn't yet accepted could become the tracked quest.
+- Fixed a bug where the tracked quest window could would keep displaying a completed quest if it was there were no more quests available.
 - Fixed outdated screenshot tip in Solus Town.
 
 <br><br>
