@@ -26,7 +26,7 @@ INTRO TEXT
   - Tortured Soul
   - Will o' Wisp
   - [REDACTED GENERAL]
-  - [REDACTED EX]
+  - Water Elemental EX
 
 ### Changes
 -
