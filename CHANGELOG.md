@@ -54,6 +54,7 @@ INTRO
 - Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
 - Fixed the holiday event switch in Tester Tower not working properly.
+- Fixed outdated screenshot tip in Solus Town.
 
 <br><br>
 
