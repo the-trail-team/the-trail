@@ -4,7 +4,7 @@ INTRO
 ### Additions
 
 
-### Changes
+### Balancing Patch
 - Nerfed a lot of equipment:
   - Red Leathers: DEF 4 → 2
   - Blood-Red Leathers: DEF 7 → 4
@@ -45,6 +45,9 @@ INTRO
   - Well Rested MHP, MMP, ATK, DEF, MAT, MDF, AGI, HRG: 10% → 5%
   - Vicious Herb, Thick-Skinned Herb: 20% → 10%
   - Steadfast DEF, MDF: 20% → 10%
+
+### Changes
+- Milking cows has been improved.
 
 ### Bug Fixes
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
