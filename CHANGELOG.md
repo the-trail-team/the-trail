@@ -47,6 +47,7 @@ INTRO
   - Steadfast DEF, MDF: 20% → 10%
 
 ### Changes
+- The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - The main menu can now display up to 8 state icons.
 - Milking cows has been improved.
 
@@ -54,6 +55,7 @@ INTRO
 - Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
 - Fixed the holiday event switch in Tester Tower not working properly.
+- Fixed quest completion never reaching 100%.
 - Fixed outdated screenshot tip in Solus Town.
 
 <br><br>
