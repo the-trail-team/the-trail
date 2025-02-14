@@ -5340,13 +5340,13 @@ Window_BattleLog.prototype.makeHpDamageText = function(target) {
     var fmt;
     if (damage > 0 && result.drain) {
         fmt = isActor ? TextManager.actorDrain : TextManager.enemyDrain;
-        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, Yanfly.Util.toGroup(damage));
     } else if (damage > 0) {
         fmt = isActor ? TextManager.actorDamage : TextManager.enemyDamage;
-        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), Yanfly.Util.toGroup(damage));
     } else if (damage < 0) {
         fmt = isActor ? TextManager.actorRecovery : TextManager.enemyRecovery;
-        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, -damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, Yanfly.Util.toGroup(-damage));
     } else {
         fmt = isActor ? TextManager.actorNoDamage : TextManager.enemyNoDamage;
         return fmt.format(target.name());
