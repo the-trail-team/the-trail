@@ -533,6 +533,7 @@ Game_System.prototype.removeFromQueue = function(id) {
 
 Game_System.prototype.setActiveQuestId = function(questId) {
   if (this._activeQuestId === undefined) this.initMapQuestWindowSettings();
+  if (!this.getAllQuests().contains(questId)) return;
   if (questId === 0 || $dataQuests[questId]) {
     this.addToQueue(this.getActiveQuestId());
     this._activeQuestId = questId;
