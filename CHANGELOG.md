@@ -51,6 +51,7 @@ INTRO
 - The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - The main menu can now display up to 8 state icons.
 - Damage is now displayed using commas.
+- Lowered the width of the tracked quest window.
 - Milking cows has been improved.
 
 ### Bug Fixes
