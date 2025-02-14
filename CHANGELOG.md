@@ -2,7 +2,8 @@
 INTRO
 
 ### Additions
-
+- 1 new quests:
+  - Today's Training
 
 ### Balancing Patch
 - Nerfed a lot of equipment:
