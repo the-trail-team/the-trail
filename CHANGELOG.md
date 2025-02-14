@@ -50,6 +50,7 @@ INTRO
 - Milking cows has been improved.
 
 ### Bug Fixes
+- Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
 
 <br><br>
