@@ -54,6 +54,7 @@ INTRO
 - The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - Bronze Ingots are made with Coal instead of Red Gel.
 - Red Slimes and Bats can drop Coal.
+- Skeleton Knights can drop the Ruby Ring.
 - The main menu can now display up to 8 state icons.
 - Damage is now displayed using commas.
 - Lowered the width of the tracked quest window.
