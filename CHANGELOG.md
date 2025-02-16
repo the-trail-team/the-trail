@@ -7,6 +7,17 @@ INTRO
 - 1 new quests:
   - Today's Training
 
+### Changes
+- Removed random encounters (except the aforementioned lone Skeleton).
+- The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
+- Bronze Ingots are made with Coal instead of Red Gel.
+- Red Slimes and Bats can drop Coal.
+- Skeleton Knights can drop the Ruby Ring.
+- The main menu can now display up to 8 state icons.
+- Damage is now displayed using commas.
+- Lowered the width of the tracked quest window.
+- Milking cows has been improved.
+
 ### Balancing Patch
 - Nerfed a lot of equipment:
   - Red Leathers: DEF 4 → 2
@@ -48,17 +59,6 @@ INTRO
   - Well Rested MHP, MMP, ATK, DEF, MAT, MDF, AGI, HRG: 10% → 5%
   - Vicious Herb, Thick-Skinned Herb: 20% → 10%
   - Steadfast DEF, MDF: 20% → 10%
-
-### Changes
-- Removed random encounters (except the aforementioned lone Skeleton).
-- The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
-- Bronze Ingots are made with Coal instead of Red Gel.
-- Red Slimes and Bats can drop Coal.
-- Skeleton Knights can drop the Ruby Ring.
-- The main menu can now display up to 8 state icons.
-- Damage is now displayed using commas.
-- Lowered the width of the tracked quest window.
-- Milking cows has been improved.
 
 ### Bug Fixes
 - Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
