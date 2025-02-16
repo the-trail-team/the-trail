@@ -17,23 +17,7 @@
   },
   "disableDashing": false,
   "displayName": "Green Slime Cavern",
-  "encounterList": [
-    {
-      "regionSet": [
-        1,
-        2
-      ],
-      "troopId": 3,
-      "weight": 10
-    },
-    {
-      "regionSet": [
-        2
-      ],
-      "troopId": 4,
-      "weight": 2
-    }
-  ],
+  "encounterList": [],
   "encounterStep": 49,
   "height": 38,
   "note": "<Unlocked>",
@@ -10311,6 +10295,66 @@
       ],
       "x": 21,
       "y": 30
+    },
+    {
+      "id": 28,
+      "name": "gslime-copy",
+      "note": "<Copy Event: 158, 79>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Monster2",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 3
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 2,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 4,
+      "y": 15
     }
   ]
 }

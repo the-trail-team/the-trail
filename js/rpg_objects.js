@@ -555,6 +555,7 @@ Game_System.prototype.nextMoonPhase = function() {
         this._moonRespawn = true;
         this._moonCycleComplete = true;
     }
+    $gameVariables.setValue(76, this._moonPhase);
 };
 
 // Melee Damage Types

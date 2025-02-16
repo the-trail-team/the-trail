@@ -2,6 +2,8 @@
 INTRO
 
 ### Additions
+- A lone Skeleton can be randomly encountered in the Forest Arena...? after Laeryidyean's defeat.
+- Added a tutorial tip about the new moon respawning monsters.
 - 1 new quests:
   - Today's Training
 
@@ -48,6 +50,7 @@ INTRO
   - Steadfast DEF, MDF: 20% → 10%
 
 ### Changes
+- Removed random encounters (except the aforementioned lone Skeleton).
 - The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - The main menu can now display up to 8 state icons.
 - Damage is now displayed using commas.
