@@ -67,6 +67,7 @@ INTRO
 - Fixed quest completion never reaching 100%.
 - Fixed a bug where quests you hadn't yet accepted could become the tracked quest.
 - Fixed a bug where the tracked quest window could would keep displaying a completed quest if it was there were no more quests available.
+- Fixed incorrect value for total small chests.
 - Fixed outdated screenshot tip in Solus Town.
 
 <br><br>
