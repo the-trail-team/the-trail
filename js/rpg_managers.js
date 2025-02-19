@@ -803,10 +803,9 @@ StorageManager.removeWebStorage = function(savefileId) {
 };
 
 StorageManager.localFileDirectoryPath = function() {
-    var path = require('path');
-    if (process.platform === 'win32') directory = process.env.APPDATA;
-    else directory = process.env.HOME;
-    return path.join(directory, '.thetrail/');
+    const path = require('path');
+    if (process.platform === 'win32') return path.join(process.env.APPDATA, '.thetrail/');
+    else return path.join(process.env.HOME, 'Library', 'Application Support', 'The Trail/');
 };
 
 StorageManager.localFilePath = function(savefileId) {

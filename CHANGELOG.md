@@ -9,6 +9,7 @@ INTRO
 
 ### Changes
 - Removed random encounters (except the aforementioned lone Skeleton).
+- Changed the save file location on Mac.
 - The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - Bronze Ingots are made with Coal instead of Red Gel.
 - Red Slimes and Bats can drop Coal.
