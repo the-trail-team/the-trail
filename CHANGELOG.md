@@ -405,7 +405,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
     - Journeyman Membership
     - Globetrotter Membership
     - Fido's Collar
-    - Reggie's Bananas
+    - Coco's Bananas
     - Salt Rock
     - Dry Ice Cube
     - Fish-Flavored Fish

@@ -5768,7 +5768,7 @@ Game_Party.prototype.addPet = function(name) {
         case 'Tender':
             actor.setCharacterImage('Fox', 0);
             break;
-        case 'Reggie':
+        case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
             break;
         default: // Remove pet
