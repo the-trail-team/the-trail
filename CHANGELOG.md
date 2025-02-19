@@ -60,6 +60,7 @@ INTRO
   - Well Rested MHP, MMP, ATK, DEF, MAT, MDF, AGI, HRG: 10% → 5%
   - Vicious Herb, Thick-Skinned Herb: 20% → 10%
   - Steadfast DEF, MDF: 20% → 10%
+- Buffed Focus Up HIT increase from 12.5% → 20%.
 
 ### Bug Fixes
 - Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
