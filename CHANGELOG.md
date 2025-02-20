@@ -2,6 +2,7 @@
 INTRO
 
 ### Additions
+- Added all respawnables to Telluria Castle Town.
 - A lone Skeleton can be randomly encountered in the Forest Arena...? after Laeryidyean's defeat.
 - Added a tutorial tip about the new moon respawning monsters.
 - 1 new items:
@@ -70,6 +71,7 @@ INTRO
 - Buffed Focus Up HIT increase from 12.5% → 20%.
 
 ### Bug Fixes
+- Fixed a game-breaking bug where the Dandy Toad raid caused a softlock.
 - Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
 - Fixed the holiday event switch in Tester Tower not working properly.
