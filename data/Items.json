@@ -5171,7 +5171,7 @@
   },
   {
     "id": 177,
-    "animationId": 0,
+    "animationId": 41,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -5180,15 +5180,28 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Mushrooms cooked in a dry pan over low heat, releasing\ntheir moisture to develop a rich, umami-packed flavor.",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 15
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 1956,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the Blank Tome.",
+    "name": "Pan-Seared Mushrooms",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBrown Mushroom: 3\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>\n\nWas once the Blank Tome.",
     "occasion": 0,
-    "price": 0,
+    "price": 20,
     "repeats": 1,
     "scope": 7,
     "speed": 0,

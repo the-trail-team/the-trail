@@ -110,7 +110,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             break;
         case 'FIRE':
             arr = [
-                [229, 151, 108, 135],
+                [135, 177, 108, 229, 151],
                 [],
                 []
             ]

@@ -4,6 +4,8 @@ INTRO
 ### Additions
 - A lone Skeleton can be randomly encountered in the Forest Arena...? after Laeryidyean's defeat.
 - Added a tutorial tip about the new moon respawning monsters.
+- 1 new items:
+  - Pan-Seared Mushrooms
 - 1 new equipment:
   - Gold Ring
 - 1 new quests:
