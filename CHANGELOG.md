@@ -24,6 +24,7 @@ INTRO
 - Damage is now displayed using commas.
 - Lowered the width of the tracked quest window.
 - Milking cows has been improved.
+- The game automatically goes into fullscreen once loaded.
 
 ### Balancing Patch
 - Nerfed a lot of equipment:
