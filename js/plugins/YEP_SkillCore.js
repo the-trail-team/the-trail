@@ -751,7 +751,7 @@ Game_BattlerBase.prototype.noHiddenSkillConditionsMet = function(skill) {
     if (skill.hideIfLearnedSkill) {
       for (var i = 0; i < skill.hideIfLearnedSkill.length; ++i) {
         var skillId = skill.hideIfLearnedSkill[i];
-        if (this.isLearnedSkill(skillId)) return false;
+        if (this.isLearnedSkill(skillId) || this.addedSkills().contains(skillId)) return false;
       }
     }
     if (skill.hideInBattle && $gameParty.inBattle()) return false;

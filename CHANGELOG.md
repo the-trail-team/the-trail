@@ -17,6 +17,7 @@ INTRO
 - Changed the save file location on Mac.
 - The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - Dried Blueberries no longer need Fiery Powder, meaning they can be cooked in Adon.
+- Skill upgrades now hide their lower tiers. Mastery levels will be shared between all tiers.
 - Bronze Ingots are made with Coal instead of Red Gel.
 - Red Slimes and Bats can drop Coal.
 - Skeleton Knights can drop the Ruby Ring.
