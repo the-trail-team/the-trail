@@ -151,11 +151,12 @@ Game_Party.prototype.consumeItem = function(item) {
 //-----------------------------------------------------------------------------
 // Alias: Track gold looted
 //-----------------------------------------------------------------------------
-var alias_CGMV_ExtraStats_BattleManager_gainGold = BattleManager.gainGold;
-BattleManager.gainGold = function() {
-    alias_CGMV_ExtraStats_BattleManager_gainGold.call(this);
+var alias_CGMV_ExtraStats_Game_Party_gainGold = Game_Party.prototype.gainGold;
+Game_Party.prototype.gainGold = function(amount) {
+    alias_CGMV_ExtraStats_Game_Party_gainGold.call(this, amount);
+	if (amount < 0) return;
 	var oldGoldLooted = $gameVariables.value(CGMV.ExtraStats.GoldLooted);
-	$gameVariables.setValue(CGMV.ExtraStats.GoldLooted, oldGoldLooted + this._rewards.gold);
+	$gameVariables.setValue(CGMV.ExtraStats.GoldLooted, oldGoldLooted + amount);
 };
 //=============================================================================
 // Game_Action
