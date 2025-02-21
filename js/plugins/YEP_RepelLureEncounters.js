@@ -291,7 +291,6 @@ Game_System.prototype.rareEnemyBase = function() {
 _Game_Event_prototype_chaseConditions = Game_Event.prototype.chaseConditions;
 Game_Event.prototype.chaseConditions = function(dis) {
   if ($gameVariables.value(29) > 0) {
-    console.log("bruh");
     return false;
   }
   return _Game_Event_prototype_chaseConditions.call(this, dis);
