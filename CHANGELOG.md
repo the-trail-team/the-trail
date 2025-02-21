@@ -33,6 +33,7 @@ INTRO
 - Milking cows has been improved.
 - The game automatically goes into fullscreen once loaded.
 - Big Mouth and Smart Mouth now approach you in Haven Harbor from the entrance rather than the port.
+- Reduced the opacity of the night overlay.
 
 ### Balancing Patch
 - Nerfed a lot of equipment:
