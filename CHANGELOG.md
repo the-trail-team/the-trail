@@ -14,6 +14,9 @@ INTRO
 
 ### Changes
 - Removed random encounters (except the aforementioned lone Skeleton).
+  - Acrid Aroma stops enemies from chasing you.
+  - Eau du Monstere now doubles the chance of a rare enemy spawning.
+  - Both now add steps to the counter instead of resetting it.
 - Changed the save file location on Mac.
 - The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - Dried Blueberries no longer need Fiery Powder, meaning they can be cooked in Adon.

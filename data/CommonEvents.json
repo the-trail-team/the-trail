@@ -1496,7 +1496,7 @@
         "code": 401,
         "indent": 0,
         "parameters": [
-          "The monster encounter rate is back to normal."
+          "Monsters have returned to chasing you."
         ]
       },
       {
@@ -1505,7 +1505,7 @@
         "parameters": []
       }
     ],
-    "name": "Repel/Lure End",
+    "name": "Repel End",
     "switchId": 1,
     "trigger": 0
   },
@@ -1519,8 +1519,8 @@
           29,
           29,
           0,
-          0,
-          100
+          4,
+          "$gameVariables.value(29) + 100"
         ]
       },
       {
@@ -1560,8 +1560,8 @@
           30,
           30,
           0,
-          0,
-          150
+          4,
+          "$gameVariables.value(30) + 150"
         ]
       },
       {
@@ -1578,7 +1578,7 @@
         "code": 401,
         "indent": 0,
         "parameters": [
-          "Monsters will appear twice as often for 150 steps."
+          "Your odds of encountering a rare enemy have doubled for 150 steps."
         ]
       },
       {
@@ -4967,12 +4967,29 @@
     "id": 25,
     "list": [
       {
+        "code": 101,
+        "indent": 0,
+        "parameters": [
+          "",
+          0,
+          0,
+          2
+        ]
+      },
+      {
+        "code": 401,
+        "indent": 0,
+        "parameters": [
+          "The rare enemy encounter rate has returned to normal."
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
       }
     ],
-    "name": "",
+    "name": "Lure End",
     "switchId": 1,
     "trigger": 0
   },
