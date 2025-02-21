@@ -6410,6 +6410,7 @@ Game_Map.prototype.autoplay = function() {
         if ($gameSwitches.value(24))  $dataMap.bgm.name = "map_telluria";
         if ($gameSwitches.value(109)) $dataMap.bgm.name = "map_hunting";
     }
+    if ($gameMap._mapId == 77 && $gameSwitches.value(109)) $dataMap.bgm.name = "dungeon_cave";
     if ($dataMap.autoplayBgm) {
         if ($gamePlayer.isInVehicle()) {
             $gameSystem.saveWalkingBgm2();

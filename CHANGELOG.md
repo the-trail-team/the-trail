@@ -32,6 +32,7 @@ INTRO
 - Damage is now displayed using commas.
 - Lowered the width of the tracked quest window.
 - Milking cows has been improved.
+- After defeating Apocalypse, Green Slimes will began spawning in Green Slime Cavern again.
 - Reduced damage of poison water at the Ruined House from 10 → 5.
 - The game automatically goes into fullscreen once loaded.
 - Big Mouth and Smart Mouth now approach you in Haven Harbor from the entrance rather than the port.
