@@ -88,6 +88,7 @@ INTRO
 - Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
 - Fixed vanity outfits not updating until closing the main menu.
 - Fixed visual bugs when skipping the intro.
+- Fixed visual bugs related to rats.
 - Fixed freeing Player 4 cutscene.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
 - Fixed the holiday event switch in Tester Tower not working properly.
