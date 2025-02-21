@@ -2081,7 +2081,7 @@
     "traits": [],
     "iconIndex": 440,
     "name": "Mage Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,1,Actor4,1,Actor4_2>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,5,Actor4,1,Actor4_2>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
