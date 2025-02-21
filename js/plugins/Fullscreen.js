@@ -19,7 +19,7 @@
   }
  
   extend(Scene_Boot, 'start', function() {
-		Graphics._switchFullScreen();
+		if (Graphics._isFullScreen()) Graphics._switchFullScreen();
   })
   
   extend(Scene_Base, 'create', function() {
