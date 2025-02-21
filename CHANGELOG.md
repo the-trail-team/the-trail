@@ -86,6 +86,7 @@ INTRO
 ### Bug Fixes
 - Fixed a game-breaking bug where the Dandy Toad raid caused a softlock.
 - Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
+- Fixed the default master volume being ridiculously loud.
 - Fixed vanity outfits not updating until closing the main menu.
 - Fixed visual bugs when skipping the intro.
 - Fixed visual bugs related to rats.
