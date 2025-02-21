@@ -22,6 +22,7 @@ INTRO
 - Red Slimes and Bats can drop Coal.
 - Skeleton Knights can drop the Ruby Ring.
 - Changed the Bits leaderboard to Bits Collected.
+- Re-applying the Tome of Experience will add turns instead of resetting them.
 - Being Soaked doubles incoming Ice damage.
 - The main menu can now display up to 8 state icons.
 - Damage is now displayed using commas.
