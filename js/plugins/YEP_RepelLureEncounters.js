@@ -276,12 +276,24 @@ Yanfly.RepelLure.Game_Player_encounterProgressValue =
   Game_Player.prototype.encounterProgressValue;
 Game_Player.prototype.encounterProgressValue = function() {
   var value = Yanfly.RepelLure.Game_Player_encounterProgressValue.call(this);
-  if (this.isLureEncounters()) {
+  /*if (this.isLureEncounters()) {
     value *= $gameSystem.lureEncounterRate();
     value += $gameSystem.lureEncounterFlat();
   }
-  if (this.isRepelEncounters()) value *= 0;
+  if (*/this.isRepelEncounters()/*) value *= 0*/;
   return value;
+};
+
+Game_System.prototype.rareEnemyBase = function() {
+  return 50 / ($gamePlayer.isLureEncounters() ? ($gameSystem.lureEncounterFlat() * $gameSystem.lureEncounterRate()) : 1);
+};
+
+_Game_Event_prototype_chaseConditions = Game_Event.prototype.chaseConditions;
+Game_Event.prototype.chaseConditions = function(dis) {
+  if ($gameVariables.value(29) > 0) {
+    return false;
+  }
+  return _Game_Event_prototype_chaseConditions.call(this, dis);
 };
 
 Game_Player.prototype.isLureEncounters = function() {

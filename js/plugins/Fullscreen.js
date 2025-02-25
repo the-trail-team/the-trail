@@ -19,18 +19,14 @@
   }
  
   extend(Scene_Boot, 'start', function() {
-		false ? Graphics._switchFullScreen() : false;
+		if (Graphics._isFullScreen()) Graphics._switchFullScreen();
   })
   
-  
- var _Scene_Base_create = Scene_Base.prototype.create;
-
-	Scene_Base.prototype.create = function() {
-		_Scene_Base_create.call(this);
+  extend(Scene_Base, 'create', function() {
 		Graphics.width = 1280;
-		Graphics.height = 720;	
-		Graphics.boxHeight = 720;
-		Graphics.boxWidth = 1280;	
-	};
+		Graphics.height = 720;
+		Graphics.boxWidth = 1280;
+    Graphics.boxHeight = 720;
+  })
  
 })()

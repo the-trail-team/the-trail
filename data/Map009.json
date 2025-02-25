@@ -12084,6 +12084,20 @@
               ]
             },
             {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 41 Complete Objective 1"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Quest 41 Show Objective 2"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -17049,8 +17063,8 @@
     },
     {
       "id": 16,
-      "name": "EV016",
-      "note": "",
+      "name": "rflower-copy",
+      "note": "<Copy Event: 158, 26>",
       "pages": [
         {
           "conditions": {
@@ -17076,12 +17090,18 @@
             "direction": 2,
             "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -17095,164 +17115,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                4,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 37,
@@ -17260,8 +17123,8 @@
     },
     {
       "id": 17,
-      "name": "EV017",
-      "note": "",
+      "name": "yflower-copy",
+      "note": "<Copy Event: 158, 25>",
       "pages": [
         {
           "conditions": {
@@ -17283,16 +17146,22 @@
           "image": {
             "tileId": 96,
             "characterName": "",
+            "characterIndex": 0,
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
+            "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -17306,164 +17175,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 1"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                3,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 16,
@@ -17471,8 +17183,8 @@
     },
     {
       "id": 18,
-      "name": "EV018",
-      "note": "",
+      "name": "yflower-copy",
+      "note": "<Copy Event: 158, 25>",
       "pages": [
         {
           "conditions": {
@@ -17494,16 +17206,22 @@
           "image": {
             "tileId": 96,
             "characterName": "",
+            "characterIndex": 0,
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
+            "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -17517,164 +17235,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 1"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                3,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 31,
@@ -17682,8 +17243,8 @@
     },
     {
       "id": 19,
-      "name": "EV019",
-      "note": "",
+      "name": "yflower-copy",
+      "note": "<Copy Event: 158, 25>",
       "pages": [
         {
           "conditions": {
@@ -17705,16 +17266,22 @@
           "image": {
             "tileId": 96,
             "characterName": "",
+            "characterIndex": 0,
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
+            "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -17728,164 +17295,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 1"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                3,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 4,
@@ -17893,8 +17303,8 @@
     },
     {
       "id": 20,
-      "name": "EV020",
-      "note": "",
+      "name": "yflower-copy",
+      "note": "<Copy Event: 158, 25>",
       "pages": [
         {
           "conditions": {
@@ -17916,16 +17326,22 @@
           "image": {
             "tileId": 96,
             "characterName": "",
+            "characterIndex": 0,
             "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
+            "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -17939,164 +17355,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 1"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                3,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 36,
@@ -18104,8 +17363,8 @@
     },
     {
       "id": 21,
-      "name": "EV021",
-      "note": "",
+      "name": "rflower-copy",
+      "note": "<Copy Event: 158, 26>",
       "pages": [
         {
           "conditions": {
@@ -18131,12 +17390,18 @@
             "direction": 2,
             "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -18150,164 +17415,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                4,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 36,
@@ -18315,8 +17423,8 @@
     },
     {
       "id": 22,
-      "name": "EV022",
-      "note": "",
+      "name": "bherb-copy",
+      "note": "<Copy Event: 158, 27>",
       "pages": [
         {
           "conditions": {
@@ -18342,12 +17450,18 @@
             "direction": 2,
             "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -18361,164 +17475,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 3"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                5,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 25,
@@ -18526,8 +17483,8 @@
     },
     {
       "id": 23,
-      "name": "EV023",
-      "note": "",
+      "name": "rflower-copy",
+      "note": "<Copy Event: 158, 26>",
       "pages": [
         {
           "conditions": {
@@ -18553,12 +17510,18 @@
             "direction": 2,
             "pattern": 0
           },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
           "moveFrequency": 3,
           "moveRoute": {
             "list": [
               {
                 "code": 0,
-                "indent": null,
                 "parameters": []
               }
             ],
@@ -18572,164 +17535,7 @@
           "stepAnime": false,
           "through": false,
           "trigger": 0,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 1 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 250,
-              "indent": 0,
-              "parameters": [
-                {
-                  "name": "Equip3",
-                  "volume": 90,
-                  "pitch": 100,
-                  "pan": 0
-                }
-              ]
-            },
-            {
-              "code": 126,
-              "indent": 0,
-              "parameters": [
-                4,
-                0,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                8,
-                3
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 1,
-              "parameters": [
-                8,
-                4
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 2,
-              "parameters": [
-                8,
-                5
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 3,
-              "parameters": [
-                "Quest 1 Show Objective 4"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 3,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 2,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
-        },
-        {
-          "conditions": {
-            "actorId": 1,
-            "actorValid": false,
-            "itemId": 1,
-            "itemValid": false,
-            "selfSwitchCh": "A",
-            "selfSwitchValid": true,
-            "switch1Id": 1,
-            "switch1Valid": false,
-            "switch2Id": 1,
-            "switch2Valid": false,
-            "variableId": 1,
-            "variableValid": false,
-            "variableValue": 0
-          },
-          "directionFix": true,
-          "image": {
-            "tileId": 0,
-            "characterName": "",
-            "direction": 2,
-            "pattern": 0,
-            "characterIndex": 0
-          },
-          "moveFrequency": 3,
-          "moveRoute": {
-            "list": [
-              {
-                "code": 0,
-                "indent": null,
-                "parameters": []
-              }
-            ],
-            "repeat": true,
-            "skippable": false,
-            "wait": false
-          },
-          "moveSpeed": 3,
-          "moveType": 0,
-          "priorityType": 0,
-          "stepAnime": false,
-          "through": false,
-          "trigger": 3,
-          "walkAnime": false,
-          "list": [
-            {
-              "code": 0,
-              "indent": 0,
-              "parameters": []
-            }
-          ]
+          "walkAnime": false
         }
       ],
       "x": 20,
@@ -25825,28 +24631,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\vil...you can press PRINTSCREEN to take a"
+                "\\vil...you can press P / PRINTSCREEN to take a"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "screenshot of your game! It'll be saved"
+                "screenshot of your game! You can view your"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "in the SCREENSHOTS folder in the game"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "directory!"
+                "screenshots via the main menu!"
               ]
             },
             {

@@ -1371,7 +1371,7 @@ SceneManager.updateInputData = function() {
 SceneManager._screenWidth  = Yanfly.Param.ScreenWidth;
 SceneManager._screenHeight = Yanfly.Param.ScreenHeight;
 SceneManager._boxWidth     = Yanfly.Param.ScreenWidth;
-SceneManager._boxHeight    = Yanfly.Param.ScreenHeight
+SceneManager._boxHeight    = Yanfly.Param.ScreenHeight;
 
 Yanfly.Core.SceneManager_run = SceneManager.run;
 SceneManager.run = function(sceneClass) {

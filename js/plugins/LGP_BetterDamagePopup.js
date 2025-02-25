@@ -998,7 +998,7 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     if (result.critical) number = eval(LGP.Param.BDPcritFormat.replace(number,value));
     if (Imported.YEP_AbsorptionBarrier && result._barrierAffected) number = eval(LGP.Param.BDPblockFormat.replace(number,value));
     
-    var w = this.getTextWidth(number) + LGP.Param.BDPfontSizeBuffer;
+    var w = this.getTextWidth(Yanfly.Util.toGroup(number)) + LGP.Param.BDPfontSizeBuffer;
     var h = this._fontSize;
     
     sprite.bitmap = new Bitmap(w, h);
@@ -1071,7 +1071,7 @@ Sprite_Damage.prototype.drawDefaultNumber = function() {
     	resSprite.scale.x = 0.8;
     	resSprite.scale.y = 0.8;
     }
-    bitmap.drawText(number, 0, 0, w, h);
+    bitmap.drawText(Yanfly.Util.toGroup(number), 0, 0, w, h);
 };
 
 Sprite_Damage.prototype.drawDefaultMiss = function() {

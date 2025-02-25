@@ -2013,7 +2013,7 @@
     "iconIndex": 665,
     "itypeId": 1,
     "name": "Bronze Ingot",
-    "note": "<Menu Category: Mining>\n<Sell Price: 20>\n\n<Synthesis Ingredients>\nCopper Cluster: 2\nRed Gel\n</Synthesis Ingredients>\n<Mask Name: Copper-based Alloy>",
+    "note": "<Menu Category: Mining>\n<Sell Price: 20>\n\n<Synthesis Ingredients>\nCopper Cluster: 2\nCoal\n</Synthesis Ingredients>\n<Mask Name: Copper-based Alloy>",
     "occasion": 3,
     "price": 80,
     "repeats": 1,
@@ -2333,13 +2333,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Summons Reggie the monkey. His nature powers\nwill halve all item respawn times.",
+    "description": "Summons Coco the monkey. His nature powers\nwill halve all item respawn times.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1875,
     "itypeId": 2,
-    "name": "Reggie's Bananas",
-    "note": "<Menu Category: Pets>\n<Pet: Reggie>\n\nWas once the Raw Fish.",
+    "name": "Coco's Bananas",
+    "note": "<Menu Category: Pets>\n<Pet: Coco>\n\nWas once the Raw Fish.",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -3097,7 +3097,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Douse yourself in this lovely liquid that will attract\ntwice as many monsters to you for 150 steps.",
+    "description": "Douse yourself in this lovely liquid that will double\nyour odds of encountering a rare enemy for 150 steps.",
     "effects": [
       {
         "code": 44,
@@ -4042,9 +4042,9 @@
     "iconIndex": 553,
     "itypeId": 1,
     "name": "Dried Blueberries",
-    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\nFiery Powder\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>",
     "occasion": 3,
-    "price": 4,
+    "price": 2,
     "repeats": 1,
     "scope": 0,
     "speed": 0,
@@ -5171,7 +5171,7 @@
   },
   {
     "id": 177,
-    "animationId": 0,
+    "animationId": 41,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -5180,15 +5180,28 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Mushrooms cooked in a dry pan over low heat, releasing\ntheir moisture to develop a rich, umami-packed flavor.",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 15
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 1956,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the Blank Tome.",
+    "name": "Pan-Seared Mushrooms",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBrown Mushroom: 3\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>\n\nWas once the Blank Tome.",
     "occasion": 0,
-    "price": 0,
+    "price": 20,
     "repeats": 1,
     "scope": 7,
     "speed": 0,

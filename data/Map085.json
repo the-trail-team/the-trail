@@ -17,45 +17,7 @@
   },
   "disableDashing": false,
   "displayName": "Goblin Grotto",
-  "encounterList": [
-    {
-      "regionSet": [
-        1,
-        2,
-        3
-      ],
-      "troopId": 25,
-      "weight": 5
-    },
-    {
-      "regionSet": [
-        1
-      ],
-      "troopId": 26,
-      "weight": 3
-    },
-    {
-      "regionSet": [
-        2
-      ],
-      "troopId": 26,
-      "weight": 6
-    },
-    {
-      "regionSet": [
-        3
-      ],
-      "troopId": 26,
-      "weight": 3
-    },
-    {
-      "regionSet": [
-        3
-      ],
-      "troopId": 28,
-      "weight": 5
-    }
-  ],
+  "encounterList": [],
   "encounterStep": 43,
   "height": 33,
   "note": "<Unlocked>",
@@ -9973,8 +9935,8 @@
           "walkAnime": true
         }
       ],
-      "x": 6,
-      "y": 22
+      "x": 24,
+      "y": 25
     },
     {
       "id": 17,
@@ -11709,7 +11671,66 @@
       "x": 24,
       "y": 9
     },
-    null,
+    {
+      "id": 26,
+      "name": "goblincaptain-copy",
+      "note": "<Copy Event: 158, 91>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Goblin",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 3,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": false,
+          "through": false,
+          "trigger": 2,
+          "walkAnime": true
+        }
+      ],
+      "x": 6,
+      "y": 22
+    },
     {
       "id": 27,
       "name": "EV027",

@@ -2039,7 +2039,7 @@
     "traits": [],
     "iconIndex": 443,
     "name": "Traveling Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Adon,4,Adon,4,Adon_5>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2060,7 +2060,7 @@
     "traits": [],
     "iconIndex": 438,
     "name": "Knight Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,0,Actor4,0,Actor4_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2081,7 +2081,7 @@
     "traits": [],
     "iconIndex": 440,
     "name": "Mage Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,5,Actor4,1,Actor4_2>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2102,7 +2102,7 @@
     "traits": [],
     "iconIndex": 623,
     "name": "Cleric Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,2,Actor4,2,Actor4_3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2123,7 +2123,7 @@
     "traits": [],
     "iconIndex": 455,
     "name": "Rogue Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,3,Actor4,3,Actor4_4>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2731,7 +2731,7 @@
     "traits": [],
     "iconIndex": 629,
     "name": "Retro Knight Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nKnight Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,0,Actor4_Old,0,Actor4_1>\n\n<Synthesis Ingredients>\nKnight Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Knight Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2752,7 +2752,7 @@
     "traits": [],
     "iconIndex": 433,
     "name": "Retro Mage Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nMage Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,1,Actor4_Old,1,Actor4_2>\n\n<Synthesis Ingredients>\nMage Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Mage Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2773,7 +2773,7 @@
     "traits": [],
     "iconIndex": 630,
     "name": "Retro Cleric Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nCleric Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,2,Actor4_Old,2,Actor4_3>\n\n<Synthesis Ingredients>\nCleric Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Cleric Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -2794,7 +2794,7 @@
     "traits": [],
     "iconIndex": 631,
     "name": "Retro Rogue Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Synthesis Ingredients>\nRogue Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Actor4,3,Actor4_Old,3,Actor4_4>\n\n<Synthesis Ingredients>\nRogue Token\nLeek: 3\n</Synthesis Ingredients>\n<Mask Name: Old-School Rogue Vanity>\n<Synthesis SE: Equip3>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3001,7 +3001,7 @@
     "traits": [],
     "iconIndex": 437,
     "name": "Cavalier Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,0,Actor4,4,Actor4_5>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3022,7 +3022,7 @@
     "traits": [],
     "iconIndex": 627,
     "name": "Sorcerer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,1,Actor4,5,Actor4_6>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3043,7 +3043,7 @@
     "traits": [],
     "iconIndex": 628,
     "name": "Bishop Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,2,Actor4,6,Actor4_7>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3064,7 +3064,7 @@
     "traits": [],
     "iconIndex": 446,
     "name": "Scapegrace Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Champions,3,Actor4,7,Actor4_8>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -3505,7 +3505,7 @@
     "traits": [],
     "iconIndex": 466,
     "name": "Bandito Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Adon,5,Adon,5,Adon_6>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5057,7 +5057,7 @@
     "description": "Infused with the essence of the Dark Forest.\nThe wearer recovers 5 HP at the end of every turn.",
     "etypeId": 6,
     "traits": [],
-    "iconIndex": 176,
+    "iconIndex": 820,
     "name": "Ring of the Woods",
     "note": "<Passive State: 173>",
     "params": [
@@ -5230,7 +5230,7 @@
     "traits": [],
     "iconIndex": 800,
     "name": "Infernal Coin",
-    "note": "<Upgrade Slots: 3>\n<Passive State: 184, 154>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "note": "<Upgrade Slots: 3>\n<Passive State: 184, 154>\n\n<Vanity:FlameBody,0,$FlameBody,0,FlameBody>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       0,
@@ -5395,7 +5395,7 @@
     "traits": [],
     "iconIndex": 437,
     "name": "Skeletal Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Boss1,0,Boss1,0,Boss_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 1;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5416,7 +5416,7 @@
     "traits": [],
     "iconIndex": 171,
     "name": "Ancient Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Evil1,11,Evil1,3,Evil1_4>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 2;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5437,7 +5437,7 @@
     "traits": [],
     "iconIndex": 453,
     "name": "Watery Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Elemental,0,Elemental,0,Elemental_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 3;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 3 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(3).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5458,7 +5458,7 @@
     "traits": [],
     "iconIndex": 450,
     "name": "Leader Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Bandito,0,Bandito,0,Bandito_1>\n\n<Custom Equip Requirement Condition>\ncondition = user.actorId() == 4;\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 4 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(4).name()\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5500,7 +5500,7 @@
     "traits": [],
     "iconIndex": 442,
     "name": "Blue Developer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,0,Developers,0,Developers_1>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5521,7 +5521,7 @@
     "traits": [],
     "iconIndex": 776,
     "name": "Red Developer Outfit",
-    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
+    "note": "<Menu Category: Vanity>\n<Cannot Rename>\n\n<Vanity:Developers,1,Developers,1,Developers_2>\n\n<Custom Equip Requirement Condition>\ncondition = [1, 2].contains(user.actorId());\n</Custom Equip Requirement Condition>\n<Custom Equip Requirement Text>\ntext = '\\\\c[16]Character: ';\ntext += user.actorId() == 1 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(1).name();\ntext += \"\\\\c[0] or \";\ntext += user.actorId() == 2 ? '\\\\c[1]' : '\\\\c[8]';\ntext += $gameActors.actor(2).name();\n</Custom Equip Requirement Text>",
     "params": [
       0,
       0,
@@ -5650,6 +5650,27 @@
       2,
       8,
       12,
+      0,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 216,
+    "atypeId": 1,
+    "description": "It glistens with a enchanting sheen. Doesn't provide\nbase stats, but offers a huge amount of upgrade slots.",
+    "etypeId": 6,
+    "traits": [],
+    "iconIndex": 512,
+    "name": "Gold Ring",
+    "note": "<Upgrade Slots: 10>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
       0,
       0
     ],

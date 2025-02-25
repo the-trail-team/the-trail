@@ -40,9 +40,43 @@ INTRO TEXT
 INTRO
 
 ### Additions
-
+- Added all respawnables to Telluria Castle Town.
+- A lone Skeleton can be randomly encountered in the Forest Arena...? after Laeryidyean's defeat.
+- Added a tutorial tip about the new moon respawning monsters.
+- 1 new items:
+  - Pan-Seared Mushrooms
+- 1 new equipment:
+  - Gold Ring
+- 1 new quests:
+  - Today's Training
 
 ### Changes
+- Removed random encounters (except the aforementioned lone Skeleton).
+  - Acrid Aroma stops enemies from chasing you.
+  - Eau du Monstere now doubles the chance of a rare enemy spawning.
+  - Both now add steps to the counter instead of resetting it.
+- Changed the save file location on Mac.
+- The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
+- Dried Blueberries no longer need Fiery Powder, meaning they can be cooked in Adon.
+- Skill upgrades now hide their lower tiers. Mastery levels will be shared between all tiers.
+- Mark moves back into his house after you reach Telluria Field.
+- Bronze Ingots are made with Coal instead of Red Gel.
+- Red Slimes and Bats can drop Coal.
+- Skeleton Knights can drop the Ruby Ring.
+- Changed the Bits leaderboard to Bits Collected.
+- Re-applying the Tome of Experience will add turns instead of resetting them.
+- Being Soaked doubles incoming Ice damage.
+- The main menu can now display up to 8 state icons.
+- Damage is now displayed using commas.
+- Lowered the width of the tracked quest window.
+- Milking cows has been improved.
+- After defeating Apocalypse, Green Slimes will began spawning in Green Slime Cavern again.
+- Reduced damage of poison water at the Ruined House from 10 → 5.
+- The game automatically goes into fullscreen once loaded.
+- Big Mouth and Smart Mouth now approach you in Haven Harbor from the entrance rather than the port.
+- Reduced the opacity of the night overlay.
+
+### Balancing Patch
 - Nerfed a lot of equipment:
   - Red Leathers: DEF 4 → 2
   - Blood-Red Leathers: DEF 7 → 4
@@ -83,9 +117,29 @@ INTRO
   - Well Rested MHP, MMP, ATK, DEF, MAT, MDF, AGI, HRG: 10% → 5%
   - Vicious Herb, Thick-Skinned Herb: 20% → 10%
   - Steadfast DEF, MDF: 20% → 10%
+- Increased Flashbang duration from 3 → 5 turns.
+- Buffed Focus Up HIT increase from 12.5% → 20%.
+- Hold the Line I/II and Inspired no longer have turn variance.
 
 ### Bug Fixes
+- Fixed a game-breaking bug where the Dandy Toad raid caused a softlock.
+- Since Alpha 11 in 2019, there's been noticeable lag after closing the main menu; this has finally been fixed.
+- Fixed the default master volume being ridiculously loud.
+- Fixed vanity outfits not updating until closing the main menu.
+- Fixed visual bugs when skipping the intro.
+- Fixed visual bugs related to rats.
+- Fixed visual bugs related to certain boss death animations.
+- Fixed freeing Player 4 cutscene.
+- Fixed the Ethereal Bat's spirits not taking enough damage to die after the Ethereal Bat is slain.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
+- Fixed Solus Town's flower patches only yielding 1 flower rather than 2 or 3.
+- Fixed the holiday event switch in Tester Tower not working properly.
+- Fixed quest completion never reaching 100%.
+- Fixed a bug where quests you hadn't yet accepted could become the tracked quest.
+- Fixed a bug where the tracked quest window could would keep displaying a completed quest if it was there were no more quests available.
+- Fixed incorrect value for total small chests.
+- Fixed an outdated Four-Toed Kevin line referring to his guards.
+- Fixed outdated screenshot tip in Solus Town.
 
 <br><br>
 
@@ -422,7 +476,7 @@ I hope you all feel the power as you progress through Telluria Field! But will y
     - Journeyman Membership
     - Globetrotter Membership
     - Fido's Collar
-    - Reggie's Bananas
+    - Coco's Bananas
     - Salt Rock
     - Dry Ice Cube
     - Fish-Flavored Fish

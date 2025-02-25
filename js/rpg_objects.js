@@ -110,7 +110,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             break;
         case 'FIRE':
             arr = [
-                [229, 151, 108, 135],
+                [135, 177, 108, 229, 151],
                 [],
                 []
             ]
@@ -413,7 +413,7 @@ Game_System.prototype.rareEnemyRoll = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 38;
+    return 37;
 };
 
 Game_System.prototype.smallChest = function() {
@@ -555,6 +555,7 @@ Game_System.prototype.nextMoonPhase = function() {
         this._moonRespawn = true;
         this._moonCycleComplete = true;
     }
+    $gameVariables.setValue(76, this._moonPhase);
 };
 
 // Melee Damage Types
@@ -5767,7 +5768,7 @@ Game_Party.prototype.addPet = function(name) {
         case 'Tender':
             actor.setCharacterImage('Fox', 0);
             break;
-        case 'Reggie':
+        case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
             break;
         default: // Remove pet
@@ -6009,6 +6010,10 @@ Game_Troop.prototype.performVictory = function() {
     this.members().forEach(function(enemy) {
         enemy.performVictory();
     });
+};
+
+Game_Troop.prototype.weaken = function() {
+    this.members().forEach(e => e.setHp(1));
 };
 
 //-----------------------------------------------------------------------------
@@ -6409,6 +6414,7 @@ Game_Map.prototype.autoplay = function() {
         if ($gameSwitches.value(24))  $dataMap.bgm.name = "map_telluria";
         if ($gameSwitches.value(109)) $dataMap.bgm.name = "map_hunting";
     }
+    if ($gameMap._mapId == 77 && $gameSwitches.value(109)) $dataMap.bgm.name = "dungeon_cave";
     if ($dataMap.autoplayBgm) {
         if ($gamePlayer.isInVehicle()) {
             $gameSystem.saveWalkingBgm2();
