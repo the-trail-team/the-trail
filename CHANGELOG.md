@@ -90,6 +90,7 @@ INTRO
 - Fixed vanity outfits not updating until closing the main menu.
 - Fixed visual bugs when skipping the intro.
 - Fixed visual bugs related to rats.
+- Fixed visual bugs related to certain boss death animations.
 - Fixed freeing Player 4 cutscene.
 - Fixed the Ethereal Bat's spirits not taking enough damage to die after the Ethereal Bat is slain.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.

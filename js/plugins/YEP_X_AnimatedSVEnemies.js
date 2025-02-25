@@ -2573,7 +2573,7 @@ Sprite_Enemy.prototype.updateSVFrame = function() {
     var cy = motionIndex % 6;
     var cdh = 0;
     if (this._effectType === 'bossCollapse' && this.isSideviewCollapse()) {
-      cdh = ch - this._effectDuration;
+      // cdh = ch - this._effectDuration;
     }
     // this.setFrame(cx * cw, cy * ch, cw, ch);
     this._mainSprite.setFrame(cx * cw, cy * ch, cw, ch - cdh);
