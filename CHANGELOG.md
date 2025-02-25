@@ -94,6 +94,7 @@ INTRO
 - Fixed freeing Player 4 cutscene.
 - Fixed the Ethereal Bat's spirits not taking enough damage to die after the Ethereal Bat is slain.
 - Fixed Vigilante's Charm not inheriting the Condensed White Gel's 5 AGI.
+- Fixed Solus Town's flower patches only yielding 1 flower rather than 2 or 3.
 - Fixed the holiday event switch in Tester Tower not working properly.
 - Fixed quest completion never reaching 100%.
 - Fixed a bug where quests you hadn't yet accepted could become the tracked quest.
