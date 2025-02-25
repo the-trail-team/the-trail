@@ -6012,6 +6012,10 @@ Game_Troop.prototype.performVictory = function() {
     });
 };
 
+Game_Troop.prototype.weaken = function() {
+    this.members().forEach(e => e.setHp(1));
+};
+
 //-----------------------------------------------------------------------------
 // Game_Map
 //
