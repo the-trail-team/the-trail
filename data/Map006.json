@@ -3488,6 +3488,13 @@
     0,
     0,
     0,
+    52,
+    0,
+    0,
+    0,
+    0,
+    0,
+    52,
     0,
     0,
     0,
@@ -3521,20 +3528,13 @@
     0,
     0,
     0,
+    60,
     0,
     0,
     0,
     0,
     0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
+    60,
     0,
     0,
     0,
@@ -5088,13 +5088,13 @@
     880,
     881,
     0,
-    52,
+    50,
     0,
     0,
     68,
     0,
     0,
-    52,
+    50,
     0,
     880,
     881,
@@ -5128,13 +5128,13 @@
     888,
     889,
     0,
-    60,
+    58,
     0,
     0,
     76,
     0,
     0,
-    60,
+    58,
     0,
     888,
     889,
@@ -9771,7 +9771,7 @@
                     {
                       "code": 15,
                       "parameters": [
-                        90
+                        60
                       ],
                       "indent": null
                     },
@@ -9782,7 +9782,7 @@
                     {
                       "code": 15,
                       "parameters": [
-                        90
+                        45
                       ],
                       "indent": null
                     },
@@ -9793,7 +9793,7 @@
                     {
                       "code": 15,
                       "parameters": [
-                        90
+                        45
                       ],
                       "indent": null
                     },
@@ -9804,7 +9804,7 @@
                     {
                       "code": 15,
                       "parameters": [
-                        60
+                        30
                       ],
                       "indent": null
                     },
@@ -9855,7 +9855,7 @@
                 {
                   "code": 15,
                   "parameters": [
-                    90
+                    60
                   ],
                   "indent": null
                 }
@@ -9878,7 +9878,7 @@
                 {
                   "code": 15,
                   "parameters": [
-                    90
+                    45
                   ],
                   "indent": null
                 }
@@ -9901,7 +9901,7 @@
                 {
                   "code": 15,
                   "parameters": [
-                    90
+                    45
                   ],
                   "indent": null
                 }
@@ -9924,7 +9924,7 @@
                 {
                   "code": 15,
                   "parameters": [
-                    60
+                    30
                   ],
                   "indent": null
                 }
@@ -10041,7 +10041,66 @@
       "x": 22,
       "y": 39
     },
-    null,
+    {
+      "id": 3,
+      "name": "waterelementalex-copy",
+      "note": "<Copy Event: 158, 147>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Elemental",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 9,
+      "y": 22
+    },
     {
       "id": 4,
       "name": "EV004",
@@ -10268,7 +10327,66 @@
       "x": 9,
       "y": 18
     },
-    null,
+    {
+      "id": 5,
+      "name": "waterelementalex-copy",
+      "note": "<Copy Event: 158, 147>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Elemental",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 26,
+      "y": 22
+    },
     {
       "id": 6,
       "name": "EV006",
@@ -10928,8 +11046,126 @@
       "x": 10,
       "y": 29
     },
-    null,
-    null,
+    {
+      "id": 12,
+      "name": "waterelementalex-copy",
+      "note": "<Copy Event: 158, 147>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Elemental",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 19,
+      "y": 17
+    },
+    {
+      "id": 13,
+      "name": "waterelementalex-copy",
+      "note": "<Copy Event: 158, 147>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Elemental",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 10,
+      "y": 9
+    },
     {
       "id": 14,
       "name": "EV014",
@@ -11032,7 +11268,66 @@
       "x": 26,
       "y": 20
     },
-    null,
+    {
+      "id": 15,
+      "name": "waterelementalex-copy",
+      "note": "<Copy Event: 158, 147>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Elemental",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 29,
+      "y": 9
+    },
     {
       "id": 16,
       "name": "EV016",
@@ -11751,11 +12046,25 @@
               "indent": 0,
               "parameters": [
                 0,
-                103,
+                59,
                 15,
                 30,
                 0,
                 0
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Tint set #6e6e6e"
+              ]
+            },
+            {
+              "code": 356,
+              "indent": 0,
+              "parameters": [
+                "Light radius 0 #FFFFFF"
               ]
             },
             {
@@ -11788,8 +12097,126 @@
       "x": 19,
       "y": 6
     },
-    null,
-    null,
+    {
+      "id": 21,
+      "name": "waterelementalex-copy",
+      "note": "<Copy Event: 158, 147>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Elemental",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 36,
+      "y": 17
+    },
+    {
+      "id": 22,
+      "name": "waterelementalex-copy",
+      "note": "<Copy Event: 158, 147>",
+      "pages": [
+        {
+          "conditions": {
+            "actorId": 1,
+            "actorValid": false,
+            "itemId": 1,
+            "itemValid": false,
+            "selfSwitchCh": "A",
+            "selfSwitchValid": false,
+            "switch1Id": 1,
+            "switch1Valid": false,
+            "switch2Id": 1,
+            "switch2Valid": false,
+            "variableId": 1,
+            "variableValid": false,
+            "variableValue": 0
+          },
+          "directionFix": false,
+          "image": {
+            "tileId": 0,
+            "characterName": "Elemental",
+            "direction": 2,
+            "pattern": 1,
+            "characterIndex": 1
+          },
+          "list": [
+            {
+              "code": 0,
+              "indent": 0,
+              "parameters": []
+            }
+          ],
+          "moveFrequency": 5,
+          "moveRoute": {
+            "list": [
+              {
+                "code": 0,
+                "parameters": []
+              }
+            ],
+            "repeat": true,
+            "skippable": false,
+            "wait": false
+          },
+          "moveSpeed": 4,
+          "moveType": 0,
+          "priorityType": 1,
+          "stepAnime": true,
+          "through": false,
+          "trigger": 1,
+          "walkAnime": true
+        }
+      ],
+      "x": 19,
+      "y": 11
+    },
     null,
     null,
     null,
