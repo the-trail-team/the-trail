@@ -3526,7 +3526,7 @@
     ],
     "gold": 30,
     "name": "Water Spirit",
-    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 136, 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nAqua Gem: 20%\nWater Essence: 20%\nLight Essence: 20%\n</Enemy Drops>",
+    "note": "<Element: Water>\n<Element Absorb: Water>\n<Passive State: 136, 146, 147>\n\n<Sideview Battler: Spirit_3>\n<Floating>\n<Attack Animation: 82>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nAqua Gem: 20%\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
       400,
       0,
@@ -3546,13 +3546,41 @@
         "conditionParam2": 0,
         "conditionType": 0,
         "rating": 5,
+        "skillId": 117
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 40
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 63
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 4,
+        "skillId": 119
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 1,
         "skillId": 1
       }
     ],
     "battlerHue": 0,
     "battlerName": "Earth Spirit",
     "dropItems": [],
-    "exp": 500,
+    "exp": 150,
     "traits": [
       {
         "code": 31,
@@ -3572,31 +3600,31 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 1
+        "value": 0.97
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.08
+        "value": 0.05
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.07
+        "value": 0.1
       }
     ],
-    "gold": 250,
+    "gold": 100,
     "name": "Earth Spirit",
-    "note": "<Element: Earth, Light>\n<Element Absorb: Earth>\n<Passive State: 147>\n\n<Sideview Battler: Spirit_8>\n<Sideview No Collapse>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nEarth Essence: 100%\nLight Essence: 100%\n</Enemy Drops>",
+    "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_8>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nBattle Plan: 5%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
-      6000,
+      5454,
       0,
-      15,
-      35,
-      60,
-      84,
-      75,
-      50
+      42,
+      51,
+      63,
+      94,
+      30,
+      45
     ]
   },
   {
@@ -6281,6 +6309,11 @@
         "code": 31,
         "dataId": 16,
         "value": 1
+      },
+      {
+        "code": 31,
+        "dataId": 5,
+        "value": 0
       },
       {
         "code": 22,

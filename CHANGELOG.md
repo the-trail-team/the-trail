@@ -17,19 +17,26 @@ INTRO TEXT
 - 2 new items:
   - Phantasmal Charm
   - [REDACTED HELMET]
-- 4 new equipment:
-  - Soulstealer's Necklace
-  - Soul Shackles (Tome)
-  - [REDACTED RESISTANCE]
-  - Tideflame Headpiece
-- 4 new enemies:
+- 5 new equipment:
+  - 1 new headgear:
+    - Tideflame Headpiece
+  - 2 new accessories:
+    - Soulstealer's Necklace
+    - Soul Shackles (Tome)
+  - 1 new magic equip:
+    - Waterfall (Tome)
+  - 1 new power:
+    - [REDACTED RESISTANCE]
+  
+- 5 new enemies:
   - Tortured Soul
   - Will o' Wisp
   - [REDACTED GENERAL]
   - Water Elemental EX
+  - Earth Spirit
 
 ### Changes
--
+- Earth enemies no longer take double damage from wind attacks.
 
 ### Bug Fixes
 -

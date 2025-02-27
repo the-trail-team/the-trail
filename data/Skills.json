@@ -1294,9 +1294,9 @@
     "id": 38,
     "animationId": 84,
     "damage": {
-      "critical": false,
+      "critical": true,
       "elementId": 5,
-      "formula": "a.mat * 3 - b.mdf * 2",
+      "formula": "a.mat * 3 - b.mdf * 1.5",
       "type": 1,
       "variance": 5
     },
@@ -1313,9 +1313,9 @@
     "iconIndex": 1392,
     "message1": " casts %1!",
     "message2": "",
-    "mpCost": 15,
+    "mpCost": 18,
     "name": "Waterfall",
-    "note": "<action copy: skill:29>",
+    "note": "<Critical Multiplier Formula>\nif (user.isEnemy()) value *= 0;\n</Critical Multiplier Formula>\n\n<action copy: skill:29>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
