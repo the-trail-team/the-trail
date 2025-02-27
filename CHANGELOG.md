@@ -107,6 +107,7 @@ INTRO
 - Fixed a tree you could walk through in Telluria Castle Town.
 - Fixed softlock caused by the Catalyst ambush in the Temple.
 - Fixed Water Spirit not beginning encounter when touching the player.
+- Fixed a visual bug with Apocalypse's health bar.
 - Fixed an outdated Four-Toed Kevin line referring to his guards.
 - Fixed outdated screenshot tip in Solus Town.
 
