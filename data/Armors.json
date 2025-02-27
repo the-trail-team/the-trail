@@ -4692,12 +4692,17 @@
   {
     "id": 178,
     "atypeId": 1,
-    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides\nimmunity to \\it[7], \\it[82], \\it[149], and \\it[125].",
+    "description": "It's burning hot, yet feels only lukewarm to the touch. Provides immunity\nto \\it[7], \\it[102], \\it[82], \\it[149], and \\it[125].",
     "etypeId": 6,
     "traits": [
       {
         "code": 14,
         "dataId": 7,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 102,
         "value": 2
       },
       {
@@ -4714,11 +4719,16 @@
         "code": 14,
         "dataId": 125,
         "value": 2
+      },
+      {
+        "code": 11,
+        "dataId": 2,
+        "value": 0.9
       }
     ],
     "iconIndex": 722,
     "name": "Fiery Tablet",
-    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +5%>\n<Element Amplify Ice: +5%>\n<Element Amplify Electric: +5%>\n<Element Amplify Water: +5%>\n<Element Amplify Earth: +5%>\n<Element Amplify Wind: +5%>\n<Element Amplify Plant: +5%>\n<Element Amplify Metal: +5%>\n<Element Amplify Light: +5%>\n<Element Amplify Dark: +5%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
+    "note": "<Upgrade Slots: 1>\n<Passive State: 126>\n\n<Element Amplify Fire: +5%>\n\n<Synthesis Ingredients>\nSelfish Candle\nWanted Poster\nSleepy Hourglass\nFire Resistance Potion: 5\nFiery Blood: 10\n</Synthesis Ingredients>\n<Mask Name: Hot Dungeon Resistance Item>",
     "params": [
       0,
       0,
@@ -4851,12 +4861,17 @@
   {
     "id": 184,
     "atypeId": 1,
-    "description": "Desperate for attention, this candle draws all the fire to it,\nleaving you without any. Provides immunity to \\it[7]\\c[0].",
+    "description": "Desperate for attention, this candle draws all the fire to it, leaving you\nwithout any. Provides immunity to \\it[7] and \\it[102]\\c[0].",
     "etypeId": 6,
     "traits": [
       {
         "code": 14,
         "dataId": 7,
+        "value": 2
+      },
+      {
+        "code": 14,
+        "dataId": 102,
         "value": 2
       }
     ],

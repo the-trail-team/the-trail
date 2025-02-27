@@ -79,6 +79,8 @@ INTRO
   - Well Rested MHP, MMP, ATK, DEF, MAT, MDF, AGI, HRG: 10% → 5%
   - Vicious Herb, Thick-Skinned Herb: 20% → 10%
   - Steadfast DEF, MDF: 20% → 10%
+- Selfish Candle and Fiery Tablet also provide immunity to Burning Up!.
+- Rebalanced Fiery Tablet: no longer provides outgoing elemental damage except for fire, but decreases fire damage taken by 10%.
 - Increased Flashbang duration from 3 → 5 turns.
 - Buffed Focus Up HIT increase from 12.5% → 20%.
 - Hold the Line I/II and Inspired no longer have turn variance.
