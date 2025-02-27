@@ -4714,7 +4714,7 @@
     "message2": "",
     "mpCost": 8,
     "name": "Nasty Glare",
-    "note": "<Boost Turns>\n\n<setup action>\nmotion skill: user\nwait: 15\n</setup action>",
+    "note": "<Boost Turns>\n\n<setup action>\nmotion skill: user\nwait: 15\n</setup action>\n\n<whole action>\naction animation\nwait for animation\n</whole action>\n\n<target action>\naction effect\nwait for effect\nwait: 5\n</target action>\n\n<follow action>\n</follow action>",
     "occasion": 1,
     "repeats": 1,
     "requiredWtypeId1": 0,
