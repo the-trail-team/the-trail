@@ -29,6 +29,7 @@ INTRO
 - Re-applying the Tome of Experience will add turns instead of resetting them.
 - Being Soaked doubles incoming Ice damage.
 - The main menu can now display up to 8 state icons.
+- Except for monsters, all events can now move while another event is running.
 - Damage is now displayed using commas.
 - Lowered the width of the tracked quest window.
 - Milking cows has been improved.
