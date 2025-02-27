@@ -101,6 +101,9 @@ INTRO
 - Fixed a bug where the tracked quest window could would keep displaying a completed quest if it was there were no more quests available.
 - Fixed incorrect value for total small chests.
 - Fixed Nasty Glare taking a while to apply Weak Point to all your party members.
+- Fixed large tree tile being difficult to walk around.
+- Fixed a tree you could walk through in Telluria Castle Town.
+- Fixed softlock caused by the Catalyst ambush in the Temple.
 - Fixed an outdated Four-Toed Kevin line referring to his guards.
 - Fixed outdated screenshot tip in Solus Town.
 
