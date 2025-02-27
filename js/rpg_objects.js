@@ -6013,7 +6013,7 @@ Game_Troop.prototype.performVictory = function() {
 };
 
 Game_Troop.prototype.weaken = function() {
-    this.members().forEach(e => e.setHp(1));
+    this.members().filter(e => e.isAlive()).forEach(e => e.setHp(1));
 };
 
 //-----------------------------------------------------------------------------
