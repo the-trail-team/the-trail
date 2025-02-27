@@ -37,6 +37,7 @@ INTRO TEXT
 
 ### Changes
 - Earth enemies no longer take double damage from wind attacks.
+- Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 
 ### Bug Fixes
 -
