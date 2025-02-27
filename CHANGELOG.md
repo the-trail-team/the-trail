@@ -85,6 +85,7 @@ INTRO
 - Increased Flashbang duration from 3 → 5 turns.
 - Buffed Focus Up HIT increase from 12.5% → 20%.
 - Hold the Line I/II and Inspired no longer have turn variance.
+- Flytraps now drop Dismembered Eyes.
 
 ### Bug Fixes
 - Fixed a game-breaking bug where the Dandy Toad raid caused a softlock.
