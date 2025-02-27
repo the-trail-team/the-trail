@@ -117,6 +117,8 @@ INTRO
   - Well Rested MHP, MMP, ATK, DEF, MAT, MDF, AGI, HRG: 10% → 5%
   - Vicious Herb, Thick-Skinned Herb: 20% → 10%
   - Steadfast DEF, MDF: 20% → 10%
+- Selfish Candle and Fiery Tablet also provide immunity to Burning Up!.
+- Rebalanced Fiery Tablet: no longer provides outgoing elemental damage except for fire, but decreases fire damage taken by 10%.
 - Increased Flashbang duration from 3 → 5 turns.
 - Buffed Focus Up HIT increase from 12.5% → 20%.
 - Hold the Line I/II and Inspired no longer have turn variance.
@@ -138,6 +140,12 @@ INTRO
 - Fixed a bug where quests you hadn't yet accepted could become the tracked quest.
 - Fixed a bug where the tracked quest window could would keep displaying a completed quest if it was there were no more quests available.
 - Fixed incorrect value for total small chests.
+- Fixed Nasty Glare taking a while to apply Weak Point to all your party members.
+- Fixed large tree tile being difficult to walk around.
+- Fixed a tree you could walk through in Telluria Castle Town.
+- Fixed softlock caused by the Catalyst ambush in the Temple.
+- Fixed Water Spirit not beginning encounter when touching the player.
+- Fixed a visual bug with Apocalypse's health bar.
 - Fixed an outdated Four-Toed Kevin line referring to his guards.
 - Fixed outdated screenshot tip in Solus Town.
 
