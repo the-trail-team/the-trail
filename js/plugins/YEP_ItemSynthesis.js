@@ -1934,9 +1934,24 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
       }
       if (independentItems.contains(0)) return reject();
       items.forEach(item => $gameParty.loseItem(item[0], item[1], false));
-      independentItems.forEach(item => $gameParty.gainIndependentItem(item, -1, true));
+      upgradeStats = [0, [], ''];
+      independentItems.forEach(item => {
+        if (item._weight) if (item._weight > upgradeStats[0]) upgradeStats = [item._weight, item.slotsApplied, item.priorityName];
+        $gameParty.gainIndependentItem(item, -1, true)
+      });
       number *= this._item.craftAmount;
       $gameParty.gainItem(this._item, number);
+      if (DataManager.isIndependent(this._item)) {
+        database = DataManager.getDatabase(this._item);
+        item = database[database.length - 1];
+        upgradeStats[1].forEach(upgrade => {
+          const upgrader = $dataItems[Yanfly.ItemIdRef[upgrade.match(/\\i\[\d+\]\s*([^\\]*)/)[1].trim().toUpperCase()]];
+          $gameParty.gainItem(upgrader, 1);
+          ItemManager.applyIUSEffects(item, upgrader);
+        });
+        ItemManager.setPriorityName(item, upgradeStats[2]);
+        ItemManager.updateItemName(item);
+      }
       $gameSystem.addSynth(this._item);
       resolve();
     });
