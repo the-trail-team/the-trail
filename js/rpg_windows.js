@@ -4246,7 +4246,7 @@ function Window_EventItem() {
 Window_EventItem.prototype = Object.create(Window_ItemList.prototype);
 Window_EventItem.prototype.constructor = Window_EventItem;
 
-Window_EventItem.prototype.initialize = function(messageWindow) {
+Window_EventItem.prototype.initialize = function(messageWindow = new Window_Message) {
     this._messageWindow = messageWindow;
     var width = Graphics.boxWidth;
     var height = this.windowHeight();
@@ -4283,9 +4283,20 @@ Window_EventItem.prototype.updatePlacement = function() {
 
 Window_EventItem.prototype.includes = function(item) {
     var itypeId = $gameMessage.itemChoiceItypeId();
+    if (!item) return false;
+    if ((DataManager.isWeapon(itypeId) && DataManager.isWeapon(item)) || (DataManager.isArmor(itypeId) && DataManager.isArmor(item))) return item.baseItemId == itypeId.id;
     if (typeof itypeId == "string") return DataManager.isItem(item) && item.itemCategory.contains(itypeId);
     if (typeof itypeid == "number") return DataManager.isItem(item) && item.itypeId === itypeId;
     return false;
+};
+
+Window_EventItem.prototype.makeItemList = function() {
+    this._data = $gameParty.allItemsAndEquips().filter(function(item) {
+        return this.includes(item);
+    }, this);
+    if (this.includes(null)) {
+        this._data.push(null);
+    }
 };
 
 Window_EventItem.prototype.isEnabled = function(item) {
@@ -4295,7 +4306,7 @@ Window_EventItem.prototype.isEnabled = function(item) {
 Window_EventItem.prototype.onOk = function() {
     var item = this.item();
     var itemId = item ? item.id : 0;
-    $gameVariables.setValue($gameMessage.itemChoiceVariableId(), itemId);
+    $gameVariables.setValue($gameMessage.itemChoiceVariableId(), DataManager.isItem(item) ? itemId : item);
     this._messageWindow.terminateMessage();
     this.close();
 };

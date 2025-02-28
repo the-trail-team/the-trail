@@ -824,6 +824,7 @@ ItemManager.effectIUSResetStat = function(item, stat) {
 
 ItemManager.effectIUSParamRateChange = function(item, stat, value) {
     var baseItem = DataManager.getBaseItem(item);
+    stat = stat.toUpperCase();
     switch (stat) {
       case 'HP':
       case 'MAXHP':
@@ -929,6 +930,10 @@ ItemManager.effectIUSParamChange = function(item, stat, value) {
       case 'SLOT':
       case 'SLOTS':
         item.upgradeSlots += value;
+        break;
+      case 'WEIGHT':
+        if (!item._weight) item._weight = 0;
+        item._weight += value;
         break;
     }
 };

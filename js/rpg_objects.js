@@ -5337,6 +5337,16 @@ Game_Party.prototype.allItems = function() {
     return this.items().concat(this.equipItems());
 };
 
+Game_Party.prototype.allEquips = function() {
+    data = [];
+    this.members().forEach(a => a.equips().filter(e => e).forEach(e => data.push(e)));
+    return data;
+};
+
+Game_Party.prototype.allItemsAndEquips = function() {
+    return this.allEquips().concat(this.allItems());
+};
+
 Game_Party.prototype.itemContainer = function(item) {
     if (!item) {
         return null;

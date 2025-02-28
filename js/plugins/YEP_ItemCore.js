@@ -1290,7 +1290,7 @@ Game_Party.prototype.maxItems = function(item) {
 Yanfly.Item.Game_Party_hasItem = Game_Party.prototype.hasItem;
 Game_Party.prototype.hasItem = function(item, includeEquip) {
     if (DataManager.isIndependent(item)) {
-      if (this.numIndependentItems(item) > 0) return true;
+      if (this.numIndependentItems(item, includeEquip) > 0) return true;
     }
     return Yanfly.Item.Game_Party_hasItem.call(this, item, includeEquip);
 };
@@ -1308,13 +1308,13 @@ Game_Party.prototype.isAnyMemberEquipped = function(item) {
     return Yanfly.Item.Game_Party_isAnyMemberEquipped.call(this, item);
 };
 
-Game_Party.prototype.numIndependentItems = function(baseItem) {
+Game_Party.prototype.numIndependentItems = function(baseItem, includeEquip=true) {
     var value = 0;
     if (!DataManager.isIndependent(baseItem)) return this.numItems(baseItem);
     var id = baseItem.id;
     if (DataManager.isItem(baseItem)) var group = this.items();
-    if (DataManager.isWeapon(baseItem)) var group = this.weapons();
-    if (DataManager.isArmor(baseItem)) var group = this.armors();
+    if (DataManager.isWeapon(baseItem)) var group = this.weapons().concat(includeEquip ? this.allEquips().filter(w => DataManager.isWeapon(w)) : []);
+    if (DataManager.isArmor(baseItem)) var group = this.armors().concat(includeEquip ? this.allEquips().filter(a => DataManager.isArmor(a)) : []);
     for (var i = 0; i < group.length; ++i) {
       var item = group[i];
       if (!item) continue;
@@ -1355,7 +1355,7 @@ Game_Party.prototype.numNotUpgradedIndependentItems = function(baseItem) {
       if (item.boostCount && item.boostCount !== 0) continue;
       // if (item.namePrefix && item.namePrefix !== "") continue;
       // if (item.nameSuffix && item.nameSuffix !== "") continue;
-      // if (item.baseItemName && item.baseItemName !== item.name) continue;
+      if (item.baseItemName && item.baseItemName !== baseItem.name) continue;
       // if (item.textColor && item.textColor !== baseItem.textColor) continue;
       if (item.baseItemId && item.baseItemId === id) value += 1;
     }
@@ -1377,7 +1377,7 @@ Game_Party.prototype.getNotUpgradedIndependentItem = function(baseItem) {
     if (item.boostCount && item.boostCount !== 0) continue;
     // if (item.namePrefix && item.namePrefix !== "") continue;
     // if (item.nameSuffix && item.nameSuffix !== "") continue;
-    // if (item.baseItemName && item.baseItemName !== item.name) continue;
+    if (item.baseItemName && item.baseItemName !== baseItem.name) continue;
     // if (item.textColor && item.textColor !== baseItem.textColor) continue;
     if (item.baseItemId && item.baseItemId === id) value = item;
   }
