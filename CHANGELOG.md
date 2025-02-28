@@ -5,12 +5,9 @@ INTRO
 - Added all respawnables to Telluria Castle Town.
 - A lone Skeleton can be randomly encountered in the Forest Arena...? after Laeryidyean's defeat.
 - Added a tutorial tip about the new moon respawning monsters.
-- 1 new items:
-  - Pan-Seared Mushrooms
-- 1 new equipment:
-  - Gold Ring
-- 1 new quests:
-  - Today's Training
+- Added a new quest: Today's Training.
+- Added Pan-Seared Mushrooms.
+- Re-added the Gold Ring.
 
 ### Changes
 - Removed random encounters (except the aforementioned lone Skeleton).
