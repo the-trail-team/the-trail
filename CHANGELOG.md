@@ -17,6 +17,7 @@ INTRO
   - Acrid Aroma stops enemies from chasing you.
   - Eau du Monstere now doubles the chance of a rare enemy spawning.
   - Both now add steps to the counter instead of resetting it.
+- Reworked equipment forging. You can now pick from all equipped/modified equipment; as a result, Cleansing Scrolls are no longer required.
 - Changed the save file location on Mac.
 - The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
 - Dried Blueberries no longer need Fiery Powder, meaning they can be cooked in Adon.
