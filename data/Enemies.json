@@ -3605,7 +3605,7 @@
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.05
+        "value": 0.04
       },
       {
         "code": 22,
@@ -3617,12 +3617,12 @@
     "name": "Earth Spirit",
     "note": "<Element: Earth>\n<Element Absorb: Earth>\n<Passive State: 136, 147>\n\n<Sideview Battler: Spirit_8>\n<Floating>\n<Attack Animation: 86>\n\n<Enemy Drops>\nBattle Plan: 5%\nEarth Essence: 20%\n</Enemy Drops>",
     "params": [
-      5454,
+      4000,
       0,
       42,
-      51,
+      41,
       63,
-      94,
+      84,
       30,
       45
     ]
@@ -6323,7 +6323,7 @@
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.08
+        "value": 0.05
       },
       {
         "code": 22,
@@ -6340,12 +6340,12 @@
     "name": "Water Elemental EX",
     "note": "<Element: Water>\n<Passive State: 136, 146, 202, 203>\n\n<Sideview Battler: Elemental_2>\n<Attack Animation: 82>\n\n<Element Amplify Water: +50%>\n\n<Boost Skill 36: Full>\n<AI Priority>\nUser HP% param > 50% +++ State !== Weak Point: Nasty Glare\nUser HP% param > 50% +++ User HP% param <= 75% +++ Random 50%: Waterfall\nUser HP% param > 50% +++ State !== Soaked: Bubble\nUser HP% param > 50%: Bubble\n\nUser HP% param <= 50% +++ User HP% param <= 25% +++ Random 50%: Staff Impulse\nUser HP% param <= 50% +++ State !== Burning Up!: Fire II\nUser HP% param <= 50%: Fire II\n</AI Priority>\n\n<Enemy Drops>\nWater Jug: 75%\nWater Jug: 75%\nFiery Blood: 75%\nFiery Blood: 75%\nTideflame Headpiece: 5%\nAqua Gem: 10%\nWater Essence: 20%\nFire Essence: 20%\n</Enemy Drops>",
     "params": [
-      6000,
+      5000,
       999,
-      35,
-      40,
+      33,
+      33,
       75,
-      90,
+      80,
       80,
       55
     ]
