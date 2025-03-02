@@ -1,5 +1,5 @@
 {
-  "autoplayBgm": true,
+  "autoplayBgm": false,
   "autoplayBgs": true,
   "battleback1Name": "Stone3",
   "battleback2Name": "Room2",
@@ -2714,6 +2714,13 @@
               ]
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._seek = AudioManager._bgmBuffer?.seek() ?? 0;"
+              ]
+            },
+            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -2773,6 +2780,27 @@
             "tileId": 0
           },
           "list": [
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "pos = $gameTemp._seek || 0;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "AudioManager.playBgm({name: \"town_haven\", volume: 75, pitch: 100, pan: 0}, pos);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "delete $gameTemp._seek;"
+              ]
+            },
             {
               "code": 223,
               "indent": 0,
