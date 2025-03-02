@@ -1,4 +1,4 @@
-# Alpha 15.6 (2/28/2025)
+# Alpha 15.6 (3/2/2025)
 Random encounters have been removed! At long last, The Trail has fully transitioned to encounters being visible and avoidable. No more interruptions while exploring!
 Equipment forging has been reworked! Cleansing Scrolls are no longer needed, and your other scrolls will keep their effects as you upgrade your gear.
 This update also includes a huge balancing patch, the return of some previously removed content, and a few game-breaking bug fixes!
