@@ -41,7 +41,7 @@ INTRO TEXT
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 
 ### Bug Fixes
--
+- Fixed a typo in Cut Down's description.
 
 <br><br>
 
