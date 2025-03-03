@@ -1407,6 +1407,13 @@
         },
         "list": [
           {
+            "code": 108,
+            "indent": 0,
+            "parameters": [
+              "<encScript:$gameSwitches.value(23)>"
+            ]
+          },
+          {
             "code": 0,
             "indent": 0,
             "parameters": []
@@ -2333,24 +2340,7 @@
             "code": 401,
             "indent": 0,
             "parameters": [
-              "\\p3\\lsonWell, there we go."
-            ]
-          },
-          {
-            "code": 101,
-            "indent": 0,
-            "parameters": [
-              "Actor4",
-              2,
-              0,
-              2
-            ]
-          },
-          {
-            "code": 401,
-            "indent": 0,
-            "parameters": [
-              "\\p3We're officially done now."
+              "\\p3\\lsonWell, there we go. We're officially done now."
             ]
           },
           {
@@ -8829,7 +8819,7 @@
               -1,
               1,
               0,
-              2000,
+              9999,
               true
             ]
           },

@@ -110,7 +110,7 @@ Game_Temp.prototype.recipeTemplate = function(name) {
             break;
         case 'FIRE':
             arr = [
-                [229, 151, 108, 135],
+                [135, 177, 108, 229, 151],
                 [],
                 []
             ]
@@ -413,7 +413,7 @@ Game_System.prototype.rareEnemyRoll = function() {
 // Small Chests
 
 Game_System.prototype.totalSmallChests = function() {
-    return 38;
+    return 37;
 };
 
 Game_System.prototype.smallChest = function() {
@@ -507,13 +507,13 @@ Game_System.prototype.chapter = function() {
 
 Game_System.prototype.championsTalisman = function() {
     return [
-        [0, 0, 0, 0, 0, 0, 0, 0],           // 0
-        [1, 1, 0, 0, 0, 0, 1, 0],           // 1
-        [3, 2, 1, 1, 2, 2, 2, 0],           // 2
-        [10, 8, 3, 3, 5, 5, 5, 1],          // 3
-        [15, 12, 5, 5, 8, 8, 10, 2],        // 4
-        [20, 15, 7, 7, 11, 11, 15, 3],      // 5
-        [30, 20, 10, 10, 15, 15, 20, 4],    // 6
+        [0, 0, 0, 0, 0, 0, 0, 0],       // 0
+        [1, 1, 0, 0, 0, 0, 1, 0],       // 1
+        [2, 2, 1, 1, 1, 1, 2, 1],       // 2
+        [4, 3, 2, 2, 2, 2, 3, 1],       // 3
+        [8, 5, 3, 3, 3, 3, 5, 2],       // 4
+        [12, 7, 4, 4, 5, 5, 7, 2],      // 5
+        [16, 10, 6, 6, 8, 8, 9, 3],     // 6
     ][this.chapter()];
 };
 
@@ -555,6 +555,7 @@ Game_System.prototype.nextMoonPhase = function() {
         this._moonRespawn = true;
         this._moonCycleComplete = true;
     }
+    $gameVariables.setValue(76, this._moonPhase);
 };
 
 // Melee Damage Types
@@ -5336,6 +5337,16 @@ Game_Party.prototype.allItems = function() {
     return this.items().concat(this.equipItems());
 };
 
+Game_Party.prototype.allEquips = function() {
+    data = [];
+    this.members().forEach(a => a.equips().filter(e => e).forEach(e => data.push(e)));
+    return data;
+};
+
+Game_Party.prototype.allItemsAndEquips = function() {
+    return this.allEquips().concat(this.allItems());
+};
+
 Game_Party.prototype.itemContainer = function(item) {
     if (!item) {
         return null;
@@ -5767,7 +5778,7 @@ Game_Party.prototype.addPet = function(name) {
         case 'Tender':
             actor.setCharacterImage('Fox', 0);
             break;
-        case 'Reggie':
+        case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
             break;
         default: // Remove pet
@@ -6009,6 +6020,10 @@ Game_Troop.prototype.performVictory = function() {
     this.members().forEach(function(enemy) {
         enemy.performVictory();
     });
+};
+
+Game_Troop.prototype.weaken = function() {
+    this.members().filter(e => e.isAlive()).forEach(e => e.setHp(1));
 };
 
 //-----------------------------------------------------------------------------
@@ -6409,6 +6424,7 @@ Game_Map.prototype.autoplay = function() {
         if ($gameSwitches.value(24))  $dataMap.bgm.name = "map_telluria";
         if ($gameSwitches.value(109)) $dataMap.bgm.name = "map_hunting";
     }
+    if ($gameMap._mapId == 77 && $gameSwitches.value(109)) $dataMap.bgm.name = "dungeon_cave";
     if ($dataMap.autoplayBgm) {
         if ($gamePlayer.isInVehicle()) {
             $gameSystem.saveWalkingBgm2();

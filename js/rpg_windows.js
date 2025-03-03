@@ -1811,19 +1811,20 @@ Window_MenuStatus.prototype.drawItemStatus = function(index) {
 Window_MenuStatus.prototype.drawActorSimpleStatus = function(actor, x, y, width) {
     var lineHeight = this.lineHeight();
     var xpad = Window_Base._faceWidth + (2 * Yanfly.Param.TextPadding);
+    if (SceneManager._scene instanceof Scene_Menu) xpad += (4 * Window_Base._iconWidth);
     var x2 = x + xpad;
     var width2 = Math.max(180, width - xpad - this.textPadding());
     if (this.maxItems() <= 6) {
         this.drawActorName(actor, x, y);
         this.drawActorLevel(actor, x, y + lineHeight * 1);
-        this.drawActorIcons(actor, x, y + lineHeight * 2);
+        this.drawActorIcons(actor, x, y + lineHeight * 2, xpad);
         this.drawActorClass(actor, x2, y, width2);
         this.drawActorEquipIcons(actor, x2 + width2, y, width2 - this.textWidth(actor.currentClass().name));  
         this.drawActorHp(actor, x2, y + lineHeight * 1, width2);
         this.drawActorMp(actor, x2, y + lineHeight * 2, width2);
     } else {
         this.drawActorName(actor, x, y + lineHeight * 0.5);
-        this.drawActorIcons(actor, x, y + lineHeight * 1.5);
+        this.drawActorIcons(actor, x, y + lineHeight * 1.5, xpad);
         this.drawActorHp(actor, x2, y + lineHeight * 0.5, width2);
         this.drawActorMp(actor, x2, y + lineHeight * 1.5, width2);
     }
@@ -4245,7 +4246,7 @@ function Window_EventItem() {
 Window_EventItem.prototype = Object.create(Window_ItemList.prototype);
 Window_EventItem.prototype.constructor = Window_EventItem;
 
-Window_EventItem.prototype.initialize = function(messageWindow) {
+Window_EventItem.prototype.initialize = function(messageWindow = new Window_Message) {
     this._messageWindow = messageWindow;
     var width = Graphics.boxWidth;
     var height = this.windowHeight();
@@ -4282,9 +4283,20 @@ Window_EventItem.prototype.updatePlacement = function() {
 
 Window_EventItem.prototype.includes = function(item) {
     var itypeId = $gameMessage.itemChoiceItypeId();
+    if (!item) return false;
+    if ((DataManager.isWeapon(itypeId) && DataManager.isWeapon(item)) || (DataManager.isArmor(itypeId) && DataManager.isArmor(item))) return item.baseItemId == itypeId.id;
     if (typeof itypeId == "string") return DataManager.isItem(item) && item.itemCategory.contains(itypeId);
     if (typeof itypeid == "number") return DataManager.isItem(item) && item.itypeId === itypeId;
     return false;
+};
+
+Window_EventItem.prototype.makeItemList = function() {
+    this._data = $gameParty.allItemsAndEquips().filter(function(item) {
+        return this.includes(item);
+    }, this);
+    if (this.includes(null)) {
+        this._data.push(null);
+    }
 };
 
 Window_EventItem.prototype.isEnabled = function(item) {
@@ -4294,7 +4306,7 @@ Window_EventItem.prototype.isEnabled = function(item) {
 Window_EventItem.prototype.onOk = function() {
     var item = this.item();
     var itemId = item ? item.id : 0;
-    $gameVariables.setValue($gameMessage.itemChoiceVariableId(), itemId);
+    $gameVariables.setValue($gameMessage.itemChoiceVariableId(), DataManager.isItem(item) ? itemId : item);
     this._messageWindow.terminateMessage();
     this.close();
 };
@@ -5339,13 +5351,13 @@ Window_BattleLog.prototype.makeHpDamageText = function(target) {
     var fmt;
     if (damage > 0 && result.drain) {
         fmt = isActor ? TextManager.actorDrain : TextManager.enemyDrain;
-        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, Yanfly.Util.toGroup(damage));
     } else if (damage > 0) {
         fmt = isActor ? TextManager.actorDamage : TextManager.enemyDamage;
-        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), Yanfly.Util.toGroup(damage));
     } else if (damage < 0) {
         fmt = isActor ? TextManager.actorRecovery : TextManager.enemyRecovery;
-        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, -damage);
+        return (crit ? "Critical hit!! " : "") + fmt.format(target.name(), TextManager.hp, Yanfly.Util.toGroup(-damage));
     } else {
         fmt = isActor ? TextManager.actorNoDamage : TextManager.enemyNoDamage;
         return fmt.format(target.name());

@@ -26061,28 +26061,21 @@
               "code": 401,
               "indent": 0,
               "parameters": [
-                "\\p2I've got to straighten three scarecrows."
+                "\\p2I've got to straighten a couple scarecrows."
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "There's a field next to us, another by the"
+                "There's a field next to us, and the other"
               ]
             },
             {
               "code": 401,
               "indent": 0,
               "parameters": [
-                "entrance of town, and the last one is due"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "south after you exit town."
+                "is by the entrance to the village."
               ]
             },
             {
@@ -30409,84 +30402,6 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Scarecrow was straightened!"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                4,
-                4,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 8 Complete Objective 1"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                4,
-                0,
-                3,
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 8 Show Objective 4"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 8 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -30595,7 +30510,7 @@
                 1,
                 4,
                 0,
-                3,
+                2,
                 0
               ]
             },
@@ -30754,84 +30669,6 @@
           "walkAnime": true,
           "list": [
             {
-              "code": 123,
-              "indent": 0,
-              "parameters": [
-                "A",
-                0
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 0,
-              "parameters": [
-                "",
-                0,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 0,
-              "parameters": [
-                "Scarecrow was straightened!"
-              ]
-            },
-            {
-              "code": 122,
-              "indent": 0,
-              "parameters": [
-                4,
-                4,
-                1,
-                0,
-                1
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 0,
-              "parameters": [
-                "Quest 8 Complete Objective 2"
-              ]
-            },
-            {
-              "code": 111,
-              "indent": 0,
-              "parameters": [
-                1,
-                4,
-                0,
-                3,
-                0
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 8 Show Objective 4"
-              ]
-            },
-            {
-              "code": 356,
-              "indent": 1,
-              "parameters": [
-                "Quest 8 Change Description Entry To 2"
-              ]
-            },
-            {
-              "code": 0,
-              "indent": 1,
-              "parameters": []
-            },
-            {
-              "code": 412,
-              "indent": 0,
-              "parameters": []
-            },
-            {
               "code": 0,
               "indent": 0,
               "parameters": []
@@ -30940,7 +30777,7 @@
                 1,
                 4,
                 0,
-                3,
+                2,
                 0
               ]
             },
@@ -32472,7 +32309,7 @@
               }
             ],
             "repeat": true,
-            "skippable": false,
+            "skippable": true,
             "wait": false
           },
           "moveSpeed": 3,
@@ -32943,7 +32780,7 @@
               }
             ],
             "repeat": true,
-            "skippable": false,
+            "skippable": true,
             "wait": false
           },
           "moveSpeed": 3,
@@ -33221,7 +33058,7 @@
               }
             ],
             "repeat": true,
-            "skippable": false,
+            "skippable": true,
             "wait": false
           },
           "moveSpeed": 3,
@@ -33758,7 +33595,7 @@
               }
             ],
             "repeat": true,
-            "skippable": false,
+            "skippable": true,
             "wait": false
           },
           "moveSpeed": 3,
@@ -34493,6 +34330,25 @@
               ]
             },
             {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Cow",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
+              ]
+            },
+            {
               "code": 122,
               "indent": 0,
               "parameters": [
@@ -34787,6 +34643,25 @@
                 0,
                 0,
                 1
+              ]
+            },
+            {
+              "code": 250,
+              "indent": 0,
+              "parameters": [
+                {
+                  "name": "Cow",
+                  "volume": 90,
+                  "pitch": 100,
+                  "pan": 0
+                }
+              ]
+            },
+            {
+              "code": 230,
+              "indent": 0,
+              "parameters": [
+                60
               ]
             },
             {

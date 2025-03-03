@@ -637,6 +637,7 @@ DataManager.processSkillMasteryLevelsNotetags1 = function(group) {
       'return ' + Yanfly.Param.SMLhpFormula);
     obj.masteryCooldown = new Function('turns', 'level','skill',
       'return ' + Yanfly.Param.SMLcdFormula);
+    obj.masteryGroup = obj.id;
 
     var evalMode = 'none';
     var evalText = '';
@@ -727,6 +728,9 @@ DataManager.processSkillMasteryLevelsNotetags1 = function(group) {
           obj.masteryCooldown = new Function('turns', 'level','skill',
             'return ' + formula);
         }
+      // Skill Upgrades
+      } else if (line.match(/<MASTERY GROUP:[ ](\d+)>/i)) {
+        obj.masteryGroup = parseInt(RegExp.$1);
       // End
       } else if (evalMode !== 'none') {
         evalText += line + '\n';
@@ -823,9 +827,9 @@ Game_BattlerBase.prototype.updateSkillMasteryUsageMax = function(skillId) {
 
 Game_BattlerBase.prototype.skillMasteryLevel = function(skill) {
   if (DataManager.isSkill(skill)) {
-    var skillId = skill.id;
+    var skillId = skill.masteryGroup;
   } else if (typeof skill === 'number') {
-    var skillId = skill;
+    var skillId = $dataSkills[skill].masteryGroup;
   } else {
     return 0;
   }
@@ -837,9 +841,9 @@ Game_BattlerBase.prototype.skillMasteryLevel = function(skill) {
 
 Game_BattlerBase.prototype.setSkillMasteryLevel = function(skill, value) {
   if (DataManager.isSkill(skill)) {
-    var skillId = skill.id;
+    var skillId = skill.masteryGroup;
   } else if (typeof skill === 'number') {
-    var skillId = skill;
+    var skillId = $dataSkills[skill].masteryGroup;
   } else {
     return 0;
   }
@@ -852,6 +856,7 @@ Game_BattlerBase.prototype.setSkillMasteryLevel = function(skill, value) {
 
 Game_BattlerBase.prototype.gainSkillMasteryLevel = function(skillId, value) {
   this.checkSkillMasteryLevels();
+  skillId = $dataSkills[skillId].masteryGroup;
   this._skillMasteryLevels[skillId] = this._skillMasteryLevels[skillId] || 0;
   this._skillMasteryLevels[skillId] += value;
   this._skillMasteryLevels[skillId] = this._skillMasteryLevels[skillId].clamp(0,
@@ -862,9 +867,9 @@ Game_BattlerBase.prototype.gainSkillMasteryLevel = function(skillId, value) {
 
 Game_BattlerBase.prototype.isMaxedSkillMasteryLevel = function(skill) {
   if (DataManager.isSkill(skill)) {
-    var skillId = skill.id;
+    var skillId = skill.masteryGroup;
   } else if (typeof skill === 'number') {
-    var skillId = skill;
+    var skillId = $dataSkills[skill].masteryGroup;
   } else {
     return false;
   }
@@ -875,9 +880,9 @@ Game_BattlerBase.prototype.isMaxedSkillMasteryLevel = function(skill) {
 
 Game_BattlerBase.prototype.skillMasteryUses = function(skill) {
   if (DataManager.isSkill(skill)) {
-    var skillId = skill.id;
+    var skillId = skill.masteryGroup;
   } else if (typeof skill === 'number') {
-    var skillId = skill;
+    var skillId = $dataSkills[skill].masteryGroup;
   } else {
     return 0;
   }
@@ -889,9 +894,9 @@ Game_BattlerBase.prototype.skillMasteryUses = function(skill) {
 
 Game_BattlerBase.prototype.setSkillMasteryUses = function(skill, value) {
   if (DataManager.isSkill(skill)) {
-    var skillId = skill.id;
+    var skillId = skill.masteryGroup;
   } else if (typeof skill === 'number') {
-    var skillId = skill;
+    var skillId = $dataSkills[skill].masteryGroup;
   } else {
     return 0;
   }
@@ -910,9 +915,9 @@ Game_BattlerBase.prototype.gainSkillMasteryUses = function(skill, value) {
 
 Game_BattlerBase.prototype.skillMasteryUsageMax = function(skill) {
   if (DataManager.isSkill(skill)) {
-    var skillId = skill.id;
+    var skillId = skill.masteryGroup;
   } else if (typeof skill === 'number') {
-    var skillId = skill;
+    var skillId = $dataSkills[skill].masteryGroup;
   } else {
     return 0;
   }
@@ -923,9 +928,9 @@ Game_BattlerBase.prototype.skillMasteryUsageMax = function(skill) {
 
 Game_BattlerBase.prototype.skillMasteryRate = function(skill) {
   if (DataManager.isSkill(skill)) {
-    var skillId = skill.id;
+    var skillId = skill.masteryGroup;
   } else if (typeof skill === 'number') {
-    var skillId = skill;
+    var skillId = $dataSkills[skill].masteryGroup;
   } else {
     return 0;
   }

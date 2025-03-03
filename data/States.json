@@ -106,7 +106,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Well Fed",
-    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.10;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nuser.addState(6);\n</Custom Remove Effect>\n\n<Help Description>\nIncreases MHP by 10%, AGI by 8%, ATK and MAT by 4%, and HRG by 6%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.08;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nuser.addState(6);\n</Custom Remove Effect>\n\n<Help Description>\nIncreases MHP and AGI by 8%, ATK and MAT by 4%, and HRG by 4%.\n</Help Description>",
     "priority": 26,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -118,7 +118,7 @@
       {
         "code": 21,
         "dataId": 0,
-        "value": 1.1
+        "value": 1.08
       },
       {
         "code": 21,
@@ -138,7 +138,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.06
+        "value": 0.04
       },
       {
         "code": 14,
@@ -161,7 +161,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Very Well Fed",
-    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.15;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nuser.addState(4);\n</Custom Remove Effect>\n\n<Help Description>\nIncreases MHP by 15%, AGI by 12%, ATK and MAT by 6%, and HRG by 8%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.12;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nuser.addState(4);\n</Custom Remove Effect>\n\n<Help Description>\nIncreases MHP and AGI by 12%, ATK and MAT by 6%, and HRG by 6%.\n</Help Description>",
     "priority": 27,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -173,7 +173,7 @@
       {
         "code": 21,
         "dataId": 0,
-        "value": 1.15
+        "value": 1.12
       },
       {
         "code": 21,
@@ -193,7 +193,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.08
+        "value": 0.06
       },
       {
         "code": 14,
@@ -221,7 +221,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Somewhat Well Fed",
-    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.05;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Help Description>\nIncreases MHP by 5%, AGI by 4%, ATK and MAT by 2%, and HRG by 4%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.04;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Help Description>\nIncreases MHP and AGI by 4%, ATK and MAT by 2%, and HRG by 2%.\n</Help Description>",
     "priority": 25,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -233,7 +233,7 @@
       {
         "code": 21,
         "dataId": 0,
-        "value": 1.05
+        "value": 1.04
       },
       {
         "code": 21,
@@ -253,7 +253,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.04
+        "value": 0.02
       }
     ]
   },
@@ -370,7 +370,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Tome of Experience",
-    "note": "<Category: Bypass Death Removal>\n\n<Help Description>\nIncreases EXR by 20%.\n</Help Description>",
+    "note": "<Category: Bypass Death Removal>\n\n<Reapply Add Turns>\n\n<Help Description>\nIncreases EXR by 20%.\n</Help Description>",
     "priority": 2,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -549,7 +549,7 @@
       {
         "code": 21,
         "dataId": 0,
-        "value": 1.25
+        "value": 1.15
       }
     ],
     "iconIndex": 645,
@@ -561,7 +561,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Vital Cola",
-    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.25;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Help Description>\nIncreases MHP by 25%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.15;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Help Description>\nIncreases MHP by 15%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -579,7 +579,7 @@
       {
         "code": 21,
         "dataId": 1,
-        "value": 1.25
+        "value": 1.15
       }
     ],
     "iconIndex": 646,
@@ -591,7 +591,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Mana Fizz",
-    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.25;\nvar stat = user.mp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainMp(gain);\n</Custom Apply Effect>\n\n<Help Description>\nIncreases MMP by 25%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.15;\nvar stat = user.mp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainMp(gain);\n</Custom Apply Effect>\n\n<Help Description>\nIncreases MMP by 15%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -609,7 +609,7 @@
       {
         "code": 21,
         "dataId": 3,
-        "value": 1.25
+        "value": 1.15
       }
     ],
     "iconIndex": 647,
@@ -621,7 +621,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Rocky Sip",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases DEF by 25%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases DEF by 15%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -639,7 +639,7 @@
       {
         "code": 21,
         "dataId": 4,
-        "value": 1.25
+        "value": 1.15
       }
     ],
     "iconIndex": 648,
@@ -651,7 +651,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Arcanic Chug",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases MAT by 25%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases MAT by 15%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -897,42 +897,42 @@
       {
         "code": 21,
         "dataId": 0,
-        "value": 1.1
+        "value": 1.05
       },
       {
         "code": 21,
         "dataId": 1,
-        "value": 1.1
+        "value": 1.05
       },
       {
         "code": 21,
         "dataId": 2,
-        "value": 1.1
+        "value": 1.05
       },
       {
         "code": 21,
         "dataId": 3,
-        "value": 1.1
+        "value": 1.05
       },
       {
         "code": 21,
         "dataId": 4,
-        "value": 1.1
+        "value": 1.05
       },
       {
         "code": 21,
         "dataId": 5,
-        "value": 1.1
+        "value": 1.05
       },
       {
         "code": 21,
         "dataId": 6,
-        "value": 1.1
+        "value": 1.05
       },
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.1
+        "value": 0.05
       }
     ],
     "iconIndex": 642,
@@ -944,7 +944,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Well Rested",
-    "note": "<Category: Bypass Recover All Removal>\n<Category: buff>\n\n<Help Description>\nIncreases MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 10%.\n</Help Description>",
+    "note": "<Category: Bypass Recover All Removal>\n<Category: buff>\n\n<Help Description>\nIncreases MHP, MMP, ATK, DEF, MAT, MDF, AGI, and HRG by 5%.\n</Help Description>",
     "overlay": 0,
     "priority": 15,
     "removeAtBattleEnd": false,
@@ -974,7 +974,7 @@
     "minTurns": 4,
     "motion": 0,
     "name": "Rejuvenation",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases HRG by 10%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Reapply Add Turns>\n\n<Help Description>\nIncreases HRG by 10%.\n</Help Description>",
     "overlay": 6,
     "priority": 30,
     "removeAtBattleEnd": false,
@@ -1066,7 +1066,7 @@
     "message2": "",
     "message3": "",
     "message4": "",
-    "minTurns": 8,
+    "minTurns": 10,
     "motion": 0,
     "name": "Inspired",
     "note": "<Category: buff>\n\n<Help Description>\nIncreases ATK and MAT by 10%.\n</Help Description>",
@@ -1128,6 +1128,11 @@
         "code": 22,
         "dataId": 1,
         "value": -0.2
+      },
+      {
+        "code": 11,
+        "dataId": 3,
+        "value": 2
       }
     ],
     "iconIndex": 107,
@@ -1139,7 +1144,7 @@
     "minTurns": 5,
     "motion": 0,
     "name": "Soaked",
-    "note": "<Category: Water>\n<Category: debuff>\n<Category: weak debuff>\n\n<animationRow:21>\n<yAnchor: 0.75>\n\n<Help Description>\nDecreases AGI by 50% and EVA by 20%.\n</Help Description>",
+    "note": "<Category: Water>\n<Category: debuff>\n<Category: weak debuff>\n\n<animationRow:21>\n<yAnchor: 0.75>\n\n<Help Description>\nDecreases AGI by 50% and EVA by 20%. Doubles incoming \\nl[3] damage.\n</Help Description>",
     "overlay": 0,
     "priority": 48,
     "removeAtBattleEnd": false,
@@ -1229,7 +1234,7 @@
       {
         "code": 21,
         "dataId": 2,
-        "value": 1.25
+        "value": 1.15
       }
     ],
     "iconIndex": 649,
@@ -1241,7 +1246,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Brawl Brew",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases ATK by 25%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases ATK by 15%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -1259,7 +1264,7 @@
       {
         "code": 21,
         "dataId": 5,
-        "value": 1.25
+        "value": 1.15
       }
     ],
     "iconIndex": 650,
@@ -1271,7 +1276,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Warding Swig",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases MDF by 25%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases MDF by 15%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -2250,7 +2255,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.05
+        "value": 0.03
       }
     ],
     "iconIndex": 651,
@@ -2262,7 +2267,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Cranberry Fizz",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases HRG by 5%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases HRG by 3%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,
@@ -2569,7 +2574,7 @@
     "message2": "",
     "message3": "",
     "message4": "",
-    "minTurns": 8,
+    "minTurns": 10,
     "motion": 0,
     "name": "Hold the Line I",
     "note": "<Category: buff>\n\n<Help Description>\nDecreases PDR and MDR by 10%.\n</Help Description>",
@@ -2609,7 +2614,7 @@
     "message2": "",
     "message3": "",
     "message4": "",
-    "minTurns": 13,
+    "minTurns": 15,
     "motion": 0,
     "name": "Hold the Line II",
     "note": "<Category: buff>\n\n<Cannot Select: Skill 84>\n\n<Help Description>\nDecreases PDR and MDR by 20%.\n</Help Description>",
@@ -2640,7 +2645,7 @@
     ],
     "iconIndex": 547,
     "maxTurns": 4,
-    "message1": "'s weak point was exposed! PDR and MDR up!",
+    "message1": "",
     "message2": "'s weak point was exposed! PDR and MDR up!",
     "message3": "",
     "message4": " addressed their weak point.",
@@ -2954,12 +2959,12 @@
       {
         "code": 21,
         "dataId": 3,
-        "value": 1.2
+        "value": 1.1
       },
       {
         "code": 21,
         "dataId": 5,
-        "value": 1.2
+        "value": 1.1
       }
     ],
     "iconIndex": 29,
@@ -2971,7 +2976,7 @@
     "minTurns": 5,
     "motion": 0,
     "name": "Steadfast",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases DEF and MDF by 20%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases DEF and MDF by 10%.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": true,
@@ -3103,7 +3108,7 @@
     "motion": 0,
     "overlay": 0,
     "name": "Exquisitely Well Fed",
-    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.20;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nuser.addState(5);\n</Custom Remove Effect>\n\n<Help Description>\nIncreases MHP by 20%, AGI by 16%, ATK and MAT by 8%, and HRG by 10%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Custom Apply Effect>\nvar boost = 1.16;\nvar stat = user.hp;\nvar gain = Math.ceil(stat * (boost - 1));\nuser.gainHp(gain);\n</Custom Apply Effect>\n\n<Custom Remove Effect>\nuser.addState(5);\n</Custom Remove Effect>\n\n<Help Description>\nIncreases MHP and AGI by 16%, ATK and MAT by 8%, and HRG by 8%.\n</Help Description>",
     "priority": 28,
     "removeAtBattleEnd": false,
     "removeByDamage": false,
@@ -3115,7 +3120,7 @@
       {
         "code": 21,
         "dataId": 0,
-        "value": 1.2
+        "value": 1.16
       },
       {
         "code": 21,
@@ -3135,7 +3140,7 @@
       {
         "code": 22,
         "dataId": 7,
-        "value": 0.1
+        "value": 0.08
       },
       {
         "code": 14,
@@ -3162,7 +3167,7 @@
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.125
+        "value": 0.2
       }
     ],
     "iconIndex": 28,
@@ -3174,7 +3179,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Focus Up",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases HIT by 12.5%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases HIT by 20%.\n</Help Description>",
     "overlay": 0,
     "priority": 20,
     "removeAtBattleEnd": true,
@@ -4448,12 +4453,12 @@
     "chanceByDamage": 100,
     "traits": [],
     "iconIndex": 745,
-    "maxTurns": 3,
+    "maxTurns": 5,
     "message1": " was flashbanged!",
     "message2": "",
     "message3": "",
     "message4": " is no longer flashed.",
-    "minTurns": 3,
+    "minTurns": 5,
     "motion": 0,
     "name": "Flashbang",
     "note": "<Category: debuff>\n<Category: moderate debuff>\n\n<Custom Remove Effect>\ntarget._flashbang = 0;\n</Custom Remove Effect>\n\n<Help Description>\nDecreases ATK, MAT, DEF, MDF, and AGI by \\evalText<<Math.round((1 - Math.pow(0.9, this._battler._flashbang)) * 100)>>% (next stack: \\evalText<<Math.round((1 - Math.pow(0.9, this._battler._flashbang + 1)) * 100)>>%).\n</Help Description>",
@@ -5187,7 +5192,7 @@
       {
         "code": 21,
         "dataId": 3,
-        "value": 1.2
+        "value": 1.1
       }
     ],
     "iconIndex": 763,
@@ -5199,7 +5204,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Thick-Skinned Herb",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases DEF by 20%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases DEF by 10%.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": false,
@@ -5217,7 +5222,7 @@
       {
         "code": 21,
         "dataId": 2,
-        "value": 1.2
+        "value": 1.1
       }
     ],
     "iconIndex": 764,
@@ -5229,7 +5234,7 @@
     "minTurns": 10,
     "motion": 0,
     "name": "Vicious Herb",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases ATK by 20%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases ATK by 10%.\n</Help Description>",
     "overlay": 0,
     "priority": 30,
     "removeAtBattleEnd": false,
@@ -6359,7 +6364,7 @@
       {
         "code": 22,
         "dataId": 8,
-        "value": 0.1
+        "value": 0.05
       }
     ],
     "iconIndex": 803,
@@ -6371,7 +6376,7 @@
     "minTurns": 15,
     "motion": 0,
     "name": "Blueberry Sizzle",
-    "note": "<Category: buff>\n\n<Help Description>\nIncreases MRG by 10%.\n</Help Description>",
+    "note": "<Category: buff>\n\n<Help Description>\nIncreases MRG by 5%.\n</Help Description>",
     "overlay": 0,
     "priority": 10,
     "removeAtBattleEnd": false,

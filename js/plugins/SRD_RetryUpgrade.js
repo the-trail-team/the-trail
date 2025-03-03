@@ -706,7 +706,6 @@ Scene_Retry.prototype.commandPersonal = function() {
 };
 
 Scene_Retry.prototype.commandStartBattle = function() {
-	$gameTemp.reserveCommonEvent(53);
 	Window_RetryCommand._lastCommandSymbol = null;
 	SceneManager.goto(Scene_Battle);
 };

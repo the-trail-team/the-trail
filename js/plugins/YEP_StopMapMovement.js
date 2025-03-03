@@ -144,7 +144,7 @@ Game_Event.prototype.updateSelfMovement = function() {
 };
 
 Game_Event.prototype.preventSelfMovement = function() {
-    if ($gameMap._mapId === 183 && $gameVariables.value(55) < 7) return false;
+    if (!this._monster) return false;
     if (this._moveType === 0) return true;
     if ($gameTemp.isStopMapEventMovement()) return true;
     if (Yanfly.Param.StopMsg && $gameMessage.isBusy()) return true;

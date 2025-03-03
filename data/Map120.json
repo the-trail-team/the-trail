@@ -4065,7 +4065,7 @@
                 [
                   "Your wares?",
                   "We've got your items! <<s[49]>>",
-                  "How do I use equipment in crafting? <<!s[49]>>",
+                  "How do I use equipment in crafting? <<true>>",
                   "So, more about the Blazing Sands... <<!s[49] || s[50]>>",
                   "Quest complete! <<!s[50] || s[52]>>",
                   "Just saying hi."
@@ -4491,54 +4491,6 @@
               "code": 401,
               "indent": 2,
               "parameters": [
-                "\\willJust note that if you've used any upgraders on"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "a piece of equipment, it needs to be reset using"
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "a \\ii[54] before you can craft with it."
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Telluria1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
-                "\\willThat's really all there is to it!"
-              ]
-            },
-            {
-              "code": 101,
-              "indent": 2,
-              "parameters": [
-                "Telluria1",
-                2,
-                0,
-                2
-              ]
-            },
-            {
-              "code": 401,
-              "indent": 2,
-              "parameters": [
                 "\\will..."
               ]
             },
@@ -4759,7 +4711,7 @@
               "indent": 1,
               "parameters": [
                 2,
-                "How do I use equipment in crafting? <<!s[49]>>"
+                "How do I use equipment in crafting? <<true>>"
               ]
             },
             {

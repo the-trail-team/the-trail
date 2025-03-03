@@ -776,7 +776,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A smooth cherry-flavored drink that boosts\nyour MHP by 25%. Lasts for 15 turns.",
+    "description": "A smooth cherry-flavored drink that boosts\nyour MHP by 15%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -809,7 +809,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A fizzy blueberry-flavored drink that boosts\nyour MMP by 25%. Lasts for 15 turns.",
+    "description": "A fizzy blueberry-flavored drink that boosts\nyour MMP by 15%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -842,7 +842,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A viscous almond-flavored drink that boosts\nyour DEF by 25%. Lasts for 15 turns.",
+    "description": "A viscous almond-flavored drink that boosts\nyour DEF by 15%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -875,7 +875,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A spicy grape-flavored drink that boosts\nyour MAT by 25%. Lasts for 15 turns.",
+    "description": "A spicy grape-flavored drink that boosts\nyour MAT by 15%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -1045,7 +1045,7 @@
     "iconIndex": 724,
     "itypeId": 1,
     "name": "ATK Scroll",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nATK: +2\nPrefix: Pointy\n</Upgrade Effect>\n<Upgrade Tooltip: ATK +2>",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nATK: +2\nPrefix: Pointy\nWeight: +1\n</Upgrade Effect>\n<Upgrade Tooltip: ATK +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1071,7 +1071,7 @@
     "iconIndex": 724,
     "itypeId": 1,
     "name": "MAT Scroll",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nMAT: +2\nPrefix: Mystic\n</Upgrade Effect>\n<Upgrade Tooltip: MAT +2>",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nMAT: +2\nPrefix: Mystic\nWeight: +1\n</Upgrade Effect>\n<Upgrade Tooltip: MAT +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1143,7 +1143,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Blueberries seriously do taste like the color\nblue! Boosts MRG by 10%, lasts for 15 turns.",
+    "description": "Blueberries seriously do taste like the color\nblue! Boosts MRG by 5%, lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -1176,7 +1176,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A combination of two drinks that increases\nyour HRG by 5% and MRG by 10% for 15 turns.",
+    "description": "A combination of two drinks that increases\nyour HRG by 3% and MRG by 5% for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -1472,7 +1472,7 @@
     "iconIndex": 725,
     "itypeId": 1,
     "name": "DEF Scroll",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nDEF: +2\nPrefix: Hard\n</Upgrade Effect>\n<Upgrade Tooltip: DEF +2>",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nDEF: +2\nPrefix: Hard\nWeight: +1\n</Upgrade Effect>\n<Upgrade Tooltip: DEF +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1498,7 +1498,7 @@
     "iconIndex": 725,
     "itypeId": 1,
     "name": "MDF Scroll",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nMDF: +2\nPrefix: Warding\n</Upgrade Effect>\n<Upgrade Tooltip: MDF +2>",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nMDF: +2\nPrefix: Warding\nWeight: +1\n</Upgrade Effect>\n<Upgrade Tooltip: MDF +2>",
     "occasion": 3,
     "price": 60,
     "repeats": 1,
@@ -1778,7 +1778,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A gritty chicken-flavored drink that boosts\nyour ATK by 25%. Lasts for 15 turns.",
+    "description": "A gritty chicken-flavored drink that boosts\nyour ATK by 15%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -1811,7 +1811,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A sparkly huckleberry-flavored drink that boosts\nyour MDF by 25%. Lasts for 15 turns.",
+    "description": "A sparkly huckleberry-flavored drink that boosts\nyour MDF by 15%. Lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -2333,13 +2333,13 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Summons Reggie the monkey. His nature powers\nwill halve all item respawn times.",
+    "description": "Summons Coco the monkey. His nature powers\nwill halve all item respawn times.",
     "effects": [],
     "hitType": 0,
     "iconIndex": 1875,
     "itypeId": 2,
-    "name": "Reggie's Bananas",
-    "note": "<Menu Category: Pets>\n<Pet: Reggie>\n\nWas once the Raw Fish.",
+    "name": "Coco's Bananas",
+    "note": "<Menu Category: Pets>\n<Pet: Coco>\n\nWas once the Raw Fish.",
     "occasion": 3,
     "price": 0,
     "repeats": 1,
@@ -3097,7 +3097,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "Douse yourself in this lovely liquid that will attract\ntwice as many monsters to you for 150 steps.",
+    "description": "Douse yourself in this lovely liquid that will double\nyour odds of encountering a rare enemy for 150 steps.",
     "effects": [
       {
         "code": 44,
@@ -4042,9 +4042,9 @@
     "iconIndex": 553,
     "itypeId": 1,
     "name": "Dried Blueberries",
-    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\nFiery Powder\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBlueberries\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>",
     "occasion": 3,
-    "price": 4,
+    "price": 2,
     "repeats": 1,
     "scope": 0,
     "speed": 0,
@@ -4776,7 +4776,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "I had just one query... boosts\nHRG by 5%, lasts for 15 turns.",
+    "description": "I had just one query... boosts\nHRG by 3%, lasts for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -4848,7 +4848,7 @@
     "iconIndex": 238,
     "itypeId": 1,
     "name": "ATK Scroll ★",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nATK: +3\nPrefix: Sharp\n</Upgrade Effect>\n<Upgrade Tooltip: ATK +3>",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nATK: +3\nPrefix: Sharp\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: ATK +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4874,7 +4874,7 @@
     "iconIndex": 238,
     "itypeId": 1,
     "name": "MAT Scroll ★",
-    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nMAT: +3\nPrefix: Occult\n</Upgrade Effect>\n<Upgrade Tooltip: MAT +3>",
+    "note": "<Upgrade Weapon Type: 0>\n<Upgrade Effect>\nMAT: +3\nPrefix: Occult\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: MAT +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4900,7 +4900,7 @@
     "iconIndex": 624,
     "itypeId": 1,
     "name": "DEF Scroll ★",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nDEF: +3\nPrefix: Armored\n</Upgrade Effect>\n<Upgrade Tooltip: DEF +3>",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nDEF: +3\nPrefix: Armored\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: DEF +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4926,7 +4926,7 @@
     "iconIndex": 624,
     "itypeId": 1,
     "name": "MDF Scroll ★",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nMDF: +3\nPrefix: Precluding\n</Upgrade Effect>\n<Upgrade Tooltip: MDF +3>",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nMDF: +3\nPrefix: Precluding\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: MDF +3>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4952,7 +4952,7 @@
     "iconIndex": 625,
     "itypeId": 1,
     "name": "PDR Scroll",
-    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 6, value: 0.99});\nPrefix: Tough\n</Upgrade Effect>\n<Upgrade Tooltip: PDR -1%>",
+    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 6, value: 0.99});\nPrefix: Tough\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: PDR -1%>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -4978,7 +4978,7 @@
     "iconIndex": 625,
     "itypeId": 1,
     "name": "MDR Scroll",
-    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 7, value: 0.99});\nPrefix: Spiritual\n</Upgrade Effect>\n<Upgrade Tooltip: MDR -1%>",
+    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 7, value: 0.99});\nPrefix: Spiritual\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: MDR -1%>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -5004,7 +5004,7 @@
     "iconIndex": 625,
     "itypeId": 1,
     "name": "GRD Scroll",
-    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 1, value: 1.50});\nPrefix: Determined\n</Upgrade Effect>\n<Upgrade Tooltip: GRD +50%>",
+    "note": "<Upgrade Armor Type: 2>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 1, value: 1.50});\nPrefix: Determined\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: GRD +50%>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -5030,7 +5030,7 @@
     "iconIndex": 626,
     "itypeId": 1,
     "name": "HRG Scroll",
-    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 22, dataId: 7, value: 0.005});\nPrefix: Vital\n</Upgrade Effect>\n<Upgrade Tooltip: HRG +0.5%>",
+    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 22, dataId: 7, value: 0.005});\nPrefix: Vital\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: HRG +0.5%>",
     "occasion": 3,
     "price": 360,
     "repeats": 1,
@@ -5056,7 +5056,7 @@
     "iconIndex": 626,
     "itypeId": 1,
     "name": "MRG Scroll",
-    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 22, dataId: 8, value: 0.01});\nPrefix: Manic\n</Upgrade Effect>\n<Upgrade Tooltip: MRG +1%>",
+    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 22, dataId: 8, value: 0.01});\nPrefix: Manic\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: MRG +1%>",
     "occasion": 3,
     "price": 360,
     "repeats": 1,
@@ -5082,7 +5082,7 @@
     "iconIndex": 626,
     "itypeId": 1,
     "name": "EXR Scroll",
-    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 9, value: 1.02});\nPrefix: Expert\n</Upgrade Effect>\n<Upgrade Tooltip: EXR +2%>",
+    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 9, value: 1.02});\nPrefix: Expert\nWeight: +3\n</Upgrade Effect>\n<Upgrade Tooltip: EXR +2%>",
     "occasion": 3,
     "price": 360,
     "repeats": 1,
@@ -5108,7 +5108,7 @@
     "iconIndex": 626,
     "itypeId": 1,
     "name": "MCR Scroll",
-    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 4, value: 0.985});\nPrefix: Adept\n</Upgrade Effect>\n<Upgrade Tooltip: MCR -1.5%>",
+    "note": "<Upgrade Armor Type: 6, 8>\n<Upgrade Effect>\nEval: item.traits.push({code: 23, dataId: 4, value: 0.985});\nPrefix: Adept\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: MCR -1.5%>",
     "occasion": 3,
     "price": 360,
     "repeats": 1,
@@ -5171,7 +5171,7 @@
   },
   {
     "id": 177,
-    "animationId": 0,
+    "animationId": 41,
     "consumable": true,
     "damage": {
       "critical": false,
@@ -5180,15 +5180,28 @@
       "type": 0,
       "variance": 20
     },
-    "description": "",
-    "effects": [],
+    "description": "Mushrooms cooked in a dry pan over low heat, releasing\ntheir moisture to develop a rich, umami-packed flavor.",
+    "effects": [
+      {
+        "code": 11,
+        "dataId": 0,
+        "value1": 0,
+        "value2": 15
+      },
+      {
+        "code": 21,
+        "dataId": 4,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
     "hitType": 0,
-    "iconIndex": 0,
+    "iconIndex": 1956,
     "itypeId": 1,
-    "name": "",
-    "note": "Was once the Blank Tome.",
+    "name": "Pan-Seared Mushrooms",
+    "note": "<Menu Category: Foodstuffs>\n\n<Synthesis Ingredients>\nBrown Mushroom: 3\n</Synthesis Ingredients>\n<Mask Name: Demoisturized Fruit>\n<Synthesis SE: Fire2>\n\nWas once the Blank Tome.",
     "occasion": 0,
-    "price": 0,
+    "price": 20,
     "repeats": 1,
     "scope": 7,
     "speed": 0,
@@ -6162,7 +6175,7 @@
     "iconIndex": 664,
     "itypeId": 1,
     "name": "INT Scroll",
-    "note": "<Upgrade Armor Type: 3>\n<Upgrade Effect>\nLUK: +2\nPrefix: Smart\n</Upgrade Effect>\n<Upgrade Tooltip: INT +2>",
+    "note": "<Upgrade Armor Type: 3>\n<Upgrade Effect>\nLUK: +2\nPrefix: Smart\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: INT +2>",
     "occasion": 3,
     "price": 180,
     "repeats": 1,
@@ -6625,7 +6638,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A combination of several drinks that boosts\nmost of your core stats by 25% for 15 turns.",
+    "description": "A combination of several drinks that boosts\nmost of your core stats by 15% for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -6883,7 +6896,7 @@
     "iconIndex": 624,
     "itypeId": 1,
     "name": "EVA Scroll",
-    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nEval: item.traits.push({code: 22, dataId: 1, value: 0.01});\nPrefix: Evasive\n</Upgrade Effect>\n<Upgrade Tooltip: EVA +1%>",
+    "note": "<Upgrade Armor Type: 3, 4, 5>\n<Upgrade Effect>\nEval: item.traits.push({code: 22, dataId: 1, value: 0.01});\nPrefix: Evasive\nWeight: +2\n</Upgrade Effect>\n<Upgrade Tooltip: EVA +1%>",
     "occasion": 3,
     "price": 240,
     "repeats": 1,
@@ -7658,7 +7671,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A combination of several drinks that boosts\nsome of your offensive stats by 25% for 15 turns.",
+    "description": "A combination of several drinks that boosts\nsome of your offensive stats by 15% for 15 turns.",
     "effects": [
       {
         "code": 21,
@@ -7703,7 +7716,7 @@
       "type": 0,
       "variance": 20
     },
-    "description": "A combination of several drinks that boosts\nsome of your defensive stats by 25% for 15 turns.",
+    "description": "A combination of several drinks that boosts\nsome of your defensive stats by 15% for 15 turns.",
     "effects": [
       {
         "code": 21,

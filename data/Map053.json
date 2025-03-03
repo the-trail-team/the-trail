@@ -1,5 +1,5 @@
 {
-  "autoplayBgm": true,
+  "autoplayBgm": false,
   "autoplayBgs": true,
   "battleback1Name": "",
   "battleback2Name": "",
@@ -1470,6 +1470,27 @@
           },
           "list": [
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "pos = $gameTemp._seek || 0;"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "AudioManager.playBgm({name: \"town_haven_bass\", volume: 75, pitch: 100, pan: 0}, pos);"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "delete $gameTemp._seek;"
+              ]
+            },
+            {
               "code": 223,
               "indent": 0,
               "parameters": [
@@ -1652,6 +1673,13 @@
                 ],
                 1,
                 false
+              ]
+            },
+            {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._seek = AudioManager._bgmBuffer?.seek() ?? 0;"
               ]
             },
             {

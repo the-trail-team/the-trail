@@ -91,8 +91,8 @@ API_LEADERBOARD._dataVariable = 83;
 
 API_LEADERBOARD.leaderboards = function() {
     return [
-        ["Bits", $gameParty.gold()],
-        ["Damage Dealt", $gameVariables.value(27)],
+        ["Bits Collected", $gameVariables.value(CGMV.ExtraStats.GoldLooted)],
+        ["Damage Dealt", $gameVariables.value(CGMV.ExtraStats.DamageDealt)],
         ["Enemies Defeated", $gameParty.killCount()],
         ["Playtime", $gameSystem.playtime()]
     ];
