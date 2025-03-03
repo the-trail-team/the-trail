@@ -1,15 +1,15 @@
-# Alpha 15.6 (3/2/2025)
+# Alpha 15.6 (3/3/2025)
 Random encounters have been removed! At long last, The Trail has fully transitioned to encounters being visible and avoidable. No more interruptions while exploring!
 Equipment forging has been reworked! Cleansing Scrolls are no longer needed, and your other scrolls will keep their effects as you upgrade your gear.
 This update also includes a huge balancing patch, the return of some previously removed content, and a few game-breaking bug fixes!
-On top of all that, many small additions/changes have been made throughout the game to further enhance the gameplay experience. The Trail just keeps on getting more polished!
+On top of all that, many small additions and tweaks have been made to further refine the gameplay. The Trail just keeps on getting more polished!
 
 ### Additions
 - Added a new quest: Today's Training.
 - Added Pan-Seared Mushrooms.
 - Re-added the Gold Ring.
-- Most respawnables can now be found in Telluria Castle Town.
-- A lone Skeleton can be randomly encountered in the Forest Arena...? after Laeryidyean's defeat.
+- Most respawning items can now be found in Telluria Castle Town.
+- A lone Skeleton can be randomly encountered in the fake Forest Arena after Laeryidyean's defeat.
 - Added a tutorial tip about the new moon's effect of respawning monsters.
 
 ### Changes
@@ -22,10 +22,10 @@ On top of all that, many small additions/changes have been made throughout the g
   - Scrolls will be kept when upgrading equipment. If multiple upgraded pieces of equipment are used, the one with the highest "upgrade weight" will be chosen.
 - Skill upgrades now hide their lower tiers. Mastery levels will be shared between all tiers.
 - Dried Blueberries no longer require Fiery Powder, meaning they can be cooked right from the start of the game.
-- The South Field and Ancient Charm cutscene are no longer part of Player 2's chores.
+- Player 2's chores no longer include the South Field and Ancient Charm cutscene.
 - Mark moves back into his house after you reach Telluria Field.
-- Except for monsters, all events can now move while another event is running.
-- After defeating Apocalypse, Green Slimes will began spawning in Green Slime Cavern again.
+- All events (except monsters) can now move while another event is active.
+- After defeating Apocalypse, Green Slimes will begin spawning in Green Slime Cavern again.
 - The game now automatically goes into fullscreen once loaded.
 - Changed the save file location on Mac.
 - Changed the Bits leaderboard to Bits Collected.
@@ -33,7 +33,7 @@ On top of all that, many small additions/changes have been made throughout the g
 - Reduced the opacity of the night overlay.
 - The main menu can now display up to 8 state icons.
 - Damage is now displayed using commas.
-- Lowered the width of the tracked quest window.
+- Reduced the width of the tracked quest window.
 - Milking cows has been improved.
 - Reduced damage of poison water at the Ruined House from 10 → 5.
 - Big Mouth and Smart Mouth now approach you in Haven Harbor from the entrance rather than the port.
@@ -82,12 +82,12 @@ Some of these changes seem extreme, but this is all for the sake of maintaining 
   - Steadfast DEF, MDF: 20% → 10%
 
 ### Other Balancing
+- Earth no longer takes double damage from wind.
+- Soaked now doubles incoming ice damage.
 - Increased Flashbang duration from 3 → 5 turns.
 - Buffed Focus Up HIT increase from 12.5% → 20%.
 - Hold the Line I/II and Inspired no longer have turn variance.
-- Soaked now doubles incoming ice damage.
-- Earth now longer takes double damage from wind.
-- Selfish Candle and Fiery Tablet now also provide immunity to Burning Up!.
+- Selfish Candle and Fiery Tablet now grant immunity to Burning Up! (in addition to On Fire!).
 - Rebalanced Fiery Tablet: no longer provides outgoing elemental damage besides fire, but decreases fire damage taken by 10%.
 - Red Slimes and Bats can now drop Coal.
 - Skeleton Knights can now drop Ruby Rings.
@@ -109,10 +109,10 @@ Some of these changes seem extreme, but this is all for the sake of maintaining 
 - Fixed the holiday event switch in Tester Tower not working properly.
 - Fixed quest completion never reaching 100%.
 - Fixed a bug where quests you hadn't yet accepted could become the tracked quest.
-- Fixed a bug where the tracked quest window could would keep displaying a completed quest if it was there were no more quests available.
+- Fixed a bug where the tracked quest window would continue displaying a completed quest if no other quests were available.
 - Fixed incorrect value for total small chests.
 - Fixed Nasty Glare taking a long time to apply Weak Point to the whole party.
-- Fixed large tree tile being difficult to walk around.
+- Fixed the large tree tile (the one seen in Solus Valley) being difficult to walk around.
 - Fixed a tree you could walk through in Telluria Castle Town.
 - Fixed softlock caused by the Catalyst ambush in Telluria Castle Town's Temple.
 - Fixed Water Spirit not beginning encounter when touching the player.
