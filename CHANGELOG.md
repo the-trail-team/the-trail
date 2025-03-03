@@ -43,6 +43,7 @@ INTRO TEXT
 ### Bug Fixes
 - Fixed a typo in Cut Down's description.
 - Fixed occasional crash when loading a save file from a different version.
+- Fixed issues with the Water Spirit's state overlays and shadow.
 - Fixed incorrect Application Menu title on Mac.
 
 <br><br>
