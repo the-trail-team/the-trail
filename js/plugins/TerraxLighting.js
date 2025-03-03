@@ -1011,7 +1011,7 @@ Imported.TerraxLighting = true;
 		for (var i = 0; i < event_eventcount; i++) {
 			if ($gameMap.events()[i]) {
 				if($gameMap.events()[i].event()) {
-					var note = $gameMap.events()[i].event().note;
+					var note = $gameMap.events()[i].event()?.note;
 
 					var note_args = note.split(" ");
 					var note_command = note_args.shift().toLowerCase();
@@ -1915,7 +1915,7 @@ Imported.TerraxLighting = true;
 						for (var i = 0; i < event_note.length; i++) {
 							//if ($gameMap.events()[i]) {
 
-								//var note = $gameMap.events()[i].event().note;
+								//var note = $gameMap.events()[i].event()?.note;
 								//var evid = $gameMap.events()[i]._eventId;
 								var note = event_note[i];
 								var evid = event_id[i];

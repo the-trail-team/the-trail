@@ -9127,7 +9127,7 @@ Game_Event.prototype.event = function() {
 };
 
 Game_Event.prototype.page = function() {
-    return this.event().pages[this._pageIndex];
+    return this.event()?.pages[this._pageIndex];
 };
 
 Game_Event.prototype.list = function() {
@@ -9269,10 +9269,11 @@ Game_Event.prototype.refresh = function() {
         this._pageIndex = newPageIndex;
         this.setupPage();
     }
-    this._monster = this.event().note.contains("<Monster>");
+    this._monster = this.event()?.note.contains("<Monster>");
 };
 
 Game_Event.prototype.findProperPageIndex = function() {
+    if (!this.event()) return -1;
     var pages = this.event().pages;
     for (var i = pages.length - 1; i >= 0; i--) {
         var page = pages[i];
