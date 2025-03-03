@@ -42,6 +42,7 @@ INTRO TEXT
 
 ### Bug Fixes
 - Fixed a typo in Cut Down's description.
+- Fixed incorrect Application Menu title on Mac.
 
 <br><br>
 
