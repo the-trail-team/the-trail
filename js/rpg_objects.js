@@ -7269,7 +7269,7 @@ Game_CharacterBase.prototype.refreshBushDepth = function() {
 };
 
 Game_CharacterBase.prototype.isOnLadder = function() {
-    return $gameMap.isLadder(this._x, this._y);
+    return $gameMap.isLadder(this._x, this._y) || this.regionId() == 81;
 };
 
 Game_CharacterBase.prototype.isOnBush = function() {
