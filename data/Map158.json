@@ -28700,7 +28700,7 @@
               "indent": 0,
               "parameters": [
                 12,
-                "$gameMap.mapId() == 60"
+                "$gameMap.mapId() == 60 && Math.random() < 0.5"
               ]
             },
             {
@@ -28971,14 +28971,52 @@
               "parameters": []
             },
             {
-              "code": 301,
+              "code": 111,
               "indent": 0,
+              "parameters": [
+                12,
+                "$gameMap.mapId() == 60 && Math.random() < 0.5"
+              ]
+            },
+            {
+              "code": 301,
+              "indent": 1,
               "parameters": [
                 0,
                 107,
                 false,
                 false
               ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 411,
+              "indent": 0,
+              "parameters": []
+            },
+            {
+              "code": 301,
+              "indent": 1,
+              "parameters": [
+                0,
+                106,
+                false,
+                false
+              ]
+            },
+            {
+              "code": 0,
+              "indent": 1,
+              "parameters": []
+            },
+            {
+              "code": 412,
+              "indent": 0,
+              "parameters": []
             },
             {
               "code": 123,
