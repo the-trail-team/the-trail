@@ -7285,10 +7285,9 @@ Game_CharacterBase.prototype.regionId = function() {
 };
 
 Game_CharacterBase.prototype.checkCliff = function() {
-    const arr = [61, 62]; // Elevation regions
-    const enemyRegion = this.regionId();
-    const playerRegion = $gamePlayer.regionId();
-    return arr.contains(enemyRegion) && arr.contains(playerRegion) && enemyRegion != playerRegion;
+    this.turnTowardPlayer();
+    this.setMovementSuccess(this.canPass(this._x, this._y, this.direction()));
+    return !this.isMovementSucceeded();
 };
 
 Game_CharacterBase.prototype.increaseSteps = function() {
