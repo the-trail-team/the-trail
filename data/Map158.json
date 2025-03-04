@@ -12111,11 +12111,32 @@
               "parameters": []
             },
             {
+              "code": 355,
+              "indent": 0,
+              "parameters": [
+                "$gameTemp._statueMap = $gameMap.mapId();"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "// Greenfield Ruins counts for Greenfield"
+              ]
+            },
+            {
+              "code": 655,
+              "indent": 0,
+              "parameters": [
+                "if ($gameTemp._statueMap == 61) $gameTemp._statueMap = 84;"
+              ]
+            },
+            {
               "code": 111,
               "indent": 0,
               "parameters": [
                 12,
-                "!$gameSystem.statue($gameMap.mapId())"
+                "!$gameSystem.statue($gameTemp._statueMap)"
               ]
             },
             {
@@ -12139,7 +12160,7 @@
               "code": 355,
               "indent": 1,
               "parameters": [
-                "$gameSystem._statues[$gameMap.mapId()] = true;"
+                "$gameSystem._statues[$gameTemp._statueMap] = true;"
               ]
             },
             {

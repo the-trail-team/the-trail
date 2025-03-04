@@ -192,7 +192,7 @@ Window_StatueList.prototype.makeItemList = function() {
 };
 
 Window_StatueList.prototype.selection = function() {
-    return this._data.findIndex(s => s[4] == $gameMap.mapId());
+    return this._data.findIndex(s => s[4] == $gameTemp._statueMap);
 };
 
 //
