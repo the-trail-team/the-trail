@@ -14571,6 +14571,255 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# Reset Riding the Storm"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          1,
+          55,
+          0,
+          57,
+          1
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 1,
+        "parameters": [
+          12,
+          "!($gameSystem._ridingTheStorm || $gameTemp.isPlaytest())"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest Remove 37"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 37 Normalize All Objectives"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Change Description Entry to 2"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Normalize Objective 14"
+        ]
+      },
+      {
+        "code": 356,
+        "indent": 2,
+        "parameters": [
+          "Quest 4 Hide Objective 15"
+        ]
+      },
+      {
+        "code": 122,
+        "indent": 2,
+        "parameters": [
+          55,
+          55,
+          0,
+          0,
+          54
+        ]
+      },
+      {
+        "code": 223,
+        "indent": 2,
+        "parameters": [
+          [
+            -255,
+            -255,
+            -255,
+            0
+          ],
+          1,
+          true
+        ]
+      },
+      {
+        "code": 242,
+        "indent": 2,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 246,
+        "indent": 2,
+        "parameters": [
+          1
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          60
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Chapter",
+            "volume": 90,
+            "pitch": 50,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 231,
+        "indent": 2,
+        "parameters": [
+          10,
+          "Chapter6",
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          0,
+          0
+        ]
+      },
+      {
+        "code": 232,
+        "indent": 2,
+        "parameters": [
+          10,
+          0,
+          0,
+          0,
+          0,
+          0,
+          100,
+          100,
+          255,
+          0,
+          120,
+          true
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          120
+        ]
+      },
+      {
+        "code": 250,
+        "indent": 2,
+        "parameters": [
+          {
+            "name": "Move1",
+            "volume": 90,
+            "pitch": 100,
+            "pan": 0
+          }
+        ]
+      },
+      {
+        "code": 235,
+        "indent": 2,
+        "parameters": [
+          10
+        ]
+      },
+      {
+        "code": 221,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 223,
+        "indent": 2,
+        "parameters": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          1,
+          false
+        ]
+      },
+      {
+        "code": 230,
+        "indent": 2,
+        "parameters": [
+          96
+        ]
+      },
+      {
+        "code": 201,
+        "indent": 2,
+        "parameters": [
+          0,
+          7,
+          33,
+          9,
+          2,
+          2
+        ]
+      },
+      {
+        "code": 222,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "$gameSystem._ridingTheStorm = true;"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 2,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
