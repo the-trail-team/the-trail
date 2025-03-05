@@ -17,6 +17,8 @@ INTRO TEXT
 - 2 new items:
   - Phantasmal Charm
   - [REDACTED HELMET]
+- 1 new weapon:
+  - Stalactite
 - 7 new equipment:
   - 3 new headgear:
     - Tideflame Headpiece
