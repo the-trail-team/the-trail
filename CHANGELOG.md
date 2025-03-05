@@ -41,6 +41,7 @@ INTRO TEXT
 
 ### Changes
 - Earth enemies no longer take double damage from wind attacks.
+- Infernal Wand now deals +20% fire damage.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 

@@ -2190,7 +2190,7 @@
     ],
     "iconIndex": 779,
     "name": "Infernal Wand",
-    "note": "<Weapon Image: 390>\n<Upgrade Slots: 2>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
+    "note": "<Weapon Image: 390>\n<Upgrade Slots: 2>\n\n<Element Amplify Fire: +20%>\n\n<Custom Buy Show Eval>\nvisible = $gameVariables.value(55) >= 37;\n</Custom Buy Show Eval>",
     "params": [
       0,
       20,
