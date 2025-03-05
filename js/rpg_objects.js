@@ -7286,8 +7286,7 @@ Game_CharacterBase.prototype.regionId = function() {
 
 Game_CharacterBase.prototype.checkCliff = function() {
     this.turnTowardPlayer();
-    this.setMovementSuccess(this.canPass(this._x, this._y, this.direction()));
-    return !this.isMovementSucceeded();
+    return !this.isMapPassable(this._x, this._y, this.direction());
 };
 
 Game_CharacterBase.prototype.increaseSteps = function() {
