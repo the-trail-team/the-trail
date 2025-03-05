@@ -5717,5 +5717,53 @@
       0
     ],
     "price": 1000
+  },
+  {
+    "id": 218,
+    "atypeId": 1,
+    "description": "A deep blue headband with a striking red accent.\nIncreases physical lifesteal by a moderate amount.",
+    "etypeId": 3,
+    "traits": [],
+    "iconIndex": 821,
+    "name": "Bloodwave Headband",
+    "note": "<Upgrade Slots: 3>\n<HP Life Steal Physical: +3%>\n\n<Synthesis Ingredients>\nSilver Headband\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "params": [
+      20,
+      0,
+      0,
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    "price": 1000
+  },
+  {
+    "id": 219,
+    "atypeId": 1,
+    "description": "A mask styled in the fashion of a swirling vortex.\nFocuses the user's energy onto landing critical hits.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.07
+      }
+    ],
+    "iconIndex": 822,
+    "name": "Vortex Mask",
+    "note": "<Upgrade Slots: 3>\n\n<Synthesis Ingredients>\nSilver Mask\nAqua Gem: 2\nWater Essence: 3\n</Synthesis Ingredients>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      20,
+      0
+    ],
+    "price": 1000
   }
 ]

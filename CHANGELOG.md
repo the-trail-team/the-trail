@@ -17,9 +17,11 @@ INTRO TEXT
 - 2 new items:
   - Phantasmal Charm
   - [REDACTED HELMET]
-- 5 new equipment:
-  - 1 new headgear:
+- 7 new equipment:
+  - 3 new headgear:
     - Tideflame Headpiece
+    - Bloodwave Headband
+    - Vortex Mask
   - 2 new accessories:
     - Soulstealer's Necklace
     - Soul Shackles (Tome)
