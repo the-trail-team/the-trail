@@ -3,7 +3,7 @@ INTRO TEXT
 
 ### Additions
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
-- 5 new skills:
+- 7 new skills:
   - Player 1, 1 new skill:
     - [P] Steadfast: Passive @ L27
   - Player 2, 2 new skills:
@@ -12,7 +12,8 @@ INTRO TEXT
   - Player 3, 2 new skills:
     - Cure II: Magic @ L27
     - Rejuvenation: Magic @ L30
-  - Player 4, 1 new skill:
+  - Player 4, 2 new skills:
+    - [P] Assassin: Passive @ L28
     - Adrenaline: Special @ L30 
 - 2 new items:
   - Phantasmal Charm
