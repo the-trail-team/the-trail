@@ -12,8 +12,8 @@ INTRO TEXT
   - Player 3, 2 new skills:
     - Cure II: Magic @ L27
     - Rejuvenation: Magic @ L30
-  - Player 4, 0 new skills:
-    - Name: Category @ LXX 
+  - Player 4, 1 new skill:
+    - Adrenaline: Special @ L30 
 - 2 new items:
   - Phantasmal Charm
   - [REDACTED HELMET]
