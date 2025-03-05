@@ -4608,11 +4608,12 @@ Game_Actor.prototype.updateStateSteps = function(state) {
         }
         if (!this._stateSteps[state.id]) this.removeState(state.id);
     }
+    if ($gamePlayer.terrainTag() == 5 && $gameMap.mapId() == 60) this.addState(33); // Water
 };
 
 Game_Actor.prototype.showAddedStates = function() {
     this.result().addedStateObjects().forEach(function(state) {
-        if (state.message1) {
+        if (state.message1 && !($gamePlayer.terrainTag() == 5 && state.id == 33)) { // Water
             $gameMessage.add(this._name + state.message1);
         }
     }, this);
@@ -6552,6 +6553,8 @@ Game_Map.prototype.checkPassage = function(x, y, bit) {
         var flag = flags[tiles[i]];
         if ((flag & 0x10) !== 0)  // [*] No effect on passage
             continue;
+        if (this.terrainTag(x, y) == 5 && this.mapId() == 60) // Water
+            return true;
         if ((flag & bit) === 0)   // [o] Passable
             return true;
         if ((flag & bit) === bit) // [x] Impassable
