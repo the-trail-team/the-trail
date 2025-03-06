@@ -811,7 +811,7 @@ StorageManager.localFileDirectoryPath = function() {
     } else if (process.platform === 'darwin') {
         directoryPath = path.join(process.env.HOME, 'Library', 'Application Support', 'The Trail/');
     } else {
-        directoryPath = path.join(process.env.HOME, '.local', 'share', 'The Trail/');
+        directoryPath = path.join(process.env.HOME, '.local', 'share', '.thetrail/');
     }
     if (!fs.existsSync(directoryPath)) fs.mkdirSync(directoryPath, { recursive: true });
     return directoryPath;
