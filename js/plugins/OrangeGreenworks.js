@@ -176,6 +176,12 @@ Hudell.OrangeGreenworks = Hudell.OrangeGreenworks || {};
       };
 
       $.activateAchievement = function(achievementName) {
+        if ($gameTemp.isDemo()) {
+          $gameSystem._demoAchievements = $gameSystem._demoAchievements || [];
+          $gameSystem._demoAchievements.push(achievementName);
+          return;
+        }
+
         if (!achievementName) {
           console.log('Achievement name not provided.');
           return;
