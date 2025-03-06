@@ -23,7 +23,7 @@ Game_Temp.prototype.isPlaytest = function() {
 };
 
 Game_Temp.prototype.isDemo = function() {
-    return false;
+    return true;
 };
 
 Game_Temp.prototype.reserveCommonEvent = function(commonEventId) {
