@@ -419,6 +419,7 @@ Game_System.prototype.totalSmallChests = function() {
 Game_System.prototype.smallChest = function() {
     $gameVariables.setValue(48, $gameVariables.value(48) + 1);
     $gameVariables.setValue(50, $gameVariables.value(48) + "/" + this.totalSmallChests());
+    OrangeGreenworks.setStat('smallChests', $gameVariables.value(48));
 };
 
 // Battle Setups
@@ -2705,6 +2706,7 @@ Game_BattlerBase.prototype.die = function() {
     this._hp = 0;
     this.clearStates();
     this.clearBuffs();
+    if (this.isEnemy()) if (this.killer().isEquipped($dataWeapons[27])) OrangeGreenworks.activateAchievement('BATTLE_SHOVEL');
 };
 
 Game_BattlerBase.prototype.revive = function() {
@@ -4210,6 +4212,9 @@ Game_Actor.prototype.isWtypeEquipped = function(wtypeId) {
 Game_Actor.prototype.refresh = function() {
     this.releaseUnequippableItems(false);
     Game_Battler.prototype.refresh.call(this);
+    OrangeGreenworks.setStat('highestAgi', this.agi);
+    OrangeGreenworks.setStat('highestFireResistance', Math.round((1 - this.elementRate(2)) * 100));
+    if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
 Game_Actor.prototype.isActor = function() {
@@ -4357,6 +4362,7 @@ Game_Actor.prototype.levelUp = function() {
     this.gainHp(Number.MAX_SAFE_INTEGER);
     this.gainMp(Number.MAX_SAFE_INTEGER);
     this.removeStateCategoryAll('debuff');
+    OrangeGreenworks.setStat('highestLevelMember', this._level);
 };
 
 Game_Actor.prototype.levelDown = function() {
@@ -5435,6 +5441,7 @@ Game_Party.prototype.gold = function() {
 
 Game_Party.prototype.gainGold = function(amount) {
     this._gold = (this._gold + amount).clamp(0, this.maxGold());
+    OrangeGreenworks.setStat('bits', this._gold);
 };
 
 Game_Party.prototype.loseGold = function(amount) {
@@ -5498,6 +5505,20 @@ Game_Party.prototype.gainItem = function(item, amount, includeEquip) {
             this.discardMembersEquip(item, -newNumber);
         }
         $gameMap.requestRefresh();
+    }
+    if (item == $dataItems[2]) {
+        $gameSystem._leeks = ($gameSystem._leeks || 0) + 1;
+        OrangeGreenworks.setStat('leeks', $gameSystem._leeks);
+    }
+    if (item == $dataWeapons[34]) {
+        OrangeGreenworks.activateAchievement('COLLECT_ORIGINCRYSTAL');
+    }
+    if (DataManager.isArmor(item) && [81, 82, 83].contains(item.baseItemId)) {
+        $gameSystem._poacher = $gameSystem._poacher || [];
+        if (!$gameSystem._poacher.contains(item.baseItemId)) {
+            $gameSystem._poacher.push(item.baseItemId);
+            OrangeGreenworks.setStat('rareEnemies', $gameSystem._poacher.length);
+        }
     }
 };
 
@@ -5775,12 +5796,14 @@ Game_Party.prototype.addPet = function(name) {
             break;
         case 'Fido':
             actor.setCharacterImage('Hound', 1);
+            OrangeGreenworks.activateAchievement('COLLECT_FIDO');
             break;
         case 'Tender':
             actor.setCharacterImage('Fox', 0);
             break;
         case 'Coco':
             actor.setCharacterImage('Monkey1', 0);
+            OrangeGreenworks.activateAchievement('COLLECT_COCO');
             break;
         default: // Remove pet
             this.removeGuestActor(7);

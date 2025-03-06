@@ -2,6 +2,8 @@
 INTRO TEXT
 
 ### Additions
+- Added Steam support.
+  - 60+ achievements for you to collect!
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
 - 7 new skills:
   - Player 1, 1 new skill:

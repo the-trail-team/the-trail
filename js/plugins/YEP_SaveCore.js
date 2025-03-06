@@ -1467,6 +1467,7 @@ Scene_File.prototype.onSaveSuccess = function() {
       this._infoWindow._currentFile = this.savefileId() - 1;
       this.onActionCancel();
     }
+    OrangeGreenworks.setStat('playtime', $gameSystem.playtime());
 };
 
 Scene_Save.prototype.onSaveSuccess = function() {

@@ -15590,6 +15590,13 @@
         ]
       },
       {
+        "code": 355,
+        "indent": 2,
+        "parameters": [
+          "OrangeGreenworks.activateAchievement('BOSS_BAT');"
+        ]
+      },
+      {
         "code": 111,
         "indent": 2,
         "parameters": [
@@ -16073,6 +16080,27 @@
         "indent": 1,
         "parameters": [
           "$gameActors._data[$gameTemp._actorId].addParam(7, 4);"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "intBooks = 0;"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "$gameActors._data.filter(a => a && a._intBooks).forEach(a => intBooks += a._intBooks);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "OrangeGreenworks.setStat('intBooks', intBooks);"
         ]
       },
       {
