@@ -48,6 +48,7 @@ INTRO TEXT
 - Infernal Wand now deals +20% fire damage.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
+- Greatly reduced the length of the king's monologue before the Champion's Banquet.
 
 ### Bug Fixes
 - Fixed a typo in Cut Down's description.
