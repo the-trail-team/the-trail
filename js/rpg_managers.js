@@ -692,12 +692,12 @@ StorageManager.isLocalMode = function() {
 };
 
 StorageManager.trashFile = async function(filePath) {
-    if (process.platform == 'darwin') {
-        const fs = require('fs');
-        fs.unlinkSync(filePath);
-    } else {
+    if (process.platform == 'win32') {
         const trash = require('trash');
         await trash([filePath]);
+    } else {
+        const fs = require('fs');
+        fs.unlinkSync(filePath);
     }
     $gameTemp._deletingFile = undefined;
 };
@@ -803,9 +803,18 @@ StorageManager.removeWebStorage = function(savefileId) {
 };
 
 StorageManager.localFileDirectoryPath = function() {
+    const fs = require('fs');
     const path = require('path');
-    if (process.platform === 'win32') return path.join(process.env.APPDATA, '.thetrail/');
-    else return path.join(process.env.HOME, 'Library', 'Application Support', 'The Trail/');
+    let directoryPath;
+    if (process.platform === 'win32') {
+        directoryPath = path.join(process.env.APPDATA, '.thetrail/');
+    } else if (process.platform === 'darwin') {
+        directoryPath = path.join(process.env.HOME, 'Library', 'Application Support', 'The Trail/');
+    } else {
+        directoryPath = path.join(process.env.HOME, '.local', 'share', 'The Trail/');
+    }
+    if (!fs.existsSync(directoryPath)) fs.mkdirSync(directoryPath, { recursive: true });
+    return directoryPath;
 };
 
 StorageManager.localFilePath = function(savefileId) {
