@@ -14937,6 +14937,73 @@
         "parameters": []
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# $gameSystem._food"
+        ]
+      },
+      {
+        "code": 111,
+        "indent": 0,
+        "parameters": [
+          12,
+          "!$gameSystem._food"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 1,
+        "parameters": [
+          "$gameSystem._food = [];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "items = $gameParty.items().filter(i => i).filter(i => i.itemCategory.contains('Foodstuffs'));"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "items.forEach(i => {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "  if (!$gameSystem._food.contains(i.id)) $gameSystem._food.push(i.id);"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "});"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 1,
+        "parameters": [
+          "OrangeGreenworks.setStat('uniqueFood', $gameSystem._food.length);"
+        ]
+      },
+      {
+        "code": 0,
+        "indent": 1,
+        "parameters": []
+      },
+      {
+        "code": 412,
+        "indent": 0,
+        "parameters": []
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
