@@ -243,6 +243,14 @@ DataManager.processStCNotetags2 = function(group) {
         var evalLine = '';
       } else if (evalMode === 'custom remove state category') {
         evalLine = evalLine + line + '\n';
+      } else if (line.match(/<(?:CUSTOM CATEGORY)[ ](.*)[ ](?:TURN)>/i)) {
+        evalMode = 'custom category';
+        evalLine = '';
+      } else if (line.match(/<\/(?:CUSTOM CATEGORY)[ ](.*)[ ](?:TURN)>/i)) {
+        var category = line.match(/<\/(?:CUSTOM CATEGORY)[ ](.*)[ ](?:TURN)>/i)[1].toUpperCase();
+        DataManager.stateCategories[category].forEach(id => obj.modifyTurnStateEval[id] = evalLine);
+      } else if (evalMode == 'custom category') {
+        evalLine = evalLine + line + '\n';
       }
     }
   }

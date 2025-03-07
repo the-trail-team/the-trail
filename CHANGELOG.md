@@ -6,9 +6,10 @@ INTRO TEXT
   - 60+ achievements for you to collect!
   - Leaderboards now automatically use your Steam account.
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
-- 7 new skills:
-  - Player 1, 1 new skill:
+- 8 new skills:
+  - Player 1, 2 new skills:
     - [P] Steadfast: Passive @ L27
+    - Prolong: Magic @ L30
   - Player 2, 2 new skills:
     - Magical Breeze: Magic @ L28
     - [P] Topped Off: Passive @ L30

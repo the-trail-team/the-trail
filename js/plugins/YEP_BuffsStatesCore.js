@@ -1081,10 +1081,10 @@ DataManager.processBSCNotetags3 = function(group) {
         var value = parseInt(RegExp.$2);
         var id = Yanfly.StateIdRef[name];
         obj.modifyTurnState[id] = value;
-      } else if (line.match(/<(?:CUSTOM STATE)[ ](.*)[ ](?:TURNS)>/i)) {
+      } else if (line.match(/<(?:CUSTOM STATE)[ ](.*)[ ](?:TURN)>/i)) {
         evalMode = 'custom state';
         evalLine = '';
-      } else if (line.match(/<\/(?:CUSTOM STATE)[ ](.*)[ ](?:TURNS)>/i)) {
+      } else if (line.match(/<\/(?:CUSTOM STATE)[ ](.*)[ ](?:TURN)>/i)) {
         var text = String(RegExp.$1);
         if (text.match(/(\d+)/i)) {
           var id = parseInt(RegExp.$1);
