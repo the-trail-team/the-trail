@@ -14,7 +14,7 @@ INTRO TEXT
     - [P] Topped Off: Passive @ L30
   - Player 3, 2 new skills:
     - Cure II: Magic @ L27
-    - Rejuvenation: Magic @ L30
+    - Channel Divinity II: Magic @ L30
   - Player 4, 2 new skills:
     - [P] Assassin: Passive @ L28
     - Adrenaline: Special @ L30 
@@ -49,6 +49,13 @@ INTRO TEXT
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
+
+### Balancing
+- Buffed Purify MP cost from 15 → 8.
+- Buffed Dispell MP cost from 50 → 16.
+- Dispell is now learned at level 15 → 16.
+- Dispell now counts as the upgrade to Purify.
+- Removed Curify.
 
 ### Bug Fixes
 - Fixed a typo in Cut Down's description.
