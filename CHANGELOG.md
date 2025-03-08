@@ -45,18 +45,20 @@ INTRO TEXT
   - Earth Spirit
 
 ### Changes
+- Cleric rebalancing:
+  - Buffed Purify MP cost from 15 → 8.
+  - Buffed Dispell MP cost from 50 → 16.
+  - Dispell is now learned at level 15 → 16.
+  - Dispell now counts as the upgrade to Purify.
+  - Removed Curify.
 - Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
+- Tellurium Pulse no longer removes buffs.
+- Lowered the amount of Thick-Skinned Herbs needed to craft shields.
+- Parasites can now drop Medicated Eyedrops.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
-
-### Balancing
-- Buffed Purify MP cost from 15 → 8.
-- Buffed Dispell MP cost from 50 → 16.
-- Dispell is now learned at level 15 → 16.
-- Dispell now counts as the upgrade to Purify.
-- Removed Curify.
 
 ### Bug Fixes
 - Fixed a typo in Cut Down's description.
