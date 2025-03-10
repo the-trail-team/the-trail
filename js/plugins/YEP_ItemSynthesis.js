@@ -1431,6 +1431,7 @@ Window_SynthesisNumber.prototype.placeButtons = function() {
 
 Window_SynthesisNumber.prototype.updateButtonsVisiblity = function() {
     if (TouchInput.date > Input.date) {
+        this.hideButtons();
         this.showButtons();
     } else {
         this.hideButtons();
@@ -1438,8 +1439,8 @@ Window_SynthesisNumber.prototype.updateButtonsVisiblity = function() {
 };
 
 Window_SynthesisNumber.prototype.showButtons = function() {
-    for (var i = 0; i < this._buttons.length; i++) {
-        this._buttons[i].visible = true;
+    for (var i = 0; i < this._buttons.length - 1; i++) {
+        this._buttons[i].visible = DataManager.isItem(this._item) || i == 4;
     }
 };
 
@@ -1452,7 +1453,7 @@ Window_SynthesisNumber.prototype.hideButtons = function() {
 Window_SynthesisNumber.prototype.refresh = function() {
     this.contents.clear();
     this.drawAmountText()
-    this.drawMultiplicationSign();
+    if (DataManager.isItem(this._item)) this.drawMultiplicationSign();
     this.drawNumber();
     if (!SceneManager._scene._commandWindow.active) this.drawIngredients();
 };
@@ -1480,7 +1481,11 @@ Window_SynthesisNumber.prototype.drawNumber = function() {
     this.resetTextColor();
     number = this._number;
     if (SceneManager._scene._listWindow.item()) number *= SceneManager._scene._listWindow.item().craftAmount;
-    this.drawText(Yanfly.Util.toGroup(number), x, y, width, 'right');
+    if (DataManager.isItem(this._item)) {
+      this.drawText(number, x, y, width, 'right');
+    } else {
+      this.drawText("Confirm?", x - width, y, width * 2, 'right');
+    }
 };
 
 Window_SynthesisNumber.prototype.drawIngredients = function() {
@@ -1545,6 +1550,7 @@ Window_SynthesisNumber.prototype.buttonY = function() {
 };
 
 Window_SynthesisNumber.prototype.cursorWidth = function() {
+    if (!DataManager.isItem(this._item)) return this.textWidth('Confirm?') + this.textPadding() * 7;
     var digitWidth = this.textWidth('0');
     return this.maxDigits() * digitWidth + this.textPadding() * 4;
 };
