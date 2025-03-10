@@ -4,7 +4,7 @@ INTRO TEXT
 ### Additions
 - Linux support has returned!
 - New Steam features:
-  - 60+ achievements for you to collect!
+  - 70+ achievements for you to collect!
   - Leaderboards now automatically use your Steam account.
 - The Ruined Fort is back! It's been blocked off since Alpha 14; now it's finally revamped and ready to play.
 - 8 new skills:
