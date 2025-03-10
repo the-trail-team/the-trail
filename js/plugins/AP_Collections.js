@@ -295,6 +295,7 @@ Window_FoodList.prototype.initialize = function() {
 Window_FoodList.prototype.makeItemList = function() {
     this._data = [];
     items = $dataItems.filter(s => s).filter(s => s.itemCategory.contains('Foodstuffs')).sort((a, b) => a.name > b.name ? 1 : (b.name > a.name ? -1 : 0));
+    this._total = items.length;
     items.forEach(i => {
         var item = [];
         item[0] = i.iconIndex; // Icon
@@ -333,7 +334,7 @@ Window_FoodSummary.prototype.makeItemList = function() {
     Window_FoodList.prototype.makeItemList.call(this);
     
     const length = this._data.filter(s => s[3]).length;
-    var desc = "$ Foodstuffs".replace("$", length).replace("$", length);
+    var desc = `${length}/${this._total} Foodstuffs`;
 
     var summary = [];
     summary[0] = 1299;
