@@ -4217,7 +4217,7 @@ Game_Actor.prototype.refresh = function() {
     this.releaseUnequippableItems(false);
     Game_Battler.prototype.refresh.call(this);
     OrangeGreenworks.setStat('highestAgi', this.agi);
-    OrangeGreenworks.setStat('highestFireResistance', Math.round((1 - this.elementRate(2)) * 100));
+    OrangeGreenworks.setStat('highestFireResistance', Math.floor((1 - Yanfly.Ele.Game_BtlrBase_elementRate.call(this, 2)) * 100));
     if (this.isEquipped($dataWeapons[46]) && this.isEquipped($dataArmors[116])) OrangeGreenworks.activateAchievement('COLLECT_PARADOX');
 };
 
