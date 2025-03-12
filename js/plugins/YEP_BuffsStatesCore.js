@@ -2002,7 +2002,7 @@ Sprite_StateIcon.prototype.drawStateTurns = function(state) {
 
 Sprite_StateIcon.prototype.drawStateCounter = function(state) {
     var value = this._battler.getStateCounter(state.id);
-    if (value === undefined) return;
+    if (value === undefined || 0) return;
     var settings = state.stateCounterSettings;
     value = Yanfly.Util.toGroup(value);
     var wx = settings.bufferX;
