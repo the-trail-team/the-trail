@@ -213,22 +213,7 @@ Window_StatueSummary.prototype.initialize = function() {
 };
 
 Window_StatueSummary.prototype.makeItemList = function() {
-    this._data = [];
-    states = $dataStates.filter(s => s).filter(s => s.meta["Statue Icon"] && s.meta["Statue Buff"]);
-    states.forEach(s => {
-        var statue = [];
-        statue[0] = s.meta["Statue Icon"]; // Icon
-        statue[1] = s.name.replace("Statue - ", ""); // Name
-        statue[2] = s.meta["Statue Buff"]; // Buff Display
-        statue[3] = s.passiveConditionEval(); // Discovered
-        statue[4] = s.passiveConditionEval.toString().match(/\$gameSystem\.statue\((\d+)\)/i)[1]; // Map ID
-        if (!statue[3]) {
-            statue[0] = 635;
-            statue[1] = "???";
-            statue[2] = "???";
-        }
-        this._data.push(statue);
-    }, this);
+    Window_StatueList.prototype.makeItemList(this);
     
     const length = this._data.filter(s => s[3]).length;
     var desc = "-$% Incoming Light / +$% Outgoing Light".replace("$", length).replace("$", length);
