@@ -65,6 +65,7 @@ INTRO TEXT
 
 ### Bug Fixes
 - Fixed Player 2's appearance not updating when unequipping Infernal Coin.
+- Fixed Player 2's Flame Body battler sprite not smiling.
 - Fixed a typo in Cut Down's description.
 - Fixed occasional crash when loading a save file from a different version.
 - Fixed issues with the Water Spirit's state overlays and shadow.
