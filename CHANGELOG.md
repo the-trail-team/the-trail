@@ -61,6 +61,7 @@ INTRO TEXT
 - Parasites can now drop Medicated Eyedrops.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
+- Changed the Skeleton random encounter in Laeryidyean's Forest - Forest Arena...? to a map encounter, meaning you get one per moon cycle.
 
 ### Bug Fixes
 - Fixed Player 2's appearance not updating when unequipping Infernal Coin.
