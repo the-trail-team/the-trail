@@ -48,6 +48,7 @@ INTRO TEXT
 
 ### Changes
 - Cleric rebalancing:
+  - Purify/Dispell now only cure 1 debuff. However, each BP used will cure an additional debuff.
   - Buffed Purify MP cost from 15 → 8.
   - Buffed Dispell MP cost from 50 → 16.
   - Dispell is now learned at level 15 → 16.

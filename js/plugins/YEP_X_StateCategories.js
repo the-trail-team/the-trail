@@ -338,7 +338,7 @@ Game_Battler.prototype.isStateAddable = function(stateId) {
 };
 
 Game_Battler.prototype.removeStateCategoryEffect = function(action) {
-    obj = action.item();
+    let obj = action.item();
     user = action.subject();
     var categories = obj.removeCategory;
     processElements = action.getItemElements();
@@ -355,7 +355,7 @@ Game_Battler.prototype.removeStateCategoryEffect = function(action) {
 };
 
 Game_Battler.prototype.elementalStateCategoryRemoval = function(elementIds) {
-    obj = {};
+    let obj = {};
     if (elementIds.contains(2))  obj['ICE'] = obj['WATER'] = obj['PLANT'] = "ALL";
     if (elementIds.contains(3))  obj['PLANT'] = "ALL";
     if (elementIds.contains(4))  
