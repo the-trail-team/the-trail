@@ -174,6 +174,7 @@ Window_StatueList.prototype.initialize = function() {
 
 Window_StatueList.prototype.makeItemList = function() {
     this._data = [];
+    var discovered = 0;
     states = $dataStates.filter(s => s).filter(s => s.meta["Statue Icon"] && s.meta["Statue Buff"]);
     states.forEach(s => {
         var statue = [];
@@ -186,9 +187,10 @@ Window_StatueList.prototype.makeItemList = function() {
             statue[0] = 635;
             statue[1] = "???";
             statue[2] = "???";
-        }
+        } else discovered++;
         this._data.push(statue);
     }, this);
+    OrangeGreenworks.setStat('statues', discovered);
 };
 
 Window_StatueList.prototype.selection = function() {

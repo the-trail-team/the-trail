@@ -811,6 +811,7 @@ Game_System.prototype.addSynth = function(item) {
         this._synthedArmors.push(item.id);
       }
     }
+    OrangeGreenworks.setStat('craftingCompletion', Math.floor(((this.synthedTotal()) / Yanfly.IS.SynthesisRecipeCount) * 100));
 };
 
 Game_System.prototype.synthedItems = function() {
