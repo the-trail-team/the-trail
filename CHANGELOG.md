@@ -61,6 +61,7 @@ INTRO TEXT
 - Lowered the amount of Thick-Skinned Herbs needed to craft shields.
 - Parasites can now drop Medicated Eyedrops.
 - Lightning II's 3rd chain deals 33% damage instead of 25%.
+- Using an equipped item as an ingredient will automatically equip the newly crafted upgrade.
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
 - Changed the Skeleton random encounter in Laeryidyean's Forest - Forest Arena...? to a map encounter, meaning you get one per moon cycle.
 

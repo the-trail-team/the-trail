@@ -1941,9 +1941,21 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
       }
       if (independentItems.contains(0)) return reject();
       items.forEach(item => $gameParty.loseItem(item[0], item[1], false));
-      upgradeStats = [0, [], ''];
+      upgradeStats = [-1, [], '', undefined, undefined];
       independentItems.forEach(item => {
-        if (item._weight) if (item._weight > upgradeStats[0]) upgradeStats = [item._weight, item.slotsApplied, item.priorityName];
+        if ((item._weight || -1) > upgradeStats[0]) {
+          upgradeStats[0] = (item._weight || 0);
+          upgradeStats[1] = item.slotsApplied;
+          upgradeStats[2] = item.priorityName;
+        }
+        if ($gameParty.members().some(a => a.equips().contains(item))) {
+          actor = $gameParty.members().find(a => a.equips().contains(item));
+          equipSlot = $gameParty.members().find(m => m.equips().includes(item))?.equips().findIndex(e => e == item);
+          if (!actor) [actor, equipSlot] = [upgradeStats[3], upgradeStats[4]];
+          upgradeStats[3] = actor;
+          upgradeStats[4] = equipSlot;
+        }
+        console.log(upgradeStats);
         $gameParty.gainIndependentItem(item, -1, true)
       });
       number *= this._item.craftAmount;
@@ -1958,6 +1970,7 @@ Scene_Synthesis.prototype.doBuy = async function(number) {
         });
         ItemManager.setPriorityName(item, upgradeStats[2]);
         ItemManager.updateItemName(item);
+        if (upgradeStats[3]) upgradeStats[3].forceChangeEquip(upgradeStats[4], item);
       }
       $gameSystem.addSynth(this._item);
       resolve();
