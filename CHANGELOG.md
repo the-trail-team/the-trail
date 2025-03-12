@@ -62,6 +62,7 @@ INTRO TEXT
 - Greatly reduced the length of the king's monologue before the Champion's Banquet.
 
 ### Bug Fixes
+- Fixed Player 2's appearance not updating when unequipping Infernal Coin.
 - Fixed a typo in Cut Down's description.
 - Fixed occasional crash when loading a save file from a different version.
 - Fixed issues with the Water Spirit's state overlays and shadow.
