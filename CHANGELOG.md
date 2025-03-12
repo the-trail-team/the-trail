@@ -37,6 +37,7 @@ INTRO TEXT
     - Waterfall (Tome)
   - 1 new power:
     - [REDACTED RESISTANCE]
+- Added 2 new INT Book locations.
   
 - 5 new enemies:
   - Tortured Soul
