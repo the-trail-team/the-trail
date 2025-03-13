@@ -56,6 +56,7 @@ INTRO TEXT
   - Removed Curify.
 - Earth enemies no longer take double damage from wind attacks.
 - Infernal Wand now deals +20% fire damage.
+- Nerfed INT Books from +4 → +2 INT.
 - Reduced the length of the long walks in Laeryidyean's Forest, Telluria Castle B1, and True Telluria Castle B5.
 - Tellurium Pulse no longer removes buffs.
 - Lowered the amount of Thick-Skinned Herbs needed to craft shields.
