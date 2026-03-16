@@ -7243,5 +7243,127 @@
       100,
       15
     ]
+  },
+  {
+    "id": 95,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Sunken Skeleton",
+    "dropItems": [],
+    "exp": 30,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.96
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 2,
+        "value": 2
+      }
+    ],
+    "gold": 20,
+    "name": "Sunken Skeleton",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "params": [
+      240,
+      10,
+      12,
+      15,
+      1,
+      12,
+      15,
+      15
+    ]
+  },
+  {
+    "id": 96,
+    "actions": [
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 1
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Sunken Captain",
+    "dropItems": [],
+    "exp": 30,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.96
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.05
+      },
+      {
+        "code": 23,
+        "dataId": 2,
+        "value": 2
+      }
+    ],
+    "gold": 20,
+    "name": "Sunken Captain",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "params": [
+      240,
+      10,
+      12,
+      15,
+      1,
+      12,
+      15,
+      15
+    ]
   }
 ]

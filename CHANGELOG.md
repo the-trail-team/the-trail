@@ -21,6 +21,9 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
   - Holy Blotter
   - GetUp™
   - HurtLess®
+- Added 2 new enemies:
+  - Sunken Sailor
+  - Sunken Captain
 
 ### Changes
 - Revamped Laeryidyean's Forest.
