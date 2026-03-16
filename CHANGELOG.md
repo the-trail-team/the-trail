@@ -36,6 +36,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 - Fixed party members being translucent and not being able to use Recall Potion after leaving Sand Stomper Sanctum.
 - Fixed getting Frozen Labyrinth party members early when fast traveling to Frozen Labyrinth.
 - Fixed occasional crash when saving for the first time due to leaderboards.
+- Fixed Steam Cloud not working on Windows/Linux.
 - Fixed duplicate light shining from Bandito Hideout entrance.
 
 OUTRO
