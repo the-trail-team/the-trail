@@ -162,7 +162,7 @@ Scene_File.prototype.onSaveSuccess = function() {
         API_LEADERBOARD.leaderboards().forEach(lb => {
             const name = lb[0];
             const value = lb[1];
-            lbData[name].forEach(entry => {
+            lbData[name]?.forEach(entry => {
                 if (entry[0] == API_STEAM.userId() && value > entry[2]) entry[2] = value;
             });
         });
