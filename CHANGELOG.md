@@ -13,7 +13,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
     - Rusted Blunderbuss
     - Captain's Blunderbuss
 - Added 2 accessories:
-  - Sea Snake Fang
+  - Sea Serpent Fang
   - Pressure Charm
 - Added 1 magic equip:
   - Sunken Crest
@@ -23,7 +23,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
   - Sunken Captain's Tide
 - Added 6 items:
   - Blue Flower
-  - Sea Snake Scale
+  - Sea Serpent Scale
   - Bone
   - Terry's Plans
   - Illegally Manufactured Parts
@@ -38,7 +38,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
   - GetUp™
   - HurtLess®
 - Added 4 enemies:
-  - Sea Snake
+  - Sea Serpent
   - Sunken Sailor
   - Sunken Deadeye
   - Sunken Captain
