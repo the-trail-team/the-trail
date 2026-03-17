@@ -221,6 +221,13 @@ DataManager.processWANotetags1 = function(group) {
     obj.weaponAnimationId = 0;
     obj.weaponHue = undefined;
 
+    if (DataManager.isWeapon(obj)) {
+      motionType = $dataSystem.attackMotions[obj.wtypeId].type;
+      if (motionType === 0) obj.weaponAttackMotion = 'thrust';
+      else if (motionType === 1) obj.weaponAttackMotion = 'swing';
+      else if (motionType === 2) obj.weaponAttackMotion = 'missile';
+    }
+
     for (var i = 0; i < notedata.length; i++) {
       var line = notedata[i];
       if (line.match(/<(?:WEAPON IMAGE):[ ](\d+)>/i)) {
@@ -235,8 +242,6 @@ DataManager.processWANotetags1 = function(group) {
           } else {
             obj.weaponAttackMotion = 'missile';
           }
-        } else {
-          obj.weaponAttackMotion = Yanfly.Param.WAMotion;
         }
         if (obj.weaponHue === undefined) obj.weaponHue = 0;
         var weaponSheetId = Math.ceil(obj.weaponImageIndex / 12);
@@ -247,7 +252,6 @@ DataManager.processWANotetags1 = function(group) {
         }
       } else if (line.match(/<(?:WEAPON IMAGE):[ ](.*)>/i)) {
         obj.weaponImageIndex = String(RegExp.$1);
-        obj.weaponAttackMotion = Yanfly.Param.WAMotion;
       } else if (line.match(/<(?:WEAPON MOTION):[ ](.*)>/i)) {
         obj.weaponAttackMotion = String(RegExp.$1).toLowerCase();
       } else if (line.match(/<(?:WEAPON ANIMATION):[ ](\d+)>/i)) {

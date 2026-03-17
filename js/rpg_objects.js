@@ -7564,7 +7564,7 @@ Game_CharacterBase.prototype.isOnLadder = function() {
 };
 
 Game_CharacterBase.prototype.isOnBush = function() {
-    return $gameMap.isBush(this._x, this._y);
+    return $gameMap.isBush(this._x, this._y) && $gamePlayer.regionId() !== 30;
 };
 
 Game_CharacterBase.prototype.terrainTag = function() {

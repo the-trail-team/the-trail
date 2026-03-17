@@ -6639,5 +6639,80 @@
       0
     ],
     "price": 250
+  },
+  {
+    "id": 252,
+    "atypeId": 1,
+    "description": "A finely woven eye-patch that stood the test of time deep underwater.\nProvides immunity to \\it[33] and increases \\nl[5] damage dealt.",
+    "etypeId": 3,
+    "traits": [
+      {
+        "code": 14,
+        "dataId": 33,
+        "value": 2
+      }
+    ],
+    "iconIndex": 866,
+    "name": "Sunken Captain's Patch",
+    "note": "<Rarity: 11>\n<Menu Category: Memorabilia>\n<Upgrade Slots: 1>\n\n<Element Amplify Water: +10%>",
+    "params": [
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0,
+      3
+    ],
+    "price": 0
+  },
+  {
+    "id": 253,
+    "atypeId": 1,
+    "description": "Buffs ATK/MAT and nerfs DEF/MDF at night.\nNerfs ATK/MAT and buffs DEF/MDF during the day.",
+    "etypeId": 9,
+    "traits": [],
+    "iconIndex": 127,
+    "name": "Sunken Captain's Tide",
+    "note": "<Rarity: 2>\n<Passive State: 240, 241>\n<Cannot Rename>",
+    "params": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 0
+  },
+  {
+    "id": 254,
+    "atypeId": 1,
+    "description": "A curved fang ripped from a sea snake.\nIncreases outgoing \\n[5] damage.",
+    "etypeId": 6,
+    "traits": [
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.03
+      }
+    ],
+    "iconIndex": 870,
+    "name": "Sea Snake Fang",
+    "note": "<Rarity: 1>\n<Upgrade Slots: 1>\n\n<Element Amplify Water: +5%>",
+    "params": [
+      0,
+      0,
+      5,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 120
   }
 ]

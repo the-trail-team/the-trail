@@ -5515,5 +5515,227 @@
     "successRate": 100,
     "tpCost": 0,
     "tpGain": 0
+  },
+  {
+    "id": 159,
+    "animationId": 125,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Loads a firearm.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 242,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 137,
+    "message1": " loads their firearm!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Load",
+    "note": "<Require = 0 BP>\n\n<Custom Requirement>\nvalue = !user.hasState(242);\n</Custom Requirement>\n\n<action copy: skill:86>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 160,
+    "animationId": -1,
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 10 - b.def * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "Discharges a loaded firearm.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 119,
+    "message1": " discharges their firearm!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Fire",
+    "note": "<Boost Damage>\n<Max Mastery Level: 0>\n\n<Custom Requirement>\nvalue = user.hasState(242);\n</Custom Requirement>\n\n<setup action>\nmotion missile: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nremove state 242: user\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 161,
+    "animationId": -1,
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 5 - b.def * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "Discharges a loaded firearm. Hits all enemies.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 119,
+    "message1": " discharges their firearm!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Buckshot",
+    "note": "<Boost Damage>\n<Max Mastery Level: 0>\n\n<Custom Requirement>\nvalue = user.hasState(242);\n</Custom Requirement>\n\n<setup action>\nmotion missile: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nremove state 242: user\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 162,
+    "animationId": 125,
+    "damage": {
+      "critical": false,
+      "elementId": 0,
+      "formula": "0",
+      "type": 0,
+      "variance": 20
+    },
+    "description": "Loads a firearm.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 242,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 0,
+    "iconIndex": 137,
+    "message1": " loads their firearm!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Load (Enemy)",
+    "note": "<action copy: skill:86>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 11,
+    "speed": 0,
+    "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 163,
+    "animationId": -1,
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 10 - b.def * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "Discharges a loaded firearm.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 119,
+    "message1": " discharges their firearm!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Fire (Enemy)",
+    "note": "<Boost Damage>\n\n<setup action>\nmotion missile: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nremove state 242: user\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 1,
+    "speed": 0,
+    "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
+  },
+  {
+    "id": 164,
+    "animationId": -1,
+    "damage": {
+      "critical": true,
+      "elementId": -1,
+      "formula": "a.atk * 5 - b.def * 2",
+      "type": 1,
+      "variance": 5
+    },
+    "description": "Discharges a loaded firearm. Hits all enemies.",
+    "effects": [
+      {
+        "code": 21,
+        "dataId": 0,
+        "value1": 1,
+        "value2": 0
+      }
+    ],
+    "hitType": 1,
+    "iconIndex": 119,
+    "message1": " discharges their firearm!",
+    "message2": "",
+    "mpCost": 0,
+    "name": "Buckshot (Enemy)",
+    "note": "<Boost Damage>\n\n<setup action>\nmotion missile: user\naction animation\nwait for animation\n</setup action>\n\n<target action>\naction effect\nwait for effect\n</target action>\n\n<follow action>\nremove state 242: user\n</follow action>",
+    "occasion": 1,
+    "repeats": 1,
+    "requiredWtypeId1": 0,
+    "requiredWtypeId2": 0,
+    "scope": 2,
+    "speed": 0,
+    "stypeId": 0,
+    "successRate": 100,
+    "tpCost": 0,
+    "tpGain": 0
   }
 ]

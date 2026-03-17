@@ -5,10 +5,26 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 - Added Skeleton Cove.
 - Dalia can now serve you food.
 - Added a new achievement: "On My Own Terms"
-- Added 6 new items:
-  - Blue Flower
-  - Sunken Crest
+- Added 4 weapons:
+  - Sabres (new weapon type for P1):
+    - Rusted Sabre
+    - Captain's Sabre
+  - Firearms (new weapon type):
+    - Rusted Blunderbuss
+    - Captain's Blunderbuss
+- Added 2 accessories:
+  - Sea Snake Fang
   - Pressure Charm
+- Added 1 magic equip:
+  - Sunken Crest
+- Added 1 hat:
+  - Sunken Captain's Patch
+- Added 1 power:
+  - Sunken Captain's Tide
+- Added 6 items:
+  - Blue Flower
+  - Sea Snake Scale
+  - Bone
   - Terry's Plans
   - Illegally Manufactured Parts
   - Inscribed Mechanical Plating
@@ -21,8 +37,10 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
   - Holy Blotter
   - GetUp™
   - HurtLess®
-- Added 2 new enemies:
+- Added 4 enemies:
+  - Sea Snake
   - Sunken Sailor
+  - Sunken Deadeye
   - Sunken Captain
 
 ### Changes
@@ -37,6 +55,7 @@ Happy 8th Trailiversary, everyone! REST OF INTRO
 - Fixed getting Frozen Labyrinth party members early when fast traveling to Frozen Labyrinth.
 - Fixed occasional crash when saving for the first time due to leaderboards.
 - Fixed Steam Cloud not working on Windows/Linux.
+- Fixed Spears and Knuckles using the wrong motion.
 - Fixed duplicate light shining from Bandito Hideout entrance.
 
 OUTRO

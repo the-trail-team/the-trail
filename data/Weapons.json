@@ -2756,5 +2756,197 @@
     ],
     "price": 30,
     "wtypeId": 6
+  },
+  {
+    "id": 70,
+    "animationId": 6,
+    "description": "A steady weapon that has lost some of its sheen.\nGreatly increases critical chance.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.15
+      }
+    ],
+    "iconIndex": 864,
+    "name": "Rusted Sabre",
+    "note": "<Weapon Image: 100>",
+    "params": [
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 150,
+    "wtypeId": 13
+  },
+  {
+    "id": 71,
+    "animationId": 151,
+    "description": "A relic of ancient times, as the art of forging sabres has been forgotten.\nGreatly increases critical chance and grants a 50% chance to apply \\it[33].",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 15,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 5,
+        "value": 0
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.2
+      },
+      {
+        "code": 32,
+        "dataId": 33,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 865,
+    "name": "Captain's Sabre",
+    "note": "<Rarity: 1>\n<Weapon Image: 99>",
+    "params": [
+      0,
+      0,
+      9,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300,
+    "wtypeId": 13
+  },
+  {
+    "id": 72,
+    "animationId": 111,
+    "description": "A worn, salt-eaten firearm once used by sailors. Its blast\nscatters across the battlefield, striking all enemies at once.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.1
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.1
+      }
+    ],
+    "iconIndex": 867,
+    "name": "Rusted Blunderbuss",
+    "note": "<Weapon Image: 405>\n<Replace Attack: Buckshot>",
+    "params": [
+      0,
+      0,
+      8,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 150,
+    "wtypeId": 14
+  },
+  {
+    "id": 73,
+    "animationId": 152,
+    "description": "Corroded by years beneath the waves, this modified blunderbuss\nstill packs a punch. Has a 50% chance to apply \\it[33] to enemies.",
+    "etypeId": 1,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 5,
+        "value": 0
+      },
+      {
+        "code": 54,
+        "dataId": 2,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 0.12
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.12
+      },
+      {
+        "code": 32,
+        "dataId": 33,
+        "value": 0.5
+      }
+    ],
+    "iconIndex": 868,
+    "name": "Captain's Blunderbuss",
+    "note": "<Rarity: 1>\n<Weapon Image: 405>\n<Replace Attack: Buckshot>",
+    "params": [
+      0,
+      0,
+      13,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "price": 300,
+    "wtypeId": 14
   }
 ]

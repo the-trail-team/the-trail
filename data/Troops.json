@@ -2206,8 +2206,20 @@
     "members": [
       {
         "enemyId": 16,
-        "x": 231,
-        "y": 364,
+        "x": 318,
+        "y": 280,
+        "hidden": false
+      },
+      {
+        "enemyId": 46,
+        "x": 213,
+        "y": 172,
+        "hidden": false
+      },
+      {
+        "enemyId": 46,
+        "x": 192,
+        "y": 346,
         "hidden": false
       }
     ],
@@ -13885,6 +13897,218 @@
       }
     ],
     "name": "Dandy Toad Mage x2, Dandy Toad Captain x2, Dandy Toad x4",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 122,
+    "members": [
+      {
+        "enemyId": 95,
+        "x": 369,
+        "y": 310,
+        "hidden": false
+      },
+      {
+        "enemyId": 96,
+        "x": 240,
+        "y": 157,
+        "hidden": false
+      },
+      {
+        "enemyId": 96,
+        "x": 180,
+        "y": 340,
+        "hidden": false
+      }
+    ],
+    "name": "Sunken Sailor x3 1",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 123,
+    "members": [
+      {
+        "enemyId": 95,
+        "x": 388,
+        "y": 172,
+        "hidden": false
+      },
+      {
+        "enemyId": 95,
+        "x": 356,
+        "y": 367,
+        "hidden": false
+      },
+      {
+        "enemyId": 96,
+        "x": 198,
+        "y": 214,
+        "hidden": false
+      }
+    ],
+    "name": "Sunken Sailor x3 2",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 124,
+    "members": [
+      {
+        "enemyId": 96,
+        "x": 462,
+        "y": 274,
+        "hidden": false
+      },
+      {
+        "enemyId": 96,
+        "x": 246,
+        "y": 118,
+        "hidden": false
+      },
+      {
+        "enemyId": 96,
+        "x": 153,
+        "y": 265,
+        "hidden": false
+      },
+      {
+        "enemyId": 96,
+        "x": 237,
+        "y": 409,
+        "hidden": false
+      },
+      {
+        "enemyId": 95,
+        "x": 330,
+        "y": 262,
+        "hidden": false
+      }
+    ],
+    "name": "Sunken Captain, Sunken Sailor x3",
+    "pages": [
+      {
+        "conditions": {
+          "actorHp": 50,
+          "actorId": 1,
+          "actorValid": false,
+          "enemyHp": 50,
+          "enemyIndex": 0,
+          "enemyValid": false,
+          "switchId": 1,
+          "switchValid": false,
+          "turnA": 0,
+          "turnB": 0,
+          "turnEnding": false,
+          "turnValid": false
+        },
+        "list": [
+          {
+            "code": 0,
+            "indent": 0,
+            "parameters": []
+          }
+        ],
+        "span": 0
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "members": [
+      {
+        "enemyId": 98,
+        "x": 346,
+        "y": 178,
+        "hidden": false
+      },
+      {
+        "enemyId": 98,
+        "x": 309,
+        "y": 346,
+        "hidden": false
+      },
+      {
+        "enemyId": 98,
+        "x": 185,
+        "y": 226,
+        "hidden": false
+      }
+    ],
+    "name": "Sea Snake x3",
     "pages": [
       {
         "conditions": {

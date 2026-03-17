@@ -720,7 +720,7 @@
     ],
     "gold": 4,
     "name": "Skeleton",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137, 229>\n\n<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137, 229>\n\n<Sideview Battler: Monster2_1>\n<Attack Animation: 133>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       1,
       15,
@@ -795,7 +795,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Mage",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 10% +10%\nMAT Scroll: 10% +10%\nRuby Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 10% +10%\nMAT Scroll: 10% +10%\nRuby Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       180,
       30,
@@ -856,7 +856,7 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
       240,
       10,
@@ -1095,7 +1095,7 @@
     ],
     "gold": 600,
     "name": "Laeryidyean",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 21 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 137, 141>\n\n<Sideview Battler: Boss1_1>\n<Weapon Image: 2>\n<Attack Animation: 6>\n<HP Gauge Width: 288>\n\n<Boost Skill 60: Full>\n<AI Priority>\nState === Weak Point +++ User HP% param >= 50%: Purify, User\nState !== Magic Enhance +++ User HP% param >= 50%: Magic Enhance, User\nEval user._phase == 2 +++ Switch 21 Off: Darkfire\n</AI Priority>\n\n<Enemy Drops>\nBone: 75%\nBone: 75%\nMusic Box: 5%\nLaeryidyean's Skull: 100%\nLaeryidyean's Strength: 100%\nSkeletal Outfit: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
     "params": [
       4000,
       800,
@@ -1781,7 +1781,7 @@
     ],
     "gold": 35,
     "name": "Skeleton Knight",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Ether: 20% +20%\nEther: 10% +10%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\nMalicious Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_5>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Ether: 20% +20%\nEther: 10% +10%\nRuby Ring: 5% +5%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\nMalicious Essence: 20% +20%\n</Night Boost>",
     "params": [
       1000,
       20,
@@ -5679,7 +5679,7 @@
     ],
     "gold": 1000,
     "name": "Infernal Skeleton Knight",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Fire, Dark>\n<Passive State: 137>\n\n<Sideview Battler: Monster4_1>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 216>\n\n<AI Priority>\nEval !user.hasState(143) +++ State !== Hold the Line III +++ Random 50%: Hold the Line III\n\nEval user.hasState(143) +++ User HP% param < 10% +++ Random 75%: Backstab\n\nState !== Weak Point +++ Random 30%: Nasty Glare\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Sword: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\n</Night Boost>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Bludgeoning>\n<Element: Fire, Dark>\n<Passive State: 137>\n\n<Sideview Battler: Monster4_1>\n<Sideview No Collapse>\n<Weapon Image: 266>\n<Attack Animation: 8>\n<HP Gauge Width: 216>\n\n<AI Priority>\nEval !user.hasState(143) +++ State !== Hold the Line III +++ Random 50%: Hold the Line III\n\nEval user.hasState(143) +++ User HP% param < 10% +++ Random 75%: Backstab\n\nState !== Weak Point +++ Random 30%: Nasty Glare\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Sword: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Potion: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\n</Night Boost>",
     "params": [
       8000,
       0,
@@ -5790,7 +5790,7 @@
     ],
     "gold": 1000,
     "name": "Infernal Skeleton Mage",
-    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Fire, Dark>\n<Passive State: 137>\n\n<Sideview Battler: Monster4_2>\n<Sideview No Collapse>\n<Weapon Image: 270>\n<Attack Animation: 147>\n<HP Gauge Width: 216>\n\n<Boost Skill 31: Full>\n<Boost Skill 60: Full>\n<AI Priority>\nEval !user.hasState(143) +++ State !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\nEval !user.hasState(143) +++ State !== Magic Resistant +++ Random 25%: Magic Resistance, Lowest MDF\nEval !user.hasState(143) +++ HP% param <= 90% +++ HP% param > 50% +++ Random 25%: Cure I, Lowest HP%\nEval !user.hasState(143) +++ HP% param <= 50% +++ Random 25%: Cure II, Lowest HP%\n\nEval user.hasState(143) +++ State !== Magic Enhance: Magic Enhance, User\nEval user.hasState(143) +++ HP% param <= 90% +++ Random 25%: Cure II, Lowest HP%\n\n\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Wand: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\n</Night Boost>",
+    "note": "<Cannot Select: Item Scroll of Silver Sands>\n\n<Armor Weakness: Slashing>\n<Element: Fire, Dark>\n<Passive State: 137>\n\n<Sideview Battler: Monster4_2>\n<Sideview No Collapse>\n<Weapon Image: 270>\n<Attack Animation: 147>\n<HP Gauge Width: 216>\n\n<Boost Skill 31: Full>\n<Boost Skill 60: Full>\n<AI Priority>\nEval !user.hasState(143) +++ State !== Amnesia +++ State !== Silenced +++ Random 50%: Disable\nEval !user.hasState(143) +++ State !== Magic Resistant +++ Random 25%: Magic Resistance, Lowest MDF\nEval !user.hasState(143) +++ HP% param <= 90% +++ HP% param > 50% +++ Random 25%: Cure I, Lowest HP%\nEval !user.hasState(143) +++ HP% param <= 50% +++ Random 25%: Cure II, Lowest HP%\n\nEval user.hasState(143) +++ State !== Magic Enhance: Magic Enhance, User\nEval user.hasState(143) +++ HP% param <= 90% +++ Random 25%: Cure II, Lowest HP%\n\n\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\nInfernal Wand: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Elixir: 100%\nLarge Ether: 100%\nFire Essence: 100%\nFire Essence: 100%\nFire Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\n</Night Boost>",
     "params": [
       8000,
       0,
@@ -7236,7 +7236,7 @@
     "params": [
       300,
       0,
-      16,
+      18,
       16,
       1,
       40,
@@ -7256,9 +7256,9 @@
       }
     ],
     "battlerHue": 0,
-    "battlerName": "Sunken Skeleton",
+    "battlerName": "Sunken Sailor",
     "dropItems": [],
-    "exp": 30,
+    "exp": 25,
     "traits": [
       {
         "code": 31,
@@ -7283,30 +7283,156 @@
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.05
-      },
-      {
-        "code": 23,
-        "dataId": 2,
-        "value": 2
+        "value": 0.2
       }
     ],
-    "gold": 20,
-    "name": "Sunken Skeleton",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "gold": 15,
+    "name": "Sunken Sailor",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Water, Dark>\n<Passive State: 57, 137, 146>\n\n<Sideview Battler: Monster4_4>\n<Weapon Image: 100>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 5%\nPressure Charm: 2.5%\nWater Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Ether: 10% +10%\nRusted Sabre: 5% +5%\nRusted Blunderbuss: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      240,
+      200,
       10,
-      12,
+      13,
       15,
       1,
-      12,
-      15,
-      15
+      20,
+      20,
+      16
     ]
   },
   {
     "id": 96,
+    "actions": [
+      {
+        "conditionParam1": 242,
+        "conditionParam2": 0,
+        "conditionType": 4,
+        "rating": 9,
+        "skillId": 164
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 162
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Sunken Sailor",
+    "dropItems": [],
+    "exp": 25,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.06
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.04
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.15
+      }
+    ],
+    "gold": 15,
+    "name": "Sunken Deadeye",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Water, Dark>\n<Passive State: 57, 137, 146>\n\n<Sideview Battler: Monster4_4>\n<Weapon Image: 405>\n<Attack Animation: 111>\n\n<Enemy Drops>\nMusic Box: 5%\nPressure Charm: 2.5%\nWater Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Ether: 10% +10%\nRusted Sabre: 5% +5%\nRusted Blunderbuss: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "params": [
+      200,
+      10,
+      13,
+      15,
+      1,
+      20,
+      20,
+      16
+    ]
+  },
+  {
+    "id": 97,
+    "actions": [
+      {
+        "conditionParam1": 242,
+        "conditionParam2": 0,
+        "conditionType": 4,
+        "rating": 9,
+        "skillId": 164
+      },
+      {
+        "conditionParam1": 0,
+        "conditionParam2": 0,
+        "conditionType": 0,
+        "rating": 5,
+        "skillId": 162
+      }
+    ],
+    "battlerHue": 0,
+    "battlerName": "Sunken Captain",
+    "dropItems": [],
+    "exp": 450,
+    "traits": [
+      {
+        "code": 31,
+        "dataId": 1,
+        "value": 0
+      },
+      {
+        "code": 31,
+        "dataId": 17,
+        "value": 1
+      },
+      {
+        "code": 22,
+        "dataId": 0,
+        "value": 1.11
+      },
+      {
+        "code": 22,
+        "dataId": 1,
+        "value": 0.07
+      },
+      {
+        "code": 22,
+        "dataId": 2,
+        "value": 0.2
+      },
+      {
+        "code": 32,
+        "dataId": 33,
+        "value": 1
+      }
+    ],
+    "gold": 225,
+    "name": "Sunken Captain",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Water, Dark>\n<Passive State: 137, 146>\n\n<Sideview Battler: Boss1_4>\n<Weapon Image: 405>\n<Attack Animation: 151>\n\n<AI Priority>\nTurn === 1: Inspire\nTurn === 2: Nasty Glare\nTroop Alive Members >= 3 +++ State !== Hold the Line I: Hold the Line I\n</AI Priority>\n\n<Enemy Drops>\nBone: 75%\nBone: 75%\nSkeleton Skull: 20%\nMusic Box: 5%\nPressure Charm: 2.5%\nSunken Captain's Patch: 100%\nCaptain's Sabre: 100%\nCaptain's Blunderbuss: 100%\nSunken Captain's Tide: 100%\nWater Essence: 100%\nWater Essence: 100%\nWater Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\nDark Essence: 100%\n</Enemy Drops>",
+    "params": [
+      1800,
+      10,
+      17,
+      15,
+      1,
+      30,
+      30,
+      20
+    ]
+  },
+  {
+    "id": 98,
     "actions": [
       {
         "conditionParam1": 0,
@@ -7317,9 +7443,9 @@
       }
     ],
     "battlerHue": 0,
-    "battlerName": "Sunken Captain",
+    "battlerName": "Sea Snake",
     "dropItems": [],
-    "exp": 30,
+    "exp": 25,
     "traits": [
       {
         "code": 31,
@@ -7328,41 +7454,41 @@
       },
       {
         "code": 31,
-        "dataId": 15,
+        "dataId": 17,
         "value": 1
       },
       {
         "code": 22,
         "dataId": 0,
-        "value": 0.96
+        "value": 0.98
       },
       {
         "code": 22,
         "dataId": 1,
-        "value": 0.04
+        "value": 0.11
       },
       {
         "code": 22,
         "dataId": 2,
-        "value": 0.05
+        "value": 0.08
       },
       {
-        "code": 23,
-        "dataId": 2,
-        "value": 2
+        "code": 32,
+        "dataId": 243,
+        "value": 1
       }
     ],
-    "gold": 20,
-    "name": "Sunken Captain",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "gold": 15,
+    "name": "Sea Snake",
+    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Snake1_5>\n<Attack Animation: 211>\n\n<Enemy Drops>\nSea Snake Scale: 75%\nSea Snake Scale: 75%\nSea Snake Fang: 5%\nPressure Charm: 2.5%\nShard of Glass: 1%\n</Enemy Drops>",
     "params": [
-      240,
-      10,
-      12,
-      15,
+      150,
+      0,
+      13,
+      13,
       1,
-      12,
-      15,
+      40,
+      100,
       15
     ]
   }

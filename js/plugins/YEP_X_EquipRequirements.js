@@ -411,10 +411,12 @@ DataManager.defaultClassRestrictions = function(obj) {
   if (DataManager.isWeapon(obj)) switch (obj.wtypeId) {
     case 1:  // Generic
     case 6:  // Spear
+    case 14: // Firearm
       return;
     case 2:  // Sword
     case 7:  // Axe
     case 11: // Greatsword
+    case 13: // Sabre
       return 1;
     case 3:  // Wand
     case 10: // Spellbook
