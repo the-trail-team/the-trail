@@ -13138,6 +13138,62 @@
         ]
       },
       {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "### ALPHA 19"
+        ]
+      },
+      {
+        "code": 108,
+        "indent": 0,
+        "parameters": [
+          "# New Haven Harbor"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if ($gameSystem._travelMaps.maps[0].locations['Haven Harbor'].transfer[1] === 11) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  $gameSystem._travelMaps.maps[0].locations['Haven Harbor'].transfer = [43, 6, 16];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
+        "code": 355,
+        "indent": 0,
+        "parameters": [
+          "if ($gameSystem._travelMaps.maps[0].locations[\"Laeryidyean's Forest\"]) {"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "  delete $gameSystem._travelMaps.maps[0].locations[\"Laeryidyean's Forest\"];"
+        ]
+      },
+      {
+        "code": 655,
+        "indent": 0,
+        "parameters": [
+          "}"
+        ]
+      },
+      {
         "code": 0,
         "indent": 0,
         "parameters": []
@@ -15729,7 +15785,7 @@
         "code": 355,
         "indent": 1,
         "parameters": [
-          "Galv.MAPT.setLocation(0,\"Haven Harbor\",\"loc_haven_harbor\",2472,1356,43,11,39,\"Biggest city in Adon. Trade capital of the world.\",1,102,58);"
+          "Galv.MAPT.setLocation(0,\"Haven Harbor\",\"loc_haven_harbor\",2472,1356,43,6,16,\"Biggest city in Adon. Trade capital of the world.\",1,102,58);"
         ]
       },
       {

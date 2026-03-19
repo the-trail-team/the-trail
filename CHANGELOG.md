@@ -1,5 +1,8 @@
-# Alpha 19: The 8th Trailiversary! (3/11/2026)
+# Alpha 19: Laeryidyean's Forest 3.0 (??/??/2026)
 Happy 8th Trailiversary, everyone! REST OF INTRO
+- Haven Harbor + Laeryidyean's Forest revamp
+- HalfMove
+- Firearms
 
 ### Additions
 - Added Skeleton Cove.

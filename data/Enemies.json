@@ -795,9 +795,9 @@
     ],
     "gold": 20,
     "name": "Skeleton Mage",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 10% +10%\nMAT Scroll: 10% +10%\nRuby Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_2>\n<Weapon Image: 6>\n<Attack Animation: 122>\n\n<Boost Skill 11: Full>\n<AI Priority>\nHP% param <= 30% +++ Random 60%: Cure I, Lowest HP%\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Elixir: 20% +20%\nElixir: 10% +10%\nMAT Scroll: 10% +10%\nMDF Scroll: 10% +10%\nRuby Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      180,
+      300,
       30,
       8,
       9,
@@ -856,9 +856,9 @@
     ],
     "gold": 20,
     "name": "Skeleton Warrior",
-    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
+    "note": "<Armor Weakness: Bludgeoning>\n<Element: Dark>\n<Passive State: 57, 137>\n\n<Sideview Battler: Monster2_3>\n<Weapon Image: 2>\n<Attack Animation: 6>\n\n<AI Priority>\nTroop Alive Members > 3 +++ State !== Hold the Line I +++ Random 20%: Hold the Line I\nTroop Alive Members > 1 +++ State !== Weak Point +++ Random 20%: Weak Point\n</AI Priority>\n\n<Enemy Drops>\nMusic Box: 5%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Potion: 20% +20%\nPotion: 10% +10%\nATK Scroll: 10% +10%\nDEF Scroll: 10% +10%\nEmerald Ring: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      240,
+      450,
       10,
       12,
       15,
@@ -7290,7 +7290,7 @@
     "name": "Sunken Sailor",
     "note": "<Armor Weakness: Bludgeoning>\n<Element: Water, Dark>\n<Passive State: 57, 137, 146>\n\n<Sideview Battler: Monster4_4>\n<Weapon Image: 100>\n<Attack Animation: 6>\n\n<Enemy Drops>\nMusic Box: 5%\nPressure Charm: 2.5%\nWater Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Ether: 10% +10%\nRusted Sabre: 5% +5%\nRusted Blunderbuss: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      200,
+      300,
       10,
       13,
       15,
@@ -7353,7 +7353,7 @@
     "name": "Sunken Deadeye",
     "note": "<Armor Weakness: Bludgeoning>\n<Element: Water, Dark>\n<Passive State: 57, 137, 146>\n\n<Sideview Battler: Monster4_4>\n<Weapon Image: 405>\n<Attack Animation: 111>\n\n<Enemy Drops>\nMusic Box: 5%\nPressure Charm: 2.5%\nWater Essence: 20%\n</Enemy Drops>\n\n<Night Boost>\nBone: 75% +25%\nBone: 75% +25%\nSkeleton Skull: 20% +30%\nSmall Ether: 10% +10%\nRusted Sabre: 5% +5%\nRusted Blunderbuss: 5% +5%\nDark Essence: 20% +20%\n</Night Boost>",
     "params": [
-      200,
+      300,
       10,
       13,
       15,
@@ -7480,7 +7480,7 @@
     ],
     "gold": 15,
     "name": "Sea Serpent",
-    "note": "<Armor Weakness: Slashing>\n\n<Sideview Battler: Snake1_5>\n<Attack Animation: 211>\n\n<Enemy Drops>\nSea Serpent Scale: 75%\nSea Serpent Scale: 75%\nSea Serpent Fang: 5%\nPressure Charm: 2.5%\nShard of Glass: 1%\n</Enemy Drops>",
+    "note": "<Armor Weakness: Slashing>\n<Element: Water>\n<Passive State: 146>\n\n<Sideview Battler: Monster4_5>\n<Attack Animation: 211>\n\n<Enemy Drops>\nSea Serpent Scale: 75%\nSea Serpent Scale: 75%\nSea Serpent Fang: 5%\nPressure Charm: 2.5%\nShard of Glass: 1%\nWater Essence: 20%\n</Enemy Drops>",
     "params": [
       150,
       0,
